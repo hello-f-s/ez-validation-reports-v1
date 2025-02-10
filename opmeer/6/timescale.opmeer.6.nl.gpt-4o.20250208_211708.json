@@ -1,0 +1,80 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OPMEER",
+      "contact": {
+        "phone": "(0226) 36 33 33",
+        "email": "gemeente@opmeer.nl",
+        "website": "http://www.opmeer.nl"
+      }
+    },
+    "service": {
+      "id": 6,
+      "name": "Integriteitsonderzoek (Wet Bibob)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Voor het uitvoeren van een BIBOB-toets worden geen leges in rekening gebracht.",
+        "status": "false",
+        "note": "Deze informatie is niet correct voor gemeente Opmeer. De gemeente Opmeer vermeldt op haar website niet expliciet dat er geen leges worden gerekend voor BIBOB-toetsen. Veel gemeenten brengen wel degelijk legeskosten in rekening voor BIBOB-onderzoeken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 6,
+    "invalid_urls": 1,
+    "accuracy_percentage": 85.7,
+    "valid_urls_list": [
+      "https://www.opmeer.nl/form/aanvraagformulier-woo-verzoek",
+      "https://www.opmeer.nl/informatie-over-beleid-of-besluiten-opvragen-who-verzoek",
+      "https://www.opmeer.nl/openbaar-gemaakte-informatie-van-de-gemeente-opmeer-woo",
+      "https://www.opmeer.nl/wet-bibob-opmeer",
+      "https://www.opmeer.nl",
+      "https://www.opmeer.nl/informatie-opvragen-bij-de-gemeente-woo"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.opmeer.nl\">Gemeente",
+        "reason": "INVALID: Error scraping https://www.opmeer.nl\">Gemeente: HTTPSConnectionPool(host='www.opmeer.nl%22%3egemeente', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10798e5d0>: Failed to resolve 'www.opmeer.nl%22%3egemeente' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "In eerste instantie wordt de Bibob alleen actief ingezet op bepaalde horecavergunningen en op de bij het aanwijzingsbesluit aan te wijzen vechtsportevenementen. Dit houdt in dat vanaf inwerkingtreding van het Bibob-beleid nu alle nieuwe aanvragen een vragenformulier voor de Bibob moeten invullen.",
+          "original_reference": "Wanneer u een aanvraag indient voor bepaalde vergunningen zoals een evenementenvergunning voor vechtsportevenementen, een exploitatievergunning voor horecabedrijven, of een Alcoholwetvergunning, moet u ook het BIBOB-vragenformulier indienen.",
+          "note": "De bronpagina specificeert dat BIBOB-toetsing alleen actief wordt ingezet op bepaalde horecavergunningen en aangewezen vechtsportevenementen, terwijl de originele tekst suggereert dat dit voor alle genoemde vergunningen geldt.",
+          "source_urls": [
+            "https://www.opmeer.nl/wet-bibob-opmeer"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Op de overige gebieden wordt de Bibob alleen toegepast als bepaalde signalen de gemeente bereiken dat (rechts-)personen criminele activiteiten ondernemen.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat aanvullende belangrijke informatie over de toepassing van BIBOB bij signalen van criminele activiteiten, wat niet wordt vermeld in de originele tekst.",
+          "source_urls": [
+            "https://www.opmeer.nl/wet-bibob-opmeer"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de reikwijdte van de BIBOB-toetsing. Waar de originele tekst suggereert dat BIBOB-toetsing standaard is voor alle genoemde vergunningen, blijkt uit de bronnen dat deze alleen actief wordt toegepast op bepaalde horecavergunningen en aangewezen vechtsportevenementen. Voor overige gevallen geldt BIBOB-toetsing alleen bij specifieke signalen van criminele activiteiten."
+  }
+}

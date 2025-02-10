@@ -1,0 +1,93 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LAARBEEK",
+      "contact": {
+        "phone": "(0492) 46 97 00",
+        "email": "gemeente@laarbeek.nl",
+        "website": "http://www.laarbeek.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 16,
+    "true_sentences": 13,
+    "false_sentences": 3,
+    "accuracy_percentage": 81.2,
+    "false_statements": [
+      {
+        "sentence": "Voor categorie A- en B-evenementen moet de vergunning minstens 13 weken van tevoren worden aangevraagd, voor categorie C-evenementen minstens 6 maanden.",
+        "status": "false",
+        "note": "Volgens de website van gemeente Laarbeek moet een evenementenvergunning minimaal 8 weken van tevoren worden aangevraagd, niet 13 weken of 6 maanden."
+      },
+      {
+        "sentence": "Voor categorie B-evenementen zijn de kosten € 181,90 (tarief 2023).",
+        "status": "false",
+        "note": "De tarieven op de website van gemeente Laarbeek komen niet overeen met dit bedrag. Het correcte tarief is niet specifiek vermeld per categorie."
+      },
+      {
+        "sentence": "Voor categorie C-evenementen zijn de kosten € 4.253,45 (tarief 2023).",
+        "status": "false",
+        "note": "De tarieven op de website van gemeente Laarbeek komen niet overeen met dit bedrag. Het correcte tarief is niet specifiek vermeld per categorie."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.laarbeek.nl/horecabedrijf-beginnen",
+      "https://www.laarbeek.nl/reclame-uitingen-plaatsen-omgevingsvergunning",
+      "https://www.laarbeek.nl/evenement-organiseren",
+      "https://www.laarbeek.nl/alcohol-schenken-bij-evenementen",
+      "https://www.laarbeek.nl/materialen-lenen-van-de-gemeente"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De gemeente Laarbeek heeft sinds 1 augustus 2023 nieuw evenementenbeleid... In het nieuwe beleid is er een extra categorie toegevoegd: de B2 evenementen.",
+          "original_reference": "Voor categorie A- en B-evenementen moet de vergunning minstens 13 weken van tevoren worden aangevraagd",
+          "note": "De originele tekst maakt geen melding van de B2-categorie die sinds 1 augustus 2023 is toegevoegd. Dit is een belangrijke wijziging in het evenementenbeleid.",
+          "source_urls": [
+            "https://www.laarbeek.nl/evenement-organiseren"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De eindtijden en geluidsnormen zijn aangepast. Voor de meeste evenementen geldt na 23.00 uur een lagere geluidsnorm.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over geluidsnormen en eindtijden, terwijl dit wel belangrijke voorwaarden zijn volgens het nieuwe beleid.",
+          "source_urls": [
+            "https://www.laarbeek.nl/evenement-organiseren"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor B2 evenementen geldt vanaf 1 januari 2024 een maximum van 6 B2 evenementen per locatie per jaar.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist deze belangrijke beperking voor B2 evenementen die vanaf 2024 geldt.",
+          "source_urls": [
+            "https://www.laarbeek.nl/evenement-organiseren"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen het nieuwe evenementenbeleid van 1 augustus 2023, waarin een nieuwe B2-categorie is geïntroduceerd en specifieke regels zijn toegevoegd over geluidsnormen en het maximum aantal evenementen per locatie. Deze substantiële wijzigingen ontbreken in de originele tekst, wat deze mogelijk verouderd maakt."
+  }
+}

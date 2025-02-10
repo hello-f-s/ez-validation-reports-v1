@@ -1,0 +1,76 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DEN HAAG",
+      "contact": {
+        "phone": "14 070",
+        "email": "null",
+        "website": "http://www.denhaag.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 19,
+    "false_sentences": 2,
+    "accuracy_percentage": 90.5,
+    "false_statements": [
+      {
+        "sentence": "Een medewerker van de horecabalie neemt binnen 2 werkdagen contact op voor een afspraak om uw aanvraag te controleren en te ondertekenen.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Den Haag wordt er niet specifiek vermeld dat een medewerker binnen 2 werkdagen contact opneemt. Deze termijn wordt niet genoemd in de procedure."
+      },
+      {
+        "sentence": "De behandeling duurt 8 weken",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Den Haag duurt de behandeling van een aanwezigheidsvergunning speelautomaten maximaal 12 weken, niet 8 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 0,
+    "invalid_urls": 7,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.denhaag.nl/nl/vergunningen-en-ontheffingen/kansspel-loterij-vergunning/",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.denhaag.nl/nl/vergunningen-en-ontheffingen/exploitatievergunning-speelautomatenhal-aanvragen/",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.denhaag.nl/nl/vergunningen-en-ontheffingen/aanwezigheidsvergunning-speelautomaten/",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.denhaag.nl/nl/ondernemen/horeca-ondernemers/",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.denhaag.nl/nl/bestuur-en-organisatie/overheidsorganisatie/content/exploitatievergunning-speelautomatenhal-aanvragen.htm",
+        "reason": "INVALID: Error scraping https://www.denhaag.nl/nl/bestuur-en-organisatie/overheidsorganisatie/content/exploitatievergunning-speelautomatenhal-aanvragen.htm: 404 Client Error: Not Found for url: https://www.denhaag.nl/nl/bestuur-en-organisatie/overheidsorganisatie/content/exploitatievergunning-speelautomatenhal-aanvragen"
+      },
+      {
+        "url": "https://www.denhaag.nl/nl/bestuur-en-organisatie/overheidsorganisatie/content/aanwezigheidsvergunning-speelautomaten.htm",
+        "reason": "INVALID: Error scraping https://www.denhaag.nl/nl/bestuur-en-organisatie/overheidsorganisatie/content/aanwezigheidsvergunning-speelautomaten.htm: 404 Client Error: Not Found for url: https://www.denhaag.nl/nl/bestuur-en-organisatie/overheidsorganisatie/content/aanwezigheidsvergunning-speelautomaten"
+      },
+      {
+        "url": "https://www.denhaag.nl/nl/vergunningen-en-ontheffingen/beginseluitspraak-horeca-aanvragen/",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  }
+}

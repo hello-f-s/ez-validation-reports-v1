@@ -1,0 +1,79 @@
+{
+  "context": {
+    "municipality": {
+      "name": "KAPELLE",
+      "contact": {
+        "phone": "(0113) 33 31 10",
+        "email": "gemeente@kapelle.nl",
+        "website": "http://www.kapelle.nl"
+      }
+    },
+    "service": {
+      "id": 13,
+      "name": "Omzettingsvergunning voor kamerverhuur aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 8,
+    "true_sentences": 6,
+    "false_sentences": 2,
+    "accuracy_percentage": 75.0,
+    "false_statements": [
+      {
+        "sentence": "Nodig voor aanvragen: Om de aanvraag te kunnen doen heeft u een DigiD voor ondernemers met eHerkenning nodig.",
+        "status": "false",
+        "note": "Voor een gebruiksmelding brandveilig gebruik is eHerkenning niet verplicht. Een reguliere DigiD volstaat ook voor het doen van een gebruiksmelding via het Omgevingsloket."
+      },
+      {
+        "sentence": "Kosten en betalen: Over de kosten of leges is geen specifieke informatie gevonden voor deze gemeente.",
+        "status": "false",
+        "note": "De gemeente Kapelle heeft wel degelijk informatie over legeskosten beschikbaar in de legesverordening op de gemeentelijke website. Voor een gebruiksmelding brandveilig gebruik worden leges in rekening gebracht."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://kapelle.nl/omgevingsvergunning-0",
+      "https://kapelle.nl/brandveiligheid-melding-vergunning",
+      "https://kapelle.nl/omgevingsplan-aanpassen",
+      "https://kapelle.nl/ondernemersplein",
+      "https://kapelle.nl/omgevingsvergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De procedure kan tot 26 weken duren. Daarom is het belangrijk om deze vergunning op tijd aan te vragen.",
+          "original_reference": "Hoe lang duurt het?: Er is geen informatie gegeven over de doorlooptijd voor deze specifieke melding.",
+          "note": "De bron specificeert een maximale proceduretijd van 26 weken voor brandveiligheidsvergunningen, terwijl de originele tekst geen doorlooptijd vermeldt.",
+          "source_urls": [
+            "https://kapelle.nl/brandveiligheid-melding-vergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een gebouw moet altijd voldoen aan de regels van het Bouwbesluit. In sommige gevallen heeft u een omgevingsvergunning brandveilig gebruik nodig. De omgevingsvergunning is nodig in situaties met een hoog risico, zoals gebouwen waar veel mensen samenkomen.",
+          "original_reference": "Voorwaarden: Voor een woning waar 5 of meer kamers worden verhuurd (woongroep, studentenhuis) moet u een gebruiksmelding brandveilig gebruik doen",
+          "note": "De bronnen vermelden bredere toepassingscriteria voor brandveiligheidsvergunningen, waaronder situaties met hoog risico en gebouwen waar veel mensen samenkomen, terwijl de originele tekst zich beperkt tot verhuur van 5+ kamers.",
+          "source_urls": [
+            "https://kapelle.nl/brandveiligheid-melding-vergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie over de doorlooptijd (26 weken) en bredere toepassingscriteria voor brandveiligheidsvergunningen die niet in de originele tekst worden genoemd. De originele tekst is beperkter in scope en mist essentiële details over proceduretijden en andere situaties waarin een brandveiligheidsvergunning nodig is."
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LAARBEEK",
+      "contact": {
+        "phone": "(0492) 46 97 00",
+        "email": "gemeente@laarbeek.nl",
+        "website": "http://www.laarbeek.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "Er is geen specifieke informatie over de kosten van een omgevingsvergunning of melding in de beschikbare bronnen.",
+        "status": "false",
+        "note": "De gemeente Laarbeek heeft wel degelijk informatie over de kosten van een omgevingsvergunning beschikbaar. Deze zijn te vinden in de legesverordening op de gemeentelijke website en worden jaarlijks vastgesteld."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 10,
+    "valid_urls": 5,
+    "invalid_urls": 5,
+    "accuracy_percentage": 50.0,
+    "valid_urls_list": [
+      "https://www.laarbeek.nl/reclame-uitingen-plaatsen-omgevingsvergunning",
+      "https://www.laarbeek.nl/milieu-vergunning-of-melding",
+      "https://www.laarbeek.nl/omgevingsvergunning",
+      "https://www.laarbeek.nl/bouwplannen-ingediend-bij-de-gemeente-inzage",
+      "https://www.laarbeek.nl/bedrijfsactiviteiten-veranderen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.laarbeek.nl/reclame-uitingen-plaatsen-omgevingsvergunning\">Gemeente",
+        "reason": "INVALID: Error scraping https://www.laarbeek.nl/reclame-uitingen-plaatsen-omgevingsvergunning\">Gemeente: 404 Client Error: Not Found for url: https://www.laarbeek.nl/reclame-uitingen-plaatsen-omgevingsvergunning%22%3EGemeente"
+      },
+      {
+        "url": "https://www.laarbeek.nl/milieu-vergunning-melding",
+        "reason": "INVALID: Error scraping https://www.laarbeek.nl/milieu-vergunning-melding: 404 Client Error: Not Found for url: https://www.laarbeek.nl/milieu-vergunning-melding"
+      },
+      {
+        "url": "https://www.laarbeek.nl/omgevingsvergunning\">Gemeente",
+        "reason": "INVALID: Error scraping https://www.laarbeek.nl/omgevingsvergunning\">Gemeente: 404 Client Error: Not Found for url: https://www.laarbeek.nl/omgevingsvergunning%22%3EGemeente"
+      },
+      {
+        "url": "https://www.laarbeek.nl/milieu-vergunning-melding\">Gemeente",
+        "reason": "INVALID: Error scraping https://www.laarbeek.nl/milieu-vergunning-melding\">Gemeente: 404 Client Error: Not Found for url: https://www.laarbeek.nl/milieu-vergunning-melding%22%3EGemeente"
+      },
+      {
+        "url": "https://www.laarbeek.nl/bedrijfsactiviteiten-veranderen\">Gemeente",
+        "reason": "INVALID: Error scraping https://www.laarbeek.nl/bedrijfsactiviteiten-veranderen\">Gemeente: 404 Client Error: Not Found for url: https://www.laarbeek.nl/bedrijfsactiviteiten-veranderen%22%3EGemeente"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U heeft DigiD (als particulier) of eHerkenning (als bedrijf) nodig",
+          "original_reference": "eHerkenning (voor bedrijven) voor digitale inlog",
+          "note": "De originele tekst vermeldt alleen eHerkenning voor bedrijven, terwijl de bronnen ook DigiD voor particulieren noemen als mogelijke inlogmethode",
+          "source_urls": [
+            "https://www.laarbeek.nl/reclame-uitingen-plaatsen-omgevingsvergunning",
+            "https://www.laarbeek.nl/bedrijfsactiviteiten-veranderen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De Omgevingsdienst Zuidoost Brabant (ODZOB) behandelt aanvragen voor een omgevingsvergunning voor de gemeente Laarbeek",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat de ODZOB de aanvragen behandelt, wat belangrijke informatie is voor aanvragers",
+          "source_urls": [
+            "https://www.laarbeek.nl/milieu-vergunning-of-melding"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Neem op tijd contact op met de gemeente voor vooroverleg",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist de belangrijke aanbeveling voor vooroverleg met de gemeente",
+          "source_urls": [
+            "https://www.laarbeek.nl/milieu-vergunning-of-melding"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten enkele belangrijke aanvullingen die niet in de originele tekst staan: de mogelijkheid voor particulieren om DigiD te gebruiken, de rol van de Omgevingsdienst Zuidoost Brabant bij de behandeling van aanvragen, en het advies voor vooroverleg. Deze informatie is relevant voor een complete dienstverlening."
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HAARLEMMERMEER",
+      "contact": {
+        "phone": "(0900) 18 52",
+        "email": "info@haarlemmermeer.nl",
+        "website": "http://www.haarlemmermeer.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 15,
+    "false_sentences": 2,
+    "accuracy_percentage": 88.2,
+    "false_statements": [
+      {
+        "sentence": "Het behandelen van een aanvraag voor een exploitatievergunning kost € 679,35.",
+        "status": "false",
+        "note": "Het actuele tarief voor een exploitatievergunning in Haarlemmermeer is € 695,60 volgens de gemeentelijke legesverordening 2024."
+      },
+      {
+        "sentence": "Als een terrasvergunning nodig is, kost deze aanvraag € 186,65 extra.",
+        "status": "false",
+        "note": "Het actuele tarief voor een terrasvergunning in Haarlemmermeer is € 191,85 volgens de gemeentelijke legesverordening 2024."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 4,
+    "invalid_urls": 3,
+    "accuracy_percentage": 57.1,
+    "valid_urls_list": [
+      "https://haarlemmermeergemeente.nl/vergunningen-voor-horecabedrijven",
+      "https://haarlemmermeergemeente.nl/exploitatievergunning",
+      "https://haarlemmermeergemeente.nl/terrasvergunning",
+      "https://haarlemmermeergemeente.nl/alcoholvergunning-commerciele-organisatie"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.haarlemmermeer.nl",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://haarlemmermeergemeente.nl/toelichting-aanvraagformulier-exploitatievergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.haarlemmermeer.nl\">www.haarlemmermeer.nl</a></p>",
+        "reason": "INVALID: Error scraping https://www.haarlemmermeer.nl\">www.haarlemmermeer.nl</a></p>: HTTPSConnectionPool(host='www.haarlemmermeer.nl%22%3ewww.haarlemmermeer.nl%3c', port=443): Max retries exceeded with url: /a%3E%3C/p%3E (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x107a6afd0>: Failed to resolve 'www.haarlemmermeer.nl%22%3ewww.haarlemmermeer.nl%3c' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Binnen Haarlemmermeer is plaats voor maximaal 2 coffeeshops. Op dit moment zijn er al 2 vergunningen voor een coffeeshop verleend. Er is dus geen ruimte voor een nieuwe aanvraag.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over coffeeshops en het maximale aantal vergunningen, terwijl dit wel belangrijke informatie is voor potentiële aanvragers.",
+          "source_urls": [
+            "https://haarlemmermeergemeente.nl/exploitatievergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Instructie tekst: Let op: Alle bestaande en nieuwe bedrijven op bedrijventerrein De Liede en de Spaarnwouderweg moeten vanaf juni 2024 een exploitatievergunning aanvragen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over de verplichte vergunningaanvraag voor bedrijven op specifieke bedrijventerreinen vanaf juni 2024.",
+          "source_urls": [
+            "https://haarlemmermeergemeente.nl/exploitatievergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Na sluiting ruimt u het terras op of stelt het buiten gebruik. Als u de meubels buiten laat staan, maak ze dan aan elkaar vast zodat het niet kan worden verplaatst.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen specifieke voorwaarden voor het terrasgebruik na sluitingstijd, terwijl de bron hier wel duidelijke eisen aan stelt.",
+          "source_urls": [
+            "https://haarlemmermeergemeente.nl/terrasvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten enkele belangrijke aanvullende voorwaarden en beperkingen die niet in de originele tekst staan vermeld. Met name de informatie over het maximale aantal coffeeshops, de verplichte vergunningaanvraag voor specifieke bedrijventerreinen vanaf juni 2024 en de specifieke voorwaarden voor terrasgebruik zijn relevante toevoegingen die ontbreken in de originele tekst. Deze informatie is essentieel voor ondernemers die een exploitatie- of terrasvergunning willen aanvragen."
+  }
+}

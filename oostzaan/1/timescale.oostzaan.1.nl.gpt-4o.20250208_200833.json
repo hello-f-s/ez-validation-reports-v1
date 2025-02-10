@@ -1,0 +1,81 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OOSTZAAN",
+      "contact": {
+        "phone": "(075) 651 21 00",
+        "email": "antwoord@oostzaan.nl",
+        "website": "http://www.oostzaan.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 14,
+    "false_sentences": 3,
+    "accuracy_percentage": 82.4,
+    "false_statements": [
+      {
+        "sentence": "€ 192,55 voor de aanvraag van een alcoholvergunning.",
+        "status": "false",
+        "note": "Het correcte bedrag voor een alcoholvergunning in Oostzaan is € 195,55"
+      },
+      {
+        "sentence": "€ 57,05 voor een nieuwe exploitatievergunning bij een kleine wijziging.",
+        "status": "false",
+        "note": "Het correcte bedrag voor een kleine wijziging in de exploitatievergunning is € 58,05"
+      },
+      {
+        "sentence": "€ 122,00 voor een ontheffing volgens artikel 35 van de Alcoholwet.",
+        "status": "false",
+        "note": "Het correcte bedrag voor een artikel 35 ontheffing in Oostzaan is € 124,00"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 0,
+    "invalid_urls": 7,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://oostzaan.nl/vergunningen/drankvergunning/alcohol-schenken-en-verkopen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://oostzaan.nl/vergunningen/drankvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.oostzaan.nl\">Gemeente",
+        "reason": "INVALID: Error scraping https://www.oostzaan.nl\">Gemeente: HTTPSConnectionPool(host='www.oostzaan.nl%22%3egemeente', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x107d3c2d0>: Failed to resolve 'www.oostzaan.nl%22%3egemeente' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://oostzaan.nl/vergunningen/drankvergunning/alcohol-tijdelijk-schenken",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://oostzaan.nl/vergunningen/horecabedrijf-beginnen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.oostzaan.nl",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://oostzaan.nl/vergunningen/langere-openingstijden-voor-uw-horecabedrijf-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  }
+}

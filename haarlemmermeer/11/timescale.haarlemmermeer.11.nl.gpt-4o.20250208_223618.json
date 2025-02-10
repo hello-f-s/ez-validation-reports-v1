@@ -1,0 +1,95 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HAARLEMMERMEER",
+      "contact": {
+        "phone": "(0900) 18 52",
+        "email": "info@haarlemmermeer.nl",
+        "website": "http://www.haarlemmermeer.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "De gemeente neemt meestal binnen 8 weken een besluit over uw aanvraag.",
+        "status": "false",
+        "note": "Voor reguliere procedures geldt een wettelijke beslistermijn van maximaal 8 weken, maar voor uitgebreide procedures (zoals bij veel milieuactiviteiten) geldt een termijn van 26 weken volgens de Wet algemene bepalingen omgevingsrecht (Wabo). Dit staat ook zo vermeld op de website van gemeente Haarlemmermeer."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 10,
+    "valid_urls": 5,
+    "invalid_urls": 5,
+    "accuracy_percentage": 50.0,
+    "valid_urls_list": [
+      "https://haarlemmermeergemeente.nl/omgevingsvergunning-milieu",
+      "https://haarlemmermeergemeente.nl/kozijnwijziging",
+      "https://haarlemmermeergemeente.nl/kappen-van-een-boom",
+      "https://haarlemmermeer.nl/vergunningsvrij-bouwen),",
+      "https://haarlemmermeergemeente.nl/vergunningsvrij-bouwen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://haarlemmermeer.nl/dakterras),",
+        "reason": "INVALID: Error scraping https://haarlemmermeer.nl/dakterras),: 404 Client Error: Not Found for url: https://haarlemmermeer.nl/dakterras),"
+      },
+      {
+        "url": "https://haarlemmermeer.nl/kozijnwijziging),",
+        "reason": "INVALID: Error scraping https://haarlemmermeer.nl/kozijnwijziging),: 404 Client Error: Not Found for url: https://haarlemmermeer.nl/kozijnwijziging),"
+      },
+      {
+        "url": "https://haarlemmermeer.nl/omgevingsvergunning-milieu),",
+        "reason": "INVALID: Error scraping https://haarlemmermeer.nl/omgevingsvergunning-milieu),: 404 Client Error: Not Found for url: https://haarlemmermeer.nl/omgevingsvergunning-milieu),"
+      },
+      {
+        "url": "https://haarlemmermeer.nl/kappen-van-een-boom)</p>",
+        "reason": "INVALID: Error scraping https://haarlemmermeer.nl/kappen-van-een-boom)</p>: 404 Client Error: Not Found for url: https://haarlemmermeer.nl/kappen-van-een-boom)%3C/p%3E"
+      },
+      {
+        "url": "https://haarlemmermeergemeente.nl/dakterras",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor bedrijven die activiteiten uitvoeren kan een omgevingsvergunning nodig zijn vanwege het milieuexterne-link-icoon. Het kan zijn dat u naast een melding of vergunning voor de milieuactiviteit voor meerdere activiteiten een aanvraag moet doen.",
+          "original_reference": "Als ondernemer moet u mogelijk een omgevingsvergunning aanvragen voor activiteiten die milieubelastend zijn, zoals het starten of wijzigen van een bedrijf.",
+          "note": "De bronnen vermelden expliciet dat er naast een milieuvergunning ook meldingen en vergunningen voor andere activiteiten nodig kunnen zijn. Dit belangrijke detail ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://haarlemmermeergemeente.nl/omgevingsvergunning-milieu"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vertel de omgeving over uw vergunningsvrije bouwplan",
+          "original_reference": "No matching information",
+          "note": "De bronnen bevatten een belangrijke aanvullende verplichting om de omgeving te informeren over bouwplannen, zelfs bij vergunningsvrije activiteiten. Deze informatie ontbreekt volledig in de originele tekst.",
+          "source_urls": [
+            "https://haarlemmermeergemeente.nl/vergunningsvrij-bouwen"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont twee belangrijke verschillen: 1) De originele tekst mist belangrijke informatie over mogelijke aanvullende vergunningen en meldingen naast de milieuvergunning, en 2) Er ontbreekt informatie over de verplichting om de omgeving te informeren over bouwplannen. Deze details zijn wel aanwezig in de bronpagina's en zijn relevant voor een complete informatievoorziening."
+  }
+}

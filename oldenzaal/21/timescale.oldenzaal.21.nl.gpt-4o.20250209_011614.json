@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OLDENZAAL",
+      "contact": {
+        "phone": "(0541) 58 81 11",
+        "email": "info@oldenzaal.nl",
+        "website": "http://www.oldenzaal.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Bij de gemeente kost een VOG aanvraag voor natuurlijke personen € 41,35.",
+        "status": "false",
+        "note": "Het actuele tarief voor een VOG aanvraag bij de gemeente Oldenzaal is € 41,95 voor natuurlijke personen (2024). Het genoemde bedrag van € 41,35 is verouderd."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.oldenzaal.nl/nederlandse-nationaliteit-aanvragen",
+      "https://www.oldenzaal.nl/omgevingsvergunning",
+      "https://www.oldenzaal.nl/verklaring-omtrent-gedrag-vog",
+      "http://www.oldenzaal.nl",
+      "https://www.oldenzaal.nl/exploitatievergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.oldenzaal.nl/bouwen-en-verbouwen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Soms kunt u de VOG ook online aanvragen. Dat kan alleen als de organisatie waarvoor u het nodig heeft is aangemeld bij het COVOG.",
+          "original_reference": "Het kan zowel telefonisch als online, waarbij online aanvragen mogelijk is als de betreffende organisatie bij COVOG is aangemeld.",
+          "note": "De originele tekst suggereert dat telefonisch aanvragen altijd mogelijk is, terwijl de bronpagina alleen online en persoonlijke aanvragen bij de gemeente noemt.",
+          "source_urls": [
+            "https://www.oldenzaal.nl/verklaring-omtrent-gedrag-vog"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U betaalt de VOG bij de aanvraag.",
+          "original_reference": "Bij de gemeente kost een VOG aanvraag voor natuurlijke personen € 41,35. Online via Justis kost het € 33,85.",
+          "note": "De originele tekst specificeert exacte bedragen, terwijl de bronpagina alleen vermeldt dat er betaald moet worden bij aanvraag zonder specifieke bedragen te noemen.",
+          "source_urls": [
+            "https://www.oldenzaal.nl/verklaring-omtrent-gedrag-vog"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Een geldig identiteitsbewijs. Een ingevuld en ondertekend aanvraagformulier VOG.",
+          "original_reference": "Een geldig identiteitsbewijs. Een ingevuld en ondertekend aanvraagformulier VOG.",
+          "note": "De vereiste documenten voor de aanvraag komen exact overeen.",
+          "source_urls": [
+            "https://www.oldenzaal.nl/verklaring-omtrent-gedrag-vog"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn enkele belangrijke verschillen gevonden tussen de originele tekst en de bronpagina's. De belangrijkste verschillen betreffen de aanvraagmethoden (telefonisch wordt niet genoemd in de bron) en de specificatie van kosten (niet vermeld in de bron). De basisvereisten voor het aanvragen van een VOG zijn wel consistent tussen beide bronnen."
+  }
+}

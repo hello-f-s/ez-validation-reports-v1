@@ -1,0 +1,115 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HAARLEMMERMEER",
+      "contact": {
+        "phone": "(0900) 18 52",
+        "email": "info@haarlemmermeer.nl",
+        "website": "http://www.haarlemmermeer.nl"
+      }
+    },
+    "service": {
+      "id": 18,
+      "name": "Ventvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 6,
+    "true_sentences": 0,
+    "false_sentences": 6,
+    "accuracy_percentage": 0.0,
+    "false_statements": [
+      {
+        "sentence": "Voorwaarden: Hier kan geen specifieke informatie over gevonden worden op de website van deze gemeente.",
+        "status": "false",
+        "note": "Er is wel degelijk informatie over voorwaarden te vinden op de gemeentewebsite, bijvoorbeeld bij exploitatievergunningen en evenementenvergunningen"
+      },
+      {
+        "sentence": "Nodig voor aanvragen: Hier kan geen specifieke informatie over gevonden worden op de website van deze gemeente.",
+        "status": "false",
+        "note": "De gemeente heeft duidelijke informatie over benodigdheden voor verschillende vergunningen op hun website"
+      },
+      {
+        "sentence": "Aanvragen: Hier kan geen specifieke informatie over gevonden worden op de website van deze gemeente.",
+        "status": "false",
+        "note": "De gemeente biedt uitgebreide informatie over aanvraagprocedures voor verschillende vergunningen"
+      },
+      {
+        "sentence": "Kosten en betalen: Hier kan geen specifieke informatie over gevonden worden op de website van deze gemeente.",
+        "status": "false",
+        "note": "De gemeente vermeldt kosten voor verschillende vergunningen op hun website"
+      },
+      {
+        "sentence": "Hoe lang duurt het?: Hier kan geen specifieke informatie over gevonden worden op de website van deze gemeente.",
+        "status": "false",
+        "note": "Bij verschillende vergunningen staat de behandeltermijn vermeld op de gemeentewebsite"
+      },
+      {
+        "sentence": "Bezwaren: Hier kan geen specifieke informatie over gevonden worden op de website van deze gemeente.",
+        "status": "false",
+        "note": "De gemeente heeft informatie over bezwaarprocedures beschikbaar op hun website"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 3,
+    "invalid_urls": 2,
+    "accuracy_percentage": 60.0,
+    "valid_urls_list": [
+      "https://haarlemmermeergemeente.nl/omgevingsvergunning-milieu",
+      "https://haarlemmermeergemeente.nl/exploitatievergunning",
+      "https://haarlemmermeergemeente.nl/evenementenvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://haarlemmermeergemeente.nl/dakterras",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://haarlemmermeergemeente.nl/toelichting-aanvraagformulier-exploitatievergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als er meer dan 300 personen naar het evenement komen, heeft u een evenementenvergunning nodig. Zonder vergunning mag u het evenement niet organiseren.",
+          "original_reference": "No matching information",
+          "note": "De bron specificeert een concrete drempelwaarde van 300 personen voor het verplicht aanvragen van een evenementenvergunning, terwijl deze informatie ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://haarlemmermeergemeente.nl/evenementenvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Alle bestaande en nieuwe bedrijven op bedrijventerrein De Liede en de Spaarnwouderweg moeten vanaf juni 2024 een exploitatievergunning aanvragen.",
+          "original_reference": "No matching information",
+          "note": "De bron vermeldt een specifieke verplichting voor bedrijven op bepaalde locaties met een concrete deadline (juni 2024), wat niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://haarlemmermeergemeente.nl/exploitatievergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Binnen Haarlemmermeer is plaats voor maximaal 2 coffeeshops. Op dit moment zijn er al 2 vergunningen voor een coffeeshop verleend. Er is dus geen ruimte voor een nieuwe aanvraag.",
+          "original_reference": "No matching information",
+          "note": "De bron bevat specifieke informatie over het maximumaantal coffeeshops en de huidige situatie, wat ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://haarlemmermeergemeente.nl/exploitatievergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke specifieke informatie die niet in de originele tekst staat, waaronder concrete criteria voor evenementenvergunningen (300+ personen), nieuwe verplichtingen voor bepaalde bedrijventerreinen (vanaf juni 2024) en beperkingen voor coffeeshopvergunningen. Deze informatie is essentieel voor verschillende doelgroepen en bevat concrete voorwaarden en deadlines."
+  }
+}

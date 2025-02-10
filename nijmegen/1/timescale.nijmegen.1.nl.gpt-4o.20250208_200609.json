@@ -1,0 +1,93 @@
+{
+  "context": {
+    "municipality": {
+      "name": "NIJMEGEN",
+      "contact": {
+        "phone": "14 024",
+        "email": "gemeente@nijmegen.nl",
+        "website": "http://www.nijmegen.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor de aanvraag bedragen € 792,40.",
+        "status": "false",
+        "note": "De actuele kosten voor een alcoholvergunning in Nijmegen bedragen € 813,20 voor 2024, niet € 792,40."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.nijmegen.nl/diensten/vergunningen/drank-en-horeca/exploitatievergunning-horeca-zonder-alcohol/",
+      "https://www.nijmegen.nl/diensten/ondernemen/horecabedrijf-starten/",
+      "https://www.nijmegen.nl/diensten/vergunningen/drank-en-horeca/",
+      "https://www.nijmegen.nl/diensten/vergunningen/drank-en-horeca/alcoholvergunning/",
+      "https://www.nijmegen.nl/diensten/vergunningen/drank-en-horeca/tijdelijk-alcohol-schenken/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://gemeente.nijmegen.nl",
+        "reason": "INVALID: Error scraping https://gemeente.nijmegen.nl: HTTPSConnectionPool(host='gemeente.nijmegen.nl', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1074c5010>: Failed to resolve 'gemeente.nijmegen.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://gemeente.nijmegen.nl\">Gemeente",
+        "reason": "INVALID: Error scraping https://gemeente.nijmegen.nl\">Gemeente: HTTPSConnectionPool(host='gemeente.nijmegen.nl%22%3egemeente', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1073c2d50>: Failed to resolve 'gemeente.nijmegen.nl%22%3egemeente' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Toestemming tijdelijk alcohol schenken: € 191,15",
+          "original_reference": "De kosten voor de aanvraag bedragen € 792,40",
+          "note": "Er is een duidelijk verschil in de kosten. De originele tekst noemt € 792,40 voor een reguliere alcoholvergunning, terwijl de bron € 191,15 noemt voor tijdelijk alcohol schenken. Dit zijn echter twee verschillende type vergunningen.",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/vergunningen/drank-en-horeca/tijdelijk-alcohol-schenken/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bel 024-329 98 00 of mail ondernemerspunt@nijmegen.nl",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen specifieke contactgegevens voor het OndernemersPunt, terwijl de bronpagina's wel concrete contactinformatie vermelden.",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/vergunningen/drank-en-horeca/alcoholvergunning/",
+            "https://www.nijmegen.nl/diensten/vergunningen/drank-en-horeca/exploitatievergunning-horeca-zonder-alcohol/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bij bijzondere omstandigheden kan deze termijn verlengd worden",
+          "original_reference": "U ontvangt de vergunning binnen 8 weken na de aanvraag",
+          "note": "De originele tekst vermeldt niet dat de behandeltermijn van 8 weken bij bijzondere omstandigheden verlengd kan worden, wat wel wordt aangegeven in de bronpagina's.",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/vergunningen/drank-en-horeca/exploitatievergunning-horeca-zonder-alcohol/"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de kosten voor verschillende type vergunningen, het ontbreken van specifieke contactgegevens in de originele tekst, en aanvullende informatie over mogelijke verlenging van de behandeltermijn. De verschillen zijn voornamelijk aanvullend van aard en niet zozeer tegenstrijdig met de originele informatie."
+  }
+}

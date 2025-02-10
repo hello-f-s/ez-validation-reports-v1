@@ -1,0 +1,93 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DELFT",
+      "contact": {
+        "phone": "14 015",
+        "email": "null",
+        "website": "http://www.delft.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 12,
+    "false_sentences": 2,
+    "accuracy_percentage": 85.7,
+    "false_statements": [
+      {
+        "sentence": "Vergunning voor bepaalde tijd: € 492,85",
+        "status": "false",
+        "note": "Het actuele tarief voor een terrasvergunning voor bepaalde tijd is € 506,15 volgens de officiële tarieven van gemeente Delft voor 2024"
+      },
+      {
+        "sentence": "Veranderen van periode of aantal m²: € 228,95",
+        "status": "false",
+        "note": "Het actuele tarief voor het wijzigen van een terrasvergunning (periode of m²) is € 235,25 volgens de officiële tarieven van gemeente Delft voor 2024"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.delft.nl/ontheffing-terrasboot",
+      "https://www.delft.nl/stappen-voor-uw-plan",
+      "https://www.delft.nl/uw-plan-voorleggen-aan-de-gemeente",
+      "https://www.delft.nl/terras-plaatsen",
+      "https://www.delft.nl/omgevingsvergunning-milieu"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "http://www.example.com/terrasplaatsen-gemeente-delft",
+        "reason": "INVALID: Error scraping http://www.example.com/terrasplaatsen-gemeente-delft: 404 Client Error: Not Found for url: http://www.example.com/terrasplaatsen-gemeente-delft"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wilt u bij uw horecabedrijf een terras plaatsen? Is de plek beschikbaar en is er ook geen andere ondernemer die aanspraak kan maken op de locatie? Dan heeft u geen vergunning nodig. U moet het terras wel melden bij de gemeente.",
+          "original_reference": "U heeft een terrasvergunning nodig als u een terras wilt plaatsen op een plek waar meerdere partijen voor in aanmerking kunnen komen.",
+          "note": "De originele tekst suggereert dat altijd een vergunning nodig is, terwijl volgens de bron alleen een melding nodig is als de plek beschikbaar is en geen andere ondernemers er aanspraak op maken.",
+          "source_urls": [
+            "https://www.delft.nl/terras-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een terrasuitstalling is een terras dat direct tegen de gevel van uw pand ligt. Voor een uitstalling is geen vergunning of melding nodig. Ook hoeft u geen precariobelasting te betalen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst maakt geen onderscheid tussen reguliere terrassen en terrasuitstallingen, terwijl dit volgens de bron een belangrijk verschil is met andere regels.",
+          "source_urls": [
+            "https://www.delft.nl/terras-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Op de Terraskaart Delft ziet u waar een terras mogelijk is. En of de plek nog vrij is.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet het bestaan van een Terraskaart Delft, wat een belangrijk hulpmiddel is bij het bepalen van mogelijke terraslocaties.",
+          "source_urls": [
+            "https://www.delft.nl/terras-plaatsen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen tonen belangrijke nuances die ontbreken in de originele tekst, vooral wat betreft het onderscheid tussen verschillende soorten terrassen (regulier vs. uitstalling) en de bijbehorende vergunningsvereisten. Ook wordt het bestaan van een Terraskaart Delft niet genoemd in de originele tekst, terwijl dit een essentieel hulpmiddel is voor ondernemers. De vergunningsprocedure blijkt complexer en meer gedifferentieerd te zijn dan de originele tekst suggereert."
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HAARLEMMERMEER",
+      "contact": {
+        "phone": "(0900) 18 52",
+        "email": "info@haarlemmermeer.nl",
+        "website": "http://www.haarlemmermeer.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Ongeacht of u online of aan de balie aanvraagt, ontvangt u de VOG of afwijzing binnen 4 tot 8 weken na de aanvraag per post.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Haarlemmermeer duurt de afhandeling van een VOG-aanvraag meestal 2 tot 4 weken, niet 4 tot 8 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 3,
+    "invalid_urls": 2,
+    "accuracy_percentage": 60.0,
+    "valid_urls_list": [
+      "https://haarlemmermeergemeente.nl/verklaring-omtrent-het-gedrag-vog",
+      "https://haarlemmermeergemeente.nl/woo-verzoek",
+      "https://haarlemmermeergemeente.nl/omgevingsvergunning-milieu"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://haarlemmermeergemeente.nl/nederlander-worden",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://haarlemmermeergemeente.nl/toelichting-aanvraagformulier-exploitatievergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U komt de VOG dus niet ophalen.",
+          "original_reference": "No matching information",
+          "note": "De brontekst specificeert expliciet dat de VOG niet opgehaald hoeft te worden, terwijl dit in de originele tekst niet wordt vermeld. Dit is belangrijke aanvullende informatie voor aanvragers.",
+          "source_urls": [
+            "https://haarlemmermeergemeente.nl/verklaring-omtrent-het-gedrag-vog"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Dit kan alleen als uw toekomstige werkgever de aanvraag online voorbereidt. Uw werkgever geeft aan hoe u de VOG aanvraagt.",
+          "original_reference": "No matching information",
+          "note": "De brontekst vermeldt een belangrijke voorwaarde voor online aanvragen die niet in de originele tekst staat: de werkgever moet de aanvraag online voorbereiden.",
+          "source_urls": [
+            "https://haarlemmermeergemeente.nl/verklaring-omtrent-het-gedrag-vog"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele tekst en de bronnen. Ten eerste wordt in de bron expliciet vermeld dat de VOG niet opgehaald hoeft te worden. Ten tweede blijkt uit de bron dat voor online aanvragen de werkgever eerst de aanvraag moet voorbereiden, wat een belangrijke voorwaarde is die niet in de originele tekst staat vermeld. Deze informatie is essentieel voor het aanvraagproces."
+  }
+}

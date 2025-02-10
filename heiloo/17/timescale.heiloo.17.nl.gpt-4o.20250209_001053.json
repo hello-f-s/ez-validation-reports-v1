@@ -1,0 +1,100 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HEILOO",
+      "contact": {
+        "phone": "(072) 535 66 66",
+        "email": "info@heiloo.nl",
+        "website": "http://www.heiloo.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Heeft u alleen alcoholvrije drank, dan is ook een exploitatievergunning vereist.",
+        "status": "false",
+        "note": "Dit is onjuist volgens de gemeente Heiloo. Een exploitatievergunning is juist NIET nodig als er alleen alcoholvrije dranken worden geschonken. Een exploitatievergunning is alleen vereist bij het schenken van alcoholische dranken of bij het aanbieden van eet- en drinkgelegenheid met meer dan 50 zitplaatsen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 9,
+    "valid_urls": 5,
+    "invalid_urls": 4,
+    "accuracy_percentage": 55.6,
+    "valid_urls_list": [
+      "https://www.heiloo.nl/aanvragen-en-regelen/terrasvergunning/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/marktplaatsvergunning/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/standplaatsvergunning/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/ontheffing-sluitingstijd/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/exploitatievergunning/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.heiloo.nl/exploitatievergunning-horeca",
+        "reason": "INVALID: Error scraping https://www.heiloo.nl/exploitatievergunning-horeca: 404 Client Error: Not Found for url: https://www.heiloo.nl/exploitatievergunning-horeca"
+      },
+      {
+        "url": "https://www.heiloo.nl/terrasvergunning\">Terrasvergunning",
+        "reason": "INVALID: Error scraping https://www.heiloo.nl/terrasvergunning\">Terrasvergunning: 404 Client Error: Not Found for url: https://www.heiloo.nl/terrasvergunning%22%3ETerrasvergunning"
+      },
+      {
+        "url": "https://www.heiloo.nl/exploitatievergunning-horeca\">Exploitatievergunning",
+        "reason": "INVALID: Error scraping https://www.heiloo.nl/exploitatievergunning-horeca\">Exploitatievergunning: 404 Client Error: Not Found for url: https://www.heiloo.nl/exploitatievergunning-horeca%22%3EExploitatievergunning"
+      },
+      {
+        "url": "https://www.heiloo.nl/terrasvergunning",
+        "reason": "INVALID: Error scraping https://www.heiloo.nl/terrasvergunning: 404 Client Error: Not Found for url: https://www.heiloo.nl/terrasvergunning"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Kosten 2025 terrasvergunning: € 330,20",
+          "original_reference": "De kosten voor een terrasvergunning bedragen € 340,45 in 2024",
+          "note": "De kosten en het jaartal verschillen. De bron vermeldt €330,20 voor 2025, terwijl de originele tekst €340,45 voor 2024 noemt.",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/terrasvergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U neemt hiervoor eerst telefonisch contact op met team Horeca via horeca@debuch.nl",
+          "original_reference": "Neem eerst telefonisch contact op met Team Horeca",
+          "note": "De bron vermeldt specifiek een e-mailadres (horeca@debuch.nl) voor contact, terwijl dit in de originele tekst ontbreekt.",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/terrasvergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Kopie uittreksel Kamer van Koophandel (niet ouder dan 3 maanden)",
+          "original_reference": "Kopie uittreksel Kamer van Koophandel (maximaal 3 maanden oud)",
+          "note": "Kleine maar betekenisvolle formuleringswijziging in de geldigheid van het KvK-uittreksel.",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/terrasvergunning/"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de kosten en het jaartal van de terrasvergunning, de toevoeging van specifieke contactgegevens (e-mailadres) en een kleine maar betekenisvolle formuleringswijziging betreffende de geldigheid van het KvK-uittreksel. De overige informatie komt grotendeels overeen met de originele tekst."
+  }
+}

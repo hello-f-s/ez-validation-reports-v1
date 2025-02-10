@@ -1,0 +1,92 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OLDENZAAL",
+      "contact": {
+        "phone": "(0541) 58 81 11",
+        "email": "info@oldenzaal.nl",
+        "website": "http://www.oldenzaal.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Een aanvraag voor een exploitatievergunning kost € 75,00.",
+        "status": "false",
+        "note": "Het actuele tarief voor een exploitatievergunning in Oldenzaal is € 286,70 volgens de gemeentelijke legesverordening 2024."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.oldenzaal.nl/aanleggen",
+      "https://www.oldenzaal.nl/terrasvergunning",
+      "https://www.oldenzaal.nl",
+      "https://www.oldenzaal.nl/standplaatsvergunning",
+      "https://www.oldenzaal.nl/omgevingsvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.oldenzaal.nl\">Gemeente",
+        "reason": "INVALID: Error scraping https://www.oldenzaal.nl\">Gemeente: HTTPSConnectionPool(host='www.oldenzaal.nl%22%3egemeente', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10759c550>: Failed to resolve 'www.oldenzaal.nl%22%3egemeente' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.oldenzaal.nl/bouwen-en-verbouwen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een exploitatievergunning is niet nodig voor het exploiteren van een: winkel, zorginstelling, uitvaartcentrum, museum of bedrijfskantine of restaurant.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over uitzonderingen op de vergunningplicht, terwijl de bron specifieke gevallen noemt waar geen exploitatievergunning nodig is.",
+          "source_urls": [
+            "https://www.oldenzaal.nl/terrasvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Of de exploitant of de leidinggevende in enig opzicht van slecht levensgedrag is.",
+          "original_reference": "Er wordt getoetst aan het bestemmingsplan, leefklimaat van omwonenden, bereikbaarheid voor verkeer, brandveilig gebruik, en het gedrag van de exploitant.",
+          "note": "De bron specificeert expliciet het criterium 'slecht levensgedrag', terwijl de originele tekst alleen algemeen spreekt over 'het gedrag van de exploitant'.",
+          "source_urls": [
+            "https://www.oldenzaal.nl/terrasvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "brandveilig gebruik en basis hulpverlening overige plaatsen (BGBOP)",
+          "original_reference": "brandveilig gebruik",
+          "note": "De bron noemt specifiek 'basis hulpverlening overige plaatsen (BGBOP)' als aanvullend criterium bij brandveilig gebruik, wat niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.oldenzaal.nl/terrasvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten enkele belangrijke aanvullingen op de originele tekst, met name wat betreft uitzonderingen op de vergunningplicht, een specifiekere definitie van gedragstoetsing en aanvullende veiligheidscriteria. Deze informatie is relevant voor potentiële aanvragers maar ontbreekt in de originele tekst."
+  }
+}

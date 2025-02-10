@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HEILOO",
+      "contact": {
+        "phone": "(072) 535 66 66",
+        "email": "info@heiloo.nl",
+        "website": "http://www.heiloo.nl"
+      }
+    },
+    "service": {
+      "id": 2,
+      "name": "Bord of spandoek plaatsen aan de openbare weg"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 9,
+    "true_sentences": 8,
+    "false_sentences": 1,
+    "accuracy_percentage": 88.9,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor een vergunning bedragen € 38,80.",
+        "status": "false",
+        "note": "De exacte kosten voor deze vergunning zijn € 39,95 volgens de actuele legesverordening van de gemeente Heiloo."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.heiloo.nl/aanvragen-en-regelen/voorwerpen-op-openbare-weg-plaatsen/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/marktplaatsvergunning/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/standplaatsvergunning/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/terrasvergunning/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/digitale-informatieborden/"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "€ 119,10",
+          "original_reference": "€ 38,80",
+          "note": "De kosten voor de vergunning zijn in de bron significant hoger dan in de originele tekst vermeld",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/voorwerpen-op-openbare-weg-plaatsen/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "locatietekening",
+          "original_reference": "situatietekening",
+          "note": "In de bron wordt gesproken over een 'locatietekening' terwijl de originele tekst spreekt over een 'situatietekening', hoewel dit praktisch hetzelfde betekent",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/voorwerpen-op-openbare-weg-plaatsen/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voorwaarden voor het plaatsen van voorwerpen op de openbare weg vindt u in artikel 2.3 in de Verordening Fysieke Leefomgeving (VFL)",
+          "original_reference": "No matching information",
+          "note": "De bron verwijst specifiek naar artikel 2.3 van de VFL voor voorwaarden, wat niet genoemd wordt in de originele tekst",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/voorwerpen-op-openbare-weg-plaatsen/"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn drie belangrijke verschillen gevonden tussen de originele tekst en de bronnen. Het meest significante verschil betreft de kosten van de vergunning (€119,10 vs €38,80). Daarnaast gebruikt de bron andere terminologie voor de tekening en bevat extra informatie over de wettelijke grondslag (VFL) die niet in de originele tekst staat vermeld."
+  }
+}

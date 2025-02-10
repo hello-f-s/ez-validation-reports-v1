@@ -1,0 +1,79 @@
+{
+  "context": {
+    "municipality": {
+      "name": "NIJMEGEN",
+      "contact": {
+        "phone": "14 024",
+        "email": "gemeente@nijmegen.nl",
+        "website": "http://www.nijmegen.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 10,
+    "false_sentences": 2,
+    "accuracy_percentage": 83.3,
+    "false_statements": [
+      {
+        "sentence": "Vooroverleg: € 100,-",
+        "status": "false",
+        "note": "Het vooroverleg kost € 250,- volgens de actuele legesverordening van gemeente Nijmegen"
+      },
+      {
+        "sentence": "Omgevingstafeloverleg: € 750,- extra",
+        "status": "false",
+        "note": "Het Omgevingstafeloverleg kost € 1000,- extra volgens de actuele legesverordening van gemeente Nijmegen"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.nijmegen.nl/diensten/bouwen-en-wonen/vergunning-of-melding-voor-bedrijven/",
+      "https://www.nijmegen.nl/diensten/bouwen-en-wonen/vooroverleg-omgevingsvergunning/",
+      "https://www.nijmegen.nl/diensten/vergunningen/bekendmakingen/",
+      "https://www.nijmegen.nl/diensten/bouwen-en-wonen/inzien-van-bouw-en-sloopplannen/",
+      "https://www.nijmegen.nl/formulieren/conceptaanvraag-omgevingsvergunning-aanvullen-of-wijzigen/"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Heeft u een (ver)bouwplan of idee om een stuk grond anders te gebruiken en wilt u weten of dit mag? U kunt dan een voorlopige beoordeling (conceptverzoek) aanvragen.",
+          "original_reference": "Vraag vooraf een vooroverleg aan bij de gemeente om te beoordelen of uw plan past binnen het omgevingsplan en de omgevingsvisie.",
+          "note": "De bronpagina gebruikt andere terminologie ('voorlopige beoordeling' en 'conceptverzoek') dan de originele tekst ('vooroverleg'). Dit kan verwarrend zijn voor aanvragers.",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/bouwen-en-wonen/vooroverleg-omgevingsvergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Uw plan wordt ook bekeken door de Adviescommissie Omgevingskwaliteit (oude naam 'welstandscommissie'). De commissie beoordeelt het uiterlijk van een gebouw.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt een extra beoordelingsstap door de Adviescommissie Omgevingskwaliteit die niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/bouwen-en-wonen/vooroverleg-omgevingsvergunning/"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele tekst en de bronnen. Ten eerste wordt er verschillende terminologie gebruikt voor het vooroverleg, wat verwarrend kan zijn. Ten tweede wordt in de bronnen een extra beoordelingsstap door de Adviescommissie Omgevingskwaliteit genoemd die niet in de originele tekst staat. De overige informatie, zoals de noodzaak voor het raadplegen van omwonenden en de mogelijkheid tot bezwaar maken, komt overeen met de bronnen."
+  }
+}

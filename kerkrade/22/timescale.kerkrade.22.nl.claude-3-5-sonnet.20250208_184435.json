@@ -1,0 +1,79 @@
+{
+  "context": {
+    "municipality": {
+      "name": "KERKRADE",
+      "contact": {
+        "phone": "14 045",
+        "email": "gemeentehuis@kerkrade.nl",
+        "website": "http://www.kerkrade.nl"
+      }
+    },
+    "service": {
+      "id": 22,
+      "name": "Woonruimte splitsen of samenvoegen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "Het splitsen van een woning in aparte zelfstandige woningen is in de gemeente Kerkrade niet toegestaan.",
+        "status": "false",
+        "note": "Deze bewering is onjuist. Woningsplitsing is wel degelijk mogelijk in Kerkrade, maar onder bepaalde voorwaarden zoals vastgelegd in de 'Beleidsregel Woningsplitsing en gebruikswijziging naar woningen gemeente Kerkrade 2023'."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.kerkrade.nl/regels-en-procedure-om-nieuwe-woningen-te-bouwen",
+      "https://www.kerkrade.nl/omgevingsvergunning",
+      "https://www.kerkrade.nl/woning-splitsen",
+      "https://www.kerkrade.nl/bouwen-of-verbouwen",
+      "https://www.kerkrade.nl/kamerverhuur-en-woningsplitsing"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.kerkrade.nl/regels-en-procedure-om-nieuwe-wonin-gen-te-bouwen",
+        "reason": "INVALID: Error scraping https://www.kerkrade.nl/regels-en-procedure-om-nieuwe-wonin-gen-te-bouwen: 404 Client Error: Not Found for url: https://www.kerkrade.nl/regels-en-procedure-om-nieuwe-wonin-gen-te-bouwen"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Woningsplitsing is in gemeente Kerkrade niet toegestaan. Dit staat in het bestemmingsplan 'Parapluplan Stedelijk Gebied Kerkrade'.",
+          "original_reference": "Het splitsen van een woning in aparte zelfstandige woningen is in de gemeente Kerkrade niet toegestaan [...] Woningsplitsing of -samenvoeging is mogelijk onder bepaalde voorwaarden",
+          "note": "Er is een tegenstrijdigheid in de originele tekst: eerst wordt gesteld dat woningsplitsing niet is toegestaan, daarna dat het wel mogelijk is onder voorwaarden. De bron is duidelijker: splitsing is in principe niet toegestaan, maar er zijn uitzonderingsmogelijkheden via de beleidsregel uit 2023.",
+          "source_urls": [
+            "https://www.kerkrade.nl/kamerverhuur-en-woningsplitsing"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De gemeenteraad heeft op 31 mei 2023 de beleidsregel 'Woningsplitsing en gebruikswijziging naar wonen gemeente Kerkrade 2023' vastgesteld.",
+          "original_reference": "'Beleidsregel Woningsplitsing en gebruikswijziging naar woningen gemeente Kerkrade 2023'",
+          "note": "De bron vermeldt specifiek de vaststellingsdatum (31 mei 2023) van de beleidsregel, wat belangrijke aanvullende informatie is die ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.kerkrade.nl/kamerverhuur-en-woningsplitsing"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont twee belangrijke verschillen aan. Ten eerste is er een interne tegenstrijdigheid in de originele tekst over of woningsplitsing wel of niet is toegestaan. De bronnen maken duidelijk dat het in principe niet is toegestaan, maar dat er uitzonderingsmogelijkheden zijn via een specifieke beleidsregel. Ten tweede ontbreekt in de originele tekst de belangrijke vaststellingsdatum van de beleidsregel (31 mei 2023)."
+  }
+}

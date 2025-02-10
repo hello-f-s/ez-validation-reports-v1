@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HEILOO",
+      "contact": {
+        "phone": "(072) 535 66 66",
+        "email": "info@heiloo.nl",
+        "website": "http://www.heiloo.nl"
+      }
+    },
+    "service": {
+      "id": 18,
+      "name": "Ventvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Binnen 8 weken hoort u of u de vergunning krijgt, eventueel met een verlenging van maximaal 8 weken.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Heiloo is de beslistermijn 12 weken, met een mogelijke verlenging van 12 weken, niet 8 weken zoals vermeld."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.heiloo.nl/aanvragen-en-regelen/toezicht-en-handhaving/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/terrasvergunning/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/standplaatsvergunning/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/exploitatievergunning/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/omgevingsvergunning/"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U vraagt de vergunning minstens 12 weken van tevoren aan",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt geen minimale aanvraagtermijn voor terrasvergunningen, terwijl de bronpagina specifiek aangeeft dat dit minimaal 12 weken van tevoren moet",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/terrasvergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Kosten 2025 terrasvergunning: € 330,20",
+          "original_reference": "Er wordt geen specifieke informatie over kosten gegeven",
+          "note": "De originele tekst vermeldt geen kosten, terwijl de bronpagina specifieke kosten voor 2025 vermeldt voor terrasvergunningen",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/terrasvergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U stuurt een ingevulde Bibob-formulier mee met de vergunningsaanvraag",
+          "original_reference": "- Bibob-formulier",
+          "note": "De bronpagina specificeert dat het Bibob-formulier direct met de aanvraag meegestuurd moet worden, wat duidelijker is dan de algemene vermelding in de originele tekst",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/exploitatievergunning/"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de specifieke aanvraagtermijn voor terrasvergunningen (12 weken), concrete kostenbedragen voor 2025 en een duidelijkere specificatie over het moment van indiening van het Bibob-formulier. De originele tekst mist deze specifieke details die wel in de bronpagina's worden vermeld."
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DEN HELDER",
+      "contact": {
+        "phone": "null",
+        "email": "info@denhelder.nl",
+        "website": "http://www.denhelder.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 8,
+    "true_sentences": 7,
+    "false_sentences": 1,
+    "accuracy_percentage": 87.5,
+    "false_statements": [
+      {
+        "sentence": "De gemeente beslist binnen 8 weken na ontvangst van de aanvraag of de vergunning wordt verleend.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Den Helder is de beslistermijn 12 weken en niet 8 weken zoals vermeld in de tekst."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 0,
+    "invalid_urls": 7,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.denhelder.nl/Onderwerpen/Evenementen_en_feesten",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://example.com\">Bron",
+        "reason": "INVALID: Error scraping https://example.com\">Bron: HTTPSConnectionPool(host='example.com%22%3ebron', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x103813890>: Failed to resolve 'example.com%22%3ebron' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.denhelder.nl/Onderwerpen/Evenementen_en_feesten/Een_horecabedrijf_starten/Alcoholvergunning",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://example.com",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.denhelder.nl/Onderwerpen/Evenementen_en_feesten/Ontheffing_voor_schenken_zwakalcoholische_drank",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.denhelder.nl/Onderwerpen/Evenementen_en_feesten/Een_horecabedrijf_starten",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.denhelder.nl/Onderwerpen/Evenementen_en_feesten/Een_horecabedrijf_starten/Exploitatievergunning",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "KERKRADE",
+      "contact": {
+        "phone": "14 045",
+        "email": "gemeentehuis@kerkrade.nl",
+        "website": "http://www.kerkrade.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "Aanvraag vergunning (gewone aanvraag): binnen 8 weken bericht, kan 6 weken worden verlengd.",
+        "status": "false",
+        "note": "Volgens de website van gemeente Kerkrade geldt voor een reguliere procedure een beslistermijn van maximaal 8 weken die eenmalig met maximaal 6 weken kan worden verlengd. Het woord 'bericht' is hier incorrect - er moet binnen die termijn een besluit worden genomen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.kerkrade.nl/gemeente-kerkrade-helpt-u-bij-de-omgevingswet",
+      "https://www.kerkrade.nl/omgevingsvergunning",
+      "https://www.kerkrade.nl/bodeminformatie-opvragen",
+      "https://www.kerkrade.nl/milieu-vergunning-of-melding",
+      "https://www.kerkrade.nl/vergunning-checken-en-vooroverleg"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De omgevingsbalie is vanaf januari elke donderdag van 09:00-12:00 en 16:00-18:00 geopend.",
+          "original_reference": "No matching information",
+          "note": "De originele inhoud vermeldt niet de specifieke openingstijden van de omgevingsbalie, wat belangrijke aanvullende informatie is voor het aanvraagproces.",
+          "source_urls": [
+            "https://www.kerkrade.nl/gemeente-kerkrade-helpt-u-bij-de-omgevingswet"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U doet het verzoek schriftelijk bij de gemeente Kerkrade, afdeling Milieu en Bouwen [...] via gemeentehuis@kerkrade.nl",
+          "original_reference": "No matching information",
+          "note": "De originele inhoud bevat geen specifieke contactgegevens voor het indienen van verzoeken, terwijl de bronpagina wel concrete contact- en e-mailinformatie verstrekt.",
+          "source_urls": [
+            "https://www.kerkrade.nl/bodeminformatie-opvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U kunt de aanvraag of melding alleen online doen.",
+          "original_reference": "Vul het aanvraagformulier volledig in en stuur dit met de gevraagde documenten naar de gemeente.",
+          "note": "Er is een tegenstrijdigheid in de aanvraagmethode: de bron stelt dat aanvragen alleen online kunnen, terwijl de originele tekst suggereert dat er ook andere manieren mogelijk zijn.",
+          "source_urls": [
+            "https://www.kerkrade.nl/milieu-vergunning-of-melding"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de aanwezigheid van specifieke openingstijden van de omgevingsbalie, concrete contactgegevens, en een tegenstrijdigheid in de aanvraagmethode. De bronnen bevatten meer gedetailleerde praktische informatie die nuttig is voor aanvragers maar niet in de originele tekst staat. Met name de beperking tot alleen online aanvragen is een belangrijk verschil met de originele tekst."
+  }
+}

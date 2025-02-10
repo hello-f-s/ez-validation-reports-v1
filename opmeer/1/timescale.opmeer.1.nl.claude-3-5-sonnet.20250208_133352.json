@@ -1,0 +1,87 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OPMEER",
+      "contact": {
+        "phone": "(0226) 36 33 33",
+        "email": "gemeente@opmeer.nl",
+        "website": "http://www.opmeer.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Het tarief bedraagt € 451,80 voor het in behandeling nemen van de aanvraag.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Opmeer bedraagt het tarief voor een alcoholwetvergunning € 461,80 (2024), niet € 451,80."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.opmeer.nl/omgevingsvergunning",
+      "https://www.opmeer.nl/exploitatievergunning-horecabedrijf",
+      "https://www.opmeer.nl/alcoholwetvergunning",
+      "https://www.opmeer.nl/geluidsoverlast-veroorzaken"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.opmeer.nl/voorwerp-plaatsen-op-of-aan-de-weg",
+        "reason": "INVALID: Error scraping https://www.opmeer.nl/voorwerp-plaatsen-op-of-aan-de-weg: 404 Client Error: Not Found for url: https://www.opmeer.nl/voorwerp-plaatsen-op-of-aan-de-weg"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Para-commerciële sportverenigingen (waarbij horeca niet de hoofdactiviteit is) zonder terras zijn vrijgesteld van de exploitatievergunningsplicht volgens artikel 2:28 lid 3 van de APV Opmeer",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist deze belangrijke vrijstelling voor sportverenigingen zonder terras",
+          "source_urls": [
+            "https://www.opmeer.nl/exploitatievergunning-horecabedrijf"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U hebt geen Alcoholwetvergunning nodig als u alleen licht alcoholische drank verkoopt die niet ter plaatse gedronken worden en bovendien in gesloten verpakkingen zit, bijvoorbeeld: levensmiddelenbedrijven, supermarkten",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist deze belangrijke uitzondering voor bepaalde verkooppunten van licht alcoholische dranken",
+          "source_urls": [
+            "https://www.opmeer.nl/alcoholwetvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Tevens is de Wet bevordering integriteitsbeoordelingen door het openbaar bestuurd (Wet Bibob) veelal van toepassing. U dient naast uw aanvraag om een Alcoholwetvergunning ook de vragenformulieren Bibob in te dienen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de vereiste Bibob-formulieren bij de aanvraag",
+          "source_urls": [
+            "https://www.opmeer.nl/alcoholwetvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten enkele belangrijke aanvullende bepalingen die niet in de originele tekst staan: een vrijstelling voor para-commerciële sportverenigingen zonder terras, uitzonderingen voor verkoop van licht alcoholische dranken in gesloten verpakkingen, en de verplichting tot het indienen van Bibob-formulieren. Deze informatie is essentieel voor bepaalde doelgroepen en zou in de originele tekst opgenomen moeten worden."
+  }
+}

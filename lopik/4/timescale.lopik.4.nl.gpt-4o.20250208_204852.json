@@ -1,0 +1,92 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LOPIK",
+      "contact": {
+        "phone": "(0348) 55 99 55",
+        "email": "gemeente@lopik.nl",
+        "website": "http://www.lopik.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "Voor een meldingsplichtig evenement dien je het aanvraagformulier 3 weken van tevoren in te sturen.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Lopik moet een melding voor een meldingsplichtig evenement minimaal 4 weken (niet 3 weken) van tevoren worden ingediend."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.lopik.nl/festiviteit-bedrijf-vereniging-of-school",
+      "https://www.lopik.nl/exploitatievergunning-horecabedrijf",
+      "https://www.lopik.nl/kermis-organiseren",
+      "https://www.lopik.nl/milieu-vergunning-of-melding",
+      "https://www.lopik.nl/evenement-organiseren"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.lopik.nl/evenementen-organiseren",
+        "reason": "INVALID: Error scraping https://www.lopik.nl/evenementen-organiseren: 404 Client Error: Not Found for url: https://www.lopik.nl/evenementen-organiseren"
+      },
+      {
+        "url": "https://www.lopik.nl/evenementen-organiseren\">Evenementen",
+        "reason": "INVALID: Error scraping https://www.lopik.nl/evenementen-organiseren\">Evenementen: 404 Client Error: Not Found for url: https://www.lopik.nl/evenementen-organiseren%22%3EEvenementen"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "een meldingsplichtig evenement (A-evenement); een vergunningsplichtig evenement (B/C-evenement)",
+          "original_reference": "meldingsplichtig evenement, en een vergunningsplichtig evenement",
+          "note": "De bronpagina specificeert dat vergunningsplichtige evenementen worden onderverdeeld in B- en C-evenementen, wat niet vermeld wordt in de originele tekst",
+          "source_urls": [
+            "https://www.lopik.nl/evenement-organiseren"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Weet u niet zeker of u wel of niet aan alle voorwaarden voldoet? Stuur dan voor de zekerheid uiterlijk twaalf weken van tevoren uw aanvraagf...",
+          "original_reference": "Voor een meldingsplichtig evenement dien je het aanvraagformulier 3 weken van tevoren in te sturen",
+          "note": "Er is een discrepantie in de aanvraagtermijn voor meldingsplichtige evenementen: de bron adviseert 12 weken bij twijfel, terwijl de originele tekst 3 weken aangeeft",
+          "source_urls": [
+            "https://www.lopik.nl/evenement-organiseren"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "een vergunningsvrij evenement (0-evenement)",
+          "original_reference": "vergunningsvrij evenement",
+          "note": "De bron specificeert dat een vergunningsvrij evenement ook wel een '0-evenement' wordt genoemd, wat extra informatie is die niet in de originele tekst staat",
+          "source_urls": [
+            "https://www.lopik.nl/evenement-organiseren"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de categorisering van evenementen (toevoeging van B/C-classificatie voor vergunningsplichtige evenementen), een discrepantie in de aanvraagtermijnen voor meldingsplichtige evenementen, en extra terminologie (0-evenement). De kernvoorwaarden blijven wel gelijk, maar de bronpagina biedt meer specifieke details en nuances."
+  }
+}

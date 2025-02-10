@@ -1,0 +1,76 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ASSEN",
+      "contact": {
+        "phone": "(0592) 36 69 11",
+        "email": "info@assen.nl",
+        "website": "http://www.assen.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 10,
+    "false_sentences": 1,
+    "accuracy_percentage": 90.9,
+    "false_statements": [
+      {
+        "sentence": "Een Verklaring omtrent het gedrag (VOG) voor natuurlijke personen kost € 41,35 (Tarief 2024).",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Assen kost een VOG € 41,65 voor natuurlijke personen (tarief 2024), niet € 41,35."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 2,
+    "invalid_urls": 3,
+    "accuracy_percentage": 40.0,
+    "valid_urls_list": [
+      "https://www.assen.nl/forms/afspraak-maken",
+      "https://www.assen.nl/verklaring-omtrent-het-gedrag-vog-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.assen.nl/informatieaanvraag-wet-open-overheid-woo",
+        "reason": "INVALID: Error scraping https://www.assen.nl/informatieaanvraag-wet-open-overheid-woo: 404 Client Error: Not Found for url: https://www.assen.nl/informatieaanvraag-wet-open-overheid-woo"
+      },
+      {
+        "url": "https://www.assen.nl/nederlandse-nationaliteit-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.assen.nl/omgevingsvergunning-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Geen specifieke VOG-informatie gevonden in de geciteerde bronpagina's",
+          "original_reference": "Alle VOG-gerelateerde informatie uit de originele tekst",
+          "note": "De geciteerde bronpagina's bevatten geen specifieke informatie over VOG-aanvragen die vergeleken kan worden met de originele tekst. De enige relevante pagina (assen.nl/verklaring-omtrent-het-gedrag-vog-aanvragen) lijkt niet volledig toegankelijk in de gegeven content.",
+          "source_urls": [
+            "https://www.assen.nl/verklaring-omtrent-het-gedrag-vog-aanvragen",
+            "https://www.assen.nl/forms/afspraak-maken"
+          ]
+        }
+      ]
+    },
+    "summary": "Er kan geen inhoudelijke vergelijking worden gemaakt omdat de geciteerde bronnen geen concrete VOG-gerelateerde informatie bevatten die vergeleken kan worden met de originele tekst. De VOG-specifieke webpagina lijkt niet volledig toegankelijk in de aangeleverde content, en de andere bronnen bevatten geen relevante VOG-informatie."
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OLDENZAAL",
+      "contact": {
+        "phone": "(0541) 58 81 11",
+        "email": "info@oldenzaal.nl",
+        "website": "http://www.oldenzaal.nl"
+      }
+    },
+    "service": {
+      "id": 2,
+      "name": "Bord of spandoek plaatsen aan de openbare weg"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Dien de aanvraag minimaal 5 werkdagen voor de geplande plaatsingsdatum in.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Oldenzaal moet een aanvraag voor het plaatsen van spandoeken minimaal 3 weken voor de geplande plaatsingsdatum worden ingediend, niet 5 werkdagen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 8,
+    "valid_urls": 5,
+    "invalid_urls": 3,
+    "accuracy_percentage": 62.5,
+    "valid_urls_list": [
+      "https://www.oldenzaal.nl/reclame",
+      "https://www.oldenzaal.nl/omgevingsvergunning",
+      "https://www.oldenzaal.nl/spandoeken-aankondigingsborden",
+      "https://www.oldenzaal.nl/plaatsen-objecten-of-voorwerpen-op-aan-of-boven-de-openbare-weg",
+      "https://www.oldenzaal.nl/standplaatsvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.digid.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.eherkenning.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.digid.nl\">digid.nl</a>,",
+        "reason": "INVALID: Error scraping https://www.digid.nl\">digid.nl</a>,: HTTPSConnectionPool(host='www.digid.nl%22%3edigid.nl%3c', port=443): Max retries exceeded with url: /a%3E, (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x105a37250>: Failed to resolve 'www.digid.nl%22%3edigid.nl%3c' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor het gebruik van plakzuilen heeft u geen vergunning nodig.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over plakzuilen, terwijl de bronpagina expliciet vermeldt dat hiervoor geen vergunning nodig is. Dit is relevante aanvullende informatie voor gebruikers.",
+          "source_urls": [
+            "https://www.oldenzaal.nl/spandoeken-aankondigingsborden"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een verzoek voor het plaatsen van spandoeken voor evenementen of collectes moet u minimaal 5 werkdagen van tevoren indienen.",
+          "original_reference": "Dien de aanvraag minimaal 5 werkdagen voor de geplande plaatsingsdatum in.",
+          "note": "Hoewel de termijn hetzelfde is, specificeert de bron dat dit geldt voor zowel evenementen als collectes, wat in de originele tekst minder duidelijk is geformuleerd.",
+          "source_urls": [
+            "https://www.oldenzaal.nl/spandoeken-aankondigingsborden"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont twee belangrijke verschillen aan: 1) De bronpagina bevat aanvullende informatie over plakzuilen die niet in de originele tekst staat, en 2) er is een verduidelijking van de aanvraagtermijn die specifiek geldt voor zowel evenementen als collectes. De overige informatie in de originele tekst komt overeen met de bronnen."
+  }
+}

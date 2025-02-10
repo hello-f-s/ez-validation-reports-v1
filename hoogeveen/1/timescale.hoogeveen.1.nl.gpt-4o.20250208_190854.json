@@ -1,0 +1,94 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HOOGEVEEN",
+      "contact": {
+        "phone": "14 0528",
+        "email": "info@hoogeveen.nl",
+        "website": "http://www.hoogeveen.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 15,
+    "false_sentences": 2,
+    "accuracy_percentage": 88.2,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor een alcoholvergunning zijn € 378,75.",
+        "status": "false",
+        "note": "De actuele legeskosten voor een alcoholvergunning in Hoogeveen bedragen € 392,70 volgens de meest recente legesverordening."
+      },
+      {
+        "sentence": "Voor het wijzigen van de vergunning bij nieuwe leidinggevenden of verbouwing bedragen de kosten € 151,40.",
+        "status": "false",
+        "note": "De actuele kosten voor het wijzigen van de alcoholvergunning in Hoogeveen bedragen € 157,10 volgens de meest recente legesverordening."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 6,
+    "invalid_urls": 1,
+    "accuracy_percentage": 85.7,
+    "valid_urls_list": [
+      "https://www.hoogeveen.nl",
+      "https://www.hoogeveen.nl/veelgestelde-vragen-coffeeshop",
+      "https://www.hoogeveen.nl/raad-en-college/woo-verzoek",
+      "https://www.hoogeveen.nl/vergunningen/omgevingsvergunningen",
+      "https://www.hoogeveen.nl/vergunningen/drank-schenken-bij-een-evenement",
+      "https://www.hoogeveen.nl/vergunningen/alcoholvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.hoogeveen.nl\">Gemeente",
+        "reason": "INVALID: Error scraping https://www.hoogeveen.nl\">Gemeente: HTTPSConnectionPool(host='www.hoogeveen.nl%22%3egemeente', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1077ab390>: Failed to resolve 'www.hoogeveen.nl%22%3egemeente' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De kosten voor een tijdelijke ontheffing voor het schenken of verkopen van zwak-alcoholische dranken zijn € 90,95.",
+          "original_reference": "De kosten voor een alcoholvergunning zijn € 378,75.",
+          "note": "Er wordt een onderscheid gemaakt tussen een reguliere alcoholvergunning (€378,75) en een tijdelijke ontheffing voor evenementen (€90,95). Dit is een belangrijk prijsverschil voor verschillende soorten vergunningen.",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/drank-schenken-bij-een-evenement"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Om een alcoholvergunning te krijgen, moet uw pand voldoen aan de inrichtingseisen uit de Alcoholwet. Dit houdt bijvoorbeeld in dat een horecabedrijf minstens 35 m2 moet zijn en een slijterij minstens 15 m2",
+          "original_reference": "Het pand moet voldoen aan de inrichtingseisen uit de Alcoholwet.",
+          "note": "De bronpagina specificeert concrete minimale oppervlakte-eisen (35m2 voor horeca, 15m2 voor slijterij) die niet vermeld staan in de originele tekst.",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/alcoholvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Eigenaar en leidinggevenden moeten 21 jaar of ouder zijn en van onbesproken gedrag zijn. Dat houdt in dat u geen strafblad hebt en niet onder curatele staat",
+          "original_reference": "Eigenaars en leidinggevenden moeten 21 jaar of ouder zijn en van onbesproken gedrag.",
+          "note": "De bronpagina geeft een specifiekere definitie van 'onbesproken gedrag' door te vermelden dat dit betekent geen strafblad hebben en niet onder curatele staan.",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/alcoholvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de specificatie van concrete oppervlakte-eisen voor panden, een duidelijkere definitie van 'onbesproken gedrag', en het onderscheid in kosten tussen reguliere vergunningen en tijdelijke ontheffingen. De bronpagina's bieden meer specifieke details die nuttig zijn voor aanvragers maar niet in de originele tekst zijn opgenomen."
+  }
+}

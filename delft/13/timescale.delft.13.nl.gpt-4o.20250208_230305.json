@@ -1,0 +1,105 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DELFT",
+      "contact": {
+        "phone": "14 015",
+        "email": "null",
+        "website": "http://www.delft.nl"
+      }
+    },
+    "service": {
+      "id": 13,
+      "name": "Omzettingsvergunning voor kamerverhuur aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "Er bestaat de mogelijkheid dat de gemeente deze periode eenmalig verlengt met 6 weken.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Delft kan de beslistermijn voor een reguliere procedure met maximaal 6 weken worden verlengd, maar voor een uitgebreide procedure geldt een verlengingsmogelijkheid van maximaal 6 maanden, niet 6 weken zoals vermeld."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 8,
+    "valid_urls": 5,
+    "invalid_urls": 3,
+    "accuracy_percentage": 62.5,
+    "valid_urls_list": [
+      "https://www.delft.nl/omgevingsvergunning-bouwen",
+      "https://www.delft.nl/omgevingsvergunning-voor-aanleg",
+      "https://www.delft.nl/omgevingsvergunning-aanvragen",
+      "https://www.delft.nl/omgevingsvergunning-milieu",
+      "https://www.delft.nl/uw-plan-voorleggen-aan-de-gemeente"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.delft.nl/omgevingsvergunning-milieu\">Gemeente",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.delft.nl/omgevingsvergunning-voor-aanleg\">Gemeente",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.delft.nl/omgevingsvergunning-bouwen\">Gemeente",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 4,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De omgevingsvergunning bouwen bestaat uit 2 delen: Ruimtelijk deel en Bouwtechnische deel. [...] U heeft een kwaliteitsborger nodig die dit voor u controleert.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over de twee delen van de omgevingsvergunning bouwen en de vereiste kwaliteitsborger.",
+          "source_urls": [
+            "https://www.delft.nl/omgevingsvergunning-bouwen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Melding: 4 weken, Gewone omgevingsvergunning: 8 weken, Uitgebreide omgevingsvergunning: 6 maanden",
+          "original_reference": "Gewone omgevingsvergunning: 8 weken, Uitgebreide omgevingsvergunning: 6 maanden",
+          "note": "De originele tekst mist de meldingstermijn van 4 weken als aparte categorie.",
+          "source_urls": [
+            "https://www.delft.nl/omgevingsvergunning-milieu"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Er zijn geen kosten.",
+          "original_reference": "De kosten voor een omgevingsvergunning hangen af van de aard van de vergunning en de bouwkosten.",
+          "note": "Er is een tegenstrijdigheid in de kostenstructuur. De bron vermeldt expliciet dat er geen kosten zijn voor milieuvergunningen, terwijl de originele tekst spreekt over variabele kosten.",
+          "source_urls": [
+            "https://www.delft.nl/omgevingsvergunning-milieu"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Verwijder persoonsgegevens uit bijlagen. De gemeente publiceert alle bijlagen bij de aanvraag van een omgevingsvergunning online.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over het verwijderen van persoonsgegevens uit bijlagen voordat deze worden ingediend.",
+          "source_urls": [
+            "https://www.delft.nl/omgevingsvergunning-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn verschillende belangrijke verschillen gevonden tussen de originele tekst en de bronnen. De originele tekst mist essentiële informatie over de tweedeling van de omgevingsvergunning bouwen, de rol van een kwaliteitsborger, en de behandeling van persoonsgegevens. Ook is er een tegenstrijdigheid in de kostenstructuur en ontbreekt informatie over de meldingstermijn van 4 weken. Deze verschillen hebben significante impact op de volledigheid en accuraatheid van de informatievoorziening."
+  }
+}

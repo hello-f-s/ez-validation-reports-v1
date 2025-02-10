@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HOOGEVEEN",
+      "contact": {
+        "phone": "14 0528",
+        "email": "info@hoogeveen.nl",
+        "website": "http://www.hoogeveen.nl"
+      }
+    },
+    "service": {
+      "id": 2,
+      "name": "Bord of spandoek plaatsen aan de openbare weg"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "Toestemming voor het plaatsen van evenementenborden kost € 36,55.",
+        "status": "false",
+        "note": "Het actuele tarief voor het plaatsen van evenementenborden in Hoogeveen is € 37,65 (2024). Het genoemde bedrag van € 36,55 is verouderd."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.hoogeveen.nl/vergunningen/vergunning-gebruik-gemeentegrond",
+      "https://www.hoogeveen.nl/vergunningen/evenementenborden",
+      "https://www.hoogeveen.nl/vergunningen/standplaatsvergunning",
+      "https://www.hoogeveen.nl/vergunningen/omgevingsvergunningen",
+      "https://www.hoogeveen.nl/raad-en-college/woo-verzoek"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.hoogeveen.nl).</p>",
+        "reason": "INVALID: Error scraping https://www.hoogeveen.nl).</p>: HTTPSConnectionPool(host='www.hoogeveen.nl).%3c', port=443): Max retries exceeded with url: /p%3E (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x11114efd0>: Failed to resolve 'www.hoogeveen.nl).%3c' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Toestemming evenementenborden plaatsen: € 37,60",
+          "original_reference": "Toestemming voor het plaatsen van evenementenborden kost € 36,55",
+          "note": "Het bedrag voor toestemming evenementenborden verschilt: in de originele tekst staat €36,55, terwijl de actuele prijs €37,60 is",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/evenementenborden"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "U moet de borden uiterlijk 24 uur na het evenement weghalen",
+          "original_reference": "U moet de borden uiterlijk 24 uur na het evenement weghalen",
+          "note": "De termijn voor het weghalen van de borden is in beide bronnen hetzelfde",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/evenementenborden"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "U mag evenementenborden plaatsen vanaf 14 dagen voor de start van het evenement",
+          "original_reference": "U mag evenementenborden plaatsen vanaf 14 dagen voor de start van het evenement",
+          "note": "De plaatsingstermijn voorafgaand aan het evenement is in beide bronnen hetzelfde",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/evenementenborden"
+          ]
+        }
+      ]
+    },
+    "summary": "Er is slechts één significant verschil gevonden tussen de originele inhoud en de bronnen: het tarief voor het plaatsen van evenementenborden. De actuele prijs is €37,60 in plaats van €36,55. Alle andere voorwaarden en bepalingen komen overeen met de originele inhoud."
+  }
+}

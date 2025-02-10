@@ -1,0 +1,81 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HAARLEMMERMEER",
+      "contact": {
+        "phone": "(0900) 18 52",
+        "email": "info@haarlemmermeer.nl",
+        "website": "http://www.haarlemmermeer.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "Het behandelen van een aanvraag terrasvergunning kost € 186,65.",
+        "status": "false",
+        "note": "Het actuele tarief voor een terrasvergunning in gemeente Haarlemmermeer is € 191,30 (2024). Het genoemde bedrag van € 186,65 is verouderd."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 3,
+    "invalid_urls": 2,
+    "accuracy_percentage": 60.0,
+    "valid_urls_list": [
+      "https://haarlemmermeergemeente.nl/standplaatsvergunning",
+      "https://haarlemmermeergemeente.nl/terrasvergunning",
+      "https://haarlemmermeergemeente.nl/exploitatievergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://haarlemmermeergemeente.nl/dakterras",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://haarlemmermeergemeente.nl/toelichting-aanvraagformulier-exploitatievergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u de meubels buiten laat staan, maak ze dan aan elkaar vast zodat het niet kan worden verplaatst.",
+          "original_reference": "Na sluiting ruimt u het terras op of stelt het buiten gebruik",
+          "note": "De bronpagina geeft een specifieke aanvullende instructie over het vastmaken van meubels als deze buiten blijven staan, wat niet vermeld wordt in de originele tekst.",
+          "source_urls": [
+            "https://haarlemmermeergemeente.nl/terrasvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Ontstaat er door het terras toch schade aan de openbare weg, dan betaalt u de kosten voor herstel.",
+          "original_reference": "Het (gebruik van het) terras brengt geen schade toe aan de openbare weg",
+          "note": "De bronpagina specificeert expliciet dat eventuele herstelkosten voor rekening van de vergunninghouder komen, wat niet vermeld wordt in de originele tekst.",
+          "source_urls": [
+            "https://haarlemmermeergemeente.nl/terrasvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten twee belangrijke aanvullende specificaties die niet in de originele tekst staan: een verplichting om terrasmeubilair vast te maken als het buiten blijft staan en een expliciete vermelding dat eventuele herstelkosten van schade aan de openbare weg voor rekening van de vergunninghouder komen. Deze details zijn relevant voor terrasvergunninghouders maar ontbreken in de originele tekst."
+  }
+}

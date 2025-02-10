@@ -1,0 +1,87 @@
+{
+  "context": {
+    "municipality": {
+      "name": "NIJMEGEN",
+      "contact": {
+        "phone": "14 024",
+        "email": "gemeente@nijmegen.nl",
+        "website": "http://www.nijmegen.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Er mogen geen andere activiteiten zoals een bowlingcentrum of biljartcentrum in het horecabedrijf plaatsvinden.",
+        "status": "false",
+        "note": "Deze bewering is onjuist. Er staat nergens in de officiële bronnen van de gemeente Nijmegen vermeld dat een horecabedrijf met kansspelautomaten geen andere activiteiten zoals bowlen of biljarten mag aanbieden. Dit is geen voorwaarde voor het verkrijgen van een aanwezigheidsvergunning voor kansspelautomaten."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.nijmegen.nl/diensten/vergunningen/drank-en-horeca/vergunning-kansspelautomaten/",
+      "https://www.nijmegen.nl/diensten/vergunningen/drank-en-horeca/alcoholvergunning/",
+      "https://www.nijmegen.nl/diensten/vergunningen/kansspel-melden-loterijvergunning-aanvragen/",
+      "https://www.nijmegen.nl/diensten/evenementen/schema-vergunningen-activiteiten/tekstversie/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.nijmegen.nl/diensten/vergunningen/informatiekraam-melden-of-vergunning/",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Andere horecabedrijven zoals snackbars, kantines, lunchrooms en ijssalons mogen geen kansspelautomaat hebben.",
+          "original_reference": "Alleen horecabedrijven en speelautomatenhallen kunnen een aanwezigheidsvergunning krijgen.",
+          "note": "De brontekst specificeert expliciet welke type horecabedrijven geen kansspelautomaten mogen hebben, terwijl de originele tekst alleen algemeen spreekt over 'horecabedrijven'.",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/vergunningen/drank-en-horeca/vergunning-kansspelautomaten/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U moet weer een nieuwe vergunning aanvragen als de automaat een andere eigenaar krijgt of als het aantal automaten in het bedrijf verandert.",
+          "original_reference": "No matching information",
+          "note": "Deze belangrijke voorwaarde voor het opnieuw aanvragen van een vergunning ontbreekt volledig in de originele tekst.",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/vergunningen/drank-en-horeca/vergunning-kansspelautomaten/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor een kansspelautomaat, bijvoorbeeld een fruitautomaat heeft u een aanwezigheidsvergunning nodig; voor een behendigheidsautomaat, bijvoorbeeld een flipperkast is dit niet nodig.",
+          "original_reference": "No matching information",
+          "note": "Het onderscheid tussen kansspelautomaten en behendigheidsautomaten en de bijbehorende vergunningsvereisten ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/vergunningen/drank-en-horeca/vergunning-kansspelautomaten/"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie die niet in de originele tekst staat, waaronder specifieke uitsluitingen voor bepaalde horecabedrijven, voorwaarden voor het opnieuw aanvragen van een vergunning, en het onderscheid tussen kansspel- en behendigheidsautomaten. Deze informatie is essentieel voor een volledig begrip van de vergunningsvereisten."
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MIDDEN-DRENTHE",
+      "contact": {
+        "phone": "(0593) 53 92 22",
+        "email": "gemeente@middendrenthe.nl",
+        "website": "http://www.middendrenthe.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 14,
+    "false_sentences": 3,
+    "accuracy_percentage": 82.4,
+    "false_statements": [
+      {
+        "sentence": "Omgevingsvergunning (bouwactiviteit, technisch deel) kost minimaal € 116,50.",
+        "status": "false",
+        "note": "Volgens de legesverordening van gemeente Midden-Drenthe is het minimale tarief voor een bouwactiviteit anders. Dit bedrag is niet actueel."
+      },
+      {
+        "sentence": "Omgevingsplanactiviteit kost 1,81% van de bouwsom, met een minimum van € 145,60.",
+        "status": "false",
+        "note": "Dit percentage en minimumbedrag komen niet overeen met de actuele legestarieven van gemeente Midden-Drenthe."
+      },
+      {
+        "sentence": "Vooroverleg kost minimaal € 162,80.",
+        "status": "false",
+        "note": "Het tarief voor vooroverleg in gemeente Midden-Drenthe is anders vastgesteld in de huidige legesverordening. Dit bedrag is niet actueel."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 9,
+    "valid_urls": 0,
+    "invalid_urls": 9,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://Omgevingswet.overheid.nl\">Omgevingswet.overheid.nl</a>.</p>",
+        "reason": "INVALID: Error scraping https://Omgevingswet.overheid.nl\">Omgevingswet.overheid.nl</a>.</p>: HTTPSConnectionPool(host='omgevingswet.overheid.nl%22%3eomgevingswet.overheid.nl%3c', port=443): Max retries exceeded with url: /a%3E.%3C/p%3E (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106fcf770>: Failed to resolve 'omgevingswet.overheid.nl%22%3eomgevingswet.overheid.nl%3c' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://Omgevingswet.overheid.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://Omgevingswet.overheid.nl\">Omgevingswet.overheid.nl</a>.</li>",
+        "reason": "INVALID: Error scraping https://Omgevingswet.overheid.nl\">Omgevingswet.overheid.nl</a>.</li>: HTTPSConnectionPool(host='omgevingswet.overheid.nl%22%3eomgevingswet.overheid.nl%3c', port=443): Max retries exceeded with url: /a%3E.%3C/li%3E (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x107584690>: Failed to resolve 'omgevingswet.overheid.nl%22%3eomgevingswet.overheid.nl%3c' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://metadata.url.from.the.source)",
+        "reason": "INVALID: Error scraping https://metadata.url.from.the.source): HTTPSConnectionPool(host='metadata.url.from.the.source)', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x107584910>: Failed to resolve 'metadata.url.from.the.source)' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.middendrenthe.nl/vergunningen-ontheffingen/reclamebord-plaatsen",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.middendrenthe.nl/bouwen-wonen/omgevingsplan",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.middendrenthe.nl/bouwen-wonen/vooroverleg-aanvragen",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.middendrenthe.nl/bouwen-wonen/bouwen-of-verbouwen",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.middendrenthe.nl/bouwen-wonen",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  }
+}

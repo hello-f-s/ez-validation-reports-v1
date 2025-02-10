@@ -1,0 +1,63 @@
+{
+  "context": {
+    "municipality": {
+      "name": "NEDER-BETUWE",
+      "contact": {
+        "phone": "0140488",
+        "email": "info@nederbetuwe.nl",
+        "website": "http://www.nederbetuwe.nl"
+      }
+    },
+    "service": {
+      "id": 2,
+      "name": "Bord of spandoek plaatsen aan de openbare weg"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 9,
+    "true_sentences": 8,
+    "false_sentences": 1,
+    "accuracy_percentage": 88.9,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor een vergunning bedragen € 184,81 volgens de leges voor 2024.",
+        "status": "false",
+        "note": "Het exacte bedrag van € 184,81 kan niet worden geverifieerd op de officiële website van gemeente Neder-Betuwe. De actuele legeskosten worden niet specifiek vermeld op de website."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 0,
+    "invalid_urls": 5,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.nederbetuwe.nl/en/ondernemen/wetten-regels-en-vergunningen/reclame-in-neder-betuwe",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.nederbetuwe.nl/en/ondernemen/wetten-regels-en-vergunningen/spandoek-plaatsen",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://nederbetuwe.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.nederbetuwe.nl/en/ondernemen/wetten-regels-en-vergunningen/standplaatsen-informatie",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://nederbetuwe.nl\">Gemeente",
+        "reason": "INVALID: Error scraping https://nederbetuwe.nl\">Gemeente: HTTPSConnectionPool(host='nederbetuwe.nl%22%3egemeente', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1074ced50>: Failed to resolve 'nederbetuwe.nl%22%3egemeente' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  }
+}

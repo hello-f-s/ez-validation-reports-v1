@@ -1,0 +1,76 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DEN HELDER",
+      "contact": {
+        "phone": "null",
+        "email": "info@denhelder.nl",
+        "website": "http://www.denhelder.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 9,
+    "false_sentences": 2,
+    "accuracy_percentage": 81.8,
+    "false_statements": [
+      {
+        "sentence": "Een evenement melden is voldoende als het minder dan 75 mensen betreft, tussen 07.00 en 23.00 uur gehouden wordt, niet op wegen, fietspaden of parkeerplaatsen plaatsvindt, en als brandweer, ambulance en politie vrije doorgang hebben.",
+        "status": "false",
+        "note": "Volgens de gemeente Den Helder geldt een melding voor evenementen met minder dan 100 personen (niet 75)"
+      },
+      {
+        "sentence": "Er mogen objecten zijn die kleiner zijn dan 10 m² en er moet een organisator aanwezig zijn.",
+        "status": "false",
+        "note": "Volgens de gemeente Den Helder mogen objecten niet groter zijn dan 25 m² (niet 10 m²)"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 0,
+    "invalid_urls": 7,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.denhelder.nl/Onderwerpen/Evenementen_en_feesten",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://gemeente.denhelder.nl",
+        "reason": "INVALID: Error scraping https://gemeente.denhelder.nl: HTTPSConnectionPool(host='gemeente.denhelder.nl', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x103f4f390>: Failed to resolve 'gemeente.denhelder.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.denhelder.nl/Onderwerpen/Evenementen_en_feesten/Een_horecabedrijf_starten/Exploitatievergunning",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.denhelder.nl/Onderwerpen/Evenementen_en_feesten/Klein_evenement_melden",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.denhelder.nl/Onderwerpen/Evenementen_en_feesten/Evenement_organiseren",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://gemeente.denhelder.nl\">Gemeente",
+        "reason": "INVALID: Error scraping https://gemeente.denhelder.nl\">Gemeente: HTTPSConnectionPool(host='gemeente.denhelder.nl%22%3egemeente', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x103f4f4d0>: Failed to resolve 'gemeente.denhelder.nl%22%3egemeente' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.denhelder.nl/Onderwerpen/Evenementen_en_feesten/Een_horecabedrijf_starten",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  }
+}

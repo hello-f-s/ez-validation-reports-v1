@@ -1,0 +1,95 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ERMELO",
+      "contact": {
+        "phone": "(0341) 56 73 21",
+        "email": "gemeente@ermelo.nl",
+        "website": "http://www.ermelo.nl"
+      }
+    },
+    "service": {
+      "id": 7,
+      "name": "Kabels en leidingen aanleggen en beheren"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 17,
+    "false_sentences": 2,
+    "accuracy_percentage": 89.5,
+    "false_statements": [
+      {
+        "sentence": "Melding spoedeisende werkzaamheden kost €215,55.",
+        "status": "false",
+        "note": "Dit bedrag is niet correct volgens de actuele legesverordening van gemeente Ermelo. Het juiste bedrag is niet publiekelijk vermeld op de website."
+      },
+      {
+        "sentence": "Aanvraag instemmingsbesluit kost €602,60.",
+        "status": "false",
+        "note": "Dit bedrag is niet correct volgens de actuele legesverordening van gemeente Ermelo. Het juiste bedrag is niet publiekelijk vermeld op de website."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 3,
+    "invalid_urls": 4,
+    "accuracy_percentage": 42.9,
+    "valid_urls_list": [
+      "https://www.ermelo.nl/kabels-en-leidingen-leggen-in-openbare-grond",
+      "https://www.ermelo.nl/graafmelding",
+      "https://www.ermelo.nl/omgevingsplein/bouwen-en-verbouwen/start-controle-en-gereedmelding-bouw"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.gemeente-ermelo.nl/kabels-en-leidingen-leggen-in-openbare-grond</li>",
+        "reason": "INVALID: Error scraping https://www.gemeente-ermelo.nl/kabels-en-leidingen-leggen-in-openbare-grond</li>: HTTPSConnectionPool(host='www.gemeente-ermelo.nl', port=443): Max retries exceeded with url: /kabels-en-leidingen-leggen-in-openbare-grond%3C/li%3E (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1062647d0>: Failed to resolve 'www.gemeente-ermelo.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.gemeente-ermelo.nl/graafmelding</li>",
+        "reason": "INVALID: Error scraping https://www.gemeente-ermelo.nl/graafmelding</li>: HTTPSConnectionPool(host='www.gemeente-ermelo.nl', port=443): Max retries exceeded with url: /graafmelding%3C/li%3E (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1060a7ed0>: Failed to resolve 'www.gemeente-ermelo.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.ermelo.nl/omgevingsplein/zie-ook",
+        "reason": "INVALID: Error scraping https://www.ermelo.nl/omgevingsplein/zie-ook: 404 Client Error: Not Found for url: https://www.ermelo.nl/omgevingsplein/zie-ook"
+      },
+      {
+        "url": "https://www.ermelo.nl/omgevingsplein/omgevingsloket/contact-over-bouwen-en-verbouwen",
+        "reason": "INVALID: Error scraping https://www.ermelo.nl/omgevingsplein/omgevingsloket/contact-over-bouwen-en-verbouwen: 404 Client Error: Not Found for url: https://www.ermelo.nl/omgevingsplein/omgevingsloket/contact-over-bouwen-en-verbouwen"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Melding spoedeisende werkzaamheden € 220, Aanvraag instemmingsbesluit € 616, Verhoging leges overleg nutsbedrijven en overheden € 409",
+          "original_reference": "Melding spoedeisende werkzaamheden kost €215,55, Aanvraag instemmingsbesluit kost €602,60, Verhoging leges overleg nutsbedrijven en overheden kost €400,00",
+          "note": "De kosten in de bronnen zijn hoger dan in de originele tekst. Het verschil is respectievelijk €4,45, €13,40 en €9 meer.",
+          "source_urls": [
+            "https://www.ermelo.nl/kabels-en-leidingen-leggen-in-openbare-grond"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "U moet altijd een KLIC-melding doen bij het Kadaster voordat u begint.",
+          "original_reference": "U moet altijd een KLIC-melding doen bij het Kadaster voordat u begint.",
+          "note": "De KLIC-meldingsplicht wordt consistent vermeld in beide bronnen.",
+          "source_urls": [
+            "https://www.ermelo.nl/kabels-en-leidingen-leggen-in-openbare-grond",
+            "https://www.ermelo.nl/graafmelding"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de tarieven, die in de actuele bronnen iets hoger liggen dan in de originele tekst. De overige informatie zoals procedures, voorwaarden en vereisten komt grotendeels overeen. Er zijn geen significante procedurele verschillen of tegenstrijdigheden gevonden in de werkwijze of vereisten."
+  }
+}

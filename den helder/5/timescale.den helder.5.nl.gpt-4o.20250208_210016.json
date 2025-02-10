@@ -1,0 +1,91 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DEN HELDER",
+      "contact": {
+        "phone": "null",
+        "email": "info@denhelder.nl",
+        "website": "http://www.denhelder.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 8,
+    "true_sentences": 3,
+    "false_sentences": 5,
+    "accuracy_percentage": 37.5,
+    "false_statements": [
+      {
+        "sentence": "De specifieke documenten of informatie die nodig zijn voor de aanvraag worden niet vermeld op de website van de gemeente Den Helder.",
+        "status": "false",
+        "note": "De website van Den Helder vermeldt wel degelijk de benodigde documenten, waaronder een volledig ingevuld aanvraagformulier, een geldig legitimatiebewijs, en een Verklaring Sociale Hygiëne."
+      },
+      {
+        "sentence": "Na uw aanvraag neemt de gemeente contact met u op.",
+        "status": "false",
+        "note": "Dit staat niet vermeld op de website van de gemeente Den Helder. De gemeente neemt niet standaard contact op na een aanvraag."
+      },
+      {
+        "sentence": "Er is geen specifieke informatie over de kosten of betaalmethoden voor het aanvragen van een exploitatievergunning vermeld op de website van de gemeente Den Helder.",
+        "status": "false",
+        "note": "De website vermeldt wel de legeskosten voor een exploitatievergunning volgens de actuele legesverordening."
+      },
+      {
+        "sentence": "Binnen 8 weken na de aanvraag ontvangt u een brief (beschikking) waarin staat of de vergunning wordt verleend.",
+        "status": "false",
+        "note": "De behandeltermijn is volgens de website maximaal 12 weken, niet 8 weken."
+      },
+      {
+        "sentence": "De website van de gemeente Den Helder vermeldt geen specifieke informatie over de procedure voor het indienen van bezwaren tegen het besluit over een exploitatievergunning.",
+        "status": "false",
+        "note": "De website bevat wel informatie over de bezwaarprocedure, inclusief de termijn van 6 weken om bezwaar in te dienen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 0,
+    "invalid_urls": 7,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.denhelder.nl/Onderwerpen/Evenementen_en_feesten/Een_horecabedrijf_starten",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.denhelder.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.denhelder.nl/Onderwerpen/Wonen_en_omgeving/Kopen_en_huren/Kamerverhuur",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.denhelder.nl/Onderwerpen/Evenementen_en_feesten/Een_horecabedrijf_starten/Exploitatievergunning",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.denhelder.nl/Zoekresultaten_oud?freetext=&searchbase=110&sp=H4sIAAAAAAAAAKtWystPSc3JT04syczPQ2YrWSlVxyiVxChZxShVGRY4VjmaBwV6G5VmuppkVniFe6YG2trGKOnEKKXlgdUg6wWLZ6ZgiGOoKcgFqklLzClOrVXSUSpOTSxKzkhKLE4FWm5oZAAXKkrMSweLGSjVAgDy8nVNsgAAAA==&",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.denhelder.nl/Onderwerpen/Evenementen_en_feesten",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.denhelder.nl\">Gemeente",
+        "reason": "INVALID: Error scraping https://www.denhelder.nl\">Gemeente: HTTPSConnectionPool(host='www.denhelder.nl%22%3egemeente', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10694e490>: Failed to resolve 'www.denhelder.nl%22%3egemeente' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  }
+}

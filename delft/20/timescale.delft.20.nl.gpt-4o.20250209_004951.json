@@ -1,0 +1,89 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DELFT",
+      "contact": {
+        "phone": "14 015",
+        "email": "null",
+        "website": "http://www.delft.nl"
+      }
+    },
+    "service": {
+      "id": 20,
+      "name": "Vergunning voor seksbedrijf"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 9,
+    "true_sentences": 8,
+    "false_sentences": 1,
+    "accuracy_percentage": 88.9,
+    "false_statements": [
+      {
+        "sentence": "Voor het jaar 2024 bedragen de kosten voor een vergunning € 1.034,45.",
+        "status": "false",
+        "note": "Het exacte bedrag voor 2024 is niet publiekelijk vermeld op de officiële website van gemeente Delft. De genoemde kosten kunnen niet geverifieerd worden tegen officiële bronnen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 6,
+    "invalid_urls": 1,
+    "accuracy_percentage": 85.7,
+    "valid_urls_list": [
+      "https://www.delft.nl/omgevingsvergunning-milieu",
+      "https://www.delft.nl/alcoholwetvergunning",
+      "https://www.delft.nl/exploitatievergunning-coffeeshops",
+      "https://www.delft.nl/vergunning-seksinrichting-escortbedrijf",
+      "https://www.delft.nl/omgevingsvergunning-aanvragen",
+      "https://www.delft.nl/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.delft.nl/\">Gemeente",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Kosten 2025 Vergunning € 1.063,40",
+          "original_reference": "Voor het jaar 2024 bedragen de kosten voor een vergunning € 1.034,45",
+          "note": "De tarieven verschillen omdat ze voor verschillende jaren gelden. De bron vermeldt het tarief voor 2025 terwijl de originele tekst het tarief voor 2024 noemt.",
+          "source_urls": [
+            "https://www.delft.nl/vergunning-seksinrichting-escortbedrijf"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een vergunning is 1 jaar geldig. U vraagt de vergunning ieder jaar opnieuw aan.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat de vergunning slechts 1 jaar geldig is en jaarlijks moet worden vernieuwd. Dit is belangrijke aanvullende informatie voor aanvragers.",
+          "source_urls": [
+            "https://www.delft.nl/vergunning-seksinrichting-escortbedrijf"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Is uw aanvraag compleet? Dan handelt de gemeente uw aanvraag binnen 12 weken af. De gemeente kan deze periode met 12 weken verlengen.",
+          "original_reference": "Als uw aanvraag compleet is, handelt de gemeente uw aanvraag binnen 12 weken af. Deze periode kan met nog eens 12 weken worden verlengd indien nodig.",
+          "note": "De behandeltermijn en mogelijke verlenging komen exact overeen in beide bronnen.",
+          "source_urls": [
+            "https://www.delft.nl/vergunning-seksinrichting-escortbedrijf"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen het tarief (2024 vs 2025) en aanvullende informatie over de geldigheidsduur van de vergunning. De originele tekst mist de belangrijke informatie dat de vergunning jaarlijks moet worden vernieuwd. De procedures en termijnen komen verder overeen."
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HOOGEVEEN",
+      "contact": {
+        "phone": "14 0528",
+        "email": "info@hoogeveen.nl",
+        "website": "http://www.hoogeveen.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Evenementenvergunning groot evenement: € 182,15",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Hoogeveen bedraagt het tarief voor een evenementenvergunning voor een groot evenement € 184,70"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.hoogeveen.nl/nieuwsoverzicht/artikel/woo-besluit-op-verzoek-over-evenementenvergunning-stadsfestival",
+      "https://www.hoogeveen.nl/vergunningen/omgevingsvergunningen",
+      "https://www.hoogeveen.nl/vergunningen/evenementenvergunning-aanvragen",
+      "https://www.hoogeveen.nl/raad-en-college/woo-verzoek",
+      "https://www.hoogeveen.nl/vergunningen/evenementenborden"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Deze moet u uiterlijk 12 weken van tevoren aanvragen",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt geen aanvraagtermijn voor evenementenvergunningen, terwijl de bron specificeert dat dit 12 weken van tevoren moet",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/evenementenvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Kleinere evenementen [...] hoeft u alleen te melden. Dit doet u uiterlijk 10 werkdagen van tevoren",
+          "original_reference": "Kleinere evenementen zonder geluidsoverlast die overdag plaatsvinden en waarbij geen verkeersmaatregelen nodig zijn, moeten alleen gemeld worden",
+          "note": "De originele tekst vermeldt geen termijn voor het melden van kleine evenementen, terwijl de bron aangeeft dat dit 10 werkdagen van tevoren moet",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/evenementenvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Geef als u een vergunning aanvraagt op de plattegrond ook de vrije route voor de hulpdiensten aan",
+          "original_reference": "Plattegrond van de locatie met alle objecten en afmetingen",
+          "note": "De bron vereist specifiek dat de vrije route voor hulpdiensten moet worden aangegeven op de plattegrond, wat niet vermeld staat in de originele tekst",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/evenementenvergunning-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn drie belangrijke verschillen gevonden tussen de originele tekst en de bronnen. De bronnen specificeren aanvullende termijnen die niet in de originele tekst staan (12 weken voor vergunningsaanvragen en 10 werkdagen voor meldingen) en een extra vereiste voor de plattegrond (aangeven vrije route hulpdiensten). Deze informatie is essentieel voor het correct aanvragen van een evenementenvergunning."
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LOPIK",
+      "contact": {
+        "phone": "(0348) 55 99 55",
+        "email": "gemeente@lopik.nl",
+        "website": "http://www.lopik.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Als u ook eigenaar bent van de gokautomaat, kunt u tegelijk ook een exploitatievergunning aanvragen via de gemeente",
+        "status": "false",
+        "note": "Een exploitatievergunning voor gokautomaten moet worden aangevraagd bij de Kansspelautoriteit, niet bij de gemeente. De gemeente verstrekt alleen de aanwezigheidsvergunning."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.lopik.nl/kermis-organiseren",
+      "https://www.lopik.nl/gokautomaat-plaatsen",
+      "https://www.lopik.nl/loterij-prijsvraag-bingo-organiseren",
+      "https://www.lopik.nl/exploitatievergunning-horecabedrijf",
+      "https://www.lopik.nl/milieu-vergunning-of-melding"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Alleen horecabedrijven en speelautomaathallen mogen een gokkast plaatsen. De eigenaar van de gokautomaat moet een exploitatievergunning hebben van de Kansspelautoriteit.",
+          "original_reference": "Alleen horecabedrijven en speelautomaathallen mogen een gokkast plaatsen. De eigenaar van de gokautomaat moet een exploitatievergunning hebben van de Kansspelautoriteit.",
+          "note": "De basisvoorwaarden voor het plaatsen van gokautomaten zijn exact hetzelfde in beide bronnen",
+          "source_urls": [
+            "https://www.lopik.nl/gokautomaat-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Geef het altijd door aan de gemeente als er iets verandert. Bijvoorbeeld bij een andere eigenaar van de automaat of als u meer of minder automaten in uw zaak wilt plaatsen.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat aanvullende informatie over de meldplicht bij wijzigingen die niet in de originele tekst staat",
+          "source_urls": [
+            "https://www.lopik.nl/gokautomaat-plaatsen"
+          ]
+        }
+      ]
+    },
+    "summary": "De informatie komt grotendeels overeen, maar de originele tekst mist belangrijke informatie over de verplichting om wijzigingen door te geven aan de gemeente. Dit is een relevant detail voor vergunninghouders dat zou moeten worden toegevoegd aan de originele tekst."
+  }
+}

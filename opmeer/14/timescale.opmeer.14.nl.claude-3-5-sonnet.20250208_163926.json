@@ -1,0 +1,87 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OPMEER",
+      "contact": {
+        "phone": "(0226) 36 33 33",
+        "email": "gemeente@opmeer.nl",
+        "website": "http://www.opmeer.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "U ontvangt binnen 8 weken bericht of u de ontheffing krijgt.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Opmeer wordt er binnen 6 weken een besluit genomen over de ontheffingsaanvraag, niet binnen 8 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.opmeer.nl/parkeren-van-grote-voertuigen",
+      "https://www.opmeer.nl/omgevingsvergunning",
+      "https://www.opmeer.nl/verkeersontheffing-aanvragen",
+      "https://www.opmeer.nl/parkeren-voor-autobedrijven"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.opmeer.nl/voorwerp-plaatsen-op-of-aan-de-weg",
+        "reason": "INVALID: Error scraping https://www.opmeer.nl/voorwerp-plaatsen-op-of-aan-de-weg: 404 Client Error: Not Found for url: https://www.opmeer.nl/voorwerp-plaatsen-op-of-aan-de-weg"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De vergunning of een afschrift ervan moet tijdens de uitvoering van het werk ter plaatse aanwezig zijn en op eerste aanzegging van een ambtenaar van de gemeente Opmeer ter inzage worden gegeven.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt een extra vereiste over het ter plaatse hebben van de vergunning, wat niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.opmeer.nl/verkeersontheffing-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Autobedrijven mogen geen auto's op of langs de openbare weg parkeren.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt een algemeen verbod voor autobedrijven om auto's op de openbare weg te parkeren, wat niet expliciet vermeld staat in de originele tekst.",
+          "source_urls": [
+            "https://www.opmeer.nl/parkeren-voor-autobedrijven"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U kunt de auto's niet op een andere plek parkeren, waar dit wel is toegestaan.",
+          "original_reference": "U moet aantonen dat u de auto's niet elders kunt parkeren waar dit wel is toegestaan",
+          "note": "De originele tekst vereist dat men moet 'aantonen' dat er geen alternatieve parkeerlocatie is, terwijl de brontekst dit minder strikt formuleert.",
+          "source_urls": [
+            "https://www.opmeer.nl/parkeren-voor-autobedrijven"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten enkele belangrijke aanvullende details die niet in de originele tekst staan, waaronder een algemeen parkeerverbod voor autobedrijven en de verplichting om de vergunning ter plaatse beschikbaar te hebben. Ook is er een nuanceverschil in de bewijslast voor alternatieve parkeermogelijkheden."
+  }
+}

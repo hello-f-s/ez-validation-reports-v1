@@ -1,0 +1,96 @@
+{
+  "context": {
+    "municipality": {
+      "name": "CULEMBORG",
+      "contact": {
+        "phone": "(0345) 47 77 00",
+        "email": "info@culemborg.nl",
+        "website": "http://www.culemborg.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 15,
+    "false_sentences": 2,
+    "accuracy_percentage": 88.2,
+    "false_statements": [
+      {
+        "sentence": "U kunt een parkeervergunning voor bedrijven aanvragen of wijzigen via het e-loket of door langs te gaan bij het stadskantoor in Culemborg zonder afspraak.",
+        "status": "false",
+        "note": "Volgens de officiële website van Culemborg moet er voor het aanvragen van een parkeervergunning altijd een afspraak worden gemaakt bij het stadskantoor. Er is geen e-loket beschikbaar voor deze dienst."
+      },
+      {
+        "sentence": "Vanaf 1 januari 2025 veranderen de tarieven voor parkeren, vergunningen en inrijontheffingen.",
+        "status": "false",
+        "note": "Er is geen officiële aankondiging op de website van de gemeente Culemborg over tariefwijzigingen vanaf 1 januari 2025. De huidige tarieven zijn wel beschikbaar, maar toekomstige wijzigingen worden niet specifiek genoemd."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 9,
+    "valid_urls": 5,
+    "invalid_urls": 4,
+    "accuracy_percentage": 55.6,
+    "valid_urls_list": [
+      "https://www.culemborg.nl/parkeervergunning-voor-bewoners",
+      "https://www.culemborg.nl/parkeervergunningen-en-ontheffingen",
+      "https://www.culemborg.nl/omgevingsvergunning",
+      "https://www.culemborg.nl/parkeervergunning-voor-bedrijven",
+      "https://www.culemborg.nl/informatieverzoek-en-woo-verzoek"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.example.com\">Parkeertarieven</a></p>",
+        "reason": "INVALID: Error scraping https://www.example.com\">Parkeertarieven</a></p>: HTTPSConnectionPool(host='www.example.com%22%3eparkeertarieven%3c', port=443): Max retries exceeded with url: /a%3E%3C/p%3E (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10b8cc690>: Failed to resolve 'www.example.com%22%3eparkeertarieven%3c' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.example.com\">Parkeervergunning",
+        "reason": "INVALID: Error scraping https://www.example.com\">Parkeervergunning: HTTPSConnectionPool(host='www.example.com%22%3eparkeervergunning', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1076c3b10>: Failed to resolve 'www.example.com%22%3eparkeervergunning' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.example.com\">Parkeerplaatsen</a>,",
+        "reason": "INVALID: Error scraping https://www.example.com\">Parkeerplaatsen</a>,: HTTPSConnectionPool(host='www.example.com%22%3eparkeerplaatsen%3c', port=443): Max retries exceeded with url: /a%3E, (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1076c3b10>: Failed to resolve 'www.example.com%22%3eparkeerplaatsen%3c' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.example.com",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Er is voor bedrijven die incidenteel werkzaamheden verrichten waarvoor parkeren noodzakelijk is een mogelijkheid een maandvergunning aan te vragen. Een maandvergunning wordt op kentekennummer afgegeven en geldt niet voor het autoluwe gebied (Binnenstad).",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de mogelijkheid van een maandvergunning voor bedrijven die incidenteel werkzaamheden verrichten. Dit is belangrijke aanvullende informatie over een extra vergunningstype.",
+          "source_urls": [
+            "https://www.culemborg.nl/parkeervergunning-voor-bedrijven"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een jaarvergunning wordt op kentekennummer afgegeven. Een jaarvergunning geldt tot en met 31 december.",
+          "original_reference": "Vanaf 2025 verlengen wij alle parkeervergunningen en inrijontheffingen per 1 januari van elk nieuw jaar.",
+          "note": "De bronpagina specificeert dat de jaarvergunning tot 31 december geldig is, terwijl de originele tekst alleen spreekt over verlenging vanaf 1 januari 2025.",
+          "source_urls": [
+            "https://www.culemborg.nl/parkeervergunning-voor-bedrijven"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de beschikbaarheid van maandvergunningen voor incidentele werkzaamheden (niet genoemd in origineel) en specifiekere details over de geldigheidsperiode van jaarvergunningen. De bronnen bevatten nuttige aanvullende informatie die meer duidelijkheid verschaft over de vergunningsopties en -periodes."
+  }
+}

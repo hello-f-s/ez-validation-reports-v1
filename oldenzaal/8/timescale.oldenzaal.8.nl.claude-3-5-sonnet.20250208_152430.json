@@ -1,0 +1,81 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OLDENZAAL",
+      "contact": {
+        "phone": "(0541) 58 81 11",
+        "email": "info@oldenzaal.nl",
+        "website": "http://www.oldenzaal.nl"
+      }
+    },
+    "service": {
+      "id": 8,
+      "name": "Marktvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 10,
+    "false_sentences": 1,
+    "accuracy_percentage": 90.9,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor een standplaatsvergunning zijn € 75,-.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Oldenzaal bedragen de legeskosten voor een standplaatsvergunning € 77,70 (2024 tarief), niet € 75,-."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 3,
+    "invalid_urls": 2,
+    "accuracy_percentage": 60.0,
+    "valid_urls_list": [
+      "https://www.oldenzaal.nl/standplaatsvergunning",
+      "https://www.oldenzaal.nl/aanleggen",
+      "https://www.oldenzaal.nl/omgevingsvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.oldenzaal.nl/warenmarkt",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.oldenzaal.nl/bouwen-en-verbouwen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Deze vergunning kan voor maximaal vijf jaar verleend worden.",
+          "original_reference": "No matching information",
+          "note": "De originele inhoud vermeldt niet de maximale geldigheidsduur van 5 jaar voor de standplaatsvergunning, wat belangrijke informatie is voor aanvragers.",
+          "source_urls": [
+            "https://www.oldenzaal.nl/standplaatsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Er zijn een aantal locaties beschikbaar voor het innemen van een standplaats voor het uitoefenen van handel, anders dan op de warenmarkten van maandag en zaterdag.",
+          "original_reference": "No matching information",
+          "note": "De originele inhoud vermeldt niet dat er specifieke locaties beschikbaar zijn en dat er warenmarkten op maandag en zaterdag worden gehouden.",
+          "source_urls": [
+            "https://www.oldenzaal.nl/standplaatsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten twee belangrijke aanvullende details die niet in de originele inhoud staan: de maximale geldigheidsduur van 5 jaar voor de standplaatsvergunning en informatie over beschikbare locaties en marktdagen. Deze informatie is relevant voor potentiële aanvragers van een standplaatsvergunning. Overige informatie in de bronnen komt overeen met of vult de originele inhoud aan zonder tegenstrijdigheden."
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "context": {
+    "municipality": {
+      "name": "GOUDA",
+      "contact": {
+        "phone": "14 0182",
+        "email": "gemeente@gouda.nl",
+        "website": "http://www.gouda.nl"
+      }
+    },
+    "service": {
+      "id": 6,
+      "name": "Integriteitsonderzoek (Wet Bibob)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 6,
+    "true_sentences": 6,
+    "false_sentences": 0,
+    "accuracy_percentage": 100.0,
+    "false_statements": []
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.gouda.nl/slim-met-geld/geldzaken-en-schulden/",
+      "https://www.gouda.nl/contact/contactformulier/",
+      "https://www.gouda.nl/servicecode/",
+      "https://www.gouda.nl/privacyverklaring/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.gouda.nl/gouda-werkt-aan-de-stad/omgekeerd-inzamelen/veelgestelde-vragen-en-antwoorden-omgekeerd-inzamelen/",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als wij uw brief of e-mail ontvangen, krijgt u binnen 3 werkdagen een bericht van ontvangst. Dit is alleen als voor de behandeling van uw (aan)vraag een wettelijke reactietijd geldt. Bijvoorbeeld voor vergunningsaanvragen, bezwaarschriften en subsidieaanvragen.",
+          "original_reference": "No matching information",
+          "note": "De bron specificeert een reactietermijn van 3 werkdagen voor bepaalde aanvragen, terwijl dit in de originele tekst ontbreekt.",
+          "source_urls": [
+            "https://www.gouda.nl/servicecode/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U ontvangt de aangevraagde producten binnen 3 werkdagen, nadat wij uw aanvraag ontvangen hebben. Bij sommige aanvragen duurt dit langer. Dit geven wij duidelijk aan.",
+          "original_reference": "Hier kan geen specifieke informatie over gevonden worden op de website van deze gemeente.",
+          "note": "De bron vermeldt een concrete levertijd van 3 werkdagen voor digitaal aangevraagde producten, wat niet in de originele tekst staat.",
+          "source_urls": [
+            "https://www.gouda.nl/servicecode/"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten specifieke informatie over reactie- en behandeltermijnen die niet in de originele tekst staat vermeld. Met name wordt een standaard reactietermijn van 3 werkdagen genoemd voor bepaalde typen aanvragen en digitale producten. Dit zijn belangrijke toevoegingen aan de diensteninformatie die in de originele tekst ontbreken."
+  }
+}

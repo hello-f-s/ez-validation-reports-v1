@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "NIJMEGEN",
+      "contact": {
+        "phone": "14 024",
+        "email": "gemeente@nijmegen.nl",
+        "website": "http://www.nijmegen.nl"
+      }
+    },
+    "service": {
+      "id": 22,
+      "name": "Woonruimte splitsen of samenvoegen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "Een omgevingsvergunning voor kamerverhuur kost € 750,-.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van de gemeente Nijmegen is dit bedrag niet correct. De exacte kosten voor een omgevingsvergunning voor kamerverhuur zijn afhankelijk van verschillende factoren en worden berekend op basis van de specifieke situatie."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.nijmegen.nl/diensten/subsidies/subsidie/",
+      "https://www.nijmegen.nl/nieuws/nijmegen-gaat-delen-van-woningen-stimuleren/",
+      "https://www.nijmegen.nl/diensten/bouwen-en-wonen/kamers-verhuren/",
+      "https://www.nijmegen.nl/diensten/bouwen-en-wonen/woning-splitsen/",
+      "https://www.nijmegen.nl/diensten/bouwen-en-wonen/toekomstbestendig-wonen-lening/voorwaarden-toekomstbestendig-wonen-lening/"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als hospita verhuurt u kamers en woont u zelf ook in het huis. U heeft geen vergunning nodig als hospita als alle volgende regels voor u gelden: U bent voor 100% economisch en juridisch eigenaar van de woning, U woont zelf in de woning, U gebruikt minimaal 50% van deze woning voor uw eigen huishouden, U verhuurt maximaal 2 onzelfstandige woonruimten, aan maximaal 2 personen",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de specifieke regels voor hospitaverhuur, wat een belangrijke uitzondering is op de vergunningplicht voor kamerverhuur",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/bouwen-en-wonen/kamers-verhuren/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als er door de gemeente een huisnummer aan de gesplitste woning is gegeven, is huurtoeslag misschien mogelijk. U kunt dit controleren bij de ODRN (Omgevingsdienst Nijmegen). Zonder huisnummer is huurtoeslag niet mogelijk",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de relatie tussen huisnummers en huurtoeslag bij gesplitste woningen",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/bouwen-en-wonen/woning-splitsen/"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont twee belangrijke verschillen met de originele tekst. Ten eerste ontbreekt informatie over de specifieke voorwaarden voor hospitaverhuur, wat een belangrijke uitzondering vormt op de reguliere vergunningseisen. Ten tweede mist de originele tekst belangrijke informatie over huurtoeslag in relatie tot huisnummering bij gesplitste woningen. Deze informatie is relevant voor woningeigenaren die overwegen hun woning te splitsen of kamers te verhuren."
+  }
+}

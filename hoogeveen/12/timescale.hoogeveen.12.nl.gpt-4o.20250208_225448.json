@@ -1,0 +1,125 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HOOGEVEEN",
+      "contact": {
+        "phone": "14 0528",
+        "email": "info@hoogeveen.nl",
+        "website": "http://www.hoogeveen.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 10,
+    "false_sentences": 2,
+    "accuracy_percentage": 83.3,
+    "false_statements": [
+      {
+        "sentence": "Nadat u uw aanvraag heeft ingediend, ontvangt u binnen 1 werkdag een bevestigingsmail.",
+        "status": "false",
+        "note": "Volgens de gemeente Hoogeveen wordt er niet specifiek binnen 1 werkdag een bevestigingsmail verstuurd. De gemeente communiceert geen exacte termijn voor de ontvangstbevestiging."
+      },
+      {
+        "sentence": "De verdere beoordeling en communicatie verlopen via uw berichtenbox op jeleefomgeving.nl.",
+        "status": "false",
+        "note": "De gemeente Hoogeveen gebruikt niet het platform jeleefomgeving.nl voor communicatie over vergunningen. Communicatie verloopt via het Omgevingsloket Online en de gemeentelijke kanalen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 14,
+    "valid_urls": 5,
+    "invalid_urls": 9,
+    "accuracy_percentage": 35.7,
+    "valid_urls_list": [
+      "https://www.hoogeveen.nl/melding-idee-klacht-en-bezwaar",
+      "https://www.hoogeveen.nl/vergunningen/omgevingsvergunningen",
+      "https://www.hoogeveen.nl/raad-en-college/woo-verzoek",
+      "https://www.hoogeveen.nl/vergunningen/evenementenvergunning-aanvragen",
+      "https://www.hoogeveen.nl/dossiers/omgevingswet"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://omgevingswet.overheid.nl\">omgevingswet.overheid.nl</a>.",
+        "reason": "INVALID: Error scraping https://omgevingswet.overheid.nl\">omgevingswet.overheid.nl</a>.: HTTPSConnectionPool(host='omgevingswet.overheid.nl%22%3eomgevingswet.overheid.nl%3c', port=443): Max retries exceeded with url: /a%3E. (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1039eb770>: Failed to resolve 'omgevingswet.overheid.nl%22%3eomgevingswet.overheid.nl%3c' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://overheid.nl\">overheid.nl</a>",
+        "reason": "INVALID: Error scraping https://overheid.nl\">overheid.nl</a>: HTTPSConnectionPool(host='overheid.nl%22%3eoverheid.nl%3c', port=443): Max retries exceeded with url: /a%3E (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x103e856d0>: Failed to resolve 'overheid.nl%22%3eoverheid.nl%3c' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://overheid.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://jeleefomgeving.nl\">jeleefomgeving.nl</a></li>",
+        "reason": "INVALID: Error scraping https://jeleefomgeving.nl\">jeleefomgeving.nl</a></li>: HTTPSConnectionPool(host='jeleefomgeving.nl%22%3ejeleefomgeving.nl%3c', port=443): Max retries exceeded with url: /a%3E%3C/li%3E (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1039cfed0>: Failed to resolve 'jeleefomgeving.nl%22%3ejeleefomgeving.nl%3c' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://jeleefomgeving.nl\">jeleefomgeving.nl</a>.</p>",
+        "reason": "INVALID: Error scraping https://jeleefomgeving.nl\">jeleefomgeving.nl</a>.</p>: HTTPSConnectionPool(host='jeleefomgeving.nl%22%3ejeleefomgeving.nl%3c', port=443): Max retries exceeded with url: /a%3E.%3C/p%3E (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1039ce5d0>: Failed to resolve 'jeleefomgeving.nl%22%3ejeleefomgeving.nl%3c' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://omgevingswet.overheid.nl\">omgevingswet.overheid.nl</a></li>",
+        "reason": "INVALID: Error scraping https://omgevingswet.overheid.nl\">omgevingswet.overheid.nl</a></li>: HTTPSConnectionPool(host='omgevingswet.overheid.nl%22%3eomgevingswet.overheid.nl%3c', port=443): Max retries exceeded with url: /a%3E%3C/li%3E (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1039cf9d0>: Failed to resolve 'omgevingswet.overheid.nl%22%3eomgevingswet.overheid.nl%3c' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://omgevingswet.overheid.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://jeleefomgeving.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://overheid.nl\">overheid.nl</a></li>",
+        "reason": "INVALID: Error scraping https://overheid.nl\">overheid.nl</a></li>: HTTPSConnectionPool(host='overheid.nl%22%3eoverheid.nl%3c', port=443): Max retries exceeded with url: /a%3E%3C/li%3E (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1039cf250>: Failed to resolve 'overheid.nl%22%3eoverheid.nl%3c' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het is belangrijk om buren en bedrijven in uw buurt te betrekken als u iets in uw omgeving gaat veranderen (participatie).",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over het betrekken van omwonenden bij het aanvragen van een omgevingsvergunning.",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/omgevingsvergunningen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Hebt u al een uitgewerkt plan maar twijfelt u of de gemeente uw plan wenselijk vindt? Dan kunt u uw plan online aan ons voorleggen via Verken uw idee. Wij controleren dan of het haalbaar is en laten u weten wat er nodig is om het plan mogelijk te maken. Dit kost € 175",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de mogelijkheid van een vooroverleg ('Verken uw idee') en de bijbehorende kosten van €175.",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/omgevingsvergunningen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Mail omgevingsvergunningen@dewoldenhoogeveen.nl of bel 14 0528",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist specifieke contactgegevens voor vragen over omgevingsvergunningen.",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/omgevingsvergunningen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie die ontbreekt in de originele tekst, waaronder de verplichting tot participatie met omwonenden, de mogelijkheid tot vooroverleg met bijbehorende kosten, en specifieke contactgegevens. Deze informatie is essentieel voor een complete dienstverlening rond omgevingsvergunningen."
+  }
+}

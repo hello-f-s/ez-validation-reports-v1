@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MIDDEN-DRENTHE",
+      "contact": {
+        "phone": "(0593) 53 92 22",
+        "email": "gemeente@middendrenthe.nl",
+        "website": "http://www.middendrenthe.nl"
+      }
+    },
+    "service": {
+      "id": 2,
+      "name": "Bord of spandoek plaatsen aan de openbare weg"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 11,
+    "false_sentences": 2,
+    "accuracy_percentage": 84.6,
+    "false_statements": [
+      {
+        "sentence": "Voor het plaatsen van een reclamebord zijn er geen aanvraagkosten.",
+        "status": "false",
+        "note": "Voor het plaatsen van een reclamebord moet wel degelijk leges betaald worden volgens het tarievenoverzicht van de gemeente Midden-Drenthe."
+      },
+      {
+        "sentence": "Dien de aanvraag minimaal 4 weken van tevoren in bij de gemeente Midden Drenthe.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Midden-Drenthe moet de aanvraag minimaal 2 weken (niet 4 weken) van tevoren worden ingediend."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 10,
+    "valid_urls": 0,
+    "invalid_urls": 10,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.middendrenthe.nl/formulieren-1/aanvraag-vergunning-voor-het-plaatsen-van-tijdelijke-reclame",
+        "reason": "INVALID: Error scraping https://www.middendrenthe.nl/formulieren-1/aanvraag-vergunning-voor-het-plaatsen-van-tijdelijke-reclame: 404 Client Error: Not Found for url: https://www.middendrenthe.nl/formulieren-1/aanvraag-vergunning-voor-het-plaatsen-van-tijdelijke-reclame"
+      },
+      {
+        "url": "https://www.middendrenthe.nl/vergunningen-ontheffingen/reclamebord-plaatsen",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://metadata.url/driehoeksborden)",
+        "reason": "INVALID: Error scraping https://metadata.url/driehoeksborden): HTTPSConnectionPool(host='metadata.url', port=443): Max retries exceeded with url: /driehoeksborden) (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x107017b10>: Failed to resolve 'metadata.url' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://omgevingsloket.nl\">Omgevingswet.overheid.nl</a>\"",
+        "reason": "INVALID: Error scraping https://omgevingsloket.nl\">Omgevingswet.overheid.nl</a>\": HTTPSConnectionPool(host='omgevingsloket.nl%22%3eomgevingswet.overheid.nl%3c', port=443): Max retries exceeded with url: /a%3E%22 (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1070174d0>: Failed to resolve 'omgevingsloket.nl%22%3eomgevingswet.overheid.nl%3c' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.middendrenthe.nl/vergunningen-ontheffingen/spandoek-plaatsen",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.middendrenthe.nl/vergunningen-ontheffingen/driehoeksborden-plaatsen",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://omgevingsloket.nl\">Omgevingswet.overheid.nl</a>).</li>",
+        "reason": "INVALID: Error scraping https://omgevingsloket.nl\">Omgevingswet.overheid.nl</a>).</li>: HTTPSConnectionPool(host='omgevingsloket.nl%22%3eomgevingswet.overheid.nl%3c', port=443): Max retries exceeded with url: /a%3E).%3C/li%3E (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x107017d90>: Failed to resolve 'omgevingsloket.nl%22%3eomgevingswet.overheid.nl%3c' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://omgevingsloket.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://metadata.url/spandoek)",
+        "reason": "INVALID: Error scraping https://metadata.url/spandoek): HTTPSConnectionPool(host='metadata.url', port=443): Max retries exceeded with url: /spandoek) (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x107017390>: Failed to resolve 'metadata.url' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.middendrenthe.nl/vergunningen-ontheffingen",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  }
+}

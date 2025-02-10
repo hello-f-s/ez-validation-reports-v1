@@ -1,0 +1,95 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OLDENZAAL",
+      "contact": {
+        "phone": "(0541) 58 81 11",
+        "email": "info@oldenzaal.nl",
+        "website": "http://www.oldenzaal.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "U ontvangt na het indienen een ontvangstbevestiging van Jeleefomgeving.nl.",
+        "status": "false",
+        "note": "De ontvangstbevestiging komt niet van Jeleefomgeving.nl maar van het Omgevingsloket zelf. Dit platform bestaat niet en wordt niet gebruikt door de gemeente Oldenzaal voor omgevingsvergunningen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 4,
+    "invalid_urls": 3,
+    "accuracy_percentage": 57.1,
+    "valid_urls_list": [
+      "https://www.oldenzaal.nl/standplaatsvergunning",
+      "https://www.oldenzaal.nl/aanleggen",
+      "https://www.oldenzaal.nl/reclame",
+      "https://www.oldenzaal.nl/omgevingsvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.gemeente-oldenzaal.nl",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.gemeente-oldenzaal.nl\">Gemeente",
+        "reason": "INVALID: Error scraping https://www.gemeente-oldenzaal.nl\">Gemeente: HTTPSConnectionPool(host='www.gemeente-oldenzaal.nl%22%3egemeente', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x107680190>: Failed to resolve 'www.gemeente-oldenzaal.nl%22%3egemeente' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.oldenzaal.nl/bouwen-en-verbouwen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Gaat u (ver)bouwen, slopen, een boom kappen of een bedrijf beginnen? Dan heeft u hiervoor vaak een omgevingsvergunning nodig.",
+          "original_reference": "Voordat u een omgevingsvergunning kunt aanvragen, moet u uw bouw- of verbouwplan goed hebben omschreven.",
+          "note": "De bronpagina noemt specifiek meer activiteiten waarvoor een omgevingsvergunning nodig is (slopen, kappen, bedrijf beginnen) die niet in de originele tekst staan vermeld.",
+          "source_urls": [
+            "https://www.oldenzaal.nl/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wie reclame wil plaatsen op of aan een pand, bijvoorbeeld met een reclamebord of een lichtbak, heeft meestal een omgevingsvergunning nodig.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over vergunningen voor reclame-uitingen, terwijl dit wel een specifieke vergunningsplichtige activiteit blijkt te zijn.",
+          "source_urls": [
+            "https://www.oldenzaal.nl/reclame"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U ontvangt na het indienen een ontvangstbevestiging van Jeleefomgeving.nl",
+          "original_reference": "No matching information",
+          "note": "De verwijzing naar 'Jeleefomgeving.nl' voor ontvangstbevestiging komt niet voor in de bronpagina's en lijkt onjuist.",
+          "source_urls": [
+            "https://www.oldenzaal.nl/omgevingsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De originele tekst mist enkele belangrijke vergunningsplichtige activiteiten die wel in de bronpagina's worden genoemd. Ook bevat de originele tekst een verwijzing naar 'Jeleefomgeving.nl' die niet wordt ondersteund door de bronpagina's. De informatie over vergunningen voor reclame-uitingen ontbreekt in de originele tekst terwijl dit wel een belangrijk onderdeel blijkt te zijn van het vergunningenstelsel."
+  }
+}

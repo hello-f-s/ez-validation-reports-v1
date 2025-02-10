@@ -1,0 +1,81 @@
+{
+  "context": {
+    "municipality": {
+      "name": "NIJMEGEN",
+      "contact": {
+        "phone": "14 024",
+        "email": "gemeente@nijmegen.nl",
+        "website": "http://www.nijmegen.nl"
+      }
+    },
+    "service": {
+      "id": 10,
+      "name": "Nachtregister bijhouden"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 1,
+    "true_sentences": 1,
+    "false_sentences": 0,
+    "accuracy_percentage": 100.0,
+    "false_statements": []
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.nijmegen.nl/diensten/belastingen/toeristenbelasting/",
+      "https://www.nijmegen.nl/diensten/evenementen/schema-vergunningen-activiteiten/tekstversie/",
+      "https://www.nijmegen.nl/diensten/wet-open-overheid/",
+      "https://www.nijmegen.nl/diensten/vergunningen/opkopersregister-bijhouden/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.nijmegen.nl/diensten/vergunningen/informatiekraam-melden-of-vergunning/",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Toeristenbelasting bedraagt €3,58 per persoon per overnachting voor hotels, pensions en B&Bs en €0,93 voor campings en recreatiegebouwen",
+          "original_reference": "No matching information",
+          "note": "De originele inhoud bevat geen informatie over toeristenbelasting tarieven, terwijl de bron specifieke bedragen noemt",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/belastingen/toeristenbelasting/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Handelaren in gebruikte spullen moeten zich melden bij de burgemeester en een opkopersregister bijhouden met een verplichte wachttijd van 3 dagen voor doorverkoop",
+          "original_reference": "No matching information",
+          "note": "De originele inhoud mist essentiële informatie over de verplichtingen voor handelaren in gebruikte goederen",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/vergunningen/opkopersregister-bijhouden/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor Woo-verzoeken kan contact worden opgenomen via wetopenoverheid@nijmegen.nl of 14 024",
+          "original_reference": "No matching information",
+          "note": "De originele inhoud bevat geen informatie over de Wet open overheid en bijbehorende contactmogelijkheden",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/wet-open-overheid/"
+          ]
+        }
+      ]
+    },
+    "summary": "De originele inhoud bevat geen specifieke informatie, terwijl de bronnen gedetailleerde informatie bevatten over toeristenbelasting tarieven, verplichtingen voor handelaren in gebruikte goederen en procedures rondom de Wet open overheid. Dit zijn significante verschillen omdat het om concrete dienstverlening en verplichtingen gaat die burgers en ondernemers moeten kennen."
+  }
+}

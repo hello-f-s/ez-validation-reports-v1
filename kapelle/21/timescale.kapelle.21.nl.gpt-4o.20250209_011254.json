@@ -1,0 +1,106 @@
+{
+  "context": {
+    "municipality": {
+      "name": "KAPELLE",
+      "contact": {
+        "phone": "(0113) 33 31 10",
+        "email": "gemeente@kapelle.nl",
+        "website": "http://www.kapelle.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "De kosten bedragen €33,85.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Kapelle bedragen de kosten voor een digitale VOG-aanvraag €41,35, niet €33,85."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 9,
+    "valid_urls": 3,
+    "invalid_urls": 6,
+    "accuracy_percentage": 33.3,
+    "valid_urls_list": [
+      "https://kapelle.nl/omgevingsvergunning-0",
+      "https://kapelle.nl/pas-op-voor-commerciele-tussenpartijen-vog-aanvragen",
+      "https://kapelle.nl/verklaring-omtrent-gedrag-vog"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.kapelle.nl/verklaring-omtrent-gedrag-vog-gemeente-kapelle\">https://www.kapelle.nl/verklaring-omtrent-gedrag-vog-gemeente-kapelle</a></li>",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.kapelle.nl/informatieverzoek-derden-aanvraag-nederlandse-nationaliteit",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.kapelle.nl/pas-op-voor-commerci%C3%ABle-tussenpartijen-vog-aanvragen-gemeente-kapelle\">https://www.kapelle.nl/pas-op-voor-commerci%C3%ABle-tussenpartijen-vog-aanvragen-gemeente-kapelle</a></li>",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.kapelle.nl/aanvraagformulier-principeverzoek",
+        "reason": "INVALID: Error scraping https://www.kapelle.nl/aanvraagformulier-principeverzoek: 403 Client Error: Forbidden for url: https://www.kapelle.nl/aanvraagformulier-principeverzoek-oud"
+      },
+      {
+        "url": "https://www.kapelle.nl/verklaring-omtrent-gedrag-vog-gemeente-kapelle",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.kapelle.nl/pas-op-voor-commerci%C3%ABle-tussenpartijen-vog-aanvragen-gemeente-kapelle",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor het voorbereiden van de VOG-aanvraag door zo'n tussenpartij betaalt de aanvrager eerst (voorbereidings-)kosten aan dat bedrijf. Deze kosten kunnen oplopen tot tientallen euro's.",
+          "original_reference": "Let op: extra kosten kunnen ontstaan bij gebruik van commerciële partijen.",
+          "note": "De bron geeft specifiekere informatie over de mogelijke extra kosten bij commerciële tussenpartijen, namelijk dat deze kunnen oplopen tot tientallen euro's.",
+          "source_urls": [
+            "https://kapelle.nl/pas-op-voor-commerciele-tussenpartijen-vog-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "digitaal bij Justis, waarbij de belanghebbende organisatie de aanvraag klaarzet voor de aanvrager via eHerkenning",
+          "original_reference": "Uw werkgever zet de VOG-aanvraag online voor u klaar.",
+          "note": "De bron specificeert dat organisaties eHerkenning moeten gebruiken om de aanvraag klaar te zetten, wat niet vermeld wordt in de originele tekst.",
+          "source_urls": [
+            "https://kapelle.nl/pas-op-voor-commerciele-tussenpartijen-vog-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Mensen schatten hun kansen op een VOG vaak laag in. Sommigen zien zelfs helemaal af van de aanvraag, uit angst voor afwijzing. Onterecht, want maar een klein deel van alle VOG-aanvragen wordt geweigerd.",
+          "original_reference": "No matching information",
+          "note": "De bron bevat aanvullende belangrijke informatie over de slagingskans van VOG-aanvragen, die niet in de originele tekst staat.",
+          "source_urls": [
+            "https://kapelle.nl/verklaring-omtrent-gedrag-vog"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten enkele belangrijke aanvullingen op de originele tekst, waaronder specifiekere informatie over de kosten bij commerciële tussenpartijen, het gebruik van eHerkenning voor organisaties, en geruststellende informatie over de slagingskans van VOG-aanvragen. Deze informatie kan waardevol zijn voor aanvragers maar verandert de kernprocedure niet wezenlijk."
+  }
+}

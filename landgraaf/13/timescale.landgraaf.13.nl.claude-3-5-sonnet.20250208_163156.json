@@ -1,0 +1,82 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LANDGRAAF",
+      "contact": {
+        "phone": "14 045",
+        "email": "gemeente@landgraaf.nl",
+        "website": "http://www.landgraaf.nl"
+      }
+    },
+    "service": {
+      "id": 13,
+      "name": "Omzettingsvergunning voor kamerverhuur aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 12,
+    "false_sentences": 0,
+    "accuracy_percentage": 100.0,
+    "false_statements": []
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.landgraaf.nl/form/informatieverzoek-indienen",
+      "https://www.landgraaf.nl/het-omgevingsloket",
+      "https://www.landgraaf.nl/exploitatievergunning-horecabedrijf",
+      "https://www.landgraaf.nl/aanvragen-en-regelen-ondernemers",
+      "https://www.landgraaf.nl/omgevingsvergunning-of-melding"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.omgevingsloket.nl/)",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vanaf 1 januari 2024 gaat dit via het (nieuwe) Omgevingsloket",
+          "original_reference": "Ga naar het Omgevingsloket (https://www.omgevingsloket.nl/)",
+          "note": "De originele tekst verwijst niet naar de belangrijke overgangsdatum van 1 januari 2024 naar het nieuwe Omgevingsloket",
+          "source_urls": [
+            "https://www.landgraaf.nl/het-omgevingsloket"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Na het indienen van dit informatieverzoek ontvangt u een schriftelijk advies over de zetten vervolgstappen",
+          "original_reference": "Als dat zo is, dien dan eerst een conceptverzoek in om advies te krijgen",
+          "note": "De bronnen beschrijven een informatieverzoek-procedure die voorafgaat aan het conceptverzoek, wat niet genoemd wordt in de originele tekst",
+          "source_urls": [
+            "https://www.landgraaf.nl/form/informatieverzoek-indienen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U kunt in het Omgevingsloket: zien of er een vergunning nodig is, direct vergunningen aanvragen, aangeven hoe u participatie heeft toegepast, in een overzicht zien welke meldingen en aanvragen u heeft gedaan, op een kaart per locatie zien welke regels en beleid er gelden",
+          "original_reference": "Vul de vergunningcheck in om te zien of u een omgevingsvergunning nodig heeft",
+          "note": "De bronnen beschrijven veel meer functionaliteiten van het Omgevingsloket dan alleen de vergunningcheck die in de originele tekst wordt genoemd",
+          "source_urls": [
+            "https://www.landgraaf.nl/het-omgevingsloket"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de invoering van het nieuwe Omgevingsloket per 1 januari 2024, een voorafgaande informatieverzoek-procedure die niet in de originele tekst wordt genoemd, en aanvullende functionaliteiten van het Omgevingsloket die niet in de originele tekst worden beschreven. Deze informatie maakt de procedure completer en actueler dan de originele tekst."
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HAARLEMMERMEER",
+      "contact": {
+        "phone": "(0900) 18 52",
+        "email": "info@haarlemmermeer.nl",
+        "website": "http://www.haarlemmermeer.nl"
+      }
+    },
+    "service": {
+      "id": 2,
+      "name": "Bord of spandoek plaatsen aan de openbare weg"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "Bij het bevestigen van reclame aan objecten zoals lichtmasten, moet contact worden opgenomen met specifieke mediaorganisaties (bijvoorbeeld NPB Media of ESH Media) en is geen vergunning van de gemeente Haarlemmermeer nodig.",
+        "status": "false",
+        "note": "Voor het bevestigen van reclame aan objecten zoals lichtmasten is wel degelijk een vergunning van de gemeente Haarlemmermeer nodig. De gemeente moet toestemming geven voor gebruik van gemeentelijke objecten voor reclamedoeleinden, ongeacht eventuele afspraken met mediaorganisaties."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://haarlemmermeergemeente.nl/reclamevergunning",
+      "https://haarlemmermeergemeente.nl/standplaatsvergunning",
+      "https://haarlemmermeergemeente.nl/terrasvergunning",
+      "https://haarlemmermeergemeente.nl/diensten-en-goederen-aanbieden",
+      "https://haarlemmermeergemeente.nl/aanleggen-kabels-en-leidingen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.omgevingsloket.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.omgevingsloket.nl\">Omgevingsloket</a>.",
+        "reason": "INVALID: Error scraping https://www.omgevingsloket.nl\">Omgevingsloket</a>.: HTTPSConnectionPool(host='www.omgevingsloket.nl%22%3eomgevingsloket%3c', port=443): Max retries exceeded with url: /a%3E. (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10515d450>: Failed to resolve 'www.omgevingsloket.nl%22%3eomgevingsloket%3c' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Kleine naambordjes die u bevestigt mogen wel zonder vergunning. Kleine naambordjes zijn maximaal 50 bij 50 centimeter.",
+          "original_reference": "Daarnaast mag de reclame niet als een constructie worden beschouwd, tenzij dit een los bord betreft.",
+          "note": "De bron specificeert een concrete maximale afmeting voor naambordjes (50x50cm) die vergunningsvrij zijn, terwijl de originele tekst deze specificatie niet bevat.",
+          "source_urls": [
+            "https://haarlemmermeergemeente.nl/reclamevergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor de verkoop van oliebollen geldt de vergunning maximaal 3 maanden.",
+          "original_reference": "No matching information",
+          "note": "De bron bevat specifieke informatie over vergunningsduur voor seizoensgebonden verkoop, wat volledig ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://haarlemmermeergemeente.nl/standplaatsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het nuts- of telecombedrijf of zijn uitvoerder (aannemer) vraagt de vergunning minimaal 30 dagen van tevoren aan.",
+          "original_reference": "No matching information",
+          "note": "De bron specificeert een minimale aanvraagtermijn van 30 dagen voor bepaalde vergunningen, terwijl de originele tekst alleen spreekt over een besluitvormingstermijn van 8 weken.",
+          "source_urls": [
+            "https://haarlemmermeergemeente.nl/aanleggen-kabels-en-leidingen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten enkele belangrijke specificaties die niet in de originele tekst voorkomen, waaronder concrete afmetingen voor vergunningsvrije naambordjes, specifieke termijnen voor seizoensgebonden vergunningen en aanvraagtermijnen voor bepaalde werkzaamheden. Deze details zijn relevant voor verschillende doelgroepen en maken de voorwaarden concreter dan in de originele tekst."
+  }
+}

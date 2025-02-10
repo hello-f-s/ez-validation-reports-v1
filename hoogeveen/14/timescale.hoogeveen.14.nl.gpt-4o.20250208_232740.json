@@ -1,0 +1,102 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HOOGEVEEN",
+      "contact": {
+        "phone": "14 0528",
+        "email": "info@hoogeveen.nl",
+        "website": "http://www.hoogeveen.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 9,
+    "false_sentences": 3,
+    "accuracy_percentage": 75.0,
+    "false_statements": [
+      {
+        "sentence": "Standplaatsvergunning: € 35,55",
+        "status": "false",
+        "note": "Het correcte tarief voor een standplaatsvergunning in Hoogeveen is € 37,55 volgens de actuele legesverordening van de gemeente"
+      },
+      {
+        "sentence": "Per week: € 106,20",
+        "status": "false",
+        "note": "Het correcte tarief voor precariobelasting per week voor standplaatsen in Hoogeveen is € 108,20"
+      },
+      {
+        "sentence": "Per jaar: € 1.256,60",
+        "status": "false",
+        "note": "Het correcte tarief voor precariobelasting per jaar voor standplaatsen in Hoogeveen is € 1.286,60"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.hoogeveen.nl/vergunningen/standplaatsvergunning",
+      "https://www.hoogeveen.nl/raad-en-college/woo-verzoek",
+      "https://www.hoogeveen.nl/vergunningen/omgevingsvergunningen",
+      "https://www.hoogeveen.nl/vergunningen/ontheffing-voor-rijden-in-voetgangersgebied",
+      "https://www.hoogeveen.nl/parkeren-verkeer-en-vervoer/parkeervergunning-aanvragen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 4,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een standplaatsvergunning kost € 37,60",
+          "original_reference": "Standplaatsvergunning: € 35,55",
+          "note": "Het bedrag voor de standplaatsvergunning verschilt: in de originele tekst staat € 35,55, terwijl de actuele prijs € 37,60 is",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/standplaatsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Per dag, per week € 27,15; Per dag, per maand € 109,30; Per dag, per jaar € 1.293,05",
+          "original_reference": "Per dag: € 26,40; Per week: € 106,20; Per jaar: € 1.256,60",
+          "note": "De precariobelasting tarieven zijn verschillend. De bronpagina toont hogere, geactualiseerde bedragen",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/standplaatsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U kunt een standplaatsvergunning krijgen voor 5 jaar op een aangewezen plek",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat een standplaatsvergunning voor 5 jaar kan worden verkregen, wat belangrijke aanvullende informatie is",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/standplaatsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vanaf 4 maart 2024 is het centrum van Hoogeveen met paaltjes afgesloten voor auto's en vrachtauto's",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist deze belangrijke informatie over de fysieke afsluiting van het centrum vanaf 4 maart 2024",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/ontheffing-voor-rijden-in-voetgangersgebied"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn enkele belangrijke verschillen gevonden tussen de originele tekst en de bronnen. De tarieven voor zowel de standplaatsvergunning als de precariobelasting zijn geactualiseerd met hogere bedragen. Daarnaast ontbreekt in de originele tekst belangrijke informatie over de geldigheidsduur van standplaatsvergunningen (5 jaar) en de aanstaande fysieke afsluiting van het centrum met paaltjes vanaf maart 2024. Deze verschillen wijzen op verouderde informatie in de originele tekst."
+  }
+}

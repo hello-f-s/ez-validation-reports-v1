@@ -1,0 +1,101 @@
+{
+  "context": {
+    "municipality": {
+      "name": "KAPELLE",
+      "contact": {
+        "phone": "(0113) 33 31 10",
+        "email": "gemeente@kapelle.nl",
+        "website": "http://www.kapelle.nl"
+      }
+    },
+    "service": {
+      "id": 13,
+      "name": "Omzettingsvergunning voor kamerverhuur aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "De kosten, 'leges', die u moet betalen zijn afhankelijk van de specifieke aanvraag en zijn te vinden in het gemeenteblad op overheid.nl.",
+        "status": "false",
+        "note": "De legeskosten voor de gemeente Kapelle zijn specifiek te vinden in de legesverordening op de website van de gemeente Kapelle zelf, niet in het gemeenteblad op overheid.nl"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 9,
+    "valid_urls": 5,
+    "invalid_urls": 4,
+    "accuracy_percentage": 55.6,
+    "valid_urls_list": [
+      "https://kapelle.nl/ondernemersplein",
+      "https://kapelle.nl/brandveiligheid-melding-vergunning",
+      "https://kapelle.nl/omgevingsplan-aanpassen",
+      "https://kapelle.nl/omgevingsvergunning",
+      "https://kapelle.nl/omgevingsvergunning-0"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.omgevingsloket.nl\">Omgevingsloket",
+        "reason": "INVALID: Error scraping https://www.omgevingsloket.nl\">Omgevingsloket: HTTPSConnectionPool(host='www.omgevingsloket.nl%22%3eomgevingsloket', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10546fe00>: Failed to resolve 'www.omgevingsloket.nl%22%3eomgevingsloket' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.overheid.nl\">overheid.nl</a>.",
+        "reason": "INVALID: Error scraping https://www.overheid.nl\">overheid.nl</a>.: HTTPSConnectionPool(host='www.overheid.nl%22%3eoverheid.nl%3c', port=443): Max retries exceeded with url: /a%3E. (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x105451450>: Failed to resolve 'www.overheid.nl%22%3eoverheid.nl%3c' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.omgevingsloket.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.overheid.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor bepaalde werkzaamheden hebt u een omgevingsvergunning nodig. Bijvoorbeeld als u gaat bouwen, slopen, een alarminstallatie plaatst of een boom wilt kappen.",
+          "original_reference": "Voor het verhuren van kamers in een woning is vaak een omgevingsvergunning nodig",
+          "note": "De bronnen geven een bredere lijst van activiteiten waarvoor een omgevingsvergunning nodig is, terwijl de originele tekst zich alleen focust op kamerverhuur",
+          "source_urls": [
+            "https://kapelle.nl/omgevingsvergunning",
+            "https://kapelle.nl/omgevingsvergunning-0"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Let op! Bij sommige aanvragen past de gemeente de Wet Bibob toe.",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden de toepassing van de Wet Bibob bij bepaalde aanvragen, wat niet genoemd wordt in de originele tekst",
+          "source_urls": [
+            "https://kapelle.nl/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een gebouw moet altijd voldoen aan de regels van het Bouwbesluit. In sommige gevallen heeft u een omgevingsvergunning brandveilig gebruik nodig.",
+          "original_reference": "Daarnaast moet u voldoen aan de brandveiligheidsvoorschriften uit het Bouwbesluit 2012.",
+          "note": "De bronnen specificeren dat er in sommige gevallen een aparte omgevingsvergunning voor brandveilig gebruik nodig is, wat niet vermeld wordt in de originele tekst",
+          "source_urls": [
+            "https://kapelle.nl/brandveiligheid-melding-vergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie over de omgevingsvergunning die niet in de originele tekst staat, waaronder de toepassing van de Wet Bibob, specifieke vereisten voor brandveilig gebruik, en een uitgebreidere lijst van activiteiten waarvoor een omgevingsvergunning nodig is. Deze informatie is essentieel voor een volledig begrip van de vergunningsprocedure."
+  }
+}

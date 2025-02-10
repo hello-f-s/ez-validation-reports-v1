@@ -1,0 +1,92 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HEILOO",
+      "contact": {
+        "phone": "(072) 535 66 66",
+        "email": "info@heiloo.nl",
+        "website": "http://www.heiloo.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Na ontvangst van de aanvraag hoort u binnen 8 weken van de gemeente of u de vergunning krijgt.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Heiloo bedraagt de beslistermijn voor een exploitatievergunning 12 weken, niet 8 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.heiloo.nl/aanvragen-en-regelen/ontheffing-sluitingstijd/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/marktplaatsvergunning/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/terrasvergunning/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/ondernemen/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/exploitatievergunning/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://gemeenteheiloo.nl",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://gemeenteheiloo.nl\">Gemeente",
+        "reason": "INVALID: Error scraping https://gemeenteheiloo.nl\">Gemeente: HTTPSConnectionPool(host='gemeenteheiloo.nl%22%3egemeente', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x103e7b9d0>: Failed to resolve 'gemeenteheiloo.nl%22%3egemeente' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "als u een terras wilt starten of uw terras wilt uitbreiden",
+          "original_reference": "No matching information",
+          "note": "De originele tekst noemt niet dat de exploitatievergunning ook nodig is voor het starten of uitbreiden van een terras, wat wel wordt vermeld in de bronpagina",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/exploitatievergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U vult een Bibob-formulier in. Wij beoordelen met de Bibob-toets of er een risico bestaat dat de vergunning gebruikt gaat worden voor criminele activiteiten.",
+          "original_reference": "Een ingevuld Bibob-formulier.",
+          "note": "De bron geeft extra context over het doel van het Bibob-formulier (risicobeoordeling voor criminele activiteiten), wat niet wordt vermeld in de originele tekst",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/exploitatievergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een horecabedrijf is bijvoorbeeld een hotel, restaurant, café, snackbar, discotheek, buurthuis of clubhuis.",
+          "original_reference": "No matching information",
+          "note": "De bron geeft specifieke voorbeelden van wat als horecabedrijf wordt beschouwd, terwijl de originele tekst deze details niet vermeldt",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/exploitatievergunning/"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten enkele belangrijke aanvullingen op de originele tekst, waaronder de verplichting voor een exploitatievergunning bij terrasuitbreiding, uitleg over het doel van de Bibob-toets, en concrete voorbeelden van wat als horecabedrijf wordt beschouwd. Deze informatie maakt de voorwaarden en toepassingen van de exploitatievergunning duidelijker voor aanvragers."
+  }
+}

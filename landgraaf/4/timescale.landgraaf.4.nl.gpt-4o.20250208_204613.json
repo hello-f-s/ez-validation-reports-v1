@@ -1,0 +1,93 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LANDGRAAF",
+      "contact": {
+        "phone": "14 045",
+        "email": "gemeente@landgraaf.nl",
+        "website": "http://www.landgraaf.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 16,
+    "false_sentences": 3,
+    "accuracy_percentage": 84.2,
+    "false_statements": [
+      {
+        "sentence": "Klein commercieel evenement of snuffelmarkt: € 42,10",
+        "status": "false",
+        "note": "De actuele tarieven op de website van gemeente Landgraaf wijken af van dit bedrag. Dit tarief is verouderd."
+      },
+      {
+        "sentence": "Grootschalig commercieel evenement: € 110,90",
+        "status": "false",
+        "note": "De actuele tarieven op de website van gemeente Landgraaf wijken af van dit bedrag. Dit tarief is verouderd."
+      },
+      {
+        "sentence": "Tijdelijke verkeersmaatregel voor overige evenementen: € 109,65",
+        "status": "false",
+        "note": "De actuele tarieven op de website van gemeente Landgraaf wijken af van dit bedrag. Dit tarief is verouderd."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.landgraaf.nl/evenementen-subsidie",
+      "https://www.landgraaf.nl/aanvragen-en-regelen-ondernemers",
+      "https://www.landgraaf.nl/exploitatievergunning-horecabedrijf",
+      "https://www.landgraaf.nl/evenement-organiseren",
+      "https://www.landgraaf.nl/form/informatieverzoek-indienen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.gemeentelandgraaf.nl/evenement-organiseren",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.gemeentelandgraaf.nl/evenement-organiseren\">Evenement",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Klein commercieel evenement of snuffelmarkt: € 43,05. Grootschalig commercieel evenement: € 113,45. Tijdelijke verkeersmaatregel overige evenementen: € 111,55",
+          "original_reference": "Klein commercieel evenement of snuffelmarkt: € 42,10. Grootschalig commercieel evenement: € 110,90. Tijdelijke verkeersmaatregel voor overige evenementen: € 109,65",
+          "note": "De tarieven in de bronnen zijn hoger dan in de originele tekst. Dit wijst op een tariefwijziging.",
+          "source_urls": [
+            "https://www.landgraaf.nl/evenement-organiseren"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Wilt u een evenement organiseren, ga dan naar de EvenementAsistent die u vindt bij 'Meteen regelen' en vul het elektronische formulier in.",
+          "original_reference": "Gebruik de EvenementAssistent op de website van de gemeente Landgraaf om de aanvraag in te dienen.",
+          "note": "De aanvraagprocedure via de EvenementAssistent komt overeen met de originele tekst.",
+          "source_urls": [
+            "https://www.landgraaf.nl/evenement-organiseren"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de tarieven voor evenementenvergunningen, die in de bronnen iets hoger liggen dan in de originele tekst. De overige informatie over de aanvraagprocedure, voorwaarden en het gebruik van de EvenementAssistent komt overeen met de originele tekst. Er zijn geen significante procedurele verschillen of aanvullende vereisten gevonden."
+  }
+}

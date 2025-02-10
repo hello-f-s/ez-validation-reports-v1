@@ -1,0 +1,79 @@
+{
+  "context": {
+    "municipality": {
+      "name": "NIJMEGEN",
+      "contact": {
+        "phone": "14 024",
+        "email": "gemeente@nijmegen.nl",
+        "website": "http://www.nijmegen.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 6,
+    "true_sentences": 4,
+    "false_sentences": 2,
+    "accuracy_percentage": 66.7,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor een omgevingsvergunning voor ondernemers worden niet specifiek vermeld op de gemeentelijke website.",
+        "status": "false",
+        "note": "De kosten voor een omgevingsvergunning worden wel degelijk vermeld op de website van de gemeente Nijmegen. Deze zijn gebaseerd op een percentage van de bouwkosten en staan vermeld in de legesverordening."
+      },
+      {
+        "sentence": "Hier kan geen specifieke informatie over gevonden worden op de website van deze gemeente.",
+        "status": "false",
+        "note": "Er staat wel degelijk informatie over bezwaarprocedures op de website van de gemeente Nijmegen. Belanghebbenden kunnen binnen 6 weken na bekendmaking bezwaar maken tegen een besluit."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.nijmegen.nl/diensten/bouwen-en-wonen/vergunning-of-melding-voor-bedrijven/",
+      "https://www.nijmegen.nl/diensten/bouwen-en-wonen/inzien-van-bouw-en-sloopplannen/",
+      "https://www.nijmegen.nl/diensten/bouwen-en-wonen/vooroverleg-omgevingsvergunning/",
+      "https://www.nijmegen.nl/diensten/bouwen-en-wonen/inrit-aanleggen/",
+      "https://www.nijmegen.nl/diensten/bouwen-en-wonen/vooroverleg-omgevingsvergunning/kosten-omgevingsvergunning/"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Tegen de besluiten over verleende of geweigerde vergunningen kunt u bezwaar maken",
+          "original_reference": "Hier kan geen specifieke informatie over gevonden worden op de website van deze gemeente.",
+          "note": "De bron vermeldt expliciet dat bezwaar mogelijk is tegen verleende of geweigerde vergunningen, terwijl dit in de originele tekst ontbreekt.",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/bouwen-en-wonen/inzien-van-bouw-en-sloopplannen/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De kosten voor de aanvraag van een omgevingsvergunning hangen af van: De plannen die u heeft (bijvoorbeeld slopen, bouwen, kappen), De mogelijke adviezen die nodig zijn voor het beoordelen van uw aanvraag",
+          "original_reference": "De kosten voor een omgevingsvergunning voor ondernemers worden niet specifiek vermeld op de gemeentelijke website.",
+          "note": "De bron geeft wel degelijk specifieke informatie over de kostenstructuur, inclusief percentages en bedragen voor verschillende situaties.",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/bouwen-en-wonen/vooroverleg-omgevingsvergunning/kosten-omgevingsvergunning/"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele inhoud en de bronnen. Ten eerste wordt in de bronnen wel degelijk informatie gegeven over bezwaarmogelijkheden, terwijl dit in de originele tekst ontbreekt. Ten tweede bevat de website wel specifieke informatie over de kostenstructuur van omgevingsvergunningen, in tegenstelling tot wat in de originele tekst wordt beweerd. Deze informatie is gedetailleerd en afhankelijk van verschillende factoren zoals het type plan en benodigde adviezen."
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ALPHEN-CHAAM",
+      "contact": {
+        "phone": "14013",
+        "email": "info@alphen-chaam.nl",
+        "website": "http://www.alphen-chaam.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "De gemeente streeft ernaar om de aanvraag binnen 8 weken te behandelen.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Alphen-Chaam geldt voor een terrasvergunning de reguliere procedure met een wettelijke beslistermijn van 6 weken, niet 8 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.alphen-chaam.nl/conceptverzoek",
+      "https://www.alphen-chaam.nl/ondernemen/vergunningen-en-ontheffingen-voor-ondernemers",
+      "https://www.alphen-chaam.nl/omgevingsvergunning",
+      "https://www.alphen-chaam.nl/horecavergunning",
+      "https://www.alphen-chaam.nl/vergunningen-en-ontheffingen/vergunningen-en-ontheffingen-voor-ondernemers"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "€ 178,95",
+          "original_reference": "De aanvraag voor een terrasvergunning kan betrekking hebben op leges. Deze kosten variëren en zijn te vinden in de legesverordening van de gemeente.",
+          "note": "De bron vermeldt een specifiek bedrag van €178,95 voor een horecavergunning, terwijl de originele tekst alleen spreekt over variabele legeskosten.",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/horecavergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U heeft hiervoor DigiD (inwoners) of eHerkenning (ondernemers) nodig.",
+          "original_reference": "Het kan zijn dat u DigiD (inwoners) of eHerkenning (ondernemers) nodig heeft om de aanvraag te doen.",
+          "note": "De bron stelt de DigiD/eHerkenning als absolute vereiste, terwijl de originele tekst dit als mogelijkheid presenteert.",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De vergunning geldt voor het adres waarvoor u deze aanvraagt. De vergunning geldt voor de ondernemer op wie zijn naam u deze aanvraagt.",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden specifieke geldigheidsvoorwaarden voor de vergunning die niet in de originele tekst staan.",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/horecavergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de specificiteit van de kosten (concreet bedrag versus variabele kosten), de vereisten voor digitale identificatie (absoluut versus optioneel) en aanvullende informatie over de geldigheid van de vergunning die in de originele tekst ontbreekt. De bronnen zijn over het algemeen specifieker en concreter in hun voorwaarden en vereisten dan de originele tekst."
+  }
+}

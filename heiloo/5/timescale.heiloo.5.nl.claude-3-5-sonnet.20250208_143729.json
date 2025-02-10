@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HEILOO",
+      "contact": {
+        "phone": "(072) 535 66 66",
+        "email": "info@heiloo.nl",
+        "website": "http://www.heiloo.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 9,
+    "true_sentences": 8,
+    "false_sentences": 1,
+    "accuracy_percentage": 88.9,
+    "false_statements": [
+      {
+        "sentence": "Binnen 8 weken hoort u van de gemeente of u de vergunning krijgt. De gemeente kan deze termijn met maximaal 8 weken verlengen.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Heiloo geldt voor een exploitatievergunning een behandeltermijn van 12 weken, niet 8 weken. Ook de verlengingstermijn wordt niet specifiek genoemd op de gemeentelijke website."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.heiloo.nl/aanvragen-en-regelen/ontheffing-sluitingstijd/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/exploitatievergunning/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/marktplaatsvergunning/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/terrasvergunning/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/ondernemen/"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wij kunnen vragen om een Verklaring Omtrent Gedrag (VOG)",
+          "original_reference": "De eigenaar/leidinggevende is van onbesproken gedrag en heeft geen strafblad",
+          "note": "De brontekst specificeert dat een VOG kan worden opgevraagd, wat een belangrijke aanvullende voorwaarde is die niet in de originele tekst staat vermeld",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/exploitatievergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U vraagt een exploitatievergunning aan: bij het starten, overnemen, uitbreiden of veranderen van een horecabedrijf; als uw horecabedrijf een andere leidinggevende krijgt of als u andere leidinggevenden in dienst neemt; en als u een terras wilt starten of uw terras wilt uitbreiden.",
+          "original_reference": "No matching information",
+          "note": "De brontekst bevat specifieke situaties waarin een exploitatievergunning moet worden aangevraagd, die niet in de originele tekst worden genoemd",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/exploitatievergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wij beoordelen met de Bibob-toets of er een risico bestaat dat de vergunning gebruikt gaat worden voor criminele activiteiten.",
+          "original_reference": "U vult een Bibob-formulier in",
+          "note": "De brontekst geeft extra uitleg over het doel van de Bibob-toets, wat belangrijke contextuele informatie is die ontbreekt in de originele tekst",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/exploitatievergunning/"
+          ]
+        }
+      ]
+    },
+    "summary": "De broninhoud bevat verschillende belangrijke aanvullende details die niet in de originele tekst staan. Met name de mogelijke VOG-vereiste, specifieke situaties waarin een exploitatievergunning nodig is, en het doel van de Bibob-toets worden beter toegelicht. Deze informatie is essentieel voor ondernemers die een horecavergunning willen aanvragen."
+  }
+}

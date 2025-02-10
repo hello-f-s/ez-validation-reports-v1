@@ -1,0 +1,79 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OPMEER",
+      "contact": {
+        "phone": "(0226) 36 33 33",
+        "email": "gemeente@opmeer.nl",
+        "website": "http://www.opmeer.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Voor één speelautomaat voor twaalf maanden: € 56,50.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Opmeer is het tarief voor één speelautomaat voor 12 maanden € 57,95, niet € 56,50."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.opmeer.nl/alcoholwetvergunning",
+      "https://www.opmeer.nl/kansspelautomaat-aanwezigheidsvergunning-aanvragen",
+      "https://www.opmeer.nl/standplaats-aanvragen",
+      "https://www.opmeer.nl/omgevingsvergunning",
+      "https://www.opmeer.nl/loterij-prijsvraag-bingo-organiseren"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.opmeer.nl/kansspelautomaat-aanwezigheidsvergunning-aanvragen\">https://www.opmeer.nl/kansspelautomaat-aanwezigheidsvergunning-aanvragen</a></p>",
+        "reason": "INVALID: Error scraping https://www.opmeer.nl/kansspelautomaat-aanwezigheidsvergunning-aanvragen\">https://www.opmeer.nl/kansspelautomaat-aanwezigheidsvergunning-aanvragen</a></p>: 404 Client Error: Not Found for url: https://www.opmeer.nl/kansspelautomaat-aanwezigheidsvergunning-aanvragen%22%3Ehttps:/www.opmeer.nl/kansspelautomaat-aanwezigheidsvergunning-aanvragen%3C/a%3E%3C/p%3E"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Er zijn twee soorten speelautomaten, namelijk een behendigheidsautomaat en een kansspelautomaat. behendigheidsautomaten (zoals flipperkast, videospelletjes) zijn speelautomaten waarvan het resultaat uitsluitend gericht is op het verlengen van de speelduur of het recht op gratis spelen en de speler het spelverloop kan beïnvloeden door inzicht en behendigheid",
+          "original_reference": "No matching information",
+          "note": "De originele tekst maakt geen onderscheid tussen verschillende types speelautomaten (behendigheids- vs. kansspelautomaten) en hun specifieke kenmerken, wat belangrijke contextuele informatie is voor aanvragers",
+          "source_urls": [
+            "https://www.opmeer.nl/kansspelautomaat-aanwezigheidsvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor een behendigheidsautomaat heeft u geen vergunning nodig. U mag in een laagdrempelige- en hoogdrempelige inrichting zonder vergunning alleen behendigheidsautomaten aanwezig hebben.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat behendigheidsautomaten geen vergunning nodig hebben, wat een belangrijk onderscheid is voor ondernemers",
+          "source_urls": [
+            "https://www.opmeer.nl/kansspelautomaat-aanwezigheidsvergunning-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De broninhoud bevat belangrijke aanvullende informatie over de verschillende types speelautomaten en hun vergunningsvereisten die niet in de originele tekst staat. Met name het onderscheid tussen behendigheids- en kansspelautomaten en het feit dat behendigheidsautomaten geen vergunning vereisen zijn belangrijke details die ontbreken in de originele tekst. De kernvoorwaarden en kosten zijn verder consistent tussen beide versies."
+  }
+}

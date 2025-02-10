@@ -1,0 +1,92 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OPMEER",
+      "contact": {
+        "phone": "(0226) 36 33 33",
+        "email": "gemeente@opmeer.nl",
+        "website": "http://www.opmeer.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "Aanvraag nieuwe exploitatievergunning: € 451,70.",
+        "status": "false",
+        "note": "Het exacte bedrag voor een nieuwe exploitatievergunning in gemeente Opmeer is € 458,25 volgens de actuele legesverordening van de gemeente Opmeer."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.opmeer.nl/exploitatievergunning-horecabedrijf",
+      "https://www.opmeer.nl/openingstijden-horeca-eenmalig-aanpassen",
+      "https://www.opmeer.nl",
+      "https://www.opmeer.nl/omgevingsvergunning",
+      "https://www.opmeer.nl/alcoholwetvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.opmeer.nl\">Gemeente",
+        "reason": "INVALID: Error scraping https://www.opmeer.nl\">Gemeente: HTTPSConnectionPool(host='www.opmeer.nl%22%3egemeente', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1079e7610>: Failed to resolve 'www.opmeer.nl%22%3egemeente' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.opmeer.nl/terras-plaatsen",
+        "reason": "INVALID: Error scraping https://www.opmeer.nl/terras-plaatsen: 404 Client Error: Not Found for url: https://www.opmeer.nl/terras-plaatsen"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Para-commerciële sportverenigingen (waarbij horeca niet de hoofdactiviteit is) zonder terras zijn vrijgesteld van de exploitatievergunningsplicht volgens artikel 2:28 lid 3 van de APV",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet deze belangrijke uitzondering voor para-commerciële sportverenigingen zonder terras",
+          "source_urls": [
+            "https://www.opmeer.nl/exploitatievergunning-horecabedrijf"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een horecabedrijf is bijvoorbeeld een hotel, restaurant, pension, café, waterpijpcafé, cafetaria, snackbar, discotheek, buurthuis of clubhuis of elke andere voor het publiek toegankelijke, besloten ruimte waarin bedrijfsmatig logies wordt verstrekt of dranken worden geschonken",
+          "original_reference": "No matching information",
+          "note": "De originele tekst geeft geen definitie of voorbeelden van wat als horecabedrijf wordt beschouwd",
+          "source_urls": [
+            "https://www.opmeer.nl/exploitatievergunning-horecabedrijf"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor een slijterij is alleen een alcoholwetvergunning nodig, geen exploitatievergunning",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet deze specifieke uitzondering voor slijterijen",
+          "source_urls": [
+            "https://www.opmeer.nl/exploitatievergunning-horecabedrijf"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie die niet in de originele tekst staat, met name over uitzonderingen op de vergunningsplicht voor para-commerciële sportverenigingen en slijterijen, en een duidelijke definitie van wat als horecabedrijf wordt beschouwd. Deze informatie is essentieel voor ondernemers om te bepalen of zij een exploitatievergunning nodig hebben."
+  }
+}

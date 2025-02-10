@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OLDENZAAL",
+      "contact": {
+        "phone": "(0541) 58 81 11",
+        "email": "info@oldenzaal.nl",
+        "website": "http://www.oldenzaal.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 8,
+    "true_sentences": 7,
+    "false_sentences": 1,
+    "accuracy_percentage": 87.5,
+    "false_statements": [
+      {
+        "sentence": "De alcoholvergunning is onbeperkt geldig, maar wijzigingen in het horecabedrijf zoals een verandering van de ondernemingsvorm of nieuwe leidinggevenden vereisen een aanpassing van de vergunning.",
+        "status": "false",
+        "note": "Een alcoholvergunning (Drank- en Horecavergunning) is niet onbeperkt geldig in Oldenzaal. De vergunning moet worden aangepast bij wijzigingen, maar heeft ook een beperkte geldigheidsduur en moet periodiek worden vernieuwd."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.oldenzaal.nl/verklaring-omtrent-gedrag-vog",
+      "https://www.oldenzaal.nl",
+      "https://www.oldenzaal.nl/omgevingsvergunning",
+      "https://www.oldenzaal.nl/alcoholvergunning",
+      "https://www.oldenzaal.nl/standplaatsvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.oldenzaal.nl/bouwen-en-verbouwen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.oldenzaal.nl\">Gemeente",
+        "reason": "INVALID: Error scraping https://www.oldenzaal.nl\">Gemeente: HTTPSConnectionPool(host='www.oldenzaal.nl%22%3egemeente', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x105bfb610>: Failed to resolve 'www.oldenzaal.nl%22%3egemeente' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Neem dan contact met ons op, zodat we met u een afspraak kunnen maken voor een vooroverleg. In dit overleg gaan we onder andere de volgende punten met u bespreken: Inschrijving KVK, Rechtsvorm, Verklaring Sociale Hygiëne, Wet Bibob, Milieubelastende activiteiten, Brandveiligheid, Terras, Speelautomaten",
+          "original_reference": "De aanvraag van een alcoholvergunning vereist het invullen van het Bibob-vragenformulier als er sprake is van een nieuwe horecagelegenheid.",
+          "note": "De bronpagina vereist eerst een vooroverleg waarin meerdere aspecten worden besproken voordat de aanvraag kan worden gedaan. Dit vooroverleg wordt niet genoemd in de originele tekst.",
+          "source_urls": [
+            "https://www.oldenzaal.nl/alcoholvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u de aanvraag heeft ingediend nodigen wij u uit voor een gesprek.",
+          "original_reference": "De vergunningaanvraag kan digitaal worden ingediend.",
+          "note": "De bronpagina vermeldt een verplicht gesprek na de aanvraag, wat niet wordt genoemd in de originele tekst.",
+          "source_urls": [
+            "https://www.oldenzaal.nl/alcoholvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen het aanvraagproces: de gemeente Oldenzaal hanteert een uitgebreidere procedure met een verplicht vooroverleg en een gesprek na de aanvraag. Deze stappen worden niet genoemd in de originele tekst. Het vooroverleg behandelt ook meer specifieke aspecten zoals milieubelastende activiteiten, brandveiligheid en terrassen."
+  }
+}

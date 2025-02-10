@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "NIJMEGEN",
+      "contact": {
+        "phone": "14 024",
+        "email": "gemeente@nijmegen.nl",
+        "website": "http://www.nijmegen.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "€ 41,35 bij aanvraag via de gemeente",
+        "status": "false",
+        "note": "Het correcte tarief voor een VOG-aanvraag via de gemeente Nijmegen is € 41,95 (2024). Het genoemde bedrag van € 41,35 is onjuist."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.nijmegen.nl/diensten/verhuizen/nederlander-worden/",
+      "https://www.nijmegen.nl/formulieren/conceptaanvraag-omgevingsvergunning-aanvullen-of-wijzigen/",
+      "https://www.nijmegen.nl/diensten/uittreksels-en-verklaringen/doelgroepverklaring-aanvraag-door-werknemer/",
+      "https://www.nijmegen.nl/diensten/uittreksels-en-verklaringen/verklaring-omtrent-gedrag/",
+      "https://www.nijmegen.nl/diensten/bouwen-en-wonen/vergunning-of-melding-voor-bedrijven/"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vraagt uw werkgever de VOG online voor u aan via Justis (ministerie van Justitie en Veiligheid)? Dan hoeft u niet naar de gemeente en kost de aanvraag minder. U krijgt een mail van uw werkgever met een link en een aanvraagcode.",
+          "original_reference": "Of vraag online aan via justis.nl met de link en aanvraagcode van uw werkgever",
+          "note": "De brontekst specificeert dat de werkgever de online aanvraag moet starten, terwijl dit in de originele tekst niet duidelijk wordt vermeld.",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/uittreksels-en-verklaringen/verklaring-omtrent-gedrag/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bent u vrijwilliger? Dan kan de organisatie waarvoor u werkt de VOG gratis online aanvragen via gratisvog.nl",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over de mogelijkheid van een gratis VOG voor vrijwilligers via gratisvog.nl",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/uittreksels-en-verklaringen/verklaring-omtrent-gedrag/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vraag een VOG altijd alleen aan bij Justis of de gemeente. Verschillende commerciële websites beweren dat u bij hen online een VOG kunt bestellen. Soms gebruiken zij het logo van de gemeente op hun site. Bestel niet op deze sites.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist een belangrijke waarschuwing over frauduleuze websites die VOG's aanbieden",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/uittreksels-en-verklaringen/verklaring-omtrent-gedrag/"
+          ]
+        }
+      ]
+    },
+    "summary": "De broninhoud bevat drie belangrijke verschillen met de originele tekst: 1) verduidelijking dat de werkgever de online aanvraag moet initiëren, 2) informatie over gratis VOG-aanvragen voor vrijwilligers, en 3) een waarschuwing tegen frauduleuze websites. Deze informatie is relevant voor een complete en veilige VOG-aanvraagprocedure."
+  }
+}

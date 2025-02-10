@@ -1,0 +1,106 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HOOGEVEEN",
+      "contact": {
+        "phone": "14 0528",
+        "email": "info@hoogeveen.nl",
+        "website": "http://www.hoogeveen.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 9,
+    "false_sentences": 2,
+    "accuracy_percentage": 81.8,
+    "false_statements": [
+      {
+        "sentence": "Als u een horecazaak hebt, mag u op uw eigen terrein een terras plaatsen zonder vergunning",
+        "status": "false",
+        "note": "Ook voor terrassen op eigen terrein is een omgevingsvergunning nodig volgens de gemeente Hoogeveen"
+      },
+      {
+        "sentence": "Terrasvergunning kost € 36,55, ook als de aanvraag wordt afgewezen",
+        "status": "false",
+        "note": "Het actuele legestarief voor een terrasvergunning in Hoogeveen is € 37,65 volgens de legesverordening"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.hoogeveen.nl/vergunningen/omgevingsvergunningen",
+      "https://www.hoogeveen.nl/vergunningen/terrasvergunning",
+      "https://www.hoogeveen.nl/vergunningen/vergunning-gebruik-gemeentegrond",
+      "https://www.hoogeveen.nl/raad-en-college/woo-verzoek",
+      "https://www.hoogeveen.nl/vergunningen/standplaatsvergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 5,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "€ 37,60",
+          "original_reference": "€ 36,55",
+          "note": "Het bedrag voor de terrasvergunning is hoger in de bronnen (€ 37,60) dan in de originele tekst (€ 36,55)",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/terrasvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "€ 1,02 per m2 per week, € 4 per maand, € 26,12 per jaar",
+          "original_reference": "€ 0,99 per m2 per week, € 3,89 per maand of € 25,38 per jaar",
+          "note": "De precariobelasting tarieven zijn hoger in de bronnen dan in de originele tekst",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/terrasvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "€ 0,71 per week, € 2,75 per maand, € 18,85 per jaar",
+          "original_reference": "€ 0,69 per week, € 2,67 per maand of € 18,32 per jaar",
+          "note": "De precariobelasting tarieven voor terrassen tijdens marktdagen zijn hoger in de bronnen dan in de originele tekst",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/terrasvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U mag uw terras om 7.00 uur 's ochtends openen. Uiterlijk om 02.00 uur 's nachts moet het terras sluiten",
+          "original_reference": "No matching information",
+          "note": "De openingstijden van het terras worden wel vermeld in de bron maar ontbreken in de originele tekst",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/terrasvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een tapinstallatie op uw terras mag niet",
+          "original_reference": "No matching information",
+          "note": "Het verbod op tapinstallaties wordt wel vermeld in de bron maar ontbreekt in de originele tekst",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/terrasvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen hogere tarieven voor zowel de terrasvergunning als de precariobelasting in de bronnen vergeleken met de originele tekst. Daarnaast bevat de bron aanvullende belangrijke informatie over openingstijden (7:00-02:00 uur) en het verbod op tapinstallaties die niet in de originele tekst staat vermeld."
+  }
+}

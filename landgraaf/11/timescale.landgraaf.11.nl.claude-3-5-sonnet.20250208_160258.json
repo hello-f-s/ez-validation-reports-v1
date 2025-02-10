@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LANDGRAAF",
+      "contact": {
+        "phone": "14 045",
+        "email": "gemeente@landgraaf.nl",
+        "website": "http://www.landgraaf.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "De afhandeltermijn van een conceptverzoek is afhankelijk van complexiteit en volledigheid, meestal binnen 12 weken.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Landgraaf is de afhandeltermijn van een conceptverzoek meestal binnen 8 weken, niet 12 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.landgraaf.nl/aanvragen-en-regelen-ondernemers",
+      "https://www.landgraaf.nl/exploitatievergunning-horecabedrijf",
+      "https://www.landgraaf.nl/het-omgevingsloket",
+      "https://www.landgraaf.nl/omgevingsvergunning-of-melding",
+      "https://www.landgraaf.nl/form/informatieverzoek-indienen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vanaf 1 januari 2024 gaat dit via het (nieuwe) Omgevingsloket",
+          "original_reference": "U vraagt een omgevingsvergunning aan via het Omgevingsloket (vanaf 2024)",
+          "note": "De bronpagina specificeert een exacte datum (1 januari 2024) terwijl de originele tekst alleen het jaar 2024 noemt",
+          "source_urls": [
+            "https://www.landgraaf.nl/het-omgevingsloket"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Na het indienen van dit informatieverzoek ontvangt u een schriftelijk advies over de zetten vervolgstappen",
+          "original_reference": "U kunt eerst een conceptverzoek indienen en een schriftelijk advies krijgen over de vervolgstappen",
+          "note": "De bronpagina spreekt over een 'informatieverzoek' terwijl de originele tekst spreekt over een 'conceptverzoek'",
+          "source_urls": [
+            "https://www.landgraaf.nl/form/informatieverzoek-indienen"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee kleine maar relevante verschillen gevonden in de terminologie en specificiteit van de informatie. Het belangrijkste verschil betreft de exacte ingangsdatum van het nieuwe Omgevingsloket en het gebruik van verschillende termen voor het vooraf indienen van een verzoek. De kern van de procedures en vereisten blijft echter consistent tussen de bronnen en de originele tekst."
+  }
+}

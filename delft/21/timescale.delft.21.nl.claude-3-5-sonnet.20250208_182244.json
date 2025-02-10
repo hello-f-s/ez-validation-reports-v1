@@ -1,0 +1,93 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DELFT",
+      "contact": {
+        "phone": "14 015",
+        "email": "null",
+        "website": "http://www.delft.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 8,
+    "true_sentences": 6,
+    "false_sentences": 2,
+    "accuracy_percentage": 75.0,
+    "false_statements": [
+      {
+        "sentence": "U kunt de VOG NP niet online aanvragen.",
+        "status": "false",
+        "note": "Volgens de website van gemeente Delft kan een VOG NP wel online worden aangevraagd via de website van de Dienst Justis."
+      },
+      {
+        "sentence": "Na 4 tot 8 weken ontvangt u de VOG NP per post.",
+        "status": "false",
+        "note": "Volgens de website van gemeente Delft duurt de afhandeling van een VOG-aanvraag meestal 2 tot 4 weken, niet 4 tot 8 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.delft.nl/woo-verzoek-doen",
+      "https://www.delft.nl/nederlander-worden",
+      "https://www.delft.nl/verklaring-omtrent-gedrag",
+      "https://www.delft.nl/omgevingsvergunning-aanvragen",
+      "https://www.delft.nl/omgevingsvergunning-milieu"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.delft.nl/Inwoners/overige-loket-producten/verklaring-omtrent-gedrag-gemeente-delft",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Kosten 2025\nOnline aanvraag€ 33,85\nAanvraag bij gemeente€ 41,35",
+          "original_reference": "Voor 2024 zijn de kosten voor een aanvraag bij de gemeente €41,35.",
+          "note": "De bron vermeldt tarieven voor 2025, terwijl de originele tekst 2024 tarieven noemt. Ook wordt in de bron een online aanvraagtarief genoemd dat niet in de originele tekst staat.",
+          "source_urls": [
+            "https://www.delft.nl/verklaring-omtrent-gedrag"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Uw werkgever kan de verklaring online aanvragen via de Dienst Justis. Dit is sneller en goedkoper.",
+          "original_reference": "U kunt de VOG NP niet online aanvragen.",
+          "note": "De originele tekst stelt dat online aanvragen niet mogelijk is, terwijl de bron aangeeft dat werkgevers wel online kunnen aanvragen via Dienst Justis.",
+          "source_urls": [
+            "https://www.delft.nl/verklaring-omtrent-gedrag"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Woont u in Delft? En bent u vrijwilliger bij een Delftse stichting of vrijwilligersorganisatie? Dan kunt u bij de gemeente een gratis verkl...",
+          "original_reference": "No matching information",
+          "note": "De bron vermeldt een gratis VOG-mogelijkheid voor Delftse vrijwilligers, wat niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.delft.nl/verklaring-omtrent-gedrag"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn drie belangrijke verschillen gevonden: de tariefinformatie voor verschillende jaren (2024 vs 2025), de mogelijkheid tot online aanvragen via werkgevers (wat tegenstrijdig is met de originele tekst), en aanvullende informatie over gratis VOG's voor Delftse vrijwilligers die niet in de originele tekst staat vermeld."
+  }
+}

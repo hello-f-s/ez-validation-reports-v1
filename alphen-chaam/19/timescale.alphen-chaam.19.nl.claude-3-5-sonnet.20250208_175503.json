@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ALPHEN-CHAAM",
+      "contact": {
+        "phone": "14013",
+        "email": "info@alphen-chaam.nl",
+        "website": "http://www.alphen-chaam.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 10,
+    "false_sentences": 1,
+    "accuracy_percentage": 90.9,
+    "false_statements": [
+      {
+        "sentence": "Wij behandelen uw aanvraag binnen 8 weken.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Alphen-Chaam wordt een aanvraag voor een aanwezigheidsvergunning kansspelautomaten binnen 12 weken behandeld, niet binnen 8 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.alphen-chaam.nl/horecavergunning",
+      "https://www.alphen-chaam.nl/vergunningen-en-ontheffingen/vergunningen-en-ontheffingen-voor-ondernemers",
+      "https://www.alphen-chaam.nl/omgevingsvergunning",
+      "https://www.alphen-chaam.nl/vergunningplaatsengokautomaat",
+      "https://www.alphen-chaam.nl/ondernemen/vergunningen-en-ontheffingen-voor-ondernemers"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vergunning voor 1 jaar voor 1 gokautomaat € 57,80\nVoor de 1e gokautomaat € 57,80\nVoor elke volgende gokautomaat € 34,78",
+          "original_reference": "Vergunning voor 1 jaar voor 1 gokautomaat € 56,50\nVoor de 1e gokautomaat € 56,50\nVoor elke volgende gokautomaat € 34",
+          "note": "De tarieven in de bronpagina zijn hoger dan in de originele tekst. Het verschil is € 1,30 voor de eerste automaat en € 0,78 voor elke volgende automaat.",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/vergunningplaatsengokautomaat"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "U heeft een aanwezigheidsvergunning kansspelautomaten nodig",
+          "original_reference": "U heeft een 'aanwezigheidsvergunning kansspelautomaten' nodig om een gokautomaat te plaatsen in uw horecazaak",
+          "note": "De vereiste vergunning wordt in beide teksten hetzelfde genoemd",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/vergunningplaatsengokautomaat"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Wij behandelen uw aanvraag binnen 8 weken. Deze periode kunnen we met 8 weken verlengen",
+          "original_reference": "Wij behandelen uw aanvraag binnen 8 weken. Deze periode kunnen we met 8 weken verlengen",
+          "note": "De behandeltermijn is in beide teksten identiek",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/vergunningplaatsengokautomaat"
+          ]
+        }
+      ]
+    },
+    "summary": "Het belangrijkste verschil tussen de originele tekst en de bronnen betreft de tarieven voor de gokautomatenvergunning. De actuele tarieven liggen iets hoger dan vermeld in de originele tekst. Verder komt de informatie over procedures, termijnen en vereisten overeen."
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MAASDRIEL",
+      "contact": {
+        "phone": "14 0418",
+        "email": "info@maasdriel.nl",
+        "website": "http://www.maasdriel.nl"
+      }
+    },
+    "service": {
+      "id": 10,
+      "name": "Nachtregister bijhouden"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 9,
+    "true_sentences": 8,
+    "false_sentences": 1,
+    "accuracy_percentage": 88.9,
+    "false_statements": [
+      {
+        "sentence": "Er is geen directe informatie beschikbaar over kosten en betaling specifiek voor het nachtregister.",
+        "status": "false",
+        "note": "Op de website van gemeente Maasdriel staat wel degelijk informatie over de kosten van het nachtregister. Het gebruik van het digitale nachtregister kost €75,- per jaar per accommodatie."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 2,
+    "invalid_urls": 5,
+    "accuracy_percentage": 28.6,
+    "valid_urls_list": [
+      "https://www.maasdriel.nl/inwoner-en-ondernemer/wonen-en-leven/arbeidsmigranten/arbeidsmigranten-/inschrijven-bij-de-gemeente",
+      "https://www.maasdriel.nl/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.maasdriel.nl/inwoner-en-ondernemer/wonen-en-leven/arbeidsmigranten/huisvesters-/verblijfsbelasting",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.maasdriel.nl/inwoner-en-ondernemer/bouwen-en-verbouwen/wegwijzer-omgevingsloket/vergunning-kamerverhuur",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.maasdriel.nl/inwoner-en-ondernemer/bouwen-en-verbouwen/wegwijzer-omgevingsloket/vergunning-bouwwerk-onderhouden",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.maasdriel.nl/\">Meer",
+        "reason": "INVALID: Error scraping https://www.maasdriel.nl/\">Meer: 404 Client Error: Not Found for url: https://www.maasdriel.nl/%22%3EMeer"
+      },
+      {
+        "url": "https://www.maasdriel.nl/inwoner-en-ondernemer/wonen-en-leven/arbeidsmigranten/huisvesters-/digitaal-nachtregister",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u langer blijft dan 4 maanden in een half jaar (dit mag over meerdere kortere periodes verdeeld zijn), moet u zich ook inschrijven bij de gemeente in de Basisregistratie Personen (BRP)",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat specifieke informatie over de verplichting tot BRP-registratie bij verblijf langer dan 4 maanden in een half jaar. Deze belangrijke voorwaarde ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.maasdriel.nl/inwoner-en-ondernemer/wonen-en-leven/arbeidsmigranten/arbeidsmigranten-/inschrijven-bij-de-gemeente"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Meestal is er een mogelijkheid om bij het agrarische bedrijf zelf te wonen of in een woning van de ondernemer of het uitzendbureau",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt specifieke huisvestingsmogelijkheden voor arbeidsmigranten die niet genoemd worden in de originele tekst.",
+          "source_urls": [
+            "https://www.maasdriel.nl/inwoner-en-ondernemer/wonen-en-leven/arbeidsmigranten/arbeidsmigranten-/inschrijven-bij-de-gemeente"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten twee belangrijke aanvullende details die niet in de originele tekst staan: de verplichting tot BRP-registratie bij verblijf langer dan 4 maanden in een half jaar, en informatie over specifieke huisvestingsmogelijkheden voor arbeidsmigranten. Deze informatie is relevant voor een volledig begrip van de regelgeving rondom tijdelijk verblijf in de gemeente Maasdriel."
+  }
+}

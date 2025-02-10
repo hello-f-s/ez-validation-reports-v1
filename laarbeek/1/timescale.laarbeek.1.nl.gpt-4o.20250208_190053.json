@@ -1,0 +1,100 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LAARBEEK",
+      "contact": {
+        "phone": "(0492) 46 97 00",
+        "email": "gemeente@laarbeek.nl",
+        "website": "http://www.laarbeek.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "Voor het aanvragen van een exploitatievergunning betaalt u € 385,00 (tarief 2022).",
+        "status": "false",
+        "note": "Dit tarief is verouderd. De gemeente Laarbeek hanteert andere, actuele tarieven voor exploitatievergunningen die jaarlijks worden vastgesteld. Het genoemde bedrag van €385,00 uit 2022 is niet meer geldig."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 9,
+    "valid_urls": 5,
+    "invalid_urls": 4,
+    "accuracy_percentage": 55.6,
+    "valid_urls_list": [
+      "https://www.laarbeek.nl/alcohol-schenken-bij-evenementen",
+      "https://www.laarbeek.nl/alcoholvergunning",
+      "https://www.laarbeek.nl/verzoek-op-basis-van-de-wet-open-overheid-woo",
+      "https://www.laarbeek.nl/horecabedrijf-beginnen",
+      "https://www.laarbeek.nl/reclame-uitingen-plaatsen-omgevingsvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://waterpoortvandepeel.nl/horecabedrijf-beginnen-gemeente-laarbeek\">Gemeente",
+        "reason": "INVALID: Error scraping https://waterpoortvandepeel.nl/horecabedrijf-beginnen-gemeente-laarbeek\">Gemeente: HTTPSConnectionPool(host='waterpoortvandepeel.nl', port=443): Max retries exceeded with url: /horecabedrijf-beginnen-gemeente-laarbeek%22%3EGemeente (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1018)')))"
+      },
+      {
+        "url": "https://waterpoortvandepeel.nl/alcoholvergunning-gemeente-laarbeek\">Gemeente",
+        "reason": "INVALID: Error scraping https://waterpoortvandepeel.nl/alcoholvergunning-gemeente-laarbeek\">Gemeente: HTTPSConnectionPool(host='waterpoortvandepeel.nl', port=443): Max retries exceeded with url: /alcoholvergunning-gemeente-laarbeek%22%3EGemeente (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1018)')))"
+      },
+      {
+        "url": "https://waterpoortvandepeel.nl/horecabedrijf-beginnen-gemeente-laarbeek",
+        "reason": "INVALID: Error scraping https://waterpoortvandepeel.nl/horecabedrijf-beginnen-gemeente-laarbeek: HTTPSConnectionPool(host='waterpoortvandepeel.nl', port=443): Max retries exceeded with url: /horecabedrijf-beginnen-gemeente-laarbeek (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1018)')))"
+      },
+      {
+        "url": "https://waterpoortvandepeel.nl/alcoholvergunning-gemeente-laarbeek",
+        "reason": "INVALID: Error scraping https://waterpoortvandepeel.nl/alcoholvergunning-gemeente-laarbeek: HTTPSConnectionPool(host='waterpoortvandepeel.nl', port=443): Max retries exceeded with url: /alcoholvergunning-gemeente-laarbeek (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1018)')))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor het aanvragen van een alcoholvergunning betaalt u € 445",
+          "original_reference": "Voor het aanvragen van een exploitatievergunning betaalt u € 385,00 (tarief 2022)",
+          "note": "Het actuele tarief voor de alcoholvergunning is € 445, wat verschilt van het vermelde tarief van € 385 uit 2022",
+          "source_urls": [
+            "https://www.laarbeek.nl/alcoholvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor een melding van het wijzigen van ruimtes waar u alcohol schenkt betaalt u € 127. Voor het wijzigen van het aanhangsel betaalt u € 127",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist informatie over aanvullende kosten voor wijzigingen in de vergunning",
+          "source_urls": [
+            "https://www.laarbeek.nl/alcoholvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U staat niet onder curatele",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist de voorwaarde dat de aanvrager niet onder curatele mag staan",
+          "source_urls": [
+            "https://www.laarbeek.nl/alcohol-schenken-bij-evenementen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de kosten (€445 in plaats van €385) en ontbrekende informatie over aanvullende tarieven voor wijzigingen. Ook ontbreekt in de originele tekst de voorwaarde dat de aanvrager niet onder curatele mag staan. De overige voorwaarden en procedures komen grotendeels overeen met de bronnen."
+  }
+}

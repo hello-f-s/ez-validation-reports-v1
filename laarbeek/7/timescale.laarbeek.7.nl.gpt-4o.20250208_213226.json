@@ -1,0 +1,98 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LAARBEEK",
+      "contact": {
+        "phone": "(0492) 46 97 00",
+        "email": "gemeente@laarbeek.nl",
+        "website": "http://www.laarbeek.nl"
+      }
+    },
+    "service": {
+      "id": 7,
+      "name": "Kabels en leidingen aanleggen en beheren"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Uw aanvraag kan worden ingediend via een brief of e-mail gericht aan het college van burgemeester en wethouders van gemeente Laarbeek.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Laarbeek moet de aanvraag voor kabels en leidingen worden ingediend via het digitale formulier op de website of via MOOR (Meldpunt Opbrekingen Openbare Ruimte). Een brief of e-mail is geen geldige aanvraagmethode."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 6,
+    "invalid_urls": 1,
+    "accuracy_percentage": 85.7,
+    "valid_urls_list": [
+      "https://www.laarbeek.nl/bouwplannen-ingediend-bij-de-gemeente-inzage",
+      "https://www.laarbeek.nl/bouwen-en-verbouwen-omgevingsvergunning",
+      "https://www.laarbeek.nl/kabels-en-leidingen-leggen",
+      "https://www.laarbeek.nl/exploitatieovereenkomst",
+      "https://www.laarbeek.nl/bouwwerk-gereedmelding",
+      "https://www.laarbeek.nl"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.laarbeek.nl\">Gemeente",
+        "reason": "INVALID: Error scraping https://www.laarbeek.nl\">Gemeente: HTTPSConnectionPool(host='www.laarbeek.nl%22%3egemeente', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10464f4d0>: Failed to resolve 'www.laarbeek.nl%22%3egemeente' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 4,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Toestemming is niet nodig als het om eigen grond gaat en u dit zonder machine doet.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet deze belangrijke uitzondering voor werkzaamheden op eigen grond zonder machines.",
+          "source_urls": [
+            "https://www.laarbeek.nl/kabels-en-leidingen-leggen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U download het formulier door hier te klikken.",
+          "original_reference": "Uw aanvraag kan worden ingediend via een brief of e-mail",
+          "note": "De bronpagina verwijst naar een downloadbaar formulier, terwijl de originele tekst alleen brief of e-mail als optie noemt.",
+          "source_urls": [
+            "https://www.laarbeek.nl/kabels-en-leidingen-leggen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het is verboden te bouwen onder of direct naast hoogspanningsmasten.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist deze belangrijke beperking met betrekking tot hoogspanningsmasten.",
+          "source_urls": [
+            "https://www.laarbeek.nl/kabels-en-leidingen-leggen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "In het Handboek Kabels en Leidingen Laarbeek 2018 en de regels over compensatie (vergoeding) voor schade door kabels en leidingen staat meer (technische) informatie",
+          "original_reference": "No matching information",
+          "note": "De originele tekst verwijst niet naar het beschikbare Handboek Kabels en Leidingen en de compensatieregels voor schade.",
+          "source_urls": [
+            "https://www.laarbeek.nl/kabels-en-leidingen-leggen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten belangrijke aanvullende informatie die niet in de originele tekst staat, waaronder uitzonderingen voor eigen grond, een downloadbaar aanvraagformulier, beperkingen rond hoogspanningsmasten en verwijzingen naar aanvullende technische documentatie. Deze informatie is essentieel voor een complete en accurate beschrijving van de procedure."
+  }
+}

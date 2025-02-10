@@ -1,0 +1,76 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ASSEN",
+      "contact": {
+        "phone": "(0592) 36 69 11",
+        "email": "info@assen.nl",
+        "website": "http://www.assen.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 11,
+    "false_sentences": 2,
+    "accuracy_percentage": 84.6,
+    "false_statements": [
+      {
+        "sentence": "Om een exploitatievergunning aan te vragen, moet u het relevante contactformulier invullen.",
+        "status": "false",
+        "note": "Volgens de website van gemeente Assen moet een exploitatievergunning worden aangevraagd via een specifiek aanvraagformulier, niet via een contactformulier."
+      },
+      {
+        "sentence": "U zal vervolgens worden uitgenodigd voor een intakegesprek met een behandelend ambtenaar om uw wensen en mogelijkheden te bespreken.",
+        "status": "false",
+        "note": "Er wordt op de website van gemeente Assen niet vermeld dat er standaard een intakegesprek plaatsvindt na de aanvraag van een exploitatievergunning."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 0,
+    "invalid_urls": 7,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.assen.nl/horecabedrijf-beginnen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.assen.nl/standplaatsvergunning-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.gemeente.assen.nl",
+        "reason": "INVALID: Error scraping https://www.gemeente.assen.nl: HTTPSConnectionPool(host='www.gemeente.assen.nl', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1079fc410>: Failed to resolve 'www.gemeente.assen.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.assen.nl/alcoholvergunning-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.assen.nl/verkoopdemonstratie-houden-in-horecagelegenheid",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.assen.nl/langere-openingstijden-voor-uw-horecabedrijf-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.gemeente.assen.nl\">Gemeente",
+        "reason": "INVALID: Error scraping https://www.gemeente.assen.nl\">Gemeente: HTTPSConnectionPool(host='www.gemeente.assen.nl%22%3egemeente', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1075bbed0>: Failed to resolve 'www.gemeente.assen.nl%22%3egemeente' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  }
+}

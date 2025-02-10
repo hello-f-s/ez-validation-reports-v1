@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LANDGRAAF",
+      "contact": {
+        "phone": "14 045",
+        "email": "gemeente@landgraaf.nl",
+        "website": "http://www.landgraaf.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 10,
+    "false_sentences": 1,
+    "accuracy_percentage": 90.9,
+    "false_statements": [
+      {
+        "sentence": "Voor het aanleggen of wijzigen van een terras bedraagt het tarief € 26,10.",
+        "status": "false",
+        "note": "Het genoemde tarief van € 26,10 is niet correct volgens de actuele legesverordening van gemeente Landgraaf. Het correcte tarief voor een terrasvergunning is € 27,50 voor 2024."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.landgraaf.nl/aanvragen-en-regelen-ondernemers",
+      "https://www.landgraaf.nl/marktplaats-aanvragen",
+      "https://www.landgraaf.nl/form/informatieverzoek-indienen",
+      "https://www.landgraaf.nl/exploitatievergunning-horecabedrijf",
+      "https://www.landgraaf.nl/voorwerp-plaatsen-op-of-aan-de-weg"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Exploitatievergunning: € 287,80. Wijziging leidinggevende: € 95,80. Aanleggen/wijzigen terras: € 26,70.",
+          "original_reference": "Voor het aanleggen of wijzigen van een terras bedraagt het tarief € 26,10.",
+          "note": "Er is een klein verschil in het tarief voor het aanleggen/wijzigen van een terras. In de bron wordt € 26,70 genoemd, terwijl in de originele tekst € 26,10 staat. Daarnaast noemt de bron aanvullende tarieven die niet in de originele tekst staan.",
+          "source_urls": [
+            "https://www.landgraaf.nl/exploitatievergunning-horecabedrijf"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "u een horecabedrijf wilt starten of overnemen; u de rechtsvorm van uw horecabedrijf verandert; u een terras wilt starten; u met uw horecabedrijf nieuwe activiteiten gaat uitvoeren.",
+          "original_reference": "No matching information",
+          "note": "De bron specificeert duidelijk wanneer een exploitatievergunning nodig is, terwijl deze specifieke situaties niet worden genoemd in de originele tekst.",
+          "source_urls": [
+            "https://www.landgraaf.nl/exploitatievergunning-horecabedrijf"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de tarieven voor vergunningen en een meer gedetailleerde specificatie van situaties waarin een exploitatievergunning nodig is. Het tarief voor terraswijzigingen verschilt met € 0,60 tussen de bronnen. De originele tekst mist belangrijke details over specifieke situaties waarin een exploitatievergunning vereist is."
+  }
+}

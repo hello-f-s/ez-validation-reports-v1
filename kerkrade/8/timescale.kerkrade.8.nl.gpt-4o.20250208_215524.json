@@ -1,0 +1,82 @@
+{
+  "context": {
+    "municipality": {
+      "name": "KERKRADE",
+      "contact": {
+        "phone": "14 045",
+        "email": "gemeentehuis@kerkrade.nl",
+        "website": "http://www.kerkrade.nl"
+      }
+    },
+    "service": {
+      "id": 8,
+      "name": "Marktvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 8,
+    "true_sentences": 8,
+    "false_sentences": 0,
+    "accuracy_percentage": 100.0,
+    "false_statements": []
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.kerkrade.nl/exploitatievergunning-horecabedrijf",
+      "https://www.kerkrade.nl/milieu-vergunning-of-melding",
+      "https://www.kerkrade.nl/standplaats-aanvragen",
+      "https://www.kerkrade.nl/rommelmarkt",
+      "https://www.kerkrade.nl/marktplaats-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://gemeentekerkrade.nl)",
+        "reason": "INVALID: Error scraping https://gemeentekerkrade.nl): HTTPSConnectionPool(host='gemeentekerkrade.nl)', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1082c79d0>: Failed to resolve 'gemeentekerkrade.nl)' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "U kunt een plaats op de markt vragen als u voldoet aan het volgende: U staat ingeschreven bij de Kamer van Koophandel. U bent handelingsbekwaam.",
+          "original_reference": "U moet staan ingeschreven bij de Kamer van Koophandel. U bent handelingsbekwaam.",
+          "note": "De voorwaarden voor inschrijving KvK en handelingsbekwaamheid komen exact overeen",
+          "source_urls": [
+            "https://www.kerkrade.nl/marktplaats-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U ontvangt binnen 8 weken bericht of u de vergunning krijgt.",
+          "original_reference": "Hier kan geen specifieke informatie over gevonden worden op de website van deze gemeente.",
+          "note": "De bronpagina specificeert een behandeltermijn van 8 weken, terwijl dit in de originele tekst ontbreekt",
+          "source_urls": [
+            "https://www.kerkrade.nl/marktplaats-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bent u het niet eens met de beslissing van de gemeente? Dan kunt u binnen 6 weken bezwaar maken.",
+          "original_reference": "Hier kan geen specifieke informatie over gevonden worden op de website van deze gemeente.",
+          "note": "De bronpagina vermeldt een bezwaartermijn van 6 weken, terwijl deze informatie in de originele tekst ontbreekt",
+          "source_urls": [
+            "https://www.kerkrade.nl/marktplaats-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont dat de basisvoorwaarden voor het aanvragen van een marktplaats consistent zijn tussen de bronnen. Er zijn echter twee belangrijke verschillen gevonden: de bronpagina specificeert een behandeltermijn van 8 weken en een bezwaartermijn van 6 weken, terwijl deze informatie in de originele tekst ontbreekt. Deze aanvullende informatie is belangrijk voor aanvragers om te weten wat ze kunnen verwachten qua tijdspad."
+  }
+}

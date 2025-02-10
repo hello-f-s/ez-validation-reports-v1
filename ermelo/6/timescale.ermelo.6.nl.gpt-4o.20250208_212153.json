@@ -1,0 +1,89 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ERMELO",
+      "contact": {
+        "phone": "(0341) 56 73 21",
+        "email": "gemeente@ermelo.nl",
+        "website": "http://www.ermelo.nl"
+      }
+    },
+    "service": {
+      "id": 6,
+      "name": "Integriteitsonderzoek (Wet Bibob)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "Een exploitatievergunning kost € 206.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van de gemeente Ermelo kost een exploitatievergunning € 424,85. Het genoemde bedrag van € 206 is onjuist."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 6,
+    "invalid_urls": 1,
+    "accuracy_percentage": 85.7,
+    "valid_urls_list": [
+      "https://www.ermelo.nl",
+      "https://www.ermelo.nl/evenementen-en-horeca/horeca-en-alcohol/exploitatievergunning-horeca",
+      "https://www.ermelo.nl/bezwaar-zienswijze-en-woo/informatie-opvragen-via-woo-en-who",
+      "https://www.ermelo.nl/wonen-en-verhuizen/adresonderzoek",
+      "https://www.ermelo.nl/verklaring-omtrent-gedrag-vog",
+      "https://www.ermelo.nl/over-deze-website/avg-verzoek-indienen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.ermelo.nl\">Gemeente",
+        "reason": "INVALID: Error scraping https://www.ermelo.nl\">Gemeente: HTTPSConnectionPool(host='www.ermelo.nl%22%3egemeente', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x105b23610>: Failed to resolve 'www.ermelo.nl%22%3egemeente' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een VOG aanvragen kan op de volgende manieren: U doet de aanvraag zelf bij de gemeente. Maak hiervoor een afspraak met de gemeente. Uw werkgever doet de aanvraag voor u digitaal bij de Dienst Justis.",
+          "original_reference": "Een recente verklaring omtrent gedrag (VOG exploitatievergunning)",
+          "note": "De originele tekst specificeert niet de aanvraagmethoden voor een VOG, terwijl de bronpagina duidelijk twee verschillende aanvraagmogelijkheden beschrijft: via de gemeente of via de werkgever bij Dienst Justis.",
+          "source_urls": [
+            "https://www.ermelo.nl/verklaring-omtrent-gedrag-vog"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De kosten voor het aanvragen van een VOG aan de balie van het Huis van Ermelo zijn € 41,35.",
+          "original_reference": "Een exploitatievergunning kost € 206.",
+          "note": "De originele tekst vermeldt alleen de kosten van de exploitatievergunning (€206), maar niet de specifieke kosten voor de VOG (€41,35) die ook nodig is voor de aanvraag.",
+          "source_urls": [
+            "https://www.ermelo.nl/verklaring-omtrent-gedrag-vog"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U krijgt de VOG 2 tot 4 weken na de aanvraag per post thuisgestuurd van de Dienst Justis.",
+          "original_reference": "De tijdsduur voor het afhandelen van een Bibob-onderzoek zelf wordt niet gespecifieerd",
+          "note": "De bron geeft een concrete verwerkingstijd voor de VOG (2-4 weken), terwijl de originele tekst geen specifieke tijdsindicatie geeft voor het Bibob-onderzoek.",
+          "source_urls": [
+            "https://www.ermelo.nl/verklaring-omtrent-gedrag-vog"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de aanvullende details over de VOG-aanvraag die in de originele tekst ontbreken. Dit omvat specifieke aanvraagmethoden, exacte kosten (€41,35) en concrete verwerkingstijden (2-4 weken). Deze informatie is relevant omdat een VOG een vereiste is voor de exploitatievergunning."
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LAARBEEK",
+      "contact": {
+        "phone": "(0492) 46 97 00",
+        "email": "gemeente@laarbeek.nl",
+        "website": "http://www.laarbeek.nl"
+      }
+    },
+    "service": {
+      "id": 8,
+      "name": "Marktvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 15,
+    "false_sentences": 2,
+    "accuracy_percentage": 88.2,
+    "false_statements": [
+      {
+        "sentence": "U moet ook ingeschreven staan bij het centraal registratiekantoor van het hoofdbedrijfschap detailhandel.",
+        "status": "false",
+        "note": "Het hoofdbedrijfschap detailhandel bestaat niet meer sinds 2014. Deze registratie is niet meer vereist voor marktkraamhouders in Laarbeek."
+      },
+      {
+        "sentence": "U bent verplicht een marktverzekering af te sluiten.",
+        "status": "false",
+        "note": "Volgens de huidige voorwaarden van gemeente Laarbeek is een marktverzekering niet verplicht voor standplaatshouders. Dit staat niet vermeld in de officiële vereisten op de gemeentewebsite."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 9,
+    "valid_urls": 5,
+    "invalid_urls": 4,
+    "accuracy_percentage": 55.6,
+    "valid_urls_list": [
+      "https://www.laarbeek.nl/bouwplannen-ingediend-bij-de-gemeente-inzage",
+      "https://www.laarbeek.nl/reclame-uitingen-plaatsen-omgevingsvergunning",
+      "https://www.laarbeek.nl/marktstandplaats-aanvragen",
+      "https://www.laarbeek.nl/horecabedrijf-beginnen",
+      "https://www.laarbeek.nl/standplaatsvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.laarbeek.nl/bouwplannen-ingediend-bij-de-gemeente-inzage-gemeente-laarbeek-waterpoort-van-de-peel",
+        "reason": "INVALID: Error scraping https://www.laarbeek.nl/bouwplannen-ingediend-bij-de-gemeente-inzage-gemeente-laarbeek-waterpoort-van-de-peel: 404 Client Error: Not Found for url: https://www.laarbeek.nl/bouwplannen-ingediend-bij-de-gemeente-inzage-gemeente-laarbeek-waterpoort-van-de-peel"
+      },
+      {
+        "url": "https://www.laarbeek.nl/marktstandplaats-aanvragen-gemeente-laarbeek-waterpoort-van-de-peel\">laarbeek.nl</a>",
+        "reason": "INVALID: Error scraping https://www.laarbeek.nl/marktstandplaats-aanvragen-gemeente-laarbeek-waterpoort-van-de-peel\">laarbeek.nl</a>: 404 Client Error: Not Found for url: https://www.laarbeek.nl/marktstandplaats-aanvragen-gemeente-laarbeek-waterpoort-van-de-peel%22%3Elaarbeek.nl%3C/a%3E"
+      },
+      {
+        "url": "https://www.laarbeek.nl/marktstandplaats-aanvragen-gemeente-laarbeek-waterpoort-van-de-peel",
+        "reason": "INVALID: Error scraping https://www.laarbeek.nl/marktstandplaats-aanvragen-gemeente-laarbeek-waterpoort-van-de-peel: 404 Client Error: Not Found for url: https://www.laarbeek.nl/marktstandplaats-aanvragen-gemeente-laarbeek-waterpoort-van-de-peel"
+      },
+      {
+        "url": "https://www.laarbeek.nl/bouwplannen-ingediend-bij-de-gemeente-inzage-gemeente-laarbeek-waterpoort-van-de-peel\">laarbeek.nl</a>",
+        "reason": "INVALID: Error scraping https://www.laarbeek.nl/bouwplannen-ingediend-bij-de-gemeente-inzage-gemeente-laarbeek-waterpoort-van-de-peel\">laarbeek.nl</a>: 404 Client Error: Not Found for url: https://www.laarbeek.nl/bouwplannen-ingediend-bij-de-gemeente-inzage-gemeente-laarbeek-waterpoort-van-de-peel%22%3Elaarbeek.nl%3C/a%3E"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Beek en Donk: 09.00-12.00 uur, Aarle-Rixtel en Lieshout: 08.30-12.30 uur",
+          "original_reference": "No matching information",
+          "note": "De originele inhoud bevat geen informatie over de openingstijden van de markten, terwijl de bronpagina deze wel specificeert",
+          "source_urls": [
+            "https://www.laarbeek.nl/marktstandplaats-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor de standplaatsvergunning op de weekmarkt betaalt u in 2022 het volgende: Beek en Donk € 8,25 per kwartaal, Aarle-Rixtel € 7,20 per kwartaal, Lieshout € 5,88 per kwartaal",
+          "original_reference": "De informatie over de kosten voor de standplaatsvergunning in 2022 is niet specifiek gedetailleerd.",
+          "note": "De bronpagina vermeldt specifieke tarieven per locatie, terwijl de originele tekst aangeeft dat er geen specifieke kostinformatie beschikbaar is",
+          "source_urls": [
+            "https://www.laarbeek.nl/marktstandplaats-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele inhoud en de bronpagina's. Ten eerste ontbreken in de originele tekst de specifieke openingstijden van de markten in verschillende locaties. Ten tweede vermeldt de originele tekst dat er geen specifieke kostinformatie beschikbaar is, terwijl de bronpagina wel degelijk gedetailleerde tarieven per locatie en per kwartaal bevat voor 2022. De overige informatie komt overeen met de bronpagina's."
+  }
+}

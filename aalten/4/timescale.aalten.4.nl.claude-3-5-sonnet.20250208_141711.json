@@ -1,0 +1,93 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AALTEN",
+      "contact": {
+        "phone": "(0543) 49 33 33",
+        "email": "gemeente@aalten.nl",
+        "website": "http://www.aalten.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 8,
+    "false_sentences": 3,
+    "accuracy_percentage": 72.7,
+    "false_statements": [
+      {
+        "sentence": "Een melding voor een meldingsplichtig evenement moet minimaal 3 weken voor aanvang worden gedaan.",
+        "status": "false",
+        "note": "Volgens de website van gemeente Aalten moet een melding voor een meldingsplichtig evenement minimaal 4 weken voor aanvang worden gedaan, niet 3 weken."
+      },
+      {
+        "sentence": "Een vergunning voor een grootschalig evenement moet minimaal 12 weken voor aanvang worden aangevraagd.",
+        "status": "false",
+        "note": "Volgens de website van gemeente Aalten moet een vergunning voor een grootschalig evenement minimaal 8 weken voor aanvang worden aangevraagd, niet 12 weken."
+      },
+      {
+        "sentence": "Voor meldingsplichtige evenementen geldt: als u binnen 10 werkdagen na indiening van de melding niets heeft gehoord, is uw melding geaccepteerd.",
+        "status": "false",
+        "note": "Deze informatie staat niet vermeld op de website van gemeente Aalten en er wordt geen specifieke termijn genoemd voor de afhandeling van meldingen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.aalten.nl/openingstijden-horeca-eenmalig-aanpassen",
+      "https://www.aalten.nl/alcoholvergunning",
+      "https://www.aalten.nl/omgevingsvergunning",
+      "https://www.aalten.nl/evenement-organiseren",
+      "https://www.aalten.nl/exploitatievergunning-horecabedrijf"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Belangrijk is het aanleveren van een goed en compleet veiligheidsplan bij een aanvraag voor een evenementenvergunning.",
+          "original_reference": "No matching information",
+          "note": "De originele inhoud vermeldt niet de vereiste van een veiligheidsplan voor evenementen, wat een belangrijke aanvullende voorwaarde is.",
+          "source_urls": [
+            "https://www.aalten.nl/evenement-organiseren"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U kunt van elke locatie binnen de gemeente Aalten een plattegrond opvragen, dienend als basis voor een situatietekening.",
+          "original_reference": "No matching information",
+          "note": "De originele inhoud vermeldt niet dat een situatietekening/plattegrond vereist is bij de aanvraag van een evenementenvergunning.",
+          "source_urls": [
+            "https://www.aalten.nl/evenement-organiseren"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u alcohol wilt schenken tijdens een evenement, moet u een ontheffing bij de gemeente aanvragen.",
+          "original_reference": "Als er alcoholische drank wordt verstrekt, moet een \"Ontheffing voor het tijdelijk schenken van alcoholische drank\" worden aangevraagd.",
+          "note": "De broninhoud gebruikt andere bewoordingen maar beschrijft dezelfde vereiste. Dit is een consistente maar anders geformuleerde voorwaarde.",
+          "source_urls": [
+            "https://www.aalten.nl/alcoholvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont dat er twee belangrijke vereisten ontbreken in de originele inhoud: de noodzaak van een veiligheidsplan en een situatietekening/plattegrond bij evenementenaanvragen. De informatie over alcoholontheffing is consistent maar anders geformuleerd. De overige informatie in de originele tekst komt overeen met de bronnen of kan niet geverifieerd worden met de beschikbare broninhoud."
+  }
+}

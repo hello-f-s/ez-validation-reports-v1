@@ -1,0 +1,92 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AALTEN",
+      "contact": {
+        "phone": "(0543) 49 33 33",
+        "email": "gemeente@aalten.nl",
+        "website": "http://www.aalten.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "Vraag de vergunning minimaal 12 weken voor de start van een grootschalig evenement aan bij de gemeente.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Aalten moet een vergunning voor een grootschalig evenement minimaal 16 weken (niet 12 weken) voor aanvang worden aangevraagd."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.aalten.nl/openingstijden-horeca-eenmalig-aanpassen",
+      "https://www.aalten.nl/alcoholvergunning",
+      "https://www.aalten.nl/exploitatievergunning-horecabedrijf",
+      "https://www.aalten.nl/evenement-organiseren",
+      "https://www.aalten.nl/omgevingsvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.gemeenteaalten.nl/evenementen\">Bron:",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.gemeenteaalten.nl/evenementen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Belangrijk is het aanleveren van een goed en compleet veiligheidsplan bij een aanvraag voor een evenementenvergunning.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de vereiste van een veiligheidsplan, terwijl dit volgens de bron een belangrijk document is bij de aanvraag.",
+          "source_urls": [
+            "https://www.aalten.nl/evenement-organiseren"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U kunt van elke locatie binnen de gemeente Aalten een plattegrond opvragen, dienend als basis voor een situatietekening.",
+          "original_reference": "Een plattegrond van de evenementlocatie",
+          "note": "De originele tekst vermeldt alleen dat een plattegrond nodig is, maar specificeert niet dat deze bij de gemeente kan worden opgevraagd als basis voor de situatietekening.",
+          "source_urls": [
+            "https://www.aalten.nl/evenement-organiseren"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Ongeacht zijn aard en omvang zijn op elk evenement de 'Algemeen geldende regels voor evenementen' van toepassing.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst maakt geen melding van de 'Algemeen geldende regels voor evenementen' die volgens de bron op alle evenementen van toepassing zijn.",
+          "source_urls": [
+            "https://www.aalten.nl/evenement-organiseren"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten enkele belangrijke aanvullende vereisten die niet in de originele tekst worden genoemd, waaronder de noodzaak van een veiligheidsplan, de mogelijkheid om een basis-plattegrond bij de gemeente op te vragen, en het bestaan van 'Algemeen geldende regels voor evenementen'. Deze informatie is essentieel voor evenementorganisatoren maar ontbreekt in de originele tekst."
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MAASDRIEL",
+      "contact": {
+        "phone": "14 0418",
+        "email": "info@maasdriel.nl",
+        "website": "http://www.maasdriel.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 10,
+    "true_sentences": 9,
+    "false_sentences": 1,
+    "accuracy_percentage": 90.0,
+    "false_statements": [
+      {
+        "sentence": "Een nieuwe alcoholvergunning kost € 572,00.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Maasdriel kost een nieuwe alcoholvergunning € 582,00, niet € 572,00."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 1,
+    "invalid_urls": 4,
+    "accuracy_percentage": 20.0,
+    "valid_urls_list": [
+      "https://www.maasdriel.nl/inwoner-en-ondernemer/ondernemen/horeca/alcoholvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.maasdriel.nl/inwoner-en-ondernemer/bouwen-en-verbouwen/wegwijzer-omgevingsloket/vergunning-uitbreiden-bedrijf",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.maasdriel.nl/inwoner-en-ondernemer/bouwen-en-verbouwen/aanvragen-vergunningen-en-vooroverleg",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.maasdriel.nl/inwoner-en-ondernemer/bouwen-en-verbouwen/wegwijzer-omgevingsloket/vergunning-bedrijf-aan-huis",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.maasdriel.nl/inwoner-en-ondernemer/bouwen-en-verbouwen/wegwijzer-omgevingsloket/vergunning-voor-woning-bouwen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als ondernemer alcohol schenken of verkopen? Dan heeft u een alcoholvergunning nodig. Dit geldt zowel voor horecabedrijven en slijterijen als voor instellingen als sportkantines, culturele centra en buurthuizen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen uitleg over welke type ondernemingen een alcoholvergunning nodig hebben. De brontekst specificeert dit wel duidelijk.",
+          "source_urls": [
+            "https://www.maasdriel.nl/inwoner-en-ondernemer/ondernemen/horeca/alcoholvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U moet een nieuwe alcoholvergunning aanvragen wanneer er een nieuwe ondernemer is of wanneer de rechtsvorm wijzigt. Dit is het geval: Als een andere ondernemer een bestaand horecabedrijf overneemt, Als er in een pand waar nog geen horeca gevestigd was een horecabedrijf wordt gestart, Als de rechtsvorm wijzigt.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over wanneer een nieuwe vergunning moet worden aangevraagd. De brontekst geeft hier specifieke situaties voor aan.",
+          "source_urls": [
+            "https://www.maasdriel.nl/inwoner-en-ondernemer/ondernemen/horeca/alcoholvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina bevat belangrijke aanvullende informatie die niet in de originele tekst staat, met name over welke type ondernemingen een alcoholvergunning nodig hebben en in welke situaties een nieuwe vergunning moet worden aangevraagd. Deze informatie is essentieel voor ondernemers om te begrijpen wanneer ze een alcoholvergunning moeten aanvragen."
+  }
+}

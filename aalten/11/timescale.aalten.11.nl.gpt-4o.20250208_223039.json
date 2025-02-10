@@ -1,0 +1,96 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AALTEN",
+      "contact": {
+        "phone": "(0543) 49 33 33",
+        "email": "gemeente@aalten.nl",
+        "website": "http://www.aalten.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "Voor een standaard aanvraag moet dit minimaal 8 weken voordat de werkzaamheden beginnen, en bij een uitgebreide aanvraag minstens 6 maanden van tevoren.",
+        "status": "false",
+        "note": "Er is geen vereiste dat een standaard aanvraag minimaal 8 weken of een uitgebreide aanvraag 6 maanden voor aanvang van de werkzaamheden moet worden ingediend. Dit zijn de maximale beslistermijnen voor de gemeente, niet de minimale aanvraagtermijnen voor de aanvrager."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 8,
+    "valid_urls": 5,
+    "invalid_urls": 3,
+    "accuracy_percentage": 62.5,
+    "valid_urls_list": [
+      "https://www.aalten.nl/bedrijfsactiviteiten-wijzigen",
+      "https://www.aalten.nl/omgevingsvergunning",
+      "https://www.aalten.nl/milieu-vergunning-of-melding",
+      "https://www.aalten.nl/omgevingsplan-aanpassen",
+      "https://www.aalten.nl/omgevingsvergunning-strijdig-gebruik"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.gemeenteaalten.nl/omgevingsvergunning\">https://www.gemeenteaalten.nl/omgevingsvergunning</a>,",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.gemeenteaalten.nl/omgevingsvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.gemeenteaalten.nl/milieu-vergunning-of-melding",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vraagt u een omgevingsvergunning aan met een bouwsom van € 500.000,- of meer dan dient u ook een formulier Wet Bibob in te te vullen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de Bibob-verplichting voor aanvragen boven €500.000, wat een belangrijke aanvullende voorwaarde is.",
+          "source_urls": [
+            "https://www.aalten.nl/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u voor uw woning een omgevingsvergunning aanvraagt, hebt u uw DigiD nodig.",
+          "original_reference": "eHerkenning voor ondernemers.",
+          "note": "De originele tekst vermeldt alleen eHerkenning voor ondernemers, terwijl de bron ook DigiD voor particulieren specificeert.",
+          "source_urls": [
+            "https://www.aalten.nl/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Naast het milieu speelt ook de brandveiligheid een rol. Dit betekent dat ook de brandweer zal controleren of er een gebruiksvergunning nodig is",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist informatie over de rol van brandveiligheid en mogelijke gebruiksvergunning door de brandweer.",
+          "source_urls": [
+            "https://www.aalten.nl/bedrijfsactiviteiten-wijzigen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten enkele belangrijke aanvullende vereisten die niet in de originele tekst staan: de Bibob-toets voor grote projecten (>€500.000), DigiD-gebruik voor particulieren, en brandveiligheidscontroles. Deze informatie is essentieel voor een complete beschrijving van het vergunningsproces."
+  }
+}

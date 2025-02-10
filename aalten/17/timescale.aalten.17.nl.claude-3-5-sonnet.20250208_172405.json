@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AALTEN",
+      "contact": {
+        "phone": "(0543) 49 33 33",
+        "email": "gemeente@aalten.nl",
+        "website": "http://www.aalten.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "U ontvangt binnen 8 weken bericht of u de ontheffing krijgt.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Aalten wordt er binnen 4 weken een besluit genomen over een terrasvergunning, niet binnen 8 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.aalten.nl/standplaats-aanvragen",
+      "https://www.aalten.nl/bedrijfspandbedrijventerrein-huren-of-kopen",
+      "https://www.aalten.nl/terras-plaatsen",
+      "https://www.aalten.nl/exploitatievergunning-horecabedrijf",
+      "https://www.aalten.nl/omgevingsvergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Onder een terras verstaat de gemeente een buiten de besloten ruimte liggend deel van een horecabedrijf waar zitgelegenheid is en waar tegen vergoeding maaltijden, hapjes en/of dranken worden geserveerd.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen definitie van wat onder een terras wordt verstaan, terwijl de bronpagina deze belangrijke definitie wel geeft.",
+          "source_urls": [
+            "https://www.aalten.nl/terras-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Dit geldt ook voor wanneer u extra terrasruimte wenst op gemeentelijke grond.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina specificeert expliciet dat een ontheffing ook nodig is voor extra terrasruimte op gemeentegrond, wat niet vermeld staat in de originele tekst.",
+          "source_urls": [
+            "https://www.aalten.nl/terras-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "met betrekking tot de ligging en het onderhoud aan het terras door de exploitant de nodige zorgvuldigheid wordt betracht;",
+          "original_reference": "No matching information",
+          "note": "Deze algemene eis over zorgvuldigheid bij ligging en onderhoud ontbreekt in de originele tekst maar staat wel in de bron als een van de algemene regels.",
+          "source_urls": [
+            "https://www.aalten.nl/terras-plaatsen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten enkele belangrijke aanvullende details die niet in de originele tekst staan, waaronder een formele definitie van een terras, de specifieke vermelding van extra terrasruimte op gemeentegrond, en een aanvullende algemene regel over zorgvuldigheid bij ligging en onderhoud. Deze informatie is relevant voor de volledigheid van de voorwaarden voor het plaatsen van een terras."
+  }
+}

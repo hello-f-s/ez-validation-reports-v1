@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OLDENZAAL",
+      "contact": {
+        "phone": "(0541) 58 81 11",
+        "email": "info@oldenzaal.nl",
+        "website": "http://www.oldenzaal.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 9,
+    "true_sentences": 8,
+    "false_sentences": 1,
+    "accuracy_percentage": 88.9,
+    "false_statements": [
+      {
+        "sentence": "Voor een uitgebreide voorbereidingsprocedure voor een omgevingsvergunning milieu geldt een beslistermijn van 6 maanden (eventueel verlengd met 6 weken).",
+        "status": "false",
+        "note": "Volgens de Omgevingswet en de gemeente Oldenzaal geldt voor een uitgebreide voorbereidingsprocedure een beslistermijn van 26 weken (ongeveer 6 maanden) met een mogelijke verlenging van maximaal 6 weken, maar ook kan de termijn worden opgeschort als er aanvullende informatie nodig is. Deze nuance ontbreekt in de oorspronkelijke zin."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 2,
+    "invalid_urls": 3,
+    "accuracy_percentage": 40.0,
+    "valid_urls_list": [
+      "https://www.oldenzaal.nl/omgevingsvergunning",
+      "https://www.oldenzaal.nl/aanleggen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.oldenzaal.nl/milieumelding",
+        "reason": "INVALID: Error scraping https://www.oldenzaal.nl/milieumelding: 404 Client Error: Not Found for url: https://www.oldenzaal.nl/milieumelding"
+      },
+      {
+        "url": "https://www.oldenzaal.nl/bouwen-en-verbouwen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.oldenzaal.nl/milieuregels",
+        "reason": "INVALID: Error scraping https://www.oldenzaal.nl/milieuregels: 404 Client Error: Not Found for url: https://www.oldenzaal.nl/milieuregels"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Gaat u (ver)bouwen, slopen, een boom kappen of een bedrijf beginnen? Dan heeft u hiervoor vaak een omgevingsvergunning nodig.",
+          "original_reference": "Als ondernemer moet u voor sommige milieubelastende activiteiten een melding doen of een omgevingsvergunning aanvragen.",
+          "note": "De bronpagina beschrijft een bredere scope van activiteiten waarvoor een omgevingsvergunning nodig is, terwijl de originele tekst zich alleen richt op milieubelastende activiteiten voor ondernemers.",
+          "source_urls": [
+            "https://www.oldenzaal.nl/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De omgevingsvergunning is voor al uw plannen die te maken hebben met: bouwen, slopen, kappen, aanleggen, monumenten, milieu, reclame, uitweg/inrit, afwijking gebruik (afwijking van het bestemmingsplan), brandveilig gebruik",
+          "original_reference": "No matching information",
+          "note": "De bronpagina geeft een uitgebreide lijst van activiteiten waarvoor een omgevingsvergunning nodig is, terwijl deze specifieke informatie ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.oldenzaal.nl/omgevingsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten meer gedetailleerde informatie over het toepassingsgebied van de omgevingsvergunning dan de originele tekst. De originele tekst focust zich specifiek op milieubelastende activiteiten voor ondernemers, terwijl de bronpagina's een breder scala aan activiteiten beschrijven waarvoor een omgevingsvergunning vereist is. Belangrijke informatie over specifieke categorieën zoals monumenten, reclame en brandveilig gebruik ontbreekt in de originele tekst."
+  }
+}

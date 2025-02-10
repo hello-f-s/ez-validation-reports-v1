@@ -1,0 +1,87 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ALPHEN-CHAAM",
+      "contact": {
+        "phone": "14013",
+        "email": "info@alphen-chaam.nl",
+        "website": "http://www.alphen-chaam.nl"
+      }
+    },
+    "service": {
+      "id": 6,
+      "name": "Integriteitsonderzoek (Wet Bibob)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 6,
+    "true_sentences": 5,
+    "false_sentences": 1,
+    "accuracy_percentage": 83.3,
+    "false_statements": [
+      {
+        "sentence": "U vraagt een horecavergunning aan door het formulier \"Aanvraag horecavergunning\" (Lees voor) in te vullen en per e-mail op te sturen.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Alphen-Chaam moet een horecavergunning worden aangevraagd via het online formulier op de website, niet per e-mail."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.alphen-chaam.nl/uittreksels-en-verklaringen",
+      "https://www.alphen-chaam.nl/woo",
+      "https://www.alphen-chaam.nl/horecavergunning",
+      "https://www.alphen-chaam.nl/vog"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.alphen-chaam.nl/aanvraagformulier-kwijtschelding-gemeentelijke-belastingen",
+        "reason": "INVALID: Error scraping https://www.alphen-chaam.nl/aanvraagformulier-kwijtschelding-gemeentelijke-belastingen: 404 Client Error: Not Found for url: https://www.alphen-chaam.nl/aanvraagformulier-kwijtschelding-gemeentelijke-belastingen"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "€ 178,95",
+          "original_reference": "Er wordt geen specifieke informatie over kosten voor het integriteitsonderzoek gegeven.",
+          "note": "De bron vermeldt specifieke kosten voor de horecavergunning (€178,95) terwijl dit in de originele tekst ontbreekt",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/horecavergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Verplicht voor: Commerciële horecabedrijven zoals cafés, restaurants of discotheken, Stichtingen of verenigingen met horeca, zoals een sportkantine of cultureel centrum, Seksinrichtingen of escortbedrijven, Slijterijen",
+          "original_reference": "No matching information",
+          "note": "De bron specificeert voor welke type bedrijven een horecavergunning verplicht is, deze belangrijke informatie ontbreekt in de originele tekst",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/horecavergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De vergunning geldt voor het adres waarvoor u deze aanvraagt, De vergunning geldt voor de ondernemer op wie zijn naam u deze aanvraagt",
+          "original_reference": "No matching information",
+          "note": "De bron vermeldt belangrijke geldigheidsvoorwaarden voor de vergunning die niet in de originele tekst staan",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/horecavergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn drie belangrijke verschillen gevonden tussen de originele tekst en de bronnen. De bronnen bevatten aanvullende essentiële informatie over de kosten (€178,95), voor welke type bedrijven de vergunning verplicht is, en specifieke geldigheidsvoorwaarden van de vergunning. Deze informatie ontbreekt in de originele tekst maar is wel belangrijk voor aanvragers van een horecavergunning."
+  }
+}

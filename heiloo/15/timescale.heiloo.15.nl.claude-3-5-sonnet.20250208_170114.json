@@ -1,0 +1,100 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HEILOO",
+      "contact": {
+        "phone": "(072) 535 66 66",
+        "email": "info@heiloo.nl",
+        "website": "http://www.heiloo.nl"
+      }
+    },
+    "service": {
+      "id": 15,
+      "name": "Vergunning of ontheffing voor straatartiesten"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 8,
+    "true_sentences": 7,
+    "false_sentences": 1,
+    "accuracy_percentage": 87.5,
+    "false_statements": [
+      {
+        "sentence": "U wilt natuurlijk op tijd weten of u een standplaats in kunt nemen. Vraag daarom op tijd een vergunning aan, minimaal 8 weken van tevoren.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Heiloo moet een standplaatsvergunning minimaal 6 weken van tevoren worden aangevraagd, niet 8 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 9,
+    "valid_urls": 5,
+    "invalid_urls": 4,
+    "accuracy_percentage": 55.6,
+    "valid_urls_list": [
+      "https://www.heiloo.nl/aanvragen-en-regelen/voorwerpen-op-openbare-weg-plaatsen/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/ontheffing-sluitingstijd/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/marktplaatsvergunning/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/standplaatsvergunning/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/toezicht-en-handhaving/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.heiloo.nl/data/documents/Standplaatsvergunning_aanvraagformulier.pdf",
+        "reason": "INVALID: Error scraping https://www.heiloo.nl/data/documents/Standplaatsvergunning_aanvraagformulier.pdf: 404 Client Error: Not Found for url: https://www.heiloo.nl/data/documents/Standplaatsvergunning_aanvraagformulier.pdf"
+      },
+      {
+        "url": "https://www.heiloo.nl/data/documents/Standplaatsvergunning_aanvraagformulier.pdf\">Standplaatsvergunning",
+        "reason": "INVALID: Error scraping https://www.heiloo.nl/data/documents/Standplaatsvergunning_aanvraagformulier.pdf\">Standplaatsvergunning: 404 Client Error: Not Found for url: https://www.heiloo.nl/data/documents/Standplaatsvergunning_aanvraagformulier.pdf%22%3EStandplaatsvergunning"
+      },
+      {
+        "url": "https://www.heiloo.nl/bezwaar-maken",
+        "reason": "INVALID: Error scraping https://www.heiloo.nl/bezwaar-maken: 404 Client Error: Not Found for url: https://www.heiloo.nl/bezwaar-maken"
+      },
+      {
+        "url": "https://www.heiloo.nl/bezwaar-maken\">bezwaar",
+        "reason": "INVALID: Error scraping https://www.heiloo.nl/bezwaar-maken\">bezwaar: 404 Client Error: Not Found for url: https://www.heiloo.nl/bezwaar-maken%22%3Ebezwaar"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Naast de kosten voor het in behandeling nemen van een aanvraag (€44,40) betaalt u nog standplaatsgelden.",
+          "original_reference": "Hier kan geen specifieke informatie over gevonden worden op de website van deze gemeente.",
+          "note": "De originele tekst vermeldt dat er geen informatie over kosten beschikbaar is, terwijl de bron wel specifieke kosten noemt (€44,40) plus aanvullende standplaatsgelden.",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/standplaatsvergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Standplaats tijdens evenementen: U kunt een standplaats aanvragen bij de organisatie van het betreffende evenement.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat aanvullende informatie over standplaatsen tijdens evenementen die niet in de originele tekst staat vermeld.",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/standplaatsvergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor meer informatie neemt u contact op met team APV via apv@debuch.nl",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt specifieke contactgegevens voor meer informatie die niet in de originele tekst zijn opgenomen.",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/standplaatsvergunning/"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de kosteninformatie die wel beschikbaar is in de bron maar niet in de originele tekst, aanvullende informatie over standplaatsen tijdens evenementen, en specifieke contactgegevens. Deze informatie maakt de voorwaarden en procedures duidelijker voor aanvragers."
+  }
+}

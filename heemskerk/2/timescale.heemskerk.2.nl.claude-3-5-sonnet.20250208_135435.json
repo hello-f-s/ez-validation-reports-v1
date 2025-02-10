@@ -1,0 +1,106 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HEEMSKERK",
+      "contact": {
+        "phone": "14 0251",
+        "email": "post@heemskerk.nl",
+        "website": "http://www.heemskerk.nl"
+      }
+    },
+    "service": {
+      "id": 2,
+      "name": "Bord of spandoek plaatsen aan de openbare weg"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 10,
+    "true_sentences": 7,
+    "false_sentences": 3,
+    "accuracy_percentage": 70.0,
+    "false_statements": [
+      {
+        "sentence": "U moet een omgevingsvergunning aanvragen via het Omgevingsloket (https://www.omgevingsloket.nl/)",
+        "status": "false",
+        "note": "Voor voorwerpen op de openbare weg in Heemskerk moet een objectvergunning worden aangevraagd via het gemeentelijke aanvraagformulier, niet via het Omgevingsloket"
+      },
+      {
+        "sentence": "Kosten en betalen: Hier kan geen specifieke informatie over gevonden worden op de website van deze gemeente.",
+        "status": "false",
+        "note": "Er staat wel degelijk informatie over de kosten op de website van gemeente Heemskerk. Voor een objectvergunning worden legeskosten in rekening gebracht volgens de actuele legesverordening"
+      },
+      {
+        "sentence": "Hoe lang duurt het? Hier kan geen specifieke informatie over gevonden worden op de website van deze gemeente.",
+        "status": "false",
+        "note": "Op de website van gemeente Heemskerk staat dat de behandeltermijn voor een objectvergunning maximaal 8 weken bedraagt"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 8,
+    "valid_urls": 5,
+    "invalid_urls": 3,
+    "accuracy_percentage": 62.5,
+    "valid_urls_list": [
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/standplaatsvergunning",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/vergunning-gebruik-openbare-weg",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/vergunning-voorwerpen/materialen-op-de-weg",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/veelgestelde-vragen-omgevingsvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.heemskerk.nl/veelgestelde-vragen-omgevingsvergunning",
+        "reason": "INVALID: Error scraping https://www.heemskerk.nl/veelgestelde-vragen-omgevingsvergunning: 404 Client Error: Not Found for url: https://www.heemskerk.nl/veelgestelde-vragen-omgevingsvergunning"
+      },
+      {
+        "url": "https://www.heemskerk.nl/vergunning-voorwerpen-materialen-op-de-weg",
+        "reason": "INVALID: Error scraping https://www.heemskerk.nl/vergunning-voorwerpen-materialen-op-de-weg: 404 Client Error: Not Found for url: https://www.heemskerk.nl/vergunning-voorwerpen-materialen-op-de-weg"
+      },
+      {
+        "url": "https://www.omgevingsloket.nl/)",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wilt u een voorwerp plaatsen op de openbare weg of daarboven ophangen? Zoals een uitstalling voor een winkel, spandoek over de weg of een container. Soms heeft u hier een vergunning voor nodig. En soms is een melding doen genoeg.",
+          "original_reference": "U moet een omgevingsvergunning aanvragen via het Omgevingsloket",
+          "note": "De originele tekst stelt dat altijd een omgevingsvergunning nodig is, terwijl volgens de bron soms een melding volstaat. Dit is een belangrijk procedureel verschil.",
+          "source_urls": [
+            "https://www.heemskerk.nl/belastingen-en-vergunningen/vergunning-voorwerpen/materialen-op-de-weg"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Container mag maximaal 6 weken blijven staan. Zorg dat de container veilig staat en geen overlast en schade veroorzaakt aan het verkeer en de openbare weg.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat specifieke tijdslimieten en veiligheidsvoorschriften voor containers die niet in de originele tekst staan vermeld.",
+          "source_urls": [
+            "https://www.heemskerk.nl/belastingen-en-vergunningen/vergunning-voorwerpen/materialen-op-de-weg"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Dit geeft u aan in de aanvraag: NAW-gegevens uitvoerende bedrijf. Omschrijving van de activiteiten waarvoor de maatregel aangevraagd wordt. Begin- en einddatum van de periode waarin de maatregel aangevraagd wordt. Beschrijving en tekening van de aangevraagde maatregel(en).",
+          "original_reference": "Gegevens van de aanvrager (naam, adres, contactgegevens), Beschrijving van het voorwerp (bord, spandoek) en locatie",
+          "note": "De bronpagina vereist meer gedetailleerde informatie bij de aanvraag, waaronder gegevens van het uitvoerende bedrijf, specifieke datums en een tekening van de maatregelen.",
+          "source_urls": [
+            "https://www.heemskerk.nl/belastingen-en-vergunningen/vergunning-gebruik-openbare-weg"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de aanvraagprocedure (niet altijd vergunningplichtig), aanvullende specifieke voorschriften voor containers, en uitgebreidere aanvraagvereisten. De originele tekst blijkt onvolledig en minder specifiek te zijn dan de actuele gemeentelijke informatie."
+  }
+}

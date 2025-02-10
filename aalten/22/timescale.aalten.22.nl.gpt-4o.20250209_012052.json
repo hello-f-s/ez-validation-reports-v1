@@ -1,0 +1,92 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AALTEN",
+      "contact": {
+        "phone": "(0543) 49 33 33",
+        "email": "gemeente@aalten.nl",
+        "website": "http://www.aalten.nl"
+      }
+    },
+    "service": {
+      "id": 22,
+      "name": "Woonruimte splitsen of samenvoegen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Voor beide situaties moet u een omgevingsvergunning aanvragen bij de gemeente. Dit kan via het Omgevingsloket online.",
+        "status": "false",
+        "note": "Voor woningsplitsing in Aalten is naast een omgevingsvergunning ook een onttrekkingsvergunning nodig. Deze informatie is onvolledig en daardoor misleidend volgens de officiële website van gemeente Aalten."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.aalten.nl/omgevingsvergunning-strijdig-gebruik",
+      "https://www.aalten.nl/bedrijfspandbedrijventerrein-huren-of-kopen",
+      "https://www.aalten.nl/ondernemersplein",
+      "https://www.aalten.nl/woning-splitsen",
+      "https://www.aalten.nl/woning-uit-de-woonruimtevoorraad-halen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.gemeenteaalten.nl",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.gemeenteaalten.nl\">https://www.gemeenteaalten.nl</a>",
+        "reason": "INVALID: Error scraping https://www.gemeenteaalten.nl\">https://www.gemeenteaalten.nl</a>: HTTPSConnectionPool(host='www.gemeenteaalten.nl%22%3ehttps', port=443): Max retries exceeded with url: /www.gemeenteaalten.nl%3C/a%3E (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x104180190>: Failed to resolve 'www.gemeenteaalten.nl%22%3ehttps' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u nog geen omgevingsvergunning hebt, kunt u die ook direct aanvragen.",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden expliciet dat een omgevingsvergunning gelijktijdig kan worden aangevraagd, wat nuttige aanvullende informatie is die niet in de originele tekst staat.",
+          "source_urls": [
+            "https://www.aalten.nl/woning-uit-de-woonruimtevoorraad-halen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U kunt een onttrekkingsvergunning aanvragen op Omgevingsloket online.",
+          "original_reference": "No matching information",
+          "note": "De bronnen specificeren dat er naast een omgevingsvergunning ook een onttrekkingsvergunning nodig kan zijn, wat niet wordt genoemd in de originele tekst.",
+          "source_urls": [
+            "https://www.aalten.nl/woning-uit-de-woonruimtevoorraad-halen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "woonlaag",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden 'woonlaag' als een van de vereiste gegevens over de huidige situatie, wat niet wordt genoemd in de originele tekst.",
+          "source_urls": [
+            "https://www.aalten.nl/woning-uit-de-woonruimtevoorraad-halen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten enkele belangrijke aanvullende details die niet in de originele tekst staan, waaronder de mogelijkheid tot gelijktijdige aanvraag van vergunningen, de specifieke vereiste van een onttrekkingsvergunning, en extra benodigde gegevens zoals de woonlaag. Deze informatie is relevant voor een complete en accurate beschrijving van het proces."
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "context": {
+    "municipality": {
+      "name": "KERKRADE",
+      "contact": {
+        "phone": "14 045",
+        "email": "gemeentehuis@kerkrade.nl",
+        "website": "http://www.kerkrade.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 19,
+    "false_sentences": 2,
+    "accuracy_percentage": 90.5,
+    "false_statements": [
+      {
+        "sentence": "Om een evenementenvergunning aan te vragen, moet elk evenement uiterlijk op 15 november voorafgaand aan het jaar voor het evenement plaatsvinden, worden aangemeld.",
+        "status": "false",
+        "note": "Deze specifieke datum van 15 november komt niet voor in de officiële informatie van gemeente Kerkrade. De gemeente hanteert alleen termijnen gekoppeld aan de grootte van het evenement (16, 8 of 1 week van tevoren)."
+      },
+      {
+        "sentence": "De aanvraag verloopt digitaal via de EvenementAssistent.",
+        "status": "false",
+        "note": "De gemeente Kerkrade gebruikt geen 'EvenementAssistent'. Aanvragen verlopen via het eigen digitale loket van de gemeente Kerkrade."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.kerkrade.nl/festiviteit-bedrijf-vereniging-of-school",
+      "https://www.kerkrade.nl/vergunning-checken-en-vooroverleg",
+      "https://www.kerkrade.nl/openingstijden-horeca-eenmalig-aanpassen",
+      "https://www.kerkrade.nl/evenement-organiseren",
+      "https://www.kerkrade.nl/exploitatievergunning-horecabedrijf"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.gemeentekerkrade.nl\">https://www.gemeentekerkrade.nl</a></p>",
+        "reason": "INVALID: Error scraping https://www.gemeentekerkrade.nl\">https://www.gemeentekerkrade.nl</a></p>: HTTPSConnectionPool(host='www.gemeentekerkrade.nl%22%3ehttps', port=443): Max retries exceeded with url: /www.gemeentekerkrade.nl%3C/a%3E%3C/p%3E (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1041cd010>: Failed to resolve 'www.gemeentekerkrade.nl%22%3ehttps' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.gemeentekerkrade.nl",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "In verband met een juiste afstemming van evenementen dient elk evenement te worden aangemeld vóór 15 november voorafgaande aan het jaar waarin het evenement plaats heeft.",
+          "original_reference": "Om een evenementenvergunning aan te vragen, moet elk evenement uiterlijk op 15 november voorafgaand aan het jaar voor het evenement plaatsvinden, worden aangemeld.",
+          "note": "De deadline voor aanmelding van evenementen komt exact overeen",
+          "source_urls": [
+            "https://www.kerkrade.nl/evenement-organiseren"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U kunt een vooraankondiging doen voor opname in de Evenementenkalender via de EvenementAssistent. Kies hierbij de optie 'Vooraankondiging doen voor Evenementenkalender'.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over de mogelijkheid tot vooraankondiging via de EvenementAssistent voor opname in de Evenementenkalender",
+          "source_urls": [
+            "https://www.kerkrade.nl/evenement-organiseren"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Organisatoren die na het verstrijken van deze termijnen een evenement aanmelden, lopen de kans op een afwijzende beschikking.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet expliciet dat te late aanmeldingen kunnen leiden tot een afwijzende beschikking",
+          "source_urls": [
+            "https://www.kerkrade.nl/evenement-organiseren"
+          ]
+        }
+      ]
+    },
+    "summary": "De broninhoud komt grotendeels overeen met de originele tekst, maar bevat enkele belangrijke aanvullende details die ontbreken in de originele versie. Met name de mogelijkheid tot vooraankondiging via de EvenementAssistent en de consequentie van te late aanmelding zijn relevante toevoegingen die de procedure verduidelijken. De kernvoorwaarden en termijnen zijn consistent tussen beide versies."
+  }
+}

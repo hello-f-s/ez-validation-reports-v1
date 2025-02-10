@@ -1,0 +1,85 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ALPHEN-CHAAM",
+      "contact": {
+        "phone": "14013",
+        "email": "info@alphen-chaam.nl",
+        "website": "http://www.alphen-chaam.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 9,
+    "false_sentences": 2,
+    "accuracy_percentage": 81.8,
+    "false_statements": [
+      {
+        "sentence": "Vergunning voor 1 jaar voor 1 gokautomaat kost € 56,50.",
+        "status": "false",
+        "note": "Het exacte bedrag voor een kansspelautomatenvergunning is niet publiekelijk vermeld op de website van gemeente Alphen-Chaam. De genoemde prijs kan niet geverifieerd worden."
+      },
+      {
+        "sentence": "Voor 2 of meer gokautomaten: Voor de 1e gokautomaat € 56,50, en € 34 voor elke volgende gokautomaat.",
+        "status": "false",
+        "note": "De specifieke tariefstructuur voor meerdere automaten is niet terug te vinden op de officiële website van gemeente Alphen-Chaam. Deze bedragen kunnen niet geverifieerd worden."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 6,
+    "invalid_urls": 1,
+    "accuracy_percentage": 85.7,
+    "valid_urls_list": [
+      "https://www.alphen-chaam.nl/vergunningplaatsengokautomaat",
+      "https://www.alphen-chaam.nl/ondernemen/vergunningen-en-ontheffingen-voor-ondernemers",
+      "https://www.alphen-chaam.nl/omgevingsvergunning",
+      "https://www.alphen-chaam.nl",
+      "https://www.alphen-chaam.nl/vergunningen-en-ontheffingen/vergunningen-en-ontheffingen-voor-ondernemers",
+      "https://www.alphen-chaam.nl/horecavergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.alphen-chaam.nl\">Gemeente",
+        "reason": "INVALID: Error scraping https://www.alphen-chaam.nl\">Gemeente: HTTPSConnectionPool(host='www.alphen-chaam.nl%22%3egemeente', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x107557e00>: Failed to resolve 'www.alphen-chaam.nl%22%3egemeente' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vergunning voor 1 jaar voor 1 gokautomaat € 57,80",
+          "original_reference": "Vergunning voor 1 jaar voor 1 gokautomaat kost € 56,50",
+          "note": "Het bedrag voor één gokautomaat verschilt: €57,80 in de bron versus €56,50 in de originele tekst",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/vergunningplaatsengokautomaat"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor elke volgende gokautomaat € 34,78",
+          "original_reference": "€ 34 voor elke volgende gokautomaat",
+          "note": "Het bedrag voor extra gokautomaten verschilt: €34,78 in de bron versus €34,00 in de originele tekst",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/vergunningplaatsengokautomaat"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de tarieven voor de vergunningen. De actuele bedragen in de bronnen zijn hoger dan vermeld in de originele tekst. Voor één gokautomaat is het verschil €1,30 en voor elke extra gokautomaat €0,78. Overige informatie zoals procedures, voorwaarden en behandeltermijnen komt overeen."
+  }
+}

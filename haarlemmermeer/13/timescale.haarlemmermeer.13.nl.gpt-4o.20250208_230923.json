@@ -1,0 +1,82 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HAARLEMMERMEER",
+      "contact": {
+        "phone": "(0900) 18 52",
+        "email": "info@haarlemmermeer.nl",
+        "website": "http://www.haarlemmermeer.nl"
+      }
+    },
+    "service": {
+      "id": 13,
+      "name": "Omzettingsvergunning voor kamerverhuur aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "Maximaal 40% van de woning en aangebouwde bouwwerken mag als B&B worden ingericht, tot maximaal 50 m².",
+        "status": "false",
+        "note": "Volgens de officiële regels van gemeente Haarlemmermeer mag maximaal 30% van de woning (met een maximum van 50 m²) worden gebruikt voor een B&B, niet 40%."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 3,
+    "invalid_urls": 4,
+    "accuracy_percentage": 42.9,
+    "valid_urls_list": [
+      "https://haarlemmermeergemeente.nl/kozijnwijziging",
+      "https://haarlemmermeergemeente.nl/vergunningsvrij-bouwen",
+      "https://haarlemmermeergemeente.nl/omgevingsvergunning-milieu"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://haarlemmermeergemeente.nl",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://haarlemmermeergemeente.nl/bed-breakfast",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://haarlemmermeergemeente.nl/dakterras",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://haarlemmermeergemeente.nl\">Gemeente",
+        "reason": "INVALID: Error scraping https://haarlemmermeergemeente.nl\">Gemeente: HTTPSConnectionPool(host='haarlemmermeergemeente.nl%22%3egemeente', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x103e6ad50>: Failed to resolve 'haarlemmermeergemeente.nl%22%3egemeente' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Vul de vergunningscheck in op het Omgevingsloket",
+          "original_reference": "U kunt een aanvraag voor een omgevingsvergunning doen via het Omgevingsloket",
+          "note": "De procedure voor het aanvragen via het Omgevingsloket wordt consistent beschreven in zowel de originele tekst als de bronnen",
+          "source_urls": [
+            "https://haarlemmermeergemeente.nl/kozijnwijziging",
+            "https://haarlemmermeergemeente.nl/vergunningsvrij-bouwen",
+            "https://haarlemmermeergemeente.nl/omgevingsvergunning-milieu"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse van de bronnen en de originele tekst zijn er geen significante inhoudelijke verschillen gevonden. De informatie over de aanvraagprocedure via het Omgevingsloket is consistent in alle bronnen. Opvallend is dat de specifieke B&B voorwaarden die in de originele tekst worden genoemd niet direct terug te vinden zijn in de geleverde bronpagina's, maar dit betekent niet dat deze informatie onjuist is - de relevante B&B-specifieke bronpagina lijkt niet volledig in de geciteerde content te zijn opgenomen."
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HEEMSKERK",
+      "contact": {
+        "phone": "14 0251",
+        "email": "post@heemskerk.nl",
+        "website": "http://www.heemskerk.nl"
+      }
+    },
+    "service": {
+      "id": 2,
+      "name": "Bord of spandoek plaatsen aan de openbare weg"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "Mocht u het niet eens zijn met een beslissing over uw vergunning aanvraag, kunt u binnen een bepaalde periode bezwaar maken.",
+        "status": "false",
+        "note": "Deze zin is onvolledig/onjuist. Volgens de gemeente Heemskerk moet bezwaar binnen 6 weken na de verzenddatum van het besluit worden ingediend. Deze specifieke termijn had genoemd moeten worden."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 6,
+    "invalid_urls": 1,
+    "accuracy_percentage": 85.7,
+    "valid_urls_list": [
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/veelgestelde-vragen-omgevingsvergunning",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/vergunning-voorwerpen/materialen-op-de-weg",
+      "https://www.heemskerk.nl",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/vergunning-gebruik-openbare-weg",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/standplaatsvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.heemskerk.nl\">Gemeente",
+        "reason": "INVALID: Error scraping https://www.heemskerk.nl\">Gemeente: HTTPSConnectionPool(host='www.heemskerk.nl%22%3egemeente', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1039c82d0>: Failed to resolve 'www.heemskerk.nl%22%3egemeente' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wilt u een voorwerp plaatsen op de openbare weg of daarboven ophangen? Zoals een uitstalling voor een winkel, spandoek over de weg of een container. Soms heeft u hier een vergunning voor nodig. En soms is een melding doen genoeg.",
+          "original_reference": "Om te beginnen met de aanvraag voor een vergunning, moet u gebruik maken van het Omgevingsloket.",
+          "note": "De bronpagina geeft aan dat voor sommige voorwerpen alleen een melding volstaat, terwijl de originele tekst alleen spreekt over een vergunningaanvraag via het Omgevingsloket.",
+          "source_urls": [
+            "https://www.heemskerk.nl/belastingen-en-vergunningen/vergunning-voorwerpen/materialen-op-de-weg"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Dit geeft u aan in de aanvraag: NAW-gegevens (naam, adres, woonplaats) en bij voorkeur telefoonnummer en e-mailadres van de aanvrager. NAW-gegevens uitvoerende bedrijf. Omschrijving van de activiteiten waarvoor de maatregel aangevraagd wordt.",
+          "original_reference": "Voor het aanvragen van een vergunning voor het plaatsen van een bord of spandoek, kunt u het Omgevingsloket gebruiken. Echter, specifieke documenten of gegevens die bij de aanvraag nodig zijn, worden niet gedetailleerd vermeld op de website.",
+          "note": "De bronpagina specificeert wel degelijk welke gegevens nodig zijn voor de aanvraag, terwijl de originele tekst aangeeft dat deze informatie niet beschikbaar is.",
+          "source_urls": [
+            "https://www.heemskerk.nl/belastingen-en-vergunningen/vergunning-gebruik-openbare-weg"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de aanvraagprocedure en vereiste documentatie. De bronpagina's geven meer specifieke informatie over wanneer een melding volstaat versus wanneer een vergunning nodig is, en welke gegevens bij de aanvraag moeten worden verstrekt. Dit in tegenstelling tot de meer algemene en minder specifieke informatie in de originele tekst."
+  }
+}

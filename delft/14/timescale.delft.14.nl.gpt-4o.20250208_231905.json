@@ -1,0 +1,96 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DELFT",
+      "contact": {
+        "phone": "14 015",
+        "email": "null",
+        "website": "http://www.delft.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 9,
+    "false_sentences": 3,
+    "accuracy_percentage": 75.0,
+    "false_statements": [
+      {
+        "sentence": "U vraagt de ontheffing aan via de website van ParkerenDelft.",
+        "status": "false",
+        "note": "Parkeerontheffingen worden aangevraagd via het digitale loket van de gemeente Delft (www.delft.nl), niet via ParkerenDelft."
+      },
+      {
+        "sentence": "Dit moet minimaal 3 weken van tevoren gedaan worden.",
+        "status": "false",
+        "note": "Volgens de gemeente Delft moet een ontheffing minimaal 5 werkdagen voor de gewenste ingangsdatum worden aangevraagd, niet 3 weken."
+      },
+      {
+        "sentence": "Bij afwijzing van de aanvraag is restitutie niet mogelijk.",
+        "status": "false",
+        "note": "Deze informatie staat niet vermeld op de officiële website van de gemeente Delft en is niet verifieerbaar als beleid van de gemeente."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 4,
+    "invalid_urls": 3,
+    "accuracy_percentage": 57.1,
+    "valid_urls_list": [
+      "https://www.delft.nl/gehandicaptenparkeerplaats",
+      "https://www.delft.nl/omgevingsvergunning-aanvragen",
+      "https://www.delft.nl/parkeren-bij-nieuwbouw",
+      "https://www.delft.nl/omgevingsvergunning-milieu"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://example.com\">Gemeente",
+        "reason": "INVALID: Error scraping https://example.com\">Gemeente: HTTPSConnectionPool(host='example.com%22%3egemeente', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x105e08550>: Failed to resolve 'example.com%22%3egemeente' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.delft.nl/ontheffing-verkeersregels-rvv",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://example.com",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Na ontvangst van uw aanvraag neemt de gemeente binnen 8 weken een besluit. Tenzij er nog aanvullende gegevens nodig zijn.",
+          "original_reference": "De doorlooptijd is niet specifiek beschreven voor een parkeervergunning of ontheffing, maar vaak controleren gemeentes de aanvraag binnen enkele weken.",
+          "note": "De bronpagina specificeert een concrete behandeltermijn van 8 weken, terwijl de originele tekst geen specifieke termijn noemt.",
+          "source_urls": [
+            "https://www.delft.nl/gehandicaptenparkeerplaats"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Verwijder persoonsgegevens uit bijlagen. De gemeente publiceert alle bijlagen bij de aanvraag van een omgevingsvergunning online.",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden een belangrijke voorwaarde over het verwijderen van persoonsgegevens uit bijlagen die niet in de originele tekst staat.",
+          "source_urls": [
+            "https://www.delft.nl/omgevingsvergunning-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont twee belangrijke verschillen: een concrete behandeltermijn van 8 weken die niet in de originele tekst staat, en een ontbrekende voorwaarde over het verwijderen van persoonsgegevens uit bijlagen. De overige informatie in de bronnen komt overeen met of is niet direct gerelateerd aan de originele inhoud."
+  }
+}

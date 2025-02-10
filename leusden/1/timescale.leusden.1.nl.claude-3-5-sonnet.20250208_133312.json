@@ -1,0 +1,75 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LEUSDEN",
+      "contact": {
+        "phone": "14 033",
+        "email": "gemeente@leusden.nl",
+        "website": "http://www.leusden.nl/"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "U betaalt € 474,00 voor een drank- en horecavergunning.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Leusden bedragen de legeskosten voor een drank- en horecavergunning € 484,00 en niet € 474,00."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.leusden.nl/en/vergunningen-en-belastingen/drank-en-horeca",
+      "https://www.leusden.nl/vergunningen-en-belastingen/drank-en-horeca/drank-en-horecavergunning",
+      "https://www.leusden.nl/en/vergunningen-en-belastingen/drank-en-horeca/drank-en-horecavergunning",
+      "https://www.leusden.nl/vergunningen-en-belastingen/drank-en-horeca",
+      "https://www.leusden.nl/en/vergunningen-en-belastingen/drank-en-horeca/ontheffing-drank-en-horecawet"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Tijdens de behandeltermijn wordt uw aanvraag beoordeeld en voorgelegd ter advies. Bent u een commerciële horecaondernemer dan zal ook een Bibobtoets worden uitgevoerd.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat er een Bibobtoets wordt uitgevoerd voor commerciële horecaondernemers, wat een belangrijk onderdeel is van de procedure.",
+          "source_urls": [
+            "https://www.leusden.nl/vergunningen-en-belastingen/drank-en-horeca/drank-en-horecavergunning",
+            "https://www.leusden.nl/en/vergunningen-en-belastingen/drank-en-horeca/drank-en-horecavergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Naast een drank- en horecavergunning moet u als horeca- ondernemer ook een...",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat er aanvullende vergunningen nodig zijn naast de drank- en horecavergunning, terwijl de bronpagina hier wel naar verwijst (hoewel de tekst incompleet is).",
+          "source_urls": [
+            "https://www.leusden.nl/vergunningen-en-belastingen/drank-en-horeca/drank-en-horecavergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten twee belangrijke aanvullende elementen die niet in de originele tekst staan: de uitvoering van een Bibobtoets voor commerciële horecaondernemers en de verwijzing naar aanvullende benodigde vergunningen. Deze informatie is relevant voor de volledigheid van de procedure. De overige informatie zoals voorwaarden, kosten en procedures komt overeen met de originele tekst."
+  }
+}

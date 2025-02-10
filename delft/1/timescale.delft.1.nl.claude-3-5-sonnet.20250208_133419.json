@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DELFT",
+      "contact": {
+        "phone": "14 015",
+        "email": "null",
+        "website": "http://www.delft.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "Heeft u uw aanvraag compleet ingediend? Dan handelt de gemeente deze binnen 3 maanden af.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Delft wordt een alcoholwetvergunning binnen 8 weken (niet 3 maanden) afgehandeld na een complete aanvraag."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.delft.nl/omgevingsvergunning-milieu",
+      "https://www.delft.nl/alcoholwetvergunning",
+      "https://www.delft.nl/exploitatievergunning-coffeeshops",
+      "https://www.delft.nl/verlof-alcoholvrije-dranken-schenken",
+      "https://www.delft.nl/ontheffing-tijdelijk-alcohol-schenken"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Kosten 2025 Exploitatievergunning coffeeshop € 1.069,35",
+          "original_reference": "Alcoholwetvergunning: € 1.074,10",
+          "note": "De kosten in de bronnen zijn anders dan in de originele tekst. Dit lijkt te komen doordat de bron de tarieven voor 2025 vermeldt.",
+          "source_urls": [
+            "https://www.delft.nl/exploitatievergunning-coffeeshops"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor het schenken van alcohol tegen betaling heeft u een alcoholwetvergunning nodig. Dit is ook nodig voor het verkopen van sterke drank. De vergunning geldt voor slijterijen en horeca-inrichtingen. Zoals cafés, restaurants, buurthuizen, studentensociëteiten, bedrijfsrestaurants, sportkantines en bioscoopfoyers.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over voor welke type bedrijven/instellingen de alcoholwetvergunning nodig is.",
+          "source_urls": [
+            "https://www.delft.nl/alcoholwetvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wanneer nodig? De vergunning vraagt u aan wanneer u: een horeca-inrichting wilt vestigen of overnemen, een bestaande horeca-inrichting wilt uitbreiden, een slijterij wilt vestigen of overnemen, er een wijziging is in de ondernemingsvorm",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist specifieke situaties waarin een alcoholwetvergunning moet worden aangevraagd.",
+          "source_urls": [
+            "https://www.delft.nl/alcoholwetvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de kosten (tarieven 2025 versus huidige tarieven) en ontbrekende essentiële informatie in de originele tekst over de toepassingsgebieden van de alcoholwetvergunning en specifieke situaties waarin deze moet worden aangevraagd. De kernvoorwaarden en procedures komen wel overeen."
+  }
+}

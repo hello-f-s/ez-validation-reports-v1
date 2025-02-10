@@ -1,0 +1,64 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LANDGRAAF",
+      "contact": {
+        "phone": "14 045",
+        "email": "gemeente@landgraaf.nl",
+        "website": "http://www.landgraaf.nl"
+      }
+    },
+    "service": {
+      "id": 10,
+      "name": "Nachtregister bijhouden"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 10,
+    "true_sentences": 10,
+    "false_sentences": 0,
+    "accuracy_percentage": 100.0,
+    "false_statements": []
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.landgraaf.nl/nachtregister-bijhouden",
+      "https://www.landgraaf.nl/evenement-organiseren",
+      "https://www.landgraaf.nl/aanvragen-en-regelen-ondernemers",
+      "https://www.landgraaf.nl/verklaring-omtrent-het-gedrag-vog",
+      "https://www.landgraaf.nl/exploitatievergunning-horecabedrijf"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.landgraaf.nl/inwoners/werk/nachtregister-bijhouden",
+        "reason": "INVALID: Error scraping https://www.landgraaf.nl/inwoners/werk/nachtregister-bijhouden: 404 Client Error: Not Found for url: https://www.landgraaf.nl/inwoners/werk/nachtregister-bijhouden"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Dat is belangrijk als er bijvoorbeeld brand is. De brandweer weet dan welke mensen aanwezig zijn.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina geeft een belangrijke veiligheidsreden voor het bijhouden van het nachtregister die niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.landgraaf.nl/nachtregister-bijhouden"
+          ]
+        }
+      ]
+    },
+    "summary": "De broninhoud komt grotendeels overeen met de originele tekst. Het enige noemenswaardige verschil is dat de bronpagina expliciet vermeldt dat het nachtregister belangrijk is voor de brandveiligheid, zodat de brandweer weet wie er aanwezig is in geval van brand. Deze belangrijke veiligheidscontext ontbreekt in de originele tekst. Alle andere informatie zoals verplichtingen, registratievereisten en bewaartermijnen komt exact overeen."
+  }
+}

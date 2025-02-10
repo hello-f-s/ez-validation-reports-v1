@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HOOGEVEEN",
+      "contact": {
+        "phone": "14 0528",
+        "email": "info@hoogeveen.nl",
+        "website": "http://www.hoogeveen.nl"
+      }
+    },
+    "service": {
+      "id": 16,
+      "name": "Registreren in het Landelijk Register Kinderopvang (LRK)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Voor het starten en registreren van een kinderopvang betaalt u € 97,90 aan de gemeente.",
+        "status": "false",
+        "note": "Het exacte bedrag voor het starten en registreren van een kinderopvang in gemeente Hoogeveen is € 1.235,00 volgens de actuele legesverordening van de gemeente Hoogeveen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 9,
+    "valid_urls": 6,
+    "invalid_urls": 3,
+    "accuracy_percentage": 66.7,
+    "valid_urls_list": [
+      "https://www.hoogeveen.nl/laag-inkomen/extra-ondersteuning-bij-laag-inkomen/tegemoetkoming-kosten-kinderopvang-en-peuterspelen",
+      "https://www.hoogeveen.nl/laag-inkomen/extra-ondersteuning-bij-laag-inkomen/hulp-bij-aanvragen-van-regelingen",
+      "https://www.hoogeveen.nl",
+      "https://www.hoogeveen.nl/geboorte-en-overlijden/geboorteaangifte-doen",
+      "https://www.hoogeveen.nl/geboorte-en-overlijden/registratie-levenloos-geboren-kind",
+      "https://www.hoogeveen.nl/vergunningen/kinderopvang-starten"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://rijksoverheid.nl\">Rijksoverheid</a></li>",
+        "reason": "INVALID: Error scraping https://rijksoverheid.nl\">Rijksoverheid</a></li>: HTTPSConnectionPool(host='rijksoverheid.nl%22%3erijksoverheid%3c', port=443): Max retries exceeded with url: /a%3E%3C/li%3E (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10340fa10>: Failed to resolve 'rijksoverheid.nl%22%3erijksoverheid%3c' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://rijksoverheid.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.hoogeveen.nl\">Gemeente",
+        "reason": "INVALID: Error scraping https://www.hoogeveen.nl\">Gemeente: HTTPSConnectionPool(host='www.hoogeveen.nl%22%3egemeente', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1033f34d0>: Failed to resolve 'www.hoogeveen.nl%22%3egemeente' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u een locatie hebt gevonden, dan bekijkt u het omgevingsplan van de gemeente. Controleer welke bestemming de locatie heeft, maar ook welke vergunningen u nodig hebt. U kunt hiervoor bellen: 14 0528",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist een belangrijke eerste stap over het controleren van het omgevingsplan en de bestemming van de locatie.",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/kinderopvang-starten"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Met een Verklaring omtrent het gedrag (VOG) bewijst u dat uw onderneming of uw medewerkers geen strafbare feiten hebben gepleegd. Voor uw onderneming of voor werknemers op leidinggevende posities vraagt u een VOG Rechtspersonen (rijksoverheid.nl) aan. Alle andere medewerkers vragen een VOG Particulieren aan",
+          "original_reference": "Een Verklaring omtrent het gedrag (VOG) is noodzakelijk voor de onderneming en werknemers.",
+          "note": "De bronpagina specificeert dat er verschillende soorten VOG's nodig zijn: VOG Rechtspersonen voor de onderneming en leidinggevenden, en VOG Particulieren voor andere medewerkers. Dit detail ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/kinderopvang-starten"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten twee belangrijke aanvullingen op de originele tekst: (1) de vereiste eerste stap om het omgevingsplan te controleren voor de locatie, en (2) een specificatie van de verschillende types VOG die nodig zijn voor verschillende rollen binnen de kinderopvang. De overige informatie komt overeen met de originele tekst."
+  }
+}

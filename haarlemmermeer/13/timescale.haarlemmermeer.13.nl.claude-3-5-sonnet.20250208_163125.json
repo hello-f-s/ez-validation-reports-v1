@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HAARLEMMERMEER",
+      "contact": {
+        "phone": "(0900) 18 52",
+        "email": "info@haarlemmermeer.nl",
+        "website": "http://www.haarlemmermeer.nl"
+      }
+    },
+    "service": {
+      "id": 13,
+      "name": "Omzettingsvergunning voor kamerverhuur aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 27,
+    "true_sentences": 26,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.3,
+    "false_statements": [
+      {
+        "sentence": "U heeft altijd een omgevingsvergunning nodig voor het starten van een Bed & Breakfast",
+        "status": "false",
+        "note": "Volgens de gemeente Haarlemmermeer is een omgevingsvergunning alleen nodig als er bouwkundige aanpassingen nodig zijn voor de B&B. Voor alleen het starten van een B&B in een bestaande ruimte zonder aanpassingen is geen omgevingsvergunning vereist, wel moet men voldoen aan de gestelde voorwaarden."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 3,
+    "invalid_urls": 2,
+    "accuracy_percentage": 60.0,
+    "valid_urls_list": [
+      "https://haarlemmermeergemeente.nl/vergunningsvrij-bouwen",
+      "https://haarlemmermeergemeente.nl/kozijnwijziging",
+      "https://haarlemmermeergemeente.nl/omgevingsvergunning-milieu"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://haarlemmermeergemeente.nl/dakterras",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://haarlemmermeergemeente.nl/bed-breakfast",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Let op: soms zijn er nog andere regels waar uw bouwwerk aan moet voldoen. Denk bijvoorbeeld aan toestemming van de eigenaar van de grond of regels uit een koopovereenkomst. Dit controleert u zelf.",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden aanvullende belangrijke informatie over het controleren van andere regels en toestemmingen die niet in de originele tekst staat vermeld.",
+          "source_urls": [
+            "https://haarlemmermeergemeente.nl/kozijnwijziging"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Heeft u een omgevingsvergunning nodig voor meerdere activiteiten? Deze activiteiten kunt u tegelijkertijd aanvragen",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden expliciet dat meerdere vergunningen tegelijk kunnen worden aangevraagd, wat nuttige informatie is die niet in de originele tekst staat.",
+          "source_urls": [
+            "https://haarlemmermeergemeente.nl/vergunningsvrij-bouwen",
+            "https://haarlemmermeergemeente.nl/kozijnwijziging",
+            "https://haarlemmermeergemeente.nl/omgevingsvergunning-milieu"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten twee belangrijke aanvullende informatie-elementen die niet in de originele tekst staan: (1) de noodzaak om zelf andere regels en toestemmingen te controleren, zoals eigendomsrechten en koopovereenkomsten, en (2) de mogelijkheid om meerdere vergunningen tegelijkertijd aan te vragen. Deze informatie is relevant voor de volledigheid van de dienstverlening maar ontbreekt in de originele tekst."
+  }
+}

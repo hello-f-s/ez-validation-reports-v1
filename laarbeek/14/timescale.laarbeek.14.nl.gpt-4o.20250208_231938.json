@@ -1,0 +1,89 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LAARBEEK",
+      "contact": {
+        "phone": "(0492) 46 97 00",
+        "email": "gemeente@laarbeek.nl",
+        "website": "http://www.laarbeek.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "Er zijn geen kosten verbonden aan het aanvragen van een ontheffing voor het parkeren van een caravan of vergelijkbaar voertuig.",
+        "status": "false",
+        "note": "Voor het aanvragen van een ontheffing voor het parkeren van een caravan worden leges in rekening gebracht volgens de legesverordening van gemeente Laarbeek. Het is onjuist dat er geen kosten aan verbonden zijn."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 6,
+    "invalid_urls": 1,
+    "accuracy_percentage": 85.7,
+    "valid_urls_list": [
+      "https://www.laarbeek.nl/standplaatsvergunning",
+      "https://laarbeek.nl",
+      "https://www.laarbeek.nl/caravan-parkeren-op-openbare-weg",
+      "https://www.laarbeek.nl/gehandicaptenparkeerkaart",
+      "https://www.laarbeek.nl/horecabedrijf-beginnen",
+      "https://www.laarbeek.nl/omgevingsvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://laarbeek.nl\">Gemeente",
+        "reason": "INVALID: Error scraping https://laarbeek.nl\">Gemeente: HTTPSConnectionPool(host='laarbeek.nl%22%3egemeente', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1081c5450>: Failed to resolve 'laarbeek.nl%22%3egemeente' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U mag een caravan, camper of ander kampeermiddel maximaal drie dagen aaneengesloten parkeren binnen de bebouwde kom van de gemeente Laarbeek. Parkeert u uw caravan of soortgelijk voertuig vaker op de openbare weg? Dan geldt een minimale tussenperiode van zeven dagen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de verplichte tussenperiode van zeven dagen bij herhaald parkeren, wat een belangrijke aanvullende beperking is.",
+          "source_urls": [
+            "https://www.laarbeek.nl/caravan-parkeren-op-openbare-weg"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Deze regels gelden ook voor woonwagens, kampeerwagens, magazijnwagens, keetwagens, aanhangwagens en vouwwagens.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst specificeert niet alle voertuigtypes waarop de regels van toepassing zijn, terwijl de bron een uitgebreide lijst geeft.",
+          "source_urls": [
+            "https://www.laarbeek.nl/caravan-parkeren-op-openbare-weg"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "In de Algemene Plaatselijke Verordening Laarbeek 2020 vindt u de regels over het parkeren van caravans en soortgelijke voertuigen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst verwijst niet naar de APV 2020 waarin de parkeerregels zijn vastgelegd, wat een belangrijke juridische basis is.",
+          "source_urls": [
+            "https://www.laarbeek.nl/caravan-parkeren-op-openbare-weg"
+          ]
+        }
+      ]
+    },
+    "summary": "De broninhoud bevat drie belangrijke aanvullingen die niet in de originele tekst staan: een verplichte tussenperiode van zeven dagen bij herhaald parkeren, een uitgebreide lijst van voertuigtypes waarop de regels van toepassing zijn, en een verwijzing naar de juridische basis in de APV 2020. Deze informatie is essentieel voor een volledig begrip van de parkeerregels."
+  }
+}

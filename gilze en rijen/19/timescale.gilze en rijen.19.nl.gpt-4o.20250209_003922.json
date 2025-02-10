@@ -1,0 +1,71 @@
+{
+  "context": {
+    "municipality": {
+      "name": "GILZE EN RIJEN",
+      "contact": {
+        "phone": "14 0161",
+        "email": "info@gilzerijen.nl",
+        "website": "http://www.gilzerijen.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 10,
+    "true_sentences": 9,
+    "false_sentences": 1,
+    "accuracy_percentage": 90.0,
+    "false_statements": [
+      {
+        "sentence": "De aanvraag wordt binnen 8 weken behandeld. Deze periode kan eenmaal verlengd worden met 8 weken.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Gilze en Rijen wordt de aanvraag binnen 12 weken behandeld, niet binnen 8 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 0,
+    "invalid_urls": 7,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.gilzerijen.nl/horecavergunning",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.gilzerijen.nl/loterij-houden",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.gilzerijen.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.gilzerijen.nl/ondernemen/vergunningen-en-ontheffingen-voor-ondernemers",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.gilzerijen.nl/vergunning-plaatsen-gokautomaat",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.gilzerijen.nl\">https://www.gilzerijen.nl</a></p>",
+        "reason": "INVALID: Error scraping https://www.gilzerijen.nl\">https://www.gilzerijen.nl</a></p>: HTTPSConnectionPool(host='www.gilzerijen.nl%22%3ehttps', port=443): Max retries exceeded with url: /www.gilzerijen.nl%3C/a%3E%3C/p%3E (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x104279450>: Failed to resolve 'www.gilzerijen.nl%22%3ehttps' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.gilzerijen.nl/omgevingsvergunning",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  }
+}

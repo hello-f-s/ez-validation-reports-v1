@@ -1,0 +1,87 @@
+{
+  "context": {
+    "municipality": {
+      "name": "KERKRADE",
+      "contact": {
+        "phone": "14 045",
+        "email": "gemeentehuis@kerkrade.nl",
+        "website": "http://www.kerkrade.nl"
+      }
+    },
+    "service": {
+      "id": 22,
+      "name": "Woonruimte splitsen of samenvoegen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "Dit bedrag is vastgesteld op €210,-, maar aanvullende kosten kunnen van toepassing zijn afhankelijk van de voortgang van uw aanvraag.",
+        "status": "false",
+        "note": "Het exacte bedrag van €210,- voor een principe-aanvraag is niet correct volgens de actuele legesverordening van de gemeente Kerkrade. De kosten voor een principe-aanvraag worden jaarlijks vastgesteld in de legesverordening en kunnen variëren."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 8,
+    "valid_urls": 5,
+    "invalid_urls": 3,
+    "accuracy_percentage": 62.5,
+    "valid_urls_list": [
+      "https://www.kerkrade.nl/woning-splitsen",
+      "https://www.kerkrade.nl/omgevingsvergunning",
+      "https://www.kerkrade.nl/regels-en-procedure-om-nieuwe-woningen-te-bouwen",
+      "https://www.kerkrade.nl/bouwen-of-verbouwen",
+      "https://www.kerkrade.nl/kamerverhuur-en-woningsplitsing"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.kerkrade.nl/meetpunten/ict/stemming/programma/beleidsregel-woningsplitsing-gebruikswijziging-kerkrade\">Beleidsregel",
+        "reason": "INVALID: Error scraping https://www.kerkrade.nl/meetpunten/ict/stemming/programma/beleidsregel-woningsplitsing-gebruikswijziging-kerkrade\">Beleidsregel: 404 Client Error: Not Found for url: https://www.kerkrade.nl/meetpunten/ict/stemming/programma/beleidsregel-woningsplitsing-gebruikswijziging-kerkrade%22%3EBeleidsregel"
+      },
+      {
+        "url": "https://overheid.nl\">Overheid.nl",
+        "reason": "INVALID: Error scraping https://overheid.nl\">Overheid.nl: HTTPSConnectionPool(host='overheid.nl%22%3eoverheid.nl', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x103d17390>: Failed to resolve 'overheid.nl%22%3eoverheid.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.omgevingsloket.nl\">Omgevingsloket",
+        "reason": "INVALID: Error scraping https://www.omgevingsloket.nl\">Omgevingsloket: HTTPSConnectionPool(host='www.omgevingsloket.nl%22%3eomgevingsloket', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x103d16710>: Failed to resolve 'www.omgevingsloket.nl%22%3eomgevingsloket' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Kamerbewoning, kamerverhuur en woningomzetting zijn in gemeente Kerkrade niet toegestaan. Dit is vastgelegd in het bestemmingsplan 'Parapluplan Stedelijk Gebied Kerkrade 2018' en in de Algemeen Plaatselijke Verordening (APV).",
+          "original_reference": "In de gemeente Kerkrade is het niet toegestaan om een woning te splitsen in zelfstandige wooneenheden. Dit is vastgelegd in het bestemmingsplan 'Parapluplan Stedelijk Gebied Kerkrade'.",
+          "note": "De bronpagina vermeldt specifiek het jaartal 2018 van het Parapluplan en noemt ook de APV als aanvullende regelgeving, wat niet in de originele tekst staat.",
+          "source_urls": [
+            "https://www.kerkrade.nl/kamerverhuur-en-woningsplitsing"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De gemeenteraad heeft op 31 mei 2023 de beleidsregel 'Woningsplitsing en gebruikswijziging naar wonen gemeente Kerkrade 2023' vastgesteld.",
+          "original_reference": "zoals vastgelegd in de beleidsregel 'Woningsplitsing en gebruikswijziging naar wonen gemeente Kerkrade 2023'",
+          "note": "De bronpagina vermeldt de specifieke vaststellingsdatum (31 mei 2023) die niet in de originele tekst staat.",
+          "source_urls": [
+            "https://www.kerkrade.nl/kamerverhuur-en-woningsplitsing"
+          ]
+        }
+      ]
+    },
+    "summary": "De verschillen tussen de originele tekst en de bronnen zijn voornamelijk gerelateerd aan extra specificaties en details. De bronnen vermelden het exacte jaartal van het Parapluplan (2018), de APV als aanvullende regelgeving, en de specifieke vaststellingsdatum van de beleidsregel (31 mei 2023). De kern van de informatie blijft echter consistent tussen beide versies."
+  }
+}

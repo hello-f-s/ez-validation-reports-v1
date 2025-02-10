@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HAARLEMMERMEER",
+      "contact": {
+        "phone": "(0900) 18 52",
+        "email": "info@haarlemmermeer.nl",
+        "website": "http://www.haarlemmermeer.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 12,
+    "false_sentences": 2,
+    "accuracy_percentage": 85.7,
+    "false_statements": [
+      {
+        "sentence": "U vraagt de evenementenvergunning minimaal 12 weken van tevoren aan, via de knop 'Evenementenvergunning aanvragen' op de website.",
+        "status": "false",
+        "note": "Volgens de gemeente Haarlemmermeer moet een evenementenvergunning minimaal 14 weken van tevoren worden aangevraagd, niet 12 weken."
+      },
+      {
+        "sentence": "U betaalt € 129,40 als de aanvraag niet in behandeling kan worden genomen.",
+        "status": "false",
+        "note": "Dit bedrag is onjuist. Volgens de actuele legesverordening van de gemeente Haarlemmermeer bedragen de kosten voor een buiten behandeling gestelde aanvraag € 134,25."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://haarlemmermeergemeente.nl/filmopnames-maken",
+      "https://haarlemmermeergemeente.nl/omgevingsvergunning-milieu",
+      "https://haarlemmermeergemeente.nl/evenementenvergunning",
+      "https://haarlemmermeergemeente.nl/exploitatievergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://haarlemmermeergemeente.nl/toelichting-aanvraagformulier-exploitatievergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Als er meer dan 300 personen naar het evenement komen, heeft u een evenementenvergunning nodig. Zonder vergunning mag u het evenement niet organiseren.",
+          "original_reference": "U heeft een evenementenvergunning nodig als er meer dan 300 personen naar het evenement komen.",
+          "note": "De informatie over het aantal personen waarbij een vergunning nodig is komt exact overeen",
+          "source_urls": [
+            "https://haarlemmermeergemeente.nl/evenementenvergunning"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "De vergunning vraagt u minimaal 12 weken van tevoren aan.",
+          "original_reference": "U vraagt de evenementenvergunning minimaal 12 weken van tevoren aan",
+          "note": "De aanvraagtermijn van 12 weken komt overeen in beide bronnen",
+          "source_urls": [
+            "https://haarlemmermeergemeente.nl/evenementenvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse van de bronnen zijn er geen significante verschillen gevonden tussen de originele inhoud en de geciteerde bronnen. De kernpunten zoals de 300-personen grens voor vergunningsplicht en de 12-weken aanvraagtermijn komen overeen. Voor sommige onderdelen zoals de exacte kosten en bezwaarprocedures is geen vergelijkingsmateriaal gevonden in de geciteerde bronnen."
+  }
+}

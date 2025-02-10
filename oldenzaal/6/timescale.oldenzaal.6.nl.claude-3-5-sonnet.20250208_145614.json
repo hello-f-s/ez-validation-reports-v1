@@ -1,0 +1,75 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OLDENZAAL",
+      "contact": {
+        "phone": "(0541) 58 81 11",
+        "email": "info@oldenzaal.nl",
+        "website": "http://www.oldenzaal.nl"
+      }
+    },
+    "service": {
+      "id": 6,
+      "name": "Integriteitsonderzoek (Wet Bibob)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 8,
+    "true_sentences": 7,
+    "false_sentences": 1,
+    "accuracy_percentage": 87.5,
+    "false_statements": [
+      {
+        "sentence": "De Wet Bibob is verplicht als er sprake is van een vestiging van een nieuwe horecagelegenheid.",
+        "status": "false",
+        "note": "Volgens de gemeente Oldenzaal is de Wet Bibob niet automatisch verplicht voor elke nieuwe horecagelegenheid. Het Bibob-onderzoek wordt alleen uitgevoerd als onderdeel van de aanvraag voor een alcoholvergunning of exploitatievergunning, niet bij elke nieuwe horecavestiging."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.oldenzaal.nl/individuele-inkomenstoeslag",
+      "https://www.oldenzaal.nl/exploitatievergunning",
+      "https://www.oldenzaal.nl/verklaring-omtrent-gedrag-vog",
+      "https://www.oldenzaal.nl/bijzondere-bijstand",
+      "https://www.oldenzaal.nl/alcoholvergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Neem dan contact met ons op, zodat we met u een afspraak kunnen maken voor een vooroverleg. In dit overleg gaan we onder andere de volgende punten met u bespreken: Inschrijving KVK, Rechtsvorm, Verklaring Sociale Hygiëne, Wet Bibob, Milieubelastende activiteiten, Brandveiligheid, Terras, Speelautomaten",
+          "original_reference": "Het Bibob-vragenformulier moet ingevuld worden als onderdeel van de digitale aanvraag voor een alcoholvergunning of exploitatievergunning.",
+          "note": "De bronnen vermelden een verplicht vooroverleg met aanvullende bespreekpunten, terwijl de originele tekst alleen het Bibob-vragenformulier als vereiste noemt. Dit is een significant verschil in de aanvraagprocedure.",
+          "source_urls": [
+            "https://www.oldenzaal.nl/alcoholvergunning",
+            "https://www.oldenzaal.nl/exploitatievergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u de aanvraag heeft ingediend nodigen wij u uit voor een gesprek.",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden een verplicht gesprek na de aanvraag, wat niet genoemd wordt in de originele tekst. Dit is een belangrijke aanvullende procedurestap.",
+          "source_urls": [
+            "https://www.oldenzaal.nl/alcoholvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen tonen twee belangrijke verschillen met de originele tekst: er is een verplicht vooroverleg nodig vóór de aanvraag waarbij meerdere specifieke punten worden besproken, en er volgt een gesprek na het indienen van de aanvraag. Deze procedurele stappen ontbreken in de originele tekst, wat een onvolledig beeld geeft van het aanvraagproces."
+  }
+}

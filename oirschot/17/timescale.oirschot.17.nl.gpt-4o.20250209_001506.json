@@ -1,0 +1,99 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OIRSCHOT",
+      "contact": {
+        "phone": "(0499) 58 33 33",
+        "email": "info@oirschot.nl",
+        "website": "http://www.oirschot.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Voor het in behandeling nemen van een aanvraag om exploitatievergunning bedraagt het tarief € 233,30.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Oirschot bedraagt het tarief voor een exploitatievergunning € 236,80 (2024). Het genoemde bedrag van € 233,30 is verouderd."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 8,
+    "valid_urls": 1,
+    "invalid_urls": 7,
+    "accuracy_percentage": 12.5,
+    "valid_urls_list": [
+      "https://www.oirschot.nl/form/aanvraag-exploitatievergunning/informatie-vooraf-0-1"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.oirschot.nl/terras-plaatsen\">Gemeente",
+        "reason": "INVALID: Error scraping https://www.oirschot.nl/terras-plaatsen\">Gemeente: 404 Client Error: Not Found for url: https://www.oirschot.nl/terras-plaatsen%22%3EGemeente"
+      },
+      {
+        "url": "https://www.oirschot.nl/aanvraag-exploitatievergunning",
+        "reason": "INVALID: Error scraping https://www.oirschot.nl/aanvraag-exploitatievergunning: 404 Client Error: Not Found for url: https://www.oirschot.nl/aanvraag-exploitatievergunning"
+      },
+      {
+        "url": "https://www.oirschot.nl/omgevingsvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.oirschot.nl/terras-plaatsen",
+        "reason": "INVALID: Error scraping https://www.oirschot.nl/terras-plaatsen: 404 Client Error: Not Found for url: https://www.oirschot.nl/terras-plaatsen"
+      },
+      {
+        "url": "https://www.oirschot.nl/form/aanvraagformulier-terrasvergunning-inclusief-gebruik-gemeentegrond/informatie-vooraf-0",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.oirschot.nl/exploitatievergunning-horecabedrijf",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.oirschot.nl/aanvraagformulier-terrasvergunning",
+        "reason": "INVALID: Error scraping https://www.oirschot.nl/aanvraagformulier-terrasvergunning: 404 Client Error: Not Found for url: https://www.oirschot.nl/aanvraagformulier-terrasvergunning"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Plattegrond van de ruimte(n), inclusief aanduiding van functie van de ruimte(n), de afmetingen en oppervlakten",
+          "original_reference": "Situatie- en plattegrondtekening van het terras (schaal 1:200)",
+          "note": "De bronpagina vereist een meer gedetailleerde plattegrond met specifieke aanduidingen van ruimtefuncties, afmetingen en oppervlakten, terwijl de originele tekst alleen een algemene situatie- en plattegrondtekening vermeldt.",
+          "source_urls": [
+            "https://www.oirschot.nl/form/aanvraag-exploitatievergunning/informatie-vooraf-0-1"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Uw aanvraag moet minimaal 8 weken voor start exploitatie worden ingediend",
+          "original_reference": "De aanvraag moet minimaal 8 weken voor plaatsing worden ingediend",
+          "note": "De bronpagina spreekt over '8 weken voor start exploitatie' terwijl de originele tekst '8 weken voor plaatsing' vermeldt. Dit is een nuanceverschil in de timing van de aanvraag.",
+          "source_urls": [
+            "https://www.oirschot.nl/form/aanvraag-exploitatievergunning/informatie-vooraf-0-1"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele tekst en de bronpagina's. Het eerste verschil betreft de vereisten voor de plattegrondtekening, waarbij de bronpagina meer specifieke details vraagt. Het tweede verschil heeft betrekking op de formulering van de aanvraagtermijn, waarbij een nuanceverschil bestaat tussen 'start exploitatie' en 'plaatsing'."
+  }
+}

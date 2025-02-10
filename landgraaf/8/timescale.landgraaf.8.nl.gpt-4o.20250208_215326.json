@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LANDGRAAF",
+      "contact": {
+        "phone": "14 045",
+        "email": "gemeente@landgraaf.nl",
+        "website": "http://www.landgraaf.nl"
+      }
+    },
+    "service": {
+      "id": 8,
+      "name": "Marktvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 11,
+    "false_sentences": 2,
+    "accuracy_percentage": 84.6,
+    "false_statements": [
+      {
+        "sentence": "Losse standplaats: € 2,70 per m² met een minimum van € 9,15 per maand.",
+        "status": "false",
+        "note": "De actuele tarieven voor marktstandplaatsen in Landgraaf zijn niet publiekelijk beschikbaar op de gemeentelijke website. Deze specifieke bedragen kunnen niet geverifieerd worden."
+      },
+      {
+        "sentence": "Vaste standplaats: € 9,15 per m² per maand.",
+        "status": "false",
+        "note": "De actuele tarieven voor vaste marktstandplaatsen in Landgraaf zijn niet publiekelijk beschikbaar op de gemeentelijke website. Dit specifieke bedrag kan niet geverifieerd worden."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.landgraaf.nl/marktplaats-aanvragen",
+      "https://www.landgraaf.nl/evenement-organiseren",
+      "https://www.landgraaf.nl/aanvragen-en-regelen-ondernemers",
+      "https://www.landgraaf.nl/exploitatievergunning-horecabedrijf",
+      "https://www.landgraaf.nl/form/informatieverzoek-indienen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Omdat markthandel onder de ambulante handel valt, hebt u geen diploma's nodig voor de verkoop van goederen op een markt. U moet zich wel inschrijven bij de Kamer van Koophandel.",
+          "original_reference": "Als ondernemer hebt u geen diploma's nodig voor de verkoop van goederen op een markt. Het is echter verplicht om ingeschreven te staan bij de Kamer van Koophandel.",
+          "note": "De informatie over diploma-eisen en KvK-inschrijving komt exact overeen",
+          "source_urls": [
+            "https://www.landgraaf.nl/marktplaats-aanvragen"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Losse standplaats: € 2,70 per m2 met een minimum van € 9,15 per maand. Vaste standplaats: per m2 per maand: € 9,15.",
+          "original_reference": "Losse standplaats: € 2,70 per m² met een minimum van € 9,15 per maand.\nVaste standplaats: € 9,15 per m² per maand.",
+          "note": "De tarieven voor zowel losse als vaste standplaatsen komen exact overeen",
+          "source_urls": [
+            "https://www.landgraaf.nl/marktplaats-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De vergunning is voor u persoonlijk, maar wel overdraagbaar. Als u een ondernemer kent die uw plek wil overnemen, dan vraagt u de gemeente toestemming om uw vergunning over te dragen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de overdraagbaarheid van de vergunning, terwijl dit wel een belangrijk aspect is van de marktvergunning",
+          "source_urls": [
+            "https://www.landgraaf.nl/marktplaats-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De meeste basisinformatie komt overeen met de originele tekst, maar er ontbreekt belangrijke informatie over de overdraagbaarheid van de vergunning in de originele tekst. Dit is relevante informatie voor ondernemers die hun marktplaats willen overdragen aan een andere ondernemer. De tarieven en basiseisen zijn consistent tussen beide bronnen."
+  }
+}

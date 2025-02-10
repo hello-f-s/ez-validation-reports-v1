@@ -1,0 +1,103 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ERMELO",
+      "contact": {
+        "phone": "(0341) 56 73 21",
+        "email": "gemeente@ermelo.nl",
+        "website": "http://www.ermelo.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "Bij gebruik van de muziektent op 't Weitje wordt een bijdrage in de onderhoudskosten van € 500 per dag gevraagd.",
+        "status": "false",
+        "note": "Dit bedrag is niet correct volgens de officiële bronnen van de gemeente Ermelo. Op de website van de gemeente Ermelo wordt geen specifiek bedrag genoemd voor het gebruik van de muziektent op 't Weitje."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 9,
+    "valid_urls": 4,
+    "invalid_urls": 5,
+    "accuracy_percentage": 44.4,
+    "valid_urls_list": [
+      "https://www.ermelo.nl/evenementen-en-horeca/horeca-en-alcohol",
+      "https://www.ermelo.nl/evenementen-en-horeca/evenement-of-activiteit-organiseren",
+      "https://www.ermelo.nl/evenementen-en-horeca",
+      "https://www.ermelo.nl/evenementen-en-horeca/evenement-of-activiteit-organiseren/evenement-organiseren"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.ermelo.nl/evenementen-en-horeca/evenement-of-activiteit-organiseren/optreden-als-straatartiest",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://gemeente-ermelo.nl/evenement-organiseren\">https://gemeente-ermelo.nl/evenement-organiseren</a>,",
+        "reason": "INVALID: Error scraping https://gemeente-ermelo.nl/evenement-organiseren\">https://gemeente-ermelo.nl/evenement-organiseren</a>,: HTTPSConnectionPool(host='gemeente-ermelo.nl', port=443): Max retries exceeded with url: /evenement-organiseren%22%3Ehttps://gemeente-ermelo.nl/evenement-organiseren%3C/a%3E, (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1111ec550>: Failed to resolve 'gemeente-ermelo.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://gemeente-ermelo.nl/evenementen-en-horeca",
+        "reason": "INVALID: Error scraping https://gemeente-ermelo.nl/evenementen-en-horeca: HTTPSConnectionPool(host='gemeente-ermelo.nl', port=443): Max retries exceeded with url: /evenementen-en-horeca (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1111ecb90>: Failed to resolve 'gemeente-ermelo.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://gemeente-ermelo.nl/evenementen-en-horeca\">https://gemeente-ermelo.nl/evenementen-en-horeca</a>",
+        "reason": "INVALID: Error scraping https://gemeente-ermelo.nl/evenementen-en-horeca\">https://gemeente-ermelo.nl/evenementen-en-horeca</a>: HTTPSConnectionPool(host='gemeente-ermelo.nl', port=443): Max retries exceeded with url: /evenementen-en-horeca%22%3Ehttps://gemeente-ermelo.nl/evenementen-en-horeca%3C/a%3E (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1111ece10>: Failed to resolve 'gemeente-ermelo.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://gemeente-ermelo.nl/evenement-organiseren",
+        "reason": "INVALID: Error scraping https://gemeente-ermelo.nl/evenement-organiseren: HTTPSConnectionPool(host='gemeente-ermelo.nl', port=443): Max retries exceeded with url: /evenement-organiseren (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x107c4fed0>: Failed to resolve 'gemeente-ermelo.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor kleine evenementen zoals een buurtbarbecue of straatfeest is een vergunning niet nodig, u doet dan een melding. Dit doet u 4 weken van tevoren.",
+          "original_reference": "Voor kleine evenementen is een melding voldoende.",
+          "note": "De originele tekst vermeldt niet de specifieke termijn van 4 weken voor het melden van kleine evenementen.",
+          "source_urls": [
+            "https://www.ermelo.nl/evenementen-en-horeca/evenement-of-activiteit-organiseren"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De persoon die de alcohol schenkt: is minimaal 21 jaar, heeft een Verklaring Sociale Hygiëne, is van goed gedrag (geen strafblad), is niet uit de ouderlijke macht of voogdij gez...",
+          "original_reference": "Voor alcohol schenken: Verklaring Sociale Hygiëne.",
+          "note": "De bronnen vermelden aanvullende eisen voor het schenken van alcohol (minimumleeftijd 21 jaar, geen strafblad, niet uit ouderlijke macht) die niet in de originele tekst staan.",
+          "source_urls": [
+            "https://www.ermelo.nl/evenementen-en-horeca/evenement-of-activiteit-organiseren/evenement-organiseren"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Op het evenement mag u geen sterke drank (>15% alcohol) schenken.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de beperking op het schenken van sterke drank (>15% alcohol).",
+          "source_urls": [
+            "https://www.ermelo.nl/evenementen-en-horeca/evenement-of-activiteit-organiseren/evenement-organiseren"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn enkele belangrijke verschillen gevonden tussen de originele tekst en de bronnen. De bronnen bevatten specifiekere informatie over termijnen voor meldingen van kleine evenementen (4 weken) en uitgebreidere eisen voor het schenken van alcohol, waaronder leeftijdseisen en gedragsvoorwaarden. Ook wordt in de bronnen expliciet vermeld dat geen sterke drank (>15%) geschonken mag worden, wat niet in de originele tekst staat."
+  }
+}

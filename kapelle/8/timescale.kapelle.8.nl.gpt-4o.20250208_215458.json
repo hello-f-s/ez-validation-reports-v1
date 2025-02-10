@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "KAPELLE",
+      "contact": {
+        "phone": "(0113) 33 31 10",
+        "email": "gemeente@kapelle.nl",
+        "website": "http://www.kapelle.nl"
+      }
+    },
+    "service": {
+      "id": 8,
+      "name": "Marktvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "De vergunning wordt aangevraagd via een formulier dat beschikbaar is op de website van de gemeente Kapelle.",
+        "status": "false",
+        "note": "De standplaatsvergunning kan niet via een online formulier worden aangevraagd op de website van gemeente Kapelle. De aanvraag moet schriftelijk worden ingediend bij de gemeente."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://kapelle.nl/standplaats-aanvragen",
+      "https://kapelle.nl/ondernemersplein",
+      "https://kapelle.nl/omgevingsvergunning-0",
+      "https://kapelle.nl/kermis-organiseren",
+      "https://kapelle.nl/website-ondernemersplein"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wij hebben drie stroomkasten van Orange Power Systems (OPS) staan. U kunt deze gebruiken voor stroom bij standplaatsen en evenementen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over stroomvoorzieningen voor standplaatsen, terwijl dit een belangrijke praktische voorziening is die wel beschikbaar is op specifieke locaties.",
+          "source_urls": [
+            "https://kapelle.nl/standplaats-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U vraagt de vergunning aan via het formulier op deze pagina.",
+          "original_reference": "De vergunning wordt aangevraagd via een formulier dat beschikbaar is op de website van de gemeente Kapelle.",
+          "note": "De originele tekst is minder specifiek over de locatie van het formulier, terwijl de bron direct verwijst naar het formulier op dezelfde pagina.",
+          "source_urls": [
+            "https://kapelle.nl/standplaats-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Standplaatsenbeleid Kapelle 2016",
+          "original_reference": "No matching information",
+          "note": "De originele tekst verwijst niet naar het specifieke standplaatsenbeleid document dat wel beschikbaar is en relevant is voor aanvragers.",
+          "source_urls": [
+            "https://kapelle.nl/standplaats-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie die niet in de originele tekst staat, met name over de beschikbaarheid van stroomvoorzieningen en het specifieke standplaatsenbeleid. De procedure voor het aanvragen is in de bronnen ook concreter beschreven. Deze informatie is essentieel voor ondernemers die een standplaatsvergunning willen aanvragen."
+  }
+}

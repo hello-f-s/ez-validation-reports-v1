@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "KERKRADE",
+      "contact": {
+        "phone": "14 045",
+        "email": "gemeentehuis@kerkrade.nl",
+        "website": "http://www.kerkrade.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "U kunt maximaal twee vergunningen per adres of bedrijf aanvragen.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Kerkrade is het maximum aantal parkeervergunningen per bedrijf drie, niet twee."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.kerkrade.nl/voertuig-te-koop-aanbieden-op-de-openbare-weg",
+      "https://www.kerkrade.nl/verkeersontheffing-aanvragen",
+      "https://www.kerkrade.nl/form/parkeervergunning/aanvraag-0",
+      "https://www.kerkrade.nl/vergunningen-abonnementen-en-ontheffingen",
+      "https://www.kerkrade.nl/caravan-parkeren-op-de-openbare-weg"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Met ingang van 1 januari 2021 moeten alle inwoners en ondernemers hun parkeervergunning of ontheffing elk jaar opnieuw aanvragen. Als u geen nieuwe aanvraag doet, sturen wij u geen nieuwe vergunning.",
+          "original_reference": "Zowel ondernemers als bewoners moeten jaarlijks een nieuwe aanvraag indienen.",
+          "note": "De brontext specificeert een ingangsdatum (1 januari 2021) en voegt extra informatie toe over het niet automatisch versturen van nieuwe vergunningen, wat niet in de originele tekst staat.",
+          "source_urls": [
+            "https://www.kerkrade.nl/vergunningen-abonnementen-en-ontheffingen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De parkeervergunning of ontheffing heeft een geldigheidsduur tot het einde van het jaar, de kosten worden per maand bijgesteld afhankelijk van de geldigheidsduur.",
+          "original_reference": "No matching information",
+          "note": "Deze belangrijke informatie over de geldigheidsduur en maandelijkse kostenbijstelling ontbreekt volledig in de originele tekst.",
+          "source_urls": [
+            "https://www.kerkrade.nl/form/parkeervergunning/aanvraag-0"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als uw kenteken wijzigt, dient u dat zo spoedig mogelijk te melden. U krijgt dan tegen inlevering van de oude vergunning/ontheffing een nieuwe",
+          "original_reference": "No matching information",
+          "note": "De procedure voor kentekenwijziging ontbreekt in de originele tekst, terwijl dit een belangrijke voorwaarde is.",
+          "source_urls": [
+            "https://www.kerkrade.nl/form/parkeervergunning/aanvraag-0"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten enkele belangrijke aanvullende details die niet in de originele tekst staan, waaronder de specifieke ingangsdatum voor jaarlijkse vernieuwing, informatie over de geldigheidsduur en kostenbijstelling, en de procedure bij kentekenwijziging. Deze informatie is essentieel voor een volledig begrip van de parkeervergunningsprocedure."
+  }
+}

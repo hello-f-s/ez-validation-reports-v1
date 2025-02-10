@@ -1,0 +1,78 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HAARLEMMERMEER",
+      "contact": {
+        "phone": "(0900) 18 52",
+        "email": "info@haarlemmermeer.nl",
+        "website": "http://www.haarlemmermeer.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Een vergunningsaanvraag voor 1 kansspelautomaat kost € 71,80 per jaar.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Haarlemmermeer bedragen de kosten voor een aanvraag kansspelautomatenvergunning € 226,70 voor de eerste automaat."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://haarlemmermeergemeente.nl/loterijvergunning",
+      "https://haarlemmermeergemeente.nl/vergunning-kansspelautomaten",
+      "https://haarlemmermeergemeente.nl/evenementenvergunning",
+      "https://haarlemmermeergemeente.nl/exploitatievergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://haarlemmermeergemeente.nl/toelichting-aanvraagformulier-exploitatievergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Heeft u een café, bar of restaurant? Dan kunt u een vergunning aanvragen voor maximaal 2 kansspelautomaten. Voor maximaal 3 jaar.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de maximale geldigheidsduur van 3 jaar en het maximum aantal van 2 automaten. Dit is belangrijke aanvullende informatie voor aanvragers.",
+          "source_urls": [
+            "https://haarlemmermeergemeente.nl/vergunning-kansspelautomaten"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Uw horecabedrijf heeft een geldige drank- en horecavergunning. Uw bedrijf is ingeschreven bij het Bedrijfschap Horeca. De activiteiten van uw bedrijf richten zich op mensen van 18 jaar en ouder.",
+          "original_reference": "- Uw horecabedrijf moet een geldige drank- en horecavergunning hebben.\n- Uw bedrijf moet ingeschreven zijn bij het Bedrijfschap Horeca.\n- De activiteiten van uw bedrijf moeten zich richten op mensen van 18 jaar en ouder.",
+          "note": "De voorwaarden komen exact overeen met de originele tekst.",
+          "source_urls": [
+            "https://haarlemmermeergemeente.nl/vergunning-kansspelautomaten"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevestigen grotendeels de originele informatie, maar bevatten één belangrijke aanvulling die niet in de originele tekst staat: de vergunning voor kansspelautomaten is maximaal 3 jaar geldig en er mogen maximaal 2 automaten worden geplaatst. Deze informatie is essentieel voor ondernemers die een vergunning willen aanvragen."
+  }
+}

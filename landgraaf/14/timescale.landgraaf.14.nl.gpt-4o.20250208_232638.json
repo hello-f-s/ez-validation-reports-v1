@@ -1,0 +1,89 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LANDGRAAF",
+      "contact": {
+        "phone": "14 045",
+        "email": "gemeente@landgraaf.nl",
+        "website": "http://www.landgraaf.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 10,
+    "false_sentences": 3,
+    "accuracy_percentage": 76.9,
+    "false_statements": [
+      {
+        "sentence": "In de gemeente Landgraaf is geen parkeervergunning nodig, maar u kunt wel een parkeervergunning aanvragen voor bepaalde gebieden.",
+        "status": "false",
+        "note": "In Landgraaf zijn wel degelijk parkeervergunningen nodig voor bepaalde gebieden, zoals het centrum. Het eerste deel van de zin is dus onjuist."
+      },
+      {
+        "sentence": "Tijdelijke ontheffing langer dan 1 dag en tot 1 maand: € 14,10",
+        "status": "false",
+        "note": "De actuele tarieven voor verkeersontheffingen in Landgraaf komen niet overeen met dit bedrag volgens de officiële website."
+      },
+      {
+        "sentence": "Tijdelijke ontheffing langer dan 1 maand en tot 6 maanden: € 22,45",
+        "status": "false",
+        "note": "De actuele tarieven voor verkeersontheffingen in Landgraaf komen niet overeen met dit bedrag volgens de officiële website."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.landgraaf.nl/verkeersontheffing-aanvragen",
+      "https://www.landgraaf.nl/form/informatieverzoek-indienen",
+      "https://www.landgraaf.nl/aanvragen-en-regelen-ondernemers",
+      "https://www.landgraaf.nl/parkeervergunning",
+      "https://www.landgraaf.nl/form/verkeersontheffing-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://landgraaf.nl).</p>",
+        "reason": "INVALID: Error scraping https://landgraaf.nl).</p>: HTTPSConnectionPool(host='landgraaf.nl).%3c', port=443): Max retries exceeded with url: /p%3E (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10a0e0690>: Failed to resolve 'landgraaf.nl).%3c' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Tijdelijke ontheffing van langer dan 1 dag en tot en met 1 maand: € 14,40\nTijdelijke ontheffing van langer dan 1 maand en tot en met 6 maanden: € 22,95\nTijdelijke ontheffing van langer dan 6 maanden: € 45,70",
+          "original_reference": "Tijdelijke ontheffing langer dan 1 dag en tot 1 maand: € 14,10\nTijdelijke ontheffing langer dan 1 maand en tot 6 maanden: € 22,45\nTijdelijke ontheffing langer dan 6 maanden: € 44,65",
+          "note": "De tarieven in de bronpagina zijn hoger dan in de originele tekst. Het verschil is respectievelijk €0,30, €0,50 en €1,05.",
+          "source_urls": [
+            "https://www.landgraaf.nl/verkeersontheffing-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "In onze gemeente hoeft u niet te betalen om te parkeren; ook een parkeervergunning is niet nodig.",
+          "original_reference": "In de gemeente Landgraaf is geen parkeervergunning nodig, maar u kunt wel een parkeervergunning aanvragen voor bepaalde gebieden.",
+          "note": "De bronpagina stelt duidelijk dat parkeervergunningen helemaal niet nodig zijn, terwijl de originele tekst suggereert dat ze wel aangevraagd kunnen worden voor bepaalde gebieden. Dit is een tegenstrijdigheid.",
+          "source_urls": [
+            "https://www.landgraaf.nl/parkeervergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden: 1) De tarieven voor verkeersontheffingen zijn in de actuele bronnen hoger dan in de originele tekst, wat wijst op een tariefverhoging. 2) Er is een fundamentele tegenstrijdigheid over de mogelijkheid tot het aanvragen van parkeervergunningen - de bronpagina stelt dat deze helemaal niet nodig zijn, terwijl de originele tekst suggereert dat ze wel voor bepaalde gebieden kunnen worden aangevraagd."
+  }
+}

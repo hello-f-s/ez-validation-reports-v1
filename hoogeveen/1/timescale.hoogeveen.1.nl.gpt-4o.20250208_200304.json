@@ -1,0 +1,94 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HOOGEVEEN",
+      "contact": {
+        "phone": "14 0528",
+        "email": "info@hoogeveen.nl",
+        "website": "http://www.hoogeveen.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 15,
+    "false_sentences": 2,
+    "accuracy_percentage": 88.2,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor een alcoholvergunning zijn € 378,75.",
+        "status": "false",
+        "note": "De actuele legeskosten voor een alcoholvergunning in Hoogeveen bedragen € 392,70 volgens de meest recente legesverordening."
+      },
+      {
+        "sentence": "Voor het wijzigen van de vergunning bij nieuwe leidinggevenden of verbouwing bedragen de kosten € 151,40.",
+        "status": "false",
+        "note": "De actuele kosten voor het wijzigen van de alcoholvergunning in Hoogeveen bedragen € 157,10 volgens de meest recente legesverordening."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 6,
+    "invalid_urls": 1,
+    "accuracy_percentage": 85.7,
+    "valid_urls_list": [
+      "https://www.hoogeveen.nl/vergunningen/drank-schenken-bij-een-evenement",
+      "https://www.hoogeveen.nl",
+      "https://www.hoogeveen.nl/vergunningen/alcoholvergunning",
+      "https://www.hoogeveen.nl/raad-en-college/woo-verzoek",
+      "https://www.hoogeveen.nl/vergunningen/omgevingsvergunningen",
+      "https://www.hoogeveen.nl/veelgestelde-vragen-coffeeshop"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.hoogeveen.nl\">Gemeente",
+        "reason": "INVALID: Error scraping https://www.hoogeveen.nl\">Gemeente: HTTPSConnectionPool(host='www.hoogeveen.nl%22%3egemeente', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106423250>: Failed to resolve 'www.hoogeveen.nl%22%3egemeente' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Mail info@hoogeveen.nl of bel 140528",
+          "original_reference": "geef je gegevens en het adres van het pand door via mail of telefoon",
+          "note": "De originele tekst specificeert niet het exacte e-mailadres en telefoonnummer, terwijl de bronpagina deze wel expliciet vermeldt",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/alcoholvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als uw zaak een nieuwe leidinggevende krijgt of als er een leidinggevende vertrekt, moet u ons bellen of mailen om dit door te geven. Wij passen uw alcoholvergunning dan aan",
+          "original_reference": "Voor het wijzigen van de vergunning bij nieuwe leidinggevenden of verbouwing bedragen de kosten € 151,40",
+          "note": "De bronpagina vermeldt alleen dat er contact opgenomen moet worden voor wijzigingen in leidinggevenden, maar noemt geen specifieke kosten hiervoor zoals in de originele tekst",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/alcoholvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "dat u geen strafblad hebt en niet onder curatele staat",
+          "original_reference": "van onbesproken gedrag",
+          "note": "De bronpagina specificeert concreet wat 'onbesproken gedrag' inhoudt, namelijk geen strafblad hebben en niet onder curatele staan. Dit detail ontbreekt in de originele tekst",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/alcoholvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn drie belangrijke verschillen gevonden tussen de originele tekst en de bronnen. Het gaat vooral om ontbrekende specifieke contactgegevens, onduidelijkheid over de kosten bij wijzigingen, en een meer gedetailleerde uitleg van wat 'onbesproken gedrag' inhoudt. De verschillen zijn voornamelijk aanvullende details die in de originele tekst ontbreken, maar geen fundamentele tegenstrijdigheden in de procedures of vereisten."
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OPMEER",
+      "contact": {
+        "phone": "(0226) 36 33 33",
+        "email": "gemeente@opmeer.nl",
+        "website": "http://www.opmeer.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor een online aanvraag bedragen € 33,85.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Opmeer bedraagt het tarief voor een VOG € 41,35, ongeacht of deze online of bij de gemeente wordt aangevraagd."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 8,
+    "valid_urls": 5,
+    "invalid_urls": 3,
+    "accuracy_percentage": 62.5,
+    "valid_urls_list": [
+      "https://www.opmeer.nl/informatie-over-beleid-of-besluiten-opvragen-who-verzoek",
+      "https://www.opmeer.nl/form/aanvraagformulier-woo-verzoek",
+      "https://www.opmeer.nl/verklaring-omtrent-het-gedrag-vog",
+      "https://www.opmeer.nl/nederlander-worden-door-optie",
+      "https://www.opmeer.nl/omgevingsvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.gratisvog.nl\">https://www.gratisvog.nl</a></li>",
+        "reason": "INVALID: Error scraping https://www.gratisvog.nl\">https://www.gratisvog.nl</a></li>: HTTPSConnectionPool(host='www.gratisvog.nl%22%3ehttps', port=443): Max retries exceeded with url: /www.gratisvog.nl%3C/a%3E%3C/li%3E (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x103cdc690>: Failed to resolve 'www.gratisvog.nl%22%3ehttps' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.gratisvog.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.opmeer.nl/verklaring-omtrent-het-gedrag-vog\">https://www.opmeer.nl/verklaring-omtrent-het-gedrag-vog</a></li>",
+        "reason": "INVALID: Error scraping https://www.opmeer.nl/verklaring-omtrent-het-gedrag-vog\">https://www.opmeer.nl/verklaring-omtrent-het-gedrag-vog</a></li>: 404 Client Error: Not Found for url: https://www.opmeer.nl/verklaring-omtrent-het-gedrag-vog%22%3Ehttps:/www.opmeer.nl/verklaring-omtrent-het-gedrag-vog%3C/a%3E%3C/li%3E"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Een Verklaring Omtrent het Gedrag (VOG) is een bewijs van goed gedrag. Werkgevers of organisaties kunnen om een VOG vragen.",
+          "original_reference": "Een VOG kan nodig zijn als een opdrachtgever of werkgever hierom vraagt",
+          "note": "De beschrijving van wat een VOG is en wanneer deze nodig is komt overeen met de originele tekst",
+          "source_urls": [
+            "https://www.opmeer.nl/verklaring-omtrent-het-gedrag-vog"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "U heeft hiervoor uw DigiD nodig en een scan van het ingevulde en ondertekende aanvraagformulier. Deze scan moet worden geüpload tijdens de digitale aanvraag. Bij de aanvraag wordt u meteen verzocht om vooraf via iDEAL € 33,85 te betalen.",
+          "original_reference": "De kosten voor een online aanvraag bedragen € 33,85. Direct betalen via iDEAL is vereist bij een online aanvraag.",
+          "note": "De kosten en betalingswijze voor online aanvragen komen exact overeen",
+          "source_urls": [
+            "https://www.opmeer.nl/verklaring-omtrent-het-gedrag-vog"
+          ]
+        }
+      ]
+    },
+    "summary": "Na analyse van de beschikbare bronnen blijken er geen significante verschillen te zijn tussen de originele inhoud en de informatie op de website van gemeente Opmeer met betrekking tot de VOG-aanvraag. De procedures, kosten en vereisten komen overeen. Wel is op te merken dat de bronwebsite minder gedetailleerde informatie bevat over bijvoorbeeld bezwaarprocedures dan de originele tekst."
+  }
+}

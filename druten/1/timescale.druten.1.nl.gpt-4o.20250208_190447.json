@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DRUTEN",
+      "contact": {
+        "phone": "(088) 432 70 00",
+        "email": "info@druten.nl",
+        "website": "http://www.druten.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 20,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.2,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor een alcoholwetvergunning zijn als volgt: Commerciële inrichting: € 524,55",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Druten bedragen de kosten voor een alcoholwetvergunning voor een commerciële inrichting € 534,00 in 2024"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.druten.nl/vergunningen-en-ontheffingen",
+      "https://www.druten.nl/alcoholwetvergunning",
+      "https://www.druten.nl/exploitatievergunning-horecabedrijf",
+      "https://www.druten.nl/informatie-opvragen-woo-verzoek",
+      "https://www.druten.nl/exploitatievergunning-verblijfsrecreatie"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.druten.nl/alcoholwetvergunning\">https://www.druten.nl/alcoholwetvergunning</a>",
+        "reason": "INVALID: Error scraping https://www.druten.nl/alcoholwetvergunning\">https://www.druten.nl/alcoholwetvergunning</a>: 404 Client Error: Not Found for url: https://www.druten.nl/alcoholwetvergunning%22%3Ehttps://www.druten.nl/alcoholwetvergunning%3C/a%3E"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U heeft ook een vergunning nodig als u alleen bier of wijn (met minder dan 15% alcohol) schenkt.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst specificeert niet dat de vergunningplicht ook geldt voor het schenken van alleen bier of wijn met minder dan 15% alcohol. Dit is belangrijke aanvullende informatie.",
+          "source_urls": [
+            "https://www.druten.nl/alcoholwetvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Verkoopt u alleen alleen zwak-alcoholische drank zoals bier of wijn? Dan heeft u géén Alcoholwetvergunning nodig. Denk hierbij aan: levensmiddelenbedrijven, supermarkten",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de uitzondering voor winkels die alleen zwak-alcoholische dranken verkopen, zoals supermarkten en levensmiddelenbedrijven.",
+          "source_urls": [
+            "https://www.druten.nl/alcoholwetvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Stuur een mail naar apv@druten.nl en wij sturen u de formulieren toe.",
+          "original_reference": "Je vraagt de vergunning aan bij de gemeente waar je zaak zich bevindt via het Team APV. Neem contact op via apv@druten.nl of bel 088 432 70 00.",
+          "note": "De bronpagina geeft aan dat formulieren per mail worden toegestuurd, terwijl dit niet vermeld staat in de originele tekst.",
+          "source_urls": [
+            "https://www.druten.nl/exploitatievergunning-verblijfsrecreatie"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de specificatie van vergunningplicht voor zwak-alcoholische dranken, uitzonderingen voor bepaalde bedrijven, en het proces van het verkrijgen van aanvraagformulieren. De bronpagina's bevatten enkele belangrijke nuanceringen en details die niet in de originele tekst zijn opgenomen."
+  }
+}

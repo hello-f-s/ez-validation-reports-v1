@@ -1,0 +1,89 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HEEMSKERK",
+      "contact": {
+        "phone": "14 0251",
+        "email": "post@heemskerk.nl",
+        "website": "http://www.heemskerk.nl"
+      }
+    },
+    "service": {
+      "id": 2,
+      "name": "Bord of spandoek plaatsen aan de openbare weg"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "Mocht u het niet eens zijn met een beslissing over uw vergunning aanvraag, kunt u binnen een bepaalde periode bezwaar maken.",
+        "status": "false",
+        "note": "Deze zin is onvolledig/onjuist. Volgens de gemeente Heemskerk moet bezwaar binnen 6 weken na de verzenddatum van het besluit worden ingediend. Deze specifieke termijn had genoemd moeten worden."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 6,
+    "invalid_urls": 1,
+    "accuracy_percentage": 85.7,
+    "valid_urls_list": [
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/standplaatsvergunning",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/veelgestelde-vragen-omgevingsvergunning",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca",
+      "https://www.heemskerk.nl",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/vergunning-voorwerpen/materialen-op-de-weg",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/vergunning-gebruik-openbare-weg"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.heemskerk.nl\">Gemeente",
+        "reason": "INVALID: Error scraping https://www.heemskerk.nl\">Gemeente: HTTPSConnectionPool(host='www.heemskerk.nl%22%3egemeente', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x104c4f610>: Failed to resolve 'www.heemskerk.nl%22%3egemeente' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wilt u een voorwerp plaatsen op de openbare weg of daarboven ophangen? Zoals een uitstalling voor een winkel, spandoek over de weg of een container. Soms heeft u hier een vergunning voor nodig. En soms is een melding doen genoeg.",
+          "original_reference": "Om te beginnen met de aanvraag voor een vergunning, moet u gebruik maken van het Omgevingsloket.",
+          "note": "De bronpagina geeft aan dat voor sommige voorwerpen alleen een melding volstaat, terwijl de originele tekst suggereert dat altijd een vergunning via het Omgevingsloket nodig is.",
+          "source_urls": [
+            "https://www.heemskerk.nl/belastingen-en-vergunningen/vergunning-voorwerpen/materialen-op-de-weg"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Dit geeft u aan in de aanvraag: NAW-gegevens, NAW-gegevens uitvoerende bedrijf, Omschrijving van de activiteiten, Begin- en einddatum, Beschrijving en tekening van de aangevraagde maatregel(en)",
+          "original_reference": "specifieke documenten of gegevens die bij de aanvraag nodig zijn, worden niet gedetailleerd vermeld op de website",
+          "note": "De bronpagina specificeert wel degelijk welke gegevens nodig zijn voor de aanvraag, in tegenstelling tot wat de originele tekst stelt.",
+          "source_urls": [
+            "https://www.heemskerk.nl/belastingen-en-vergunningen/vergunning-gebruik-openbare-weg"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Duurt het langer dan 4 maanden? Dan moet er een verkeersbesluit komen, zodat andere mensen een bezwaar kunnen indienen.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt een specifieke termijn van 4 maanden waarna een verkeersbesluit nodig is, wat belangrijke informatie is die ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.heemskerk.nl/belastingen-en-vergunningen/vergunning-gebruik-openbare-weg"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten belangrijke aanvullende informatie die niet in de originele tekst staat, waaronder de mogelijkheid om in sommige gevallen te volstaan met een melding in plaats van een vergunning, specifieke vereisten voor de aanvraag, en een belangrijke 4-maanden termijn voor verkeersbesluiten. Deze informatie is essentieel voor een correcte dienstverlening aan burgers."
+  }
+}

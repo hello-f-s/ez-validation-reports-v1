@@ -1,0 +1,81 @@
+{
+  "context": {
+    "municipality": {
+      "name": "NIJMEGEN",
+      "contact": {
+        "phone": "14 024",
+        "email": "gemeente@nijmegen.nl",
+        "website": "http://www.nijmegen.nl"
+      }
+    },
+    "service": {
+      "id": 18,
+      "name": "Ventvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 1,
+    "true_sentences": 1,
+    "false_sentences": 0,
+    "accuracy_percentage": 100.0,
+    "false_statements": []
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.nijmegen.nl/diensten/uittreksels-en-verklaringen/verklaring-omtrent-gedrag/",
+      "https://www.nijmegen.nl/diensten/vergunningen/drank-en-horeca/alcoholvergunning/",
+      "https://www.nijmegen.nl/diensten/evenementen/schema-vergunningen-activiteiten/tekstversie/",
+      "https://www.nijmegen.nl/diensten/parkeren-verkeer-en-vervoer/parkeervergunning-bedrijven/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.nijmegen.nl/diensten/vergunningen/informatiekraam-melden-of-vergunning/",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een VOG is een bewijs van goed gedrag. Bijvoorbeeld werkgevers kunnen daar om vragen. Heeft u een ingevuld aanvraagformulier VOG van uw werkgever gekregen? Maak een afspraak bij de gemeente.",
+          "original_reference": "No matching information",
+          "note": "De bron bevat specifieke informatie over de VOG-aanvraagprocedure die niet in de originele inhoud staat",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/uittreksels-en-verklaringen/verklaring-omtrent-gedrag/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wilt u als ondernemer alcohol verkopen of schenken? Dan heeft u een Alcoholvergunning nodig.",
+          "original_reference": "No matching information",
+          "note": "De bron bevat specifieke informatie over alcoholvergunningen die niet in de originele inhoud staat",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/vergunningen/drank-en-horeca/alcoholvergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Heeft u een bedrijf in een gebied met betaald parkeren? Dan kunt u mogelijk 1 of meer parkeervergunningen aanvragen via het digitaal parkeerloket.",
+          "original_reference": "No matching information",
+          "note": "De bron bevat specifieke informatie over parkeervergunningen voor bedrijven die niet in de originele inhoud staat",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/parkeren-verkeer-en-vervoer/parkeervergunning-bedrijven/"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten uitgebreide informatie over verschillende gemeentelijke diensten (VOG-aanvragen, alcoholvergunningen, parkeervergunningen) die volledig ontbreekt in de originele inhoud. De bronnen geven gedetailleerde procedures, voorwaarden en aanvraagmethoden voor deze diensten."
+  }
+}

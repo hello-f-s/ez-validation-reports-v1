@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DELFT",
+      "contact": {
+        "phone": "14 015",
+        "email": "null",
+        "website": "http://www.delft.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "De gemeente handelt een complete aanvraag binnen 3 maanden af.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Delft wordt een complete aanvraag voor een exploitatievergunning binnen 8 weken afgehandeld, niet binnen 3 maanden."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.delft.nl/omgevingsvergunning-milieu",
+      "https://www.delft.nl/exploitatievergunning-coffeeshops",
+      "https://www.delft.nl/vergunning-seksinrichting-escortbedrijf",
+      "https://www.delft.nl/alcoholwetvergunning",
+      "https://www.delft.nl/vergunningen-en-ontheffingen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Kosten 2025 Exploitatievergunning coffeeshop € 1.069,35",
+          "original_reference": "Kosten 2024 Exploitatievergunning coffeeshop: € 1.040,25",
+          "note": "De tarieven in de bron zijn voor 2025 en verschillen van de originele 2024 tarieven. Dit wijst op een tariefverhoging.",
+          "source_urls": [
+            "https://www.delft.nl/exploitatievergunning-coffeeshops"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Heeft u uw aanvraag compleet ingediend? Dan handelt de gemeente deze binnen 3 maanden af.",
+          "original_reference": "De gemeente handelt een complete aanvraag binnen 3 maanden af.",
+          "note": "De formulering in de bron is specifieker en benadrukt dat de termijn alleen geldt bij een complete aanvraag.",
+          "source_urls": [
+            "https://www.delft.nl/alcoholwetvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wanneer nodig?: De vergunning vraagt u aan wanneer u: een horeca-inrichting wilt vestigen of overnemen, een bestaande horeca-inrichting wilt uitbreiden, een slijterij wilt vestigen of overnemen, er een wijziging is in de ondernemingsvorm",
+          "original_reference": "No matching information",
+          "note": "De bronnen bevatten specifieke situaties waarin een vergunning nodig is, die niet genoemd worden in de originele tekst.",
+          "source_urls": [
+            "https://www.delft.nl/alcoholwetvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de tarieven voor 2025 die afwijken van de 2024 tarieven, en aanvullende specificaties over wanneer vergunningen nodig zijn. Ook is de formulering over de afhandelingstermijn in de bronnen preciezer. De kern van de voorwaarden en procedures blijft wel gelijk."
+  }
+}

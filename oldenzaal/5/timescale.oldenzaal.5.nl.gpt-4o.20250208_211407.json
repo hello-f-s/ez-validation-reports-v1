@@ -1,0 +1,89 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OLDENZAAL",
+      "contact": {
+        "phone": "(0541) 58 81 11",
+        "email": "info@oldenzaal.nl",
+        "website": "http://www.oldenzaal.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "De aanvraag van een exploitatievergunning kost € 75,00.",
+        "status": "false",
+        "note": "Het exacte bedrag voor een exploitatievergunning in Oldenzaal is € 298,45 volgens de actuele legesverordening van de gemeente Oldenzaal."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 6,
+    "invalid_urls": 1,
+    "accuracy_percentage": 85.7,
+    "valid_urls_list": [
+      "https://www.oldenzaal.nl/exploitatievergunning",
+      "https://www.oldenzaal.nl/vergunningen-ondernemers",
+      "https://www.oldenzaal.nl",
+      "https://www.oldenzaal.nl/terrasvergunning",
+      "https://www.oldenzaal.nl/omgevingsvergunning",
+      "https://www.oldenzaal.nl/standplaatsvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.oldenzaal.nl\">Gemeente",
+        "reason": "INVALID: Error scraping https://www.oldenzaal.nl\">Gemeente: HTTPSConnectionPool(host='www.oldenzaal.nl%22%3egemeente', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10573b110>: Failed to resolve 'www.oldenzaal.nl%22%3egemeente' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Neem dan contact met ons op, zodat we met u een afspraak kunnen maken voor een vooroverleg. In dit overleg gaan we onder andere de volgende punten met u bespreken: Inschrijving KVK, Rechtsvorm, Wet Bibob, Milieubelastende activiteiten, Brandveiligheid, Terras",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat er eerst een vooroverleg nodig is en welke specifieke punten daarin besproken worden. Dit is belangrijke aanvullende procesinformatie.",
+          "source_urls": [
+            "https://www.oldenzaal.nl/exploitatievergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een exploitatievergunning is niet nodig voor het exploiteren van een: winkel, zorginstelling, uitvaartcentrum, museum of bedrijfskantine of restaurant.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de uitzonderingen waarvoor geen exploitatievergunning nodig is. Dit is essentiële informatie voor bepaalde ondernemers.",
+          "source_urls": [
+            "https://www.oldenzaal.nl/terrasvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Er wordt getoetst aan: bestemmingsplan, woon- en leefklimaat omwonenden, bereikbaarheid voor voetgangers- en overige verkeer, brandveilig gebruik en basis hulpverlening overige plaatsen (BGBOP) en of de exploitant of de leidinggevende in enig opzicht van slecht levensgedrag is.",
+          "original_reference": "Toetsing vindt plaats op basis van de bestemmingsplan, het woon- en leefklimaat, en veiligheidseisen.",
+          "note": "De bronpagina geeft een uitgebreidere lijst van toetsingscriteria, waaronder specifiek de bereikbaarheid voor verkeer en het gedrag van de exploitant.",
+          "source_urls": [
+            "https://www.oldenzaal.nl/terrasvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten belangrijke aanvullende informatie die niet in de originele tekst staat, waaronder de verplichting tot vooroverleg, specifieke uitzonderingen voor bepaalde bedrijfstypen, en meer gedetailleerde toetsingscriteria. Deze informatie is essentieel voor ondernemers die een exploitatievergunning willen aanvragen."
+  }
+}

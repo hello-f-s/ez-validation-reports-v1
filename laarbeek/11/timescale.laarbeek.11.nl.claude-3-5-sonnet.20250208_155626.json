@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LAARBEEK",
+      "contact": {
+        "phone": "(0492) 46 97 00",
+        "email": "gemeente@laarbeek.nl",
+        "website": "http://www.laarbeek.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 8,
+    "true_sentences": 7,
+    "false_sentences": 1,
+    "accuracy_percentage": 87.5,
+    "false_statements": [
+      {
+        "sentence": "Na het indienen van de aanvraag is er een beslistermijn van 8 weken. Deze termijn kan met 6 weken verlengd worden (korte/reguliere procedure). Voor complexe aanvragen geldt een beslistermijn van 26 weken die eenmalig met 6 weken verlengd kan worden (uitgebreide procedure).",
+        "status": "false",
+        "note": "Voor gemeente Laarbeek geldt dat de reguliere procedure een beslistermijn heeft van maximaal 8 weken, die met maximaal 6 weken verlengd kan worden. Voor de uitgebreide procedure geldt een termijn van maximaal 26 weken, die met maximaal 6 weken verlengd kan worden. Het verschil zit in het woord 'eenmalig' dat niet specifiek vermeld wordt op de website van de gemeente Laarbeek."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.laarbeek.nl/bouwplannen-ingediend-bij-de-gemeente-inzage",
+      "https://www.laarbeek.nl/omgevingsvergunning",
+      "https://www.laarbeek.nl/milieu-vergunning-of-melding",
+      "https://www.laarbeek.nl/reclame-uitingen-plaatsen-omgevingsvergunning",
+      "https://www.laarbeek.nl/bedrijfsactiviteiten-veranderen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Neem op tijd contact op met de gemeente. De gemeente kan beslissen om uw aanvraag niet te behandelen, of een vergunning te weigeren. Daarom is het belangrijk om vroeg contact op te nemen met de gemeente, om over uw plannen te overleggen. Dit heet het vooroverleg.",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden expliciet de noodzaak van vooroverleg met de gemeente, wat niet genoemd wordt in de originele tekst. Dit is belangrijke aanvullende informatie voor de aanvraagprocedure.",
+          "source_urls": [
+            "https://www.laarbeek.nl/milieu-vergunning-of-melding"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De Omgevingsdienst Zuidoost Brabant (ODZOB) behandelt aanvragen voor een omgevingsvergunning voor de gemeente Laarbeek.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat de ODZOB de aanvragen behandelt, wat een belangrijk detail is in de procedure.",
+          "source_urls": [
+            "https://www.laarbeek.nl/milieu-vergunning-of-melding"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U heeft DigiD nodig als u als particulier een aanvraag doet. Meer informatie over DigiD vindt u op de website van DigiD.",
+          "original_reference": "Als ondernemer heeft u eHerkenning nodig om een omgevingsvergunning digitaal aan te vragen.",
+          "note": "De bronnen maken onderscheid tussen DigiD voor particulieren en eHerkenning voor bedrijven, terwijl de originele tekst alleen eHerkenning noemt.",
+          "source_urls": [
+            "https://www.laarbeek.nl/reclame-uitingen-plaatsen-omgevingsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie die niet in de originele tekst staat, waaronder de noodzaak van vooroverleg, de rol van de ODZOB bij de behandeling van aanvragen, en het onderscheid tussen DigiD voor particulieren en eHerkenning voor bedrijven. Deze informatie is essentieel voor een complete en accurate beschrijving van de aanvraagprocedure."
+  }
+}

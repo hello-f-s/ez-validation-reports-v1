@@ -1,0 +1,90 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LOPIK",
+      "contact": {
+        "phone": "(0348) 55 99 55",
+        "email": "gemeente@lopik.nl",
+        "website": "http://www.lopik.nl"
+      }
+    },
+    "service": {
+      "id": 2,
+      "name": "Bord of spandoek plaatsen aan de openbare weg"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "Binnen 8 weken hoort u of u toestemming krijgt.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Lopik krijgt u binnen 2 weken bericht over uw aanvraag voor het plaatsen van een spandoek of aankondigingsbord, niet binnen 8 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.lopik.nl/standplaats-aanvragen",
+      "https://www.lopik.nl/spandoek-ophangen",
+      "https://www.lopik.nl/terras-plaatsen",
+      "https://www.lopik.nl/voorwerp-plaatsen-op-of-aan-de-weg",
+      "https://www.lopik.nl/informatiestand-plaatsen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.lopik.nl/spandoek-ophangen\">https://www.lopik.nl/spandoek-ophangen</a></p>",
+        "reason": "INVALID: Error scraping https://www.lopik.nl/spandoek-ophangen\">https://www.lopik.nl/spandoek-ophangen</a></p>: 404 Client Error: Not Found for url: https://www.lopik.nl/spandoek-ophangen%22%3Ehttps:/www.lopik.nl/spandoek-ophangen%3C/a%3E%3C/p%3E"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De ontheffing is voor een periode van maximaal 4 weken.",
+          "original_reference": "Maximaal 25 aankondigingsborden voor maximaal 14 dagen.",
+          "note": "Er is een verschil in maximale plaatsingstermijn tussen algemene voorwerpen (4 weken) en spandoeken/aankondigingsborden (14 dagen)",
+          "source_urls": [
+            "https://www.lopik.nl/voorwerp-plaatsen-op-of-aan-de-weg",
+            "https://www.lopik.nl/spandoek-ophangen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De gemeente kan eisen dat uw spandoek of uw bord wind en/of lucht doorlaat.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de technische eis dat spandoeken/borden wind- en luchtdoorlatend moeten zijn",
+          "source_urls": [
+            "https://www.lopik.nl/spandoek-ophangen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bezoekadres: Raadhuisplein 1, 3411 CH Lopik",
+          "original_reference": "Raadhuisplein 1, Postbus 50, 3410 CB Lopik",
+          "note": "Het bezoekadres heeft een andere postcode (3411 CH) dan het postadres (3410 CB) wat in de originele tekst niet duidelijk onderscheiden wordt",
+          "source_urls": [
+            "https://www.lopik.nl/terras-plaatsen",
+            "https://www.lopik.nl/voorwerp-plaatsen-op-of-aan-de-weg"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de maximale plaatsingstermijn voor verschillende objecten, een ontbrekende technische eis voor spandoeken, en een onvolledig onderscheid tussen bezoek- en postadres in de originele tekst. De overige informatie komt grotendeels overeen met de bronnen."
+  }
+}

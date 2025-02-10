@@ -1,0 +1,92 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ALPHEN-CHAAM",
+      "contact": {
+        "phone": "14013",
+        "email": "info@alphen-chaam.nl",
+        "website": "http://www.alphen-chaam.nl"
+      }
+    },
+    "service": {
+      "id": 22,
+      "name": "Woonruimte splitsen of samenvoegen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 5,
+    "true_sentences": 4,
+    "false_sentences": 1,
+    "accuracy_percentage": 80.0,
+    "false_statements": [
+      {
+        "sentence": "Binnen 8 weken na de aanvraag hoort u of u de vergunning krijgt.",
+        "status": "false",
+        "note": "Volgens de website van gemeente Alphen-Chaam krijgt u binnen 8 weken een besluit op uw aanvraag voor een reguliere procedure. Voor een uitgebreide procedure geldt een termijn van 26 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.alphen-chaam.nl/vergunningen-en-ontheffingen/vergunningen-en-ontheffingen-voor-ondernemers",
+      "https://www.alphen-chaam.nl/wonen-en-verbouwen/wonen",
+      "https://www.alphen-chaam.nl/wonen-en-verbouwen/bouwen-of-verbouwen",
+      "https://www.alphen-chaam.nl/omgevingsvergunning",
+      "https://www.alphen-chaam.nl/ondernemen/vergunningen-en-ontheffingen-voor-ondernemers"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.alphenchaam.nl/wonen-en-ver-bouwen/bouwen-of-verbouwen/omgevingsvergunning",
+        "reason": "INVALID: Error scraping https://www.alphenchaam.nl/wonen-en-ver-bouwen/bouwen-of-verbouwen/omgevingsvergunning: HTTPSConnectionPool(host='www.alphenchaam.nl', port=443): Max retries exceeded with url: /wonen-en-ver-bouwen/bouwen-of-verbouwen/omgevingsvergunning (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.alphenchaam.nl'. (_ssl.c:1018)\")))"
+      },
+      {
+        "url": "https://www.alphenchaam.nl/vergunningen-en-ontheffingen/vergunningen-en-ontheffingen-voor-ondernemers",
+        "reason": "INVALID: Error scraping https://www.alphenchaam.nl/vergunningen-en-ontheffingen/vergunningen-en-ontheffingen-voor-ondernemers: HTTPSConnectionPool(host='www.alphenchaam.nl', port=443): Max retries exceeded with url: /vergunningen-en-ontheffingen/vergunningen-en-ontheffingen-voor-ondernemers (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.alphenchaam.nl'. (_ssl.c:1018)\")))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Met de vergunningcheck in het digitale Omgevingsloket ziet u snel of u voor uw (bouw)plannen een vergunning moet aanvragen, melding moet doen of uw (bouw)plan vergunningvrij is.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt een belangrijke voorbereidende stap (vergunningcheck) die niet genoemd wordt in de originele tekst",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wanneer u twijfelt of u een vergunning nodig heeft, kunt u een conceptverzoek indienen. Bij een conceptverzoek kijken we naar uw (bouw)plannen en geven we advies over wat er nodig is om hiermee aan de slag te gaan.",
+          "original_reference": "No matching information",
+          "note": "De mogelijkheid tot het indienen van een conceptverzoek wordt genoemd in de bronnen maar ontbreekt in de originele tekst",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bekijk het overzicht van de kosten per activiteit.",
+          "original_reference": "Een aanvraag omgevingsvergunning kost geld. Deze kosten heten leges en staan in de legesverordening.",
+          "note": "De bronpagina verwijst naar een specifiek kostenoverzicht per activiteit, terwijl de originele tekst alleen algemeen naar de legesverordening verwijst",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/omgevingsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten belangrijke aanvullende informatie die niet in de originele tekst staat, waaronder de mogelijkheid tot het doen van een vergunningcheck vooraf, het indienen van een conceptverzoek bij twijfel, en een specifiek kostenoverzicht per activiteit. Deze informatie zou nuttig zijn voor aanvragers om beter voorbereid te zijn op het aanvraagproces."
+  }
+}

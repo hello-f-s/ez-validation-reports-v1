@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HEILOO",
+      "contact": {
+        "phone": "(072) 535 66 66",
+        "email": "info@heiloo.nl",
+        "website": "http://www.heiloo.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Binnen 8 weken ontvangt u een besluit, tenzij de procedure wordt verlengd met 6 weken",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Heiloo wordt een reguliere procedure verlengd met maximaal 8 weken (niet 6 weken) als er meer tijd nodig is voor de beoordeling."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.heiloo.nl/aanvragen-en-regelen/standplaatsvergunning/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/omgevingsvergunning/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/exploitatievergunning/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/omgevingswet/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/toezicht-en-handhaving/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.omgevingsloket.nl/)",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De gemeente kan deze termijn met maximaal 8 weken verlengen",
+          "original_reference": "tenzij de procedure wordt verlengd met 6 weken",
+          "note": "De verlengingstermijn verschilt: in de originele tekst staat 6 weken, maar volgens de bron is dit 8 weken",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/exploitatievergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Meld de start van de bouw of sloop minimaal 2 dagen van tevoren aan bij toezichthouder van de gemeente",
+          "original_reference": "No matching information",
+          "note": "Deze belangrijke verplichting ontbreekt in de originele tekst maar staat wel in de bronnen",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/toezicht-en-handhaving/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U kunt bouwtekeningen vanaf 2007 opvragen uit het gemeentelijk archief. U ontvangt deze digitaal per e-mail (Cryptshare)",
+          "original_reference": "No matching information",
+          "note": "Informatie over het opvragen van bouwtekeningen ontbreekt in de originele tekst",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/omgevingsvergunning/"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn drie belangrijke verschillen gevonden: een afwijkende verlengingstermijn (8 vs 6 weken), het ontbreken van de meldplicht voor start bouw/sloop, en het ontbreken van informatie over het opvragen van bouwtekeningen. Deze informatie is relevant voor mensen die een omgevingsvergunning aanvragen of bouwwerkzaamheden willen uitvoeren."
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LANDGRAAF",
+      "contact": {
+        "phone": "14 045",
+        "email": "gemeente@landgraaf.nl",
+        "website": "http://www.landgraaf.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor een exploitatievergunning bedragen € 281,35.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Landgraaf bedragen de kosten voor een exploitatievergunning € 286,95 (tarief 2024)."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 0,
+    "invalid_urls": 6,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.landgraaf.nl/aanvragen-en-regelen-ondernemers",
+        "reason": "INVALID: Error scraping https://www.landgraaf.nl/aanvragen-en-regelen-ondernemers: HTTPSConnectionPool(host='www.landgraaf.nl', port=443): Max retries exceeded with url: /aanvragen-en-regelen-ondernemers (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x107cff770>, 'Connection to www.landgraaf.nl timed out. (connect timeout=10)'))"
+      },
+      {
+        "url": "https://www.landgraaf.nl/form/informatieverzoek-indienen",
+        "reason": "INVALID: Error scraping https://www.landgraaf.nl/form/informatieverzoek-indienen: HTTPSConnectionPool(host='www.landgraaf.nl', port=443): Max retries exceeded with url: /form/informatieverzoek-indienen (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10d890410>, 'Connection to www.landgraaf.nl timed out. (connect timeout=10)'))"
+      },
+      {
+        "url": "https://www.landgraaf.nl/openingstijden-horeca-eenmalig-aanpassen",
+        "reason": "INVALID: Error scraping https://www.landgraaf.nl/openingstijden-horeca-eenmalig-aanpassen: HTTPSConnectionPool(host='www.landgraaf.nl', port=443): Max retries exceeded with url: /openingstijden-horeca-eenmalig-aanpassen (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10d890cd0>, 'Connection to www.landgraaf.nl timed out. (connect timeout=10)'))"
+      },
+      {
+        "url": "https://www.landgraaf.nl/exploitatievergunning-horecabedrijf",
+        "reason": "INVALID: Error scraping https://www.landgraaf.nl/exploitatievergunning-horecabedrijf: HTTPSConnectionPool(host='www.landgraaf.nl', port=443): Max retries exceeded with url: /exploitatievergunning-horecabedrijf (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10d890f50>, 'Connection to www.landgraaf.nl timed out. (connect timeout=10)'))"
+      },
+      {
+        "url": "https://www.landgraaf.nl/exploitatievergunning-horecabedrijf\">https://www.landgraaf.nl/exploitatievergunning-horecabedrijf</a></p>",
+        "reason": "INVALID: Error scraping https://www.landgraaf.nl/exploitatievergunning-horecabedrijf\">https://www.landgraaf.nl/exploitatievergunning-horecabedrijf</a></p>: HTTPSConnectionPool(host='www.landgraaf.nl', port=443): Max retries exceeded with url: /exploitatievergunning-horecabedrijf%22%3Ehttps://www.landgraaf.nl/exploitatievergunning-horecabedrijf%3C/a%3E%3C/p%3E (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10d8911d0>, 'Connection to www.landgraaf.nl timed out. (connect timeout=10)'))"
+      },
+      {
+        "url": "https://www.landgraaf.nl/alcoholvergunning",
+        "reason": "INVALID: Error scraping https://www.landgraaf.nl/alcoholvergunning: HTTPSConnectionPool(host='www.landgraaf.nl', port=443): Max retries exceeded with url: /alcoholvergunning (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10d891450>, 'Connection to www.landgraaf.nl timed out. (connect timeout=10)'))"
+      }
+    ]
+  }
+}

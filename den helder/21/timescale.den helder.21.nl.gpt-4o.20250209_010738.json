@@ -1,0 +1,71 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DEN HELDER",
+      "contact": {
+        "phone": "null",
+        "email": "info@denhelder.nl",
+        "website": "http://www.denhelder.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "De kosten bedragen € 41,35 voor een aanvraag in het stadhuis.",
+        "status": "false",
+        "note": "De actuele kosten voor een VOG-aanvraag in het stadhuis van Den Helder bedragen € 47,55 (2024). Het genoemde bedrag van € 41,35 is verouderd."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 0,
+    "invalid_urls": 7,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.denhelder.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.denhelder.nl/Onderwerpen/Uittreksels/Verklaring_omtrent_gedrag_VOG_aanvragen",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.denhelder.nl/Onderwerpen/Paspoort_identiteitskaart_en_rijbewijs/Nederlandse_nationaliteit_aanvragen",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.denhelder.nl/Onderwerpen/Bestuur_en_organisatie/Beleid/Woo_verzoek_indienen",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.denhelder.nl/Onderwerpen/Bouwen_en_verbouwen/Omgevingsvergunning",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.denhelder.nl/Zoekresultaten_oud?searchbase=50&freetext=&sp=H4sIAAAAAAAAAKtWystPSc3JT04syczPQ2YrWSlVxyiVxChZxShVGRY4VjmaBwV6G5VmuppkVniFe6YG2trGKOnEKKXlgdUg6wWLZ6ZgiGOoKcgFqklLzClOrVXSUSpOTSxKzkhKLE4FWm5iABcpSsxLBwkZGijVAgA2jSE5sQAAAA==&",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.denhelder.nl\">Gemeente",
+        "reason": "INVALID: Error scraping https://www.denhelder.nl\">Gemeente: HTTPSConnectionPool(host='www.denhelder.nl%22%3egemeente', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x105b36490>: Failed to resolve 'www.denhelder.nl%22%3egemeente' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  }
+}

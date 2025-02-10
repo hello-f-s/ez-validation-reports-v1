@@ -1,0 +1,99 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OPMEER",
+      "contact": {
+        "phone": "(0226) 36 33 33",
+        "email": "gemeente@opmeer.nl",
+        "website": "http://www.opmeer.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 8,
+    "false_sentences": 3,
+    "accuracy_percentage": 72.7,
+    "false_statements": [
+      {
+        "sentence": "Voor een vergunning met een geldigheidsduur van 1 dag: € 52,65",
+        "status": "false",
+        "note": "De genoemde tarieven zijn niet correct volgens de actuele legesverordening van gemeente Opmeer"
+      },
+      {
+        "sentence": "Voor een vergunning met een geldigheidsduur tot 1 maand: € 98,35",
+        "status": "false",
+        "note": "De genoemde tarieven zijn niet correct volgens de actuele legesverordening van gemeente Opmeer"
+      },
+      {
+        "sentence": "Voor een vergunning met een geldigheidsduur langer dan 1 maand: € 124,80",
+        "status": "false",
+        "note": "De genoemde tarieven zijn niet correct volgens de actuele legesverordening van gemeente Opmeer"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 3,
+    "invalid_urls": 4,
+    "accuracy_percentage": 42.9,
+    "valid_urls_list": [
+      "https://www.opmeer.nl/standplaats-aanvragen",
+      "https://www.opmeer.nl/exploitatievergunning-horecabedrijf",
+      "https://www.opmeer.nl/omgevingsvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://example.com\">Terras",
+        "reason": "INVALID: Error scraping https://example.com\">Terras: HTTPSConnectionPool(host='example.com%22%3eterras', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x105648550>: Failed to resolve 'example.com%22%3eterras' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.opmeer.nl/voorwerp-plaatsen-op-of-aan-de-weg",
+        "reason": "INVALID: Error scraping https://www.opmeer.nl/voorwerp-plaatsen-op-of-aan-de-weg: 404 Client Error: Not Found for url: https://www.opmeer.nl/voorwerp-plaatsen-op-of-aan-de-weg"
+      },
+      {
+        "url": "https://www.opmeer.nl/terras-plaatsen",
+        "reason": "INVALID: Error scraping https://www.opmeer.nl/terras-plaatsen: 404 Client Error: Not Found for url: https://www.opmeer.nl/terras-plaatsen"
+      },
+      {
+        "url": "https://example.com",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Indien de standplaatsvergunning een geldigheidsduur heeft langer dan 1 maand, voor iedere extra kalendermaand: € 16,45",
+          "original_reference": "Voor een vergunning met een geldigheidsduur langer dan 1 maand: € 124,80",
+          "note": "De originele tekst noemt een vast bedrag van €124,80 voor vergunningen langer dan 1 maand, terwijl de bron aangeeft dat er €16,45 per extra kalendermaand wordt gerekend bovenop het maandtarief",
+          "source_urls": [
+            "https://www.opmeer.nl/standplaats-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U mag niet zomaar een terras plaatsen wanneer dit terras niet op de exploitatievergunning staat.",
+          "original_reference": "No matching information",
+          "note": "De bron vermeldt een belangrijke aanvullende voorwaarde dat het terras op de exploitatievergunning moet staan, wat niet wordt genoemd in de originele tekst",
+          "source_urls": [
+            "https://www.opmeer.nl/exploitatievergunning-horecabedrijf"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden: 1) Een afwijkende kostenstructuur voor vergunningen langer dan 1 maand, waarbij de bron een variabel bedrag per extra maand hanteert in plaats van een vast bedrag, en 2) Een aanvullende voorwaarde dat het terras moet worden vermeld op de exploitatievergunning, wat niet in de originele tekst staat vermeld. Deze verschillen kunnen belangrijke implicaties hebben voor ondernemers die een terrasvergunning willen aanvragen."
+  }
+}

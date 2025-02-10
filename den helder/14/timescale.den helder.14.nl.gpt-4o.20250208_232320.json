@@ -1,0 +1,68 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DEN HELDER",
+      "contact": {
+        "phone": "null",
+        "email": "info@denhelder.nl",
+        "website": "http://www.denhelder.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 15,
+    "false_sentences": 2,
+    "accuracy_percentage": 88.2,
+    "false_statements": [
+      {
+        "sentence": "€ 52,10 totaal, waarvan € 27,10 voor het in behandeling nemen van de aanvraag.",
+        "status": "false",
+        "note": "Het correcte bedrag voor een ontheffing voetgangersgebied in Den Helder is € 54,20, waarvan € 29,20 legeskosten voor het in behandeling nemen van de aanvraag."
+      },
+      {
+        "sentence": "De reguliere voorbereidingsprocedure voor een omgevingsvergunning duurt meestal 8 weken, met een mogelijkheid tot verlenging met nog eens 6 weken, wat in totaal 14 weken maakt.",
+        "status": "false",
+        "note": "Volgens de gemeente Den Helder duurt de reguliere procedure voor een omgevingsvergunning 8 weken met een mogelijke verlenging van 6 weken, maar dit is in totaal 8+6=14 weken, niet zoals vermeld dat 8 weken plus 6 weken 14 weken maakt."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 0,
+    "invalid_urls": 5,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.denhelder.nl/Onderwerpen/verkeer/Gehandicaptenparkeerplaats_aanvragen_aanpassen_of_opheffen",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.denhelder.nl/Onderwerpen/verkeer",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.denhelder.nl/Onderwerpen/verkeer/Ontheffing_voor_rijden_in_voetgangersgebied",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.denhelder.nl/Onderwerpen/Bouwen_en_verbouwen/Omgevingsvergunning",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.denhelder.nl/Onderwerpen/Bouwen_en_verbouwen/Omgevingsvergunning_Veelgestelde_vragen",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  }
+}

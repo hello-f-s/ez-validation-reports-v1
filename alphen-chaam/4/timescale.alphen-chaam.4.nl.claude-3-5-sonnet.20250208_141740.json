@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ALPHEN-CHAAM",
+      "contact": {
+        "phone": "14013",
+        "email": "info@alphen-chaam.nl",
+        "website": "http://www.alphen-chaam.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 11,
+    "false_sentences": 2,
+    "accuracy_percentage": 84.6,
+    "false_statements": [
+      {
+        "sentence": "Vraag de evenementenvergunning minimaal 14 weken voor het evenement aan.",
+        "status": "false",
+        "note": "Volgens de website van gemeente Alphen-Chaam moet een evenementenvergunning minimaal 12 weken van tevoren worden aangevraagd, niet 14 weken."
+      },
+      {
+        "sentence": "Er komen meer dan 250 bezoekers",
+        "status": "false",
+        "note": "Volgens de website van gemeente Alphen-Chaam is de grens voor een groot evenement meer dan 350 bezoekers, niet 250 bezoekers."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.alphen-chaam.nl/grootevenement",
+      "https://www.alphen-chaam.nl/horecavergunning",
+      "https://www.alphen-chaam.nl/vergunningen-en-ontheffingen/vergunningen-en-ontheffingen-voor-ondernemers",
+      "https://www.alphen-chaam.nl/ondernemen/vergunningen-en-ontheffingen-voor-ondernemers"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.alphen-chaam.nl/formulieren/een-vergunningvrij-evenement-melden",
+        "reason": "INVALID: Error scraping https://www.alphen-chaam.nl/formulieren/een-vergunningvrij-evenement-melden: 404 Client Error: Not Found for url: https://www.alphen-chaam.nl/formulieren/een-vergunningvrij-evenement-melden"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "€ 13,75",
+          "original_reference": "Hier kan geen specifieke informatie over gevonden worden op de website van deze gemeente.",
+          "note": "De originele inhoud vermeldt dat er geen informatie over kosten beschikbaar is, terwijl de bron wel specifieke kosten (€13,75) vermeldt voor een evenementenvergunning.",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/grootevenement"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Er meer dan 250 bezoekers komen, De locatie vooraf bekend is, De plek normaal gesproken niet voor een evenement wordt gebruikt, Er alcohol wordt geschonken, Er geluidsoverlast kan zijn door bijvoorbeeld (live)muziek, Er een toiletwagen is, Er aanpassingen aan het verkeer gedaan moet worden voor het evenement",
+          "original_reference": "Alle genoemde voorwaarden in originele tekst",
+          "note": "De voorwaarden voor een evenementenvergunning komen exact overeen met de originele inhoud.",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/grootevenement"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont één belangrijk verschil aan: de kosten voor een evenementenvergunning (€13,75) worden wel vermeld op de gemeentewebsite, terwijl de originele inhoud aangeeft dat deze informatie niet beschikbaar is. Alle andere informatie, waaronder de voorwaarden voor een evenementenvergunning, komt volledig overeen met de originele inhoud."
+  }
+}

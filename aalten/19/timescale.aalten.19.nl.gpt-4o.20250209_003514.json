@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AALTEN",
+      "contact": {
+        "phone": "(0543) 49 33 33",
+        "email": "gemeente@aalten.nl",
+        "website": "http://www.aalten.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor het aanwezig hebben van één kansspelautomaat zijn € 56,50 (tarief 2024).",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Aalten zijn de kosten voor een aanwezigheidsvergunning voor één kansspelautomaat € 57,50 voor 2024, niet € 56,50."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.aalten.nl/standplaats-aanvragen",
+      "https://www.aalten.nl/exploitatievergunning-horecabedrijf",
+      "https://www.aalten.nl/loterij-prijsvraag-bingo-organiseren",
+      "https://www.aalten.nl/openingstijden-horeca-eenmalig-aanpassen",
+      "https://www.aalten.nl/gokautomaat-plaatsen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.aalten.nl/gokautomaat-plaatsen'>Gemeente",
+        "reason": "INVALID: Error scraping https://www.aalten.nl/gokautomaat-plaatsen'>Gemeente: 404 Client Error: Not Found for url: https://www.aalten.nl/gokautomaat-plaatsen'%3EGemeente"
+      },
+      {
+        "url": "https://www.aalten.nl/exploitatievergunning-horecabedrijf'>Gemeente",
+        "reason": "INVALID: Error scraping https://www.aalten.nl/exploitatievergunning-horecabedrijf'>Gemeente: 404 Client Error: Not Found for url: https://www.aalten.nl/exploitatievergunning-horecabedrijf'%3EGemeente"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bij de vergunningverlening maakt de gemeente onderscheid tussen: Hoogdrempelige inrichtingen (cafés, bars en nachtclubs). Deze inrichtingen mogen twee speelautomaten exploiteren (zowel kansspel- als behendigheidsautomaten). Laagdrempelige inrichtingen (snackbars, kantines, restaurants). Deze inrichtingen mogen maximaal één behendigheidsautomaat (geen kansspelautomaten) exploiteren.",
+          "original_reference": "Alleen horecabedrijven en speelautomaathallen mogen gokautomaten plaatsen.",
+          "note": "De originele tekst maakt geen onderscheid tussen hoog- en laagdrempelige inrichtingen en specificeert niet het maximaal toegestane aantal automaten per type inrichting. Dit is belangrijke aanvullende informatie.",
+          "source_urls": [
+            "https://www.aalten.nl/gokautomaat-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "In uw horecabedrijf vinden alleen horeca-activiteiten plaats.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt een extra voorwaarde die niet in de originele tekst staat: het bedrijf mag alleen horeca-activiteiten uitvoeren.",
+          "source_urls": [
+            "https://www.aalten.nl/gokautomaat-plaatsen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten belangrijke aanvullende details over de voorwaarden voor het plaatsen van gokautomaten, met name het onderscheid tussen hoog- en laagdrempelige inrichtingen en hun specifieke limieten voor automaten. Ook wordt een extra voorwaarde genoemd over uitsluitend horeca-activiteiten die niet in de originele tekst staat vermeld."
+  }
+}

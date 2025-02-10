@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AALTEN",
+      "contact": {
+        "phone": "(0543) 49 33 33",
+        "email": "gemeente@aalten.nl",
+        "website": "http://www.aalten.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Het tarief voor 2024 bedraagt € 406,90 voor het in behandeling nemen van de aanvraag.",
+        "status": "false",
+        "note": "Volgens de legesverordening 2024 van gemeente Aalten bedraagt het tarief voor een exploitatievergunning horeca € 416,90, niet € 406,90."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.aalten.nl/openingstijden-horeca-eenmalig-aanpassen",
+      "https://www.aalten.nl/exploitatievergunning-horecabedrijf",
+      "https://www.aalten.nl/ondernemersplein",
+      "https://www.aalten.nl/standplaats-aanvragen",
+      "https://www.aalten.nl/alcoholvergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Verklaring Sociale Hygiëne voor alle personen/ leidinggevenden die op de vergunning worden genoemd",
+          "original_reference": "U moet een Verklaring Sociale Hygiëne hebben voor alle personen/leidinggevenden die op de vergunning worden genoemd",
+          "note": "De vereiste voor de Verklaring Sociale Hygiëne komt exact overeen",
+          "source_urls": [
+            "https://www.aalten.nl/exploitatievergunning-horecabedrijf",
+            "https://www.aalten.nl/alcoholvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Alle leidinggevenden zijn minimaal 21 jaar",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt geen minimumleeftijd voor leidinggevenden, terwijl de bron aangeeft dat leidinggevenden minimaal 21 jaar moeten zijn",
+          "source_urls": [
+            "https://www.aalten.nl/alcoholvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "In uw zaak moet altijd een leidinggevende aanwezig zijn. Deze leidinggevende staat ook vermeld op uw vergunning",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de verplichting dat er altijd een leidinggevende aanwezig moet zijn",
+          "source_urls": [
+            "https://www.aalten.nl/alcoholvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten enkele belangrijke aanvullende vereisten die niet in de originele tekst staan vermeld, met name rond de minimumleeftijd van leidinggevenden (21 jaar) en de verplichte aanwezigheid van een leidinggevende. Deze informatie is essentieel voor horecaondernemers en zou in de originele tekst opgenomen moeten worden."
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "KERKRADE",
+      "contact": {
+        "phone": "14 045",
+        "email": "gemeentehuis@kerkrade.nl",
+        "website": "http://www.kerkrade.nl"
+      }
+    },
+    "service": {
+      "id": 13,
+      "name": "Omzettingsvergunning voor kamerverhuur aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Voor een gewone aanvraag beslist de gemeente binnen 8 weken (kan 6 weken langer duren).",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Kerkrade geldt voor een reguliere procedure een beslistermijn van 8 weken die met maximaal 8 weken (niet 6) verlengd kan worden."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.kerkrade.nl/gemeente-kerkrade-helpt-u-bij-de-omgevingswet",
+      "https://www.kerkrade.nl/exploitatievergunning-horecabedrijf",
+      "https://www.kerkrade.nl/vergunning-checken-en-vooroverleg",
+      "https://www.kerkrade.nl/milieu-vergunning-of-melding",
+      "https://www.kerkrade.nl/omgevingsvergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De omgevingsbalie is vanaf januari elke donderdag van 09:00-12:00 en 16:00-18:00 geopend.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de openingstijden van de omgevingsbalie, wat een belangrijk contactmoment is voor burgers met vragen.",
+          "source_urls": [
+            "https://www.kerkrade.nl/gemeente-kerkrade-helpt-u-bij-de-omgevingswet"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De eigenaar of leidinggevende is minimaal 21 jaar oud en van onbesproken gedrag. De gemeente kan vragen om een Verklaring omtrent het gedrag (VOG).",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden specifieke leeftijdseisen en VOG-vereisten voor bepaalde vergunningen die niet in de originele tekst staan.",
+          "source_urls": [
+            "https://www.kerkrade.nl/exploitatievergunning-horecabedrijf"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Door gebruik te maken van een vooroverleg voorkomt u dat u tijdens de vergunningsaanvraag voor verrassingen komt te staan.",
+          "original_reference": "Vooroverleg met de gemeente wordt aangeraden om na te gaan of uw plannen haalbaar zijn en welke aanvullende gegevens nodig zijn.",
+          "note": "De informatie over het nut van vooroverleg komt overeen met de originele tekst.",
+          "source_urls": [
+            "https://www.kerkrade.nl/vergunning-checken-en-vooroverleg"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten enkele belangrijke aanvullingen die niet in de originele tekst staan, met name concrete openingstijden van de omgevingsbalie en specifieke vereisten voor bepaalde vergunningen zoals leeftijdseisen en VOG-verplichtingen. De kernprocessen en procedures komen verder grotendeels overeen met de originele tekst."
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HAARLEMMERMEER",
+      "contact": {
+        "phone": "(0900) 18 52",
+        "email": "info@haarlemmermeer.nl",
+        "website": "http://www.haarlemmermeer.nl"
+      }
+    },
+    "service": {
+      "id": 3,
+      "name": "Certificaat voor opgraving aanvragen en vondst melden"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 7,
+    "true_sentences": 6,
+    "false_sentences": 1,
+    "accuracy_percentage": 85.7,
+    "false_statements": [
+      {
+        "sentence": "Neem contact op met de gemeente Haarlemmermeer via e-mail: info@haarlemmermeer.nl of bel naar 0900-1852.",
+        "status": "false",
+        "note": "Het telefoonnummer is onjuist. Het juiste algemene telefoonnummer van gemeente Haarlemmermeer is 0900-1852 (lokaal tarief)."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://haarlemmermeergemeente.nl/bodeminformatieverzoek-of-makelaarsverzoek",
+      "https://haarlemmermeergemeente.nl/aanvraag-bouwarchief",
+      "https://haarlemmermeergemeente.nl/slopen",
+      "https://haarlemmermeergemeente.nl/archeologie"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://haarlemmermeergemeente.nl/adresonderzoek",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Via het Omgevingsloket of op de archeologiekaart checkt u of archeologisch onderzoek verplicht is. Doe dit altijd voordat u een omgevingsvergunning aanvraagt.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over de verplichting om eerst te controleren of archeologisch onderzoek nodig is via het Omgevingsloket of de archeologiekaart.",
+          "source_urls": [
+            "https://haarlemmermeergemeente.nl/archeologie"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Op de kaart ziet u precies waar archeologisch onderzoek verplicht is. En bij welke werkzaamheden. De laag 'Archeologische beleidskaart' geeft verschillende waardes.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over het bestaan van een archeologische beleidskaart en de verschillende waardes die bepalen wanneer onderzoek nodig is.",
+          "source_urls": [
+            "https://haarlemmermeergemeente.nl/archeologie"
+          ]
+        }
+      ]
+    },
+    "summary": "De originele tekst mist essentiële informatie over het vooraf controleren van de archeologische onderzoeksplicht via het Omgevingsloket en de archeologiekaart. Ook ontbreekt informatie over de archeologische beleidskaart die aangeeft waar en wanneer onderzoek verplicht is. Deze informatie is wel beschikbaar in de bronpagina's en is belangrijk voor mensen die mogelijk te maken krijgen met archeologische vondsten of werkzaamheden."
+  }
+}

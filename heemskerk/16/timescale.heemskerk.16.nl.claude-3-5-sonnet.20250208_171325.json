@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HEEMSKERK",
+      "contact": {
+        "phone": "14 0251",
+        "email": "post@heemskerk.nl",
+        "website": "http://www.heemskerk.nl"
+      }
+    },
+    "service": {
+      "id": 16,
+      "name": "Registreren in het Landelijk Register Kinderopvang (LRK)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 7,
+    "true_sentences": 6,
+    "false_sentences": 1,
+    "accuracy_percentage": 85.7,
+    "false_statements": [
+      {
+        "sentence": "Mail het ingevulde aanvraagformulier naar post@heemskerk.nl",
+        "status": "false",
+        "note": "Het aanvraagformulier moet niet gemaild worden naar de gemeente Heemskerk, maar moet worden ingediend bij het Landelijk Register Kinderopvang (LRK) via de website van DUO."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.heemskerk.nl/aanvragen-en-regelen/verklaring-omtrent-gedrag-vog",
+      "https://www.heemskerk.nl/aanvragen-en-regelen/ondernemersloket",
+      "https://www.heemskerk.nl/aanvragen-en-regelen/aangifte-levenloos-geboren-kind",
+      "https://www.heemskerk.nl/over-heemskerk/kinderopvang-ondernemers",
+      "https://www.heemskerk.nl/werk-inkomen-zorg-en-welzijn/kindpakket"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "We beoordelen alle aanvragen voor nieuwe locaties van een kinderopvang. Dit doen we binnen 10 weken. Voor de registratie betaalt u legeskosten.",
+          "original_reference": "Het college beoordeelt alle aanvragen voor nieuwe locaties van een kinderopvang binnen 10 weken.",
+          "note": "De informatie over de beoordelingstermijn van 10 weken komt exact overeen met de originele inhoud.",
+          "source_urls": [
+            "https://www.heemskerk.nl/over-heemskerk/kinderopvang-ondernemers"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Is uw aanvraag compleet? Dan krijgt de GGD de opdracht een inspectie uit te voeren.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat aanvullende informatie over het GGD-inspectieproces na een complete aanvraag, wat niet vermeld staat in de originele inhoud.",
+          "source_urls": [
+            "https://www.heemskerk.nl/over-heemskerk/kinderopvang-ondernemers"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u voldoet aan de kwaliteitseisen komt u in aanmerking voor registratie in het Landelijk Register Kinderopvang (LRK).",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt belangrijke aanvullende informatie over registratie in het LRK na goedkeuring, wat ontbreekt in de originele inhoud.",
+          "source_urls": [
+            "https://www.heemskerk.nl/over-heemskerk/kinderopvang-ondernemers"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina bevat belangrijke aanvullende informatie over het proces na de aanvraag, waaronder de GGD-inspectie en registratie in het Landelijk Register Kinderopvang (LRK). Deze essentiële stappen ontbreken in de originele inhoud, hoewel de kerngegevens over aanvraagprocedure, termijnen en legeskosten consistent zijn."
+  }
+}

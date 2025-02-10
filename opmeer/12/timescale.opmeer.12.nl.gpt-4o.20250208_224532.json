@@ -1,0 +1,92 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OPMEER",
+      "contact": {
+        "phone": "(0226) 36 33 33",
+        "email": "gemeente@opmeer.nl",
+        "website": "http://www.opmeer.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "Vraag de vergunning minimaal 8 weken voor de start van de werkzaamheden aan.",
+        "status": "false",
+        "note": "Volgens de gemeente Opmeer moet een reguliere omgevingsvergunning minimaal 12 weken voor de start van de werkzaamheden worden aangevraagd, niet 8 weken, om voldoende tijd te hebben voor de behandeling en eventuele bezwaartermijn."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.opmeer.nl/omgevingsvergunning",
+      "https://www.opmeer.nl/milieuvervuiling-melden",
+      "https://www.opmeer.nl/milieu-vergunning-of-melding",
+      "https://www.opmeer.nl/omgevingsvergunning-en-omgevingsloket",
+      "https://www.opmeer.nl/privacy-omgevingswet"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://omgevingswet.overheid.nl/home\">https://omgevingswet.overheid.nl/home</a>)",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://omgevingswet.overheid.nl/home",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Overleg vooraf met de gemeente over uw plannen. Dan komt u niet voor verrassingen te staan. Dit heet een vooroverleg. Neem bij het maken van uw plannen zo vroeg mogelijk contact op met de gemeente.",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden expliciet de noodzaak van vooroverleg met de gemeente, wat niet genoemd wordt in de originele tekst. Dit is een belangrijke aanvullende procedurestap.",
+          "source_urls": [
+            "https://www.opmeer.nl/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Heeft u een idee, plan of initiatief dat zorgt voor een verandering in de leefomgeving? Dan is het handig om vooraf met uw buren (en andere belanghebbenden) in gesprek te gaan over uw plannen. Neem de reacties vanuit uw gesprek(ken) op in uw vergunningsaanvraag.",
+          "original_reference": "No matching information",
+          "note": "De bronnen adviseren expliciet overleg met buren en belanghebbenden en het opnemen van hun reacties in de aanvraag. Dit wordt niet genoemd in de originele tekst.",
+          "source_urls": [
+            "https://www.opmeer.nl/omgevingsvergunning-en-omgevingsloket"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Aanvragen die voor 1 januari 2024 via het OLO zijn ingediend, kunnen nog een half jaar - tot 1 juli 2024 - via het OLO worden aangevuld.",
+          "original_reference": "No matching information",
+          "note": "De bronnen bevatten specifieke overgangsregelingen voor aanvragen van vóór 2024, wat niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.opmeer.nl/omgevingsvergunning-en-omgevingsloket"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen aanvullende procedurestappen die niet in de originele tekst staan: de noodzaak van vooroverleg met de gemeente, het advies om met buren te overleggen, en specifieke overgangsregelingen voor aanvragen van vóór 2024. Deze informatie is essentieel voor een complete en succesvolle vergunningsaanvraag."
+  }
+}

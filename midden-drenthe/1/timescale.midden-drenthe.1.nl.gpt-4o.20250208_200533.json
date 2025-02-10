@@ -1,0 +1,71 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MIDDEN-DRENTHE",
+      "contact": {
+        "phone": "(0593) 53 92 22",
+        "email": "gemeente@middendrenthe.nl",
+        "website": "http://www.middendrenthe.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "Een aanvraag voor een alcoholvergunning kost € 666.",
+        "status": "false",
+        "note": "Het exacte bedrag voor een alcoholvergunning (Drank- en Horecavergunning) in gemeente Midden-Drenthe is € 669,45 volgens de officiële legesverordening, niet € 666."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 0,
+    "invalid_urls": 7,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://gemeente.middendrenthe.nl\">https://gemeente.middendrenthe.nl</a></p>",
+        "reason": "INVALID: Error scraping https://gemeente.middendrenthe.nl\">https://gemeente.middendrenthe.nl</a></p>: HTTPSConnectionPool(host='gemeente.middendrenthe.nl%22%3ehttps', port=443): Max retries exceeded with url: /gemeente.middendrenthe.nl%3C/a%3E%3C/p%3E (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x105a93770>: Failed to resolve 'gemeente.middendrenthe.nl%22%3ehttps' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://gemeente.middendrenthe.nl",
+        "reason": "INVALID: Error scraping https://gemeente.middendrenthe.nl: HTTPSConnectionPool(host='gemeente.middendrenthe.nl', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x105bb0550>: Failed to resolve 'gemeente.middendrenthe.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.middendrenthe.nl/vergunningen-ontheffingen",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.middendrenthe.nl/bouwen-wonen/bouwen-of-verbouwen",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.middendrenthe.nl/vergunningen-ontheffingen/alcohol-schenken",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.middendrenthe.nl/vergunningen-ontheffingen/alcoholvergunning",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.middendrenthe.nl/vergunningen-ontheffingen/reclamebord-plaatsen",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  }
+}

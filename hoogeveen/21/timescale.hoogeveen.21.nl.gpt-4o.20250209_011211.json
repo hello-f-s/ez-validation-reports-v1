@@ -1,0 +1,89 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HOOGEVEEN",
+      "contact": {
+        "phone": "14 0528",
+        "email": "info@hoogeveen.nl",
+        "website": "http://www.hoogeveen.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Bij de gemeente Hoogeveen: €41,35",
+        "status": "false",
+        "note": "Het correcte tarief voor een VOG bij de gemeente Hoogeveen is €41,85, niet €41,35. Dit bedrag is vastgesteld in de gemeentelijke legesverordening."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 6,
+    "invalid_urls": 1,
+    "accuracy_percentage": 85.7,
+    "valid_urls_list": [
+      "https://www.hoogeveen.nl/geboorte-en-overlijden/geboorteaangifte-doen",
+      "https://hoogeveen.nl",
+      "https://www.hoogeveen.nl/veelgestelde-vragen-coffeeshop",
+      "https://www.hoogeveen.nl/vergunningen/omgevingsvergunningen",
+      "https://www.hoogeveen.nl/raad-en-college/woo-verzoek",
+      "https://www.hoogeveen.nl/uittreksels-en-verklaringen/verklaring-omtrent-het-gedrag-vog"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://hoogeveen.nl\">Verklaring",
+        "reason": "INVALID: Error scraping https://hoogeveen.nl\">Verklaring: HTTPSConnectionPool(host='hoogeveen.nl%22%3everklaring', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1073a3e00>: Failed to resolve 'hoogeveen.nl%22%3everklaring' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u geen papieren aanvraagformulier hebt gekregen, dan vraagt u een VOG online aan bij Dienst Justis (met DigiD). De organisatie die de VOG van u vraagt, zet de aanvraag klaar in het systeem. U krijgt daarna een e-mail met de link naar het aanvraagformulier",
+          "original_reference": "Voor een online aanvraag via Dienst Justis hebt u geen papieren formulier nodig.",
+          "note": "De brontekst specificeert duidelijker het proces: de organisatie zet eerst de aanvraag klaar, waarna de aanvrager een e-mail met link ontvangt. Dit detail ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.hoogeveen.nl/uittreksels-en-verklaringen/verklaring-omtrent-het-gedrag-vog"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u geen vaste woon- of verblijfplaats hebt en niet bent ingeschreven in de Basisregistratie Personen (BRP), dan werkt het anders. U kunt dan alleen een schriftelijke aanvraag doen bij Dienst Justis",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over de procedure voor mensen zonder vaste woon- of verblijfplaats.",
+          "source_urls": [
+            "https://www.hoogeveen.nl/uittreksels-en-verklaringen/verklaring-omtrent-het-gedrag-vog"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Lukt het u niet om uw aanvraag online te doen? Dan kunt u een afspraak maken. Neem naar de afspraak uw identiteitsbewijs (paspoort, ID-kaart of rijbewijs) en het ingevulde aanvraagformulier mee.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de mogelijkheid om een afspraak te maken bij de balie als online aanvragen niet lukt, inclusief de benodigde documenten.",
+          "source_urls": [
+            "https://www.hoogeveen.nl/uittreksels-en-verklaringen/verklaring-omtrent-het-gedrag-vog"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina bevat enkele belangrijke aanvullende details die ontbreken in de originele tekst, waaronder de specifieke procedure voor de online aanvraag via Dienst Justis, de speciale procedure voor mensen zonder vaste woon- of verblijfplaats, en de mogelijkheid om een afspraak te maken bij de balie als online aanvragen niet mogelijk is. Deze informatie is essentieel voor een volledig begrip van de aanvraagprocedure."
+  }
+}

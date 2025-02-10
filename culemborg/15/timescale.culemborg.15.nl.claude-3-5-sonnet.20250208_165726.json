@@ -1,0 +1,90 @@
+{
+  "context": {
+    "municipality": {
+      "name": "CULEMBORG",
+      "contact": {
+        "phone": "(0345) 47 77 00",
+        "email": "info@culemborg.nl",
+        "website": "http://www.culemborg.nl"
+      }
+    },
+    "service": {
+      "id": 15,
+      "name": "Vergunning of ontheffing voor straatartiesten"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 6,
+    "true_sentences": 5,
+    "false_sentences": 1,
+    "accuracy_percentage": 83.3,
+    "false_statements": [
+      {
+        "sentence": "Vul het online formulier voor een geluidsontheffing in, minimaal 8 weken van tevoren.",
+        "status": "false",
+        "note": "Volgens de website van gemeente Culemborg moet een geluidsontheffing minimaal 4 weken (niet 8 weken) van tevoren worden aangevraagd."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.culemborg.nl/geluidsontheffing",
+      "https://www.culemborg.nl/standplaatsvergunning",
+      "https://www.culemborg.nl/omgevingsvergunning",
+      "https://www.culemborg.nl/straatartiest",
+      "https://www.culemborg.nl/vergunningen-en-ontheffingen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.culemborg.nl/wonen-en-leven/vergunningen-en-ontheffingen/geluidsontheffing",
+        "reason": "INVALID: Error scraping https://www.culemborg.nl/wonen-en-leven/vergunningen-en-ontheffingen/geluidsontheffing: 404 Client Error: Not Found for url: https://www.culemborg.nl/wonen-en-leven/vergunningen-en-ontheffingen/geluidsontheffing"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een aanvraag moet drie weken voor het gebruik van de vergunning zijn ingediend.",
+          "original_reference": "minimaal 8 weken van tevoren",
+          "note": "Er is een tegenstrijdigheid in de aanvraagtermijn: de straatartiest-pagina noemt 3 weken, terwijl de originele tekst en de geluidsontheffing-pagina 8 weken vermelden.",
+          "source_urls": [
+            "https://www.culemborg.nl/straatartiest",
+            "https://www.culemborg.nl/geluidsontheffing"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "€ 53,50 voor lichte geluidsontheffing zoals straatmuzikanten",
+          "original_reference": "Er zijn kosten verbonden aan het aanvragen van een geluidsontheffing, maar het bedrag wordt niet vermeld",
+          "note": "De originele tekst vermeldt geen specifiek bedrag, terwijl de bronnen wel concrete kosten noemen: €53,50 voor straatmuzikanten.",
+          "source_urls": [
+            "https://www.culemborg.nl/geluidsontheffing",
+            "https://www.culemborg.nl/straatartiest"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u de aanvraag te laat indient, kunnen we deze afwijzen of alsnog in behandeling nemen. We brengen dan extra kosten in rekening.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat aanvullende informatie over te late aanvragen en extra kosten die niet in de originele tekst staat.",
+          "source_urls": [
+            "https://www.culemborg.nl/geluidsontheffing"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn drie belangrijke verschillen gevonden tussen de originele tekst en de bronnen: 1) een tegenstrijdige aanvraagtermijn (3 vs 8 weken), 2) het ontbreken van specifieke kostenbedragen in de originele tekst, en 3) ontbrekende informatie over de gevolgen van te late aanvragen. Deze verschillen hebben significante impact op de dienstverlening en planning voor potentiële aanvragers."
+  }
+}

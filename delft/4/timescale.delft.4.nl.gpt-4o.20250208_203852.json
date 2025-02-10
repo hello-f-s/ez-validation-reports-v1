@@ -1,0 +1,86 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DELFT",
+      "contact": {
+        "phone": "14 015",
+        "email": "null",
+        "website": "http://www.delft.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 12,
+    "false_sentences": 2,
+    "accuracy_percentage": 85.7,
+    "false_statements": [
+      {
+        "sentence": "Klein evenement: minimaal 8 weken vooraf, tenzij het alleen gemeld hoeft te worden",
+        "status": "false",
+        "note": "Voor kleine evenementen geldt een aanvraagtermijn van minimaal 4 weken vooraf volgens de officiële website van gemeente Delft, niet 8 weken"
+      },
+      {
+        "sentence": "Klein evenement: € 193,70",
+        "status": "false",
+        "note": "Volgens de legesverordening 2024 van gemeente Delft bedragen de kosten voor een klein evenement € 192,70, niet € 193,70"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 6,
+    "invalid_urls": 1,
+    "accuracy_percentage": 85.7,
+    "valid_urls_list": [
+      "https://www.delft.nl/evenementenvergunning",
+      "https://www.delft.nl/vergunning-melden",
+      "https://www.delft.nl/omgevingsvergunning-aanvragen",
+      "https://www.delft.nl/vergunning-voor-promotieactie",
+      "https://www.delft.nl/klein-evenement-melden",
+      "https://www.delft.nl"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.delft.nl\">Gemeente",
+        "reason": "INVALID: Error scraping https://www.delft.nl\">Gemeente: HTTPSConnectionPool(host='www.delft.nl%22%3egemeente', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x104027770>: Failed to resolve 'www.delft.nl%22%3egemeente' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Kosten 2025: Groot evenement € 821,95, Middelgroot evenement € 502,10, Klein evenement € 199,10",
+          "original_reference": "De kosten voor de evenementenvergunning in 2024 zijn: Groot evenement: € 799,60, Middelgroot evenement: € 502,10, Klein evenement: € 193,70",
+          "note": "De tarieven voor 2025 verschillen van de 2024 tarieven. Het grote evenement kost € 821,95 (ipv € 799,60) en klein evenement € 199,10 (ipv € 193,70). Alleen het middelgrote evenement blijft gelijk.",
+          "source_urls": [
+            "https://www.delft.nl/evenementenvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor sommige kleine evenementen heeft u onder bepaalde voorwaarden geen vergunning nodig. Deze hoeft u alleen te melden bij de gemeente.",
+          "original_reference": "Klein evenement: minimaal 8 weken vooraf, tenzij het alleen gemeld hoeft te worden",
+          "note": "De bronpagina specificeert dat kleine evenementen die aan bepaalde voorwaarden voldoen alleen gemeld hoeven te worden, met een meldingstermijn van 3 weken (niet 8 weken zoals in de originele tekst).",
+          "source_urls": [
+            "https://www.delft.nl/klein-evenement-melden",
+            "https://www.delft.nl/evenementenvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden: 1) De tarieven voor 2025 zijn anders dan de vermelde 2024 tarieven, met name voor grote en kleine evenementen. 2) Er is een discrepantie in de aanvraagtermijn voor kleine evenementen die alleen gemeld hoeven te worden (3 weken vs 8 weken). De overige informatie komt overeen met de originele tekst."
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MAASDRIEL",
+      "contact": {
+        "phone": "14 0418",
+        "email": "info@maasdriel.nl",
+        "website": "http://www.maasdriel.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "De aanvragen moeten naar het postadres van de gemeente worden gestuurd.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Maasdriel kunnen alcoholvergunningen ook digitaal worden aangevraagd via het digitale loket, niet alleen per post."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 2,
+    "invalid_urls": 5,
+    "accuracy_percentage": 28.6,
+    "valid_urls_list": [
+      "https://www.maasdriel.nl/inwoner-en-ondernemer/ondernemen/horeca/alcoholvergunning",
+      "https://www.maasdriel.nl"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.maasdriel.nl/inwoner-en-ondernemer/bouwen-en-verbouwen/aanvragen-vergunningen-en-vooroverleg",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.maasdriel.nl\">Gemeente",
+        "reason": "INVALID: Error scraping https://www.maasdriel.nl\">Gemeente: HTTPSConnectionPool(host='www.maasdriel.nl%22%3egemeente', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x116830910>: Failed to resolve 'www.maasdriel.nl%22%3egemeente' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.maasdriel.nl/inwoner-en-ondernemer/bouwen-en-verbouwen/wegwijzer-omgevingsloket/vergunning-bedrijf-aan-huis",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.maasdriel.nl/inwoner-en-ondernemer/bouwen-en-verbouwen/wegwijzer-omgevingsloket/vergunning-voor-woning-bouwen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.maasdriel.nl/inwoner-en-ondernemer/bouwen-en-verbouwen/wegwijzer-omgevingsloket/vergunning-uitbreiden-bedrijf",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Als ondernemer alcohol schenken of verkopen? Dan heeft u een alcoholvergunning nodig. Dit geldt zowel voor horecabedrijven en slijterijen als voor instellingen als sportkantines, culturele centra en buurthuizen.",
+          "original_reference": "Als ondernemer in Maasdriel heeft u een alcoholvergunning nodig als u alcohol wilt schenken of verkopen. Dit geldt voor horecabedrijven, slijterijen, sportkantines, culturele centra en buurthuizen.",
+          "note": "De basisvoorwaarden voor het hebben van een alcoholvergunning komen exact overeen",
+          "source_urls": [
+            "https://www.maasdriel.nl/inwoner-en-ondernemer/ondernemen/horeca/alcoholvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse van de beschikbare bronnen en de originele inhoud zijn er geen significante verschillen of tegenstrijdigheden gevonden. De informatie in de originele tekst komt overeen met wat er in de bronnen staat. Wel valt op dat de bronnen niet alle details bevatten die in de originele tekst staan (zoals specifieke kosten en benodigde documenten), maar omdat deze informatie niet wordt tegengesproken door de bronnen, kunnen we dit niet als verschil aanmerken. Voor een complete verificatie van alle details zou toegang tot aanvullende gemeentelijke bronpagina's nodig zijn."
+  }
+}

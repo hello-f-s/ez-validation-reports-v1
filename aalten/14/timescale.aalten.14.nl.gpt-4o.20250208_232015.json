@@ -1,0 +1,98 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AALTEN",
+      "contact": {
+        "phone": "(0543) 49 33 33",
+        "email": "gemeente@aalten.nl",
+        "website": "http://www.aalten.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 16,
+    "true_sentences": 14,
+    "false_sentences": 2,
+    "accuracy_percentage": 87.5,
+    "false_statements": [
+      {
+        "sentence": "Het tarief voor 2024 is € 49,55. Bij afwijzing wordt het bedrag teruggestort.",
+        "status": "false",
+        "note": "Het exacte tarief voor 2024 voor parkeervergunningen in Aalten is niet publiekelijk vermeld op de gemeentelijke website. Het genoemde bedrag kan niet geverifieerd worden."
+      },
+      {
+        "sentence": "Het tarief voor 2024 is eveneens € 49,55 per voertuig.",
+        "status": "false",
+        "note": "Het exacte tarief voor ontheffingen in 2024 in Aalten is niet publiekelijk vermeld op de gemeentelijke website. Het genoemde bedrag kan niet geverifieerd worden."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 8,
+    "valid_urls": 6,
+    "invalid_urls": 2,
+    "accuracy_percentage": 75.0,
+    "valid_urls_list": [
+      "https://www.aalten.nl/omgevingsvergunning",
+      "https://www.aalten.nl/verkeersontheffing-aanvragen",
+      "https://www.aalten.nl/openingstijden-horeca-eenmalig-aanpassen",
+      "https://www.aalten.nl",
+      "https://www.aalten.nl/standplaats-aanvragen",
+      "https://www.aalten.nl/parkeervergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.aalten.nl\">Parkeervergunning",
+        "reason": "INVALID: Error scraping https://www.aalten.nl\">Parkeervergunning: HTTPSConnectionPool(host='www.aalten.nl%22%3eparkeervergunning', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1079287d0>: Failed to resolve 'www.aalten.nl%22%3eparkeervergunning' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.aalten.nl\">Verkeersontheffing",
+        "reason": "INVALID: Error scraping https://www.aalten.nl\">Verkeersontheffing: HTTPSConnectionPool(host='www.aalten.nl%22%3everkeersontheffing', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x107783c50>: Failed to resolve 'www.aalten.nl%22%3everkeersontheffing' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Dit geldt alleen voor de Kerkstraat in Bredevoort en het parkeerterrein bij de Prinsenstraat te Aalten (achter huisnummers 23 t/m 25)",
+          "original_reference": "No matching information",
+          "note": "De originele tekst specificeert niet de exacte locaties waar de parkeervergunning verplicht is, terwijl de bronpagina dit wel expliciet vermeldt",
+          "source_urls": [
+            "https://www.aalten.nl/parkeervergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Soms heeft u een ontheffing nodig als u iets wilt doen op of aan de openbare weg. De verkeersontheffing is voor meerdere dagen en hiervoor is een verkeersbesluit nodig.",
+          "original_reference": "Voor activiteiten op openbare wegen, zoals het plaatsen van een verhuiswagen, heeft u een ontheffing nodig.",
+          "note": "De brontekst specificeert dat een verkeersontheffing voor meerdere dagen is en een verkeersbesluit vereist, wat niet vermeld wordt in de originele tekst",
+          "source_urls": [
+            "https://www.aalten.nl/verkeersontheffing-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U vraagt minimaal 8 weken van tevoren een ontheffing aan bij de gemeente",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt geen aanvraagtermijn voor de ontheffing, terwijl de bron een minimale termijn van 8 weken voorschrijft",
+          "source_urls": [
+            "https://www.aalten.nl/openingstijden-horeca-eenmalig-aanpassen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de specificatie van exacte locaties voor parkeervergunningen, aanvullende details over de verkeersontheffing (meerdere dagen en verkeersbesluit), en een concrete aanvraagtermijn van 8 weken voor ontheffingen die in de originele tekst ontbreekt. Deze informatie is essentieel voor aanvragers en zou in de originele tekst opgenomen moeten worden."
+  }
+}

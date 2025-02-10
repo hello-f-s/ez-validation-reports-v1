@@ -1,0 +1,79 @@
+{
+  "context": {
+    "municipality": {
+      "name": "KERKRADE",
+      "contact": {
+        "phone": "14 045",
+        "email": "gemeentehuis@kerkrade.nl",
+        "website": "http://www.kerkrade.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 10,
+    "false_sentences": 1,
+    "accuracy_percentage": 90.9,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor het aanvragen van een VOG bedragen € 41,35.",
+        "status": "false",
+        "note": "De actuele kosten voor een VOG bedragen € 41,85 volgens de officiële website van de gemeente Kerkrade."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.kerkrade.nl/verklaring-omtrent-het-gedrag-vog",
+      "https://www.kerkrade.nl/nederlander-worden-door-optie",
+      "https://www.kerkrade.nl/nederlander-worden-door-naturalisatie",
+      "https://www.kerkrade.nl/milieu-vergunning-of-melding",
+      "https://www.kerkrade.nl/kinderopvang-starten"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.kerkrade.nl/verklaring-omtrent-het-gedrag-vog\">Gemeente",
+        "reason": "INVALID: Error scraping https://www.kerkrade.nl/verklaring-omtrent-het-gedrag-vog\">Gemeente: 404 Client Error: Not Found for url: https://www.kerkrade.nl/verklaring-omtrent-het-gedrag-vog%22%3EGemeente"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u geen strafbare feiten hebt gepleegd, krijgt u de VOG. Als u wel strafbare feiten hebt gepleegd, is verder onderzoek nodig. Justis bekijkt of de strafbare feiten belangrijk zijn voor de aanvraag. Als deze niet van belang zijn, krijgt u de VOG alsnog.",
+          "original_reference": "Als u geen strafbare feiten heeft gepleegd, ontvangt u de VOG snel. Bij strafbare feiten vindt er verder onderzoek plaats om te bepalen of deze relevant zijn voor de aanvraag.",
+          "note": "De brontekst is specifieker en geeft duidelijker aan dat men de VOG alsnog kan krijgen als de strafbare feiten niet relevant zijn voor de aanvraag.",
+          "source_urls": [
+            "https://www.kerkrade.nl/verklaring-omtrent-het-gedrag-vog"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "u een visumaanvraag doet, u lid wilt worden van een schietvereniging, u verhuist naar het buitenland",
+          "original_reference": "No matching information",
+          "note": "De brontekst noemt extra specifieke situaties waarin een VOG nodig kan zijn, die niet in de originele tekst staan vermeld.",
+          "source_urls": [
+            "https://www.kerkrade.nl/verklaring-omtrent-het-gedrag-vog"
+          ]
+        }
+      ]
+    },
+    "summary": "De broninhoud bevat enkele belangrijke aanvullingen op de originele tekst, met name extra situaties waarin een VOG vereist is en een meer gedetailleerde uitleg over de beoordeling van strafbare feiten. De kernprocedures en kosten zijn consistent tussen beide versies."
+  }
+}
