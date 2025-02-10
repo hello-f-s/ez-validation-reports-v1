@@ -1,0 +1,97 @@
+{
+  "context": {
+    "municipality": {
+      "name": "NIJMEGEN",
+      "contact": {
+        "phone": "14 024",
+        "email": "gemeente@nijmegen.nl",
+        "website": "http://www.nijmegen.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 13,
+    "false_sentences": 2,
+    "accuracy_percentage": 86.7,
+    "false_statements": [
+      {
+        "sentence": "Standaard vergunning: € 1.248,15",
+        "status": "false",
+        "note": "Het actuele tarief voor een standaard terrasvergunning in Nijmegen is € 1.273,10 voor 2024"
+      },
+      {
+        "sentence": "Aanpassen oppervlakte bestaand terras: € 961,00",
+        "status": "false",
+        "note": "Het actuele tarief voor het aanpassen van een bestaand terras in Nijmegen is € 980,20 voor 2024"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.nijmegen.nl/diensten/evenementen/schema-vergunningen-activiteiten/tekstversie/",
+      "https://www.nijmegen.nl/diensten/vergunningen/standplaatsvergunningen/vergunning-standplaats-priveterrein/",
+      "https://www.nijmegen.nl/diensten/vergunningen/drank-en-horeca/terrasvergunning-aanvragen-of-wijzigen/",
+      "https://www.nijmegen.nl",
+      "https://www.nijmegen.nl/diensten/vergunningen/objectvergunning/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.nijmegen.nl/diensten/vergunningen/informatiekraam-melden-of-vergunning/",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.nijmegen.nl\">Gemeente",
+        "reason": "INVALID: Error scraping https://www.nijmegen.nl\">Gemeente: HTTPSConnectionPool(host='www.nijmegen.nl%22%3egemeente', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x107f3b250>: Failed to resolve 'www.nijmegen.nl%22%3egemeente' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vraag uw vergunning minimaal 8 weken en maximaal 16 weken van te voren aan.",
+          "original_reference": "U ontvangt uw terrasvergunning binnen 8 weken na online indiening van de aanvraag.",
+          "note": "De originele tekst vermeldt alleen de verwerkingstijd van 8 weken, maar niet dat de aanvraag tussen 8 en 16 weken van tevoren moet worden ingediend.",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/vergunningen/drank-en-horeca/terrasvergunning-aanvragen-of-wijzigen/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een gevelterras moet direct tegen de gevel worden geplaatst tenzij het terras eerst gescheiden wordt door een doorgang. Het terras mag dan na die doorgang geplaatst worden. Een nieuw terras sluit aan bij naastgelegen terrassen",
+          "original_reference": "Gevelterrassen moeten tegen de gevel geplaatst worden, tenzij anders gespecificeerd.",
+          "note": "De brontext geeft specifiekere details over uitzonderingen voor gevelterrassen en vermeldt aanvullend dat nieuwe terrassen moeten aansluiten bij naastgelegen terrassen.",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/vergunningen/drank-en-horeca/terrasvergunning-aanvragen-of-wijzigen/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het gevelterras is niet breder dan de voor- en/ of zijgevel van het pand. Hierbij wordt haaks gemeten op de gevel",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist deze belangrijke specificatie over de maximale breedte van gevelterrassen.",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/vergunningen/drank-en-horeca/terrasvergunning-aanvragen-of-wijzigen/"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende details over terrasvergunningen die niet in de originele tekst staan. Met name de aanvraagtermijn (8-16 weken vooraf), specifieke uitzonderingen voor gevelterrassen en regels over de maximale breedte van terrassen zijn belangrijke toevoegingen. Deze informatie is essentieel voor een correcte vergunningsaanvraag."
+  }
+}

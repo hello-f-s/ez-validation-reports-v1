@@ -1,0 +1,108 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HEEMSKERK",
+      "contact": {
+        "phone": "14 0251",
+        "email": "post@heemskerk.nl",
+        "website": "http://www.heemskerk.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor het in behandeling nemen van de aanvraag bedragen € 25,65.",
+        "status": "false",
+        "note": "De actuele legeskosten voor een exploitatievergunning in Heemskerk bedragen € 500,45 volgens de gemeentelijke legesverordening, niet € 25,65."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 11,
+    "valid_urls": 5,
+    "invalid_urls": 6,
+    "accuracy_percentage": 45.5,
+    "valid_urls_list": [
+      "https://www.heemskerk.nl/aanvragen-en-regelen/ondernemersloket",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca/horecabedrijf",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca/exploitatievergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://example.com/commercieel-horecabedrijf\">Commercieel",
+        "reason": "INVALID: Error scraping https://example.com/commercieel-horecabedrijf\">Commercieel: 404 Client Error: Not Found for url: https://example.com/commercieel-horecabedrijf%22%3ECommercieel"
+      },
+      {
+        "url": "https://example.com/exploitatievergunning",
+        "reason": "INVALID: Error scraping https://example.com/exploitatievergunning: 404 Client Error: Not Found for url: https://example.com/exploitatievergunning"
+      },
+      {
+        "url": "https://example.com/exploitatievergunning\">Exploitatievergunning",
+        "reason": "INVALID: Error scraping https://example.com/exploitatievergunning\">Exploitatievergunning: 404 Client Error: Not Found for url: https://example.com/exploitatievergunning%22%3EExploitatievergunning"
+      },
+      {
+        "url": "https://example.com/commercieel-horecabedrijf",
+        "reason": "INVALID: Error scraping https://example.com/commercieel-horecabedrijf: 404 Client Error: Not Found for url: https://example.com/commercieel-horecabedrijf"
+      },
+      {
+        "url": "https://example.com/horeca",
+        "reason": "INVALID: Error scraping https://example.com/horeca: 404 Client Error: Not Found for url: https://example.com/horeca"
+      },
+      {
+        "url": "https://example.com/horeca\">Horeca",
+        "reason": "INVALID: Error scraping https://example.com/horeca\">Horeca: 404 Client Error: Not Found for url: https://example.com/horeca%22%3EHoreca"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor sommige horecabedrijven die alcohol schenken, is een exploitatievergunning niet nodig. Zij kunnen een vrijstelling krijgen. Horecabedrijven die geen alcohol schenken hebben altijd een exploitatievergunning nodig.",
+          "original_reference": "Voor sommige horecabedrijven die alcohol schenken, is een exploitatievergunning niet nodig; zij kunnen een vrijstelling krijgen. Horecabedrijven die geen alcohol schenken, hebben altijd een exploitatievergunning nodig.",
+          "note": "De informatie is inhoudelijk hetzelfde maar staat in de bronnen als twee aparte zinnen in plaats van één samengestelde zin met puntkomma.",
+          "source_urls": [
+            "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca/exploitatievergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De ondernemer (leidinggevende) en de overige leidinggevenden voldoen aan de volgende eisen: Zijn minimaal 21 jaar oud. Zijn niet in enig opzicht van slecht levensgedrag.",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden aanvullende specifieke leeftijds- en gedragseisen voor leidinggevenden die niet in de originele tekst staan.",
+          "source_urls": [
+            "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca/horecabedrijf"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Aanvragen of wijzigen van een vergunning doet u online met DigiD. Bij de aanvraag betaalt u direct de legeskosten via iDeal.",
+          "original_reference": "U kunt de exploitatievergunning online aanvragen via DigiD. Bij de aanvraag moet u de legeskosten direct betalen via iDeal.",
+          "note": "De bronnen vermelden expliciet dat ook wijzigingen online kunnen worden doorgevoerd, wat niet duidelijk was in de originele tekst.",
+          "source_urls": [
+            "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca/exploitatievergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten enkele belangrijke aanvullende details die niet in de originele tekst staan, met name specifieke eisen voor leidinggevenden (minimumleeftijd 21 jaar) en de mogelijkheid om ook wijzigingen online door te voeren. De kern van de informatie komt overeen, maar de bronnen zijn op sommige punten specifieker en uitgebreider."
+  }
+}

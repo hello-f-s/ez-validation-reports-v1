@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DRUTEN",
+      "contact": {
+        "phone": "(088) 432 70 00",
+        "email": "info@druten.nl",
+        "website": "http://www.druten.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 8,
+    "true_sentences": 7,
+    "false_sentences": 1,
+    "accuracy_percentage": 87.5,
+    "false_statements": [
+      {
+        "sentence": "Een VOG kost € 43,90",
+        "status": "false",
+        "note": "Het tarief voor een VOG bij de gemeente Druten is € 41,35 volgens de officiële website van de gemeente Druten."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.druten.nl/uittreksels",
+      "https://www.druten.nl/verklaring-omtrent-het-gedrag-vog",
+      "https://www.druten.nl/omgevingsvergunning",
+      "https://www.druten.nl/exploitatievergunning-horecabedrijf",
+      "https://www.druten.nl/informatie-opvragen-woo-verzoek"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een VOG kost € 41,35",
+          "original_reference": "Een VOG kost € 43,90",
+          "note": "Er is een verschil in de vermelde kosten voor een VOG. De originele tekst vermeldt €43,90, terwijl de bronpagina €41,35 aangeeft.",
+          "source_urls": [
+            "https://www.druten.nl/verklaring-omtrent-het-gedrag-vog"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "U heeft soms een Verklaring Omtrent het Gedrag (VOG) nodig voor een nieuwe baan, een visum of verhuizing naar het buitenland",
+          "original_reference": "U heeft een VOG nodig voor een nieuwe baan, een visum of verhuizing naar het buitenland",
+          "note": "De voorwaarden voor het aanvragen van een VOG komen overeen met de originele tekst",
+          "source_urls": [
+            "https://www.druten.nl/verklaring-omtrent-het-gedrag-vog"
+          ]
+        }
+      ]
+    },
+    "summary": "Bij vergelijking van de originele inhoud met de bronpagina's is één significant verschil gevonden: de kosten voor een VOG. De bronpagina vermeldt een lager bedrag (€41,35) dan de originele tekst (€43,90). De overige informatie komt grotendeels overeen of is niet te verifiëren in de beschikbare bronnen. Voor de onderdelen 'Hoe lang duurt het?' en 'Bezwaren' is inderdaad geen informatie beschikbaar op de geciteerde webpagina's."
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AALTEN",
+      "contact": {
+        "phone": "(0543) 49 33 33",
+        "email": "gemeente@aalten.nl",
+        "website": "http://www.aalten.nl"
+      }
+    },
+    "service": {
+      "id": 10,
+      "name": "Nachtregister bijhouden"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 2,
+    "true_sentences": 2,
+    "false_sentences": 0,
+    "accuracy_percentage": 100.0,
+    "false_statements": []
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 6,
+    "invalid_urls": 1,
+    "accuracy_percentage": 85.7,
+    "valid_urls_list": [
+      "https://www.aalten.nl/openingstijden-horeca-eenmalig-aanpassen",
+      "https://www.aalten.nl/exploitatievergunning-horecabedrijf",
+      "https://www.aalten.nl/hotel-bed-and-breakfast-of-camping-starten",
+      "https://www.aalten.nl",
+      "https://www.aalten.nl/verzoek-om-handhaving",
+      "https://www.aalten.nl/overzicht-geleverde-persoonsgegevens-opvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.aalten.nl\">aalten.nl</a></p>",
+        "reason": "INVALID: Error scraping https://www.aalten.nl\">aalten.nl</a></p>: HTTPSConnectionPool(host='www.aalten.nl%22%3eaalten.nl%3c', port=443): Max retries exceeded with url: /a%3E%3C/p%3E (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x104353e00>: Failed to resolve 'www.aalten.nl%22%3eaalten.nl%3c' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "In het nachtregister houdt u gegevens bij van alle gasten. Zet in het nachtregister: naam en adres van de gast, dag van aankomst, dag van vertrek, welk identiteitsbewijs de gast heeft getoond",
+          "original_reference": "Elk bedrijf dat slaapgelegenheid aanbiedt, moet een nachtregister bijhouden.",
+          "note": "De originele tekst vermeldt alleen de verplichting van een nachtregister, terwijl de bron specifiek beschrijft welke gegevens erin moeten worden opgenomen.",
+          "source_urls": [
+            "https://www.aalten.nl/hotel-bed-and-breakfast-of-camping-starten"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Kunnen er in uw bedrijf meer dan 10 personen tegelijk overnachten? Vraag dan een omgevingsvergunning voor brandveilig gebruik aan via Omgevingsloket.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de verplichting van een omgevingsvergunning voor brandveilig gebruik bij meer dan 10 personen.",
+          "source_urls": [
+            "https://www.aalten.nl/hotel-bed-and-breakfast-of-camping-starten"
+          ]
+        }
+      ]
+    },
+    "summary": "De originele inhoud is onvolledig vergeleken met de bronnen. Belangrijke aanvullende informatie ontbreekt over de specifieke gegevens die in het nachtregister moeten worden opgenomen en de verplichting van een omgevingsvergunning voor brandveilig gebruik bij accommodaties voor meer dan 10 personen. Deze informatie is essentieel voor het correct exploiteren van een overnachtingsaccommodatie."
+  }
+}

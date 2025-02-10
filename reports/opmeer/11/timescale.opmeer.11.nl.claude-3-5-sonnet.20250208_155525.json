@@ -1,0 +1,97 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OPMEER",
+      "contact": {
+        "phone": "(0226) 36 33 33",
+        "email": "gemeente@opmeer.nl",
+        "website": "http://www.opmeer.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 10,
+    "true_sentences": 9,
+    "false_sentences": 1,
+    "accuracy_percentage": 90.0,
+    "false_statements": [
+      {
+        "sentence": "Aanvragen: Vraag een vergunning aan via https://omgevingswet.overheid.nl/home minimaal 8 weken voordat u wilt starten met de werkzaamheden.",
+        "status": "false",
+        "note": "De aanvraag moet worden ingediend via het Omgevingsloket Online (www.omgevingsloket.nl) en niet via de genoemde URL. Dit is de officiële aanvraagportal die door gemeente Opmeer wordt gebruikt voor omgevingsvergunningen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 4,
+    "invalid_urls": 3,
+    "accuracy_percentage": 57.1,
+    "valid_urls_list": [
+      "https://www.opmeer.nl/omgevingsvergunning",
+      "https://www.opmeer.nl/privacy-omgevingswet",
+      "https://www.opmeer.nl/omgevingsvergunning-en-omgevingsloket",
+      "https://www.opmeer.nl/milieu-vergunning-of-melding"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://omgevingswet.overheid.nl/home",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.opmeer.nl/voorwerp-plaatsen-op-of-aan-de-weg",
+        "reason": "INVALID: Error scraping https://www.opmeer.nl/voorwerp-plaatsen-op-of-aan-de-weg: 404 Client Error: Not Found for url: https://www.opmeer.nl/voorwerp-plaatsen-op-of-aan-de-weg"
+      },
+      {
+        "url": "https://www.opmeer.nl/omgevingsvergunning,",
+        "reason": "INVALID: Error scraping https://www.opmeer.nl/omgevingsvergunning,: 404 Client Error: Not Found for url: https://www.opmeer.nl/omgevingsvergunning,"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Overleg vooraf met de gemeente over uw plannen. Dan komt u niet voor verrassingen te staan. Dit heet een vooroverleg. Neem bij het maken van uw plannen zo vroeg mogelijk contact op met de gemeente.",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden expliciet dat vooroverleg met de gemeente wordt aangeraden, terwijl dit niet genoemd wordt in de originele tekst. Dit is een belangrijke aanvullende procedurestap.",
+          "source_urls": [
+            "https://www.opmeer.nl/omgevingsvergunning",
+            "https://www.opmeer.nl/milieu-vergunning-of-melding"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Heeft u een idee, plan of initiatief dat zorgt voor een verandering in de leefomgeving? Dan is het handig om vooraf met uw buren (en andere belanghebbenden) in gesprek te gaan over uw plannen. Neem de reacties vanuit uw gesprek(ken) op in uw vergunningsaanvraag.",
+          "original_reference": "No matching information",
+          "note": "De bronnen adviseren expliciet om vooraf met buren en belanghebbenden te overleggen en hun reacties op te nemen in de aanvraag. Deze belangrijke stap ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.opmeer.nl/omgevingsvergunning-en-omgevingsloket"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bij een uitgebreide aanvraag maakt de gemeente eerst een ontwerpbesluit over uw aanvraag. Dit ontwerpbesluit is nog geen definitief besluit. Iedereen kan binnen 6 weken zijn of haar mening over dit ontwerpbesluit geven. Dit heet een zienswijze.",
+          "original_reference": "No matching information",
+          "note": "De bronnen beschrijven een specifieke procedure voor uitgebreide aanvragen met een ontwerpbesluit en zienswijze-mogelijkheid, wat niet vermeld wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.opmeer.nl/omgevingsvergunning",
+            "https://www.opmeer.nl/milieu-vergunning-of-melding"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie over drie cruciale procedurestappen die niet in de originele tekst staan: 1) het advies voor vooroverleg met de gemeente, 2) het belang van overleg met buren en belanghebbenden, en 3) de specifieke procedure rond ontwerpbesluiten en zienswijzen bij uitgebreide aanvragen. Deze informatie is essentieel voor een complete en succesvolle vergunningsaanvraag."
+  }
+}

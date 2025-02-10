@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "KERKRADE",
+      "contact": {
+        "phone": "14 045",
+        "email": "gemeentehuis@kerkrade.nl",
+        "website": "http://www.kerkrade.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 10,
+    "false_sentences": 1,
+    "accuracy_percentage": 90.9,
+    "false_statements": [
+      {
+        "sentence": "De aanvraag kan alleen online ingediend worden.",
+        "status": "false",
+        "note": "Volgens de website van gemeente Kerkrade kan een aanvraag zowel digitaal als schriftelijk worden ingediend. Het is dus niet uitsluitend online mogelijk."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.kerkrade.nl/milieu-vergunning-of-melding",
+      "https://www.kerkrade.nl/omgevingsvergunning-strijdig-gebruik",
+      "https://www.kerkrade.nl/vergunning-checken-en-vooroverleg",
+      "https://www.kerkrade.nl/gemeente-kerkrade-helpt-u-bij-de-omgevingswet",
+      "https://www.kerkrade.nl/omgevingsvergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De omgevingsbalie is vanaf januari elke donderdag van 09:00-12:00 en 16:00-18:00 geopend. U kunt hier terecht met al uw vragen over de Omgevingswet.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over een fysieke omgevingsbalie en openingstijden, wat een belangrijke aanvulling is voor het aanvraagproces.",
+          "source_urls": [
+            "https://www.kerkrade.nl/gemeente-kerkrade-helpt-u-bij-de-omgevingswet"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Ook via Activiteitenbesluit Internetmodule (AIM) kunt u zien of u een vergunning moet aanvragen of een melding moet doen.",
+          "original_reference": "Doe eerst een vergunningcheck via Omgevingsloket online",
+          "note": "De bronnen vermelden een extra mogelijkheid (AIM) om te controleren of een vergunning nodig is, wat niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.kerkrade.nl/milieu-vergunning-of-melding"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Door gebruik te maken van een vooroverleg voorkomt u dat u tijdens de vergunningsaanvraag voor verrassingen komt te staan. Ook krijgt u tips mee voor het aanvragen van de omgevingsvergunning.",
+          "original_reference": "No matching information",
+          "note": "De mogelijkheid tot vooroverleg en de voordelen daarvan worden niet genoemd in de originele tekst, terwijl dit een belangrijk onderdeel van het proces kan zijn.",
+          "source_urls": [
+            "https://www.kerkrade.nl/vergunning-checken-en-vooroverleg"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie die niet in de originele tekst staat, waaronder de beschikbaarheid van een fysieke omgevingsbalie met specifieke openingstijden, een extra controlemogelijkheid via de AIM-module, en de optie tot vooroverleg. Deze informatie kan het aanvraagproces voor gebruikers toegankelijker en duidelijker maken."
+  }
+}

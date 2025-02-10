@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LOPIK",
+      "contact": {
+        "phone": "(0348) 55 99 55",
+        "email": "gemeente@lopik.nl",
+        "website": "http://www.lopik.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "Voor een meldingsplichtig evenement: mail het ingevulde aanvraagformulier uiterlijk 3 weken van tevoren naar gemeente@lopik.nl of stuur het per post.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Lopik moet een melding voor een meldingsplichtig evenement minimaal 4 weken (niet 3 weken) van tevoren worden ingediend."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.lopik.nl/milieu-vergunning-of-melding",
+      "https://www.lopik.nl/kermis-organiseren",
+      "https://www.lopik.nl/exploitatievergunning-horecabedrijf",
+      "https://www.lopik.nl/evenement-organiseren",
+      "https://www.lopik.nl/festiviteit-bedrijf-vereniging-of-school"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Weet u niet zeker of u wel of niet aan alle voorwaarden voldoet? Stuur dan voor de zekerheid uiterlijk twaalf weken van tevoren uw aanvraagf...",
+          "original_reference": "Voor een meldingsplichtig evenement: mail het ingevulde aanvraagformulier uiterlijk 3 weken van tevoren",
+          "note": "Er is een tegenstrijdigheid in de aanvraagtermijn voor meldingsplichtige evenementen. De bron adviseert 12 weken bij twijfel, terwijl de originele tekst 3 weken aangeeft.",
+          "source_urls": [
+            "https://www.lopik.nl/evenement-organiseren"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Doe uw melding uiterlijk 2 weken van tevoren.",
+          "original_reference": "Voor een meldingsplichtig evenement: mail het ingevulde aanvraagformulier uiterlijk 3 weken van tevoren",
+          "note": "Voor festiviteiten geldt een andere meldingstermijn (2 weken) dan voor meldingsplichtige evenementen (3 weken).",
+          "source_urls": [
+            "https://www.lopik.nl/festiviteit-bedrijf-vereniging-of-school"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Indien uw evenement aan alle voorwaarden voldoet, is er sprake van een vergunningsvrij evenement. Dan hoeft u geen melding te doen en geen vergunning aan te vragen.",
+          "original_reference": "Voor een vergunningsvrij evenement hoeft u niets te doen.",
+          "note": "De informatie over vergunningsvrije evenementen komt overeen met de originele tekst.",
+          "source_urls": [
+            "https://www.lopik.nl/evenement-organiseren"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de aanvraagtermijnen. Er zijn tegenstrijdigheden tussen de verschillende termijnen voor meldingsplichtige evenementen (3 vs 12 weken) en festiviteiten (2 weken). De overige informatie, vooral met betrekking tot vergunningsvrije evenementen, is consistent tussen de bronnen en de originele tekst."
+  }
+}

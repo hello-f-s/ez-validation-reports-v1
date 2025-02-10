@@ -1,0 +1,81 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HAARLEMMERMEER",
+      "contact": {
+        "phone": "(0900) 18 52",
+        "email": "info@haarlemmermeer.nl",
+        "website": "http://www.haarlemmermeer.nl"
+      }
+    },
+    "service": {
+      "id": 8,
+      "name": "Marktvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 1,
+    "true_sentences": 1,
+    "false_sentences": 0,
+    "accuracy_percentage": 100.0,
+    "false_statements": []
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://haarlemmermeergemeente.nl/evenementenvergunning",
+      "https://haarlemmermeergemeente.nl/standplaatsvergunning",
+      "https://haarlemmermeergemeente.nl/exploitatievergunning",
+      "https://haarlemmermeergemeente.nl/omgevingsvergunning-milieu"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://haarlemmermeergemeente.nl/toelichting-aanvraagformulier-exploitatievergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wilt u een evenement organiseren? Dan heeft u misschien een vergunning nodig. Bijvoorbeeld voor een kermis, braderie, snuffelmarkt of een festival. De vergunning vraagt u minimaal 12 weken van tevoren aan.",
+          "original_reference": "No matching information",
+          "note": "De bron bevat specifieke informatie over evenementenvergunningen die niet in de originele tekst staat, waaronder de aanvraagtermijn van 12 weken.",
+          "source_urls": [
+            "https://haarlemmermeergemeente.nl/evenementenvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Binnen Haarlemmermeer is plaats voor maximaal 2 coffeeshops. Op dit moment zijn er al 2 vergunningen voor een coffeeshop verleend. Er is dus geen ruimte voor een nieuwe aanvraag.",
+          "original_reference": "No matching information",
+          "note": "De bron bevat specifieke informatie over het maximaal toegestane aantal coffeeshops in Haarlemmermeer die niet in de originele tekst staat.",
+          "source_urls": [
+            "https://haarlemmermeergemeente.nl/exploitatievergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor de verkoop van oliebollen geldt de vergunning maximaal 3 maanden.",
+          "original_reference": "No matching information",
+          "note": "De bron bevat specifieke informatie over de maximale duur van standplaatsvergunningen voor oliebollenverkoop die niet in de originele tekst staat.",
+          "source_urls": [
+            "https://haarlemmermeergemeente.nl/standplaatsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten veel specifieke informatie over verschillende vergunningen in de gemeente Haarlemmermeer die niet in de originele tekst staat. Dit betreft onder andere concrete aanvraagtermijnen voor evenementen, beperkingen voor coffeeshops en specifieke regels voor standplaatsvergunningen. De originele tekst bevatte geen van deze details, waardoor er significante informatieverschillen zijn geconstateerd."
+  }
+}

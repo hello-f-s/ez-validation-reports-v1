@@ -1,0 +1,92 @@
+{
+  "context": {
+    "municipality": {
+      "name": "KERKRADE",
+      "contact": {
+        "phone": "14 045",
+        "email": "gemeentehuis@kerkrade.nl",
+        "website": "http://www.kerkrade.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 8,
+    "true_sentences": 7,
+    "false_sentences": 1,
+    "accuracy_percentage": 87.5,
+    "false_statements": [
+      {
+        "sentence": "U kunt de parkeervergunning online aanvragen via: https://www.kerkrade.nl/aanvragen-parkeervergunning",
+        "status": "false",
+        "note": "De genoemde directe URL voor het online aanvragen van een parkeervergunning is niet correct. De juiste aanvraagprocedure verloopt via het algemene digitale loket van de gemeente Kerkrade."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.kerkrade.nl/form/parkeervergunning/aanvraag-0",
+      "https://www.kerkrade.nl/verkeersontheffing-aanvragen",
+      "https://www.kerkrade.nl/vergunningen-abonnementen-en-ontheffingen",
+      "https://www.kerkrade.nl/voertuig-te-koop-aanbieden-op-de-openbare-weg",
+      "https://www.kerkrade.nl/caravan-parkeren-op-de-openbare-weg"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.kerkrade.nl/aanvragen-parkeervergunning",
+        "reason": "INVALID: Error scraping https://www.kerkrade.nl/aanvragen-parkeervergunning: 404 Client Error: Not Found for url: https://www.kerkrade.nl/aanvragen-parkeervergunning"
+      },
+      {
+        "url": "https://www.kerkrade.nl/aanvragen-parkeervergunning\">https://www.kerkrade.nl/aanvragen-parkeervergunning</a></p>",
+        "reason": "INVALID: Error scraping https://www.kerkrade.nl/aanvragen-parkeervergunning\">https://www.kerkrade.nl/aanvragen-parkeervergunning</a></p>: 404 Client Error: Not Found for url: https://www.kerkrade.nl/aanvragen-parkeervergunning%22%3Ehttps:/www.kerkrade.nl/aanvragen-parkeervergunning%3C/a%3E%3C/p%3E"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Met ingang van 1 januari 2021 moeten alle inwoners en ondernemers hun parkeervergunning of ontheffing elk jaar opnieuw aanvragen. Als u geen nieuwe aanvraag doet, sturen wij u geen nieuwe vergunning.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat de vergunning jaarlijks opnieuw moet worden aangevraagd, wat een belangrijke voorwaarde is.",
+          "source_urls": [
+            "https://www.kerkrade.nl/vergunningen-abonnementen-en-ontheffingen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Per adres of bedrijf / ondernemer worden maximaal twee vergunningen / ontheffingen verleend. Werknemers kunnen géén aanvraag doen voor het verkrijgen van een parkeervergunning",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de limiet van twee vergunningen per bedrijf en de uitsluiting van werknemers voor parkeervergunningen.",
+          "source_urls": [
+            "https://www.kerkrade.nl/form/parkeervergunning/aanvraag-0"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De parkeervergunning of ontheffing heeft een geldigheidsduur tot het einde van het jaar, de kosten worden per maand bijgesteld afhankelijk van de geldigheidsduur.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de geldigheidsduur van de vergunning en de maandelijkse kostenbijstelling.",
+          "source_urls": [
+            "https://www.kerkrade.nl/form/parkeervergunning/aanvraag-0"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn belangrijke verschillen gevonden tussen de originele tekst en de bronnen. De bronnen bevatten aanvullende essentiële informatie over de jaarlijkse vernieuwingsplicht, het maximum aantal vergunningen per bedrijf, de uitsluiting van werknemers en details over de geldigheidsduur en kostenbijstelling. Deze informatie ontbreekt in de originele tekst maar is wel belangrijk voor ondernemers die een parkeervergunning willen aanvragen."
+  }
+}

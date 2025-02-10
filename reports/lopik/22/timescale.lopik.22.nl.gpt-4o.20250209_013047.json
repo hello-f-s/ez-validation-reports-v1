@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LOPIK",
+      "contact": {
+        "phone": "(0348) 55 99 55",
+        "email": "gemeente@lopik.nl",
+        "website": "http://www.lopik.nl"
+      }
+    },
+    "service": {
+      "id": 22,
+      "name": "Woonruimte splitsen of samenvoegen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "Deze aanvraag kan online gedaan worden via www.omgevingswet.overheid.nl met DigiD voor individuen of eHerkenning voor bedrijven.",
+        "status": "false",
+        "note": "De aanvraag moet worden gedaan via www.omgevingsloket.nl, niet via www.omgevingswet.overheid.nl. Dit is de officiële website voor het indienen van omgevingsvergunningen in Nederland."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.lopik.nl/woning-splitsen",
+      "https://www.lopik.nl/tijdelijke-verhuur-leegstaand-pand",
+      "https://www.lopik.nl/omgevingsvergunning",
+      "https://www.lopik.nl/milieu-vergunning-of-melding",
+      "https://www.lopik.nl/huisvestingsvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.omgevingswet.overheid.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.omgevingswet.overheid.nl\">www.omgevingswet.overheid.nl</a>",
+        "reason": "INVALID: Error scraping https://www.omgevingswet.overheid.nl\">www.omgevingswet.overheid.nl</a>: HTTPSConnectionPool(host='www.omgevingswet.overheid.nl%22%3ewww.omgevingswet.overheid.nl%3c', port=443): Max retries exceeded with url: /a%3E (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x105eff110>: Failed to resolve 'www.omgevingswet.overheid.nl%22%3ewww.omgevingswet.overheid.nl%3c' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "In enkele gevallen (karakteristieke en monumentale panden) is het in het Landelijk Gebied mogelijk om uw woning te splitsen in twee zelfstandige wooneenheden. Binnen de kernen kunnen bepaalde panden soms in meerdere wooneenheden gesplitst worden.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst specificeert niet dat splitsing specifiek mogelijk is voor karakteristieke en monumentale panden in het Landelijk Gebied, en dat binnen de kernen meerdere wooneenheden mogelijk zijn. Dit is belangrijke aanvullende informatie over waar en wanneer splitsing mogelijk is.",
+          "source_urls": [
+            "https://www.lopik.nl/woning-splitsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U dient bij de gemeente een omgevingsvergunning aan te vragen via www.omgevingswet.overheid.nl",
+          "original_reference": "U dient een omgevingsvergunning aan te vragen via het Omgevingsloket. Deze aanvraag kan online gedaan worden via www.omgevingswet.overheid.nl met DigiD voor individuen of eHerkenning voor bedrijven.",
+          "note": "De bronpagina vermeldt niet de specifieke authenticatiemethoden (DigiD of eHerkenning) die in de originele tekst worden genoemd.",
+          "source_urls": [
+            "https://www.lopik.nl/woning-splitsen"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele tekst en de bronnen. Ten eerste geeft de bron meer specifieke informatie over waar woningsplitsing mogelijk is (karakteristieke/monumentale panden in Landelijk Gebied en binnen de kernen). Ten tweede is de informatie over authenticatiemethoden (DigiD/eHerkenning) wel aanwezig in de originele tekst maar niet in de bronpagina's. De overige informatie komt overeen met de bronnen."
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HOOGEVEEN",
+      "contact": {
+        "phone": "14 0528",
+        "email": "info@hoogeveen.nl",
+        "website": "http://www.hoogeveen.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "- De eigenaar en leidinggevenden moeten 21 jaar of ouder zijn en van onbesproken gedrag zijn",
+        "status": "false",
+        "note": "Volgens de Alcoholwet moet de eigenaar/leidinggevende minimaal 18 jaar (niet 21 jaar) of ouder zijn en van goed levensgedrag zijn"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.hoogeveen.nl/veelgestelde-vragen-coffeeshop",
+      "https://www.hoogeveen.nl/vergunningen/alcoholvergunning",
+      "https://www.hoogeveen.nl/vergunningen/omgevingsvergunningen",
+      "https://www.hoogeveen.nl/vergunningen/drank-schenken-bij-een-evenement",
+      "https://www.hoogeveen.nl/raad-en-college/woo-verzoek"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De kosten voor een tijdelijke ontheffing voor het schenken of verkopen van zwak-alcoholische dranken zijn € 90,95",
+          "original_reference": "Alcoholvergunning: € 378,75, Vergunning wijzigen bij nieuwe leidinggevende of verbouwing: € 151,40",
+          "note": "Er wordt een ander bedrag genoemd voor alcoholontheffing bij evenementen (€90,95) dan voor reguliere alcoholvergunningen (€378,75). Dit zijn echter verschillende type vergunningen, dus beide bedragen zijn correct voor hun specifieke toepassing.",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/drank-schenken-bij-een-evenement"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als uw zaak verhuist, moet u een nieuwe vergunning aanvragen, omdat een alcoholvergunning altijd bij een bepaald pand hoort",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat aanvullende belangrijke informatie over verhuizing die niet in de originele tekst staat vermeld.",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/alcoholvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U moet ook een nieuwe vergunning aanvragen als de ondernemersvorm van uw zaak verandert, bijvoorbeeld van een eenmanszaak in een vof of BV",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt een aanvullende voorwaarde over wijziging van ondernemersvorm die niet in de originele tekst staat.",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/alcoholvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten enkele belangrijke aanvullende voorwaarden die niet in de originele tekst staan, met name over verhuizing en wijziging van ondernemersvorm. Ook is er een verschillend tarief voor tijdelijke alcoholontheffingen bij evenementen versus reguliere alcoholvergunningen. De kernvoorwaarden en procedures komen verder overeen met de originele tekst."
+  }
+}

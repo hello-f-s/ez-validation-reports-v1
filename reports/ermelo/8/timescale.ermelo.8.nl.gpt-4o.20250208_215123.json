@@ -1,0 +1,94 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ERMELO",
+      "contact": {
+        "phone": "(0341) 56 73 21",
+        "email": "gemeente@ermelo.nl",
+        "website": "http://www.ermelo.nl"
+      }
+    },
+    "service": {
+      "id": 8,
+      "name": "Marktvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 9,
+    "false_sentences": 2,
+    "accuracy_percentage": 81.8,
+    "false_statements": [
+      {
+        "sentence": "U kunt de marktplaatsvergunning online aanvragen via de website van de gemeente Ermelo.",
+        "status": "false",
+        "note": "De marktplaatsvergunning kan niet online worden aangevraagd. Deze moet persoonlijk worden aangevraagd bij de marktmeester of via het gemeentehuis."
+      },
+      {
+        "sentence": "De kosten voor de marktplaatsvergunning bedragen € 62,30.",
+        "status": "false",
+        "note": "Dit bedrag is niet correct volgens de actuele tarieven van de gemeente Ermelo. De exacte kosten zijn afhankelijk van het type standplaats en de duur van de vergunning."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 6,
+    "invalid_urls": 1,
+    "accuracy_percentage": 85.7,
+    "valid_urls_list": [
+      "https://www.ermelo.nl/evenementen-en-horeca/evenement-of-activiteit-organiseren",
+      "https://www.ermelo.nl/evenementen-en-horeca/standplaats-aanvragen",
+      "https://www.ermelo.nl/evenementen-en-horeca",
+      "https://www.ermelo.nl/omgevingsplein/omgevingsloket/conceptverzoek-aanvragen",
+      "https://www.ermelo.nl",
+      "https://www.ermelo.nl/evenementen-en-horeca/marktplaatsvergunning-weekmarkt"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.ermelo.nl\">Gemeente",
+        "reason": "INVALID: Error scraping https://www.ermelo.nl\">Gemeente: HTTPSConnectionPool(host='www.ermelo.nl%22%3egemeente', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10814b890>: Failed to resolve 'www.ermelo.nl%22%3egemeente' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De weekmarkt is elke dinsdagochtend van 08.00 tot 12.30 uur op het Raadhuisplein.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de dag en tijden van de weekmarkt, wat essentiële informatie is voor markthandelaren.",
+          "source_urls": [
+            "https://www.ermelo.nl/evenementen-en-horeca/marktplaatsvergunning-weekmarkt"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Aanvragen van een marktplaatsvergunning kost € 63,70.",
+          "original_reference": "De kosten voor de marktplaatsvergunning bedragen € 62,30.",
+          "note": "Er is een verschil in de kosten: €63,70 volgens de bron versus €62,30 in de originele tekst.",
+          "source_urls": [
+            "https://www.ermelo.nl/evenementen-en-horeca/marktplaatsvergunning-weekmarkt"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u op een wachtlijst staat, dan moet u dit elk jaar laten verlengen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de jaarlijkse verlengingsplicht voor de wachtlijst.",
+          "source_urls": [
+            "https://www.ermelo.nl/evenementen-en-horeca/marktplaatsvergunning-weekmarkt"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de kosten van de vergunning (€1,40 verschil), het ontbreken van essentiële informatie over marktdagen en -tijden in de originele tekst, en aanvullende informatie over de jaarlijkse verlengingsplicht voor de wachtlijst. De overige voorwaarden en vereisten komen overeen met de originele tekst."
+  }
+}

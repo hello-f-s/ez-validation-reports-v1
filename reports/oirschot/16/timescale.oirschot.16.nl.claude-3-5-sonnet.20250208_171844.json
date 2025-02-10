@@ -1,0 +1,87 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OIRSCHOT",
+      "contact": {
+        "phone": "(0499) 58 33 33",
+        "email": "info@oirschot.nl",
+        "website": "http://www.oirschot.nl"
+      }
+    },
+    "service": {
+      "id": 16,
+      "name": "Registreren in het Landelijk Register Kinderopvang (LRK)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "U heeft een vergunning voor brandveiligheid nodig als u opvang biedt aan meer dan 10 kinderen jonger dan 12 jaar",
+        "status": "false",
+        "note": "Volgens de huidige regelgeving is een omgevingsvergunning brandveilig gebruik vereist bij opvang van meer dan 6 kinderen jonger dan 12 jaar, niet 10 kinderen zoals vermeld."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 1,
+    "invalid_urls": 4,
+    "accuracy_percentage": 20.0,
+    "valid_urls_list": [
+      "https://www.oirschot.nl/kinderopvang-starten"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.oirschot.nl/levenloos-geboren-kind-registreren",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.oirschot.nl/kinderopvang-controle",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.oirschot.nl/kinderopvangtoeslag",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.oirschot.nl/wet-kinderopvang-en-kwaliteitseisen-peuterspeelzalen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Neem voordat u gaat starten het stappenplan kindercentrum starten of het stappenplan gastouderbureau starten goed door op de website van het Ondernemersplein.",
+          "original_reference": "U moet de stappen in het stappenplan kindercentrum starten of gastouderbureau starten van Ondernemersplein doorlopen",
+          "note": "De informatie over het volgen van het stappenplan komt overeen met de originele inhoud",
+          "source_urls": [
+            "https://www.oirschot.nl/kinderopvang-starten"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Als u een locatie hebt gevonden, bekijkt u het bestemmingsplan van de gemeente.",
+          "original_reference": "Uw locatie moet volgens het bestemmingsplan geschikt zijn voor kinderopvang",
+          "note": "De vereiste om het bestemmingsplan te controleren komt overeen met de originele inhoud",
+          "source_urls": [
+            "https://www.oirschot.nl/kinderopvang-starten"
+          ]
+        }
+      ]
+    },
+    "summary": "De beschikbare broninhoud is beperkt en bevat slechts een deel van de informatie uit de originele tekst. De gevonden informatie is consistent met de originele inhoud, maar veel details zoals VOG-vereisten, brandveiligheid, aanmeldingstermijnen en procedures zijn niet terug te vinden in de geciteerde bronnen. Dit kan komen doordat de bronpagina's niet volledig zijn weergegeven in de content."
+  }
+}

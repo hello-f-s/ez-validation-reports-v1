@@ -1,0 +1,95 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DRUTEN",
+      "contact": {
+        "phone": "(088) 432 70 00",
+        "email": "info@druten.nl",
+        "website": "http://www.druten.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "Voor een uitgebreide aanvraag dient u dit minimaal 6 maanden van tevoren te doen.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Druten is er geen vereiste om een uitgebreide aanvraag minimaal 6 maanden van tevoren in te dienen. De behandeltermijn is wel 26 weken (6 maanden), maar dit betreft de verwerkingstijd na indiening, niet de vereiste aanvraagtermijn vooraf."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 9,
+    "valid_urls": 4,
+    "invalid_urls": 5,
+    "accuracy_percentage": 44.4,
+    "valid_urls_list": [
+      "https://www.druten.nl/omgevingsplan-en-omgevingsvergunning",
+      "https://www.druten.nl/vergunning-of-melding-milieu",
+      "https://www.druten.nl/exploitatievergunning-horecabedrijf",
+      "https://www.druten.nl/omgevingsvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.druten.nl/omgevingsvergunning-strijdig-gebruik",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://decentrale.regelgeving.overheid.nl/cvdr/xhtmloutput/Historie/Druten/CVDR620170/CVDR620170_2.html",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.omgevingsloket.nl/\">https://www.omgevingsloket.nl/</a>",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://decentrale.regelgeving.overheid.nl/cvdr/xhtmloutput/Historie/Druten/CVDR620170/CVDR620170_2.html\">https://decentrale.regelgeving.overheid.nl/cvdr/xhtmloutput/Historie/Druten/CVDR620170/CVDR620170_2.html</a>",
+        "reason": "INVALID: Error scraping https://decentrale.regelgeving.overheid.nl/cvdr/xhtmloutput/Historie/Druten/CVDR620170/CVDR620170_2.html\">https://decentrale.regelgeving.overheid.nl/cvdr/xhtmloutput/Historie/Druten/CVDR620170/CVDR620170_2.html</a>: 404 Client Error:  for url: https://lokaleregelgeving.overheid.nl/cvdr/xhtmloutput/Historie/Druten/CVDR620170/CVDR620170_2.html%22%3Ehttps://decentrale.regelgeving.overheid.nl/cvdr/xhtmloutput/Historie/Druten/CVDR620170/CVDR620170_2.html%3C/a%3E"
+      },
+      {
+        "url": "https://www.omgevingsloket.nl/",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Op 1 januari 2024 gaat de Omgevingswet in werking. Wetten, regels en afspraken die in het verleden zijn gemaakt voor bijvoorbeeld bouwen en gebruik van grond worden dan samengevoegd in één nieuwe wet.",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden een belangrijke wijziging per 1 januari 2024 (invoering Omgevingswet) die niet genoemd wordt in de originele tekst. Dit is essentiële informatie voor aanvragers.",
+          "source_urls": [
+            "https://www.druten.nl/omgevingsplan-en-omgevingsvergunning",
+            "https://www.druten.nl/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bedrijven die schade aan het milieu veroorzaken, hebben een omgevingsvergunning voor het milieu nodig. Vroeger heette dit de milieuvergunning.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet specifiek de milieuaspecten van de omgevingsvergunning, terwijl dit een belangrijke categorie is voor ondernemers.",
+          "source_urls": [
+            "https://www.druten.nl/vergunning-of-melding-milieu"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten twee belangrijke aanvullingen die niet in de originele tekst staan: de aanstaande invoering van de Omgevingswet per 1 januari 2024 en specifieke informatie over milieuvergunningen. Deze informatie is essentieel voor ondernemers die een vergunning willen aanvragen. Verder zijn er geen directe tegenstrijdigheden gevonden tussen de originele tekst en de bronnen."
+  }
+}

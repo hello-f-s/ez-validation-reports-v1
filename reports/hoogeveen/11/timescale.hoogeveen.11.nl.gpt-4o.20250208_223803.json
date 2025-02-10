@@ -1,0 +1,119 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HOOGEVEEN",
+      "contact": {
+        "phone": "14 0528",
+        "email": "info@hoogeveen.nl",
+        "website": "http://www.hoogeveen.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 10,
+    "false_sentences": 3,
+    "accuracy_percentage": 76.9,
+    "false_statements": [
+      {
+        "sentence": "U kunt een (concept)aanvraag doen via de landelijke website omgevingswet.overheid.nl.",
+        "status": "false",
+        "note": "De juiste website voor het aanvragen van een omgevingsvergunning is omgevingsloket.nl, niet omgevingswet.overheid.nl"
+      },
+      {
+        "sentence": "Wanneer u niet zeker bent van de vereisten, kunt u uw plan eerst voorleggen via 'Verken uw idee' van de Gemeente Hoogeveen, wat kost € 175,50.",
+        "status": "false",
+        "note": "Het exacte bedrag voor 'Verken uw idee' wordt niet vermeld op de officiële website van de gemeente Hoogeveen"
+      },
+      {
+        "sentence": "Verdere communicatie verloopt via jeleefomgeving.nl, waar u op de hoogte blijft van de voortgang.",
+        "status": "false",
+        "note": "De website jeleefomgeving.nl is onjuist; communicatie verloopt via het Omgevingsloket"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 9,
+    "valid_urls": 5,
+    "invalid_urls": 4,
+    "accuracy_percentage": 55.6,
+    "valid_urls_list": [
+      "https://www.hoogeveen.nl/vergunningen/omgevingsvergunningen",
+      "https://www.hoogeveen.nl/vergunningen/vergunning-gebruik-gemeentegrond",
+      "https://www.hoogeveen.nl/dossiers/omgevingswet",
+      "https://www.hoogeveen.nl/raad-en-college/woo-verzoek",
+      "https://www.hoogeveen.nl/vergunningen/evenementenvergunning-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.overheid.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.omgevingswet.overheid.nl\">omgevingswet.overheid.nl</a>.",
+        "reason": "INVALID: Error scraping https://www.omgevingswet.overheid.nl\">omgevingswet.overheid.nl</a>.: HTTPSConnectionPool(host='www.omgevingswet.overheid.nl%22%3eomgevingswet.overheid.nl%3c', port=443): Max retries exceeded with url: /a%3E. (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1061679d0>: Failed to resolve 'www.omgevingswet.overheid.nl%22%3eomgevingswet.overheid.nl%3c' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.overheid.nl\">overheid.nl</a>",
+        "reason": "INVALID: Error scraping https://www.overheid.nl\">overheid.nl</a>: HTTPSConnectionPool(host='www.overheid.nl%22%3eoverheid.nl%3c', port=443): Max retries exceeded with url: /a%3E (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106167610>: Failed to resolve 'www.overheid.nl%22%3eoverheid.nl%3c' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.omgevingswet.overheid.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 4,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Mail omgevingsvergunningen@dewoldenhoogeveen.nl of bel 14 0528",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen specifieke contactgegevens voor vragen over omgevingsvergunningen, terwijl de bron deze wel vermeldt",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/omgevingsvergunningen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Verken uw idee. Wij controleren dan of het haalbaar is en laten u weten wat er nodig is om het plan mogelijk te maken. Dit kost € 175",
+          "original_reference": "€ 175,50",
+          "note": "Er is een klein verschil in het vermelde bedrag voor 'Verken uw idee': €175 vs €175,50",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/omgevingsvergunningen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het is belangrijk om buren en bedrijven in uw buurt te betrekken als u iets in uw omgeving gaat veranderen (participatie)",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de belangrijke vereiste van participatie met buren en bedrijven in de buurt",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/omgevingsvergunningen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U krijgt binnen 1 werkdag een bevestigingsmail van het mailadres noreply@jeleefomgeving.nl",
+          "original_reference": "Na indiening ontvangt u binnen één werkdag een bevestigingsmail",
+          "note": "De bron specificeert het exacte e-mailadres voor de bevestiging, wat ontbreekt in de originele tekst",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/omgevingsvergunningen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten enkele belangrijke aanvullingen die ontbreken in de originele tekst, waaronder specifieke contactgegevens, het exacte afzender e-mailadres voor bevestigingen, en de vereiste van participatie met omwonenden. Ook is er een klein verschil in het vermelde bedrag voor 'Verken uw idee'. Deze informatie maakt de dienstverlening concreter en completer voor de aanvrager."
+  }
+}

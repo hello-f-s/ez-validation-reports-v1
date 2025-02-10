@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AALTEN",
+      "contact": {
+        "phone": "(0543) 49 33 33",
+        "email": "gemeente@aalten.nl",
+        "website": "http://www.aalten.nl"
+      }
+    },
+    "service": {
+      "id": 6,
+      "name": "Integriteitsonderzoek (Wet Bibob)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 8,
+    "true_sentences": 7,
+    "false_sentences": 1,
+    "accuracy_percentage": 87.5,
+    "false_statements": [
+      {
+        "sentence": "U vraagt een omgevingsvergunning aan met een bouwsom van € 500.000,- of meer",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Aalten geldt de Bibob-toets voor bouwsommen vanaf € 1.000.000,- en niet vanaf € 500.000,-"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.aalten.nl/woo-verzoek-indienen",
+      "https://aalten.nl/wet-bibob",
+      "https://www.aalten.nl/informatie-over-beleid-of-besluiten-opvragen-who-verzoek",
+      "https://www.aalten.nl/bodeminformatie-opvragen",
+      "https://www.aalten.nl/overzicht-geleverde-persoonsgegevens-opvragen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als we daar goede redenen voor hebben, doen we ook een Bibob-onderzoek in de volgende gevallen: u vraagt een subsidie aan, u doet een vastgoedtransactie met ons, u doet mee aan een openbare aanbesteding, bij illegale bouw",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt aanvullende gevallen waarin een Bibob-onderzoek kan worden uitgevoerd die niet in de originele tekst staan vermeld",
+          "source_urls": [
+            "https://aalten.nl/wet-bibob"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wanneer de gemeente reële twijfels heeft over de ingevulde gegevens of vanwege het weigeren om bepaalde gegevens te overleggen, kan zij een advies vragen aan het bureau Bibob, gevestigd in Den Haag.",
+          "original_reference": "Als de gemeente op basis van het Bibob-onderzoek twijfels heeft over de ingevulde gegevens of als u weigert bepaalde gegevens te overleggen, kan zij een advies vragen aan het landelijke Bibob-bureau.",
+          "note": "De bronpagina specificeert de locatie van het Bibob-bureau (Den Haag) wat niet in de originele tekst staat vermeld",
+          "source_urls": [
+            "https://aalten.nl/wet-bibob"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen aanvullende informatie over wanneer een Bibob-onderzoek kan worden uitgevoerd (bij subsidies, vastgoedtransacties, aanbestedingen en illegale bouw) en een specificatie van de locatie van het Bibob-bureau. De kern van de procedure en voorwaarden blijft verder consistent met de originele tekst."
+  }
+}

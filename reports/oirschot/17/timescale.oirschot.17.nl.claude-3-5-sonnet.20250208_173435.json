@@ -1,0 +1,96 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OIRSCHOT",
+      "contact": {
+        "phone": "(0499) 58 33 33",
+        "email": "info@oirschot.nl",
+        "website": "http://www.oirschot.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 10,
+    "false_sentences": 1,
+    "accuracy_percentage": 90.9,
+    "false_statements": [
+      {
+        "sentence": "Het tarief voor het in behandeling nemen van een aanvraag om een exploitatievergunning is € 233,30.",
+        "status": "false",
+        "note": "Het actuele tarief voor een exploitatievergunning in Oirschot is € 238,00 volgens de gemeentelijke legesverordening 2024."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 1,
+    "invalid_urls": 4,
+    "accuracy_percentage": 20.0,
+    "valid_urls_list": [
+      "https://www.oirschot.nl/form/aanvraag-exploitatievergunning/informatie-vooraf-0-1"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.oirschot.nl/terras-plaatsen",
+        "reason": "INVALID: Error scraping https://www.oirschot.nl/terras-plaatsen: 404 Client Error: Not Found for url: https://www.oirschot.nl/terras-plaatsen"
+      },
+      {
+        "url": "https://www.oirschot.nl/form/aanvraagformulier-terrasvergunning-inclusief-gebruik-gemeentegrond/informatie-vooraf-0",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.oirschot.nl/omgevingsvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.oirschot.nl/exploitatievergunning-horecabedrijf",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Verklaring van eigenaar/verhuurder dat geen bezwaar bestaat tegen de exploitatie van de inrichting in het pand (indien van toepassing)",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vereist een extra document (verklaring eigenaar/verhuurder) die niet genoemd wordt in de originele inhoud",
+          "source_urls": [
+            "https://www.oirschot.nl/form/aanvraag-exploitatievergunning/informatie-vooraf-0-1"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Foto terrasmeubilair (indien van toepassing)",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vereist een foto van het terrasmeubilair, wat niet vermeld staat in de originele voorwaarden",
+          "source_urls": [
+            "https://www.oirschot.nl/form/aanvraag-exploitatievergunning/informatie-vooraf-0-1"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Plattegrond van de ruimte(n), inclusief aanduiding van functie van de ruimte(n), de afmetingen en oppervlakten",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vereist een gedetailleerde plattegrond van de binnenruimtes, wat niet genoemd wordt in de originele inhoud",
+          "source_urls": [
+            "https://www.oirschot.nl/form/aanvraag-exploitatievergunning/informatie-vooraf-0-1"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina bevat drie belangrijke aanvullende documentvereisten die niet genoemd worden in de originele inhoud: een verklaring van de eigenaar/verhuurder, foto's van het terrasmeubilair en een gedetailleerde plattegrond van de binnenruimtes. Deze extra vereisten maken de aanvraagprocedure uitgebreider dan beschreven in de originele tekst."
+  }
+}

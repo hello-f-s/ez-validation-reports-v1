@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ALPHEN-CHAAM",
+      "contact": {
+        "phone": "14013",
+        "email": "info@alphen-chaam.nl",
+        "website": "http://www.alphen-chaam.nl"
+      }
+    },
+    "service": {
+      "id": 3,
+      "name": "Certificaat voor opgraving aanvragen en vondst melden"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 1,
+    "true_sentences": 1,
+    "false_sentences": 0,
+    "accuracy_percentage": 100.0,
+    "false_statements": []
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.alphen-chaam.nl/wonen-en-verbouwen/verhuizen",
+      "https://www.alphen-chaam.nl/uittreksels-en-verklaringen",
+      "https://www.alphen-chaam.nl/woo",
+      "https://www.alphen-chaam.nl/klachtenmelding"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.alphen-chaam.nl/aanvraagformulier-kwijtschelding-gemeentelijke-belastingen",
+        "reason": "INVALID: Error scraping https://www.alphen-chaam.nl/aanvraagformulier-kwijtschelding-gemeentelijke-belastingen: 404 Client Error: Not Found for url: https://www.alphen-chaam.nl/aanvraagformulier-kwijtschelding-gemeentelijke-belastingen"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Verhuist u naar of binnen onze gemeente, dan moet u dit doorgeven aan ons",
+          "original_reference": "No matching information",
+          "note": "De website bevat specifieke informatie over verhuizingen en de meldplicht, terwijl dit in de originele inhoud ontbreekt",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/wonen-en-verbouwen/verhuizen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als gemeente laten we graag zien wat we doen en waarom. U hebt ook recht op informatie van de overheid. Dit staat in de Wet open overheid (Woo).",
+          "original_reference": "No matching information",
+          "note": "De website bevat uitgebreide informatie over informatievoorziening via de Woo, wat niet genoemd wordt in de originele inhoud",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/woo"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bezoekadres Willibrordplein 1 5131 AV Alphen",
+          "original_reference": "No matching information",
+          "note": "De website vermeldt het bezoekadres van de gemeente, wat ontbreekt in de originele inhoud",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/wonen-en-verbouwen/verhuizen",
+            "https://www.alphen-chaam.nl/uittreksels-en-verklaringen",
+            "https://www.alphen-chaam.nl/klachtenmelding"
+          ]
+        }
+      ]
+    },
+    "summary": "De gemeentelijke website bevat veel meer specifieke informatie dan de originele inhoud, waaronder details over verhuizingen, informatievoorziening via de Woo, en praktische gegevens zoals het bezoekadres. De originele inhoud blijkt zeer beperkt te zijn in vergelijking met de uitgebreide informatie die beschikbaar is op de gemeentelijke website."
+  }
+}

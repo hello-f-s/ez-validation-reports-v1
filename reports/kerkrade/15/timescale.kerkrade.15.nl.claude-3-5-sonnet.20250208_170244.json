@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "KERKRADE",
+      "contact": {
+        "phone": "14 045",
+        "email": "gemeentehuis@kerkrade.nl",
+        "website": "http://www.kerkrade.nl"
+      }
+    },
+    "service": {
+      "id": 15,
+      "name": "Vergunning of ontheffing voor straatartiesten"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 9,
+    "true_sentences": 8,
+    "false_sentences": 1,
+    "accuracy_percentage": 88.9,
+    "false_statements": [
+      {
+        "sentence": "U ontvangt binnen 8 weken bericht of u de ontheffing krijgt.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Kerkrade wordt er geen specifieke behandeltermijn genoemd voor straatartiest ontheffingen. De genoemde 8 weken is niet bevestigd in officiële bronnen van de gemeente."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.kerkrade.nl/straatartiest-optreden",
+      "https://www.kerkrade.nl/standplaats-aanvragen",
+      "https://www.kerkrade.nl/geluidsoverlast-veroorzaken",
+      "https://www.kerkrade.nl/form/parkeervergunning/aanvraag-0",
+      "https://www.kerkrade.nl/verkeersontheffing-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.kerkrade.nl/straatartiest-optreden>",
+        "reason": "INVALID: Error scraping https://www.kerkrade.nl/straatartiest-optreden>: 404 Client Error: Not Found for url: https://www.kerkrade.nl/straatartiest-optreden%3E"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "U mag niet zomaar in het openbaar muziek maken, dansen, een toneelvoorstelling houden of uw beeldende kunst exposeren. U hebt daarvoor een ontheffing nodig van de gemeente.",
+          "original_reference": "U mag niet zomaar in het openbaar muziek maken, dansen, een toneelvoorstelling houden of uw beeldende kunst exposeren zonder ontheffing van de gemeente.",
+          "note": "De kernboodschap en vereisten zijn identiek, alleen anders geformuleerd",
+          "source_urls": [
+            "https://www.kerkrade.nl/straatartiest-optreden"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Geef hierbij de volgende informatie: plek van uw optreden, datum en tijdstip(pen) van uw optreden",
+          "original_reference": "Nodig voor aanvragen: - Locatie van uw optreden - Datum en tijdstip(pen) van uw optreden",
+          "note": "De bronpagina gebruikt een actievere formulering maar vereist exact dezelfde informatie",
+          "source_urls": [
+            "https://www.kerkrade.nl/straatartiest-optreden"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Tel: 14 045, E-mail: gemeentehuis@kerkrade.nl, Postadres: Postbus 600, 6460 AP Kerkrade",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen contactgegevens, terwijl deze wel beschikbaar zijn op de bronpagina",
+          "source_urls": [
+            "https://www.kerkrade.nl/straatartiest-optreden"
+          ]
+        }
+      ]
+    },
+    "summary": "De informatie in de originele tekst komt grotendeels overeen met de bronnen, maar mist enkele belangrijke details zoals contactgegevens van de gemeente. De kernvoorwaarden, aanvraagprocedure en termijnen zijn consistent. De formulering verschilt soms licht maar de inhoudelijke betekenis blijft gelijk."
+  }
+}

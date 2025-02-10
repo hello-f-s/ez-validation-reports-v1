@@ -1,0 +1,101 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LOPIK",
+      "contact": {
+        "phone": "(0348) 55 99 55",
+        "email": "gemeente@lopik.nl",
+        "website": "http://www.lopik.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 20,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.2,
+    "false_statements": [
+      {
+        "sentence": "U krijgt binnen 8 weken bericht. Bij een aanvraag voor een vereniging of stichting ontvangt u binnen 6 maanden bericht.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Lopik geldt voor alle alcoholwetvergunningen een beslistermijn van 8 weken. Er wordt geen onderscheid gemaakt tussen commerciële bedrijven en verenigingen/stichtingen wat betreft de behandeltermijn."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.lopik.nl/milieu-vergunning-of-melding",
+      "https://www.lopik.nl/openingstijden-horeca-eenmalig-aanpassen",
+      "https://www.lopik.nl/alcohol-schenken-tijdens-evenement",
+      "https://www.lopik.nl/alcoholvergunning",
+      "https://www.lopik.nl/exploitatievergunning-horecabedrijf"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://gemeente.lopik.nl\">gemeente.lopik.nl</a></p>",
+        "reason": "INVALID: Error scraping https://gemeente.lopik.nl\">gemeente.lopik.nl</a></p>: HTTPSConnectionPool(host='gemeente.lopik.nl%22%3egemeente.lopik.nl%3c', port=443): Max retries exceeded with url: /a%3E%3C/p%3E (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x105620550>: Failed to resolve 'gemeente.lopik.nl%22%3egemeente.lopik.nl%3c' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://gemeente.lopik.nl",
+        "reason": "INVALID: Error scraping https://gemeente.lopik.nl: HTTPSConnectionPool(host='gemeente.lopik.nl', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x105473c50>: Failed to resolve 'gemeente.lopik.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "alle leidinggevenden zijn minimaal 21 jaar, alle leidinggevenden zijn van goed gedrag, er is altijd minimaal één leidinggevende aanwezig, elke leidinggevende heeft een Verklaring sociale hygiëne",
+          "original_reference": "Alle leidinggevenden moeten minimaal 21 jaar oud zijn, van goed gedrag zijn, er moet altijd minimaal één leidinggevende aanwezig zijn, elke leidinggevende moet een Verklaring sociale hygiëne hebben",
+          "note": "De kernvoorwaarden voor leidinggevenden zijn volledig consistent tussen de bronnen en originele tekst",
+          "source_urls": [
+            "https://www.lopik.nl/alcoholvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De gemeente kan vragen om een Verklaring omtrent het gedrag (VOG)",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt specifiek dat een VOG gevraagd kan worden, dit staat niet in de originele tekst",
+          "source_urls": [
+            "https://www.lopik.nl/exploitatievergunning-horecabedrijf"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De gemeente toetst met behulp van het Ministerie van Justitie en Veiligheid of de leidinggevende(n) in niet enig opzicht slecht van gedrag is/zijn",
+          "original_reference": "No matching information",
+          "note": "De specifieke toetsingsmethode via het Ministerie van Justitie en Veiligheid wordt genoemd in de bron maar niet in de originele tekst",
+          "source_urls": [
+            "https://www.lopik.nl/alcohol-schenken-tijdens-evenement"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De gemeente kan u vragen om een ingevuld Bibob-formulier. Hiermee beoordeelt zij of er een kans is dat de vergunning gebruikt gaat worden voor criminele activiteiten",
+          "original_reference": "No matching information",
+          "note": "De mogelijke Bibob-toets wordt genoemd in de bron maar niet in de originele tekst",
+          "source_urls": [
+            "https://www.lopik.nl/exploitatievergunning-horecabedrijf"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten enkele belangrijke aanvullende vereisten die niet in de originele tekst staan, waaronder de mogelijke VOG-aanvraag, de specifieke toetsing via het Ministerie van Justitie en Veiligheid, en de mogelijke Bibob-toets. Deze extra vereisten maken de procedure uitgebreider dan beschreven in de originele tekst. De kernvoorwaarden zijn wel consistent tussen alle bronnen."
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OLDENZAAL",
+      "contact": {
+        "phone": "(0541) 58 81 11",
+        "email": "info@oldenzaal.nl",
+        "website": "http://www.oldenzaal.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "Voor aanvragen van een omgevingsvergunning geldt een beslistermijn van maximaal 6 maanden, die eventueel met 6 weken kan worden verlengd.",
+        "status": "false",
+        "note": "De standaard beslistermijn voor een reguliere omgevingsvergunning is 8 weken (met mogelijke verlenging van 6 weken). Alleen bij uitgebreide procedures geldt een termijn van 6 maanden."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 13,
+    "valid_urls": 2,
+    "invalid_urls": 11,
+    "accuracy_percentage": 15.4,
+    "valid_urls_list": [
+      "https://www.oldenzaal.nl/omgevingsvergunning",
+      "https://www.oldenzaal.nl/aanleggen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://gemeente.oldenzaal.nl/bouwen-en-verbouwen",
+        "reason": "INVALID: Error scraping https://gemeente.oldenzaal.nl/bouwen-en-verbouwen: HTTPSConnectionPool(host='gemeente.oldenzaal.nl', port=443): Max retries exceeded with url: /bouwen-en-verbouwen (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1073c3e00>: Failed to resolve 'gemeente.oldenzaal.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://gemeente.oldenzaal.nl/milieumelding\">https://gemeente.oldenzaal.nl/milieumelding</a>,",
+        "reason": "INVALID: Error scraping https://gemeente.oldenzaal.nl/milieumelding\">https://gemeente.oldenzaal.nl/milieumelding</a>,: HTTPSConnectionPool(host='gemeente.oldenzaal.nl', port=443): Max retries exceeded with url: /milieumelding%22%3Ehttps://gemeente.oldenzaal.nl/milieumelding%3C/a%3E, (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1074e8550>: Failed to resolve 'gemeente.oldenzaal.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://gemeente.oldenzaal.nl/milieuregels",
+        "reason": "INVALID: Error scraping https://gemeente.oldenzaal.nl/milieuregels: HTTPSConnectionPool(host='gemeente.oldenzaal.nl', port=443): Max retries exceeded with url: /milieuregels (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1074e8f50>: Failed to resolve 'gemeente.oldenzaal.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.oldenzaal.nl/milieumelding",
+        "reason": "INVALID: Error scraping https://www.oldenzaal.nl/milieumelding: 404 Client Error: Not Found for url: https://www.oldenzaal.nl/milieumelding"
+      },
+      {
+        "url": "https://gemeente.oldenzaal.nl/omgevingsvergunning",
+        "reason": "INVALID: Error scraping https://gemeente.oldenzaal.nl/omgevingsvergunning: HTTPSConnectionPool(host='gemeente.oldenzaal.nl', port=443): Max retries exceeded with url: /omgevingsvergunning (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1074e96d0>: Failed to resolve 'gemeente.oldenzaal.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.oldenzaal.nl/bouwen-en-verbouwen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://gemeente.oldenzaal.nl/milieuregels\">https://gemeente.oldenzaal.nl/milieuregels</a>",
+        "reason": "INVALID: Error scraping https://gemeente.oldenzaal.nl/milieuregels\">https://gemeente.oldenzaal.nl/milieuregels</a>: HTTPSConnectionPool(host='gemeente.oldenzaal.nl', port=443): Max retries exceeded with url: /milieuregels%22%3Ehttps://gemeente.oldenzaal.nl/milieuregels%3C/a%3E (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1073a6710>: Failed to resolve 'gemeente.oldenzaal.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://gemeente.oldenzaal.nl/milieumelding",
+        "reason": "INVALID: Error scraping https://gemeente.oldenzaal.nl/milieumelding: HTTPSConnectionPool(host='gemeente.oldenzaal.nl', port=443): Max retries exceeded with url: /milieumelding (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1074e9810>: Failed to resolve 'gemeente.oldenzaal.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://gemeente.oldenzaal.nl/omgevingsvergunning\">https://gemeente.oldenzaal.nl/omgevingsvergunning</a>,",
+        "reason": "INVALID: Error scraping https://gemeente.oldenzaal.nl/omgevingsvergunning\">https://gemeente.oldenzaal.nl/omgevingsvergunning</a>,: HTTPSConnectionPool(host='gemeente.oldenzaal.nl', port=443): Max retries exceeded with url: /omgevingsvergunning%22%3Ehttps://gemeente.oldenzaal.nl/omgevingsvergunning%3C/a%3E, (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1074e9a90>: Failed to resolve 'gemeente.oldenzaal.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.oldenzaal.nl/milieuregels",
+        "reason": "INVALID: Error scraping https://www.oldenzaal.nl/milieuregels: 404 Client Error: Not Found for url: https://www.oldenzaal.nl/milieuregels"
+      },
+      {
+        "url": "https://gemeente.oldenzaal.nl/bouwen-en-verbouwen\">https://gemeente.oldenzaal.nl/bouwen-en-verbouwen</a>,",
+        "reason": "INVALID: Error scraping https://gemeente.oldenzaal.nl/bouwen-en-verbouwen\">https://gemeente.oldenzaal.nl/bouwen-en-verbouwen</a>,: HTTPSConnectionPool(host='gemeente.oldenzaal.nl', port=443): Max retries exceeded with url: /bouwen-en-verbouwen%22%3Ehttps://gemeente.oldenzaal.nl/bouwen-en-verbouwen%3C/a%3E, (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1073a7110>: Failed to resolve 'gemeente.oldenzaal.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wie werkzaamheden wil uitvoeren, bijvoorbeeld het aanleggen van een weg of het graven of dempen van een sloot heeft soms een vergunning nodig. Om te kunnen bepalen of u voor de werkzaamheden een omgevingsvergunning voor de activiteit 'uitvoeren van werk of werkzaamheden' nodig heeft, moet u het bestemmingsplan raadplegen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen specifieke informatie over aanlegwerkzaamheden zoals wegen of sloten en de noodzaak om het bestemmingsplan te raadplegen. Dit is belangrijke aanvullende informatie voor aanvragers.",
+          "source_urls": [
+            "https://www.oldenzaal.nl/aanleggen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Stap 1: Een (ver)bouwplan maken\nSchrijf de uitgangspunten van uw plan op:\nwaar wilt u uw plan uitvoeren?\nhoe groot is uw plan? Denk daarbij aan inhouds- en oppervlaktematen,\nhoe gaat u uw plan gebruiken?",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat specifieke stappen voor het maken van een (ver)bouwplan met concrete aandachtspunten die niet in de originele tekst worden genoemd.",
+          "source_urls": [
+            "https://www.oldenzaal.nl/omgevingsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten belangrijke aanvullende informatie die niet in de originele tekst staat, met name over specifieke aanlegwerkzaamheden waarvoor een vergunning nodig kan zijn en gedetailleerde stappen voor het maken van een (ver)bouwplan. Deze informatie is essentieel voor mensen die een vergunning willen aanvragen."
+  }
+}

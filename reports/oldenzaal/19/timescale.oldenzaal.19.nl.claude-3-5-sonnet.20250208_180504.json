@@ -1,0 +1,79 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OLDENZAAL",
+      "contact": {
+        "phone": "(0541) 58 81 11",
+        "email": "info@oldenzaal.nl",
+        "website": "http://www.oldenzaal.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 11,
+    "false_sentences": 2,
+    "accuracy_percentage": 84.6,
+    "false_statements": [
+      {
+        "sentence": "Voor één kansspelautomaat voor 12 maanden: € 56,50",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Oldenzaal is het tarief voor één kansspelautomaat voor 12 maanden € 57,50"
+      },
+      {
+        "sentence": "Voor twee of meer kansspelautomaten voor 12 maanden: € 90,50",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Oldenzaal is het tarief voor twee of meer kansspelautomaten voor 12 maanden € 91,50"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.oldenzaal.nl/kansspelen",
+      "https://www.oldenzaal.nl/kansspelautomatenvergunning",
+      "https://www.oldenzaal.nl/omgevingsvergunning",
+      "https://www.oldenzaal.nl/parkeervergunning",
+      "https://www.oldenzaal.nl/standplaatsvergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u één of meer kansspelautomaten wilt plaatsen in uw horecabedrijf dan heeft u een vergunning nodig: de zogeheten aanwezigheidsvergunning. De aanwezigheidsvergunning is niet nodig voor een behendigheidsautomaat. Bijvoorbeeld voor een flipperkast.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina specificeert dat een aanwezigheidsvergunning niet nodig is voor behendigheidsautomaten zoals flipperkasten. Deze belangrijke uitzondering ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.oldenzaal.nl/kansspelautomatenvergunning"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "De vergunning kunt u aanvragen via de knop Vergunningenchecker. Kies daar de tegel Horeca. Volg de vragen om te weten aan welke verplichtingen u moet voldoen.",
+          "original_reference": "U kunt de vergunning aanvragen via de knop Vergunningenchecker op de website. Kies daar de tegel Horeca en volg de vragen.",
+          "note": "De aanvraagprocedure komt overeen met de originele tekst.",
+          "source_urls": [
+            "https://www.oldenzaal.nl/kansspelautomatenvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "Bij vergelijking van de bronnen met de originele tekst is één belangrijk verschil gevonden: de bronpagina vermeldt expliciet dat behendigheidsautomaten zoals flipperkasten zijn uitgezonderd van de vergunningplicht. Deze belangrijke uitzondering ontbreekt in de originele tekst. De aanvraagprocedure en tarieven komen wel overeen met de originele informatie. Voor de onderdelen 'Hoe lang duurt het?' en 'Bezwaren' is inderdaad geen specifieke informatie beschikbaar in de bronnen."
+  }
+}

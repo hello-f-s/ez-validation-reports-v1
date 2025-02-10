@@ -1,0 +1,94 @@
+{
+  "context": {
+    "municipality": {
+      "name": "KERKRADE",
+      "contact": {
+        "phone": "14 045",
+        "email": "gemeentehuis@kerkrade.nl",
+        "website": "http://www.kerkrade.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 13,
+    "false_sentences": 2,
+    "accuracy_percentage": 86.7,
+    "false_statements": [
+      {
+        "sentence": "Barmedewerkers jonger dan 18 jaar mogen wel alcohol verkopen, maar niet drinken.",
+        "status": "false",
+        "note": "Volgens de Drank- en Horecawet en de gemeente Kerkrade mogen personen onder de 18 jaar geen alcohol verkopen of verstrekken."
+      },
+      {
+        "sentence": "Bij een aanvraag voor een vereniging of stichting ontvangt u binnen 6 maanden bericht.",
+        "status": "false",
+        "note": "De gemeente Kerkrade hanteert een standaard behandeltermijn van 8 weken voor alle horecavergunningen, er wordt geen onderscheid gemaakt voor verenigingen of stichtingen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 6,
+    "invalid_urls": 1,
+    "accuracy_percentage": 85.7,
+    "valid_urls_list": [
+      "https://www.kerkrade.nl/openingstijden-horeca-eenmalig-aanpassen",
+      "https://www.kerkrade.nl/exploitatievergunning-horecabedrijf",
+      "https://www.kerkrade.nl/alcohol-schenken-tijdens-evenement",
+      "https://www.kerkrade.nl/alcoholvergunning",
+      "https://www.kerkrade.nl/milieu-vergunning-of-melding",
+      "https://www.kerkrade.nl"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.kerkrade.nl\">Gemeente",
+        "reason": "INVALID: Error scraping https://www.kerkrade.nl\">Gemeente: HTTPSConnectionPool(host='www.kerkrade.nl%22%3egemeente', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1103c8550>: Failed to resolve 'www.kerkrade.nl%22%3egemeente' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De eigenaar of leidinggevende is minimaal 21 jaar oud en van onbesproken gedrag. De gemeente kan vragen om een Verklaring omtrent het gedrag (VOG).",
+          "original_reference": "Leidinggevenden moeten minimaal 21 jaar zijn en beschikken over een SVH Verklaring Sociale Hygiëne of Verklaring Vakbekwaamheid.",
+          "note": "De bronpagina vermeldt een VOG als mogelijk vereiste, terwijl de originele tekst alleen de SVH Verklaring noemt als vereiste.",
+          "source_urls": [
+            "https://www.kerkrade.nl/exploitatievergunning-horecabedrijf"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U mag geen alcohol schenken en verkopen aan kinderen jonger dan 18 jaar. Op het evenement mag u geen sterke drank (>15% alcohol) schenken en verkopen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen specifieke informatie over het verbod op sterke drank (>15%) bij evenementen en de minimumleeftijd voor alcoholverkoop.",
+          "source_urls": [
+            "https://www.kerkrade.nl/alcohol-schenken-tijdens-evenement"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u alcohol wilt schenken op een besloten feest, hoeft u geen drank- en horecavergunning of ontheffing aan te vragen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de uitzondering voor besloten feesten waar geen vergunning nodig is.",
+          "source_urls": [
+            "https://www.kerkrade.nl/alcohol-schenken-tijdens-evenement"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten enkele belangrijke aanvullende voorwaarden en uitzonderingen die niet in de originele tekst staan, waaronder de mogelijke VOG-vereiste, het verbod op sterke drank bij evenementen en de uitzondering voor besloten feesten. Deze informatie is relevant voor een volledig begrip van de alcoholvergunning-vereisten."
+  }
+}

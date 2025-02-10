@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LEUSDEN",
+      "contact": {
+        "phone": "14 033",
+        "email": "gemeente@leusden.nl",
+        "website": "http://www.leusden.nl/"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor een drank- en horecavergunning bedragen € 474,00.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Leusden bedragen de kosten voor een drank- en horecavergunning € 484,00 (2024), niet € 474,00."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.leusden.nl/en/vergunningen-en-belastingen/drank-en-horeca/drank-en-horecavergunning",
+      "https://www.leusden.nl/vergunningen-en-belastingen/drank-en-horeca",
+      "https://www.leusden.nl/en/vergunningen-en-belastingen/drank-en-horeca",
+      "https://www.leusden.nl/vergunningen-en-belastingen/drank-en-horeca/drank-en-horecavergunning",
+      "https://www.leusden.nl/en/vergunningen-en-belastingen/drank-en-horeca/ontheffing-drank-en-horecawet"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://website.van.gemeente",
+        "reason": "INVALID: Error scraping https://website.van.gemeente: HTTPSConnectionPool(host='website.van.gemeente', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10789b250>: Failed to resolve 'website.van.gemeente' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://website.van.gemeente\">https://website.van.gemeente</a></p>",
+        "reason": "INVALID: Error scraping https://website.van.gemeente\">https://website.van.gemeente</a></p>: HTTPSConnectionPool(host='website.van.gemeente%22%3ehttps', port=443): Max retries exceeded with url: /website.van.gemeente%3C/a%3E%3C/p%3E (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10789b250>: Failed to resolve 'website.van.gemeente%22%3ehttps' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "U minimaal 21 jaar bent. Uw onderneming staat ingeschreven in de Kamer van Koophandel. U beschikt over een SVH-diploma. U niet op enige negatieve wijze bekend bent bij justitie of politie. Het pand waarin uw horecabedrijf is gevestigd ten minste voldoet aan de eisen uit het Bouwbesluit.",
+          "original_reference": "U moet minimaal 21 jaar oud zijn. Uw onderneming moet ingeschreven staan bij de Kamer van Koophandel. U dient over een SVH-diploma te beschikken. U mag niet op negatieve wijze bekend zijn bij justitie of politie. Het pand van uw horecabedrijf moet voldoen aan de eisen uit het Bouwbesluit.",
+          "note": "De voorwaarden zijn inhoudelijk exact hetzelfde, alleen de formulering verschilt licht",
+          "source_urls": [
+            "https://www.leusden.nl/vergunningen-en-belastingen/drank-en-horeca/drank-en-horecavergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een medewerker van de afdeling APV- Bijzondere Wetten zal dan zo spoedig mogelijk contact met u opnemen.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt aanvullende informatie over contact door een medewerker na het aanvragen van het formulier, dit staat niet in de originele tekst",
+          "source_urls": [
+            "https://www.leusden.nl/vergunningen-en-belastingen/drank-en-horeca/drank-en-horecavergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De informatie in de bronnen komt grotendeels overeen met de originele tekst. Er is één relevante aanvulling gevonden over het contactmoment door een medewerker na de aanvraag van het formulier. Alle kernvoorwaarden, kosten, termijnen en procedures zijn consistent tussen de bronnen en de originele tekst."
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LEUSDEN",
+      "contact": {
+        "phone": "14 033",
+        "email": "gemeente@leusden.nl",
+        "website": "http://www.leusden.nl/"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "Met de nieuwe Omgevingswet, die vanaf 1 januari 2024 van kracht is, wordt de proceduretijd voor de meeste vergunningen verkort naar 8 weken.",
+        "status": "false",
+        "note": "De Omgevingswet is op 1 januari 2024 in werking getreden, maar de standaard proceduretijd was al 8 weken onder de oude wetgeving. Er is dus geen sprake van een verkorting van de proceduretijd."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 6,
+    "invalid_urls": 1,
+    "accuracy_percentage": 85.7,
+    "valid_urls_list": [
+      "https://www.leusden.nl/bouwen-en-wonen/omgevingsvergunning-aanvragen",
+      "https://www.leusden.nl/en/omgevingswet-gemeente-leusden",
+      "https://www.leusden.nl/",
+      "https://www.leusden.nl/en/bouwen-en-wonen/omgevingsvergunning-aanvragen",
+      "https://www.leusden.nl/ondernemersloket/vergunningen-en-meldingen-voor-ondernemers",
+      "https://www.leusden.nl/en/ondernemersloket/vergunningen-en-meldingen-voor-ondernemers"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.leusden.nl/\">Gemeente",
+        "reason": "INVALID: Error scraping https://www.leusden.nl/\">Gemeente: 404 Client Error: Not Found for url: https://www.leusden.nl/%22%3EGemeente"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voordat u met een nieuw plan begint is het belangrijk te weten wat voor effect uw plan heeft op uw omgeving en wie er met uw plannen te maken krijgt. Dit kunnen bijvoorbeeld uw directe buren of straatbewoners zijn, of instanties die u nodig heeft bij uw plannen zoals het waterschap.",
+          "original_reference": "No matching information",
+          "note": "De bronnen bevatten belangrijke informatie over participatie en het betrekken van omwonenden die niet in de originele tekst staat vermeld.",
+          "source_urls": [
+            "https://www.leusden.nl/bouwen-en-wonen/omgevingsvergunning-aanvragen",
+            "https://www.leusden.nl/en/bouwen-en-wonen/omgevingsvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U ontvangt van ons berichten over de voortgang, het verloop en de afhandeling van uw vergunningaanvraag of sloopmelding. Gemeente Leusden gebruikt een veilige berichtenomgeving via de website Jeleefomgeving.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist informatie over het communicatieproces via de Jeleefomgeving website en de manier waarop aanvragers op de hoogte worden gehouden.",
+          "source_urls": [
+            "https://www.leusden.nl/bouwen-en-wonen/omgevingsvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als uw aanvraag niet compleet is, hoort u van de gemeente welke gegevens ontbreken. De tijd die u nodig heeft om de aanvullende gegevens aan te leveren, wordt bij de beslistermijn opgeteld.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat de tijd voor het aanleveren van aanvullende gegevens wordt opgeteld bij de beslistermijn.",
+          "source_urls": [
+            "https://www.leusden.nl/bouwen-en-wonen/omgevingsvergunning-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie die niet in de originele tekst staat, met name over participatie van omwonenden, het communicatieproces via Jeleefomgeving, en details over de behandeling van incomplete aanvragen. Deze informatie is essentieel voor een volledig begrip van het vergunningsproces."
+  }
+}

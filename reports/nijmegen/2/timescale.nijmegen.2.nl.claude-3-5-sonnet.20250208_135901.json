@@ -1,0 +1,92 @@
+{
+  "context": {
+    "municipality": {
+      "name": "NIJMEGEN",
+      "contact": {
+        "phone": "14 024",
+        "email": "gemeente@nijmegen.nl",
+        "website": "http://www.nijmegen.nl"
+      }
+    },
+    "service": {
+      "id": 2,
+      "name": "Bord of spandoek plaatsen aan de openbare weg"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 9,
+    "false_sentences": 2,
+    "accuracy_percentage": 81.8,
+    "false_statements": [
+      {
+        "sentence": "U vraagt een objectvergunning aan via inloggen met DigiD of eHerkenning op de website van de gemeente, minimaal 8 weken en maximaal 16 weken van tevoren.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Nijmegen moet een objectvergunning minimaal 4 weken van tevoren worden aangevraagd, niet 8 tot 16 weken."
+      },
+      {
+        "sentence": "€ 116,10 voor het behandelen van de vergunningaanvraag",
+        "status": "false",
+        "note": "Het exacte bedrag voor een objectvergunning in Nijmegen is € 117,65 volgens de actuele legesverordening op de gemeentelijke website."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.nijmegen.nl/diensten/vergunningen/standplaatsvergunningen/vergunning-standplaats-priveterrein/",
+      "https://www.nijmegen.nl/diensten/vergunningen/standplaatsvergunningen/",
+      "https://www.nijmegen.nl/diensten/vergunningen/objectvergunning/",
+      "https://www.nijmegen.nl/diensten/evenementen/schema-vergunningen-activiteiten/tekstversie/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.nijmegen.nl/diensten/vergunningen/informatiekraam-melden-of-vergunning/",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wij geven geen vergunning af voor voorwerpen met commerciële reclame. Kijk hiervoor naar reclame op straat maken.",
+          "original_reference": "Voorwerpen met commerciële reclame (zoals een spandoek of bord voor uw bedrijf) zijn niet toegestaan, alleen objecten met niet-commerciële reclame",
+          "note": "De brontekst verwijst expliciet naar een alternatieve optie ('reclame op straat maken') voor commerciële reclame, terwijl dit in de originele tekst niet wordt vermeld.",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/vergunningen/objectvergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor meer informatie over objecten op uw horecaterras neemt u contact op met het Ondernemerspunt.",
+          "original_reference": "No matching information",
+          "note": "De bron vermeldt een extra contactmogelijkheid via het Ondernemerspunt voor horeca-gerelateerde vragen, wat niet in de originele tekst staat.",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/vergunningen/objectvergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wilt u het voorwerp langer laten staan, vraag dan een omgevingsvergunning aan",
+          "original_reference": "No matching information",
+          "note": "De bron biedt een alternatieve optie voor plaatsing langer dan 30 dagen via een omgevingsvergunning, wat niet in de originele tekst wordt vermeld.",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/vergunningen/objectvergunning/"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten enkele belangrijke aanvullingen op de originele tekst, waaronder de mogelijkheid om een omgevingsvergunning aan te vragen voor langere plaatsingstermijnen, een verwijzing naar het Ondernemerspunt voor horeca-gerelateerde vragen, en een specifieke verwijzing naar de optie 'reclame op straat maken' voor commerciële reclame. Deze informatie kan waardevol zijn voor aanvragers maar ontbreekt in de originele tekst."
+  }
+}

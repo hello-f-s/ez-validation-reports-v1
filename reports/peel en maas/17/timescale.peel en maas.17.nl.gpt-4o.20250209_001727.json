@@ -1,0 +1,71 @@
+{
+  "context": {
+    "municipality": {
+      "name": "PEEL EN MAAS",
+      "contact": {
+        "phone": "(077) 306 66 66",
+        "email": "info@peelenmaas.nl",
+        "website": "http://www.peelenmaas.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "De overeenkomst wordt voor onbepaalde tijd verleend.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Peel en Maas wordt een terrasovereenkomst voor bepaalde tijd verleend, niet voor onbepaalde tijd."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 0,
+    "invalid_urls": 7,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.peelenmaas.nl'>hier</a>.</p>",
+        "reason": "INVALID: Error scraping https://www.peelenmaas.nl'>hier</a>.</p>: HTTPSConnectionPool(host=\"www.peelenmaas.nl'%3ehier%3c\", port=443): Max retries exceeded with url: /a%3E.%3C/p%3E (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1060ebe00>: Failed to resolve 'www.peelenmaas.nl'%3ehier%3c' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.peelenmaas.nl/vergunning-of-toestemming/omgevingsvergunning",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.peelenmaas.nl/vergunning-of-toestemming/bedrijf-starten-of-wijzigen",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.peelenmaas.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.peelenmaas.nl/vergunning-of-toestemming/",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.peelenmaas.nl/vergunning-of-toestemming/horecabedrijf-beginnen",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.peelenmaas.nl/vergunning-of-toestemming/terras-plaatsen-of-wijzigen",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  }
+}

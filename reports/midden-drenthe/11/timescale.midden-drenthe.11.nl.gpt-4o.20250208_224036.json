@@ -1,0 +1,81 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MIDDEN-DRENTHE",
+      "contact": {
+        "phone": "(0593) 53 92 22",
+        "email": "gemeente@middendrenthe.nl",
+        "website": "http://www.middendrenthe.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 21,
+    "false_sentences": 3,
+    "accuracy_percentage": 87.5,
+    "false_statements": [
+      {
+        "sentence": "Voor een reclamebord is een omgevingsvergunning nodig als het bord groter is dan 1 m² of uit tekst en/of afbeeldingen bestaat.",
+        "status": "false",
+        "note": "Volgens de gemeente Midden-Drenthe is een omgevingsvergunning nodig voor reclameborden groter dan 0,5 m², niet 1 m²."
+      },
+      {
+        "sentence": "U kunt de omgevingsvergunning aanvragen via Omgevingswet.overheid.nl.",
+        "status": "false",
+        "note": "De juiste website voor het aanvragen van een omgevingsvergunning is www.omgevingsloket.nl, niet Omgevingswet.overheid.nl."
+      },
+      {
+        "sentence": "Voor aanvullende vragen kunt u contact opnemen met het Omgevingsloket van de gemeente Medio Drenthe via telefoonnummer (0593) 53 96 79.",
+        "status": "false",
+        "note": "De gemeentenaam is onjuist vermeld als 'Medio Drenthe' in plaats van 'Midden-Drenthe'."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 0,
+    "invalid_urls": 7,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.middendrenthe.nl/bouwen-wonen/vooroverleg-aanvragen",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.middendrenthe.nl/bouwen-wonen/in-of-uitrit-aanleggen",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://Omgevingswet.overheid.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.middendrenthe.nl/vergunningen-ontheffingen/reclamebord-plaatsen",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.middendrenthe.nl/bouwen-wonen/bouwen-of-verbouwen",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://Omgevingswet.overheid.nl\">Omgevingswet.overheid.nl</a>.</p>",
+        "reason": "INVALID: Error scraping https://Omgevingswet.overheid.nl\">Omgevingswet.overheid.nl</a>.</p>: HTTPSConnectionPool(host='omgevingswet.overheid.nl%22%3eomgevingswet.overheid.nl%3c', port=443): Max retries exceeded with url: /a%3E.%3C/p%3E (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1078e3390>: Failed to resolve 'omgevingswet.overheid.nl%22%3eomgevingswet.overheid.nl%3c' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.middendrenthe.nl/bouwen-wonen",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  }
+}

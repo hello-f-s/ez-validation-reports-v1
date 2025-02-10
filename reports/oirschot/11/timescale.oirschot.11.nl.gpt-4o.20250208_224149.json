@@ -1,0 +1,79 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OIRSCHOT",
+      "contact": {
+        "phone": "(0499) 58 33 33",
+        "email": "info@oirschot.nl",
+        "website": "http://www.oirschot.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "Voor meer informatie of het maken van een afspraak kun je op werkdagen tussen 9 en 12 uur telefonisch contact opnemen via 0499 - 58 33 33 of een afspraak maken via het contactformulier.",
+        "status": "false",
+        "note": "De openingstijden van de gemeente Oirschot voor telefonisch contact zijn op werkdagen van 8.30 tot 12.30 uur, niet van 9 tot 12 uur zoals vermeld."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 9,
+    "valid_urls": 0,
+    "invalid_urls": 9,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.oirschot.nl/principeverzoek",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://oirschot.nl\">Reclame",
+        "reason": "INVALID: Error scraping https://oirschot.nl\">Reclame: HTTPSConnectionPool(host='oirschot.nl%22%3ereclame', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x108808550>: Failed to resolve 'oirschot.nl%22%3ereclame' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.oirschot.nl/reclame-plaatsen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://oirschot.nl\">Milieu:",
+        "reason": "INVALID: Error scraping https://oirschot.nl\">Milieu:: HTTPSConnectionPool(host='oirschot.nl%22%3emilieu', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1079dbd90>: Failed to resolve 'oirschot.nl%22%3emilieu' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.oirschot.nl/milieu-vergunning-of-melding",
+        "reason": "INVALID: Error scraping https://www.oirschot.nl/milieu-vergunning-of-melding: 404 Client Error: Not Found for url: https://www.oirschot.nl/milieu-vergunning-of-melding"
+      },
+      {
+        "url": "https://oirschot.nl",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://oirschot.nl\">Omgevingsvergunning",
+        "reason": "INVALID: Error scraping https://oirschot.nl\">Omgevingsvergunning: HTTPSConnectionPool(host='oirschot.nl%22%3eomgevingsvergunning', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1079dbd90>: Failed to resolve 'oirschot.nl%22%3eomgevingsvergunning' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.oirschot.nl/terras-plaatsen",
+        "reason": "INVALID: Error scraping https://www.oirschot.nl/terras-plaatsen: 404 Client Error: Not Found for url: https://www.oirschot.nl/terras-plaatsen"
+      },
+      {
+        "url": "https://www.oirschot.nl/omgevingsvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  }
+}

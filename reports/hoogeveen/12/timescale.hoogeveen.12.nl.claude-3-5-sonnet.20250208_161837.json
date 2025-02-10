@@ -1,0 +1,92 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HOOGEVEEN",
+      "contact": {
+        "phone": "14 0528",
+        "email": "info@hoogeveen.nl",
+        "website": "http://www.hoogeveen.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 10,
+    "false_sentences": 1,
+    "accuracy_percentage": 90.9,
+    "false_statements": [
+      {
+        "sentence": "Voor een grote omgevingsvergunning betaalt u bijvoorbeeld €182,15.",
+        "status": "false",
+        "note": "Dit bedrag is niet correct volgens de actuele legesverordening van gemeente Hoogeveen. De exacte kosten zijn afhankelijk van de bouwsom en het type vergunning, en worden berekend volgens de tarieven in de legesverordening van Hoogeveen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.hoogeveen.nl/melding-idee-klacht-en-bezwaar",
+      "https://www.hoogeveen.nl/vergunningen/evenementenvergunning-aanvragen",
+      "https://www.hoogeveen.nl/raad-en-college/woo-verzoek",
+      "https://www.hoogeveen.nl/dossiers/omgevingswet",
+      "https://www.hoogeveen.nl/vergunningen/omgevingsvergunningen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.hoogeveen.nl/omgevingsvergunningen",
+        "reason": "INVALID: Error scraping https://www.hoogeveen.nl/omgevingsvergunningen: 404 Client Error: Not Found for url: https://www.hoogeveen.nl/omgevingsvergunningen"
+      },
+      {
+        "url": "https://www.hoogeveen.nl/omgevingswet",
+        "reason": "INVALID: Error scraping https://www.hoogeveen.nl/omgevingswet: 404 Client Error: Not Found for url: https://www.hoogeveen.nl/omgevingswet"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "€175 voor het voorleggen van een plan via 'Verken uw idee'",
+          "original_reference": "€182,15 voor een grote omgevingsvergunning",
+          "note": "De originele tekst noemt andere kosten dan de bronpagina. De bronpagina specificeert €175 voor een vooroverleg/plantoetsing.",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/omgevingsvergunningen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U krijgt binnen 1 werkdag een bevestigingsmail van het mailadres noreply@jeleefomgeving.nl",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat specifieke informatie over de bevestigingsmail die niet in de originele tekst staat vermeld.",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/omgevingsvergunningen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Mail omgevingsvergunningen@dewoldenhoogeveen.nl of bel 14 0528",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt specifieke contactgegevens die niet in de originele tekst staan.",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/omgevingsvergunningen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de kosten (€175 vs €182,15), aanvullende procesinformatie over bevestigingsmails, en specifieke contactgegevens die in de originele tekst ontbreken. De bronpagina's bevatten meer gedetailleerde informatie over het aanvraagproces en de communicatie na de aanvraag."
+  }
+}

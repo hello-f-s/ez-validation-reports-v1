@@ -1,0 +1,89 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HEEMSKERK",
+      "contact": {
+        "phone": "14 0251",
+        "email": "post@heemskerk.nl",
+        "website": "http://www.heemskerk.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "De omgevingsvergunning voor een terras kost minimaal € 187,35.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Heemskerk is het basistarief voor een omgevingsvergunning € 195,40 (2024). Het genoemde bedrag van € 187,35 is verouderd."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 6,
+    "invalid_urls": 1,
+    "accuracy_percentage": 85.7,
+    "valid_urls_list": [
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca/terrasvergunning",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/vergunning-gebruik-openbare-weg",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca/exploitatievergunning",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca",
+      "https://www.heemskerk.nl",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/omgevingsvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.heemskerk.nl\">Gemeente",
+        "reason": "INVALID: Error scraping https://www.heemskerk.nl\">Gemeente: HTTPSConnectionPool(host='www.heemskerk.nl%22%3egemeente', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x107477610>: Failed to resolve 'www.heemskerk.nl%22%3egemeente' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een omgevingsvergunning voor een terras kost minimaal € 195,18",
+          "original_reference": "De omgevingsvergunning voor een terras kost minimaal € 187,35",
+          "note": "De kosten voor de omgevingsvergunning zijn hoger in de actuele bron (€195,18) dan in de originele tekst (€187,35)",
+          "source_urls": [
+            "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca/terrasvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Per jaar € 18,70",
+          "original_reference": "€ 17,20 per jaar",
+          "note": "Het jaartarief voor precariobelasting is €18,70 volgens de bron, terwijl de originele tekst €17,20 vermeldt",
+          "source_urls": [
+            "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca/terrasvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een gemaatvoerde situatietekening",
+          "original_reference": "Een gedetailleerde situatietekening",
+          "note": "De bron specificeert dat de situatietekening 'gemaatvoerd' moet zijn, wat specifieker is dan alleen 'gedetailleerd'",
+          "source_urls": [
+            "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca/terrasvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de actuele tarieven voor 2025, die hoger liggen dan in de originele tekst vermeld. Daarnaast is er een specificatie gevonden over het type situatietekening dat vereist is (gemaatvoerd in plaats van alleen gedetailleerd). Deze verschillen zijn vooral relevant voor de kostenberekening en de aanvraagvereisten."
+  }
+}

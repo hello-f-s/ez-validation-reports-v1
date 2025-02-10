@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LOPIK",
+      "contact": {
+        "phone": "(0348) 55 99 55",
+        "email": "gemeente@lopik.nl",
+        "website": "http://www.lopik.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "Via www.omgevingswet.overheid.nl gaat u na of u een melding moet doen of een vergunning moet aanvragen",
+        "status": "false",
+        "note": "De genoemde website is onjuist. De juiste website voor het aanvragen van een omgevingsvergunning of het doen van een melding is www.omgevingsloket.nl"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.lopik.nl/milieu-vergunning-of-melding",
+      "https://www.lopik.nl/bedrijfsactiviteiten-wijzigen",
+      "https://www.lopik.nl/omgevingsvergunning",
+      "https://www.lopik.nl/omgevingsvergunning-strijdig-gebruik",
+      "https://www.lopik.nl/brandveiligheid-melding-of-vergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "In de volgende gevallen moet u een omgevingsvergunning aanvragen voor brandveilig gebruik: U biedt als bedrijf slaapgelegenheid aan meer dan 10 personen, U biedt in een zorginstelling slaapgelegenheid aan meer dan 10 personen, In het gebouw zijn overdag meer dan 10 personen jonger dan 12 jaar aanwezig, In het gebouw zijn overdag meer dan 10 lichamelijk of verstandelijk gehandicapte personen aanwezig",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen specifieke details over wanneer een brandveiligheidsvergunning nodig is. Dit is belangrijke aanvullende informatie voor ondernemers.",
+          "source_urls": [
+            "https://www.lopik.nl/brandveiligheid-melding-of-vergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Milieuregels waar u zich aan moet houden gaan onder andere over het volgende: verwerken van afval, geluidsniveau van uw bedrijf, gebruik van energie, vervuiling van water, bodem en lucht",
+          "original_reference": "Als ondernemer moet u zich houden aan milieuregels",
+          "note": "De bronpagina specificeert concrete voorbeelden van milieuregels, terwijl de originele tekst alleen een algemene vermelding maakt.",
+          "source_urls": [
+            "https://www.lopik.nl/milieu-vergunning-of-melding"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten belangrijke aanvullende details die niet in de originele tekst staan, met name specifieke criteria voor brandveiligheidsvergunningen en concrete voorbeelden van milieuregels. Deze informatie is essentieel voor ondernemers om te bepalen welke vergunningen zij nodig hebben. De kernprocedures en termijnen zijn wel consistent tussen de originele tekst en de bronnen."
+  }
+}

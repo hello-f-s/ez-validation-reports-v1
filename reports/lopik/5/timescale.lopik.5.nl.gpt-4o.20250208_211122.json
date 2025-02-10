@@ -1,0 +1,89 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LOPIK",
+      "contact": {
+        "phone": "(0348) 55 99 55",
+        "email": "gemeente@lopik.nl",
+        "website": "http://www.lopik.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "U vraagt de exploitatievergunning aan door het formulier te mailen naar gemeente@lopik.nl of per post te sturen naar:",
+        "status": "false",
+        "note": "Het juiste e-mailadres voor de gemeente Lopik is info@lopik.nl, niet gemeente@lopik.nl"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 6,
+    "invalid_urls": 1,
+    "accuracy_percentage": 85.7,
+    "valid_urls_list": [
+      "https://www.lopik.nl/exploitatievergunning-horecabedrijf",
+      "https://www.lopik.nl/ontheffing-sluitingstijd",
+      "https://www.lopik.nl",
+      "https://www.lopik.nl/openingstijden-horeca-eenmalig-aanpassen",
+      "https://www.lopik.nl/standplaats-aanvragen",
+      "https://www.lopik.nl/openingstijden-winkels"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.lopik.nl\">Gemeente",
+        "reason": "INVALID: Error scraping https://www.lopik.nl\">Gemeente: HTTPSConnectionPool(host='www.lopik.nl%22%3egemeente', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1073bb110>: Failed to resolve 'www.lopik.nl%22%3egemeente' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "zondag tot en met donderdag tussen 01:00 uur en 08:00 uur; vrijdag en zaterdag tussen 02:00 uur en 08:00 uur (dagen voorafgaand aan een nationale feestdag of zijnde een nationale feestdag)",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen specifieke sluitingstijden, terwijl de bronpagina deze wel duidelijk vermeldt in de APV",
+          "source_urls": [
+            "https://www.lopik.nl/ontheffing-sluitingstijd"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wanneer u een horecabedrijf bent met een exploitatievergunning kunt u een ontheffing aanvragen voor het 'structureel' langer openblijven tot maximaal 03:00 uur",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de mogelijkheid tot structurele ontheffing tot 03:00 uur voor bedrijven met een exploitatievergunning",
+          "source_urls": [
+            "https://www.lopik.nl/ontheffing-sluitingstijd"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U start of neemt een horecabedrijf over, De rechtsvorm van uw bedrijf wijzigt, U krijgt een andere leidinggevende, U gaat nieuwe activiteiten uitvoeren, U gaat uw bedrijf uitbreiden door een verbouwing, U start een terras of breidt uw terras uit",
+          "original_reference": "No matching information",
+          "note": "De originele tekst specificeert niet de situaties waarin een exploitatievergunning moet worden aangevraagd",
+          "source_urls": [
+            "https://www.lopik.nl/exploitatievergunning-horecabedrijf"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten belangrijke aanvullende informatie die niet in de originele tekst staat, waaronder specifieke sluitingstijden, mogelijkheden voor structurele ontheffingen en gedetailleerde situaties waarin een exploitatievergunning nodig is. Deze informatie is essentieel voor horecaondernemers en zou in de originele tekst opgenomen moeten worden voor volledigheid."
+  }
+}

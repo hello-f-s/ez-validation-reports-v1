@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DELFT",
+      "contact": {
+        "phone": "14 015",
+        "email": "null",
+        "website": "http://www.delft.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Gewone omgevingsvergunning: 8 weken",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Delft duurt een reguliere (gewone) omgevingsvergunningsprocedure maximaal 8 weken, met de mogelijkheid tot verlenging met 6 weken. De vermelde termijn is onvolledig omdat de verlengingsmogelijkheid niet wordt genoemd."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.delft.nl/omgevingsvergunning-voor-aanleg",
+      "https://www.delft.nl/omgevingsvergunning-bouwen",
+      "https://www.delft.nl/uw-plan-voorleggen-aan-de-gemeente",
+      "https://www.delft.nl/omgevingsvergunning-milieu",
+      "https://www.delft.nl/omgevingsvergunning-aanvragen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De gemeente kan deze periode eenmalig met 6 weken verlengen. En met de tijd die u nodig heeft om ontbrekende gegevens in te leveren.",
+          "original_reference": "Gewone omgevingsvergunning: 8 weken, Uitgebreide omgevingsvergunning: 6 maanden",
+          "note": "De originele tekst vermeldt niet de mogelijkheid tot 6 weken verlenging en extra tijd voor het aanleveren van ontbrekende gegevens",
+          "source_urls": [
+            "https://www.delft.nl/omgevingsvergunning-bouwen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Er zijn geen kosten.",
+          "original_reference": "Hier kan geen specifieke informatie over gevonden worden op de website van deze gemeente.",
+          "note": "De originele tekst geeft aan dat er geen informatie over kosten beschikbaar is, terwijl de bron expliciet vermeldt dat er geen kosten zijn",
+          "source_urls": [
+            "https://www.delft.nl/omgevingsvergunning-milieu"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U mag uw bedrijf pas starten als u de vergunning heeft. Of 4 weken na uw melding als u nog geen reactie heeft ontvangen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over wanneer een bedrijf mag starten na een melding of vergunningaanvraag",
+          "source_urls": [
+            "https://www.delft.nl/omgevingsvergunning-milieu"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten enkele belangrijke aanvullingen op de originele tekst. Ze specificeren dat de gemeente de behandelperiode met 6 weken kan verlengen, verduidelijken dat er geen kosten zijn voor de vergunning, en geven aan wanneer een bedrijf mag starten na een melding of vergunningaanvraag. Deze informatie ontbreekt in de originele tekst maar is wel relevant voor aanvragers."
+  }
+}

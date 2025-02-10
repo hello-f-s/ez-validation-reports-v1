@@ -1,0 +1,97 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MAASDRIEL",
+      "contact": {
+        "phone": "14 0418",
+        "email": "info@maasdriel.nl",
+        "website": "http://www.maasdriel.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 15,
+    "false_sentences": 2,
+    "accuracy_percentage": 88.2,
+    "false_statements": [
+      {
+        "sentence": "Een nieuwe alcoholvergunning kost € 572,00.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Maasdriel kost een nieuwe alcoholvergunning (Drank- en Horecawetvergunning) € 585,00"
+      },
+      {
+        "sentence": "Het wijzigen van een alcoholvergunning voor veranderingen bij leidinggevenden of in de inrichting kost € 176,00.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Maasdriel kost het wijzigen van een alcoholvergunning € 180,00"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 2,
+    "invalid_urls": 5,
+    "accuracy_percentage": 28.6,
+    "valid_urls_list": [
+      "https://www.maasdriel.nl/inwoner-en-ondernemer/ondernemen/horeca/alcoholvergunning",
+      "https://www.maasdriel.nl"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.maasdriel.nl/inwoner-en-ondernemer/bouwen-en-verbouwen/aanvragen-vergunningen-en-vooroverleg",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.maasdriel.nl/inwoner-en-ondernemer/bouwen-en-verbouwen/wegwijzer-omgevingsloket/Nieuw-vestigen-bedrijf",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.maasdriel.nl\">Gemeente",
+        "reason": "INVALID: Error scraping https://www.maasdriel.nl\">Gemeente: HTTPSConnectionPool(host='www.maasdriel.nl%22%3egemeente', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10383bb10>: Failed to resolve 'www.maasdriel.nl%22%3egemeente' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.maasdriel.nl/inwoner-en-ondernemer/wonen-en-leven/arbeidsmigranten/huisvesters-/huisvesting-internationale-werknemers",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.maasdriel.nl/inwoner-en-ondernemer/wonen-en-leven/arbeidsmigranten/huisvesters-/exploitatievergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als ondernemer alcohol schenken of verkopen? Dan heeft u een alcoholvergunning nodig. Dit geldt zowel voor horecabedrijven en slijterijen als voor instellingen als sportkantines, culturele centra en buurthuizen.",
+          "original_reference": "Alcoholvergunning wanneer van toepassing, inclusief de Wet Bibob toetsen",
+          "note": "De bronpagina specificeert duidelijker voor welke type instellingen een alcoholvergunning nodig is (inclusief sportkantines, culturele centra en buurthuizen), terwijl de originele tekst dit minder specifiek beschrijft.",
+          "source_urls": [
+            "https://www.maasdriel.nl/inwoner-en-ondernemer/ondernemen/horeca/alcoholvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als de rechtsvorm wijzigt. Bijvoorbeeld: het horecabedrijf werd eerst geëxploiteerd door een vennootschap onder firma (v.o.f.) en de rechtsvorm wordt gewijzigd in een besloten vennootschap (bv).",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat belangrijke aanvullende informatie over wanneer een nieuwe alcoholvergunning nodig is bij wijziging van rechtsvorm, wat niet vermeld wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.maasdriel.nl/inwoner-en-ondernemer/ondernemen/horeca/alcoholvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten enkele belangrijke specificaties die niet in de originele tekst staan, met name over de reikwijdte van de alcoholvergunningplicht en specifieke situaties waarin een nieuwe vergunning moet worden aangevraagd. De informatie in de bronnen is gedetailleerder wat betreft de alcoholvergunning, maar veel van de informatie uit de originele tekst (zoals kosten en voorwaarden) is niet terug te vinden in de beschikbare bronpagina's."
+  }
+}

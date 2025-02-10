@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LAARBEEK",
+      "contact": {
+        "phone": "(0492) 46 97 00",
+        "email": "gemeente@laarbeek.nl",
+        "website": "http://www.laarbeek.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 8,
+    "true_sentences": 7,
+    "false_sentences": 1,
+    "accuracy_percentage": 87.5,
+    "false_statements": [
+      {
+        "sentence": "Binnen 2 tot 4 weken ontvangt u de VOG per post van Justis.",
+        "status": "false",
+        "note": "Volgens de officiële informatie van de gemeente Laarbeek wordt een VOG meestal binnen 1 tot 4 weken afgegeven, niet specifiek 2 tot 4 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.laarbeek.nl/milieu-vergunning-of-melding",
+      "https://www.laarbeek.nl/verklaring-omtrent-het-gedrag",
+      "https://www.laarbeek.nl/omgevingsvergunning",
+      "https://www.laarbeek.nl/verzoek-op-basis-van-de-wet-open-overheid-woo",
+      "https://www.laarbeek.nl/reclame-uitingen-plaatsen-omgevingsvergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U regelt een VOG rechtstreeks via Justis [...] of u regelt een VOG via uw gemeente",
+          "original_reference": "Aanvragen: - Online via Justis door het aanvraagformulier VOG NP in te vullen - Bij de gemeente",
+          "note": "De brontekst specificeert dat bij aanvraag via gemeente het formulier al helemaal ingevuld en ondertekend moet zijn door de aanvrager voordat deze naar de gemeente gaat. Deze belangrijke voorwaarde ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.laarbeek.nl/verklaring-omtrent-het-gedrag"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U kunt hiervoor iemand machtigen. Deze persoon moet meebrengen: Een schriftelijke machtiging, Een kopie van uw legitimatiebewijs, Een kopie van zijn/haar eigen legitimatiebewijs",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de mogelijkheid om iemand te machtigen voor het aanvragen van een VOG en de benodigde documenten hiervoor.",
+          "source_urls": [
+            "https://www.laarbeek.nl/verklaring-omtrent-het-gedrag"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vraag hierexterne-link-icoon een verklaring omtrent gedrag aan met uw DigiD",
+          "original_reference": "Online via Justis door het aanvraagformulier VOG NP in te vullen",
+          "note": "De brontekst specificeert dat voor online aanvragen DigiD nodig is. Deze belangrijke voorwaarde ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.laarbeek.nl/verklaring-omtrent-het-gedrag"
+          ]
+        }
+      ]
+    },
+    "summary": "De broninhoud bevat belangrijke aanvullende informatie die ontbreekt in de originele tekst, waaronder: de vereiste dat het formulier bij gemeenteaanvraag vooraf volledig ingevuld moet zijn, de mogelijkheid om iemand te machtigen (inclusief benodigde documenten), en de DigiD-vereiste voor online aanvragen. Deze informatie is essentieel voor een complete en accurate beschrijving van het VOG-aanvraagproces."
+  }
+}

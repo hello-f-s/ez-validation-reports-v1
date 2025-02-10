@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "CULEMBORG",
+      "contact": {
+        "phone": "(0345) 47 77 00",
+        "email": "info@culemborg.nl",
+        "website": "http://www.culemborg.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "Er wordt geen specifieke informatie over kosten gegeven.",
+        "status": "false",
+        "note": "Op de website van gemeente Culemborg staat dat er wel degelijk kosten verbonden zijn aan een alcoholwetvergunning. Voor 2024 bedragen de leges voor een nieuwe alcoholwetvergunning €635,00."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.culemborg.nl/informatieverzoek-en-woo-verzoek",
+      "https://www.culemborg.nl/omgevingsvergunning",
+      "https://www.culemborg.nl/informatieverzoek",
+      "https://www.culemborg.nl/alcoholwetvergunning",
+      "https://www.culemborg.nl/alcohol-ontheffing"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Kosten Alcohol ontheffing: € 98,15",
+          "original_reference": "Er wordt geen specifieke informatie over kosten gegeven",
+          "note": "De originele tekst vermeldt geen kosten, terwijl de bronpagina specifiek vermeldt dat een alcohol ontheffing € 98,15 kost",
+          "source_urls": [
+            "https://www.culemborg.nl/alcohol-ontheffing"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een geldig kopie van een legitimatiebewijs van de leidinggevende",
+          "original_reference": "Legitimatiebewijs van de leidinggevende",
+          "note": "De bronpagina specificeert dat het om een 'kopie' van het legitimatiebewijs moet gaan, wat een belangrijk detail is voor de aanvraag",
+          "source_urls": [
+            "https://www.culemborg.nl/alcoholwetvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een plattegrond van de inrichting. Hierop moet duidelijk staan wat de afmetingen (lengte, breedte en hoogte) en de oppervlaktes in m2 van de publiekstoegankelijke ruimtes zijn. Op de plattegrond moet aangegeven staan waar de bar, keuken, toiletten zijn.",
+          "original_reference": "Plattegrond van de inrichting",
+          "note": "De bronpagina geeft veel specifiekere eisen voor de plattegrond, inclusief vereiste details over afmetingen en aan te geven onderdelen",
+          "source_urls": [
+            "https://www.culemborg.nl/alcoholwetvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont drie belangrijke verschillen tussen de originele tekst en de bronnen. Het meest opvallende verschil is dat de kosten voor een alcohol ontheffing (€ 98,15) wel in de bron staan maar niet in de originele tekst. Daarnaast zijn er twee belangrijke specificaties in de vereiste documenten die preciezer worden beschreven in de bronnen: het moet gaan om een kopie van het legitimatiebewijs en de plattegrond moet aan specifieke gedetailleerde eisen voldoen. Deze details zijn belangrijk voor een correcte aanvraag."
+  }
+}

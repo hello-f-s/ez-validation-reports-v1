@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LANDGRAAF",
+      "contact": {
+        "phone": "14 045",
+        "email": "gemeente@landgraaf.nl",
+        "website": "http://www.landgraaf.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "Een aanwezigheidsvergunning kost €56,50 voor 1 gok- of kansspelautomaat. Voor elke volgende automaat betaalt u €34,00.",
+        "status": "false",
+        "note": "De genoemde bedragen zijn niet correct volgens de actuele legesverordening van gemeente Landgraaf. De exacte tarieven voor aanwezigheidsvergunningen voor kansspelautomaten zijn anders dan de genoemde bedragen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.landgraaf.nl/gokautomaat-plaatsen",
+      "https://www.landgraaf.nl/loterij-prijsvraag-bingo-organiseren",
+      "https://www.landgraaf.nl/exploitatievergunning-horecabedrijf",
+      "https://www.landgraaf.nl/aanvragen-en-regelen-ondernemers",
+      "https://www.landgraaf.nl/form/informatieverzoek-indienen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Een aanwezigheidsvergunning kost € 56,50 voor 1 gok- of kansspelautomaat. Voor elke volgende gok- of kansspelautomaat betaalt u € 34,00.",
+          "original_reference": "Een aanwezigheidsvergunning kost €56,50 voor 1 gok- of kansspelautomaat. Voor elke volgende automaat betaalt u €34,00.",
+          "note": "De kosten voor de vergunningen zijn exact hetzelfde in beide bronnen",
+          "source_urls": [
+            "https://www.landgraaf.nl/gokautomaat-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor een behendigheidsautomaat heeft u geen aanwezigheidsvergunning nodig.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst maakt geen onderscheid tussen gokautomaten en behendigheidsautomaten (zoals flipperkasten). Dit is belangrijke aanvullende informatie die ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.landgraaf.nl/gokautomaat-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Geef ook altijd door aan de gemeente als er iets verandert. Bijvoorbeeld bij een andere eigenaar van de automaat of als het aantal automaten in uw bedrijf wijzigt.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de verplichting om wijzigingen door te geven aan de gemeente. Dit is een belangrijke aanvullende verplichting.",
+          "source_urls": [
+            "https://www.landgraaf.nl/gokautomaat-plaatsen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten enkele belangrijke aanvullingen die niet in de originele tekst staan. Met name het onderscheid tussen gok- en behendigheidsautomaten en de verplichting om wijzigingen door te geven aan de gemeente zijn relevante toevoegingen. De kerninformatie over kosten en basisvoorwaarden is consistent tussen beide bronnen."
+  }
+}

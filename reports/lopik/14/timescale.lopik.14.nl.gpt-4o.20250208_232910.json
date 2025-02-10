@@ -1,0 +1,89 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LOPIK",
+      "contact": {
+        "phone": "(0348) 55 99 55",
+        "email": "gemeente@lopik.nl",
+        "website": "http://www.lopik.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "U ontvangt binnen 8 weken bericht of u de ontheffing krijgt.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Lopik wordt er binnen 4 weken (niet 8 weken) een besluit genomen over een parkeerontheffing."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 6,
+    "invalid_urls": 1,
+    "accuracy_percentage": 85.7,
+    "valid_urls_list": [
+      "https://www.lopik.nl/caravan-parkeren-op-de-openbare-weg",
+      "https://www.lopik.nl/parkeervergunning",
+      "https://www.lopik.nl",
+      "https://www.lopik.nl/parkeren-in-de-blauwe-zone",
+      "https://www.lopik.nl/vraag-en-antwoord-handhaving",
+      "https://www.lopik.nl/parkeren-voor-autobedrijven"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.lopik.nl\">Gemeente",
+        "reason": "INVALID: Error scraping https://www.lopik.nl\">Gemeente: HTTPSConnectionPool(host='www.lopik.nl%22%3egemeente', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x105aa82d0>: Failed to resolve 'www.lopik.nl%22%3egemeente' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor het aanvragen van een parkeervergunning moet u voldoen aan de volgende voorwaarden: U bent eigenaar van het voertuig óf gebruiker van een leaseauto of bedrijfsauto. U woont in een gebied waar u een parkeervergunning moet hebben. U staat ingeschreven als inwoner van de gemeente. U hebt geen eigen parkeerplek, zoals een garage of oprit.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat specifieke voorwaarden voor parkeervergunningen die niet in de originele tekst staan vermeld. Dit zijn belangrijke aanvullende vereisten voor het verkrijgen van een parkeervergunning.",
+          "source_urls": [
+            "https://www.lopik.nl/parkeervergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als bedrijf kunt u meerdere zakelijke ontheffingen aanvragen. De gemeente bepaalt hoeveel ontheffingen uw bedrijf krijgt.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat bedrijven meerdere ontheffingen kunnen aanvragen en dat de gemeente het aantal bepaalt. Dit is belangrijke aanvullende informatie voor bedrijven.",
+          "source_urls": [
+            "https://www.lopik.nl/parkeren-in-de-blauwe-zone"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor het aanvragen van een parkeervergunning heeft u het volgende nodig: uw DigiD",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat DigiD nodig is voor de aanvraag, wat een essentieel vereiste is voor het aanvraagproces.",
+          "source_urls": [
+            "https://www.lopik.nl/parkeervergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten belangrijke aanvullende informatie die niet in de originele tekst staat. Dit betreft vooral specifieke voorwaarden voor parkeervergunningen, de mogelijkheid voor bedrijven om meerdere ontheffingen aan te vragen, en het vereiste gebruik van DigiD bij de aanvraag. Deze informatie is essentieel voor een complete en accurate beschrijving van de parkeermogelijkheden en aanvraagprocedures."
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DRUTEN",
+      "contact": {
+        "phone": "(088) 432 70 00",
+        "email": "info@druten.nl",
+        "website": "http://www.druten.nl"
+      }
+    },
+    "service": {
+      "id": 13,
+      "name": "Omzettingsvergunning voor kamerverhuur aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "Om de omgevingsvergunning aan te vragen, moet u de aanvraag indienen via het Omgevingsloket online.",
+        "status": "false",
+        "note": "Het e-mailadres omgevingsloket@drutenwijchen.nl is niet correct. Het juiste e-mailadres voor de gemeente Druten voor vragen over omgevingsvergunningen is info@druten.nl."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 10,
+    "valid_urls": 5,
+    "invalid_urls": 5,
+    "accuracy_percentage": 50.0,
+    "valid_urls_list": [
+      "https://www.druten.nl/monument-verbouwen-herstellen-of-onderhouden",
+      "https://www.druten.nl/exploitatievergunning-horecabedrijf",
+      "https://www.druten.nl/vergunning-of-melding-milieu",
+      "https://www.druten.nl",
+      "https://www.druten.nl/omgevingsvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.druten.nl/tijdelijke-verhuur-leegstaand-pand",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.omgevingsloket.nl\">Omgevingsloket",
+        "reason": "INVALID: Error scraping https://www.omgevingsloket.nl\">Omgevingsloket: HTTPSConnectionPool(host='www.omgevingsloket.nl%22%3eomgevingsloket', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10821b110>: Failed to resolve 'www.omgevingsloket.nl%22%3eomgevingsloket' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.omgevingsloket.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.druten.nl\">Gemeente",
+        "reason": "INVALID: Error scraping https://www.druten.nl\">Gemeente: HTTPSConnectionPool(host='www.druten.nl%22%3egemeente', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10821a5d0>: Failed to resolve 'www.druten.nl%22%3egemeente' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.druten.nl\">legesverordening</a>",
+        "reason": "INVALID: Error scraping https://www.druten.nl\">legesverordening</a>: HTTPSConnectionPool(host='www.druten.nl%22%3elegesverordening%3c', port=443): Max retries exceeded with url: /a%3E (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10821bc50>: Failed to resolve 'www.druten.nl%22%3elegesverordening%3c' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vanaf 1 januari 2024 zijn hiervoor in de Omgevingswet andere regels",
+          "original_reference": "No matching information",
+          "note": "De bronpagina verwijst naar nieuwe regels vanaf 2024 onder de Omgevingswet, terwijl dit niet wordt vermeld in de originele tekst. Dit is belangrijke informatie voor aanvragers.",
+          "source_urls": [
+            "https://www.druten.nl/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bedrijven die schade aan het milieu veroorzaken, hebben een omgevingsvergunning voor het milieu nodig. Vroeger heette dit de milieuvergunning.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen specifieke informatie over milieuvergunningen, terwijl dit wel een belangrijk onderdeel is van de omgevingsvergunning voor bepaalde bedrijven.",
+          "source_urls": [
+            "https://www.druten.nl/vergunning-of-melding-milieu"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Dan raden wij u aan eerst een vooroverleg in te dienen",
+          "original_reference": "Overleg vooraf met de gemeente over uw plannen door contact op te nemen via omgevingsloket@drutenwijchen.nl",
+          "note": "De bronpagina spreekt over een formeel vooroverleg, terwijl de originele tekst alleen spreekt over informeel overleg via email. Dit zijn verschillende procedures.",
+          "source_urls": [
+            "https://www.druten.nl/monument-verbouwen-herstellen-of-onderhouden"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de aankondiging van nieuwe regels vanaf 2024, specifieke informatie over milieuvergunningen die ontbreekt in de originele tekst, en verschillende procedures voor vooroverleg. Deze informatie is essentieel voor een correcte aanvraagprocedure."
+  }
+}

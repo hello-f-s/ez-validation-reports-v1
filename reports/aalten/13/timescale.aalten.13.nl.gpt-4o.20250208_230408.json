@@ -1,0 +1,100 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AALTEN",
+      "contact": {
+        "phone": "(0543) 49 33 33",
+        "email": "gemeente@aalten.nl",
+        "website": "http://www.aalten.nl"
+      }
+    },
+    "service": {
+      "id": 13,
+      "name": "Omzettingsvergunning voor kamerverhuur aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "Bij een uitgebreide aanvraag ontvangt u binnen 6 maanden bericht, ook verlengbaar met 6 weken.",
+        "status": "false",
+        "note": "Bij een uitgebreide procedure is de wettelijke beslistermijn 26 weken (ongeveer 6 maanden) met een mogelijke verlenging van maximaal 6 weken. Echter, voor de gemeente Aalten geldt een termijn van 8 weken voor een uitgebreide aanvraag, met een mogelijke verlenging van 6 weken, net als bij een reguliere aanvraag."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 9,
+    "valid_urls": 5,
+    "invalid_urls": 4,
+    "accuracy_percentage": 55.6,
+    "valid_urls_list": [
+      "https://www.aalten.nl/omgevingsvergunning-strijdig-gebruik",
+      "https://www.aalten.nl/omgevingsvergunning",
+      "https://www.aalten.nl/woning-uit-de-woonruimtevoorraad-halen",
+      "https://www.aalten.nl/milieu-vergunning-of-melding",
+      "https://www.aalten.nl/bedrijfsactiviteiten-wijzigen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://omgevingsvergunning.gemeenteaalten.nl\">Omgevingsvergunning",
+        "reason": "INVALID: Error scraping https://omgevingsvergunning.gemeenteaalten.nl\">Omgevingsvergunning: HTTPSConnectionPool(host='omgevingsvergunning.gemeenteaalten.nl%22%3eomgevingsvergunning', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10631f110>: Failed to resolve 'omgevingsvergunning.gemeenteaalten.nl%22%3eomgevingsvergunning' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://woonruimtevoorraad.gemeenteaalten.nl\">Woning",
+        "reason": "INVALID: Error scraping https://woonruimtevoorraad.gemeenteaalten.nl\">Woning: HTTPSConnectionPool(host='woonruimtevoorraad.gemeenteaalten.nl%22%3ewoning', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10631f610>: Failed to resolve 'woonruimtevoorraad.gemeenteaalten.nl%22%3ewoning' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://omgevingsvergunning.gemeenteaalten.nl",
+        "reason": "INVALID: Error scraping https://omgevingsvergunning.gemeenteaalten.nl: HTTPSConnectionPool(host='omgevingsvergunning.gemeenteaalten.nl', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1018)')))"
+      },
+      {
+        "url": "https://woonruimtevoorraad.gemeenteaalten.nl",
+        "reason": "INVALID: Error scraping https://woonruimtevoorraad.gemeenteaalten.nl: HTTPSConnectionPool(host='woonruimtevoorraad.gemeenteaalten.nl', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1018)')))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Overleg met de gemeente over uw plannen, vóórdat u de vergunning aanvraagt.",
+          "original_reference": "Overleg vooraf met de gemeente en dien uw aanvraag in via het Omgevingsloket online.",
+          "note": "De bronnen leggen meer nadruk op het vooroverleg als aparte stap en noemen dit specifiek een 'vooroverleg' om verrassingen te voorkomen, terwijl de originele tekst dit minder expliciet beschrijft.",
+          "source_urls": [
+            "https://www.aalten.nl/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Doe dit minimaal 8 weken voordat u wilt starten met de werkzaamheden. Bij een uitgebreide aanvraag doet u dit minimaal 6 maanden van tevoren.",
+          "original_reference": "No matching information",
+          "note": "De bronnen specificeren minimale aanvraagtermijnen vóór start werkzaamheden die niet genoemd worden in de originele tekst.",
+          "source_urls": [
+            "https://www.aalten.nl/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vraagt u een omgevingsvergunning aan met een bouwsom van € 500.000,- of meer dan dient u ook een formulier Wet Bibob in te te vullen.",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden een aanvullende Bibob-verplichting voor aanvragen boven €500.000 die niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.aalten.nl/omgevingsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten enkele belangrijke aanvullende vereisten en specificaties die niet in de originele tekst staan, waaronder de minimale aanvraagtermijnen voor start werkzaamheden, een Bibob-verplichting voor grote projecten, en een meer geformaliseerd vooroverlegproces. Deze informatie is essentieel voor een complete en accurate beschrijving van de aanvraagprocedure."
+  }
+}

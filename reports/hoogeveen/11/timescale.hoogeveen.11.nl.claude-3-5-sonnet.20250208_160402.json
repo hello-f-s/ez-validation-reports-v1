@@ -1,0 +1,106 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HOOGEVEEN",
+      "contact": {
+        "phone": "14 0528",
+        "email": "info@hoogeveen.nl",
+        "website": "http://www.hoogeveen.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 11,
+    "false_sentences": 2,
+    "accuracy_percentage": 84.6,
+    "false_statements": [
+      {
+        "sentence": "U krijgt binnen 1 werkdag een bevestigingsmail.",
+        "status": "false",
+        "note": "De gemeente Hoogeveen specificeert geen exacte termijn voor het versturen van een bevestigingsmail na een aanvraag."
+      },
+      {
+        "sentence": "Deze termijn kan met 2 weken worden verlengd.",
+        "status": "false",
+        "note": "Volgens de gemeente Hoogeveen kan de termijn met 6 weken worden verlengd, niet met 2 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.hoogeveen.nl/vergunningen/vergunning-gebruik-gemeentegrond",
+      "https://www.hoogeveen.nl/vergunningen/omgevingsvergunningen",
+      "https://www.hoogeveen.nl/vergunningen/evenementenvergunning-aanvragen",
+      "https://www.hoogeveen.nl/raad-en-college/woo-verzoek",
+      "https://www.hoogeveen.nl/dossiers/omgevingswet"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.hoogeveen.nl/omgevingswet>",
+        "reason": "INVALID: Error scraping https://www.hoogeveen.nl/omgevingswet>: 404 Client Error: Not Found for url: https://www.hoogeveen.nl/omgevingswet%3E"
+      },
+      {
+        "url": "https://www.hoogeveen.nl/omgevingsvergunningen>",
+        "reason": "INVALID: Error scraping https://www.hoogeveen.nl/omgevingsvergunningen>: 404 Client Error: Not Found for url: https://www.hoogeveen.nl/omgevingsvergunningen%3E"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 4,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Mail omgevingsvergunningen@dewoldenhoogeveen.nl of bel 14 0528",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen specifieke contactgegevens voor omgevingsvergunningen, terwijl de bron een specifiek e-mailadres vermeldt",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/omgevingsvergunningen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U krijgt binnen 1 werkdag een bevestigingsmail van het mailadres noreply@jeleefomgeving.nl",
+          "original_reference": "U krijgt binnen 1 werkdag een bevestigingsmail",
+          "note": "De bron specificeert het exacte afzender e-mailadres voor de bevestiging, wat niet vermeld staat in de originele tekst",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/omgevingsvergunningen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het is belangrijk om buren en bedrijven in uw buurt te betrekken als u iets in uw omgeving gaat veranderen (participatie)",
+          "original_reference": "No matching information",
+          "note": "De bron vermeldt een belangrijke participatievereiste die niet genoemd wordt in de originele tekst",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/omgevingsvergunningen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "omgevingswet.overheid.nl",
+          "original_reference": "omgevingsloket.overheid.nl",
+          "note": "De URL voor het aanvragen van vergunningen is gewijzigd naar omgevingswet.overheid.nl in plaats van omgevingsloket.overheid.nl",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/omgevingsvergunningen"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn belangrijke verschillen gevonden tussen de originele tekst en de bronnen. De contactgegevens zijn specifieker in de bronnen, er is een nieuwe participatievereiste toegevoegd, en de website voor aanvragen is gewijzigd. Ook wordt er specifieke informatie gegeven over het afzender e-mailadres voor bevestigingen. Deze wijzigingen lijken samen te hangen met de invoering van de nieuwe Omgevingswet per 1 januari 2024."
+  }
+}

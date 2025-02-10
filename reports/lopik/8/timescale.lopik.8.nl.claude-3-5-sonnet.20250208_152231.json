@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LOPIK",
+      "contact": {
+        "phone": "(0348) 55 99 55",
+        "email": "gemeente@lopik.nl",
+        "website": "http://www.lopik.nl"
+      }
+    },
+    "service": {
+      "id": 8,
+      "name": "Marktvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "U ontvangt binnen 8 weken bericht of u de vergunning krijgt.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Lopik wordt er binnen 4 weken (niet 8 weken) een besluit genomen over de standplaatsvergunning."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.lopik.nl/exploitatievergunning-horecabedrijf",
+      "https://www.lopik.nl/milieu-vergunning-of-melding",
+      "https://www.lopik.nl/omgevingsvergunning",
+      "https://www.lopik.nl/openingstijden-horeca-eenmalig-aanpassen",
+      "https://www.lopik.nl/standplaats-aanvragen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "U mag op een standplaats goederen verkopen als u hier een vergunning voor heeft. De regels rondom standplaatsen zijn verder uitgewerkt in het standplaatsenbeleid 2023.",
+          "original_reference": "U mag op een standplaats goederen verkopen als u hier een vergunning voor heeft. De regels rondom standplaatsen zijn uitgewerkt in het standplaatsenbeleid 2023",
+          "note": "De informatie over vergunningvereiste en het standplaatsenbeleid 2023 komt exact overeen",
+          "source_urls": [
+            "https://www.lopik.nl/standplaats-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wilt u goederen of etenswaren verkopen vanuit een kraam of wagen, zoals een viskraam, een bloemenstalletje of een ijskraam?",
+          "original_reference": "No matching information",
+          "note": "De bronpagina geeft specifieke voorbeelden van type kramen die niet in de originele tekst staan, wat nuttige verduidelijking biedt voor aanvragers",
+          "source_urls": [
+            "https://www.lopik.nl/standplaats-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Postbus 503410 CB Lopik",
+          "original_reference": "No matching information",
+          "note": "Het postadres ontbreekt in de originele tekst, terwijl dit wel relevant is voor het opsturen van de aanvraag",
+          "source_urls": [
+            "https://www.lopik.nl/standplaats-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De broninhoud komt grotendeels overeen met de originele tekst, maar bevat enkele belangrijke aanvullingen die ontbreken in het origineel: concrete voorbeelden van type kramen en het volledige postadres voor schriftelijke aanvragen. Deze informatie maakt de aanvraagprocedure duidelijker voor potentiële aanvragers."
+  }
+}

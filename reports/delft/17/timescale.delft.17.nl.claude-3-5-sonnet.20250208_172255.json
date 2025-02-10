@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DELFT",
+      "contact": {
+        "phone": "14 015",
+        "email": "null",
+        "website": "http://www.delft.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 11,
+    "false_sentences": 2,
+    "accuracy_percentage": 84.6,
+    "false_statements": [
+      {
+        "sentence": "Voor een terrasvergunning bepaalde tijd betaalt u € 492,85.",
+        "status": "false",
+        "note": "Het actuele tarief voor een terrasvergunning in Delft voor bepaalde tijd is € 506,15 (2024)."
+      },
+      {
+        "sentence": "Voor een terras in de binnenstad betaalt u per m2 per maand € 8,37 of per jaar € 78,20 precariobelasting.",
+        "status": "false",
+        "note": "De actuele precariobelasting voor terrassen in de binnenstad van Delft bedraagt € 8,60 per m2 per maand of € 80,35 per m2 per jaar (2024)."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.delft.nl/uw-plan-voorleggen-aan-de-gemeente",
+      "https://www.delft.nl/terras-plaatsen",
+      "https://www.delft.nl/ontheffing-terrasboot",
+      "https://www.delft.nl/omgevingsvergunning-milieu",
+      "https://www.delft.nl/stappen-voor-uw-plan"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De vergunning is 5 jaar geldig.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de geldigheidsduur van de terrasvergunning, terwijl de bron specificeert dat deze 5 jaar geldig is.",
+          "source_urls": [
+            "https://www.delft.nl/terras-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een terrasuitstalling is maximaal de breedte de (zij)gevel van uw pand en maximaal 1 meter diep",
+          "original_reference": "Een terrasuitstalling mag de veiligheid, toegankelijkheid en doorgang voor hulpdiensten niet belemmeren.",
+          "note": "De bron geeft specifieke afmetingen voor terrasuitstallingen die niet in de originele tekst staan vermeld.",
+          "source_urls": [
+            "https://www.delft.nl/terras-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een terrasuitstalling mag na sluiting op de openbare weg blijven staan als uw horecabedrijf binnen 24 uur weer open is",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over het laten staan van terrasuitstallingen na sluitingstijd.",
+          "source_urls": [
+            "https://www.delft.nl/terras-plaatsen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende details die niet in de originele tekst staan, waaronder de geldigheidsduur van de terrasvergunning (5 jaar), specifieke afmetingseisen voor terrasuitstallingen (maximaal gevelbreedte en 1 meter diep), en regels over het laten staan van terrasuitstallingen na sluitingstijd. Deze informatie is relevant voor ondernemers die een terras willen plaatsen."
+  }
+}

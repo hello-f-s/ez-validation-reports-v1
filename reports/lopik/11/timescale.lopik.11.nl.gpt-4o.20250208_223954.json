@@ -1,0 +1,92 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LOPIK",
+      "contact": {
+        "phone": "(0348) 55 99 55",
+        "email": "gemeente@lopik.nl",
+        "website": "http://www.lopik.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "Indien de gemeente niet binnen de termijn beslist, wordt de vergunning bij een gewone aanvraag automatisch verleend.",
+        "status": "false",
+        "note": "Dit is onjuist voor gemeente Lopik. Bij het overschrijden van de beslistermijn wordt de vergunning niet automatisch verleend. Er geldt wel een dwangsom bij niet tijdig beslissen, maar dit leidt niet tot automatische verlening van de vergunning."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.lopik.nl/omgevingsvergunning-strijdig-gebruik",
+      "https://www.lopik.nl/als-uw-plan-niet-in-het-bestemmingsplan-past",
+      "https://www.lopik.nl/omgevingsvergunning",
+      "https://www.lopik.nl/milieu-vergunning-of-melding",
+      "https://www.lopik.nl/watervergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.lopik.nl/omgevingsvergunning\">https://www.lopik.nl/omgevingsvergunning</a>",
+        "reason": "INVALID: Error scraping https://www.lopik.nl/omgevingsvergunning\">https://www.lopik.nl/omgevingsvergunning</a>: 404 Client Error: Not Found for url: https://www.lopik.nl/omgevingsvergunning%22%3Ehttps:/www.lopik.nl/omgevingsvergunning%3C/a%3E"
+      },
+      {
+        "url": "https://www.lopik.nl/milieu-vergunning-of-melding\">https://www.lopik.nl/milieu-vergunning-of-melding</a><br>",
+        "reason": "INVALID: Error scraping https://www.lopik.nl/milieu-vergunning-of-melding\">https://www.lopik.nl/milieu-vergunning-of-melding</a><br>: 404 Client Error: Not Found for url: https://www.lopik.nl/milieu-vergunning-of-melding%22%3Ehttps:/www.lopik.nl/milieu-vergunning-of-melding%3C/a%3E%3Cbr%3E"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor bepaalde werkzaamheden hebt u een omgevingsvergunning nodig. Bijvoorbeeld als u gaat (ver)bouwen, slopen, een alarminstallatie plaatst of een boom wilt kappen.",
+          "original_reference": "Dit kan activiteiten omvatten zoals bouwen, verbouwen, slopen, het plaatsen van een alarminstallatie of het gebruiken van een gebouw in strijd met het bestemmingsplan.",
+          "note": "De bronpagina noemt expliciet het kappen van bomen als voorbeeld van vergunningplichtige activiteiten, wat niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.lopik.nl/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U kunt de aanvraag meteen online indienen. Gebruik hiervoor uw DIGID",
+          "original_reference": "Voor bedrijven is hiervoor eHerkenning nodig.",
+          "note": "De bronpagina vermeldt DigiD als authenticatiemiddel, terwijl de originele tekst alleen eHerkenning noemt voor bedrijven. Dit is een belangrijk verschil in toegangsvereisten.",
+          "source_urls": [
+            "https://www.lopik.nl/watervergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Neem vóórdat u de vergunning aanvraagt, contact op met de gemeente en het waterschap. In een vooroverleg kunt u uitleggen wat u wilt doen.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina adviseert een vooroverleg met gemeente en waterschap, wat een belangrijke procedurestap is die niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.lopik.nl/watervergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen aanvullende vergunningplichtige activiteiten (zoals bomenkap), verschillende authenticatiemethoden (DigiD vs. eHerkenning) en het advies voor vooroverleg dat niet in de originele tekst staat vermeld. Deze verschillen zijn relevant voor de volledigheid en accuraatheid van de dienstverlening."
+  }
+}

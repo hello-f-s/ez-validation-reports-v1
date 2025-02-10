@@ -1,0 +1,78 @@
+{
+  "context": {
+    "municipality": {
+      "name": "NIJMEGEN",
+      "contact": {
+        "phone": "14 024",
+        "email": "gemeente@nijmegen.nl",
+        "website": "http://www.nijmegen.nl"
+      }
+    },
+    "service": {
+      "id": 10,
+      "name": "Nachtregister bijhouden"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 8,
+    "true_sentences": 7,
+    "false_sentences": 1,
+    "accuracy_percentage": 87.5,
+    "false_statements": [
+      {
+        "sentence": "U moet zich eerst melden bij de burgemeester.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Nijmegen hoeft men zich niet eerst te melden bij de burgemeester. Men dient direct een account aan te vragen via www.ikbenhandelaar.nl voor het digitale opkopersregister."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.nijmegen.nl/diensten/wet-open-overheid/",
+      "https://www.nijmegen.nl/diensten/belastingen/toeristenbelasting/",
+      "https://www.nijmegen.nl/diensten/evenementen/schema-vergunningen-activiteiten/tekstversie/",
+      "https://www.nijmegen.nl/diensten/vergunningen/opkopersregister-bijhouden/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.nijmegen.nl/diensten/vergunningen/informatiekraam-melden-of-vergunning/",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "U bent verplicht zich te melden bij de burgemeester. Via de knop regelen kunt u zich aanmelden. Met deze melding voldoet u aan de wettelijke plicht. U ontvangt hiervan alleen een ontvangstbevestiging.",
+          "original_reference": "U moet zich eerst melden bij de burgemeester.",
+          "note": "De informatie over de meldplicht komt overeen, maar de bron geeft meer details over het proces en de bevestiging.",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/vergunningen/opkopersregister-bijhouden/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een account voor het digitale opkopersregister kunt u aanvragen via www.ikbenhandelaar.nl",
+          "original_reference": "Een account voor het nachtregister kunt u aanvragen via de website www.ikbenhandelaar.nl.",
+          "note": "Er is een verschil in terminologie: de originele tekst spreekt over 'nachtregister' terwijl de bron spreekt over 'digitale opkopersregister'.",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/vergunningen/opkopersregister-bijhouden/"
+          ]
+        }
+      ]
+    },
+    "summary": "De meeste informatie komt overeen met de bronnen. Er is één belangrijk terminologisch verschil gevonden waarbij de term 'nachtregister' niet correct lijkt te zijn - de officiële term is 'digitale opkopersregister'. De bronnen bevestigen verder alle kernvoorwaarden en verplichtingen uit de originele tekst. Voor kosten, doorlooptijd en bezwaarprocedures is inderdaad geen informatie beschikbaar in de geciteerde bronnen."
+  }
+}

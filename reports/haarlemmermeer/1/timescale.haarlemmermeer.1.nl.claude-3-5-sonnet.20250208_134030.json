@@ -1,0 +1,87 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HAARLEMMERMEER",
+      "contact": {
+        "phone": "(0900) 18 52",
+        "email": "info@haarlemmermeer.nl",
+        "website": "http://www.haarlemmermeer.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "Alle leidinggevenden moeten minimaal 21 jaar oud zijn.",
+        "status": "false",
+        "note": "Volgens de Alcoholwet moeten leidinggevenden minimaal 21 jaar oud zijn. De minimumleeftijd voor leidinggevenden is 21 jaar."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://haarlemmermeergemeente.nl/ontheffing-alcoholwet",
+      "https://haarlemmermeergemeente.nl/exploitatievergunning",
+      "https://haarlemmermeergemeente.nl/alcoholvergunning-voor-een-vereniging-of-stichting",
+      "https://haarlemmermeergemeente.nl/alcoholvergunning-commerciele-organisatie"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://haarlemmermeergemeente.nl/toelichting-aanvraagformulier-exploitatievergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De leidinggevende (wiens naam op de vergunning staat) moet, als de instelling open is, bij noodgevallen bereikbaar zijn.",
+          "original_reference": "Er moet altijd een leidinggevende aanwezig zijn van wie de naam op de vergunning staat als de horecagelegenheid open is.",
+          "note": "Er is een belangrijk verschil in de aanwezigheidseis: bij commerciële organisaties moet de leidinggevende fysiek aanwezig zijn, terwijl voor verenigingen/stichtingen alleen bereikbaarheid bij noodgevallen vereist is.",
+          "source_urls": [
+            "https://haarlemmermeergemeente.nl/alcoholvergunning-voor-een-vereniging-of-stichting"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U moet dan een nieuwe vergunning aanvragen wanneer uw ondernemingsvorm verandert. Bijvoorbeeld van een eenmanszaak naar een BV.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat bij wijziging van ondernemingsvorm een nieuwe vergunning moet worden aangevraagd, terwijl dit wel een belangrijke voorwaarde is.",
+          "source_urls": [
+            "https://haarlemmermeergemeente.nl/alcoholvergunning-commerciele-organisatie"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Er komen andere leidinggevenden. Vraag dan een wijziging van uw vergunning aan. Dit doet u door het formulier Melding wijziging leidinggevende in te vullen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de procedure voor het wijzigen van leidinggevenden, terwijl dit wel een belangrijke procedurele mogelijkheid is.",
+          "source_urls": [
+            "https://haarlemmermeergemeente.nl/alcoholvergunning-commerciele-organisatie"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de aanwezigheidseis van leidinggevenden (verschillend voor commerciële en niet-commerciële organisaties), het ontbreken van informatie over verplichte nieuwe vergunningaanvraag bij wijziging ondernemingsvorm, en de procedure voor het wijzigen van leidinggevenden. Deze informatie is essentieel voor een complete beschrijving van de vergunningvereisten en -procedures."
+  }
+}

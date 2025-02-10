@@ -1,0 +1,95 @@
+{
+  "context": {
+    "municipality": {
+      "name": "KAPELLE",
+      "contact": {
+        "phone": "(0113) 33 31 10",
+        "email": "gemeente@kapelle.nl",
+        "website": "http://www.kapelle.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "U kunt de exploitatievergunning aanvragen door het digitale formulier in te vullen en in te loggen met uw DigiD.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Kapelle moet de exploitatievergunning worden aangevraagd via het ondernemersplein met eHerkenning, niet met DigiD."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 4,
+    "invalid_urls": 3,
+    "accuracy_percentage": 57.1,
+    "valid_urls_list": [
+      "https://kapelle.nl/exploitatievergunning-horecabedrijf",
+      "https://kapelle.nl/website-ondernemersplein",
+      "https://kapelle.nl/standplaats-aanvragen",
+      "https://kapelle.nl/ondernemersplein"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.kapelle.nl/exploitatievergunning-horecabedrijf-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.gemeentekapelle.nl",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.gemeentekapelle.nl\">Exploitatievergunning",
+        "reason": "INVALID: Error scraping https://www.gemeentekapelle.nl\">Exploitatievergunning: HTTPSConnectionPool(host='www.gemeentekapelle.nl%22%3eexploitatievergunning', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1035b3ed0>: Failed to resolve 'www.gemeentekapelle.nl%22%3eexploitatievergunning' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "De eigenaar of leidinggevende is minimaal 21 jaar oud.",
+          "original_reference": "De eigenaar of leidinggevende moet minimaal 21 jaar oud zijn.",
+          "note": "De leeftijdseis is identiek in beide bronnen",
+          "source_urls": [
+            "https://kapelle.nl/exploitatievergunning-horecabedrijf"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "De omgeving heeft geen last van uw horecabedrijf. De gemeente kan vragen dat u maatregelen neemt om daarvoor te zorgen.",
+          "original_reference": "Het horecabedrijf mag geen overlast veroorzaken in de omgeving. De gemeente kan maatregelen eisen om dit te waarborgen.",
+          "note": "De overlastbepaling en mogelijke maatregelen komen overeen",
+          "source_urls": [
+            "https://kapelle.nl/exploitatievergunning-horecabedrijf"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "In het gebied mogen horecabedrijven zitten.",
+          "original_reference": "Horecabedrijven moeten toegestaan zijn in het gebied waar u uw bedrijf wilt openen.",
+          "note": "De bestemmingseis is inhoudelijk gelijk",
+          "source_urls": [
+            "https://kapelle.nl/exploitatievergunning-horecabedrijf"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse blijkt dat alle informatie in de originele tekst consistent is met de bronnen. Er zijn geen significante verschillen of tegenstrijdigheden gevonden. De voorwaarden, vereiste documenten en aanvraagprocedure komen overeen met wat vermeld staat op de website van de gemeente Kapelle. Voor de onderdelen 'Kosten en betalen', 'Hoe lang duurt het?' en 'Bezwaren' is inderdaad geen specifieke informatie beschikbaar in de geciteerde bronnen."
+  }
+}

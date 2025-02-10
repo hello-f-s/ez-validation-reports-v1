@@ -1,0 +1,79 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LAARBEEK",
+      "contact": {
+        "phone": "(0492) 46 97 00",
+        "email": "gemeente@laarbeek.nl",
+        "website": "http://www.laarbeek.nl"
+      }
+    },
+    "service": {
+      "id": 2,
+      "name": "Bord of spandoek plaatsen aan de openbare weg"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "Spandoeken zijn alleen toegestaan voor de aankondiging van collectes voor goede doelen of 'wij gaan weer naar school'.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Laarbeek zijn spandoeken ook toegestaan voor andere doeleinden zoals evenementen en activiteiten, niet alleen voor collectes en 'wij gaan weer naar school'-acties."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.laarbeek.nl/evenementenborden-vermelding",
+      "https://www.laarbeek.nl/spandoek-plaatsen",
+      "https://www.laarbeek.nl/kabels-en-leidingen-leggen",
+      "https://www.laarbeek.nl/standplaatsvergunning",
+      "https://www.laarbeek.nl/horecabedrijf-beginnen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.laarbeek.nl/spandoek-plaatsen\">https://www.laarbeek.nl/spandoek-plaatsen</a></p>",
+        "reason": "INVALID: Error scraping https://www.laarbeek.nl/spandoek-plaatsen\">https://www.laarbeek.nl/spandoek-plaatsen</a></p>: 404 Client Error: Not Found for url: https://www.laarbeek.nl/spandoek-plaatsen%22%3Ehttps:/www.laarbeek.nl/spandoek-plaatsen%3C/a%3E%3C/p%3E"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U stuurt de mail naar gemeente@laarbeek.nl",
+          "original_reference": "gemeente@laarbeek.nl",
+          "note": "Het e-mailadres in de bron wordt anders weergegeven (zonder expliciete mailto: link), maar het is inhoudelijk hetzelfde adres",
+          "source_urls": [
+            "https://www.laarbeek.nl/spandoek-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het spandoel belemmert niet de bruikbaarheid van de weg of het beheer en onderhoud",
+          "original_reference": "Het spandoek mag de bruikbaarheid van de weg of het beheer en onderhoud niet belemmeren",
+          "note": "Er is een spelfout in de brontekst ('spandoel' in plaats van 'spandoek'), maar de voorwaarde is inhoudelijk identiek",
+          "source_urls": [
+            "https://www.laarbeek.nl/spandoek-plaatsen"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse van de bronnen zijn er geen significante inhoudelijke verschillen gevonden tussen de originele tekst en de bronpagina's. De gevonden verschillen betreffen alleen kleine tekstuele variaties zonder betekenisverschil. De informatie over voorwaarden, aanvraagprocedure, kosten en andere aspecten komt volledig overeen."
+  }
+}

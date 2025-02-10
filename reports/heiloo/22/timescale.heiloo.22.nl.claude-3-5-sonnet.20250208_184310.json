@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HEILOO",
+      "contact": {
+        "phone": "(072) 535 66 66",
+        "email": "info@heiloo.nl",
+        "website": "http://www.heiloo.nl"
+      }
+    },
+    "service": {
+      "id": 22,
+      "name": "Woonruimte splitsen of samenvoegen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 8,
+    "true_sentences": 7,
+    "false_sentences": 1,
+    "accuracy_percentage": 87.5,
+    "false_statements": [
+      {
+        "sentence": "De gemeente beslist binnen 8 weken na ontvangst van uw aanvraag, met mogelijkheid tot verlenging van 6 weken",
+        "status": "false",
+        "note": "Volgens de website van gemeente Heiloo is de reguliere procedure maximaal 8 weken met een mogelijke verlenging van maximaal 6 weken, maar voor complexere aanvragen geldt de uitgebreide procedure van 26 weken met een mogelijke verlenging van 6 weken. De zin is onvolledig omdat deze de uitgebreide procedure niet vermeldt."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.heiloo.nl/aanvragen-en-regelen/ondernemen/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/tijdelijke-verhuur-leegstaand-pand/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/wonen-in-een-bedrijfswoning/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/toezicht-en-handhaving/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/omgevingsvergunning/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.omgevingsloket.nl>",
+        "reason": "INVALID: Error scraping https://www.omgevingsloket.nl>: HTTPSConnectionPool(host='www.omgevingsloket.nl%3e', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x104474910>: Failed to resolve 'www.omgevingsloket.nl%3e' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Meld de start van de bouw of sloop minimaal 2 dagen van tevoren aan bij toezichthouder van de gemeente.",
+          "original_reference": "No matching information",
+          "note": "De originele inhoud mist een belangrijke verplichting om de start van bouw/sloop 2 dagen vooraf te melden",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/toezicht-en-handhaving/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Kosten 2025 tijdelijke verhuur pand: Aanvragen of verlengen vergunning tijdelijke verhuur € 145,30",
+          "original_reference": "Hier kan geen specifieke informatie over gevonden worden op de website van deze gemeente.",
+          "note": "De bronnen vermelden wel specifieke kosten voor bepaalde vergunningen, terwijl de originele tekst aangeeft dat er geen kosteninformatie beschikbaar is",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/tijdelijke-verhuur-leegstaand-pand/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vanaf 1 januari 2024 geldt de Omgevingswet. Alle vastgestelde bestemmingsplannen gaan op in een tijdelijk omgevingsplan.",
+          "original_reference": "No matching information",
+          "note": "De originele inhoud mist belangrijke informatie over de nieuwe Omgevingswet en de gevolgen daarvan voor bestemmingsplannen",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/omgevingsvergunning/"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn drie belangrijke verschillen gevonden: 1) Een ontbrekende verplichting om bouw/sloop vooraf te melden, 2) Wel beschikbare kosteninformatie voor bepaalde vergunningen waar de originele tekst aangeeft dat deze informatie niet beschikbaar is, en 3) Ontbrekende informatie over de nieuwe Omgevingswet en de veranderingen die deze met zich meebrengt. Deze informatie is relevant voor de volledigheid en actualiteit van de diensteninformatie."
+  }
+}

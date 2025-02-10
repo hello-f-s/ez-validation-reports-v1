@@ -1,0 +1,79 @@
+{
+  "context": {
+    "municipality": {
+      "name": "NIJMEGEN",
+      "contact": {
+        "phone": "14 024",
+        "email": "gemeente@nijmegen.nl",
+        "website": "http://www.nijmegen.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "U ontvangt de vergunning binnen 8 weken na online indiening van de aanvraag",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Nijmegen duurt de behandeling van een terrasvergunning maximaal 12 weken na ontvangst van een complete aanvraag, niet 8 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.nijmegen.nl/diensten/vergunningen/objectvergunning/",
+      "https://www.nijmegen.nl/diensten/evenementen/schema-vergunningen-activiteiten/tekstversie/",
+      "https://www.nijmegen.nl/diensten/vergunningen/drank-en-horeca/terrasvergunning-aanvragen-of-wijzigen/",
+      "https://www.nijmegen.nl/diensten/vergunningen/standplaatsvergunningen/vergunning-standplaats-priveterrein/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.nijmegen.nl/diensten/vergunningen/informatiekraam-melden-of-vergunning/",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vraag uw vergunning minimaal 8 weken en maximaal 16 weken van te voren aan",
+          "original_reference": "Geen informatie over maximale aanvraagtermijn",
+          "note": "De originele tekst vermeldt alleen de minimale verwerkingstijd van 8 weken, maar niet dat de aanvraag maximaal 16 weken van tevoren moet worden ingediend",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/vergunningen/standplaatsvergunningen/vergunning-standplaats-priveterrein/",
+            "https://www.nijmegen.nl/diensten/vergunningen/objectvergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een gevelterras moet direct tegen de gevel worden geplaatst tenzij het terras eerst gescheiden wordt door een doorgang. Het terras mag dan na die doorgang geplaatst worden. Een nieuw terras sluit aan bij naastgelegen terrassen",
+          "original_reference": "Gevelterras niet breder dan de voor-/zijgevel en direct tegen de gevel geplaatst",
+          "note": "De bronpagina bevat een belangrijke uitzondering voor de plaatsing van gevelterrassen (mogelijkheid na doorgang) en extra informatie over aansluiting bij naastgelegen terrassen die niet in de originele tekst staat",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/vergunningen/drank-en-horeca/terrasvergunning-aanvragen-of-wijzigen/"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden: (1) de originele tekst mist de maximale aanvraagtermijn van 16 weken, en (2) de bronpagina bevat aanvullende belangrijke details over de plaatsing van gevelterrassen die niet in de originele tekst staan vermeld. Deze informatie is relevant voor ondernemers die een terrasvergunning willen aanvragen."
+  }
+}

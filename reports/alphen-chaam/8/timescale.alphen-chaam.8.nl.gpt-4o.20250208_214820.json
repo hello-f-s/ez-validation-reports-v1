@@ -1,0 +1,90 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ALPHEN-CHAAM",
+      "contact": {
+        "phone": "14013",
+        "email": "info@alphen-chaam.nl",
+        "website": "http://www.alphen-chaam.nl"
+      }
+    },
+    "service": {
+      "id": 8,
+      "name": "Marktvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "De behandeltermijn voor een vergunningaanvraag is doorgaans binnen 8 weken.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Alphen-Chaam is de standaard behandeltermijn voor een standplaatsvergunning 4 weken, niet 8 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 6,
+    "invalid_urls": 1,
+    "accuracy_percentage": 85.7,
+    "valid_urls_list": [
+      "https://www.alphen-chaam.nl/omgevingsvergunning",
+      "https://www.alphen-chaam.nl/woo",
+      "https://www.alphen-chaam.nl/ondernemen/vergunningen-en-ontheffingen-voor-ondernemers",
+      "https://www.alphen-chaam.nl/vergunningen-en-ontheffingen/vergunningen-en-ontheffingen-voor-ondernemers",
+      "https://www.alphen-chaam.nl/horecavergunning",
+      "https://alphen-chaam.nl"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://alphen-chaam.nl\">Bron",
+        "reason": "INVALID: Error scraping https://alphen-chaam.nl\">Bron: HTTPSConnectionPool(host='alphen-chaam.nl%22%3ebron', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1082a7e00>: Failed to resolve 'alphen-chaam.nl%22%3ebron' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Binnen 8 weken na de aanvraag hoort u of u de vergunning krijgt. Bij uitzonderingen, bijvoorbeeld wanneer uw aanvraag niet compleet is of het gaat om een groot project, kan dit langer duren.",
+          "original_reference": "De behandeltermijn voor een vergunningaanvraag is doorgaans binnen 8 weken. In speciale gevallen, bijvoorbeeld als de aanvraag niet compleet is, kan deze termijn verlengd worden.",
+          "note": "De behandeltermijn van 8 weken en mogelijke verlenging komt overeen met de originele tekst",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/omgevingsvergunning",
+            "https://www.alphen-chaam.nl/horecavergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een aanvraag omgevingsvergunning kost geld. Deze kosten heten leges en staan in de legesverordening.",
+          "original_reference": "Kosten voor de aanvraag van een marktvergunning of standplaatsvergunning worden vastgesteld in de legesverordening van de gemeente.",
+          "note": "De originele tekst specificeert alleen kosten voor markt- en standplaatsvergunningen, terwijl de bronnen aangeven dat dit voor alle typen vergunningen geldt",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U heeft DigiD (inwoners) of eHerkenning (ondernemers) nodig.",
+          "original_reference": "U heeft de juiste formulieren nodig, die u volledig ingevuld naar de gemeente moet sturen.",
+          "note": "De bronnen specificeren dat DigiD of eHerkenning nodig is voor digitale aanvragen, wat niet vermeld wordt in de originele tekst",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/omgevingsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de specificatie van digitale aanvraagmethoden (DigiD/eHerkenning) en de bredere toepassing van legeskosten. De behandeltermijnen en procedures zijn wel consistent. De originele tekst mist enkele belangrijke details over de digitale aanvraagmogelijkheden."
+  }
+}

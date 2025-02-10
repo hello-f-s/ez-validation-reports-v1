@@ -1,0 +1,89 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HEILOO",
+      "contact": {
+        "phone": "(072) 535 66 66",
+        "email": "info@heiloo.nl",
+        "website": "http://www.heiloo.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "U kunt een VOG aanvragen via Justis of bij de gemeente.",
+        "status": "false",
+        "note": "Volgens de website van gemeente Heiloo kan een VOG alleen online worden aangevraagd via Justis. Het is niet meer mogelijk om een VOG bij de gemeente aan te vragen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 6,
+    "invalid_urls": 1,
+    "accuracy_percentage": 85.7,
+    "valid_urls_list": [
+      "https://www.heiloo.nl/aanvragen-en-regelen/standplaatsvergunning/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/verzoek-om-informatie/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/verklaring-omtrent-gedrag/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/vreemdelingenpaspoort/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/nederlander-worden-door-optie-of-naturalisatie/",
+      "https://www.heiloo.nl"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.heiloo.nl\">Gemeente",
+        "reason": "INVALID: Error scraping https://www.heiloo.nl\">Gemeente: HTTPSConnectionPool(host='www.heiloo.nl%22%3egemeente', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1034679d0>: Failed to resolve 'www.heiloo.nl%22%3egemeente' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Kosten 2025 VOG aanvragen: Aanvragen VOG via werkgever bij Justis: € 33,85, Aanvragen VOG bij de gemeente: € 41,35",
+          "original_reference": "Er is geen specifieke informatie over de kosten en betaalmethoden op de website van de gemeente Heiloo.",
+          "note": "De bronpagina vermeldt specifieke kosten voor VOG-aanvragen voor 2025, terwijl de originele tekst aangeeft dat er geen informatie over kosten beschikbaar is.",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/verklaring-omtrent-gedrag/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bij de gemeente kunt u zowel schriftelijk als online uw aanvraag voor een VOG indienen. U heeft hierbij een ingevuld en ondertekend aanvraagformulier nodig. U logt in met uw DigiD.",
+          "original_reference": "U kunt een VOG aanvragen via Justis of bij de gemeente.",
+          "note": "De bronpagina geeft meer specifieke details over de aanvraagmethoden bij de gemeente (schriftelijk en online) en de vereisten (DigiD), die niet in de originele tekst staan.",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/verklaring-omtrent-gedrag/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor een schriftelijke aanvraag maakt u een afspraak aan de balie in het gemeentehuis.",
+          "original_reference": "Voor de aanvraag heeft u een ingevuld aanvraagformulier en een geldig identiteitsbewijs nodig.",
+          "note": "De bronpagina specificeert dat voor schriftelijke aanvragen een afspraak aan de balie nodig is, wat niet vermeld wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/verklaring-omtrent-gedrag/"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de kosteninformatie die wel beschikbaar is in de bronpagina maar niet in de originele tekst, en aanvullende details over de aanvraagprocedure. De bronpagina biedt meer specifieke informatie over de aanvraagmethoden (online en schriftelijk) en vereisten zoals DigiD en het maken van een afspraak voor schriftelijke aanvragen."
+  }
+}

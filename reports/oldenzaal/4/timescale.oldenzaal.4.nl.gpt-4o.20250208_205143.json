@@ -1,0 +1,87 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OLDENZAAL",
+      "contact": {
+        "phone": "(0541) 58 81 11",
+        "email": "info@oldenzaal.nl",
+        "website": "http://www.oldenzaal.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 16,
+    "false_sentences": 3,
+    "accuracy_percentage": 84.2,
+    "false_statements": [
+      {
+        "sentence": "Voor grote evenementen zijn er A-, B-, en C-categorieën met verschillende aanvraagtermijnen (8 of 12 weken van tevoren).",
+        "status": "false",
+        "note": "Volgens de gemeente Oldenzaal website moeten grote evenementen minimaal 12 weken van tevoren worden aangevraagd. Er wordt geen onderscheid gemaakt in aanvraagtermijnen tussen categorieën."
+      },
+      {
+        "sentence": "Grote evenementen hebben verschillende minimale aanvraagtermijnen (8 of 12 weken) afhankelijk van de categorie.",
+        "status": "false",
+        "note": "De gemeente Oldenzaal hanteert één vaste aanvraagtermijn van 12 weken voor alle grote evenementen, ongeacht de categorie."
+      },
+      {
+        "sentence": "Voor een evenement met vergunning zijn de kosten afhankelijk van de categorie: Categorie A: € 75 Categorie B: € 150 Categorie C: € 300",
+        "status": "false",
+        "note": "De genoemde tarieven komen niet overeen met de actuele tarieven van de gemeente Oldenzaal voor evenementenvergunningen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 4,
+    "invalid_urls": 3,
+    "accuracy_percentage": 57.1,
+    "valid_urls_list": [
+      "https://www.oldenzaal.nl/standplaatsvergunning",
+      "https://www.oldenzaal.nl",
+      "https://www.oldenzaal.nl/omgevingsvergunning",
+      "https://www.oldenzaal.nl/subsidie-evenementen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.oldenzaal.nl\">Gemeente",
+        "reason": "INVALID: Error scraping https://www.oldenzaal.nl\">Gemeente: HTTPSConnectionPool(host='www.oldenzaal.nl%22%3egemeente', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x11184c980>: Failed to resolve 'www.oldenzaal.nl%22%3egemeente' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.oldenzaal.nl/evenement-organiseren-vergunning-of-melding",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.oldenzaal.nl/bouwen-en-verbouwen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Gaat u (ver)bouwen, slopen, een boom kappen of een bedrijf beginnen? Dan heeft u hiervoor vaak een omgevingsvergunning nodig. Wilt u weten of u een vergunning aan moet vragen? Controleer het met de vergunningchecker in het Omgevingsloket.",
+          "original_reference": "Controle van de benodigde vergunning of melding via de Vergunningenchecker.",
+          "note": "De informatie over het gebruik van de Vergunningenchecker komt overeen met de originele tekst.",
+          "source_urls": [
+            "https://www.oldenzaal.nl/omgevingsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse van de beschikbare bronnen zijn er geen significante verschillen gevonden tussen de originele inhoud en de geciteerde bronnen. De meeste specifieke informatie over evenementenvergunningen (zoals categorieën, kosten en termijnen) komt niet voor in de geciteerde bronpagina's, waardoor een volledige vergelijking niet mogelijk is. De algemene procedures rond vergunningaanvragen en het gebruik van de Vergunningenchecker zijn consistent tussen de bronnen."
+  }
+}

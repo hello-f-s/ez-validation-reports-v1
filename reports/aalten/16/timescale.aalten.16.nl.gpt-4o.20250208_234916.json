@@ -1,0 +1,92 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AALTEN",
+      "contact": {
+        "phone": "(0543) 49 33 33",
+        "email": "gemeente@aalten.nl",
+        "website": "http://www.aalten.nl"
+      }
+    },
+    "service": {
+      "id": 16,
+      "name": "Registreren in het Landelijk Register Kinderopvang (LRK)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "Leges voor het in exploitatie nemen van een kindercentrum bedragen in 2024 € 1.115 per aanvraag.",
+        "status": "false",
+        "note": "Het exacte legesbedrag voor 2024 is niet publiekelijk vermeld op de officiële website van gemeente Aalten. Dit bedrag kan niet geverifieerd worden als correct voor deze specifieke gemeente."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.aalten.nl/wetten-en-regels-jeugdhulp",
+      "https://www.aalten.nl/kinderopvang-starten",
+      "https://www.aalten.nl/kinderopvang-controle",
+      "https://www.aalten.nl/kinderopvangtoeslag",
+      "https://www.aalten.nl/levenloos-geboren-kind-registreren"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.gemeentealten.nl\">Bron:",
+        "reason": "INVALID: Error scraping https://www.gemeentealten.nl\">Bron:: HTTPSConnectionPool(host='www.gemeentealten.nl%22%3ebron', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x11054f390>: Failed to resolve 'www.gemeentealten.nl%22%3ebron' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.gemeentealten.nl",
+        "reason": "INVALID: Error scraping https://www.gemeentealten.nl: HTTPSConnectionPool(host='www.gemeentealten.nl', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x11054f390>: Failed to resolve 'www.gemeentealten.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Volgens de Wet kinderopvang (Wko) moet elke formele opvang bij de gemeente een aanvraag doen om geregistreerd te worden in het in het Landelijk Register Kinderopvang. (LRK) De GGD voert vervolgens een onderzoek uit om te beoordelen of u voldoet aan alle eisen.",
+          "original_reference": "Registratie in het Landelijk Register Kinderopvang (LRK) is verplicht volgens de Wet kinderopvang.",
+          "note": "De informatie over LRK-registratie en GGD-controle komt volledig overeen",
+          "source_urls": [
+            "https://www.aalten.nl/kinderopvang-starten"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De GGD-inspecteur komt onaangekondigd langs en controleert onder andere: uw pedagogische beleidsplan in de praktijk wordt nageleefd, er genoeg medewerkers aanwezig voor het aantal kinderen in de opvang, de groepen niet te groot zijn, elke medewerker een verklaring omtrent gedrag (VOG) heeft, elke medewerker de juiste diploma's heeft, er sprake is van een veilige en gezonde opvanglocatie",
+          "original_reference": "De gemeente moet de aanvraag voor registratie goedkeuren, en de GGD voert een onderzoek uit om te controleren of aan alle eisen wordt voldaan.",
+          "note": "De bronpagina geeft een veel gedetailleerdere beschrijving van de specifieke controlepunten tijdens GGD-inspecties die niet in de originele tekst staan vermeld",
+          "source_urls": [
+            "https://www.aalten.nl/kinderopvang-controle"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u als ouder een klacht hebt over een organisatie in de kinderopvang, gaat u eerst met uw klacht naar de organisatie zelf. Als u geen reactie krijgt of uw klacht wordt niet serieus genomen, dan kunt u binnen 3 maanden uw klacht indienen bij de Geschillencommissie Kinderopvang.",
+          "original_reference": "Aanmelding bij de Geschillencommissie Kinderopvang.",
+          "note": "De bronpagina specificeert een termijn van 3 maanden voor het indienen van klachten bij de Geschillencommissie, wat niet vermeld staat in de originele tekst",
+          "source_urls": [
+            "https://www.aalten.nl/kinderopvang-controle"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten grotendeels consistente informatie met de originele tekst, maar bieden op enkele punten meer detail. Met name de GGD-inspectiecriteria worden uitgebreider beschreven en er wordt een specifieke termijn van 3 maanden genoemd voor het indienen van klachten bij de Geschillencommissie Kinderopvang. Deze details ontbreken in de originele tekst maar zijn wel relevant voor de complete informatievoorziening."
+  }
+}

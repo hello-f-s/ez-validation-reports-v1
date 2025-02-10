@@ -1,0 +1,96 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OPMEER",
+      "contact": {
+        "phone": "(0226) 36 33 33",
+        "email": "gemeente@opmeer.nl",
+        "website": "http://www.opmeer.nl"
+      }
+    },
+    "service": {
+      "id": 22,
+      "name": "Woonruimte splitsen of samenvoegen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 10,
+    "false_sentences": 1,
+    "accuracy_percentage": 90.9,
+    "false_statements": [
+      {
+        "sentence": "De gemeente bericht meestal binnen 8 weken, met een mogelijke verlenging van 6 weken.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Opmeer is de standaard behandeltermijn 12 weken, niet 8 weken, met een mogelijke verlenging van 6 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 8,
+    "valid_urls": 5,
+    "invalid_urls": 3,
+    "accuracy_percentage": 62.5,
+    "valid_urls_list": [
+      "https://www.opmeer.nl/hotel-bed-and-breakfast-of-camping-starten",
+      "https://www.opmeer.nl/bouw-en-verbouwing-welstand",
+      "https://www.opmeer.nl/woning-splitsen",
+      "https://www.opmeer.nl/tijdelijke-verhuur-leegstaand-pand",
+      "https://www.opmeer.nl/omgevingsvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://omgevingswet.overheid.nl/home",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://gemeenteopmeer.nl",
+        "reason": "INVALID: Error scraping https://gemeenteopmeer.nl: 439 Client Error: status code 439 for url: https://gemeenteopmeer.nl/"
+      },
+      {
+        "url": "https://omgevingswet.overheid.nl/home\">Omgevingswet",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "de verdeling van woonruimte in de gemeente, splitsen van de woning mag stadsvernieuwing niet in de weg staan, of de woning geschikt is om te splitsen",
+          "original_reference": "De woning moet geschikt zijn om te splitsen. Splitsen mag stadsvernieuwing niet belemmeren. De verdeling van woonruimte in de gemeente wordt in acht genomen.",
+          "note": "De voorwaarden voor woningsplitsing komen exact overeen met de originele tekst, alleen in iets andere volgorde.",
+          "source_urls": [
+            "https://www.opmeer.nl/woning-splitsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Overleg vooraf met de gemeente over uw plannen. Dan komt u niet voor verrassingen te staan. Dit heet een vooroverleg.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist de belangrijke aanbeveling om vooraf met de gemeente te overleggen via een vooroverleg, wat helpt verrassingen te voorkomen.",
+          "source_urls": [
+            "https://www.opmeer.nl/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Doe dit minimaal 8 weken voordat u wilt starten met de werkzaamheden. Bij een uitgebreide aanvraag doet u dit minimaal 6 maanden van tevoren.",
+          "original_reference": "De gemeente bericht meestal binnen 8 weken, met een mogelijke verlenging van 6 weken.",
+          "note": "De bronpagina vermeldt een andere termijn voor uitgebreide aanvragen (6 maanden) dan de originele tekst (8 weken + 6 weken verlenging).",
+          "source_urls": [
+            "https://www.opmeer.nl/omgevingsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de aanvraagprocedure en termijnen. De bronnen vermelden een vooroverleg dat niet in de originele tekst staat en geven andere termijnen voor uitgebreide aanvragen. De basisvoorwaarden voor woningsplitsing zijn wel consistent tussen beide bronnen."
+  }
+}

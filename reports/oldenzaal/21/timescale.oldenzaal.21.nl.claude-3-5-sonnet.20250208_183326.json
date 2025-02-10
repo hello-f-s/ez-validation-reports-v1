@@ -1,0 +1,78 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OLDENZAAL",
+      "contact": {
+        "phone": "(0541) 58 81 11",
+        "email": "info@oldenzaal.nl",
+        "website": "http://www.oldenzaal.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 9,
+    "true_sentences": 8,
+    "false_sentences": 1,
+    "accuracy_percentage": 88.9,
+    "false_statements": [
+      {
+        "sentence": "Een VOG voor natuurlijke personen kost € 41,35.",
+        "status": "false",
+        "note": "De actuele kosten voor een VOG in Oldenzaal bedragen € 41,85 (2024). Het genoemde bedrag van € 41,35 is niet correct."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.oldenzaal.nl/exploitatievergunning",
+      "https://www.oldenzaal.nl/nederlandse-nationaliteit-aanvragen",
+      "https://www.oldenzaal.nl/verklaring-omtrent-gedrag-vog",
+      "https://www.oldenzaal.nl/omgevingsvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.oldenzaal.nl/bouwen-en-verbouwen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Soms kunt u de VOG ook online aanvragen. Dat kan alleen als de organisatie waarvoor u het nodig heeft is aangemeld bij het COVOG.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de mogelijkheid om de VOG online aan te vragen wanneer de organisatie is aangemeld bij COVOG. Dit is belangrijke aanvullende informatie voor aanvragers.",
+          "source_urls": [
+            "https://www.oldenzaal.nl/verklaring-omtrent-gedrag-vog"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Kunt u de VOG niet zelf aanvragen? Dan mag iemand anders dit aanvragen. Dat noemen we machtigen. Deze persoon heeft een machtiging nodig met: Een kopie van uw identiteitsbewijs, Een kopie van zijn/haar eigen identiteitsbewijs, Een ingevuld en ondertekend machtigingsformulier VOG.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de mogelijkheid om iemand te machtigen voor de VOG-aanvraag en de benodigde documenten hiervoor.",
+          "source_urls": [
+            "https://www.oldenzaal.nl/verklaring-omtrent-gedrag-vog"
+          ]
+        }
+      ]
+    },
+    "summary": "De broninhoud bevat twee belangrijke aanvullingen die niet in de originele tekst staan: de mogelijkheid om de VOG online aan te vragen als de organisatie bij COVOG is aangemeld, en de optie om iemand te machtigen voor de aanvraag inclusief de daarvoor benodigde documenten. Deze informatie is relevant voor de volledigheid van de dienstverlening."
+  }
+}

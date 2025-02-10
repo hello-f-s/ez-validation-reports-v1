@@ -1,0 +1,80 @@
+{
+  "context": {
+    "municipality": {
+      "name": "EEMNES",
+      "contact": {
+        "phone": "14 035",
+        "email": "info@eemnes.nl",
+        "website": "http://www.eemnes.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Om een alcoholvergunning aan te vragen, neemt u contact op met de gemeente Eemnes via telefoonnummer 14 035 of via e-mail op apv@belcombinatie.nl.",
+        "status": "false",
+        "note": "Het e-mailadres apv@belcombinatie.nl is niet correct. De gemeente Eemnes gebruikt voor vergunningsaanvragen het e-mailadres info@eemnes.nl."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 6,
+    "invalid_urls": 1,
+    "accuracy_percentage": 85.7,
+    "valid_urls_list": [
+      "https://www.eemnes.nl/Zoekresultaten?sp=H4sIAAAAAAAAAGXNPwvCMBCH4e9yc4f6B7SFDKKidehgwSnL2Vw1EJNyCYqUfndDES10Ox5+x9uBdYqMqzFoZ8c35NBJCBJyCRczr0SWtWeBqzZdrt+L4nR8CSEhkdDYYTP+HVyriU827SNuGjSeekjAE3J9v6KnGJ+lP2G0tz85Do4VcYRNtd2Xu6I8fL3RZFT0J7GPiZppSCkMBP0HqrRFyesAAAA=&searchbase=0&sortfield=versioncreationdate&sortorder=descending&f=nodelocation%3AAuYzTH%3DWQgWJ3zU4K0%3DObA%3D%3D",
+      "https://www.eemnes.nl/Zoekresultaten?f=nodelocation%3AAuYzTH%3DWQgWJ3zU4K0%3DObA%3D%3D&sp=H4sIAAAAAAAAAGWNPwvCMBBHv8vNHfwHtoVMtmgdOlhwynI2Vy3EpFyCIqXf3RBECt2O93vHG8FYRdq26Htr5jfkMErwEnIJV71pRJYNF4H7YbVLP9vqfHoLISGR0JnozH8j79WCL5zhGZwOtaMJEnCE3D5u6CjE1+nqjxjNPbKILHvLijiAomwOZV1U9fE3dD1pFYYXsQuRlinGFHqC6QuPKfyQ7QAAAA==&searchbase=0",
+      "https://www.eemnes.nl",
+      "https://www.eemnes.nl/Vergunningen/Horeca_en_evenementen/Alcoholvergunning",
+      "https://www.eemnes.nl/Zoekresultaten?sp=H4sIAAAAAAAAAGXNPwvCMBCH4e9yc4f6B7SFDKKidehgwSnL2Vw1EJNyCYqUfndDES10Ox5+x9uBdYqMqzFoZ8c35NBJCBJyCRczr0SWtWeBqzZdrt+L4nR8CSEhkdDYYTP+HVyriU827SNuGjSeekjAE3J9v6KnGJ+lP2G0tz85Do4VcYRNtd2Xu6I8fL3RZFT0J7GPiZppSCkMBP0HqrRFyesAAAA=&searchbase=0&sortfield=versioncreationdate&sortorder=descending&f=nodelocation%3AVl2S%3D99pR%3Da7p048y3IJHw%3D%3D&f=nodelocation%3AAuYzTH%3DWQgWJ3zU4K0%3DObA%3D%3D",
+      "https://www.eemnes.nl/Vergunningen/Horeca_en_evenementen/Exploitatievergunning_horeca"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.eemnes.nl\">Gemeente",
+        "reason": "INVALID: Error scraping https://www.eemnes.nl\">Gemeente: HTTPSConnectionPool(host='www.eemnes.nl%22%3egemeente', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10538f110>: Failed to resolve 'www.eemnes.nl%22%3egemeente' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor het verkopen van (sterke) alcoholische drank, zoals in een slijterij, heeft u ook een alcoholvergunning nodig. U hoeft geen exploitatievergunning aan te vragen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat slijterijen een uitzondering vormen op de exploitatievergunningsplicht. Dit is belangrijke aanvullende informatie voor ondernemers.",
+          "source_urls": [
+            "https://www.eemnes.nl/Vergunningen/Horeca_en_evenementen/Alcoholvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wilt u een horecabedrijf beginnen, zoals een café, hotel, snackbar of sportkantine",
+          "original_reference": "Horeca",
+          "note": "De bronpagina specificeert expliciet welke type horecagelegenheden onder de vergunningsplicht vallen (café, hotel, snackbar, sportkantine), terwijl de originele tekst alleen algemeen 'Horeca' vermeldt.",
+          "source_urls": [
+            "https://www.eemnes.nl/Vergunningen/Horeca_en_evenementen/Exploitatievergunning_horeca"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten twee belangrijke verduidelijkingen die niet in de originele tekst staan: de uitzondering voor slijterijen wat betreft de exploitatievergunning en een specifiekere omschrijving van de soorten horecagelegenheden waarvoor de vergunningen gelden. Deze informatie is relevant voor ondernemers die een vergunning willen aanvragen."
+  }
+}

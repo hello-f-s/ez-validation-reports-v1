@@ -1,0 +1,97 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ALPHEN-CHAAM",
+      "contact": {
+        "phone": "14013",
+        "email": "info@alphen-chaam.nl",
+        "website": "http://www.alphen-chaam.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "Nadat u de aanvraag heeft ingediend, hoort u binnen 8 weken of de vergunning wordt toegekend.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Alphen-Chaam geldt een reguliere procedure van maximaal 8 weken, maar bij complexe aanvragen geldt een uitgebreide procedure van 26 weken. De zin is onvolledig omdat deze de uitgebreide procedure niet vermeldt."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 9,
+    "valid_urls": 6,
+    "invalid_urls": 3,
+    "accuracy_percentage": 66.7,
+    "valid_urls_list": [
+      "https://www.alphen-chaam.nl/wonen-en-verbouwen/bouwen-of-verbouwen",
+      "https://www.alphen-chaam.nl/",
+      "https://www.alphen-chaam.nl/conceptverzoek",
+      "https://www.alphen-chaam.nl/omgevingsvergunning",
+      "https://www.alphen-chaam.nl/vergunningen-en-ontheffingen/vergunningen-en-ontheffingen-voor-ondernemers",
+      "https://www.alphen-chaam.nl/omgevingswet-voor-bedrijven"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.omwb.nl/\">OMWB</a>,",
+        "reason": "INVALID: Error scraping https://www.omwb.nl/\">OMWB</a>,: 404 Client Error: Not Found for url: https://www.omwb.nl/%22%3EOMWB%3C/a%3E"
+      },
+      {
+        "url": "https://www.alphen-chaam.nl/\">Gemeente",
+        "reason": "INVALID: Error scraping https://www.alphen-chaam.nl/\">Gemeente: 404 Client Error: Not Found for url: https://www.alphen-chaam.nl/%22%3EGemeente"
+      },
+      {
+        "url": "https://www.omwb.nl/",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U dient een conceptverzoek in voordat u een vergunningaanvraag doet. U kunt op 2 manieren een conceptverzoek indienen: Download het aanvraagformulier conceptverzoek of ga naar het digitale Omgevingsloket",
+          "original_reference": "Voor het aanvragen van een omgevingsvergunning of het doen van een melding milieubeheer als ondernemer, moet u eerst nagaan of uw plannen binnen het omgevingsplan passen.",
+          "note": "De bronnen specificeren dat een conceptverzoek verplicht is vóór de vergunningaanvraag en beschrijven twee concrete aanvraagmethoden, terwijl de originele tekst dit presenteert als een optionele check.",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/conceptverzoek"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een wijziging van het omgevingsplan is op dit moment nog niet mogelijk. Samen kijken we naar wat dit betekent voor uw (bouw)plannen.",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden een belangrijke beperking die niet in de originele tekst staat: wijzigingen in het omgevingsplan zijn momenteel niet mogelijk.",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/conceptverzoek"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De Omgevingswet geldt vanaf 1 januari voor iedereen in Nederland.",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden de recente invoering van de Omgevingswet per 1 januari 2024, wat een belangrijk contextuel element is dat ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/omgevingswet-voor-bedrijven"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen tonen drie belangrijke verschillen met de originele tekst: 1) het conceptverzoek is verplicht en niet optioneel, 2) wijzigingen in het omgevingsplan zijn momenteel niet mogelijk, en 3) er is belangrijke context over de nieuwe Omgevingswet die sinds 1 januari 2024 van kracht is. Deze informatie is essentieel voor een correcte weergave van de huidige procedures."
+  }
+}

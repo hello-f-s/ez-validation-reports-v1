@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HEEMSKERK",
+      "contact": {
+        "phone": "14 0251",
+        "email": "post@heemskerk.nl",
+        "website": "http://www.heemskerk.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 10,
+    "false_sentences": 1,
+    "accuracy_percentage": 90.9,
+    "false_statements": [
+      {
+        "sentence": "Bij de aanvraag betaalt u direct €25,65 legeskosten via iDeal.",
+        "status": "false",
+        "note": "Het correcte legesbedrag voor een exploitatievergunning horeca in Heemskerk is €500,70 volgens de actuele legesverordening van de gemeente Heemskerk."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.heemskerk.nl/aanvragen-en-regelen/ondernemersloket",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca/horecabedrijf",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca/exploitatievergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.ondernemersloket-heemskerk.nl",
+        "reason": "INVALID: Error scraping https://www.ondernemersloket-heemskerk.nl: HTTPSConnectionPool(host='www.ondernemersloket-heemskerk.nl', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10397f9d0>: Failed to resolve 'www.ondernemersloket-heemskerk.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De ondernemer (leidinggevende) en de overige leidinggevenden voldoen aan de volgende eisen: Zijn minimaal 21 jaar oud, Zijn niet in enig opzicht van slecht levensgedrag, Staan niet onder curatele, Voldoen aan de eisen ten aanzien van het zedelijk gedrag, Hebben een diploma/verklaring sociale hygiëne",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden specifieke persoonlijke eisen voor de ondernemer/leidinggevenden die niet in de originele tekst staan genoemd",
+          "source_urls": [
+            "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca/horecabedrijf"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor sommige horecabedrijven die alcohol schenken, is een exploitatievergunning niet nodig. Zij kunnen een vrijstelling krijgen.",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden een mogelijke vrijstelling voor alcohol-schenkende horecabedrijven, wat niet genoemd wordt in de originele tekst",
+          "source_urls": [
+            "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca/exploitatievergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Heeft u vragen? Neem contact op met team Vergunningen, Toezicht, Handhaving & Veiligheid via 14 0251 of post@heemskerk.nl",
+          "original_reference": "No matching information",
+          "note": "De bronnen bevatten contactgegevens voor vragen die niet in de originele tekst staan",
+          "source_urls": [
+            "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie die niet in de originele tekst staat, waaronder specifieke persoonlijke eisen voor ondernemers/leidinggevenden, mogelijkheden voor vrijstelling van de exploitatievergunning voor bepaalde alcohol-schenkende horecabedrijven, en contactgegevens voor vragen. Deze informatie is essentieel voor ondernemers die een horecabedrijf willen starten of overnemen."
+  }
+}

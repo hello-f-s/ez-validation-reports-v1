@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LANDGRAAF",
+      "contact": {
+        "phone": "14 045",
+        "email": "gemeente@landgraaf.nl",
+        "website": "http://www.landgraaf.nl"
+      }
+    },
+    "service": {
+      "id": 18,
+      "name": "Ventvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "De eigenaar of leidinggevende moet van onbesproken gedrag zijn en minimaal 21 jaar oud.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Landgraaf moet de eigenaar of leidinggevende minimaal 18 jaar oud zijn, niet 21 jaar."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.landgraaf.nl/form/informatieverzoek-indienen",
+      "https://www.landgraaf.nl/exploitatievergunning-horecabedrijf",
+      "https://www.landgraaf.nl/aanvragen-en-regelen-ondernemers",
+      "https://www.landgraaf.nl/omgevingsvergunning-of-melding",
+      "https://www.landgraaf.nl/verklaring-omtrent-het-gedrag-vog"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Exploitatievergunning: € 287,80. Wijziging leidinggevende: € 95,80. Aanleggen/wijzigen terras: € 26,70.",
+          "original_reference": "Exploitatievergunning: € 281,35. Wijziging leidinggevende: € 93,65. Aanleggen/wijzigen terras: € 26,10.",
+          "note": "De tarieven in de bronpagina zijn hoger dan in de originele tekst. Dit duidt mogelijk op een recente tariefwijziging.",
+          "source_urls": [
+            "https://www.landgraaf.nl/exploitatievergunning-horecabedrijf"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "u uw horecabedrijf wilt uitbreiden door een verbouwing",
+          "original_reference": "No matching information",
+          "note": "De bronpagina noemt een extra situatie waarin een melding wijziging horeca-exploitatie nodig is (bij verbouwing), die niet in de originele tekst staat vermeld.",
+          "source_urls": [
+            "https://www.landgraaf.nl/exploitatievergunning-horecabedrijf"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele tekst en de bronnen. Ten eerste zijn de tarieven in de bronpagina hoger, wat wijst op een recente prijsaanpassing. Ten tweede vermeldt de bronpagina een extra situatie waarin een melding nodig is (bij verbouwing van het horecabedrijf) die niet in de originele tekst staat genoemd. De overige informatie komt inhoudelijk overeen."
+  }
+}

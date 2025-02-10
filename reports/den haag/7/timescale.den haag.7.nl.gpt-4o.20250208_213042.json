@@ -1,0 +1,79 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DEN HAAG",
+      "contact": {
+        "phone": "14 070",
+        "email": "null",
+        "website": "http://www.denhaag.nl"
+      }
+    },
+    "service": {
+      "id": 7,
+      "name": "Kabels en leidingen aanleggen en beheren"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "Klein werk zonder graafwerk in de openbare ruimte: €467,11",
+        "status": "false",
+        "note": "Het actuele tarief voor klein werk zonder graafwerk in de openbare ruimte is anders volgens de huidige legesverordening van Den Haag. Tarieven worden jaarlijks aangepast en het genoemde bedrag is niet correct volgens de meest recente tarieven."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 9,
+    "valid_urls": 0,
+    "invalid_urls": 9,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://example.com",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://example.com\">Omgevingsvergunning",
+        "reason": "INVALID: Error scraping https://example.com\">Omgevingsvergunning: HTTPSConnectionPool(host='example.com%22%3eomgevingsvergunning', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x105c07d90>: Failed to resolve 'example.com%22%3eomgevingsvergunning' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://example.com\">Instemmingsbesluit",
+        "reason": "INVALID: Error scraping https://example.com\">Instemmingsbesluit: HTTPSConnectionPool(host='example.com%22%3einstemmingsbesluit', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x105d34190>: Failed to resolve 'example.com%22%3einstemmingsbesluit' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.denhaag.nl/nl/vergunningen-en-ontheffingen/instemmingsbesluit-wegopbrekingen-aanvragen/",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://example.com\">Legesverordening</a>.</p>",
+        "reason": "INVALID: Error scraping https://example.com\">Legesverordening</a>.</p>: HTTPSConnectionPool(host='example.com%22%3elegesverordening%3c', port=443): Max retries exceeded with url: /a%3E.%3C/p%3E (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x105c07ed0>: Failed to resolve 'example.com%22%3elegesverordening%3c' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.denhaag.nl/nl/vergunningen-en-ontheffingen/situatietekening-of-landmeetkundige-begeleiding-aanvragen/",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.denhaag.nl/nl/vergunningen-en-ontheffingen/vergunning-gebruik-openbare-weg-aanvragen/",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.denhaag.nl/nl/ondernemen/ondernemers-op-markten-kiosken-en-ambulante-straathandel/",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.denhaag.nl/nl/vergunningen-en-ontheffingen/omgevingsvergunning-aanvragen/%20",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  }
+}

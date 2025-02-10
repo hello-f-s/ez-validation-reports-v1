@@ -1,0 +1,86 @@
+{
+  "context": {
+    "municipality": {
+      "name": "NIJMEGEN",
+      "contact": {
+        "phone": "14 024",
+        "email": "gemeente@nijmegen.nl",
+        "website": "http://www.nijmegen.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 11,
+    "false_sentences": 2,
+    "accuracy_percentage": 84.6,
+    "false_statements": [
+      {
+        "sentence": "Voor een vergunning betaalt u €116,10 legeskosten",
+        "status": "false",
+        "note": "Het exacte bedrag voor legeskosten is €119,00 volgens de actuele tarieven van gemeente Nijmegen"
+      },
+      {
+        "sentence": "U betaalt ook precariobelasting voor het gebruik van gemeentegrond: €2,48 per m2 per dag of €2,76 per m2 per maand",
+        "status": "false",
+        "note": "De genoemde precariobelasting tarieven zijn niet correct volgens de actuele tarieven van gemeente Nijmegen. De actuele tarieven zijn €2,55 per m2 per dag of €2,83 per m2 per maand"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 3,
+    "invalid_urls": 2,
+    "accuracy_percentage": 60.0,
+    "valid_urls_list": [
+      "https://www.nijmegen.nl/diensten/evenementen/evenement-melden-of-vergunning-aanvragen/",
+      "https://www.nijmegen.nl/diensten/evenementen/schema-vergunningen-activiteiten/tekstversie/",
+      "https://www.nijmegen.nl/diensten/evenementen/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.nijmegen.nl/diensten/vergunningen/informatiekraam-melden-of-vergunning/",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.nijmegen.nl/diensten/evenementen/reserveren-evenementen/",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een evenementenvergunning vraagt u 16 - 8 weken voor uw evenement aan",
+          "original_reference": "Voor een A-evenement (laag risico, zoals een buurtfeest) vraagt u de vergunning minstens 8 weken van tevoren aan. Voor een B-evenement of C-evenement minstens 10 weken van tevoren aan",
+          "note": "De brontekst geeft een ruimere aanvraagtermijn van 16-8 weken, terwijl de originele tekst specifiekere termijnen per type evenement aangeeft. Dit is een belangrijk verschil in de aanvraagtermijnen.",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/evenementen/evenement-melden-of-vergunning-aanvragen/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een evenement melden doet u minstens 2 weken van tevoren. Uitzondering: een Autovrije Zondag meldt u minstens 4 weken van tevoren",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over meldingstermijnen voor kleine evenementen en specifieke uitzonderingen zoals Autovrije Zondag. Dit is aanvullende belangrijke informatie voor organisatoren.",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/evenementen/evenement-melden-of-vergunning-aanvragen/"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de aanvraagtermijnen voor evenementenvergunningen. De bronwebsite hanteert een algemene termijn van 16-8 weken, terwijl de originele tekst specifiekere termijnen per evenementtype voorschrijft. Daarnaast ontbreekt in de originele tekst belangrijke informatie over meldingstermijnen voor kleinere evenementen en specifieke uitzonderingen. Deze informatie is essentieel voor evenementorganisatoren."
+  }
+}

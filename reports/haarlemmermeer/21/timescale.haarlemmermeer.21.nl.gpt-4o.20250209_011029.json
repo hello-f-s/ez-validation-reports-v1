@@ -1,0 +1,89 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HAARLEMMERMEER",
+      "contact": {
+        "phone": "(0900) 18 52",
+        "email": "info@haarlemmermeer.nl",
+        "website": "http://www.haarlemmermeer.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "De verwerking van een VOG-aanvraag duurt doorgaans 4 tot 8 weken, ongeacht of deze digitaal of aan de balie is ingediend.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Haarlemmermeer duurt de verwerking van een VOG-aanvraag meestal 2 tot 4 weken, niet 4 tot 8 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 3,
+    "invalid_urls": 4,
+    "accuracy_percentage": 42.9,
+    "valid_urls_list": [
+      "https://haarlemmermeergemeente.nl/woo-verzoek",
+      "https://haarlemmermeergemeente.nl/omgevingsvergunning-milieu",
+      "https://haarlemmermeergemeente.nl/verklaring-omtrent-het-gedrag-vog"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://haarlemmermeergemeente.nl/nederlander-worden",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://gemeente.haarlemmermeer.nl/verklaring-omtrent-het-gedrag-vog\">https://gemeente.haarlemmermeer.nl/verklaring-omtrent-het-gedrag-vog</a></p>",
+        "reason": "INVALID: Error scraping https://gemeente.haarlemmermeer.nl/verklaring-omtrent-het-gedrag-vog\">https://gemeente.haarlemmermeer.nl/verklaring-omtrent-het-gedrag-vog</a></p>: HTTPSConnectionPool(host='gemeente.haarlemmermeer.nl', port=443): Max retries exceeded with url: /verklaring-omtrent-het-gedrag-vog%22%3Ehttps://gemeente.haarlemmermeer.nl/verklaring-omtrent-het-gedrag-vog%3C/a%3E%3C/p%3E (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x103d47b10>: Failed to resolve 'gemeente.haarlemmermeer.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://haarlemmermeergemeente.nl/toelichting-aanvraagformulier-exploitatievergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://gemeente.haarlemmermeer.nl/verklaring-omtrent-het-gedrag-vog",
+        "reason": "INVALID: Error scraping https://gemeente.haarlemmermeer.nl/verklaring-omtrent-het-gedrag-vog: HTTPSConnectionPool(host='gemeente.haarlemmermeer.nl', port=443): Max retries exceeded with url: /verklaring-omtrent-het-gedrag-vog (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x103d47750>: Failed to resolve 'gemeente.haarlemmermeer.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "U vraagt een VOG online aan via uw DigiD. Binnen 4 tot 8 weken na de aanvraag krijgt u de VOG of de afwijzing per post thuisgestuurd. U komt de VOG dus niet ophalen.",
+          "original_reference": "De verwerking van een VOG-aanvraag duurt doorgaans 4 tot 8 weken, ongeacht of deze digitaal of aan de balie is ingediend. U ontvangt de VOG of de afwijzing per post thuis.",
+          "note": "De verwerkingstijd en leveringsmethode komen exact overeen",
+          "source_urls": [
+            "https://haarlemmermeergemeente.nl/verklaring-omtrent-het-gedrag-vog"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Instructie tekst: Bedrijven bieden aan om tegen extra betaling via hun website een VOG aan te vragen. Vraag zelf uw VOG online aan via onze website. Dat gaat sneller en is goedkoper.",
+          "original_reference": "No matching information",
+          "note": "De bron bevat een extra waarschuwing over commerciële VOG-aanvraagdiensten die niet in de originele tekst staat",
+          "source_urls": [
+            "https://haarlemmermeergemeente.nl/verklaring-omtrent-het-gedrag-vog"
+          ]
+        }
+      ]
+    },
+    "summary": "De inhoud is grotendeels consistent, met één belangrijk verschil: de bron bevat een extra waarschuwing over commerciële VOG-aanvraagdiensten die ontbreekt in de originele tekst. Deze waarschuwing is relevant voor gebruikers om onnodige extra kosten te voorkomen. De kernprocessen, termijnen en procedures komen verder overeen."
+  }
+}

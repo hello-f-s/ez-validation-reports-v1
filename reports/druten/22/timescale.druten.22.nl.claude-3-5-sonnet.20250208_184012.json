@@ -1,0 +1,75 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DRUTEN",
+      "contact": {
+        "phone": "(088) 432 70 00",
+        "email": "info@druten.nl",
+        "website": "http://www.druten.nl"
+      }
+    },
+    "service": {
+      "id": 22,
+      "name": "Woonruimte splitsen of samenvoegen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 10,
+    "false_sentences": 1,
+    "accuracy_percentage": 90.9,
+    "false_statements": [
+      {
+        "sentence": "De beslistermijn voor een omgevingsvergunning is normaliter 8 weken.",
+        "status": "false",
+        "note": "Volgens de gemeente Druten is de reguliere beslistermijn voor een omgevingsvergunning 6 weken, niet 8 weken. Deze termijn kan wel verlengd worden met maximaal 6 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.druten.nl/monument-verbouwen-herstellen-of-onderhouden",
+      "https://www.druten.nl/tijdelijke-verhuur-leegstaand-pand",
+      "https://www.druten.nl/omgevingsvergunning",
+      "https://www.druten.nl/exploitatievergunning-horecabedrijf",
+      "https://www.druten.nl/vooroverleg"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vanaf 1 januari 2024 zijn hiervoor in de Omgevingswet andere regels [...] Vanaf 1 januari 2024 heet het bestemmingsplan 'Omgevingsplan'",
+          "original_reference": "het omgevingsplan (het voormalige bestemmingsplan)",
+          "note": "De originele tekst verwijst naar het omgevingsplan als het 'voormalige' bestemmingsplan, terwijl de bronnen aangeven dat deze wijziging pas vanaf 1 januari 2024 is ingegaan. Dit is een belangrijk tijdsverschil in de regelgeving.",
+          "source_urls": [
+            "https://www.druten.nl/omgevingsvergunning",
+            "https://www.druten.nl/vooroverleg"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Twijfelt u nog of heeft u nog vragen of een vergunning wel kan worden afgegeven is het misschien verstandig om eerst vooroverleg aan te vragen",
+          "original_reference": "No matching information",
+          "note": "De bronnen adviseren expliciet om bij twijfel eerst vooroverleg aan te vragen, terwijl dit belangrijke advies ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.druten.nl/vooroverleg"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont twee belangrijke verschillen: een tijdsdiscrepantie betreffende de invoering van het omgevingsplan (2024) en het ontbreken van informatie over de mogelijkheid tot vooroverleg in de originele tekst. Deze verschillen zijn relevant voor de actuele dienstverlening en procedurele mogelijkheden voor inwoners."
+  }
+}

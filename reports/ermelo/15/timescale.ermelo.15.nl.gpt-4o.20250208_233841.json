@@ -1,0 +1,80 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ERMELO",
+      "contact": {
+        "phone": "(0341) 56 73 21",
+        "email": "gemeente@ermelo.nl",
+        "website": "http://www.ermelo.nl"
+      }
+    },
+    "service": {
+      "id": 15,
+      "name": "Vergunning of ontheffing voor straatartiesten"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 10,
+    "false_sentences": 1,
+    "accuracy_percentage": 90.9,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor het aanvragen van een ontheffing bedragen € 62,30.",
+        "status": "false",
+        "note": "Op de officiële website van de gemeente Ermelo wordt geen specifiek bedrag genoemd voor een ontheffing voor straatartiesten. Het genoemde bedrag van €62,30 is niet te verifiëren via officiële bronnen van de gemeente."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.ermelo.nl/evenementen-en-horeca/horeca-en-alcohol",
+      "https://www.ermelo.nl/evenementen-en-horeca/horeca-en-alcohol/geluidsoverlast-veroorzaken",
+      "https://www.ermelo.nl/evenementen-en-horeca/horeca-en-alcohol/terras-plaatsen",
+      "https://www.ermelo.nl/omgevingsplein/zie-ook/voorwerp-plaatsen-op-of-aan-de-weg"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.ermelo.nl/evenementen-en-horeca/evenement-of-activiteit-organiseren/optreden-als-straatartiest",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De kosten voor een ontheffing zijn € 63,70",
+          "original_reference": "De kosten voor het aanvragen van een ontheffing bedragen € 62,30",
+          "note": "Er is een verschil in de vermelde kosten. De bronnen vermelden €63,70 terwijl in de originele tekst €62,30 staat.",
+          "source_urls": [
+            "https://www.ermelo.nl/evenementen-en-horeca/horeca-en-alcohol/geluidsoverlast-veroorzaken",
+            "https://www.ermelo.nl/evenementen-en-horeca/horeca-en-alcohol/terras-plaatsen",
+            "https://www.ermelo.nl/omgevingsplein/zie-ook/voorwerp-plaatsen-op-of-aan-de-weg"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Deze vraagt u 4 weken voor de plaatsing van het object online aan",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden een specifieke aanvraagtermijn van 4 weken vooraf, terwijl dit niet genoemd wordt in de originele tekst over straatartiesten.",
+          "source_urls": [
+            "https://www.ermelo.nl/omgevingsplein/zie-ook/voorwerp-plaatsen-op-of-aan-de-weg"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele tekst en de bronnen. Ten eerste is er een discrepantie in de kosten: alle bronnen vermelden €63,70 terwijl de originele tekst €62,30 noemt. Ten tweede specificeren de bronnen een aanvraagtermijn van 4 weken vooraf, wat niet genoemd wordt in de originele tekst over straatartiesten. Deze informatie zou mogelijk relevant kunnen zijn voor de aanvraagprocedure voor straatartiesten."
+  }
+}

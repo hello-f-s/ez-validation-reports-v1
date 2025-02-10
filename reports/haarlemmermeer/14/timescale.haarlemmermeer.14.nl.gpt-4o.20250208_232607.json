@@ -1,0 +1,103 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HAARLEMMERMEER",
+      "contact": {
+        "phone": "(0900) 18 52",
+        "email": "info@haarlemmermeer.nl",
+        "website": "http://www.haarlemmermeer.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Voor bezoek aan ondernemers is het tarief voor een bezoekersvergunning € 2,65 per dag.",
+        "status": "false",
+        "note": "Het genoemde tarief van €2,65 per dag is niet correct volgens de actuele tarieven van gemeente Haarlemmermeer. De gemeente hanteert verschillende tarieven voor verschillende zones en type vergunningen, maar dit specifieke bedrag komt niet voor in de officiële tarievenlijst."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 9,
+    "valid_urls": 4,
+    "invalid_urls": 5,
+    "accuracy_percentage": 44.4,
+    "valid_urls_list": [
+      "https://haarlemmermeergemeente.nl/uitweg-aanleggen-of-veranderen",
+      "https://haarlemmermeergemeente.nl/parkeerontheffing",
+      "https://haarlemmermeergemeente.nl/parkeervergunning",
+      "https://haarlemmermeergemeente.nl/ontheffing-verkeersregels-en-parkeerverbod"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://haarlemmermeergemeente.nl/toelichting-aanvraagformulier-exploitatievergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://haarlemmermeer.nl/parkeervergunning\">https://haarlemmermeer.nl/parkeervergunning</a></li>",
+        "reason": "INVALID: Error scraping https://haarlemmermeer.nl/parkeervergunning\">https://haarlemmermeer.nl/parkeervergunning</a></li>: 404 Client Error: Not Found for url: https://haarlemmermeer.nl/parkeervergunning%22%3Ehttps://haarlemmermeer.nl/parkeervergunning%3C/a%3E%3C/li%3E"
+      },
+      {
+        "url": "https://haarlemmermeer.nl/parkeerontheffing\">https://haarlemmermeer.nl/parkeerontheffing</a></li>",
+        "reason": "INVALID: Error scraping https://haarlemmermeer.nl/parkeerontheffing\">https://haarlemmermeer.nl/parkeerontheffing</a></li>: 404 Client Error: Not Found for url: https://haarlemmermeer.nl/parkeerontheffing%22%3Ehttps://haarlemmermeer.nl/parkeerontheffing%3C/a%3E%3C/li%3E"
+      },
+      {
+        "url": "https://haarlemmermeer.nl/parkeervergunning",
+        "reason": "INVALID: Error scraping https://haarlemmermeer.nl/parkeervergunning: 404 Client Error: Not Found for url: https://haarlemmermeer.nl/parkeervergunning"
+      },
+      {
+        "url": "https://haarlemmermeer.nl/parkeerontheffing",
+        "reason": "INVALID: Error scraping https://haarlemmermeer.nl/parkeerontheffing: 404 Client Error: Not Found for url: https://haarlemmermeer.nl/parkeerontheffing"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De parkeervergunning geldt 2 jaar",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de geldigheidsduur van 2 jaar voor parkeervergunningen, wat belangrijke informatie is voor aanvragers",
+          "source_urls": [
+            "https://haarlemmermeergemeente.nl/parkeervergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De parkeerontheffing is 2 jaar geldig",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de geldigheidsduur van 2 jaar voor parkeerontheffingen",
+          "source_urls": [
+            "https://haarlemmermeergemeente.nl/parkeerontheffing"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Met een parkeervergunning hoeft u niet meer iedere keer apart te betalen",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist deze belangrijke informatie over het voordeel van een parkeervergunning",
+          "source_urls": [
+            "https://haarlemmermeergemeente.nl/parkeervergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen ontbrekende informatie in de originele tekst over de geldigheidsduur van zowel parkeervergunningen als parkeerontheffingen (beide 2 jaar) en het financiële voordeel van een parkeervergunning. Deze informatie is wel belangrijk voor potentiële aanvragers om een goede beslissing te kunnen nemen."
+  }
+}

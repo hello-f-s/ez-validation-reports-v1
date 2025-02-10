@@ -1,0 +1,87 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HEILOO",
+      "contact": {
+        "phone": "(072) 535 66 66",
+        "email": "info@heiloo.nl",
+        "website": "http://www.heiloo.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 7,
+    "true_sentences": 6,
+    "false_sentences": 1,
+    "accuracy_percentage": 85.7,
+    "false_statements": [
+      {
+        "sentence": "U bent het niet eens met de beslissing van de gemeente en kunt bezwaar maken.",
+        "status": "false",
+        "note": "Deze zin is onvolledig en daardoor misleidend. Volgens de gemeente Heiloo moet een bezwaar binnen 6 weken na het besluit schriftelijk worden ingediend en moet het bezwaarschrift aan specifieke eisen voldoen, zoals persoonsgegevens, datum, handtekening en motivering."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.heiloo.nl/aanvragen-en-regelen/terrasvergunning/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/exploitatievergunning/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/alcoholvergunning/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/ondernemen/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.heiloo.nl/aanvragen-en-regelen/ontheffing-alcoholwet-art-35/",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Kosten 2025 alcoholvergunningen: Aanvragen alcoholvergunning € 306,70, Wijziging leidinggevende € 100,60, Aanvragen terrasvergunning € 330,20, Wijzigen terrasvergunning € 107,50, Wijzigen inrichting art. 30 € 93,30",
+          "original_reference": "Hier kan geen specifieke informatie over gevonden worden op de website van deze gemeente.",
+          "note": "De originele tekst vermeldt dat er geen informatie over kosten beschikbaar is, terwijl de bron wel specifieke tarieven voor 2025 vermeldt.",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/alcoholvergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u een alcoholvergunning wilt aanvragen, neemt u dan vooraf contact op met team Horeca via horeca@debuch.nl",
+          "original_reference": "Neem vooraf contact op met het team Horeca van de gemeente",
+          "note": "De bron vermeldt specifiek het e-mailadres horeca@debuch.nl, wat ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/alcoholvergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U vraagt een vergunning aan als u tegen betaling alcoholhoudende drank schenkt. U schenkt alcoholhoudende drank in een horeca-inrichting zoals een café of een restaurant. U schenkt alcoholhoudende drank bij een vereniging of stichting met activiteiten op het gebied van recreatie, sport, cultuur, educatie, levensbeschouwing of godsdienst. U verkoopt sterke dranken in een slijterij.",
+          "original_reference": "U heeft een alcoholvergunning nodig als u alcoholhoudende dranken verkoopt in een (horeca)bedrijf of slijterij.",
+          "note": "De bron geeft een uitgebreidere specificatie van situaties waarin een alcoholvergunning nodig is, inclusief verenigingen en stichtingen.",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/alcoholvergunning/"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie die ontbreekt in de originele tekst, met name specifieke kostenoverzichten voor 2025, het exacte contact e-mailadres voor het team Horeca, en een uitgebreidere beschrijving van situaties waarin een alcoholvergunning vereist is. Deze informatie maakt de voorwaarden en procedures duidelijker voor aanvragers."
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HEILOO",
+      "contact": {
+        "phone": "(072) 535 66 66",
+        "email": "info@heiloo.nl",
+        "website": "http://www.heiloo.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "Een eventuele verlenging kan maximaal 6 weken duren.",
+        "status": "false",
+        "note": "Volgens de website van gemeente Heiloo kan de gemeente de beslistermijn eenmalig met maximaal 8 weken verlengen, niet 6 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.heiloo.nl/aanvragen-en-regelen/omgevingsvergunning/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/toezicht-en-handhaving/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/exploitatievergunning/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/omgevingswet/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/standplaatsvergunning/"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Meld de start van de bouw of sloop minimaal 2 dagen van tevoren aan bij toezichthouder van de gemeente.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist de belangrijke verplichting om de start van bouw- of sloopwerkzaamheden 2 dagen van tevoren te melden",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/toezicht-en-handhaving/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De Omgevingswet zorgt ervoor dat de overheid sneller beslist op uw vergunningaanvragen. Een korte procedure is het uitgangspunt in de Omgevingswet. De beslistermijn is dan maximaal 8 weken. Daarna is er nog bezwaar en beroep mogelijk.",
+          "original_reference": "De standaard beslistermijn is 8 weken.",
+          "note": "De brontekst benadrukt dat 8 weken een maximum is en vermeldt expliciet de mogelijkheid tot bezwaar en beroep na de beslissing",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/omgevingswet/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U kunt vragen stellen of informatie opvragen over kort geleden gepubliceerde omgevingsvergunningen of over bouwwerkzaamheden in uw omgeving. U kunt oude bouwdossiers tot 2007 zelf aanvragen en bekijken in e-loket van het Regionaal Archief Alkmaar.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist informatie over de mogelijkheid om bouwdossiers en vergunningen in te zien via het Regionaal Archief Alkmaar",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/omgevingsvergunning/"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten enkele belangrijke aanvullende details die niet in de originele tekst staan, waaronder de verplichte melding van start bouw/sloop, specifieke informatie over bezwaar en beroep na de beslissing, en de mogelijkheid om historische bouwdossiers in te zien. Deze informatie is relevant voor een complete dienstverlening rond omgevingsvergunningen."
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "context": {
+    "municipality": {
+      "name": "NEDER-BETUWE",
+      "contact": {
+        "phone": "0140488",
+        "email": "info@nederbetuwe.nl",
+        "website": "http://www.nederbetuwe.nl"
+      }
+    },
+    "service": {
+      "id": 13,
+      "name": "Omzettingsvergunning voor kamerverhuur aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "De plannen worden gepubliceerd op de bekendmakingenpagina op de website van de gemeente en de gemeentepagina in het huis-aan-huisblad Hét Gemeentenieuws.",
+        "status": "false",
+        "note": "De gemeente Neder-Betuwe publiceert bekendmakingen op overheid.nl en in het huis-aan-huisblad 'Gemeente Neder-Betuwe', niet in 'Hét Gemeentenieuws'"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 0,
+    "invalid_urls": 7,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.omgevingsloket.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.odrivierenland.nl\">www.odrivierenland.nl</a></p>",
+        "reason": "INVALID: Error scraping https://www.odrivierenland.nl\">www.odrivierenland.nl</a></p>: HTTPSConnectionPool(host='www.odrivierenland.nl%22%3ewww.odrivierenland.nl%3c', port=443): Max retries exceeded with url: /a%3E%3C/p%3E (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x103e739d0>: Failed to resolve 'www.odrivierenland.nl%22%3ewww.odrivierenland.nl%3c' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.nederbetuwe.nl/en/ondernemen/wetten-regels-en-vergunningen/hotel-bed-and-breakfast-of-camping-starten",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.nederbetuwe.nl/en/bouwen-en-wonen/vergunningen/omgevingsvergunning",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.odrivierenland.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.omgevingsloket.nl\">www.omgevingsloket.nl</a><br>",
+        "reason": "INVALID: Error scraping https://www.omgevingsloket.nl\">www.omgevingsloket.nl</a><br>: HTTPSConnectionPool(host='www.omgevingsloket.nl%22%3ewww.omgevingsloket.nl%3c', port=443): Max retries exceeded with url: /a%3E%3Cbr%3E (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x103e72e90>: Failed to resolve 'www.omgevingsloket.nl%22%3ewww.omgevingsloket.nl%3c' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "http://www.omgevingsloket.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  }
+}

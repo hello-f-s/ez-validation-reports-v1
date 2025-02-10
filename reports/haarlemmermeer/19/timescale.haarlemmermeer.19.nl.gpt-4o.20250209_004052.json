@@ -1,0 +1,91 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HAARLEMMERMEER",
+      "contact": {
+        "phone": "(0900) 18 52",
+        "email": "info@haarlemmermeer.nl",
+        "website": "http://www.haarlemmermeer.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 13,
+    "false_sentences": 2,
+    "accuracy_percentage": 86.7,
+    "false_statements": [
+      {
+        "sentence": "Een aanvraag voor 1 kansspelautomaat kost € 71,80 per jaar.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Haarlemmermeer bedragen de kosten voor de eerste kansspelautomaat € 75,40 per jaar"
+      },
+      {
+        "sentence": "Voor de tweede en iedere volgende automaat zijn de kosten € 43,05 per jaar.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Haarlemmermeer bedragen de kosten voor iedere volgende kansspelautomaat € 45,20 per jaar"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 4,
+    "invalid_urls": 3,
+    "accuracy_percentage": 57.1,
+    "valid_urls_list": [
+      "https://haarlemmermeergemeente.nl/exploitatievergunning",
+      "https://haarlemmermeergemeente.nl/loterijvergunning",
+      "https://haarlemmermeergemeente.nl/evenementenvergunning",
+      "https://haarlemmermeergemeente.nl/vergunning-kansspelautomaten"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.haarlemmermeer.nl/vergunning-kansspelautomaten\">https://www.haarlemmermeer.nl/vergunning-kansspelautomaten</a></p>",
+        "reason": "INVALID: Error scraping https://www.haarlemmermeer.nl/vergunning-kansspelautomaten\">https://www.haarlemmermeer.nl/vergunning-kansspelautomaten</a></p>: 404 Client Error: Not Found for url: https://www.haarlemmermeer.nl/vergunning-kansspelautomaten%22%3Ehttps://www.haarlemmermeer.nl/vergunning-kansspelautomaten%3C/a%3E%3C/p%3E"
+      },
+      {
+        "url": "https://www.haarlemmermeer.nl/vergunning-kansspelautomaten",
+        "reason": "INVALID: Error scraping https://www.haarlemmermeer.nl/vergunning-kansspelautomaten: 404 Client Error: Not Found for url: https://www.haarlemmermeer.nl/vergunning-kansspelautomaten"
+      },
+      {
+        "url": "https://haarlemmermeergemeente.nl/toelichting-aanvraagformulier-exploitatievergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Heeft u een café, bar of restaurant? Dan kunt u een vergunning aanvragen voor maximaal 2 kansspelautomaten. Voor maximaal 3 jaar.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de maximale geldigheidsduur van 3 jaar en het maximum aantal van 2 kansspelautomaten per horecagelegenheid.",
+          "source_urls": [
+            "https://haarlemmermeergemeente.nl/vergunning-kansspelautomaten"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Behendigheidsautomaten, zoals flipperautomaten. Hiervoor heeft u geen vergunning nodig.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst maakt geen onderscheid tussen behendigheidsautomaten en kansspelautomaten, terwijl dit een belangrijk verschil is omdat behendigheidsautomaten geen vergunning vereisen.",
+          "source_urls": [
+            "https://haarlemmermeergemeente.nl/vergunning-kansspelautomaten"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten twee belangrijke aanvullende details die niet in de originele tekst staan: de maximale geldigheidsduur van de vergunning (3 jaar) en het maximum aantal toegestane kansspelautomaten (2) per horecagelegenheid. Ook wordt er een belangrijk onderscheid gemaakt tussen behendigheidsautomaten (geen vergunning nodig) en kansspelautomaten (wel vergunning nodig), wat in de originele tekst ontbreekt."
+  }
+}

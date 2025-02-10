@@ -1,0 +1,68 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DELFT",
+      "contact": {
+        "phone": "14 015",
+        "email": "null",
+        "website": "http://www.delft.nl"
+      }
+    },
+    "service": {
+      "id": 10,
+      "name": "Nachtregister bijhouden"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 12,
+    "false_sentences": 0,
+    "accuracy_percentage": 100.0,
+    "false_statements": []
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.delft.nl/voorwaarden-voor-verhuur",
+      "https://www.delft.nl/woning-verhuren-aan-toeristen",
+      "https://www.delft.nl/garantstelling-logiesverstrekking",
+      "https://www.delft.nl/woo-verzoek-doen",
+      "https://www.delft.nl/vergunning-melden"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Er is sprake van geregeld beheer. Dit betekent dat er iemand is (bij voorkeur niet een huurder van de woning) die: [...] een actueel overzicht bijhoudt van de bewoners van het pand",
+          "original_reference": "Bijhouden van een accuraat nachtregister met gegevens van gasten zoals naam, adres, verblijfsduur",
+          "note": "De vereiste om een actueel overzicht van bewoners bij te houden komt overeen met het concept van een nachtregister, al wordt de term 'nachtregister' niet expliciet gebruikt",
+          "source_urls": [
+            "https://www.delft.nl/voorwaarden-voor-verhuur"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Sinds 1 januari 2024 moet u iedere overnachting melden bij de gemeente. Doe dit altijd vóór het begin van de verhuur.",
+          "original_reference": "No matching information",
+          "note": "Er is een nieuwe meldplicht voor toeristische verhuur vanaf 2024 die niet in de originele tekst staat vermeld",
+          "source_urls": [
+            "https://www.delft.nl/woning-verhuren-aan-toeristen"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont twee belangrijke punten: 1) De vereiste voor het bijhouden van een bewonersadministratie bestaat wel, maar wordt niet specifiek als 'nachtregister' benoemd, en 2) Er is een nieuwe meldplicht voor toeristische overnachtingen vanaf 2024 die niet in de originele tekst was opgenomen. Deze meldplicht is een belangrijke aanvulling op de bestaande registratieverplichtingen."
+  }
+}

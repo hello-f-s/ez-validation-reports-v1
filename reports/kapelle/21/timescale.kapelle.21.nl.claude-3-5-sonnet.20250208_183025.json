@@ -1,0 +1,81 @@
+{
+  "context": {
+    "municipality": {
+      "name": "KAPELLE",
+      "contact": {
+        "phone": "(0113) 33 31 10",
+        "email": "gemeente@kapelle.nl",
+        "website": "http://www.kapelle.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 10,
+    "false_sentences": 1,
+    "accuracy_percentage": 90.9,
+    "false_statements": [
+      {
+        "sentence": "Voor een schriftelijke aanvraag via de gemeente: €41,35",
+        "status": "false",
+        "note": "Het tarief voor een schriftelijke VOG-aanvraag bij de gemeente Kapelle is €41,85, niet €41,35"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 3,
+    "invalid_urls": 2,
+    "accuracy_percentage": 60.0,
+    "valid_urls_list": [
+      "https://kapelle.nl/verklaring-omtrent-gedrag-vog",
+      "https://kapelle.nl/pas-op-voor-commerciele-tussenpartijen-vog-aanvragen",
+      "https://kapelle.nl/omgevingsvergunning-0"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.kapelle.nl/informatieverzoek-derden-aanvraag-nederlandse-nationaliteit",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.kapelle.nl/aanvraagformulier-principeverzoek",
+        "reason": "INVALID: Error scraping https://www.kapelle.nl/aanvraagformulier-principeverzoek: 403 Client Error: Forbidden for url: https://www.kapelle.nl/aanvraagformulier-principeverzoek-oud"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De enige officiële routes voor het indienen van een VOG-aanvraag zijn: digitaal bij Justis, waarbij de belanghebbende organisatie de aanvraag klaarzet voor de aanvrager via eHerkenning",
+          "original_reference": "Digitaal: Uw organisatie zet de aanvraag online voor u klaar bij Justis",
+          "note": "De brontekst specificeert dat organisaties eHerkenning moeten gebruiken om de aanvraag klaar te zetten, wat niet vermeld wordt in de originele tekst",
+          "source_urls": [
+            "https://kapelle.nl/pas-op-voor-commerciele-tussenpartijen-vog-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wat is een VOG precies? Waar wordt naar gekeken tijdens de beoordeling? En wie of wat bepaalt of je wel of geen VOG krijgt? [...] Om misverstanden over de VOG weg te nemen ontwikkelde Justis de VOG-check. https://vogcheck.justis.nl/",
+          "original_reference": "No matching information",
+          "note": "De bron vermeldt een belangrijke extra dienst (VOG-check) die niet genoemd wordt in de originele tekst, wat nuttig kan zijn voor aanvragers om hun kansen in te schatten",
+          "source_urls": [
+            "https://kapelle.nl/verklaring-omtrent-gedrag-vog"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten twee belangrijke aanvullingen op de originele tekst: de vereiste van eHerkenning voor organisaties bij het klaarzetten van digitale aanvragen, en het bestaan van de VOG-check tool van Justis. Deze informatie kan waardevol zijn voor zowel aanvragers als organisaties die VOG's aanvragen. Overige informatie zoals kosten, procedures en termijnen komt overeen met de originele tekst."
+  }
+}

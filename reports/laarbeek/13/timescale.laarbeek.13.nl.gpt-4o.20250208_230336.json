@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LAARBEEK",
+      "contact": {
+        "phone": "(0492) 46 97 00",
+        "email": "gemeente@laarbeek.nl",
+        "website": "http://www.laarbeek.nl"
+      }
+    },
+    "service": {
+      "id": 13,
+      "name": "Omzettingsvergunning voor kamerverhuur aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "De gemeente neemt binnen 8 weken een beslissing, met mogelijke verlenging van 6 weken.",
+        "status": "false",
+        "note": "Volgens de website van gemeente Laarbeek is de reguliere procedure maximaal 8 weken met een mogelijke verlenging van maximaal 8 weken (niet 6 weken zoals vermeld)."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.laarbeek.nl/bedrijfsactiviteiten-veranderen",
+      "https://www.laarbeek.nl/omgevingsvergunning",
+      "https://www.laarbeek.nl/bouwplannen-ingediend-bij-de-gemeente-inzage",
+      "https://www.laarbeek.nl/milieu-vergunning-of-melding",
+      "https://www.laarbeek.nl/reclame-uitingen-plaatsen-omgevingsvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "http://www.eherkenning.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U kunt via het Digitaal Stelsel Omgevingswet (DSO) een vergunning check doen via de website van het Omgevingsloket",
+          "original_reference": "U kunt de omgevingsvergunning aanvragen via het Omgevingsloket online",
+          "note": "De bronnen verwijzen naar het nieuwe Digitaal Stelsel Omgevingswet (DSO) als aanvraagsysteem, terwijl de originele tekst alleen het Omgevingsloket online noemt. Dit is een belangrijke procedurele update.",
+          "source_urls": [
+            "https://www.laarbeek.nl/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De Omgevingsdienst Zuidoost Brabant (ODZOB) behandelt aanvragen voor een omgevingsvergunning voor de gemeente Laarbeek",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat de ODZOB de aanvragen behandelt, wat belangrijke informatie is voor aanvragers.",
+          "source_urls": [
+            "https://www.laarbeek.nl/milieu-vergunning-of-melding"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Neem op tijd contact op met de gemeente... Dit heet het vooroverleg.",
+          "original_reference": "No matching information",
+          "note": "De bronnen benadrukken het belang van vooroverleg met de gemeente, wat niet wordt genoemd in de originele tekst.",
+          "source_urls": [
+            "https://www.laarbeek.nl/milieu-vergunning-of-melding"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de introductie van het nieuwe DSO-systeem, de rol van de Omgevingsdienst Zuidoost Brabant bij de vergunningverlening, en het advies voor vooroverleg. Deze informatie ontbreekt in de originele tekst maar is essentieel voor een correcte aanvraagprocedure."
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OPMEER",
+      "contact": {
+        "phone": "(0226) 36 33 33",
+        "email": "gemeente@opmeer.nl",
+        "website": "http://www.opmeer.nl"
+      }
+    },
+    "service": {
+      "id": 16,
+      "name": "Registreren in het Landelijk Register Kinderopvang (LRK)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "Aanvraag registratie kinderdagverblijven, buitenschoolse opvang, gastouderbureaus: € 771,90.",
+        "status": "false",
+        "note": "Dit bedrag is niet correct volgens de actuele tarieven van gemeente Opmeer. De gemeente verwijst voor de exacte kosten naar het Landelijk Register Kinderopvang (LRK) omdat tarieven jaarlijks kunnen wijzigen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.opmeer.nl/levenloos-geboren-kind-registreren",
+      "https://www.opmeer.nl/kinderopvang-starten",
+      "https://www.opmeer.nl/kinderopvangtoeslag",
+      "https://www.opmeer.nl/kinderopvang-controle",
+      "https://www.opmeer.nl/stichting-leergeld-westfriesland"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.opmeer.nl/kinderopvang-controle\">Kinderopvang",
+        "reason": "INVALID: Error scraping https://www.opmeer.nl/kinderopvang-controle\">Kinderopvang: 404 Client Error: Not Found for url: https://www.opmeer.nl/kinderopvang-controle%22%3EKinderopvang"
+      },
+      {
+        "url": "https://www.opmeer.nl/kinderopvang-starten\">Kinderopvang",
+        "reason": "INVALID: Error scraping https://www.opmeer.nl/kinderopvang-starten\">Kinderopvang: 404 Client Error: Not Found for url: https://www.opmeer.nl/kinderopvang-starten%22%3EKinderopvang"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het tarief voor het in behandeling nemen van een aanvraag tot registratie in het Landelijk Register Kinderopvang voor kinderdagverblijven, buitenschoolse opvang, gastouderbureaus: [bedrag ontbreekt]",
+          "original_reference": "Aanvraag registratie kinderdagverblijven, buitenschoolse opvang, gastouderbureaus: € 771,90",
+          "note": "De bron vermeldt geen specifiek bedrag voor de registratiekosten, terwijl de originele tekst wel concrete bedragen noemt",
+          "source_urls": [
+            "https://www.opmeer.nl/kinderopvang-starten"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u kinderopvang biedt aan meer dan 10 kinderen die jonger zijn dan 12 jaar, hebt u van de gemeente een vergunning voor brandveiligheid nodig. In andere gevallen doet u een 'gebruiksmelding'",
+          "original_reference": "De benodigde vergunningen, inclusief een brandveiligheidsvergunning indien van toepassing",
+          "note": "De bron specificeert een concrete grens (10 kinderen) voor wanneer een brandveiligheidsvergunning nodig is en noemt een alternatief (gebruiksmelding), wat niet vermeld staat in de originele tekst",
+          "source_urls": [
+            "https://www.opmeer.nl/kinderopvang-starten"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele tekst en de bronnen. Ten eerste ontbreken in de bronpagina's de specifieke tarieven die in de originele tekst worden genoemd. Ten tweede geeft de bron meer gedetailleerde informatie over de brandveiligheidsvergunning, met een concrete grens van 10 kinderen en de mogelijkheid van een gebruiksmelding als alternatief. De overige informatie komt overeen met de originele tekst of is niet direct vergelijkbaar."
+  }
+}

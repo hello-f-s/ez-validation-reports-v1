@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HEEMSKERK",
+      "contact": {
+        "phone": "14 0251",
+        "email": "post@heemskerk.nl",
+        "website": "http://www.heemskerk.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Voor de eerste kansspelautomaat betaalt u € 226,50.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Heemskerk bedraagt het tarief voor de eerste kansspelautomaat € 56,50 per jaar, niet € 226,50."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca/exploitatievergunning",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/kansspel-organiseren-melding-of-vergunning",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca/kansspelautomaat",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/veelgestelde-vragen-omgevingsvergunning",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://example.com/heemskerk_kansspelautomaat\">Gemeente",
+        "reason": "INVALID: Error scraping https://example.com/heemskerk_kansspelautomaat\">Gemeente: 404 Client Error: Not Found for url: https://example.com/heemskerk_kansspelautomaat%22%3EGemeente"
+      },
+      {
+        "url": "https://example.com/heemskerk_kansspelautomaat",
+        "reason": "INVALID: Error scraping https://example.com/heemskerk_kansspelautomaat: 404 Client Error: Not Found for url: https://example.com/heemskerk_kansspelautomaat"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De aanvraag doet u via het webformulier. Bij de aanvraag betaalt u direct de legeskosten via iDeal.",
+          "original_reference": "De aanvraag doet u via het webformulier van de gemeente Heemskerk. U kunt bij dit proces direct de legeskosten betalen via iDeal.",
+          "note": "De originele tekst specificeert 'van de gemeente Heemskerk', terwijl de brontekst algemener is. Dit is echter geen significant inhoudelijk verschil.",
+          "source_urls": [
+            "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca/kansspelautomaat"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De ruimte moet een café of restaurant zijn, mét een geldige alcoholvergunning.",
+          "original_reference": "Uw horecazaak moet hoogdrempelig zijn, wat betekent dat het een café of restaurant met geldige alcoholvergunning moet zijn.",
+          "note": "De brontekst formuleert de voorwaarde directer en beknopter, maar heeft dezelfde betekenis.",
+          "source_urls": [
+            "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca/kansspelautomaat"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse zijn er geen significante inhoudelijke verschillen gevonden tussen de originele tekst en de bronnen. De gevonden verschillen betreffen vooral formulering en tekstuele variaties, maar de kerninhoud, voorwaarden, kosten en procedures zijn consistent. Alle essentiële informatie in de originele tekst komt overeen met de informatie in de bronnen."
+  }
+}

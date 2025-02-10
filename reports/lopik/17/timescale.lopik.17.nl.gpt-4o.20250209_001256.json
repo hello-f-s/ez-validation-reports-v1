@@ -1,0 +1,89 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LOPIK",
+      "contact": {
+        "phone": "(0348) 55 99 55",
+        "email": "gemeente@lopik.nl",
+        "website": "http://www.lopik.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "U ontvangt binnen 8 weken bericht of u de vergunning krijgt.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Lopik is de wettelijke beslistermijn voor een terrasvergunning 12 weken, niet 8 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 6,
+    "invalid_urls": 1,
+    "accuracy_percentage": 85.7,
+    "valid_urls_list": [
+      "https://www.lopik.nl/exploitatievergunning-horecabedrijf",
+      "https://www.lopik.nl",
+      "https://www.lopik.nl/terras-plaatsen",
+      "https://www.lopik.nl/milieu-vergunning-of-melding",
+      "https://www.lopik.nl/openingstijden-horeca-eenmalig-aanpassen",
+      "https://www.lopik.nl/omgevingsvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.lopik.nl\">Gemeente",
+        "reason": "INVALID: Error scraping https://www.lopik.nl\">Gemeente: HTTPSConnectionPool(host='www.lopik.nl%22%3egemeente', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x107afc550>: Failed to resolve 'www.lopik.nl%22%3egemeente' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U heeft een exploitatievergunning nodig als u een horecabedrijf zoals een discotheek, dancing bar of café wilt exploiteren. Ook als u uw horecabedrijf wilt uitbreiden of veranderen.",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden dat er naast een terrasvergunning ook een exploitatievergunning nodig is voor horecabedrijven. Deze belangrijke voorwaarde ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.lopik.nl/exploitatievergunning-horecabedrijf"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De hoogte van de kosten zijn uitgeschreven in de 'Verordening op de heffing en invordering van leges 2025'",
+          "original_reference": "De tarieven zijn vastgelegd in de 'Verordening op de heffing en invordering van leges'",
+          "note": "De bron specificeert het jaartal 2025 voor de legesverordening, terwijl dit in de originele tekst niet wordt genoemd.",
+          "source_urls": [
+            "https://www.lopik.nl/terras-plaatsen"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "U ontvangt binnen 8 weken bericht of u de vergunning krijgt.",
+          "original_reference": "U ontvangt binnen 8 weken bericht of u de vergunning krijgt.",
+          "note": "De behandeltermijn van 8 weken is consistent in beide bronnen.",
+          "source_urls": [
+            "https://www.lopik.nl/terras-plaatsen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de aanvullende eis van een exploitatievergunning voor horecabedrijven en de specifieke vermelding van het jaartal 2025 voor de legesverordening. De overige informatie, zoals aanvraagprocedure, behandeltermijnen en bezwaarmogelijkheden, komt overeen met de originele tekst."
+  }
+}

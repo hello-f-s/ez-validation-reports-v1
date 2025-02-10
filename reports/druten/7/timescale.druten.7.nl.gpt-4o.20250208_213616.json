@@ -1,0 +1,79 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DRUTEN",
+      "contact": {
+        "phone": "(088) 432 70 00",
+        "email": "info@druten.nl",
+        "website": "http://www.druten.nl"
+      }
+    },
+    "service": {
+      "id": 7,
+      "name": "Kabels en leidingen aanleggen en beheren"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "Contactpersoon voor vragen is Michel Burgers, bereikbaar op 088 432 72 25.",
+        "status": "false",
+        "note": "Deze contactgegevens zijn verouderd. Op de huidige website van gemeente Druten wordt deze contactpersoon niet meer genoemd als aanspreekpunt voor kabels en leidingen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.druten.nl/exploitatievergunning-horecabedrijf",
+      "https://www.druten.nl/voorwerp-plaatsen-op-of-aan-de-weg",
+      "https://www.druten.nl/omgevingsvergunning",
+      "https://www.druten.nl/monument-verbouwen-herstellen-of-onderhouden",
+      "https://www.druten.nl/kabels-en-leidingen-in-openbare-grond"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "http://www.moorwerk.nl",
+        "reason": "INVALID: Error scraping http://www.moorwerk.nl: HTTPConnectionPool(host='www.moorwerk.nl', port=80): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPConnection object at 0x10610b8c0>: Failed to resolve 'www.moorwerk.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Wilt u kabels en leidingen onder de grond leggen in openbaar gebied? Dan mag u niet zelf doen. Dat moet een bedrijf voor u regelen.",
+          "original_reference": "Wilt u kabels en leidingen onder de grond leggen in openbaar gebied, dan mag u dit niet zelf doen. Dit moet door een bedrijf worden geregeld.",
+          "note": "De kernboodschap over wie de werkzaamheden mag uitvoeren is consistent tussen beide bronnen",
+          "source_urls": [
+            "https://www.druten.nl/kabels-en-leidingen-in-openbare-grond"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Voor nutsbedrijven is een vergunning nodig en voor telecombedrijven is een instemmingsbesluit nodig.",
+          "original_reference": "Voor nutsbedrijven is een vergunning vereist en voor telecombedrijven is een instemmingsbesluit nodig.",
+          "note": "De vereisten voor verschillende type bedrijven zijn consistent beschreven",
+          "source_urls": [
+            "https://www.druten.nl/kabels-en-leidingen-in-openbare-grond"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse van de bronnen en de originele tekst zijn er geen significante verschillen of tegenstrijdigheden gevonden. De informatie over vergunningen, instemmingsbesluiten en de vereiste om werkzaamheden door bedrijven te laten uitvoeren komt overeen. De contactgegevens van Michel Burgers kunnen niet geverifieerd worden in de beschikbare bronnen."
+  }
+}

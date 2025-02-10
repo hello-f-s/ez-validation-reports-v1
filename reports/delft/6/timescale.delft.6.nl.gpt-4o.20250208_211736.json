@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DELFT",
+      "contact": {
+        "phone": "14 015",
+        "email": "null",
+        "website": "http://www.delft.nl"
+      }
+    },
+    "service": {
+      "id": 6,
+      "name": "Integriteitsonderzoek (Wet Bibob)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 8,
+    "true_sentences": 7,
+    "false_sentences": 1,
+    "accuracy_percentage": 87.5,
+    "false_statements": [
+      {
+        "sentence": "Indien er advies wordt gevraagd bij het Landelijk Bureau Bibob (LBB), kan het tussen de 8 en 12 weken duren voordat de gemeente een beslissing neemt.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Delft duurt een adviesaanvraag bij het Landelijk Bureau Bibob maximaal 12 weken, niet tussen 8 en 12 weken. Dit is een vaste termijn van 12 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.delft.nl/bibob-onderzoek-subsidie",
+      "https://www.delft.nl/woo-verzoek-doen",
+      "https://www.delft.nl/omnibusenquete",
+      "https://www.delft.nl/bibob-onderzoek-omgevingsvergunning",
+      "https://www.delft.nl/bibob-onderzoek"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een Bibob-onderzoek is nodig als u voor uw situatie 3 punten of meer scoort: U vraagt subsidie aan voor een bedrag van € 20.000 of meer (2 punten), U heeft nog niet eerder subsidie aangevraagd (1 punt), Het bedrijf is korter dan 12 maanden geleden opgericht (1 punt), etc.",
+          "original_reference": "Voor het aanvragen van een Bibob-onderzoek als ondernemer, zijn er bepaalde voorwaarden waaraan moet worden voldaan, afhankelijk van de aard van de vergunning of subsidie.",
+          "note": "De bronpagina specificeert een exact puntensysteem voor subsidies dat niet genoemd wordt in de originele tekst",
+          "source_urls": [
+            "https://www.delft.nl/bibob-onderzoek-subsidie"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een Bibob-onderzoek is nodig als uw aanvraag betrekking heeft op een bouwwerk en de bouwsom meer dan € 50.000 is",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt een specifieke drempelwaarde voor bouwwerken die niet genoemd wordt in de originele tekst",
+          "source_urls": [
+            "https://www.delft.nl/bibob-onderzoek-omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De gemeente zal een Bibob-onderzoek doen bij de aanvraag van een: Vergunning voor horeca, Evenementenvergunning, Subsidie, Omgevingsvergunning, Aanbestedingen",
+          "original_reference": "No matching information",
+          "note": "De bronpagina geeft een complete lijst van situaties waarbij een Bibob-onderzoek nodig is, die niet in de originele tekst staat",
+          "source_urls": [
+            "https://www.delft.nl/bibob-onderzoek"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten veel specifiekere informatie over wanneer een Bibob-onderzoek nodig is, met concrete drempelwaarden en een puntensysteem voor subsidies. Ook wordt een volledige lijst van vergunningen en situaties gegeven waarbij een Bibob-onderzoek verplicht is. Deze details ontbreken in de originele tekst."
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OPMEER",
+      "contact": {
+        "phone": "(0226) 36 33 33",
+        "email": "gemeente@opmeer.nl",
+        "website": "http://www.opmeer.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Het tarief bedraagt € 451,70 voor het in behandeling nemen van een aanvraag tot het verkrijgen van een exploitatievergunning.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Opmeer bedraagt het tarief voor een exploitatievergunning € 462,00 voor 2024."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.opmeer.nl/omgevingsvergunning",
+      "https://www.opmeer.nl/alcoholwetvergunning",
+      "https://www.opmeer.nl/openingstijden-horeca-eenmalig-aanpassen",
+      "https://www.opmeer.nl/exploitatievergunning-horecabedrijf"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.opmeer.nl/terras-plaatsen",
+        "reason": "INVALID: Error scraping https://www.opmeer.nl/terras-plaatsen: 404 Client Error: Not Found for url: https://www.opmeer.nl/terras-plaatsen"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Para-commerciële sportverenigingen (waarbij horeca niet de hoofdactiviteit is) zonder terras zijn vrijgesteld van de exploitatievergunningsplicht volgens artikel 2:28 lid 3 van de APV",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet deze belangrijke uitzondering voor sportverenigingen zonder terras",
+          "source_urls": [
+            "https://www.opmeer.nl/exploitatievergunning-horecabedrijf"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor een slijterij is alleen een alcoholwetvergunning nodig, geen exploitatievergunning",
+          "original_reference": "No matching information",
+          "note": "De originele tekst specificeert niet dat slijterijen zijn uitgezonderd van de exploitatievergunningsplicht",
+          "source_urls": [
+            "https://www.opmeer.nl/exploitatievergunning-horecabedrijf"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U vraagt de exploitatievergunning aan bij de gemeente in de volgende situaties: U start of neemt een openbare inrichting over, De rechtsvorm van uw bedrijf wijzigt",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet specifiek wanneer een exploitatievergunning moet worden aangevraagd, zoals bij overname of wijziging rechtsvorm",
+          "source_urls": [
+            "https://www.opmeer.nl/exploitatievergunning-horecabedrijf"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie die niet in de originele tekst staat, met name over uitzonderingen op de vergunningsplicht (sportverenigingen en slijterijen) en specifieke situaties waarin een exploitatievergunning moet worden aangevraagd. Deze informatie is essentieel voor ondernemers om te bepalen of zij een vergunning nodig hebben."
+  }
+}

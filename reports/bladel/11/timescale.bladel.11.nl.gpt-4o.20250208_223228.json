@@ -1,0 +1,79 @@
+{
+  "context": {
+    "municipality": {
+      "name": "BLADEL",
+      "contact": {
+        "phone": "(0497) 36 16 36",
+        "email": "info@bladel.nl",
+        "website": "http://www.bladel.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "Bij een reguliere procedure ontvang je binnen 8 weken bericht of je de vergunning krijgt; de gemeente kan deze termijn met 6 weken verlengen.",
+        "status": "false",
+        "note": "Volgens de gemeente Bladel bedraagt de beslistermijn voor een reguliere procedure 8 weken, met een mogelijke verlenging van maximaal 8 weken (niet 6 weken zoals vermeld)."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 9,
+    "valid_urls": 0,
+    "invalid_urls": 9,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://omgevingsloket.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://omgevingsloket.nl\">Omgevingsloket</a>,",
+        "reason": "INVALID: Error scraping https://omgevingsloket.nl\">Omgevingsloket</a>,: HTTPSConnectionPool(host='omgevingsloket.nl%22%3eomgevingsloket%3c', port=443): Max retries exceeded with url: /a%3E, (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x107b5f890>: Failed to resolve 'omgevingsloket.nl%22%3eomgevingsloket%3c' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.bladel.nl/omgevingsvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.dommel.nl\">Waterschap",
+        "reason": "INVALID: Error scraping https://www.dommel.nl\">Waterschap: HTTPSConnectionPool(host='www.dommel.nl%22%3ewaterschap', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x107b5fed0>: Failed to resolve 'www.dommel.nl%22%3ewaterschap' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.bladel.nl/informatie-opvragen-wet-open-overheid-woo-verzoek",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.dommel.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.bladel.nl/vergunningen-rond-water",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.bladel.nl/milieu-vergunning-of-melding",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.bladel.nl/omgevingsvergunning-strijdig-gebruik",
+        "reason": "INVALID: Error scraping https://www.bladel.nl/omgevingsvergunning-strijdig-gebruik: 404 Client Error: Not Found for url: https://www.bladel.nl/omgevingsvergunning-strijdig-gebruik"
+      }
+    ]
+  }
+}

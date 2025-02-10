@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DRUTEN",
+      "contact": {
+        "phone": "(088) 432 70 00",
+        "email": "info@druten.nl",
+        "website": "http://www.druten.nl"
+      }
+    },
+    "service": {
+      "id": 8,
+      "name": "Marktvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Lidmaatschap van de CVAH.",
+        "status": "false",
+        "note": "Lidmaatschap van de CVAH (Centrale Vereniging voor Ambulante Handel) is geen verplichte voorwaarde voor het verkrijgen van een marktvergunning in Druten volgens de officiële gemeentelijke website."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.druten.nl/informatie-opvragen-woo-verzoek",
+      "https://www.druten.nl/exploitatievergunning-horecabedrijf",
+      "https://www.druten.nl/marktplaatsvergunning",
+      "https://www.druten.nl/standplaatsvergunning",
+      "https://www.druten.nl/omgevingsvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.druten.nl/marktplaatsvergunning\">Gemeente",
+        "reason": "INVALID: Error scraping https://www.druten.nl/marktplaatsvergunning\">Gemeente: 404 Client Error: Not Found for url: https://www.druten.nl/marktplaatsvergunning%22%3EGemeente"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "de weekmarkt die plaatsvindt op de vrijdagmiddag van 14.00 - 18.00 op de Markt in Druten",
+          "original_reference": "De markt vindt op vrijdagen plaats op De Markt in Druten.",
+          "note": "De originele tekst vermeldt geen specifieke tijden, terwijl de bron aangeeft dat de markt van 14:00 tot 18:00 plaatsvindt.",
+          "source_urls": [
+            "https://www.druten.nl/standplaatsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Let op! Op proef staan is niet mogelijk.",
+          "original_reference": "No matching information",
+          "note": "De bron vermeldt expliciet dat op proef staan niet mogelijk is, wat belangrijke aanvullende informatie is die niet in de originele tekst staat.",
+          "source_urls": [
+            "https://www.druten.nl/marktplaatsvergunning"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "stuur uw aanvraag naar info@druten.nl of bel het zescijferige telefoonnummer 140487",
+          "original_reference": "Stuur uw aanvraag naar info@druten.nl of bel het zescijferige telefoonnummer 140487.",
+          "note": "De contactgegevens komen exact overeen met de originele tekst.",
+          "source_urls": [
+            "https://www.druten.nl/marktplaatsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele tekst en de bronnen. Ten eerste worden de specifieke markttijden (14:00-18:00) wel in de bronnen vermeld maar niet in de originele tekst. Ten tweede vermeldt de bron expliciet dat op proef staan niet mogelijk is, wat belangrijke aanvullende informatie is voor potentiële aanvragers. De overige informatie, waaronder contactgegevens en algemene voorwaarden, komt overeen met de originele tekst."
+  }
+}

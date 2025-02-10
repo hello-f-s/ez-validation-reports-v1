@@ -1,0 +1,95 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HAARLEMMERMEER",
+      "contact": {
+        "phone": "(0900) 18 52",
+        "email": "info@haarlemmermeer.nl",
+        "website": "http://www.haarlemmermeer.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "De gemeente neemt meestal binnen 8 weken een besluit over uw aanvraag.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Haarlemmermeer is de reguliere procedure voor een omgevingsvergunning maximaal 8 weken, maar voor milieubelastende activiteiten geldt de uitgebreide procedure van 26 weken (6 maanden)."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 4,
+    "invalid_urls": 3,
+    "accuracy_percentage": 57.1,
+    "valid_urls_list": [
+      "https://haarlemmermeergemeente.nl/omgevingsvergunning-milieu",
+      "https://haarlemmermeergemeente.nl/slopen",
+      "https://haarlemmermeergemeente.nl/kozijnwijziging",
+      "https://haarlemmermeergemeente.nl/vergunningsvrij-bouwen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.haarlemmermeer.nl/omgevingsvergunning-milieu\">Omgevingsvergunning",
+        "reason": "INVALID: Error scraping https://www.haarlemmermeer.nl/omgevingsvergunning-milieu\">Omgevingsvergunning: 404 Client Error: Not Found for url: https://www.haarlemmermeer.nl/omgevingsvergunning-milieu%22%3EOmgevingsvergunning"
+      },
+      {
+        "url": "https://haarlemmermeergemeente.nl/dakterras",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.haarlemmermeer.nl/omgevingsvergunning-milieu",
+        "reason": "INVALID: Error scraping https://www.haarlemmermeer.nl/omgevingsvergunning-milieu: 404 Client Error: Not Found for url: https://www.haarlemmermeer.nl/omgevingsvergunning-milieu"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bedrijven moeten ervoor zorgen dat zij zo min mogelijk milieuschade of -overlast veroorzaken. Start u een nieuw bedrijf of verandert u een bestaand bedrijf? Dan kan het zijn dat u dit moet melden bij de gemeente.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat een belangrijke context over milieuschade en -overlast die ontbreekt in de originele tekst",
+          "source_urls": [
+            "https://haarlemmermeergemeente.nl/omgevingsvergunning-milieu"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Let op: soms zijn er nog andere regels waar uw bouwwerk aan moet voldoen. Denk bijvoorbeeld aan toestemming van de eigenaar van de grond of regels uit een koopovereenkomst. Dit controleert u zelf.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt aanvullende regels en vereisten die niet genoemd worden in de originele tekst",
+          "source_urls": [
+            "https://haarlemmermeergemeente.nl/kozijnwijziging"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vertel de omgeving over uw vergunningsvrije bouwplan",
+          "original_reference": "No matching information",
+          "note": "De bronpagina adviseert om buren te informeren over vergunningsvrije bouwplannen, wat niet genoemd wordt in de originele tekst",
+          "source_urls": [
+            "https://haarlemmermeergemeente.nl/vergunningsvrij-bouwen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten enkele belangrijke aanvullende informatie die niet in de originele tekst staat, waaronder de verplichting om milieuschade te beperken, aanvullende regels waar bouwwerken aan moeten voldoen, en het advies om buren te informeren over vergunningsvrije bouwplannen. De kernprocedures, kosten en termijnen komen overeen met de originele tekst."
+  }
+}

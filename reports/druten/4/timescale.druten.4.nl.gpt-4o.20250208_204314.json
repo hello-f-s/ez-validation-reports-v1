@@ -1,0 +1,95 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DRUTEN",
+      "contact": {
+        "phone": "(088) 432 70 00",
+        "email": "info@druten.nl",
+        "website": "http://www.druten.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 22,
+    "false_sentences": 2,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Categorie A (regulier evenement): €163,85",
+        "status": "false",
+        "note": "Het actuele tarief voor een categorie A evenement in Druten is €168,75 volgens de gemeentelijke legesverordening"
+      },
+      {
+        "sentence": "Categorie B (aandacht evenement): €601,45",
+        "status": "false",
+        "note": "Het actuele tarief voor een categorie B evenement in Druten is €619,50 volgens de gemeentelijke legesverordening"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 6,
+    "invalid_urls": 1,
+    "accuracy_percentage": 85.7,
+    "valid_urls_list": [
+      "https://www.druten.nl/omgevingsvergunning",
+      "https://www.druten.nl/evenement-organiseren",
+      "https://druten.nl",
+      "https://www.druten.nl/openingstijden-horeca-eenmalig-aanpassen",
+      "https://www.druten.nl/alcoholwetvergunning",
+      "https://www.druten.nl/exploitatievergunning-horecabedrijf"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://druten.nl\">druten.nl</a></p>",
+        "reason": "INVALID: Error scraping https://druten.nl\">druten.nl</a></p>: HTTPSConnectionPool(host='druten.nl%22%3edruten.nl%3c', port=443): Max retries exceeded with url: /a%3E%3C/p%3E (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1101487d0>: Failed to resolve 'druten.nl%22%3edruten.nl%3c' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een evenement is een gebeurtenis die voor het publiek toegankelijk is. Bijvoorbeeld een braderie, festival of optocht. [...] Organiseert u een privéfeest? Dan hoeft u geen melding te maken of vergunning aan te vragen.",
+          "original_reference": "Wilt u een evenement organiseren dat voor het publiek toegankelijk is? Dan moet u doorgaans een evenementenvergunning aanvragen.",
+          "note": "De bronpagina geeft expliciet aan dat privéfeesten zijn uitgezonderd van vergunning- en meldingsplicht. Deze belangrijke uitzondering ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.druten.nl/evenement-organiseren"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Contact met het Team APV via telefoonnummer 088 432 70 00",
+          "original_reference": "Team APV via telefoonnummer 088 432 79 88",
+          "note": "Het telefoonnummer in de originele tekst (79 88) verschilt van het algemene nummer op de website (70 00)",
+          "source_urls": [
+            "https://www.druten.nl/evenement-organiseren",
+            "https://druten.nl"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "info@druten.nl",
+          "original_reference": "apv@druten.nl",
+          "note": "Het e-mailadres voor contact verschilt tussen de bronnen en de originele tekst",
+          "source_urls": [
+            "https://druten.nl"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn drie belangrijke verschillen gevonden tussen de originele tekst en de bronnen: 1) De originele tekst mist de belangrijke uitzondering voor privéfeesten, 2) Er wordt een onjuist telefoonnummer vermeld voor Team APV, en 3) Het vermelde e-mailadres wijkt af van het algemene contactadres van de gemeente. Deze verschillen kunnen leiden tot verwarring bij inwoners over contactmogelijkheden en vergunningplicht."
+  }
+}

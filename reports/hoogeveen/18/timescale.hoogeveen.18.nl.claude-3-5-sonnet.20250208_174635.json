@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HOOGEVEEN",
+      "contact": {
+        "phone": "14 0528",
+        "email": "info@hoogeveen.nl",
+        "website": "http://www.hoogeveen.nl"
+      }
+    },
+    "service": {
+      "id": 18,
+      "name": "Ventvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "U hoort binnen 8 weken na ontvangst van alle informatie of u een vergunning krijgt",
+        "status": "false",
+        "note": "Volgens de website van gemeente Hoogeveen beslist de gemeente binnen 6 weken op een aanvraag voor een evenementenvergunning, niet 8 weken. Voor complexe aanvragen kan deze termijn verlengd worden met 6 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.hoogeveen.nl/vergunningen/alcoholvergunning",
+      "https://www.hoogeveen.nl/veelgestelde-vragen-coffeeshop",
+      "https://www.hoogeveen.nl/vergunningen/omgevingsvergunningen",
+      "https://www.hoogeveen.nl/raad-en-college/woo-verzoek",
+      "https://www.hoogeveen.nl/vergunningen/evenementenvergunning-aanvragen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Mail omgevingsvergunningen@dewoldenhoogeveen.nl of bel 14 0528",
+          "original_reference": "Mail het aanvraagformulier naar info@hoogeveen.nl",
+          "note": "Het e-mailadres voor omgevingsvergunningen verschilt van het algemene e-mailadres in de originele tekst",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/omgevingsvergunningen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Hebt u al een uitgewerkt plan maar twijfelt u of de gemeente uw plan wenselijk vindt? Dan kunt u uw plan online aan ons voorleggen via Verken uw idee. Wij controleren dan of het haalbaar is en laten u weten wat er nodig is om het plan mogelijk te maken. Dit kost € 175",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt specifieke kosten voor een voortoets (€175) die niet genoemd worden in de originele tekst",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/omgevingsvergunningen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U krijgt binnen 1 werkdag een bevestigingsmail van het mailadres noreply@jeleefomgeving.nl",
+          "original_reference": "No matching information",
+          "note": "De bronpagina specificeert een bevestigingstermijn en afzender die niet genoemd worden in de originele tekst",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/omgevingsvergunningen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen het e-mailadres voor omgevingsvergunningen, aanvullende informatie over kosten voor een voortoets (€175), en specifieke details over de bevestigingsprocedure. De bronpagina's bevatten meer gedetailleerde informatie over het aanvraagproces dan de originele tekst."
+  }
+}

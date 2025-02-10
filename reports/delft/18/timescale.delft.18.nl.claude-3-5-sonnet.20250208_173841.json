@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DELFT",
+      "contact": {
+        "phone": "14 015",
+        "email": "null",
+        "website": "http://www.delft.nl"
+      }
+    },
+    "service": {
+      "id": 18,
+      "name": "Ventvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Gewone omgevingsvergunning: 8 weken",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Delft duurt een reguliere procedure voor een omgevingsvergunning maximaal 8 weken, met de mogelijkheid tot verlenging met 6 weken. Deze verlengingsmogelijkheid ontbreekt in de oorspronkelijke zin."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.delft.nl/omgevingsvergunning-milieu",
+      "https://www.delft.nl/omgevingsvergunning-aanvragen",
+      "https://www.delft.nl/stappen-voor-uw-plan",
+      "https://www.delft.nl/uw-plan-voorleggen-aan-de-gemeente",
+      "https://www.delft.nl/woo-verzoek-doen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Er zijn geen kosten.",
+          "original_reference": "Hier kan geen specifieke informatie over gevonden worden op de website van deze gemeente.",
+          "note": "De originele tekst geeft aan dat er geen informatie over kosten beschikbaar is, terwijl de bron expliciet vermeldt dat er geen kosten zijn voor de omgevingsvergunning milieu.",
+          "source_urls": [
+            "https://www.delft.nl/omgevingsvergunning-milieu"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U mag uw bedrijf pas starten als u de vergunning heeft. Of 4 weken na uw melding als u nog geen reactie heeft ontvangen.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat belangrijke aanvullende informatie over wanneer een bedrijf mag starten na een vergunningaanvraag of melding. Deze informatie ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.delft.nl/omgevingsvergunning-milieu"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De gemeente kan een Bibob-onderzoek doen. Dit onderzoek is om misbruik van de vergunning te voorkomen. Is een Bibob-onderzoek nodig? Stuur dan bij uw aanvraag de Bibob-vragenlijst mee.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt de mogelijkheid van een Bibob-onderzoek en bijbehorende vragenlijst. Deze belangrijke voorwaarde ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.delft.nl/omgevingsvergunning-milieu"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn drie belangrijke verschillen gevonden tussen de originele tekst en de bronnen. Ten eerste wordt in de originele tekst aangegeven dat er geen informatie over kosten beschikbaar is, terwijl de bron expliciet vermeldt dat er geen kosten zijn. Ten tweede ontbreekt in de originele tekst belangrijke informatie over wanneer een bedrijf mag starten na een vergunning of melding. Ten derde wordt in de bronnen het Bibob-onderzoek genoemd als mogelijk onderdeel van de procedure, wat niet vermeld staat in de originele tekst."
+  }
+}

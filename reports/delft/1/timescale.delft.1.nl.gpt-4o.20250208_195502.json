@@ -1,0 +1,89 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DELFT",
+      "contact": {
+        "phone": "14 015",
+        "email": "null",
+        "website": "http://www.delft.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Na een complete indiening handelt de gemeente de aanvraag binnen 3 maanden af.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Delft wordt een alcoholwetvergunning binnen 8 weken (niet 3 maanden) afgehandeld na een complete aanvraag."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 6,
+    "invalid_urls": 1,
+    "accuracy_percentage": 85.7,
+    "valid_urls_list": [
+      "https://www.delft.nl/ontheffing-tijdelijk-alcohol-schenken",
+      "https://www.delft.nl/omgevingsvergunning-milieu",
+      "https://www.delft.nl",
+      "https://www.delft.nl/exploitatievergunning-coffeeshops",
+      "https://www.delft.nl/verlof-alcoholvrije-dranken-schenken",
+      "https://www.delft.nl/alcoholwetvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.delft.nl\">Gemeente",
+        "reason": "INVALID: Error scraping https://www.delft.nl\">Gemeente: HTTPSConnectionPool(host='www.delft.nl%22%3egemeente', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1082b8550>: Failed to resolve 'www.delft.nl%22%3egemeente' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Kosten 2025 Alcoholwetvergunning € 1.074,10",
+          "original_reference": "Alcoholwetvergunning: € 1.074,10",
+          "note": "De originele tekst specificeert niet dat dit tarief voor 2025 geldt, wat belangrijk is voor de geldigheid van het bedrag",
+          "source_urls": [
+            "https://www.delft.nl/alcoholwetvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Heeft u uw aanvraag compleet ingediend? Dan handelt de gemeente deze binnen 3 maanden af.",
+          "original_reference": "Na een complete indiening handelt de gemeente de aanvraag binnen 3 maanden af.",
+          "note": "De bronformulering is duidelijker door het gebruik van een vraagconstructie en persoonlijkere toon, maar de inhoud is hetzelfde",
+          "source_urls": [
+            "https://www.delft.nl/alcoholwetvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor het schenken van alcohol tegen betaling heeft u een alcoholwetvergunning nodig. Dit is ook nodig voor het verkopen van sterke drank. De vergunning geldt voor slijterijen en horeca-inrichtingen. Zoals cafés, restaurants, buurthuizen, studentensociëteiten, bedrijfsrestaurants, sportkantines en bioscoopfoyers.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke details over waar de vergunning voor nodig is en voor welke type ondernemingen deze geldt",
+          "source_urls": [
+            "https://www.delft.nl/alcoholwetvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen het ontbreken van specifieke details in de originele tekst over de toepasbaarheid van de vergunning en het jaartal van de tarieven. De bronnen bevatten uitgebreidere informatie over waar de alcoholwetvergunning voor nodig is en voor welke type ondernemingen deze geldt. De procedures en voorwaarden zijn verder grotendeels consistent tussen de originele tekst en de bronnen."
+  }
+}

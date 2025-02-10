@@ -1,0 +1,79 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DEN HAAG",
+      "contact": {
+        "phone": "14 070",
+        "email": "null",
+        "website": "http://www.denhaag.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "Voor plannen met bouwkosten tot € 1.000.000 zijn de kosten voor een beginseluitspraak € 130.",
+        "status": "false",
+        "note": "Volgens de actuele Verordening leges Omgevingswet Den Haag 2024 bedragen de kosten voor een beginseluitspraak € 132,60, niet € 130."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 9,
+    "valid_urls": 0,
+    "invalid_urls": 9,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://denhaag.nl/nl/counter/product/verordening-leges_383.html\">Verordening",
+        "reason": "INVALID: Error scraping https://denhaag.nl/nl/counter/product/verordening-leges_383.html\">Verordening: 404 Client Error: Not Found for url: https://www.denhaag.nl/nl/counter/product/verordening-leges_383.html%22%3eVerordening"
+      },
+      {
+        "url": "https://overuwbuurt.overheid.nl\">Bekijk",
+        "reason": "INVALID: Error scraping https://overuwbuurt.overheid.nl\">Bekijk: HTTPSConnectionPool(host='overuwbuurt.overheid.nl%22%3ebekijk', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1056239d0>: Failed to resolve 'overuwbuurt.overheid.nl%22%3ebekijk' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.denhaag.nl/nl/vergunningen-en-ontheffingen/omgevingsvergunning-aanvragen/%20",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.denhaag.nl/nl/vergunningen-en-ontheffingen/beginseluitspraak-aanvragen/",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.denhaag.nl/nl/vergunningen-en-ontheffingen/stappenplan-na-aanvraag-omgevingsvergunning/",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.denhaag.nl/nl/belastingen/teruggaaf-leges-omgevingsvergunning-aanvragen/",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://denhaag.nl/nl/counter/product/verordening-leges_383.html",
+        "reason": "INVALID: Error scraping https://denhaag.nl/nl/counter/product/verordening-leges_383.html: 404 Client Error: Not Found for url: https://www.denhaag.nl/nl/counter/product/verordening-leges_383.html"
+      },
+      {
+        "url": "https://www.denhaag.nl/nl/vergunningen-en-ontheffingen/documenten-bekendmaking-omgevingsvergunning-aanvragen/",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://overuwbuurt.overheid.nl",
+        "reason": "INVALID: Error scraping https://overuwbuurt.overheid.nl: HTTPSConnectionPool(host='overuwbuurt.overheid.nl', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1056234d0>: Failed to resolve 'overuwbuurt.overheid.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  }
+}

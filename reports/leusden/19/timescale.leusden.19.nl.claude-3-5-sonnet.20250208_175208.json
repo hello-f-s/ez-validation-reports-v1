@@ -1,0 +1,81 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LEUSDEN",
+      "contact": {
+        "phone": "14 033",
+        "email": "gemeente@leusden.nl",
+        "website": "http://www.leusden.nl/"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "Het formulier wordt dan binnen 2 werkdagen toegestuurd.",
+        "status": "false",
+        "note": "Op de officiële website van gemeente Leusden wordt geen specifieke termijn genoemd waarbinnen het formulier wordt toegestuurd na een verzoek per e-mail."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 3,
+    "invalid_urls": 2,
+    "accuracy_percentage": 60.0,
+    "valid_urls_list": [
+      "https://www.leusden.nl/en/vergunningen-en-belastingen/drank-en-horeca/drank-en-horecavergunning",
+      "https://www.leusden.nl/en/vergunningen-en-belastingen/drank-en-horeca/vergunning-speelautomaten",
+      "https://www.leusden.nl/vergunningen-en-belastingen/drank-en-horeca/vergunning-speelautomaten"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.leusden.nl/publicaties/bekendmakingen/bekendmakingen?tx_windgvop_windgvopdetail%5Baction%5D=detail&tx_windgvop_windgvopdetail%5Bcontroller%5D=Publication&tx_windgvop_windgvopdetail%5Bpublication%5D=1435&cHash=d1463e4109404faa730b9886f56291e6",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.leusden.nl/en/publicaties/bekendmakingen/bekendmakingen?tx_windgvop_windgvopdetail%5Baction%5D=detail&tx_windgvop_windgvopdetail%5Bcontroller%5D=Publication&tx_windgvop_windgvopdetail%5Bpublication%5D=1435&cHash=d1463e4109404faa730b9886f56291e6",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Kansspelautomaten mogen alleen worden geplaatst in een hoogdrempelige inrichting of een hoogdrempelige lokaliteit in een samengestelde inrichting.",
+          "original_reference": "Kansspelautomaten mogen alleen worden geplaatst in een hoogdrempelige horeca-inrichting zoals cafés, bars of restaurants",
+          "note": "De brontext bevat extra specificatie over 'hoogdrempelige lokaliteit in een samengestelde inrichting' die niet in de originele tekst staat.",
+          "source_urls": [
+            "https://www.leusden.nl/vergunningen-en-belastingen/drank-en-horeca/vergunning-speelautomaten"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Laagdrempelige horeca-inrichtingen krijgen géén vergunning. Laagdrempelige horeca-inrichtingen zijn bijvoorbeeld cafetaria's, ijssalons of lunchrooms die niet voldoen aan de eisen voor hoogdrempelige horecaondernemingen",
+          "original_reference": "No matching information",
+          "note": "De bronnen bevatten aanvullende belangrijke informatie over laagdrempelige horeca-inrichtingen die niet in de originele tekst is opgenomen.",
+          "source_urls": [
+            "https://www.leusden.nl/vergunningen-en-belastingen/drank-en-horeca/vergunning-speelautomaten"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten twee belangrijke aanvullingen op de originele tekst: (1) een specifiekere definitie van waar kansspelautomaten mogen worden geplaatst, inclusief de term 'samengestelde inrichting', en (2) expliciete informatie over welke type horeca-inrichtingen geen vergunning kunnen krijgen. Deze informatie is relevant voor de volledigheid van de voorwaarden maar verandert de kernvoorwaarden niet wezenlijk."
+  }
+}

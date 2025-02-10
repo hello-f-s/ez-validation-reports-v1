@@ -1,0 +1,90 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ALPHEN-CHAAM",
+      "contact": {
+        "phone": "14013",
+        "email": "info@alphen-chaam.nl",
+        "website": "http://www.alphen-chaam.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "U krijgt binnen 8 weken na aanvraag bericht of de vergunning verleend wordt.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Alphen-Chaam is de standaard beslistermijn voor een reguliere omgevingsvergunning maximaal 8 weken vanaf ontvangst van een complete aanvraag, met mogelijkheid tot verlenging met 6 weken. De zin impliceert een garantie van 8 weken die niet correct is."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 6,
+    "invalid_urls": 1,
+    "accuracy_percentage": 85.7,
+    "valid_urls_list": [
+      "https://www.alphen-chaam.nl/omgevingsvergunning",
+      "https://www.alphen-chaam.nl/conceptverzoek",
+      "https://www.alphen-chaam.nl/omgevingswet-voor-bedrijven",
+      "https://www.alphen-chaam.nl/vergunningen-en-ontheffingen/vergunningen-en-ontheffingen-voor-ondernemers",
+      "https://www.alphen-chaam.nl/ondernemen/vergunningen-en-ontheffingen-voor-ondernemers",
+      "https://www.alphen-chaam.nl"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.alphen-chaam.nl\">Bron:",
+        "reason": "INVALID: Error scraping https://www.alphen-chaam.nl\">Bron:: HTTPSConnectionPool(host='www.alphen-chaam.nl%22%3ebron', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1041b3ed0>: Failed to resolve 'www.alphen-chaam.nl%22%3ebron' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U kunt ook inzien welke regels gelden op de locatie van uw (bouw)plan.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt een extra mogelijkheid om locatie-specifieke regels in te zien, wat niet genoemd wordt in de originele tekst",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wanneer u twijfelt of u een vergunning nodig heeft, kunt u een conceptverzoek indienen. Bij een conceptverzoek kijken we naar uw (bouw)plannen en geven we advies over wat er nodig is om hiermee aan de slag te gaan.",
+          "original_reference": "No matching information",
+          "note": "De mogelijkheid tot het indienen van een conceptverzoek wordt niet genoemd in de originele tekst, terwijl dit een belangrijke voorbereidende stap kan zijn",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/conceptverzoek",
+            "https://www.alphen-chaam.nl/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De Omgevingswet geldt vanaf 1 januari voor iedereen in Nederland",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt specifiek de ingangsdatum van de Omgevingswet, wat belangrijke contextuele informatie is die ontbreekt in de originele tekst",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/omgevingswet-voor-bedrijven"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten enkele belangrijke aanvullende elementen die niet in de originele tekst voorkomen: de mogelijkheid om locatie-specifieke regels in te zien, de optie om een conceptverzoek in te dienen voor advies, en informatie over de ingangsdatum van de Omgevingswet. Deze informatie zou waardevol kunnen zijn voor aanvragers van een omgevingsvergunning."
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ALPHEN-CHAAM",
+      "contact": {
+        "phone": "14013",
+        "email": "info@alphen-chaam.nl",
+        "website": "http://www.alphen-chaam.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Parkeerontheffing aanvragen kan voor zowel particulieren als bedrijven voor het blauwe zone gebied en rondom 't Zand in Chaam.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Alphen-Chaam is de parkeerontheffing voor de blauwe zone in Chaam alleen beschikbaar voor bedrijven, niet voor particulieren."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.alphen-chaam.nl/vergunningen-en-ontheffingen/vergunningen-en-ontheffingen-voor-ondernemers",
+      "https://www.alphen-chaam.nl/woo",
+      "https://www.alphen-chaam.nl/voorwaarden-parkeerontheffing",
+      "https://www.alphen-chaam.nl/omgevingsvergunning",
+      "https://www.alphen-chaam.nl/ondernemen/vergunningen-en-ontheffingen-voor-ondernemers"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://gemeentealphenchaam.nl/voorwaarden-parkeerontheffing\">Gemeente",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://gemeentealphenchaam.nl/voorwaarden-parkeerontheffing",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U kunt een parkeerontheffing aanvragen voor het blauwe zone gebied in centrum van Chaam en het gebied rondom 't Zand.",
+          "original_reference": "Parkeerontheffing aanvragen kan voor zowel particulieren als bedrijven voor het blauwe zone gebied en rondom 't Zand in Chaam.",
+          "note": "De originele tekst specificeert niet dat het om het centrum van Chaam gaat, terwijl de bron expliciet vermeldt dat het om het centrum gaat.",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/voorwaarden-parkeerontheffing"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Per huishouden krijgt maximaal 1 ontheffing. Op deze ontheffing kunnen meerdere kentekens staan als uw huishouden meerdere voertuigen heeft.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over de limiet van één ontheffing per huishouden voor particulieren, wat een essentiële voorwaarde is.",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/voorwaarden-parkeerontheffing"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U heeft geen parkeerplaats op uw eigen grond of op grond dat bij uw woning hoort. Wanneer u bij uw woning een parkeerplaats kunt huren of kopen (kelder, garage of terrein dat bij de woning/het gebouw hoort), telt dit als parkeerplaats op eigen grond. U krijgt dan geen parkeerontheffing.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist cruciale voorwaarde dat particulieren geen parkeerplaats op eigen grond mogen hebben om in aanmerking te komen voor een ontheffing.",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/voorwaarden-parkeerontheffing"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende voorwaarden die niet in de originele tekst staan, vooral met betrekking tot particuliere aanvragen. Dit betreft de specificatie van het centrumgebied, de limiet van één ontheffing per huishouden, en de voorwaarde over het niet hebben van een eigen parkeerplaats. Deze informatie is essentieel voor een complete en accurate beschrijving van de parkeerontheffingsregeling."
+  }
+}

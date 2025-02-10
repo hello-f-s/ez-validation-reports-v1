@@ -1,0 +1,109 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ASSEN",
+      "contact": {
+        "phone": "(0592) 36 69 11",
+        "email": "info@assen.nl",
+        "website": "http://www.assen.nl"
+      }
+    },
+    "service": {
+      "id": 7,
+      "name": "Kabels en leidingen aanleggen en beheren"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 11,
+    "false_sentences": 2,
+    "accuracy_percentage": 84.6,
+    "false_statements": [
+      {
+        "sentence": "Tracés vanaf 250 m1 tot 1500 m2: € 426,64",
+        "status": "false",
+        "note": "De eenheid is onjuist aangegeven. Het moet m1 (strekkende meter) zijn in plaats van m2 (vierkante meter)"
+      },
+      {
+        "sentence": "Tracés vanaf 1500 m1 tot 5000 m2: € 426,64",
+        "status": "false",
+        "note": "De eenheid is onjuist aangegeven. Het moet m1 (strekkende meter) zijn in plaats van m2 (vierkante meter)"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 1,
+    "invalid_urls": 6,
+    "accuracy_percentage": 14.3,
+    "valid_urls_list": [
+      "https://www.assen.nl/kabels-en-leidingen-aanleggen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.assen.nl/omgevingsvergunning-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.moorwerkt.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.assen.nl/bouwgrond-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.assen.nl/stappenplan-aanvraag-omgevingsvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.assen.nl/forms/omgevingsloket",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.moorwerkt.nl\">www.moorwerkt.nl</a>.</p>",
+        "reason": "INVALID: Error scraping https://www.moorwerkt.nl\">www.moorwerkt.nl</a>.</p>: HTTPSConnectionPool(host='www.moorwerkt.nl%22%3ewww.moorwerkt.nl%3c', port=443): Max retries exceeded with url: /a%3E.%3C/p%3E (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x103372d50>: Failed to resolve 'www.moorwerkt.nl%22%3ewww.moorwerkt.nl%3c' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Geen specifieke informatie over kosten gevonden in de bronpagina's",
+          "original_reference": "Tracés tot 250 m1: € 367,02, Tracés vanaf 250 m1 tot 1500 m2: € 426,64, etc.",
+          "note": "De originele tekst bevat specifieke kostenbedragen, maar deze informatie is niet terug te vinden in de geciteerde bronpagina's. Dit kan betekenen dat de tarieven verouderd zijn of op een andere locatie staan.",
+          "source_urls": [
+            "https://www.assen.nl/kabels-en-leidingen-aanleggen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Geen informatie over MOOR-platform aangetroffen in de bronpagina's",
+          "original_reference": "De aanvraagprocedure verloopt via het MOOR-platform",
+          "note": "De originele tekst verwijst naar een MOOR-platform voor aanvragen, maar dit wordt niet genoemd in de beschikbare bronpagina's",
+          "source_urls": [
+            "https://www.assen.nl/kabels-en-leidingen-aanleggen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Geen informatie over behandeltermijn van 8 weken gevonden",
+          "original_reference": "De gemeente beslist binnen 8 weken na ontvangst van uw aanvraag",
+          "note": "De behandeltermijn van 8 weken die in de originele tekst wordt genoemd, is niet terug te vinden in de bronpagina's",
+          "source_urls": [
+            "https://www.assen.nl/kabels-en-leidingen-aanleggen"
+          ]
+        }
+      ]
+    },
+    "summary": "De beschikbare bronpagina's bevatten aanzienlijk minder detail dan de originele tekst. Belangrijke informatie over kosten, het MOOR-platform en behandeltermijnen ontbreekt in de bronnen. Dit kan betekenen dat de informatie verouderd is of dat de relevante details op andere, niet-geciteerde pagina's staan."
+  }
+}

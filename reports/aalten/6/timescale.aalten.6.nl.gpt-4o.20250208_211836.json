@@ -1,0 +1,89 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AALTEN",
+      "contact": {
+        "phone": "(0543) 49 33 33",
+        "email": "gemeente@aalten.nl",
+        "website": "http://www.aalten.nl"
+      }
+    },
+    "service": {
+      "id": 6,
+      "name": "Integriteitsonderzoek (Wet Bibob)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "U vraagt een omgevingsvergunning aan met een bouwsom van € 500.000,- of meer.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Aalten geldt de Bibob-toets voor bouwsommen vanaf € 1.000.000,- en niet vanaf € 500.000,-"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 6,
+    "invalid_urls": 1,
+    "accuracy_percentage": 85.7,
+    "valid_urls_list": [
+      "https://www.aalten.nl/woo-verzoek-indienen",
+      "https://www.aalten.nl/overzicht-geleverde-persoonsgegevens-opvragen",
+      "https://www.aalten.nl/bodeminformatie-opvragen",
+      "https://www.aalten.nl/informatie-over-beleid-of-besluiten-opvragen-who-verzoek",
+      "https://www.aalten.nl",
+      "https://aalten.nl/wet-bibob"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.aalten.nl\">website",
+        "reason": "INVALID: Error scraping https://www.aalten.nl\">website: HTTPSConnectionPool(host='www.aalten.nl%22%3ewebsite', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10704f390>: Failed to resolve 'www.aalten.nl%22%3ewebsite' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "De Wet Bibob (Wet Bevordering Integriteitsbeoordelingen door het openbaar bestuur) is om te voorkomen dat de overheid criminele activiteiten faciliteert.",
+          "original_reference": "Gebaseerd op de informatie van de Wet Bibob bij de Gemeente Aalten",
+          "note": "De basisdefinitie en het doel van de Wet Bibob komen overeen",
+          "source_urls": [
+            "https://aalten.nl/wet-bibob"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Formulier Wet Bibob en Vergunningen",
+          "original_reference": "Bibob-aanvraagformulier",
+          "note": "De bronpagina verwijst naar een specifiek formulier genaamd 'Formulier Wet Bibob en Vergunningen', terwijl de originele tekst alleen spreekt over een 'Bibob-aanvraagformulier'",
+          "source_urls": [
+            "https://aalten.nl/wet-bibob"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Meer informatie over de Wet Bibob leest u in de Beleidsregels Wet Bibob gemeente Aalten 2022",
+          "original_reference": "No matching information",
+          "note": "De bronpagina verwijst naar specifieke beleidsregels uit 2022 die niet worden genoemd in de originele tekst",
+          "source_urls": [
+            "https://aalten.nl/wet-bibob"
+          ]
+        }
+      ]
+    },
+    "summary": "De inhoud is grotendeels consistent, maar er zijn enkele belangrijke aanvullingen in de bronpagina die niet in de originele tekst staan. Dit betreft vooral de verwijzing naar het specifieke 'Formulier Wet Bibob en Vergunningen' en de 'Beleidsregels Wet Bibob gemeente Aalten 2022'. Deze documenten kunnen belangrijk zijn voor aanvragers maar worden niet genoemd in de originele tekst."
+  }
+}

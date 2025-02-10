@@ -1,0 +1,87 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LAARBEEK",
+      "contact": {
+        "phone": "(0492) 46 97 00",
+        "email": "gemeente@laarbeek.nl",
+        "website": "http://www.laarbeek.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "Binnen twee tot vier weken ontvangt u de VOG per post.",
+        "status": "false",
+        "note": "Volgens de officiële informatie van gemeente Laarbeek duurt de afhandeling van een VOG-aanvraag gemiddeld 2 tot 8 weken, niet 2 tot 4 weken zoals vermeld."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 8,
+    "valid_urls": 5,
+    "invalid_urls": 3,
+    "accuracy_percentage": 62.5,
+    "valid_urls_list": [
+      "https://www.laarbeek.nl/verklaring-omtrent-het-gedrag",
+      "https://www.laarbeek.nl/reclame-uitingen-plaatsen-omgevingsvergunning",
+      "https://www.laarbeek.nl/milieu-vergunning-of-melding",
+      "https://www.laarbeek.nl/omgevingsvergunning",
+      "https://www.laarbeek.nl/verzoek-op-basis-van-de-wet-open-overheid-woo"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.justis.nl/producten/vog\">Justis</a>.</p>",
+        "reason": "INVALID: Error scraping https://www.justis.nl/producten/vog\">Justis</a>.</p>: 404 Client Error: Not Found for url: https://www.justis.nl/producten/vog%22%3EJustis%3C/a%3E.%3C/p%3E"
+      },
+      {
+        "url": "https://www.justis.nl/producten/vog",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.justis.nl/producten/vog\">Justis</a></p>",
+        "reason": "INVALID: Error scraping https://www.justis.nl/producten/vog\">Justis</a></p>: 404 Client Error: Not Found for url: https://www.justis.nl/producten/vog%22%3EJustis%3C/a%3E%3C/p%3E"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U regelt een VOG rechtstreeks via Justis: Aanvraagformulier Verklaring Omtrent het Gedrag Natuurlijke Personen (VOG NP)",
+          "original_reference": "Als ondernemer kunt u voor uzelf of voor een medewerker een Verklaring Omtrent het Gedrag (VOG) aanvragen.",
+          "note": "De brontekst geeft aan dat de VOG rechtstreeks via Justis moet worden aangevraagd, terwijl de originele tekst suggereert dat ondernemers dit via de gemeente kunnen doen.",
+          "source_urls": [
+            "https://www.laarbeek.nl/verklaring-omtrent-het-gedrag"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Gaat u werken in het onderwijs, de kinderopvang of als taxichauffeur? Dan heeft u een Verklaring omtrent het gedrag (VOG) nodig. Ook voor een visum, werkvergunning, vrijwilligerswerk of de aanvraag van bepaalde vergunningen kan ooit een VOG nodig zijn.",
+          "original_reference": "No matching information",
+          "note": "De brontekst specificeert concrete voorbeelden van wanneer een VOG nodig is, terwijl deze context volledig ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.laarbeek.nl/verklaring-omtrent-het-gedrag"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de aanvraagprocedure (rechtstreeks via Justis versus via gemeente) en het ontbreken van specifieke toepassingsgebieden in de originele tekst. De brontekst biedt meer context over wanneer een VOG nodig is, wat nuttige aanvullende informatie is voor aanvragers."
+  }
+}

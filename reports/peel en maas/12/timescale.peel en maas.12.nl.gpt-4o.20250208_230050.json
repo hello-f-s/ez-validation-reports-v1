@@ -1,0 +1,71 @@
+{
+  "context": {
+    "municipality": {
+      "name": "PEEL EN MAAS",
+      "contact": {
+        "phone": "(077) 306 66 66",
+        "email": "info@peelenmaas.nl",
+        "website": "http://www.peelenmaas.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "De gemeente reageert binnen 8 weken op uw aanvraag.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Peel en Maas is de standaard beslistermijn voor een reguliere procedure 8 weken na ontvangst van een complete aanvraag, niet na de initiële aanvraag. De termijn begint pas te lopen als alle benodigde documenten zijn aangeleverd."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 0,
+    "invalid_urls": 7,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.peelenmaas.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.peelenmaas.nl/vergunning-of-toestemming/bedrijf-starten-of-wijzigen",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.peelenmaas.nl/vergunning-of-toestemming/bouwen-en-wonen/woning-bouwen-of-verbouwen",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.peelenmaas.nl/vergunning-of-toestemming/",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.peelenmaas.nl\">Gemeente",
+        "reason": "INVALID: Error scraping https://www.peelenmaas.nl\">Gemeente: HTTPSConnectionPool(host='www.peelenmaas.nl%22%3egemeente', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x103d439d0>: Failed to resolve 'www.peelenmaas.nl%22%3egemeente' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.peelenmaas.nl/vergunning-of-toestemming/omgevingsplannen/omgevingsplan-informatie-aanvragen",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.peelenmaas.nl/vergunning-of-toestemming/omgevingsvergunning",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  }
+}

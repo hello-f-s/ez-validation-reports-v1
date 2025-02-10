@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ALPHEN-CHAAM",
+      "contact": {
+        "phone": "14013",
+        "email": "info@alphen-chaam.nl",
+        "website": "http://www.alphen-chaam.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "De gemeente behandelt de aanvraag binnen 8 weken.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Alphen-Chaam is de behandeltermijn voor een horecavergunning 12 weken, niet 8 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.alphen-chaam.nl/vergunningen-en-ontheffingen",
+      "https://www.alphen-chaam.nl/horecavergunning",
+      "https://www.alphen-chaam.nl/alcoholvergunning",
+      "https://www.alphen-chaam.nl/wijziginginrichtinghoreca",
+      "https://www.alphen-chaam.nl/ondernemen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Kosten: € 178,95",
+          "original_reference": "Geen informatie gevonden over kosten",
+          "note": "De originele tekst vermeldt geen kosten, terwijl de bron specifiek €178,95 noemt voor een horecavergunning",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/horecavergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Verplicht voor: Commerciële horecabedrijven zoals cafés, restaurants of discotheken, Stichtingen of verenigingen met horeca, zoals een sportkantine of cultureel centrum, Seksinrichtingen of escortbedrijven, Slijterijen",
+          "original_reference": "No matching information",
+          "note": "De originele tekst specificeert niet voor welke type bedrijven de vergunning verplicht is, terwijl de bron dit wel duidelijk vermeldt",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/horecavergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U kunt 2 alcoholvergunning aanvragen. Voor een horecabedrijf of slijterij, of een stichting of vereniging, zoals een sportkantine of cultureel centrum.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst maakt geen onderscheid tussen verschillende types alcoholvergunningen, terwijl de bron specifiek twee verschillende types noemt",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/alcoholvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn drie belangrijke verschillen gevonden tussen de originele tekst en de bronnen. Ten eerste worden er in de originele tekst geen kosten vermeld, terwijl deze wel specifiek genoemd worden (€178,95). Ten tweede ontbreekt in de originele tekst belangrijke informatie over voor welke type bedrijven de vergunning verplicht is. Ten derde maakt de originele tekst geen onderscheid tussen verschillende types alcoholvergunningen, terwijl er twee verschillende types mogelijk zijn. Deze informatie is essentieel voor potentiële aanvragers."
+  }
+}

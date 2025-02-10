@@ -1,0 +1,93 @@
+{
+  "context": {
+    "municipality": {
+      "name": "KERKRADE",
+      "contact": {
+        "phone": "14 045",
+        "email": "gemeentehuis@kerkrade.nl",
+        "website": "http://www.kerkrade.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 8,
+    "false_sentences": 3,
+    "accuracy_percentage": 72.7,
+    "false_statements": [
+      {
+        "sentence": "U heeft een volledig ingevulde Verklaring Omtrent het Gedrag (VOG) nodig van uw werkgever of andere organisatie.",
+        "status": "false",
+        "note": "U heeft een aanvraagformulier nodig van uw werkgever/organisatie, niet een ingevulde VOG. De VOG is juist het document dat u krijgt na goedkeuring."
+      },
+      {
+        "sentence": "De gemeente moet binnen 13 weken bericht geven van de burgemeester.",
+        "status": "false",
+        "note": "De afhandeling van een VOG-aanvraag duurt meestal 2 tot 4 weken. Er geldt geen termijn van 13 weken en het bericht komt van Justis, niet van de burgemeester."
+      },
+      {
+        "sentence": "Deze termijn kan eenmaal verlengd worden.",
+        "status": "false",
+        "note": "Er is geen sprake van een verlengingstermijn bij VOG-aanvragen. De standaard verwerkingstijd van 2-4 weken is vast."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.kerkrade.nl/verklaring-omtrent-het-gedrag-vog",
+      "https://www.kerkrade.nl/nederlander-worden-door-naturalisatie",
+      "https://www.kerkrade.nl/kinderopvang-starten",
+      "https://www.kerkrade.nl/milieu-vergunning-of-melding",
+      "https://www.kerkrade.nl/nederlander-worden-door-optie"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u geen strafbare feiten hebt gepleegd, krijgt u de VOG. Als u wel strafbare feiten hebt gepleegd, is verder onderzoek nodig. Justis bekijkt of de strafbare feiten belangrijk zijn voor de aanvraag. Als deze niet van belang zijn, krijgt u de VOG alsnog.",
+          "original_reference": "U kunt een VOG NP aanvragen als u geen strafbare feiten hebt gepleegd. Als u wel strafbare feiten hebt gepleegd, is verder onderzoek door Justis nodig om te bepalen of deze van belang zijn voor de aanvraag.",
+          "note": "De brontekst is specifieker en geeft aan dat men de VOG alsnog kan krijgen als de strafbare feiten niet relevant zijn voor de aanvraag.",
+          "source_urls": [
+            "https://www.kerkrade.nl/verklaring-omtrent-het-gedrag-vog"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U controleert uw gegevens en betaalt online met iDEAL.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de betaalmethode (iDEAL), terwijl dit wel wordt vermeld in de bron.",
+          "source_urls": [
+            "https://www.kerkrade.nl/verklaring-omtrent-het-gedrag-vog"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Leraren, taxichauffeurs en mensen die werken in de kinderopvang moeten een VOG hebben.",
+          "original_reference": "No matching information",
+          "note": "De bron geeft specifieke voorbeelden van beroepen waarvoor een VOG verplicht is, wat ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.kerkrade.nl/verklaring-omtrent-het-gedrag-vog"
+          ]
+        }
+      ]
+    },
+    "summary": "De broninhoud bevat meer gedetailleerde informatie over de VOG-aanvraag, waaronder specifieke voorbeelden van beroepen waarvoor een VOG verplicht is, de mogelijkheid om online te betalen via iDEAL, en een duidelijkere uitleg over de beoordeling van strafbare feiten. Deze details ontbreken in de originele tekst maar zijn wel relevant voor aanvragers."
+  }
+}

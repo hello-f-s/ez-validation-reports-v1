@@ -1,0 +1,63 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OIRSCHOT",
+      "contact": {
+        "phone": "(0499) 58 33 33",
+        "email": "info@oirschot.nl",
+        "website": "http://www.oirschot.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "Er gelden geen parkeerbeperkingen zoals betaald parkeren of een blauwe zone.",
+        "status": "false",
+        "note": "Dit is onjuist aangezien er wel degelijk een blauwe zone bestaat in het centrum van Oirschot waar parkeerbeperkingen gelden. Dit wordt bevestigd op de officiële website van de gemeente Oirschot."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 0,
+    "invalid_urls": 5,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.oirschot.nl/parkeren-in-de-blauwe-zone",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.oirschot.nl/parkeren-voor-autobedrijven",
+        "reason": "INVALID: Error scraping https://www.oirschot.nl/parkeren-voor-autobedrijven: 404 Client Error: Not Found for url: https://www.oirschot.nl/parkeren-voor-autobedrijven"
+      },
+      {
+        "url": "https://www.oirschot.nl/omgevingsvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.oirschot.nl/voertuig-te-koop-aanbieden-op-de-openbare-weg",
+        "reason": "INVALID: Error scraping https://www.oirschot.nl/voertuig-te-koop-aanbieden-op-de-openbare-weg: 404 Client Error: Not Found for url: https://www.oirschot.nl/voertuig-te-koop-aanbieden-op-de-openbare-weg"
+      },
+      {
+        "url": "https://www.oirschot.nl/caravan-parkeren-op-de-openbare-weg",
+        "reason": "INVALID: Error scraping https://www.oirschot.nl/caravan-parkeren-op-de-openbare-weg: 404 Client Error: Not Found for url: https://www.oirschot.nl/caravan-parkeren-op-de-openbare-weg"
+      }
+    ]
+  }
+}

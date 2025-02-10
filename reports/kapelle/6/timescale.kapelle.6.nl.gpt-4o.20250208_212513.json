@@ -1,0 +1,87 @@
+{
+  "context": {
+    "municipality": {
+      "name": "KAPELLE",
+      "contact": {
+        "phone": "(0113) 33 31 10",
+        "email": "gemeente@kapelle.nl",
+        "website": "http://www.kapelle.nl"
+      }
+    },
+    "service": {
+      "id": 6,
+      "name": "Integriteitsonderzoek (Wet Bibob)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Het ingevulde formulier, samen met de bijlagen, moet digitaal verstuurd worden naar j.vermunt@kapelle.nl.",
+        "status": "false",
+        "note": "Dit specifieke e-mailadres wordt niet vermeld op de officiële website van gemeente Kapelle voor Bibob-aanvragen. De gemeente geeft aan dat aanvragen via de algemene contactkanalen moeten worden ingediend."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://kapelle.nl/verklaring-omtrent-gedrag-vog",
+      "https://kapelle.nl/wet-bibob-0",
+      "https://kapelle.nl/informatie-opvragen-woo-verzoek",
+      "https://kapelle.nl/bodeminformatie"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.kapelle.nl/aanvraagformulier-adresonderzoek",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De gemeente Kapelle voert geen onderzoekt uit bij paracommerciële partijen of (semi) overheidsinstanties.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet deze belangrijke uitzondering voor paracommerciële partijen en (semi) overheidsinstanties bij Bibob-onderzoeken.",
+          "source_urls": [
+            "https://kapelle.nl/wet-bibob-0"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bij bepaalde soorten aanvragen krijgt u te maken met de Bibob-toets: Alcoholwetvergunning, Exploitatievergunning, Omgevingsvergunning voor de activiteit bouwen bij een bouwsom hoger dan € 500.00",
+          "original_reference": "No matching information",
+          "note": "De originele tekst specificeert niet de concrete gevallen waarbij een Bibob-toets wordt uitgevoerd, terwijl de bron wel specifieke categorieën en drempelbedragen noemt.",
+          "source_urls": [
+            "https://kapelle.nl/wet-bibob-0"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De Bibob-vragen zijn een verplicht onderdeel en maken deel uit van de betreffende aanvraag.",
+          "original_reference": "Alle gevraagde bijlagen moeten worden toegevoegd.",
+          "note": "De bron benadrukt expliciet dat de Bibob-vragen een verplicht onderdeel zijn van de aanvraag, wat specifieker is dan de algemene formulering in de originele tekst.",
+          "source_urls": [
+            "https://kapelle.nl/wet-bibob-0"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende details over de Bibob-procedure die niet in de originele tekst staan, waaronder specifieke uitzonderingen voor bepaalde organisaties, concrete gevallen waarbij een Bibob-toets wordt uitgevoerd, en een duidelijkere formulering over de verplichte aard van de Bibob-vragen. Deze informatie is essentieel voor een volledig begrip van de procedure."
+  }
+}

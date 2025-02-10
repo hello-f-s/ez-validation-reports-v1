@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HOOGEVEEN",
+      "contact": {
+        "phone": "14 0528",
+        "email": "info@hoogeveen.nl",
+        "website": "http://www.hoogeveen.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "U hoort binnen 8 weken in een brief of u de vergunning krijgt.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Hoogeveen duurt de behandeling van een alcoholvergunning maximaal 12 weken, niet 8 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.hoogeveen.nl/vergunningen/vergunning-gokautomaten",
+      "https://www.hoogeveen.nl/veelgestelde-vragen-coffeeshop",
+      "https://www.hoogeveen.nl/vergunningen",
+      "https://www.hoogeveen.nl/vergunningen/terrasvergunning",
+      "https://www.hoogeveen.nl/vergunningen/alcoholvergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Om een alcoholvergunning te krijgen, moet uw pand voldoen aan de inrichtingseisen uit de Alcoholwet. Dit houdt bijvoorbeeld in dat een horecabedrijf minstens 35 m2 moet zijn en een slijterij minstens 15 m2",
+          "original_reference": "Om een alcoholvergunning te krijgen, moet uw pand voldoen aan de inrichtingseisen uit de Alcoholwet (bijv. horecabedrijf minstens 35 m2, slijterij minstens 15 m2)",
+          "note": "De oppervlakte-eisen voor horeca en slijterij zijn exact hetzelfde in beide bronnen",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/alcoholvergunning"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Eigenaar en leidinggevenden moeten 21 jaar of ouder zijn en van onbesproken gedrag zijn. Dat houdt in dat u geen strafblad hebt en niet onder curatele st[aat]",
+          "original_reference": "Eigenaar en leidinggevenden moeten 21 jaar of ouder zijn en van onbesproken gedrag (geen strafblad, niet onder curatele)",
+          "note": "De leeftijds- en gedragseisen komen volledig overeen",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/alcoholvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Geef uw gegevens en het adres van het pand door via mail of telefoon. Dan nemen wij contact met u op voor een afspraak.",
+          "original_reference": "Geef uw gegevens en het adres van het pand door via mail (info@hoogeveen.nl) of telefoon. De gemeente neemt dan contact met u op voor een afspraak.",
+          "note": "De originele tekst specificeert het e-mailadres (info@hoogeveen.nl), terwijl dit in de bronpagina niet expliciet wordt vermeld",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/alcoholvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse blijken de meeste gegevens consistent tussen de originele tekst en de bronnen. Het enige noemenswaardige verschil is dat het e-mailadres (info@hoogeveen.nl) wel in de originele tekst staat maar niet expliciet op de bronpagina wordt vermeld. Alle andere informatie, zoals oppervlakte-eisen, leeftijdseisen, gedragseisen en procedures, komt volledig overeen."
+  }
+}

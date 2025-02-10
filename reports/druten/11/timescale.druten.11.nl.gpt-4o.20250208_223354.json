@@ -1,0 +1,99 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DRUTEN",
+      "contact": {
+        "phone": "(088) 432 70 00",
+        "email": "info@druten.nl",
+        "website": "http://www.druten.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "Indien de gemeente niet beslist binnen de termijn, wordt de vergunning automatisch verleend, uitgezonderd voor ingewikkelde aanvragen.",
+        "status": "false",
+        "note": "Dit is onjuist voor de gemeente Druten. Bij het overschrijden van de beslistermijn wordt de vergunning niet automatisch verleend. Er geldt dan de 'Wet dwangsom en beroep bij niet tijdig beslissen', waarbij u de gemeente in gebreke kunt stellen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 10,
+    "valid_urls": 4,
+    "invalid_urls": 6,
+    "accuracy_percentage": 40.0,
+    "valid_urls_list": [
+      "https://www.druten.nl/omgevingsvergunning",
+      "https://www.druten.nl/vergunning-of-melding-milieu",
+      "https://www.druten.nl/exploitatievergunning-horecabedrijf",
+      "https://www.druten.nl/omgevingsplan-en-omgevingsvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.druten.nl/omgevingsvergunning-strijdig-gebruik",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.aimonline.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.omgevingsloket.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.aimonline.nl\">www.aimonline.nl</a></li>",
+        "reason": "INVALID: Error scraping https://www.aimonline.nl\">www.aimonline.nl</a></li>: HTTPSConnectionPool(host='www.aimonline.nl%22%3ewww.aimonline.nl%3c', port=443): Max retries exceeded with url: /a%3E%3C/li%3E (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1038d3b10>: Failed to resolve 'www.aimonline.nl%22%3ewww.aimonline.nl%3c' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.omgevingsloket.nl\">Omgevingsloket",
+        "reason": "INVALID: Error scraping https://www.omgevingsloket.nl\">Omgevingsloket: HTTPSConnectionPool(host='www.omgevingsloket.nl%22%3eomgevingsloket', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x103ac4050>: Failed to resolve 'www.omgevingsloket.nl%22%3eomgevingsloket' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.omgevingsloket.nl\">website",
+        "reason": "INVALID: Error scraping https://www.omgevingsloket.nl\">website: HTTPSConnectionPool(host='www.omgevingsloket.nl%22%3ewebsite', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1038d3b10>: Failed to resolve 'www.omgevingsloket.nl%22%3ewebsite' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vanaf 1 januari 2024 zijn hiervoor in de Omgevingswet andere regels ...",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt een belangrijke wetswijziging per 1 januari 2024 (Omgevingswet) die niet genoemd wordt in de originele tekst. Dit is essentiële informatie voor aanvragers.",
+          "source_urls": [
+            "https://www.druten.nl/omgevingsvergunning",
+            "https://www.druten.nl/omgevingsplan-en-omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bedrijven die schade aan het milieu veroorzaken, hebben een omgevingsvergunning voor het milieu nodig. Vroeger heette dit de milieuvergunning.",
+          "original_reference": "Als ondernemer heeft u een omgevingsvergunning nodig voor activiteiten die schade aan het milieu kunnen veroorzaken",
+          "note": "De bronpagina maakt expliciet melding van de oude term 'milieuvergunning', wat nuttige contextuele informatie is die ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.druten.nl/vergunning-of-melding-milieu"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen het ontbreken van informatie over de nieuwe Omgevingswet die per 1 januari 2024 ingaat in de originele tekst, en aanvullende historische context over de term 'milieuvergunning'. De overige informatie in de originele tekst komt overeen met de bronpagina's of is niet te verifiëren omdat vergelijkbare informatie ontbreekt in de bronnen."
+  }
+}

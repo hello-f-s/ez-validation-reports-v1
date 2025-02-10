@@ -1,0 +1,81 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DRUTEN",
+      "contact": {
+        "phone": "(088) 432 70 00",
+        "email": "info@druten.nl",
+        "website": "http://www.druten.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 10,
+    "false_sentences": 1,
+    "accuracy_percentage": 90.9,
+    "false_statements": [
+      {
+        "sentence": "Als een vergunning vereist is, is de termijn doorgaans 8 weken, met een eventuele eenmalige verlenging van 6 weken, zoals bij andere vergunningen.",
+        "status": "false",
+        "note": "Volgens de gemeente Druten is de standaard behandeltermijn voor een terrasvergunning 8 weken met een mogelijke verlenging van maximaal 8 weken (niet 6 weken zoals vermeld)."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.druten.nl/omgevingsvergunning",
+      "https://www.druten.nl/standplaatsvergunning",
+      "https://www.druten.nl/reclame-en-terrassenbeleid",
+      "https://www.druten.nl/voorwerp-plaatsen-op-of-aan-de-weg"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.druten.nl/exploitatievergunning-horecabedrijf",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Dan hoeft u geen vergunning aan te vragen. Wel kan het zijn dat voor uw reclameobject een omgevingsvergunning nodig is.",
+          "original_reference": "Als uw terras niet vergunningsvrij is, kunnen aanvullende documenten vereist zijn",
+          "note": "De bronpagina is specifieker over het type vergunning dat mogelijk nodig is (omgevingsvergunning) en maakt duidelijk dat geen vergunning nodig is als het terras voldoet aan het beleid",
+          "source_urls": [
+            "https://www.druten.nl/reclame-en-terrassenbeleid"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Whatsapp: +31625689928, info@druten.nl",
+          "original_reference": "Bereikbaar via het algemene telefoonnummer 088 432 70 00",
+          "note": "De originele tekst vermeldt alleen het telefoonnummer, terwijl er ook contact mogelijk is via WhatsApp en email",
+          "source_urls": [
+            "https://www.druten.nl/omgevingsvergunning",
+            "https://www.druten.nl/standplaatsvergunning",
+            "https://www.druten.nl/reclame-en-terrassenbeleid",
+            "https://www.druten.nl/voorwerp-plaatsen-op-of-aan-de-weg"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele tekst en de bronnen. Ten eerste is de informatie over vergunningsvrijheid in de bronnen duidelijker gespecificeerd. Ten tweede biedt de gemeente meer contactmogelijkheden dan alleen telefoon, namelijk ook WhatsApp en email. De overige informatie in de originele tekst komt overeen met de bronnen of is niet direct te verifiëren in de gegeven bronpagina's."
+  }
+}

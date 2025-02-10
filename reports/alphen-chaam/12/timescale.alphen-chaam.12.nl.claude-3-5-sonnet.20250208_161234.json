@@ -1,0 +1,75 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ALPHEN-CHAAM",
+      "contact": {
+        "phone": "14013",
+        "email": "info@alphen-chaam.nl",
+        "website": "http://www.alphen-chaam.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 8,
+    "true_sentences": 7,
+    "false_sentences": 1,
+    "accuracy_percentage": 87.5,
+    "false_statements": [
+      {
+        "sentence": "De gemeente beslist binnen 8 weken op uw aanvraag, tenzij er uitzonderingen zijn waardoor het langer kan duren",
+        "status": "false",
+        "note": "Volgens de website van gemeente Alphen-Chaam is de reguliere procedure maximaal 8 weken, maar kan deze termijn eenmalig met 6 weken worden verlengd. Bij een uitgebreide procedure is de termijn 26 weken met mogelijke verlenging van 6 weken. Deze specifieke termijnen ontbreken in de oorspronkelijke zin."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.alphen-chaam.nl/conceptverzoek",
+      "https://www.alphen-chaam.nl/omgevingsvergunning",
+      "https://www.alphen-chaam.nl/wonen-en-verbouwen/bouwen-of-verbouwen",
+      "https://www.alphen-chaam.nl/vergunningen-en-ontheffingen/vergunningen-en-ontheffingen-voor-ondernemers",
+      "https://www.alphen-chaam.nl/omgevingswet-voor-bedrijven"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wanneer u twijfelt of u een vergunning nodig heeft, kunt u een conceptverzoek indienen. Bij een conceptverzoek kijken we naar uw (bouw)plannen en geven we advies over wat er nodig is om hiermee aan de slag te gaan.",
+          "original_reference": "U kunt vooraf een conceptverzoek indienen zodat de gemeente kan adviseren over uw plannen",
+          "note": "De bronnen geven meer specifieke details over het doel van een conceptverzoek, inclusief controle op omgevingsplan, advies van commissie Ruimtelijke Kwaliteit en aspecten zoals parkeren, geluid en riolering.",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/conceptverzoek",
+            "https://www.alphen-chaam.nl/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De Omgevingswet is ingegaan op 1 januari 2024",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de ingangsdatum van de Omgevingswet, wat een belangrijk detail is voor aanvragers.",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/wonen-en-verbouwen/bouwen-of-verbouwen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten meer gedetailleerde informatie over het conceptverzoek en vermelden specifiek de ingangsdatum van de Omgevingswet (1 januari 2024). De kernprocessen en voorwaarden komen verder overeen met de originele tekst, maar de bronnen bieden meer context en detail."
+  }
+}

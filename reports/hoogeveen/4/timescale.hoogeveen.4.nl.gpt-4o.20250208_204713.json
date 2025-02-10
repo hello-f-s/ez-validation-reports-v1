@@ -1,0 +1,92 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HOOGEVEEN",
+      "contact": {
+        "phone": "14 0528",
+        "email": "info@hoogeveen.nl",
+        "website": "http://www.hoogeveen.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "U hoort binnen 8 weken nadat alle informatie ontvangen is of u een vergunning krijgt.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Hoogeveen wordt er binnen 6 weken (niet 8 weken) na ontvangst van een complete aanvraag een besluit genomen over de evenementenvergunning."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.hoogeveen.nl/vergunningen/omgevingsvergunningen",
+      "https://www.hoogeveen.nl/raad-en-college/woo-verzoek",
+      "https://www.hoogeveen.nl/vergunningen/evenementenvergunning-aanvragen",
+      "https://www.hoogeveen.nl/nieuwsoverzicht/artikel/woo-besluit-op-verzoek-over-evenementenvergunning-stadsfestival",
+      "https://www.hoogeveen.nl/vergunningen/evenementenborden"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://gemeentehoogeveen.nl\">Gemeente",
+        "reason": "INVALID: Error scraping https://gemeentehoogeveen.nl\">Gemeente: HTTPSConnectionPool(host='gemeentehoogeveen.nl%22%3egemeente', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1058fb770>: Failed to resolve 'gemeentehoogeveen.nl%22%3egemeente' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://gemeentehoogeveen.nl",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Als u een evenement organiseert voor 250 of meer mensen, heeft u een evenementenvergunning nodig. Deze moet u uiterlijk 12 weken van tevoren aanvragen.",
+          "original_reference": "Als u een evenement organiseert voor 250 of meer mensen, heeft u een evenementenvergunning nodig. Deze moet u uiterlijk 12 weken van tevoren aanvragen.",
+          "note": "De kernvoorwaarden voor grote evenementen zijn exact hetzelfde in beide bronnen",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/evenementenvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U moet de borden uiterlijk 24 uur na het evenement weghalen",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over evenementenborden en verwijderingstermijnen, terwijl dit wel een belangrijke voorwaarde is",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/evenementenborden"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Spandoeken ophangen in de openbare ruimte is niet toegestaan",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over het verbod op spandoeken in de openbare ruimte",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/evenementenborden"
+          ]
+        }
+      ]
+    },
+    "summary": "De originele inhoud komt grotendeels overeen met de bronnen wat betreft de kernvoorwaarden voor evenementenvergunningen. Echter mist de originele tekst belangrijke aanvullende informatie over promotionele uitingen, zoals regels voor evenementenborden en het verbod op spandoeken in de openbare ruimte. Deze informatie is wel relevant voor evenementorganisatoren."
+  }
+}

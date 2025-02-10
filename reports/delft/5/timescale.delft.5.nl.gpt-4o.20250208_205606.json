@@ -1,0 +1,89 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DELFT",
+      "contact": {
+        "phone": "14 015",
+        "email": "null",
+        "website": "http://www.delft.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "U mag geen strafblad hebben.",
+        "status": "false",
+        "note": "Dit is niet correct. Volgens de gemeente Delft wordt niet automatisch elke aanvraag afgewezen bij een strafblad. In het kader van de Bibob-toetsing wordt wel gekeken naar het justitiële verleden, maar een strafblad betekent niet automatisch uitsluiting. De ernst, aard en het tijdsverloop sinds de overtredingen worden meegewogen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 6,
+    "invalid_urls": 1,
+    "accuracy_percentage": 85.7,
+    "valid_urls_list": [
+      "https://www.delft.nl/vergunningen-en-ontheffingen",
+      "https://www.delft.nl/omgevingsvergunning-milieu",
+      "https://www.delft.nl/exploitatievergunning-coffeeshops",
+      "https://www.delft.nl/alcoholwetvergunning",
+      "https://www.delft.nl",
+      "https://www.delft.nl/vergunning-seksinrichting-escortbedrijf"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.delft.nl\">Gemeente",
+        "reason": "INVALID: Error scraping https://www.delft.nl\">Gemeente: HTTPSConnectionPool(host='www.delft.nl%22%3egemeente', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106263610>: Failed to resolve 'www.delft.nl%22%3egemeente' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Kosten 2025 Exploitatievergunning coffeeshop € 1.069,35",
+          "original_reference": "De kosten voor het aanvragen van een exploitatievergunning bedragen in 2024 € 1.040,25 voor coffeeshops.",
+          "note": "De tarieven verschillen omdat de bronpagina het tarief voor 2025 vermeldt (€1.069,35), terwijl de originele tekst het tarief voor 2024 noemt (€1.040,25).",
+          "source_urls": [
+            "https://www.delft.nl/exploitatievergunning-coffeeshops"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het aantal coffeeshops in Delft mag op dit moment niet groter worden.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt een belangrijke beperking die niet in de originele tekst staat: er mogen geen nieuwe coffeeshops bijkomen in Delft.",
+          "source_urls": [
+            "https://www.delft.nl/exploitatievergunning-coffeeshops"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor overige horecabedrijven heeft u geen vergunning nodig.",
+          "original_reference": "De exploitatievergunning voor een horecabedrijf kunt u aanvragen bij de gemeente Delft.",
+          "note": "Er is een tegenstrijdigheid: de bronpagina stelt dat overige horecabedrijven geen vergunning nodig hebben, terwijl de originele tekst suggereert dat alle horecabedrijven een exploitatievergunning moeten aanvragen.",
+          "source_urls": [
+            "https://www.delft.nl/exploitatievergunning-coffeeshops"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn drie belangrijke verschillen gevonden tussen de originele tekst en de bronnen: 1) een ander tariefbedrag voor 2025 vs 2024, 2) een ontbrekende maar belangrijke beperking over het maximaal aantal coffeeshops, en 3) een tegenstrijdigheid over de vergunningplicht voor overige horecabedrijven. Deze verschillen hebben significante implicaties voor ondernemers die een horecazaak of coffeeshop willen starten in Delft."
+  }
+}

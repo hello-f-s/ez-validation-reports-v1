@@ -1,0 +1,98 @@
+{
+  "context": {
+    "municipality": {
+      "name": "KAPELLE",
+      "contact": {
+        "phone": "(0113) 33 31 10",
+        "email": "gemeente@kapelle.nl",
+        "website": "http://www.kapelle.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "Leidinggevenden moeten minimaal 21 jaar zijn, beschikken over een erkend diploma of certificaat van Sociale Hygiëne van Lcsh, en geregistreerd staan in het Register Sociale Hygiëne.",
+        "status": "false",
+        "note": "De minimumleeftijd voor leidinggevenden is 18 jaar, niet 21 jaar volgens de Alcoholwet en de voorschriften van gemeente Kapelle."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 3,
+    "invalid_urls": 4,
+    "accuracy_percentage": 42.9,
+    "valid_urls_list": [
+      "https://kapelle.nl/exploitatievergunning-horecabedrijf",
+      "https://kapelle.nl/alcohol-schenken-tijdens-evenement",
+      "https://kapelle.nl/alcoholwet-vergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.gemeentekapelle.nl",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.kapelle.nl/node/225",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.gemeentekapelle.nl\">Gemeente",
+        "reason": "INVALID: Error scraping https://www.gemeentekapelle.nl\">Gemeente: HTTPSConnectionPool(host='www.gemeentekapelle.nl%22%3egemeente', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1061139d0>: Failed to resolve 'www.gemeentekapelle.nl%22%3egemeente' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.kapelle.nl/node/224",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De omgeving heeft geen last van uw horecabedrijf. De gemeente kan vragen dat u maatregelen neemt om daarvoor te zorgen. In het gebied mogen horecabedrijven zitten.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt aanvullende voorwaarden over omgevingsimpact en toegestane gebieden die niet in de originele tekst staan.",
+          "source_urls": [
+            "https://kapelle.nl/exploitatievergunning-horecabedrijf"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een bedrijfs- of ondernemingsplan. Een document (zoals huurcontract, eigendomsakte) waaruit blijkt dat de aanvrager over de ruimte beschikt waar het horecabedrijf gevestigd wordt. Een nauwkeurige plattegrond van het horecabedrijf (inclusief terras).",
+          "original_reference": "No matching information",
+          "note": "De bronpagina noemt aanvullende documenten die nodig zijn voor de aanvraag die niet in de originele tekst staan vermeld.",
+          "source_urls": [
+            "https://kapelle.nl/exploitatievergunning-horecabedrijf"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor verenigingen en stichtingen die alcohol schenken gelden extra voorwaarden: De uren waarop alcohol wordt geschonken en de leeftijdsgrens is op een goed zichtbare plek opgehangen. Er zijn binnen de vereniging of stichting minstens twee leidinggevenden met een SVH Verklaring Sociale Hygiëne. Wanneer er alcohol wordt geschonken is een van deze leidinggevenden aanwezig of een barmedewerker die de instructie 'Verantwoord alcoholgebruik' heeft gevolgd.",
+          "original_reference": "Gewaarmerkt bestuursreglement, indien van toepassing voor verenigingen en stichtingen.",
+          "note": "De bronpagina geeft meer gedetailleerde voorwaarden voor verenigingen en stichtingen dan de originele tekst.",
+          "source_urls": [
+            "https://kapelle.nl/alcoholwet-vergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten belangrijke aanvullende informatie die niet in de originele tekst staat, waaronder specifieke eisen voor de omgeving van het horecabedrijf, extra benodigde documenten voor de aanvraag, en meer gedetailleerde voorwaarden voor verenigingen en stichtingen. Deze informatie is essentieel voor een complete en correcte vergunningsaanvraag."
+  }
+}

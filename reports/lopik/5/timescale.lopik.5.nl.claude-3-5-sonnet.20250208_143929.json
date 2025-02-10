@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LOPIK",
+      "contact": {
+        "phone": "(0348) 55 99 55",
+        "email": "gemeente@lopik.nl",
+        "website": "http://www.lopik.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 10,
+    "false_sentences": 1,
+    "accuracy_percentage": 90.9,
+    "false_statements": [
+      {
+        "sentence": "U vraagt de exploitatievergunning aan bij de gemeente door het aanvraagformulier 'Ontheffing Sluitingsuur' in te vullen en te mailen naar gemeente@lopik.nl of per post te sturen naar:",
+        "status": "false",
+        "note": "Een ontheffing sluitingsuur is niet hetzelfde als een exploitatievergunning. Voor een exploitatievergunning moet een apart aanvraagformulier 'Exploitatievergunning horecabedrijf' worden gebruikt, niet het formulier 'Ontheffing Sluitingsuur'."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.lopik.nl/exploitatievergunning-horecabedrijf",
+      "https://www.lopik.nl/ontheffing-sluitingstijd",
+      "https://www.lopik.nl/openingstijden-winkels",
+      "https://www.lopik.nl/standplaats-aanvragen",
+      "https://www.lopik.nl/openingstijden-horeca-eenmalig-aanpassen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U vraagt de vergunning aan bij de gemeente. Dit kunt u doen door het aanvraagformulier 'standplaatsvergunning' in te vullen",
+          "original_reference": "Aanvraagformulier 'Ontheffing Sluitingsuur'",
+          "note": "De originele tekst verwijst naar een verkeerd aanvraagformulier. Het moet een exploitatievergunning aanvraag zijn, niet een standplaatsvergunning of sluitingsuur ontheffing.",
+          "source_urls": [
+            "https://www.lopik.nl/exploitatievergunning-horecabedrijf"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "zondag tot en met donderdag tussen 01:00 uur en 08:00 uur; vrijdag en zaterdag tussen 02:00 uur en 08:00 uur",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de specifieke sluitingstijden, terwijl deze wel belangrijk zijn voor de context van de ontheffing.",
+          "source_urls": [
+            "https://www.lopik.nl/ontheffing-sluitingstijd"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U ontvangt binnen 8 weken bericht of u de ontheffing krijgt.",
+          "original_reference": "Hier kan geen specifieke informatie over gevonden worden op de website van deze gemeente.",
+          "note": "De originele tekst geeft aan dat er geen informatie beschikbaar is over de behandeltermijn, terwijl de bron aangeeft dat dit 8 weken is.",
+          "source_urls": [
+            "https://www.lopik.nl/openingstijden-horeca-eenmalig-aanpassen"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn drie belangrijke verschillen gevonden tussen de originele tekst en de bronnen: 1) Er wordt een onjuist aanvraagformulier genoemd, 2) De specifieke sluitingstijden ontbreken in de originele tekst, en 3) De behandeltermijn van 8 weken wordt niet vermeld in de originele tekst terwijl deze wel in de bronnen staat. Deze informatie is essentieel voor een correcte en volledige dienstverlening."
+  }
+}

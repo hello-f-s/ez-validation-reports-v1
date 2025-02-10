@@ -1,0 +1,78 @@
+{
+  "context": {
+    "municipality": {
+      "name": "NIJMEGEN",
+      "contact": {
+        "phone": "14 024",
+        "email": "gemeente@nijmegen.nl",
+        "website": "http://www.nijmegen.nl"
+      }
+    },
+    "service": {
+      "id": 20,
+      "name": "Vergunning voor seksbedrijf"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Binnen 12 weken nadat u alles wat nodig is heeft doorgegeven, krijgt u antwoord.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Nijmegen duurt de behandeling van een aanvraag voor een seksbedrijf maximaal 8 weken (niet 12 weken) na ontvangst van een complete aanvraag."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.nijmegen.nl/diensten/vergunningen/drank-en-horeca/alcoholvergunning/",
+      "https://www.nijmegen.nl/diensten/vergunningen/drank-en-horeca/vergunning-seksbedrijf/",
+      "https://www.nijmegen.nl/diensten/evenementen/schema-vergunningen-activiteiten/tekstversie/",
+      "https://www.nijmegen.nl/diensten/vergunningen/drank-en-horeca/beheer-exploitatievergunning/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.nijmegen.nl/diensten/vergunningen/informatiekraam-melden-of-vergunning/",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een vergunning is 5 jaar geldig",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de geldigheidsduur van de vergunning, terwijl de bron specificeert dat deze 5 jaar geldig is",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/vergunningen/drank-en-horeca/vergunning-seksbedrijf/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Escortbedrijf: € 682,15\nSeksbedrijf met 1 werkruimte: € 1.423,70\nSeksbedrijf met meerdere werkruimtes: € 1.697,45\nAanpassing in de vergunning: € 273,75",
+          "original_reference": "Escortbedrijf: € 652,35\nSeksbedrijf met 1 werkruimte: € 1.361,50\nSeksbedrijf met meerdere werkruimtes: € 1.623,25\nAanpassing in de vergunning: € 261,80",
+          "note": "De tarieven in de bronpagina zijn hoger dan in de originele tekst, wat duidt op een tariefwijziging",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/vergunningen/drank-en-horeca/vergunning-seksbedrijf/"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden: de geldigheidsduur van de vergunning (5 jaar) wordt niet vermeld in de originele tekst, en de tarieven zijn in de bronpagina hoger dan in de originele tekst. De overige voorwaarden en procedures komen overeen."
+  }
+}

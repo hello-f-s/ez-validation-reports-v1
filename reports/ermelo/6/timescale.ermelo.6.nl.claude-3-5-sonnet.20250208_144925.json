@@ -1,0 +1,79 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ERMELO",
+      "contact": {
+        "phone": "(0341) 56 73 21",
+        "email": "gemeente@ermelo.nl",
+        "website": "http://www.ermelo.nl"
+      }
+    },
+    "service": {
+      "id": 6,
+      "name": "Integriteitsonderzoek (Wet Bibob)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 6,
+    "true_sentences": 5,
+    "false_sentences": 1,
+    "accuracy_percentage": 83.3,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor het aanvragen van een exploitatievergunning (inclusief Bibob-onderzoek) zijn € 206.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Ermelo zijn de kosten voor een exploitatievergunning € 211,70 (2024). Het genoemde bedrag van € 206 is onjuist."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.ermelo.nl/wonen-en-verhuizen/adresonderzoek",
+      "https://www.ermelo.nl/evenementen-en-horeca/horeca-en-alcohol/exploitatievergunning-horeca",
+      "https://www.ermelo.nl/verklaring-omtrent-gedrag-vog",
+      "https://www.ermelo.nl/over-deze-website/avg-verzoek-indienen",
+      "https://www.ermelo.nl/bezwaar-zienswijze-en-woo/informatie-opvragen-via-woo-en-who"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.ermelo.nl/exploitatievergunning-horeca>",
+        "reason": "INVALID: Error scraping https://www.ermelo.nl/exploitatievergunning-horeca>: 404 Client Error: Not Found for url: https://www.ermelo.nl/exploitatievergunning-horeca%3E"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wilt u een exploitatievergunning aanvragen? Maak dan een afspraak met de vakafdeling zodat u uw aanvraag compleet kan indienen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat er een afspraak met de vakafdeling gemaakt moet worden voor het indienen van de aanvraag. Dit is een belangrijke procedurestap die ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.ermelo.nl/evenementen-en-horeca/horeca-en-alcohol/exploitatievergunning-horeca"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een recente verklaring omtrent gedrag (VOG exploitatievergunning), Plattegrond van de inrichting (inclusief eventuele terrassen), Een huur-, koop- of pachtovereenkomst, Oprichtingsakte of statuten (als dit van toepassing is), Verklaring leidinggevende(n) (als dit van toepassing is)",
+          "original_reference": "Een volledig ingevuld vragenformulier Bibob (Justis)",
+          "note": "De originele tekst noemt alleen het Bibob-vragenformulier als vereiste document, terwijl de bron meerdere aanvullende documenten vereist voor de aanvraag.",
+          "source_urls": [
+            "https://www.ermelo.nl/evenementen-en-horeca/horeca-en-alcohol/exploitatievergunning-horeca"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele tekst en de bronnen. Ten eerste ontbreekt in de originele tekst de vereiste om een afspraak te maken met de vakafdeling. Ten tweede noemt de originele tekst alleen het Bibob-vragenformulier als vereiste document, terwijl er in werkelijkheid meerdere belangrijke documenten nodig zijn voor de aanvraag, zoals een VOG, plattegrond, overeenkomsten en diverse verklaringen."
+  }
+}

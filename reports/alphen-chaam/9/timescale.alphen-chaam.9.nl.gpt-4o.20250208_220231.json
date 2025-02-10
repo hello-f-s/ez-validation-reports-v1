@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ALPHEN-CHAAM",
+      "contact": {
+        "phone": "14013",
+        "email": "info@alphen-chaam.nl",
+        "website": "http://www.alphen-chaam.nl"
+      }
+    },
+    "service": {
+      "id": 9,
+      "name": "Mobiele puinbreker gebruiken"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 10,
+    "true_sentences": 9,
+    "false_sentences": 1,
+    "accuracy_percentage": 90.0,
+    "false_statements": [
+      {
+        "sentence": "Er kan binnen 8 weken een beslissing worden verwacht.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Alphen-Chaam geldt voor een aanvraag mobiele puinbreker een reguliere procedure met een beslistermijn van maximaal 4 weken, niet 8 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.alphen-chaam.nl/vergunningen-en-ontheffingen/vergunningen-en-ontheffingen-voor-ondernemers",
+      "https://www.alphen-chaam.nl/ondernemen/vergunningen-en-ontheffingen-voor-ondernemers",
+      "https://www.alphen-chaam.nl/omgevingsvergunning",
+      "https://www.alphen-chaam.nl/woo",
+      "https://www.alphen-chaam.nl/wonen-en-verbouwen/bouwen-of-verbouwen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://example.com/omgevingsvergunning\">example.com/omgevingsvergunning</a></li>",
+        "reason": "INVALID: Error scraping https://example.com/omgevingsvergunning\">example.com/omgevingsvergunning</a></li>: 404 Client Error: Not Found for url: https://example.com/omgevingsvergunning%22%3Eexample.com/omgevingsvergunning%3C/a%3E%3C/li%3E"
+      },
+      {
+        "url": "https://example.com/omgevingsvergunning",
+        "reason": "INVALID: Error scraping https://example.com/omgevingsvergunning: 404 Client Error: Not Found for url: https://example.com/omgevingsvergunning"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Met de vergunningcheck in het digitale Omgevingsloket ziet u snel of u voor uw (bouw)plannen een vergunning moet aanvragen, melding moet doen of uw (bouw)plan vergunningvrij is.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist de belangrijke informatie over de mogelijkheid om eerst een vergunningcheck uit te voeren via het Omgevingsloket. Dit is een essentiële eerste stap voor ondernemers.",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wanneer u twijfelt of u een vergunning nodig heeft, kunt u een conceptverzoek indienen. Bij een conceptverzoek kijken we naar uw (bouw)plannen en geven we advies over wat er nodig is om hiermee aan de slag te gaan.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de mogelijkheid om een conceptverzoek in te dienen bij twijfel over de vergunningplicht. Dit is een belangrijke voorbereidende stap die ontbreekt.",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/omgevingsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De originele tekst mist twee belangrijke voorbereidende stappen in het aanvraagproces: de mogelijkheid om een vergunningcheck uit te voeren via het Omgevingsloket en de optie om een conceptverzoek in te dienen bij twijfel. Deze informatie zou ondernemers kunnen helpen bij het efficiënter doorlopen van het aanvraagproces voor een mobiele puinbreker."
+  }
+}

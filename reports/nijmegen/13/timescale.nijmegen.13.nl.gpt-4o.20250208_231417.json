@@ -1,0 +1,104 @@
+{
+  "context": {
+    "municipality": {
+      "name": "NIJMEGEN",
+      "contact": {
+        "phone": "14 024",
+        "email": "gemeente@nijmegen.nl",
+        "website": "http://www.nijmegen.nl"
+      }
+    },
+    "service": {
+      "id": 13,
+      "name": "Omzettingsvergunning voor kamerverhuur aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 17,
+    "false_sentences": 2,
+    "accuracy_percentage": 89.5,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor een omgevingsvergunning voor kamerverhuur bedragen €750,-.",
+        "status": "false",
+        "note": "De exacte kosten voor een omgevingsvergunning voor kamerverhuur zijn niet vast €750,-, maar worden berekend op basis van een percentage van de bouwkosten volgens de actuele legesverordening van de gemeente Nijmegen."
+      },
+      {
+        "sentence": "Voor een omzettingsvergunning betaalt u €1.341,15.",
+        "status": "false",
+        "note": "Het genoemde bedrag van €1.341,15 voor een omzettingsvergunning is niet correct volgens de actuele tarieven van de gemeente Nijmegen. De exacte kosten worden bepaald door de actuele legesverordening."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 8,
+    "valid_urls": 4,
+    "invalid_urls": 4,
+    "accuracy_percentage": 50.0,
+    "valid_urls_list": [
+      "https://www.nijmegen.nl/diensten/bouwen-en-wonen/kamers-verhuren/",
+      "https://www.nijmegen.nl/diensten/bouwen-en-wonen/vooroverleg-omgevingsvergunning/kosten-omgevingsvergunning/",
+      "https://www.nijmegen.nl/diensten/evenementen/schema-vergunningen-activiteiten/tekstversie/",
+      "https://www.nijmegen.nl/diensten/bouwen-en-wonen/vooroverleg-omgevingsvergunning/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.nijmegen.nl/diensten/ozg-complexe-activiteiten/#kamers-verhuren",
+        "reason": "INVALID: Error scraping https://www.nijmegen.nl/diensten/ozg-complexe-activiteiten/#kamers-verhuren: 404 Client Error: Not Found for url: https://www.nijmegen.nl/diensten/ozg-complexe-activiteiten/#kamers-verhuren"
+      },
+      {
+        "url": "https://www.nijmegen.nl/diensten/vooroverleg-omgevingsvergunning/",
+        "reason": "INVALID: Error scraping https://www.nijmegen.nl/diensten/vooroverleg-omgevingsvergunning/: 404 Client Error: Not Found for url: https://www.nijmegen.nl/diensten/vooroverleg-omgevingsvergunning/"
+      },
+      {
+        "url": "https://www.nijmegen.nl/diensten/ozg-complexe-activiteiten/#kamers-verhuren\">Kamers",
+        "reason": "INVALID: Error scraping https://www.nijmegen.nl/diensten/ozg-complexe-activiteiten/#kamers-verhuren\">Kamers: 404 Client Error: Not Found for url: https://www.nijmegen.nl/diensten/ozg-complexe-activiteiten/#kamers-verhuren%22%3EKamers"
+      },
+      {
+        "url": "https://www.nijmegen.nl/diensten/vergunningen/informatiekraam-melden-of-vergunning/",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als hospita verhuurt u kamers en woont u zelf ook in het huis. U heeft geen vergunning nodig als hospita als alle volgende regels voor u gelden: U bent voor 100% economisch en juridisch eigenaar van de woning, U woont zelf in de woning, U gebruikt minimaal 50% van deze woning voor uw eigen huishouden, U verhuurt maximaal 2 onzelfstandige woonruimten, aan maximaal 2 personen",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over hospitaverhuur en de specifieke voorwaarden daarvan. Dit is een significante omissie aangezien het een belangrijke uitzondering vormt op de vergunningsplicht.",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/bouwen-en-wonen/kamers-verhuren/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Heeft u een vooroverleg gehad? De kosten hiervan moet u betalen, ook als u daarna een vergunning aanvraagt",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat kosten voor vooroverleg apart worden berekend en betaald moeten worden, ook als er later een vergunning wordt aangevraagd.",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/bouwen-en-wonen/vooroverleg-omgevingsvergunning/kosten-omgevingsvergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "We vragen u om nog voor uw aanvraag aan bewoners in de buurt te vragen wat ze van uw idee of plan vinden.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist de belangrijke voorwaarde dat buurtbewoners vooraf geraadpleegd moeten worden over het plan voor kamerverhuur.",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/bouwen-en-wonen/vooroverleg-omgevingsvergunning/"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie die niet in de originele tekst staat, met name over hospitaverhuur, vooroverlegkosten en het raadplegen van buurtbewoners. Deze informatie is essentieel voor een volledig begrip van de vergunningsprocedure voor kamerverhuur in Nijmegen."
+  }
+}

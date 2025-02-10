@@ -1,0 +1,87 @@
+{
+  "context": {
+    "municipality": {
+      "name": "CULEMBORG",
+      "contact": {
+        "phone": "(0345) 47 77 00",
+        "email": "info@culemborg.nl",
+        "website": "http://www.culemborg.nl"
+      }
+    },
+    "service": {
+      "id": 9,
+      "name": "Mobiele puinbreker gebruiken"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 8,
+    "true_sentences": 7,
+    "false_sentences": 1,
+    "accuracy_percentage": 87.5,
+    "false_statements": [
+      {
+        "sentence": "Als blijkt dat u een omgevingsvergunning nodig heeft, dient u deze aan te vragen bij de Omgevingsdienst Rivierenland (ODR) via hun omgevingsloket.",
+        "status": "false",
+        "note": "De aanvraag voor een omgevingsvergunning moet worden ingediend via het landelijke Omgevingsloket Online (OLO), niet direct bij de ODR. De ODR behandelt de aanvraag wel namens de gemeente Culemborg, maar is niet het aanvraagloket."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.culemborg.nl/informatieverzoek",
+      "https://www.culemborg.nl/omgevingsvergunning",
+      "https://www.culemborg.nl/afval-van-uw-bedrijf",
+      "https://www.culemborg.nl/informatieverzoek-en-woo-verzoek"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.culemborg.nl/melding-openbare-ruimte-en-overlast",
+        "reason": "INVALID: Error scraping https://www.culemborg.nl/melding-openbare-ruimte-en-overlast: 404 Client Error: Not Found for url: https://www.culemborg.nl/melding-openbare-ruimte-en-overlast"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vanaf 1 januari zijn alle wetten en regels over onze leefomgeving samengevoegd in één wet: de Omgevingswet",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt belangrijke informatie over de nieuwe Omgevingswet die niet in de originele tekst staat vermeld. Dit is essentiële contextinformatie voor vergunningsaanvragen.",
+          "source_urls": [
+            "https://www.culemborg.nl/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het kan zijn dat de ODR met ons in gesprek gaat over de wenselijkheid van uw initiatief. We toetsen uw initiatief ook bij het omgevingsplan om te kijken of uw plan past bij de wensen en regels op de betreffende plek.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina beschrijft een specifiek beoordelingsproces door de ODR dat niet wordt genoemd in de originele tekst.",
+          "source_urls": [
+            "https://www.culemborg.nl/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "In het omgevingsloket kunt u controleren of u een vergunning nodig heeft. Voor eenvoudige zaken kunt u de vergunning ook direct aanvragen.",
+          "original_reference": "Om te bepalen of u een omgevingsvergunning nodig heeft en welke voorwaarden daaraan verbonden zijn, kunt u het beste het omgevingsloket online raadplegen",
+          "note": "De bronpagina biedt meer specifieke informatie over de directe aanvraagmogelijkheid voor eenvoudige zaken, wat niet wordt vermeld in de originele tekst.",
+          "source_urls": [
+            "https://www.culemborg.nl/omgevingsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten belangrijke aanvullende informatie die niet in de originele tekst staat, waaronder de invoering van de nieuwe Omgevingswet, het specifieke beoordelingsproces door de ODR, en de mogelijkheid om eenvoudige zaken direct aan te vragen. Deze informatie is relevant voor een complete en actuele beschrijving van het vergunningsproces voor mobiele puinbrekers."
+  }
+}

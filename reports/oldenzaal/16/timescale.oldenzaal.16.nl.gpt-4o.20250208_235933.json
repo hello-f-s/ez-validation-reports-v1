@@ -1,0 +1,92 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OLDENZAAL",
+      "contact": {
+        "phone": "(0541) 58 81 11",
+        "email": "info@oldenzaal.nl",
+        "website": "http://www.oldenzaal.nl"
+      }
+    },
+    "service": {
+      "id": 16,
+      "name": "Registreren in het Landelijk Register Kinderopvang (LRK)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "U moet uw organisatie minimaal 10 weken voor de start van de kinderopvang in de gemeente registreren.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Oldenzaal moet de aanvraag minimaal 8 weken (niet 10 weken) voor de start van de kinderopvang worden ingediend."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.oldenzaal.nl/ondernemen-in-de-kinderopvang",
+      "https://www.oldenzaal.nl/kinderopvang-gastouders-en-bso",
+      "https://www.oldenzaal.nl/landelijke-provinciale-en-regionale-subsidies",
+      "https://www.oldenzaal.nl/aangifte-levenloos-geboren-kind",
+      "https://www.oldenzaal.nl/verklaring-omtrent-gedrag-vog"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.oldenzaal.nl/ondernemen-kinderopvang",
+        "reason": "INVALID: Error scraping https://www.oldenzaal.nl/ondernemen-kinderopvang: 404 Client Error: Not Found for url: https://www.oldenzaal.nl/ondernemen-kinderopvang"
+      },
+      {
+        "url": "https://www.oldenzaal.nl/ondernemen-kinderopvang\">Gemeente",
+        "reason": "INVALID: Error scraping https://www.oldenzaal.nl/ondernemen-kinderopvang\">Gemeente: 404 Client Error: Not Found for url: https://www.oldenzaal.nl/ondernemen-kinderopvang%22%3EGemeente"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De gemeente heeft hiervoor handhavingsregels vastgesteld. Wordt de regelgeving niet nageleefd, dan zal de gemeente handhaven.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over handhaving en handhavingsregels door de gemeente, wat een belangrijk aspect is voor kinderopvangorganisaties.",
+          "source_urls": [
+            "https://www.oldenzaal.nl/ondernemen-in-de-kinderopvang"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "GGD regio Twente inspecteert alle kinderopvanginstellingen. Ook alle rapporten hierover vindt u op de site van het LRK.",
+          "original_reference": "inspecties door GGD Twente",
+          "note": "De bronnen specificeren dat inspectierapporten openbaar beschikbaar zijn via het LRK, wat niet vermeld wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.oldenzaal.nl/kinderopvang-gastouders-en-bso"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De GGD Twente adviseert de gemeente over de kwaliteit van de kinderopvang. Op basis van deze adviezen besluit de gemeente of voldaan is aan de wettelijke kwaliteitseisen kinderopvang.",
+          "original_reference": "inspecties door GGD Twente",
+          "note": "De bronnen verduidelijken de specifieke rol van GGD Twente als adviseur aan de gemeente, en dat de gemeente uiteindelijk besluit over het voldoen aan de kwaliteitseisen. Dit detail ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.oldenzaal.nl/ondernemen-in-de-kinderopvang"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie over de rol van de gemeente bij handhaving, de specifieke adviesrol van GGD Twente, en de beschikbaarheid van inspectierapporten via het LRK. Deze details ontbreken in de originele tekst maar zijn wel relevant voor mensen die een kinderopvang willen starten of beheren."
+  }
+}

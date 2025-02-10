@@ -1,0 +1,72 @@
+{
+  "context": {
+    "municipality": {
+      "name": "CULEMBORG",
+      "contact": {
+        "phone": "(0345) 47 77 00",
+        "email": "info@culemborg.nl",
+        "website": "http://www.culemborg.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 10,
+    "false_sentences": 1,
+    "accuracy_percentage": 90.9,
+    "false_statements": [
+      {
+        "sentence": "Maak een afspraak, lever het ingevulde formulier van uw werkgever in bij de gemeente",
+        "status": "false",
+        "note": "Volgens de website van gemeente Culemborg is het niet mogelijk om een VOG bij de gemeente aan te vragen. VOG aanvragen kunnen alleen online via Justis of rechtstreeks bij Justis worden gedaan."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.culemborg.nl/informatieverzoek",
+      "https://www.culemborg.nl/woo-verzoek",
+      "https://www.culemborg.nl/omgevingsvergunning",
+      "https://www.culemborg.nl/informatieverzoek-en-woo-verzoek"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.culemborg.nl/verklaring-omtrent-het-gedrag",
+        "reason": "INVALID: Error scraping https://www.culemborg.nl/verklaring-omtrent-het-gedrag: 404 Client Error: Not Found for url: https://www.culemborg.nl/verklaring-omtrent-het-gedrag"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Geen informatie over VOG aanvragen gevonden in de geciteerde bronnen",
+          "original_reference": "Uitgebreide informatie over VOG aanvragen, voorwaarden en procedures",
+          "note": "De geciteerde bronpagina's bevatten geen enkele informatie over VOG aanvragen, terwijl de originele inhoud hier uitgebreid over spreekt. Dit suggereert dat deze informatie mogelijk op een andere gemeentelijke pagina staat of verouderd is.",
+          "source_urls": [
+            "https://www.culemborg.nl/informatieverzoek",
+            "https://www.culemborg.nl/woo-verzoek",
+            "https://www.culemborg.nl/omgevingsvergunning",
+            "https://www.culemborg.nl/informatieverzoek-en-woo-verzoek"
+          ]
+        }
+      ]
+    },
+    "summary": "Bij het analyseren van de bronnen is gebleken dat er een fundamenteel verschil is: de originele inhoud bevat uitgebreide informatie over VOG-aanvragen, maar deze informatie is volledig afwezig in alle geciteerde bronpagina's. Dit kan betekenen dat de VOG-informatie op andere (niet-geciteerde) pagina's staat of dat de originele inhoud niet meer actueel is. Verdere verificatie van de juiste VOG-aanvraagprocedure bij de gemeente Culemborg is aan te raden."
+  }
+}

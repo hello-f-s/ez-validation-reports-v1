@@ -1,0 +1,79 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LEUSDEN",
+      "contact": {
+        "phone": "14 033",
+        "email": "gemeente@leusden.nl",
+        "website": "http://www.leusden.nl/"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 10,
+    "false_sentences": 1,
+    "accuracy_percentage": 90.9,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor het aanvragen van een VOG bedragen € 41,35 en dienen bij de aanvraag met pin betaald te worden.",
+        "status": "false",
+        "note": "De actuele kosten voor een VOG bedragen € 46,25 (per 2024) volgens de officiële website van gemeente Leusden, niet € 41,35."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.leusden.nl/burgerzaken/uittreksels-en-verklaringen/verklaring-omtrent-het-gedrag",
+      "https://www.leusden.nl/burgerzaken/uittreksels-en-verklaringen/naturalisatieceremonie",
+      "https://www.leusden.nl/burgerzaken/uittreksels-en-verklaringen",
+      "https://www.leusden.nl/en/burgerzaken/uittreksels-en-verklaringen/verklaring-omtrent-het-gedrag",
+      "https://www.leusden.nl/en/burgerzaken/uittreksels-en-verklaringen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "http://www.eherkenning.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een VOG vraagt u persoonlijk aan. U kunt hiervoor een afspraak maken.",
+          "original_reference": "Als ondernemer kunt u een VOG natuurlijke personen (NP) aanvragen via uw aanstaande werkgever.",
+          "note": "De bronnen geven aan dat een VOG persoonlijk moet worden aangevraagd met een afspraak, terwijl de originele tekst suggereert dat dit via de werkgever kan.",
+          "source_urls": [
+            "https://www.leusden.nl/burgerzaken/uittreksels-en-verklaringen/verklaring-omtrent-het-gedrag"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Nodig is eHerkenning met betrouwbaarheidsniveau 2.",
+          "original_reference": "No matching information",
+          "note": "De bronnen specificeren dat eHerkenning niveau 2 vereist is, wat niet vermeld wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.leusden.nl/burgerzaken/uittreksels-en-verklaringen/verklaring-omtrent-het-gedrag"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele tekst en de bronnen. Ten eerste is er een tegenstrijdigheid in de aanvraagprocedure: waar de originele tekst suggereert dat ondernemers via hun werkgever kunnen aanvragen, geven de bronnen aan dat een VOG altijd persoonlijk moet worden aangevraagd. Ten tweede specificeren de bronnen een vereist betrouwbaarheidsniveau 2 voor eHerkenning, wat niet wordt vermeld in de originele tekst."
+  }
+}

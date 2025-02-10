@@ -1,0 +1,93 @@
+{
+  "context": {
+    "municipality": {
+      "name": "CULEMBORG",
+      "contact": {
+        "phone": "(0345) 47 77 00",
+        "email": "info@culemborg.nl",
+        "website": "http://www.culemborg.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 11,
+    "false_sentences": 2,
+    "accuracy_percentage": 84.6,
+    "false_statements": [
+      {
+        "sentence": "Als u een aanvraag wilt doen, moet u mogelijk aangeven hoe u participatie heeft toegepast en wat het resultaat was.",
+        "status": "false",
+        "note": "Bij de gemeente Culemborg is participatie geen standaard vereiste voor een omgevingsvergunning. Dit wordt niet vermeld op de officiële website van de gemeente."
+      },
+      {
+        "sentence": "Er is geen specifieke tijdsduur gespecificeerd voor het verwerken van vergunningsaanvragen.",
+        "status": "false",
+        "note": "De gemeente Culemborg hanteert wel degelijk specifieke termijnen: 8 weken voor reguliere procedures en 26 weken voor uitgebreide procedures, met mogelijkheid tot verlenging."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.culemborg.nl/omgevingsvergunning",
+      "https://www.culemborg.nl/informatieverzoek-en-woo-verzoek",
+      "https://www.culemborg.nl/straatartiest",
+      "https://www.culemborg.nl/bezwaar-maken",
+      "https://www.culemborg.nl/informatieverzoek"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.culemborg.nl)",
+        "reason": "INVALID: Error scraping https://www.culemborg.nl): HTTPSConnectionPool(host='www.culemborg.nl)', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1078cc190>: Failed to resolve 'www.culemborg.nl)' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een aanvraag moet drie weken voor het gebruik van de vergunning zijn ingediend. De gemeente heeft acht weken de tijd om de aanvraag af te handelen.",
+          "original_reference": "Er is geen specifieke tijdsduur gespecificeerd voor het verwerken van vergunningsaanvragen.",
+          "note": "De bronnen specificeren wel concrete termijnen: 3 weken vooraf indienen en 8 weken verwerkingstijd, terwijl de originele tekst geen tijdsduur noemt.",
+          "source_urls": [
+            "https://www.culemborg.nl/straatartiest"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als de gemeente niet binnen de beslistermijn besluit op uw aanvraag of bezwaarschrift, dan kunt u de gemeente schriftelijk in gebreke stellen. Vanaf dat moment heeft de gemeente nog 2 weken om alsnog tot een besluit te komen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over de mogelijkheid tot ingebrekestelling en de daaropvolgende termijn van 2 weken voor de gemeente.",
+          "source_urls": [
+            "https://www.culemborg.nl/bezwaar-maken"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U krijgt binnen 6 of 12 weken antwoord. Het hangt af van de procedure hoe lang het duurt voor u antwoord krijgt.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de specifieke antwoordtermijnen bij bezwaren, terwijl de bron dit wel specificeert.",
+          "source_urls": [
+            "https://www.culemborg.nl/bezwaar-maken"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen vooral de specificatie van termijnen die in de originele tekst ontbreken. De bronnen zijn specifieker over aanvraag- en behandeltermijnen (3 weken vooraf, 8 weken behandeling), bezwaarprocedures (6-12 weken) en de mogelijkheid tot ingebrekestelling (2 weken). Deze concrete termijnen maken de procedures duidelijker dan in de originele tekst."
+  }
+}

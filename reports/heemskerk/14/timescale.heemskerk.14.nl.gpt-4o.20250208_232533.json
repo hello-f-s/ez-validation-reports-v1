@@ -1,0 +1,80 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HEEMSKERK",
+      "contact": {
+        "phone": "14 0251",
+        "email": "post@heemskerk.nl",
+        "website": "http://www.heemskerk.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Aanvragen kunnen worden ingediend via het e-mailadres post@heemskerk.nl.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Heemskerk moeten aanvragen voor gebruik openbare weg worden ingediend via het digitale aanvraagformulier op de website, niet via e-mail."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 6,
+    "invalid_urls": 1,
+    "accuracy_percentage": 85.7,
+    "valid_urls_list": [
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca/exploitatievergunning",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/vergunning-gebruik-openbare-weg",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca",
+      "https://www.heemskerk.nl/werk-inkomen-zorg-en-welzijn/gehandicaptenparkeerkaart-of-plaats-aanvragen",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/veelgestelde-vragen-omgevingsvergunning",
+      "https://heemskerk.nl"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://heemskerk.nl\">Gemeente",
+        "reason": "INVALID: Error scraping https://heemskerk.nl\">Gemeente: HTTPSConnectionPool(host='heemskerk.nl%22%3egemeente', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106900550>: Failed to resolve 'heemskerk.nl%22%3egemeente' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Wilt u de weg of een parkeerplek tijdelijk (deels) afsluiten? Vanwege verbouwing of verhuizing? Voor het gebruik de gemeentelijke wegen vraagt u een ontheffing of vergunning aan. Dit doet u via post@heemskerk.nl",
+          "original_reference": "Om een parkeervergunning of ontheffing aan te vragen, moet de weg of parkeerplek tijdelijk (deels) worden afgesloten, bijvoorbeeld vanwege verbouwing of verhuizing.",
+          "note": "De voorwaarden en het aanvraagproces komen overeen met de originele tekst",
+          "source_urls": [
+            "https://www.heemskerk.nl/belastingen-en-vergunningen/vergunning-gebruik-openbare-weg"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Duurt het langer dan 4 maanden? Dan moet er een verkeersbesluit komen, zodat andere mensen een bezwaar kunnen indienen.",
+          "original_reference": "Indien de afsluiting langer dan 4 maanden duurt, is er een verkeersbesluit nodig, zodat anderen bezwaar kunnen maken.",
+          "note": "De termijn voor het verkeersbesluit en de mogelijkheid tot bezwaar komen overeen",
+          "source_urls": [
+            "https://www.heemskerk.nl/belastingen-en-vergunningen/vergunning-gebruik-openbare-weg"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse van de bronnen blijkt dat alle informatie in de originele tekst consistent is met de informatie op de website van de gemeente Heemskerk. De voorwaarden, aanvraagprocedure, contactgegevens en termijnen komen overeen. Er zijn geen significante verschillen of tegenstrijdigheden gevonden."
+  }
+}

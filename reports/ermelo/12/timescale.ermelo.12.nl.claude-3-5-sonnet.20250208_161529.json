@@ -1,0 +1,100 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ERMELO",
+      "contact": {
+        "phone": "(0341) 56 73 21",
+        "email": "gemeente@ermelo.nl",
+        "website": "http://www.ermelo.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 9,
+    "false_sentences": 2,
+    "accuracy_percentage": 81.8,
+    "false_statements": [
+      {
+        "sentence": "U kunt een vergunningcheck doen, een melding indienen of meteen een omgevingsvergunning aanvragen via het Omgevingsloket DSO (Digitaal Stelsel Omgevingswet): https://www.omgevingsloketzuid.nl/?sourceurl=Wonen%20en%20levenSluitelementhttps://www.omgevingsloketzuid.nl/?sourceurl=Wonen%20en%20levenSluitelement",
+        "status": "false",
+        "note": "De URL is onjuist. De gemeente Ermelo gebruikt het landelijke Omgevingsloket Online via omgevingsloket.nl voor aanvragen en meldingen."
+      },
+      {
+        "sentence": "Voor een regulier conceptverzoek betaalt u € 150, voor een uitgebreid conceptverzoek € 2500.",
+        "status": "false",
+        "note": "Deze bedragen komen niet overeen met de actuele tarieven van de gemeente Ermelo voor conceptverzoeken zoals vermeld op de officiële website."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 4,
+    "invalid_urls": 3,
+    "accuracy_percentage": 57.1,
+    "valid_urls_list": [
+      "https://www.ermelo.nl/omgevingsplein/omgevingsloket/conceptverzoek-aanvragen",
+      "https://www.ermelo.nl/omgevingsplein/omgevingsloket/omgevingsvergunning-aanvragen",
+      "https://www.ermelo.nl/omgevingsplein/omgevingsloket",
+      "https://www.ermelo.nl/omgevingsplein/bouwen-en-verbouwen/start-controle-en-gereedmelding-bouw"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.omgevingsloketzuid.nl/?sourceurl=Wonen%20en%20levenSluitelementhttps://www.omgevingsloketzuid.nl/?sourceurl=Wonen%20en%20levenSluitelement\"",
+        "reason": "INVALID: Error scraping https://www.omgevingsloketzuid.nl/?sourceurl=Wonen%20en%20levenSluitelementhttps://www.omgevingsloketzuid.nl/?sourceurl=Wonen%20en%20levenSluitelement\": HTTPSConnectionPool(host='www.omgevingsloketzuid.nl', port=443): Max retries exceeded with url: /?sourceurl=Wonen%20en%20levenSluitelementhttps://www.omgevingsloketzuid.nl/?sourceurl=Wonen%20en%20levenSluitelement%22 (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x103670550>: Failed to resolve 'www.omgevingsloketzuid.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.omgevingsloketzuid.nl/?sourceurl=Wonen%20en%20levenSluitelementhttps://www.omgevingsloketzuid.nl/?sourceurl=Wonen%20en%20levenSluitelement",
+        "reason": "INVALID: Error scraping https://www.omgevingsloketzuid.nl/?sourceurl=Wonen%20en%20levenSluitelementhttps://www.omgevingsloketzuid.nl/?sourceurl=Wonen%20en%20levenSluitelement: HTTPSConnectionPool(host='www.omgevingsloketzuid.nl', port=443): Max retries exceeded with url: /?sourceurl=Wonen%20en%20levenSluitelementhttps://www.omgevingsloketzuid.nl/?sourceurl=Wonen%20en%20levenSluitelement (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x103537390>: Failed to resolve 'www.omgevingsloketzuid.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.ermelo.nl/omgevingsplein/omgevingsloket/contact-over-bouwen-en-verbouwen",
+        "reason": "INVALID: Error scraping https://www.ermelo.nl/omgevingsplein/omgevingsloket/contact-over-bouwen-en-verbouwen: 404 Client Error: Not Found for url: https://www.ermelo.nl/omgevingsplein/omgevingsloket/contact-over-bouwen-en-verbouwen"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Betrek de omgeving vroeg bij een bouwplan. Dit vergroot de haalbaarheid van uw plan en voorkomt vaak bezwaren in een latere stap in het proces.",
+          "original_reference": "No matching information",
+          "note": "De bronnen bevatten belangrijke aanvullende informatie over het betrekken van de omgeving bij bouwplannen, wat niet genoemd wordt in de originele tekst",
+          "source_urls": [
+            "https://www.ermelo.nl/omgevingsplein/omgevingsloket/omgevingsvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Complex of niet complex verzoek - uw conceptverzoek wordt beoordeeld op complexiteit. Niet complexe verzoeken hebben een kortere behandeltijd dan complexe verzoeken.",
+          "original_reference": "Voor een regulier conceptverzoek krijgt u binnen 8 weken een uitslag. Voor een uitgebreid conceptverzoek kan dit tot maximaal 26 weken duren.",
+          "note": "De bronnen gebruiken andere terminologie (complex/niet-complex versus regulier/uitgebreid) en specificeren het beoordelingsproces anders",
+          "source_urls": [
+            "https://www.ermelo.nl/omgevingsplein/omgevingsloket/conceptverzoek-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De start van de bouw meldt u op zijn laatst 2 werkdagen van tevoren. Bent u klaar met bouwen? Dan doet u een gereedmelding. Dat doet u op zijn laatst op de 1e werkdag nadat u klaar bent.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de verplichte start- en gereedmelding van bouwwerkzaamheden",
+          "source_urls": [
+            "https://www.ermelo.nl/omgevingsplein/bouwen-en-verbouwen/start-controle-en-gereedmelding-bouw"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie die niet in de originele tekst staat, waaronder de verplichting om de omgeving te betrekken bij bouwplannen, een andere beschrijving van het beoordelingsproces voor conceptverzoeken, en specifieke meldingsverplichtingen voor de start en afronding van bouwwerkzaamheden. Deze informatie is essentieel voor een complete beschrijving van het vergunningsproces."
+  }
+}

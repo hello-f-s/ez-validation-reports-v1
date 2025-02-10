@@ -1,0 +1,71 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MAASDRIEL",
+      "contact": {
+        "phone": "14 0418",
+        "email": "info@maasdriel.nl",
+        "website": "http://www.maasdriel.nl"
+      }
+    },
+    "service": {
+      "id": 16,
+      "name": "Registreren in het Landelijk Register Kinderopvang (LRK)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Het proces van aanmelden tot registratie duurt maximaal 10 weken.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Maasdriel moet de gemeente binnen 14 weken een besluit nemen over de aanvraag voor registratie in het LRK, niet binnen 10 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 0,
+    "invalid_urls": 7,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.maasdriel.nl/inwoner-en-ondernemer/bouwen-en-verbouwen/wegwijzer-omgevingsloket/vergunning-bedrijf-aan-huis",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.maasdriel.nl/inwoner-en-ondernemer/hulp-en-ondersteuning/kindregeling",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://website-url.com\">Kinderopvang",
+        "reason": "INVALID: Error scraping https://website-url.com\">Kinderopvang: HTTPSConnectionPool(host='website-url.com%22%3ekinderopvang', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10a32d1d0>: Failed to resolve 'website-url.com%22%3ekinderopvang' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.maasdriel.nl/inwoner-en-ondernemer/jeugd-en-onderwijs/scholen-en-kinderopvang/kinderopvang",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://website-url.com",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.maasdriel.nl/inwoner-en-ondernemer/jeugd-en-onderwijs/scholen-en-kinderopvang/peutertoeslag",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.maasdriel.nl/inwoner-en-ondernemer/paspoort-rijbewijs-en-uittreksels/uittreksel-basisregistratie-personen-voor-ondernemers",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  }
+}

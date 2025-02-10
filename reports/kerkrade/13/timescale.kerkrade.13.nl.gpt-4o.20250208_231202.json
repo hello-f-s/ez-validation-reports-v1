@@ -1,0 +1,108 @@
+{
+  "context": {
+    "municipality": {
+      "name": "KERKRADE",
+      "contact": {
+        "phone": "14 045",
+        "email": "gemeentehuis@kerkrade.nl",
+        "website": "http://www.kerkrade.nl"
+      }
+    },
+    "service": {
+      "id": 13,
+      "name": "Omzettingsvergunning voor kamerverhuur aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 20,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.2,
+    "false_statements": [
+      {
+        "sentence": "Voor een gewone aanvraag geldt een beslistermijn van 8 weken.",
+        "status": "false",
+        "note": "Volgens de officiële website van Gemeente Kerkrade geldt voor een reguliere procedure een beslistermijn van maximaal 8 weken vanaf de ontvangst van een complete aanvraag. De termijn begint pas te lopen als de aanvraag volledig is, niet direct bij indiening."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 11,
+    "valid_urls": 5,
+    "invalid_urls": 6,
+    "accuracy_percentage": 45.5,
+    "valid_urls_list": [
+      "https://www.kerkrade.nl/gemeente-kerkrade-helpt-u-bij-de-omgevingswet",
+      "https://www.kerkrade.nl/vergunning-checken-en-vooroverleg",
+      "https://www.kerkrade.nl/exploitatievergunning-horecabedrijf",
+      "https://www.kerkrade.nl/omgevingsvergunning",
+      "https://www.kerkrade.nl/milieu-vergunning-of-melding"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://example.com/milieu-vergunning",
+        "reason": "INVALID: Error scraping https://example.com/milieu-vergunning: 404 Client Error: Not Found for url: https://example.com/milieu-vergunning"
+      },
+      {
+        "url": "https://example.com/omgevingsvergunning-titel",
+        "reason": "INVALID: Error scraping https://example.com/omgevingsvergunning-titel: 404 Client Error: Not Found for url: https://example.com/omgevingsvergunning-titel"
+      },
+      {
+        "url": "https://example.com/principe-aanvraag\">Gemeente",
+        "reason": "INVALID: Error scraping https://example.com/principe-aanvraag\">Gemeente: 404 Client Error: Not Found for url: https://example.com/principe-aanvraag%22%3EGemeente"
+      },
+      {
+        "url": "https://example.com/principe-aanvraag",
+        "reason": "INVALID: Error scraping https://example.com/principe-aanvraag: 404 Client Error: Not Found for url: https://example.com/principe-aanvraag"
+      },
+      {
+        "url": "https://example.com/milieu-vergunning\">Gemeente",
+        "reason": "INVALID: Error scraping https://example.com/milieu-vergunning\">Gemeente: 404 Client Error: Not Found for url: https://example.com/milieu-vergunning%22%3EGemeente"
+      },
+      {
+        "url": "https://example.com/omgevingsvergunning-titel\">Gemeente",
+        "reason": "INVALID: Error scraping https://example.com/omgevingsvergunning-titel\">Gemeente: 404 Client Error: Not Found for url: https://example.com/omgevingsvergunning-titel%22%3EGemeente"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De omgevingsbalie is vanaf januari elke donderdag van 09:00-12:00 en 16:00-18:00 geopend.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt geen specifieke openingstijden van de omgevingsbalie, terwijl dit belangrijke praktische informatie is voor aanvragers.",
+          "source_urls": [
+            "https://www.kerkrade.nl/gemeente-kerkrade-helpt-u-bij-de-omgevingswet"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De eigenaar of leidinggevende is minimaal 21 jaar oud en van onbesproken gedrag. De gemeente kan vragen om een Verklaring omtrent het gedrag (VOG).",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt geen leeftijdsvereiste of VOG-vereiste, wat belangrijke voorwaarden kunnen zijn voor bepaalde vergunningen.",
+          "source_urls": [
+            "https://www.kerkrade.nl/exploitatievergunning-horecabedrijf"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U doet er als initiatiefnemer goed aan om in een vroeg stadium contact te leggen met de gemeente, vooral als u een (ruimtelijk) plan heeft dat (veel) invloed heeft op de omgeving.",
+          "original_reference": "Het is raadzaam om voorafgaand aan de officiële aanvraag een vooroverleg te plannen met de gemeente om verrassingen te voorkomen.",
+          "note": "De brontext legt meer nadruk op de impact op de omgeving als reden voor vooroverleg, terwijl de originele tekst alleen spreekt over het voorkomen van verrassingen.",
+          "source_urls": [
+            "https://www.kerkrade.nl/vergunning-checken-en-vooroverleg"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen het ontbreken van specifieke praktische informatie in de originele tekst, zoals de openingstijden van de omgevingsbalie en specifieke leeftijds- en VOG-vereisten. Ook is er een nuanceverschil in de motivatie voor het vooroverleg. De bronnen bevatten meer gedetailleerde en praktische informatie die nuttig kan zijn voor aanvragers."
+  }
+}

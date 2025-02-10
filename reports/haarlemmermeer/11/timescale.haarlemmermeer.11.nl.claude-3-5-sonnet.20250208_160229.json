@@ -1,0 +1,80 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HAARLEMMERMEER",
+      "contact": {
+        "phone": "(0900) 18 52",
+        "email": "info@haarlemmermeer.nl",
+        "website": "http://www.haarlemmermeer.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "De gemeente neemt meestal binnen 8 weken een besluit.",
+        "status": "false",
+        "note": "Voor een reguliere procedure geldt een wettelijke beslistermijn van maximaal 8 weken, maar voor een uitgebreide procedure (wat vaak het geval is bij milieuvergunningen) geldt een termijn van 26 weken. Dit staat niet correct vermeld in de tekst."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://haarlemmermeergemeente.nl/omgevingsvergunning-milieu",
+      "https://haarlemmermeergemeente.nl/vergunningsvrij-bouwen",
+      "https://haarlemmermeergemeente.nl/kozijnwijziging",
+      "https://haarlemmermeergemeente.nl/kappen-van-een-boom"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://haarlemmermeergemeente.nl/dakterras",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Let op: soms zijn er nog andere regels waar uw bouwwerk aan moet voldoen. Denk bijvoorbeeld aan toestemming van de eigenaar van de grond of regels uit een koopovereenkomst. Dit controleert u zelf.",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden aanvullende belangrijke informatie over extra regels en vereiste toestemmingen die niet in de originele tekst staat vermeld.",
+          "source_urls": [
+            "https://haarlemmermeergemeente.nl/kozijnwijziging"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Heeft u een omgevingsvergunning nodig voor meerdere activiteiten? Deze activiteiten kunt u tegelijkertijd aanvragen",
+          "original_reference": "No matching information",
+          "note": "De bronnen specificeren expliciet dat meerdere activiteiten tegelijk kunnen worden aangevraagd, wat niet wordt vermeld in de originele tekst.",
+          "source_urls": [
+            "https://haarlemmermeergemeente.nl/kozijnwijziging",
+            "https://haarlemmermeergemeente.nl/kappen-van-een-boom",
+            "https://haarlemmermeergemeente.nl/vergunningsvrij-bouwen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten twee belangrijke aanvullingen op de originele tekst: (1) een waarschuwing over aanvullende regels en vereiste toestemmingen die men zelf moet controleren, en (2) de expliciete vermelding dat meerdere activiteiten tegelijk kunnen worden aangevraagd. Deze informatie ontbreekt in de originele tekst maar is wel relevant voor de aanvrager."
+  }
+}

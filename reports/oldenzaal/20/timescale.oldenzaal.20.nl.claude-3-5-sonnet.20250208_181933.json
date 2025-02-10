@@ -1,0 +1,87 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OLDENZAAL",
+      "contact": {
+        "phone": "(0541) 58 81 11",
+        "email": "info@oldenzaal.nl",
+        "website": "http://www.oldenzaal.nl"
+      }
+    },
+    "service": {
+      "id": 20,
+      "name": "Vergunning voor seksbedrijf"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 8,
+    "true_sentences": 7,
+    "false_sentences": 1,
+    "accuracy_percentage": 87.5,
+    "false_statements": [
+      {
+        "sentence": "De exploitatievergunning kan online worden aangevraagd via het Omgevingsloket.",
+        "status": "false",
+        "note": "Een exploitatievergunning voor een seksinrichting kan niet via het Omgevingsloket worden aangevraagd in Oldenzaal. Deze vergunning moet rechtstreeks bij de gemeente worden aangevraagd."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.oldenzaal.nl/vergunningen-ondernemers",
+      "https://www.oldenzaal.nl/standplaatsvergunning",
+      "https://www.oldenzaal.nl/exploitatievergunning",
+      "https://www.oldenzaal.nl/omgevingsvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.oldenzaal.nl/bouwen-en-verbouwen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u een horecaonderneming start, uitbreidt of overneemt, heeft u een exploitatievergunning nodig.",
+          "original_reference": "Een exploitatievergunning is vereist voor het runnen van een seksinrichting of seksbedrijf",
+          "note": "De bronnen vermelden alleen horecaondernemingen als vergunningplichtig, terwijl de originele tekst specifiek over seksinrichtingen spreekt. Dit is een belangrijk inhoudelijk verschil in de reikwijdte van de vergunningplicht.",
+          "source_urls": [
+            "https://www.oldenzaal.nl/exploitatievergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Neem dan contact met ons op, zodat we met u een afspraak kunnen maken voor een vooroverleg.",
+          "original_reference": "De exploitatievergunning kan online worden aangevraagd via het Omgevingsloket.",
+          "note": "De aanvraagprocedure verschilt: de bron vereist eerst een vooroverleg, terwijl de originele tekst direct online aanvragen noemt.",
+          "source_urls": [
+            "https://www.oldenzaal.nl/exploitatievergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "In dit overleg gaan we onder andere de volgende punten met u bespreken: Inschrijving KVK, Rechtsvorm, Wet Bibob, Milieubelastende activiteiten, Brandveiligheid, Terras",
+          "original_reference": "Bibob-vragenformulier (verplicht bij nieuwe horeca/seksinrichting)",
+          "note": "De bron noemt meer specifieke vereisten en onderwerpen die besproken worden tijdens het vooroverleg dan alleen de Bibob-toets uit de originele tekst.",
+          "source_urls": [
+            "https://www.oldenzaal.nl/exploitatievergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de reikwijdte van de vergunningplicht (horeca vs. seksinrichtingen), de aanvraagprocedure (vooroverleg vs. direct online) en de uitgebreidere lijst van vereisten in de bronnen. De informatie in de originele tekst lijkt niet volledig aan te sluiten bij de actuele gemeentelijke procedures en vereisten."
+  }
+}

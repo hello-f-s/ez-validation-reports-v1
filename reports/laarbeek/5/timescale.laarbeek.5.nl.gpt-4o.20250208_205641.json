@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LAARBEEK",
+      "contact": {
+        "phone": "(0492) 46 97 00",
+        "email": "gemeente@laarbeek.nl",
+        "website": "http://www.laarbeek.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor het aanvragen van een exploitatievergunning bedragen € 385,00 (tarief 2022).",
+        "status": "false",
+        "note": "Dit tarief is verouderd. De gemeente Laarbeek hanteert voor 2024 andere tarieven voor exploitatievergunningen. Het exacte bedrag is niet publiekelijk vindbaar op de gemeentelijke website, maar het genoemde tarief uit 2022 is niet meer actueel."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.laarbeek.nl/sluitingsuren-horeca",
+      "https://www.laarbeek.nl/horecabedrijf-beginnen",
+      "https://www.laarbeek.nl/bouwplannen-ingediend-bij-de-gemeente-inzage",
+      "https://www.laarbeek.nl/marktstandplaats-aanvragen",
+      "https://www.laarbeek.nl/standplaatsvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://laarbeek.nl)",
+        "reason": "INVALID: Error scraping https://laarbeek.nl): HTTPSConnectionPool(host='laarbeek.nl)', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x107b8c690>: Failed to resolve 'laarbeek.nl)' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U regelt een exploitatievergunning voor uw horecabedrijf persoonlijk op het gemeentehuis. U maakt hiervoor telefonisch een afspraak via telefoonnummer 0492 469 700. Er komt veel kijken bij het beginnen van een horecabedrijf. Wij informeren u graag over de mogelijkheden binnen het bestemmingsplan, de eisen vanuit de Algemeen Plaatselijke Verordening (APV) en alle andere informatie die van belang is voor uw aanvraag.",
+          "original_reference": "De exploitatievergunning regel je persoonlijk op het gemeentehuis door telefonisch een afspraak te maken via telefoonnummer 0492 469 700.",
+          "note": "De bronpagina bevat aanvullende belangrijke informatie over de APV en extra begeleiding die niet in de originele tekst staat vermeld.",
+          "source_urls": [
+            "https://www.laarbeek.nl/horecabedrijf-beginnen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vastgestelde openingstijden horeca in gemeente Laarbeek: Vrijdag- en zaterdagavond tot maximaal 02.00 uur, Zondag- t/m donderdagavond tot maximaal 01.00 uur",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de vastgestelde openingstijden van horeca, terwijl dit essentiële informatie is voor horecaondernemers.",
+          "source_urls": [
+            "https://www.laarbeek.nl/sluitingsuren-horeca"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor verlenging per uur of een gedeelte daarvan betaalt u € 68,00. Voor verlenging van één uur per dag gedurende een jaar of onbepaalde tijd betaalt u € 556,00.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist informatie over de kosten voor verlenging van openingstijden, wat relevant is voor horecaondernemers.",
+          "source_urls": [
+            "https://www.laarbeek.nl/sluitingsuren-horeca"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten belangrijke aanvullende informatie die ontbreekt in de originele tekst, waaronder specifieke openingstijden voor horeca, kosten voor verlengde openingstijden en extra details over de aanvraagprocedure en begeleiding vanuit de gemeente. Deze informatie is essentieel voor horecaondernemers die een bedrijf willen starten of exploiteren in Laarbeek."
+  }
+}

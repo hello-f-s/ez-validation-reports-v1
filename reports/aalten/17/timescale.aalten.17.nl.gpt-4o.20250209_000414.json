@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AALTEN",
+      "contact": {
+        "phone": "(0543) 49 33 33",
+        "email": "gemeente@aalten.nl",
+        "website": "http://www.aalten.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 10,
+    "false_sentences": 1,
+    "accuracy_percentage": 90.9,
+    "false_statements": [
+      {
+        "sentence": "U ontvangt binnen 8 weken bericht of u de vergunning krijgt.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Aalten is de wettelijke beslistermijn voor een terrasvergunning maximaal 12 weken, niet 8 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.aalten.nl/bedrijfspandbedrijventerrein-huren-of-kopen",
+      "https://www.aalten.nl/standplaats-aanvragen",
+      "https://www.aalten.nl/terras-plaatsen",
+      "https://www.aalten.nl/exploitatievergunning-horecabedrijf",
+      "https://www.aalten.nl/omgevingsvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.gemeenteaalten.nl)",
+        "reason": "INVALID: Error scraping https://www.gemeenteaalten.nl): HTTPSConnectionPool(host='www.gemeenteaalten.nl)', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10778b250>: Failed to resolve 'www.gemeenteaalten.nl)' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor het houden van een terras of uitstalling is in beginsel geen ontheffing nodig, wanneer u aan de algemene eisen voldoet, zoals deze in de Algemene Plaatselijke verordening (APV) worden genoemd.",
+          "original_reference": "U heeft in beginsel geen ontheffing nodig als u voldoet aan de algemene eisen zoals genoemd in de Algemene Plaatselijke Verordening (APV).",
+          "note": "De brontekst specificeert expliciet dat dit geldt voor 'het houden van een terras of uitstalling', wat meer context geeft dan de originele tekst.",
+          "source_urls": [
+            "https://www.aalten.nl/terras-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "het terras wordt ingericht aansluitend aan het pand waarin het horecabedrijf",
+          "original_reference": "No matching information",
+          "note": "De bron vermeldt een extra voorwaarde dat het terras direct moet aansluiten op het horecapand. Deze voorwaarde ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.aalten.nl/terras-plaatsen"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "U ontvangt binnen 8 weken bericht of u de vergunning krijgt.",
+          "original_reference": "U ontvangt binnen 8 weken bericht of u de vergunning krijgt.",
+          "note": "De behandeltermijn van 8 weken is consistent in beide bronnen.",
+          "source_urls": [
+            "https://www.aalten.nl/terras-plaatsen"
+          ]
+        }
+      ]
+    },
+    "summary": "De broninhoud komt grotendeels overeen met de originele tekst, maar bevat enkele belangrijke aanvullingen. Met name de specificatie dat het terras direct moet aansluiten op het horecapand is een belangrijke voorwaarde die niet in de originele tekst staat vermeld. Ook geeft de brontekst meer context over het type gebruik (terras of uitstalling) waarvoor de regels gelden."
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LOPIK",
+      "contact": {
+        "phone": "(0348) 55 99 55",
+        "email": "gemeente@lopik.nl",
+        "website": "http://www.lopik.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "U krijgt binnen 8 weken bericht. Vraagt u de vergunning aan voor een vereniging of stichting? Dan krijgt u binnen 6 maanden bericht.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Lopik krijgt men binnen 12 weken bericht over een alcoholwetvergunning, niet binnen 8 weken. Voor verenigingen en stichtingen geldt inderdaad wel de termijn van 6 maanden."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.lopik.nl/openingstijden-horeca-eenmalig-aanpassen",
+      "https://www.lopik.nl/alcohol-schenken-tijdens-evenement",
+      "https://www.lopik.nl/exploitatievergunning-horecabedrijf",
+      "https://www.lopik.nl/milieu-vergunning-of-melding",
+      "https://www.lopik.nl/alcoholvergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor verenigingen en stichtingen die alcohol verkopen gelden extra voorwaarden: huisregels ophangen in kantines, cursussen voor barvrijwilligers, opstellen van een bestuursreglement (in verband met sociale hygiëne)",
+          "original_reference": "Officieel bestuursreglement (alleen voor verenigingen en stichtingen)",
+          "note": "De bronpagina noemt twee extra voorwaarden voor verenigingen/stichtingen die niet in de originele tekst staan: huisregels ophangen en cursussen voor barvrijwilligers",
+          "source_urls": [
+            "https://www.lopik.nl/alcoholvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De gemeente kan vragen om een Verklaring omtrent het gedrag (VOG)",
+          "original_reference": "Alle leidinggevenden moeten van goed gedrag zijn",
+          "note": "De bronpagina specificeert dat een VOG kan worden gevraagd, wat een concrete invulling is van 'goed gedrag' die niet in de originele tekst wordt genoemd",
+          "source_urls": [
+            "https://www.lopik.nl/exploitatievergunning-horecabedrijf"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De gemeente toetst met behulp van het Ministerie van Justitie en Veiligheid of de leidinggevende(n) in niet enig opzicht slecht van gedrag is/zijn",
+          "original_reference": "Alle leidinggevenden moeten van goed gedrag zijn",
+          "note": "De bronpagina specificeert dat de toetsing gebeurt via het Ministerie van Justitie en Veiligheid, wat een belangrijk procedureel detail is dat niet in de originele tekst staat",
+          "source_urls": [
+            "https://www.lopik.nl/alcohol-schenken-tijdens-evenement"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten enkele belangrijke aanvullende details die niet in de originele tekst staan. Met name voor verenigingen en stichtingen gelden extra voorwaarden die niet volledig worden genoemd in de originele tekst. Ook wordt er in de bronnen specifieker ingegaan op de controle van 'goed gedrag' via een mogelijke VOG-aanvraag en toetsing door het Ministerie van Justitie en Veiligheid. Deze details maken de voorwaarden en procedures concreter dan in de originele tekst."
+  }
+}

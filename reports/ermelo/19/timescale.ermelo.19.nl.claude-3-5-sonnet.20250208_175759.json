@@ -1,0 +1,95 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ERMELO",
+      "contact": {
+        "phone": "(0341) 56 73 21",
+        "email": "gemeente@ermelo.nl",
+        "website": "http://www.ermelo.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "De kosten zijn als volgt: 1 gokautomaat: € 56,50 per jaar, 2 gokautomaten: € 90,50 per jaar",
+        "status": "false",
+        "note": "De genoemde bedragen zijn niet correct volgens de actuele legesverordening van de gemeente Ermelo. De exacte tarieven voor kansspelautomatenvergunningen zijn anders dan de genoemde bedragen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 4,
+    "invalid_urls": 3,
+    "accuracy_percentage": 57.1,
+    "valid_urls_list": [
+      "https://www.ermelo.nl/evenementen-en-horeca/horeca-en-alcohol/speelautomaat-plaatsen",
+      "https://www.ermelo.nl/evenementen-en-horeca/horeca-en-alcohol",
+      "https://www.ermelo.nl/evenementen-en-horeca",
+      "https://www.ermelo.nl/evenementen-en-horeca/evenement-of-activiteit-organiseren"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.ermelo.nl/evenementen-en-horeca/evenement-of-activiteit-organiseren/bingo-loterij-of-prijsvraag-organiseren",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.ermelo.nl/vergunningen-en-belastingen/alle-vergunningen/vergunningen-rond-alcoholbeleid-horeca-en-evenementen/speelautomaat-plaatsen_43519/documenten/formulier-aanvraag-speelautomaten.pdf",
+        "reason": "INVALID: Error scraping https://www.ermelo.nl/vergunningen-en-belastingen/alle-vergunningen/vergunningen-rond-alcoholbeleid-horeca-en-evenementen/speelautomaat-plaatsen_43519/documenten/formulier-aanvraag-speelautomaten.pdf: 404 Client Error: Not Found for url: https://www.ermelo.nl/vergunningen-en-belastingen/alle-vergunningen/vergunningen-rond-alcoholbeleid-horeca-en-evenementen/speelautomaat-plaatsen_43519/documenten/formulier-aanvraag-speelautomaten.pdf"
+      },
+      {
+        "url": "https://www.ermelo.nl/vergunningen-en-belastingen/alle-vergunningen/vergunningen-rond-alcoholbeleid-horeca-en-evenementen/speelautomaat-plaatsen_43519/documenten/formulier-aanvraag-speelautomaten.pdf\"",
+        "reason": "INVALID: Error scraping https://www.ermelo.nl/vergunningen-en-belastingen/alle-vergunningen/vergunningen-rond-alcoholbeleid-horeca-en-evenementen/speelautomaat-plaatsen_43519/documenten/formulier-aanvraag-speelautomaten.pdf\": 404 Client Error: Not Found for url: https://www.ermelo.nl/vergunningen-en-belastingen/alle-vergunningen/vergunningen-rond-alcoholbeleid-horeca-en-evenementen/speelautomaat-plaatsen_43519/documenten/formulier-aanvraag-speelautomaten.pdf%22"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De eigenaar van een gok- of kansspelautomaat moet hiervoor een exploitatievergunning hebben. Deze is aan te vragen bij de Kansspelautoriteit",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist een belangrijke voorwaarde dat de eigenaar van de automaat een exploitatievergunning van de Kansspelautoriteit moet hebben",
+          "source_urls": [
+            "https://www.ermelo.nl/evenementen-en-horeca/horeca-en-alcohol/speelautomaat-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Geef de gemeente door als er iets verandert in uw exploitatie. Voorbeelden van veranderingen: De gok- of kansspelautomaat krijgt een andere eigenaar. U wilt meer of minder gok- of kansspelautomaten in uw zaak plaatsen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de verplichting om wijzigingen in de exploitatie door te geven aan de gemeente",
+          "source_urls": [
+            "https://www.ermelo.nl/evenementen-en-horeca/horeca-en-alcohol/speelautomaat-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor behendigheidsautomaten zoals een flipperkast is geen vergunning nodig",
+          "original_reference": "No matching information",
+          "note": "De originele tekst maakt geen onderscheid tussen gokautomaten en behendigheidsautomaten en vermeldt niet dat voor behendigheidsautomaten geen vergunning nodig is",
+          "source_urls": [
+            "https://www.ermelo.nl/evenementen-en-horeca/horeca-en-alcohol/speelautomaat-plaatsen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronwebsite bevat drie belangrijke aanvullende voorwaarden die niet in de originele tekst staan: de vereiste exploitatievergunning van de Kansspelautoriteit voor automaat-eigenaren, de meldplicht bij wijzigingen in de exploitatie, en de verduidelijking dat behendigheidsautomaten geen vergunning nodig hebben. Deze informatie is essentieel voor een complete en correcte weergave van de vergunningseisen."
+  }
+}

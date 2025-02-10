@@ -1,0 +1,87 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LOPIK",
+      "contact": {
+        "phone": "(0348) 55 99 55",
+        "email": "gemeente@lopik.nl",
+        "website": "http://www.lopik.nl"
+      }
+    },
+    "service": {
+      "id": 13,
+      "name": "Omzettingsvergunning voor kamerverhuur aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Voor reguliere aanvragen ontvangt u binnen 8 weken bericht, welke termijn met 6 weken kan worden verlengd.",
+        "status": "false",
+        "note": "Volgens de gemeente Lopik geldt voor reguliere aanvragen een beslistermijn van 8 weken die met maximaal 6 weken kan worden verlengd, maar de gemeente hanteert een servicetermijn van 4 weken voor eenvoudige aanvragen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 8,
+    "valid_urls": 5,
+    "invalid_urls": 3,
+    "accuracy_percentage": 62.5,
+    "valid_urls_list": [
+      "https://www.lopik.nl/milieu-vergunning-of-melding",
+      "https://www.lopik.nl/terras-plaatsen",
+      "https://www.lopik.nl/omgevingsvergunning",
+      "https://www.lopik.nl/huisvestingsvergunning",
+      "https://www.lopik.nl/omgevingsvergunning-strijdig-gebruik"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.omgevingswet.overheid.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.omgevingswet.overheid.nl\">www.omgevingswet.overheid.nl</a>,",
+        "reason": "INVALID: Error scraping https://www.omgevingswet.overheid.nl\">www.omgevingswet.overheid.nl</a>,: HTTPSConnectionPool(host='www.omgevingswet.overheid.nl%22%3ewww.omgevingswet.overheid.nl%3c', port=443): Max retries exceeded with url: /a%3E, (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x104bfc050>: Failed to resolve 'www.omgevingswet.overheid.nl%22%3ewww.omgevingswet.overheid.nl%3c' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.ruimtelijkeplannen.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Let op! Hebt u ook een omgevingsvergunning nodig voor bouwen? Dan hoeft u daar niet een aparte omgevingsvergunning voor aan te vragen. U doet 1 aanvraag voor het bouwen en het gebruik in strijd met het bestemmingsplan.",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden een belangrijke verduidelijking over gecombineerde aanvragen die niet in de originele tekst staat: bij zowel bouwen als strijdig gebruik kan dit in één aanvraag.",
+          "source_urls": [
+            "https://www.lopik.nl/omgevingsvergunning-strijdig-gebruik"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Gebruik van grond of een gebouw kan in strijd zijn met verschillende ruimtelijke plannen: bestemmingsplan, gemeentelijk uitwerkings- of wijzigingsplan, beheersverordening, exploitatieplan, regels provinciale verordening, regels AMvB, regels voorbereidingsbesluit",
+          "original_reference": "Als het gebruik van de ruimte als kamer verhuur in strijd is met het bestemmingsplan",
+          "note": "De bronnen geven een uitgebreidere lijst van ruimtelijke plannen waarmee gebruik in strijd kan zijn, terwijl de originele tekst alleen het bestemmingsplan noemt.",
+          "source_urls": [
+            "https://www.lopik.nl/omgevingsvergunning-strijdig-gebruik"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen aanvullende informatie die niet in de originele tekst staat: de mogelijkheid om verschillende vergunningaanvragen te combineren en een uitgebreidere lijst van relevante ruimtelijke plannen. Deze informatie maakt de procedures duidelijker voor aanvragers. De kernprocedures en termijnen zijn verder consistent tussen de bronnen en de originele tekst."
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "context": {
+    "municipality": {
+      "name": "CULEMBORG",
+      "contact": {
+        "phone": "(0345) 47 77 00",
+        "email": "info@culemborg.nl",
+        "website": "http://www.culemborg.nl"
+      }
+    },
+    "service": {
+      "id": 15,
+      "name": "Vergunning of ontheffing voor straatartiesten"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 9,
+    "true_sentences": 8,
+    "false_sentences": 1,
+    "accuracy_percentage": 88.9,
+    "false_statements": [
+      {
+        "sentence": "De geluidsontheffing moet schriftelijk worden aangevraagd, minimaal drie weken voor de benodigde datum.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Culemborg moet een geluidsontheffing minimaal 4 weken (niet 3 weken) voor de benodigde datum worden aangevraagd."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 8,
+    "valid_urls": 5,
+    "invalid_urls": 3,
+    "accuracy_percentage": 62.5,
+    "valid_urls_list": [
+      "https://www.culemborg.nl/vergunningen-en-ontheffingen",
+      "https://www.culemborg.nl/straatartiest",
+      "https://www.culemborg.nl/standplaatsvergunning",
+      "https://www.culemborg.nl/geluidsontheffing",
+      "https://www.culemborg.nl/omgevingsvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.culemborg.nl/straatartiest\">https://www.culemborg.nl/straatartiest</a></li>",
+        "reason": "INVALID: Error scraping https://www.culemborg.nl/straatartiest\">https://www.culemborg.nl/straatartiest</a></li>: 404 Client Error: Not Found for url: https://www.culemborg.nl/straatartiest%22%3Ehttps:/www.culemborg.nl/straatartiest%3C/a%3E%3C/li%3E"
+      },
+      {
+        "url": "https://www.culemborg.nl/gebruiksontheffing\">https://www.culemborg.nl/gebruiksontheffing</a></li>",
+        "reason": "INVALID: Error scraping https://www.culemborg.nl/gebruiksontheffing\">https://www.culemborg.nl/gebruiksontheffing</a></li>: 404 Client Error: Not Found for url: https://www.culemborg.nl/gebruiksontheffing%22%3Ehttps:/www.culemborg.nl/gebruiksontheffing%3C/a%3E%3C/li%3E"
+      },
+      {
+        "url": "https://www.culemborg.nl/gebruiksontheffing",
+        "reason": "INVALID: Error scraping https://www.culemborg.nl/gebruiksontheffing: 404 Client Error: Not Found for url: https://www.culemborg.nl/gebruiksontheffing"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "€ 53,50",
+          "original_reference": "Er zijn kosten verbonden aan de aanvraag van de geluidsontheffing, maar specifieke bedragen worden niet vermeld.",
+          "note": "De originele tekst vermeldt geen specifiek bedrag, terwijl de bronpagina's duidelijk aangeven dat een geluidsontheffing voor straatmuzikanten € 53,50 kost.",
+          "source_urls": [
+            "https://www.culemborg.nl/straatartiest",
+            "https://www.culemborg.nl/geluidsontheffing"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u de aanvraag te laat indient, kunnen we deze afwijzen of alsnog in behandeling nemen. We brengen dan extra kosten in rekening.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat te late aanvragen kunnen leiden tot extra kosten of mogelijk worden afgewezen. Dit is belangrijke aanvullende informatie voor aanvragers.",
+          "source_urls": [
+            "https://www.culemborg.nl/geluidsontheffing"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vul online het formulier in.",
+          "original_reference": "Schriftelijke aanvraag voor geluidsontheffing moet worden ingediend.",
+          "note": "De originele tekst spreekt alleen over een schriftelijke aanvraag, terwijl de bron aangeeft dat de aanvraag online kan worden ingediend.",
+          "source_urls": [
+            "https://www.culemborg.nl/geluidsontheffing"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn drie belangrijke verschillen gevonden tussen de originele tekst en de bronnen. Het belangrijkste verschil is dat de specifieke kosten (€ 53,50) wel worden vermeld in de bronnen maar niet in de originele tekst. Daarnaast ontbreekt informatie over mogelijke consequenties van te late aanvragen en wordt in de bronnen een online aanvraagmogelijkheid genoemd terwijl de originele tekst alleen spreekt over schriftelijke aanvragen. Deze verschillen maken de informatie in de bronnen completer en actueler dan de originele tekst."
+  }
+}

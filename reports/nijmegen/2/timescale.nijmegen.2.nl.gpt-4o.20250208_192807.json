@@ -1,0 +1,87 @@
+{
+  "context": {
+    "municipality": {
+      "name": "NIJMEGEN",
+      "contact": {
+        "phone": "14 024",
+        "email": "gemeente@nijmegen.nl",
+        "website": "http://www.nijmegen.nl"
+      }
+    },
+    "service": {
+      "id": 2,
+      "name": "Bord of spandoek plaatsen aan de openbare weg"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Kosten voor de vergunningaanvraag: € 116,10.",
+        "status": "false",
+        "note": "Het exacte bedrag voor de vergunningaanvraag is € 117,25 volgens de actuele legesverordening van de gemeente Nijmegen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.nijmegen.nl/diensten/vergunningen/standplaatsvergunningen/vergunning-standplaats-priveterrein/",
+      "https://www.nijmegen.nl/diensten/evenementen/schema-vergunningen-activiteiten/tekstversie/",
+      "https://www.nijmegen.nl/diensten/vergunningen/standplaatsvergunningen/",
+      "https://www.nijmegen.nl/diensten/vergunningen/objectvergunning/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.nijmegen.nl/diensten/vergunningen/informatiekraam-melden-of-vergunning/",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vraag de vergunning maximaal 16 weken en minimaal 8 weken van tevoren aan",
+          "original_reference": "Vraag de vergunning minimaal 8 weken van tevoren aan.",
+          "note": "De originele tekst vermeldt alleen de minimale termijn van 8 weken, terwijl de brontekst ook een maximale termijn van 16 weken specificeert.",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/vergunningen/objectvergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Op een horeca-terras mag u maximaal 3 keer per jaar een barbecue plaatsen",
+          "original_reference": "No matching information",
+          "note": "Deze specifieke beperking voor horecaterrassen ontbreekt volledig in de originele tekst.",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/vergunningen/objectvergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wat u bouwt of neerzet moet op minimaal 2,5 meter afstand van een gevel staan. Dit geldt ook voor marktkramen",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over minimale afstanden tot gevels.",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/vergunningen/standplaatsvergunningen/vergunning-standplaats-priveterrein/"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie die niet in de originele tekst staat, waaronder een maximale aanvraagtermijn van 16 weken, specifieke regels voor horecaterrassen en veiligheidsvoorschriften over minimale afstanden. Deze informatie is relevant voor een complete en accurate beschrijving van de vergunningsvereisten."
+  }
+}

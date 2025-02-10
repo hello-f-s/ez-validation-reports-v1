@@ -1,0 +1,102 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OPMEER",
+      "contact": {
+        "phone": "(0226) 36 33 33",
+        "email": "gemeente@opmeer.nl",
+        "website": "http://www.opmeer.nl"
+      }
+    },
+    "service": {
+      "id": 8,
+      "name": "Marktvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 9,
+    "false_sentences": 3,
+    "accuracy_percentage": 75.0,
+    "false_statements": [
+      {
+        "sentence": "Voor de braderie/jaarmarkt schrijft u zich in bij Holland International Reisbureau Opmeer.",
+        "status": "false",
+        "note": "Dit is onjuist. Volgens de officiële website van gemeente Opmeer dient men zich voor markten en braderieën in te schrijven bij de gemeente zelf, niet bij een reisbureau."
+      },
+      {
+        "sentence": "Het tarief bedraagt voor het in behandeling nemen van een aanvraag om een standplaatsvergunning als bedoeld in artikel 5 van de Marktverordening gemeente Opmeer:",
+        "status": "false",
+        "note": "De genoemde tarieven komen niet overeen met de actuele tarieven op de website van gemeente Opmeer. De tarieven moeten worden geverifieerd bij de gemeente."
+      },
+      {
+        "sentence": "Voor jaarmarkt ('lappendag'): €52,05 per 4m1 kraam per dag",
+        "status": "false",
+        "note": "Dit tarief is niet actueel en komt niet overeen met de huidige tarieven zoals vermeld op de website van gemeente Opmeer."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.opmeer.nl/marktplaats-aanvragen",
+      "https://www.opmeer.nl/omgevingsvergunning",
+      "https://www.opmeer.nl/exploitatievergunning-horecabedrijf",
+      "https://www.opmeer.nl/standplaats-aanvragen",
+      "https://www.opmeer.nl/loterij-prijsvraag-bingo-organiseren"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 4,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "In Opmeer is een weekmarkt op elke dinsdag van 10.00 uur tot 16.00 uur.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt geen specifieke markttijden, terwijl de bron deze wel specificeert",
+          "source_urls": [
+            "https://www.opmeer.nl/marktplaats-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De braderie/jaarmarkt wordt georganiseerd door de winkeliersvereniging Spanbroek/Opmeer",
+          "original_reference": "Voor de braderie/jaarmarkt schrijft u zich in bij Holland International Reisbureau Opmeer",
+          "note": "De originele tekst vermeldt alleen het inschrijfpunt, terwijl de bron specificeert wie de organisator is",
+          "source_urls": [
+            "https://www.opmeer.nl/marktplaats-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "€52,65 per standplaats voor een dag",
+          "original_reference": "€52,05 per 4m1 kraam per dag",
+          "note": "Er is een verschil in het dagtarief tussen de standplaatsvergunning en de marktvergunning, en de eenheden verschillen ook",
+          "source_urls": [
+            "https://www.opmeer.nl/standplaats-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U ontvangt binnen 8 weken bericht of u de vergunning krijgt",
+          "original_reference": "Niet specifiek vermeld",
+          "note": "De bron vermeldt een specifieke behandeltermijn die ontbreekt in de originele tekst",
+          "source_urls": [
+            "https://www.opmeer.nl/standplaats-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de specifieke markttijden die wel in de bron staan maar niet in de originele tekst, verschillende tarieven voor standplaatsen versus marktkramen, en aanvullende informatie over de organisatie van de braderie/jaarmarkt. Ook is er in de bron een duidelijke behandeltermijn van 8 weken genoemd die ontbreekt in de originele tekst."
+  }
+}

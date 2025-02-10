@@ -1,0 +1,97 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LAARBEEK",
+      "contact": {
+        "phone": "(0492) 46 97 00",
+        "email": "gemeente@laarbeek.nl",
+        "website": "http://www.laarbeek.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Bij vragen kunt u contact opnemen met de Omgevingsdienst Zuidoost Brabant (ODZOB).",
+        "status": "false",
+        "note": "Voor vragen over omgevingsvergunningen moet men contact opnemen met de gemeente Laarbeek zelf, niet direct met de ODZOB. De ODZOB voert wel taken uit voor de gemeente maar is niet het eerste aanspreekpunt voor aanvragers."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 9,
+    "valid_urls": 6,
+    "invalid_urls": 3,
+    "accuracy_percentage": 66.7,
+    "valid_urls_list": [
+      "https://www.laarbeek.nl/omgevingsvergunning",
+      "https://www.laarbeek.nl/bedrijfsactiviteiten-veranderen",
+      "https://www.laarbeek.nl/bouwplannen-ingediend-bij-de-gemeente-inzage",
+      "https://www.laarbeek.nl/milieu-vergunning-of-melding",
+      "https://www.laarbeek.nl/reclame-uitingen-plaatsen-omgevingsvergunning",
+      "https://www.laarbeek.nl"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.laarbeek.nl\">Gemeente",
+        "reason": "INVALID: Error scraping https://www.laarbeek.nl\">Gemeente: HTTPSConnectionPool(host='www.laarbeek.nl%22%3egemeente', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x105a57b10>: Failed to resolve 'www.laarbeek.nl%22%3egemeente' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.eherkenning.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.eherkenning.nl\">de",
+        "reason": "INVALID: Error scraping https://www.eherkenning.nl\">de: HTTPSConnectionPool(host='www.eherkenning.nl%22%3ede', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x105a56710>: Failed to resolve 'www.eherkenning.nl%22%3ede' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor reclameborden aan een pand die groter zijn dan een 0,5 m2, hebt u een omgevingsvergunning nodig.",
+          "original_reference": "het maken en aanbrengen van reclame (zoals een reclamebord) of dit als eigenaar toestaan",
+          "note": "De originele tekst specificeert geen minimale afmetingen voor vergunningplicht, terwijl de bron aangeeft dat alleen reclameborden groter dan 0,5 m2 vergunningplichtig zijn",
+          "source_urls": [
+            "https://www.laarbeek.nl/reclame-uitingen-plaatsen-omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De Omgevingsdienst Zuidoost Brabant (ODZOB) behandelt aanvragen voor een omgevingsvergunning voor de gemeente Laarbeek",
+          "original_reference": "Bij vragen kunt u contact opnemen met de Omgevingsdienst Zuidoost Brabant (ODZOB)",
+          "note": "De bron specificeert dat ODZOB de aanvragen behandelt, terwijl in de originele tekst ODZOB alleen genoemd wordt voor vragen",
+          "source_urls": [
+            "https://www.laarbeek.nl/milieu-vergunning-of-melding"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Deze worden gepubliceerd in de MooiLaarbeekkrant",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over waar vergunningen worden gepubliceerd, terwijl de bron specificeert dat dit in de MooiLaarbeekkrant gebeurt",
+          "source_urls": [
+            "https://www.laarbeek.nl/bouwplannen-ingediend-bij-de-gemeente-inzage"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de specificatie van de minimale afmetingen voor vergunningplichtige reclameborden, de rol van ODZOB bij vergunningaanvragen, en de publicatie van vergunningen in de MooiLaarbeekkrant. Deze details maken de voorwaarden en procedures specifieker dan in de originele tekst vermeld."
+  }
+}

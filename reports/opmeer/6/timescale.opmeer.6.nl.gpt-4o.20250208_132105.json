@@ -1,0 +1,80 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OPMEER",
+      "contact": {
+        "phone": "(0226) 36 33 33",
+        "email": "gemeente@opmeer.nl",
+        "website": "http://www.opmeer.nl"
+      }
+    },
+    "service": {
+      "id": 6,
+      "name": "Integriteitsonderzoek (Wet Bibob)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Voor het uitvoeren van een BIBOB-toets worden geen leges in rekening gebracht.",
+        "status": "false",
+        "note": "Deze informatie is niet correct voor gemeente Opmeer. De gemeente Opmeer vermeldt op haar website niet expliciet dat er geen leges worden gerekend voor BIBOB-toetsen. Veel gemeenten brengen wel degelijk legeskosten in rekening voor BIBOB-onderzoeken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 6,
+    "invalid_urls": 1,
+    "accuracy_percentage": 85.7,
+    "valid_urls_list": [
+      "https://www.opmeer.nl",
+      "https://www.opmeer.nl/informatie-over-beleid-of-besluiten-opvragen-who-verzoek",
+      "https://www.opmeer.nl/wet-bibob-opmeer",
+      "https://www.opmeer.nl/informatie-opvragen-bij-de-gemeente-woo",
+      "https://www.opmeer.nl/form/aanvraagformulier-woo-verzoek",
+      "https://www.opmeer.nl/openbaar-gemaakte-informatie-van-de-gemeente-opmeer-woo"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.opmeer.nl\">Gemeente",
+        "reason": "INVALID: Error scraping https://www.opmeer.nl\">Gemeente: HTTPSConnectionPool(host='www.opmeer.nl%22%3egemeente', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x105c6bd90>: Failed to resolve 'www.opmeer.nl%22%3egemeente' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "In eerste instantie wordt de Bibob alleen actief ingezet op bepaalde horecavergunningen en op de bij het aanwijzingsbesluit aan te wijzen vechtsportevenementen.",
+          "original_reference": "Wanneer u een aanvraag indient voor bepaalde vergunningen zoals een evenementenvergunning voor vechtsportevenementen, een exploitatievergunning voor horecabedrijven, of een Alcoholwetvergunning, moet u ook het BIBOB-vragenformulier indienen.",
+          "note": "De bronpagina geeft aan dat BIBOB alleen actief wordt ingezet op bepaalde horecavergunningen en vechtsportevenementen, terwijl de originele tekst suggereert dat het voor alle genoemde vergunningen verplicht is.",
+          "source_urls": [
+            "https://www.opmeer.nl/wet-bibob-opmeer"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Op de overige gebieden wordt de Bibob alleen toegepast als bepaalde signalen de gemeente bereiken dat (rechts-)personen criminele activiteiten ondernemen.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt een belangrijke aanvullende voorwaarde die niet in de originele tekst staat: BIBOB wordt op overige gebieden alleen toegepast bij specifieke signalen van criminele activiteiten.",
+          "source_urls": [
+            "https://www.opmeer.nl/wet-bibob-opmeer"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de reikwijdte van de BIBOB-toets. Waar de originele tekst suggereert dat het BIBOB-vragenformulier voor alle genoemde vergunningen verplicht is, blijkt uit de bronpagina dat dit alleen actief wordt toegepast op bepaalde horecavergunningen en vechtsportevenementen. Voor overige gebieden geldt de BIBOB-toets alleen bij specifieke signalen van criminele activiteiten, een belangrijke nuance die ontbreekt in de originele tekst."
+  }
+}

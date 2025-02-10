@@ -1,0 +1,91 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ERMELO",
+      "contact": {
+        "phone": "(0341) 56 73 21",
+        "email": "gemeente@ermelo.nl",
+        "website": "http://www.ermelo.nl"
+      }
+    },
+    "service": {
+      "id": 13,
+      "name": "Omzettingsvergunning voor kamerverhuur aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "De kosten van de aanvraag zijn niet specifiek genoemd voor kamerverhuur. De kosten voor een regulier conceptverzoek zijn € 150 en voor een uitgebreid conceptverzoek € 2500.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Ermelo zijn de kosten voor een regulier conceptverzoek € 165 (niet € 150) en voor een uitgebreid conceptverzoek € 2750 (niet € 2500)."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 4,
+    "invalid_urls": 2,
+    "accuracy_percentage": 66.7,
+    "valid_urls_list": [
+      "https://www.ermelo.nl/omgevingsplein/omgevingsloket/conceptverzoek-aanvragen",
+      "https://www.ermelo.nl/omgevingsplein/omgevingsloket/omgevingsvergunning-aanvragen",
+      "https://www.ermelo.nl/evenementen-en-horeca/horeca-en-alcohol/geluidsoverlast-veroorzaken",
+      "https://www.ermelo.nl/omgevingsplein/omgevingsloket"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.ermelo.nl/omgevingsplein/omgevingsloket/contact-over-bouwen-en-verbouwen",
+        "reason": "INVALID: Error scraping https://www.ermelo.nl/omgevingsplein/omgevingsloket/contact-over-bouwen-en-verbouwen: 404 Client Error: Not Found for url: https://www.ermelo.nl/omgevingsplein/omgevingsloket/contact-over-bouwen-en-verbouwen"
+      },
+      {
+        "url": "http://metadata_not_provided",
+        "reason": "INVALID: Error scraping http://metadata_not_provided: HTTPConnectionPool(host='metadata_not_provided', port=80): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPConnection object at 0x103d738c0>: Failed to resolve 'metadata_not_provided' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "We raden u aan voordat u een omgevingsvergunning aanvraagt eerst een conceptverzoek aan te vragen.",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden expliciet dat een conceptverzoek wordt aangeraden voorafgaand aan de vergunningsaanvraag, terwijl dit niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.ermelo.nl/omgevingsplein/omgevingsloket/conceptverzoek-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Betrek de omgeving vroeg bij een bouwplan. Dit vergroot de haalbaarheid van uw plan en voorkomt vaak bezwaren in een latere stap in het proces.",
+          "original_reference": "Betrek de omgeving vroeg bij uw bouwplan om bezwaren in een latere fase te voorkomen",
+          "note": "De brontekst geeft een uitgebreidere toelichting en benadrukt ook de verhoogde haalbaarheid van het plan, niet alleen het voorkomen van bezwaren.",
+          "source_urls": [
+            "https://www.ermelo.nl/omgevingsplein/omgevingsloket/omgevingsvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Complex of niet complex verzoek, Intaketafel, Omgevingstafel, Collegebesluit",
+          "original_reference": "No matching information",
+          "note": "De bronnen beschrijven een gedetailleerd proces met verschillende stappen en tafels die niet genoemd worden in de originele tekst.",
+          "source_urls": [
+            "https://www.ermelo.nl/omgevingsplein/omgevingsloket/conceptverzoek-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie over het aanvraagproces die niet in de originele tekst staat, waaronder de aanbeveling voor een conceptverzoek en een gedetailleerd stappenplan met verschillende 'tafels'. Ook wordt de participatie van de omgeving uitgebreider toegelicht. Deze informatie is essentieel voor een complete beschrijving van het vergunningsproces."
+  }
+}

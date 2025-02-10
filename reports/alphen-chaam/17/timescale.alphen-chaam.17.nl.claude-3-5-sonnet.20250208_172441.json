@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ALPHEN-CHAAM",
+      "contact": {
+        "phone": "14013",
+        "email": "info@alphen-chaam.nl",
+        "website": "http://www.alphen-chaam.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 10,
+    "false_sentences": 1,
+    "accuracy_percentage": 90.9,
+    "false_statements": [
+      {
+        "sentence": "De gemeente behandelt uw aanvraag binnen 8 weken.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Alphen-Chaam is de behandeltermijn voor een horecavergunning 12 weken, niet 8 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.alphen-chaam.nl/conceptverzoek",
+      "https://www.alphen-chaam.nl/ondernemen/vergunningen-en-ontheffingen-voor-ondernemers",
+      "https://www.alphen-chaam.nl/vergunningen-en-ontheffingen/vergunningen-en-ontheffingen-voor-ondernemers",
+      "https://www.alphen-chaam.nl/omgevingsvergunning",
+      "https://www.alphen-chaam.nl/horecavergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "€ 178,95",
+          "original_reference": "De kosten staan vermeld in de legesverordening van de gemeente",
+          "note": "De bronpagina vermeldt een specifiek bedrag van €178,95 voor de horecavergunning, terwijl de originele tekst alleen verwijst naar de legesverordening zonder concreet bedrag",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/horecavergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vul het formulier in. U stuurt het ingevulde formulier via e-mail",
+          "original_reference": "U vraagt een wijziging van uw horecavergunning voor het plaatsen van een terras aan via het digitale Omgevingsloket",
+          "note": "De aanvraagmethode verschilt: de bron vermeldt een formulier via e-mail, terwijl de originele tekst verwijst naar het digitale Omgevingsloket",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/horecavergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Verbouwt u een horecabedrijf en deze voldoet niet meer aan de vergunning die u heeft. Of u wilt een andere persoon toevoegen aan de vergunning dan vraagt u een nieuwe horecavergunning aan",
+          "original_reference": "Als u uw horecabedrijf wijzigt en een terras wilt plaatsen of de oppervlakte van uw bestaande terras wilt veranderen, moet u een wijziging van uw horecavergunning aanvragen",
+          "note": "Bij verbouwing is volgens de bron een nieuwe vergunning nodig, terwijl de originele tekst spreekt over een wijziging van de bestaande vergunning",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/horecavergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn drie belangrijke verschillen gevonden tussen de originele tekst en de bronnen: 1) de kosten worden specifiek genoemd in de bron maar niet in de originele tekst, 2) de aanvraagmethode verschilt (e-mail vs. Omgevingsloket), en 3) er is een tegenstrijdigheid in het type aanvraag bij wijzigingen (nieuwe vergunning vs. wijziging bestaande vergunning). Deze verschillen kunnen tot verwarring leiden bij aanvragers."
+  }
+}

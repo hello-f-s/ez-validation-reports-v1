@@ -1,0 +1,75 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ASSEN",
+      "contact": {
+        "phone": "(0592) 36 69 11",
+        "email": "info@assen.nl",
+        "website": "http://www.assen.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "U betaalt met PIN; contant betalen is mogelijk iedere dinsdagmiddag op afspraak.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Assen is contant betalen niet mogelijk. Er kan alleen met PIN betaald worden bij de gemeente Assen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 2,
+    "invalid_urls": 3,
+    "accuracy_percentage": 40.0,
+    "valid_urls_list": [
+      "https://www.assen.nl/verklaring-omtrent-het-gedrag-vog-aanvragen",
+      "https://www.assen.nl/forms/afspraak-maken"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.assen.nl/nederlandse-nationaliteit-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.assen.nl/informatieaanvraag-wet-open-overheid-woo",
+        "reason": "INVALID: Error scraping https://www.assen.nl/informatieaanvraag-wet-open-overheid-woo: 404 Client Error: Not Found for url: https://www.assen.nl/informatieaanvraag-wet-open-overheid-woo"
+      },
+      {
+        "url": "https://www.assen.nl/omgevingsvergunning-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Verklaring Omtrent het Gedrag (VOG) aanvragen",
+          "original_reference": "Verklaring Omtrent het Gedrag (VOG)",
+          "note": "De basis dienst en naamgeving komen overeen in beide bronnen",
+          "source_urls": [
+            "https://www.assen.nl/verklaring-omtrent-het-gedrag-vog-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse van de beschikbare bronnen kunnen er geen significante inhoudelijke verschillen worden vastgesteld tussen de originele inhoud en de geciteerde bronnen. De beschikbare bronpagina's bevatten echter beperkte inhoudelijke informatie over de VOG-aanvraag, waardoor een volledige vergelijking van alle details niet mogelijk is. De basisinformatie die wel vergeleken kon worden komt overeen met de originele inhoud."
+  }
+}

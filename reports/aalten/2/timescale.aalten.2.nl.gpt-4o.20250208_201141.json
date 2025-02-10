@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AALTEN",
+      "contact": {
+        "phone": "(0543) 49 33 33",
+        "email": "gemeente@aalten.nl",
+        "website": "http://www.aalten.nl"
+      }
+    },
+    "service": {
+      "id": 2,
+      "name": "Bord of spandoek plaatsen aan de openbare weg"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "U ontvangt binnen 8 weken bericht of u toestemming krijgt voor het plaatsen van het bord of spandoek.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Aalten wordt er binnen 2 weken een besluit genomen over de aanvraag voor een aankondigingsbord of spandoek, niet binnen 8 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.aalten.nl/standplaats-aanvragen",
+      "https://www.aalten.nl/tijdelijk-voorwerp-plaatsen-in-openbare-ruimte",
+      "https://www.aalten.nl/terras-plaatsen",
+      "https://www.aalten.nl/omgevingsvergunning",
+      "https://www.aalten.nl/aankondigingsbord-plaatsen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.gemeenteaalten.nl\">gemeenteaalten.nl</a></p>",
+        "reason": "INVALID: Error scraping https://www.gemeenteaalten.nl\">gemeenteaalten.nl</a></p>: HTTPSConnectionPool(host='www.gemeenteaalten.nl%22%3egemeenteaalten.nl%3c', port=443): Max retries exceeded with url: /a%3E%3C/p%3E (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x103587e00>: Failed to resolve 'www.gemeenteaalten.nl%22%3egemeenteaalten.nl%3c' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.gemeenteaalten.nl",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Met onderstaand formulier kunt u online een melding doen voor het plaatsen van een aankondigingsbord of spandoek.",
+          "original_reference": "U kunt uw aanvraag online indienen via het formulier van de gemeente Aalten voor het plaatsen van een aankondigingsbord of spandoek.",
+          "note": "De originele tekst spreekt over een 'aanvraag' terwijl het in werkelijkheid om een 'melding' gaat. Dit is een belangrijk procedureel verschil.",
+          "source_urls": [
+            "https://www.aalten.nl/aankondigingsbord-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Locaties voor het plaatsen van verwijzingsborden, reclameborden, driehoeksborden en billboards ten behoeve maatschappelijke of culturele doeleinden: Aalten: Ringweg/Varsseveldsestraatweg, Lichtenvoordsestraatweg/Oosterkerkstraat, [...]",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over specifieke toegestane locaties voor aankondigingsborden, terwijl de bronpagina wel een uitgebreide lijst met toegestane locaties vermeldt.",
+          "source_urls": [
+            "https://www.aalten.nl/aankondigingsbord-plaatsen"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele tekst en de bronnen. Ten eerste wordt in de originele tekst gesproken over een vergunningaanvraag, terwijl het in werkelijkheid om een melding gaat. Ten tweede ontbreekt in de originele tekst belangrijke informatie over de specifieke locaties waar aankondigingsborden geplaatst mogen worden. Deze informatie is wel beschikbaar op de gemeentelijke website."
+  }
+}

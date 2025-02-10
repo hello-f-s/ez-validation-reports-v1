@@ -1,0 +1,72 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OLDENZAAL",
+      "contact": {
+        "phone": "(0541) 58 81 11",
+        "email": "info@oldenzaal.nl",
+        "website": "http://www.oldenzaal.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 10,
+    "true_sentences": 10,
+    "false_sentences": 0,
+    "accuracy_percentage": 100.0,
+    "false_statements": []
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.oldenzaal.nl/standplaatsvergunning",
+      "https://www.oldenzaal.nl/verklaring-omtrent-gedrag-vog",
+      "https://www.oldenzaal.nl/omgevingsvergunning",
+      "https://www.oldenzaal.nl/alcoholvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.oldenzaal.nl/bouwen-en-verbouwen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Neem dan contact met ons op, zodat we met u een afspraak kunnen maken voor een vooroverleg. In dit overleg gaan we onder andere de volgende punten met u bespreken: Inschrijving KVK, Rechtsvorm, Verklaring Sociale Hygiëne, Wet Bibob, Milieubelastende activiteiten, Brandveiligheid, Terras, Speelautomaten",
+          "original_reference": "No matching information",
+          "note": "De bron vermeldt een verplicht vooroverleg met specifieke bespreekpunten, wat niet genoemd wordt in de originele tekst. Dit is een belangrijke aanvullende procedurestap.",
+          "source_urls": [
+            "https://www.oldenzaal.nl/alcoholvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u de aanvraag heeft ingediend nodigen wij u uit voor een gesprek.",
+          "original_reference": "No matching information",
+          "note": "De bron vermeldt een verplicht gesprek na de aanvraag, wat niet genoemd wordt in de originele tekst. Dit is een extra procedurestap.",
+          "source_urls": [
+            "https://www.oldenzaal.nl/alcoholvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen tonen twee belangrijke procedurele verschillen met de originele tekst: er is een verplicht vooroverleg nodig vóór de aanvraag waarin specifieke punten worden besproken, en na de aanvraag volgt nog een gesprek. Deze stappen ontbreken volledig in de originele tekst, wat betekent dat de oorspronkelijke procedurebeschrijving onvolledig is."
+  }
+}

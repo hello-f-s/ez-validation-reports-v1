@@ -1,0 +1,76 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ASSEN",
+      "contact": {
+        "phone": "(0592) 36 69 11",
+        "email": "info@assen.nl",
+        "website": "http://www.assen.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 10,
+    "false_sentences": 2,
+    "accuracy_percentage": 83.3,
+    "false_statements": [
+      {
+        "sentence": "Voor een parkeerontheffing in het voetgangersgebied is alleen een bedrijfsvoertuig met grijs kenteken toegestaan.",
+        "status": "false",
+        "note": "Dit is onjuist. Volgens de officiële website van gemeente Assen zijn ook andere voertuigen toegestaan, mits er een geldige reden is voor toegang tot het voetgangersgebied, zoals laden en lossen of werkzaamheden."
+      },
+      {
+        "sentence": "Voor een parkeervergunning voor werkzaamheden in de binnenstad (buiten het voetgangersgebied) gelden geen specifieke voorwaarden.",
+        "status": "false",
+        "note": "Dit is niet correct. Er gelden wel degelijk voorwaarden voor een parkeervergunning voor werkzaamheden, waaronder het aantonen van de noodzaak van de werkzaamheden en het opgeven van de exacte locatie en duur van de werkzaamheden."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 0,
+    "invalid_urls": 7,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.assen.nl/parkeervergunning-voor-bedrijven",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.assen.nl/verleng-uw-parkeervergunning-voor-2025",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.assen.nl/parkeervergunning-voor-bewoners",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://gemeente.assen.nl\">Gemeente",
+        "reason": "INVALID: Error scraping https://gemeente.assen.nl\">Gemeente: HTTPSConnectionPool(host='gemeente.assen.nl%22%3egemeente', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x103eafb10>: Failed to resolve 'gemeente.assen.nl%22%3egemeente' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.assen.nl/parkeervergunning-voor-werkzaamheden",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://gemeente.assen.nl",
+        "reason": "INVALID: Error scraping https://gemeente.assen.nl: HTTPSConnectionPool(host='gemeente.assen.nl', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x103eaf750>: Failed to resolve 'gemeente.assen.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.assen.nl/parkeerontheffing-voetgangersgebied",
+        "reason": "INVALID: Error scraping https://www.assen.nl/parkeerontheffing-voetgangersgebied: 404 Client Error: Not Found for url: https://www.assen.nl/parkeerontheffing-voetgangersgebied"
+      }
+    ]
+  }
+}

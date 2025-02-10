@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "CULEMBORG",
+      "contact": {
+        "phone": "(0345) 47 77 00",
+        "email": "info@culemborg.nl",
+        "website": "http://www.culemborg.nl"
+      }
+    },
+    "service": {
+      "id": 13,
+      "name": "Omzettingsvergunning voor kamerverhuur aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "De vergunning vraagt u aan via het omgevingsloket van de Omgevingsdienst Rivierenland (ODR).",
+        "status": "false",
+        "note": "De vergunning wordt aangevraagd via het Omgevingsloket Online (OLO), niet direct via de ODR. De ODR voert wel de vergunningverlening uit namens de gemeente Culemborg, maar is niet het aanvraagloket."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.culemborg.nl/informatieverzoek",
+      "https://www.culemborg.nl/ruimte-huren",
+      "https://www.culemborg.nl/parkeervergunning-voor-bedrijven",
+      "https://www.culemborg.nl/informatieverzoek-en-woo-verzoek",
+      "https://www.culemborg.nl/omgevingsvergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vanaf 1 januari zijn alle wetten en regels over onze leefomgeving samengevoegd in één wet: de Omgevingswet.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over de invoering van de Omgevingswet, wat een essentieel kader is voor omgevingsvergunningen.",
+          "source_urls": [
+            "https://www.culemborg.nl/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "In het omgevingsloket kunt u: zien of er een vergunning nodig is voor u (bouw)project, zien of u een melding moet doen, direct uw vergunningen aanvragen en meldingen indienen, op een kaart per locatie zien welke regels en beleid er gelden",
+          "original_reference": "Om een omgevingsvergunning aan te vragen, dient u na te gaan via het omgevingsloket online of een vergunning vereist is.",
+          "note": "De bronpagina geeft een uitgebreidere lijst van mogelijkheden in het omgevingsloket dan de originele tekst vermeldt.",
+          "source_urls": [
+            "https://www.culemborg.nl/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De Omgevingsdienst Rivierenland (ODR) behandelt namens de gemeente Culemborg alle vergunningsaanvragen. De ODR verzorgt ook het toezicht en de handhaving.",
+          "original_reference": "De vergunning vraagt u aan via het omgevingsloket van de Omgevingsdienst Rivierenland (ODR).",
+          "note": "De bronpagina specificeert dat de ODR niet alleen de aanvragen behandelt maar ook verantwoordelijk is voor toezicht en handhaving, wat niet vermeld wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.culemborg.nl/omgevingsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten belangrijke aanvullende informatie die ontbreekt in de originele tekst, met name over de nieuwe Omgevingswet, uitgebreidere functionaliteit van het omgevingsloket en de volledige rol van de ODR. Deze informatie is essentieel voor een compleet begrip van het aanvraagproces voor omgevingsvergunningen."
+  }
+}

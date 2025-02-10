@@ -1,0 +1,87 @@
+{
+  "context": {
+    "municipality": {
+      "name": "NIJMEGEN",
+      "contact": {
+        "phone": "14 024",
+        "email": "gemeente@nijmegen.nl",
+        "website": "http://www.nijmegen.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "De kosten verschillen afhankelijk van het gebied, de duur van de vergunning (maand of jaar) en of u het kenteken onbeperkt kunt wijzigen. De kosten variëren van €30 tot €100 per maand.",
+        "status": "false",
+        "note": "De exacte kosten voor bedrijfsparkeervergunningen in Nijmegen variëren van €25,42 tot €84,75 per maand, afhankelijk van het gebied. Deze bedragen zijn anders dan de genoemde €30 tot €100 range."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.nijmegen.nl/diensten/parkeren-verkeer-en-vervoer/parkeervergunning-bedrijven/",
+      "https://www.nijmegen.nl/diensten/parkeren-verkeer-en-vervoer/parkeervergunning-bezoekers/",
+      "https://www.nijmegen.nl/diensten/parkeren-verkeer-en-vervoer/toestemming-laden-lossen-of-parkeren/",
+      "https://www.nijmegen.nl/diensten/parkeren-verkeer-en-vervoer/parkeervergunning-bewoners/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.nijmegen.nl/diensten/vergunningen/informatiekraam-melden-of-vergunning/",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Uw vergunning is 6 maanden geldig, daarna moet u uw vergunning verlengen",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt geen geldigheidsduur van de vergunning, terwijl de bron specifiek aangeeft dat een bedrijfsvergunning 6 maanden geldig is.",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/parkeren-verkeer-en-vervoer/parkeervergunning-bedrijven/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Met een bedrijfsvergunning mag u tussen 11.00 en 17.00 niet parkeren in de ringstraten: Van Welderenstraat, In de Betouwstraat, Tweede Walstraat, Van Broeckhuysenstraat, Hertogplein, Hertogstraat",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt geen parkeerrestricties in ringstraten, terwijl de bron specifieke tijden en straten noemt waar niet geparkeerd mag worden.",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/parkeren-verkeer-en-vervoer/parkeervergunning-bedrijven/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Er zijn 2 soorten bedrijfsvergunningen: 'Beperkt kenteken wijzigen': u kunt 1 keer per kalenderjaar het kenteken wijzigen 'Onbeperkt kenteken wijzigen': u kunt het kenteken altijd wijzigen",
+          "original_reference": "No matching information",
+          "note": "De originele tekst specificeert niet de verschillende types bedrijfsvergunningen en hun kentekenwijzigingsmogelijkheden.",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/parkeren-verkeer-en-vervoer/parkeervergunning-bedrijven/"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie die niet in de originele tekst staat, waaronder de geldigheidsduur van 6 maanden voor bedrijfsvergunningen, parkeerrestricties in specifieke ringstraten, en de twee verschillende types bedrijfsvergunningen met hun kentekenwijzigingsmogelijkheden. Deze informatie is essentieel voor bedrijven die een parkeervergunning willen aanvragen."
+  }
+}

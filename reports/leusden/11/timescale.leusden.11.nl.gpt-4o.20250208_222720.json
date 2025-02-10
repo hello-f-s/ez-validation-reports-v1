@@ -1,0 +1,90 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LEUSDEN",
+      "contact": {
+        "phone": "14 033",
+        "email": "gemeente@leusden.nl",
+        "website": "http://www.leusden.nl/"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "Met de nieuwe Omgevingswet, die vanaf 1 januari 2024 van kracht is, wordt de proceduretijd voor de meeste vergunningen verkort naar 8 weken.",
+        "status": "false",
+        "note": "De Omgevingswet is niet op 1 januari 2024 maar op 1 januari 2025 van kracht geworden. Dit is een landelijke wijziging die ook voor gemeente Leusden geldt."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 6,
+    "invalid_urls": 1,
+    "accuracy_percentage": 85.7,
+    "valid_urls_list": [
+      "https://www.leusden.nl/en/ondernemersloket/vergunningen-en-meldingen-voor-ondernemers",
+      "https://www.leusden.nl/en/omgevingswet-gemeente-leusden",
+      "https://www.leusden.nl/en/bouwen-en-wonen/omgevingsvergunning-aanvragen",
+      "https://www.leusden.nl/bouwen-en-wonen/omgevingsvergunning-aanvragen",
+      "https://www.leusden.nl/",
+      "https://www.leusden.nl/ondernemersloket/vergunningen-en-meldingen-voor-ondernemers"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.leusden.nl/\">Gemeente",
+        "reason": "INVALID: Error scraping https://www.leusden.nl/\">Gemeente: 404 Client Error: Not Found for url: https://www.leusden.nl/%22%3EGemeente"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voordat u met een nieuw plan begint is het belangrijk te weten wat voor effect uw plan heeft op uw omgeving en wie er met uw plannen te maken krijgt. [...] Het op tijd betrekken heet 'participatie'. Wie u bij uw plan kunt of moet betrekken is afhankelijk van uw plan, met de snelscan participatie helpen we u hierbij op weg.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de participatievereiste en de snelscan participatie, wat een belangrijk onderdeel is van het aanvraagproces volgens de bronnen.",
+          "source_urls": [
+            "https://www.leusden.nl/bouwen-en-wonen/omgevingsvergunning-aanvragen",
+            "https://www.leusden.nl/en/bouwen-en-wonen/omgevingsvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U ontvangt van ons berichten over de voortgang, het verloop en de afhandeling van uw vergunningaanvraag of sloopmelding. Gemeente Leusden gebruikt een veilige berichtenomgeving via de website Jeleefomgeving.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet het gebruik van de Jeleefomgeving-website voor communicatie over de aanvraag, wat een belangrijk praktisch aspect is van de procedure.",
+          "source_urls": [
+            "https://www.leusden.nl/bouwen-en-wonen/omgevingsvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De proceduretijd wordt korter van 26 naar 8 weken.",
+          "original_reference": "Met de nieuwe Omgevingswet, die vanaf 1 januari 2024 van kracht is, wordt de proceduretijd voor de meeste vergunningen verkort naar 8 weken. Maar in complexere gevallen kan de periode worden verlengd tot 26 weken.",
+          "note": "Er is een verschil in de presentatie van de proceduretijden. De bron suggereert een algemene verkorting naar 8 weken, terwijl de originele tekst specifieker is over de mogelijke verlenging tot 26 weken voor complexe gevallen.",
+          "source_urls": [
+            "https://www.leusden.nl/en/omgevingswet-gemeente-leusden"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie over participatievereisten en communicatiemethoden die niet in de originele tekst staan. Ook is er een nuanceverschil in de beschrijving van de proceduretijden onder de nieuwe Omgevingswet. Deze verschillen zijn relevant voor mensen die een omgevingsvergunning willen aanvragen."
+  }
+}

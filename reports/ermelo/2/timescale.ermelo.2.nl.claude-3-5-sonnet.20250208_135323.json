@@ -1,0 +1,75 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ERMELO",
+      "contact": {
+        "phone": "(0341) 56 73 21",
+        "email": "gemeente@ermelo.nl",
+        "website": "http://www.ermelo.nl"
+      }
+    },
+    "service": {
+      "id": 2,
+      "name": "Bord of spandoek plaatsen aan de openbare weg"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 8,
+    "true_sentences": 7,
+    "false_sentences": 1,
+    "accuracy_percentage": 87.5,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor een objectontheffing zijn € 62.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Ermelo zijn de kosten voor een objectontheffing € 63,70 (2024)."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.ermelo.nl/omgevingsplein/zie-ook/voorwerp-plaatsen-op-of-aan-de-weg",
+      "https://www.ermelo.nl/evenementen-en-horeca/standplaats-aanvragen",
+      "https://www.ermelo.nl/evenementen-en-horeca/horeca-en-alcohol/terras-plaatsen",
+      "https://www.ermelo.nl/evenementen-en-horeca/evenement-of-activiteit-organiseren",
+      "https://www.ermelo.nl/omgevingsplein/bouwen-en-verbouwen/dakopbouw"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De kosten voor een ontheffing zijn € 63,70",
+          "original_reference": "De kosten voor een objectontheffing zijn € 62",
+          "note": "Het bedrag in de bronnen (€63,70) verschilt van het bedrag in de originele tekst (€62)",
+          "source_urls": [
+            "https://www.ermelo.nl/omgevingsplein/zie-ook/voorwerp-plaatsen-op-of-aan-de-weg",
+            "https://www.ermelo.nl/evenementen-en-horeca/horeca-en-alcohol/terras-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Deze vraagt u 4 weken voor de plaatsing van het object online aan",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden een specifieke aanvraagtermijn van 4 weken vooraf, wat niet genoemd wordt in de originele tekst",
+          "source_urls": [
+            "https://www.ermelo.nl/omgevingsplein/zie-ook/voorwerp-plaatsen-op-of-aan-de-weg"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele tekst en de bronnen: het correcte bedrag voor de ontheffing is €63,70 in plaats van €62, en er geldt een specifieke aanvraagtermijn van 4 weken vooraf die niet in de originele tekst wordt vermeld. Deze informatie zou moeten worden bijgewerkt voor een accurate weergave van de actuele voorwaarden."
+  }
+}

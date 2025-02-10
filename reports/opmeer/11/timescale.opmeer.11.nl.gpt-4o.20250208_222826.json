@@ -1,0 +1,105 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OPMEER",
+      "contact": {
+        "phone": "(0226) 36 33 33",
+        "email": "gemeente@opmeer.nl",
+        "website": "http://www.opmeer.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "Dien uw aanvraag minimaal 8 weken voordat u start met de werkzaamheden in. Bij uitgebreide aanvragen minstens 6 maanden van tevoren.",
+        "status": "false",
+        "note": "Volgens de gemeente Opmeer moet een reguliere aanvraag minimaal 3 weken voor aanvang van de werkzaamheden worden ingediend, niet 8 weken. Voor uitgebreide aanvragen geldt geen vaste termijn van 6 maanden."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 10,
+    "valid_urls": 5,
+    "invalid_urls": 5,
+    "accuracy_percentage": 50.0,
+    "valid_urls_list": [
+      "https://www.opmeer.nl/omgevingsvergunning",
+      "https://www.opmeer.nl/privacy-omgevingswet",
+      "https://www.opmeer.nl/milieu-vergunning-of-melding",
+      "https://www.opmeer.nl",
+      "https://www.opmeer.nl/omgevingsvergunning-en-omgevingsloket"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://omgevingsloket.overheid.nl/\">Omgevingsloket</a>,",
+        "reason": "INVALID: Error scraping https://omgevingsloket.overheid.nl/\">Omgevingsloket</a>,: HTTPSConnectionPool(host='omgevingsloket.overheid.nl', port=443): Max retries exceeded with url: /%22%3EOmgevingsloket%3C/a%3E, (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10614fa10>: Failed to resolve 'omgevingsloket.overheid.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://omgevingswet.overheid.nl/home",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://omgevingsloket.overheid.nl/",
+        "reason": "INVALID: Error scraping https://omgevingsloket.overheid.nl/: HTTPSConnectionPool(host='omgevingsloket.overheid.nl', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106268690>: Failed to resolve 'omgevingsloket.overheid.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.opmeer.nl/voorwerp-plaatsen-op-of-aan-de-weg",
+        "reason": "INVALID: Error scraping https://www.opmeer.nl/voorwerp-plaatsen-op-of-aan-de-weg: 404 Client Error: Not Found for url: https://www.opmeer.nl/voorwerp-plaatsen-op-of-aan-de-weg"
+      },
+      {
+        "url": "https://omgevingswet.overheid.nl/home\">Omgevingsloket",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor bepaalde werkzaamheden aan of om uw huis of bedrijfspand hebt u een omgevingsvergunning nodig. Bijvoorbeeld als u gaat (ver)bouwen, slopen, een alarminstallatie plaatst of een boom wilt kappen.",
+          "original_reference": "Als ondernemer heeft u een omgevingsvergunning nodig voor bepaalde activiteiten die invloed hebben op uw leefomgeving.",
+          "note": "De bronnen specificeren duidelijker voor welke concrete werkzaamheden een vergunning nodig is en vermelden dat dit zowel voor woningen als bedrijfspanden geldt, niet alleen voor ondernemers.",
+          "source_urls": [
+            "https://www.opmeer.nl/omgevingsvergunning",
+            "https://www.opmeer.nl/omgevingsvergunning-en-omgevingsloket"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het is handig om vooraf met uw buren (en andere belanghebbenden) in gesprek te gaan over uw plannen. Neem de reacties vanuit uw gesprek(ken) op in uw vergunningsaanvraag.",
+          "original_reference": "No matching information",
+          "note": "De bronnen bevatten een belangrijke aanvullende stap over het betrekken van buren en belanghebbenden die niet in de originele tekst staat vermeld.",
+          "source_urls": [
+            "https://www.opmeer.nl/omgevingsvergunning-en-omgevingsloket"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u voor uw woning een omgevingsvergunning aanvraagt, hebt u uw DigiD nodig.",
+          "original_reference": "eHerkenning met minimaal betrouwbaarheidsniveau 2.",
+          "note": "De bronnen maken onderscheid tussen DigiD voor particulieren en eHerkenning voor bedrijven, terwijl de originele tekst alleen eHerkenning noemt.",
+          "source_urls": [
+            "https://www.opmeer.nl/omgevingsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie over de doelgroep (zowel particulieren als bedrijven), specifieke voorbeelden van vergunningplichtige activiteiten, en het belang van buurtparticipatie. Ook is er een verschil in de authenticatiemethode: waar de originele tekst alleen eHerkenning noemt, maken de bronnen onderscheid tussen DigiD voor particulieren en eHerkenning voor bedrijven."
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DELFT",
+      "contact": {
+        "phone": "14 015",
+        "email": "null",
+        "website": "http://www.delft.nl"
+      }
+    },
+    "service": {
+      "id": 2,
+      "name": "Bord of spandoek plaatsen aan de openbare weg"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "U moet de melding minimaal 2 weken van tevoren doen.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Delft moet een melding voor het plaatsen van een spandoek minimaal 4 weken van tevoren worden gedaan, niet 2 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.delft.nl/spandoek-plaatsen",
+      "https://www.delft.nl/overkapping-plaatsen",
+      "https://www.delft.nl/stappen-voor-uw-plan",
+      "https://www.delft.nl/vergunning-voor-promotieactie",
+      "https://www.delft.nl/reclame-de-openbare-ruimte"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "In deze periode mag u als organisatie maximaal 1 spandoek ophangen. Dus niet een aantal spandoeken tegelijk op meerdere locaties.",
+          "original_reference": "In deze periode mag u als organisatie maximaal 1 spandoek ophangen",
+          "note": "De bronpagina geeft een expliciete verduidelijking dat meerdere spandoeken op verschillende locaties niet zijn toegestaan, wat een belangrijke specificatie is die ontbreekt in de originele tekst",
+          "source_urls": [
+            "https://www.delft.nl/spandoek-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De vaste plekken voor spandoeken in Delft zijn: Kalverbos, Van Foreestweg, En over de grachten van: Noordeinde (ter hoogte van het Koningsplein), Lang Geer (op de hoek met de Breestraat), Buitenwatersloot (ter hoogte van de Kogelgieterij), Gasthuislaan (op de hoek met de Pynepoort)",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de specifieke locaties waar spandoeken mogen worden opgehangen, terwijl dit essentiële informatie is voor aanvragers",
+          "source_urls": [
+            "https://www.delft.nl/spandoek-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Kijk voordat u een melding doet in de activiteitenkalender. Hier ziet u of de plek nog vrij is op de datum die u wilt.",
+          "original_reference": "Kijk eerst in de activiteitenkalender of de gewenste plek nog vrij is op de datum die u wilt.",
+          "note": "De brontekst benadrukt dat het checken van de kalender moet gebeuren vóór het doen van de melding, wat een duidelijkere volgorde aangeeft dan in de originele tekst",
+          "source_urls": [
+            "https://www.delft.nl/spandoek-plaatsen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten belangrijke aanvullende informatie die ontbreekt in de originele tekst, met name de specifieke locaties waar spandoeken mogen worden opgehangen en een duidelijkere specificatie over het verbod op meerdere spandoeken op verschillende locaties. Ook wordt de procedure voor het controleren van de beschikbaarheid duidelijker beschreven in de brontext."
+  }
+}

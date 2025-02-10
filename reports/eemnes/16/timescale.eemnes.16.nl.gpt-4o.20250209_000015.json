@@ -1,0 +1,97 @@
+{
+  "context": {
+    "municipality": {
+      "name": "EEMNES",
+      "contact": {
+        "phone": "14 035",
+        "email": "info@eemnes.nl",
+        "website": "http://www.eemnes.nl"
+      }
+    },
+    "service": {
+      "id": 16,
+      "name": "Registreren in het Landelijk Register Kinderopvang (LRK)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 13,
+    "false_sentences": 2,
+    "accuracy_percentage": 86.7,
+    "false_statements": [
+      {
+        "sentence": "€ 642,50 voor het starten als gastouder",
+        "status": "false",
+        "note": "De exacte kosten voor het starten als gastouder worden niet specifiek vermeld op de website van gemeente Eemnes. Deze bedragen kunnen variëren en moeten bij de gemeente worden opgevraagd."
+      },
+      {
+        "sentence": "€ 2542,50 voor het starten van een kinderopvang",
+        "status": "false",
+        "note": "De exacte kosten voor het starten van een kinderopvang worden niet specifiek vermeld op de website van gemeente Eemnes. Deze bedragen kunnen variëren en moeten bij de gemeente worden opgevraagd."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.eemnes.nl/Scholen_en_kinderopvang/Kinderopvang_starten",
+      "https://www.eemnes.nl/Zoekresultaten?freetext=&searchbase=0&sp=H4sIAAAAAAAAAGXNPwvCMBCH4e9yc4f6B7SFDKKidehgwSkg1+RaK2lSkoBI6Xc3FpFCtx8P73E9aCNJGYG+MXq6IYWeg+eQcripZcGSpLsy3HTxevteZZfzizEOEYdKj830dvRGznzWdG1oKlSOBojAEVrxKNFReL6I4z9Z1PXEjPXGSrJBdsX+mB+y/PTzqiElg3/33ZRPEl5jSzB8ACHzpivpAAAA&",
+      "https://www.eemnes.nl/Scholen_en_kinderopvang/Kinderopvang_zoeken",
+      "https://www.eemnes.nl/Zoekresultaten?searchbase=0&searchrange=100&sp=H4sIAAAAAAAAAGXNQQuCQBCG4f8yZw9mQSnsISrKDh4SOi3E6M6Wse7KuhAh/vdWixC8fTy8w3SgjSBlSnSV0dMNCXQcHIeEw1VFOYvj5sJw3YSrzXuZnk8vxjgEHKQem+nt6JWY+axpat9IVC31EEBLaMtHgS3551EY/smivg+2+JqxzlhB1ss23x2yfZodfy4rUsL7sG+meFLpNNYE/QfSaq336QAAAA==&",
+      "https://www.eemnes.nl/Zoekresultaten?searchbase=0&searchrange=100&sp=H4sIAAAAAAAAAGXNTwuCQBCH4e8yZw/2j1LYQ1SUHTwkdFqI0Z0tY92VdSFC/O6tFiF4+/HwDtOCNoKUKdCVRo83xNBycBxiDlc1z1gU1ReG6zpcbt6L5Hx6McYh4CD10IxvBy/FxCdNXflGomqogwAaQls8cmzIP5+twj9Z1PfevmSsM1aQ9bDNdod0n6THn8uSlPDe75vJn1Q4jRVB9wGOj4wm6AAAAA==&"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://gemeenteeemnes.nl",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://gemeenteeemnes.nl\">Gemeente",
+        "reason": "INVALID: Error scraping https://gemeenteeemnes.nl\">Gemeente: HTTPSConnectionPool(host='gemeenteeemnes.nl%22%3egemeente', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10551efd0>: Failed to resolve 'gemeenteeemnes.nl%22%3egemeente' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Contact op met Maatschappelijke zaken HBEL. Dat kan via (035) 528 12 47 of stuur een e-mail naar info@maatschappelijkezaken.nl",
+          "original_reference": "Contact: Bel telefoonnummer 14 035",
+          "note": "De bronpagina vermeldt een ander telefoonnummer en extra contactmogelijkheid via e-mail voor vragen over kinderopvang, terwijl de originele tekst alleen het algemene gemeentenummer vermeldt",
+          "source_urls": [
+            "https://www.eemnes.nl/Scholen_en_kinderopvang/Kinderopvang_zoeken"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Goed om te weten: In het Landelijk Register Kinderopvang staan alle geregistreerde kinderopvangorganisaties van Nederland. Deze organisaties komen pas in dit register na een inspectie door de GGD en een beschikking (besluit) van de gemeente.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat aanvullende belangrijke informatie over het LRK en de rol van de GGD die niet in de originele tekst staat",
+          "source_urls": [
+            "https://www.eemnes.nl/Scholen_en_kinderopvang/Kinderopvang_zoeken"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een medewerker van het gastouderbureau meldt u dan aan bij de gemeente",
+          "original_reference": "Gastouder worden vereist inschrijving bij een gastouderbureau",
+          "note": "De bronpagina specificeert dat de aanmelding bij de gemeente door het gastouderbureau wordt gedaan, wat niet duidelijk is in de originele tekst",
+          "source_urls": [
+            "https://www.eemnes.nl/Scholen_en_kinderopvang/Kinderopvang_starten"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de contactgegevens (ander telefoonnummer en extra e-mailmogelijkheid), aanvullende informatie over het LRK en de GGD-inspectie, en een verduidelijking van de aanmeldingsprocedure voor gastouders. De kern van de voorwaarden en kosten is consistent tussen beide bronnen."
+  }
+}

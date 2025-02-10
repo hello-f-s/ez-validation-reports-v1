@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ERMELO",
+      "contact": {
+        "phone": "(0341) 56 73 21",
+        "email": "gemeente@ermelo.nl",
+        "website": "http://www.ermelo.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "Een exploitatievergunning kost € 206.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van de gemeente Ermelo kost een exploitatievergunning voor horeca € 417,95."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.ermelo.nl/evenementen-en-horeca/horeca-en-alcohol",
+      "https://www.ermelo.nl/evenementen-en-horeca/horeca-en-alcohol/speelautomaat-plaatsen",
+      "https://www.ermelo.nl/evenementen-en-horeca/horeca-en-alcohol/exploitatievergunning-horeca",
+      "https://www.ermelo.nl/ondernemen-in-ermelo/starten-of-vestigen-van-een-bedrijf",
+      "https://www.ermelo.nl/evenementen-en-horeca"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wilt u een exploitatievergunning aanvragen? Maak dan een afspraak met de vakafdeling zodat u uw aanvraag compleet kan indienen. Verkoopt u alcohol voor directe consumptie dan heeft u ook een alcoholvergunning nodig.",
+          "original_reference": "Maak een afspraak met de vakafdeling zodat u uw aanvraag compleet in kan dienen.",
+          "note": "De brontekst specificeert expliciet dat een aanvullende alcoholvergunning nodig is bij verkoop van alcohol voor directe consumptie. Deze belangrijke voorwaarde ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.ermelo.nl/evenementen-en-horeca/horeca-en-alcohol/exploitatievergunning-horeca"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "We beslissen binnen 8 weken op uw aanvraag.",
+          "original_reference": "Niet vermeld",
+          "note": "De originele tekst vermeldt geen behandeltermijn, terwijl de bron aangeeft dat er binnen 8 weken wordt beslist.",
+          "source_urls": [
+            "https://www.ermelo.nl/evenementen-en-horeca/horeca-en-alcohol/speelautomaat-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De ondernemingsvorm van uw (horeca)bedrijf wijzigt (bijvoorbeeld van vof naar bv).",
+          "original_reference": "No matching information",
+          "note": "De bron vermeldt een extra situatie waarin een exploitatievergunning nodig is, namelijk bij wijziging van ondernemingsvorm. Dit ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.ermelo.nl/evenementen-en-horeca/horeca-en-alcohol/exploitatievergunning-horeca"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten enkele belangrijke aanvullingen die ontbreken in de originele tekst: de noodzaak van een aanvullende alcoholvergunning bij alcoholverkoop, de behandeltermijn van 8 weken, en de verplichting voor een nieuwe exploitatievergunning bij wijziging van ondernemingsvorm. Deze informatie is essentieel voor ondernemers die een horecabedrijf willen starten of wijzigen."
+  }
+}

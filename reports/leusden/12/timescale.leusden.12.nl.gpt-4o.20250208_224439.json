@@ -1,0 +1,101 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LEUSDEN",
+      "contact": {
+        "phone": "14 033",
+        "email": "gemeente@leusden.nl",
+        "website": "http://www.leusden.nl/"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Voor reguliere aanvragen is de maximale behandelingstermijn 8 weken, met een mogelijke verlenging van 6 weken.",
+        "status": "false",
+        "note": "Volgens de gemeente Leusden is de reguliere behandelingstermijn 8 weken met een mogelijke verlenging van maximaal 8 weken (niet 6 weken)."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 9,
+    "valid_urls": 5,
+    "invalid_urls": 4,
+    "accuracy_percentage": 55.6,
+    "valid_urls_list": [
+      "https://www.leusden.nl/en/ondernemersloket/vergunningen-en-meldingen-voor-ondernemers",
+      "https://www.leusden.nl/en/omgevingswet-gemeente-leusden",
+      "https://www.leusden.nl/en/bouwen-en-wonen/omgevingsvergunning-aanvragen",
+      "https://www.leusden.nl/ondernemersloket/vergunningen-en-meldingen-voor-ondernemers",
+      "https://www.leusden.nl/bouwen-en-wonen/omgevingsvergunning-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://example.com/gemeente-leusden-omgevingsvergunning-aanvragen\">Gemeente",
+        "reason": "INVALID: Error scraping https://example.com/gemeente-leusden-omgevingsvergunning-aanvragen\">Gemeente: 404 Client Error: Not Found for url: https://example.com/gemeente-leusden-omgevingsvergunning-aanvragen%22%3EGemeente"
+      },
+      {
+        "url": "https://example.com/gemeente-leusden-vergunningen-meldingen-ondernemers",
+        "reason": "INVALID: Error scraping https://example.com/gemeente-leusden-vergunningen-meldingen-ondernemers: 404 Client Error: Not Found for url: https://example.com/gemeente-leusden-vergunningen-meldingen-ondernemers"
+      },
+      {
+        "url": "https://example.com/gemeente-leusden-omgevingsvergunning-aanvragen",
+        "reason": "INVALID: Error scraping https://example.com/gemeente-leusden-omgevingsvergunning-aanvragen: 404 Client Error: Not Found for url: https://example.com/gemeente-leusden-omgevingsvergunning-aanvragen"
+      },
+      {
+        "url": "https://example.com/gemeente-leusden-vergunningen-meldingen-ondernemers\">Gemeente",
+        "reason": "INVALID: Error scraping https://example.com/gemeente-leusden-vergunningen-meldingen-ondernemers\">Gemeente: 404 Client Error: Not Found for url: https://example.com/gemeente-leusden-vergunningen-meldingen-ondernemers%22%3EGemeente"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voordat u met een nieuw plan begint is het belangrijk te weten wat voor effect uw plan heeft op uw omgeving en wie er met uw plannen te maken krijgt. Dit kunnen bijvoorbeeld uw directe buren of straatbewoners zijn, of instanties die u nodig heeft bij uw plannen zoals het waterschap.",
+          "original_reference": "No matching information",
+          "note": "De bronnen bevatten belangrijke informatie over participatie (betrekken van omwonenden) die volledig ontbreekt in de originele tekst",
+          "source_urls": [
+            "https://www.leusden.nl/bouwen-en-wonen/omgevingsvergunning-aanvragen",
+            "https://www.leusden.nl/en/bouwen-en-wonen/omgevingsvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als uw aanvraag niet compleet is, hoort u van de gemeente welke gegevens ontbreken. De tijd die u nodig heeft om de aanvullende gegevens aan te leveren, wordt bij de beslistermijn opgeteld.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat de beslistermijn wordt verlengd bij het aanleveren van aanvullende gegevens",
+          "source_urls": [
+            "https://www.leusden.nl/bouwen-en-wonen/omgevingsvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het adviesteam ruimtelijke kwaliteit adviseert graag over uw (ver)bouwplannen in een vroeg stadium.",
+          "original_reference": "No matching information",
+          "note": "De mogelijkheid tot vooroverleg met het adviesteam ruimtelijke kwaliteit wordt niet genoemd in de originele tekst",
+          "source_urls": [
+            "https://www.leusden.nl/ondernemersloket/vergunningen-en-meldingen-voor-ondernemers"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten drie belangrijke elementen die ontbreken in de originele tekst: de verplichting tot participatie met omwonenden, informatie over verlenging van beslistermijnen bij aanvullende gegevens, en de mogelijkheid tot vooroverleg met het adviesteam ruimtelijke kwaliteit. Deze informatie is essentieel voor een complete beschrijving van het vergunningsproces."
+  }
+}

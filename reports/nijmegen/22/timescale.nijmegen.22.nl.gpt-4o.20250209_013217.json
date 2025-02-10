@@ -1,0 +1,79 @@
+{
+  "context": {
+    "municipality": {
+      "name": "NIJMEGEN",
+      "contact": {
+        "phone": "14 024",
+        "email": "gemeente@nijmegen.nl",
+        "website": "http://www.nijmegen.nl"
+      }
+    },
+    "service": {
+      "id": 22,
+      "name": "Woonruimte splitsen of samenvoegen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 13,
+    "false_sentences": 2,
+    "accuracy_percentage": 86.7,
+    "false_statements": [
+      {
+        "sentence": "Woningen met een WOZ-waarde boven € 396.000,- kunnen na splitsen zowel verhuurd als verkocht worden.",
+        "status": "false",
+        "note": "De WOZ-grens voor opkoopbescherming in Nijmegen is € 429.000 (2024), niet € 396.000."
+      },
+      {
+        "sentence": "Voor woningen met een WOZ-waarde tot € 396.000,- geldt opkoopbescherming: u kunt ze na splitsen verkopen, maar verhuren kan alleen volgens deze regels.",
+        "status": "false",
+        "note": "De WOZ-grens voor opkoopbescherming in Nijmegen is € 429.000 (2024), niet € 396.000."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.nijmegen.nl/diensten/bouwen-en-wonen/woning-splitsen/",
+      "https://www.nijmegen.nl/diensten/bouwen-en-wonen/kamers-verhuren/",
+      "https://www.nijmegen.nl/nieuws/nijmegen-gaat-delen-van-woningen-stimuleren/",
+      "https://www.nijmegen.nl/diensten/bouwen-en-wonen/toekomstbestendig-wonen-lening/voorwaarden-toekomstbestendig-wonen-lening/",
+      "https://www.nijmegen.nl/diensten/subsidies/subsidie/"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als er door de gemeente een huisnummer aan de gesplitste woning is gegeven, is huurtoeslag misschien mogelijk. U kunt dit controleren bij de ODRN (Omgevingsdienst Nijmegen). Zonder huisnummer is huurtoeslag niet mogelijk",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over huurtoeslag en huisnummers bij gesplitste woningen, terwijl dit een belangrijke voorwaarde is voor huurders.",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/bouwen-en-wonen/woning-splitsen/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een complex kan gezamenlijke ruimtes hebben die door de eigenaren/bewoners worden gedeeld. Bijvoorbeeld de ingang, tuin of schuur",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de mogelijkheid van gedeelde ruimtes na splitsing, wat relevant is voor potentiële kopers/huurders.",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/bouwen-en-wonen/woning-splitsen/"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten twee belangrijke aanvullende details die niet in de originele tekst staan: informatie over huurtoeslag in relatie tot huisnummers van gesplitste woningen en de mogelijkheid van gedeelde ruimtes in gesplitste complexen. Deze informatie is relevant voor mensen die overwegen een woning te splitsen of in een gesplitste woning te gaan wonen."
+  }
+}

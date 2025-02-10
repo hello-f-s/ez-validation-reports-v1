@@ -1,0 +1,78 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DRUTEN",
+      "contact": {
+        "phone": "(088) 432 70 00",
+        "email": "info@druten.nl",
+        "website": "http://www.druten.nl"
+      }
+    },
+    "service": {
+      "id": 7,
+      "name": "Kabels en leidingen aanleggen en beheren"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 7,
+    "true_sentences": 6,
+    "false_sentences": 1,
+    "accuracy_percentage": 85.7,
+    "false_statements": [
+      {
+        "sentence": "Voor een vergunning of instemmingsbesluit moet u geen specifieke documenten aanleveren. De gemeente vraagt hierom als het nodig is.",
+        "status": "false",
+        "note": "Volgens de website van gemeente Druten moeten er wel degelijk specifieke documenten worden aangeleverd bij een vergunning of instemmingsbesluit voor kabels en leidingen, waaronder een situatietekening en werkplan."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.druten.nl/kabels-en-leidingen-in-openbare-grond",
+      "https://www.druten.nl/omgevingsvergunning",
+      "https://www.druten.nl/monument-verbouwen-herstellen-of-onderhouden",
+      "https://www.druten.nl/exploitatievergunning-horecabedrijf"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.druten.nl/voorwerp-plaatsen-op-of-aan-de-weg",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wilt u kabels en leidingen onder de grond leggen in openbaar gebied? Dan mag u niet zelf doen. Dat moet een bedrijf voor u regelen.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina specificeert expliciet dat particulieren dit niet zelf mogen doen maar een bedrijf moeten inschakelen. Deze belangrijke beperking ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.druten.nl/kabels-en-leidingen-in-openbare-grond"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor een vergunning of instemmingsbesluit neemt u contact op met Michel Burgers op 088 432 72 25",
+          "original_reference": "No matching information",
+          "note": "Het telefoonnummer in de originele tekst (088 432 72 25) komt niet voor in de bronpagina's. Er wordt alleen een algemeen gemeentenummer (088 432 70 00) vermeld.",
+          "source_urls": [
+            "https://www.druten.nl/kabels-en-leidingen-in-openbare-grond"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele tekst en de bronnen: 1) De bronnen vermelden expliciet dat particulieren geen kabels en leidingen zelf mogen aanleggen, wat een belangrijke beperking is die ontbreekt in de originele tekst, en 2) Het specifieke telefoonnummer voor Michel Burgers komt niet voor in de bronpagina's, waar alleen een algemeen gemeentenummer wordt vermeld. De overige informatie komt overeen met de bronnen of kan niet geverifieerd worden omdat deze informatie niet in de bronpagina's voorkomt."
+  }
+}

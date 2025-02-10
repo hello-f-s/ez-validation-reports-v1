@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LOPIK",
+      "contact": {
+        "phone": "(0348) 55 99 55",
+        "email": "gemeente@lopik.nl",
+        "website": "http://www.lopik.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 10,
+    "true_sentences": 9,
+    "false_sentences": 1,
+    "accuracy_percentage": 90.0,
+    "false_statements": [
+      {
+        "sentence": "U ontvangt binnen 8 weken bericht of u de vergunning krijgt.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Lopik duurt de behandeling van een terrasvergunning maximaal 12 weken, niet 8 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.lopik.nl/exploitatievergunning-horecabedrijf",
+      "https://www.lopik.nl/openingstijden-horeca-eenmalig-aanpassen",
+      "https://www.lopik.nl/omgevingsvergunning",
+      "https://www.lopik.nl/milieu-vergunning-of-melding",
+      "https://www.lopik.nl/terras-plaatsen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vraag de vergunning ook aan als u een bloembak of straatmeubel wilt plaatsen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat een vergunning ook nodig is voor bloembakken en straatmeubels, terwijl dit wel een belangrijke aanvullende voorwaarde is.",
+          "source_urls": [
+            "https://www.lopik.nl/terras-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "'Verordening op de heffing en invordering van leges 2025'",
+          "original_reference": "'Verordening op de heffing en invordering van leges'",
+          "note": "De brontekst specificeert het jaartal 2025 voor de legesverordening, terwijl de originele tekst geen jaartal noemt.",
+          "source_urls": [
+            "https://www.lopik.nl/terras-plaatsen"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden: de originele tekst mist de informatie dat ook voor bloembakken en straatmeubels een vergunning nodig is, en er is een specificatie van het jaartal 2025 voor de legesverordening die niet in de originele tekst staat. De overige informatie komt overeen met de originele tekst."
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "context": {
+    "municipality": {
+      "name": "KERKRADE",
+      "contact": {
+        "phone": "14 045",
+        "email": "gemeentehuis@kerkrade.nl",
+        "website": "http://www.kerkrade.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "Beslist de gemeente niet binnen de termijn, dan wordt de vergunning automatisch verleend (van rechtswege).",
+        "status": "false",
+        "note": "Dit is niet correct voor de gemeente Kerkrade. Een vergunning wordt niet automatisch verleend als de beslissingstermijn wordt overschreden. De Wet dwangsom en beroep bij niet tijdig beslissen is hier van toepassing, waarbij u de gemeente in gebreke kunt stellen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 9,
+    "valid_urls": 6,
+    "invalid_urls": 3,
+    "accuracy_percentage": 66.7,
+    "valid_urls_list": [
+      "https://www.kerkrade.nl/omgevingsvergunning",
+      "https://www.kerkrade.nl/milieu-vergunning-of-melding",
+      "https://www.kerkrade.nl/vergunning-checken-en-vooroverleg",
+      "https://kerkrade.nl/omgevingsvergunning",
+      "https://www.kerkrade.nl/omgevingsvergunning-strijdig-gebruik",
+      "https://www.kerkrade.nl/gemeente-kerkrade-helpt-u-bij-de-omgevingswet"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://kerkrade.nl/milieu",
+        "reason": "INVALID: Error scraping https://kerkrade.nl/milieu: 404 Client Error: Not Found for url: https://www.kerkrade.nl/milieu"
+      },
+      {
+        "url": "https://kerkrade.nl/milieu\">Gemeente",
+        "reason": "INVALID: Error scraping https://kerkrade.nl/milieu\">Gemeente: 404 Client Error: Not Found for url: https://www.kerkrade.nl/milieu%22%3EGemeente"
+      },
+      {
+        "url": "https://kerkrade.nl/omgevingsvergunning\">Gemeente",
+        "reason": "INVALID: Error scraping https://kerkrade.nl/omgevingsvergunning\">Gemeente: 404 Client Error: Not Found for url: https://www.kerkrade.nl/omgevingsvergunning%22%3EGemeente"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De omgevingsbalie is vanaf januari elke donderdag van 09:00-12:00 en 16:00-18:00 geopend.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over een fysieke omgevingsbalie en openingstijden, terwijl dit een belangrijke service is voor aanvragers.",
+          "source_urls": [
+            "https://www.kerkrade.nl/gemeente-kerkrade-helpt-u-bij-de-omgevingswet"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Door gebruik te maken van een vooroverleg voorkomt u dat u tijdens de vergunningsaanvraag voor verrassingen komt te staan. Ook krijgt u tips mee voor het aanvragen van de omgevingsvergunning.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over de mogelijkheid tot vooroverleg, wat kan helpen bij een soepelere vergunningsaanvraag.",
+          "source_urls": [
+            "https://www.kerkrade.nl/vergunning-checken-en-vooroverleg"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Doe de melding minimaal 4 weken voor u start met de activiteit",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de minimale meldingstermijn van 4 weken voor het starten van activiteiten.",
+          "source_urls": [
+            "https://www.kerkrade.nl/milieu-vergunning-of-melding"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie die niet in de originele tekst staat, waaronder de beschikbaarheid van een fysieke omgevingsbalie met specifieke openingstijden, de mogelijkheid tot vooroverleg om verrassingen te voorkomen, en een concrete meldingstermijn van 4 weken voor bepaalde activiteiten. Deze informatie is essentieel voor mensen die een vergunning willen aanvragen."
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "context": {
+    "municipality": {
+      "name": "NEDER-BETUWE",
+      "contact": {
+        "phone": "0140488",
+        "email": "info@nederbetuwe.nl",
+        "website": "http://www.nederbetuwe.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 17,
+    "false_sentences": 2,
+    "accuracy_percentage": 89.5,
+    "false_statements": [
+      {
+        "sentence": "Voor het in behandeling nemen van een vergunningaanvraag in 2024 gelden de volgende leges:",
+        "status": "false",
+        "note": "De genoemde bedragen komen niet overeen met de actuele legestarieven van gemeente Neder-Betuwe voor evenementenvergunningen in 2024"
+      },
+      {
+        "sentence": "De vergunning kan worden aangevraagd via het formulier dat zich aan de rechterkant van de relevante gemeentepagina bevindt.",
+        "status": "false",
+        "note": "De exacte locatie van het aanvraagformulier op de gemeentewebsite is niet correct beschreven. Het formulier is beschikbaar via een directe link op de evenementenpagina, niet specifiek aan de rechterkant"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 4,
+    "valid_urls": 0,
+    "invalid_urls": 4,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.nederbetuwe.nl/en/evenementen/prijsvraag-organiseren",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.nederbetuwe.nl/en/evenementen/evenement-of-activiteit-organiseren",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://example.com\">Gemeente",
+        "reason": "INVALID: Error scraping https://example.com\">Gemeente: HTTPSConnectionPool(host='example.com%22%3egemeente', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1038a3890>: Failed to resolve 'example.com%22%3egemeente' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://example.com",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  }
+}

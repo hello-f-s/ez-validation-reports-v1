@@ -1,0 +1,87 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HAARLEMMERMEER",
+      "contact": {
+        "phone": "(0900) 18 52",
+        "email": "info@haarlemmermeer.nl",
+        "website": "http://www.haarlemmermeer.nl"
+      }
+    },
+    "service": {
+      "id": 8,
+      "name": "Marktvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 7,
+    "true_sentences": 6,
+    "false_sentences": 1,
+    "accuracy_percentage": 85.7,
+    "false_statements": [
+      {
+        "sentence": "Hier kan geen specifieke informatie over gevonden worden op de website van deze gemeente.",
+        "status": "false",
+        "note": "Er is wel degelijk informatie te vinden over marktvergunningen op de website van gemeente Haarlemmermeer. Via de gemeentelijke website kan een standplaatsvergunning worden aangevraagd voor markten en er staat informatie over de voorwaarden en het aanvraagproces."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://haarlemmermeergemeente.nl/omgevingsvergunning-milieu",
+      "https://haarlemmermeergemeente.nl/standplaatsvergunning",
+      "https://haarlemmermeergemeente.nl/exploitatievergunning",
+      "https://haarlemmermeergemeente.nl/evenementenvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://haarlemmermeergemeente.nl/toelichting-aanvraagformulier-exploitatievergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor bedrijven die activiteiten uitvoeren kan een omgevingsvergunning nodig zijn vanwege het milieu. Het kan zijn dat u naast een melding of vergunning voor de milieuactiviteit voor meerdere activiteiten een aanvraag moet doen.",
+          "original_reference": "No matching information",
+          "note": "De bronnen bevatten specifieke informatie over milieuvergunningen die niet in de originele tekst staat, wat relevant kan zijn voor bepaalde marktondernemers.",
+          "source_urls": [
+            "https://haarlemmermeergemeente.nl/omgevingsvergunning-milieu"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U staat ingeschreven bij de Kamer van Koophandel als ambulante handelaar of markthandelaar (geen detailhandel).",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden een specifieke KvK-inschrijvingseis voor handelaren die niet in de originele tekst staat.",
+          "source_urls": [
+            "https://haarlemmermeergemeente.nl/standplaatsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Let op! U kunt pas een standplaats aanvragen als er na de loting een plaats aan u is toegewezen.",
+          "original_reference": "No matching information",
+          "note": "De bronnen beschrijven een lotingsprocedure voor standplaatsen die niet in de originele tekst wordt genoemd.",
+          "source_urls": [
+            "https://haarlemmermeergemeente.nl/standplaatsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De originele tekst mist belangrijke informatie over marktvergunningen die wel in de bronnen staat, waaronder specifieke KvK-inschrijvingseisen, een lotingsprocedure voor standplaatsen, en mogelijke aanvullende vergunningsvereisten voor milieuactiviteiten. Deze informatie is essentieel voor ondernemers die een marktvergunning willen aanvragen."
+  }
+}
