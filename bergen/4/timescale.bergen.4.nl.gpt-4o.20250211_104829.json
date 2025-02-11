@@ -1,0 +1,68 @@
+{
+  "context": {
+    "municipality": {
+      "name": "BERGEN",
+      "contact": {}
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 11,
+    "false_sentences": 2,
+    "accuracy_percentage": 84.6,
+    "false_statements": [
+      {
+        "sentence": "Een aanvraag moet tijdig worden ingediend afhankelijk van de grootte van het evenement: 8 weken voor kleine, 13 weken voor middelgrote en 26 weken voor grote evenementen.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Bergen moet een aanvraag voor een evenementenvergunning minimaal 12 weken voor aanvang van het evenement worden ingediend. Er wordt geen onderscheid gemaakt tussen kleine, middelgrote en grote evenementen."
+      },
+      {
+        "sentence": "De termijnen zijn 8, 13 of 26 weken voorafgaand aan het evenement, afhankelijk van de grootte.",
+        "status": "false",
+        "note": "De gemeente Bergen hanteert een vaste termijn van 12 weken voor alle evenementen, niet verschillende termijnen op basis van grootte."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 0,
+    "invalid_urls": 6,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.bergen.nl",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.bergen.nl/evenementen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.bergen.nl/evenementen-vergunningen-en-ontheffingen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.bergen.nl/evenementenvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.bergen.nl/vergunningen-en-ontheffingen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.bergen.nl/horeca",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  }
+}

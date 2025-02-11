@@ -1,0 +1,63 @@
+{
+  "context": {
+    "municipality": {
+      "name": "BERGEN",
+      "contact": {}
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "Kosten via de gemeente in 2023: € 41,35",
+        "status": "false",
+        "note": "De kosten voor een VOG via de gemeente Bergen zijn € 41,85 in 2023, niet € 41,35. Dit bedrag is te vinden op de officiële website van de gemeente Bergen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 0,
+    "invalid_urls": 6,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.bergen.nl/verklaring-omtrent-het-gedrag-vog",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.bergen.nl/informatie-opvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.bergen.nl/informatie-opvragen-who-verzoek",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.bergen.nl/nederlander-worden-door-optie",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.bergen.nl/afschriften-uittreksels-en-bewijzen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.stubbel.nl/",
+        "reason": "INVALID: Error scraping https://www.stubbel.nl/: HTTPSConnectionPool(host='www.stubbel.nl', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x108241310>: Failed to resolve 'www.stubbel.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  }
+}
