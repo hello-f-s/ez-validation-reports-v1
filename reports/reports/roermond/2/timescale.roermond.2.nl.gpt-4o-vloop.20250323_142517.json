@@ -1,0 +1,91 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ROERMOND",
+      "contact": {
+        "phone": "14 0475",
+        "email": "mail@roermond.nl",
+        "website": "http://www.roermond.nl"
+      }
+    },
+    "service": {
+      "id": 2,
+      "name": "Bord of spandoek plaatsen aan de openbare weg"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 27,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.4,
+    "false_statements": [
+      {
+        "sentence": "U kunt direct aanvragen indienen via het Digitaal Stelsel Omgevingswet of gebruik maken van eHerkenning voor ondernemers.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Roermond moeten aanvragen worden ingediend via het nieuwe Omgevingsloket, niet direct via het Digitaal Stelsel Omgevingswet. Dit is een technische onjuistheid in de beschrijving van het aanvraagproces."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 4,
+    "invalid_urls": 2,
+    "accuracy_percentage": 66.7,
+    "valid_urls_list": [
+      "https://www.roermond.nl/reclame-plaatsen",
+      "https://www.roermond.nl/terrasvergunning",
+      "https://www.roermond.nl/marktstandplaats-aanvragen",
+      "https://www.roermond.nl/omgevingsvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.roermond.nl/object-plaatsen-op-openbare-gemeentegrond",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.roermond.nl",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "De gemeente beslist binnen 8 weken over uw vergunning.",
+          "original_reference": "De gemeente beslist binnen 8 weken over uw vergunning.",
+          "note": "De behandeltermijn van 8 weken wordt consistent vermeld in beide bronnen.",
+          "source_urls": [
+            "https://www.roermond.nl/reclame-plaatsen"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Kleurenfoto's die de bestaande situatie van de (locatie van de) reclame weergeven",
+          "original_reference": "Kleurenfoto's die de bestaande situatie van de locatie van de reclame weergeven.",
+          "note": "De vereiste documentatie voor de aanvraag komt overeen.",
+          "source_urls": [
+            "https://www.roermond.nl/reclame-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Communicatie via berichtenbox jeleefomgeving.nl - Tijdens de behandeling van een aanvraag omgevingsvergunning, conceptverzoek of melding kunnen wij gebruik maken van een portaal",
+          "original_reference": "Voor communicatie tijdens de aanvraagprocedure kan gebruik worden gemaakt van de berichtenbox via jeleefomgeving.nl",
+          "note": "De originele tekst stelt dit als mogelijkheid voor de aanvrager, terwijl de brontekst aangeeft dat de gemeente hier gebruik van kan maken. Dit impliceert een verschil in wie het initiatief neemt voor deze communicatiemethode.",
+          "source_urls": [
+            "https://www.roermond.nl/terrasvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont dat de meeste informatie consistent is tussen de originele tekst en de bronnen, met name wat betreft de behandeltermijnen en vereiste documentatie. Het belangrijkste verschil betreft de communicatie via de berichtenbox van jeleefomgeving.nl, waarbij de rol en initiatief van de verschillende partijen anders wordt beschreven. De overige informatie, zoals openingstijden, contactgegevens en procedures, komt overeen met de bronnen."
+  }
+}

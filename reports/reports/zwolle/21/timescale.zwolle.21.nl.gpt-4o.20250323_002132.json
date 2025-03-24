@@ -1,0 +1,99 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ZWOLLE",
+      "contact": {
+        "phone": "14 038",
+        "email": "postbus@zwolle.nl",
+        "website": "http://www.zwolle.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 12,
+    "false_sentences": 2,
+    "accuracy_percentage": 85.7,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor de Verklaring Omtrent Gedrag bedragen € 41,35.",
+        "status": "false",
+        "note": "De actuele kosten voor een VOG bedragen € 41,95 (2024)"
+      },
+      {
+        "sentence": "U ontvangt uw VOG binnen 8 weken na aanvraag.",
+        "status": "false",
+        "note": "De gemeente Zwolle geeft aan dat u de VOG meestal binnen 2 tot 4 weken ontvangt, niet binnen 8 weken"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 3,
+    "invalid_urls": 3,
+    "accuracy_percentage": 50.0,
+    "valid_urls_list": [
+      "https://www.zwolle.nl/naturalisatie",
+      "https://www.zwolle.nl/optie-tot-nederlander",
+      "https://www.zwolle.nl/verklaring-omtrent-gedrag"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.zwolle.nl/veelgestelde-vragen-over-de-omgevingswet",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.zwolle.nl/uittreksel-brp-of-burgerlijke-stand-aanvragen-als-advocaat-of-notaris",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.zwolle.nl/verklaring-omtrent-gedrag-vog",
+        "reason": "INVALID: Error scraping https://www.zwolle.nl/verklaring-omtrent-gedrag-vog: 404 Client Error: Not Found for url: https://www.zwolle.nl/verklaring-omtrent-gedrag-vog"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het aanvraagformulier (versie maart...)",
+          "original_reference": "Het aanvraagformulier (versie juni 2022)",
+          "note": "De bronpagina verwijst naar een formulier van maart, terwijl de originele tekst een formulier van juni 2022 noemt. Dit duidt op een versieverschil in de formulieren.",
+          "source_urls": [
+            "https://www.zwolle.nl/verklaring-omtrent-gedrag"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Er zijn commerciële bedrijven die aanbieden de aanvraag voor u in te dienen. Houd er rekening mee dat u dan soms (veel) meer betaalt dan wanneer u aanvraagt bij de gemeente of (met DigiD) via de gemeentelijke website!",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat een belangrijke waarschuwing over commerciële aanbieders die niet in de originele tekst staat vermeld.",
+          "source_urls": [
+            "https://www.zwolle.nl/verklaring-omtrent-gedrag"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Of is er geen organisatie die u om de VOG vraagt?",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt expliciet dat een VOG ook kan worden aangevraagd zonder dat een organisatie erom vraagt, deze mogelijkheid ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.zwolle.nl/verklaring-omtrent-gedrag"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn drie belangrijke verschillen gevonden tussen de originele tekst en de bronpagina. Het gaat om een verschil in de versiedatum van het aanvraagformulier, het ontbreken van een waarschuwing over commerciële aanbieders, en aanvullende informatie over de mogelijkheid om een VOG aan te vragen zonder dat een organisatie erom vraagt. De kernprocedures en kosten komen wel overeen."
+  }
+}

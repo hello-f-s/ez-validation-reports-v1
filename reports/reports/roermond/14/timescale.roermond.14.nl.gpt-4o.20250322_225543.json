@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ROERMOND",
+      "contact": {
+        "phone": "14 0475",
+        "email": "mail@roermond.nl",
+        "website": "http://www.roermond.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Uw bedrijfsactiviteiten moeten aantoonbaar afhangen van autogebruik, met minimaal 20 werkbezoeken per week. Dit geldt niet voor bedrijven in gebied E.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Roermond is er geen specifieke eis van 20 werkbezoeken per week genoemd, en er wordt ook geen uitzondering gemaakt voor gebied E in de parkeervoorwaarden voor bedrijven."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.roermond.nl/digitaalparkeerloket",
+      "https://www.roermond.nl/ontheffing-parkeer-en-verkeersregels",
+      "https://www.roermond.nl/parkeervergunning-voor-bewoners",
+      "https://www.roermond.nl/veelgestelde-vragen-over-verkeer-en-parkeren",
+      "https://www.roermond.nl/bezoekersvergunning-parkeren",
+      "https://www.roermond.nl/parkeervergunning-voor-bedrijven-zorginstellingen-en-non-profit-instellingen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De kosten per ontheffing bedragen €34,45 (tarief 2025)",
+          "original_reference": "De kosten voor een parkeervergunning of ontheffing zijn niet specifiek vermeld voor ondernemers in de beschikbare informatie.",
+          "note": "De originele tekst vermeldt geen specifieke kosten, terwijl de bron wel concrete tariefinformatie bevat voor ontheffingen",
+          "source_urls": [
+            "https://www.roermond.nl/ontheffing-parkeer-en-verkeersregels"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Dien uw aanvraag ten minste vijf werkdagen vóór de gewenste dag van ontheffing in",
+          "original_reference": "De tijd die het kost om een parkeervergunning of ontheffing te verkrijgen, is niet gespecificeerd in de beschikbare informatie",
+          "note": "De bron specificeert een concrete aanvraagtermijn van minimaal 5 werkdagen, terwijl de originele tekst geen termijn noemt",
+          "source_urls": [
+            "https://www.roermond.nl/ontheffing-parkeer-en-verkeersregels"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Let op! Voertuigen langer dan 6,0m of hoger dan 2,4m (incl. lading) mogen conform de APV niet zonder meer parkeren in het centrum of het schilgebied van Roermond",
+          "original_reference": "No matching information",
+          "note": "De bron vermeldt belangrijke voertuigbeperkingen die volledig ontbreken in de originele tekst",
+          "source_urls": [
+            "https://www.roermond.nl/parkeervergunning-voor-bedrijven-zorginstellingen-en-non-profit-instellingen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie die ontbreekt in de originele tekst, waaronder specifieke kosten (€34,45), aanvraagtermijnen (5 werkdagen) en voertuigbeperkingen voor het centrum en schilgebied. Deze informatie is essentieel voor aanvragers en zou in de originele tekst opgenomen moeten worden voor een volledig beeld van de voorwaarden en procedures."
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AMERSFOORT",
+      "contact": {
+        "phone": "14 033",
+        "email": "info@amersfoort.nl",
+        "website": "http://www.amersfoort.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 27,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.4,
+    "false_statements": [
+      {
+        "sentence": "Vanaf 1 januari 2024 is een onafhankelijke kwaliteitsborger verplicht voor nieuwe bouwwerken in gevolgklasse 1, en vanaf 2025 ook voor verbouwingen.",
+        "status": "false",
+        "note": "De Wet kwaliteitsborging voor het bouwen (Wkb) is op 1 juli 2023 in werking getreden. Vanaf die datum is een onafhankelijke kwaliteitsborger verplicht voor nieuwe bouwwerken in gevolgklasse 1. Er is geen aparte ingangsdatum voor verbouwingen in 2025."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 0,
+    "invalid_urls": 5,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.amersfoort.nl/omgevingsvergunning-voor-bouwen-en-verbouwen",
+        "reason": "INVALID: Error scraping https://www.amersfoort.nl/omgevingsvergunning-voor-bouwen-en-verbouwen: HTTPSConnectionPool(host='www.amersfoort.nl', port=443): Max retries exceeded with url: /omgevingsvergunning-voor-bouwen-en-verbouwen (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x105457770>: Failed to resolve 'www.amersfoort.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.amersfoort.nl/aanleggen",
+        "reason": "INVALID: Error scraping https://www.amersfoort.nl/aanleggen: HTTPSConnectionPool(host='www.amersfoort.nl', port=443): Max retries exceeded with url: /aanleggen (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x105784550>: Failed to resolve 'www.amersfoort.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.amersfoort.nl/een-vergunning-aangevraagd-en-nu",
+        "reason": "INVALID: Error scraping https://www.amersfoort.nl/een-vergunning-aangevraagd-en-nu: HTTPSConnectionPool(host='www.amersfoort.nl', port=443): Max retries exceeded with url: /een-vergunning-aangevraagd-en-nu (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x105784f50>: Failed to resolve 'www.amersfoort.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.amersfoort.nl/reclame",
+        "reason": "INVALID: Error scraping https://www.amersfoort.nl/reclame: HTTPSConnectionPool(host='www.amersfoort.nl', port=443): Max retries exceeded with url: /reclame (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x105785310>: Failed to resolve 'www.amersfoort.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.amersfoort.nl/boom-kappen",
+        "reason": "INVALID: Error scraping https://www.amersfoort.nl/boom-kappen: HTTPSConnectionPool(host='www.amersfoort.nl', port=443): Max retries exceeded with url: /boom-kappen (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1057856d0>: Failed to resolve 'www.amersfoort.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  }
+}

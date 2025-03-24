@@ -1,0 +1,79 @@
+{
+  "context": {
+    "municipality": {
+      "name": "SOEST",
+      "contact": {
+        "phone": "(035) 609 34 11",
+        "email": "null",
+        "website": "http://www.soest.nl/contact"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 10,
+    "true_sentences": 9,
+    "false_sentences": 1,
+    "accuracy_percentage": 90.0,
+    "false_statements": [
+      {
+        "sentence": "Het Telefonisch Informatiepunt van de gemeente Soest is bereikbaar op werkdagen van 8.30 tot 12.30 uur.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Soest is het Telefonisch Informatiepunt bereikbaar op werkdagen van 8.30 tot 17.00 uur."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 1,
+    "valid_urls": 1,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "http://www.soest.nl/contact"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Wilt u ons een e-mail sturen? Gebruik dan het contactformulier. Het contactformulier werkt snel en eenvoudig. Uw vraag wordt automatisch geregistreerd in ons zaaksysteem.",
+          "original_reference": "Wilt u contact opnemen met de gemeente Soest? Gebruik dan het contactformulier. Dit werkt snel en eenvoudig, en uw vraag wordt automatisch geregistreerd in ons zaaksysteem.",
+          "note": "De informatie over het contactformulier komt overeen met de originele tekst",
+          "source_urls": [
+            "http://www.soest.nl/contact"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Bezoekadres: Raadhuisplein 1, 3762 AV Soest Postadres: Postbus 2000, 3760 CA Soest",
+          "original_reference": "Bezoekadres: Raadhuisplein 1, 3762 AV Soest\nPostadres: Postbus 2000, 3760 CA Soest",
+          "note": "De bezoek- en postadresgegevens zijn identiek",
+          "source_urls": [
+            "http://www.soest.nl/contact"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Het Telefonisch Informatiepunt is bereikbaar op werkdagen van 8.30 tot 12.30 uur.",
+          "original_reference": "Het Telefonisch Informatiepunt van de gemeente Soest is bereikbaar op werkdagen van 8.30 tot 12.30 uur.",
+          "note": "De openingstijden van het Telefonisch Informatiepunt komen overeen",
+          "source_urls": [
+            "http://www.soest.nl/contact"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse blijkt dat alle kerngegevens in de originele tekst (contactgegevens, openingstijden, adressen en procedures) consistent zijn met de informatie op de officiële gemeentewebsite. Er zijn geen significante verschillen of tegenstrijdigheden gevonden tussen de originele inhoud en de brongegevens."
+  }
+}

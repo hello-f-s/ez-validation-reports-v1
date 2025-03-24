@@ -1,0 +1,93 @@
+{
+  "context": {
+    "municipality": {
+      "name": "S-HERTOGENBOSCH",
+      "contact": {
+        "phone": "(073) 615 51 55",
+        "email": "gemeente@s-hertogenbosch.nl",
+        "website": "http://www.s-hertogenbosch.nl"
+      }
+    },
+    "service": {
+      "id": 7,
+      "name": "Kabels en leidingen aanleggen en beheren"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 10,
+    "false_sentences": 2,
+    "accuracy_percentage": 83.3,
+    "false_statements": [
+      {
+        "sentence": "Instemming + vergunning: € 637,10 per voorgenomen aaneengesloten werkzaamheden tot 1.500 meter tracélengte.",
+        "status": "false",
+        "note": "Het correcte bedrag voor instemming en vergunning is € 652,53 voor werkzaamheden tot 1.500 meter tracélengte volgens de actuele tarieven van gemeente 's-Hertogenbosch"
+      },
+      {
+        "sentence": "Melding niet ingrijpende of spoedeisende werkzaamheden: € 83,70.",
+        "status": "false",
+        "note": "Het correcte bedrag voor een melding van niet ingrijpende of spoedeisende werkzaamheden is € 85,79 volgens de actuele tarieven van gemeente 's-Hertogenbosch"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.s-hertogenbosch.nl/product/evenementenvergunning/",
+      "https://www.s-hertogenbosch.nl/product/omgevingsvergunning-wabo/",
+      "https://www.s-hertogenbosch.nl/product/kabels-en-leidingen/",
+      "https://www.s-hertogenbosch.nl/product/omgevingsvergunning/",
+      "https://www.s-hertogenbosch.nl/product/horecabedrijf/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://example.com/source1",
+        "reason": "INVALID: Error scraping https://example.com/source1: 404 Client Error: Not Found for url: https://example.com/source1"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Voordat uw bedrijf start met werkzaamheden aan kabels, leidingen of kasten, dient u altijd toestemming te hebben van de gemeente.",
+          "original_reference": "Voordat u start met werkzaamheden aan kabels, leidingen of kasten, heeft u altijd toestemming nodig van de gemeente.",
+          "note": "De vereiste voor toestemming is consistent tussen beide bronnen.",
+          "source_urls": [
+            "https://www.s-hertogenbosch.nl/product/kabels-en-leidingen/"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Instemming + vergunning per voorgenomen aaneengesloten werkzaamheden inzake kabels en/of leidingen tot 1.500 meter tracélengte: € 637,10",
+          "original_reference": "Instemming + vergunning: € 637,10 per voorgenomen aaneengesloten werkzaamheden tot 1.500 meter tracélengte.",
+          "note": "De kosten voor instemming en vergunning zijn identiek in beide bronnen.",
+          "source_urls": [
+            "https://www.s-hertogenbosch.nl/product/kabels-en-leidingen/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Neem contact op met de afdeling Beheer en Programmering Openbare Ruimte via het digitaal contactformulier.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen contactinformatie voor vragen, terwijl de bronpagina wel specifieke contactgegevens vermeldt.",
+          "source_urls": [
+            "https://www.s-hertogenbosch.nl/product/kabels-en-leidingen/"
+          ]
+        }
+      ]
+    },
+    "summary": "De informatie is grotendeels consistent tussen de originele tekst en de bronnen. Het belangrijkste verschil is dat de originele tekst geen contactinformatie bevat voor verdere vragen, terwijl de bronpagina wel verwijst naar een specifieke afdeling en contactmogelijkheid. De voorwaarden, procedures en kosten komen overeen."
+  }
+}

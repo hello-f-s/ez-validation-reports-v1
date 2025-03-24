@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ZWOLLE",
+      "contact": {
+        "phone": "14 038",
+        "email": "postbus@zwolle.nl",
+        "website": "http://www.zwolle.nl"
+      }
+    },
+    "service": {
+      "id": 3,
+      "name": "Certificaat voor opgraving aanvragen en vondst melden"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 10,
+    "false_sentences": 1,
+    "accuracy_percentage": 90.9,
+    "false_statements": [
+      {
+        "sentence": "Daarnaast kunt u op dinsdagen en donderdagen archeologische vondsten laten onderzoeken door de archeoloog in ANNO Stadsmuseum Zwolle.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Zwolle is er geen vaste spreekuur op dinsdagen en donderdagen bij ANNO Stadsmuseum Zwolle voor het onderzoeken van archeologische vondsten. Voor het laten onderzoeken van vondsten moet men contact opnemen via erfgoed@zwolle.nl voor een afspraak."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.zwolle.nl/erfgoed/bodemverstoring",
+      "https://www.zwolle.nl/bijdrage-kosten-archeologie",
+      "https://www.zwolle.nl/erfgoed/archeologie-en-vergunningen",
+      "https://www.zwolle.nl/erfgoed/contact-erfgoed",
+      "https://www.zwolle.nl/erfgoed/vondstmelding"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "In de oude binnenstad geldt dit voor een gebied van minimaal 30 m2 en een diepte van 0.5 meter. Buiten de binnenstad geldt dit voor een gebied van minimaal 100 m2 en een diepte van 0.5 meter.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen specifieke oppervlakte-eisen voor archeologisch onderzoek, terwijl de bronpagina concrete afmetingen voorschrijft voor verschillende gebieden.",
+          "source_urls": [
+            "https://www.zwolle.nl/erfgoed/bodemverstoring"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De veroorzaker betaald in principe voor het archeologisch onderzoek. Alleen voor particulieren die voor eigen woongenot gaan bouwen en zonder winstbejag is er een excessieve kostenregeling.",
+          "original_reference": "Er zijn geen kosten verbonden aan het melden van archeologische vondsten bij de gemeente.",
+          "note": "De originele tekst stelt dat er geen kosten zijn, terwijl de bronpagina aangeeft dat er wel kosten zijn voor archeologisch onderzoek, met een specifieke kostenregeling voor particulieren.",
+          "source_urls": [
+            "https://www.zwolle.nl/erfgoed/bodemverstoring",
+            "https://www.zwolle.nl/bijdrage-kosten-archeologie"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Sinds 1 januari 2024 is de Omgevingswet in werking getreden. Archeologische monumenten, stads-en dorpsgezichten, monumenten en cultuurlandschappen vallen nu onder cultureel erfgoed.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over de nieuwe Omgevingswet en de daarbij horende regelgeving voor cultureel erfgoed.",
+          "source_urls": [
+            "https://www.zwolle.nl/erfgoed/archeologie-en-vergunningen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten belangrijke aanvullende informatie die niet in de originele tekst staat, waaronder specifieke oppervlakte-eisen voor archeologisch onderzoek, kostenregelingen voor particulieren, en nieuwe wetgeving (Omgevingswet). Ook is er een discrepantie in de informatie over kosten: waar de originele tekst stelt dat er geen kosten zijn, geven de bronnen aan dat er wel degelijk kosten kunnen zijn voor archeologisch onderzoek, met specifieke regelingen voor particulieren."
+  }
+}

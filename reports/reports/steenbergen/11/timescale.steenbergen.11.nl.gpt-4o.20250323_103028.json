@@ -1,0 +1,91 @@
+{
+  "context": {
+    "municipality": {
+      "name": "STEENBERGEN",
+      "contact": {
+        "phone": "14 0167",
+        "email": "info@gemeente-steenbergen.nl",
+        "website": "http://www.gemeente-steenbergen.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Valt de aanvraag onder een normale procedure, dan is de termijn 8 weken en kan die één keer met 6 weken worden verlengd.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Steenbergen is de termijn voor een reguliere procedure inderdaad 8 weken, maar deze kan met maximaal 6 weken worden verlengd. Het woord 'één keer' is niet correct, aangezien er meerdere verlengingen mogelijk zijn binnen die 6 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 8,
+    "valid_urls": 4,
+    "invalid_urls": 4,
+    "accuracy_percentage": 50.0,
+    "valid_urls_list": [
+      "https://www.gemeente-steenbergen.nl/inwoners_overzicht/bouwen_en_verbouwen/digitaal_aanvragen_van_een_omgevingsvergunning/digitaal_aanvragen_van_een_omgevingsvergunning_",
+      "https://www.gemeente-steenbergen.nl/inwoners_overzicht/bouwen_en_verbouwen/aanvraagmogelijkheden_en_termijnen/",
+      "https://www.gemeente-steenbergen.nl/inwoners_overzicht/bouwen_en_verbouwen/digitaal_aanvragen_van_een_omgevingsvergunning/",
+      "https://www.gemeente-steenbergen.nl/inwoners_overzicht/bouwen_en_verbouwen/aanvraagmogelijkheden_en_termijnen/aanvraagmogelijkheden_en_termijnen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://example.com/doc1",
+        "reason": "INVALID: Error scraping https://example.com/doc1: 404 Client Error: Not Found for url: https://example.com/doc1"
+      },
+      {
+        "url": "https://www.gemeente-steenbergen.nl/inwoners_overzicht/bouwen_en_verbouwen/bouwen_en_verbouwen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://example.com/doc3",
+        "reason": "INVALID: Error scraping https://example.com/doc3: 404 Client Error: Not Found for url: https://example.com/doc3"
+      },
+      {
+        "url": "https://example.com/doc2",
+        "reason": "INVALID: Error scraping https://example.com/doc2: 404 Client Error: Not Found for url: https://example.com/doc2"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Lukt het ons niet om binnen deze termijn (14 weken) een beslissing te nemen? Dan krijgt u automatisch de vergunning.",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden een belangrijke aanvullende bepaling over automatische vergunningverlening bij termijnoverschrijding bij normale procedures, die niet in de originele tekst staat.",
+          "source_urls": [
+            "https://www.gemeente-steenbergen.nl/inwoners_overzicht/bouwen_en_verbouwen/aanvraagmogelijkheden_en_termijnen/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Er gelden andere regels voor ingewikkelde projecten zoals projecten waar een milieuvergunning voor nodig is. Of waarbij het omgevingsplan (voorheen bestemmingsplan) moet worden aangepast. Bijvoorbeeld als een monument moet worden verbouwd. Hierbij is het niet altijd mogelijk om voor losse activiteiten 1 vergunning aan te vragen.",
+          "original_reference": "No matching information",
+          "note": "De bronnen bevatten specifieke informatie over uitzonderingen voor complexe projecten en de mogelijkheid tot gefaseerde aanvraag, wat niet in de originele tekst staat vermeld.",
+          "source_urls": [
+            "https://www.gemeente-steenbergen.nl/inwoners_overzicht/bouwen_en_verbouwen/aanvraagmogelijkheden_en_termijnen/",
+            "https://www.gemeente-steenbergen.nl/inwoners_overzicht/bouwen_en_verbouwen/aanvraagmogelijkheden_en_termijnen/aanvraagmogelijkheden_en_termijnen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten twee belangrijke aanvullende bepalingen die niet in de originele tekst staan: 1) de automatische vergunningverlening bij termijnoverschrijding voor normale procedures, en 2) specifieke uitzonderingen en procedures voor complexe projecten zoals bij monumenten of milieuvergunningen. Deze informatie is essentieel voor een volledig begrip van de vergunningsprocedure."
+  }
+}

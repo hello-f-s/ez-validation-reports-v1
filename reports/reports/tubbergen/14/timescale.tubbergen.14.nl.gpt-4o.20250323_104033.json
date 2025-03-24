@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "TUBBERGEN",
+      "contact": {
+        "phone": "(0546) 62 80 00",
+        "email": "gemeente@tubbergen.nl",
+        "website": "http://www.tubbergen.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 9,
+    "true_sentences": 8,
+    "false_sentences": 1,
+    "accuracy_percentage": 88.9,
+    "false_statements": [
+      {
+        "sentence": "Voor de aanvraag van een parkeerontheffing moeten leges van €45,15 worden betaald.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Tubbergen bedragen de leges voor een parkeerontheffing €47,65 (2024), niet €45,15."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.tubbergen.nl/loterij",
+      "https://www.tubbergen.nl/gehandicaptenparkeerkaart",
+      "https://www.tubbergen.nl/omgevingsvergunning-bouwen",
+      "https://www.tubbergen.nl/ontheffing-parkeerschijfzone",
+      "https://www.tubbergen.nl/gehandicaptenparkeerplaats"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://omgevingswet.overheid.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Er wordt maximaal één ontheffing per woonadres verstrekt. De ontheffing wordt op uw kenteken gesteld.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de beperking van één ontheffing per woonadres en de koppeling aan kenteken",
+          "source_urls": [
+            "https://www.tubbergen.nl/ontheffing-parkeerschijfzone"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Na ontvangst van de aanvraag wordt er in principe binnen 2 weken op de aanvraag beslist.",
+          "original_reference": "Er is geen specifieke tijdsduur vermeld voor het afhandelen van parkeerontheffingen voor ondernemers.",
+          "note": "De bron specificeert een behandeltermijn van 2 weken, wat niet vermeld staat in de originele tekst",
+          "source_urls": [
+            "https://www.tubbergen.nl/ontheffing-parkeerschijfzone"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U dient een kopie van het kentekenbewijs deel I van het voertuig waarvoor de vergunning geldt, mee te sturen.",
+          "original_reference": "Er zijn geen specifieke documenten of gegevens vermeld die ondernemers moeten aanleveren voor een vergunning of ontheffing.",
+          "note": "De bron vermeldt specifieke documentvereisten (kentekenbewijs) die niet in de originele tekst staan",
+          "source_urls": [
+            "https://www.tubbergen.nl/ontheffing-parkeerschijfzone"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie over de parkeerontheffing die niet in de originele tekst staat, waaronder de beperking tot één ontheffing per adres, de behandeltermijn van 2 weken en de vereiste documentatie (kentekenbewijs). Deze informatie is essentieel voor het correct aanvragen van een parkeerontheffing."
+  }
+}

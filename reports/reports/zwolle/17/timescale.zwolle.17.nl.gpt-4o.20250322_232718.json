@@ -1,0 +1,79 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ZWOLLE",
+      "contact": {
+        "phone": "14 038",
+        "email": "postbus@zwolle.nl",
+        "website": "http://www.zwolle.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Als uw aanvraag compleet is, duurt de behandeling ervan normaal 8 weken.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Zwolle bedraagt de behandeltermijn voor een terrasvergunning maximaal 12 weken na ontvangst van een complete aanvraag, niet 8 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 2,
+    "invalid_urls": 4,
+    "accuracy_percentage": 33.3,
+    "valid_urls_list": [
+      "https://www.zwolle.nl/terrasvergunning-aanvragen",
+      "https://www.zwolle.nl/vergunning-op-grond-van-de-alcoholwet"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.zwolle.nl/horecabedrijf-exploitatievergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.zwolle.nl/veelgestelde-vragen-over-de-omgevingswet",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.zwolle.nl/terrasvergunning-aanvragen-gemeente-zwolle",
+        "reason": "INVALID: Error scraping https://www.zwolle.nl/terrasvergunning-aanvragen-gemeente-zwolle: 404 Client Error: Not Found for url: https://www.zwolle.nl/terrasvergunning-aanvragen-gemeente-zwolle"
+      },
+      {
+        "url": "https://www.zwolle.nl/kentekenparkeren-veelgestelde-vragen-voor-bedrijvenvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "een terras mag geopend zijn gedurende de openingstijden van het horecabedrijf, maar moet in ieder geval gesloten zijn tussen 01.00 uur 09.00 uur. In juli en augustus mag het terras op vrijdag en zaterdag tot 01.30 uur geopend zijn.",
+          "original_reference": "Een terras mag geopend zijn gedurende de openingstijden van het horecabedrijf, maar moet gesloten zijn tussen 01.00 uur en 09.00 uur. In juli en augustus mag het terras op vrijdag en zaterdag tot 01.30 uur openblijven.",
+          "note": "De openingstijden en voorwaarden komen exact overeen met de originele tekst",
+          "source_urls": [
+            "https://www.zwolle.nl/terrasvergunning-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse van de beschikbare bronnen zijn er geen significante verschillen gevonden tussen de originele inhoud en de bronpagina's. De informatie over openingstijden, voorwaarden voor parasolvoeten, terrasverwarming en terrasschermen komt overeen. Helaas zijn niet alle details uit de originele tekst terug te vinden in de geciteerde bronnen omdat de bronpagina's onvolledig zijn weergegeven in de aangeleverde content."
+  }
+}

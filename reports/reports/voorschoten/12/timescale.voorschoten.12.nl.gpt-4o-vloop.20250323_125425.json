@@ -1,0 +1,87 @@
+{
+  "context": {
+    "municipality": {
+      "name": "VOORSCHOTEN",
+      "contact": {
+        "phone": "14 071",
+        "email": "gemeente@voorschoten.nl",
+        "website": "http://www.voorschoten.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "Voor het bekijken van bouwtekeningen zijn er kosten verbonden van €15,20 per adres (prijs voor 2025).",
+        "status": "false",
+        "note": "Dit bedrag en specifiek deze prijs voor 2025 kan niet geverifieerd worden via de officiële bronnen van de gemeente Voorschoten. De gemeente publiceert actuele legeskosten in de legesverordening, maar dit specifieke bedrag voor 2025 wordt niet genoemd."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 1,
+    "invalid_urls": 4,
+    "accuracy_percentage": 20.0,
+    "valid_urls_list": [
+      "http://www.voorschoten.nl"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.voorschoten.nl/bouwloket-producten",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.voorschoten.nl/omgevingswet",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.voorschoten.nl/omgevingsplan-bekijken",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.voorschoten.nl/verkeersontheffing-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Leidseweg 25, 2252 LA Voorschoten",
+          "original_reference": "No matching information",
+          "note": "Het fysieke adres van het gemeentehuis ontbreekt in de originele tekst, wat belangrijke informatie is voor bezoekers",
+          "source_urls": [
+            "http://www.voorschoten.nl"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wij werken op afspraak. Hierdoor zijn de wachttijden korter en wordt u sneller geholpen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet expliciet dat de gemeente uitsluitend op afspraak werkt, wat een essentiële voorwaarde is voor dienstverlening",
+          "source_urls": [
+            "http://www.voorschoten.nl"
+          ]
+        }
+      ]
+    },
+    "summary": "De originele tekst mist enkele essentiële praktische details die wel op de gemeentelijke website staan, zoals het fysieke adres van het gemeentehuis en de belangrijke voorwaarde dat er alleen op afspraak gewerkt wordt. Deze informatie is cruciaal voor inwoners die gebruik willen maken van gemeentelijke diensten."
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ROTTERDAM",
+      "contact": {
+        "phone": "14 010",
+        "email": "null",
+        "website": "http://www.rotterdam.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 20,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.2,
+    "false_statements": [
+      {
+        "sentence": "Specifieke informatie over het bezwaarproces is niet direct beschikbaar op de website van de gemeente Rotterdam voor omgevingsvergunningen en milieumeldingen.",
+        "status": "false",
+        "note": "Deze informatie is wel degelijk beschikbaar op de website van de gemeente Rotterdam. Op rotterdam.nl staat duidelijke informatie over het maken van bezwaar tegen een omgevingsvergunning, inclusief de termijn van 6 weken en de procedure."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 3,
+    "invalid_urls": 4,
+    "accuracy_percentage": 42.9,
+    "valid_urls_list": [
+      "https://www.rotterdam.nl/omgevingsvergunning-milieu-aanvragen",
+      "https://www.rotterdam.nl/conceptverzoek-omgevingsvergunning-doen",
+      "https://rotterdam.nl/loket/omgevingsvergunning-milieu"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.rotterdam.nl/omgevingsvergunning-bouwen-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.rotterdam.nl/omgevingsvergunning-bouwen-aanvragen/start-omgevingsvergunning-bouwen-per-post-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.rotterdam.nl/omgevingsvergunning-inrit-of-uitrit-aanvragen/start-omgevingsvergunning-inrit-of-uitrit-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://rotterdam.nl/loket/omgevingsvergunning-bouwen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een melding doet u uiterlijk 4 weken voordat de activiteiten beginnen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt geen specifieke termijn voor het doen van een melding, terwijl de brontekst een duidelijke termijn van 4 weken voorafgaand aan de activiteiten specificeert.",
+          "source_urls": [
+            "https://rotterdam.nl/loket/omgevingsvergunning-milieu"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor meldingen en klachten over bijvoorbeeld heiwerkzaamheden gebruikt u het klachtenformulier.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over het melden van geluidsoverlast of het gebruik van een klachtenformulier voor heiwerkzaamheden.",
+          "source_urls": [
+            "https://www.rotterdam.nl/omgevingsvergunning-milieu-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wilt u weten of uw plan om te bouwen of verbouwen mag van de gemeente? Doe dan eerst een conceptverzoek, voordat u een omgevingsvergunning aanvraagt.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de mogelijkheid tot het doen van een conceptverzoek (voorheen 'Vooroverleg' of 'Conceptaanvraag') voorafgaand aan de daadwerkelijke vergunningsaanvraag.",
+          "source_urls": [
+            "https://www.rotterdam.nl/conceptverzoek-omgevingsvergunning-doen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten enkele belangrijke aanvullende details die niet in de originele tekst staan: een specifieke termijn van 4 weken voor meldingen, informatie over het melden van geluidsoverlast via een klachtenformulier, en de mogelijkheid tot het doen van een conceptverzoek voorafgaand aan de vergunningsaanvraag. Deze informatie is relevant voor een volledig begrip van de procedures en mogelijkheden."
+  }
+}

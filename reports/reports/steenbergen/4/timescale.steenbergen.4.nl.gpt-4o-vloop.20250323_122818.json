@@ -1,0 +1,78 @@
+{
+  "context": {
+    "municipality": {
+      "name": "STEENBERGEN",
+      "contact": {
+        "phone": "14 0167",
+        "email": "info@gemeente-steenbergen.nl",
+        "website": "http://www.gemeente-steenbergen.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "Bij eenvoudige aanvragen krijgt u automatisch de vergunning als de beslissing niet op tijd is genomen, maar bij complexe aanvragen geldt dit niet.",
+        "status": "false",
+        "note": "Volgens de Wet algemene bepalingen omgevingsrecht (Wabo) geldt de 'van rechtswege' vergunningverlening (lex silencio positivo) niet voor omgevingsvergunningen, ongeacht of het een eenvoudige of complexe aanvraag betreft. Er wordt dus niet automatisch een vergunning verleend bij het verstrijken van de beslistermijn."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.gemeente-steenbergen.nl/inwoners_overzicht/bouwen_en_verbouwen/aanvraagmogelijkheden_en_termijnen/",
+      "https://www.gemeente-steenbergen.nl/inwoners_overzicht/bouwen_en_verbouwen/aanvraagmogelijkheden_en_termijnen/aanvraagmogelijkheden_en_termijnen",
+      "https://www.gemeente-steenbergen.nl/inwoners_overzicht/bouwen_en_verbouwen/digitaal_aanvragen_van_een_omgevingsvergunning/digitaal_aanvragen_van_een_omgevingsvergunning_",
+      "https://www.gemeente-steenbergen.nl/inwoners_overzicht/bouwen_en_verbouwen/digitaal_aanvragen_van_een_omgevingsvergunning/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.gemeente-steenbergen.nl/inwoners_overzicht/recreatie/evenementen/2035/01",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het nadeel is dan wel dat er voor alle losse onderdelen een vergunningprocedure moet worden doorlopen. En dat belanghebbenden tegen al die aparte vergunningen bezwaar kunnen aantekenen. Ook kan het dan voorkomen dat niet alle vergunningen worden goedgekeurd.",
+          "original_reference": "Dit is tijd- en kostenefficiënt. [...] u kunt ook voor elke activiteit afzonderlijke vergunningen aanvragen.",
+          "note": "De bronpagina geeft specifiekere nadelen van het apart aanvragen van vergunningen, waaronder het risico dat niet alle vergunningen worden goedgekeurd. Deze belangrijke details ontbreken in de originele tekst.",
+          "source_urls": [
+            "https://www.gemeente-steenbergen.nl/inwoners_overzicht/bouwen_en_verbouwen/aanvraagmogelijkheden_en_termijnen/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Denk daarbij aan het slopen van een oude woning, het kappen van een boom of het bouwen van een nieuwe woning.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina geeft concrete voorbeelden van activiteiten die onder één omgevingsvergunning kunnen vallen. Deze verduidelijkende voorbeelden ontbreken in de originele tekst.",
+          "source_urls": [
+            "https://www.gemeente-steenbergen.nl/inwoners_overzicht/bouwen_en_verbouwen/digitaal_aanvragen_van_een_omgevingsvergunning/"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten enkele belangrijke aanvullende details die niet in de originele tekst staan. Met name de specifieke nadelen van het apart aanvragen van vergunningen en concrete voorbeelden van activiteiten die onder één omgevingsvergunning kunnen vallen. Deze informatie maakt de procedures en mogelijkheden duidelijker voor de aanvrager. De kernprocessen en termijnen zijn verder consistent tussen beide versies."
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ROTTERDAM",
+      "contact": {
+        "phone": "14 010",
+        "email": "null",
+        "website": "http://www.rotterdam.nl"
+      }
+    },
+    "service": {
+      "id": 15,
+      "name": "Vergunning of ontheffing voor straatartiesten"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 11,
+    "false_sentences": 2,
+    "accuracy_percentage": 84.6,
+    "false_statements": [
+      {
+        "sentence": "Er worden per jaar maximaal 50 ontheffingen gegeven.",
+        "status": "false",
+        "note": "Volgens de officiële website van Rotterdam wordt er geen maximaal aantal ontheffingen per jaar genoemd."
+      },
+      {
+        "sentence": "Het duurt maximaal 4 weken voordat uw aanvraag wordt goedgekeurd of afgewezen.",
+        "status": "false",
+        "note": "Op de officiële website van Rotterdam wordt geen specifieke behandeltermijn genoemd voor de aanvraag van een straatartiest ontheffing."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 3,
+    "invalid_urls": 3,
+    "accuracy_percentage": 50.0,
+    "valid_urls_list": [
+      "https://www.rotterdam.nl/exploitatievergunning-speelautomatenhal-aanvragen/start-exploitatievergunning-speelautomatenhal-aanvragen",
+      "https://www.rotterdam.nl/exploitatievergunning-aanvragen/start-exploitatievergunning-aanvragen",
+      "https://www.rotterdam.nl/ontheffing-aanvragen-voor-optreden-als-straatartiest"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.rotterdam.nl/omgevingsvergunning-bouwen-aanvragen/start-omgevingsvergunning-bouwen-per-post-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.rotterdam.nl/omgevingsvergunning-inrit-of-uitrit-aanvragen/start-omgevingsvergunning-inrit-of-uitrit-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.rotterdam.nl/loket/ontheffing-straatartiest/",
+        "reason": "INVALID: Error scraping https://www.rotterdam.nl/loket/ontheffing-straatartiest/: 404 Client Error: Not Found for url: https://www.rotterdam.nl/loket/ontheffing-straatartiest"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Via de knop 'Ontheffing aanvragen' vraagt u online een ontheffing aan.",
+          "original_reference": "U vraagt de ontheffing aan bij de gemeente.",
+          "note": "De bron specificeert dat de aanvraag online moet gebeuren via een specifieke knop, terwijl de originele tekst alleen vermeldt dat het bij de gemeente moet worden aangevraagd zonder het online aspect te specificeren.",
+          "source_urls": [
+            "https://www.rotterdam.nl/ontheffing-aanvragen-voor-optreden-als-straatartiest"
+          ]
+        }
+      ]
+    },
+    "summary": "Er is één belangrijk verschil gevonden tussen de originele tekst en de bronnen. De bronpagina specificeert dat de aanvraag online moet gebeuren via een specifieke knop, terwijl de originele tekst alleen vermeldt dat de aanvraag bij de gemeente moet worden gedaan zonder het online aspect te vermelden. De overige informatie in de originele tekst komt overeen met de beschikbare bronnen of kan niet geverifieerd worden omdat de relevante informatie niet in de getoonde broninhoud staat."
+  }
+}

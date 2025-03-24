@@ -1,0 +1,72 @@
+{
+  "context": {
+    "municipality": {
+      "name": "TUBBERGEN",
+      "contact": {
+        "phone": "(0546) 62 80 00",
+        "email": "gemeente@tubbergen.nl",
+        "website": "http://www.tubbergen.nl"
+      }
+    },
+    "service": {
+      "id": 10,
+      "name": "Nachtregister bijhouden"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 10,
+    "true_sentences": 10,
+    "false_sentences": 0,
+    "accuracy_percentage": 100.0,
+    "false_statements": []
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.tubbergen.nl/register-kinderopvang",
+      "https://www.tubbergen.nl/toeristenbelasting",
+      "https://www.tubbergen.nl/verklaring-omtrent-gedrag-vog",
+      "https://www.tubbergen.nl/aanvraag-evenementenvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.tubbergen.nl/beleid-en-regelgeving-gemeente",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Aanbieders van overnachtingen zijn wettelijk verplicht een nachtregistratie bij te houden. De politie mag deze overnachtingsgegevens opvragen om: - gevaar te voorkomen; - te gebruiken voor een opsporingsonderzoek naar vermiste personen of slachtoffers. Ook de gemeente mag van deze gegevens gebruik maken voor de heffing van de toeristenbelasting.",
+          "original_reference": "U bent verplicht een nachtregistratie bij te houden als u een overnachtingsplek aanbiedt [...] De politie mag de geregistreerde overnachtingsgegevens opvragen om gevaar te voorkomen of te gebruiken voor een opsporingsonderzoek naar vermiste personen of slachtoffers. De gemeente gebruikt de gegevens voor de heffing van de toeristenbelasting.",
+          "note": "De informatie over de verplichting tot nachtregistratie en het gebruik van gegevens komt volledig overeen",
+          "source_urls": [
+            "https://www.tubbergen.nl/toeristenbelasting"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Eens per jaar ontvangt diegene, die gelegenheid biedt tot verblijf (exploitant), een aanslag toeristenbelasting. Deze is bevoegd om de belasting te verhalen op de verblijfhouder.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de jaarlijkse aanslag en de mogelijkheid om de belasting te verhalen op de verblijfhouder. Dit is aanvullende belangrijke informatie voor exploitanten.",
+          "source_urls": [
+            "https://www.tubbergen.nl/toeristenbelasting"
+          ]
+        }
+      ]
+    },
+    "summary": "De broninhoud is grotendeels consistent met de originele tekst wat betreft de basisvereisten voor nachtregistratie. Er is echter aanvullende belangrijke informatie gevonden over de praktische uitvoering van de toeristenbelasting, waaronder de jaarlijkse aanslag en de mogelijkheid om deze door te berekenen aan gasten. Deze informatie ontbreekt in de originele tekst maar is wel relevant voor exploitanten."
+  }
+}

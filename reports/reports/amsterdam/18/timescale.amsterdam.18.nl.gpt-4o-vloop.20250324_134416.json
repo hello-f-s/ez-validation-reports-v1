@@ -1,0 +1,64 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AMSTERDAM",
+      "contact": {
+        "phone": "14 020",
+        "email": "null",
+        "website": "http://www.amsterdam.nl"
+      }
+    },
+    "service": {
+      "id": 18,
+      "name": "Ventvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 12,
+    "false_sentences": 2,
+    "accuracy_percentage": 85.7,
+    "false_statements": [
+      {
+        "sentence": "De inschrijving in het RAH kost €55,90 en de kosten voor een ventvergunning bedragen €23,20.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Amsterdam bedragen de kosten voor inschrijving in het RAH €57,60 en voor een ventvergunning €24,00 (tarieven 2024)."
+      },
+      {
+        "sentence": "U hoort direct aan de balie of u de ventvergunning krijgt.",
+        "status": "false",
+        "note": "Volgens de gemeente Amsterdam duurt de behandeling van een ventvergunning maximaal 8 weken. Er wordt niet direct aan de balie besloten over de toekenning."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 4,
+    "valid_urls": 0,
+    "invalid_urls": 4,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.amsterdam.nl/parkeren/parkeervergunning/parkeervergunning-bedrijven/",
+        "reason": "INVALID: Error scraping https://www.amsterdam.nl/parkeren/parkeervergunning/parkeervergunning-bedrijven/: 403 Client Error: Forbidden for url: https://www.amsterdam.nl/parkeren/parkeervergunning/parkeervergunning-bedrijven/"
+      },
+      {
+        "url": "https://www.amsterdam.nl/veelgevraagd/?productid=%7BAAAEF61D-7074-4F16-A976-66961C8E45E6%7D",
+        "reason": "INVALID: Error scraping https://www.amsterdam.nl/veelgevraagd/?productid=%7BAAAEF61D-7074-4F16-A976-66961C8E45E6%7D: 403 Client Error: Forbidden for url: https://www.amsterdam.nl/veelgevraagd/?productid=%7BAAAEF61D-7074-4F16-A976-66961C8E45E6%7D"
+      },
+      {
+        "url": "https://www.amsterdam.nl/ondernemen/vergunningen/",
+        "reason": "INVALID: Error scraping https://www.amsterdam.nl/ondernemen/vergunningen/: 403 Client Error: Forbidden for url: https://www.amsterdam.nl/ondernemen/vergunningen/"
+      },
+      {
+        "url": "https://www.amsterdam.nl/parkeren/parkeervergunning/parkeervergunning-bewoners/",
+        "reason": "INVALID: Error scraping https://www.amsterdam.nl/parkeren/parkeervergunning/parkeervergunning-bewoners/: 403 Client Error: Forbidden for url: https://www.amsterdam.nl/parkeren/parkeervergunning/parkeervergunning-bewoners/"
+      }
+    ]
+  }
+}

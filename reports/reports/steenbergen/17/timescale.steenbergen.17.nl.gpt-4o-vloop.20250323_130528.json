@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "STEENBERGEN",
+      "contact": {
+        "phone": "14 0167",
+        "email": "info@gemeente-steenbergen.nl",
+        "website": "http://www.gemeente-steenbergen.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 31,
+    "true_sentences": 29,
+    "false_sentences": 2,
+    "accuracy_percentage": 93.5,
+    "false_statements": [
+      {
+        "sentence": "Voor specifieke informatie over het aanvragen van een terrasvergunning binnen de gemeente Steenbergen is het belangrijk om de juiste procedures en stappen te volgen, aangezien deze niet direct op de gemeentelijke website zijn vermeld.",
+        "status": "false",
+        "note": "De informatie over terrasvergunningen is wel direct te vinden op de gemeentelijke website van Steenbergen onder 'Terras exploiteren'"
+      },
+      {
+        "sentence": "Voor vragen of meer informatie kunt u contact opnemen met de gemeente Steenbergen via: - Email: info@gemeente-steenbergen.nl",
+        "status": "false",
+        "note": "Het correcte e-mailadres van de gemeente Steenbergen is info@gemeente-steenbergen.nl, maar dit adres wordt niet meer actief gebruikt. De gemeente vraagt inwoners om het contactformulier op de website te gebruiken"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.gemeente-steenbergen.nl/inwoners_overzicht/bouwen_en_verbouwen/aanvraagmogelijkheden_en_termijnen/",
+      "https://www.gemeente-steenbergen.nl/inwoners_overzicht/bouwen_en_verbouwen/aanvraagmogelijkheden_en_termijnen/aanvraagmogelijkheden_en_termijnen",
+      "https://www.gemeente-steenbergen.nl/inwoners_overzicht/bouwen_en_verbouwen/digitaal_aanvragen_van_een_omgevingsvergunning/digitaal_aanvragen_van_een_omgevingsvergunning_",
+      "https://www.gemeente-steenbergen.nl/inwoners_overzicht/bouwen_en_verbouwen/digitaal_aanvragen_van_een_omgevingsvergunning/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.gemeente-steenbergen.nl/inwoners_overzicht/bouwen_en_verbouwen/bouwen_en_verbouwen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Lukt het ons niet om binnen deze termijn (14 weken) een beslissing te nemen? Dan krijgt u automatisch de vergunning.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat men automatisch een vergunning krijgt als de gemeente niet binnen de termijn beslist. Dit is een belangrijke juridische consequentie die ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.gemeente-steenbergen.nl/inwoners_overzicht/bouwen_en_verbouwen/aanvraagmogelijkheden_en_termijnen/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De omgevingsvergunning kan bijvoorbeeld in 2 fasen worden aangevraagd.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de mogelijkheid om een omgevingsvergunning in twee fasen aan te vragen voor complexe projecten.",
+          "source_urls": [
+            "https://www.gemeente-steenbergen.nl/inwoners_overzicht/bouwen_en_verbouwen/aanvraagmogelijkheden_en_termijnen/"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten twee belangrijke aanvullingen die niet in de originele tekst staan: 1) het automatisch verkrijgen van een vergunning als de gemeente niet binnen de termijn beslist, en 2) de mogelijkheid om een omgevingsvergunning in twee fasen aan te vragen voor complexe projecten. Deze informatie is relevant voor aanvragers om hun rechten en mogelijkheden te kennen."
+  }
+}

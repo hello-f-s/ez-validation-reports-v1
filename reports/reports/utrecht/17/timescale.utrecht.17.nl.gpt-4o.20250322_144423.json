@@ -1,0 +1,75 @@
+{
+  "context": {
+    "municipality": {
+      "name": "UTRECHT",
+      "contact": {
+        "phone": "(014) 030",
+        "email": "Gemeente@utrecht.nl",
+        "website": "http://www.utrecht.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "Voor de verwerking van een omgevingsvergunning geldt normaal gesproken een termijn van 8 weken, die eenmalig kan worden verlengd met 6 weken.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Utrecht geldt voor een reguliere omgevingsvergunning een beslistermijn van 8 weken die kan worden verlengd met maximaal 6 weken, maar voor complexere aanvragen geldt de uitgebreide procedure met een termijn van 26 weken die verlengd kan worden met 6 weken. De zin is onvolledig omdat deze de uitgebreide procedure niet vermeldt."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.utrecht.nl/ondernemen/vergunningen-en-regels/horecaloket",
+      "https://www.utrecht.nl/ondernemen",
+      "https://www.utrecht.nl/ondernemen/vergunningen-en-regels/werkzaamheden-vergunning-aanvragen",
+      "https://www.utrecht.nl/wonen-en-leven/bouwen-en-verbouwen/hebt-u-een-vraag-over-bouwplan-of-bedrijfsplan",
+      "https://www.utrecht.nl/ondernemen/vergunningen-en-regels",
+      "https://www.utrecht.nl/wonen-en-leven/bouwen-en-verbouwen/u-wilt-bouwen-of-verbouwen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U vraagt een horecavergunning aan of past deze aan als u: [...] een terras wilt maken of de grootte van uw terras wilt veranderen.",
+          "original_reference": "U kunt de terrasvergunning aanvragen via het horecaloket van de gemeente Utrecht.",
+          "note": "De bronnen spreken over een horecavergunning voor terrassen, terwijl de originele tekst spreekt over een aparte terrasvergunning. Dit is een belangrijk verschil in terminologie en mogelijk procedure.",
+          "source_urls": [
+            "https://www.utrecht.nl/ondernemen/vergunningen-en-regels/horecaloket"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vraag een omgevingsvergunning aan voor de activiteit 'afwijken van regels in omgevingsplan'",
+          "original_reference": "Als dit niet het geval is, moet u een omgevingsvergunning aanvragen om af te wijken van het plan.",
+          "note": "De bron specificeert dat het gaat om de activiteit 'afwijken van regels in omgevingsplan', wat een belangrijke precisering is die ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.utrecht.nl/ondernemen/vergunningen-en-regels/horecaloket"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de terminologie rond de vergunning (horecavergunning vs. terrasvergunning) en een specifiekere omschrijving van het type omgevingsvergunning dat nodig is. De bronnen geven aan dat een terras onderdeel is van de horecavergunning en niet een aparte vergunning betreft zoals gesuggereerd in de originele tekst."
+  }
+}

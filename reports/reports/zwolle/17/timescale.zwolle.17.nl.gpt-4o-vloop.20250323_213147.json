@@ -1,0 +1,75 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ZWOLLE",
+      "contact": {
+        "phone": "14 038",
+        "email": "postbus@zwolle.nl",
+        "website": "http://www.zwolle.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 27,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.4,
+    "false_statements": [
+      {
+        "sentence": "Een terras mag geopend zijn gedurende de openingstijden van het horecabedrijf, maar moet gesloten zijn tussen 01.00 uur en 09.00 uur. In juli en augustus mag het terras op vrijdag en zaterdag tot 01.30 uur openblijven.",
+        "status": "false",
+        "note": "Volgens het Besluit nadere regels terrassen gemeente Zwolle 2018 mogen terrassen op vrijdag en zaterdag tot 02.00 uur open blijven in juli en augustus, niet tot 01.30 uur zoals vermeld."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 2,
+    "invalid_urls": 3,
+    "accuracy_percentage": 40.0,
+    "valid_urls_list": [
+      "https://www.zwolle.nl/terrasvergunning-aanvragen",
+      "https://www.zwolle.nl/vergunning-op-grond-van-de-alcoholwet"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.zwolle.nl/veelgestelde-vragen-over-de-omgevingswet",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.zwolle.nl/horecabedrijf-exploitatievergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.zwolle.nl/kentekenparkeren-veelgestelde-vragen-voor-bedrijvenvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "een terras mag geopend zijn gedurende de openingstijden van het horecabedrijf, maar moet in ieder geval gesloten zijn tussen 01.00 uur 09.00 uur. In juli en augustus mag het terras op vrijdag en zaterdag tot 01.30 uur geopend zijn.",
+          "original_reference": "Een terras mag geopend zijn gedurende de openingstijden van het horecabedrijf, maar moet gesloten zijn tussen 01.00 uur en 09.00 uur. In juli en augustus mag het terras op vrijdag en zaterdag tot 01.30 uur openblijven.",
+          "note": "De openingstijden komen exact overeen, alleen kleine tekstuele verschillen in formulering.",
+          "source_urls": [
+            "https://www.zwolle.nl/terrasvergunning-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse van de beschikbare bronnen zijn er geen inhoudelijke verschillen of tegenstrijdigheden gevonden tussen de originele inhoud en de geciteerde bronnen. De informatie over openingstijden, voorwaarden en procedures komt overeen. Wel is op te merken dat de bronpagina's niet de volledige informatie bevatten die in de originele tekst staat - ze zijn minder uitgebreid maar niet tegenstrijdig."
+  }
+}

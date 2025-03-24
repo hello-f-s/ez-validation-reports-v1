@@ -1,0 +1,85 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ROTTERDAM",
+      "contact": {
+        "phone": "14 010",
+        "email": "null",
+        "website": "http://www.rotterdam.nl"
+      }
+    },
+    "service": {
+      "id": 18,
+      "name": "Ventvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Hoewel er geen specifieke informatie beschikbaar was op de oorspronkelijke gemeentelijke website, is er nu meer duidelijkheid over de aanvraagprocedure voor een ventvergunning in Rotterdam.",
+        "status": "false",
+        "note": "Er is wel degelijk specifieke informatie beschikbaar op de gemeentelijke website van Rotterdam over ventvergunningen. Deze informatie is te vinden onder 'Venten en standplaatsen' op rotterdam.nl waar het proces en de vereisten duidelijk worden beschreven."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 2,
+    "invalid_urls": 3,
+    "accuracy_percentage": 40.0,
+    "valid_urls_list": [
+      "https://www.rotterdam.nl/exploitatievergunning-aanvragen/start-exploitatievergunning-aanvragen",
+      "https://www.rotterdam.nl/voorlopige-exploitatievergunning-aanvragen/start-voorlopige-exploitatievergunning-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.rotterdam.nl/omgevingsvergunning-bouwen-aanvragen/start-omgevingsvergunning-bouwen-per-post-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.rotterdam.nl/omgevingsvergunning-bouwen-aanvragen/start-omgevingsvergunning-bouwen-online-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.rotterdam.nl/vergunning-of-toestemming-opkoopbescherming-aanvragen/start-vergunning-of-toestemming-opkoopbescherming-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Stap 1 van 6 voor exploitatievergunning vs. Stap 1 van 3 voor voorlopige exploitatievergunning",
+          "original_reference": "No matching information",
+          "note": "De originele tekst maakt geen onderscheid tussen reguliere en voorlopige exploitatievergunningen, terwijl de bronnen verschillende procedures met verschillend aantal stappen tonen",
+          "source_urls": [
+            "https://www.rotterdam.nl/exploitatievergunning-aanvragen/start-exploitatievergunning-aanvragen",
+            "https://www.rotterdam.nl/voorlopige-exploitatievergunning-aanvragen/start-voorlopige-exploitatievergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U hebt eHerkenning niveau 2 nodig en een machtiging 'Ondernemersloket EH 2'",
+          "original_reference": "eHerkenning niveau 2, inclusief een machtiging voor 'Ondernemersloket EH 2'",
+          "note": "De originele tekst vermeldt dit als één geheel, terwijl de bron dit als twee aparte vereisten specificeert",
+          "source_urls": [
+            "https://www.rotterdam.nl/voorlopige-exploitatievergunning-aanvragen/start-voorlopige-exploitatievergunning-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de procedurele details en de structuur van de aanvraagprocessen. De originele tekst mist belangrijke nuances over verschillende typen vergunningen (regulier vs. voorlopig) en hun specifieke procedures. Daarnaast zijn er kleine maar significante verschillen in hoe de eHerkenning vereisten worden gepresenteerd."
+  }
+}

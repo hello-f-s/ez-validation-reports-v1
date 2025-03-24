@@ -1,0 +1,94 @@
+{
+  "context": {
+    "municipality": {
+      "name": "S-HERTOGENBOSCH",
+      "contact": {
+        "phone": "(073) 615 51 55",
+        "email": "gemeente@s-hertogenbosch.nl",
+        "website": "http://www.s-hertogenbosch.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "De precieze kosten staan vermeld in de Legesverordening 's-Hertogenbosch 2025.",
+        "status": "false",
+        "note": "Er bestaat geen Legesverordening 's-Hertogenbosch 2025. De actuele legesverordening is de 'Legesverordening 's-Hertogenbosch 2024'. Verordeningen voor 2025 zijn nog niet vastgesteld."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.s-hertogenbosch.nl/product/omgevingsvergunning-wabo/",
+      "https://www.s-hertogenbosch.nl/product/omgevingsvergunning/",
+      "https://www.s-hertogenbosch.nl/omgevingsplan/",
+      "https://www.s-hertogenbosch.nl/product/horecabedrijf/",
+      "https://www.s-hertogenbosch.nl/omgevingswet/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://overheid.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://omgevingsloket.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Let op! Op 1 januari 2024 zijn de Omgevingswet en Wet kwaliteitsborging voor het bouwen (Wkb) ingegaan. Dit kan effect hebben op jouw vergunningsaanvraag.",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden een belangrijke wetswijziging per 1 januari 2024 die impact heeft op vergunningsaanvragen. Deze cruciale informatie ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.s-hertogenbosch.nl/product/omgevingsvergunning-wabo/",
+            "https://www.s-hertogenbosch.nl/product/omgevingsvergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wanneer jouw plan niet binnen het bestemmingsplan past, dan beoordelen wij of het kans van slagen heeft. Wanneer het plan kansrijk is, vragen we jou om een omgevingsdialoog te voeren.",
+          "original_reference": "Als dat niet het geval is, kan de gemeente beslissen om alsnog medewerking te verlenen onder bepaalde voorwaarden.",
+          "note": "De bronnen specificeren een concrete voorwaarde (omgevingsdialoog) bij afwijking van het bestemmingsplan, terwijl de originele tekst alleen algemeen spreekt over 'bepaalde voorwaarden'.",
+          "source_urls": [
+            "https://www.s-hertogenbosch.nl/product/omgevingsvergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De gemeente heeft uiterlijk tot 2032 de tijd om het omgevingsplan te maken.",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden een belangrijke einddatum (2032) voor de implementatie van het omgevingsplan, wat relevant is voor de context van vergunningsaanvragen. Deze informatie ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.s-hertogenbosch.nl/omgevingsplan/",
+            "https://www.s-hertogenbosch.nl/omgevingswet/"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de recente invoering van de Omgevingswet en Wkb per 1-1-2024, de specifieke vereiste van een omgevingsdialoog bij afwijkingen van het bestemmingsplan, en de implementatietermijn tot 2032 voor het nieuwe omgevingsplan. Deze informatie is essentieel voor een volledig begrip van de huidige vergunningsprocedure maar ontbreekt in de originele tekst."
+  }
+}

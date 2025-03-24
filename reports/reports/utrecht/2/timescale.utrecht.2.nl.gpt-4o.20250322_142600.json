@@ -1,0 +1,79 @@
+{
+  "context": {
+    "municipality": {
+      "name": "UTRECHT",
+      "contact": {
+        "phone": "(014) 030",
+        "email": "Gemeente@utrecht.nl",
+        "website": "http://www.utrecht.nl"
+      }
+    },
+    "service": {
+      "id": 2,
+      "name": "Bord of spandoek plaatsen aan de openbare weg"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Sitatietekening op schaal van 1:1.000 met de locaties van de reclame",
+        "status": "false",
+        "note": "De correcte term is 'situatietekening' en niet 'sitatietekening'. Dit is een spelfout in de oorspronkelijke tekst."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.utrecht.nl/ondernemen/vergunningen-en-regels/reclame/reclame-aan-de-gevel-vergunning-aanvragen",
+      "https://www.utrecht.nl/wonen-en-leven/bouwen-en-verbouwen/hebt-u-een-vraag-over-bouwplan-of-bedrijfsplan",
+      "https://www.utrecht.nl/wonen-en-leven/bouwen-en-verbouwen/u-wilt-bouwen-of-verbouwen/zonnepanelen-of-zonnecollectoren-plaatsen",
+      "https://www.utrecht.nl/ondernemen/vergunningen-en-regels/reclame",
+      "https://www.utrecht.nl/ondernemen/vergunningen-en-regels"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.utrecht.nl/wonen-en-leven/bouwen-en-verbouwen/reclame/",
+        "reason": "INVALID: Error scraping https://www.utrecht.nl/wonen-en-leven/bouwen-en-verbouwen/reclame/: 404 Client Error: Not Found for url: https://www.utrecht.nl/wonen-en-leven/bouwen-en-verbouwen/reclame/"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor reclame binnen beschermd stadsgezicht hebt u een omgevingsvergunning nodig voor de activiteit bouwen. Voor stickers en kleine vlaggetjes hebt u een omgevingsvergunning nodig voor de activiteit reclame.",
+          "original_reference": "Voor reclame binnen een beschermd stadsgezicht of op een monument zijn specifieke vergunningen vereist.",
+          "note": "De bronpagina specificeert duidelijk welk type vergunning nodig is voor verschillende soorten reclame binnen beschermd stadsgezicht, terwijl de originele tekst dit algemener beschrijft.",
+          "source_urls": [
+            "https://www.utrecht.nl/ondernemen/vergunningen-en-regels/reclame/reclame-aan-de-gevel-vergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Buiten beschermd stadsgezicht: Is de oppervlakte van alle reclame-uitingen groter dan 1,5 m2? Dan hebt u een omgevingsvergunning nodig voor de activiteit bouwen. Is de oppervlakte kleiner dan 1,5 m2? Dan hebt u een omgevingsvergunning nodig voor de activiteit reclame.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke specifieke informatie over verschillende vergunningsvereisten gebaseerd op de oppervlakte van reclame-uitingen buiten beschermd stadsgezicht.",
+          "source_urls": [
+            "https://www.utrecht.nl/ondernemen/vergunningen-en-regels/reclame/reclame-aan-de-gevel-vergunning-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten meer gedetailleerde informatie over specifieke vergunningsvereisten, vooral met betrekking tot verschillende soorten reclame binnen en buiten beschermd stadsgezicht. De originele tekst mist deze belangrijke nuances en oppervlakte-gerelateerde criteria die bepalen welk type vergunning nodig is."
+  }
+}

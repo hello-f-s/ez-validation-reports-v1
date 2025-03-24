@@ -1,0 +1,75 @@
+{
+  "context": {
+    "municipality": {
+      "name": "TERSCHELLING",
+      "contact": {
+        "phone": "(0562) 44 62 44",
+        "email": "gemeente@terschelling.nl",
+        "website": "http://www.terschelling.nl"
+      }
+    },
+    "service": {
+      "id": 10,
+      "name": "Nachtregister bijhouden"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "Fax: (0562) 446299",
+        "status": "false",
+        "note": "De gemeente Terschelling gebruikt geen faxnummer meer voor communicatie. Dit contactmiddel is verouderd en wordt niet meer vermeld op de officiële gemeentewebsite."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.terschelling.nl/slaapgelegenheid-aanbieden-melden-terschelling",
+      "https://www.terschelling.nl/verzoek-om-handhaving",
+      "https://www.terschelling.nl/sluitingsuren-van-horeca",
+      "https://www.terschelling.nl/overzicht-geleverde-persoonsgegevens-opvragen",
+      "https://www.terschelling.nl/toeristenbelasting",
+      "https://www.terschelling.nl"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u een inrichting opricht, overneemt, verplaatst of het houden van een inrichting staakt, bent u verplicht dit binnen drie dagen schriftelijk aan de gemeente te melden.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt een belangrijke meldingsplicht binnen 3 dagen bij wijzigingen in de bedrijfsvoering, die niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.terschelling.nl/slaapgelegenheid-aanbieden-melden-terschelling"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "2025: De gemeenteraad heeft op 17 juli 2024 het tarief voor 2025 vastgesteld op € 2,16 per persoon per overnachting van vier jaar en ouder.",
+          "original_reference": "Het aantal overnachtingen en vrijgestelde overnachtingen (zoals kinderen onder 4 jaar) moeten worden vermeld.",
+          "note": "De bronpagina specificeert het exacte tarief voor toeristenbelasting en de leeftijdsgrens, terwijl de originele tekst alleen de vrijstelling voor kinderen onder 4 jaar noemt zonder tariefinformatie.",
+          "source_urls": [
+            "https://www.terschelling.nl/toeristenbelasting"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden: 1) Een niet genoemde wettelijke meldingsplicht voor wijzigingen in de bedrijfsvoering binnen 3 dagen, en 2) Specifieke tariefinformatie voor toeristenbelasting die ontbreekt in de originele tekst. De overige informatie, waaronder contactgegevens en algemene verplichtingen, komt overeen met de bronnen."
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "context": {
+    "municipality": {
+      "name": "TUBBERGEN",
+      "contact": {
+        "phone": "(0546) 62 80 00",
+        "email": "gemeente@tubbergen.nl",
+        "website": "http://www.tubbergen.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 13,
+    "false_sentences": 2,
+    "accuracy_percentage": 86.7,
+    "false_statements": [
+      {
+        "sentence": "U dient de omgevingsvergunning aan te vragen via de officiële website: omgevingswet.overheid.nl.",
+        "status": "false",
+        "note": "De omgevingsvergunning moet worden aangevraagd via het Omgevingsloket Online (olo.nl) of via de website van de gemeente Tubbergen, niet via omgevingswet.overheid.nl"
+      },
+      {
+        "sentence": "De kosten van een aanvraag omgevingsvergunning vindt u in de legesverordening van de gemeente. Deze verordening is te vinden op zoek.officielebekendmakingen.nl.",
+        "status": "false",
+        "note": "De legesverordening van gemeente Tubbergen is direct te vinden op de gemeentelijke website onder 'Belastingen en heffingen', niet alleen via zoek.officielebekendmakingen.nl"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.tubbergen.nl/omgevingsvergunning-bouwen",
+      "https://www.tubbergen.nl/omgevingsplan",
+      "https://www.tubbergen.nl/de-omgevingsvergunning-vanaf-1-januari-2024",
+      "https://www.tubbergen.nl/omgevingsvergunning-milieubelastende-activiteit-aanvragen",
+      "https://www.tubbergen.nl/ruimtelijke-plannen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://zoek.officielebekendmakingen.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://omgevingswet.overheid.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor veel kleinere bouwplannen (dakkapellen, aan-, uit en bijgebouwen, erfafscheidingen e.d.) is niet altijd een vergunning nodig, lees meer op vergunningsvrij bouwen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over vergunningsvrij bouwen voor kleinere bouwplannen, wat essentiële informatie is voor aanvragers.",
+          "source_urls": [
+            "https://www.tubbergen.nl/omgevingsvergunning-bouwen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Dit vraagt wel om een ander type vooroverleg dan dat wij nu kennen. Meer zaken van een aanvraag worden straks in het vooroverleg beoordeeld om een overschrijding van de beslistermijn te voorkomen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist informatie over het nieuwe type vooroverleg onder de Omgevingswet, wat een belangrijke procedurele wijziging is.",
+          "source_urls": [
+            "https://www.tubbergen.nl/de-omgevingsvergunning-vanaf-1-januari-2024"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wij hebben tot 2032 de tijd om ons eigen gemeentelijk omgevingsplan vast te stellen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de overgangsperiode tot 2032 voor het definitieve omgevingsplan, wat relevant is voor de geldigheid van huidige plannen.",
+          "source_urls": [
+            "https://www.tubbergen.nl/ruimtelijke-plannen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten enkele belangrijke aanvullingen die niet in de originele tekst staan, waaronder informatie over vergunningsvrij bouwen, een nieuw type vooroverleg onder de Omgevingswet, en de overgangsperiode tot 2032 voor het definitieve omgevingsplan. Deze informatie is relevant voor een volledig begrip van de procedures en mogelijkheden rond omgevingsvergunningen."
+  }
+}

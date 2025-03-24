@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "S-HERTOGENBOSCH",
+      "contact": {
+        "phone": "(073) 615 51 55",
+        "email": "gemeente@s-hertogenbosch.nl",
+        "website": "http://www.s-hertogenbosch.nl"
+      }
+    },
+    "service": {
+      "id": 13,
+      "name": "Omzettingsvergunning voor kamerverhuur aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 10,
+    "false_sentences": 2,
+    "accuracy_percentage": 83.3,
+    "false_statements": [
+      {
+        "sentence": "Indien de woning een WOZ-waarde onder € 260.000,- op 1-1-2020 heeft, is naast een omgevingsvergunning ook een onttrekkingsvergunning noodzakelijk.",
+        "status": "false",
+        "note": "De gemeente 's-Hertogenbosch hanteert geen specifieke WOZ-waardegrens van €260.000 voor onttrekkingsvergunningen bij kamerverhuur. Dit is onjuiste informatie."
+      },
+      {
+        "sentence": "De kosten voor vergunningen en ontheffingen zijn te vinden in de Legesverordening 's-Hertogenbosch 2025.",
+        "status": "false",
+        "note": "Er bestaat geen Legesverordening 's-Hertogenbosch 2025, aangezien dit een toekomstig jaar betreft. De actuele legesverordening is van het huidige jaar."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.s-hertogenbosch.nl/product/horecabedrijf/",
+      "https://www.s-hertogenbosch.nl/product/omgevingsvergunning/",
+      "https://www.s-hertogenbosch.nl/regelsbedandbreakfast/",
+      "https://www.s-hertogenbosch.nl/product/omgevingsvergunning-wabo/",
+      "https://www.s-hertogenbosch.nl/product/woonvoorziening/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.example.com/omgevingsvergunning",
+        "reason": "INVALID: Error scraping https://www.example.com/omgevingsvergunning: 404 Client Error: Not Found for url: https://www.example.com/omgevingsvergunning"
+      },
+      {
+        "url": "https://www.example.com/legesverordening",
+        "reason": "INVALID: Error scraping https://www.example.com/legesverordening: 404 Client Error: Not Found for url: https://www.example.com/legesverordening"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voordat je een aanvraag voor een omgevingsvergunning indient, kun je een schriftelijk advies krijgen van de gemeente. We toetsen het conceptverzoek – voorheen informatieve aanvraag – aan het omgevingsplan.",
+          "original_reference": "Voorafgaand kan een conceptverzoek worden ingediend voor schriftelijk advies, waar de gemeente de plannen toetst aan het bestemmingsplan en de welstandsnota.",
+          "note": "De bronnen verwijzen naar toetsing aan het 'omgevingsplan' terwijl de originele tekst spreekt over 'bestemmingsplan'. Dit verschil komt door de nieuwe Omgevingswet die per 1-1-2024 is ingegaan.",
+          "source_urls": [
+            "https://www.s-hertogenbosch.nl/product/omgevingsvergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een omgevingsvergunning vraag je aan via het Omgevingsloket. Hiervoor heb je eHerkenning nodig. Lukt het niet om de aanvraag via het Omgevingsloket in te dienen? Mail het dan naar omgevingsloket@s-hertogenbosch.nl of print het aanvraagformulier uit.",
+          "original_reference": "De omgevingsvergunning kan worden aangevraagd via het Omgevingsloket met gebruik van eHerkenning.",
+          "note": "De bronnen bieden aanvullende alternatieve aanvraagmethoden (e-mail en post) die niet genoemd worden in de originele tekst.",
+          "source_urls": [
+            "https://www.s-hertogenbosch.nl/product/omgevingsvergunning-wabo/"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de overgang van bestemmingsplan naar omgevingsplan door de nieuwe Omgevingswet (2024) en aanvullende aanvraagmogelijkheden die niet in de originele tekst worden genoemd. De kern van de procedures en voorwaarden blijft verder grotendeels consistent met de originele tekst."
+  }
+}

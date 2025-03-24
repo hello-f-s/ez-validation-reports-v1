@@ -1,0 +1,94 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ROTTERDAM",
+      "contact": {
+        "phone": "14 010",
+        "email": "null",
+        "website": "http://www.rotterdam.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 12,
+    "false_sentences": 2,
+    "accuracy_percentage": 85.7,
+    "false_statements": [
+      {
+        "sentence": "Download het aanvraagformulier en laat dit door de werkgever volledig invullen en ondertekenen.",
+        "status": "false",
+        "note": "Volgens de website van gemeente Rotterdam kan een VOG alleen online worden aangevraagd via eHerkenning (werkgevers) of DigiD (werknemers). Er is geen downloadbaar aanvraagformulier beschikbaar."
+      },
+      {
+        "sentence": "Tot slot, plan een afspraak om het ingevulde formulier bij de balie in te leveren.",
+        "status": "false",
+        "note": "De gemeente Rotterdam biedt geen mogelijkheid meer om een VOG aan te vragen bij de balie. De aanvraag verloopt volledig digitaal via DigiD of eHerkenning."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 3,
+    "invalid_urls": 4,
+    "accuracy_percentage": 42.9,
+    "valid_urls_list": [
+      "https://www.rotterdam.nl/vog-verplicht",
+      "https://www.rotterdam.nl/verklaring-omtrent-gedrag-vog-aanvragen-rotterdam",
+      "https://www.rotterdam.nl/subsidie-topsport-aanvragen/start-subsidie-topsport-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://gratisvog.nl/voorwaarden",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.rotterdam.nl/verklaring-omtrent-gedrag-vog-aanvragen-rotterdam/start-vog-aanvragen-als-werknemer",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.rotterdam.nl/verklaring-omtrent-gedrag-vog-aanvragen-rotterdam/start-vog-aanvragen-als-werkgever",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.rotterdam.nl/loket/vog-voor-ondernemers",
+        "reason": "INVALID: Error scraping https://www.rotterdam.nl/loket/vog-voor-ondernemers: 404 Client Error: Not Found for url: https://www.rotterdam.nl/loket/vog-voor-ondernemers"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Uw werkgever vraagt de VOG online aan. Als u zelf uw VOG moet regelen, dan maakt u een afspraak bij de balie.",
+          "original_reference": "Download het aanvraagformulier en laat dit door de werkgever volledig invullen en ondertekenen.",
+          "note": "De bronpagina geeft aan dat de werkgever de VOG online aanvraagt, terwijl de originele tekst spreekt over het downloaden en invullen van een formulier. Dit wijst op een verschil in aanvraagprocedure.",
+          "source_urls": [
+            "https://www.rotterdam.nl/verklaring-omtrent-gedrag-vog-aanvragen-rotterdam"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het Ministerie bekijkt of u ooit bent veroordeeld voor iets strafbaars. En of die veroordeling een probleem is voor het werk dat u wilt doen.",
+          "original_reference": "Om een VOG voor natuurlijke personen aan te vragen, moet je aan bepaalde voorwaarden voldoen, zoals geen strafbare gedragingen hebben die relevant zijn voor de functie",
+          "note": "De bronpagina is specifieker over het beoordelingsproces en noemt expliciet veroordelingen, terwijl de originele tekst algemener spreekt over strafbare gedragingen.",
+          "source_urls": [
+            "https://www.rotterdam.nl/verklaring-omtrent-gedrag-vog-aanvragen-rotterdam"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de aanvraagprocedure (online via werkgever versus papieren formulier) en de specificatie van de beoordelingscriteria. De bronpagina's zijn concreter over het beoordelingsproces door het Ministerie. Veel informatie uit de originele tekst kon niet worden geverifieerd omdat deze niet in de beschikbare bronpagina's voorkomt."
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ROERMOND",
+      "contact": {
+        "phone": "14 0475",
+        "email": "mail@roermond.nl",
+        "website": "http://www.roermond.nl"
+      }
+    },
+    "service": {
+      "id": 2,
+      "name": "Bord of spandoek plaatsen aan de openbare weg"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "De gemeente beslist binnen 8 weken over uw vergunning.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Roermond wordt over een aanvraag voor een reclame-/objectvergunning binnen 6 weken beslist, niet binnen 8 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 3,
+    "invalid_urls": 3,
+    "accuracy_percentage": 50.0,
+    "valid_urls_list": [
+      "https://www.roermond.nl/omgevingsvergunning",
+      "https://www.roermond.nl/terrasvergunning",
+      "https://www.roermond.nl/marktstandplaats-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.roermond.nl",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.roermond.nl/reclame-plaatsen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.roermond.nl/object-plaatsen-op-openbare-gemeentegrond",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Hiervoor heeft u een DigiD nodig. Bent u een ondernemer? Dan heeft u eHerkenning (minimaal niveau 2) nodig.",
+          "original_reference": "Hiervoor heeft u eHerkenning nodig indien u als ondernemer een aanvraag doet.",
+          "note": "De brontext specificeert dat particulieren DigiD nodig hebben en ondernemers eHerkenning niveau 2, terwijl de originele tekst alleen eHerkenning voor ondernemers noemt.",
+          "source_urls": [
+            "https://www.roermond.nl/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Communicatie via berichtenbox jeleefomgeving.nl - Tijdens de behandeling van een aanvraag kunnen wij gebruik maken van een portaal waarmee we op een betrouwbare en veilige manier met burgers en bedrijven kunnen communiceren.",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden een specifiek communicatieportaal (jeleefomgeving.nl) dat niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.roermond.nl/terrasvergunning"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "De gemeente beslist binnen 8 weken over uw vergunning. Deze termijn kan éénmalig verlengd worden.",
+          "original_reference": "De gemeente beslist binnen 8 weken over uw vergunning. Deze termijn kan éénmalig verlengd worden.",
+          "note": "De behandeltermijn van 8 weken en de mogelijkheid tot eenmalige verlenging komt exact overeen.",
+          "source_urls": [
+            "https://www.roermond.nl/terrasvergunning",
+            "https://www.roermond.nl/marktstandplaats-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de authenticatiemethoden (DigiD voor particulieren, eHerkenning niveau 2 voor ondernemers) en het gebruik van een specifiek communicatieportaal (jeleefomgeving.nl) dat niet in de originele tekst wordt genoemd. De behandeltermijnen en bezwaarprocedures zijn consistent tussen alle bronnen."
+  }
+}

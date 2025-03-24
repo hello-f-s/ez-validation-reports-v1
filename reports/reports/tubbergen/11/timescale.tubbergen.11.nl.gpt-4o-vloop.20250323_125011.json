@@ -1,0 +1,87 @@
+{
+  "context": {
+    "municipality": {
+      "name": "TUBBERGEN",
+      "contact": {
+        "phone": "(0546) 62 80 00",
+        "email": "gemeente@tubbergen.nl",
+        "website": "http://www.tubbergen.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "U dient de omgevingsvergunning aan te vragen via de officiële website: omgevingswet.overheid.nl",
+        "status": "false",
+        "note": "De omgevingsvergunning moet worden aangevraagd via het Omgevingsloket Online (olo.nl) of via de website van de gemeente Tubbergen, niet via omgevingswet.overheid.nl"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.tubbergen.nl/omgevingsvergunning-bouwen",
+      "https://www.tubbergen.nl/de-omgevingsvergunning-vanaf-1-januari-2024",
+      "https://www.tubbergen.nl/omgevingsvergunning-milieubelastende-activiteit-aanvragen",
+      "https://www.tubbergen.nl/omgevingsplan"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.tubbergen.nl/ruimtelijke-plannen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor veel kleinere bouwplannen (dakkapellen, aan-, uit en bijgebouwen, erfafscheidingen e.d.) is niet altijd een vergunning nodig, lees meer op vergunningsvrij bouwen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over vergunningsvrij bouwen voor kleinere bouwplannen, wat essentiële informatie is voor potentiële aanvragers.",
+          "source_urls": [
+            "https://www.tubbergen.nl/omgevingsvergunning-bouwen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Dit vraagt wel om een ander type vooroverleg dan dat wij nu kennen. Meer zaken van een aanvraag worden straks in het vooroverleg beoordeeld om een overschrijding van de beslistermijn te voorkomen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist informatie over het veranderde vooroverlegproces onder de nieuwe Omgevingswet, wat een belangrijke procedurele wijziging is.",
+          "source_urls": [
+            "https://www.tubbergen.nl/de-omgevingsvergunning-vanaf-1-januari-2024"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "In de meeste gevallen hoeft u alleen een melding milieubelastende activiteit te doen.",
+          "original_reference": "Voor de omgevingsvergunning milieubelastende activiteit kunt u na een vergunningencheck eventueel een melding doen via de aangewezen kanalen.",
+          "note": "De brontext is stelliger over het feit dat in de meeste gevallen alleen een melding nodig is, terwijl de originele tekst dit als mogelijkheid presenteert.",
+          "source_urls": [
+            "https://www.tubbergen.nl/omgevingsvergunning-milieubelastende-activiteit-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont drie belangrijke verschillen tussen de originele tekst en de bronnen. De originele tekst mist essentiële informatie over vergunningsvrij bouwen voor kleine projecten, bevat geen details over het nieuwe vooroverlegproces onder de Omgevingswet, en is minder duidelijk over wanneer een melding volstaat bij milieubelastende activiteiten. Deze verschillen zijn relevant voor de volledigheid en accuraatheid van de informatievoorziening aan burgers."
+  }
+}

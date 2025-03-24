@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AMSTERDAM",
+      "contact": {
+        "phone": "14 020",
+        "email": "null",
+        "website": "http://www.amsterdam.nl"
+      }
+    },
+    "service": {
+      "id": 16,
+      "name": "Registreren in het Landelijk Register Kinderopvang (LRK)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "De gemeente Amsterdam streeft ernaar om binnen acht weken na indiening van een volledig en juist wijzigings- of registratieverzoek een besluit te nemen.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Amsterdam moet binnen 10 weken na ontvangst van een complete aanvraag een besluit worden genomen, niet binnen 8 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 2,
+    "invalid_urls": 4,
+    "accuracy_percentage": 33.3,
+    "valid_urls_list": [
+      "https://www.amsterdam.nl/sociaaldomein/onderwijs/kinderopvang-vroegschoolse-educatie/wijzigen-registratiegegevens-lrk/",
+      "https://www.amsterdam.nl/wonen-leefomgeving/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.amsterdam.nl/sociaaldomein/onderwijs/kinderopvang-vroegschoolse-educatie/aanvraag-exploitatie-registratie-0/",
+        "reason": "INVALID: Error scraping https://www.amsterdam.nl/sociaaldomein/onderwijs/kinderopvang-vroegschoolse-educatie/aanvraag-exploitatie-registratie-0/: 403 Client Error: Forbidden for url: https://www.amsterdam.nl/sociaaldomein/onderwijs/kinderopvang-vroegschoolse-educatie/aanvraag-exploitatie-registratie-0/"
+      },
+      {
+        "url": "https://www.amsterdam.nl/veelgevraagd/vergoeding-aanvragen-voor-de-eigen-bijdrage-kinderopvang-afc2c",
+        "reason": "INVALID: Error scraping https://www.amsterdam.nl/veelgevraagd/vergoeding-aanvragen-voor-de-eigen-bijdrage-kinderopvang-afc2c: 403 Client Error: Forbidden for url: https://www.amsterdam.nl/veelgevraagd/vergoeding-aanvragen-voor-de-eigen-bijdrage-kinderopvang-afc2c"
+      },
+      {
+        "url": "https://www.amsterdam.nl/veelgevraagd/mijn-kind-gaat-in-het-buitenland-naar-een-basisschool-of-middelbare-school-wat-moet-ik-regelen-dafeb-kp",
+        "reason": "INVALID: Error scraping https://www.amsterdam.nl/veelgevraagd/mijn-kind-gaat-in-het-buitenland-naar-een-basisschool-of-middelbare-school-wat-moet-ik-regelen-dafeb-kp: 403 Client Error: Forbidden for url: https://www.amsterdam.nl/veelgevraagd/mijn-kind-gaat-in-het-buitenland-naar-een-basisschool-of-middelbare-school-wat-moet-ik-regelen-dafeb-kp"
+      },
+      {
+        "url": "https://www.amsterdam.nl/werk-inkomen/hulp-bij-laag-inkomen/regelingen-kinderen-18-jaar/",
+        "reason": "INVALID: Error scraping https://www.amsterdam.nl/werk-inkomen/hulp-bij-laag-inkomen/regelingen-kinderen-18-jaar/: 403 Client Error: Forbidden for url: https://www.amsterdam.nl/werk-inkomen/hulp-bij-laag-inkomen/regelingen-kinderen-18-jaar/"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De houder moet het wijzigingsverzoek 8 weken voor de gewenste wijzigingsdatum indienen.",
+          "original_reference": "Dien de aanvraag minimaal 10 weken voor de geplande opening in bij Vergunningen Kinderopvang.",
+          "note": "Er is een verschil in de vereiste aanvraagtermijn: de bron spreekt van 8 weken voor wijzigingen, terwijl de originele tekst 10 weken aangeeft voor de initiële aanvraag.",
+          "source_urls": [
+            "https://www.amsterdam.nl/sociaaldomein/onderwijs/kinderopvang-vroegschoolse-educatie/wijzigen-registratiegegevens-lrk/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor sommige wijzigingen (zoals een telefoonnummer wijziging) wordt geen besluit afgegeven. De gemeente informeert u als de wijziging is opgenomen in het LRK.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst maakt geen onderscheid tussen verschillende soorten wijzigingen en vermeldt niet dat sommige wijzigingen geen formeel besluit vereisen.",
+          "source_urls": [
+            "https://www.amsterdam.nl/sociaaldomein/onderwijs/kinderopvang-vroegschoolse-educatie/wijzigen-registratiegegevens-lrk/"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de aanvraagtermijnen (8 versus 10 weken) en de procedure voor kleine wijzigingen. De bronnen geven aan dat niet alle wijzigingen een formeel besluit vereisen, wat niet wordt vermeld in de originele tekst. Deze nuances zijn belangrijk voor de correcte informatievoorziening aan aanvragers."
+  }
+}

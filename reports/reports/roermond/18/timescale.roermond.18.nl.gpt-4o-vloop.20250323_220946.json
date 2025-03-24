@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ROERMOND",
+      "contact": {
+        "phone": "14 0475",
+        "email": "mail@roermond.nl",
+        "website": "http://www.roermond.nl"
+      }
+    },
+    "service": {
+      "id": 18,
+      "name": "Ventvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 26,
+    "false_sentences": 2,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "De procedure omvat een beoordeling door de APV-medewerker en een vergadering van de adviescommissie Omgevingskwaliteit.",
+        "status": "false",
+        "note": "De gemeente Roermond heeft geen specifieke 'adviescommissie Omgevingskwaliteit' voor terrasvergunningen. De beoordeling wordt gedaan door de afdeling Vergunningen, Toezicht en Handhaving."
+      },
+      {
+        "sentence": "Gedurende de behandeling van uw aanvraag kunt u gebruik maken van de berichtenbox op jeleefomgeving.nl voor betrouwbare en veilige communicatie met de gemeente.",
+        "status": "false",
+        "note": "De gemeente Roermond maakt geen gebruik van 'jeleefomgeving.nl'. Communicatie verloopt via het officiële e-loket van de gemeente Roermond of per post."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.roermond.nl/terrasvergunning",
+      "https://www.roermond.nl/exploitatievergunning-horeca",
+      "https://www.roermond.nl/omgevingsvergunning",
+      "https://www.roermond.nl/alcoholwetvergunning",
+      "https://www.roermond.nl/parkeervergunning-voor-bedrijven-zorginstellingen-en-non-profit-instellingen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U kunt uw aanvraag eenvoudig indienen via bovenstaande online formulieren. Een aanvraag op papier is ook nog mogelijk.",
+          "original_reference": "U kunt uw aanvraag voor een terrasvergunning digitaal indienen via de online formulieren. Een papieren aanvraag is ook mogelijk.",
+          "note": "De originele tekst suggereert een gelijkwaardige keuze tussen digitaal en papier, terwijl de brontekst met 'nog' impliceert dat papieren aanvragen worden uitgefaseerd.",
+          "source_urls": [
+            "https://www.roermond.nl/terrasvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Tijdens de behandeling van een aanvraag omgevingsvergunning, conceptverzoek of melding kunnen wij gebruik maken van een portaal waarmee we op een betrouwbare en veilige manier met burgers en bedrijven kunnen communiceren.",
+          "original_reference": "Gedurende de behandeling van uw aanvraag kunt u gebruik maken van de berichtenbox op jeleefomgeving.nl voor betrouwbare en veilige communicatie met de gemeente.",
+          "note": "De originele tekst stelt het gebruik van de berichtenbox als een optie voor de aanvrager, terwijl de brontekst aangeeft dat het een keuze van de gemeente is om het portaal te gebruiken.",
+          "source_urls": [
+            "https://www.roermond.nl/terrasvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "mail@roermond.nl",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist het e-mailadres voor communicatie met de gemeente, wat wel wordt vermeld in de bronnen.",
+          "source_urls": [
+            "https://www.roermond.nl/exploitatievergunning-horeca"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont enkele belangrijke verschillen tussen de originele tekst en de bronnen. Het gaat vooral om nuanceverschillen in de aanvraagprocedure en communicatiemethoden. De originele tekst mist ook enkele praktische details zoals het e-mailadres van de gemeente. De verschillen zijn niet fundamenteel van aard maar hebben wel invloed op de duidelijkheid van de informatie voor de aanvrager."
+  }
+}

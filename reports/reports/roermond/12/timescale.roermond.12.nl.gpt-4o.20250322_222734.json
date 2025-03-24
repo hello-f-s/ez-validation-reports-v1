@@ -1,0 +1,91 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ROERMOND",
+      "contact": {
+        "phone": "14 0475",
+        "email": "mail@roermond.nl",
+        "website": "http://www.roermond.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 10,
+    "false_sentences": 1,
+    "accuracy_percentage": 90.9,
+    "false_statements": [
+      {
+        "sentence": "Er zijn kosten verbonden aan zowel het indienen van een conceptverzoek als het indienen van een definitieve aanvraag.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Roermond is het indienen van een conceptaanvraag (vooroverleg) kosteloos. Alleen voor de definitieve aanvraag worden leges in rekening gebracht."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 4,
+    "invalid_urls": 2,
+    "accuracy_percentage": 66.7,
+    "valid_urls_list": [
+      "https://www.roermond.nl/omgevingsplan-0",
+      "https://www.roermond.nl/omgevingsvergunning",
+      "https://www.roermond.nl/terrasvergunning",
+      "https://www.roermond.nl/aanvraag-bouwtekening-bouwdossier-of-dossier-omgevingsvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.roermond.nl/reclame-plaatsen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://gemeente.roermond.nl",
+        "reason": "INVALID: Error scraping https://gemeente.roermond.nl: HTTPSConnectionPool(host='gemeente.roermond.nl', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10799b4d0>: Failed to resolve 'gemeente.roermond.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Communicatie via berichtenbox jeleefomgeving.nl - Tijdens de behandeling van een aanvraag omgevingsvergunning, conceptverzoek of melding kunnen wij gebruik maken van een portaal waarmee we op een betrouwbare en veilige manier met burgers en bedrijven kunnen communiceren.",
+          "original_reference": "No matching information",
+          "note": "De originele inhoud vermeldt niet het gebruik van de berichtenbox van jeleefomgeving.nl voor communicatie tijdens de aanvraagprocedure, wat een belangrijk communicatiekanaal blijkt te zijn.",
+          "source_urls": [
+            "https://www.roermond.nl/terrasvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De kosten voor het aanvragen van een bouwtekening, bouwdossier of dossier omgevingsvergunning bedragen minimaal € 14,- per aangevraagd adres.",
+          "original_reference": "De kosten voor een omgevingsvergunning hangen af van de bouwkosten en de aangevraagde activiteiten.",
+          "note": "De originele tekst is algemener over de kosten, terwijl de bronpagina specifieke startbedragen noemt voor bepaalde diensten.",
+          "source_urls": [
+            "https://www.roermond.nl/aanvraag-bouwtekening-bouwdossier-of-dossier-omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het is niet mogelijk om via het nieuwe omgevingsloket uw conceptverzoek digitaal aan te vullen.",
+          "original_reference": "Eventueel aanvullende gegevens via mail naar mail@roermond.nl met uw registratienummer",
+          "note": "De brontekst benadrukt expliciet dat digitale aanvulling via het omgevingsloket niet mogelijk is, wat een belangrijke beperking is die in de originele tekst minder duidelijk wordt vermeld.",
+          "source_urls": [
+            "https://www.roermond.nl/omgevingsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten enkele belangrijke aanvullingen en specificaties die niet in de originele tekst staan. Het gaat vooral om het gebruik van de berichtenbox van jeleefomgeving.nl voor communicatie, specifieke kostendetails, en de expliciete beperking dat conceptverzoeken niet digitaal kunnen worden aangevuld via het omgevingsloket. Deze informatie is relevant voor een complete en accurate beschrijving van de dienstverlening."
+  }
+}

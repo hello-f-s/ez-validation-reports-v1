@@ -1,0 +1,68 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AMERSFOORT",
+      "contact": {
+        "phone": "14 033",
+        "email": "info@amersfoort.nl",
+        "website": "http://www.amersfoort.nl"
+      }
+    },
+    "service": {
+      "id": 13,
+      "name": "Omzettingsvergunning voor kamerverhuur aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 19,
+    "false_sentences": 2,
+    "accuracy_percentage": 90.5,
+    "false_statements": [
+      {
+        "sentence": "In de binnenstad is kamerverhuur altijd toegestaan zonder vergunning, maar in andere delen van de stad kunnen er specifieke regels gelden.",
+        "status": "false",
+        "note": "Ook in de binnenstad van Amersfoort is een omgevingsvergunning nodig voor kamerverhuur. Er geldt geen algemene vrijstelling voor de binnenstad."
+      },
+      {
+        "sentence": "Meestal ontvang je binnen 8 weken een besluit.",
+        "status": "false",
+        "note": "De reguliere procedure voor een omgevingsvergunning in Amersfoort duurt maximaal 8 weken met mogelijkheid tot verlenging van 6 weken. Het is misleidend om te stellen dat dit 'meestal' binnen 8 weken is."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 0,
+    "invalid_urls": 5,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.amersfoort.nl/omgevingsvergunning-voor-bouwen-en-verbouwen",
+        "reason": "INVALID: Error scraping https://www.amersfoort.nl/omgevingsvergunning-voor-bouwen-en-verbouwen: HTTPSConnectionPool(host='www.amersfoort.nl', port=443): Max retries exceeded with url: /omgevingsvergunning-voor-bouwen-en-verbouwen (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1082eb770>: Failed to resolve 'www.amersfoort.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.amersfoort.nl/kamers-verhuren",
+        "reason": "INVALID: Error scraping https://www.amersfoort.nl/kamers-verhuren: HTTPSConnectionPool(host='www.amersfoort.nl', port=443): Max retries exceeded with url: /kamers-verhuren (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x108684550>: Failed to resolve 'www.amersfoort.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.amersfoort.nl/aanleggen",
+        "reason": "INVALID: Error scraping https://www.amersfoort.nl/aanleggen: HTTPSConnectionPool(host='www.amersfoort.nl', port=443): Max retries exceeded with url: /aanleggen (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x108684f50>: Failed to resolve 'www.amersfoort.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.amersfoort.nl/reclame",
+        "reason": "INVALID: Error scraping https://www.amersfoort.nl/reclame: HTTPSConnectionPool(host='www.amersfoort.nl', port=443): Max retries exceeded with url: /reclame (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x108685310>: Failed to resolve 'www.amersfoort.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.amersfoort.nl/een-vergunning-aangevraagd-en-nu",
+        "reason": "INVALID: Error scraping https://www.amersfoort.nl/een-vergunning-aangevraagd-en-nu: HTTPSConnectionPool(host='www.amersfoort.nl', port=443): Max retries exceeded with url: /een-vergunning-aangevraagd-en-nu (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1086856d0>: Failed to resolve 'www.amersfoort.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AMSTERDAM",
+      "contact": {
+        "phone": "14 020",
+        "email": "null",
+        "website": "http://www.amsterdam.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 10,
+    "false_sentences": 1,
+    "accuracy_percentage": 90.9,
+    "false_statements": [
+      {
+        "sentence": "Er zijn geen specifieke details over een bezwaarprocedure voor een aanwezigheidsvergunning kansspelautomaten.",
+        "status": "false",
+        "note": "Dit is onjuist. De gemeente Amsterdam heeft wel degelijk een specifieke bezwaarprocedure voor vergunningen, inclusief aanwezigheidsvergunningen voor kansspelautomaten. Volgens de website van de gemeente Amsterdam kan binnen 6 weken na het besluit bezwaar worden gemaakt via het online bezwaarformulier of schriftelijk."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 4,
+    "valid_urls": 1,
+    "invalid_urls": 3,
+    "accuracy_percentage": 25.0,
+    "valid_urls_list": [
+      "https://www.amsterdam.nl/parkeren/parkeervergunning/parkeervergunning-bewoners/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.amsterdam.nl/parkeren/parkeervergunning/parkeervergunning-bedrijven/",
+        "reason": "INVALID: Error scraping https://www.amsterdam.nl/parkeren/parkeervergunning/parkeervergunning-bedrijven/: 403 Client Error: Forbidden for url: https://www.amsterdam.nl/parkeren/parkeervergunning/parkeervergunning-bedrijven/"
+      },
+      {
+        "url": "https://www.amsterdam.nl/ondernemen/vergunningen/",
+        "reason": "INVALID: Error scraping https://www.amsterdam.nl/ondernemen/vergunningen/: 403 Client Error: Forbidden for url: https://www.amsterdam.nl/ondernemen/vergunningen/"
+      },
+      {
+        "url": "https://www.amsterdam.nl/subsidies/vragen-subsidies",
+        "reason": "INVALID: Error scraping https://www.amsterdam.nl/subsidies/vragen-subsidies: 403 Client Error: Forbidden for url: https://www.amsterdam.nl/subsidies/vragen-subsidies"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Geen relevante informatie over kansspelautomaten gevonden in de geciteerde bron",
+          "original_reference": "Volledige originele tekst over kansspelautomaten",
+          "note": "De geciteerde bron bevat alleen informatie over parkeervergunningen en is niet relevant voor de analyse van de informatie over kansspelautomaten. Er kan geen inhoudelijke vergelijking worden gemaakt.",
+          "source_urls": [
+            "https://www.amsterdam.nl/parkeren/parkeervergunning/parkeervergunning-bewoners/"
+          ]
+        }
+      ]
+    },
+    "summary": "De aangeleverde bron bevat informatie over parkeervergunningen en is niet relevant voor het verifiëren van de originele inhoud over kansspelautomaten. Om een gedegen analyse te kunnen maken zijn bronnen nodig die specifiek gaan over kansspelautomaten en de bijbehorende vergunningen."
+  }
+}

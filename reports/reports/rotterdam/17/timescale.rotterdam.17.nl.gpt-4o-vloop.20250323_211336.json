@@ -1,0 +1,90 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ROTTERDAM",
+      "contact": {
+        "phone": "14 010",
+        "email": "null",
+        "website": "http://www.rotterdam.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor de uitbreiding van de exploitatievergunning met een terrasvlonder bedragen €180 in 2025.",
+        "status": "false",
+        "note": "Dit bedrag kan niet geverifieerd worden voor het jaar 2025 aangezien de gemeente Rotterdam nog geen tarieven heeft gepubliceerd voor dat jaar. Huidige tarieven zijn alleen bekend voor het lopende jaar 2024."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 3,
+    "invalid_urls": 2,
+    "accuracy_percentage": 60.0,
+    "valid_urls_list": [
+      "https://www.rotterdam.nl/exploitatievergunning-aanvragen/start-exploitatievergunning-aanvragen",
+      "https://www.rotterdam.nl/vergunning-terrasvlonder-aanvragen",
+      "https://www.rotterdam.nl/voorlopige-exploitatievergunning-aanvragen/start-voorlopige-exploitatievergunning-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.rotterdam.nl/vergunning-kansspelautomaten-aanvragen/start-vergunning-kansspelautomaten-per-post-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.rotterdam.nl/vergunning-terrasvlonder-aanvragen/start-vergunning-terrasvlonder-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het plaatsen van een terrasvlonder is voor eigen risico.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt expliciet dat het plaatsen voor eigen risico is, wat niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.rotterdam.nl/vergunning-terrasvlonder-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Om de veiligheid van gebruikers van het tijdelijke terras en de overige weggebruikers te kunnen verzekeren, moeten de vlonders binnen de bestaande parkeerplaatsen vallen.",
+          "original_reference": "De vlonder mag zo breed als de gevel van het pand worden gelegd op de parkeervakken die direct aan de gevel grenzen.",
+          "note": "De bronpagina benadrukt specifiek de veiligheidsvereiste en dat vlonders binnen bestaande parkeerplaatsen moeten vallen, wat preciezer is dan de originele tekst.",
+          "source_urls": [
+            "https://www.rotterdam.nl/vergunning-terrasvlonder-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U hebt eHerkenning niveau 2 nodig en een machtiging 'Ondernemersloket EH 2'.",
+          "original_reference": "Log in via de knop 'Vergunning aanvragen' op de website van de gemeente Rotterdam met eHerkenning.",
+          "note": "De bronpagina specificeert het vereiste eHerkenning niveau (2) en de benodigde machtiging, wat niet vermeld wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.rotterdam.nl/voorlopige-exploitatievergunning-aanvragen/start-voorlopige-exploitatievergunning-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen aanvullende specificaties over veiligheid en aansprakelijkheid, waarbij wordt benadrukt dat plaatsing voor eigen risico is. Ook zijn er specifiekere technische vereisten voor het inloggen met eHerkenning die niet in de originele tekst staan. Deze verschillen maken de voorwaarden en procedures duidelijker en specifieker dan in de originele tekst."
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "context": {
+    "municipality": {
+      "name": "VAALS",
+      "contact": {
+        "phone": "(043) 306 85 68",
+        "email": "info@vaals.nl",
+        "website": "http://www.vaals.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 20,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.2,
+    "false_statements": [
+      {
+        "sentence": "De korte procedure, die meestal wordt gevolgd, heeft een maximale beslistermijn van 8 weken.",
+        "status": "false",
+        "note": "Onder de Omgevingswet geldt een reguliere procedure van maximaal 8 weken die eenmalig verlengd kan worden met 6 weken. De zin is onvolledig omdat de mogelijke verlenging niet wordt genoemd."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 3,
+    "valid_urls": 3,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.vaals.nl/inwoners/vergunningen/omgevingswet/meest-aangevraagde-activiteiten",
+      "https://www.vaals.nl/inwoners/vergunningen/",
+      "https://www.vaals.nl/inwoners/vergunningen/omgevingswet/omgevingsvergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Nieuw bij het (ver)bouwen van een bouwwerk is dat er een knip wordt gemaakt. Deze bestaat uit een (technische) bouwactiviteit en een omgevingsplanactiviteit bouwen (ruimtelijk of planologisch deel).",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat specifieke informatie over een nieuwe 'knip' in bouwactiviteiten die niet genoemd wordt in de originele tekst. Dit is een belangrijk procedureel verschil dat invloed heeft op de vergunningaanvraag.",
+          "source_urls": [
+            "https://www.vaals.nl/inwoners/vergunningen/omgevingswet/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een omgevingsvergunning is een vergunning voor het bouwen van een bouwwerk en/of een vergunning voor bedrijfsactiviteiten die mogelijke hinder voor mens en milieu zullen veroorzaken.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina geeft een specifieke definitie van een omgevingsvergunning die ontbreekt in de originele tekst, inclusief de vermelding van mogelijke milieuhinder.",
+          "source_urls": [
+            "https://www.vaals.nl/inwoners/vergunningen/omgevingswet/omgevingsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten belangrijke aanvullende informatie die niet in de originele tekst staat, met name over de nieuwe 'knip' in bouwactiviteiten en een specifiekere definitie van de omgevingsvergunning. Deze informatie is essentieel voor aanvragers om het nieuwe vergunningsproces onder de Omgevingswet te begrijpen."
+  }
+}

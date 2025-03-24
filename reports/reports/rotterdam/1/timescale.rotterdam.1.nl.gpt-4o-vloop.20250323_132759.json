@@ -1,0 +1,73 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ROTTERDAM",
+      "contact": {
+        "phone": "14 010",
+        "email": "null",
+        "website": "http://www.rotterdam.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 24,
+    "false_sentences": 0,
+    "accuracy_percentage": 100.0,
+    "false_statements": []
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.rotterdam.nl/alcoholwetvergunning-aanvragen",
+      "https://www.rotterdam.nl/alcoholwetvergunning-aanvragen/start-alcoholwetvergunning-aanvragen",
+      "https://www.rotterdam.nl/exploitatievergunning-aanvragen/start-exploitatievergunning-aanvragen",
+      "https://www.rotterdam.nl/exploitatievergunning-speelautomatenhal-aanvragen/start-exploitatievergunning-speelautomatenhal-aanvragen",
+      "https://www.rotterdam.nl/toestemming-aanvragen-voor-schenken-van-alcohol-bij-evenementen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.rotterdam.nl",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Doe dit uiterlijk 4 weken voor het evenement",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt geen specifieke aanvraagtermijn voor het schenken van alcohol bij evenementen, terwijl de bron aangeeft dat dit minimaal 4 weken van tevoren moet worden aangevraagd.",
+          "source_urls": [
+            "https://www.rotterdam.nl/toestemming-aanvragen-voor-schenken-van-alcohol-bij-evenementen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Houd uw inschrijfnummer Kamer van Koophandel bij de hand",
+          "original_reference": "Inschrijving bij de Kamer van Koophandel is vereist, de gemeente vraagt deze registratie zelf op",
+          "note": "De bron vraagt om het KvK-nummer bij de hand te houden tijdens de aanvraag, terwijl de originele tekst stelt dat de gemeente deze registratie zelf opvraagt.",
+          "source_urls": [
+            "https://www.rotterdam.nl/exploitatievergunning-aanvragen/start-exploitatievergunning-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele tekst en de bronnen. Ten eerste ontbreekt in de originele tekst de belangrijke termijn van 4 weken voor het aanvragen van een alcoholontheffing bij evenementen. Ten tweede is er een tegenstrijdigheid over het KvK-nummer: waar de originele tekst stelt dat de gemeente dit zelf opvraagt, vraagt de bron om dit nummer beschikbaar te hebben tijdens de aanvraag."
+  }
+}

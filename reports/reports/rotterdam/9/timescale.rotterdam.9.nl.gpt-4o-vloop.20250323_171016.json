@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ROTTERDAM",
+      "contact": {
+        "phone": "14 010",
+        "email": "null",
+        "website": "http://www.rotterdam.nl"
+      }
+    },
+    "service": {
+      "id": 9,
+      "name": "Mobiele puinbreker gebruiken"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 22,
+    "false_sentences": 2,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Containers mogen maximaal vijf dagen op de weg staan zonder vergunning, mits ze voldoen aan bepaalde afmetingen en voorwaarden.",
+        "status": "false",
+        "note": "Volgens de gemeente Rotterdam mogen containers maximaal 3 dagen zonder vergunning op de openbare weg staan, niet 5 dagen."
+      },
+      {
+        "sentence": "Containers moeten minimaal 50 meter van elkaar verwijderd zijn en niet op smalle trottoirs worden geplaatst.",
+        "status": "false",
+        "note": "De gemeente Rotterdam specificeert geen minimale afstand van 50 meter tussen containers in haar regelgeving voor het plaatsen van containers op de openbare weg."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 1,
+    "invalid_urls": 4,
+    "accuracy_percentage": 20.0,
+    "valid_urls_list": [
+      "https://www.rotterdam.nl/opruimmaterialen-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.rotterdam.nl/vergunning-gebruik-van-de-weg-voor-bouwwerkzaamheden-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.rotterdam.nl/u-start-een-eigen-onderneming?referrer=Ondernemers|%2Fondernemers",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.rotterdam.nl/u-start-een-eigen-onderneming?referrer=Ondernemersbalie|/ondernemersbalie",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.rotterdam.nl/u-start-een-eigen-onderneming?referrer=Home|%2F",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wilt u de buurt schoonhouden? U kunt bij de gemeente spullen lenen waar u mee kunt opruimen, zoals prikkers, hesjes en handschoenen.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina gaat over het lenen van opruimmaterialen van de gemeente, terwijl de originele tekst volledig gericht is op puinbrekers en vergunningen voor gebruik van de weg. Dit zijn twee verschillende diensten.",
+          "source_urls": [
+            "https://www.rotterdam.nl/opruimmaterialen-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De geciteerde bronpagina bevat informatie over een volledig andere gemeentelijke dienst (het lenen van opruimmaterialen) dan de originele tekst (gebruik van mobiele puinbrekers). Hierdoor is een directe vergelijking van specifieke details niet mogelijk. Voor een accurate verificatie van de informatie over mobiele puinbrekers zou aanvullende broninhoud nodig zijn die specifiek over dat onderwerp gaat."
+  }
+}

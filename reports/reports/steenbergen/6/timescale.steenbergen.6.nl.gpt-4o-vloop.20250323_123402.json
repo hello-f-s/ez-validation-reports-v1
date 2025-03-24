@@ -1,0 +1,78 @@
+{
+  "context": {
+    "municipality": {
+      "name": "STEENBERGEN",
+      "contact": {
+        "phone": "14 0167",
+        "email": "info@gemeente-steenbergen.nl",
+        "website": "http://www.gemeente-steenbergen.nl"
+      }
+    },
+    "service": {
+      "id": 6,
+      "name": "Integriteitsonderzoek (Wet Bibob)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 1,
+    "true_sentences": 1,
+    "false_sentences": 0,
+    "accuracy_percentage": 100.0,
+    "false_statements": []
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 2,
+    "invalid_urls": 3,
+    "accuracy_percentage": 40.0,
+    "valid_urls_list": [
+      "https://www.gemeente-steenbergen.nl/inwoners_overzicht/subsidie/meestgestelde_vragen/aanvraagprocedure",
+      "https://www.gemeente-steenbergen.nl/inwoners_overzicht/belastingen/toelichting_formulier_kwijtschelding/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.gemeente-steenbergen.nl/inwoners_overzicht/belastingen/bezwaar_tegen_belastingaanslag",
+        "reason": "INVALID: Error scraping https://www.gemeente-steenbergen.nl/inwoners_overzicht/belastingen/bezwaar_tegen_belastingaanslag: HTTPSConnectionPool(host='samenwerkendegemeenten.equalit.nl', port=443): Max retries exceeded with url: /formulier/nl-NL/Steenbergen/scBezwaargemeentelijkebelastingen.aspx (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1018)')))"
+      },
+      {
+        "url": "https://www.gemeente-steenbergen.nl/inwoners_overzicht/samenleven_met_nieuwkomers/vragen_over_het_onderzoek",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.gemeente-steenbergen.nl/inwoners_overzicht/belastingen/terugbelverzoek_naar_aanleiding_van__de_belastingaanslag",
+        "reason": "INVALID: Error scraping https://www.gemeente-steenbergen.nl/inwoners_overzicht/belastingen/terugbelverzoek_naar_aanleiding_van__de_belastingaanslag: HTTPSConnectionPool(host='samenwerkendegemeenten.equalit.nl', port=443): Max retries exceeded with url: /formulier/nl-NL/Steenbergen/scTerugbelverzoek.aspx (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1018)')))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wanneer een (beginnende) instelling/organisatie nog niet eerder een aanvraag bij de gemeente Steenbergen heeft gedaan voor een subsidie [...] geldt de volgende procedure.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat specifieke informatie over de subsidieaanvraagprocedure voor nieuwe organisaties, terwijl deze informatie volledig ontbreekt in de originele inhoud.",
+          "source_urls": [
+            "https://www.gemeente-steenbergen.nl/inwoners_overzicht/subsidie/meestgestelde_vragen/aanvraagprocedure"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor de aanvraag om kwijtschelding moet gebruik gemaakt worden van het bijgevoegde aanvraag-formulier verzoek om kwijtschelding gemeentelijke belastingen.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat specifieke informatie over kwijtscheldingsprocedures en vereisten, terwijl deze informatie volledig ontbreekt in de originele inhoud.",
+          "source_urls": [
+            "https://www.gemeente-steenbergen.nl/inwoners_overzicht/belastingen/toelichting_formulier_kwijtschelding/"
+          ]
+        }
+      ]
+    },
+    "summary": "De originele inhoud bevat geen specifieke informatie, terwijl de bronpagina's gedetailleerde informatie bevatten over zowel subsidieaanvraagprocedures als kwijtscheldingsmogelijkheden voor gemeentelijke belastingen. Dit zijn significante toevoegingen die niet in de originele inhoud worden genoemd."
+  }
+}

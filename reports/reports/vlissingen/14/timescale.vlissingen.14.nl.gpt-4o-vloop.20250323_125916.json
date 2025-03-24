@@ -1,0 +1,68 @@
+{
+  "context": {
+    "municipality": {
+      "name": "VLISSINGEN",
+      "contact": {
+        "phone": "(0118) 48 70 00",
+        "email": "gemeente@vlissingen.nl",
+        "website": "http://www.vlissingen.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 27,
+    "true_sentences": 25,
+    "false_sentences": 2,
+    "accuracy_percentage": 92.6,
+    "false_statements": [
+      {
+        "sentence": "Voor vragen of in-person aanvragen kunt u terecht bij het gemeentehuis aan de Paul Krugerstraat 14382 MA Vlissingen.",
+        "status": "false",
+        "note": "Het adres van het gemeentehuis is Paul Krugerstraat 1, 4382 MA Vlissingen. Het huisnummer is onjuist weergegeven."
+      },
+      {
+        "sentence": "Een bedrijfsvergunning kost € 64,80 per jaar.",
+        "status": "false",
+        "note": "Volgens de actuele tarieven op de website van gemeente Vlissingen is dit bedrag niet correct. De exacte kosten voor een bedrijfsvergunning zijn anders."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 0,
+    "invalid_urls": 5,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.vlissingen.nl/parkeren-ontheffing-van-parkeerverbod",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.vlissingen.nl/parkeren-bij-autobedrijven",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.vlissingen.nl/parkeervergunning-woon-werk-verkeer",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.vlissingen.nl/parkeervergunning-buiten",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.vlissingen.nl/hulp-bij-het-aanvragen-van-een-parkeervergunning-0",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "context": {
+    "municipality": {
+      "name": "UTRECHT",
+      "contact": {
+        "phone": "(014) 030",
+        "email": "Gemeente@utrecht.nl",
+        "website": "http://www.utrecht.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "Na de aanvraag maakt de gemeente binnen 8 weken een beslissing.",
+        "status": "false",
+        "note": "Volgens de gemeente Utrecht website geldt er een reguliere procedure van 8 weken die eenmalig met 6 weken verlengd kan worden. De zin suggereert dat er altijd binnen 8 weken een beslissing komt, wat niet correct is."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 10,
+    "valid_urls": 5,
+    "invalid_urls": 5,
+    "accuracy_percentage": 50.0,
+    "valid_urls_list": [
+      "https://www.utrecht.nl/ondernemen/vergunningen-en-regels/ondernemen-en-milieu",
+      "https://www.utrecht.nl/wonen-en-leven/bouwen-en-verbouwen/u-wilt-bouwen-of-verbouwen/woning-aan-de-binnenkant-verbouwen",
+      "https://www.utrecht.nl/ondernemen/vergunningen-en-regels",
+      "https://www.utrecht.nl/ondernemen/vergunningen-en-regels/werkzaamheden-vergunning-aanvragen",
+      "https://www.utrecht.nl/ondernemen/vergunningen-en-regels/ondernemen-en-milieu/milieu-melding-doen-of-omgevingsvergunning-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://gemeente-utrecht.nl/ondernemen-en-milieu",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://gemeente-utrecht.nl/werkzaamheden-vergunning-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://gemeente-utrecht.nl/milieu-en-omgevingsvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://gemeente-utrecht.nl/woning-aan-de-binnenkant-verbouwen",
+        "reason": "INVALID: Error scraping https://gemeente-utrecht.nl/woning-aan-de-binnenkant-verbouwen: 439 Client Error: status code 439 for url: https://gemeente-utrecht.nl/woning-aan-de-binnenkant-verbouwen"
+      },
+      {
+        "url": "https://gemeente-utrecht.nl/vergunningen-en-regels-voor-ondernemers",
+        "reason": "INVALID: Error scraping https://gemeente-utrecht.nl/vergunningen-en-regels-voor-ondernemers: 439 Client Error: status code 439 for url: https://gemeente-utrecht.nl/vergunningen-en-regels-voor-ondernemers"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Dit moet in de meeste gevallen 4 weken van tevoren.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat meldingen/aanvragen 4 weken van tevoren moeten worden gedaan, wat een belangrijke termijn is voor ondernemers.",
+          "source_urls": [
+            "https://www.utrecht.nl/ondernemen/vergunningen-en-regels/ondernemen-en-milieu/milieu-melding-doen-of-omgevingsvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bedrijven hebben hiervoor e-herkenning nodig.",
+          "original_reference": "Voor de melding via het omgevingsloket heeft u e-herkenning nodig.",
+          "note": "De originele tekst specificeert alleen e-herkenning voor meldingen, terwijl de bron aangeeft dat bedrijven in het algemeen e-herkenning nodig hebben voor het omgevingsloket.",
+          "source_urls": [
+            "https://www.utrecht.nl/ondernemen/vergunningen-en-regels/ondernemen-en-milieu/milieu-melding-doen-of-omgevingsvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Niet altijd vergunning nodig, wel altijd regels. Voor de meeste activiteiten die schade aan het milieu kunnen geven, is geen vergunning nodig. Wel moet u zich altijd houden aan regels.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist deze belangrijke nuancering dat niet alle milieubelastende activiteiten een vergunning vereisen, maar wel aan regels moeten voldoen.",
+          "source_urls": [
+            "https://www.utrecht.nl/ondernemen/vergunningen-en-regels/ondernemen-en-milieu/milieu-melding-doen-of-omgevingsvergunning-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten enkele belangrijke aanvullingen die niet in de originele tekst staan, waaronder de 4-weken termijn voor aanvragen/meldingen, een bredere toepassing van e-herkenning, en de verduidelijking dat niet alle milieubelastende activiteiten een vergunning vereisen maar wel aan regels moeten voldoen. Deze informatie is essentieel voor ondernemers die met milieuvergunningen te maken hebben."
+  }
+}

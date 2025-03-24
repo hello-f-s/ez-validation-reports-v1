@@ -1,0 +1,86 @@
+{
+  "context": {
+    "municipality": {
+      "name": "STEENBERGEN",
+      "contact": {
+        "phone": "14 0167",
+        "email": "info@gemeente-steenbergen.nl",
+        "website": "http://www.gemeente-steenbergen.nl"
+      }
+    },
+    "service": {
+      "id": 7,
+      "name": "Kabels en leidingen aanleggen en beheren"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 27,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.4,
+    "false_statements": [
+      {
+        "sentence": "Voor vragen kunt u contact opnemen met de gemeente Steenbergen via telefoonnummer 14 0167 of via e-mail op info@gemeente-steenbergen.nl.",
+        "status": "false",
+        "note": "Het e-mailadres is onjuist. Het correcte e-mailadres van de gemeente Steenbergen is info@gemeente-steenbergen.nl, maar het telefoonnummer is wel correct."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 4,
+    "valid_urls": 3,
+    "invalid_urls": 1,
+    "accuracy_percentage": 75.0,
+    "valid_urls_list": [
+      "https://www.gemeente-steenbergen.nl/inwoners_overzicht/bouwen_en_verbouwen/aanvraagmogelijkheden_en_termijnen/",
+      "https://www.gemeente-steenbergen.nl/inwoners_overzicht/bouwen_en_verbouwen/digitaal_aanvragen_van_een_omgevingsvergunning/digitaal_aanvragen_van_een_omgevingsvergunning_",
+      "https://www.gemeente-steenbergen.nl/inwoners_overzicht/bouwen_en_verbouwen/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.gemeente-steenbergen.nl/inwoners_overzicht/bouwen_en_verbouwen/bouwen_en_verbouwen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het is mogelijk om met ons in een vooroverleg uw plannen te bespreken. Tijdens zo'n overleg kijken wij of u een vergunning nodig heeft. Let op; een vooroverleg is niet gratis.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist de specifieke informatie over de mogelijkheid tot vooroverleg om plannen te bespreken en te controleren of een vergunning nodig is.",
+          "source_urls": [
+            "https://www.gemeente-steenbergen.nl/inwoners_overzicht/bouwen_en_verbouwen/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "06 12 69 23 99",
+          "original_reference": "14 0167",
+          "note": "De originele tekst vermeldt alleen het algemene nummer 14 0167, maar mist het mobiele nummer dat ook beschikbaar is voor contact.",
+          "source_urls": [
+            "https://www.gemeente-steenbergen.nl/inwoners_overzicht/bouwen_en_verbouwen/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Lukt het ons niet om binnen deze termijn (14 weken) een beslissing te nemen? Dan krijgt u automatisch de vergunning.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist de belangrijke informatie dat de vergunning automatisch wordt verleend als er niet binnen de termijn wordt beslist.",
+          "source_urls": [
+            "https://www.gemeente-steenbergen.nl/inwoners_overzicht/bouwen_en_verbouwen/aanvraagmogelijkheden_en_termijnen/"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn drie belangrijke verschillen gevonden tussen de originele tekst en de bronnen. De originele tekst mist informatie over de mogelijkheid tot vooroverleg, een extra contactnummer en de automatische verlening van de vergunning bij termijnoverschrijding. Deze informatie is wel belangrijk voor inwoners die een vergunning willen aanvragen."
+  }
+}

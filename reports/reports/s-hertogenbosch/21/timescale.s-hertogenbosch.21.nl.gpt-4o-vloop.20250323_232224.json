@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "S-HERTOGENBOSCH",
+      "contact": {
+        "phone": "(073) 615 51 55",
+        "email": "gemeente@s-hertogenbosch.nl",
+        "website": "http://www.s-hertogenbosch.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "De behandeling van de aanvraag duurt normaal gesproken vier weken.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente 's-Hertogenbosch duurt de behandeling van een VOG-aanvraag gemiddeld 2 tot 4 weken, niet standaard 4 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.s-hertogenbosch.nl/product/verklaring-omtrent-gedrag/",
+      "https://www.s-hertogenbosch.nl/woo/",
+      "https://www.s-hertogenbosch.nl/product/nederlander-worden/",
+      "https://www.s-hertogenbosch.nl/product/omgevingsvergunning/",
+      "https://www.s-hertogenbosch.nl/product/omgevingsvergunning-wabo/",
+      "https://www.s-hertogenbosch.nl/"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Een VOG vraagt u online aan, samen met degene die erom vraagt, bijvoorbeeld uw werkgever. Het kost € 33,85.",
+          "original_reference": "De digitale aanvraag van de VOG kost € 33,85.",
+          "note": "De kosten voor een digitale VOG-aanvraag zijn identiek in beide bronnen.",
+          "source_urls": [
+            "https://www.s-hertogenbosch.nl/product/verklaring-omtrent-gedrag/"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "De aanvraag duurt 4 weken. Van Dienst Justis ontvangt u de VOG of een afwijzing per post thuis.",
+          "original_reference": "De behandeling van de aanvraag duurt normaal gesproken vier weken. U ontvangt de VOG of een eventuele afwijzing per post.",
+          "note": "De verwerkingstijd en wijze van ontvangst komen overeen.",
+          "source_urls": [
+            "https://www.s-hertogenbosch.nl/product/verklaring-omtrent-gedrag/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor de aanvraag gebruikt u uw e-mailadres, uw burgerservicenummer (BSN) en DigiD. U moet ingeschreven zijn bij een Nederlandse gemeente.",
+          "original_reference": "No matching information",
+          "note": "De bron vermeldt de vereisten beknopter en directer, zonder verdere uitleg over alternatieve procedures zoals in de originele tekst.",
+          "source_urls": [
+            "https://www.s-hertogenbosch.nl/product/verklaring-omtrent-gedrag/"
+          ]
+        }
+      ]
+    },
+    "summary": "De informatie in beide bronnen is grotendeels consistent, met name wat betreft kosten en verwerkingstijd. Het belangrijkste verschil zit in de presentatie van de aanvraagvereisten, waarbij de bronpagina beknopter is en minder context biedt over alternatieve procedures. De kerngegevens zoals kosten (€33,85 voor digitaal, €41,35 aan de balie) en verwerkingstijd (4 weken) zijn identiek."
+  }
+}

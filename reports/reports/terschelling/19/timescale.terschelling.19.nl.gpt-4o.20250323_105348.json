@@ -1,0 +1,86 @@
+{
+  "context": {
+    "municipality": {
+      "name": "TERSCHELLING",
+      "contact": {
+        "phone": "(0562) 44 62 44",
+        "email": "gemeente@terschelling.nl",
+        "website": "http://www.terschelling.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 11,
+    "false_sentences": 2,
+    "accuracy_percentage": 84.6,
+    "false_statements": [
+      {
+        "sentence": "Eén speelautomaat: €56,50.",
+        "status": "false",
+        "note": "De actuele tarieven voor een aanwezigheidsvergunning voor één speelautomaat op Terschelling zijn anders dan het genoemde bedrag van €56,50."
+      },
+      {
+        "sentence": "Twee speelautomaten: €90,50.",
+        "status": "false",
+        "note": "De actuele tarieven voor een aanwezigheidsvergunning voor twee speelautomaten op Terschelling zijn anders dan het genoemde bedrag van €90,50."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.terschelling.nl/alle-producten-en-diensten/21",
+      "https://www.terschelling.nl/gokautomaat-plaatsen",
+      "https://www.terschelling.nl/exploitatievergunning-horecabedrijf",
+      "https://www.terschelling.nl/gokautomaat-plaatsen-0",
+      "https://www.terschelling.nl/terras-plaatsen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://example.com",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een gokautomaat is een automaat waarmee u geld kunt winnen, zoals een fruitautomaat. Met een behendigheidsautomaat kan dit niet. Denk aan een flipperkast of videospelletjes. Voor een behendigheidsautomaat heeft u geen aanwezigheidsvergunning nodig.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke definitie-informatie over het verschil tussen gokautomaten en behendigheidsautomaten en de bijbehorende vergunningsvereisten",
+          "source_urls": [
+            "https://www.terschelling.nl/gokautomaat-plaatsen",
+            "https://www.terschelling.nl/gokautomaat-plaatsen-0"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Geef het altijd door aan de gemeente als er iets verandert. Bijvoorbeeld bij een andere eigenaar van de automaat",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist de verplichting om wijzigingen door te geven aan de gemeente",
+          "source_urls": [
+            "https://www.terschelling.nl/gokautomaat-plaatsen",
+            "https://www.terschelling.nl/gokautomaat-plaatsen-0"
+          ]
+        }
+      ]
+    },
+    "summary": "De broninhoud komt grotendeels overeen met de originele tekst, maar bevat twee belangrijke aanvullingen die ontbreken in het origineel: (1) de definitie en het onderscheid tussen gok- en behendigheidsautomaten met bijbehorende vergunningsvereisten, en (2) de verplichting om wijzigingen door te geven aan de gemeente. Deze informatie is relevant voor de volledigheid en duidelijkheid van de dienstverlening."
+  }
+}

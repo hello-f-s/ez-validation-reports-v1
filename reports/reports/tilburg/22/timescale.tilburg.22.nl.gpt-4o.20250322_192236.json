@@ -1,0 +1,60 @@
+{
+  "context": {
+    "municipality": {
+      "name": "TILBURG",
+      "contact": {
+        "phone": "14 013",
+        "email": "gemeente@tilburg.nl",
+        "website": "http://www.tilburg.nl"
+      }
+    },
+    "service": {
+      "id": 22,
+      "name": "Woonruimte splitsen of samenvoegen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Als er al een omgevingsvergunning is verleend, is een splitsingsvergunning niet nodig.",
+        "status": "false",
+        "note": "Een splitsingsvergunning is altijd nodig voor het splitsen van een gebouw in appartementsrechten, ongeacht of er een omgevingsvergunning is verleend. Dit zijn twee verschillende vergunningen met verschillende doelen. Een omgevingsvergunning regelt de bouwkundige aspecten, terwijl een splitsingsvergunning specifiek gaat over het juridisch splitsen van het eigendom."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.tilburg.nl/ondernemers/bouwen-en-vestigen/nieuwe-pagina-titel-1/",
+      "https://www.tilburg.nl/inwoners/vergunningen/kamerverhuur/",
+      "https://www.tilburg.nl/inwoners/vergunningen/omgevingsvergunning/",
+      "https://www.tilburg.nl/inwoners/verhuizen-verbouwen/bouwen-en-verbouwen/",
+      "https://www.tilburg.nl/ondernemers/bouwen-en-vestigen/van-verkennen-tot-start-bouw/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://gemeente-tilburg.archief/bouwen-en-verbouwen",
+        "reason": "INVALID: Error scraping https://gemeente-tilburg.archief/bouwen-en-verbouwen: HTTPSConnectionPool(host='gemeente-tilburg.archief', port=443): Max retries exceeded with url: /bouwen-en-verbouwen (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x107cb6d50>: Failed to resolve 'gemeente-tilburg.archief' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": []
+    },
+    "summary": "Na grondige analyse van de geciteerde bronpagina's kon ik geen concrete verschillen of tegenstrijdigheden identificeren met de originele inhoud. De beschikbare broninhoud lijkt onvolledig of beperkt tot navigatiemenu's, waardoor een volledige vergelijking niet mogelijk was. De originele informatie over splitsingsvergunningen kon niet worden geverifieerd tegen de broninhoud omdat de relevante details niet zichtbaar zijn in de getoonde fragmenten."
+  }
+}

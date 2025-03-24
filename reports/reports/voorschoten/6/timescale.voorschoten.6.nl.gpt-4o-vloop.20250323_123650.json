@@ -1,0 +1,78 @@
+{
+  "context": {
+    "municipality": {
+      "name": "VOORSCHOTEN",
+      "contact": {
+        "phone": "14 071",
+        "email": "gemeente@voorschoten.nl",
+        "website": "http://www.voorschoten.nl"
+      }
+    },
+    "service": {
+      "id": 6,
+      "name": "Integriteitsonderzoek (Wet Bibob)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 20,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.2,
+    "false_statements": [
+      {
+        "sentence": "De eigenaar of leidinggevende moet van onbesproken gedrag zijn en minimaal 21 jaar oud.",
+        "status": "false",
+        "note": "Volgens de APV van Voorschoten moet de eigenaar of leidinggevende minimaal 18 jaar oud zijn, niet 21 jaar."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 1,
+    "invalid_urls": 4,
+    "accuracy_percentage": 20.0,
+    "valid_urls_list": [
+      "https://www.voorschoten.nl/informatie-over-beleid-of-besluiten-opvragen-who-verzoek-0"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.voorschoten.nl/informatie-opvragen-woo-verzoek",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.voorschoten.nl/exploitatievergunning-horecabedrijf",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.voorschoten.nl/woo-verzoek-indienen?origin=/informatie-opvragen-woo-verzoek-0?origin=/informatie-opvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.voorschoten.nl/adresonderzoek",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U krijgt binnen 4 weken bericht over uw verzoek. De gemeente kan deze termijn verlengen met 2 weken.",
+          "original_reference": "Er is geen specifieke tijdsduur voor de verwerking van het Bibob-onderzoek gegeven, maar exploitatievergunningen worden over het algemeen behandeld binnen de reguliere termijnen van gemeentelijke aanvragen.",
+          "note": "De brontekst specificeert een concrete behandeltermijn van 4 weken met mogelijke verlenging van 2 weken, terwijl de originele tekst geen specifieke termijn noemt.",
+          "source_urls": [
+            "https://www.voorschoten.nl/informatie-over-beleid-of-besluiten-opvragen-who-verzoek-0"
+          ]
+        }
+      ]
+    },
+    "summary": "Bij vergelijking van de broninhoud met de originele tekst is één significant verschil gevonden met betrekking tot de behandeltermijn van aanvragen. De overige informatie in de brontekst heeft echter betrekking op Who-verzoeken en niet op exploitatievergunningen, waardoor verdere vergelijking niet relevant is. Voor een volledige analyse zouden aanvullende bronnen over exploitatievergunningen nodig zijn."
+  }
+}

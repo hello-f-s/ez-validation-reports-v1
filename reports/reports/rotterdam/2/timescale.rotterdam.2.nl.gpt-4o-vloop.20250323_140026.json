@@ -1,0 +1,90 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ROTTERDAM",
+      "contact": {
+        "phone": "14 010",
+        "email": "null",
+        "website": "http://www.rotterdam.nl"
+      }
+    },
+    "service": {
+      "id": 2,
+      "name": "Bord of spandoek plaatsen aan de openbare weg"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "Voor handelsreclame is de vergunningaanvraag zelf gratis, maar er kunnen kosten verbonden zijn aan een bouwvergunning als dat nodig is.",
+        "status": "false",
+        "note": "De vergunningaanvraag voor handelsreclame is niet gratis. Volgens de legesverordening van de gemeente Rotterdam zijn er kosten verbonden aan het aanvragen van een omgevingsvergunning voor handelsreclame."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 3,
+    "invalid_urls": 4,
+    "accuracy_percentage": 42.9,
+    "valid_urls_list": [
+      "https://www.rotterdam.nl/vergunning-gebruik-van-de-weg-voor-bouwwerkzaamheden-aanvragen",
+      "https://www.rotterdam.nl/omgevingsvergunning-reclame-uiting-aanvragen",
+      "https://www.rotterdam.nl/omgevingsvergunning-reclame-uiting"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.rotterdam.nl/vergunning-inname-openbare-grond-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.rotterdam.nl/omgevingsvergunning-bouwen-aanvragen/start-omgevingsvergunning-bouwen-per-post-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.rotterdam.nl/promotievergunning-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.rotterdam.nl/vergunning-inname-openbare-grond",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De gemeente Rotterdam kent geen aparte reclamevergunning. Dit betekent niet dat reclame in Rotterdam vergunningsvrij is.",
+          "original_reference": "Als u een bord of spandoek aan de openbare weg wilt plaatsen, hebt u een omgevingsvergunning nodig voor handelsreclame.",
+          "note": "De bronpagina benadrukt expliciet dat er geen aparte reclamevergunning bestaat, terwijl de originele tekst dit niet vermeldt. Dit is een belangrijk nuanceverschil in de communicatie.",
+          "source_urls": [
+            "https://www.rotterdam.nl/omgevingsvergunning-reclame-uiting-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Hebt u voor 1 januari 2024 een omgevingsvergunning aangevraagd via het Omgevingsloket online, dan is het belangrijk om de aanvullingen via het nieuwe Omgevingsloket in te dienen.",
+          "original_reference": "Vanaf 1 juli 2024 is het Omgevingsloket online (OLO) niet meer beschikbaar. Aanvragen moeten dan via het nieuwe Omgevingsloket worden ingediend.",
+          "note": "De bronpagina geeft specifieke instructies voor aanvragen van vóór 1 januari 2024, terwijl de originele tekst alleen de einddatum van 1 juli 2024 noemt.",
+          "source_urls": [
+            "https://www.rotterdam.nl/omgevingsvergunning-reclame-uiting-aanvragen",
+            "https://www.rotterdam.nl/omgevingsvergunning-reclame-uiting"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele tekst en de bronpagina's. Ten eerste wordt in de bronpagina expliciet vermeld dat er geen aparte reclamevergunning bestaat, wat een belangrijke nuance is die ontbreekt in de originele tekst. Ten tweede geeft de bronpagina specifiekere informatie over de overgang naar het nieuwe Omgevingsloket, met name voor aanvragen die vóór 1 januari 2024 zijn ingediend. De overige informatie komt inhoudelijk overeen met de originele tekst."
+  }
+}

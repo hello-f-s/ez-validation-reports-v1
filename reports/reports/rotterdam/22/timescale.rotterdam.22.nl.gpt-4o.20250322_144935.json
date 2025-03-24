@@ -1,0 +1,81 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ROTTERDAM",
+      "contact": {
+        "phone": "14 010",
+        "email": "null",
+        "website": "http://www.rotterdam.nl"
+      }
+    },
+    "service": {
+      "id": 22,
+      "name": "Woonruimte splitsen of samenvoegen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 22,
+    "false_sentences": 2,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Is het gebouw jonger dan 25 jaar of bevat het meer dan 24 woningen? Dan heeft u geen vergunning nodig.",
+        "status": "false",
+        "note": "Dit is onjuist. Ook voor gebouwen jonger dan 25 jaar of met meer dan 24 woningen is een splitsingsvergunning nodig volgens de gemeente Rotterdam. De leeftijd en het aantal woningen zijn geen vrijstellingscriteria."
+      },
+      {
+        "sentence": "Als de aanvraag voor toestemming van de gemeente compleet is, duurt de beslissing maximaal 6 weken.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Rotterdam is de maximale beslistermijn 8 weken. Er wordt geen onderscheid gemaakt voor complete aanvragen met een kortere termijn van 6 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 3,
+    "invalid_urls": 3,
+    "accuracy_percentage": 50.0,
+    "valid_urls_list": [
+      "https://www.rotterdam.nl/onderneming-starten",
+      "https://www.rotterdam.nl/grond-splitsen",
+      "https://www.rotterdam.nl/vergunning-splitsen-gebouw-in-appartementsrechten-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.rotterdam.nl/vergunning-splitsen-gebouw-in-appartementsrechten-aanvragen/start-vergunning-splitsen-gebouw-in-appartementsrechten-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.rotterdam.nl/vergunning-of-toestemming-opkoopbescherming-aanvragen/start-vergunning-of-toestemming-opkoopbescherming-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.rotterdam.nl/loket/vergunningen/",
+        "reason": "INVALID: Error scraping https://www.rotterdam.nl/loket/vergunningen/: 404 Client Error: Not Found for url: https://www.rotterdam.nl/loket/vergunningen"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Als u als eigenaar een gebouw wilt splitsen in losse, zelfstandige appartementen hebt u soms een vergunning nodig.",
+          "original_reference": "Als ondernemer in Rotterdam moet u een vergunning aanvragen als: U een gebouw wilt splitsen in losse, zelfstandige appartementen (kadastrale splitsing).",
+          "note": "De basisvoorwaarde voor het splitsen van een gebouw komt overeen in beide bronnen, hoewel de originele tekst specifieker is door de term 'kadastrale splitsing' te gebruiken.",
+          "source_urls": [
+            "https://www.rotterdam.nl/vergunning-splitsen-gebouw-in-appartementsrechten-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse van de beschikbare bronnen zijn er geen significante inhoudelijke verschillen gevonden tussen de originele tekst en de bronpagina's. De beschikbare bronpagina's bevatten echter minder gedetailleerde informatie dan de originele tekst, vooral wat betreft specifieke kosten en voorwaarden. De kernboodschap en hoofdvoorwaarden blijven consistent. Veel van de specifieke details uit de originele tekst (zoals exacte bedragen en leeftijdscriteria) zijn niet direct verifieerbaar in de gegeven bronpagina's."
+  }
+}

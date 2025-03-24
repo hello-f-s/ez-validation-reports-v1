@@ -1,0 +1,91 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ROERMOND",
+      "contact": {
+        "phone": "14 0475",
+        "email": "mail@roermond.nl",
+        "website": "http://www.roermond.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Aanvraag exploitatievergunning: €39,40.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Roermond bedragen de leges voor een aanvraag exploitatievergunning €156,25. Het bedrag van €39,40 is onjuist."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 4,
+    "invalid_urls": 2,
+    "accuracy_percentage": 66.7,
+    "valid_urls_list": [
+      "https://www.roermond.nl/marktstandplaats-aanvragen",
+      "https://www.roermond.nl/terrasvergunning",
+      "https://www.roermond.nl/alcoholwetvergunning",
+      "https://www.roermond.nl/exploitatievergunning-horeca"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://metadataurl.com",
+        "reason": "INVALID: Error scraping https://metadataurl.com: HTTPSConnectionPool(host='metadataurl.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x105923390>: Failed to resolve 'metadataurl.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.roermond.nl/reclame-plaatsen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Schenkt u wel alcohol? Dan heeft u daarnaast een Alcoholwetvergunning nodig.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat er een aparte Alcoholwetvergunning nodig is naast de exploitatievergunning wanneer er alcohol wordt geschonken. Dit is belangrijke aanvullende informatie.",
+          "source_urls": [
+            "https://www.roermond.nl/exploitatievergunning-horeca"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U bent in het bezit van een Verklaring Sociale Hygiëne. Controleer of u ook ingeschreven staat in het Register Sociale Hygiëne",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de vereiste van een Verklaring Sociale Hygiëne en registratie in het Register Sociale Hygiëne, wat een belangrijke voorwaarde is voor horeca-exploitatie met alcohol.",
+          "source_urls": [
+            "https://www.roermond.nl/alcoholwetvergunning"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "mail@roermond.nl of per post naar: postbus 900, 6040 AX Roermond",
+          "original_reference": "mail@roermond.nl of per post naar: Postbus 900, 6040 AX Roermond",
+          "note": "De contactgegevens voor het indienen van de aanvraag zijn consistent tussen beide bronnen.",
+          "source_urls": [
+            "https://www.roermond.nl/exploitatievergunning-horeca"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie die niet in de originele tekst staat, met name over de noodzaak van een aparte Alcoholwetvergunning en de vereiste Verklaring Sociale Hygiëne. De basis procedures, kosten en contactgegevens zijn verder consistent met de originele tekst."
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "context": {
+    "municipality": {
+      "name": "TERSCHELLING",
+      "contact": {
+        "phone": "(0562) 44 62 44",
+        "email": "gemeente@terschelling.nl",
+        "website": "http://www.terschelling.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor het aanvragen van een VOG bedragen € 41,35.",
+        "status": "false",
+        "note": "De actuele kosten voor een VOG bij de gemeente Terschelling bedragen € 47,55 (2024). Dit bedrag wordt jaarlijks vastgesteld door het ministerie van Justitie en Veiligheid."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.terschelling.nl/verklaring-omtrent-het-gedrag-vog",
+      "https://www.terschelling.nl/omgevingsvergunning",
+      "https://www.terschelling.nl/nederlander-worden-door-optie",
+      "https://www.terschelling.nl/onroerendezaakbelasting-kopie-aanslag",
+      "https://www.terschelling.nl/overzicht-geleverde-persoonsgegevens-opvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://metadata-url-example.com",
+        "reason": "INVALID: Error scraping https://metadata-url-example.com: HTTPSConnectionPool(host='metadata-url-example.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x105fbb110>: Failed to resolve 'metadata-url-example.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Leraren, taxichauffeurs en mensen die werken in de kinderopvang moeten een VOG hebben. U kunt ook een VOG nodig hebben, omdat: een toekomstige werkgever hierom vraagt, u zzp'er bent en een opdrachtgever hierom vraagt, u vrijwilligerswerk wilt doen, u een visumaanvraag doet, u lid wilt worden van een schietvereniging, u verhuist naar het buitenland",
+          "original_reference": "Als ondernemer kunt u een VOG aanvragen wanneer een opdrachtgever hierom vraagt. Dit is van toepassing als u bijvoorbeeld zzp'er bent.",
+          "note": "De bronpagina geeft een uitgebreidere lijst van situaties waarin een VOG nodig is, terwijl de originele tekst zich beperkt tot ondernemers/zzp'ers",
+          "source_urls": [
+            "https://www.terschelling.nl/verklaring-omtrent-het-gedrag-vog"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Justis is de overheidsorganisatie die alle aanvragen voor een VOG behandelt. Als u geen strafbare feiten hebt gepleegd, krijgt u de VOG. Als u wel strafbare feiten hebt gepleegd, is verder onderzoek nodig. Justis bekijkt of de strafbare feiten belangrijk zijn voor de aanvraag.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat belangrijke aanvullende informatie over de beoordelingscriteria van Justis die niet in de originele tekst staat",
+          "source_urls": [
+            "https://www.terschelling.nl/verklaring-omtrent-het-gedrag-vog"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de volledigheid van de informatie. De bronpagina biedt een uitgebreidere context over wanneer een VOG nodig is en hoe de beoordeling door Justis plaatsvindt. Deze essentiële informatie ontbreekt in de originele tekst. De kernprocedures, kosten en aanvraagmethoden zijn verder consistent tussen beide bronnen."
+  }
+}

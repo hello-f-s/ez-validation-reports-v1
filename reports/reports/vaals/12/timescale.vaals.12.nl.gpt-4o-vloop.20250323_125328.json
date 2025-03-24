@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "VAALS",
+      "contact": {
+        "phone": "(043) 306 85 68",
+        "email": "info@vaals.nl",
+        "website": "http://www.vaals.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "Na ontvangst van het besluit heeft u de mogelijkheid om bezwaar te maken.",
+        "status": "false",
+        "note": "Deze zin is onvolledig en daardoor misleidend. Volgens de officiële procedure moet bezwaar binnen 6 weken na bekendmaking van het besluit worden ingediend, niet op elk willekeurig moment na ontvangst."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.vaals.nl/inwoners/vergunningen/omgevingsvergunning",
+      "https://www.vaals.nl/inwoners/vergunningen/omgevingswet/omgevingsvergunning",
+      "https://www.vaals.nl/inwoners/vergunningen/omgevingswet/meest-aangevraagde-activiteiten",
+      "https://www.vaals.nl/inwoners/vergunningen/omgevingswet/omgevingsloket",
+      "https://www.vaals.nl/inwoners/vergunningen/omgevingswet/veelgestelde-vragen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Nieuw bij het (ver)bouwen van een bouwwerk is dat er een knip wordt gemaakt. Deze bestaat uit een (technische) bouwactiviteit en een omgevingsplanactiviteit bouwen (ruimtelijk of planologisch deel). In de praktijk betekent dit dat u keuzevrijheid heeft in de volgorde en het al dan niet tegelijkertijd aanvragen van deze afzonderlijke vergunningen.",
+          "original_reference": "Met de inwerkingtreding van de Omgevingswet op 1 januari 2024 wordt de omgevingsvergunning nog steeds vereist voor veel activiteiten.",
+          "note": "De bronpagina specificeert een belangrijke nieuwe 'knip' in de vergunningaanvraag die niet wordt genoemd in de originele tekst. Dit is een essentiële wijziging in de procedure.",
+          "source_urls": [
+            "https://www.vaals.nl/inwoners/vergunningen/omgevingswet/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Stuur dan gerust een mail naar omgevingsvergunningen@vaals.nl",
+          "original_reference": "U kunt een vooroverleg aanvragen via een formulier dat u verstuurt naar omgevingsvergunningen@vaals.nl",
+          "note": "De originele tekst spreekt over een formulier, terwijl de bronpagina aangeeft dat men direct een mail kan sturen.",
+          "source_urls": [
+            "https://www.vaals.nl/inwoners/vergunningen/omgevingswet/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De Omgevingswet zorgt ervoor dat de overheid sneller beslist op uw vergunningaanvragen. Een korte procedure is het uitgangspunt in de Omgevingswet.",
+          "original_reference": "Onder de nieuwe Omgevingswet worden vergunningen niet meer automatisch verleend als de beslistermijn wordt overschreden.",
+          "note": "De originele tekst suggereert een striktere aanpak bij termijnoverschrijding, terwijl de bronpagina juist de nadruk legt op snellere besluitvorming.",
+          "source_urls": [
+            "https://www.vaals.nl/inwoners/vergunningen/omgevingswet/veelgestelde-vragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de nieuwe 'knip' in de vergunningaanvraag procedure, de manier waarop vooroverleg kan worden aangevraagd, en de interpretatie van de nieuwe besluitvormingssnelheid onder de Omgevingswet. De bronpagina's bieden op enkele punten meer specifieke en soms afwijkende informatie dan de originele tekst."
+  }
+}

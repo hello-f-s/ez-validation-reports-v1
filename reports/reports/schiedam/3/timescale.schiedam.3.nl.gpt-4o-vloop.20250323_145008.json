@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "SCHIEDAM",
+      "contact": {
+        "phone": "14 010",
+        "email": "contact@schiedam.nl",
+        "website": "http://www.schiedam.nl"
+      }
+    },
+    "service": {
+      "id": 3,
+      "name": "Certificaat voor opgraving aanvragen en vondst melden"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor deze vergunning bedragen €356,- (prijspeil 2014).",
+        "status": "false",
+        "note": "Dit bedrag is verouderd. Volgens de actuele legesverordening van de gemeente Schiedam gelden er andere tarieven voor graafwerkzaamheden. Het genoemde prijspeil uit 2014 is niet meer geldig."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.schiedam.nl/a-tot-z/kabels-en-leidingen",
+      "https://schiedam.nl/a-tot-z/kabels-en-leidingen",
+      "https://schiedam.nl/a-tot-z/vraag-idee-doorgeven",
+      "https://www.schiedam.nl/a-tot-z/vraag-idee-doorgeven",
+      "https://www.schiedam.nl/a-tot-z/zaken-doen-met-de-gemeente"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Netbeheerders uit de regio kunnen een account aanvragen. Aannemers en onderaannemers kunnen op deze accounts ook meldingen doen uit naam van de netbeheerder.",
+          "original_reference": "Als aannemer of onderaannemer zonder account, dient u contact op te nemen met de opdrachtgever of netbeheerder om opbrekingen in de gemeente Schiedam te melden.",
+          "note": "De bronpagina geeft aanvullende informatie over de mogelijkheid voor aannemers om meldingen te doen via accounts van netbeheerders, wat niet vermeld wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.schiedam.nl/a-tot-z/kabels-en-leidingen"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Voor graafwerkzaamheden, groter dan 25 strekkende meter, is een vergunning verplicht. De kosten voor deze vergunning zijn €356,- (prijspeil 2014).",
+          "original_reference": "Voor graafwerkzaamheden die groter zijn dan 25 strekkende meter is een vergunning verplicht. De kosten voor deze vergunning bedragen €356,- (prijspeil 2014).",
+          "note": "De kosten en voorwaarden voor vergunningen komen exact overeen met de originele tekst.",
+          "source_urls": [
+            "https://www.schiedam.nl/a-tot-z/kabels-en-leidingen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten grotendeels dezelfde informatie als de originele tekst, maar bieden wel aanvullende details over de mogelijkheden voor aannemers om via netbeheerders-accounts meldingen te doen. De kerngegevens zoals kosten, termijnen en contactgegevens zijn consistent tussen beide bronnen."
+  }
+}

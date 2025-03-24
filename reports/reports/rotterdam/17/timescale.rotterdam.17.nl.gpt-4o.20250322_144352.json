@@ -1,0 +1,95 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ROTTERDAM",
+      "contact": {
+        "phone": "14 010",
+        "email": "null",
+        "website": "http://www.rotterdam.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 13,
+    "false_sentences": 2,
+    "accuracy_percentage": 86.7,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor de uitbreiding van de exploitatievergunning met een terrasvlonder bedragen €180 in 2025.",
+        "status": "false",
+        "note": "De kosten voor een terrasvlondervergunning bedragen €500,85 in 2024. Er is geen officiële informatie beschikbaar over tarieven voor 2025."
+      },
+      {
+        "sentence": "Binnen 2 weken krijgt u bericht over uw aanvraag.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Rotterdam duurt de behandeling van een aanvraag voor een terrasvlondervergunning maximaal 8 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 3,
+    "invalid_urls": 2,
+    "accuracy_percentage": 60.0,
+    "valid_urls_list": [
+      "https://www.rotterdam.nl/voorlopige-exploitatievergunning-aanvragen/start-voorlopige-exploitatievergunning-aanvragen",
+      "https://www.rotterdam.nl/exploitatievergunning-aanvragen/start-exploitatievergunning-aanvragen",
+      "https://www.rotterdam.nl/vergunning-terrasvlonder-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.rotterdam.nl/vergunning-kansspelautomaten-aanvragen/start-vergunning-kansspelautomaten-per-post-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.rotterdam.nl/vergunning-terrasvlonder-aanvragen/start-vergunning-terrasvlonder-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "In Rotterdam mag u een terrasvlonder plaatsen op een parkeervak van 15 mei tot 15 oktober.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt geen specifieke periode voor het plaatsen van terrasvlonders, terwijl de bron een duidelijke seizoensgebonden periode aangeeft van 15 mei tot 15 oktober.",
+          "source_urls": [
+            "https://www.rotterdam.nl/vergunning-terrasvlonder-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De eventuele ombouw van een terrasvlonder heeft een open karakter en mag niet hoger zijn dan 1,20 meter.",
+          "original_reference": "Het terras moet open en toegankelijk zijn, zonder overhangende elementen of attributen.",
+          "note": "De bron specificeert een maximale hoogte van 1,20 meter voor de ombouw, wat niet vermeld wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.rotterdam.nl/vergunning-terrasvlonder-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het plaatsen van een terrasvlonder is voor eigen risico.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat het plaatsen van een terrasvlonder voor eigen risico is.",
+          "source_urls": [
+            "https://www.rotterdam.nl/vergunning-terrasvlonder-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn drie belangrijke verschillen gevonden tussen de originele tekst en de bronnen. De bronnen specificeren een seizoensgebonden periode (15 mei - 15 oktober), een maximale hoogte voor de ombouw (1,20 meter) en vermelden dat plaatsing voor eigen risico is. Deze belangrijke details ontbreken in de originele tekst."
+  }
+}

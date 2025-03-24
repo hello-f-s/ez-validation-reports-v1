@@ -1,0 +1,82 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ROTTERDAM",
+      "contact": {
+        "phone": "14 010",
+        "email": "null",
+        "website": "http://www.rotterdam.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 35,
+    "true_sentences": 34,
+    "false_sentences": 1,
+    "accuracy_percentage": 97.1,
+    "false_statements": [
+      {
+        "sentence": "Een op de vergunning genoemde beheerder moet altijd aanwezig zijn wanneer de zaak open is voor publiek.",
+        "status": "false",
+        "note": "Volgens de APV Rotterdam hoeft niet specifiek de beheerder aanwezig te zijn, maar moet er altijd een leidinggevende aanwezig zijn die op de vergunning staat vermeld. Dit kan de exploitant, beheerder of een andere leidinggevende zijn."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 4,
+    "invalid_urls": 2,
+    "accuracy_percentage": 66.7,
+    "valid_urls_list": [
+      "https://www.rotterdam.nl/exploitatievergunning-aanvragen/start-exploitatievergunning-aanvragen",
+      "https://www.rotterdam.nl/voorlopige-exploitatievergunning-aanvragen",
+      "https://www.rotterdam.nl/voorlopige-exploitatievergunning-aanvragen/start-voorlopige-exploitatievergunning-aanvragen",
+      "https://www.rotterdam.nl/exploitatievergunning-speelautomatenhal-aanvragen/start-exploitatievergunning-speelautomatenhal-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.rotterdam.nl/exploitatievergunning-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.rotterdam.nl",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Stap 1 van 3, Stap 2 van 3, Stap 3 van 3",
+          "original_reference": "Het aanvraagproces bestaat uit de volgende stappen: 1. Verklaring beheerder invullen. 2. Machtigingsformulier invullen. 3. Plattegrond meesturen. 4. Tekening terras meesturen. 5. Documenten verzamelen. 6. Online aanvragen",
+          "note": "Het aantal procedurestappen voor de voorlopige exploitatievergunning (3 stappen) verschilt van de reguliere aanvraag (6 stappen). Dit is een belangrijk procedureel verschil.",
+          "source_urls": [
+            "https://www.rotterdam.nl/voorlopige-exploitatievergunning-aanvragen/start-voorlopige-exploitatievergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "U hebt eHerkenning niveau 2 nodig en een machtiging 'Ondernemersloket EH 2'",
+          "original_reference": "Voor de digitale aanvraag is eHerkenning niveau 2 en een machtiging 'Ondernemersloket EH 2' nodig",
+          "note": "De eHerkenning vereisten zijn consistent tussen beide bronnen",
+          "source_urls": [
+            "https://www.rotterdam.nl/voorlopige-exploitatievergunning-aanvragen/start-voorlopige-exploitatievergunning-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen het aantal procedurestappen tussen de reguliere en voorlopige exploitatievergunning. De voorlopige vergunning kent een verkort proces met 3 stappen, terwijl de reguliere aanvraag 6 stappen vereist. De overige kernvoorwaarden en vereisten, zoals eHerkenning niveau 2, zijn consistent tussen de bronnen."
+  }
+}

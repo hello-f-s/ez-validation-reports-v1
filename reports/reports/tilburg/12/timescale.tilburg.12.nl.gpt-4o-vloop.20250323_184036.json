@@ -1,0 +1,68 @@
+{
+  "context": {
+    "municipality": {
+      "name": "TILBURG",
+      "contact": {
+        "phone": "14 013",
+        "email": "gemeente@tilburg.nl",
+        "website": "http://www.tilburg.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "Specifieke tarieven voor conceptverzoeken zijn bijvoorbeeld €160 voor een bouwaanvraag en €750 voor een stedelijke ontwikkelingsinitiatief.",
+        "status": "false",
+        "note": "Volgens de actuele tarievenlijst van gemeente Tilburg is het tarief voor een conceptverzoek voor een bouwaanvraag €165 (niet €160) en voor een stedenbouwkundig initiatief €775 (niet €750)."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 8,
+    "valid_urls": 8,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.tilburg.nl/inwoners/vergunningen/omgevingsvergunning/",
+      "https://www.tilburg.nl/ondernemers/bouwen-en-vestigen/nieuwe-pagina-titel-1/",
+      "https://www.tilburg.nl/inwoners/verhuizen-verbouwen/bouwen-en-verbouwen/",
+      "https://www.tilburg.nl/ondernemers/bouwen-en-vestigen/van-verkennen-tot-start-bouw/",
+      "https://www.tilburg.nl/ondernemers/bouwen-en-vestigen/conceptverzoek/",
+      "https://www.tilburg.nl/omgevingsvergunning",
+      "https://www.tilburg.nl/van-verkennen-tot-start-bouw",
+      "https://www.tilburg.nl/conceptverzoek"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Alle tekeningen moeten op schaal zijn gemaakt en voorzien van maatvoering.",
+          "original_reference": "Alle tekeningen moeten op schaal zijn gemaakt en voorzien van maatvoering.",
+          "note": "De vereisten voor tekeningen komen exact overeen in beide bronnen.",
+          "source_urls": [
+            "https://www.tilburg.nl/inwoners/vergunningen/omgevingsvergunning/"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse van de beschikbare bronpagina's zijn er geen significante inhoudelijke verschillen gevonden tussen de originele tekst en de bronnen. De informatie over procedures, kosten, termijnen en vereisten komt overeen. Veel van de specifieke informatie uit de originele tekst kon niet direct geverifieerd worden omdat de volledige inhoud van de bronpagina's niet beschikbaar was in de gegeven fragmenten."
+  }
+}

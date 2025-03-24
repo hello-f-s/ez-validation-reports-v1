@@ -1,0 +1,94 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ZWOLLE",
+      "contact": {
+        "phone": "14 038",
+        "email": "postbus@zwolle.nl",
+        "website": "http://www.zwolle.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 12,
+    "false_sentences": 2,
+    "accuracy_percentage": 85.7,
+    "false_statements": [
+      {
+        "sentence": "Eerste kansspelautomaat: € 56,50.",
+        "status": "false",
+        "note": "Het correcte tarief voor de eerste kansspelautomaat in Zwolle is € 226,00 per jaar"
+      },
+      {
+        "sentence": "Tweede kansspelautomaat: € 34,00.",
+        "status": "false",
+        "note": "Het correcte tarief voor de tweede kansspelautomaat in Zwolle is € 226,00 per jaar"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 3,
+    "invalid_urls": 4,
+    "accuracy_percentage": 42.9,
+    "valid_urls_list": [
+      "https://www.zwolle.nl/speelgelegenhedenvergunning",
+      "https://www.zwolle.nl/omgevingsvergunning-en-melding",
+      "https://www.zwolle.nl/vergunning-voor-een-loterij-of-ander-kansspel"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.eherkenning.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.zwolle.nl/veelgestelde-vragen-over-de-omgevingswet",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.zwolle.nl/vergunning-kansspelautomaten",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.zwolle.nl/kentekenparkeren-veelgestelde-vragen-voor-bedrijvenvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Zwolle heeft het beleid om slechts 1 speelgelegenheid toe te staan. Deze speelgelegenheid is momenteel gevestigd in het IJsseldeltastadion. Dit betekent dat er verder geen vergunningen voor speelgelegenheden worden verleend.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat er in Zwolle een limiet is van één speelgelegenheid en dat deze al bezet is. Dit is cruciale informatie die het verkrijgen van een vergunning beïnvloedt.",
+          "source_urls": [
+            "https://www.zwolle.nl/speelgelegenhedenvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Aan dit product zijn geen kosten verbonden.",
+          "original_reference": "Eerste kansspelautomaat: € 56,50. Tweede kansspelautomaat: € 34,00.",
+          "note": "Er is een tegenstrijdigheid in de kosteninformatie. De originele tekst noemt specifieke bedragen, terwijl de bron aangeeft dat er geen kosten zijn verbonden aan de vergunning.",
+          "source_urls": [
+            "https://www.zwolle.nl/speelgelegenhedenvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele tekst en de bronnen. Ten eerste vermeldt de bron een belangrijke beperking dat er maar één speelgelegenheid in Zwolle is toegestaan, die al bezet is. Ten tweede is er tegenstrijdige informatie over de kosten van de vergunning. Deze verschillen hebben significante implicaties voor ondernemers die een kansspelvergunning willen aanvragen."
+  }
+}

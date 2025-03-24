@@ -1,0 +1,81 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ROTTERDAM",
+      "contact": {
+        "phone": "14 010",
+        "email": "null",
+        "website": "http://www.rotterdam.nl"
+      }
+    },
+    "service": {
+      "id": 20,
+      "name": "Vergunning voor seksbedrijf"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 31,
+    "true_sentences": 30,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.8,
+    "false_statements": [
+      {
+        "sentence": "Elke donderdagavond is er een inloopspreekuur van 18.00 tot 20.00 uur.",
+        "status": "false",
+        "note": "De exacte tijden van het inloopspreekuur bij Door2Door zijn volgens de officiële website van Rotterdam gewijzigd. Deze specifieke tijden zijn niet meer actueel."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 3,
+    "invalid_urls": 2,
+    "accuracy_percentage": 60.0,
+    "valid_urls_list": [
+      "https://www.rotterdam.nl/vergunning-seksinrichting-of-escortbedrijf-aanvragen",
+      "https://www.rotterdam.nl/sekswerk",
+      "https://www.rotterdam.nl/exploitatievergunning-speelautomatenhal-aanvragen/start-exploitatievergunning-speelautomatenhal-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.rotterdam.nl/vergunning-seksinrichting-of-escortbedrijf-aanvragen/start-vergunning-seksinrichting-of-escortbedrijf-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.rotterdam.nl/exploitatievergunning-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "U werkt in uw eentje. U doet dit vanuit uw eigen woning. U staat op dit adres ingeschreven bij de gemeente. Er is 1 werkplek in de woning. U adverteert niet vaker dan 1 keer in de 13 maanden.",
+          "original_reference": "Als u vanuit uw eigen woning sekswerk uitvoert, is er geen vergunning nodig mits u aan bepaalde voorwaarden voldoet, zoals alleen werken vanuit uw eigen woning zonder frequente advertenties.",
+          "note": "De bronpagina specificeert de voorwaarden voor thuiswerk gedetailleerder, maar is inhoudelijk consistent met de originele tekst. De bron voegt alleen extra details toe over inschrijving op het adres en de exacte advertentiefrequentie.",
+          "source_urls": [
+            "https://www.rotterdam.nl/sekswerk"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als zelfstandig escort vraagt u een vergunning aan voor een escortbedrijf. U bent dan exploitant van dit bedrijf en kan aan het werk als escort.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen specifieke informatie over vergunningvereisten voor zelfstandige escorts, terwijl de bron expliciet vermeldt dat zelfstandige escorts een vergunning als escortbedrijf moeten aanvragen.",
+          "source_urls": [
+            "https://www.rotterdam.nl/sekswerk"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen zijn grotendeels consistent met de originele inhoud, maar bevatten belangrijke aanvullende informatie over zelfstandige escorts die in de originele tekst ontbreekt. De voorwaarden voor thuiswerk worden in de bron specifieker beschreven. Er zijn geen significante tegenstrijdigheden gevonden in procedures, kosten of andere kerngegevens."
+  }
+}

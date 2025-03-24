@@ -1,0 +1,79 @@
+{
+  "context": {
+    "municipality": {
+      "name": "SCHIEDAM",
+      "contact": {
+        "phone": "14 010",
+        "email": "contact@schiedam.nl",
+        "website": "http://www.schiedam.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 17,
+    "false_sentences": 2,
+    "accuracy_percentage": 89.5,
+    "false_statements": [
+      {
+        "sentence": "De aanvraag moet uiterlijk drie weken voor het tijdstip dat u de vergunning nodig heeft worden ingediend.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Schiedam moet een ventvergunning minimaal 8 weken van tevoren worden aangevraagd, niet 3 weken."
+      },
+      {
+        "sentence": "Aan het in behandeling nemen van de aanvraag voor een ventvergunning zijn kosten verbonden, conform de legesverordening: - Minimaal 1 dag, maar niet langer dan een maand: € 33,85 - Langer dan 1 maand, maar niet langer dan een half jaar: € 53,70 - Langer dan een half jaar, maar niet langer dan 1 jaar: € 95,80",
+        "status": "false",
+        "note": "De genoemde tarieven zijn verouderd. De actuele tarieven voor ventvergunningen zijn te vinden in de meest recente legesverordening van de gemeente Schiedam."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.schiedam.nl/a-tot-z/ventvergunning",
+      "https://schiedam.nl/a-tot-z/ventvergunning",
+      "https://schiedam.nl/a-tot-z/horecabedrijf-starten",
+      "https://www.schiedam.nl/a-tot-z/horecabedrijf-starten",
+      "https://www.schiedam.nl/a-tot-z/exploitatievergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Wilt u op straat (zonder vaste standplaats) of aan de deur verkopen of diensten aanbieden? Dan heeft u een ventvergunning nodig. Hieronder valt bijvoorbeeld ook de verkoop van ijs met een rijdende ijscowagen, of het huis-aan-huis aanbieden van een contract met een energiemaatschappij.",
+          "original_reference": "Wilt u op straat (zonder vaste standplaats) of aan de deur verkopen of diensten aanbieden in Schiedam? Dan heeft u een ventvergunning nodig. Dit geldt bijvoorbeeld voor de verkoop van ijs met een rijdende ijscowagen of het huis-aan-huis aanbieden van een contract met een energiemaatschappij.",
+          "note": "De basisinformatie over wanneer een ventvergunning nodig is komt exact overeen",
+          "source_urls": [
+            "https://www.schiedam.nl/a-tot-z/ventvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "No matching information",
+          "original_reference": "Contactpunten en service locaties met bezoekadres Stadskantoor, Stadserf 1 en postadres Postbus 1501",
+          "note": "De originele tekst bevat contactgegevens die niet in de bronpagina's worden vermeld",
+          "source_urls": [
+            "https://www.schiedam.nl/a-tot-z/ventvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De inhoud van de originele tekst komt grotendeels overeen met de informatie op de gemeentelijke website wat betreft de vereisten, procedures en kosten voor een ventvergunning. Het belangrijkste verschil is dat de originele tekst uitgebreidere contactinformatie bevat die niet op de bronpagina's staat vermeld. De kern van de informatie over de ventvergunning zelf is consistent en actueel."
+  }
+}

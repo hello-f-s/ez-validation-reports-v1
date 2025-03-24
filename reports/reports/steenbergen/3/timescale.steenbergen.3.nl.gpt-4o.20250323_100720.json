@@ -1,0 +1,72 @@
+{
+  "context": {
+    "municipality": {
+      "name": "STEENBERGEN",
+      "contact": {
+        "phone": "14 0167",
+        "email": "info@gemeente-steenbergen.nl",
+        "website": "http://www.gemeente-steenbergen.nl"
+      }
+    },
+    "service": {
+      "id": 3,
+      "name": "Certificaat voor opgraving aanvragen en vondst melden"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 1,
+    "true_sentences": 1,
+    "false_sentences": 0,
+    "accuracy_percentage": 100.0,
+    "false_statements": []
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.gemeente-steenbergen.nl/inwoners_overzicht/bouwen_en_verbouwen/digitaal_aanvragen_van_een_omgevingsvergunning/digitaal_aanvragen_van_een_omgevingsvergunning_",
+      "https://www.gemeente-steenbergen.nl/inwoners_overzicht/meldingen/hoe_meld_ik_gevonden_voorwerpen_en_waar_zoek_ik_verloren_voorwerpen_",
+      "https://www.gemeente-steenbergen.nl/inwoners_overzicht/meldingen/twijfelt_u_of_u_een_melding_moet_maken_/",
+      "https://www.gemeente-steenbergen.nl/inwoners_overzicht/bouwen_en_verbouwen/digitaal_aanvragen_van_een_omgevingsvergunning/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.gemeente-steenbergen.nl/inwoners_overzicht/belastingen/bezwaar_tegen_belastingaanslag",
+        "reason": "INVALID: Error scraping https://www.gemeente-steenbergen.nl/inwoners_overzicht/belastingen/bezwaar_tegen_belastingaanslag: HTTPSConnectionPool(host='samenwerkendegemeenten.equalit.nl', port=443): Max retries exceeded with url: /formulier/nl-NL/Steenbergen/scBezwaargemeentelijkebelastingen.aspx (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1018)')))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u een voorwerp heeft gevonden, moet u dit melden bij de gemeente. U kunt het voorwerp daarna bij de gemeente afgeven of thuis goed bewaren. [...] Bij de aangifte kunt u aangeven dat u de eigenaar wilt worden van het gevonden voorwerp. Als de eigenaar het voorwerp niet binnen een jaar ophaalt, bent u de eigenaar van het voorwerp.",
+          "original_reference": "No matching information",
+          "note": "De bron bevat specifieke informatie over de procedure voor gevonden voorwerpen die niet in de originele inhoud staat, inclusief de mogelijkheid om na een jaar eigenaar te worden van het gevonden voorwerp.",
+          "source_urls": [
+            "https://www.gemeente-steenbergen.nl/inwoners_overzicht/meldingen/hoe_meld_ik_gevonden_voorwerpen_en_waar_zoek_ik_verloren_voorwerpen_"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De aanvraag voor een omgevingsvergunning kan via het omgevingsloket digitaal worden ingediend. [...] Verschillende activiteiten op 1 locatie kunnen met 1 omgevingsvergunning worden aangevraagd.",
+          "original_reference": "No matching information",
+          "note": "De bron bevat gedetailleerde informatie over het aanvragen van een omgevingsvergunning die niet in de originele inhoud staat, inclusief de mogelijkheid om meerdere activiteiten in één aanvraag te combineren.",
+          "source_urls": [
+            "https://www.gemeente-steenbergen.nl/inwoners_overzicht/bouwen_en_verbouwen/digitaal_aanvragen_van_een_omgevingsvergunning/"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten substantieel meer informatie dan de originele inhoud, met name over procedures voor gevonden voorwerpen en het aanvragen van omgevingsvergunningen. Deze informatie is concreet en praktisch van aard, terwijl de originele inhoud aangaf dat er geen specifieke informatie beschikbaar was."
+  }
+}

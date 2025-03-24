@@ -1,0 +1,73 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AMSTERDAM",
+      "contact": {
+        "phone": "14 020",
+        "email": "null",
+        "website": "http://www.amsterdam.nl"
+      }
+    },
+    "service": {
+      "id": 15,
+      "name": "Vergunning of ontheffing voor straatartiesten"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 1,
+    "true_sentences": 1,
+    "false_sentences": 0,
+    "accuracy_percentage": 100.0,
+    "false_statements": []
+  },
+  "url_analysis": {
+    "total_urls": 3,
+    "valid_urls": 1,
+    "invalid_urls": 2,
+    "accuracy_percentage": 33.3,
+    "valid_urls_list": [
+      "https://www.amsterdam.nl/ondernemen/vergunningen/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.amsterdam.nl/parkeren/parkeervergunning/parkeervergunning-bedrijven/",
+        "reason": "INVALID: Error scraping https://www.amsterdam.nl/parkeren/parkeervergunning/parkeervergunning-bedrijven/: 403 Client Error: Forbidden for url: https://www.amsterdam.nl/parkeren/parkeervergunning/parkeervergunning-bedrijven/"
+      },
+      {
+        "url": "https://www.amsterdam.nl/parkeren/parkeervergunning/parkeervergunning-bewoners/",
+        "reason": "INVALID: Error scraping https://www.amsterdam.nl/parkeren/parkeervergunning/parkeervergunning-bewoners/: 403 Client Error: Forbidden for url: https://www.amsterdam.nl/parkeren/parkeervergunning/parkeervergunning-bewoners/"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vergunningen voor ondernemers met specifieke categorieën: Horeca, Gevelreclame, Evenementen, Omgevingsvergunning, Werken in openbare ruimte, Ontheffing rondleidingen, Werkzaamheden en vervoer, RVV hele stad, Gebieden met aanwijsbesluit",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat gedetailleerde informatie over verschillende soorten vergunningen voor ondernemers, terwijl de originele inhoud geen informatie bevat",
+          "source_urls": [
+            "https://www.amsterdam.nl/ondernemen/vergunningen/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Contact via 14 020 (maandag tot en met vrijdag van 08.00 tot 18.00 uur)",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt specifieke contactgegevens en openingstijden die niet in de originele inhoud staan",
+          "source_urls": [
+            "https://www.amsterdam.nl/ondernemen/vergunningen/"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina bevat uitgebreide informatie over verschillende vergunningen voor ondernemers in Amsterdam, inclusief specifieke categorieën en contactgegevens, terwijl de originele inhoud geen informatie bevat. Dit vormt een significant verschil in informatievoorziening."
+  }
+}

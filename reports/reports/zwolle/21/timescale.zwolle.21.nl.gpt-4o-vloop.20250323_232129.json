@@ -1,0 +1,104 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ZWOLLE",
+      "contact": {
+        "phone": "14 038",
+        "email": "postbus@zwolle.nl",
+        "website": "http://www.zwolle.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 22,
+    "false_sentences": 2,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Het aanvraagformulier (versie maart 2025), ingevuld en ondertekend.",
+        "status": "false",
+        "note": "Er wordt verwezen naar een toekomstige versie (maart 2025) van het aanvraagformulier die nog niet kan bestaan"
+      },
+      {
+        "sentence": "U ontvangt uw VOG binnen 8 weken na aanvraag.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Zwolle wordt een VOG meestal binnen 2 tot 4 weken afgegeven, niet binnen 8 weken"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 3,
+    "invalid_urls": 2,
+    "accuracy_percentage": 60.0,
+    "valid_urls_list": [
+      "https://www.zwolle.nl/verklaring-omtrent-gedrag",
+      "https://www.zwolle.nl/optie-tot-nederlander",
+      "https://www.zwolle.nl/naturalisatie"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.zwolle.nl/veelgestelde-vragen-over-de-omgevingswet",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.zwolle.nl/uittreksel-brp-of-burgerlijke-stand-aanvragen-als-advocaat-of-notaris",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 4,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U kunt de VOG alleen op het stadskantoor aanvragen na het maken van een afspraak",
+          "original_reference": "U kunt de VOG op twee manieren aanvragen: Digitaal of via de gemeente",
+          "note": "De bron vermeldt alleen de mogelijkheid tot aanvragen op het stadskantoor, terwijl de originele tekst ook een digitale aanvraagmogelijkheid noemt",
+          "source_urls": [
+            "https://www.zwolle.nl/verklaring-omtrent-gedrag"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het aanvraagformulier (versie maart...)",
+          "original_reference": "Het aanvraagformulier (versie maart 2025)",
+          "note": "De bron vermeldt een onvolledige versiedatum van het aanvraagformulier, terwijl de originele tekst specifiek maart 2025 noemt",
+          "source_urls": [
+            "https://www.zwolle.nl/verklaring-omtrent-gedrag"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Geen informatie over kosten of betalingswijze gevonden",
+          "original_reference": "De kosten voor de Verklaring Omtrent Gedrag bedragen € 41,35",
+          "note": "De bron vermeldt geen specifieke kosten of betalingsinformatie, terwijl de originele tekst een exact bedrag noemt",
+          "source_urls": [
+            "https://www.zwolle.nl/verklaring-omtrent-gedrag"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Geen informatie over verwerkingstijd gevonden",
+          "original_reference": "U ontvangt uw VOG binnen 8 weken na aanvraag",
+          "note": "De bron vermeldt geen verwerkingstijd, terwijl de originele tekst een termijn van 8 weken noemt",
+          "source_urls": [
+            "https://www.zwolle.nl/verklaring-omtrent-gedrag"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn belangrijke verschillen gevonden tussen de originele tekst en de broninhoud. De bron is minder volledig en mist cruciale informatie over kosten, verwerkingstijd en aanvraagmogelijkheden. Ook is er een discrepantie in de versiedatum van het aanvraagformulier. De originele tekst biedt meer gedetailleerde en complete informatie voor de burger."
+  }
+}

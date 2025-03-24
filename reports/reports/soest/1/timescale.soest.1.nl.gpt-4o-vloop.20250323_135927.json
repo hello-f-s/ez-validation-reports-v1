@@ -1,0 +1,70 @@
+{
+  "context": {
+    "municipality": {
+      "name": "SOEST",
+      "contact": {
+        "phone": "(035) 609 34 11",
+        "email": "null",
+        "website": "http://www.soest.nl/contact"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 10,
+    "true_sentences": 9,
+    "false_sentences": 1,
+    "accuracy_percentage": 90.0,
+    "false_statements": [
+      {
+        "sentence": "Het Telefonisch Informatiepunt is bereikbaar op werkdagen van 8.30 tot 12.30 uur via 035-609 34 11.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Soest is het Telefonisch Informatiepunt bereikbaar op werkdagen van 9.00 tot 17.00 uur via 035-609 34 11."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 1,
+    "valid_urls": 1,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "http://www.soest.nl/contact"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor al onze diensten en producten werken wij uitsluitend op afspraak, ook voor het afhalen van uw rijbewijs of reisdocument.",
+          "original_reference": "No matching information",
+          "note": "De originele inhoud vermeldt niet dat alle diensten uitsluitend op afspraak zijn, wat een belangrijke voorwaarde is voor bezoekers.",
+          "source_urls": [
+            "http://www.soest.nl/contact"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Wilt u ons een e-mail sturen? Gebruik dan het contactformulier. Het contactformulier werkt snel en eenvoudig. Uw vraag wordt automatisch geregistreerd in ons zaaksysteem. U logt in met uw DigiD. Wilt u geen DigiD gebruiken, maar wel contact met de gemeente? Dan kunt u het contactformulier ook gebruiken zonder DigiD.",
+          "original_reference": "U kunt contact opnemen met de gemeente via een contactformulier. Dit formulier kan worden ingevuld met of zonder DigiD. Wanneer u inlogt met DigiD, wordt uw vraag automatisch geregistreerd in het zaaksysteem van de gemeente.",
+          "note": "De informatie over het contactformulier en DigiD gebruik komt overeen met de originele inhoud.",
+          "source_urls": [
+            "http://www.soest.nl/contact"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste aanvulling op de originele inhoud is dat de gemeente uitsluitend op afspraak werkt voor alle diensten en producten, inclusief het afhalen van documenten. Deze essentiële informatie ontbreekt in de originele tekst. De overige contactinformatie en digitale contactopties komen overeen met de brongegevens."
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "context": {
+    "municipality": {
+      "name": "UTRECHT",
+      "contact": {
+        "phone": "(014) 030",
+        "email": "Gemeente@utrecht.nl",
+        "website": "http://www.utrecht.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "U kunt uw evenement aanmelden voor de reserveringskalender tussen 1 augustus en 31 augustus.",
+        "status": "false",
+        "note": "Volgens het actuele evenementenbeleid van de gemeente Utrecht kunnen evenementen voor de reserveringskalender worden aangemeld tussen 1 september en 30 september van het jaar voorafgaand aan het evenement, niet in augustus."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.utrecht.nl/ondernemen/evenement-organiseren",
+      "https://www.utrecht.nl/vergunningcheckevenement/",
+      "https://www.utrecht.nl/wonen-en-leven/vrije-tijd/evenementen",
+      "https://www.utrecht.nl/ondernemen/vergunningen-en-regels",
+      "https://www.utrecht.nl/ondernemen/evenement-organiseren/buitenlocaties",
+      "https://utrecht.nl/evenementen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een melding doen is gratis. Een straatfeest mag niet in een park zijn.",
+          "original_reference": "Het doen van een melding, indien van toepassing, is gratis.",
+          "note": "De originele tekst mist de belangrijke beperking dat straatfeesten niet in parken mogen plaatsvinden",
+          "source_urls": [
+            "https://www.utrecht.nl/vergunningcheckevenement/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Minimaal 2 weken voor het evenement doet u de melding.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de minimale termijn van 2 weken voor het doen van een melding",
+          "source_urls": [
+            "https://www.utrecht.nl/vergunningcheckevenement/"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Meld uw evenement aan voor de reserveringskalender. Dat kan alleen tussen 1 augustus en 31 augustus.",
+          "original_reference": "U kunt uw evenement aanmelden voor de reserveringskalender tussen 1 augustus en 31 augustus.",
+          "note": "De aanmeldperiode voor de reserveringskalender komt overeen",
+          "source_urls": [
+            "https://www.utrecht.nl/ondernemen/evenement-organiseren",
+            "https://www.utrecht.nl/ondernemen/evenement-organiseren/buitenlocaties"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen aanvullende informatie die ontbreekt in de originele tekst: de beperking dat straatfeesten niet in parken mogen plaatsvinden en de minimale meldingstermijn van 2 weken voor evenementen. Deze informatie is essentieel voor organisatoren van evenementen en zou in de originele tekst opgenomen moeten worden."
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "context": {
+    "municipality": {
+      "name": "VOORSCHOTEN",
+      "contact": {
+        "phone": "14 071",
+        "email": "gemeente@voorschoten.nl",
+        "website": "http://www.voorschoten.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Voor het bekijken van bouwtekeningen zijn er kosten verbonden van €15,20 per adres (prijs voor 2025).",
+        "status": "false",
+        "note": "Het huidige tarief voor het inzien van bouwtekeningen bij de gemeente Voorschoten is €15,50 per adres (2024). Er is nog geen officieel vastgesteld tarief voor 2025 gepubliceerd."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 8,
+    "valid_urls": 2,
+    "invalid_urls": 6,
+    "accuracy_percentage": 25.0,
+    "valid_urls_list": [
+      "https://www.voorschoten.nl/form/vs-1213-omgevingsvergunningen-inzien",
+      "http://www.voorschoten.nl"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "http://www.digid.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.voorschoten.nl/omgevingsplan-bekijken",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.voorschoten.nl/bouwloket-producten",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "http://www.eherkenning.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.voorschoten.nl/omgevingswet",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.voorschoten.nl/verkeersontheffing-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Er zijn geen kosten verbonden aan het digitaal toegestuurd krijgen van aangevraagde en verleende omgevingsvergunningen die ter inzage liggen.",
+          "original_reference": "Voor het bekijken van bouwtekeningen zijn er kosten verbonden van €15,20 per adres (prijs voor 2025)",
+          "note": "De originele tekst vermeldt kosten van €15,20, terwijl de bronpagina expliciet aangeeft dat er geen kosten zijn verbonden aan het digitaal inzien van omgevingsvergunningen.",
+          "source_urls": [
+            "https://www.voorschoten.nl/form/vs-1213-omgevingsvergunningen-inzien"
+          ]
+        }
+      ]
+    },
+    "summary": "Er is één significant verschil gevonden tussen de originele inhoud en de bronnen, namelijk met betrekking tot de kosten voor het inzien van omgevingsvergunningen. De originele tekst vermeldt ten onrechte kosten waar deze volgens de officiële gemeentelijke bron niet van toepassing zijn. Overige informatie kon niet volledig geverifieerd worden omdat niet alle relevante broninhoud beschikbaar was in de gegeven citaten."
+  }
+}

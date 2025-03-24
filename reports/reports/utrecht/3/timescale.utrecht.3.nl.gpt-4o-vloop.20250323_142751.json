@@ -1,0 +1,78 @@
+{
+  "context": {
+    "municipality": {
+      "name": "UTRECHT",
+      "contact": {
+        "phone": "(014) 030",
+        "email": "Gemeente@utrecht.nl",
+        "website": "http://www.utrecht.nl"
+      }
+    },
+    "service": {
+      "id": 3,
+      "name": "Certificaat voor opgraving aanvragen en vondst melden"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "Er is geen specifieke duur gegeven voor het proces na melding van een archeologische vondst. Voor vergelijkbare processen, zoals een omgevingsvergunning, neemt de gemeente binnen 8 weken een beslissing.",
+        "status": "false",
+        "note": "De vergelijking met de omgevingsvergunning is onjuist. Een reguliere omgevingsvergunning heeft een beslistermijn van maximaal 8 weken, maar dit staat los van de procedure voor archeologische vondsten. Deze vergelijking kan misleidend zijn voor inwoners en is niet gebaseerd op officieel beleid van de gemeente Utrecht voor archeologische vondsten."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.utrecht.nl/wonen-en-leven/vrije-tijd/erfgoed-en-monumenten",
+      "https://www.utrecht.nl/ondernemen/vergunningen-en-regels/werkzaamheden-vergunning-aanvragen",
+      "https://www.utrecht.nl/wonen-en-leven/gezonde-leefomgeving/bodemkwaliteit",
+      "https://www.utrecht.nl/ondernemen/vergunningen-en-regels/gegevens-van-een-gebouw-of-stuk-grond-opvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.utrecht.nl/bestuur-en-organisatie/publicaties/nieuwsbrieven/nieuwsbrief-keldereigenaren-wervengebied/laatste-nieuwsbrief",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Ook houdt u uw vondst 6 maanden beschikbaar voor onderzoek. De vondst blijft uw eigendom.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de verplichting om de vondst 6 maanden beschikbaar te houden voor onderzoek, noch dat de vondst eigendom blijft van de vinder. Dit is belangrijke aanvullende informatie voor vinders.",
+          "source_urls": [
+            "https://www.utrecht.nl/wonen-en-leven/vrije-tijd/erfgoed-en-monumenten"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U mag een metaaldetector gebruiken in de openbare ruimte. Hiervoor gelden wel regels.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst verwijst alleen naar het gebruik van metaaldetectors in de context van vondstmelding, maar specificeert niet expliciet dat het gebruik is toegestaan in de openbare ruimte.",
+          "source_urls": [
+            "https://www.utrecht.nl/wonen-en-leven/vrije-tijd/erfgoed-en-monumenten"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten twee belangrijke aanvullingen op de originele tekst: (1) de verplichting om vondsten 6 maanden beschikbaar te houden voor onderzoek waarbij de vinder eigenaar blijft, en (2) de expliciete toestemming voor het gebruik van metaaldetectors in de openbare ruimte. Deze informatie is relevant voor mensen die archeologische vondsten doen of willen zoeken."
+  }
+}

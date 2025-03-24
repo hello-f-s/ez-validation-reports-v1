@@ -1,0 +1,63 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AMERSFOORT",
+      "contact": {
+        "phone": "14 033",
+        "email": "info@amersfoort.nl",
+        "website": "http://www.amersfoort.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 27,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.4,
+    "false_statements": [
+      {
+        "sentence": "Voor het indienen van een principeplan worden kosten berekend: 0,15% van de bouwkosten met een minimum van € 250,- en een maximum van € 1600,-.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Amersfoort bedraagt het tarief voor een principeplan 0,26% van de bouwkosten met een minimum van € 500,- en een maximum van € 2.500,-"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 0,
+    "invalid_urls": 5,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.amersfoort.nl/omgevingsvergunning-voor-bouwen-en-verbouwen",
+        "reason": "INVALID: Error scraping https://www.amersfoort.nl/omgevingsvergunning-voor-bouwen-en-verbouwen: HTTPSConnectionPool(host='www.amersfoort.nl', port=443): Max retries exceeded with url: /omgevingsvergunning-voor-bouwen-en-verbouwen (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1055fb770>: Failed to resolve 'www.amersfoort.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.amersfoort.nl/een-vergunning-aangevraagd-en-nu",
+        "reason": "INVALID: Error scraping https://www.amersfoort.nl/een-vergunning-aangevraagd-en-nu: HTTPSConnectionPool(host='www.amersfoort.nl', port=443): Max retries exceeded with url: /een-vergunning-aangevraagd-en-nu (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x105a84550>: Failed to resolve 'www.amersfoort.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.amersfoort.nl/aanleggen",
+        "reason": "INVALID: Error scraping https://www.amersfoort.nl/aanleggen: HTTPSConnectionPool(host='www.amersfoort.nl', port=443): Max retries exceeded with url: /aanleggen (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x105a84f50>: Failed to resolve 'www.amersfoort.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.amersfoort.nl/reclame",
+        "reason": "INVALID: Error scraping https://www.amersfoort.nl/reclame: HTTPSConnectionPool(host='www.amersfoort.nl', port=443): Max retries exceeded with url: /reclame (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x105a85310>: Failed to resolve 'www.amersfoort.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.amersfoort.nl/vergunningen-inzien-en-bezwaar-maken",
+        "reason": "INVALID: Error scraping https://www.amersfoort.nl/vergunningen-inzien-en-bezwaar-maken: HTTPSConnectionPool(host='www.amersfoort.nl', port=443): Max retries exceeded with url: /vergunningen-inzien-en-bezwaar-maken (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x105a856d0>: Failed to resolve 'www.amersfoort.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  }
+}

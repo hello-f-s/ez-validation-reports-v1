@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ZWOLLE",
+      "contact": {
+        "phone": "14 038",
+        "email": "postbus@zwolle.nl",
+        "website": "http://www.zwolle.nl"
+      }
+    },
+    "service": {
+      "id": 8,
+      "name": "Marktvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 1,
+    "true_sentences": 1,
+    "false_sentences": 0,
+    "accuracy_percentage": 100.0,
+    "false_statements": []
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 3,
+    "invalid_urls": 2,
+    "accuracy_percentage": 60.0,
+    "valid_urls_list": [
+      "https://www.zwolle.nl/conceptverzoek-omgevingsvergunning",
+      "https://www.zwolle.nl/aanvragen-en-regelen-voor-bedrijven",
+      "https://www.zwolle.nl/verzoek-om-handhaving-bouwregels"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.zwolle.nl/veelgestelde-vragen-over-de-omgevingswet",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.zwolle.nl/kentekenparkeren-veelgestelde-vragen-voor-bedrijvenvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U kunt uw aanvraag voor een omgevingsvergunning vooraf door ons laten beoordelen. Wij beoordelen dan eerst uw conceptverzoek. Een conceptverzoek kost geld.",
+          "original_reference": "No matching information",
+          "note": "De bron bevat specifieke informatie over de mogelijkheid tot het indienen van een conceptverzoek voor een omgevingsvergunning en dat hier kosten aan verbonden zijn, terwijl deze informatie volledig ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.zwolle.nl/conceptverzoek-omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U kunt alleen een verzoek om handhaving indienen als u 'belanghebbende' bent. We kunnen niet voorkomen dat bekend wordt dat u een verzoek heeft ingediend. Daarom nemen we geen anonieme verzoeken in behandeling.",
+          "original_reference": "No matching information",
+          "note": "De bron bevat specifieke voorwaarden voor het indienen van een handhavingsverzoek en beleid over anonieme verzoeken, wat niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.zwolle.nl/verzoek-om-handhaving-bouwregels"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De gemeente biedt ondernemers verschillende producten en diensten aan. Wilt u meer informatie of wilt u hulp bij het aanvragen van de producten, dan kunt u terecht bij onze accountmanagers.",
+          "original_reference": "No matching information",
+          "note": "De bron beschrijft specifieke dienstverlening voor ondernemers en de beschikbaarheid van accountmanagers, informatie die ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.zwolle.nl/aanvragen-en-regelen-voor-bedrijven"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten uitgebreide informatie over gemeentelijke diensten die volledig ontbreekt in de originele tekst. Dit betreft vooral procedures voor omgevingsvergunningen, handhavingsverzoeken en dienstverlening aan ondernemers. De bronnen geven concrete details over voorwaarden, kosten en procedures die essentieel zijn voor inwoners en ondernemers."
+  }
+}

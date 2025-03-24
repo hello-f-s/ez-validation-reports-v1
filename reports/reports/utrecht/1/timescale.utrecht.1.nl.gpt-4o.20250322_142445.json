@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "UTRECHT",
+      "contact": {
+        "phone": "(014) 030",
+        "email": "Gemeente@utrecht.nl",
+        "website": "http://www.utrecht.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "De behandeling van de vergunningaanvraag duurt enkele weken tot maanden, afhankelijk van de complexiteit van de aanvraag en bijkomende onderzoeken zoals het Bibob-onderzoek.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Utrecht duurt de behandeling van een alcoholvergunning standaard 8 weken vanaf het moment dat de aanvraag compleet is. Deze termijn kan eenmalig met 8 weken worden verlengd als er een Bibob-onderzoek nodig is."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.utrecht.nl/parkeervergunningbewoner",
+      "https://www.utrecht.nl/vergunningcheckevenement/",
+      "https://www.utrecht.nl/ondernemen/evenement-organiseren",
+      "https://www.utrecht.nl/ondernemen/vergunningen-en-regels",
+      "https://www.utrecht.nl/ondernemen/vergunningen-en-regels/horecaloket"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U vraagt een horecavergunning aan of past deze aan als u: een horecabedrijf wilt starten of overnemen, een ander soort horecabedrijf wilt beginnen in uw zaak, de rechtsvorm van uw bedrijf verandert, de vennoten/natuurlijke personen in uw ondernemingsvorm veranderen, de oppervlakte van uw bedrijf verandert, een nieuwe leidinggevende in uw zaak krijgt, een terras wilt maken of de grootte van uw terras wilt veranderen.",
+          "original_reference": "Voor een correcte aanvraag kan het nodig zijn om documenten over uw bedrijfsstructuur, eigendom, en eventuele wijzigingen in het bestuur te overleggen.",
+          "note": "De bronpagina geeft een veel specifiekere lijst van situaties waarin een horecavergunning moet worden aangevraagd of aangepast, terwijl de originele tekst algemener is.",
+          "source_urls": [
+            "https://www.utrecht.nl/ondernemen/vergunningen-en-regels/horecaloket"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Restauranthouders mogen 4 keer per jaar een 'Vermaakje' (denk aan een muziekoptreden of pubquiz) houden in hun zaak.",
+          "original_reference": "No matching information",
+          "note": "Deze specifieke regel over 'Vermaakjes' ontbreekt volledig in de originele tekst maar is wel relevant voor horecaondernemers.",
+          "source_urls": [
+            "https://www.utrecht.nl/ondernemen/vergunningen-en-regels/horecaloket"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Slijterijen vallen ook onder de Alcoholwet. Wilt u een slijterij starten of overnemen? Of verandert er iets in uw slijterij? Dan moet u een slijterijvergunning aanvragen of wijzigen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst maakt geen melding van specifieke regels voor slijterijen, terwijl dit wel een belangrijke categorie is binnen de Alcoholwet.",
+          "source_urls": [
+            "https://www.utrecht.nl/ondernemen/vergunningen-en-regels/horecaloket"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten belangrijke aanvullende details die ontbreken in de originele tekst, waaronder specifieke situaties waarin een vergunning moet worden aangepast, regels voor 'Vermaakjes' in restaurants, en aparte bepalingen voor slijterijen. Deze informatie is essentieel voor horecaondernemers maar komt niet voor in de originele tekst."
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "context": {
+    "municipality": {
+      "name": "SOEST",
+      "contact": {
+        "phone": "(035) 609 34 11",
+        "email": "null",
+        "website": "http://www.soest.nl/contact"
+      }
+    },
+    "service": {
+      "id": 8,
+      "name": "Marktvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 9,
+    "true_sentences": 8,
+    "false_sentences": 1,
+    "accuracy_percentage": 88.9,
+    "false_statements": [
+      {
+        "sentence": "Het Telefonisch Informatiepunt is bereikbaar op werkdagen van 8.30 tot 12.30 uur.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Soest is het Telefonisch Informatiepunt bereikbaar van 8.30 tot 17.00 uur op werkdagen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 1,
+    "valid_urls": 1,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "http://www.soest.nl/contact"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Wilt u ons een e-mail sturen? Gebruik dan het contactformulier. Het contactformulier werkt snel en eenvoudig. Uw vraag wordt automatisch geregistreerd in ons zaaksysteem. U logt in met uw DigiD. Wilt u geen DigiD gebruiken, maar wel contact met de gemeente? Dan kunt u het contactformulier ook gebruiken zonder DigiD.",
+          "original_reference": "Wilt u contact opnemen met de gemeente Soest? U kunt ons een e-mail sturen via het contactformulier. Dit formulier werkt snel en eenvoudig, en uw vraag wordt automatisch geregistreerd in ons zaaksysteem. U kunt inloggen met uw DigiD. Wilt u geen DigiD gebruiken, dan kunt u het contactformulier ook invullen zonder DigiD.",
+          "note": "De informatie over het contactformulier en DigiD gebruik komt inhoudelijk overeen, alleen de formulering verschilt licht",
+          "source_urls": [
+            "http://www.soest.nl/contact"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse blijkt dat de informatie in de originele tekst grotendeels consistent is met de broninhoud. Er zijn geen significante inhoudelijke verschillen gevonden in openingstijden, contactgegevens, procedures of andere belangrijke informatie. De kleine tekstuele variaties die werden aangetroffen betreffen alleen de formulering, niet de inhoud."
+  }
+}

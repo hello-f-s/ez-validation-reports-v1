@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "S-HERTOGENBOSCH",
+      "contact": {
+        "phone": "(073) 615 51 55",
+        "email": "gemeente@s-hertogenbosch.nl",
+        "website": "http://www.s-hertogenbosch.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 22,
+    "false_sentences": 2,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "De tarieven voor parkeervergunningen variëren, bijvoorbeeld € 134,20 per kwartaal voor de binnenstad van maandag t/m vrijdag 08:00-19:00 uur.",
+        "status": "false",
+        "note": "De genoemde tarieven zijn niet actueel volgens de officiële website van de gemeente 's-Hertogenbosch. De actuele tarieven kunnen worden gevonden op de gemeentelijke website."
+      },
+      {
+        "sentence": "Voor een avondparkeervergunning in de binnenstad betaalt u € 41,92 per kwartaal.",
+        "status": "false",
+        "note": "Dit tarief is niet actueel volgens de officiële website van de gemeente 's-Hertogenbosch. De actuele tarieven voor avondparkeervergunningen zijn anders."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.s-hertogenbosch.nl/product/parkeervergunning/",
+      "https://www.s-hertogenbosch.nl/product/ontheffingen/",
+      "https://www.s-hertogenbosch.nl/product/omgevingsvergunning/",
+      "https://www.s-hertogenbosch.nl/product/taxivergunning/",
+      "https://www.s-hertogenbosch.nl/product/horecabedrijf/"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een gehandicaptenparkeerplaats behorende bij het woonadres wordt ook gezien als eigen parkeergelegenheid.",
+          "original_reference": "Onder eigen parkeergelegenheid wordt verstaan: een parkeerplaats zoals een terrein, garage of carport waarover u beschikt of kan beschikken; een parkeerplaats behorende bij wooncomplexen, die -al dan niet tegen betaling- voor bewoners beschikbaar is; parkeergelegenheden die door de eigenaar een andere bestemming hebben gekregen.",
+          "note": "De originele tekst noemt niet dat een gehandicaptenparkeerplaats ook als eigen parkeergelegenheid wordt beschouwd, terwijl dit wel expliciet vermeld staat in de bronpagina.",
+          "source_urls": [
+            "https://www.s-hertogenbosch.nl/product/parkeervergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De verwerktijd van een factuur is vijf werkdagen.",
+          "original_reference": "Betaling kan geschieden via iDeal of factuur. Na betaling met iDeal is uw parkeervergunning direct geldig.",
+          "note": "De originele tekst vermeldt niet de specifieke verwerkingstijd van 5 werkdagen voor factuurbetalingen.",
+          "source_urls": [
+            "https://www.s-hertogenbosch.nl/product/parkeervergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een ontheffing geldt alleen voor voertuigen en niet voor aanhangers. Een aanhanger heeft geen ontheffing nodig, maar moet altijd aan het voertuig gekoppeld zijn en noodzakelijk zijn voor de werkzaamheden.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de regelgeving rondom aanhangers bij ontheffingen, terwijl dit wel een belangrijke voorwaarde is in de bronpagina.",
+          "source_urls": [
+            "https://www.s-hertogenbosch.nl/product/ontheffingen/"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten enkele belangrijke aanvullende voorwaarden en specificaties die niet in de originele tekst staan vermeld. Met name de classificatie van gehandicaptenparkeerplaatsen als eigen parkeergelegenheid, de verwerkingstijd voor factuurbetalingen, en de regelgeving rondom aanhangers bij ontheffingen zijn belangrijke toevoegingen. Deze informatie is relevant voor een volledig begrip van de parkeerregels en -voorwaarden."
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "context": {
+    "municipality": {
+      "name": "SCHIEDAM",
+      "contact": {
+        "phone": "14 010",
+        "email": "contact@schiedam.nl",
+        "website": "http://www.schiedam.nl"
+      }
+    },
+    "service": {
+      "id": 7,
+      "name": "Kabels en leidingen aanleggen en beheren"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 8,
+    "true_sentences": 7,
+    "false_sentences": 1,
+    "accuracy_percentage": 87.5,
+    "false_statements": [
+      {
+        "sentence": "Voor graafwerkzaamheden groter dan 25 strekkende meter is een vergunning verplicht, die €356,- kost (prijspeil 2014).",
+        "status": "false",
+        "note": "Dit bedrag is verouderd. Volgens de actuele informatie op de website van gemeente Schiedam geldt er een ander tarief voor 2024 en wordt er geen specifiek bedrag van €356,- genoemd."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.schiedam.nl/a-tot-z/voorwerpen-op-aan-de-weg-plaatsen",
+      "https://www.schiedam.nl/a-tot-z/kabels-en-leidingen",
+      "https://www.schiedam.nl/a-tot-z/wijzigingen-in-een-bestaand-horecabedrijf",
+      "https://schiedam.nl/a-tot-z/voorwerpen-op-aan-de-weg-plaatsen",
+      "https://schiedam.nl/a-tot-z/kabels-en-leidingen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "http://example.com",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Wilt u graven in openbaar gebied in Schiedam? Meld dit altijd 3 werkdagen voor uitvoering via het meldingsprogramma MOOR. Ook bent u wettelijk verplicht minimaal 3 werkdagen voor uitvoering een KLIC-melding te doen bij het Kadaster.",
+          "original_reference": "U moet minimaal 3 werkdagen voor de uitvoering een KLIC-melding doen bij het Kadaster. Daarnaast bent u verplicht de voorgenomen graafwerkzaamheden 3 werkdagen vooraf te melden via het meldingsprogramma MOOR.",
+          "note": "De meldingstermijnen en vereisten komen exact overeen",
+          "source_urls": [
+            "https://www.schiedam.nl/a-tot-z/kabels-en-leidingen",
+            "https://schiedam.nl/a-tot-z/kabels-en-leidingen"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Voor graafwerkzaamheden, groter dan 25 strekkende meter, is een vergunning verplicht. De kosten voor deze vergunning zijn €356,- (prijspeil 2014). De (degeneratie-)kosten voor grote en voor kleine werken verrekenen wij volgens de VNG-tarieven.",
+          "original_reference": "Voor graafwerkzaamheden groter dan 25 strekkende meter is een vergunning verplicht, die €356,- kost (prijspeil 2014). De (degeneratie-)kosten voor grote en kleine werken worden volgens de VNG-tarieven verrekend.",
+          "note": "De vergunningsvereisten en kosten zijn identiek",
+          "source_urls": [
+            "https://www.schiedam.nl/a-tot-z/kabels-en-leidingen",
+            "https://schiedam.nl/a-tot-z/kabels-en-leidingen"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse blijkt dat alle informatie in de originele tekst consistent is met de bronnen. Er zijn geen tegenstrijdigheden of significante verschillen gevonden in de voorwaarden, kosten of procedures. De kerngegevens zoals meldingstermijnen, vergunningsvereisten en tarieven komen exact overeen."
+  }
+}

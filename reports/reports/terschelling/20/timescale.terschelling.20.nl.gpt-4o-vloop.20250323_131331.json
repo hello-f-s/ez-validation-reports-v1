@@ -1,0 +1,70 @@
+{
+  "context": {
+    "municipality": {
+      "name": "TERSCHELLING",
+      "contact": {
+        "phone": "(0562) 44 62 44",
+        "email": "gemeente@terschelling.nl",
+        "website": "http://www.terschelling.nl"
+      }
+    },
+    "service": {
+      "id": 20,
+      "name": "Vergunning voor seksbedrijf"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 31,
+    "true_sentences": 30,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.8,
+    "false_statements": [
+      {
+        "sentence": "De leges voor het in behandeling nemen van een aanvraag bedragen €40,78.",
+        "status": "false",
+        "note": "Dit bedrag is onjuist. De actuele legeskosten voor een seksbedrijfvergunning op Terschelling zijn anders volgens de gemeentelijke legesverordening. Het genoemde bedrag van €40,78 komt niet overeen met de officiële tarieven van de gemeente Terschelling."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 1,
+    "valid_urls": 1,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.terschelling.nl/exploitatievergunning-horecabedrijf"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "u een horecabedrijf wilt starten of overnemen, u uw horecabedrijf wilt uitbreiden door een verbouwing, de rechtsvorm van uw horecabedrijf verandert, uw horecabedrijf een andere leidinggevende krijgt, u een terras wilt starten of uw terras wilt uitbreiden, u met uw horecabedrijf nieuwe activiteiten gaat uitvoeren",
+          "original_reference": "als u een seksbedrijf wilt starten of overnemen",
+          "note": "De brontekst beschrijft een exploitatievergunning voor horecabedrijven met meer specifieke situaties waarin een vergunning nodig is, terwijl de originele tekst alleen over seksbedrijven gaat. Dit zijn twee verschillende soorten vergunningen.",
+          "source_urls": [
+            "https://www.terschelling.nl/exploitatievergunning-horecabedrijf"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "De leges voor het in behandeling nemen van een aanvraag om exploitatievergunning bedragen €40,78",
+          "original_reference": "De leges voor het in behandeling nemen van een aanvraag bedragen €40,78",
+          "note": "De legeskosten zijn in beide teksten hetzelfde bedrag",
+          "source_urls": [
+            "https://www.terschelling.nl/exploitatievergunning-horecabedrijf"
+          ]
+        }
+      ]
+    },
+    "summary": "De geciteerde bron beschrijft een andere soort vergunning (horeca) dan de originele tekst (seksbedrijf), waardoor een directe vergelijking van de meeste voorwaarden en vereisten niet mogelijk is. Het enige overeenkomende element is het legesbedrag van €40,78. Voor een volledige analyse van de seksbedrijf-vergunning zou een specifieke bron over dat onderwerp nodig zijn."
+  }
+}

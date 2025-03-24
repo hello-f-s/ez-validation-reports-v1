@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "SCHIEDAM",
+      "contact": {
+        "phone": "14 010",
+        "email": "contact@schiedam.nl",
+        "website": "http://www.schiedam.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Voor specifieke kosten, zoals voor een omgevingsvergunning voor reclame, geldt er een bedrag van € 256,95 conform de legesverordening.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Schiedam bedraagt het tarief voor een omgevingsvergunning voor reclame € 263,35. Het genoemde bedrag van € 256,95 is verouderd."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://schiedam.nl/a-tot-z/de-omgevingswet-voor-ondernemers",
+      "https://www.schiedam.nl/a-tot-z/de-omgevingswet-voor-ondernemers",
+      "https://schiedam.nl/a-tot-z/reclamevergunning",
+      "https://www.schiedam.nl/a-tot-z/reclamevergunning",
+      "https://www.schiedam.nl/a-tot-z/omgevingswet"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vanaf 1 juli 2024 is het Omgevingsloket online (OLO) niet meer beschikbaar.",
+          "original_reference": "Dien uw aanvraag in via het omgevingsloket online, het nieuwe loket dat per 1 januari 2024 beschikbaar is.",
+          "note": "Er is een discrepantie in de datums: de originele tekst noemt alleen de start van het nieuwe loket per 1 januari 2024, terwijl de bron specificeert dat het oude OLO-systeem tot 1 juli 2024 beschikbaar blijft.",
+          "source_urls": [
+            "https://schiedam.nl/a-tot-z/reclamevergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een bedrijf dat niets verandert aan de eigen bedrijfsvoering, hoeft met het in werking treden van de Omgevingswet niet direct iets te doen. Omgevingsvergunningen blijven automatisch gelden.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over het overgangsrecht en dat bestaande vergunningen geldig blijven.",
+          "source_urls": [
+            "https://schiedam.nl/a-tot-z/de-omgevingswet-voor-ondernemers"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Veel milieuregels worden overgeheveld van het rijk naar de gemeente.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist deze belangrijke wijziging in de verdeling van bevoegdheden tussen rijk en gemeente.",
+          "source_urls": [
+            "https://www.schiedam.nl/a-tot-z/omgevingswet"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de beschikbaarheid van het oude en nieuwe omgevingsloket, waarbij de bronnen een specifiekere einddatum voor het oude systeem vermelden. Daarnaast ontbreekt in de originele tekst belangrijke informatie over het overgangsrecht voor bestaande vergunningen en de verschuiving van milieuregels van rijk naar gemeente. Deze informatie is relevant voor een volledig begrip van de veranderingen onder de nieuwe Omgevingswet."
+  }
+}

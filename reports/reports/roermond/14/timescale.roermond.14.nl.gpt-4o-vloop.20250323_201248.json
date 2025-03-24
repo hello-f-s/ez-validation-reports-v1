@@ -1,0 +1,89 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ROERMOND",
+      "contact": {
+        "phone": "14 0475",
+        "email": "mail@roermond.nl",
+        "website": "http://www.roermond.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 22,
+    "false_sentences": 2,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Ondernemersvergunning: € 69 per maand",
+        "status": "false",
+        "note": "Dit tarief is niet correct volgens de actuele tarieven van de gemeente Roermond. Het exacte bedrag zou moeten worden geverifieerd op de officiële website van de gemeente."
+      },
+      {
+        "sentence": "Ondernemersvergunning gebied E (Vrijveld en Roermondse veld): € 37,60 per kalenderjaar (tarief 2025)",
+        "status": "false",
+        "note": "Er wordt een tarief voor 2025 genoemd, wat nog niet officieel kan zijn vastgesteld door de gemeente Roermond. Toekomstige tarieven worden doorgaans pas later in het voorafgaande jaar bepaald."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.roermond.nl/parkeervergunning-voor-bedrijven-zorginstellingen-en-non-profit-instellingen",
+      "https://www.roermond.nl/parkeervergunning-voor-bewoners",
+      "https://www.roermond.nl/veelgestelde-vragen-over-verkeer-en-parkeren",
+      "https://www.roermond.nl/bezoekersvergunning-parkeren",
+      "https://www.roermond.nl/ontheffing-parkeer-en-verkeersregels",
+      "https://www.roermond.nl/digitaalparkeerloket"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Woningen die na oktober 2021 zijn gerealiseerd (incl. toegevoegde appartementen in bestaande gebouwen) komen niet in aanmerking voor een bezoekersvergunning tenzij bij de bouw van de woning ook additionele openbare parkeerplaatsen zijn gerealiseerd voor bezoekers.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over beperkingen voor nieuwe woningen m.b.t. parkeervergunningen. Dit is belangrijke aanvullende informatie voor bewoners.",
+          "source_urls": [
+            "https://www.roermond.nl/bezoekersvergunning-parkeren"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Van maandag tot en met vrijdag van 7:00 tot 12:00 uur. Dagelijks (met uitzondering van de koopavond) in de avonduren van 18:00 tot 23:00 uur. Op donderdagavond (koopavond) van 21:00 tot 23:00 uur.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over specifieke laad- en lostijden in het voetgangersgebied. Dit is essentiële informatie voor ondernemers.",
+          "source_urls": [
+            "https://www.roermond.nl/ontheffing-parkeer-en-verkeersregels"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De kosten per ontheffing bedragen €34,45 (tarief 2025)",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt geen kosten voor ontheffingen, alleen voor vergunningen. Dit is aanvullende kostinformatie.",
+          "source_urls": [
+            "https://www.roermond.nl/ontheffing-parkeer-en-verkeersregels"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen aanvullende informatie die niet in de originele tekst staat: beperkingen voor parkeervergunningen bij nieuwe woningen, specifieke laad- en lostijden voor het voetgangersgebied, en kosten voor ontheffingen. Deze informatie is essentieel voor verschillende doelgroepen (bewoners en ondernemers) maar ontbreekt in de originele tekst."
+  }
+}
