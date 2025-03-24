@@ -1,0 +1,78 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AMERSFOORT",
+      "contact": {
+        "phone": "14 033",
+        "email": "info@amersfoort.nl",
+        "website": "http://www.amersfoort.nl"
+      }
+    },
+    "service": {
+      "id": 7,
+      "name": "Kabels en leidingen aanleggen en beheren"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 13,
+    "false_sentences": 0,
+    "accuracy_percentage": 100.0,
+    "false_statements": []
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.amersfoort.nl/reclame",
+      "https://www.amersfoort.nl/aanleggen",
+      "https://www.amersfoort.nl/omgevingsvergunning-voor-bouwen-en-verbouwen",
+      "https://www.amersfoort.nl/bedrijf-aan-huis",
+      "https://www.amersfoort.nl/openbare-weg-gebruiken"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.omgevingsloket.nl/",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.amersfoort.nl/leges",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Is de vergunning verleend? Dan volgt een bezwaartermijn van 6 weken. Je mag wel meteen beginnen.",
+          "original_reference": "Als de vergunning is verleend, volgt er een bezwaartermijn van 6 weken. Indien er geen bezwaar wordt ingediend binnen deze periode, mag je verdergaan met de werkzaamheden.",
+          "note": "Er is een belangrijk verschil in wanneer men mag starten met de werkzaamheden. Volgens de bron mag men direct beginnen na verlening, terwijl de originele tekst aangeeft dat men moet wachten tot na de bezwaartermijn.",
+          "source_urls": [
+            "https://www.amersfoort.nl/reclame",
+            "https://www.amersfoort.nl/aanleggen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een omgevingsvergunning voor aanleggen kan nodig zijn voor zaken als het aanleggen of verharden van een weg, het aanleggen of dempen van een sloot of het afgraven of verhogen van grond.",
+          "original_reference": "Voor de aanleg van kabels en leidingen in de grond kan een omgevingsvergunning nodig zijn.",
+          "note": "De bronpagina geeft meer specifieke voorbeelden van wanneer een aanlegvergunning nodig is, terwijl de originele tekst zich beperkt tot kabels en leidingen.",
+          "source_urls": [
+            "https://www.amersfoort.nl/aanleggen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen het moment waarop men mag starten met werkzaamheden na vergunningverlening en de reikwijdte van activiteiten waarvoor een aanlegvergunning nodig is. De bronpagina's zijn specifieker en uitgebreider in hun beschrijving van de voorwaarden en toepassingen van de vergunning."
+  }
+}

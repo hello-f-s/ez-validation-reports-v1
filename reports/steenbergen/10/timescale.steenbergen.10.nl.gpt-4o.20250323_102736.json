@@ -1,0 +1,81 @@
+{
+  "context": {
+    "municipality": {
+      "name": "STEENBERGEN",
+      "contact": {
+        "phone": "14 0167",
+        "email": "info@gemeente-steenbergen.nl",
+        "website": "http://www.gemeente-steenbergen.nl"
+      }
+    },
+    "service": {
+      "id": 10,
+      "name": "Nachtregister bijhouden"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 1,
+    "true_sentences": 1,
+    "false_sentences": 0,
+    "accuracy_percentage": 100.0,
+    "false_statements": []
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.gemeente-steenbergen.nl/inwoners_overzicht/jeugd_en_onderwijs/",
+      "https://www.gemeente-steenbergen.nl/inwoners_overzicht/bouwen_en_verbouwen/aanvraagmogelijkheden_en_termijnen/aanvraagmogelijkheden_en_termijnen",
+      "https://www.gemeente-steenbergen.nl/inwoners_overzicht/meldingen/hoe_meld_ik_gevonden_voorwerpen_en_waar_zoek_ik_verloren_voorwerpen_",
+      "https://www.gemeente-steenbergen.nl/inwoners_overzicht/bouwen_en_verbouwen/aanvraagmogelijkheden_en_termijnen/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.gemeente-steenbergen.nl/inwoners_overzicht/belastingen/bezwaar_tegen_belastingaanslag",
+        "reason": "INVALID: Error scraping https://www.gemeente-steenbergen.nl/inwoners_overzicht/belastingen/bezwaar_tegen_belastingaanslag: HTTPSConnectionPool(host='samenwerkendegemeenten.equalit.nl', port=443): Max retries exceeded with url: /formulier/nl-NL/Steenbergen/scBezwaargemeentelijkebelastingen.aspx (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1018)')))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het tarief voor het in behandeling nemen van een aanvraag tot exploitatie van een kinderdagverblijf, een voorziening voor Buitenschoolse opvang, een voorziening voor gastouderopvang of een gastouderbureau bedraagt voor 2024 € 320,--",
+          "original_reference": "No matching information",
+          "note": "De bron bevat specifieke informatie over legeskosten voor kinderopvangvoorzieningen die niet in de originele inhoud staat",
+          "source_urls": [
+            "https://www.gemeente-steenbergen.nl/inwoners_overzicht/jeugd_en_onderwijs/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor eenvoudige aanvragen wordt een normale procedure gebruikt met een beslistermijn van 8 weken, die eenmalig met 6 weken verlengd kan worden",
+          "original_reference": "No matching information",
+          "note": "De bron specificeert concrete termijnen voor vergunningsaanvragen die niet in de originele inhoud vermeld staan",
+          "source_urls": [
+            "https://www.gemeente-steenbergen.nl/inwoners_overzicht/bouwen_en_verbouwen/aanvraagmogelijkheden_en_termijnen/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een gevonden paspoort of identiteitskaart levert u verplicht in bij de gemeente",
+          "original_reference": "No matching information",
+          "note": "De bron bevat specifieke instructies voor gevonden identiteitsdocumenten die niet in de originele inhoud staan",
+          "source_urls": [
+            "https://www.gemeente-steenbergen.nl/inwoners_overzicht/meldingen/hoe_meld_ik_gevonden_voorwerpen_en_waar_zoek_ik_verloren_voorwerpen_"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten veel specifieke informatie die niet in de originele inhoud staat, waaronder concrete tarieven voor kinderopvangvoorzieningen, precieze termijnen voor vergunningsaanvragen en specifieke procedures voor gevonden voorwerpen. Deze informatie is aanvullend en niet tegenstrijdig, aangezien de originele inhoud geen specifieke informatie bevatte."
+  }
+}

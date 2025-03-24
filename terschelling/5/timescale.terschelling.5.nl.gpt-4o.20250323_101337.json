@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "TERSCHELLING",
+      "contact": {
+        "phone": "(0562) 44 62 44",
+        "email": "gemeente@terschelling.nl",
+        "website": "http://www.terschelling.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "Voor het in behandeling nemen van uw exploitatievergunningsaanvraag bedragen de leges €40,78.",
+        "status": "false",
+        "note": "Het genoemde legesbedrag van €40,78 is onjuist. Volgens de actuele legesverordening van gemeente Terschelling bedraagt het tarief voor een exploitatievergunning €267,95."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.terschelling.nl/terras-plaatsen",
+      "https://www.terschelling.nl/openingstijden-horeca-eenmalig-aanpassen",
+      "https://www.terschelling.nl/alle-producten-en-diensten/21",
+      "https://www.terschelling.nl/sluitingsuren-van-horeca",
+      "https://www.terschelling.nl/exploitatievergunning-horecabedrijf"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De leges voor het in behandeling nemen van een aanvraag om exploitatievergunning bedragen €40,78. [...] Aanvraagformulier exploitatievergunning horeca",
+          "original_reference": "Voor het in behandeling nemen van uw exploitatievergunningsaanvraag bedragen de leges €40,78.",
+          "note": "De originele tekst mist de verwijzing naar het beschikbare aanvraagformulier dat wel in de bronpagina wordt genoemd.",
+          "source_urls": [
+            "https://www.terschelling.nl/exploitatievergunning-horecabedrijf"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De kosten bedragen voor een eenmalige ontheffing € 33,64. Voor het verkrijgen van een stempelkaart waarmee maximaal zes maal per kalenderjaar ontheffing kan worden aangevraagd van het sluitingsuur bedragen de kosten € 103,23.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de kosten voor sluitingstijdenontheffingen en de mogelijkheid van een stempelkaart systeem.",
+          "source_urls": [
+            "https://www.terschelling.nl/sluitingsuren-van-horeca"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U moet de ontheffing minstens vier weken voor de bedoelde datum aanvragen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst specificeert geen minimale aanvraagtermijn voor ontheffingen, terwijl de bron een termijn van 4 weken voorschrijft.",
+          "source_urls": [
+            "https://www.terschelling.nl/sluitingsuren-van-horeca"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen het ontbreken van informatie over het beschikbare aanvraagformulier in de originele tekst, het ontbreken van specifieke kostenoverzichten voor ontheffingen en stempelkaarten, en het niet vermelden van de minimale aanvraagtermijn van 4 weken voor ontheffingen. Deze informatie is wel beschikbaar in de bronpagina's van de gemeente."
+  }
+}

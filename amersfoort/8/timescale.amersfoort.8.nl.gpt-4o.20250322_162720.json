@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AMERSFOORT",
+      "contact": {
+        "phone": "14 033",
+        "email": "info@amersfoort.nl",
+        "website": "http://www.amersfoort.nl"
+      }
+    },
+    "service": {
+      "id": 8,
+      "name": "Marktvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "Toelatingskosten voor promotionele of ideële acties bedragen respectievelijk € 80,- en € 25,-.",
+        "status": "false",
+        "note": "Deze specifieke bedragen worden niet genoemd op de officiële website van gemeente Amersfoort. De actuele legeskosten kunnen variëren en staan vermeld in de legesverordening van de gemeente."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.amersfoort.nl/exploitatie-horeca-inrichting",
+      "https://www.amersfoort.nl/reclame",
+      "https://www.amersfoort.nl/aanleggen",
+      "https://www.amersfoort.nl/",
+      "https://www.amersfoort.nl/een-vergunning-aangevraagd-en-nu"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.amersfoort.nl/standplaatsen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Overleg altijd met de gemeente voordat je je aanvraag doet. Bel voor meer informatie of voor het inplannen van een afspraak naar 14 033. Je kan ook een e-mail sturen naar vergunningenloket@amersfoort.nl.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist de belangrijke voorwaarde om vooraf te overleggen met de gemeente en vermeldt niet de contactmogelijkheden via telefoon en email voor het vergunningenloket.",
+          "source_urls": [
+            "https://www.amersfoort.nl/aanleggen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Binnen 2 weken neemt de casemanager contact met je op. Let op: door de drukte halen we deze termijn helaas niet altijd.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat er binnen 2 weken contact wordt opgenomen door een casemanager en dat deze termijn door drukte mogelijk niet wordt gehaald.",
+          "source_urls": [
+            "https://www.amersfoort.nl/een-vergunning-aangevraagd-en-nu"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "dat kan de procedure van 8 weken zijn, van 12 weken of de uitgebreide procedure van 26 weken",
+          "original_reference": "Na de aanvraag ontvang je binnen 8 weken een besluit.",
+          "note": "De originele tekst noemt alleen een termijn van 8 weken, terwijl er ook procedures van 12 en 26 weken mogelijk zijn.",
+          "source_urls": [
+            "https://www.amersfoort.nl/een-vergunning-aangevraagd-en-nu"
+          ]
+        }
+      ]
+    },
+    "summary": "De originele tekst mist enkele belangrijke details over het aanvraagproces: de noodzaak van vooroverleg met de gemeente, de rol van een casemanager, en het bestaan van verschillende proceduretijden (8, 12 of 26 weken). Ook ontbreken relevante contactgegevens voor het vergunningenloket. Deze informatie is wel beschikbaar in de bronpagina's en zou toegevoegd moeten worden voor een volledig beeld."
+  }
+}

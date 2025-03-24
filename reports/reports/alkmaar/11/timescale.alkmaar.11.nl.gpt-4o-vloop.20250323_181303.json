@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ALKMAAR",
+      "contact": {
+        "phone": "14 072",
+        "email": "post@alkmaar.nl",
+        "website": "http://www.alkmaar.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 27,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.4,
+    "false_statements": [
+      {
+        "sentence": "Na aanvraag hoort u binnen 8 weken (gemeentelijk monument) of 26 weken (Rijksmonument) of er een vergunning verleend wordt.",
+        "status": "false",
+        "note": "Voor een reguliere omgevingsvergunning geldt een beslistermijn van 8 weken, ongeacht of het een gemeentelijk of rijksmonument betreft. Alleen bij uitgebreide procedures geldt een termijn van 26 weken. De genoemde termijn van 26 weken specifiek voor rijksmonumenten is onjuist volgens de officiële informatie van de gemeente Alkmaar."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.alkmaar.nl/direct-regelen/wonen-verhuizen-en-verbouwen/vergunningen/omgevingsvergunning",
+      "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/bouwen-en-verbouwen/omgevingsloket",
+      "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/bouwen-en-verbouwen/boom-kappen-vergunning",
+      "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/bouwen-en-verbouwen/monumenten-omgevingsvergunning",
+      "https://www.alkmaar.nl/direct-regelen/wonen-verhuizen-en-verbouwen/verbouwen/melding-woon-en-leefomgeving-indienen/"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Tot 1 januari 2024 deed u een aanvraag of een melding via het Omgevingsloket online (OLO). Op 1 januari 2024 is de nieuwe Omgevingswet ingegaan. U doet de aanvraag nu in het nieuwe Omgevingsloket.",
+          "original_reference": "Vanaf 1 januari 2024 is de Omgevingswet van kracht.",
+          "note": "De originele tekst noemt alleen de ingangsdatum, terwijl de brontekst specifiek vermeldt dat er een overgang is van het oude OLO naar het nieuwe Omgevingsloket.",
+          "source_urls": [
+            "https://www.alkmaar.nl/direct-regelen/wonen-verhuizen-en-verbouwen/vergunningen/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het Omgevingsloket bestaat uit verschillende onderdelen: Regels op de kaart [...] Vergunningcheck [...] Deze checker is zeer uitgebreid en is daarom vooral bruikbaar voor bewoners en bedrijven die vaak aanvragen doen.",
+          "original_reference": "een uitgebreide vergunningcheck die vooral nuttig is voor frequente aanvragers",
+          "note": "De brontekst geeft een duidelijker overzicht van de onderdelen van het Omgevingsloket en specificeert dat de vergunningcheck voor zowel bewoners als bedrijven is die frequent aanvragen doen.",
+          "source_urls": [
+            "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/bouwen-en-verbouwen/omgevingsloket"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Dit loket vervangt de volgende digitale loketten: Omgevingsloket online (OLO); Activiteitenbesluit Internet Module (AIM); Ruimtelijkeplannen.nl; Meldpunt bodemkwaliteit.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over welke oude loketten worden vervangen door het nieuwe Omgevingsloket.",
+          "source_urls": [
+            "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/bouwen-en-verbouwen/omgevingsloket"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de overgang naar het nieuwe Omgevingsloket en de specifieke details daarover. De bronpagina's bevatten meer gedetailleerde informatie over de vervanging van oude loketten en de functionaliteit van het nieuwe systeem. De originele tekst mist enkele belangrijke details over de concrete veranderingen en de systemen die worden vervangen."
+  }
+}

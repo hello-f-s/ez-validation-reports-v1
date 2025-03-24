@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LANDSMEER",
+      "contact": {
+        "phone": "(020) 487 71 11",
+        "email": "gemeente@Landsmeer.nl",
+        "website": "http://www.landsmeer.nl"
+      }
+    },
+    "service": {
+      "id": 2,
+      "name": "Bord of spandoek plaatsen aan de openbare weg"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "Er is geen specifieke verwerkingstijd voor deze aanvraag vermeld. Over het algemeen beslist de gemeente binnen 8 weken over aanvragen zoals vergunningen.",
+        "status": "false",
+        "note": "Volgens de website van gemeente Landsmeer moet een aanvraag voor reclameobjecten minimaal 4 weken voor plaatsing worden ingediend, niet 8 weken zoals vermeld."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.landsmeer.nl/ondernemers/evenementen/optreden_op_straat",
+      "https://www.landsmeer.nl/inwoners/parkeren,_verkeer_en_vervoer/verkeer/ontheffing_van_verkeersregels_aanvragen",
+      "https://www.landsmeer.nl/ondernemers/vergunningen/standplaats_vergunning_aanvragen",
+      "https://www.landsmeer.nl/ondernemers/vergunningen/uitstalling_plaatsen_bij_een_bedrijf",
+      "https://www.landsmeer.nl/ondernemers/vergunningen/reclameobjecten_plaatsen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.landsmeer.nl",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "U mag een activiteit of evenement aankondigen met driehoeksborden of sandwichborden. Dit zijn borden die vastgemaakt worden aan een lantaarnpaal.",
+          "original_reference": "Volgens de informatie over reclameobjecten, mag u een activiteit of evenement aankondigen met driehoeksborden of sandwichborden. Deze borden worden vastgemaakt aan een lantaarnpaal.",
+          "note": "De beschrijving van de toegestane reclameobjecten komt exact overeen",
+          "source_urls": [
+            "https://www.landsmeer.nl/ondernemers/vergunningen/reclameobjecten_plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Er zijn nog plekken beschikbaar.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt een extra voorwaarde dat er beschikbare plekken moeten zijn voor de reclameborden. Dit staat niet in de originele tekst.",
+          "source_urls": [
+            "https://www.landsmeer.nl/ondernemers/vergunningen/reclameobjecten_plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U doet een melding voordat de borden geplaatst zijn.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina specificeert dat de melding moet worden gedaan vóór plaatsing van de borden. Dit tijdsaspect ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.landsmeer.nl/ondernemers/vergunningen/reclameobjecten_plaatsen"
+          ]
+        }
+      ]
+    },
+    "summary": "De broninhoud komt grotendeels overeen met de originele tekst, maar bevat twee belangrijke aanvullende voorwaarden die niet in de originele tekst staan vermeld: de beschikbaarheid van plekken voor de reclameborden en de timing van de melding (vóór plaatsing). Deze voorwaarden zijn belangrijk voor de volledigheid van de informatie voor aanvragers."
+  }
+}

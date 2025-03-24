@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HILVERSUM",
+      "contact": {
+        "phone": "14 035",
+        "email": "gemeente@hilversum.nl",
+        "website": "http://www.hilversum.nl"
+      }
+    },
+    "service": {
+      "id": 8,
+      "name": "Marktvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 10,
+    "false_sentences": 1,
+    "accuracy_percentage": 90.9,
+    "false_statements": [
+      {
+        "sentence": "Voor meer informatie en specifieke vereisten is het aanbevolen om contact op te nemen met de gemeente, afdeling Publiekszaken, team Vergunningen, via 14 035 of via omgevingsvergunning@hilversum.nl.",
+        "status": "false",
+        "note": "Het e-mailadres omgevingsvergunning@hilversum.nl is onjuist. Voor marktvergunningen moet men contact opnemen met de gemeente via 14 035 of info@hilversum.nl volgens de officiële website van de gemeente Hilversum."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://hilversum.nl/ondernemen/vergunningen-meldingen-voor-ondernemers",
+      "https://hilversum.nl/vergunningen/vergunningen-voor-bouwen-verbouwen/omgevingsvergunning-aanvragen",
+      "https://hilversum.nl/vergunningen/vergunningen-meldingen-openbare-ruimte",
+      "https://hilversum.nl/bouwen-verbouwen/haalbaarheidsonderzoek",
+      "https://hilversum.nl/bouwen-verbouwen/omgevingswet/aanvraag-omgevingsvergunning-uitgelegd"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U wilt een standplaats om op de markt van Hilversum te staan. U heeft hiervoor een marktvergunning nodig. Er zijn niet altijd vrije vaste plekken.",
+          "original_reference": "Om als ondernemer een marktvergunning aan te vragen in Hilversum, moet u voldoen aan specifieke eisen, zoals beschikbare standplaatsen en regels met betrekking tot markten.",
+          "note": "De bronpagina is specifieker over de beperkte beschikbaarheid van standplaatsen en formuleert dit directer dan de originele tekst.",
+          "source_urls": [
+            "https://hilversum.nl/vergunningen/vergunningen-meldingen-openbare-ruimte"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "omgevingsvergunning@hilversum.nl",
+          "original_reference": "omgevingsvergunning@hilversum.nl",
+          "note": "Het e-mailadres voor contact komt overeen met de originele tekst.",
+          "source_urls": [
+            "https://hilversum.nl/bouwen-verbouwen/omgevingswet/aanvraag-omgevingsvergunning-uitgelegd"
+          ]
+        }
+      ]
+    },
+    "summary": "Na analyse van de bronnen blijkt dat er weinig significante verschillen zijn met de originele tekst. Het enige noemenswaardige verschil betreft de formulering over de beschikbaarheid van marktstandplaatsen, waarbij de bronpagina directer communiceert over de beperkte beschikbaarheid. De contactgegevens zijn consistent. Opvallend is dat veel van de specifieke informatie die in de originele tekst als 'niet beschikbaar' wordt aangemerkt, inderdaad niet terug te vinden is in de bronpagina's."
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ALKMAAR",
+      "contact": {
+        "phone": "14 072",
+        "email": "post@alkmaar.nl",
+        "website": "http://www.alkmaar.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 16,
+    "false_sentences": 3,
+    "accuracy_percentage": 84.2,
+    "false_statements": [
+      {
+        "sentence": "Een evenement tot 500 bezoekers kost € 27,08.",
+        "status": "false",
+        "note": "Volgens de actuele tarieven van gemeente Alkmaar kost een evenementenvergunning voor evenementen tot 500 bezoekers € 28,20"
+      },
+      {
+        "sentence": "Een evenement met meer dan 500 bezoekers kost € 191,80.",
+        "status": "false",
+        "note": "Volgens de actuele tarieven van gemeente Alkmaar kost een evenementenvergunning voor evenementen met meer dan 500 bezoekers € 199,50"
+      },
+      {
+        "sentence": "Gebruik daarbij de contactinformatie en processen zoals aangegeven op de gemeentelijke website.",
+        "status": "false",
+        "note": "De aanvraag moet digitaal worden ingediend via het e-loket van de gemeente Alkmaar met DigiD of eHerkenning, niet schriftelijk zoals gesuggereerd"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 4,
+    "invalid_urls": 2,
+    "accuracy_percentage": 66.7,
+    "valid_urls_list": [
+      "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/evenementen/evenement-organiseren-melding-of-vergunning",
+      "https://www.alkmaar.nl/direct-regelen/wonen-verhuizen-en-verbouwen/vergunningen/omgevingsvergunning",
+      "https://www.alkmaar.nl/direct-regelen/ondernemen/vergunningen-en-ontheffingen/exploitatievergunning/",
+      "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/horeca/drank-en-horecawet-vergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/reclame-maken/buurtfeest-of-buurtbarbecue-melding-en-vergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.alkmaar.nl/home/innovatie_47067/item/handig-tips-voor-de-organisator-van-een-evenement_172657.html",
+        "reason": "INVALID: Error scraping https://www.alkmaar.nl/home/innovatie_47067/item/handig-tips-voor-de-organisator-van-een-evenement_172657.html: 404 Client Error: Not Found for url: https://www.alkmaar.nl/home/innovatie_47067/item/handig-tips-voor-de-organisator-van-een-evenement_172657.html"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Evenementenkalender 2025 is een pdf-bestand met alle geplande evenementen in de gemeente",
+          "original_reference": "No matching information",
+          "note": "De originele inhoud vermeldt niets over een evenementenkalender, terwijl dit een belangrijk planningsinstrument blijkt te zijn voor evenementenorganisatie",
+          "source_urls": [
+            "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/evenementen/evenement-organiseren-melding-of-vergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De evenementendesk van Alkmaar Marketing informeert en adviseert organisatoren van evenementen over locaties, regelgeving, promotie en subsidie- en sponsormogelijkheden",
+          "original_reference": "No matching information",
+          "note": "De originele inhoud maakt geen melding van de evenementendesk van Alkmaar Marketing en de ondersteunende diensten die zij bieden",
+          "source_urls": [
+            "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/evenementen/evenement-organiseren-melding-of-vergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "uitvoeringsregels evenementen (pdf, 2MB), informatie gebruik statiegeldbekers (pdf, 57kB)",
+          "original_reference": "No matching information",
+          "note": "De originele inhoud vermeldt niet de beschikbaarheid van specifieke documentatie over uitvoeringsregels en het gebruik van statiegeldbekers",
+          "source_urls": [
+            "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/evenementen/evenement-organiseren-melding-of-vergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie die niet in de originele tekst staat, waaronder het bestaan van een evenementenkalender, de ondersteunende rol van de evenementendesk van Alkmaar Marketing, en specifieke documentatie over uitvoeringsregels en statiegeldbekers. Deze informatie is relevant voor evenementorganisatoren maar ontbreekt in de originele tekst."
+  }
+}

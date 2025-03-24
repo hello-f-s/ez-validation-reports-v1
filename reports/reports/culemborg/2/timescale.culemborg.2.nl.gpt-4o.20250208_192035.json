@@ -1,0 +1,89 @@
+{
+  "context": {
+    "municipality": {
+      "name": "CULEMBORG",
+      "contact": {
+        "phone": "(0345) 47 77 00",
+        "email": "info@culemborg.nl",
+        "website": "http://www.culemborg.nl"
+      }
+    },
+    "service": {
+      "id": 2,
+      "name": "Bord of spandoek plaatsen aan de openbare weg"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "Voor het plaatsen van sandwichborden moet een aanvraag drie weken voorafgaand aan de plaatsing worden ingediend bij de gemeente Culemborg via het formulier, dat verzonden kan worden naar info@culemborg.nl of per post naar:",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Culemborg moet een aanvraag voor sandwichborden minimaal 8 weken (niet 3 weken) voor plaatsing worden ingediend."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 6,
+    "invalid_urls": 1,
+    "accuracy_percentage": 85.7,
+    "valid_urls_list": [
+      "https://www.culemborg.nl/informatieverzoek",
+      "https://www.culemborg.nl",
+      "https://www.culemborg.nl/omgevingsvergunning",
+      "https://www.culemborg.nl/uitstallingen-en-borden",
+      "https://www.culemborg.nl/campagne-voeren-voor-verkiezingen",
+      "https://www.culemborg.nl/standplaatsvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.culemborg.nl\">www.culemborg.nl</a></p>",
+        "reason": "INVALID: Error scraping https://www.culemborg.nl\">www.culemborg.nl</a></p>: HTTPSConnectionPool(host='www.culemborg.nl%22%3ewww.culemborg.nl%3c', port=443): Max retries exceeded with url: /a%3E%3C/p%3E (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1036b2d50>: Failed to resolve 'www.culemborg.nl%22%3ewww.culemborg.nl%3c' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Tijdens evenementen en de weekmarkt kan de mogelijkheid bestaan dat de uitstalling niet kan/mag worden geplaatst.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist deze belangrijke beperking voor het plaatsen van uitstallingen tijdens evenementen en weekmarkten",
+          "source_urls": [
+            "https://www.culemborg.nl/uitstallingen-en-borden"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Binnen 1 meter rondom objecten in de openbare ruimte die door de gemeente of wel met toestemming van de gemeente zijn geplaatst, en bereikbaar moeten zijn voor derden, mag geen uitstalling worden geplaatst (bijv. brandkranen, parkeerautomaten, brievenbussen e.d.)",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist deze specifieke afstandseis van 1 meter tot gemeentelijke objecten",
+          "source_urls": [
+            "https://www.culemborg.nl/uitstallingen-en-borden"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Doorgang voor voetgangers en gebruikers van gehandicaptenvoertuigen moeten worden gegarandeerd.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist deze belangrijke toegankelijkheidseis voor voetgangers en gehandicaptenvoertuigen",
+          "source_urls": [
+            "https://www.culemborg.nl/uitstallingen-en-borden"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten enkele belangrijke aanvullende voorwaarden die niet in de originele tekst staan vermeld. Deze betreffen vooral beperkingen tijdens evenementen en markten, specifieke afstandseisen tot gemeentelijke objecten, en toegankelijkheidsvereisten voor voetgangers en gehandicaptenvoertuigen. Deze voorwaarden zijn essentieel voor het correct plaatsen van uitstallingen."
+  }
+}

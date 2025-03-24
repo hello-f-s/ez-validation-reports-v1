@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ROERMOND",
+      "contact": {
+        "phone": "14 0475",
+        "email": "mail@roermond.nl",
+        "website": "http://www.roermond.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 27,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.4,
+    "false_statements": [
+      {
+        "sentence": "Als u het conceptverzoek wilt aanvullen, stuur dan aanvullende gegevens naar mail@roermond.nl onder vermelding van uw registratienummer.",
+        "status": "false",
+        "note": "Het e-mailadres mail@roermond.nl is onjuist. Het correcte algemene e-mailadres van de gemeente Roermond is gemeente@roermond.nl."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.roermond.nl/omgevingsvergunning",
+      "https://www.roermond.nl/terrasvergunning",
+      "https://www.roermond.nl/aanvraag-bouwtekening-bouwdossier-of-dossier-omgevingsvergunning",
+      "https://www.roermond.nl/omgevingsplan-0",
+      "https://www.roermond.nl/exploitatievergunning-horeca"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De behandeltermijn is 8 weken bij een complete aanvraag. Deze termijn kan met 8 weken worden verlengd.",
+          "original_reference": "Reguliere procedure: 8 weken met een mogelijke verlenging van 6 weken.",
+          "note": "De bronpagina vermeldt een mogelijke verlenging van 8 weken, terwijl de originele tekst spreekt van 6 weken verlenging.",
+          "source_urls": [
+            "https://www.roermond.nl/exploitatievergunning-horeca"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De kosten voor het aanvragen van een bouwtekening, bouwdossier of dossier omgevingsvergunning bedragen minimaal € 14,- per aangevraagd adres. Per aanvraag zal, afhankelijk van de aangevraagde hoeveelheid documenten in één aanvraag, beoordeeld worden of en met welk bedrag dit minimum verhoogd zal worden. U ontvangt na afronding van de aanvraag en het beschikbaar maken van de documenten een bericht over de kosten. Door Bsgw zal u vervolgens een factuur toegezonden worden.",
+          "original_reference": "De kosten hiervoor bedragen minimaal € 14,- per aangevraagd adres.",
+          "note": "De bronpagina geeft meer gedetailleerde informatie over de kostenstructuur en het factureringsproces via Bsgw, wat niet vermeld wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.roermond.nl/aanvraag-bouwtekening-bouwdossier-of-dossier-omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Om te achterhalen hoe groot de kans is dat u een omgevingsvergunning kunt krijgen voor uw (bouw)plan dat afwijkt van het geldende omgevingsplan, kunt u eerst een conceptverzoek indienen. U krijgt hiermee in een vroeg stadium te horen of de gemeente bereid is medewerking te verlenen aan een afwijking van het omgevingsplan. Aan het indienen van een conceptverzoek zijn kosten verbonden.",
+          "original_reference": "Heeft u een idee dat mogelijk niet past binnen het huidige beleid of omgevingsplan? Bespreek dit dan met ons via de intaketafel.",
+          "note": "De bronpagina beschrijft een specifieke procedure met conceptverzoek voor afwijkingen van het omgevingsplan, terwijl de originele tekst alleen de intaketafel noemt.",
+          "source_urls": [
+            "https://www.roermond.nl/omgevingsplan-0"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de verlengingstermijn van vergunningsaanvragen (8 weken versus 6 weken), een uitgebreidere toelichting op de kostenstructuur en facturering van bouwtekeningen, en een meer gedetailleerde procedure voor afwijkingen van het omgevingsplan via een conceptverzoek. Deze verschillen hebben impact op de verwachtingen van aanvragers wat betreft doorlooptijd, kosten en procedures."
+  }
+}

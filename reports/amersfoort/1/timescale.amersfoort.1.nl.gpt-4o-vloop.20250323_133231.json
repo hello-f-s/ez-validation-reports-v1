@@ -1,0 +1,89 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AMERSFOORT",
+      "contact": {
+        "phone": "14 033",
+        "email": "info@amersfoort.nl",
+        "website": "http://www.amersfoort.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 22,
+    "false_sentences": 2,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Een aanvraag voor een alcoholwetvergunning kost € 850,-.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Amersfoort kost een aanvraag voor een alcoholwetvergunning € 875,85"
+      },
+      {
+        "sentence": "Melding van een nieuwe leidinggevende kost € 210,- per leidinggevende, met een maximum van € 420,-.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Amersfoort kost een melding van een nieuwe leidinggevende € 217,95 per persoon, met een maximum van € 435,90"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.amersfoort.nl/alcoholwetvergunning",
+      "https://www.amersfoort.nl/exploitatie-horeca-inrichting",
+      "https://www.amersfoort.nl/aanleggen",
+      "https://www.amersfoort.nl/zwak-alcoholhoudende-drank-verstrekken",
+      "https://www.amersfoort.nl/reclame"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Melding van een nieuwe leidinggevende kost € 210,- per leidinggevende, met een maximum van € 420,-.",
+          "original_reference": "Melding van een nieuwe leidinggevende kost € 210,- per leidinggevende, met een maximum van € 420,-.",
+          "note": "De originele tekst en de bron vermelden dezelfde kosten, maar de originele tekst bevat ook 'Melding van gewijzigde inrichting: € 425,-' wat niet terug te vinden is in de bronpagina's.",
+          "source_urls": [
+            "https://www.amersfoort.nl/alcoholwetvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Na je aanvraag publiceren we de vergunningsaanvraag, zodat anderen op je plannen kunnen reageren.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina's vermelden een extra stap waarbij de vergunningsaanvraag wordt gepubliceerd voor reacties van anderen. Deze informatie ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.amersfoort.nl/aanleggen",
+            "https://www.amersfoort.nl/reclame"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Overleg altijd met de gemeente voordat je je aanvraag doet.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina's adviseren vooroverleg met de gemeente voordat een aanvraag wordt ingediend. Dit vooroverleg wordt niet genoemd in de originele tekst.",
+          "source_urls": [
+            "https://www.amersfoort.nl/aanleggen"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont drie belangrijke verschillen: 1) Een kostenpost voor gewijzigde inrichting in de originele tekst die niet wordt bevestigd in de bronnen, 2) Het ontbreken van informatie over de publicatie van vergunningsaanvragen in de originele tekst, en 3) Het ontbreken van advies over vooroverleg met de gemeente in de originele tekst. De overige informatie komt overeen met de bronpagina's."
+  }
+}

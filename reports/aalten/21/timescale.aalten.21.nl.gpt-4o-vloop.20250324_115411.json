@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AALTEN",
+      "contact": {
+        "phone": "(0543) 49 33 33",
+        "email": "gemeente@aalten.nl",
+        "website": "http://www.aalten.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor het aanvragen van een VOG bedragen €41,35 in 2025.",
+        "status": "false",
+        "note": "De kosten voor een VOG bedragen in 2024 €41,35. Het is niet mogelijk om met zekerheid te stellen wat de kosten in 2025 zullen zijn, aangezien deze jaarlijks kunnen worden aangepast."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.aalten.nl/verklaring-omtrent-het-gedrag-vog",
+      "https://www.aalten.nl/nederlander-worden-door-optie",
+      "https://www.aalten.nl/informatie-over-beleid-of-besluiten-opvragen-who-verzoek",
+      "https://www.aalten.nl/omgevingsvergunning",
+      "https://www.aalten.nl/nederlander-worden-door-naturalisatie"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Als u geen strafbare feiten hebt gepleegd, krijgt u de VOG. Als u wel strafbare feiten hebt gepleegd, is verder onderzoek nodig. Justis bekijkt of de strafbare feiten belangrijk zijn voor de aanvraag.",
+          "original_reference": "Als u geen strafbare feiten hebt gepleegd, wordt de VOG verleend. Indien er wel strafbare feiten zijn gepleegd, beoordeelt Justis de relevantie van deze feiten.",
+          "note": "De informatie over de beoordeling van strafbare feiten komt inhoudelijk overeen, alleen anders geformuleerd.",
+          "source_urls": [
+            "https://www.aalten.nl/verklaring-omtrent-het-gedrag-vog"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U krijgt een formulier van uw werkgever of andere organisatie.",
+          "original_reference": "Een ingevuld en ondertekend aanvraagformulier van uw opdrachtgever of organisatie.",
+          "note": "De bron vermeldt dat je het formulier krijgt van de werkgever, terwijl het origineel aangeeft dat het al ingevuld en ondertekend moet zijn.",
+          "source_urls": [
+            "https://www.aalten.nl/verklaring-omtrent-het-gedrag-vog"
+          ]
+        }
+      ]
+    },
+    "summary": "De meeste informatie komt overeen tussen de bronnen en de originele tekst. Het belangrijkste verschil betreft de status van het aanvraagformulier: waar de originele tekst spreekt over een reeds ingevuld en ondertekend formulier, geeft de bron aan dat men het formulier eerst ontvangt van de werkgever. De kernprocessen en voorwaarden zijn verder consistent."
+  }
+}

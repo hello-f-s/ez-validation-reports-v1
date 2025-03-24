@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HEEMSTEDE",
+      "contact": {
+        "phone": "(023) 548 58 68",
+        "email": "gemeente@heemstede.nl",
+        "website": "http://www.heemstede.nl"
+      }
+    },
+    "service": {
+      "id": 7,
+      "name": "Kabels en leidingen aanleggen en beheren"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "Voor vragen of meer informatie kunt u contact opnemen met de gemeente Heemstede via telefoonnummer 14 023 of een bezoek brengen aan het gemeentehuis op Raadhuisplein 1, 2101 HA Heemstede.",
+        "status": "false",
+        "note": "Het juiste bezoekadres van het gemeentehuis van Heemstede is Raadhuisplein 1, 2102 AG Heemstede. De postcode 2101 HA is onjuist."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.heemstede.nl/bestuur-en-organisatie/omgevingswet/de-omgevingswet-voor-u-als-inwoner-of-ondernemer",
+      "https://www.heemstede.nl/vergunningen/in-of-uitrit-aanleggen-omgevingsvergunning",
+      "https://www.heemstede.nl/vergunningen/vergunning-voor-bouwen-en-verbouwen",
+      "https://www.heemstede.nl/aanvragen-en-regelen/aansluiting-op-gemeenteriool",
+      "https://heemstede.nl/omgevingswet/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.heemstede.nl/vergunningen/milieu-omgevingsvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vanaf 1 januari 2024 geldt de Omgevingswet",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt geen ingangsdatum van de Omgevingswet, terwijl de bron specifiek 1 januari 2024 noemt als startdatum",
+          "source_urls": [
+            "https://heemstede.nl/omgevingswet/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "25% van de uiteindelijk te betalen leges (2,9% van de bouwsom exclusief btw), met een minimum van € 90,00",
+          "original_reference": "Voor een omgevingsvergunning betaalt u legeskosten",
+          "note": "De originele tekst noemt alleen dat er legeskosten zijn, terwijl de bron specifieke percentages en minimumbedragen vermeldt voor vooroverleg",
+          "source_urls": [
+            "https://www.heemstede.nl/vergunningen/vergunning-voor-bouwen-en-verbouwen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u de omgevingsvergunning heeft ontvangen, neem dan telefonisch contact op met afdeling Ruimtelijk Beheer van de gemeente",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist de belangrijke vervolgstap om na ontvangst van de vergunning contact op te nemen met de afdeling Ruimtelijk Beheer",
+          "source_urls": [
+            "https://www.heemstede.nl/vergunningen/in-of-uitrit-aanleggen-omgevingsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen het ontbreken van de ingangsdatum van de Omgevingswet (1 januari 2024), specifieke informatie over legeskosten en percentages, en de vervolgprocedure na het ontvangen van een vergunning. De bronnen bevatten meer gedetailleerde informatie over kosten en procedures dan de originele tekst."
+  }
+}

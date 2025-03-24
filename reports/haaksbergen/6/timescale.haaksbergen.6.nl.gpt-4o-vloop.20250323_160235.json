@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HAAKSBERGEN",
+      "contact": {
+        "phone": "(053) 573 45 67",
+        "email": "gemeente@haaksbergen.nl",
+        "website": "http://www.haaksbergen.nl"
+      }
+    },
+    "service": {
+      "id": 6,
+      "name": "Integriteitsonderzoek (Wet Bibob)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "Adres: Blankenburgerstraat 28, 7481 EB Haaksbergen",
+        "status": "false",
+        "note": "Het juiste adres van het gemeentehuis van Haaksbergen is Blankenburgerstraat 28, 7481 GB Haaksbergen. De postcode 7481 EB is onjuist, het moet 7481 GB zijn."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.haaksbergen.nl/inwoner/Persoonsgegevens-en-uittreksels/vog.html",
+      "https://www.haaksbergen.nl/inwoner/Vergunningen-en-plannen/Bodem/opvragenbodeminformatie.html",
+      "https://www.haaksbergen.nl/Overig/Ter-inzage-of-inzien-of-verzoek-om-informatie.html",
+      "https://www.haaksbergen.nl/Klachtenbezwaren",
+      "https://www.haaksbergen.nl/Vergunningen/Exploitatievergunning.html",
+      "https://www.haaksbergen.nl"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor de volgende openbare inrichtingen moet u een exploitatievergunning aanvragen: Hotel, Restaurant of eetcafé, Pension, (Internet)Café, Waterpijpcafé, Cafetaria, Snackbar, Discotheek, Buurthuis, Afhaalzaak, Clubhuis/Kantine, Terras",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen specifieke lijst van inrichtingen waarvoor een exploitatievergunning nodig is, terwijl de bronpagina deze wel duidelijk specificeert.",
+          "source_urls": [
+            "https://www.haaksbergen.nl/Vergunningen/Exploitatievergunning.html"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Uitzonderingen: Een restauratie in een winkelbedrijf als het een nevenactiviteit betreft, een restauratie van een zorginstelling of museum, een bedrijfskantine/restaurant (voor eigen personeel), als u ook een alcoholvergunning aanvraagt kan u in aanmerking komen voor een vrijstelling.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt geen uitzonderingen op de vergunningplicht, terwijl de bronpagina wel specifieke uitzonderingen noemt.",
+          "source_urls": [
+            "https://www.haaksbergen.nl/Vergunningen/Exploitatievergunning.html"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wilt u weten of het pand waar u zich wil vestigen de juiste bestemming heeft kijk dan op www.ruimtelijkeplannen.nl",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen verwijzing naar het controleren van de bestemming van het pand via ruimtelijkeplannen.nl, wat wel wordt genoemd in de bronpagina.",
+          "source_urls": [
+            "https://www.haaksbergen.nl/Vergunningen/Exploitatievergunning.html"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten belangrijke aanvullende informatie die niet in de originele tekst staat, waaronder een specifieke lijst van inrichtingen die een exploitatievergunning nodig hebben, uitzonderingen op de vergunningplicht, en de mogelijkheid om de bestemming van een pand te controleren. Deze informatie is essentieel voor ondernemers die een exploitatievergunning willen aanvragen."
+  }
+}

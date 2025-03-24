@@ -1,0 +1,93 @@
+{
+  "context": {
+    "municipality": {
+      "name": "EDE",
+      "contact": {
+        "phone": "14 0318",
+        "email": "info@ede.nl",
+        "website": "http://www.ede.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 22,
+    "false_sentences": 2,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Leges bedragen voor 2025 altijd € 18,75 per product, behalve voor de Keetmolenwijk waar het € 68,95 is.",
+        "status": "false",
+        "note": "De leges voor 2024 bedragen € 20,67 per product, niet € 18,75. Voor de Keetmolenwijk is het € 76,00, niet € 68,95."
+      },
+      {
+        "sentence": "De kosten voor een parkeervergunning of ontheffing variëren afhankelijk van het soort vergunning. Voor 2025 zijn de kosten als volgt:",
+        "status": "false",
+        "note": "De genoemde tarieven zijn voor 2024, niet voor 2025. De gemeente Ede heeft nog geen tarieven voor 2025 gepubliceerd."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.ede.nl/aanvragen-en-regelen/parkeervergunning-of-ontheffing",
+      "https://www.ede.nl/aanvragen-en-regelen/parkeerbelasting",
+      "https://www.ede.nl/aanvragen-en-regelen/ontheffing-aanvragen",
+      "https://www.ede.nl/aanvragen-en-regelen/bouw-en-verbouwvergunning-voor-bedrijven",
+      "https://www.ede.nl"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.ede.nl/aanvragen-en-regelen/verleende-vergunningen-inzien-en-opvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Tweede parkeervergunning sector 11: € 24,48 excl. leges, € 45,15 incl. leges\nDerde (of meer) parkeervergunning sector 11: € 103,20 excl. leges, € 123,87 incl. leges\nParkeervergunning betaald parkeerterrein Ede-Centrum: € 103,20 excl. leges, € 123,87 incl. leges",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke tariefinformatie voor tweede en derde parkeervergunningen in sector 11 en voor het betaald parkeerterrein Ede-Centrum",
+          "source_urls": [
+            "https://www.ede.nl/aanvragen-en-regelen/parkeervergunning-of-ontheffing"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Parkeerontheffing overige blauwe zones: € 0 excl. leges, € 20,67 incl. leges\nTijdelijke parkeervergunning voor verhuizen/klussen: € 0 excl. leges, € 20,67 incl. leges",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist informatie over tarieven voor overige blauwe zones en tijdelijke parkeervergunningen voor verhuizen/klussen",
+          "source_urls": [
+            "https://www.ede.nl/aanvragen-en-regelen/parkeervergunning-of-ontheffing"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u een parkeerbon heeft gehad, vindt u meestal een kaartje achter de ruitenwissers van uw voorruit. Later ontvangt u een naheffingsaanslag parkeerbelasting (betaald parkeren) of een bekeuring via het Centraal Justitieel Incassobureau.",
+          "original_reference": "Er is geen specifieke informatie beschikbaar over het indienen van bezwaren met betrekking tot parkeervergunningen of ontheffingen.",
+          "note": "De bronpagina bevat wel specifieke informatie over de bezwaarprocedure bij parkeerboetes, terwijl de originele tekst aangeeft dat er geen specifieke informatie beschikbaar is",
+          "source_urls": [
+            "https://www.ede.nl/aanvragen-en-regelen/parkeerbelasting"
+          ]
+        }
+      ]
+    },
+    "summary": "De originele tekst mist belangrijke informatie over verschillende parkeertarieven, waaronder tarieven voor tweede en derde vergunningen in sector 11, parkeerterrein Ede-Centrum, overige blauwe zones en tijdelijke vergunningen. Ook is de informatie over bezwaarprocedures onvolledig, aangezien de bronpagina wel degelijk specifieke details bevat over de procedure bij parkeerboetes."
+  }
+}

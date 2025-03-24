@@ -1,0 +1,87 @@
+{
+  "context": {
+    "municipality": {
+      "name": "TUBBERGEN",
+      "contact": {
+        "phone": "(0546) 62 80 00",
+        "email": "gemeente@tubbergen.nl",
+        "website": "http://www.tubbergen.nl"
+      }
+    },
+    "service": {
+      "id": 16,
+      "name": "Registreren in het Landelijk Register Kinderopvang (LRK)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "Voor persoonlijke hulp kunt u terecht bij Schakel Tubbergen voor ondersteuning bij de kosten van kinderopvang.",
+        "status": "false",
+        "note": "Er bestaat geen 'Schakel Tubbergen'. Voor ondersteuning bij de kosten van kinderopvang moet men contact opnemen met de afdeling Werk en Inkomen van Noaberkracht, de uitvoeringsorganisatie voor de gemeenten Tubbergen en Dinkelland."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.tubbergen.nl/register-kinderopvang",
+      "https://www.tubbergen.nl/aanvullende-bijdrage-kinderopvang",
+      "https://www.tubbergen.nl/melding-risico-kwaliteit-veiligheid-kinderopvang",
+      "https://www.tubbergen.nl/aangifte-registratie-levenloos-geboren-kind"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.tubbergen.nl/adressen-kinderopvang",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wilt u een kinderopvangvoorziening zoals een kinderdagverblijf, buitenschoolse opvang, peuterspeelzaal of gastouderbureau beginnen? Dan moet u zich aanmelden bij een gastouderbureau die vervolgens een aanvraag kan indienen bij de gemeente.",
+          "original_reference": "U dient een volledig ingevuld aanvraag- of wijzigingsformulier en de benodigde bijlagen te sturen naar de Gemeente Tubbergen.",
+          "note": "De bronpagina geeft aan dat aanmelding via een gastouderbureau moet verlopen, terwijl de originele tekst suggereert dat men direct bij de gemeente kan aanvragen.",
+          "source_urls": [
+            "https://www.tubbergen.nl/register-kinderopvang"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Elke werkdag van 9 tot 12 Bij de balie van Schakel Tubbergen",
+          "original_reference": "Het gemeentehuis is geopend van maandag tot en met donderdag van 8.30 tot 17.00 uur en op vrijdag van 8.30 tot 12.30 uur",
+          "note": "De openingstijden van Schakel Tubbergen (9:00-12:00) verschillen van de algemene gemeentelijke openingstijden in de originele tekst",
+          "source_urls": [
+            "https://www.tubbergen.nl/aanvullende-bijdrage-kinderopvang"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "wetkinderopvang@noaberkracht.nl",
+          "original_reference": "werkeninkomen@noaberkracht.nl",
+          "note": "Er worden verschillende e-mailadressen vermeld voor contact met de gemeente",
+          "source_urls": [
+            "https://www.tubbergen.nl/melding-risico-kwaliteit-veiligheid-kinderopvang"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn drie belangrijke verschillen gevonden tussen de originele tekst en de bronpagina's: 1) de procedure voor het aanvragen van kinderopvang moet via een gastouderbureau verlopen en niet direct bij de gemeente, 2) er zijn afwijkende openingstijden voor Schakel Tubbergen ten opzichte van het gemeentehuis, en 3) er worden verschillende e-mailadressen gebruikt voor contact met de gemeente. Deze verschillen kunnen tot verwarring leiden bij inwoners die gebruik willen maken van de diensten."
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MONTFOORT",
+      "contact": {
+        "phone": "(0348) 47 64 00",
+        "email": "info@montfoort.nl",
+        "website": "http://www.montfoort.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 7,
+    "true_sentences": 6,
+    "false_sentences": 1,
+    "accuracy_percentage": 85.7,
+    "false_statements": [
+      {
+        "sentence": "U ontvangt binnen 8 weken bericht of u de aanwezigheidsvergunning krijgt.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Montfoort geldt voor deze vergunning de algemene wettelijke beslistermijn van 13 weken, niet 8 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.montfoort.nl/Alle_onderwerpen/Vergunningen_en_ontheffingen/Horeca_en_MKB",
+      "https://www.montfoort.nl/Alle_onderwerpen/Vergunningen_en_ontheffingen",
+      "https://www.montfoort.nl/Alle_onderwerpen/Vergunningen_en_ontheffingen/Evenementen/Loterij_prijsvraag_of_bingo_organiseren",
+      "https://www.montfoort.nl/Alle_onderwerpen/Ondernemen/Horeca_en_MKB",
+      "https://www.montfoort.nl/Alle_onderwerpen/Vergunningen_en_ontheffingen/Horeca_en_MKB/Gokautomaat_plaatsen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://gemeente-montfoort.nl",
+        "reason": "INVALID: Error scraping https://gemeente-montfoort.nl: 439 Client Error: status code 439 for url: https://gemeente-montfoort.nl/"
+      },
+      {
+        "url": "https://gemeente-montfoort.nl/speelautomatenvergunning",
+        "reason": "INVALID: Error scraping https://gemeente-montfoort.nl/speelautomatenvergunning: 439 Client Error: status code 439 for url: https://gemeente-montfoort.nl/speelautomatenvergunning"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor het plaatsen van een gok- of kansspelautomaat gelden de volgende voorwaarden:\n- Kansspelautomaten zijn niet toegestaan in laagdrempelige inrichtingen\n- Er zijn maximaal twee kansspelautomaten toegestaan in hoogdrempelige inrichtingen\n- U, uw bedrijfsleider en beheerder hebben een diploma sociale hygiëne\n- U plaatst een kansspelautomaat van een onderneming met een exploitatievergunning of u heeft zelf een exploitatievergunning\n- Minderjarigen kunnen niet in de buurt van een kansspelautomaat komen\n- U zorgt voor toezicht op de automaat",
+          "original_reference": "Voor het plaatsen van een gokautomaat of kansspelautomaat in uw bedrijf is een aanwezigheidsvergunning nodig.",
+          "note": "De bronpagina bevat veel meer specifieke voorwaarden die niet genoemd worden in de originele tekst, waaronder maximale aantallen automaten, diploma-eisen en toezichtverplichtingen.",
+          "source_urls": [
+            "https://www.montfoort.nl/Alle_onderwerpen/Vergunningen_en_ontheffingen/Horeca_en_MKB/Gokautomaat_plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor een periode van 12 maanden voor één kansspelautomaat : € 56,50\nVoor iedere volgende kansspelautomaat: € 34,00",
+          "original_reference": "De specifieke kosten voor het aanvragen van een vergunning voor een gokautomaat worden niet genoemd.",
+          "note": "De bronpagina vermeldt wel degelijk specifieke kosten voor de vergunning, terwijl de originele tekst aangeeft dat deze niet genoemd worden.",
+          "source_urls": [
+            "https://www.montfoort.nl/Alle_onderwerpen/Vergunningen_en_ontheffingen/Horeca_en_MKB/Gokautomaat_plaatsen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina bevat aanzienlijk meer gedetailleerde informatie dan de originele tekst, met name over specifieke voorwaarden voor het plaatsen van kansspelautomaten en de exacte kosten voor de vergunning. Deze belangrijke details ontbreken in de originele tekst, wat deze onvolledig maakt ten opzichte van de actuele informatie op de gemeentewebsite."
+  }
+}

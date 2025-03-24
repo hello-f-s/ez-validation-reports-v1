@@ -1,0 +1,76 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DORDRECHT",
+      "contact": {
+        "phone": "14 078",
+        "email": "null",
+        "website": "http://www.dordrecht.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 8,
+    "true_sentences": 6,
+    "false_sentences": 2,
+    "accuracy_percentage": 75.0,
+    "false_statements": [
+      {
+        "sentence": "U vraagt de exploitatievergunning aan bij Omgevingsdienst Zuid-Holland Zuid (OZHZ) met het digitale aanvraagformulier.",
+        "status": "false",
+        "note": "De exploitatievergunning wordt aangevraagd bij de gemeente Dordrecht, niet bij OZHZ. Dit kan via het digitale formulier op de website van de gemeente Dordrecht."
+      },
+      {
+        "sentence": "Als het online niet lukt, kunt u het papieren aanvraagformulier opvragen via telefoonnummer 14 078 en op afspraak inleveren bij OZHZ.",
+        "status": "false",
+        "note": "Het papieren aanvraagformulier moet worden ingeleverd bij de gemeente Dordrecht, niet bij OZHZ. Ook is er geen specifieke vermelding van inleveren op afspraak."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 0,
+    "invalid_urls": 7,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.dordrecht.nl/Inwoners/vergunningen/exploitatievergunningen/horeca",
+        "reason": "INVALID: Error scraping https://www.dordrecht.nl/Inwoners/vergunningen/exploitatievergunningen/horeca: HTTPSConnectionPool(host='www.dordrecht.nl', port=443): Max retries exceeded with url: /Inwoners/vergunningen/exploitatievergunningen/horeca (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1018)')))"
+      },
+      {
+        "url": "https://cms.dordrecht.nl/Ondernemers/Overzicht_Ondernemers/Horeca/Exploitatievergunning_horeca_aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://cms.dordrecht.nl/Ondernemers/Overzicht_Ondernemers/Horeca/Horeca_starten",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.dordrecht.nl/Inwoners/vergunningen/exploitatievergunningen/speelhal",
+        "reason": "INVALID: Error scraping https://www.dordrecht.nl/Inwoners/vergunningen/exploitatievergunningen/speelhal: HTTPSConnectionPool(host='www.dordrecht.nl', port=443): Max retries exceeded with url: /Inwoners/vergunningen/exploitatievergunningen/speelhal (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1018)')))"
+      },
+      {
+        "url": "https://cms.dordrecht.nl/Ondernemers/Overzicht_Ondernemers/Speelautomaten_en_escort/Exploitatievergunning_speelautomatenhal",
+        "reason": "INVALID: Error scraping https://cms.dordrecht.nl/Ondernemers/Overzicht_Ondernemers/Speelautomaten_en_escort/Exploitatievergunning_speelautomatenhal: 404 Client Error:  for url: https://cms.dordrecht.nl/Ondernemers/Overzicht_Ondernemers/Speelautomaten_en_escort/Exploitatievergunning_speelautomatenhal"
+      },
+      {
+        "url": "https://cms.dordrecht.nl/Ondernemers/Overzicht_Ondernemers/Bedrijfshuisvesting/Bedrijf_aan_huis",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://cms.dordrecht.nl/Ondernemers/Overzicht_Ondernemers/Horeca",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  }
+}

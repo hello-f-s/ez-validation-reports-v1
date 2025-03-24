@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HEILOO",
+      "contact": {
+        "phone": "(072) 535 66 66",
+        "email": "info@heiloo.nl",
+        "website": "http://www.heiloo.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Het in behandeling nemen van de aanvraag voor een ontheffing sluitingstijd horeca bijvoorbeeld kost € 13,00.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Heiloo kost een ontheffing sluitingstijd horeca € 26,00, niet € 13,00."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.heiloo.nl/aanvragen-en-regelen/exploitatievergunning/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/gehandicaptenparkeerplaats/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/ontheffing-sluitingstijd/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/standplaatsvergunning/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/marktplaatsvergunning/"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "In behandeling nemen aanvraag ontheffing € 12,60",
+          "original_reference": "Het in behandeling nemen van de aanvraag voor een ontheffing sluitingstijd horeca bijvoorbeeld kost € 13,00",
+          "note": "Het bedrag voor de ontheffing sluitingstijd is € 12,60 in plaats van € 13,00 volgens de actuele informatie",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/ontheffing-sluitingstijd/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U stuurt een ingevulde Bibob-formulier mee met de vergunningsaanvraag",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist de belangrijke voorwaarde dat een Bibob-formulier moet worden meegestuurd bij bepaalde vergunningsaanvragen",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/exploitatievergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Situatietekening. Kopie van uw uittreksel uit het handelsregister van de Kamer van Koophandel.",
+          "original_reference": "Eventueel aanvullende documenten zoals situatietekeningen of verklaringen van de Kamer van Koophandel",
+          "note": "De originele tekst beschrijft deze documenten als 'eventueel', terwijl ze volgens de bronpagina verplicht zijn bij bepaalde vergunningsaanvragen",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/standplaatsvergunning/"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont drie belangrijke verschillen: een afwijkend bedrag voor de ontheffing sluitingstijd, het ontbreken van informatie over de Bibob-toets in de originele tekst, en onduidelijkheid over welke documenten verplicht zijn versus optioneel. Deze verschillen hebben impact op de volledigheid en accuraatheid van de informatievoorziening aan aanvragers."
+  }
+}

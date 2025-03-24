@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "SCHIEDAM",
+      "contact": {
+        "phone": "14 010",
+        "email": "contact@schiedam.nl",
+        "website": "http://www.schiedam.nl"
+      }
+    },
+    "service": {
+      "id": 2,
+      "name": "Bord of spandoek plaatsen aan de openbare weg"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "In 2025 bedragen deze kosten €19,30.",
+        "status": "false",
+        "note": "Dit bedrag is niet correct volgens de officiële bronnen van de gemeente Schiedam. De actuele legeskosten voor 2024 zijn anders en de tarieven voor 2025 zijn nog niet vastgesteld."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://schiedam.nl/a-tot-z/informatiestand-plaatsen",
+      "https://www.schiedam.nl/a-tot-z/standplaatsvergunning",
+      "https://www.schiedam.nl/a-tot-z/voorwerpen-op-aan-de-weg-plaatsen",
+      "https://schiedam.nl/a-tot-z/standplaatsvergunning",
+      "https://www.schiedam.nl/a-tot-z/informatiestand-plaatsen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://example.com",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een aanvraag voor een standplaatsvergunning moet ten minste drie weken voordat de standplaats wordt ingenomen, worden ingediend.",
+          "original_reference": "De behandeling van een ontheffing voor het plaatsen van voorwerpen op openbare gemeentegrond duurt maximaal 8 weken.",
+          "note": "De originele tekst vermeldt alleen de maximale behandeltermijn van 8 weken, maar niet de minimale aanvraagtermijn van 3 weken vooraf die in de bron wordt genoemd.",
+          "source_urls": [
+            "https://www.schiedam.nl/a-tot-z/standplaatsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Kopie uittreksel Kamer van Koophandel",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat een KvK-uittreksel nodig is, terwijl dit wel als vereiste wordt genoemd in de bronnen.",
+          "source_urls": [
+            "https://www.schiedam.nl/a-tot-z/standplaatsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een vergunning of ontheffing kan worden geweigerd in het belang van: De openbare orde, De openbare veiligheid, De volksgezondheid, De bescherming van het milieu",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de specifieke weigeringsgronden die in de bron worden genoemd.",
+          "source_urls": [
+            "https://www.schiedam.nl/a-tot-z/standplaatsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie die niet in de originele tekst staat, waaronder de minimale aanvraagtermijn van 3 weken, de vereiste van een KvK-uittreksel en specifieke weigeringsgronden. Deze informatie is essentieel voor een complete en accurate beschrijving van de aanvraagprocedure."
+  }
+}

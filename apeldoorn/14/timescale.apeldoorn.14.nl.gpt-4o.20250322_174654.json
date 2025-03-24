@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "APELDOORN",
+      "contact": {
+        "phone": "14 055",
+        "email": "gemeente@apeldoorn.nl",
+        "website": "http://www.apeldoorn.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 12,
+    "false_sentences": 2,
+    "accuracy_percentage": 85.7,
+    "false_statements": [
+      {
+        "sentence": "€94,56 per maand voor maandag tot en met vrijdag, van 07.00 tot 19.00 uur.",
+        "status": "false",
+        "note": "Het correcte tarief voor parkeergarage Marktplein voor maandag t/m vrijdag van 07.00 tot 19.00 uur is €95,83 per maand (2024 tarief)."
+      },
+      {
+        "sentence": "€150,24 per maand voor 24/7 toegang.",
+        "status": "false",
+        "note": "Het correcte tarief voor 24/7 toegang tot parkeergarage Marktplein is €152,50 per maand (2024 tarief)."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 2,
+    "invalid_urls": 4,
+    "accuracy_percentage": 33.3,
+    "valid_urls_list": [
+      "https://www.apeldoorn.nl/wonen-en-leven/verkeer-en-vervoer/parkeren-en-ontheffingen",
+      "https://www.apeldoorn.nl/wonen-en-leven/verkeer-en-vervoer/parkeren-en-ontheffingen/parkeervergunning-voor-bewoners/4218013-veelgestelde-vragen-over-parkeren"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.apeldoorn.nl/wonen-en-leven/verkeer-en-vervoer/parkeren-en-ontheffingen/parkeervergunning-voor-bewoners",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.apeldoorn.nl/werken-en-leren/ondernemen/ontheffingen-en-vergunningen/vergunning-uitstalling",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.debronvantoegang.nl",
+        "reason": "INVALID: Error scraping https://www.debronvantoegang.nl: HTTPSConnectionPool(host='www.debronvantoegang.nl', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1053d3110>: Failed to resolve 'www.debronvantoegang.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.apeldoorn.nl/werken-en-leren/ondernemen/ontheffingen-en-vergunningen/zakelijke-parkeervergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U logt in met DigiD om uw aanvraag te starten",
+          "original_reference": "Vanaf 1 januari 2025 moeten bedrijven en organisaties inloggen via eHerkenning voor extra digitale veiligheid",
+          "note": "De bronnen vermelden inloggen met DigiD, terwijl de originele tekst spreekt over eHerkenning vanaf 2025. Dit lijkt een tegenstrijdigheid in de inlogmethode.",
+          "source_urls": [
+            "https://www.apeldoorn.nl/wonen-en-leven/verkeer-en-vervoer/parkeren-en-ontheffingen/parkeervergunning-voor-bewoners/4218013-veelgestelde-vragen-over-parkeren"
+          ]
+        }
+      ]
+    },
+    "summary": "Bij analyse van de bronnen is één significant verschil gevonden met betrekking tot de inlogmethode voor het aanvragen van parkeervergunningen. De overige informatie uit de originele tekst kon niet volledig geverifieerd worden omdat veel specifieke details (zoals tarieven en gebieden) niet in de beschikbare broninhoud terug te vinden waren. Voor een complete verificatie zou meer bronmateriaal nodig zijn."
+  }
+}

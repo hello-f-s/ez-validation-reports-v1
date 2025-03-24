@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ALPHEN-CHAAM",
+      "contact": {
+        "phone": "14013",
+        "email": "info@alphen-chaam.nl",
+        "website": "http://www.alphen-chaam.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Voor verdere vragen of ondersteuning kunt u contact opnemen met de gemeente op het volgende adres: Willibrordplein 15131 AV Alphen.",
+        "status": "false",
+        "note": "Het juiste adres van de gemeente Alphen-Chaam is Willibrordplein 1, 5131 AV Alphen. In de tekst ontbreekt een komma tussen het huisnummer en de postcode."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.alphen-chaam.nl/vergunningen-en-ontheffingen/vergunningen-en-ontheffingen-voor-ondernemers",
+      "https://www.alphen-chaam.nl/omgevingsvergunning",
+      "https://www.alphen-chaam.nl/horecavergunning",
+      "https://www.alphen-chaam.nl/ondernemen/vergunningen-en-ontheffingen-voor-ondernemers",
+      "https://www.alphen-chaam.nl/conceptverzoek"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "€ 178,95",
+          "original_reference": "Deze kosten kunt u terugvinden in de legesverordening, waar een overzicht van de kosten per activiteit is opgenomen.",
+          "note": "De originele tekst verwijst alleen naar een legesverordening, terwijl de bron een specifiek bedrag van €178,95 noemt voor een horecavergunning.",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/horecavergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bij uitzonderingen, bijvoorbeeld als de aanvraag niet compleet is, kunnen we deze periode met 8 weken verlengen.",
+          "original_reference": "In uitzonderlijke gevallen, zoals onvolledige aanvragen of grotere projecten, kan deze periode worden verlengd.",
+          "note": "De bron specificeert expliciet dat de verlenging 8 weken is, terwijl de originele tekst geen specifieke verlengingstermijn noemt.",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/omgevingsvergunning",
+            "https://www.alphen-chaam.nl/horecavergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U dient een conceptverzoek in voordat u een vergunningaanvraag doet.",
+          "original_reference": "Bij vragen of wanneer een vergunningcheck niet lukt, kunt u een conceptverzoek indienen via e-mail.",
+          "note": "De bron geeft aan dat een conceptverzoek moet worden ingediend vóór de vergunningaanvraag, terwijl de originele tekst dit presenteert als optioneel bij vragen of problemen.",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/conceptverzoek"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn drie belangrijke verschillen gevonden tussen de originele tekst en de bronnen: 1) specifieke kosteninformatie die ontbreekt in de originele tekst, 2) een concrete verlengingstermijn van 8 weken die niet genoemd wordt in het origineel, en 3) verschillende interpretaties van wanneer een conceptverzoek moet worden ingediend. De bronnen zijn over het algemeen specifieker en concreter in hun informatie dan de originele tekst."
+  }
+}

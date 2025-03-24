@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DEVENTER",
+      "contact": {
+        "phone": "14 0570",
+        "email": "gemeente@deventer.nl",
+        "website": "http://www.deventer.nl"
+      }
+    },
+    "service": {
+      "id": 22,
+      "name": "Woonruimte splitsen of samenvoegen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "Voor het splitsen of samenvoegen van een woonruimte in Deventer kunnen specifieke voorwaarden van toepassing zijn. In de context van kamerverhuur heeft u bijvoorbeeld een omzettingsvergunning nodig als de WOZ-waarde van het pand onder de NHG-grens ligt, of als u drie of meer kamers verhuurt terwijl u zelf niet in de woning verblijft.",
+        "status": "false",
+        "note": "In Deventer is een omzettingsvergunning altijd nodig bij verhuur van 3 of meer kamers, ongeacht de WOZ-waarde of het al dan niet zelf bewonen van het pand. De WOZ-waarde en NHG-grens zijn geen criteria voor de vergunningsplicht volgens het huidige beleid van de gemeente Deventer."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.deventer.nl/kamersverhuren",
+      "https://www.deventer.nl/loketten/digitaal-loket/bouw-en-verbouw-vergunning",
+      "http://www.deventer.nl/loketten/digitaal-loket/bouw-en-verbouw-vergunning",
+      "https://www.deventer.nl",
+      "https://www.deventer.nl/bouwen-en-verbouwen/bouw-en-verbouw-vergunning",
+      "https://www.deventer.nl/vooroverleg"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U heeft een omzettingsvergunning kamerverhuur nodig als u 3 of meer kamers verhuurt. Blijft u zelf in de woning wonen of gaat u er zelf ook wonen? Dan heeft u een vergunning nodig als u 2 of meer kamers verhuurt.",
+          "original_reference": "In de context van kamerverhuur heeft u bijvoorbeeld een omzettingsvergunning nodig als de WOZ-waarde van het pand onder de NHG-grens ligt, of als u drie of meer kamers verhuurt terwijl u zelf niet in de woning verblijft.",
+          "note": "De bronpagina maakt een duidelijk onderscheid tussen situaties waarbij de verhuurder wel of niet in de woning woont, wat niet correct is weergegeven in de originele tekst.",
+          "source_urls": [
+            "https://www.deventer.nl/kamersverhuren"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U heeft geen omzettingsvergunning nodig als de vastgestelde WOZ-waarde van het kamerverhuurpand ten tijde van de aanvraag boven de NHG-grens blijft. In 2025 is dit € 450.000.",
+          "original_reference": "als de WOZ-waarde van het pand onder de NHG-grens ligt",
+          "note": "De originele tekst specificeert niet het concrete bedrag van de NHG-grens (€450.000 in 2025) en is onduidelijk over de voorwaarde (boven vs. onder de grens).",
+          "source_urls": [
+            "https://www.deventer.nl/kamersverhuren"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voordat u een aanvraag doet, kunt u contact opnemen met de gemeente via telefoonnummer 14 0570. Zo kunt u onderzoeken of er nog ruimte is voor een nieuw kamerverhuurpand binnen het postcodegebied.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke voorbereidende stappen, zoals het controleren van beschikbare ruimte in het postcodegebied via de gemeente.",
+          "source_urls": [
+            "https://www.deventer.nl/kamersverhuren"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten belangrijke aanvullende details over de voorwaarden voor kamerverhuur die niet of onvolledig in de originele tekst staan. Met name de specifieke regels rond wel/niet zelf bewonen, de concrete NHG-grens en de vereiste controle van beschikbare ruimte in het postcodegebied zijn belangrijke verschillen. De originele tekst zou geactualiseerd moeten worden met deze specifieke informatie voor een complete en accurate weergave van de voorwaarden."
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LEUSDEN",
+      "contact": {
+        "phone": "14 033",
+        "email": "gemeente@leusden.nl",
+        "website": "http://www.leusden.nl/"
+      }
+    },
+    "service": {
+      "id": 13,
+      "name": "Omzettingsvergunning voor kamerverhuur aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "De behandeltermijn van een complexe aanvraag is maximaal 6 maanden.",
+        "status": "false",
+        "note": "Volgens de gemeente Leusden is de behandeltermijn voor een uitgebreide (complexe) procedure maximaal 26 weken, niet 6 maanden. Hoewel dit in de praktijk op hetzelfde neerkomt, gebruikt de gemeente specifiek de term '26 weken' in haar officiële communicatie."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 9,
+    "valid_urls": 6,
+    "invalid_urls": 3,
+    "accuracy_percentage": 66.7,
+    "valid_urls_list": [
+      "https://www.leusden.nl/en/bouwen-en-wonen/kamergewijze-verhuur",
+      "https://www.leusden.nl/ondernemersloket/vergunningen-en-meldingen-voor-ondernemers",
+      "https://www.leusden.nl/en/bouwen-en-wonen/omgevingsvergunning-aanvragen",
+      "https://www.leusden.nl/bouwen-en-wonen/omgevingsvergunning-aanvragen",
+      "https://www.leusden.nl",
+      "https://www.leusden.nl/en/ondernemersloket/vergunningen-en-meldingen-voor-ondernemers"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.leusden.nl\">Gemeente",
+        "reason": "INVALID: Error scraping https://www.leusden.nl\">Gemeente: HTTPSConnectionPool(host='www.leusden.nl%22%3egemeente', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106257e00>: Failed to resolve 'www.leusden.nl%22%3egemeente' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.omgevingsloket.nl\">omgevingsloket</a>.",
+        "reason": "INVALID: Error scraping https://www.omgevingsloket.nl\">omgevingsloket</a>.: HTTPSConnectionPool(host='www.omgevingsloket.nl%22%3eomgevingsloket%3c', port=443): Max retries exceeded with url: /a%3E. (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106239450>: Failed to resolve 'www.omgevingsloket.nl%22%3eomgevingsloket%3c' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.omgevingsloket.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voordat u met een nieuw plan begint is het belangrijk te weten wat voor effect uw plan heeft op uw omgeving en wie er met uw plannen te maken krijgt [...] Het op tijd betrekken heet 'participatie'.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over participatie en het betrekken van omwonenden, terwijl dit volgens de bronnen een belangrijke voorbereidende stap is.",
+          "source_urls": [
+            "https://www.leusden.nl/bouwen-en-wonen/omgevingsvergunning-aanvragen",
+            "https://www.leusden.nl/en/bouwen-en-wonen/omgevingsvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U ontvangt van ons berichten over de voortgang, het verloop en de afhandeling van uw vergunningaanvraag of sloopmelding. Gemeente Leusden gebruikt een veilige berichtenomgeving via de website Jeleefomgeving.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist informatie over het communicatieproces via de Jeleefomgeving-website en de manier waarop aanvragers op de hoogte worden gehouden.",
+          "source_urls": [
+            "https://www.leusden.nl/bouwen-en-wonen/omgevingsvergunning-aanvragen",
+            "https://www.leusden.nl/en/bouwen-en-wonen/omgevingsvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "aangelegen gronden en bouwwerken",
+          "original_reference": "aangrenzende gronden en bouwwerken",
+          "note": "Er is een klein maar relevant verschil in terminologie tussen 'aangelegen' en 'aangrenzende' gronden in de voorwaarden.",
+          "source_urls": [
+            "https://www.leusden.nl/en/bouwen-en-wonen/kamergewijze-verhuur"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie over participatie en communicatie die niet in de originele tekst staat. Ook is er een klein verschil in terminologie bij de voorwaarden. De belangrijkste toevoeging is de informatie over het betrekken van omwonenden en andere belanghebbenden voorafgaand aan de aanvraag, en het gebruik van de Jeleefomgeving als communicatieplatform tijdens de procedure."
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DELFT",
+      "contact": {
+        "phone": "14 015",
+        "email": "null",
+        "website": "http://www.delft.nl"
+      }
+    },
+    "service": {
+      "id": 13,
+      "name": "Omzettingsvergunning voor kamerverhuur aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 27,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.4,
+    "false_statements": [
+      {
+        "sentence": "U kunt via WhatsApp contact opnemen op 06 527 39 476.",
+        "status": "false",
+        "note": "Het WhatsApp nummer van gemeente Delft is 06 31 99 32 89, niet 06 527 39 476 volgens de officiële website van de gemeente Delft."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.delft.nl/omgevingsvergunning-milieu",
+      "https://www.delft.nl/omgevingsvergunning-aanvragen",
+      "https://www.delft.nl/uw-plan-voorleggen-aan-de-gemeente",
+      "https://www.delft.nl/omgevingsvergunning-bouwen",
+      "https://www.delft.nl/omgevingsvergunning-voor-aanleg"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Er zijn geen kosten.",
+          "original_reference": "Voor de aanvraag van een omgevingsvergunning zijn kosten verbonden. De kosten zijn gebaseerd op zowel het ruimtelijke als het bouwtechnische deel en worden berekend als een percentage van de geschatte bouwkosten.",
+          "note": "De originele tekst stelt dat er kosten zijn voor een omgevingsvergunning, terwijl de bron (specifiek voor milieuvergunning) aangeeft dat er geen kosten zijn. Dit is een belangrijk verschil in informatie.",
+          "source_urls": [
+            "https://www.delft.nl/omgevingsvergunning-milieu"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het bouwtechnische deel gaat over of uw bouwwerk voldoet aan de technische regels en kwaliteitseisen. U heeft een kwaliteitsborger nodig die dit voor u controleert.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over de vereiste kwaliteitsborger voor het bouwtechnische deel van de vergunning.",
+          "source_urls": [
+            "https://www.delft.nl/omgevingsvergunning-bouwen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Verwijder persoonsgegevens uit bijlagen. De gemeente publiceert alle bijlagen bij de aanvraag van een omgevingsvergunning online.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over het verwijderen van persoonsgegevens uit bijlagen voordat deze worden ingediend.",
+          "source_urls": [
+            "https://www.delft.nl/omgevingsvergunning-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn drie belangrijke verschillen gevonden tussen de originele tekst en de bronnen: 1) tegenstrijdige informatie over kosten voor de vergunning, 2) het ontbreken van informatie over de verplichte kwaliteitsborger, en 3) het ontbreken van instructies over het verwijderen van persoonsgegevens uit bijlagen. Deze verschillen zijn significant voor de volledigheid en accuraatheid van de informatie voor aanvragers."
+  }
+}

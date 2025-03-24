@@ -1,0 +1,87 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MEDEMBLIK",
+      "contact": {
+        "phone": "(0229) 85 60 00",
+        "email": "info@medemblik.nl",
+        "website": "http://www.medemblik.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Bewoners met een garage kunnen een ontheffing voor parkeren in hun eigen garage aanvragen, hierbij zijn kosten van toepassing.",
+        "status": "false",
+        "note": "Op basis van de officiële bronnen van gemeente Medemblik is er geen informatie te vinden over ontheffingen voor parkeren in eigen garage. Dit lijkt een onjuiste vermelding aangezien bewoners geen ontheffing nodig hebben om in hun eigen garage te parkeren."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.medemblik.nl/vergunningen/collecte-verkoop-en-reclame/standplaatsvergunning/melding-ideele-standplaats",
+      "https://www.medemblik.nl/bouwen-en-verbouwen/omgevingswet-en-bouwvergunningen/omgevingsvergunning",
+      "https://www.medemblik.nl/vergunningen/opslag-woningbeheer-en-parkeren/parkeervergunning-oostelijk-deel-westereiland-medemblik",
+      "https://www.medemblik.nl/parkeren-en-verkeer/gehandicaptenparkeerkaart-aanvragen-sociaal-loket-medemblik"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.medemblik.nl/parkeren-en-verkeer/gehandicaptenparkeerplaats-aanvragen-sociaal-loket-medemblik",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bereikbaar: maandag t/m donderdag van 8.30 uur tot 17.00 uur en vrijdag van 8.30 uur tot 14.00 uur",
+          "original_reference": "bereikbaar via telefoonnummer (0229) 85 60 00 van maandag tot en met donderdag tussen 8.30 uur en 17.00 uur, en vrijdag tot 14.00 uur",
+          "note": "In de originele tekst ontbreekt de starttijd (8:30 uur) voor vrijdag",
+          "source_urls": [
+            "https://www.medemblik.nl/vergunningen/opslag-woningbeheer-en-parkeren/parkeervergunning-oostelijk-deel-westereiland-medemblik"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Gebied tussen Westereiland 67 en kruising Westereiland/Hoogesteeg",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over het specifieke gebied waar de parkeervergunning geldig is",
+          "source_urls": [
+            "https://www.medemblik.nl/vergunningen/opslag-woningbeheer-en-parkeren/parkeervergunning-oostelijk-deel-westereiland-medemblik"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wat te doen bij: Verhuizing, Ander voertuig, Leenauto",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over wat te doen bij verhuizing, wijziging voertuig of gebruik leenauto",
+          "source_urls": [
+            "https://www.medemblik.nl/vergunningen/opslag-woningbeheer-en-parkeren/parkeervergunning-oostelijk-deel-westereiland-medemblik"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten enkele belangrijke aanvullingen die ontbreken in de originele tekst, waaronder het exacte gebied waar de parkeervergunning geldig is en procedures bij verhuizing of voertuigwijziging. Ook is er een kleine discrepantie in de vermelde openingstijden voor vrijdag. Deze informatie is essentieel voor een complete dienstverlening aan inwoners."
+  }
+}

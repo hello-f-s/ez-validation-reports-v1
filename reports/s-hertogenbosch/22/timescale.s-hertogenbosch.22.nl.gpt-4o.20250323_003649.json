@@ -1,0 +1,81 @@
+{
+  "context": {
+    "municipality": {
+      "name": "S-HERTOGENBOSCH",
+      "contact": {
+        "phone": "(073) 615 51 55",
+        "email": "gemeente@s-hertogenbosch.nl",
+        "website": "http://www.s-hertogenbosch.nl"
+      }
+    },
+    "service": {
+      "id": 22,
+      "name": "Woonruimte splitsen of samenvoegen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Een reguliere aanvraag wordt in principe binnen 8 weken behandeld.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente 's-Hertogenbosch wordt een reguliere aanvraag binnen maximaal 6 weken behandeld, niet 8 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 6,
+    "invalid_urls": 1,
+    "accuracy_percentage": 85.7,
+    "valid_urls_list": [
+      "https://www.s-hertogenbosch.nl/inwoner/bouwen-en-wonen/huur-of-koopwoning/",
+      "https://www.s-hertogenbosch.nl/",
+      "https://www.s-hertogenbosch.nl/product/omgevingsvergunning/",
+      "https://www.s-hertogenbosch.nl/product/omgevingsvergunning-wabo/",
+      "https://www.s-hertogenbosch.nl/product/woonvoorziening/",
+      "https://www.s-hertogenbosch.nl/regelsbedandbreakfast/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.overheid.nl/overheidsinformatie/",
+        "reason": "INVALID: Error scraping https://www.overheid.nl/overheidsinformatie/: 410 Client Error: Gone for url: https://www.overheid.nl/overheidsinformatie/"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Let op! Vanaf 1 januari 2024 zijn de Omgevingswet en Wet kwaliteitsborging voor het bouwen (Wkb) ingegaan. Dit kan effect hebben op jouw vergunningaanvraag.",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden een belangrijke wetswijziging vanaf 1 januari 2024 die effect heeft op vergunningaanvragen. Deze informatie ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.s-hertogenbosch.nl/product/omgevingsvergunning/",
+            "https://www.s-hertogenbosch.nl/product/omgevingsvergunning-wabo/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Lukt het niet om de aanvraag via het Omgevingsloket in te dienen? Mail het dan naar omgevingsloket@s-hertogenbosch.nl of print het aanvraagformulier uit, onderteken en verstuur het met de bouwtekening in drievoud naar onderstaand adres.",
+          "original_reference": "Mocht dit niet lukken, kunt u het aanvraagformulier printen, ondertekenen en samen met de bouwtekeningen opsturen naar het Stadskantoor van de gemeente 's-Hertogenbosch.",
+          "note": "De bronnen bieden een extra optie om per e-mail in te dienen en specificeren dat bouwtekeningen in drievoud moeten worden aangeleverd. Ook wordt het specifieke e-mailadres vermeld.",
+          "source_urls": [
+            "https://www.s-hertogenbosch.nl/product/omgevingsvergunning-wabo/"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele tekst en de bronnen. Ten eerste ontbreekt in de originele tekst informatie over de nieuwe Omgevingswet en Wet kwaliteitsborging die sinds 1 januari 2024 van kracht zijn. Ten tweede bieden de bronnen meer specifieke informatie over de indiening van aanvragen, waaronder een e-mailoptie en de vereiste van bouwtekeningen in drievoud."
+  }
+}

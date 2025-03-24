@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AMERSFOORT",
+      "contact": {
+        "phone": "14 033",
+        "email": "info@amersfoort.nl",
+        "website": "http://www.amersfoort.nl"
+      }
+    },
+    "service": {
+      "id": 6,
+      "name": "Integriteitsonderzoek (Wet Bibob)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 1,
+    "true_sentences": 0,
+    "false_sentences": 1,
+    "accuracy_percentage": 0.0,
+    "false_statements": [
+      {
+        "sentence": "Hier kan geen specifieke informatie over gevonden worden op de website van deze gemeente.",
+        "status": "false",
+        "note": "De gemeente Amersfoort heeft een uitgebreide website met verschillende informatiepagina's waar burgers specifieke informatie kunnen vinden, waaronder pagina's over WOO-verzoeken, informatieverzoeken, VOG-aanvragen en algemene gemeentelijke informatie."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 3,
+    "invalid_urls": 2,
+    "accuracy_percentage": 60.0,
+    "valid_urls_list": [
+      "https://www.amersfoort.nl/een-informatieverzoek",
+      "https://www.amersfoort.nl/informatie-van-de-gemeente-opzoeken-aanvragen",
+      "https://www.amersfoort.nl/een-woo-verzoek"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.amersfoort.nl/verklaring-omtrent-gedrag-vog",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.amersfoort.nl/privacyverklaring-gemeente-amersfoort",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Ben je op zoek naar informatie van de gemeente en kun je die niet vinden via een van de interne of externe websites en archieven? Dan kun je een informatieverzoek doen.",
+          "original_reference": "No matching information",
+          "note": "De bronnen bevatten specifieke informatie over het doen van informatieverzoeken, terwijl dit volledig ontbreekt in de originele inhoud.",
+          "source_urls": [
+            "https://www.amersfoort.nl/een-informatieverzoek",
+            "https://www.amersfoort.nl/informatie-van-de-gemeente-opzoeken-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Je kunt informatie bij Gemeente Amersfoort aanvragen op 2 manieren: Een informatieverzoek voor feitelijke informatie over bijvoorbeeld vergunningen, en een Woo-verzoek voor achtergrondinformatie.",
+          "original_reference": "No matching information",
+          "note": "De bronnen beschrijven twee specifieke manieren om informatie aan te vragen (informatieverzoek en Woo-verzoek) die niet genoemd worden in de originele inhoud.",
+          "source_urls": [
+            "https://www.amersfoort.nl/informatie-van-de-gemeente-opzoeken-aanvragen",
+            "https://www.amersfoort.nl/een-woo-verzoek"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten uitgebreide informatie over het opvragen van gemeentelijke informatie via twee verschillende procedures (informatieverzoek en Woo-verzoek), terwijl deze informatie volledig ontbreekt in de originele inhoud. De bronnen bieden complete procedures, contactgegevens en voorwaarden voor beide aanvraagmethoden."
+  }
+}

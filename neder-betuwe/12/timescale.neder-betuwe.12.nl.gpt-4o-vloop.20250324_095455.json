@@ -1,0 +1,63 @@
+{
+  "context": {
+    "municipality": {
+      "name": "NEDER-BETUWE",
+      "contact": {
+        "phone": "0140488",
+        "email": "info@nederbetuwe.nl",
+        "website": "http://www.nederbetuwe.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "Openingstijden (op afspraak): maandag t/m donderdag van 09.00 tot 12.00 uur en 13.00 tot 16.00 uur, donderdagavond van 17.00 tot 19.30 uur, en vrijdag van 9.00 tot 12.00 uur.",
+        "status": "false",
+        "note": "De actuele openingstijden van het gemeentehuis zijn: maandag t/m donderdag van 8.30 tot 16.30 uur, donderdagavond van 17.00 tot 20.00 uur, en vrijdag van 8.30 tot 12.30 uur volgens de officiële website van gemeente Neder-Betuwe."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 0,
+    "invalid_urls": 5,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.nederbetuwe.nl/en/bouwen-en-wonen/vergunningen/omgevingsvergunning",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "http://www.nederbetuwe.nl/bouwen-en-wonen/vergunningen/omgevingsvergunning",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.nederbetuwe.nl/en/bouwen-en-wonen/milieu-informatie",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "http://www.nederbetuwe.nl/bouwen-en-wonen/milieu-informatie",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.nederbetuwe.nl/en/bouwen-en-verbouwen/soorten-bouwplannen-en-initiatieven",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  }
+}

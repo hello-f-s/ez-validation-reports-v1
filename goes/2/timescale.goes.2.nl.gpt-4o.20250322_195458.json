@@ -1,0 +1,75 @@
+{
+  "context": {
+    "municipality": {
+      "name": "GOES",
+      "contact": {
+        "phone": "14 0113",
+        "email": "stadskantoor@goes.nl",
+        "website": "http://www.goes.nl"
+      }
+    },
+    "service": {
+      "id": 2,
+      "name": "Bord of spandoek plaatsen aan de openbare weg"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 9,
+    "true_sentences": 8,
+    "false_sentences": 1,
+    "accuracy_percentage": 88.9,
+    "false_statements": [
+      {
+        "sentence": "Voor het plaatsen van borden of spandoeken aan de openbare weg dient u contact op te nemen met Stichting Goes Marketing via de website www.goesisgoes.nl.",
+        "status": "false",
+        "note": "Voor het plaatsen van reclame-uitingen zoals borden of spandoeken moet men contact opnemen met de gemeente Goes zelf, niet met Stichting Goes Marketing. Dit kan via het omgevingsloket of door direct contact op te nemen met de gemeente."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.goes.nl/vergunning-spandoeken",
+      "https://www.goes.nl/terras-plaatsen",
+      "https://www.goes.nl/reclame-plaatsen",
+      "https://www.goesisgoes.nl",
+      "https://www.goes.nl/milieu-omgevingsvergunning-melding",
+      "https://www.goes.nl/standplaats-aanvragen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U heeft een vergunning nodig wanneer u (tijdelijke) spandoeken en/of vlaggenmasten wilt plaatsen bij een evenement of een activiteit. De vlaggenmasten dienen verrijdbaar te zijn. Maximaal dertig spandoeken bij een wielerwedstrijd en twintig bij overige evenementen en activiteiten. Vlaggenmasten maximaal tien stuks.",
+          "original_reference": "Voor het plaatsen van borden of spandoeken aan de openbare weg dient u contact op te nemen met Stichting Goes Marketing",
+          "note": "De originele tekst verwijst alleen naar contact met Goes Marketing, terwijl de brontekst specifieke vergunningseisen en maximale aantallen noemt voor spandoeken en vlaggenmasten",
+          "source_urls": [
+            "https://www.goes.nl/vergunning-spandoeken"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Selecteer \"Vergunning ophangen spandoek\" in de Snelbalie Vergunningen.",
+          "original_reference": "Neem contact op met Stichting Goes Marketing voor informatie over beschikbare routes en mogelijke vergunningen via www.goesisgoes.nl",
+          "note": "De aanvraagprocedure verschilt: de bron verwijst naar de Snelbalie Vergunningen terwijl de originele tekst alleen verwijst naar contact met Goes Marketing",
+          "source_urls": [
+            "https://www.goes.nl/vergunning-spandoeken"
+          ]
+        }
+      ]
+    },
+    "summary": "De originele informatie blijkt onvolledig en deels onjuist. De gemeente Goes heeft een specifiek vergunningensysteem via de Snelbalie en stelt duidelijke eisen aan het aantal toegestane spandoeken en vlaggenmasten. Deze belangrijke details ontbreken in de originele tekst die alleen verwijst naar contact met Goes Marketing."
+  }
+}

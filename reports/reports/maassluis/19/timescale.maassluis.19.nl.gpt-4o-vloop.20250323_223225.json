@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MAASSLUIS",
+      "contact": {
+        "phone": "14 010",
+        "email": "gemeente@maassluis.nl",
+        "website": "http://www.maassluis.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 16,
+    "true_sentences": 15,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.8,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor een aanwezigheidsvergunning voor het plaatsen van twee kansspelautomaten zijn € 271,50 voor een periode van 3 jaar.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Maassluis bedragen de kosten voor een aanwezigheidsvergunning voor kansspelautomaten € 283,50 voor een periode van 3 jaar."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.maassluis.nl/kansspelautomaat-plaatsen",
+      "https://www.maassluis.nl/loterij-prijsvraag-bingo-organiseren",
+      "https://www.maassluis.nl/exploitatievergunning-horecabedrijf",
+      "https://www.maassluis.nl/standplaats-aanvragen",
+      "https://www.maassluis.nl/geluidsoverlast-veroorzaken"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "De aanwezigheidsvergunning geldt voor drie kalenderjaren.",
+          "original_reference": "De kosten voor een aanwezigheidsvergunning voor het plaatsen van twee kansspelautomaten zijn € 271,50 voor een periode van 3 jaar.",
+          "note": "De geldigheidsduur van 3 jaar wordt in beide bronnen bevestigd",
+          "source_urls": [
+            "https://www.maassluis.nl/kansspelautomaat-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een kansspelautomaat is een automaat waarmee iemand geld kan winnen, zoals een fruitautomaat. U vraagt een vergunning aan voor het plaatsen van twee kansspelautomaten.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist deze verduidelijkende definitie van wat een kansspelautomaat is en de specifieke vermelding dat de vergunning voor twee automaten geldt",
+          "source_urls": [
+            "https://www.maassluis.nl/kansspelautomaat-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Aanvragen aanwezigheidsvergunning kansspelautomaatHeeft u al een aanwezigheidsvergunning?",
+          "original_reference": "Een aanvraagformulier voor een aanwezigheidsvergunning voor kansspelautomaten.",
+          "note": "De brontekst verwijst naar een specifiek aanvraagformulier met een directe link, terwijl de originele tekst alleen het bestaan van een formulier noemt zonder verdere details",
+          "source_urls": [
+            "https://www.maassluis.nl/kansspelautomaat-plaatsen"
+          ]
+        }
+      ]
+    },
+    "summary": "De broninhoud komt grotendeels overeen met de originele tekst, maar bevat enkele belangrijke aanvullingen. Met name de definitie van een kansspelautomaat en de specifieke vermelding dat de vergunning voor twee automaten geldt ontbreken in de originele tekst. Ook is er in de bron een concrete link naar het aanvraagformulier die in de originele tekst ontbreekt. De kernvoorwaarden, kosten en procedures zijn verder consistent tussen beide versies."
+  }
+}

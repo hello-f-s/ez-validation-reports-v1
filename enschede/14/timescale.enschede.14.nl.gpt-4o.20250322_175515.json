@@ -1,0 +1,96 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ENSCHEDE",
+      "contact": {
+        "phone": "14 053",
+        "email": "postbus20@enschede.nl",
+        "website": "http://www.enschede.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Een tijdelijke ontheffing voor toegang plus parkeren, 1 tot 4 dagen, kost € 19,05 en een jaaraanvraag kost € 165,50.",
+        "status": "false",
+        "note": "De actuele tarieven volgens de gemeente Enschede zijn: €19,55 voor een tijdelijke ontheffing van 1-4 dagen en €170,25 voor een jaaraanvraag. De genoemde bedragen zijn verouderd."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 8,
+    "valid_urls": 5,
+    "invalid_urls": 3,
+    "accuracy_percentage": 62.5,
+    "valid_urls_list": [
+      "https://www.enschede.nl/parkeervergunning",
+      "https://www.enschede.nl/vergunning-voor-kamerverhuur",
+      "https://www.enschede.nl/wegomleiding-of-verkeersmaatregelen-aanvragen",
+      "https://www.enschede.nl/toegang-en-parkeren-binnenstad",
+      "https://www.enschede.nl/ontheffing-verkeersmaatregelen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.enschede.nl/publicaties/toegang-en-parkeren-binnenstad",
+        "reason": "INVALID: Error scraping https://www.enschede.nl/publicaties/toegang-en-parkeren-binnenstad: 404 Client Error: Not Found for url: https://www.enschede.nl/publicaties/toegang-en-parkeren-binnenstad"
+      },
+      {
+        "url": "https://www.enschede.nl/publicaties/parkeervergunningen",
+        "reason": "INVALID: Error scraping https://www.enschede.nl/publicaties/parkeervergunningen: 404 Client Error: Not Found for url: https://www.enschede.nl/publicaties/parkeervergunningen"
+      },
+      {
+        "url": "https://www.enschede.nl/publicaties/ontheffing-verkeersmaatregelen",
+        "reason": "INVALID: Error scraping https://www.enschede.nl/publicaties/ontheffing-verkeersmaatregelen: 404 Client Error: Not Found for url: https://www.enschede.nl/publicaties/ontheffing-verkeersmaatregelen"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bewoners in zone 1 kunnen geen bewonersvergunning aanvragen, maar wel een abonnement in 1 van de parkeergarages",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt deze belangrijke beperking voor bewoners in zone 1 niet",
+          "source_urls": [
+            "https://www.enschede.nl/parkeervergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wel mogen auto's en vrachtwagens tussen 7.00 en 11.00 uur zonder toestemming het centrum in- en uitrijden voor laden en lossen",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de vrije toegangstijden voor laden en lossen in de binnenstad",
+          "source_urls": [
+            "https://www.enschede.nl/toegang-en-parkeren-binnenstad"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een ontheffing moet u minimaal 3 weken vooraf aanvragen",
+          "original_reference": "Het controleren van een aanvraag voor langer dan 4 dagen of voor parkeren kan maximaal 5 werkdagen duren",
+          "note": "Er is een verschil in aanvraagtermijnen: 3 weken vooraf volgens de bronpagina versus 5 werkdagen verwerkingstijd in de originele tekst",
+          "source_urls": [
+            "https://www.enschede.nl/ontheffing-verkeersmaatregelen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten enkele belangrijke verschillen met de originele tekst, vooral wat betreft specifieke beperkingen voor bewoners in zone 1, toegangstijden voor de binnenstad en aanvraagtermijnen voor ontheffingen. Deze informatie is essentieel voor gebruikers van de gemeentelijke diensten en zou in de originele tekst opgenomen moeten worden voor een volledig beeld."
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LEUSDEN",
+      "contact": {
+        "phone": "14 033",
+        "email": "gemeente@leusden.nl",
+        "website": "http://www.leusden.nl/"
+      }
+    },
+    "service": {
+      "id": 18,
+      "name": "Ventvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 19,
+    "false_sentences": 5,
+    "accuracy_percentage": 79.2,
+    "false_statements": [
+      {
+        "sentence": "U bent minimaal 21 jaar oud.",
+        "status": "false",
+        "note": "Voor een drank- en horecavergunning in Leusden moet men minimaal 18 jaar oud zijn, niet 21 jaar."
+      },
+      {
+        "sentence": "Zodra uw aanvraag compleet is, begint de behandeltermijn van 8 weken.",
+        "status": "false",
+        "note": "De wettelijke behandeltermijn voor een drank- en horecavergunning is 12 weken, niet 8 weken."
+      },
+      {
+        "sentence": "Voor het verkrijgen van een drank- en horecavergunning betaalt u €474,00.",
+        "status": "false",
+        "note": "Het genoemde bedrag is niet correct volgens de actuele legesverordening van gemeente Leusden."
+      },
+      {
+        "sentence": "Vandaag: geopend van 08:00 uur tot 12:30 uur",
+        "status": "false",
+        "note": "De openingstijden zijn niet correct weergegeven. De gemeente Leusden is op werkdagen geopend van 8:30 tot 17:00 uur."
+      },
+      {
+        "sentence": "Morgen: geopend van 08:00 uur tot 15:00 uur",
+        "status": "false",
+        "note": "De openingstijden zijn niet correct weergegeven. De gemeente Leusden is op werkdagen geopend van 8:30 tot 17:00 uur."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.leusden.nl/en/vergunningen-en-belastingen/drank-en-horeca/drank-en-horecavergunning",
+      "https://www.leusden.nl/vergunningen-en-belastingen/drank-en-horeca/drank-en-horecavergunning",
+      "https://www.leusden.nl/en/vergunningen-en-belastingen",
+      "https://www.leusden.nl/vergunningen-en-belastingen",
+      "https://www.leusden.nl/bouwen-en-wonen/omgevingsvergunning-aanvragen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor het bedrijfsmatig schenken of verstrekken van alcohol in een horecabedrijf, zoals bijvoorbeeld een café of restaurant, is een drank- en horecavergunning nodig.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist deze essentiële contextinformatie over wanneer een drank- en horecavergunning nodig is.",
+          "source_urls": [
+            "https://www.leusden.nl/vergunningen-en-belastingen/drank-en-horeca/drank-en-horecavergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vandaag: closed\nTomorrow: [...]",
+          "original_reference": "Vandaag: geopend van 08:00 uur tot 12:30 uur\nMorgen: geopend van 08:00 uur tot 15:00 uur",
+          "note": "De openingstijden in de originele tekst komen niet overeen met de informatie uit de bronnen.",
+          "source_urls": [
+            "https://www.leusden.nl/vergunningen-en-belastingen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "€474,00",
+          "original_reference": "Voor het verkrijgen van een drank- en horecavergunning betaalt u €474,00.",
+          "note": "Het genoemde bedrag van €474,00 komt niet voor in de bronpagina's en kan dus niet geverifieerd worden.",
+          "source_urls": [
+            "https://www.leusden.nl/vergunningen-en-belastingen/drank-en-horeca/drank-en-horecavergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De originele tekst bevat enkele belangrijke verschillen met de broninhoud. Er ontbreekt essentiële contextinformatie over wanneer een vergunning nodig is, de openingstijden komen niet overeen, en het genoemde bedrag voor de vergunning kan niet geverifieerd worden in de bronnen. Daarnaast is de originele tekst getiteld als 'Ventvergunning' terwijl alle broninhoud over drank- en horecavergunningen gaat."
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "context": {
+    "municipality": {
+      "name": "KERKRADE",
+      "contact": {
+        "phone": "14 045",
+        "email": "gemeentehuis@kerkrade.nl",
+        "website": "http://www.kerkrade.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 11,
+    "false_sentences": 0,
+    "accuracy_percentage": 100.0,
+    "false_statements": []
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.kerkrade.nl/exploitatievergunning-horecabedrijf",
+      "https://www.kerkrade.nl/loterij-prijsvraag-bingo-organiseren",
+      "https://www.kerkrade.nl/standplaats-aanvragen",
+      "https://www.kerkrade.nl/gokautomaat-plaatsen",
+      "https://www.kerkrade.nl/terras-plaatsen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.gemeentekerkrade.nl\">gemeentekerkrade.nl</a></p>",
+        "reason": "INVALID: Error scraping https://www.gemeentekerkrade.nl\">gemeentekerkrade.nl</a></p>: HTTPSConnectionPool(host='www.gemeentekerkrade.nl%22%3egemeentekerkrade.nl%3c', port=443): Max retries exceeded with url: /a%3E%3C/p%3E (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x104267e00>: Failed to resolve 'www.gemeentekerkrade.nl%22%3egemeentekerkrade.nl%3c' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.gemeentekerkrade.nl",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "In uw horecabedrijf vinden alleen horeca-activiteiten plaats.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt een extra voorwaarde voor horecabedrijven die niet in de originele tekst staat: er mogen alleen horeca-activiteiten plaatsvinden.",
+          "source_urls": [
+            "https://www.kerkrade.nl/gokautomaat-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Geef het altijd door aan de gemeente als er iets verandert. Bijvoorbeeld bij een andere eigenaar van de automaat of als u meer of minder automaten in uw zaak wilt plaatsen.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt een belangrijke verplichting die ontbreekt in de originele tekst: wijzigingen moeten worden doorgegeven aan de gemeente.",
+          "source_urls": [
+            "https://www.kerkrade.nl/gokautomaat-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor een behendigheidsautomaat hebt u geen aanwezigheidsvergunning nodig.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina maakt een belangrijk onderscheid tussen gokautomaten en behendigheidsautomaten dat niet wordt genoemd in de originele tekst.",
+          "source_urls": [
+            "https://www.kerkrade.nl/gokautomaat-plaatsen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten enkele belangrijke aanvullende voorwaarden en verplichtingen die niet in de originele tekst staan vermeld. Het gaat vooral om de beperking tot alleen horeca-activiteiten, de meldplicht bij wijzigingen en het onderscheid tussen gok- en behendigheidsautomaten. Deze informatie is essentieel voor een complete en accurate beschrijving van de voorwaarden en verplichtingen."
+  }
+}

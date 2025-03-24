@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "GOES",
+      "contact": {
+        "phone": "14 0113",
+        "email": "stadskantoor@goes.nl",
+        "website": "http://www.goes.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 27,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.4,
+    "false_statements": [
+      {
+        "sentence": "De houder/leidinggevende is minimaal 21 jaar en van onbesproken gedrag.",
+        "status": "false",
+        "note": "Volgens de Alcoholwet moet de leidinggevende minimaal 21 jaar zijn, maar de houder/eigenaar hoeft niet per se 21 jaar te zijn. De eigenaar moet wel voldoen aan de eisen van zedelijk gedrag maar hoeft niet dezelfde leeftijdseis te vervullen als een leidinggevende."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.goes.nl/alcoholvergunning",
+      "https://www.goes.nl/exploitatievergunning-horeca",
+      "https://www.goes.nl/milieu-omgevingsvergunning-melding",
+      "https://www.goes.nl/alcohol-schenken-tijdens-evenementen",
+      "https://www.goes.nl/standplaats-aanvragen",
+      "https://www.goes.nl"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wilt u alcohol verkopen in het horecabedrijf? Dan heeft u ook een Alcoholvergunning nodig. Een exploitatievergunning en een Alcoholvergunning vraagt u online aan.",
+          "original_reference": "Om een alcoholvergunning aan te vragen voor uw horecabedrijf in de gemeente Goes, moet u in ieder geval een exploitatievergunning hebben.",
+          "note": "De bronpagina benadrukt dat beide vergunningen online aangevraagd moeten worden, wat niet vermeld staat in de originele tekst.",
+          "source_urls": [
+            "https://www.goes.nl/alcoholvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De gemeente kan vragen dat u daartoe maatregelen neemt.",
+          "original_reference": "De omgeving heeft geen last van uw bedrijf.",
+          "note": "De bronpagina specificeert dat de gemeente kan eisen dat er maatregelen worden genomen om overlast te voorkomen, wat een belangrijke aanvulling is op de originele tekst.",
+          "source_urls": [
+            "https://www.goes.nl/exploitatievergunning-horeca"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Gebruik hiervoor eHerkenning. U kunt de aanvraag of melding alleen digitaal doen.",
+          "original_reference": "U vraagt de alcoholvergunning online aan bij de gemeente Goes.",
+          "note": "De bronpagina specificeert dat eHerkenning nodig is en dat aanvragen uitsluitend digitaal kunnen, wat belangrijke details zijn die ontbreken in de originele tekst.",
+          "source_urls": [
+            "https://www.goes.nl/milieu-omgevingsvergunning-melding"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de aanvraagprocedure: de bronnen specificeren dat eHerkenning vereist is en dat aanvragen uitsluitend digitaal kunnen. Ook wordt er in de bronnen meer nadruk gelegd op mogelijke maatregelen die de gemeente kan eisen om overlast te voorkomen. Deze details ontbreken in de originele tekst maar zijn wel belangrijk voor aanvragers."
+  }
+}

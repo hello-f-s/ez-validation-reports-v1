@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LEEUWARDEN",
+      "contact": {
+        "phone": "14 058",
+        "email": "gemeente@leeuwarden.nl",
+        "website": "http://www.leeuwarden.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "De exacte kosten voor behandelen van de aanvraag bedragen € 238,66.",
+        "status": "false",
+        "note": "Dit bedrag is onjuist. De kosten voor een omgevingsvergunning in Leeuwarden zijn variabel en afhankelijk van het type aanvraag en de activiteit. Er is geen vast bedrag van € 238,66 voor alle aanvragen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.leeuwarden.nl/andere-vergunningen-en-ontheffingen/bodeminformatie/",
+      "https://www.leeuwarden.nl/omgevingsvergunning/gebruikmaken-maken-of-veranderen-van-een-uitweg/",
+      "https://www.leeuwarden.nl/melden-bij-de-gemeente/milieuovertreding-door-bedrijven/",
+      "https://www.leeuwarden.nl",
+      "https://www.leeuwarden.nl/omgevingsvergunning/procedure-omgevingsvergunning-aanvragen-of-melden/",
+      "https://www.leeuwarden.nl/omgevingsvergunning/milieu-melding-of-vergunning/"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "De kosten voor de behandeling van uw aanvraag zijn € 238,66.",
+          "original_reference": "De exacte kosten voor behandelen van de aanvraag bedragen € 238,66.",
+          "note": "De vermelde kosten voor de behandeling van de aanvraag zijn identiek in beide bronnen.",
+          "source_urls": [
+            "https://www.leeuwarden.nl/omgevingsvergunning/gebruikmaken-maken-of-veranderen-van-een-uitweg/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Met Maatregelen op Maat weet u welke regels voor u gelden en wat u kunt doen om zich aan die regels te houden. Ook als u geen vergunning of melding nodig heeft.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat aanvullende informatie over 'Maatregelen op Maat' die niet in de originele tekst wordt genoemd. Dit is een belangrijk hulpmiddel voor ondernemers om aan de regels te voldoen.",
+          "source_urls": [
+            "https://www.leeuwarden.nl/omgevingsvergunning/milieu-melding-of-vergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U kunt een aanvraag als conceptverzoek indienen via het Omgevingsloket. Wij laten u dan weten hoe groot de kans is dat uw aanvraag wordt goedgekeurd.",
+          "original_reference": "No matching information",
+          "note": "De mogelijkheid om een conceptverzoek (voorheen vooroverleg) in te dienen wordt niet genoemd in de originele tekst, terwijl dit een belangrijke voorbereidende stap kan zijn.",
+          "source_urls": [
+            "https://www.leeuwarden.nl/omgevingsvergunning/procedure-omgevingsvergunning-aanvragen-of-melden/"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten twee belangrijke aanvullende diensten die niet in de originele tekst worden genoemd: de 'Maatregelen op Maat'-tool en de mogelijkheid tot het indienen van een conceptverzoek. Deze tools kunnen ondernemers helpen bij het voorbereiden van hun aanvraag. De vermelde kosten en andere procedurele aspecten zijn consistent met de originele tekst."
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "context": {
+    "municipality": {
+      "name": "BARNEVELD",
+      "contact": {
+        "phone": "14 0342",
+        "email": "info@barneveld.nl",
+        "website": "http://www.barneveld.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 11,
+    "false_sentences": 2,
+    "accuracy_percentage": 84.6,
+    "false_statements": [
+      {
+        "sentence": "Horeca-exploitatievergunning zonder Alcoholvergunning: € 235,00",
+        "status": "false",
+        "note": "Het correcte bedrag voor een horeca-exploitatievergunning zonder alcoholvergunning is € 238,00 volgens de actuele tarieven op de website van gemeente Barneveld"
+      },
+      {
+        "sentence": "Horeca-exploitatievergunning naast Alcoholvergunning: € 66,00",
+        "status": "false",
+        "note": "Het correcte bedrag voor een horeca-exploitatievergunning naast een alcoholvergunning is € 67,00 volgens de actuele tarieven op de website van gemeente Barneveld"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.barneveld.nl/vergunningen-en-ontheffingen/horeca/kansspelautomaat-vergunning-aanvragen",
+      "https://www.barneveld.nl/vergunningen-en-ontheffingen/horeca/alcoholvergunning-aanvragen",
+      "https://www.barneveld.nl/vergunningen-en-ontheffingen/evenementen/evenementenvergunning-aanvragen",
+      "https://www.barneveld.nl/vergunningen-en-ontheffingen/horeca/exploitatievergunning-aanvragen/vragenlijst-bibob",
+      "https://www.barneveld.nl/vergunningen-en-ontheffingen/horeca/exploitatievergunning-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://gemeente.barneveld.nl",
+        "reason": "INVALID: Error scraping https://gemeente.barneveld.nl: HTTPSConnectionPool(host='gemeente.barneveld.nl', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x108078690>: Failed to resolve 'gemeente.barneveld.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U krijgt binnen 8 weken bericht als de aanvraag compleet is ingevuld.",
+          "original_reference": "Er is geen specifieke termijn vermeld op de website.",
+          "note": "De bronnen vermelden een specifieke behandeltermijn van 8 weken, terwijl dit in de originele tekst ontbreekt.",
+          "source_urls": [
+            "https://www.barneveld.nl/vergunningen-en-ontheffingen/horeca/alcoholvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De houder/leidinggevende is 18 jaar of ouder. De houder/leidinggevende is van onbesproken gedrag en heeft geen strafblad. De omgeving heeft geen last van uw horecabedrijf. Uw bedrijf verstoort niet de openbare orde. Het bestemmingsplan staat toe dat er horecabedrijven in het gebied zijn.",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden specifieke voorwaarden voor de exploitatievergunning die niet in de originele tekst staan.",
+          "source_urls": [
+            "https://www.barneveld.nl/vergunningen-en-ontheffingen/horeca/exploitatievergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wanneer u korter dan 2 jaar geleden een Bibob-vragenlijst heeft ingevuld, mag u hiernaar verwijzen.",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden een belangrijke uitzondering voor het Bibob-vragenformulier die niet in de originele tekst staat.",
+          "source_urls": [
+            "https://www.barneveld.nl/vergunningen-en-ontheffingen/horeca/exploitatievergunning-aanvragen/vragenlijst-bibob"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie die ontbreekt in de originele tekst, waaronder de behandeltermijn van 8 weken, specifieke voorwaarden voor de exploitatievergunning en een uitzondering voor het Bibob-vragenformulier. Deze informatie is essentieel voor aanvragers van een horecavergunning."
+  }
+}

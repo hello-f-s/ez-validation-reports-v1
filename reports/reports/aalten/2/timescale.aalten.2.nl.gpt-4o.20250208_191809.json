@@ -1,0 +1,92 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AALTEN",
+      "contact": {
+        "phone": "(0543) 49 33 33",
+        "email": "gemeente@aalten.nl",
+        "website": "http://www.aalten.nl"
+      }
+    },
+    "service": {
+      "id": 2,
+      "name": "Bord of spandoek plaatsen aan de openbare weg"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "U ontvangt binnen 8 weken bericht of u toestemming krijgt voor het plaatsen van het bord of spandoek.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Aalten wordt er binnen 2 weken een besluit genomen over de aanvraag voor een aankondigingsbord of spandoek, niet binnen 8 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.aalten.nl/omgevingsvergunning",
+      "https://www.aalten.nl/aankondigingsbord-plaatsen",
+      "https://www.aalten.nl/tijdelijk-voorwerp-plaatsen-in-openbare-ruimte",
+      "https://www.aalten.nl/standplaats-aanvragen",
+      "https://www.aalten.nl/terras-plaatsen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.gemeenteaalten.nl",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.gemeenteaalten.nl\">gemeenteaalten.nl</a></p>",
+        "reason": "INVALID: Error scraping https://www.gemeenteaalten.nl\">gemeenteaalten.nl</a></p>: HTTPSConnectionPool(host='www.gemeenteaalten.nl%22%3egemeenteaalten.nl%3c', port=443): Max retries exceeded with url: /a%3E%3C/p%3E (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x103cd9590>: Failed to resolve 'www.gemeenteaalten.nl%22%3egemeenteaalten.nl%3c' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De gemeente bepaalt of u toestemming krijgt. Zij let op het volgende: Is normaal gebruik van de weg mogelijk? Is de veiligheid van voetgangers en ander verkeer in gevaar? Is er overlast voor omwonenden? Wordt het straatbeeld ontsierd?",
+          "original_reference": "Daarnaast moet u kunnen aantonen dat het bord geen overlast of gevaar veroorzaakt voor de omgeving, en dat het het straatbeeld niet ontsiert.",
+          "note": "De bronpagina specificeert duidelijker de beoordelingscriteria, waaronder ook 'normaal gebruik van de weg' wat niet genoemd wordt in de originele tekst. Ook ligt de bewijslast bij de gemeente (zij bepaalt) in plaats van bij de aanvrager (moet kunnen aantonen).",
+          "source_urls": [
+            "https://www.aalten.nl/aankondigingsbord-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Met onderstaand formulier kunt u online een melding doen voor het plaatsen van een aankondigingsbord of spandoek. Melding ophangen spandoeken/plaatsen reclameborden",
+          "original_reference": "U kunt uw aanvraag online indienen via het formulier van de gemeente Aalten voor het plaatsen van een aankondigingsbord of spandoek.",
+          "note": "De bronpagina spreekt over een 'melding' terwijl de originele tekst spreekt over een 'aanvraag', wat juridisch een belangrijk verschil is.",
+          "source_urls": [
+            "https://www.aalten.nl/aankondigingsbord-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Locaties voor het plaatsen van verwijzingsborden, reclameborden, driehoeksborden en billboards ten behoeve maatschappelijke of culturele doeleinden: [specifieke locaties genoemd]",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat specifieke toegestane locaties voor borden, wat belangrijke aanvullende informatie is die ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.aalten.nl/aankondigingsbord-plaatsen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten belangrijke aanvullende details die niet in de originele tekst staan, waaronder specifieke locaties waar borden geplaatst mogen worden. Ook is er een verschil in procedure (melding vs. aanvraag) en in wie de beoordeling doet. De bronpagina's zijn specifieker in de beoordelingscriteria en leggen de beoordelingsverantwoordelijkheid duidelijk bij de gemeente."
+  }
+}

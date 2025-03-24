@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "BLARICUM",
+      "contact": {
+        "phone": "(035) 751 32 22",
+        "email": "info@blaricum.nl",
+        "website": "http://www.blaricum.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "Voor kleine evenementen krijgt u binnen 5 werkdagen bericht na aanmelding.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Blaricum moet een melding voor een klein evenement minimaal 2 weken voor aanvang worden gedaan. Er wordt niet specifiek vermeld dat men binnen 5 werkdagen bericht krijgt."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.blaricum.nl/Vergunningen/Horeca_en_evenementen/Evenement_organiseren",
+      "https://www.blaricum.nl/Vergunningen/Horeca_en_evenementen",
+      "https://www.blaricum.nl/Vergunningen",
+      "https://www.blaricum.nl/Bouwen_verbouwen_en_wonen/Bouwen_en_verbouwen/Omgevingsvergunning",
+      "https://www.blaricum.nl/Vergunningen/Horeca_en_evenementen/Exploitatievergunning_horeca"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het evenement tussen 08.00 en 01.00 uur is",
+          "original_reference": "muziek alleen tussen 08.00 en 23.00 uur toegestaan is",
+          "note": "De bronwebsite vermeldt ruimere tijden voor het evenement zelf (tot 01:00 uur), terwijl de originele tekst alleen spreekt over muziektijden tot 23:00 uur. Dit is een belangrijk verschil in de toegestane eindtijd.",
+          "source_urls": [
+            "https://www.blaricum.nl/Vergunningen/Horeca_en_evenementen/Evenement_organiseren"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wilt u hekken en/of borden plaatsen, neem dan contact met ons op via telefoonnummer 14 035. U moet dit zelf regelen. Geeft u korter dan 10 dagen van te voren uw verzoek door, dan kan het zijn dat wij de hekken en borden niet op tijd kunnen leveren.",
+          "original_reference": "No matching information",
+          "note": "De bronwebsite bevat aanvullende belangrijke informatie over het plaatsen van hekken en borden die volledig ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.blaricum.nl/Vergunningen/Horeca_en_evenementen/Evenement_organiseren"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een ingevuld formulier Evenementenvergunning, aan te vragen via telefoonnummer 14 035 of via apv@belcombinatie.nl",
+          "original_reference": "Een ingevuld formulier Evenementenvergunning, aan te vragen via telefoonnummer 14 035",
+          "note": "De bronwebsite biedt een extra contactmogelijkheid via e-mail (apv@belcombinatie.nl) die niet vermeld staat in de originele tekst.",
+          "source_urls": [
+            "https://www.blaricum.nl/Vergunningen/Horeca_en_evenementen/Exploitatievergunning_horeca"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn drie belangrijke verschillen gevonden tussen de originele tekst en de bronwebsite: (1) ruimere eindtijden voor evenementen, (2) ontbrekende informatie over het plaatsen van hekken en borden, en (3) een extra contactmogelijkheid via e-mail. Deze verschillen zijn relevant voor de volledigheid en accuraatheid van de diensteninformatie."
+  }
+}

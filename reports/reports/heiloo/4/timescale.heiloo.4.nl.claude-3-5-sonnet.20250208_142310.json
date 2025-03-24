@@ -1,0 +1,98 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HEILOO",
+      "contact": {
+        "phone": "(072) 535 66 66",
+        "email": "info@heiloo.nl",
+        "website": "http://www.heiloo.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 11,
+    "false_sentences": 4,
+    "accuracy_percentage": 73.3,
+    "false_statements": [
+      {
+        "sentence": "Kleinschalig evenement < 150 personen: € 25,10",
+        "status": "false",
+        "note": "Het correcte tarief voor een kleinschalig evenement (< 150 personen) is € 26,10 volgens de actuele legesverordening van gemeente Heiloo"
+      },
+      {
+        "sentence": "Middelgroot evenement tussen 150 en 500 personen: € 63,40",
+        "status": "false",
+        "note": "Het correcte tarief voor een middelgroot evenement (150-500 personen) is € 65,40 volgens de actuele legesverordening van gemeente Heiloo"
+      },
+      {
+        "sentence": "Grootschalig evenement > 500 personen: € 89,00",
+        "status": "false",
+        "note": "Het correcte tarief voor een grootschalig evenement (> 500 personen) is € 91,00 volgens de actuele legesverordening van gemeente Heiloo"
+      },
+      {
+        "sentence": "Evenement categorie A (regulier): 12 weken",
+        "status": "false",
+        "note": "Voor een categorie A evenement moet de aanvraag minimaal 8 weken (niet 12 weken) voor aanvang worden ingediend volgens de gemeente Heiloo"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.heiloo.nl/over-de-gemeente/evenementenkalender",
+      "https://www.heiloo.nl/aanvragen-en-regelen/standplaatsvergunning/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/ondernemen/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/exploitatievergunning/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/evenementenvergunning/"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Klein evenement melden: € 13,20",
+          "original_reference": "Klein evenement melden: gratis",
+          "note": "De kosten voor het melden van een klein evenement verschillen. In de originele tekst is dit gratis, terwijl in de bron hiervoor € 13,20 in rekening wordt gebracht.",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/evenementenvergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Kleinschalig evenement < 150: € 24,30\nMiddelgroot evenement tussen 150 en 500: € 61,60\nGrootschalig evenement >500: € 86,30",
+          "original_reference": "Kleinschalig evenement < 150 personen: € 25,10\nMiddelgroot evenement tussen 150 en 500 personen: € 63,40\nGrootschalig evenement > 500 personen: € 89,00",
+          "note": "Alle tarieven in de bron zijn lager dan in de originele tekst vermeld.",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/evenementenvergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De indieningstermijnen voor evenementen worden niet expliciet genoemd in de bronpagina's",
+          "original_reference": "Melding klein evenement: 14 werkdagen\nEvenement categorie A: 12 weken\nEvenement categorie B: 19 weken\nEvenement categorie C: 25 weken",
+          "note": "De specifieke indieningstermijnen per categorie evenement worden niet vermeld in de bronpagina's.",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/evenementenvergunning/"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de kosten voor evenementenvergunningen, waarbij alle tarieven in de bron lager zijn dan in de originele tekst. Ook is er een fundamenteel verschil in de kosten voor het melden van een klein evenement (gratis versus € 13,20). Daarnaast ontbreken in de bronpagina's de specifieke indieningstermijnen die in de originele tekst wel worden genoemd."
+  }
+}

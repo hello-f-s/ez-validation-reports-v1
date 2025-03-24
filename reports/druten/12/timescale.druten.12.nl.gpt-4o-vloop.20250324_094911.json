@@ -1,0 +1,91 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DRUTEN",
+      "contact": {
+        "phone": "(088) 432 70 00",
+        "email": "info@druten.nl",
+        "website": "http://www.druten.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 37,
+    "true_sentences": 35,
+    "false_sentences": 2,
+    "accuracy_percentage": 94.6,
+    "false_statements": [
+      {
+        "sentence": "Maandag: 8.30 - 19.00 uur",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Druten is het gemeentehuis op maandag open van 8:30 tot 17:00 uur, met uitzondering van afspraken die tot 19:00 uur mogelijk zijn"
+      },
+      {
+        "sentence": "Maandag: 8.30 - 16.30 uur",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Druten is de telefonische bereikbaarheid op maandag van 8:30 tot 17:00 uur"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 2,
+    "invalid_urls": 3,
+    "accuracy_percentage": 40.0,
+    "valid_urls_list": [
+      "https://www.druten.nl/omgevingsplan-en-omgevingsvergunning",
+      "https://www.druten.nl/omgevingswet"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.druten.nl/vergunning-of-melding-milieu",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.druten.nl/omgevingsvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.druten.nl/monument-verbouwen-herstellen-of-onderhouden",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Op 1 januari 2024 gaat de Omgevingswet in werking. Wetten, regels en afspraken die in het verleden zijn gemaakt voor bijvoorbeeld bouwen en gebruik van grond worden dan samengevoegd in één nieuwe wet.",
+          "original_reference": "Vanaf 1 januari 2024 worden verschillende regels en wetten samengebracht onder de Omgevingswet",
+          "note": "De informatie over de ingangsdatum en het samenvoegen van wetten komt overeen met de originele tekst",
+          "source_urls": [
+            "https://www.druten.nl/omgevingsplan-en-omgevingsvergunning",
+            "https://www.druten.nl/omgevingswet"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Heuvel 1, 6651 DA Druten, Bel: 088 432 70 00, Whatsapp: +31625689928, info@druten.nl",
+          "original_reference": "Adres: Heuvel 1, 6651 DA Druten, Telefoon: 088 432 70 00, Email: info@druten.nl, WhatsApp: +31625689928",
+          "note": "De contactgegevens in beide bronnen komen exact overeen",
+          "source_urls": [
+            "https://www.druten.nl/omgevingsplan-en-omgevingsvergunning",
+            "https://www.druten.nl/omgevingswet"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse van de bronnen zijn er geen significante verschillen gevonden tussen de originele inhoud en de geciteerde bronnen. De belangrijkste informatie, zoals contactgegevens en de invoering van de Omgevingswet per 1 januari 2024, komt overeen. De bronnen bevatten minder gedetailleerde informatie over specifieke procedures en vereisten dan de originele tekst, maar dit vormt geen tegenstrijdigheid."
+  }
+}

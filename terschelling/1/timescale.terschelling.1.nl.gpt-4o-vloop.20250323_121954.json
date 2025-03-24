@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "TERSCHELLING",
+      "contact": {
+        "phone": "(0562) 44 62 44",
+        "email": "gemeente@terschelling.nl",
+        "website": "http://www.terschelling.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "De persoon die de leiding heeft over het alcohol schenken moet minimaal 21 jaar zijn en van goed levensgedrag (geen strafblad).",
+        "status": "false",
+        "note": "De minimumleeftijd voor leidinggevenden bij alcoholverstrekking is 18 jaar volgens de Drank- en Horecawet, niet 21 jaar. Wel moet de persoon inderdaad van goed levensgedrag zijn."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.terschelling.nl/exploitatievergunning-horecabedrijf",
+      "https://www.terschelling.nl/alcohol-schenken-tijdens-evenement",
+      "https://www.terschelling.nl/alle-producten-en-diensten/6",
+      "https://www.terschelling.nl/alle-producten-en-diensten/21",
+      "https://www.terschelling.nl/omgevingsvergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Is niet van slecht levensgedrag (geen strafblad)",
+          "original_reference": "van goed levensgedrag (geen strafblad)",
+          "note": "De formulering in de bron is negatief gesteld ('niet van slecht levensgedrag') terwijl het origineel positief is gesteld ('van goed levensgedrag'), maar de betekenis is hetzelfde.",
+          "source_urls": [
+            "https://www.terschelling.nl/alcohol-schenken-tijdens-evenement"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De gemeente Terschelling voert een zeer terughoudend beleid wanneer het gaat om het schenken van alcohol buiten de horecegelegenheden.",
+          "original_reference": "de gemeente Terschelling voert een zeer terughoudend beleid wanneer het gaat om het schenken van alcohol buiten horecagelegenheden.",
+          "note": "Klein verschil in formulering ('de horecegelegenheden' vs 'horecagelegenheden') maar geen betekenisverschil.",
+          "source_urls": [
+            "https://www.terschelling.nl/alcohol-schenken-tijdens-evenement"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "geldig voor ten hoogste één dag € 18,16\ngeldig voor ten hoogste vier dagen € 36,45\ngeldig voor ten hoogste acht dagen € 54,81\ngeldig voor ten hoogste 12 dagen €73,28",
+          "original_reference": "Geldig voor ten hoogste één dag: € 18,16.\nGeldig voor ten hoogste vier dagen: € 36,45.\nGeldig voor ten hoogste acht dagen: € 54,81.\nGeldig voor ten hoogste twaalf dagen: € 73,28.",
+          "note": "De tarieven en periodes zijn exact hetzelfde in beide bronnen.",
+          "source_urls": [
+            "https://www.terschelling.nl/alcohol-schenken-tijdens-evenement"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse zijn er geen significante inhoudelijke verschillen gevonden tussen de originele tekst en de bronnen. De gevonden verschillen betreffen vooral kleine tekstuele variaties die geen impact hebben op de betekenis van de informatie. Alle kerngegevens zoals voorwaarden, kosten, contactgegevens en procedures komen overeen."
+  }
+}

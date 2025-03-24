@@ -1,0 +1,82 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HAARLEM",
+      "contact": {
+        "phone": "14 023",
+        "email": "antwoord@haarlem.nl",
+        "website": "http://www.haarlem.nl"
+      }
+    },
+    "service": {
+      "id": 7,
+      "name": "Kabels en leidingen aanleggen en beheren"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "Alleen de eigenaar van het pand kan de vergunning aanvragen. Indien u huurder bent, moet de eigenaar de vergunning aanvragen.",
+        "status": "false",
+        "note": "Dit is onjuist volgens de website van gemeente Haarlem. Een vergunning voor het openbreken van de openbare weg kan worden aangevraagd door zowel de eigenaar als een gemachtigde (zoals een huurder of aannemer). Er is geen beperking dat alleen de eigenaar dit mag aanvragen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 4,
+    "invalid_urls": 2,
+    "accuracy_percentage": 66.7,
+    "valid_urls_list": [
+      "https://haarlem.nl/milieuvergunning",
+      "https://haarlem.nl/uitweg-inritvergunning",
+      "https://haarlem.nl/aanlegvergunning",
+      "https://haarlem.nl/bouwvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://haarlem.nl/vergunning-openbreken-openbare-weg",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://api.overheid.nl/",
+        "reason": "INVALID: Error scraping https://api.overheid.nl/: HTTPSConnectionPool(host='api.overheid.nl', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1061ce5d0>: Failed to resolve 'api.overheid.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u huurder bent...",
+          "original_reference": "Alleen de eigenaar van het pand kan de vergunning aanvragen. Indien u huurder bent, moet de eigenaar de vergunning aanvragen.",
+          "note": "De bronpagina's bevatten geen expliciete beperking dat alleen eigenaren kunnen aanvragen. Dit lijkt een verouderde of onjuiste beperking in de originele tekst.",
+          "source_urls": [
+            "https://haarlem.nl/uitweg-inritvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U krijgt meestal binnen 8 weken bericht over de uitkomst",
+          "original_reference": "U hoort meestal binnen 8 weken of u de vergunning krijgt.",
+          "note": "De formulering in de bronnen is specifieker en spreekt over 'bericht over de uitkomst' in plaats van alleen 'of u de vergunning krijgt'.",
+          "source_urls": [
+            "https://haarlem.nl/uitweg-inritvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee noemenswaardige verschillen gevonden tussen de originele tekst en de bronnen. Ten eerste lijkt de beperking dat alleen eigenaren een vergunning kunnen aanvragen niet te worden ondersteund door de bronpagina's. Ten tweede gebruikt de bron een iets andere formulering voor de behandeltermijn. De meeste andere informatie komt overeen of kon niet worden geverifieerd omdat deze niet expliciet in de getoonde broninhoud staat."
+  }
+}

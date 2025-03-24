@@ -1,0 +1,79 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MAASSLUIS",
+      "contact": {
+        "phone": "14 010",
+        "email": "gemeente@maassluis.nl",
+        "website": "http://www.maassluis.nl"
+      }
+    },
+    "service": {
+      "id": 22,
+      "name": "Woonruimte splitsen of samenvoegen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 10,
+    "false_sentences": 1,
+    "accuracy_percentage": 90.9,
+    "false_statements": [
+      {
+        "sentence": "Als u het niet eens bent met een beslissing van de gemeente, kunt u binnen 6 weken bezwaar maken.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Maassluis moet bezwaar worden gemaakt binnen 6 weken na de verzenddatum van het besluit, niet alleen binnen 6 weken. Dit is een belangrijk juridisch verschil omdat de termijn begint te lopen vanaf de verzenddatum."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.maassluis.nl/woning-splitsen",
+      "https://www.maassluis.nl/onroerend-goed-van-gemeente-kopen-huren-of-pachten",
+      "https://www.maassluis.nl/bouwen",
+      "https://www.maassluis.nl/bedrijfspandbedrijventerrein-huren-of-kopen",
+      "https://www.maassluis.nl/omgevingsvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.gemeentemaassluis.nl",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bij het verlenen van de vergunning worden eventuele nieuwe huisnummers direct toegekend.",
+          "original_reference": "Als een omgevingsvergunning niet nodig is, moet u apart aanvraag doen voor het toekennen van extra huisnummers.",
+          "note": "De bronpagina geeft aan dat huisnummers automatisch worden toegekend bij verlening van de omgevingsvergunning, terwijl de originele tekst suggereert dat dit een aparte aanvraag vereist.",
+          "source_urls": [
+            "https://www.maassluis.nl/woning-splitsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Participatie is het in een vroeg stadium betrekken van belanghebbenden bij uw initiatief. Bij plannen die afwijken van het bestaande omgevingsplan is een participatieverslag verplicht.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt een belangrijke aanvullende eis over participatie en een verplicht participatieverslag bij afwijkingen van het omgevingsplan, wat niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.maassluis.nl/omgevingsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele tekst en de bronpagina's. Ten eerste is er een tegenstrijdigheid in het proces van huisnummertoekenning. Daarnaast ontbreekt in de originele tekst belangrijke informatie over de verplichte participatie en het participatieverslag bij afwijkingen van het omgevingsplan. Deze informatie is essentieel voor aanvragers en zou moeten worden toegevoegd aan de originele tekst."
+  }
+}

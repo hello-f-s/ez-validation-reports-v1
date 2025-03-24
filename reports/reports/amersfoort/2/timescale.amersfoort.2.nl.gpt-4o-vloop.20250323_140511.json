@@ -1,0 +1,87 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AMERSFOORT",
+      "contact": {
+        "phone": "14 033",
+        "email": "info@amersfoort.nl",
+        "website": "http://www.amersfoort.nl"
+      }
+    },
+    "service": {
+      "id": 2,
+      "name": "Bord of spandoek plaatsen aan de openbare weg"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 27,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.4,
+    "false_statements": [
+      {
+        "sentence": "Voor andere vergunningen betaal je €217,- aan leges.",
+        "status": "false",
+        "note": "Het exacte legesbedrag voor andere vergunningen is €223,- volgens de actuele legesverordening van de gemeente Amersfoort, niet €217,-."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.amersfoort.nl/reclame",
+      "https://www.amersfoort.nl/openbare-weg-gebruiken",
+      "https://www.amersfoort.nl/reclame-de-openbare-ruimte",
+      "https://www.amersfoort.nl/aanleggen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.amersfoort.nl/standplaatsen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Tijdelijke reclame op 2-zijdige reclameborden: Hoffman Outdoor Media, telefoonnummer 050 525 0525",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist informatie over een extra reclameoptie via Hoffman Outdoor Media voor tijdelijke 2-zijdige reclameborden",
+          "source_urls": [
+            "https://www.amersfoort.nl/reclame-de-openbare-ruimte"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Om op straat flyers uit te delen, heb je geen vergunning nodig. Wel moet je eventuele rommel die je veroorzaakt zelf opruimen. Je mag niet zomaar een tafel neerzetten. Om ander reclamemateriaal uit te delen, moet je wel een vergunning aanvragen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over het uitdelen van flyers en de bijbehorende regels",
+          "source_urls": [
+            "https://www.amersfoort.nl/reclame-de-openbare-ruimte"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Is de vergunning verleend? Dan volgt een bezwaartermijn van 6 weken. Als deze termijn voorbij is en er geen bezwaar is ingediend, mag je beginnen met de werkzaamheden.",
+          "original_reference": "Na het verlenen van de vergunning volgt er een bezwaartermijn van 6 weken. Je mag wel meteen beginnen, tenzij er bezwaren worden ingediend.",
+          "note": "Er is een tegenstrijdigheid in wanneer men mag beginnen met de werkzaamheden. De bron geeft aan dat men moet wachten tot na de bezwaartermijn, terwijl de originele tekst aangeeft dat men direct mag beginnen.",
+          "source_urls": [
+            "https://www.amersfoort.nl/aanleggen"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn drie belangrijke verschillen gevonden tussen de originele tekst en de bronnen. De originele tekst mist informatie over een extra reclameoptie via Hoffman Outdoor Media en over de regels voor het uitdelen van flyers. Daarnaast is er een tegenstrijdigheid in de timing van wanneer men mag beginnen na vergunningverlening. De bronnen bevatten meer gedetailleerde informatie over specifieke vormen van reclame en bijbehorende voorwaarden."
+  }
+}

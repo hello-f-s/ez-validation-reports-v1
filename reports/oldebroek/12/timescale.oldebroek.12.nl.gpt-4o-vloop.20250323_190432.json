@@ -1,0 +1,78 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OLDEBROEK",
+      "contact": {
+        "phone": "(0525) 63 82 00",
+        "email": "gemeente@oldebroek.nl",
+        "website": "http://www.oldebroek.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 35,
+    "true_sentences": 34,
+    "false_sentences": 1,
+    "accuracy_percentage": 97.1,
+    "false_statements": [
+      {
+        "sentence": "Voor de afhandeling van een conceptverzoek is de termijn gemiddeld 6 maanden, mede door de inwerkingtreding van de Omgevingswet.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Oldebroek is de behandeltermijn voor een conceptverzoek 8 weken. Er wordt niet aangegeven dat dit 6 maanden zou zijn vanwege de Omgevingswet."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.oldebroek.nl/Inwoners/Vergunningen/Milieu_melding_of_vergunning",
+      "https://www.oldebroek.nl/Inwoners/Bouwen_en_verbouwen/Omgevingsvergunning",
+      "https://www.oldebroek.nl/Inwoners/Bouwen_en_verbouwen",
+      "https://www.oldebroek.nl/Inwoners/Bouwen_en_verbouwen/Boom_kappen/Wel_of_geen_vergunning_voor_bomenkap"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.oldebroek.nl/Inwoners/Bouwen_en_verbouwen/Omgevingsvergunning/Conceptverzoek_omgevingsvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Wilt u een bedrijf starten of verbouwen? Of veranderen de activiteiten van uw bedrijf? Dan kan het zijn dat u een milieumelding moet doen of omgevingsvergunning moet aanvragen voor een milieubelastende activiteit.",
+          "original_reference": "Wilt u een bedrijf starten, verbouwen, of veranderen de activiteiten van uw bedrijf? Dan kan het zijn dat u een milieumelding moet doen of een omgevingsvergunning moet aanvragen voor een milieubelastende activiteit.",
+          "note": "De kernboodschap over milieumelding en vergunningen is consistent tussen beide bronnen",
+          "source_urls": [
+            "https://www.oldebroek.nl/Inwoners/Vergunningen/Milieu_melding_of_vergunning"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Een milieubelastende activiteit is een activiteit die nadelige gevolgen voor het milieu kan hebben. Denk aan het lozen van afvalwater in het riool of in de bodem.",
+          "original_reference": "Een milieubelastende activiteit is een activiteit die nadelige gevolgen voor het milieu kan hebben, zoals het lozen van afvalwater in het riool of in de bodem.",
+          "note": "De definitie en voorbeelden van milieubelastende activiteiten komen overeen",
+          "source_urls": [
+            "https://www.oldebroek.nl/Inwoners/Vergunningen/Milieu_melding_of_vergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse van de beschikbare bronnen zijn er geen significante inhoudelijke verschillen gevonden tussen de originele tekst en de bronpagina's. De informatie over milieuvergunningen, procedures en voorwaarden komt overeen. Veel details uit de originele tekst (zoals specifieke kosten, termijnen en contactgegevens) kunnen niet geverifieerd worden omdat deze informatie niet volledig zichtbaar is in de beschikbare bronfragmenten."
+  }
+}

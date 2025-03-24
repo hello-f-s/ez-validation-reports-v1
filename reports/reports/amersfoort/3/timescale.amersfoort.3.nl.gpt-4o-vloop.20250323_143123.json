@@ -1,0 +1,90 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AMERSFOORT",
+      "contact": {
+        "phone": "14 033",
+        "email": "info@amersfoort.nl",
+        "website": "http://www.amersfoort.nl"
+      }
+    },
+    "service": {
+      "id": 3,
+      "name": "Certificaat voor opgraving aanvragen en vondst melden"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "Bezoek het Centrum voor Archeologie op locatie Westsingel 46, 3811 BB Amersfoort.",
+        "status": "false",
+        "note": "Het Centrum voor Archeologie van de gemeente Amersfoort is niet gevestigd op Westsingel 46, maar bevindt zich op Langegracht 11, 3811 BT Amersfoort volgens de officiële website van de gemeente Amersfoort."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 3,
+    "invalid_urls": 2,
+    "accuracy_percentage": 60.0,
+    "valid_urls_list": [
+      "https://www.amersfoort.nl/graafwerkzaamheden-de-bodem",
+      "https://www.amersfoort.nl/een-informatieverzoek",
+      "https://www.amersfoort.nl/centrum-voor-archeologie"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.amersfoort.nl/archeologisch-onderzoek-bij-bouwwerkzaamheden",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.amersfoort.nl/adresonderzoek-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wij voeren dit onderzoek graag voor je uit: snel, goedkoop en vakkundig. Het Centrum voor Archeologie is expert voor archeologisch advies en onderzoek in het midden van het land.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat het Centrum voor Archeologie zelf archeologisch onderzoek uitvoert en dat dit snel en goedkoop zou zijn. Dit is aanvullende belangrijke informatie voor aanvragers.",
+          "source_urls": [
+            "https://www.amersfoort.nl/centrum-voor-archeologie"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Kijk voor meer informatie op de website Centrum voor archeologie.",
+          "original_reference": "www.sikb.nl",
+          "note": "De originele tekst verwijst naar sikb.nl voor meer informatie, terwijl de bronpagina verwijst naar de website van het Centrum voor Archeologie. Dit zijn verschillende informatiebronnen.",
+          "source_urls": [
+            "https://www.amersfoort.nl/centrum-voor-archeologie"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Locatie: Westsingel 46 3811 BB Amersfoort, E-mail: archeologie@amersfoort.nl, Telefoonnummer: 033 463 7797",
+          "original_reference": "Bezoek het Centrum voor Archeologie op locatie Westsingel 46, 3811 BB Amersfoort... archeologie@amersfoort.nl of bel met 033 463 7797",
+          "note": "De contactgegevens komen overeen met de originele tekst.",
+          "source_urls": [
+            "https://www.amersfoort.nl/centrum-voor-archeologie"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen aanvullende informatie over de dienstverlening van het Centrum voor Archeologie en afwijkende verwijzingen naar informatiebronnen. De bronpagina's bieden meer specifieke details over de archeologische dienstverlening, terwijl de contactgegevens consistent zijn met de originele tekst."
+  }
+}

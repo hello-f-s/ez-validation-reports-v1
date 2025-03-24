@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LEUSDEN",
+      "contact": {
+        "phone": "14 033",
+        "email": "gemeente@leusden.nl",
+        "website": "http://www.leusden.nl/"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 37,
+    "true_sentences": 35,
+    "false_sentences": 2,
+    "accuracy_percentage": 94.6,
+    "false_statements": [
+      {
+        "sentence": "U vindt de kosten in de legesverordening van de gemeente Leusden (Bijlage 1, paragraaf 3 van de Tarieventabel behorende bij de legesverordening 2025).",
+        "status": "false",
+        "note": "Er wordt verwezen naar de legesverordening 2025, maar deze bestaat nog niet. De huidige legesverordening is van 2024."
+      },
+      {
+        "sentence": "De specifieke procedure voor het indienen van bezwaren is niet aangegeven op de website.",
+        "status": "false",
+        "note": "De procedure voor het indienen van bezwaren staat wel degelijk op de website van gemeente Leusden, onder het kopje 'Bezwaar maken tegen een besluit'."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.leusden.nl/bouwen-en-wonen/omgevingsvergunning-aanvragen",
+      "https://www.leusden.nl/en/bouwen-en-wonen/omgevingsvergunning-aanvragen",
+      "https://www.leusden.nl/ondernemersloket/vergunningen-en-meldingen-voor-ondernemers",
+      "https://www.leusden.nl/en/ondernemersloket/vergunningen-en-meldingen-voor-ondernemers",
+      "https://www.leusden.nl/en/omgevingswet-gemeente-leusden"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De Omgevingswet is op 1 januari 2024 in werking getreden. [...] De proceduretijd wordt korter van 26 naar 8 weken.",
+          "original_reference": "De behandeltermijn in een reguliere procedure is maximaal 8 weken.",
+          "note": "De bronpagina vermeldt een recente wijziging in de proceduretijd (van 26 naar 8 weken) die niet wordt genoemd in de originele tekst. Dit is belangrijke contextinformatie voor de nieuwe situatie.",
+          "source_urls": [
+            "https://www.leusden.nl/en/omgevingswet-gemeente-leusden"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het adviesteam ruimtelijke kwaliteit adviseert graag over uw (ver)bouwplannen in een vroeg stadium. Ruimtelijke kwaliteit wil zeggen dat uw bouwplan architectonisch en landschappelijk past in de omgeving.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt de mogelijkheid tot vooroverleg met het adviesteam ruimtelijke kwaliteit, wat volledig ontbreekt in de originele tekst maar wel relevant is voor aanvragers.",
+          "source_urls": [
+            "https://www.leusden.nl/ondernemersloket/vergunningen-en-meldingen-voor-ondernemers"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het wijzigen van het omgevingsplan doorloopt 2 fasen, het ontwerp-omgevingsplan en het vaststellen van het omgevingsplan. U kunt per fase reageren.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina beschrijft een specifiek tweefasenproces voor wijzigingen in het omgevingsplan dat niet wordt genoemd in de originele tekst.",
+          "source_urls": [
+            "https://www.leusden.nl/ondernemersloket/vergunningen-en-meldingen-voor-ondernemers"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de recente implementatie van de Omgevingswet en de daarmee samenhangende procedurele wijzigingen. De bronpagina's bevatten aanvullende belangrijke informatie over vooroverleg mogelijkheden en het tweefasenproces bij wijzigingen in het omgevingsplan die niet in de originele tekst zijn opgenomen. Deze informatie is relevant voor mensen die een vergunning willen aanvragen."
+  }
+}

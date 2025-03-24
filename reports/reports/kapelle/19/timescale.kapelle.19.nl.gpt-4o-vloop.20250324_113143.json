@@ -1,0 +1,79 @@
+{
+  "context": {
+    "municipality": {
+      "name": "KAPELLE",
+      "contact": {
+        "phone": "(0113) 33 31 10",
+        "email": "gemeente@kapelle.nl",
+        "website": "http://www.kapelle.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "Als u eigenaar bent van de gokautomaat, moet u ook een exploitatievergunning aanvragen bij de gemeente.",
+        "status": "false",
+        "note": "Dit is onjuist. De exploitatievergunning moet worden aangevraagd bij de Kansspelautoriteit, niet bij de gemeente. Dit wordt ook eerder in de tekst correct vermeld."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://kapelle.nl/gokautomaat-plaatsen",
+      "https://kapelle.nl/loterij-prijsvraag-bingo-organiseren",
+      "https://kapelle.nl/kermis-organiseren",
+      "https://kapelle.nl/standplaats-aanvragen",
+      "https://www.kapelle.nl/gokautomaat-plaatsen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.kapelle.nl/aanwezigheidsvergunning-speelautomaten",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U hebt een geldige drank- en horecavergunning of uw horecabedrijf staat ingeschreven in het register van HorecaDNA",
+          "original_reference": "in het bezit zijn van een geldige drank- en horecavergunning. Uw horecabedrijf moet ook staan ingeschreven in het register van HorecaDNA",
+          "note": "De bronpagina stelt deze voorwaarden als alternatief (OF), terwijl in de originele tekst beide voorwaarden verplicht zijn (EN)",
+          "source_urls": [
+            "https://kapelle.nl/gokautomaat-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De naam van de organisatie, Het KvK-nummer, Straatnaam, huisnummer, huisletter, huisnummertoevoeging, postcode en plaatsnaam, E-mailadres",
+          "original_reference": "No matching information",
+          "note": "Deze vereiste gegevens staan wel in de originele tekst maar worden niet genoemd in de bronpagina's",
+          "source_urls": [
+            "https://kapelle.nl/gokautomaat-plaatsen"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele tekst en de bronpagina's. Het eerste verschil betreft de voorwaarden voor de drank- en horecavergunning en HorecaDNA-registratie, waarbij de bronpagina deze als alternatieve opties presenteert terwijl de originele tekst beide vereist. Het tweede verschil betreft enkele vereiste gegevens die wel in de originele tekst staan maar niet worden genoemd in de bronpagina's. De overige informatie komt inhoudelijk overeen."
+  }
+}

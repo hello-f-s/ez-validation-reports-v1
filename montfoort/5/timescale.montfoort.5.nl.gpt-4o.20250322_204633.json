@@ -1,0 +1,87 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MONTFOORT",
+      "contact": {
+        "phone": "(0348) 47 64 00",
+        "email": "info@montfoort.nl",
+        "website": "http://www.montfoort.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 10,
+    "false_sentences": 1,
+    "accuracy_percentage": 90.9,
+    "false_statements": [
+      {
+        "sentence": "U ontvangt binnen 8 weken bericht of u de exploitatievergunning krijgt.",
+        "status": "false",
+        "note": "Volgens de Algemene wet bestuursrecht (Awb) geldt voor de gemeente Montfoort een wettelijke beslistermijn van maximaal 12 weken voor een exploitatievergunning, niet 8 weken. Deze termijn kan eenmalig met 12 weken worden verlengd."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 8,
+    "valid_urls": 5,
+    "invalid_urls": 3,
+    "accuracy_percentage": 62.5,
+    "valid_urls_list": [
+      "https://www.montfoort.nl/Alle_onderwerpen/Vergunningen_en_ontheffingen",
+      "https://www.montfoort.nl/Alle_onderwerpen/Vergunningen_en_ontheffingen/Horeca_en_MKB",
+      "https://www.montfoort.nl/Alle_onderwerpen/Vergunningen_en_ontheffingen/Horeca_en_MKB/Exploitatievergunning",
+      "https://www.montfoort.nl/Alle_onderwerpen/Ondernemen/Horeca_en_MKB",
+      "https://www.montfoort.nl/Alle_onderwerpen/Ondernemen/Onderneming_starten"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.ruimtelijkeplannen.nl]",
+        "reason": "INVALID: Error scraping https://www.ruimtelijkeplannen.nl]: Failed to parse: https://www.ruimtelijkeplannen.nl]"
+      },
+      {
+        "url": "https://www.montfoort.nl]",
+        "reason": "INVALID: Error scraping https://www.montfoort.nl]: Failed to parse: https://www.montfoort.nl]"
+      },
+      {
+        "url": "http://www.ruimtelijkeplannen.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U vraagt de exploitatievergunning online aan bij de gemeente. Voeg bij de vergunningaanvraag de volgende documenten bij: Uittreksel van de inschrijving van de Kamer van Koophandel, Een plattegrond van uw inrichting (inclusief terras op eigen grond), Een legitimatiebewijs van elke leidinggevende, Een verklaring omtrent gedrag van elke leidinggevende",
+          "original_reference": "Specifieke aanvraagformulieren of procedures zijn niet gedetailleerd beschreven op de website.",
+          "note": "De bronpagina specificeert wel degelijk de benodigde documenten voor de aanvraag, terwijl de originele tekst aangeeft dat deze informatie niet beschikbaar is.",
+          "source_urls": [
+            "https://www.montfoort.nl/Alle_onderwerpen/Vergunningen_en_ontheffingen/Horeca_en_MKB/Exploitatievergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Na het aanvragen van een exploitatievergunning controleert de gemeente of u voldoet aan alle in de APV gestelde eisen zoals: Het geldend bestemmingsplan, Exploitatieplan of voorbereidingsbesluit, Alle leidinggevenden zijn van goed levensgedrag",
+          "original_reference": "Het is belangrijk om eerst te beoordelen of er op de locatie volgens het bestemmingsplan horeca mag plaatsvinden.",
+          "note": "De bronpagina noemt aanvullende voorwaarden zoals het exploitatieplan en eisen aan leidinggevenden die niet in de originele tekst staan vermeld.",
+          "source_urls": [
+            "https://www.montfoort.nl/Alle_onderwerpen/Vergunningen_en_ontheffingen/Horeca_en_MKB/Exploitatievergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De originele tekst mist belangrijke details over de aanvraagprocedure en vereiste documenten die wel beschikbaar zijn op de gemeentewebsite. Ook worden er in de bronpagina's aanvullende voorwaarden genoemd die niet in de originele tekst zijn opgenomen. De informatie in de originele tekst is daardoor onvolledig ten opzichte van de actuele gemeentelijke informatie."
+  }
+}

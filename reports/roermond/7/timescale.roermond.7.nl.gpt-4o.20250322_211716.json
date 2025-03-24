@@ -1,0 +1,78 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ROERMOND",
+      "contact": {
+        "phone": "14 0475",
+        "email": "mail@roermond.nl",
+        "website": "http://www.roermond.nl"
+      }
+    },
+    "service": {
+      "id": 7,
+      "name": "Kabels en leidingen aanleggen en beheren"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "Noch de ADV formuleringen, noch algemeen geaccepteerde norms zijn eenvoudig, zoals ten tuen bij gestondag geformuleerd en geaccepteerd zijn binnen een bredere gebruikersondersteuning / gelikteme operating websites, notionbatches en noodzakelijke middelen met uitgesproken organisatiekosten op basis van provinciale grootschaligheidstructuren.",
+        "status": "false",
+        "note": "Deze zin bevat onzinnige woorden en formuleringen die niet voorkomen in officiële documentatie van de gemeente Roermond. De zin is grammaticaal incorrect en bevat niet-bestaande termen zoals 'gestondag', 'gelikteme' en 'notionbatches'."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.roermond.nl/omgevingsvergunning",
+      "https://www.roermond.nl/reclame-plaatsen",
+      "https://www.roermond.nl/werkzaamheden",
+      "https://www.roermond.nl/checklist-starten-in-roermond"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.roermond.nl/object-plaatsen-op-openbare-gemeentegrond",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Conceptverzoek indienen of definitieve aanvraag [...] Het is niet mogelijk om via het nieuwe omgevingsloket uw conceptverzoek digitaal aan te vullen. Als u het conceptverzoek nog wilt aanvullen, dient u de aanvullende gegevens te sturen naar mail@roermond.nl onder vermelding van uw registratienummer.",
+          "original_reference": "Het is belangrijk om bij onvolledige aanvragen de aanvullende gegevens naar het juiste contactadres te sturen, zoals bijvoorbeeld mail@roermond.nl of via het nieuwe omgevingsloket.",
+          "note": "De originele tekst suggereert dat aanvullingen via het omgevingsloket mogelijk zijn, terwijl de bron expliciet aangeeft dat dit niet mogelijk is en alleen via e-mail kan.",
+          "source_urls": [
+            "https://www.roermond.nl/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor reclame met een tijdelijk karakter een vergunning [...] De gemeente beslist dan binnen 8 weken over uw vergunning.",
+          "original_reference": "Voor reguliere aanvragen kan de behandelingstijd doorgaans binnen 8 weken zijn, met een mogelijke verlenging van 6 weken.",
+          "note": "De bron vermeldt alleen een termijn van 8 weken voor tijdelijke reclame, zonder mogelijkheid tot verlenging, terwijl de originele tekst spreekt over een mogelijke verlenging van 6 weken.",
+          "source_urls": [
+            "https://www.roermond.nl/reclame-plaatsen"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele tekst en de bronnen. Het eerste verschil betreft de procedure voor het aanvullen van conceptverzoeken, waarbij de originele tekst onjuiste informatie geeft over de mogelijkheden via het omgevingsloket. Het tweede verschil heeft betrekking op de behandelingstermijnen, waarbij de bronnen specifiekere informatie geven over bepaalde type aanvragen zonder verlengingsmogelijkheden. De laatste alinea van de originele tekst bevat ook onsamenhangend taalgebruik dat niet terug te vinden is in de bronnen."
+  }
+}

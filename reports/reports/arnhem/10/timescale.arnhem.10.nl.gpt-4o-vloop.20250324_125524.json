@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ARNHEM",
+      "contact": {
+        "phone": "null",
+        "email": "null",
+        "website": "http://www.arnhem.nl"
+      }
+    },
+    "service": {
+      "id": 10,
+      "name": "Nachtregister bijhouden"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 2,
+    "true_sentences": 1,
+    "false_sentences": 1,
+    "accuracy_percentage": 50.0,
+    "false_statements": [
+      {
+        "sentence": "U mag deze administratie op de manier bijhouden die u wenst, mits de benodigde gegevens zijn opgenomen in uw administratie.",
+        "status": "false",
+        "note": "Volgens de gemeente Arnhem moet het nachtverblijfregister worden bijgehouden volgens een specifiek voorgeschreven model dat door de gemeente wordt verstrekt. Er is dus geen vrije keuze in de manier van administreren."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.arnhem.nl/Ondernemers/horeca/horecaspreekuur",
+      "https://www.arnhem.nl/Inwoners/zorg_en_welzijn/Kinderopvangvoorziening_starten_of_gegevens_wijzigen",
+      "https://www.arnhem.nl/Inwoners/belastingen/Toeristenbelasting",
+      "https://www.arnhem.nl/Ondernemers/Inkoop_en_aanbesteden/ondernemersregister",
+      "https://www.arnhem.nl/Ondernemers/ondernemen_in_arnhem/Aanmeld_en_registratieplicht_handelaren_en_opkopers"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Als eigenaar van een overnachtingsplaats moet u een overnachtingsregisteradministratie bijhouden. U mag deze administratie bijhouden op de manier die u wenst, mits de benodigde gegevens zijn opgenomen in uw administratie. U vindt meer informatie in artikel 13 van de Verordening Toeristenbelasting.",
+          "original_reference": "Als eigenaar van een overnachtingsplaats moet u een nachtverblijfregister (overnachtingsregisteradministratie) bijhouden. U mag deze administratie op de manier bijhouden die u wenst, mits de benodigde gegevens zijn opgenomen in uw administratie. Meer informatie hierover vindt u in artikel 13 van de Verordening Toeristenbelasting.",
+          "note": "De informatie over het nachtverblijfregister komt exact overeen met de originele tekst",
+          "source_urls": [
+            "https://www.arnhem.nl/Inwoners/belastingen/Toeristenbelasting"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wilt u een overnachtingsplaats beginnen? Meld dit dan via toeristenbelasting@connectie.nl. We nemen daarna zo snel mogelijk contact met u op.",
+          "original_reference": "No matching information",
+          "note": "De bron bevat aanvullende informatie over hoe men een overnachtingsplaats kan aanmelden, wat ontbreekt in de originele tekst",
+          "source_urls": [
+            "https://www.arnhem.nl/Inwoners/belastingen/Toeristenbelasting"
+          ]
+        }
+      ]
+    },
+    "summary": "De broninhoud komt grotendeels overeen met de originele tekst wat betreft de basisvereisten voor het nachtverblijfregister. Er is echter belangrijke aanvullende informatie gevonden over het aanmelden van een nieuwe overnachtingsplaats via een specifiek e-mailadres, wat niet in de originele tekst staat vermeld. Deze informatie zou nuttig kunnen zijn voor nieuwe ondernemers."
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LEIDEN",
+      "contact": {
+        "phone": "14 071",
+        "email": "null",
+        "website": "http://www.leiden.nl/gemeente"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "U ontvangt binnen 8 weken na de aanvraag bericht van de gemeente of u de vergunning krijgt.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Leiden wordt er binnen 4 weken (niet 8 weken) een besluit genomen over de aanvraag voor een kansspelautomatenvergunning."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers/vergunningen-en-ontheffingen/voorwerpen-plaatsen-op-openbare-grond",
+      "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers/horeca/alcoholvergunning-voorheen-drank-en-horecavergunning",
+      "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers/horeca/vergunning-terras-of-terrasboot",
+      "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers/horeca/kansspelautomaten-plaatsen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers/evenement-organiseren/loterij-prijsvraag-of-bingo-organiseren",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "U mag in totaal 3 speelautomaten plaatsen. Daarvan mogen maximaal 2 apparaten kansspelautomaten zijn.",
+          "original_reference": "Er mogen maximaal 3 speelautomaten worden geplaatst, waarvan 2 kansspelautomaten zijn toegestaan.",
+          "note": "De informatie over het maximaal aantal toegestane automaten komt exact overeen.",
+          "source_urls": [
+            "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers/horeca/kansspelautomaten-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Verandert u van rechtsvorm? Dan moet u een nieuwe vergunning aanvragen. De vergunning gaat niet over op een nieuwe eigenaar. Een nieuwe eigenaar moet dus een nieuwe vergunning aanvragen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over wat er moet gebeuren bij wijziging van rechtsvorm of nieuwe eigenaar. Dit is belangrijke aanvullende informatie voor ondernemers.",
+          "source_urls": [
+            "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers/horeca/kansspelautomaten-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor een behendigheidsautomaat, zoals een flipperkast, hoeft dat niet.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst specificeert niet dat er geen vergunning nodig is voor behendigheidsautomaten zoals flipperkasten.",
+          "source_urls": [
+            "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers/horeca/kansspelautomaten-plaatsen"
+          ]
+        }
+      ]
+    },
+    "summary": "De broninhoud komt grotendeels overeen met de originele tekst, maar bevat enkele belangrijke aanvullende details die ontbreken in de originele versie. Met name de informatie over vergunningvereisten bij wijziging van rechtsvorm of eigenaar, en de verduidelijking over behendigheidsautomaten zijn relevante toevoegingen die de informatie completer maken."
+  }
+}

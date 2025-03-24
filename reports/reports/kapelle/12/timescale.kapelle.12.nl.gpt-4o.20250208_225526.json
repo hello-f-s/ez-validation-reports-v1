@@ -1,0 +1,89 @@
+{
+  "context": {
+    "municipality": {
+      "name": "KAPELLE",
+      "contact": {
+        "phone": "(0113) 33 31 10",
+        "email": "gemeente@kapelle.nl",
+        "website": "http://www.kapelle.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "De gemeente beslist binnen 8 weken over uw aanvraag, maar deze termijn kan eenmalig met 6 weken worden verlengd.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Kapelle is de reguliere procedure 8 weken met mogelijkheid tot verlenging van maximaal 6 weken, maar voor een uitgebreide procedure geldt een termijn van 26 weken die met 6 weken kan worden verlengd. De zin is onvolledig omdat deze niet specificeert dat dit alleen voor de reguliere procedure geldt."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 6,
+    "invalid_urls": 1,
+    "accuracy_percentage": 85.7,
+    "valid_urls_list": [
+      "https://kapelle.nl/omgevingsvergunning",
+      "https://kapelle.nl/milieuzorg-bij-bedrijven",
+      "https://kapelle.nl/omgevingsvergunning-0",
+      "https://www.kapelle.nl",
+      "https://kapelle.nl/brandveiligheid-melding-vergunning",
+      "https://kapelle.nl/omgevingsplan-aanpassen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.kapelle.nl\">Gemeente",
+        "reason": "INVALID: Error scraping https://www.kapelle.nl\">Gemeente: HTTPSConnectionPool(host='www.kapelle.nl%22%3egemeente', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x103e2fe00>: Failed to resolve 'www.kapelle.nl%22%3egemeente' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De omgevingsvergunning vervangt onder andere de bouwvergunning, sloopvergunning, milieuvergunning en kapvergunning.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst noemt niet expliciet welke vergunningen worden vervangen door de omgevingsvergunning, terwijl de bronpagina dit wel specificeert.",
+          "source_urls": [
+            "https://kapelle.nl/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor bepaalde gebouwen moet u een gebruiksmelding brandveilig gebruik doen om te voldoen aan de regels voor brandpreventie.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over brandveiligheid en bijbehorende meldingsplicht, terwijl dit wel een belangrijk onderdeel kan zijn van de milieu-eisen.",
+          "source_urls": [
+            "https://kapelle.nl/brandveiligheid-melding-vergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U bent verplicht uw bedrijfsafval te scheiden en dit gescheiden af te voeren. Welk afval u moet scheiden hangt van uw situatie af.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de specifieke verplichting tot afvalscheiding voor bedrijven, wat een belangrijk milieuaspect is.",
+          "source_urls": [
+            "https://kapelle.nl/milieuzorg-bij-bedrijven"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten belangrijke aanvullende informatie die niet in de originele tekst staat, waaronder specifieke details over welke vergunningen worden vervangen door de omgevingsvergunning, vereisten rond brandveiligheid en verplichtingen voor bedrijfsafvalscheiding. Deze informatie is relevant voor ondernemers die een omgevingsvergunning willen aanvragen."
+  }
+}

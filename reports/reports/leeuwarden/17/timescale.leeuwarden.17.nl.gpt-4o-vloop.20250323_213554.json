@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LEEUWARDEN",
+      "contact": {
+        "phone": "14 058",
+        "email": "gemeente@leeuwarden.nl",
+        "website": "http://www.leeuwarden.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor de terrasvergunning zijn € 548,09.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Leeuwarden zijn de kosten voor een terrasvergunning € 562,00 voor 2024. Het genoemde bedrag is verouderd."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.leeuwarden.nl/andere-vergunningen-en-ontheffingen/gebruik-openbare-ruimte/",
+      "https://www.leeuwarden.nl/horeca/horecavergunning/",
+      "https://www.leeuwarden.nl/omgevingsvergunning/gebruikmaken-maken-of-veranderen-van-een-uitweg/",
+      "https://www.leeuwarden.nl/omgevingsvergunning/procedure-omgevingsvergunning-aanvragen-of-melden/",
+      "https://www.leeuwarden.nl/belastingen/precariobelasting/"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Doe dit minstens 3 weken voordat u die nodig heeft.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt geen minimale aanvraagtermijn voor de terrasvergunning, terwijl de bron aangeeft dat aanvragen minimaal 3 weken van tevoren moet gebeuren.",
+          "source_urls": [
+            "https://www.leeuwarden.nl/andere-vergunningen-en-ontheffingen/gebruik-openbare-ruimte/"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "U betaalt belasting als u een voorwerp onder, op of boven openbare gemeentegrond plaatst en daarvoor een vergunning nodig hebt. Bijvoorbeeld een terras",
+          "original_reference": "Als uw terras op gemeentegrond staat, betaalt u precariobelasting.",
+          "note": "De informatie over precariobelasting voor terrassen op gemeentegrond komt overeen in beide bronnen.",
+          "source_urls": [
+            "https://www.leeuwarden.nl/belastingen/precariobelasting/"
+          ]
+        }
+      ]
+    },
+    "summary": "Bij vergelijking van de originele tekst met de bronnen is er één belangrijk verschil gevonden: het ontbreken van de minimale aanvraagtermijn van 3 weken in de originele tekst. De overige informatie, met name over precariobelasting en vergunningsvereisten, komt overeen met de bronnen. Er zijn geen tegenstrijdigheden gevonden in tarieven of andere voorwaarden."
+  }
+}

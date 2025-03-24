@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "KAPELLE",
+      "contact": {
+        "phone": "(0113) 33 31 10",
+        "email": "gemeente@kapelle.nl",
+        "website": "http://www.kapelle.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 27,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.4,
+    "false_statements": [
+      {
+        "sentence": "Als de gemeente niet binnen deze tijd beslist, wordt de vergunning automatisch verleend.",
+        "status": "false",
+        "note": "Dit is onjuist. Bij het overschrijden van de beslistermijn wordt de vergunning niet automatisch verleend. Er is dan sprake van een 'fictieve weigering' volgens de Algemene wet bestuursrecht, waartegen bezwaar en beroep mogelijk is."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://kapelle.nl/omgevingsvergunning-0",
+      "https://kapelle.nl/omgevingsvergunning",
+      "https://kapelle.nl/omgevingsplan-aanpassen",
+      "https://kapelle.nl/brandveiligheid-melding-vergunning",
+      "https://kapelle.nl/milieuzorg-bij-bedrijven"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Let op! Bij sommige aanvragen past de gemeente de Wet Bibob toe.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat de Wet Bibob kan worden toegepast bij bepaalde aanvragen, wat een belangrijke aanvullende voorwaarde is voor aanvragers",
+          "source_urls": [
+            "https://kapelle.nl/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor bepaalde werkzaamheden hebt u een omgevingsvergunning nodig. Bijvoorbeeld als u gaat bouwen, slopen, een alarminstallatie plaatst of een boom wilt kappen.",
+          "original_reference": "Als ondernemer heeft u mogelijk een omgevingsvergunning of melding milieubeheer nodig voor verschillende activiteiten zoals bouwen, verbouwen of slopen",
+          "note": "De bronpagina noemt specifiek het plaatsen van een alarminstallatie als voorbeeld, wat niet wordt genoemd in de originele tekst",
+          "source_urls": [
+            "https://kapelle.nl/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor kleinere plannen vraagt u een omgevingsvergunning 'afwijken van regels in het omgevingsplan' aan.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst maakt geen melding van de mogelijkheid om af te wijken van het omgevingsplan voor kleinere plannen",
+          "source_urls": [
+            "https://kapelle.nl/omgevingsplan-aanpassen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten enkele belangrijke aanvullende details die niet in de originele tekst staan, waaronder de toepassing van de Wet Bibob, de vergunningplicht voor alarminstallaties, en de mogelijkheid om af te wijken van het omgevingsplan voor kleinere projecten. Deze informatie kan relevant zijn voor aanvragers van een omgevingsvergunning."
+  }
+}

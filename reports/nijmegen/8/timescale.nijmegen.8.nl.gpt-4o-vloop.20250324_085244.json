@@ -1,0 +1,92 @@
+{
+  "context": {
+    "municipality": {
+      "name": "NIJMEGEN",
+      "contact": {
+        "phone": "14 024",
+        "email": "gemeente@nijmegen.nl",
+        "website": "http://www.nijmegen.nl"
+      }
+    },
+    "service": {
+      "id": 8,
+      "name": "Marktvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 29,
+    "true_sentences": 27,
+    "false_sentences": 2,
+    "accuracy_percentage": 93.1,
+    "false_statements": [
+      {
+        "sentence": "Kosten themamarktvergunning: € 416,65.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Nijmegen is dit bedrag niet correct. De exacte kosten voor een themamarktvergunning zijn anders."
+      },
+      {
+        "sentence": "Kosten wijkmarktvergunning: € 395,40.",
+        "status": "false",
+        "note": "Dit bedrag komt niet overeen met de huidige legesverordening van gemeente Nijmegen. De actuele kosten voor een wijkmarktvergunning zijn anders."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.nijmegen.nl/diensten/evenementen/schema-vergunningen-activiteiten/tekstversie/",
+      "https://www.nijmegen.nl/diensten/vergunningen/markt/",
+      "https://www.nijmegen.nl/diensten/vergunningen/markt/themamarktvergunning-organisatievergunning/",
+      "https://www.nijmegen.nl/diensten/vergunningen/standplaatsvergunningen/vergunning-standplaats-wijkmarkt/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.nijmegen.nl/diensten/vergunningen/informatiekraam-melden-of-vergunning/",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U krijgt voor de wijkmarkt een vergunning van maximaal 10 jaar",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de maximale duur van een wijkmarktvergunning (10 jaar), wat een belangrijk detail is voor aanvragers",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/vergunningen/standplaatsvergunningen/vergunning-standplaats-wijkmarkt/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor het organiseren van een braderie (met versterkte muziek en attracties zoals een draaimolen en luchtkussens), vraagt u een evenementenvergunning aan",
+          "original_reference": "No matching information",
+          "note": "De originele tekst maakt geen onderscheid tussen themamarkten en braderieën met attracties, terwijl hiervoor een ander type vergunning nodig is",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/vergunningen/markt/themamarktvergunning-organisatievergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De persoon die de vergunning aanvraagt moet in de kraam of verkoopwagen staan",
+          "original_reference": "No matching information",
+          "note": "Deze specifieke voorwaarde voor persoonlijke aanwezigheid ontbreekt in de originele tekst",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/vergunningen/standplaatsvergunningen/vergunning-standplaats-wijkmarkt/"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten enkele belangrijke aanvullende voorwaarden die niet in de originele tekst staan: de maximale vergunningstermijn van 10 jaar voor wijkmarkten, het onderscheid tussen themamarkten en braderieën (die een evenementenvergunning vereisen), en de verplichting dat de vergunningaanvrager zelf in de kraam moet staan. Deze informatie is essentieel voor potentiële aanvragers."
+  }
+}

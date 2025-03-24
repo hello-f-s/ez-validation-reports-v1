@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "UTRECHT",
+      "contact": {
+        "phone": "(014) 030",
+        "email": "Gemeente@utrecht.nl",
+        "website": "http://www.utrecht.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 31,
+    "true_sentences": 30,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.8,
+    "false_statements": [
+      {
+        "sentence": "Openingstijden: maandag tot en met vrijdag, 9.00 – 17.00 uur",
+        "status": "false",
+        "note": "De openingstijden van het Stadskantoor Utrecht zijn maandag, dinsdag, woensdag en vrijdag van 8.30 - 17.00 uur en donderdag van 8.30 - 20.00 uur. De vermelde openingstijden zijn dus onjuist."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.utrecht.nl/ondernemen/vergunningen-en-regels/horecaloket",
+      "https://www.utrecht.nl/ondernemen/vergunningen-en-regels",
+      "https://www.utrecht.nl/ondernemen/sekswerk/exploitanten",
+      "https://www.utrecht.nl/ondernemen/evenement-organiseren",
+      "https://www.utrecht.nl/taxivergunning/",
+      "https://www.utrecht.nl/ondernemen/"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vraag vergunning direct aan in het online loket",
+          "original_reference": "Dien de aanvraag in via het online loket van de gemeente Utrecht",
+          "note": "De originele tekst bevat een specifieke link, terwijl de bronpagina alleen verwijst naar een algemeen online loket zonder directe link",
+          "source_urls": [
+            "https://www.utrecht.nl/ondernemen/vergunningen-en-regels"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Restauranthouders mogen 4 keer per jaar een 'Vermaakje' (denk aan een muziekoptreden of pubquiz) houden in hun zaak",
+          "original_reference": "No matching information",
+          "note": "Deze specifieke regel voor restauranthouders ontbreekt volledig in de originele tekst",
+          "source_urls": [
+            "https://www.utrecht.nl/ondernemen/vergunningen-en-regels/horecaloket"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U vraagt een ontheffing geluidsnorm bij feest aan als u een feest in uw zaak organiseert met tijdelijk meer geluid dan normaal",
+          "original_reference": "een ontheffing voor geluidsnormen bij evenementen",
+          "note": "De bronpagina is specifieker over de geluidsnorm-ontheffing voor feesten in de zaak zelf",
+          "source_urls": [
+            "https://www.utrecht.nl/ondernemen/vergunningen-en-regels/horecaloket"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten enkele belangrijke aanvullende details die niet in de originele tekst staan, zoals de '4x per jaar Vermaakje'-regel voor restauranthouders en specifiekere informatie over geluidsnormen. Ook is de verwijzing naar het online aanvraagproces in de bronnen algemener dan in de originele tekst. Deze verschillen zijn relevant voor horecaondernemers maar veranderen de kernvoorwaarden niet wezenlijk."
+  }
+}

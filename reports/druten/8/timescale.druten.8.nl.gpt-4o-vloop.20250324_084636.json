@@ -1,0 +1,93 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DRUTEN",
+      "contact": {
+        "phone": "(088) 432 70 00",
+        "email": "info@druten.nl",
+        "website": "http://www.druten.nl"
+      }
+    },
+    "service": {
+      "id": 8,
+      "name": "Marktvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 17,
+    "false_sentences": 2,
+    "accuracy_percentage": 89.5,
+    "false_statements": [
+      {
+        "sentence": "U kunt bellen naar het telefoonnummer 140487.",
+        "status": "false",
+        "note": "Het correcte telefoonnummer van gemeente Druten is 088 432 70 00"
+      },
+      {
+        "sentence": "Telefonisch bereikbaar van maandag tot en met vrijdag van 8.30 - 16.30 uur.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Druten is de telefonische bereikbaarheid van maandag tot en met donderdag van 8.30 tot 17.00 uur en op vrijdag van 8.30 tot 13.00 uur"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 3,
+    "valid_urls": 1,
+    "invalid_urls": 2,
+    "accuracy_percentage": 33.3,
+    "valid_urls_list": [
+      "https://www.druten.nl/exploitatievergunning-horecabedrijf"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.druten.nl/marktplaatsvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.druten.nl/standplaatsvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Contact met de gemeente: Heuvel 1, 6651 DA Druten, Bel: 088 432 70 00, Whatsapp: +31625689928, info@druten.nl",
+          "original_reference": "Contact met de gemeente kan via het adres Heuvel 1, 6651 DA Druten. U kunt bellen naar 088 432 70 00 of een WhatsApp-bericht sturen naar +31625689928",
+          "note": "De contactgegevens in beide bronnen komen exact overeen",
+          "source_urls": [
+            "https://www.druten.nl/exploitatievergunning-horecabedrijf"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Vandaag open tot 19.00 uur",
+          "original_reference": "Maandag van 8.30 - 19.00 uur",
+          "note": "De openingstijden komen overeen voor de maandag",
+          "source_urls": [
+            "https://www.druten.nl/exploitatievergunning-horecabedrijf"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Telefonische bereikbaarheid: 8.30 - 16.30 uur",
+          "original_reference": "Telefonisch bereikbaar van maandag tot en met vrijdag van 8.30 - 16.30 uur",
+          "note": "De telefonische bereikbaarheidstijden komen overeen",
+          "source_urls": [
+            "https://www.druten.nl/exploitatievergunning-horecabedrijf"
+          ]
+        }
+      ]
+    },
+    "summary": "De geanalyseerde bron bevat geen tegenstrijdige informatie met de originele tekst. De contactgegevens en openingstijden komen volledig overeen. Aangezien de bron over horecavergunningen gaat en niet over marktvergunningen, is er geen aanvullende informatie te vergelijken met betrekking tot de marktvergunning-specifieke details uit de originele tekst."
+  }
+}

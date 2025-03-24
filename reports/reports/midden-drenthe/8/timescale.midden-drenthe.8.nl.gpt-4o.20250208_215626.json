@@ -1,0 +1,80 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MIDDEN-DRENTHE",
+      "contact": {
+        "phone": "(0593) 53 92 22",
+        "email": "gemeente@middendrenthe.nl",
+        "website": "http://www.middendrenthe.nl"
+      }
+    },
+    "service": {
+      "id": 8,
+      "name": "Marktvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 15,
+    "false_sentences": 2,
+    "accuracy_percentage": 88.2,
+    "false_statements": [
+      {
+        "sentence": "De aanvraag voor een standplaatsvergunning kost € 41,70.",
+        "status": "false",
+        "note": "Volgens de actuele tarieven van gemeente Midden-Drenthe kost een aanvraag voor een standplaatsvergunning € 42,95"
+      },
+      {
+        "sentence": "Kosten voor plaatsing op de wachtlijst zijn € 20,60 voor het eerste jaar en € 13,65 voor elk volgend jaar.",
+        "status": "false",
+        "note": "De actuele kosten voor plaatsing op de wachtlijst in Midden-Drenthe zijn € 21,25 voor het eerste jaar en € 14,10 voor elk volgend jaar"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 8,
+    "valid_urls": 0,
+    "invalid_urls": 8,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://risicokaart.overheid.nl\">Omgevingswet.overheid.nl</a>",
+        "reason": "INVALID: Error scraping https://risicokaart.overheid.nl\">Omgevingswet.overheid.nl</a>: HTTPSConnectionPool(host='risicokaart.overheid.nl%22%3eomgevingswet.overheid.nl%3c', port=443): Max retries exceeded with url: /a%3E (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x107d77a10>: Failed to resolve 'risicokaart.overheid.nl%22%3eomgevingswet.overheid.nl%3c' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.middendrenthe.nl/formulieren-1/plaatsing-op-de-wachtlijst-voor-standplaatsvergunning",
+        "reason": "INVALID: Error scraping https://www.middendrenthe.nl/formulieren-1/plaatsing-op-de-wachtlijst-voor-standplaatsvergunning: 404 Client Error: Not Found for url: https://www.middendrenthe.nl/formulieren-1/plaatsing-op-de-wachtlijst-voor-standplaatsvergunning"
+      },
+      {
+        "url": "https://www.middendrenthe.nl/formulieren-1/aanvraag-vergunning-losse-standplaats",
+        "reason": "INVALID: Error scraping https://www.middendrenthe.nl/formulieren-1/aanvraag-vergunning-losse-standplaats: 404 Client Error: Not Found for url: https://www.middendrenthe.nl/formulieren-1/aanvraag-vergunning-losse-standplaats"
+      },
+      {
+        "url": "https://risicokaart.overheid.nl",
+        "reason": "INVALID: Error scraping https://risicokaart.overheid.nl: HTTPSConnectionPool(host='risicokaart.overheid.nl', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x107d5bed0>: Failed to resolve 'risicokaart.overheid.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.middendrenthe.nl/wonen-en-leven/standplaatsen-en-markten/standplaats-weekmarkt-aanvragen",
+        "reason": "INVALID: Error scraping https://www.middendrenthe.nl/wonen-en-leven/standplaatsen-en-markten/standplaats-weekmarkt-aanvragen: 404 Client Error: Not Found for url: https://www.middendrenthe.nl/wonen-en-leven/standplaatsen-en-markten/standplaats-weekmarkt-aanvragen"
+      },
+      {
+        "url": "https://www.middendrenthe.nl/bouwen-wonen/bouwen-of-verbouwen",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.middendrenthe.nl/formulieren-1/aanvraag-standplaatsvergunning-voor-weekmarkt",
+        "reason": "INVALID: Error scraping https://www.middendrenthe.nl/formulieren-1/aanvraag-standplaatsvergunning-voor-weekmarkt: 404 Client Error: Not Found for url: https://www.middendrenthe.nl/formulieren-1/aanvraag-standplaatsvergunning-voor-weekmarkt"
+      },
+      {
+        "url": "https://www.middendrenthe.nl/vergunningen-ontheffingen/standplaats-weekmarkt-aanvragen",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  }
+}

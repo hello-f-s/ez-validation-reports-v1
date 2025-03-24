@@ -1,0 +1,100 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LANDGRAAF",
+      "contact": {
+        "phone": "14 045",
+        "email": "gemeente@landgraaf.nl",
+        "website": "http://www.landgraaf.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "De termijn is maximaal 8 weken voor een reguliere procedure en 26 weken voor een uitgebreide procedure.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Landgraaf is de termijn voor een reguliere procedure maximaal 8 weken met mogelijkheid tot verlenging van 6 weken, niet standaard 8 weken zoals vermeld."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 9,
+    "valid_urls": 5,
+    "invalid_urls": 4,
+    "accuracy_percentage": 55.6,
+    "valid_urls_list": [
+      "https://www.landgraaf.nl/exploitatievergunning-horecabedrijf",
+      "https://www.landgraaf.nl/form/informatieverzoek-indienen",
+      "https://www.landgraaf.nl/het-omgevingsloket",
+      "https://www.landgraaf.nl/omgevingsvergunning-of-melding",
+      "https://www.landgraaf.nl/aanvragen-en-regelen-ondernemers"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.landgraaf.nl/omgevingsvergunning-of-melding-gemeente-landgraaf",
+        "reason": "INVALID: Error scraping https://www.landgraaf.nl/omgevingsvergunning-of-melding-gemeente-landgraaf: 404 Client Error: Not Found for url: https://www.landgraaf.nl/omgevingsvergunning-of-melding-gemeente-landgraaf"
+      },
+      {
+        "url": "https://www.landgraaf.nl/het-omgevingsloket-gemeente-landgraaf",
+        "reason": "INVALID: Error scraping https://www.landgraaf.nl/het-omgevingsloket-gemeente-landgraaf: 404 Client Error: Not Found for url: https://www.landgraaf.nl/het-omgevingsloket-gemeente-landgraaf"
+      },
+      {
+        "url": "https://www.landgraaf.nl/omgevingsvergunning-of-melding-gemeente-landgraaf\">https://www.landgraaf.nl/omgevingsvergunning-of-melding-gemeente-landgraaf</a>,",
+        "reason": "INVALID: Error scraping https://www.landgraaf.nl/omgevingsvergunning-of-melding-gemeente-landgraaf\">https://www.landgraaf.nl/omgevingsvergunning-of-melding-gemeente-landgraaf</a>,: 404 Client Error: Not Found for url: https://www.landgraaf.nl/omgevingsvergunning-of-melding-gemeente-landgraaf%22%3Ehttps:/www.landgraaf.nl/omgevingsvergunning-of-melding-gemeente-landgraaf%3C/a%3E,"
+      },
+      {
+        "url": "https://www.landgraaf.nl/het-omgevingsloket-gemeente-landgraaf\">https://www.landgraaf.nl/het-omgevingsloket-gemeente-landgraaf</a>",
+        "reason": "INVALID: Error scraping https://www.landgraaf.nl/het-omgevingsloket-gemeente-landgraaf\">https://www.landgraaf.nl/het-omgevingsloket-gemeente-landgraaf</a>: 404 Client Error: Not Found for url: https://www.landgraaf.nl/het-omgevingsloket-gemeente-landgraaf%22%3Ehttps:/www.landgraaf.nl/het-omgevingsloket-gemeente-landgraaf%3C/a%3E"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vanaf 1 januari 2024 gaat dit via het (nieuwe) Omgevingsloket",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de specifieke startdatum van het nieuwe Omgevingsloket, wat een belangrijk detail is voor aanvragers",
+          "source_urls": [
+            "https://www.landgraaf.nl/het-omgevingsloket"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De Omgevingswet vervangt een groot aantal wetten zoals de Wabo, de Wet ruimtelijke ordening, de Wet natuurbescherming, het Activiteitenbesluit en het Bouwbesluit",
+          "original_reference": "No matching information",
+          "note": "De originele tekst noemt niet de specifieke wetten die worden vervangen door de Omgevingswet, wat relevant is voor de context",
+          "source_urls": [
+            "https://www.landgraaf.nl/omgevingsvergunning-of-melding"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "bij het aanvragen van vergunningen aangeven hoe u participatie heeft toegepast en wat het resultaat daarvan was",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist de belangrijke vereiste van participatieverantwoording bij vergunningaanvragen",
+          "source_urls": [
+            "https://www.landgraaf.nl/het-omgevingsloket"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten enkele belangrijke aanvullingen die niet in de originele tekst staan, waaronder de startdatum van het nieuwe Omgevingsloket (1 januari 2024), de specifieke wetten die worden vervangen, en de vereiste om participatie te verantwoorden bij vergunningaanvragen. Deze informatie is essentieel voor een volledig begrip van de nieuwe procedures onder de Omgevingswet."
+  }
+}

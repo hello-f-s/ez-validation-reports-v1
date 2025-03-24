@@ -1,0 +1,87 @@
+{
+  "context": {
+    "municipality": {
+      "name": "TUBBERGEN",
+      "contact": {
+        "phone": "(0546) 62 80 00",
+        "email": "gemeente@tubbergen.nl",
+        "website": "http://www.tubbergen.nl"
+      }
+    },
+    "service": {
+      "id": 22,
+      "name": "Woonruimte splitsen of samenvoegen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 20,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.2,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor een conceptverzoek bedragen €210.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Tubbergen bedragen de kosten voor een conceptverzoek €250, niet €210."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.tubbergen.nl/vooroverleg-bouwen",
+      "https://www.tubbergen.nl/omgevingsvergunning-bouwen",
+      "https://www.tubbergen.nl/verandering-procedure-omgevingsvergunningen",
+      "https://www.tubbergen.nl/omgevingsplan"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.tubbergen.nl/ruimtelijke-plannen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor verbouwingen onder gevolgklasse 1 is er een uitstel van 1 jaar. Dit betekent dat pas vanaf 1 januari 2025 verbouwingen onder gevolgklasse 1 ook onder de Wet kwaliteitsborging vallen.",
+          "original_reference": "Vanaf 1 januari 2024 treedt de Wet kwaliteitsborging voor het bouwen in werking",
+          "note": "De originele tekst vermeldt niet het uitstel tot 2025 voor verbouwingen onder gevolgklasse 1, wat een belangrijk detail is voor bepaalde bouwprojecten.",
+          "source_urls": [
+            "https://www.tubbergen.nl/verandering-procedure-omgevingsvergunningen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het DSO biedt voor het conceptverzoek géén mogelijkheid tot aanvullingen. Eventuele aanvullingen of aanpassingen dienen gestuurd te worden naar conceptverzoek@noaberkracht.nl",
+          "original_reference": "Eventuele aanvullingen kunnen worden gemaild naar conceptverzoek@noaberkracht.nl",
+          "note": "De originele tekst vermeldt niet expliciet dat het DSO geen mogelijkheid biedt voor aanvullingen, wat een belangrijke beperking is in het systeem.",
+          "source_urls": [
+            "https://www.tubbergen.nl/vooroverleg-bouwen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "https://omgevingswet.overheid.nl",
+          "original_reference": "omgevingswet.overheid.nl",
+          "note": "De originele tekst mist het 'https://' protocol in de URL, wat technisch gezien een verschil maakt voor directe links.",
+          "source_urls": [
+            "https://www.tubbergen.nl/omgevingsvergunning-bouwen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen het uitstel van de Wet kwaliteitsborging tot 2025 voor verbouwingen onder gevolgklasse 1, een verduidelijking over de beperkingen van het DSO-systeem voor aanvullingen, en een technisch verschil in de URL-notatie. Deze verschillen zijn relevant voor de accuraatheid en volledigheid van de informatie voor inwoners."
+  }
+}

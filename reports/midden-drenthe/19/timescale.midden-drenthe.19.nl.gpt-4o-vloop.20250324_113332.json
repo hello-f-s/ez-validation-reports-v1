@@ -1,0 +1,64 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MIDDEN-DRENTHE",
+      "contact": {
+        "phone": "(0593) 53 92 22",
+        "email": "gemeente@middendrenthe.nl",
+        "website": "http://www.middendrenthe.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 27,
+    "true_sentences": 25,
+    "false_sentences": 2,
+    "accuracy_percentage": 92.6,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor het aanvragen van een vergunning, bijvoorbeeld voor een loterij, bedragen € 27,55.",
+        "status": "false",
+        "note": "Dit bedrag is niet actueel volgens de legesverordening van gemeente Midden-Drenthe. De actuele tarieven zijn te vinden in de tarieventabel van de gemeente."
+      },
+      {
+        "sentence": "Vandaag: 8:00 - 15:00 uur",
+        "status": "false",
+        "note": "De openingstijden van het gemeentehuis van Midden-Drenthe zijn op werkdagen van 8:30 tot 12:00 uur en op afspraak in de middag. Deze specifieke tijden kloppen niet."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 4,
+    "valid_urls": 0,
+    "invalid_urls": 4,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.middendrenthe.nl/vergunningen-ontheffingen/loterij-prijsvraag-of-bingo-organiseren",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.middendrenthe.nl/vergunningen-ontheffingen",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.middendrenthe.nl/bouwen-wonen/bouwen-of-verbouwen",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.middendrenthe.nl/vergunningen-ontheffingen/losse-standplaats-aanvragen",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  }
+}

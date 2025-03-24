@@ -1,0 +1,91 @@
+{
+  "context": {
+    "municipality": {
+      "name": "GRONINGEN",
+      "contact": {
+        "phone": "14 050",
+        "email": "info@groningen.nl",
+        "website": "http://gemeente.groningen.nl"
+      }
+    },
+    "service": {
+      "id": 22,
+      "name": "Woonruimte splitsen of samenvoegen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "Voor het kadastraal splitsen van bedrijfsruimte is geen vergunning nodig.",
+        "status": "false",
+        "note": "Ook voor het kadastraal splitsen van bedrijfsruimte in de gemeente Groningen is een splitsingsvergunning nodig volgens de Huisvestingsverordening van de gemeente Groningen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 6,
+    "invalid_urls": 1,
+    "accuracy_percentage": 85.7,
+    "valid_urls_list": [
+      "https://gemeente.groningen.nl/woning-splitsen",
+      "https://gemeente.groningen.nl/voorwaarden-voor-kamerverhuur",
+      "https://gemeente.groningen.nl/omgevingsvergunning-aanvragen",
+      "https://gemeente.groningen.nl/bedrijf-starten",
+      "https://www.gemeente.groningen.nl/woning-splitsen",
+      "https://www.gemeente.groningen.nl/omgevingsvergunning-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://gemeente.groningen.nl/onttrekkingsvergunning-voor-bedrijfsdoeleinden-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De indeling van het gebouw moet geschikt zijn voor splitsing.",
+          "original_reference": "Het pand moet goed onderhouden zijn en geschikt voor splitsing.",
+          "note": "De originele tekst combineert twee voorwaarden in één punt, terwijl de brontekst deze als aparte voorwaarden vermeldt. Dit kan tot verschillende interpretaties leiden.",
+          "source_urls": [
+            "https://gemeente.groningen.nl/woning-splitsen",
+            "https://www.gemeente.groningen.nl/woning-splitsen"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "De termijn van een splitsingsvergunning is maximaal 8 weken. Deze termijn kan worden verlengd met 6 weken.",
+          "original_reference": "Termijn voor een splitsingsvergunning is maximaal 8 weken, verlengbaar met 6 weken.",
+          "note": "De termijnen komen exact overeen in beide bronnen.",
+          "source_urls": [
+            "https://gemeente.groningen.nl/woning-splitsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Geen informatie over specifieke kosten gevonden in de bronpagina's",
+          "original_reference": "De kosten voor een splitsingsvergunning bedragen € 312,92 per appartement dat door splitsing ontstaat.",
+          "note": "De bronpagina's vermelden geen specifieke kostenbedragen voor de vergunningen, terwijl de originele tekst wel exacte bedragen noemt.",
+          "source_urls": [
+            "https://gemeente.groningen.nl/woning-splitsen",
+            "https://www.gemeente.groningen.nl/woning-splitsen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de formulering van de voorwaarden voor splitsing en het ontbreken van specifieke kostinformatie in de bronpagina's. De procedurele aspecten en termijnen komen wel overeen. De originele tekst bevat meer gedetailleerde informatie over kosten die niet in de openbare bronpagina's wordt vermeld."
+  }
+}

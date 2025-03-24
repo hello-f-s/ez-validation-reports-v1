@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "UTRECHT",
+      "contact": {
+        "phone": "(014) 030",
+        "email": "Gemeente@utrecht.nl",
+        "website": "http://www.utrecht.nl"
+      }
+    },
+    "service": {
+      "id": 2,
+      "name": "Bord of spandoek plaatsen aan de openbare weg"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 20,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.2,
+    "false_statements": [
+      {
+        "sentence": "Sitatietekening op schaal van 1:1.000 met de locaties van de reclame",
+        "status": "false",
+        "note": "Er staat een spelfout in het woord 'Sitatietekening', dit moet 'Situatietekening' zijn. Volgens de officiële website van de gemeente Utrecht moet een situatietekening worden aangeleverd."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.utrecht.nl/ondernemen/vergunningen-en-regels/reclame/reclame-aan-de-gevel-vergunning-aanvragen",
+      "https://www.utrecht.nl/ondernemen/vergunningen-en-regels",
+      "https://www.utrecht.nl/wonen-en-leven/bouwen-en-verbouwen/hebt-u-een-vraag-over-bouwplan-of-bedrijfsplan",
+      "https://www.utrecht.nl/ondernemen/vergunningen-en-regels/reclame",
+      "https://www.utrecht.nl/wonen-en-leven/bouwen-en-verbouwen/u-wilt-bouwen-of-verbouwen/zonnepanelen-of-zonnecollectoren-plaatsen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Is de oppervlakte van alle reclame-uitingen groter dan 1,5 m2? Dan hebt u een omgevingsvergunning nodig voor de activiteit bouwen. Is de oppervlakte van alle reclame-uitingen kleiner dan 1,5 m2? Dan hebt u een omgevingsvergunning nodig voor de activiteit reclame.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst specificeert niet de oppervlakte-grens van 1,5 m2 die bepaalt welk type vergunning nodig is. Dit is belangrijke aanvullende informatie voor aanvragers.",
+          "source_urls": [
+            "https://www.utrecht.nl/ondernemen/vergunningen-en-regels/reclame/reclame-aan-de-gevel-vergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor kleine naambordjes hebt u geen vergunning nodig als die voldoen aan de volgende voorwaarden: gezamenlijk geen groter oppervlak dan 0,5 m2",
+          "original_reference": "Voor bedrijven aan huis zijn reclameborden waarvoor een omgevingsvergunning nodig is, niet toegestaan, alleen vergunningsvrije naambordjes zijn toegestaan.",
+          "note": "De originele tekst vermeldt niet de specifieke maximale oppervlakte van 0,5 m2 voor vergunningsvrije naambordjes, wat een belangrijke voorwaarde is.",
+          "source_urls": [
+            "https://www.utrecht.nl/ondernemen/vergunningen-en-regels/reclame/reclame-aan-de-gevel-vergunning-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten twee belangrijke specificaties die niet in de originele tekst staan: de 1,5 m2 grens die bepaalt welk type vergunning nodig is, en de maximale oppervlakte van 0,5 m2 voor vergunningsvrije naambordjes. Deze informatie is essentieel voor mensen die een reclamevergunning willen aanvragen."
+  }
+}

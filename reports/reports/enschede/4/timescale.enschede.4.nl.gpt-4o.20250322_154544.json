@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ENSCHEDE",
+      "contact": {
+        "phone": "14 053",
+        "email": "postbus20@enschede.nl",
+        "website": "http://www.enschede.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "U kunt de vergunning aanvragen door het ingevulde formulier per e-mail te sturen naar postbus20@enschede.nl of per post naar Gemeente Enschede t.a.v. afdeling Vergunnen, Postbus 20, 7500 AA Enschede.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Enschede moet een evenementenvergunning digitaal worden aangevraagd via het e-formulier op de website. Het is niet mogelijk om de aanvraag per e-mail of post in te dienen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.enschede.nl/subsidie-evenementen-voor-studenten",
+      "https://www.enschede.nl/wegomleiding-of-verkeersmaatregelen-aanvragen",
+      "https://www.enschede.nl/subsidie-sportevenementen",
+      "https://www.enschede.nl/vergunning-voor-kamerverhuur",
+      "https://www.enschede.nl/evenement-organiseren"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.enschede.nl/bezwaar-maken",
+        "reason": "INVALID: Error scraping https://www.enschede.nl/bezwaar-maken: 404 Client Error: Not Found for url: https://www.enschede.nl/bezwaar-maken"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een melding is voldoende als het evenement aan deze voorwaarden voldoet: Het evenement duurt maximaal 2 dagen, er zijn maximaal 500 bezoekers per dag, het evenement is tussen 9.00 en 0.00 uur",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de specifieke voorwaarden wanneer een melding volstaat in plaats van een vergunning. Dit is essentiële informatie voor organisatoren.",
+          "source_urls": [
+            "https://www.enschede.nl/evenement-organiseren"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Er is geen harde muziek. Alleen achtergrondmuziek mag: tot 55 decibel (A) / 70 decibel (C) (tussen 9.00 en 19.00 uur) en tot 50 decibel (A) / 65 decibel (C) (tussen 19.00 en 0.00 uur). Dit wordt gemeten op 20 meter van de geluidsbron.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over geluidslimieten voor evenementen, wat een belangrijke voorwaarde is voor het bepalen of een melding volstaat.",
+          "source_urls": [
+            "https://www.enschede.nl/evenement-organiseren"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Er is geen podium dat hoger is dan 1 meter of een dak of achterwand heeft. Ook is er geen tribune hoger dan 2 meter, of iets anders groots.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist specifieke voorwaarden over toegestane constructies bij evenementen waarvoor alleen een melding nodig is.",
+          "source_urls": [
+            "https://www.enschede.nl/evenement-organiseren"
+          ]
+        }
+      ]
+    },
+    "summary": "De originele tekst mist belangrijke details over wanneer een melding volstaat in plaats van een vergunning. Met name ontbreken de specifieke voorwaarden zoals maximale bezoekersaantallen, toegestane geluidsniveaus en beperkingen voor podia en tribunes. Deze informatie is essentieel voor organisatoren om te bepalen welke procedure ze moeten volgen."
+  }
+}

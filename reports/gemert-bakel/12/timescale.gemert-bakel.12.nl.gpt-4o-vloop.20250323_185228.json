@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "GEMERT-BAKEL",
+      "contact": {
+        "phone": "(0492) 37 85 00",
+        "email": "gemeente@gemert-bakel.nl",
+        "website": "http://www.gemert-bakel.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "Maandag: 09.00 - 19.00 uur",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Gemert-Bakel is het gemeentehuis op maandag open van 09.00 - 20.00 uur, niet tot 19.00 uur"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.gemert-bakel.nl/omgevingsvergunning-activiteit-milieu",
+      "https://www.gemert-bakel.nl/omgevingsvergunning",
+      "https://www.gemert-bakel.nl/omgevingsloket",
+      "https://www.gemert-bakel.nl/oprichten-of-veranderen-bedrijf",
+      "https://www.gemert-bakel.nl/omgevingsvergunning-activiteit-uitvoeren-van-een-werk"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als burger kunt u uw aanvraag ook op papier indienen (bij de balie in het gemeentehuis of per post).",
+          "original_reference": "Voor bedrijven is digitale indiening verplicht.",
+          "note": "De originele tekst vermeldt alleen dat digitale indiening verplicht is voor bedrijven, maar niet dat burgers ook op papier kunnen indienen. Dit is aanvullende belangrijke informatie.",
+          "source_urls": [
+            "https://www.gemert-bakel.nl/omgevingsvergunning-activiteit-uitvoeren-van-een-werk"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Op 1 juli 2024 stopt het omgevingsloket online (OLO). Het indienen van aanvullingen via OLO is dan niet meer mogelijk. Zijn er initiatiefnemers die ook na 1 juli 2024 aanvulingen willen indienen? Dat kan via de mail naar gemeente@gemert-bakel.nl.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de aanstaande sluiting van het OLO en de alternatieve procedure via e-mail na 1 juli 2024. Dit is essentiële informatie voor aanvragers.",
+          "source_urls": [
+            "https://www.gemert-bakel.nl/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Fax: 0492-366325",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen faxnummer in de contactgegevens, terwijl dit wel wordt vermeld in de bronpagina's.",
+          "source_urls": [
+            "https://www.gemert-bakel.nl/oprichten-of-veranderen-bedrijf"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de mogelijkheid voor burgers om papieren aanvragen in te dienen, de aanstaande sluiting van het Omgevingsloket Online per 1 juli 2024, en aanvullende contactgegevens (faxnummer). Met name de informatie over de OLO-sluiting is kritisch voor toekomstige aanvragers, omdat dit een significante procedurele wijziging betreft."
+  }
+}

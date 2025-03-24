@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DEVENTER",
+      "contact": {
+        "phone": "14 0570",
+        "email": "gemeente@deventer.nl",
+        "website": "http://www.deventer.nl"
+      }
+    },
+    "service": {
+      "id": 18,
+      "name": "Ventvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 22,
+    "false_sentences": 2,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor een vooroverleg bedragen € 626.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Deventer zijn de kosten voor een vooroverleg € 650,70 (2024)."
+      },
+      {
+        "sentence": "Een standaard terrasvergunning kost € 610, terwijl een wijziging of een incidentele vergunning voor een evenement € 129 kost.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Deventer kost een standaard terrasvergunning € 635,40 en een wijziging of incidentele vergunning € 134,15 (2024)."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.deventer.nl/vooroverleg",
+      "https://www.deventer.nl/terrasvergunning",
+      "https://www.deventer.nl/omgevingsvergunning-aanvragen",
+      "https://www.deventer.nl/omgevingsvergunning",
+      "https://www.deventer.nl/ondernemen/bedrijf-vestigen/vergunningen-amp-regelingen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U doet de vergunningcheck via het Omgevingsloket. Hiermee ziet u of u een omgevingsvergunning nodig heeft.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist de belangrijke eerste stap van het doen van een vergunningcheck via het Omgevingsloket voordat men een aanvraag doet.",
+          "source_urls": [
+            "https://www.deventer.nl/omgevingsvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor een aanvraag heeft u eHerkenning nodig.",
+          "original_reference": "Voor online aanvragen is eHerkenning nodig, vooral bij het aanvragen van meerdere vergunningen tegelijkertijd.",
+          "note": "De bronpagina stelt eHerkenning als algemene vereiste voor alle aanvragen, terwijl de originele tekst dit alleen specifiek noemt voor meervoudige aanvragen.",
+          "source_urls": [
+            "https://www.deventer.nl/terrasvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bent u het niet eens met de beslissing, dan kunt u bezwaar maken of beroep aantekenen. Dit kan tot 6 weken na het besluit op de aanvraag.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over de mogelijkheid tot bezwaar maken en de termijn van 6 weken na het besluit.",
+          "source_urls": [
+            "https://www.deventer.nl/omgevingsvergunning-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont drie belangrijke verschillen tussen de originele tekst en de bronpagina's. De originele tekst mist essentiële informatie over de verplichte vergunningcheck vooraf, is onduidelijk over de eHerkenning-vereisten, en vermeldt niet de mogelijkheid tot bezwaar maken. Deze informatie is wel belangrijk voor een complete en accurate beschrijving van het vergunningsproces."
+  }
+}

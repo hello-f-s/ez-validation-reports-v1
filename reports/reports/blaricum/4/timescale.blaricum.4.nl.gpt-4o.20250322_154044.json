@@ -1,0 +1,97 @@
+{
+  "context": {
+    "municipality": {
+      "name": "BLARICUM",
+      "contact": {
+        "phone": "(035) 751 32 22",
+        "email": "info@blaricum.nl",
+        "website": "http://www.blaricum.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Een ingevuld formulier Evenementenvergunning, aan te vragen via telefoonnummer 14 035.",
+        "status": "false",
+        "note": "Het formulier voor een evenementenvergunning in Blaricum is direct te downloaden via de gemeentelijke website en hoeft niet telefonisch aangevraagd te worden."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.blaricum.nl/Vergunningen/Horeca_en_evenementen/Evenement_organiseren",
+      "https://www.blaricum.nl/Vergunningen",
+      "https://www.blaricum.nl/Bouwen_verbouwen_en_wonen/Bouwen_en_verbouwen/Omgevingsvergunning",
+      "https://www.blaricum.nl/Vergunningen/Horeca_en_evenementen",
+      "https://www.blaricum.nl/Vergunningen/Horeca_en_evenementen/Exploitatievergunning_horeca"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://gemeente.blaricum.nl/evenement-organiseren",
+        "reason": "INVALID: Error scraping https://gemeente.blaricum.nl/evenement-organiseren: HTTPSConnectionPool(host='gemeente.blaricum.nl', port=443): Max retries exceeded with url: /evenement-organiseren (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1077ef9d0>: Failed to resolve 'gemeente.blaricum.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 4,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Muziek mag alleen tussen 8.00 en 23.00 uur en op zondag niet voor 13.00 uur en niet tijdens kerkdiensten",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen specifieke tijden voor muziek of beperkingen op zondag en tijdens kerkdiensten",
+          "source_urls": [
+            "https://www.blaricum.nl/Vergunningen/Horeca_en_evenementen/Evenement_organiseren"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het evenement vindt niet plaats op doorgaande wegen en busroutes en er is op elk moment een doorgang van 4,5 meter vrij voor hulpdiensten",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt geen specifieke eisen voor doorgang en toegankelijkheid voor hulpdiensten",
+          "source_urls": [
+            "https://www.blaricum.nl/Vergunningen/Horeca_en_evenementen/Evenement_organiseren"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Er is een organisator. Dat wil zeggen: iemand die tijdens het evenement bereikbaar moet zijn voor de gemeente of hulpdiensten",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de vereiste van een bereikbare organisator tijdens het evenement",
+          "source_urls": [
+            "https://www.blaricum.nl/Vergunningen/Horeca_en_evenementen/Evenement_organiseren"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Klein evenement aanmelden is gratis",
+          "original_reference": "Hier kan geen specifieke informatie over gevonden worden op de website van deze gemeente",
+          "note": "De bronpagina specificeert dat kleine evenementen gratis zijn, terwijl de originele tekst aangeeft dat er geen informatie over kosten beschikbaar is",
+          "source_urls": [
+            "https://www.blaricum.nl/Vergunningen/Horeca_en_evenementen/Evenement_organiseren"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten belangrijke aanvullende informatie die niet in de originele tekst staat, waaronder specifieke tijdsrestricties voor muziek, vereisten voor doorgang van hulpdiensten, de noodzaak van een bereikbare organisator en duidelijkheid over kosten voor kleine evenementen. Deze informatie is essentieel voor evenementorganisatoren en zou in de originele tekst opgenomen moeten worden voor een volledig beeld van de voorwaarden."
+  }
+}

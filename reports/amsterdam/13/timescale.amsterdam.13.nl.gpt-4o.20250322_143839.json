@@ -1,0 +1,63 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AMSTERDAM",
+      "contact": {
+        "phone": "14 020",
+        "email": "null",
+        "website": "http://www.amsterdam.nl"
+      }
+    },
+    "service": {
+      "id": 13,
+      "name": "Omzettingsvergunning voor kamerverhuur aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 20,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.2,
+    "false_statements": [
+      {
+        "sentence": "Er mag 1 volwassene per kamer wonen, of 2 bij een huwelijk/geregistreerd partnerschap.",
+        "status": "false",
+        "note": "Volgens de officiële regels van de gemeente Amsterdam is er geen specifieke beperking tot 1 volwassene per kamer of 2 bij huwelijk. De regels gaan over minimale oppervlakte per persoon: elke kamer moet minimaal 5m² zijn per persoon die er slaapt."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 0,
+    "invalid_urls": 5,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.amsterdam.nl/parkeren/parkeervergunning/parkeervergunning-bedrijven/",
+        "reason": "INVALID: Error scraping https://www.amsterdam.nl/parkeren/parkeervergunning/parkeervergunning-bedrijven/: 403 Client Error: Forbidden for url: https://www.amsterdam.nl/parkeren/parkeervergunning/parkeervergunning-bedrijven/"
+      },
+      {
+        "url": "https://www.amsterdam.nl/veelgevraagd/?productid=%7BAAAEF61D-7074-4F16-A976-66961C8E45E6%7D",
+        "reason": "INVALID: Error scraping https://www.amsterdam.nl/veelgevraagd/?productid=%7BAAAEF61D-7074-4F16-A976-66961C8E45E6%7D: 403 Client Error: Forbidden for url: https://www.amsterdam.nl/veelgevraagd/?productid=%7BAAAEF61D-7074-4F16-A976-66961C8E45E6%7D"
+      },
+      {
+        "url": "https://www.amsterdam.nl/ondernemen/vergunningen/",
+        "reason": "INVALID: Error scraping https://www.amsterdam.nl/ondernemen/vergunningen/: 403 Client Error: Forbidden for url: https://www.amsterdam.nl/ondernemen/vergunningen/"
+      },
+      {
+        "url": "https://www.amsterdam.nl/wonen-leefomgeving/wonen/kamerverhuur/regels/",
+        "reason": "INVALID: Error scraping https://www.amsterdam.nl/wonen-leefomgeving/wonen/kamerverhuur/regels/: 403 Client Error: Forbidden for url: https://www.amsterdam.nl/wonen-leefomgeving/wonen/kamerverhuur/regels/"
+      },
+      {
+        "url": "https://www.amsterdam.nl/wonen-leefomgeving/omgevingsvergunning/conceptaanvraag-omgevingsvergunning/",
+        "reason": "INVALID: Error scraping https://www.amsterdam.nl/wonen-leefomgeving/omgevingsvergunning/conceptaanvraag-omgevingsvergunning/: 403 Client Error: Forbidden for url: https://www.amsterdam.nl/wonen-leefomgeving/omgevingsvergunning/conceptaanvraag-omgevingsvergunning/"
+      }
+    ]
+  }
+}

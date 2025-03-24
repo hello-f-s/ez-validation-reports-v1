@@ -1,0 +1,89 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DEVENTER",
+      "contact": {
+        "phone": "14 0570",
+        "email": "gemeente@deventer.nl",
+        "website": "http://www.deventer.nl"
+      }
+    },
+    "service": {
+      "id": 15,
+      "name": "Vergunning of ontheffing voor straatartiesten"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 17,
+    "false_sentences": 2,
+    "accuracy_percentage": 89.5,
+    "false_statements": [
+      {
+        "sentence": "Er zijn kosten verbonden aan het aanvragen van een ontheffing.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Deventer zijn er geen kosten verbonden aan het aanvragen van een ontheffing voor straatoptredens."
+      },
+      {
+        "sentence": "De exacte kosten worden niet gespecificeerd, maar betaling heeft voorkeur via PIN.",
+        "status": "false",
+        "note": "Deze informatie is onjuist aangezien er geen kosten zijn voor een ontheffing voor straatoptredens in Deventer, en er dus ook geen betalingsvoorkeur is."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.deventer.nl/optredenopstraat",
+      "https://www.deventer.nl/parkeren/ontheffing-binnenstad-aanvragen",
+      "https://www.deventer.nl/wegenverkeerswet",
+      "https://www.deventer.nl/geluidsoverlastbouwenslopen",
+      "https://www.deventer.nl/bouwen-en-verbouwen/ontheffing-aanvragen-voor-geluidsoverlast-bij-bouwen-of-slopen",
+      "https://www.deventer.nl"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De burgemeester beoordeelt u...",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt dat de burgemeester de aanvraag beoordeelt, wat belangrijke aanvullende informatie is die niet in de originele tekst staat.",
+          "source_urls": [
+            "https://www.deventer.nl/optredenopstraat"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Kosten voor kortdurende ontheffing: € 12,10\nKosten voor langdurige ontheffing: € 12,10 (per tijdvak)",
+          "original_reference": "Er zijn kosten verbonden aan het aanvragen van een ontheffing. De exacte kosten worden niet gespecificeerd",
+          "note": "De bronpagina specificeert de exacte kosten voor ontheffingen, terwijl de originele tekst alleen vermeldt dat er kosten zijn zonder bedragen te noemen.",
+          "source_urls": [
+            "https://www.deventer.nl/wegenverkeerswet"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "minimaal 15 werkdagen van te voren",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt een specifieke aanvraagtermijn van 15 werkdagen vooraf, wat niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.deventer.nl/geluidsoverlastbouwenslopen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de specificatie van kosten (€12,10 voor verschillende soorten ontheffingen), de rol van de burgemeester bij de beoordeling van aanvragen, en de minimale aanvraagtermijn van 15 werkdagen. Deze details ontbreken in de originele tekst maar zijn wel belangrijk voor aanvragers."
+  }
+}

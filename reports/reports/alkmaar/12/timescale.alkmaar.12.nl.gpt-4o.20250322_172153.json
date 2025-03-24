@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ALKMAAR",
+      "contact": {
+        "phone": "14 072",
+        "email": "post@alkmaar.nl",
+        "website": "http://www.alkmaar.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "De gemeente probeert binnen 8 weken een beslissing te nemen over reguliere aanvragen.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Alkmaar moet de gemeente binnen 8 weken een besluit nemen over reguliere aanvragen. Dit is geen 'proberen' maar een wettelijke verplichting, tenzij de termijn wordt verlengd."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/bouwen-en-verbouwen/boom-kappen-vergunning",
+      "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/bouwen-en-verbouwen/omgevingsloket",
+      "https://www.alkmaar.nl/direct-regelen/wonen-verhuizen-en-verbouwen/verbouwen/melding-woon-en-leefomgeving-indienen/",
+      "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/bouwen-en-verbouwen/monumenten-omgevingsvergunning",
+      "https://www.alkmaar.nl/direct-regelen/wonen-verhuizen-en-verbouwen/vergunningen/omgevingsvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.overheid.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Tot 1 januari 2024 deed u een aanvraag of een melding via het Omgevingsloket online (OLO). Op 1 januari 2024 is de nieuwe Omgevingswet ingegaan. U doet de aanvraag nu in het nieuwe Omgevingsloket.",
+          "original_reference": "U kunt de aanvraag digitaal indienen via het Omgevingsloket.",
+          "note": "De originele tekst vermeldt niet de belangrijke systeemwijziging per 1 januari 2024 van OLO naar het nieuwe Omgevingsloket.",
+          "source_urls": [
+            "https://www.alkmaar.nl/direct-regelen/wonen-verhuizen-en-verbouwen/vergunningen/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "'De knip' van de bouwactiviteit - Tot 1 januari 2024 keek de gemeente niet alleen naar wát u ging bouwen, maar ook wáár u ging bouwen. Bij het beoordelen van de activiteit bouwen werd ook gekeken of er strijd was met de regels van het bestemmingsplan. Vanaf 1 januari 2024 zijn dit twee aparte act...",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over de nieuwe 'knip' in de beoordeling van bouwactiviteiten sinds 1 januari 2024.",
+          "source_urls": [
+            "https://www.alkmaar.nl/direct-regelen/wonen-verhuizen-en-verbouwen/vergunningen/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het Omgevingsloket vervangt de volgende digitale loketten: Omgevingsloket online (OLO); Activiteitenbesluit Internet Module (AIM); Ruimtelijkeplannen.nl; Meldpunt bodemkwaliteit.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat het nieuwe Omgevingsloket meerdere bestaande loketten vervangt.",
+          "source_urls": [
+            "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/bouwen-en-verbouwen/omgevingsloket"
+          ]
+        }
+      ]
+    },
+    "summary": "De originele tekst is verouderd en mist cruciale informatie over de nieuwe Omgevingswet die per 1 januari 2024 is ingegaan. Belangrijke wijzigingen zoals de overgang naar het nieuwe Omgevingsloket, de vervanging van meerdere oude loketten, en de nieuwe 'knip' in de beoordeling van bouwactiviteiten worden niet vermeld. Deze informatie is essentieel voor aanvragers van een omgevingsvergunning."
+  }
+}

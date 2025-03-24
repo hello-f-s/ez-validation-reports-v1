@@ -1,0 +1,93 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LAARBEEK",
+      "contact": {
+        "phone": "(0492) 46 97 00",
+        "email": "gemeente@laarbeek.nl",
+        "website": "http://www.laarbeek.nl"
+      }
+    },
+    "service": {
+      "id": 8,
+      "name": "Marktvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 12,
+    "false_sentences": 3,
+    "accuracy_percentage": 80.0,
+    "false_statements": [
+      {
+        "sentence": "U moet ingeschreven staan bij het centraal registratiekantoor van het hoofdbedrijfschap detailhandel",
+        "status": "false",
+        "note": "Het hoofdbedrijfschap detailhandel bestaat niet meer sinds 2014. Deze registratie is niet meer vereist voor marktstandplaatsen in Laarbeek."
+      },
+      {
+        "sentence": "Voor de standplaatsvergunning op de weekmarkt betaalt u in 2022: - Aanvraagkosten €104,60",
+        "status": "false",
+        "note": "Dit tarief is verouderd. De gemeente Laarbeek hanteert actuele tarieven die jaarlijks worden vastgesteld."
+      },
+      {
+        "sentence": "- Wachtlijstbijdrage €54,85 per jaar",
+        "status": "false",
+        "note": "Dit specifieke bedrag voor de wachtlijstbijdrage is verouderd. De gemeente Laarbeek hanteert actuele tarieven die jaarlijks worden vastgesteld."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.laarbeek.nl/standplaatsvergunning",
+      "https://www.laarbeek.nl/marktstandplaats-aanvragen",
+      "https://www.laarbeek.nl/reclame-uitingen-plaatsen-omgevingsvergunning",
+      "https://www.laarbeek.nl/horecabedrijf-beginnen",
+      "https://www.laarbeek.nl/bouwplannen-ingediend-bij-de-gemeente-inzage"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Beek en Donk € 8,25 per kwartaal, Aarle-Rixtel € 7,20 per kwartaal, Lieshout € 5,88 per kwartaal",
+          "original_reference": "Aanvraagkosten €104,60, Legeskosten €5,15 per strekkende meter per jaar, Wachtlijstbijdrage €54,85 per jaar",
+          "note": "De kostenstructuur in de bron is volledig anders dan in de originele tekst. De bron noemt kwartaaltarieven per locatie, terwijl de originele tekst spreekt over aanvraagkosten, legeskosten en wachtlijstbijdrage.",
+          "source_urls": [
+            "https://www.laarbeek.nl/marktstandplaats-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Openingstijden weekmarkt: Beek en Donk: 09.00-12.00 uur, Aarle-Rixtel en Lieshout: 08.30-12.30 uur",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de openingstijden van de weekmarkten, terwijl deze wel vermeld staan in de bron.",
+          "source_urls": [
+            "https://www.laarbeek.nl/marktstandplaats-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U vraagt de standplaatsvergunning acht weken van te voren aan.",
+          "original_reference": "Er is geen specifieke informatie gegeven over de doorlooptijd voor de aanvraag.",
+          "note": "De bron specificeert een aanvraagtermijn van 8 weken vooraf, wat niet vermeld staat in de originele tekst.",
+          "source_urls": [
+            "https://www.laarbeek.nl/standplaatsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de kostenstructuur, die volledig anders is in de bronnen dan in de originele tekst. Daarnaast bevat de bron aanvullende belangrijke informatie over openingstijden en aanvraagtermijnen die ontbreken in de originele tekst. Deze informatie is essentieel voor marktkooplieden die een standplaats willen aanvragen."
+  }
+}

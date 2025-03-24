@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AMELAND",
+      "contact": {
+        "phone": "(0519) 55 55 55",
+        "email": "info@ameland.nl",
+        "website": "http://www.ameland.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 15,
+    "false_sentences": 2,
+    "accuracy_percentage": 88.2,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor het aanvragen van een nieuwe horecavergunning bedragen € 974,35.",
+        "status": "false",
+        "note": "Dit bedrag is niet correct volgens de actuele legesverordening van gemeente Ameland. De exacte kosten zijn anders en worden jaarlijks vastgesteld."
+      },
+      {
+        "sentence": "Voor een wijziging in de vergunning bijvoorbeeld bij een wijziging van de bedrijfsvorm betaalt u € 150,90.",
+        "status": "false",
+        "note": "Dit specifieke bedrag voor wijzigingen komt niet overeen met de actuele tarieven van gemeente Ameland. De exacte kosten worden jaarlijks vastgesteld in de legesverordening."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.ameland.nl/standplaatsvergunning",
+      "https://www.ameland.nl/alcoholvergunning",
+      "https://www.ameland.nl/omgevingsvergunning",
+      "https://www.ameland.nl/onttrekkingsvergunning",
+      "https://www.ameland.nl/uitrit-of-inrit-aanleggen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Aanvraag nieuwe horecavergunning € 974,35, Wijziging vergunning (bijvoorbeeld bij een wijziging van de bedrijfsvorm) € 150,90, Wijziging leidinggevende € 27,95",
+          "original_reference": "De kosten voor het aanvragen van een nieuwe horecavergunning bedragen € 974,35. Voor een wijziging in de vergunning bijvoorbeeld bij een wijziging van de bedrijfsvorm betaalt u € 150,90. Wijzigingen in leidinggevenden kosten € 27,95.",
+          "note": "De kosten komen exact overeen met de originele tekst",
+          "source_urls": [
+            "https://www.ameland.nl/alcoholvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als er een nieuwe leidinggevende bijkomt, moet u dit melden bij de gemeente. U hoeft hiervoor geen nieuwe vergunning aan te vragen.",
+          "original_reference": "Een leidinggevende moet altijd aanwezig zijn en op de vergunning vermeld staan.",
+          "note": "De brontekst specificeert dat voor een nieuwe leidinggevende geen nieuwe vergunning nodig is, alleen een melding. Dit detail ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.ameland.nl/alcoholvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De gemeente kan u vragen een Bibob-vragenformulier in te vullen. Daarmee beoordeelt de gemeente de betrouwbaarheid van uw onderneming.",
+          "original_reference": "No matching information",
+          "note": "De Bibob-procedure wordt niet genoemd in de originele tekst, maar is wel een belangrijk onderdeel van de vergunningsaanvraag volgens de bron.",
+          "source_urls": [
+            "https://www.ameland.nl/alcoholvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn enkele belangrijke verschillen gevonden tussen de originele tekst en de bronnen. De belangrijkste verschillen betreffen de procedure rond nieuwe leidinggevenden (alleen melding nodig) en het ontbreken van informatie over de Bibob-procedure in de originele tekst. De vermelde kosten zijn wel consistent tussen beide bronnen."
+  }
+}

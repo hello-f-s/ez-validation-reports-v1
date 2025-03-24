@@ -1,0 +1,97 @@
+{
+  "context": {
+    "municipality": {
+      "name": "EDE",
+      "contact": {
+        "phone": "14 0318",
+        "email": "info@ede.nl",
+        "website": "http://www.ede.nl"
+      }
+    },
+    "service": {
+      "id": 8,
+      "name": "Marktvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 11,
+    "false_sentences": 3,
+    "accuracy_percentage": 78.6,
+    "false_statements": [
+      {
+        "sentence": "Voor specifieke vragen over standplaatsen kunt u een e-mail sturen naar standplaatsen@oddevallei.nl.",
+        "status": "false",
+        "note": "Dit e-mailadres is onjuist. Voor vragen over standplaatsen moet men contact opnemen met de gemeente Ede via gemeente@ede.nl of het algemene telefoonnummer."
+      },
+      {
+        "sentence": "Specifiek bedragen de kosten €43,50 voor een tijdelijke standplaats (maximaal 7 aaneengesloten dagen) en €533,00 voor een seizoen- of reguliere standplaats.",
+        "status": "false",
+        "note": "Deze specifieke bedragen komen niet overeen met de actuele tarieven van de gemeente Ede. De exacte tarieven worden jaarlijks vastgesteld en zijn te vinden in de tarieventabel van de gemeente."
+      },
+      {
+        "sentence": "Naast de Algemene Plaatselijke Verordening zijn er geen andere specifieke wetten genoemd die van toepassing zijn op de marktvergunningen.",
+        "status": "false",
+        "note": "Dit is onjuist. Ook de Marktverordening gemeente Ede is van toepassing op marktvergunningen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.ede.nl/aanvragen-en-regelen/bouw-en-verbouwvergunning-voor-bedrijven",
+      "https://www.ede.nl/aanvragen-en-regelen/bouw-en-verbouwvergunning",
+      "https://www.ede.nl/aanvragen-en-regelen/standplaatsvergunning",
+      "https://www.ede.nl/aanvragen-en-regelen/marktplaatsvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.ede.nl/aanvragen-en-regelen/verleende-vergunningen-inzien-en-opvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U hoeft geen standplaatsvergunning aan te vragen als u producten verkoopt vanaf een vaste plaats of kraam op de weekmarkt of bij een evenement.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina specificeert een belangrijke uitzondering die niet genoemd wordt in de originele tekst - namelijk dat geen standplaatsvergunning nodig is voor weekmarkten of evenementen.",
+          "source_urls": [
+            "https://www.ede.nl/aanvragen-en-regelen/standplaatsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wilt u een vergunning aanvragen voor meer dan acht kramen of wagens? Dan vraagt u een evenementenvergunning aan via www.ede.nl/evenementenvergunning.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat bij meer dan 8 kramen/wagens een evenementenvergunning nodig is in plaats van een standplaatsvergunning.",
+          "source_urls": [
+            "https://www.ede.nl/aanvragen-en-regelen/standplaatsvergunning"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "De kosten die de marktvereniging in rekening brengt zijn afhankelijk van de grootte van uw kraam.",
+          "original_reference": "De kosten die de marktvereniging in rekening brengt zijn afhankelijk van de grootte van uw kraam.",
+          "note": "De informatie over de kostenstructuur komt overeen.",
+          "source_urls": [
+            "https://www.ede.nl/aanvragen-en-regelen/marktplaatsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten enkele belangrijke aanvullende details die niet in de originele tekst staan, met name over uitzonderingen op de vergunningplicht en specifieke regels voor grote aantallen kramen. De basisinformatie over kosten, aanvraagprocedure en vereiste documenten komt wel overeen met de originele tekst."
+  }
+}

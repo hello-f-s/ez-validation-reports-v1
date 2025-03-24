@@ -1,0 +1,78 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MEPPEL",
+      "contact": {
+        "phone": "14 0522",
+        "email": "postbus@meppel.nl",
+        "website": "http://www.meppel.nl"
+      }
+    },
+    "service": {
+      "id": 3,
+      "name": "Certificaat voor opgraving aanvragen en vondst melden"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 1,
+    "true_sentences": 1,
+    "false_sentences": 0,
+    "accuracy_percentage": 100.0,
+    "false_statements": []
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 2,
+    "invalid_urls": 3,
+    "accuracy_percentage": 40.0,
+    "valid_urls_list": [
+      "https://www.meppel.nl/Configuratie/Formulieren/Reactieformulieren/Contactmoment_wethouders",
+      "https://www.meppel.nl/Bestuurenorganisatie/Contact_reacties/Meldingen_en_klachten"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.meppel.nl/Inwoner/Belastingen_heffingen/WOZ_OZB/Taxatieverslag_kopie_beschikking_opvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.meppel.nl/Inwoner/Wonen_ver_bouwen/Ver_bouwen_slopen/monument_vergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.meppel.nl/Bestuurenorganisatie/Contact_reacties/Meldingen_en_klachten/Meldingen_klachten_en_bezwaren",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Met dit formulier kunt u aangeven een contactmoment met één van de wethouders te willen. De wethouders zijn Klaas de Vries en Klaas Smidt.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat specifieke informatie over het aanvragen van een contactmoment met wethouders en hun namen, terwijl deze informatie volledig ontbreekt in de originele inhoud.",
+          "source_urls": [
+            "https://www.meppel.nl/Configuratie/Formulieren/Reactieformulieren/Contactmoment_wethouders"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Postbus 501, 7940AM Meppel, Telefoon: 14 0522, E-mail: postbus@meppel.nl, Stadhuis: Grote Oever 26, Gemeentewerf: Eekhorstweg 16",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat uitgebreide contactgegevens van de gemeente die niet aanwezig zijn in de originele inhoud.",
+          "source_urls": [
+            "https://www.meppel.nl/Configuratie/Formulieren/Reactieformulieren/Contactmoment_wethouders"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten substantieel meer informatie dan de originele inhoud, met name over het contact met wethouders en algemene contactgegevens van de gemeente. De originele inhoud bevatte geen enkele specifieke informatie, terwijl de bronpagina's gedetailleerde contactmogelijkheden en procedures beschrijven."
+  }
+}

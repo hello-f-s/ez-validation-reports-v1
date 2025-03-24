@@ -1,0 +1,78 @@
+{
+  "context": {
+    "municipality": {
+      "name": "BARNEVELD",
+      "contact": {
+        "phone": "14 0342",
+        "email": "info@barneveld.nl",
+        "website": "http://www.barneveld.nl"
+      }
+    },
+    "service": {
+      "id": 13,
+      "name": "Omzettingsvergunning voor kamerverhuur aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 20,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.2,
+    "false_statements": [
+      {
+        "sentence": "Alle kosten zijn terug te vinden in de legesverordening 2025.",
+        "status": "false",
+        "note": "De legesverordening 2025 bestaat nog niet. De huidige legesverordening van gemeente Barneveld is voor het jaar 2024."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.barneveld.nl/bouwen-wonen-en-verhuizen/omgevingsvergunning/omgevingsvergunning-aanvragen",
+      "https://www.barneveld.nl/vergunningen-en-ontheffingen/horeca/exploitatievergunning-aanvragen",
+      "https://www.barneveld.nl/vergunningen-en-ontheffingen/evenementen/evenementenvergunning-aanvragen",
+      "https://www.barneveld.nl/bouwen-wonen-en-verhuizen/wonen/leegstaand-pand-tijdelijk-verhuren"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.barneveld.nl/bouwen-wonen-en-verhuizen/omgevingsvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U betaalt de kosten voor de aanvraag bij de laatste stap van de aanvraag.",
+          "original_reference": "U ontvangt de rekening nadat uw aanvraag is behandeld.",
+          "note": "Er is een verschil in het moment van betaling. De bron geeft aan dat betaling tijdens de aanvraag gebeurt, terwijl de originele tekst stelt dat de rekening pas na behandeling wordt verstuurd.",
+          "source_urls": [
+            "https://www.barneveld.nl/vergunningen-en-ontheffingen/horeca/exploitatievergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Denk aan participatie: bespreek uw plannen op tijd met uw buren.",
+          "original_reference": "Zorg ervoor dat u uw plannen vooraf met de buren bespreekt.",
+          "note": "De bron benadrukt het participatie-aspect explicieter dan de originele tekst, hoewel de strekking vergelijkbaar is.",
+          "source_urls": [
+            "https://www.barneveld.nl/bouwen-wonen-en-verhuizen/omgevingsvergunning/omgevingsvergunning-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont twee belangrijke verschillen in de informatie: het moment van betaling voor de vergunningsaanvraag en de formulering rond burenparticipatie. De overige informatie in de bronnen komt grotendeels overeen met de originele tekst, inclusief de behandeltermijnen en algemene voorwaarden."
+  }
+}

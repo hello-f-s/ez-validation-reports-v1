@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "SCHIEDAM",
+      "contact": {
+        "phone": "14 010",
+        "email": "contact@schiedam.nl",
+        "website": "http://www.schiedam.nl"
+      }
+    },
+    "service": {
+      "id": 8,
+      "name": "Marktvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "Schiedam Noord, op dinsdag van 9.00 tot 13.00 uur",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Schiedam vindt de markt in Schiedam-Noord plaats op dinsdag van 08.30 tot 13.00 uur, niet vanaf 9.00 uur."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://schiedam.nl/a-tot-z/marktplaatsvergunning",
+      "https://www.schiedam.nl/a-tot-z/marktplaatsvergunning",
+      "https://www.schiedam.nl/a-tot-z/ventvergunning",
+      "https://schiedam.nl/a-tot-z/ventvergunning",
+      "https://schiedam.nl/a-tot-z/horecabedrijf-starten"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Let op! De marktstandplaats is iets anders dan een standplaatsvergunning.",
+          "original_reference": "Let op! De marktplaatsvergunning is iets anders dan een standplaatsvergunning",
+          "note": "Er is een klein maar belangrijk verschil in terminologie. De bron gebruikt 'marktstandplaats' terwijl het origineel 'marktplaatsvergunning' gebruikt, wat tot verwarring zou kunnen leiden.",
+          "source_urls": [
+            "https://schiedam.nl/a-tot-z/marktplaatsvergunning"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Het behandelen van een aanvraag is gratis. Het innemen van een standplaats kost wel geld. Met de marktgelden wordt een bijdrage gevraagd voor promotieactiviteiten. Daarnaast betaalt u kosten voor elektriciteit.",
+          "original_reference": "Het behandelen van een aanvraag is gratis. De kosten zijn verbonden aan het innemen van een standplaats, waarbij een bijdrage voor promotieactiviteiten en elektriciteit in rekening wordt gebracht.",
+          "note": "De informatie over kosten komt inhoudelijk overeen, alleen anders geformuleerd.",
+          "source_urls": [
+            "https://schiedam.nl/a-tot-z/marktplaatsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De informatie in de originele tekst komt grotendeels overeen met de bronnen. Er is één klein maar relevant verschil in terminologie gevonden ('marktstandplaats' versus 'marktplaatsvergunning'). De rest van de informatie, waaronder openingstijden, kosten en procedures, is consistent met de bronnen."
+  }
+}

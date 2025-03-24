@@ -1,0 +1,93 @@
+{
+  "context": {
+    "municipality": {
+      "name": "VOORSCHOTEN",
+      "contact": {
+        "phone": "14 071",
+        "email": "gemeente@voorschoten.nl",
+        "website": "http://www.voorschoten.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "Na de aanvraag ontvangt u binnen 8 weken bericht of u de vergunning krijgt.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Voorschoten is de wettelijke beslistermijn 12 weken en niet 8 weken voor een alcoholvergunning."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 2,
+    "invalid_urls": 3,
+    "accuracy_percentage": 40.0,
+    "valid_urls_list": [
+      "https://www.voorschoten.nl/form/vs-1014-1-alcohol-schenken-ontheffing-art-35-alcoholwet-met-digid/",
+      "https://www.voorschoten.nl/form/vs-1086-1-alcoholvergunning-commercieel-met-digid/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.voorschoten.nl/alcohol-schenken-tijdens-evenement",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.voorschoten.nl/alcoholvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.voorschoten.nl/exploitatievergunning-horecabedrijf",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U mag geen alcohol schenken en verkopen aan kinderen jonger dan 18 jaar.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet expliciet het verbod op alcoholverkoop aan personen onder de 18 jaar, wat een belangrijke wettelijke vereiste is",
+          "source_urls": [
+            "https://www.voorschoten.nl/form/vs-1014-1-alcohol-schenken-ontheffing-art-35-alcoholwet-met-digid/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bij het ontbreken van stukken wordt de aanvraag niet in behandeling genomen, maar ontvangt u een brief met welke documenten nog moeten worden aangeleverd.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet wat er gebeurt bij het ontbreken van documenten, terwijl de bron specificeert dat de aanvraag dan niet in behandeling wordt genomen",
+          "source_urls": [
+            "https://www.voorschoten.nl/form/vs-1086-1-alcoholvergunning-commercieel-met-digid/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Situatietekening (schaal 1:100) waarop aangegeven de plattegrond van de inrichting en terras(sen). Een goede foto is ook een scan van de tekening en kan worden geupload.",
+          "original_reference": "Bijlagen zoals een situatietekening",
+          "note": "De bron specificeert de exacte schaal (1:100) voor de situatietekening en vermeldt dat een foto van de tekening ook acceptabel is, wat niet vermeld staat in de originele tekst",
+          "source_urls": [
+            "https://www.voorschoten.nl/form/vs-1086-1-alcoholvergunning-commercieel-met-digid/"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten enkele belangrijke aanvullende details die niet in de originele tekst staan, waaronder het expliciete verbod op alcoholverkoop aan minderjarigen, de procedure bij ontbrekende documenten, en specifieke eisen voor de situatietekening. Deze informatie is essentieel voor een complete en correcte vergunningsaanvraag."
+  }
+}

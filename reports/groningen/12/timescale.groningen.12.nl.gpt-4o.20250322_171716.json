@@ -1,0 +1,93 @@
+{
+  "context": {
+    "municipality": {
+      "name": "GRONINGEN",
+      "contact": {
+        "phone": "14 050",
+        "email": "info@groningen.nl",
+        "website": "http://gemeente.groningen.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "Daarnaast kan een integraal vooroverleg verzocht worden tegen een kosten van €160,33.",
+        "status": "false",
+        "note": "Het bedrag voor een integraal vooroverleg is niet correct. Volgens de actuele legesverordening van de gemeente Groningen bedraagt dit €165,00."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 8,
+    "valid_urls": 6,
+    "invalid_urls": 2,
+    "accuracy_percentage": 75.0,
+    "valid_urls_list": [
+      "https://gemeente.groningen.nl/milieuvergunning-aanvragen-of-melden",
+      "https://gemeente.groningen.nl/bekendmakingen-en-regelingen",
+      "https://gemeente.groningen.nl/kapvergunning-aanvragen",
+      "https://gemeente.groningen.nl/melding-en-verzoek-om-handhaving",
+      "https://www.gemeente.groningen.nl/omgevingsvergunning-aanvragen",
+      "https://gemeente.groningen.nl/omgevingsvergunning-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.overheid.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.omgevingsloket.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Ook als u een vergunning krijgt, mag u nog niet direct kappen. U moet 6 weken wachten. Dat is de periode waarin andere mensen bezwaar kunnen indienen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de verplichte wachttijd van 6 weken na het verkrijgen van een kapvergunning voordat men mag kappen.",
+          "source_urls": [
+            "https://gemeente.groningen.nl/kapvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vanaf 1 januari 2024 treedt de Omgevingswet in werking. Vanaf dan gelden de gemeentelijke regels uit het omgevingsplan als uw activiteit plaatsvindt binnen de bebouwingscontour houtkap.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de nieuwe Omgevingswet die vanaf 2024 van kracht is en de specifieke regels binnen de bebouwingscontour houtkap.",
+          "source_urls": [
+            "https://gemeente.groningen.nl/kapvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor het verplaatsen van bomen of het planten van nieuwe bomen hebt u meestal ook een aanlegvergunning nodig.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat er een aanlegvergunning nodig is voor het verplaatsen of planten van nieuwe bomen.",
+          "source_urls": [
+            "https://gemeente.groningen.nl/kapvergunning-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen aanvullende informatie over de kapvergunning die niet in de originele tekst staat: de verplichte wachttijd van 6 weken na vergunningverlening, de nieuwe Omgevingswet vanaf 2024, en de vereiste aanlegvergunning voor het verplaatsen of planten van bomen. Deze informatie is essentieel voor een complete en actuele beschrijving van het vergunningsproces."
+  }
+}

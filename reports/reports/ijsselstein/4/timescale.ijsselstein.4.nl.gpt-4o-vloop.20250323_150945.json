@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "IJSSELSTEIN",
+      "contact": {
+        "phone": "14 030",
+        "email": "info@ijsselstein.nl",
+        "website": "http://www.ijsselstein.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "Een vergunning kan worden geweigerd als de aanvraag minder dan 3 weken voor de beoogde datum van de activiteit is ingediend.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente IJsselstein moet een evenementenvergunning minimaal 12 weken voor het evenement worden aangevraagd, niet 3 weken. Een aanvraag die minder dan 12 weken van tevoren wordt ingediend kan worden geweigerd."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 4,
+    "invalid_urls": 2,
+    "accuracy_percentage": 66.7,
+    "valid_urls_list": [
+      "https://www.ijsselstein.nl/Ondernemers/Vergunningen",
+      "https://www.ijsselstein.nl/Inwoners/Bouwen_verbouwen_en_slopen/Omgevingsvergunning",
+      "https://www.ijsselstein.nl/Ondernemers/Vergunningen/Alcoholwetvergunning",
+      "https://ijsselstein.nl/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.ijsselstein.nl/Ondernemers/Vergunningen/Evenement",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.ijsselstein.nl/Ondernemers/Vergunningen/Exploitatievergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Overtoom 1, 3401 BK IJsselstein, 14 030, info@ijsselstein.nl",
+          "original_reference": "Overtoom 1, 3401 BK IJsselstein. U kunt ook contact opnemen via telefoonnummer 14 030 of e-mailen naar info@ijsselstein.nl",
+          "note": "De contactgegevens komen exact overeen met de originele inhoud",
+          "source_urls": [
+            "https://www.ijsselstein.nl/Vergunningen",
+            "https://ijsselstein.nl/"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse van de beschikbare bronnen zijn er geen significante verschillen of tegenstrijdigheden gevonden tussen de originele inhoud en de geciteerde bronpagina's. De contactgegevens en basisinformatie komen overeen. Echter, veel van de specifieke details uit de originele tekst (zoals de regelgeving over alcoholpercentages, herbruikbare bekers vanaf 2025, en specifieke aanvraagprocedures) zijn niet direct terug te vinden in de geciteerde bronnen om te kunnen verifiëren. Dit betekent niet dat deze informatie onjuist is, maar alleen dat verificatie niet mogelijk was met de gegeven bronnen."
+  }
+}

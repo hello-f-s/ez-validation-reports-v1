@@ -1,0 +1,98 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MAASSLUIS",
+      "contact": {
+        "phone": "14 010",
+        "email": "gemeente@maassluis.nl",
+        "website": "http://www.maassluis.nl"
+      }
+    },
+    "service": {
+      "id": 8,
+      "name": "Marktvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 10,
+    "false_sentences": 3,
+    "accuracy_percentage": 76.9,
+    "false_statements": [
+      {
+        "sentence": "U heeft geen diploma's nodig voor de verkoop van goederen op een markt, aangezien markthandel onder de ambulante handel valt.",
+        "status": "false",
+        "note": "Voor bepaalde producten zoals voedsel zijn wel degelijk diploma's of certificaten vereist volgens de Nederlandse wetgeving voor ambulante handel."
+      },
+      {
+        "sentence": "U moet geregistreerd zijn bij het Hoofd Bedrijfschap Detailhandel (HBD).",
+        "status": "false",
+        "note": "Het Hoofdbedrijfschap Detailhandel (HBD) bestaat niet meer sinds 2015. Deze registratie is dus niet meer mogelijk of vereist."
+      },
+      {
+        "sentence": "Meestal is een vestigingsvergunning nodig.",
+        "status": "false",
+        "note": "De vestigingswet is in 2007 afgeschaft. Een vestigingsvergunning is niet meer nodig voor het uitoefenen van markthandel."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.maassluis.nl/exploitatievergunning-horecabedrijf",
+      "https://www.maassluis.nl/antenne-of-schotelantenne-plaatsen",
+      "https://www.maassluis.nl/standplaats-aanvragen",
+      "https://www.maassluis.nl/uitrit-of-inrit-aanleggen",
+      "https://www.maassluis.nl/marktplaats-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.maassluis.nl/ondernemen/standplaatsen-en-vergunningen/marktplaats-aanvragen",
+        "reason": "INVALID: Error scraping https://www.maassluis.nl/ondernemen/standplaatsen-en-vergunningen/marktplaats-aanvragen: 404 Client Error: Not Found for url: https://www.maassluis.nl/ondernemen/standplaatsen-en-vergunningen/marktplaats-aanvragen"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "op vrijdagen van 8.30 tot 16.30 uur op het parkeerterrein aan de Marelstraat, op dinsdagen van 8.30 tot 16.30 uur op het parkeerterrein bij winkelcentrum Koningshoek",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de specifieke marktdagen en -tijden, terwijl de bron deze wel vermeldt",
+          "source_urls": [
+            "https://www.maassluis.nl/marktplaats-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De marktmeester wijst elke marktdag de dagplaatsen per branche toe aan meelopers. Dagplaatsen zijn vaste plaatsen die niet bezet zijn in verband met ziekte, vakantie etcetera.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over het systeem van vaste plaatsen en meelopers, en hoe dagplaatsen worden toegewezen",
+          "source_urls": [
+            "https://www.maassluis.nl/marktplaats-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De gemeente verleent direct de vergunning waarmee u zich kunt laten inschrijven als meeloper.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de directe verlening van vergunningen voor meelopers",
+          "source_urls": [
+            "https://www.maassluis.nl/marktplaats-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina bevat aanzienlijk meer details over de marktvergunning dan de originele tekst, met name over de specifieke marktlocaties en -tijden, het systeem van vaste plaatsen versus meelopers, en de procedure voor dagplaatsen. Deze informatie is essentieel voor potentiële marktkraamhouders maar ontbreekt in de originele tekst. De kernvoorwaarden en kosten zijn wel consistent tussen beide versies."
+  }
+}

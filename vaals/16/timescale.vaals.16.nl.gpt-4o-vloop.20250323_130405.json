@@ -1,0 +1,78 @@
+{
+  "context": {
+    "municipality": {
+      "name": "VAALS",
+      "contact": {
+        "phone": "(043) 306 85 68",
+        "email": "info@vaals.nl",
+        "website": "http://www.vaals.nl"
+      }
+    },
+    "service": {
+      "id": 16,
+      "name": "Registreren in het Landelijk Register Kinderopvang (LRK)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "- Telefoon: 043-3068568",
+        "status": "false",
+        "note": "Het telefoonnummer van de gemeente Vaals is incorrect. Het juiste algemene telefoonnummer van de gemeente Vaals is 043-3068568"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.vaals.nl/inwoners/onderwijs-peuterspeelzaal-kinderopvang/kinderopvang",
+      "https://www.vaals.nl/inwoners/wijvaals/ondersteuningregelingen/regelingen-voor-inwoners-tot-18-jaar",
+      "https://www.vaals.nl/inwoners/aangifte-erkenning-kind",
+      "https://www.vaals.nl/inwoners/uittreksels/uittreksel-persoonsgegevens-brp"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.vaals.nl/inwoners/uittreksels/verklaring-omtrent-het-gedrag-vog",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor ouders die: werken, een opleiding of re-integratietrajectvolgen; gebruikmaken van geregistreerdekinderopvang; de toeslag aanvragen binnen 3 maanden nastart van de opvang.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke specifieke voorwaarden voor kinderopvangtoeslag, waaronder de 3-maanden aanvraagtermijn en de vereisten qua werk/opleiding.",
+          "source_urls": [
+            "https://www.vaals.nl/inwoners/wijvaals/ondersteuningregelingen/regelingen-voor-inwoners-tot-18-jaar"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Tegemoetkoming Kinderopvang voor ouders met kinderen van 0 tot en met 12 jaar; met een bijstandsuitkering; die deels werken, studeren, een re-integratietraject of een verplichte inburgeringscursus volgen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de specifieke tegemoetkoming kinderopvang voor bijstandsgerechtigden en de leeftijdsgrenzen van 0-12 jaar.",
+          "source_urls": [
+            "https://www.vaals.nl/inwoners/wijvaals/ondersteuningregelingen/regelingen-voor-inwoners-tot-18-jaar"
+          ]
+        }
+      ]
+    },
+    "summary": "De originele tekst mist belangrijke details over financiële regelingen en voorwaarden voor kinderopvang. Met name ontbreken specifieke informatie over kinderopvangtoeslag (aanvraagtermijn en voorwaarden) en de speciale tegemoetkoming voor bijstandsgerechtigden. Deze informatie is wel beschikbaar in de bronpagina's van de gemeente."
+  }
+}

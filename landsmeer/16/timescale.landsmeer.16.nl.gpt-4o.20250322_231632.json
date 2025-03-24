@@ -1,0 +1,76 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LANDSMEER",
+      "contact": {
+        "phone": "(020) 487 71 11",
+        "email": "gemeente@Landsmeer.nl",
+        "website": "http://www.landsmeer.nl"
+      }
+    },
+    "service": {
+      "id": 16,
+      "name": "Registreren in het Landelijk Register Kinderopvang (LRK)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 10,
+    "false_sentences": 1,
+    "accuracy_percentage": 90.9,
+    "false_statements": [
+      {
+        "sentence": "Deze moeten verstuurd worden naar Gemeente Landsmeer, Team Sociaal Domein, of gemaild naar gemeente@landsmeer.nl.",
+        "status": "false",
+        "note": "Het juiste e-mailadres voor de gemeente Landsmeer is info@landsmeer.nl, niet gemeente@landsmeer.nl"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 4,
+    "invalid_urls": 2,
+    "accuracy_percentage": 66.7,
+    "valid_urls_list": [
+      "https://www.landsmeer.nl/inwoners/zorg,_inkomen,_onderwijs_en_opvoeding/onderwijs/school/aanmelden_bij_de_basisschool",
+      "https://www.landsmeer.nl/inwoners/zorg,_inkomen,_onderwijs_en_opvoeding/onderwijs/school/bijzonder_verlof_van_school_aanvragen",
+      "https://www.landsmeer.nl/inwoners/zorg,_inkomen,_onderwijs_en_opvoeding/onderwijs/school/leerlingen_vervoer",
+      "https://www.landsmeer.nl/inwoners/zorg,_inkomen,_onderwijs_en_opvoeding/onderwijs/school/vrijstelling_van_leerplicht_aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "http://gemeente.landsmeer.nl",
+        "reason": "INVALID: Error scraping http://gemeente.landsmeer.nl: HTTPConnectionPool(host='gemeente.landsmeer.nl', port=80): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPConnection object at 0x10387fe00>: Failed to resolve 'gemeente.landsmeer.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.landsmeer.nl/inwoners/zorg,_inkomen,_onderwijs_en_opvoeding/onderwijs/kinderopvang/kinderopvang_exploitatie",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Geen relevante informatie over kinderopvangexploitatie gevonden in de geciteerde bronnen",
+          "original_reference": "Volledige originele tekst over kinderopvangexploitatie",
+          "note": "De geciteerde bronpagina's bevatten geen informatie over kinderopvangexploitatie. De pagina's gaan over basisscholen, leerplicht, leerlingenvervoer en bijzonder verlof. De originele inhoud kan daarom niet geverifieerd worden met de gegeven bronnen.",
+          "source_urls": [
+            "https://www.landsmeer.nl/inwoners/zorg,_inkomen,_onderwijs_en_opvoeding/onderwijs/school/aanmelden_bij_de_basisschool",
+            "https://www.landsmeer.nl/inwoners/zorg,_inkomen,_onderwijs_en_opvoeding/onderwijs/school/bijzonder_verlof_van_school_aanvragen",
+            "https://www.landsmeer.nl/inwoners/zorg,_inkomen,_onderwijs_en_opvoeding/onderwijs/school/leerlingen_vervoer",
+            "https://www.landsmeer.nl/inwoners/zorg,_inkomen,_onderwijs_en_opvoeding/onderwijs/school/vrijstelling_van_leerplicht_aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse kon niet volledig worden uitgevoerd omdat de geciteerde bronnen geen informatie bevatten over kinderopvangexploitatie. De bronpagina's behandelen alleen onderwerpen gerelateerd aan basisonderwijs en leerplicht. Om een gedegen vergelijking te maken zou toegang tot de juiste bronpagina over kinderopvangexploitatie nodig zijn."
+  }
+}

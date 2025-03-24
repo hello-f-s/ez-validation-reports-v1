@@ -1,0 +1,96 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HEEMSTEDE",
+      "contact": {
+        "phone": "(023) 548 58 68",
+        "email": "gemeente@heemstede.nl",
+        "website": "http://www.heemstede.nl"
+      }
+    },
+    "service": {
+      "id": 13,
+      "name": "Omzettingsvergunning voor kamerverhuur aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 11,
+    "false_sentences": 2,
+    "accuracy_percentage": 84.6,
+    "false_statements": [
+      {
+        "sentence": "Voor de verhuur van uw woning aan toeristen, zoals vakantieverhuur of Bed & Breakfast, is een omgevingsvergunning vereist.",
+        "status": "false",
+        "note": "In Heemstede is niet voor alle vormen van toeristische verhuur een omgevingsvergunning vereist. Voor B&B tot 4 personen in de eigen woning is alleen een melding nodig."
+      },
+      {
+        "sentence": "Deze verplichting geldt sinds 1 maart 2020, ook voor verhuur die voor die datum al gestart is.",
+        "status": "false",
+        "note": "Er is geen specifieke datum van 1 maart 2020 genoemd in het beleid van gemeente Heemstede voor deze verplichting."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 4,
+    "invalid_urls": 2,
+    "accuracy_percentage": 66.7,
+    "valid_urls_list": [
+      "https://www.heemstede.nl/vergunningen/standplaatsvergunning-aanvragen",
+      "https://www.heemstede.nl/bestuur-en-organisatie/omgevingswet/het-nieuwe-omgevingsloket",
+      "https://www.heemstede.nl/vergunningen/uw-woning-verhuren",
+      "https://www.heemstede.nl/bestuur-en-organisatie/omgevingswet/de-omgevingswet-voor-u-als-inwoner-of-ondernemer"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.heemstede.nl/vergunningen/milieu-omgevingsvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://ruimtelijkeplannen.heemstede.nl",
+        "reason": "INVALID: Error scraping https://ruimtelijkeplannen.heemstede.nl: HTTPSConnectionPool(host='ruimtelijkeplannen.heemstede.nl', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1042b0550>: Failed to resolve 'ruimtelijkeplannen.heemstede.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De Bed & Breakfast is maximaal 25% van de totale oppervlakte van de woning. De Bed& Breakfast is maximaal 75m2 U verhuurt aan maximaal 6 personen per nacht",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen specifieke voorwaarden voor B&B, terwijl de bron concrete oppervlakte- en bezettingslimieten vermeldt",
+          "source_urls": [
+            "https://www.heemstede.nl/vergunningen/uw-woning-verhuren"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U moet een nachtregister bijhouden en jaarlijks overleggen aan de gemeente U moet een verhaalsovereenkomst planschadevergoeding tegen eventuele Planschadeclaims ondertekenen",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de verplichting tot het bijhouden van een nachtregister en het ondertekenen van een verhaalsovereenkomst",
+          "source_urls": [
+            "https://www.heemstede.nl/vergunningen/uw-woning-verhuren"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Mogelijke extra parkeerbehoefte door recreatief nachtverblijf mag niet leiden tot parkeerproblemen",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over parkeervoorwaarden voor verhuur",
+          "source_urls": [
+            "https://www.heemstede.nl/vergunningen/uw-woning-verhuren"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende voorwaarden voor verhuur die niet in de originele tekst staan, waaronder specifieke limieten voor B&B's (25% van woning, max 75m2, max 6 personen), verplichtingen zoals het bijhouden van een nachtregister en ondertekenen van een verhaalsovereenkomst, en voorwaarden omtrent parkeren. Deze informatie is essentieel voor verhuurders maar ontbreekt in de originele tekst."
+  }
+}

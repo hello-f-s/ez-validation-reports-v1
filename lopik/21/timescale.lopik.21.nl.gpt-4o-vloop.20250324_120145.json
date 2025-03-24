@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LOPIK",
+      "contact": {
+        "phone": "(0348) 55 99 55",
+        "email": "gemeente@lopik.nl",
+        "website": "http://www.lopik.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 20,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.2,
+    "false_statements": [
+      {
+        "sentence": "Het aanvragen van een VOG kost €41,35.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Lopik kost een VOG €41,95. Het genoemde bedrag van €41,35 is niet correct."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.lopik.nl/verklaring-omtrent-het-gedrag-vog",
+      "https://www.lopik.nl/milieu-vergunning-of-melding",
+      "https://www.lopik.nl/nederlander-worden-door-optie",
+      "https://www.lopik.nl/nederlander-worden-door-naturalisatie",
+      "https://www.lopik.nl"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De gemeente Lopik werkt op afspraak.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat een afspraak nodig is voor het aanvragen van een VOG bij de gemeente Lopik, terwijl dit wel een belangrijke voorwaarde is volgens de bronpagina.",
+          "source_urls": [
+            "https://www.lopik.nl/verklaring-omtrent-het-gedrag-vog"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U krijgt een formulier van uw werkgever of andere organisatie.",
+          "original_reference": "Een volledig ingevuld en ondertekend aanvraagformulier van uw opdrachtgever of organisatie.",
+          "note": "De brontekst impliceert dat de werkgever het formulier verstrekt, terwijl de originele tekst alleen spreekt over een ingevuld formulier zonder te vermelden wie het verstrekt.",
+          "source_urls": [
+            "https://www.lopik.nl/verklaring-omtrent-het-gedrag-vog"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U krijgt een e-mail dat u een VOG nodig hebt.",
+          "original_reference": "Ontvang een e-mail met een link om in te loggen met uw DigiD.",
+          "note": "De brontekst beschrijft een specifiekere volgorde waarbij eerst een notificatie-email wordt ontvangen, terwijl de originele tekst direct over de inlog-link spreekt.",
+          "source_urls": [
+            "https://www.lopik.nl/verklaring-omtrent-het-gedrag-vog"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de procedurele details bij het aanvragen van een VOG. De bronpagina vermeldt expliciet dat de gemeente Lopik op afspraak werkt, wat een essentieel detail is dat ontbreekt in de originele tekst. Daarnaast zijn er nuanceverschillen in de beschrijving van het aanvraagproces, vooral wat betreft de rol van de werkgever en de online aanvraagprocedure."
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LEEUWARDEN",
+      "contact": {
+        "phone": "14 058",
+        "email": "gemeente@leeuwarden.nl",
+        "website": "http://www.leeuwarden.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "U heeft een exploitatievergunning als u geen alcohol wilt schenken.",
+        "status": "false",
+        "note": "Dit is onjuist. Ook als u geen alcohol schenkt maar wel een horecabedrijf wilt exploiteren, heeft u een exploitatievergunning nodig. Het is niet andersom zoals de zin suggereert."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.leeuwarden.nl/melden-bij-de-gemeente/woo-verzoek-indienen/",
+      "https://www.leeuwarden.nl/horeca/horecavergunning/",
+      "https://www.leeuwarden.nl/omgevingsvergunning/procedure-omgevingsvergunning-aanvragen-of-melden/",
+      "https://www.leeuwarden.nl/omgevingsvergunning/gebruikmaken-maken-of-veranderen-van-een-uitweg/",
+      "https://www.leeuwarden.nl/horeca/gok-en-speelautomaten/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://government.nl/topics/alcohol-laws/guidelines",
+        "reason": "INVALID: Error scraping https://government.nl/topics/alcohol-laws/guidelines: 404 Client Error: Not Found for url: https://www.government.nl/topics/alcohol-laws/guidelines"
+      },
+      {
+        "url": "https://www.leeuwarden.nl/dsresource?objectid=0004323f-67b1-4860-b661-f3d1e0b5be3b",
+        "reason": "INVALID: Error scraping https://www.leeuwarden.nl/dsresource?objectid=0004323f-67b1-4860-b661-f3d1e0b5be3b: 404 Client Error: Not Found for url: https://www.leeuwarden.nl/dsresource?objectid=0004323f-67b1-4860-b661-f3d1e0b5be3b"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U hebt een exploitatievergunning nodig als u een horecabedrijf wilt beginnen of overnemen, waarin u geen alcohol schenkt. Ook coffeeshops en afhaalbedrijven hebben een exploitatievergunning nodig.",
+          "original_reference": "U heeft een exploitatievergunning als u geen alcohol wilt schenken.",
+          "note": "De originele tekst is onvolledig. De brontekst specificeert dat de exploitatievergunning ook geldt voor coffeeshops en afhaalbedrijven, wat belangrijke aanvullende informatie is.",
+          "source_urls": [
+            "https://www.leeuwarden.nl/horeca/horecavergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U mag een vergunning voor maximaal 2 kansspelautomaten aanvragen. De kansspelautomaat mag alleen in een hoogdrempelige inrichting worden geplaatst. Bijvoorbeeld in een café of restaurant.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over het maximaal toegestane aantal kansspelautomaten en de vereiste van een hoogdrempelige inrichting, wat belangrijke voorwaarden zijn voor horecaondernemers.",
+          "source_urls": [
+            "https://www.leeuwarden.nl/horeca/gok-en-speelautomaten/"
+          ]
+        }
+      ]
+    },
+    "summary": "De originele tekst mist enkele belangrijke details over de exploitatievergunning, met name de toepasbaarheid op coffeeshops en afhaalbedrijven. Daarnaast ontbreekt informatie over de regelgeving rond kansspelautomaten in horecagelegenheden. Deze informatie is wel beschikbaar in de bronpagina's en is relevant voor horecaondernemers."
+  }
+}

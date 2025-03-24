@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "KERKRADE",
+      "contact": {
+        "phone": "14 045",
+        "email": "gemeentehuis@kerkrade.nl",
+        "website": "http://www.kerkrade.nl"
+      }
+    },
+    "service": {
+      "id": 18,
+      "name": "Ventvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 21,
+    "false_sentences": 3,
+    "accuracy_percentage": 87.5,
+    "false_statements": [
+      {
+        "sentence": "Om in aanmerking te komen voor een ventvergunning, moet de eigenaar of leidinggevende minimaal 21 jaar oud zijn en van onbesproken gedrag.",
+        "status": "false",
+        "note": "De minimumleeftijd voor een ventvergunning in Kerkrade is 18 jaar, niet 21 jaar."
+      },
+      {
+        "sentence": "Een huurovereenkomst, eigendomsbewijs of pachtovereenkomst van het pand",
+        "status": "false",
+        "note": "Voor een ventvergunning is geen huurovereenkomst of eigendomsbewijs van een pand nodig, aangezien venten juist gaat om ambulante handel."
+      },
+      {
+        "sentence": "Een plattegrond van het pand",
+        "status": "false",
+        "note": "Een plattegrond van een pand is niet vereist voor een ventvergunning omdat venten een mobiele activiteit betreft zonder vast pand."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.kerkrade.nl/exploitatievergunning-horecabedrijf",
+      "https://www.kerkrade.nl/omgevingsvergunning",
+      "https://www.kerkrade.nl/milieu-vergunning-of-melding",
+      "https://www.kerkrade.nl/standplaats-aanvragen",
+      "https://www.kerkrade.nl/vergunning-checken-en-vooroverleg"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een standplaatsvergunning hebt u nodig als u een plaats wilt op een dagmarkt, weekmarkt of jaarmarkt. Een ventvergunning hebt u nodig als u goederen verkoopt op straat of huis-aan-huis. Venten betekent dat u uw goederen steeds op een andere plek verkoopt.",
+          "original_reference": "Er is een verschil tussen een ventvergunning, een standplaatsvergunning en een marktplaatsvergunning.",
+          "note": "De bronpagina geeft een duidelijkere definitie en uitleg van het verschil tussen de vergunningen, terwijl de originele tekst alleen vermeldt dat er een verschil is zonder dit uit te leggen.",
+          "source_urls": [
+            "https://www.kerkrade.nl/standplaats-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U ontvangt binnen 8 weken bericht of u de vergunning krijgt. Is er een wachtlijst of heeft de gemeente een maximum ingesteld? Dan kan het langer duren voordat u de vergunning krijgt.",
+          "original_reference": "Binnen 8 weken hoort u van de gemeente of u de vergunning krijgt. Deze termijn kan met maximaal 8 weken worden verlengd.",
+          "note": "De bronpagina noemt wachtlijsten en gemeentelijke maxima als redenen voor vertraging, terwijl de originele tekst alleen spreekt over een algemene verlengingsmogelijkheid van 8 weken.",
+          "source_urls": [
+            "https://www.kerkrade.nl/standplaats-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont twee belangrijke verschillen tussen de originele tekst en de bronpagina's. Het eerste verschil betreft de uitleg van de verschillende soorten vergunningen, waarbij de bronpagina meer specifieke informatie geeft. Het tweede verschil heeft betrekking op de verwerkingstijd en mogelijke vertragingen, waarbij de bronpagina andere redenen noemt voor vertraging dan de originele tekst. De overige informatie in de originele tekst komt overeen met de bronpagina's of kan niet geverifieerd worden omdat deze informatie niet in de gegeven bronpagina's staat."
+  }
+}

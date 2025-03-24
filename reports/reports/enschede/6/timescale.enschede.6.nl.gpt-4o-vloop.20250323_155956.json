@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ENSCHEDE",
+      "contact": {
+        "phone": "14 053",
+        "email": "postbus20@enschede.nl",
+        "website": "http://www.enschede.nl"
+      }
+    },
+    "service": {
+      "id": 6,
+      "name": "Integriteitsonderzoek (Wet Bibob)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "Een LBB-onderzoek om de gemeente te adviseren duurt maximaal 12 weken.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Enschede duurt een onderzoek door het Landelijk Bureau Bibob (LBB) maximaal 8 weken, met de mogelijkheid tot een eenmalige verlenging van 4 weken. Dit is niet standaard 12 weken zoals in de tekst wordt gesuggereerd."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.enschede.nl/bibob-onderzoek",
+      "https://www.enschede.nl/inkoop-en-aanbesteding",
+      "https://www.enschede.nl/geheimhouding-persoonsgegevens",
+      "https://www.enschede.nl/verklaring-omtrent-het-gedrag-vog",
+      "https://www.enschede.nl/hulp-bij-online-zaken-regelen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U kunt de documenten ook digitaal indienen via bibob@enschede.nl",
+          "original_reference": "Stuur het ingevulde Bibob-formulier, de 'bijlage bij het Bibob formulier', en de verklaring van de belastingdienst naar het Kennispunt Bibob",
+          "note": "De originele tekst noemt beide opties (fysiek en digitaal) als aparte zinnen, terwijl de brontekst direct aangeeft dat documenten digitaal kunnen worden ingediend. Dit kan verwarrend zijn voor aanvragers.",
+          "source_urls": [
+            "https://www.enschede.nl/bibob-onderzoek"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De gemeente geeft uw persoonsgegevens wel door als de volgende organisaties erom vragen: Overheid, zoals belastingdienst, politie, RDW, Sociale Verzekeringsbank en UWV, Notarissen en gerechtsdeurwaarders, Centraal Bureau voor Genealogie, Zorgverzekeraars, Pensioenfondsen, banken en verzekeraars",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over welke instanties wel toegang kunnen krijgen tot persoonsgegevens, terwijl dit belangrijke informatie is voor de context van een Bibob-onderzoek.",
+          "source_urls": [
+            "https://www.enschede.nl/geheimhouding-persoonsgegevens"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De contactcenter is op werkdagen telefonisch bereikbaar van 9.00 - 16.30 uur",
+          "original_reference": "De contactcenter is op werkdagen telefonisch bereikbaar van 9.00 - 17.00 uur",
+          "note": "Er is een verschil in sluitingstijd tussen de originele tekst (17:00) en wat in de bronnen staat (16:30).",
+          "source_urls": [
+            "https://www.enschede.nl/hulp-bij-online-zaken-regelen"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn drie belangrijke verschillen gevonden tussen de originele tekst en de bronnen: 1) onduidelijkheid over de indiening van documenten (fysiek vs. digitaal), 2) ontbrekende informatie over welke instanties toegang hebben tot persoonsgegevens, en 3) verschillende sluitingstijden van het contactcenter. Deze verschillen kunnen impact hebben op de dienstverlening en duidelijkheid voor aanvragers."
+  }
+}

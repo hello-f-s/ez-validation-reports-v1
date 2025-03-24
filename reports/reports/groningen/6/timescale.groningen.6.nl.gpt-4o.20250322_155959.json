@@ -1,0 +1,78 @@
+{
+  "context": {
+    "municipality": {
+      "name": "GRONINGEN",
+      "contact": {
+        "phone": "14 050",
+        "email": "info@groningen.nl",
+        "website": "http://gemeente.groningen.nl"
+      }
+    },
+    "service": {
+      "id": 6,
+      "name": "Integriteitsonderzoek (Wet Bibob)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 10,
+    "false_sentences": 1,
+    "accuracy_percentage": 90.9,
+    "false_statements": [
+      {
+        "sentence": "Het ingevulde formulier moet gemaild worden naar bibob@groningen.nl.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Groningen moet het Bibob-formulier niet per e-mail worden ingediend, maar via het digitale loket of persoonlijk worden aangeleverd vanwege de vertrouwelijke aard van de informatie."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://gemeente.groningen.nl/wet-bibob",
+      "https://gemeente.groningen.nl/woo-verzoek",
+      "https://gemeente.groningen.nl/geheimhouding-persoonsgegevens-aanvragen",
+      "https://gemeente.groningen.nl/verklaring-omtrent-gedrag-vog-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://gemeente.groningen.nl/bodeminformatie-opvragen-en-bodemonderzoek-laten-doen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "We doen in ieder geval een Bibob-onderzoek bij de volgende vergunningen: In de horeca: Alcoholvergunning, Exploitatievergunning horeca, Vergunning voor een seksbedrijf, Aanwezigheidsvergunning kansspelautomaten, Bij (ver)bouwen: Omzettingsvergunning voor kamerverhuur, Omgevingsvergunning",
+          "original_reference": "No matching information",
+          "note": "De originele tekst specificeert niet bij welke specifieke vergunningen een Bibob-onderzoek wordt uitgevoerd, terwijl de bronpagina dit wel duidelijk vermeldt",
+          "source_urls": [
+            "https://gemeente.groningen.nl/wet-bibob"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "We controleren met de Wet Bibob of een persoon, bedrijf of zijn/haar zakenrelaties (niet) betrokken is bij criminele activiteiten. Daarmee voorkomen we dat we vergunningen afgeven die worden gebruikt voor strafbare activiteiten of waarmee criminelen geld kunnen witwassen.",
+          "original_reference": "Om een integriteitsonderzoek volgens de Wet Bibob aan te vragen, moeten ondernemers specifieke informatie verstrekken met betrekking tot de herkomst van investeringsgeld, het strafrechtelijk verleden",
+          "note": "De bronpagina legt meer nadruk op het doel van de wet en noemt expliciet het voorkomen van witwassen, terwijl de originele tekst meer focust op de aan te leveren informatie",
+          "source_urls": [
+            "https://gemeente.groningen.nl/wet-bibob"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de mate van detail over wanneer een Bibob-onderzoek wordt uitgevoerd en het doel van de wet. De bronpagina is specifieker over de typen vergunningen waarbij een Bibob-onderzoek verplicht is en legt meer nadruk op het preventieve aspect tegen witwassen en criminele activiteiten. De kernprocedures en termijnen komen overeen met de originele tekst."
+  }
+}

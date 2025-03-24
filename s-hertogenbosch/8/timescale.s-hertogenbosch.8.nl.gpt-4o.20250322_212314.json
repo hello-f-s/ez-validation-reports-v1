@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "S-HERTOGENBOSCH",
+      "contact": {
+        "phone": "(073) 615 51 55",
+        "email": "gemeente@s-hertogenbosch.nl",
+        "website": "http://www.s-hertogenbosch.nl"
+      }
+    },
+    "service": {
+      "id": 8,
+      "name": "Marktvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 16,
+    "true_sentences": 15,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.8,
+    "false_statements": [
+      {
+        "sentence": "De exacte procedure voor het indienen van bezwaar staat niet vermeld op de website van de gemeente.",
+        "status": "false",
+        "note": "De procedure voor het indienen van bezwaar staat wel degelijk vermeld op de website van de gemeente 's-Hertogenbosch. Deze informatie is te vinden bij elk product/dienst waar bezwaar tegen gemaakt kan worden, inclusief de termijn van 6 weken en de vereiste gegevens voor het bezwaarschrift."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.s-hertogenbosch.nl/product/omgevingsvergunning/",
+      "https://www.s-hertogenbosch.nl/product/parkeervergunning/",
+      "https://www.s-hertogenbosch.nl/product/omgevingsvergunning-wabo/",
+      "https://www.s-hertogenbosch.nl/product/standplaats/",
+      "https://www.s-hertogenbosch.nl/product/horecabedrijf/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://example.com",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bekendmaking beschikbare standplaats warenmarkt op zaterdag en woensdag binnenstad [...] Een aanvraag kan worden ingediend tot en met 27 maart 2025.",
+          "original_reference": "Aanvragen worden behandeld op volgorde van binnenkomst.",
+          "note": "De bronpagina vermeldt een specifieke deadline (27 maart 2025) voor warenmarktaanvragen, terwijl de originele tekst alleen vermeldt dat aanvragen op volgorde van binnenkomst worden behandeld.",
+          "source_urls": [
+            "https://www.s-hertogenbosch.nl/product/standplaats/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U mag in de gemeente niet zomaar een optreden op straat geven. U moet minimaal 10 werkdagen van tevoren digitaal een melding doen.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat aanvullende informatie over straatartiesten en meldingsplicht die volledig ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.s-hertogenbosch.nl/product/standplaats/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor het uitdelen van flyeren en gedrukt promotiemateriaal hebt u geen vergunning nodig.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat specifieke informatie over flyeren zonder vergunningsplicht die niet wordt genoemd in de originele tekst.",
+          "source_urls": [
+            "https://www.s-hertogenbosch.nl/product/standplaats/"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten enkele belangrijke aanvullingen die niet in de originele tekst staan, waaronder specifieke deadlines voor warenmarktaanvragen, regelgeving voor straatartiesten en informatie over flyeren. Deze informatie is relevant voor potentiële aanvragers maar ontbreekt in de originele tekst. De kernvoorwaarden en basisprocedures komen wel overeen."
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HAARLEM",
+      "contact": {
+        "phone": "14 023",
+        "email": "antwoord@haarlem.nl",
+        "website": "http://www.haarlem.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 17,
+    "false_sentences": 2,
+    "accuracy_percentage": 89.5,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor het aanvragen van een alcoholvergunning bedragen € 1.000.",
+        "status": "false",
+        "note": "De actuele kosten voor een alcoholvergunning in Haarlem bedragen € 1.087,95 voor 2024, niet € 1.000"
+      },
+      {
+        "sentence": "Kosten voor het melden van een nieuwe leidinggevende bedragen € 275, met een extra € 45 voor elke extra leidinggevende.",
+        "status": "false",
+        "note": "De actuele kosten voor het melden van een nieuwe leidinggevende in Haarlem bedragen € 282,85 voor 2024, niet € 275. Ook is het bedrag voor extra leidinggevenden € 46,30, niet € 45"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.haarlem.nl/ufs/formulieren.eb?id=aanvraag_alcoholvergunning_model_a_hlm",
+      "https://www.haarlem.nl/",
+      "https://haarlem.nl/exploitatievergunning",
+      "https://haarlem.nl/alcoholvergunning",
+      "https://haarlem.nl/bouwvergunning",
+      "https://www.haarlem.nl/ufs/formulieren.eb?id=aanvraag_alcoholvergunning_model_b_hlm"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor een horecabedrijf of slijterij gebruikt u aanvraagformulier A, voor een stichting of vereniging formulier B",
+          "original_reference": "No matching information",
+          "note": "De originele tekst specificeert niet dat er verschillende formulieren (A en B) zijn voor verschillende type aanvragers. Dit is belangrijke informatie voor de aanvraagprocedure.",
+          "source_urls": [
+            "https://haarlem.nl/alcoholvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u alcohol serveert, hebt u een alcoholvergunning nodig en hoeft u geen exploitatievergunning aan te vragen",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat bij een alcoholvergunning geen aparte exploitatievergunning nodig is. Dit is een belangrijke verduidelijking voor ondernemers.",
+          "source_urls": [
+            "https://haarlem.nl/exploitatievergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Recent uittreksel uit het Verenigingsregister dan wel Stichtingenregister van de Kamer van Koophandel",
+          "original_reference": "U moet een geldig uittreksel uit de Kamer van Koophandel hebben dat niet ouder is dan 3 maanden",
+          "note": "De bronnen specificeren dat voor verenigingen en stichtingen een specifiek uittreksel uit het Verenigings- of Stichtingenregister nodig is, terwijl de originele tekst alleen een algemeen KvK-uittreksel noemt.",
+          "source_urls": [
+            "https://www.haarlem.nl/ufs/formulieren.eb?id=aanvraag_alcoholvergunning_model_b_hlm"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen het bestaan van verschillende aanvraagformulieren (A en B) voor verschillende type aanvragers, de verduidelijking dat geen aparte exploitatievergunning nodig is bij een alcoholvergunning, en specifieke uittrekselvereisten voor verenigingen en stichtingen. Deze informatie ontbreekt in de originele tekst maar is essentieel voor een correcte aanvraagprocedure."
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HEILOO",
+      "contact": {
+        "phone": "(072) 535 66 66",
+        "email": "info@heiloo.nl",
+        "website": "http://www.heiloo.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 27,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.4,
+    "false_statements": [
+      {
+        "sentence": "De gemeente is bereikbaar op werkdagen van 08:30 tot 17:00.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Heiloo zijn de openingstijden van maandag t/m vrijdag van 8:30 tot 12:30 uur. Telefonisch is de gemeente bereikbaar van 8:30 tot 17:00 uur."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.heiloo.nl/aanvragen-en-regelen/omgevingsvergunning/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/toezicht-en-handhaving/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/omgevingswet/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/standplaatsvergunning/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/exploitatievergunning/"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het kan langer duren voor u een reactie krijgt op uw aanvraag voor een vergunning. Door krapte op de arbeidsmarkt hebben wij helaas niet genoeg collega's om alle vergunningen op tijd af te handelen.",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden een belangrijke actuele waarschuwing over langere verwerkingstijden door personeelstekort, die niet in de originele tekst staat vermeld.",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/omgevingsvergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Meld de start van de bouw of sloop minimaal 2 dagen van tevoren aan bij toezichthouder van de gemeente.",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden een specifieke verplichting om bouw- of sloopwerkzaamheden 2 dagen van tevoren te melden, wat niet in de originele tekst staat.",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/toezicht-en-handhaving/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "administratievth@debuch.nl",
+          "original_reference": "info@heiloo.nl",
+          "note": "Er wordt een ander e-mailadres genoemd voor contact in de originele tekst dan in de bronnen.",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/omgevingsvergunning/"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen actuele informatie over verlengde verwerkingstijden door personeelstekort, een specifieke meldplicht voor bouw- en sloopwerkzaamheden, en afwijkende contactgegevens. Deze informatie is relevant voor de dienstverlening maar ontbreekt in de originele tekst of wijkt daarvan af."
+  }
+}

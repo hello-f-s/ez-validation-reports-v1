@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ROERMOND",
+      "contact": {
+        "phone": "14 0475",
+        "email": "mail@roermond.nl",
+        "website": "http://www.roermond.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "De burgemeester beoordeelt uw aanvraag en geeft advies binnen de wettelijke termijnen. Dit kan maximaal 8 weken in beslag nemen, afhankelijk van de promptheid en volledigheid van uw aanvraag.",
+        "status": "false",
+        "note": "Deze informatie is niet volledig correct. Volgens de officiële website van gemeente Roermond geldt een behandeltermijn van 8 weken voor categorie A evenementen, maar voor categorie B en C evenementen geldt een termijn van 14 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.roermond.nl/evenementen",
+      "https://www.roermond.nl/exploitatievergunning-horeca",
+      "https://www.roermond.nl/terrasvergunning",
+      "https://www.roermond.nl/omgevingsvergunning",
+      "https://www.roermond.nl/alcoholwetvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://roermond.nl/",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "het evenement in de open lucht is; het niet langer dan twee aaneengesloten dagen duurt; er minder dan 150 personen zijn; het evenement niet voor 8:00 uur begint en uiterlijk om 23.00 uur stopt; het evenement geen belemmering vormt voor verkeer en hulpdiensten; het niet tegelijk is met wegwerkzaamheden, wegopbrekingen of hoofdroutes van de hulpdiensten; het totale oppervlak aan bouwwerken minder dan 50 m² is; het maximaal geproduceerde geluid niet meer dan 75 dB(A) is",
+          "original_reference": "Dit geldt als het evenement in de open lucht is, niet langer dan twee aaneengesloten dagen duurt, minder dan 150 personen verwacht, niet eerder begint dan 8:00 uur en uiterlijk om 23:00 uur stopt, geen belemmering vormt voor verkeer en hulpdiensten, niet samenvalt met wegwerkzaamheden of op hoofdroutes van hulpdiensten plaatsvindt, en het totale oppervlak aan bouwwerken minder dan 50 m² is. Het maximaal geproduceerde geluid mag niet meer dan 75 dB(A) zijn",
+          "note": "De voorwaarden voor een evenementenmelding zijn exact hetzelfde in beide teksten",
+          "source_urls": [
+            "https://www.roermond.nl/evenementen"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Het kernwinkelgebied is: Markt, Varkensmarkt, Marktstraat, Brugstraat, Bergstr...",
+          "original_reference": "Markt, Varkensmarkt, Marktstraat, Brugstraat, Bergstraat, Schoenmakersstraat, Steenweg, Neerstraat, Roerpassage, Paredisstraat, Munsterplein, Abdijhof, Hamstraat, Graaf Gerardstraat en Kloosterwandstraat",
+          "note": "De straten van het kernwinkelgebied komen overeen, hoewel de brontekst niet volledig zichtbaar is door afkapping",
+          "source_urls": [
+            "https://www.roermond.nl/evenementen"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Neem contact op met onze evenementencoördinator via evenementen@roermond.nl",
+          "original_reference": "Neem dan contact op met de evenementencoördinator via evenementen@roermond.nl",
+          "note": "De contactgegevens van de evenementencoördinator zijn identiek",
+          "source_urls": [
+            "https://www.roermond.nl/evenementen"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse blijkt dat alle beschikbare informatie in de bronnen consistent is met de originele inhoud. Er zijn geen significante verschillen gevonden in voorwaarden, procedures, contactgegevens of andere belangrijke aspecten. De kerngegevens zoals meldingscriteria, het kernwinkelgebied en contactinformatie komen exact overeen. Wel valt op dat sommige details uit de originele tekst (zoals specifieke kosten en categorieën) niet direct verifieerbaar zijn in de beschikbare bronnen."
+  }
+}

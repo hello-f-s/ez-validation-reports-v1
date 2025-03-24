@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LOPIK",
+      "contact": {
+        "phone": "(0348) 55 99 55",
+        "email": "gemeente@lopik.nl",
+        "website": "http://www.lopik.nl"
+      }
+    },
+    "service": {
+      "id": 13,
+      "name": "Omzettingsvergunning voor kamerverhuur aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Binnen 8 weken ontvangt u bericht of u de vergunning krijgt.",
+        "status": "false",
+        "note": "Volgens de gemeente Lopik is de reguliere procedure voor een omgevingsvergunning strijdig gebruik maximaal 8 weken plus eventueel 6 weken verlenging, maar dit geldt alleen als er geen uitgebreide procedure nodig is. Bij een uitgebreide procedure is de termijn 26 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.lopik.nl/huisvestingsvergunning",
+      "https://www.lopik.nl/terras-plaatsen",
+      "https://www.lopik.nl/omgevingsvergunning-strijdig-gebruik",
+      "https://www.lopik.nl/milieu-vergunning-of-melding",
+      "https://www.lopik.nl/omgevingsvergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Gebruik van grond of een gebouw kan in strijd zijn met verschillende ruimtelijke plannen: bestemmingsplan, gemeentelijk uitwerkings- of wijzigingsplan, beheersverordening, exploitatieplan, regels op grond van de provinciale verordening, regels op grond van een AMvB, regels van het voorbereidingsbesluit",
+          "original_reference": "Als u een woning wilt gebruiken voor kamerverhuur in strijd met het bestemmingsplan",
+          "note": "De bronpagina noemt meer specifieke typen ruimtelijke plannen waarmee het gebruik in strijd kan zijn, terwijl de originele tekst alleen het bestemmingsplan noemt",
+          "source_urls": [
+            "https://www.lopik.nl/omgevingsvergunning-strijdig-gebruik"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Let op! Hebt u ook een omgevingsvergunning nodig voor bouwen? Dan hoeft u daar niet een aparte omgevingsvergunning voor aan te vragen. U doet 1 aanvraag voor het bouwen en het gebruik in strijd met het bestemmingsplan.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt belangrijke informatie over het combineren van vergunningen die niet in de originele tekst staat",
+          "source_urls": [
+            "https://www.lopik.nl/omgevingsvergunning-strijdig-gebruik"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten twee belangrijke aanvullingen op de originele tekst: een uitgebreidere lijst van ruimtelijke plannen waarmee gebruik in strijd kan zijn, en informatie over het combineren van verschillende vergunningaanvragen. Deze informatie kan belangrijk zijn voor aanvragers maar ontbreekt in de originele tekst. De overige informatie in de bronnen komt overeen met de originele tekst wat betreft procedures, termijnen en vereisten."
+  }
+}

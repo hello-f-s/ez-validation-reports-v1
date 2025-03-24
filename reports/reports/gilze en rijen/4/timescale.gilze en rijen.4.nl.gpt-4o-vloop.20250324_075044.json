@@ -1,0 +1,68 @@
+{
+  "context": {
+    "municipality": {
+      "name": "GILZE EN RIJEN",
+      "contact": {
+        "phone": "14 0161",
+        "email": "info@gilzerijen.nl",
+        "website": "http://www.gilzerijen.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 11,
+    "false_sentences": 2,
+    "accuracy_percentage": 84.6,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor een evenementenvergunning bedragen €14,07.",
+        "status": "false",
+        "note": "De kosten voor een evenementenvergunning in Gilze en Rijen bedragen €35,20 volgens de actuele legesverordening van de gemeente."
+      },
+      {
+        "sentence": "Een evenement is een klein evenement wanneer er niet meer dan 250 bezoekers komen. Voor evenementen met een tent is dit maximaal 25 bezoekers.",
+        "status": "false",
+        "note": "Volgens de gemeente Gilze en Rijen is een klein evenement een evenement met maximaal 100 bezoekers, niet 250. Er wordt geen specifiek onderscheid gemaakt voor evenementen met een tent met 25 bezoekers."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 0,
+    "invalid_urls": 5,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.gilzerijen.nl/groot-evenement",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.gilzerijen.nl/ondernemen/vergunningen-en-ontheffingen-voor-ondernemers",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.gilzerijen.nl/klein-evenement",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.gilzerijen.nl/vergunningen-en-ontheffingen",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.gilzerijen.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  }
+}

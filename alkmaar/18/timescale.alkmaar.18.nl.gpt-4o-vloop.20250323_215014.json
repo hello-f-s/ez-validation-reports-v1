@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ALKMAAR",
+      "contact": {
+        "phone": "14 072",
+        "email": "post@alkmaar.nl",
+        "website": "http://www.alkmaar.nl"
+      }
+    },
+    "service": {
+      "id": 18,
+      "name": "Ventvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 17,
+    "false_sentences": 2,
+    "accuracy_percentage": 89.5,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor een exploitatievergunning bedragen € 422,05.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Alkmaar bedragen de kosten voor een exploitatievergunning € 432,60"
+      },
+      {
+        "sentence": "Voor wijzigingen aan de vergunning, zoals veranderingen in de horeca-inrichting, worden extra kosten in rekening gebracht, bijvoorbeeld € 95,79.",
+        "status": "false",
+        "note": "Het actuele tarief voor wijzigingen aan de exploitatievergunning in Alkmaar bedraagt € 98,20"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.alkmaar.nl/direct-regelen/ondernemen/vergunningen-en-ontheffingen/exploitatievergunning/",
+      "https://www.alkmaar.nl/direct-regelen/wonen-verhuizen-en-verbouwen/vergunningen/omgevingsvergunning",
+      "https://www.alkmaar.nl/direct-regelen/afval/het-ergens-niet-mee-eens-zijn/woo-verzoek",
+      "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/bouwen-en-verbouwen/boom-kappen-vergunning",
+      "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/horeca/terrasvergunning/"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voorbeelden zijn: restaurant, café, cafetaria, snackbar/grillroom/broodjeszaak, buurt- of clubhuis, sportkantine, ijssalon, coffeeshop, hotel met restaurant/bar, pension, speelhal",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen specifieke lijst van bedrijfstypen waarvoor een exploitatievergunning nodig is, terwijl de bronpagina deze wel duidelijk specificeert",
+          "source_urls": [
+            "https://www.alkmaar.nl/direct-regelen/ondernemen/vergunningen-en-ontheffingen/exploitatievergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "€ 140,10 voor terrasvergunning, € 95,79 voor wijzigingen",
+          "original_reference": "€ 422,05 voor exploitatievergunning, € 95,79 voor wijzigingen",
+          "note": "De kosten voor verschillende vergunningen worden door elkaar gehaald. De terrasvergunning heeft andere tarieven dan de exploitatievergunning",
+          "source_urls": [
+            "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/horeca/terrasvergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Log in met eHerkenning en uw organisatiegegevens zijn al ingevuld",
+          "original_reference": "De aanvraag kan digitaal worden gedaan met eHerkenning",
+          "note": "De bronpagina geeft specifiek aan dat organisatiegegevens automatisch worden ingevuld bij gebruik van eHerkenning, wat niet vermeld wordt in de originele tekst",
+          "source_urls": [
+            "https://www.alkmaar.nl/direct-regelen/ondernemen/vergunningen-en-ontheffingen/exploitatievergunning/"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de specificatie van bedrijfstypen die een exploitatievergunning nodig hebben, verschillende kostentarieven voor verschillende soorten vergunningen, en extra details over het gebruik van eHerkenning. De originele tekst mist enkele specifieke details die wel in de bronpagina's staan vermeld."
+  }
+}

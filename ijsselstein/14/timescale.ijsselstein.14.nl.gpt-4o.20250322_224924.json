@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "IJSSELSTEIN",
+      "contact": {
+        "phone": "14 030",
+        "email": "info@ijsselstein.nl",
+        "website": "http://www.ijsselstein.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 8,
+    "true_sentences": 7,
+    "false_sentences": 1,
+    "accuracy_percentage": 87.5,
+    "false_statements": [
+      {
+        "sentence": "U kunt een parkeervergunning of een abonnement voor een parkeergarage aanvragen via het parkeerservicebureau P1 op de website ijsselstein.parkeer.nl.",
+        "status": "false",
+        "note": "De parkeervergunningen in IJsselstein worden niet via P1 of ijsselstein.parkeer.nl aangevraagd, maar via de gemeente IJsselstein zelf. De juiste website voor het aanvragen van parkeervergunningen is www.ijsselstein.nl."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.ijsselstein.nl/Inwoners/Bouwen_verbouwen_en_slopen/Omgevingsvergunning",
+      "https://www.ijsselstein.nl/Ondernemers/Vergunningen/Exploitatievergunning",
+      "https://www.ijsselstein.nl/Inwoners/Parkeren_verkeer_en_vervoer/Parkeren",
+      "https://www.ijsselstein.nl/Ondernemers/Vergunningen",
+      "https://ijsselstein.parkeer.nl"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.ijsselstein.nl/Ondernemers/Vergunningen/Standplaatsvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Hoeveel vergunningen u krijgt ziet u op het moment dat u de aanvraag doet. Dit hangt onder andere af van of u een eigen parkeerplaats heeft.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat het aantal vergunningen dat men kan krijgen afhankelijk is van het bezit van een eigen parkeerplaats. Dit is belangrijke aanvullende informatie voor aanvragers.",
+          "source_urls": [
+            "https://www.ijsselstein.nl/Inwoners/Parkeren_verkeer_en_vervoer/Parkeren"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "parkeerserviceijsselstein@p1.nl en 088 - 126 14 60",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen contactgegevens van het parkeerservicebureau P1, terwijl deze wel beschikbaar zijn in de bronnen.",
+          "source_urls": [
+            "https://ijsselstein.parkeer.nl"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De binnenstad van IJsselstein is autoluw. Dit betekent dat alle bestemmingen bereikbaar zijn, maar doorgaand verkeer niet mogelijk is.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat de binnenstad autoluw is, wat een belangrijke context is voor parkeerbeleid en bereikbaarheid.",
+          "source_urls": [
+            "https://www.ijsselstein.nl/Inwoners/Parkeren_verkeer_en_vervoer/Parkeren"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie die niet in de originele tekst staat, waaronder specifieke voorwaarden voor het aantal vergunningen, contactgegevens van P1, en informatie over de autoluwe binnenstad. Deze informatie is relevant voor mensen die een parkeervergunning willen aanvragen of in IJsselstein willen parkeren."
+  }
+}

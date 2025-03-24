@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LANDSMEER",
+      "contact": {
+        "phone": "(020) 487 71 11",
+        "email": "gemeente@Landsmeer.nl",
+        "website": "http://www.landsmeer.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 31,
+    "true_sentences": 30,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.8,
+    "false_statements": [
+      {
+        "sentence": "De nieuwe leidinggevende kan meteen aan het werk.",
+        "status": "false",
+        "note": "Dit is onjuist volgens de Alcoholwet. Een nieuwe leidinggevende mag pas aan het werk nadat deze is bijgeschreven op het aanhangsel van de vergunning en moet eerst worden goedgekeurd door de gemeente."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.landsmeer.nl/ondernemers/vergunningen/alcohol_schenken_en_verkopen",
+      "https://www.landsmeer.nl/ondernemers/vergunningen/horecabedrijf_beginnen",
+      "https://www.landsmeer.nl/ondernemers/vergunningen",
+      "https://www.landsmeer.nl/inwoners/parkeren,_verkeer_en_vervoer/verkeer/ontheffing_van_verkeersregels_aanvragen",
+      "https://www.landsmeer.nl/inwoners/bouwen_en_verbouwen/meer_onderwerpen/omgevingsvergunning_aanvragen",
+      "https://www.landsmeer.nl"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u aan het horecabedrijf een wijziging aanbrengt of de exploitatie beëindigt, dient u hiervan binnen drie dagen melding te maken aan de gemeente.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de verplichting om wijzigingen binnen 3 dagen te melden, wat een belangrijke aanvullende vereiste is.",
+          "source_urls": [
+            "https://www.landsmeer.nl/ondernemers/vergunningen/horecabedrijf_beginnen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De vergunning is onbeperkt geldig totdat het horecabedrijf verandert van naam, rechtsvorm of eigenaar.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de geldigheidsduur van de vergunning, terwijl dit belangrijke informatie is voor ondernemers.",
+          "source_urls": [
+            "https://www.landsmeer.nl/ondernemers/vergunningen/alcohol_schenken_en_verkopen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De vestiging van het horecabedrijf mag niet in strijd zijn met een geldend omgevingsplan",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist deze belangrijke voorwaarde met betrekking tot het omgevingsplan, wat een essentiële vereiste is voor het verkrijgen van een vergunning.",
+          "source_urls": [
+            "https://www.landsmeer.nl/ondernemers/vergunningen/horecabedrijf_beginnen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten enkele belangrijke aanvullende vereisten die niet in de originele tekst staan vermeld: de meldingsplicht binnen 3 dagen bij wijzigingen, de onbeperkte geldigheid van de vergunning tot wijziging van bedrijfsgegevens, en de vereiste dat de vestiging moet passen binnen het omgevingsplan. Deze informatie is essentieel voor ondernemers die een horecabedrijf willen starten of beheren."
+  }
+}

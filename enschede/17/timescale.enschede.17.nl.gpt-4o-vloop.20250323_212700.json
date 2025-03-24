@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ENSCHEDE",
+      "contact": {
+        "phone": "14 053",
+        "email": "postbus20@enschede.nl",
+        "website": "http://www.enschede.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "U kunt de gemeente bereiken op werkdagen van 9.00 tot 17.00 uur via telefoonnummer 14 053.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Enschede zijn de openingstijden van maandag t/m vrijdag van 8.30 tot 17.00 uur, niet vanaf 9.00 uur."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.enschede.nl/regels-voor-terrassen",
+      "https://www.enschede.nl/vergunning-voor-kamerverhuur",
+      "https://www.enschede.nl/wegomleiding-of-verkeersmaatregelen-aanvragen",
+      "https://www.enschede.nl/graven-in-de-openbare-ruimte",
+      "https://www.enschede.nl/alcoholvergunning-aanvragen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u bij uw horecabedrijf een terras wilt plaatsen, dan heeft u geen vergunning nodig. Er gelden wel verschillende regels.",
+          "original_reference": "De terrasvergunning is alleen nodig als uw terras niet voldoet aan de nadere regels voor terrassen bij horecabedrijven.",
+          "note": "De brontekst stelt duidelijker dat er in principe geen vergunning nodig is, terwijl de originele tekst direct de uitzondering benadrukt. Dit geeft een ander uitgangspunt voor de lezer.",
+          "source_urls": [
+            "https://www.enschede.nl/regels-voor-terrassen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Terrassen zijn alleen toegestaan bij horecabedrijven met een horecabestemming of functieaanduiding horeca.",
+          "original_reference": "No matching information",
+          "note": "Deze essentiële basisvoorwaarde ontbreekt volledig in de originele tekst.",
+          "source_urls": [
+            "https://www.enschede.nl/regels-voor-terrassen"
+          ]
+        }
+      ]
+    },
+    "summary": "De broninhoud verschilt op enkele belangrijke punten van de originele tekst. Met name het uitgangspunt voor vergunningplicht wordt anders gepresenteerd, en er ontbreekt een fundamentele voorwaarde over de horecabestemming in de originele tekst. De overige informatie zoals regels over alcohol, precariobelasting en specifieke regels voor het stadserf komt overeen."
+  }
+}

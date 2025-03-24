@@ -1,0 +1,92 @@
+{
+  "context": {
+    "municipality": {
+      "name": "NIJMEGEN",
+      "contact": {
+        "phone": "14 024",
+        "email": "gemeente@nijmegen.nl",
+        "website": "http://www.nijmegen.nl"
+      }
+    },
+    "service": {
+      "id": 15,
+      "name": "Vergunning of ontheffing voor straatartiesten"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 22,
+    "false_sentences": 2,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Standplaatsvergunning (tijdelijk): € 121,45",
+        "status": "false",
+        "note": "Het correcte tarief voor een tijdelijke standplaatsvergunning in Nijmegen is € 124,10 (2024)"
+      },
+      {
+        "sentence": "Objectvergunning: € 121,40",
+        "status": "false",
+        "note": "Het correcte tarief voor een objectvergunning in Nijmegen is € 124,10 (2024)"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.nijmegen.nl/diensten/evenementen/schema-vergunningen-activiteiten/tekstversie/",
+      "https://www.nijmegen.nl/diensten/vergunningen/standplaatsvergunningen/vierdaagse-vergunning-voor-langs-de-route/",
+      "https://www.nijmegen.nl/diensten/vergunningen/objectvergunning/",
+      "https://www.nijmegen.nl/diensten/vergunningen/standplaatsvergunningen/vergunning-standplaats-concert/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.nijmegen.nl/diensten/vergunningen/informatiekraam-melden-of-vergunning/",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vraag de vergunning maximaal 16 weken en minimaal 8 weken van tevoren aan",
+          "original_reference": "Dien uw aanvraag minimaal 8 weken van tevoren in",
+          "note": "De originele tekst vermeldt alleen een minimale termijn van 8 weken, terwijl de bron ook een maximale termijn van 16 weken specificeert",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/vergunningen/objectvergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor 2025 zijn er geen concerten van MOJO in het Goffertpark en is het dus niet mogelijk om een standplaats aan te vragen",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist deze belangrijke actuele informatie over de tijdelijke stop op concerten en standplaatsvergunningen in het Goffertpark",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/vergunningen/standplaatsvergunningen/vergunning-standplaats-concert/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Er is plek voor maximaal 6 standplaatsen. We loten als er meer dan 6 aanvragen binnen komen",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist de specifieke informatie over het maximaal aantal beschikbare standplaatsen en de lotingsprocedure",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/vergunningen/standplaatsvergunningen/vergunning-standplaats-concert/"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten enkele belangrijke verschillen met de originele tekst. Met name de aanvraagtermijnen zijn specifieker (8-16 weken), er is actuele informatie over het niet doorgaan van concerten in 2025, en er zijn concrete details over het maximaal aantal standplaatsen (6) en de lotingsprocedure die in de originele tekst ontbreken. Deze informatie is essentieel voor aanvragers van standplaatsvergunningen."
+  }
+}

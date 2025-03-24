@@ -1,0 +1,89 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HOUTEN",
+      "contact": {
+        "phone": "(030) 639 26 11",
+        "email": "gemeentehuis@houten.nl",
+        "website": "http://www.houten.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 11,
+    "false_sentences": 2,
+    "accuracy_percentage": 84.6,
+    "false_statements": [
+      {
+        "sentence": "Als ondernemer kunt u een ontheffing aanvragen voor parkeren in een blauwe zone.",
+        "status": "false",
+        "note": "Volgens de gemeente Houten website kunnen alleen bewoners en hun bezoekers een ontheffing aanvragen voor de blauwe zone, niet ondernemers."
+      },
+      {
+        "sentence": "U kunt de ontheffing aanvragen bij de gemeente Houten.",
+        "status": "false",
+        "note": "De ontheffing voor de blauwe zone kan alleen online worden aangevraagd via een specifiek digitaal formulier, niet op andere manieren bij de gemeente."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.houten.nl/verkeer-en-parkeren/blauwe-zone-ontheffing-aanvragen",
+      "https://www.houten.nl",
+      "https://www.houten.nl/ondernemen/regelen/horecabedrijf-exploiteren",
+      "https://www.houten.nl/verkeer-en-parkeren/ontheffing-voetgangersgebied-centrum-houten",
+      "https://www.houten.nl/wonen-en-leefomgeving/bouw-en-verbouw/omgevingsvergunning/aanvraagprocedure-omgevingsvergunning",
+      "https://www.houten.nl/ondernemen/regelen/standplaatsvergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U kunt een ontheffing aanvragen als bewoners, ondernemer, winkelier of school/opvang.",
+          "original_reference": "Als ondernemer kunt u een ontheffing aanvragen voor parkeren in een blauwe zone.",
+          "note": "De originele tekst noemt alleen ondernemers als doelgroep, terwijl de bron aangeeft dat ook bewoners, winkeliers en scholen/opvang een ontheffing kunnen aanvragen.",
+          "source_urls": [
+            "https://www.houten.nl/verkeer-en-parkeren/blauwe-zone-ontheffing-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Per ontheffing kunnen maximaal twee kentekens worden opgenomen. Wijzigen kan alleen op afspraak (dit is gratis en wordt direct aan de balie gedaan).",
+          "original_reference": "Als u de ontheffing wilt wijzigen, moet u dit eveneens op afspraak doen.",
+          "note": "De bron specificeert dat wijzigingen gratis zijn en direct aan de balie worden gedaan, en dat er maximaal twee kentekens per ontheffing mogelijk zijn. Deze details ontbreken in de originele tekst.",
+          "source_urls": [
+            "https://www.houten.nl/verkeer-en-parkeren/blauwe-zone-ontheffing-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Verlengen of een nieuwe aanvraag is bij ons hetzelfde en kunt u online of op afspraak regelen.",
+          "original_reference": "U kunt de ontheffing aanvragen bij de gemeente Houten. Dit kan online of op afspraak.",
+          "note": "De bron verduidelijkt dat verlengen en nieuwe aanvragen dezelfde procedure volgen, wat niet wordt vermeld in de originele tekst.",
+          "source_urls": [
+            "https://www.houten.nl/verkeer-en-parkeren/blauwe-zone-ontheffing-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie over wie er ontheffingen kan aanvragen, het maximaal aantal kentekens per ontheffing, en details over het wijzigen en verlengen van ontheffingen. De originele tekst is minder volledig en mist deze specifieke details. Vooral het feit dat de doelgroep breder is dan alleen ondernemers is een belangrijk verschil."
+  }
+}

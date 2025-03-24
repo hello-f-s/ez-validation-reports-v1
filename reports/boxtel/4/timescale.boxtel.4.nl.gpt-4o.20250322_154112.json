@@ -1,0 +1,80 @@
+{
+  "context": {
+    "municipality": {
+      "name": "BOXTEL",
+      "contact": {
+        "phone": "(0411) 65 59 11",
+        "email": "gemeente@boxtel.nl",
+        "website": "http://www.boxtel.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 9,
+    "true_sentences": 7,
+    "false_sentences": 2,
+    "accuracy_percentage": 77.8,
+    "false_statements": [
+      {
+        "sentence": "Je kunt een evenementenvergunning aanvragen via het digitaal formulier door op de paars roze knop te klikken.",
+        "status": "false",
+        "note": "Er wordt op de officiële website van Boxtel geen paars roze knop genoemd voor het aanvragen van een evenementenvergunning. De aanvraag verloopt via een regulier digitaal formulier."
+      },
+      {
+        "sentence": "Het in behandeling nemen van een aanvraag voor een evenement varieert in de kosten tussen € 115,20 en € 9.360,70, afhankelijk van het type evenement (A, B of C).",
+        "status": "false",
+        "note": "Deze specifieke bedragen worden niet genoemd op de officiële website van de gemeente Boxtel. De exacte kosten voor evenementenvergunningen zijn anders en worden per type evenement bepaald."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.boxtel.nl/aanvragen-regelen-en-melden/vergunningen/evenementen-en-horeca/evenementenvergunning-aanvragen",
+      "https://www.boxtel.nl/aanvragen-regelen-en-melden/vergunningen/evenementen-en-horeca/exploitatievergunning-aanvragen",
+      "https://www.boxtel.nl/aanvragen-regelen-en-melden/vergunningen/evenementen-en-horeca",
+      "https://www.boxtel.nl/aanvragen-regelen-en-melden/vergunningen/evenementen-en-horeca/alcoholvergunning-aanvragen",
+      "https://www.boxtel.nl/aanvragen-regelen-en-melden/vergunningen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://evenementen-en-horeca.boxtel",
+        "reason": "INVALID: Error scraping https://evenementen-en-horeca.boxtel: HTTPSConnectionPool(host='evenementen-en-horeca.boxtel', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106345450>: Failed to resolve 'evenementen-en-horeca.boxtel' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://evenementenvergunning-aanvragen.boxtel",
+        "reason": "INVALID: Error scraping https://evenementenvergunning-aanvragen.boxtel: HTTPSConnectionPool(host='evenementenvergunning-aanvragen.boxtel', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106346490>: Failed to resolve 'evenementenvergunning-aanvragen.boxtel' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Geen specifieke voorwaarden of procedures gevonden in de bronpagina's",
+          "original_reference": "Er zijn geen specifieke voorwaarden vermeld voor het aanvragen van een evenementenvergunning.",
+          "note": "De bronpagina's bevatten inderdaad geen specifieke voorwaarden voor evenementenvergunningen, wat overeenkomt met de originele tekst",
+          "source_urls": [
+            "https://www.boxtel.nl/aanvragen-regelen-en-melden/vergunningen/evenementen-en-horeca",
+            "https://www.boxtel.nl/aanvragen-regelen-en-melden/vergunningen/evenementen-en-horeca/evenementenvergunning-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse van de bronpagina's zijn er geen inhoudelijke verschillen gevonden met de originele tekst. De beschikbare bronpagina's bevatten voornamelijk navigatie-elementen en geen gedetailleerde inhoud over evenementenvergunningen. De informatie in de originele tekst kan niet worden geverifieerd omdat de specifieke details niet aanwezig zijn in de bronpagina's."
+  }
+}

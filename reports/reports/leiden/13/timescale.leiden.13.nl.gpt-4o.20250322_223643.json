@@ -1,0 +1,92 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LEIDEN",
+      "contact": {
+        "phone": "14 071",
+        "email": "null",
+        "website": "http://www.leiden.nl/gemeente"
+      }
+    },
+    "service": {
+      "id": 13,
+      "name": "Omzettingsvergunning voor kamerverhuur aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "Inloggen met E-herkenning voor bedrijven via het Omgevingsloket.",
+        "status": "false",
+        "note": "Dit is onvolledig - voor het Omgevingsloket kunnen particulieren inloggen met DigiD en bedrijven met eHerkenning. Het noemen van alleen eHerkenning is onjuist omdat particulieren ook een aanvraag kunnen doen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 9,
+    "valid_urls": 5,
+    "invalid_urls": 4,
+    "accuracy_percentage": 55.6,
+    "valid_urls_list": [
+      "https://gemeente.leiden.nl/inwoners-en-ondernemers/wonen-en-bouwen",
+      "https://gemeente.leiden.nl/inwoners-en-ondernemers/wonen-en-bouwen/bouwen-en-verbouwen/bekendmakingen-vergunningen/",
+      "https://gemeente.leiden.nl/inwoners-en-ondernemers/wonen-en-bouwen/omgevingsvergunningen/omgevingsvergunning-aanvragen",
+      "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers/vergunningen-en-ontheffingen/omgevingsvergunning-voor-een-monument",
+      "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers/vergunningen-en-ontheffingen/woning-splitsen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.leiden.nl/inwoners/bouwen_verbouwen/omgevingsvergunning/algemeen/",
+        "reason": "INVALID: Error scraping https://www.leiden.nl/inwoners/bouwen_verbouwen/omgevingsvergunning/algemeen/: 404 Client Error: Not Found for url: https://gemeente.leiden.nl/inwoners/bouwen_verbouwen/omgevingsvergunning/algemeen/"
+      },
+      {
+        "url": "https://www.leiden.nl/inwoners/bouwen_verbouwen/omgevingsvergunning/",
+        "reason": "INVALID: Error scraping https://www.leiden.nl/inwoners/bouwen_verbouwen/omgevingsvergunning/: 404 Client Error: Not Found for url: https://gemeente.leiden.nl/inwoners/bouwen_verbouwen/omgevingsvergunning/"
+      },
+      {
+        "url": "https://www.leiden.nl/bestuur/publicaties/bekendmakingen-vergunningen",
+        "reason": "INVALID: Error scraping https://www.leiden.nl/bestuur/publicaties/bekendmakingen-vergunningen: 404 Client Error: Not Found for url: https://gemeente.leiden.nl/bestuur/publicaties/bekendmakingen-vergunningen"
+      },
+      {
+        "url": "https://www.leiden.nl/Inwoners/wonen_en_verhuisen/vergunningen_en_meldingen/woning_splitsen",
+        "reason": "INVALID: Error scraping https://www.leiden.nl/Inwoners/wonen_en_verhuisen/vergunningen_en_meldingen/woning_splitsen: 404 Client Error: Not Found for url: https://gemeente.leiden.nl/Inwoners/wonen_en_verhuisen/vergunningen_en_meldingen/woning_splitsen"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U logt in met DigiD",
+          "original_reference": "Inloggen met E-herkenning voor bedrijven via het Omgevingsloket",
+          "note": "De bronnen vermelden dat particulieren met DigiD moeten inloggen, terwijl de originele tekst alleen E-herkenning voor bedrijven noemt. Dit is een belangrijk verschil omdat particulieren een andere inlogmethode moeten gebruiken.",
+          "source_urls": [
+            "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers/vergunningen-en-ontheffingen/omgevingsvergunning-voor-een-monument",
+            "https://gemeente.leiden.nl/inwoners-en-ondernemers/wonen-en-bouwen/omgevingsvergunningen/omgevingsvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bouwactiviteit (omgevingsplan) én voor Bouwactiviteit (technisch)",
+          "original_reference": "No matching information",
+          "note": "De bronnen specificeren dat er twee types bouwactiviteiten moeten worden aangevraagd (omgevingsplan en technisch), wat niet wordt vermeld in de originele tekst.",
+          "source_urls": [
+            "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers/vergunningen-en-ontheffingen/woning-splitsen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de inlogmethodes (DigiD voor particulieren naast E-herkenning voor bedrijven) en de specifieke types bouwactiviteiten die moeten worden aangevraagd. De originele tekst mist deze belangrijke details die wel in de bronnen staan vermeld."
+  }
+}

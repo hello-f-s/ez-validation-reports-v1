@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ARNHEM",
+      "contact": {
+        "phone": "null",
+        "email": "null",
+        "website": "http://www.arnhem.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor het in behandeling nemen van een aanvraag voor een terrasvergunning bedragen € 195,50.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van de gemeente Arnhem bedragen de kosten voor een terrasvergunning € 207,70 (2024 tarief)."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.arnhem.nl/Ondernemers/horeca/horecaspreekuur",
+      "https://www.arnhem.nl/Ondernemers/horeca/horeca_en_vergunningen",
+      "https://www.arnhem.nl/Inwoners/bouwen_en_verbouwen/U_wilt_bouwen_of_verbouwen/omgevingsvergunning/Reclame_uitingen_plaatsen",
+      "https://www.arnhem.nl/Ondernemers/horeca/horeca_en_vergunningen/Terrasvergunning",
+      "https://www.arnhem.nl/Inwoners/bouwen_en_verbouwen/U_wilt_bouwen_of_verbouwen/omgevingsvergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "het terras bevindt zich op een weggedeelte dat alleen voor voetgangers bestemd is en laat te allen tijde een vrije en onbelemmerde doorgang van minimaal 3,5 meter ten behoeve van hulpdiensten",
+          "original_reference": "Het terras niet op een uitsluitend voetgangersgedeelte ligt, of onvoldoende doorgang voor hulpdiensten en voetgangers biedt.",
+          "note": "De originele tekst is onduidelijk over de specifieke doorgang van 3,5 meter voor hulpdiensten op voetgangersgedeeltes. De brontekst is hier specifieker.",
+          "source_urls": [
+            "https://www.arnhem.nl/Ondernemers/horeca/horeca_en_vergunningen/Terrasvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "indien het terras uitstaat op een weg die mede bestemd is voor voertuigen laat het een minimale doorgang van 1,5 meter vrij voor voetgangers",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de specifieke eis van 1,5 meter doorgang voor voetgangers bij terrassen aan wegen voor voertuigen.",
+          "source_urls": [
+            "https://www.arnhem.nl/Ondernemers/horeca/horeca_en_vergunningen/Terrasvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor een omgevingsvergunning voor het overkappen van een terras hoeft u niet te betalen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat de omgevingsvergunning voor terrasoverkapping kosteloos is.",
+          "source_urls": [
+            "https://www.arnhem.nl/Ondernemers/horeca/horeca_en_vergunningen/Terrasvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De broninhoud bevat enkele belangrijke specificaties die niet in de originele tekst staan, met name de exacte afmetingen voor doorgangen (3,5m voor hulpdiensten, 1,5m voor voetgangers) en het feit dat de omgevingsvergunning voor terrasoverkapping gratis is. Deze details zijn belangrijk voor ondernemers die een terrasvergunning willen aanvragen."
+  }
+}

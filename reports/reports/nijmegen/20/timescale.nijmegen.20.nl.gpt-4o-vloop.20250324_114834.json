@@ -1,0 +1,78 @@
+{
+  "context": {
+    "municipality": {
+      "name": "NIJMEGEN",
+      "contact": {
+        "phone": "14 024",
+        "email": "gemeente@nijmegen.nl",
+        "website": "http://www.nijmegen.nl"
+      }
+    },
+    "service": {
+      "id": 20,
+      "name": "Vergunning voor seksbedrijf"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "U ontvangt een beslissing binnen 12 weken na het indienen van alle benodigde informatie.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Nijmegen wordt een beslissing genomen binnen 8 weken na ontvangst van een complete aanvraag, niet binnen 12 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.nijmegen.nl/diensten/vergunningen/drank-en-horeca/vergunning-seksbedrijf/",
+      "https://www.nijmegen.nl/diensten/vergunningen/drank-en-horeca/alcoholvergunning/",
+      "https://www.nijmegen.nl/diensten/evenementen/schema-vergunningen-activiteiten/tekstversie/",
+      "https://www.nijmegen.nl/diensten/vergunningen/drank-en-horeca/beheer-exploitatievergunning/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.nijmegen.nl/diensten/vergunningen/informatiekraam-melden-of-vergunning/",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor deze vergunning voeren we de Bibob-toets uit. Op basis van de wet Bibob kan de achtergrond van de aanvrager en het bedrijf worden onderzocht. Als er bijvoorbeeld een crimineel verleden is, kan de gemeente de vergunning weigeren. Als zo'n onderzoek wordt gedaan, dan krijgt u daar bericht van",
+          "original_reference": "De vergunningen worden beoordeeld met een Bibob-onderzoek om de integriteit van de aanvrager en het bedrijf te controleren.",
+          "note": "De bronpagina geeft meer specifieke details over het Bibob-onderzoek en vermeldt expliciet dat de aanvrager bericht krijgt als er een onderzoek wordt uitgevoerd. Deze informatie ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/vergunningen/drank-en-horeca/vergunning-seksbedrijf/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U betaalt voor het behandelen van de vergunningaanvraag door de gemeente, ook als u de vergunning niet krijgt",
+          "original_reference": "U betaalt deze kosten bij goedkeuring volledig, en bij afwijzing of intrekking 25% van de kosten.",
+          "note": "De bronpagina benadrukt dat er altijd behandelingskosten zijn, terwijl de originele tekst specificeert dat bij afwijzing 25% betaald moet worden. Dit verschil in formulering kan tot verwarring leiden.",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/vergunningen/drank-en-horeca/vergunning-seksbedrijf/"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele tekst en de bronpagina's. Het eerste verschil betreft de detaillering van het Bibob-onderzoek, waarbij de bronpagina meer specifieke informatie geeft en expliciet vermeldt dat aanvragers bericht krijgen bij een onderzoek. Het tweede verschil betreft de formulering van de betalingsvoorwaarden, waarbij de bronpagina algemener is over de behandelingskosten. De overige informatie komt overeen met de originele tekst."
+  }
+}

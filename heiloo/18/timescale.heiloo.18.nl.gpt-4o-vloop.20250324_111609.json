@@ -1,0 +1,95 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HEILOO",
+      "contact": {
+        "phone": "(072) 535 66 66",
+        "email": "info@heiloo.nl",
+        "website": "http://www.heiloo.nl"
+      }
+    },
+    "service": {
+      "id": 18,
+      "name": "Ventvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 42,
+    "true_sentences": 39,
+    "false_sentences": 3,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "De eigenaar of leidinggevende moet 21 jaar of ouder zijn en van onbesproken gedrag.",
+        "status": "false",
+        "note": "Volgens de APV van Heiloo moet de eigenaar of leidinggevende minimaal 18 jaar zijn, niet 21 jaar."
+      },
+      {
+        "sentence": "Standplaatsvergunning: €44,40 voor de aanvraag.",
+        "status": "false",
+        "note": "Dit tarief is niet correct volgens de actuele legesverordening van gemeente Heiloo. Het actuele tarief voor een standplaatsvergunning is anders."
+      },
+      {
+        "sentence": "Terrasvergunning: €330,20.",
+        "status": "false",
+        "note": "Dit specifieke bedrag komt niet overeen met de actuele legesverordening van gemeente Heiloo voor terrasvergunningen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.heiloo.nl/aanvragen-en-regelen/exploitatievergunning/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/standplaatsvergunning/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/terrasvergunning/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/toezicht-en-handhaving/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/omgevingsvergunning/"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het kan langer duren voor u een reactie krijgt op uw aanvraag voor een vergunning. Door krapte op de arbeidsmarkt hebben wij helaas niet genoeg collega's om alle vergunningen op tijd af te handelen.",
+          "original_reference": "De gemeente streeft ernaar om binnen 8 weken een beslissing te nemen over uw aanvraag.",
+          "note": "De bronpagina's vermelden expliciet vertragingen in de verwerking vanwege personeelstekort, terwijl de originele tekst een vaste verwerkingstijd van 8 weken noemt.",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/exploitatievergunning/",
+            "https://www.heiloo.nl/aanvragen-en-regelen/standplaatsvergunning/",
+            "https://www.heiloo.nl/aanvragen-en-regelen/terrasvergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vergunning aanvragen: doe dit minstens 12 weken van tevoren.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina specificeert een minimale aanvraagtermijn van 12 weken voor terrasvergunningen, wat niet vermeld staat in de originele tekst.",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/terrasvergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als uw horecabedrijf een andere leidinggevende krijgt. Of als u een andere leidinggevenden in dienst neemt.",
+          "original_reference": "Als uw horecabedrijf een andere leidinggevende krijgt.",
+          "note": "De bronpagina specificeert dat de vergunning ook nodig is bij het in dienst nemen van andere leidinggevenden, niet alleen bij een nieuwe hoofdleidinggevende.",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/exploitatievergunning/"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de verwerkingstijden van vergunningen (vertraging door personeelstekort), specifieke aanvraagtermijnen voor terrasvergunningen (12 weken) en aanvullende vereisten voor leidinggevenden. De originele tekst mist enkele belangrijke details en actuele waarschuwingen over verwerkingstijden die wel in de bronpagina's staan vermeld."
+  }
+}

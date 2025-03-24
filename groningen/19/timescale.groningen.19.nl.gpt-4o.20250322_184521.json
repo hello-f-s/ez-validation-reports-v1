@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "GRONINGEN",
+      "contact": {
+        "phone": "14 050",
+        "email": "info@groningen.nl",
+        "website": "http://gemeente.groningen.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Vanaf 1 januari 2025 kunt u de vergunning digitaal aanvragen.",
+        "status": "false",
+        "note": "Deze vergunning kan nu al digitaal worden aangevraagd via de website van de gemeente Groningen. Er is geen wachttijd tot 2025 voor digitale aanvragen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://gemeente.groningen.nl/exploitatievergunning-horeca-aanvragen",
+      "https://gemeente.groningen.nl/alcoholvergunning-aanvragen",
+      "https://gemeente.groningen.nl",
+      "https://gemeente.groningen.nl/loterij-aanvragen",
+      "https://gemeente.groningen.nl/speelautomatenvergunning-aanvragen",
+      "https://gemeente.groningen.nl/parkeervergunning-voor-bedrijven"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De vergunning blijft 4 jaar geldig.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt geen geldigheidsduur van de vergunning, terwijl de bron specifiek aangeeft dat deze 4 jaar geldig is.",
+          "source_urls": [
+            "https://gemeente.groningen.nl/speelautomatenvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Beschrijving Prijs 1 automaat, voor 4 jaar €158,50; 2 automaten, voor 4 jaar €294,50",
+          "original_reference": "Kosten voor de vergunning worden vermeld op basis van uw specifieke situatie.",
+          "note": "De bron vermeldt specifieke tarieven voor de vergunning, terwijl de originele tekst alleen aangeeft dat kosten op basis van specifieke situatie worden bepaald.",
+          "source_urls": [
+            "https://gemeente.groningen.nl/speelautomatenvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "In een traditioneel café of restaurant (een 'hoogdrempelige' inrichting) mag u maximaal 2 kansspelautomaten (gokkasten) plaatsen.",
+          "original_reference": "In een traditioneel café of restaurant (een 'hoogdrempelige' inrichting) zijn maximaal 2 kansspelautomaten toegestaan.",
+          "note": "De informatie over het maximaal aantal toegestane automaten in hoogdrempelige inrichtingen komt overeen.",
+          "source_urls": [
+            "https://gemeente.groningen.nl/speelautomatenvergunning-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de geldigheidsduur van de vergunning (4 jaar) en de specifieke kosten die in de bron worden genoemd, terwijl deze details ontbreken in de originele tekst. De kernvoorwaarden voor het aantal toegestane automaten in verschillende type horecagelegenheden komen wel overeen."
+  }
+}

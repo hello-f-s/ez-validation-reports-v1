@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LOPIK",
+      "contact": {
+        "phone": "(0348) 55 99 55",
+        "email": "gemeente@lopik.nl",
+        "website": "http://www.lopik.nl"
+      }
+    },
+    "service": {
+      "id": 15,
+      "name": "Vergunning of ontheffing voor straatartiesten"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "U ontvangt binnen 8 weken bericht of u de ontheffing krijgt.",
+        "status": "false",
+        "note": "Volgens de Algemene wet bestuursrecht en de gemeentelijke website van Lopik is de standaard beslistermijn voor dit type aanvragen 6 weken, niet 8 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.lopik.nl/straatartiest-optreden",
+      "https://www.lopik.nl/verkeersontheffing-aanvragen",
+      "https://www.lopik.nl/voorwerp-plaatsen-op-of-aan-de-weg",
+      "https://www.lopik.nl/geluidsoverlast-veroorzaken",
+      "https://www.lopik.nl"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Dit doet u door een e-mail te sturen naar gemeente@lopik.nl of via brief naar: Gemeente Lopik, Raadhuisplein 1, Postbus 50, 3410 CB Lopik",
+          "original_reference": "U vraagt de ontheffing aan bij de gemeente. Dit kan via een e-mail of brief.",
+          "note": "De originele tekst mist het specifieke postadres en postbusnummer voor schriftelijke aanvragen",
+          "source_urls": [
+            "https://www.lopik.nl/voorwerp-plaatsen-op-of-aan-de-weg"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Raadhuisplein 1",
+          "original_reference": "Raadhuisplein 13",
+          "note": "Er is een verschil in het huisnummer van het bezoekadres. De originele tekst vermeldt nummer 13, terwijl de bronpagina nummer 1 vermeldt",
+          "source_urls": [
+            "https://www.lopik.nl/voorwerp-plaatsen-op-of-aan-de-weg"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Hoe lang het optreden duurt",
+          "original_reference": "No matching information",
+          "note": "De originele tekst noemt dit als vereiste informatie voor de aanvraag, maar dit wordt niet expliciet genoemd op de bronpagina over straatartiesten",
+          "source_urls": [
+            "https://www.lopik.nl/straatartiest-optreden"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn enkele belangrijke verschillen gevonden tussen de originele tekst en de bronpagina's. Het meest opvallende verschil betreft het bezoekadres van het gemeentehuis, waarbij verschillende huisnummers worden genoemd. Daarnaast ontbreekt in de bronpagina specifieke informatie over de duur van het optreden als vereiste, terwijl dit wel in de originele tekst staat. Ook zijn de contactgegevens voor schriftelijke aanvragen in de originele tekst minder volledig dan in de bronpagina's."
+  }
+}

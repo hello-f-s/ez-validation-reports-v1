@@ -1,0 +1,67 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DORDRECHT",
+      "contact": {
+        "phone": "14 078",
+        "email": "null",
+        "website": "http://www.dordrecht.nl"
+      }
+    },
+    "service": {
+      "id": 15,
+      "name": "Vergunning of ontheffing voor straatartiesten"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 8,
+    "true_sentences": 7,
+    "false_sentences": 1,
+    "accuracy_percentage": 87.5,
+    "false_statements": [
+      {
+        "sentence": "De ontheffing kost € 21,-.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Dordrecht kost een ontheffing voor straatmuzikanten € 22,70 (2024)."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 0,
+    "invalid_urls": 6,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "http://dordrecht.nl",
+        "reason": "INVALID: Error scraping http://dordrecht.nl: HTTPSConnectionPool(host='www.dordrecht.nl', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1018)')))"
+      },
+      {
+        "url": "https://cms.dordrecht.nl/Inwoners/Overzicht_Inwoners/Bouwen_en_verbouwen_voor_inwoners/Onttrekkingsvergunning_woonruimte",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://cms.dordrecht.nl/Inwoners/Overzicht_Inwoners/Vergunningen/Uitstallingen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://cms.dordrecht.nl/Inwoners/Overzicht_Inwoners/Vergunningen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://cms.dordrecht.nl/Ondernemers/Overzicht_Ondernemers/Winkels_en_markten",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://cms.dordrecht.nl/Inwoners/Overzicht_Inwoners/Vergunningen/Optreden_als_straatmuzikant",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  }
+}

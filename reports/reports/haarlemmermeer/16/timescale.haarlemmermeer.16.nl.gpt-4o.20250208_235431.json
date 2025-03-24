@@ -1,0 +1,86 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HAARLEMMERMEER",
+      "contact": {
+        "phone": "(0900) 18 52",
+        "email": "info@haarlemmermeer.nl",
+        "website": "http://www.haarlemmermeer.nl"
+      }
+    },
+    "service": {
+      "id": 16,
+      "name": "Registreren in het Landelijk Register Kinderopvang (LRK)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "Dien uw aanvraag in: Download en vul het aanvraagformulier in en stuur het naar de gemeente via info@haarlemmermeer.nl of per post.",
+        "status": "false",
+        "note": "Het e-mailadres info@haarlemmermeer.nl is onjuist. Het correcte e-mailadres voor de gemeente Haarlemmermeer is info@haarlemmermeergemeente.nl"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 4,
+    "invalid_urls": 3,
+    "accuracy_percentage": 57.1,
+    "valid_urls_list": [
+      "https://haarlemmermeergemeente.nl/kinderopvang-inschrijven",
+      "https://haarlemmermeergemeente.nl/kinderopvang",
+      "https://haarlemmermeergemeente.nl/bereken-uw-recht",
+      "https://haarlemmermeergemeente.nl/levenloos-geboren-kindje-registreren"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://haarlemmermeer.nl",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://haarlemmermeer.nl\">gemeente",
+        "reason": "INVALID: Error scraping https://haarlemmermeer.nl\">gemeente: HTTPSConnectionPool(host='haarlemmermeer.nl%22%3egemeente', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x103c01590>: Failed to resolve 'haarlemmermeer.nl%22%3egemeente' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://haarlemmermeergemeente.nl/toelichting-aanvraagformulier-exploitatievergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u een kindercentrum, gastouderbureau of gastouderopvang wilt starten, heeft u aantal vergunningen nodig waaronder een omgevingsvergunning en gebruiksmelding",
+          "original_reference": "Complete en correct ingevulde aanvraagdocumenten",
+          "note": "De bronpagina specificeert aanvullende vergunningsvereisten (omgevingsvergunning en gebruiksmelding) die niet genoemd worden in de originele tekst",
+          "source_urls": [
+            "https://haarlemmermeergemeente.nl/kinderopvang-inschrijven"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Controleer daarom of het starten van een kinder- of gastouderopvang past bij de regels van het omgevingsplan voor uw locatie. Dit kunt u controleren via het Omgevingsloket",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt een specifieke voorbereidende stap (controle omgevingsplan) die niet genoemd wordt in de originele tekst",
+          "source_urls": [
+            "https://haarlemmermeergemeente.nl/kinderopvang-inschrijven"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten belangrijke aanvullende informatie over verplichte vergunningen en voorbereidende stappen die niet vermeld worden in de originele tekst. Met name de omgevingsvergunning, gebruiksmelding en controle van het omgevingsplan zijn essentiële vereisten die ontbreken in de oorspronkelijke beschrijving van het registratieproces."
+  }
+}

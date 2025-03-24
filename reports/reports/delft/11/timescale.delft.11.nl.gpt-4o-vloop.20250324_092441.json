@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DELFT",
+      "contact": {
+        "phone": "14 015",
+        "email": "null",
+        "website": "http://www.delft.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 27,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.4,
+    "false_statements": [
+      {
+        "sentence": "Kosten voor een omgevingsvergunning zijn afhankelijk van de activiteit en kunnen een percentage van de bouwkosten bedragen. Bijvoorbeeld, voor het bouwen kan het ruimtelijk deel 1,71% van de bouwkosten zijn (minimaal €65,61).",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Delft is het percentage voor het ruimtelijk deel van een bouwvergunning 2,29% van de bouwkosten, niet 1,71%. Ook het minimumbedrag komt niet overeen met de huidige tarieven."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.delft.nl/omgevingsvergunning-milieu",
+      "https://www.delft.nl/omgevingsvergunning-aanvragen",
+      "https://www.delft.nl/omgevingsvergunning-voor-aanleg",
+      "https://www.delft.nl/uw-plan-voorleggen-aan-de-gemeente",
+      "https://www.delft.nl/omgevingsvergunning-bouwen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Er zijn geen kosten.",
+          "original_reference": "Kosten voor een omgevingsvergunning zijn afhankelijk van de activiteit en kunnen een percentage van de bouwkosten bedragen.",
+          "note": "De originele tekst vermeldt verschillende kosten voor vergunningen, terwijl de bron (specifiek voor milieuvergunning) aangeeft dat er geen kosten zijn.",
+          "source_urls": [
+            "https://www.delft.nl/omgevingsvergunning-milieu"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De gemeente kan deze periode eenmalig verlengen met 6 weken",
+          "original_reference": "De gemeente kan de periode eenmalig verlengen.",
+          "note": "De originele tekst specificeert niet de exacte verlengingstermijn, terwijl de bronnen aangeven dat dit specifiek 6 weken is.",
+          "source_urls": [
+            "https://www.delft.nl/omgevingsvergunning-bouwen",
+            "https://www.delft.nl/omgevingsvergunning-voor-aanleg"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De omgevingsvergunning bouwen bestaat uit 2 delen: Ruimtelijk deel en Bouwtechnische deel",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden een specifieke tweedeling in de omgevingsvergunning voor bouwen die niet wordt genoemd in de originele tekst.",
+          "source_urls": [
+            "https://www.delft.nl/omgevingsvergunning-bouwen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de kosten (gratis versus betaald), de specifieke verlengingstermijn van 6 weken die niet genoemd wordt in de originele tekst, en de tweedeling van de bouwvergunning in een ruimtelijk en bouwtechnisch deel. De originele tekst bevat over het algemeen meer algemene informatie, terwijl de bronnen specifieker zijn in bepaalde details."
+  }
+}

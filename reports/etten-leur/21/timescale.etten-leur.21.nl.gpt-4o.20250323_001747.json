@@ -1,0 +1,75 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ETTEN-LEUR",
+      "contact": {
+        "phone": "14 076",
+        "email": "info@etten-leur.nl",
+        "website": "http://www.etten-leur.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "Na de aanvraag ontvangt u binnen 1 tot 4 weken bericht via de post.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Etten-Leur duurt de afhandeling van een VOG-aanvraag ongeveer 2 tot 8 weken, niet 1 tot 4 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.etten-leur.nl/product/wet-open-overheid-woo/",
+      "https://www.etten-leur.nl/product/verklaring-omtrent-het-gedrag/",
+      "https://www.etten-leur.nl/product/omgevingsvergunning-aanvragen/",
+      "https://www.etten-leur.nl/product/ventvergunning/",
+      "https://etten-leur.nl/",
+      "https://www.etten-leur.nl/product/orienteren-bij-verbouwplannen/"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U kunt uw VOG ook bij de gemeente aanvragen met DigiD. Bij uw aanvraag voegt u het volledig ingevulde aanvraagformulier VOG toe.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de mogelijkheid om online via DigiD bij de gemeente aan te vragen, alleen persoonlijk aan de balie of via de werkgever.",
+          "source_urls": [
+            "https://www.etten-leur.nl/product/verklaring-omtrent-het-gedrag/"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Binnen 1 tot 4 weken krijgt u bericht via de post. Als u gaat werken in het buitenland en voor een adoptie kunt u een spoedprocedure vragen. Dit duurt 10 werkdagen.",
+          "original_reference": "Na de aanvraag ontvangt u binnen 1 tot 4 weken bericht via de post. Er is een spoedprocedure mogelijk die 10 werkdagen kost, indien van toepassing voor werken in het buitenland en adoptie.",
+          "note": "De informatie over verwerkingstijden en spoedprocedure komt exact overeen.",
+          "source_urls": [
+            "https://www.etten-leur.nl/product/verklaring-omtrent-het-gedrag/"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste afwijking is dat er een extra aanvraagmogelijkheid bestaat die niet in de originele tekst wordt genoemd: online aanvragen via DigiD bij de gemeente. Voor het overige komt de informatie over kosten, termijnen en procedures overeen met de originele tekst."
+  }
+}

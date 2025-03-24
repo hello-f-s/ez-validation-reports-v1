@@ -1,0 +1,78 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HAARLEM",
+      "contact": {
+        "phone": "14 023",
+        "email": "antwoord@haarlem.nl",
+        "website": "http://www.haarlem.nl"
+      }
+    },
+    "service": {
+      "id": 16,
+      "name": "Registreren in het Landelijk Register Kinderopvang (LRK)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 20,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.2,
+    "false_statements": [
+      {
+        "sentence": "Telefonisch contact is mogelijk via 14 023, elke werkdag van 8.30 tot 16.30 uur.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Haarlem is het telefoonnummer 14 023 bereikbaar van 8.30 tot 17.00 uur op werkdagen, niet tot 16.30 uur."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 1,
+    "invalid_urls": 4,
+    "accuracy_percentage": 20.0,
+    "valid_urls_list": [
+      "https://www.haarlem.nl/ufs/formulieren.eb?id=vaste_standplaatsvergunning&gemeentecode=0392"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://haarlem.nl/kinderopvang-inschrijven",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://haarlem.nl/levenloos-geboren-kind-registreren",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://haarlem.nl/tegemoetkoming-kosten-kinderopvang",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.haarlem.nl/ufs/formulieren.eb?id=aanvraag_exploitatievergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Publiekshal, Zijlvest 39, 2011 VB Haarlem. Openingstijden: Elke werkdag: 9.00 tot 16.00 uur, Donderdag: ook van 16.00 tot 20.00 uur. Telefoon 14 023, Elke werkdag: 8.30 tot 16.30 uur",
+          "original_reference": "Publiekshal, Zijlvest 39, 2011 VB Haarlem. Openingstijden zijn elke werkdag van 9.00 tot 16.00 uur en op donderdag ook van 16.00 tot 20.00 uur. Telefonisch contact is mogelijk via 14 023, elke werkdag van 8.30 tot 16.30 uur",
+          "note": "De contact- en openingstijden komen exact overeen met de originele inhoud",
+          "source_urls": [
+            "https://www.haarlem.nl/ufs/formulieren.eb?id=vaste_standplaatsvergunning&gemeentecode=0392"
+          ]
+        }
+      ]
+    },
+    "summary": "Na analyse van de beschikbare broninhoud zijn er geen significante verschillen gevonden met de originele tekst wat betreft de overlappende informatie (contact- en openingstijden). De overige informatie uit de originele tekst over kinderopvang kon niet geverifieerd worden omdat de geciteerde bron over een ander onderwerp (standplaatsvergunning) gaat."
+  }
+}

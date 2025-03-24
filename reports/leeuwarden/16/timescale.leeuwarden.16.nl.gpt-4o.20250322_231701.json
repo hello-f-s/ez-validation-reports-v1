@@ -1,0 +1,93 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LEEUWARDEN",
+      "contact": {
+        "phone": "14 058",
+        "email": "gemeente@leeuwarden.nl",
+        "website": "http://www.leeuwarden.nl"
+      }
+    },
+    "service": {
+      "id": 16,
+      "name": "Registreren in het Landelijk Register Kinderopvang (LRK)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 10,
+    "false_sentences": 1,
+    "accuracy_percentage": 90.9,
+    "false_statements": [
+      {
+        "sentence": "€ 2.343,75 voor kinderdagverblijf, peuteropvang, buitenschoolse opvang en gastouderbureau.",
+        "status": "false",
+        "note": "Dit bedrag is niet correct volgens de actuele tarieven van gemeente Leeuwarden. De gemeente hanteert de landelijke tarieven die jaarlijks worden vastgesteld door het ministerie van SZW en deze kunnen afwijken van het genoemde bedrag."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 4,
+    "invalid_urls": 2,
+    "accuracy_percentage": 66.7,
+    "valid_urls_list": [
+      "https://www.leeuwarden.nl/verhuizen-of-inschrijven/registratie-niet-ingezetenen/",
+      "https://www.leeuwarden.nl/onderwijs/kinderopvang/",
+      "https://www.leeuwarden.nl/en/education/kinderopvang/",
+      "https://www.leeuwarden.nl/geboorte/levenloos-geboren-kindje-inschrijven-in-de-brp/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.leeuwarden.nl/subsidies/subsidieregeling-kansen-voor-kinderen/",
+        "reason": "INVALID: Error scraping https://www.leeuwarden.nl/subsidies/subsidieregeling-kansen-voor-kinderen/: 404 Client Error: Not Found for url: https://www.leeuwarden.nl/subsidies/subsidieregeling-kansen-voor-kinderen/"
+      },
+      {
+        "url": "https://gemeente.leeuwarden.nl/kinderopvangvoorziening-starten-of-wijzigen",
+        "reason": "INVALID: Error scraping https://gemeente.leeuwarden.nl/kinderopvangvoorziening-starten-of-wijzigen: HTTPSConnectionPool(host='gemeente.leeuwarden.nl', port=443): Max retries exceeded with url: /kinderopvangvoorziening-starten-of-wijzigen (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1073d7b10>: Failed to resolve 'gemeente.leeuwarden.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "De GGD controleert of uw kinderopvangvoorziening aan de wettelijke kwaliteitseisen voldoet. Is dit het geval? Dan registreren wij uw organisatie in het Landelijk Register Kinderopvang (LRK). U ontvangt een brief van ons, als u ingeschreven staat in het LRK.",
+          "original_reference": "De GGD controleert de aanvraag op wettelijke kwaliteitseisen. Wanneer aan alle eisen is voldaan, wordt uw organisatie in het Landelijk Register Kinderopvang (LRK) geregistreerd en ontvangt u schriftelijke bevestiging.",
+          "note": "De informatie over GGD controle en LRK registratie komt overeen met de originele tekst",
+          "source_urls": [
+            "https://www.leeuwarden.nl/onderwijs/kinderopvang/",
+            "https://www.leeuwarden.nl/en/education/kinderopvang/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bij een papieren aanvraag duurt de verwerking van uw aanvraag langer.",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden extra informatie over een langere verwerkingstijd bij papieren aanvragen, wat niet genoemd wordt in de originele tekst",
+          "source_urls": [
+            "https://www.leeuwarden.nl/onderwijs/kinderopvang/",
+            "https://www.leeuwarden.nl/en/education/kinderopvang/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Dit geldt niet als het om een adreswijziging gaat van een gastouderbureau.",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden een uitzondering voor kosten bij adreswijzigingen van gastouderbureaus, wat niet genoemd wordt in de originele tekst",
+          "source_urls": [
+            "https://www.leeuwarden.nl/onderwijs/kinderopvang/"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen komen grotendeels overeen met de originele tekst, maar bevatten twee belangrijke aanvullende details die niet in de originele tekst staan: 1) papieren aanvragen hebben een langere verwerkingstijd, en 2) er geldt een uitzondering voor kosten bij adreswijzigingen van gastouderbureaus. De kernprocedures, kosten en vereisten zijn verder consistent met de originele tekst."
+  }
+}

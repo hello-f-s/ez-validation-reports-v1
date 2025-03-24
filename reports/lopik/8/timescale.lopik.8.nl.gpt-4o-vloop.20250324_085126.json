@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LOPIK",
+      "contact": {
+        "phone": "(0348) 55 99 55",
+        "email": "gemeente@lopik.nl",
+        "website": "http://www.lopik.nl"
+      }
+    },
+    "service": {
+      "id": 8,
+      "name": "Marktvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "U ontvangt binnen 8 weken bericht of u de vergunning krijgt.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Lopik wordt er binnen 6 weken een besluit genomen over een standplaatsvergunning, niet binnen 8 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.lopik.nl/milieu-vergunning-of-melding",
+      "https://www.lopik.nl/exploitatievergunning-horecabedrijf",
+      "https://www.lopik.nl/openingstijden-horeca-eenmalig-aanpassen",
+      "https://www.lopik.nl/standplaats-aanvragen",
+      "https://www.lopik.nl/"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "De regels rondom standplaatsen zijn verder uitgewerkt in het standplaatsenbeleid 2023. In het standplaatsenbeleid is onderscheid gemaakt tussen vijf vormen van standplaatsen, namelijk: Vaste standplaats; Seizoensgebonden standplaats; Incidentele standplaats; Ideële standplaats; Overige standplaats.",
+          "original_reference": "De specifieke voorwaarden voor het aanvragen van een marktvergunning zijn verder uitgewerkt in het 'standplaatsenbeleid 2023'. In dit beleid wordt onderscheid gemaakt tussen verschillende vormen van standplaatsen, zoals vaste, seizoensgebonden, incidentele, ideële en overige standplaatsen",
+          "note": "De informatie over de verschillende types standplaatsen komt exact overeen in beide bronnen",
+          "source_urls": [
+            "https://www.lopik.nl/standplaats-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Dit kunt u doen door het aanvraagformulier 'standplaatsvergunning' in te vullen en te mailen naar gemeente@lopik.nl",
+          "original_reference": "U vraagt de vergunning aan bij de gemeente door het aanvraagformulier 'standplaatsvergunning' in te vullen en te mailen of per post te sturen",
+          "note": "De bronpagina specificeert het e-mailadres (gemeente@lopik.nl) waar de aanvraag naar toe moet, terwijl dit in de originele tekst ontbreekt",
+          "source_urls": [
+            "https://www.lopik.nl/standplaats-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "3411 CH Lopik",
+          "original_reference": "3411 CH Lopik",
+          "note": "Het bezoekadres heeft een andere postcode (3411 CH) dan het postadres (3410 CB) in de originele tekst",
+          "source_urls": [
+            "https://www.lopik.nl/standplaats-aanvragen",
+            "https://www.lopik.nl/"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont enkele kleine maar belangrijke verschillen in contactgegevens en aanvraagprocedures. Het belangrijkste verschil is de toevoeging van het specifieke e-mailadres voor aanvragen en een verschil in postcode tussen bezoek- en postadres. De kern van de informatie over standplaatsen en het beleid is consistent tussen de bronnen."
+  }
+}

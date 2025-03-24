@@ -1,0 +1,78 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HAARLEM",
+      "contact": {
+        "phone": "14 023",
+        "email": "antwoord@haarlem.nl",
+        "website": "http://www.haarlem.nl"
+      }
+    },
+    "service": {
+      "id": 10,
+      "name": "Nachtregister bijhouden"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 1,
+    "true_sentences": 1,
+    "false_sentences": 0,
+    "accuracy_percentage": 100.0,
+    "false_statements": []
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 2,
+    "invalid_urls": 3,
+    "accuracy_percentage": 40.0,
+    "valid_urls_list": [
+      "https://haarlem.nl/regels-vakantieverhuur",
+      "https://www.haarlem.nl/ufs/formulieren.eb?id=aanvraag_alcoholvergunning_model_b_hlm"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://haarlem.nl/vakantieverhuur-registreren",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.haarlem.nl/ufs/ufsmain?formid=algemene_vraag",
+        "reason": "INVALID: Error scraping https://www.haarlem.nl/ufs/ufsmain?formid=algemene_vraag: 'NoneType' object has no attribute 'strip'"
+      },
+      {
+        "url": "https://haarlem.nl/documenten-van-en-informatie-over-alle-logies-haarlem",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Regels voor vakantieverhuur: U staat op het adres van de woning ingeschreven en woont er zelf, Een 2e woning mag u niet gebruiken voor vakantieverhuur, Er staat een registratienummer bij al uw verhuuradvertenties, U betaalt toeristenbelasting, U verhuurt uw woning maximaal 30 nachten per jaar",
+          "original_reference": "No matching information",
+          "note": "De originele inhoud bevat geen informatie over vakantieverhuur, terwijl de bronpagina gedetailleerde regels en voorwaarden beschrijft",
+          "source_urls": [
+            "https://haarlem.nl/regels-vakantieverhuur"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Aanvraag alcoholvergunning model B vereist: Recent uittreksel KvK, Gewaarmerkt bestuursreglement, Lijst van vrijwilligers met tapinstructie, Koopakte of huurcontract, Plattegrond inclusief terras(sen), Oprichtingsakte vereniging of stichting",
+          "original_reference": "No matching information",
+          "note": "De originele inhoud bevat geen informatie over alcoholvergunningen, terwijl de bronpagina specifieke vereisten en benodigde documenten vermeldt",
+          "source_urls": [
+            "https://www.haarlem.nl/ufs/formulieren.eb?id=aanvraag_alcoholvergunning_model_b_hlm"
+          ]
+        }
+      ]
+    },
+    "summary": "De originele inhoud bevat geen specifieke informatie, terwijl de bronpagina's gedetailleerde informatie bevatten over twee verschillende onderwerpen: regels voor vakantieverhuur en vereisten voor alcoholvergunningen. Dit zijn significante informatieverschillen die essentieel zijn voor inwoners van de gemeente Haarlem."
+  }
+}

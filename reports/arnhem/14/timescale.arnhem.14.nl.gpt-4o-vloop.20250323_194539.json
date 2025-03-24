@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ARNHEM",
+      "contact": {
+        "phone": "null",
+        "email": "null",
+        "website": "http://www.arnhem.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 22,
+    "false_sentences": 2,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Parkeervergunning (maandag tot zondag 7.00 - 19.00 uur): € 317 per jaar of € 177 per half jaar.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Arnhem zijn de actuele tarieven voor een parkeervergunning (7.00-19.00 uur) € 322,80 per jaar of € 180,60 per half jaar."
+      },
+      {
+        "sentence": "Parkeervergunning (maandag tot zondag 00.00 - 24.00 uur): € 538 per jaar of € 286 per half jaar.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Arnhem zijn de actuele tarieven voor een parkeervergunning (00.00-24.00 uur) € 548,40 per jaar of € 291,60 per half jaar."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.arnhem.nl/Ondernemers/parkeren_en_verkeer/parkeervergunning_bedrijven",
+      "https://www.arnhem.nl/Inwoners/parkeren/parkeervergunning_bewoners",
+      "https://www.arnhem.nl/Inwoners/parkeren/parkeervergunning_bezoekers",
+      "https://www.arnhem.nl/Ondernemers/parkeren_en_verkeer",
+      "https://www.arnhem.nl/Ondernemers/parkeren_en_verkeer/ontheffing_verkeersregels_wegenverkeerswet"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "In de meeste wijken is een wachtlijst. Dit komt door het beperkte aantal parkeerplaatsen. Het kan dus zijn dat u recht heeft op een parkeervergunning, maar dat u de vergunning niet krijgt omdat er geen plaats is.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat er wachtlijsten zijn voor parkeervergunningen in de meeste wijken vanwege beperkte parkeerplaatsen. Dit is belangrijke informatie voor aanvragers.",
+          "source_urls": [
+            "https://www.arnhem.nl/Inwoners/parkeren/parkeervergunning_bewoners"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een tijdelijke ontheffing van de verkeersregels is een ontheffing tot maximaal 6 maanden... Een vaste ontheffing van de verkeersregels is een ontheffing voor een periode van 6 maanden tot maximaal 3 jaar.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst specificeert niet de maximale geldigheidsduur van tijdelijke (6 maanden) en vaste (3 jaar) ontheffingen.",
+          "source_urls": [
+            "https://www.arnhem.nl/Ondernemers/parkeren_en_verkeer/ontheffing_verkeersregels_wegenverkeerswet"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een tijdelijke ontheffing verkeersegels en verkeerstekens vraagt u aan via parkeerservicearnhem@p1.nl",
+          "original_reference": "Een ontheffing vraagt u aan via de parkeerservice.",
+          "note": "De originele tekst vermeldt niet het specifieke e-mailadres voor het aanvragen van ontheffingen.",
+          "source_urls": [
+            "https://www.arnhem.nl/Ondernemers/parkeren_en_verkeer/ontheffing_verkeersregels_wegenverkeerswet"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen het ontbreken van informatie over wachtlijsten voor parkeervergunningen, de specifieke geldigheidsduur van ontheffingen, en het concrete e-mailadres voor ontheffingsaanvragen in de originele tekst. Deze informatie is wel beschikbaar in de bronpagina's en is relevant voor aanvragers."
+  }
+}

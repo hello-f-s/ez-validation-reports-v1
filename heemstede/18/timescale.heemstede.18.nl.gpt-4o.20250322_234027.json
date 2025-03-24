@@ -1,0 +1,80 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HEEMSTEDE",
+      "contact": {
+        "phone": "(023) 548 58 68",
+        "email": "gemeente@heemstede.nl",
+        "website": "http://www.heemstede.nl"
+      }
+    },
+    "service": {
+      "id": 18,
+      "name": "Ventvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 8,
+    "true_sentences": 6,
+    "false_sentences": 2,
+    "accuracy_percentage": 75.0,
+    "false_statements": [
+      {
+        "sentence": "Voor een ventvergunning die één dag tot korter dan een maand geldig is, betaalt u € 35,30.",
+        "status": "false",
+        "note": "Het correcte bedrag voor een ventvergunning korter dan een maand is € 36,35 volgens de actuele legesverordening van gemeente Heemstede"
+      },
+      {
+        "sentence": "Voor een ventvergunning die langer dan een maand geldig is, betaalt u € 56,15.",
+        "status": "false",
+        "note": "Het correcte bedrag voor een ventvergunning langer dan een maand is € 57,85 volgens de actuele legesverordening van gemeente Heemstede"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.heemstede.nl/aanvragen-en-regelen/ventvergunning",
+      "https://www.heemstede.nl",
+      "https://www.heemstede.nl/vergunningen/uw-woning-verhuren",
+      "https://www.heemstede.nl/aanvragen-en-regelen/collecteren-en-venten",
+      "https://www.heemstede.nl/vergunningen/alcoholwetvergunning",
+      "https://www.heemstede.nl/vergunningen/standplaatsvergunning-aanvragen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Collecteren en venten met vergunning is alleen toegestaan van maandag tot en met zaterdag van 10.00 uur tot 20.00 uur.",
+          "original_reference": "No matching information",
+          "note": "De originele inhoud vermeldt geen toegestane ventiertijden, terwijl de bron specifieke tijden aangeeft",
+          "source_urls": [
+            "https://www.heemstede.nl/aanvragen-en-regelen/collecteren-en-venten"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als de politie of de BOA's constateren dat zonder vergunning wordt gevent, dan krijgt de overtredende organisatie een proces-verbaal en een boete.",
+          "original_reference": "No matching information",
+          "note": "De originele inhoud vermeldt geen handhavingsmaatregelen of consequenties bij overtreding",
+          "source_urls": [
+            "https://www.heemstede.nl/aanvragen-en-regelen/ventvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten twee belangrijke aanvullende details die niet in de originele inhoud staan: de specifieke toegestane venttijden (10:00-20:00 uur, ma-za) en informatie over handhaving en boetes bij overtreding. De overige informatie zoals kosten, voorwaarden en aanvraagprocedure komt overeen met de originele inhoud."
+  }
+}

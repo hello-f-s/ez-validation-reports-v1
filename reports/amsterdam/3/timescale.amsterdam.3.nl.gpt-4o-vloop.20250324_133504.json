@@ -1,0 +1,80 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AMSTERDAM",
+      "contact": {
+        "phone": "14 020",
+        "email": "null",
+        "website": "http://www.amsterdam.nl"
+      }
+    },
+    "service": {
+      "id": 3,
+      "name": "Certificaat voor opgraving aanvragen en vondst melden"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 20,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.2,
+    "false_statements": [
+      {
+        "sentence": "Algemene contacturen voor de gemeente zijn van maandag tot en met vrijdag, van 08:00 tot 18:00 uur.",
+        "status": "false",
+        "note": "De algemene contacturen van de gemeente Amsterdam zijn van maandag tot en met vrijdag van 08:00 tot 17:00 uur, niet tot 18:00 uur zoals vermeld."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 4,
+    "valid_urls": 2,
+    "invalid_urls": 2,
+    "accuracy_percentage": 50.0,
+    "valid_urls_list": [
+      "https://www.amsterdam.nl/kunst-cultuur/monumenten/archeologie/wetgeving/",
+      "https://www.amsterdam.nl/kunst-cultuur/monumenten/vragen/archeologie/archeologisch-object-gevonden/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.amsterdam.nl/kunst-cultuur/monumenten/vragen/",
+        "reason": "INVALID: Error scraping https://www.amsterdam.nl/kunst-cultuur/monumenten/vragen/: 403 Client Error: Forbidden for url: https://www.amsterdam.nl/kunst-cultuur/monumenten/vragen/"
+      },
+      {
+        "url": "https://www.amsterdam.nl/veelgevraagd/klacht-indienen-over-de-gemeente-42fd5",
+        "reason": "INVALID: Error scraping https://www.amsterdam.nl/veelgevraagd/klacht-indienen-over-de-gemeente-42fd5: 403 Client Error: Forbidden for url: https://www.amsterdam.nl/veelgevraagd/klacht-indienen-over-de-gemeente-42fd5"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Ja, volgens de Erfgoedwet bent u verplicht om de vondst te melden bij Monumenten en Archeologie van de gemeente Amsterdam. Bovendien moet de vondst 6 maanden beschikbaar worden gesteld voor onderzoek.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de wettelijke verplichting om vondsten 6 maanden beschikbaar te stellen voor onderzoek. Dit is een belangrijke wettelijke vereiste die ontbreekt in de oorspronkelijke tekst.",
+          "source_urls": [
+            "https://www.amsterdam.nl/kunst-cultuur/monumenten/vragen/archeologie/archeologisch-object-gevonden/"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "De basis voor het archeologiebeleid in Nederland werd gelegd met het verdrag van Malta dat in 1992 door de Europese lidstaten werd getekend... Nederland heeft in 2007 invulling gegeven aan dit verdrag met de introductie van de Wet op de archeologische monumentenzorg (Wamz).",
+          "original_reference": "De basis voor het archeologiebeleid in Nederland werd gelegd met het Verdrag van Malta, ondertekend in 1992. Nederland heeft dit in 2007 geïmplementeerd met de Wet op de archeologische monumentenzorg (Wamz)",
+          "note": "De informatie over het Verdrag van Malta en de implementatie via de Wamz komt volledig overeen met de originele tekst.",
+          "source_urls": [
+            "https://www.amsterdam.nl/kunst-cultuur/monumenten/archeologie/wetgeving/"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont één belangrijk verschil aan: de originele tekst mist de wettelijke verplichting om archeologische vondsten 6 maanden beschikbaar te stellen voor onderzoek. Deze informatie is essentieel voor burgers die archeologische objecten vinden. Voor het overige komt de informatie over wetgeving en beleid overeen met de bronnen."
+  }
+}

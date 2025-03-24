@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LAARBEEK",
+      "contact": {
+        "phone": "(0492) 46 97 00",
+        "email": "gemeente@laarbeek.nl",
+        "website": "http://www.laarbeek.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "De eigenaar van de kansspelautomaat heeft een exploitatievergunning nodig.",
+        "status": "false",
+        "note": "Volgens de website van gemeente Laarbeek heeft de eigenaar van de kansspelautomaat een aanwezigheidsvergunning nodig, geen exploitatievergunning. Dit zijn twee verschillende vergunningen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.laarbeek.nl/horecabedrijf-beginnen",
+      "https://www.laarbeek.nl/kansspel-organiseren",
+      "https://www.laarbeek.nl/omgevingsvergunning",
+      "https://www.laarbeek.nl/speelautomaat-plaatsen",
+      "https://www.laarbeek.nl/standplaatsvergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Een vergunning voor het plaatsen van een kansspelautomaat wordt alleen verleend als er sprake is van een hoogdrempelige horecaonderneming. U kunt maximaal voor twee kansspelautomaten een vergunning krijgen.",
+          "original_reference": "Een vergunning voor het plaatsen van een kansspelautomaat wordt alleen verleend als er sprake is van een hoogdrempelige horecaonderneming. U kunt maximaal voor twee kansspelautomaten een vergunning krijgen.",
+          "note": "De basisvoorwaarden voor het verkrijgen van een kansspelautomatenvergunning zijn identiek in beide bronnen.",
+          "source_urls": [
+            "https://www.laarbeek.nl/speelautomaat-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De aanwezigheidsvergunning is niet nodig als er zonder voorafgaande betaling kan worden gespeeld of als er geen prijzen of premies gewonnen kunnen worden. Denkt u hierbij aan bijvoorbeeld de flipperkast.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over uitzonderingen waarbij geen vergunning nodig is (zoals bij flipperkasten zonder prijzen).",
+          "source_urls": [
+            "https://www.laarbeek.nl/speelautomaat-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Heeft uw bedrijf zowel een hoogdrempelig als een laagdrempelig gedeelte? Dan kan een vergunning worden afgegeven als u voldoet aan de volgende voorwaarden: De kansspelautomaten worden allen in het hoogdrempelige gedeelte geplaatst, De twee ruimten zijn elkaar gescheiden, De bezoekers van het laagdrempelige gedeelte kunnen dit gedeelte betreden zonder het hoogdrempelige gedeelte te hoeven betreden",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke voorwaarden voor bedrijven met zowel hoog- als laagdrempelige gedeeltes.",
+          "source_urls": [
+            "https://www.laarbeek.nl/speelautomaat-plaatsen"
+          ]
+        }
+      ]
+    },
+    "summary": "De originele inhoud mist twee belangrijke aspecten die wel in de bronnen staan: (1) uitzonderingen voor vergunningsplicht bij automaten zonder prijzen of voorafgaande betaling, en (2) specifieke voorwaarden voor bedrijven met zowel hoog- als laagdrempelige gedeeltes. De kernvoorwaarden voor het verkrijgen van een vergunning zijn wel consistent tussen beide bronnen."
+  }
+}

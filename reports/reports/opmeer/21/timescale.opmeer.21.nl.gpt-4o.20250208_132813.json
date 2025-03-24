@@ -1,0 +1,87 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OPMEER",
+      "contact": {
+        "phone": "(0226) 36 33 33",
+        "email": "gemeente@opmeer.nl",
+        "website": "http://www.opmeer.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor een online aanvraag bedragen € 33,85.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Opmeer bedraagt het tarief voor een VOG € 41,35, ongeacht of deze online of bij de gemeente wordt aangevraagd."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 8,
+    "valid_urls": 5,
+    "invalid_urls": 3,
+    "accuracy_percentage": 62.5,
+    "valid_urls_list": [
+      "https://www.opmeer.nl/verklaring-omtrent-het-gedrag-vog",
+      "https://www.opmeer.nl/nederlander-worden-door-optie",
+      "https://www.opmeer.nl/informatie-over-beleid-of-besluiten-opvragen-who-verzoek",
+      "https://www.opmeer.nl/form/aanvraagformulier-woo-verzoek",
+      "https://www.opmeer.nl/omgevingsvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.gratisvog.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.gratisvog.nl\">https://www.gratisvog.nl</a></li>",
+        "reason": "INVALID: Error scraping https://www.gratisvog.nl\">https://www.gratisvog.nl</a></li>: HTTPSConnectionPool(host='www.gratisvog.nl%22%3ehttps', port=443): Max retries exceeded with url: /www.gratisvog.nl%3C/a%3E%3C/li%3E (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x105c6ac10>: Failed to resolve 'www.gratisvog.nl%22%3ehttps' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.opmeer.nl/verklaring-omtrent-het-gedrag-vog\">https://www.opmeer.nl/verklaring-omtrent-het-gedrag-vog</a></li>",
+        "reason": "INVALID: Error scraping https://www.opmeer.nl/verklaring-omtrent-het-gedrag-vog\">https://www.opmeer.nl/verklaring-omtrent-het-gedrag-vog</a></li>: 404 Client Error: Not Found for url: https://www.opmeer.nl/verklaring-omtrent-het-gedrag-vog%22%3Ehttps:/www.opmeer.nl/verklaring-omtrent-het-gedrag-vog%3C/a%3E%3C/li%3E"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U krijgt binnen 1 tot 4 weken na de aanvraag de VOG of de afwijzing per post thuisgestuurd.",
+          "original_reference": "Na ontvangst van uw aanvraag duurt het maximaal 4 weken voordat u de VOG ontvangt of afwijzing krijgt.",
+          "note": "De bron specificeert een minimale termijn van 1 week, terwijl de originele tekst alleen een maximumtermijn noemt.",
+          "source_urls": [
+            "https://www.opmeer.nl/verklaring-omtrent-het-gedrag-vog"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bij de aanvraag wordt u meteen verzocht om vooraf via iDEAL € 33,85 te betalen.",
+          "original_reference": "Direct betalen via iDEAL is vereist bij een online aanvraag.",
+          "note": "De bron benadrukt dat betaling vooraf moet gebeuren, terwijl de originele tekst alleen spreekt over 'direct betalen'.",
+          "source_urls": [
+            "https://www.opmeer.nl/verklaring-omtrent-het-gedrag-vog"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee kleine maar relevante verschillen gevonden in de informatie over de VOG-aanvraag. Het eerste verschil betreft de specificatie van de verwerkingstermijn, waarbij de bron een duidelijker tijdsframe aangeeft. Het tweede verschil heeft betrekking op het betalingsmoment, waarbij de bron expliciet aangeeft dat betaling vooraf moet plaatsvinden. De overige informatie komt overeen met de originele tekst."
+  }
+}

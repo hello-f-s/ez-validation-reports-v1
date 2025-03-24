@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LAARBEEK",
+      "contact": {
+        "phone": "(0492) 46 97 00",
+        "email": "gemeente@laarbeek.nl",
+        "website": "http://www.laarbeek.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 22,
+    "false_sentences": 2,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Kosten voor een B-categorie evenementenvergunning zijn € 181,90.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Laarbeek bedragen de kosten voor een B-categorie evenementenvergunning € 185,45"
+      },
+      {
+        "sentence": "Kosten voor een C-categorie evenementenvergunning zijn € 4.253,45.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Laarbeek bedragen de kosten voor een C-categorie evenementenvergunning € 4.359,80"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.laarbeek.nl/evenement-organiseren",
+      "https://www.laarbeek.nl/materialen-lenen-van-de-gemeente",
+      "https://www.laarbeek.nl/horecabedrijf-beginnen",
+      "https://www.laarbeek.nl/alcohol-schenken-bij-evenementen",
+      "https://www.laarbeek.nl/reclame-uitingen-plaatsen-omgevingsvergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Evenementen worden onderverdeeld in risico- categorieën: A, B, of C- evenementen",
+          "original_reference": "Evenementen worden onderverdeeld in risico-categorieën: A, B, B2 of C",
+          "note": "De brontekst noemt initieel alleen A, B en C categorieën, terwijl de originele tekst direct B2 als aparte categorie noemt. De B2 categorie wordt later wel in de brontekst geïntroduceerd als nieuwe toevoeging.",
+          "source_urls": [
+            "https://www.laarbeek.nl/evenement-organiseren"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor kleine evenementen geldt onder voorwaarden een meldingsplicht in plaats van een vergunningplicht",
+          "original_reference": "Voor kleine evenementen is een melding voldoende als je voldoet aan bepaalde voorwaarden, zoals niet meer dan 100 personen, geen live muziek, en geen verkeersmaatregelen nodig",
+          "note": "De originele tekst specificeert direct de voorwaarden, terwijl de brontekst verwijst naar het evenementenbeleid voor details",
+          "source_urls": [
+            "https://www.laarbeek.nl/evenement-organiseren"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Neem dan minimaal 4 weken voor het evenement contact op met de gemeentewerf, via telefoonnummer 0492 469 829",
+          "original_reference": "Neem voor het lenen van materialen voor uw evenement minimaal vier weken van tevoren contact op met de gemeentewerf via telefoonnummer: 0492 469 829",
+          "note": "De contactgegevens en termijnen voor het lenen van materialen komen exact overeen",
+          "source_urls": [
+            "https://www.laarbeek.nl/materialen-lenen-van-de-gemeente"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de manier waarop de evenementencategorieën worden gepresenteerd en het detailniveau van de voorwaarden voor kleine evenementen. De brontekst is minder direct in het specificeren van voorwaarden en verwijst vaker naar het evenementenbeleid voor details. De praktische informatie zoals contactgegevens en termijnen komt wel overeen."
+  }
+}

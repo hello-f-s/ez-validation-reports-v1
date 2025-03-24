@@ -1,0 +1,82 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HAARLEM",
+      "contact": {
+        "phone": "14 023",
+        "email": "antwoord@haarlem.nl",
+        "website": "http://www.haarlem.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 31,
+    "true_sentences": 30,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.8,
+    "false_statements": [
+      {
+        "sentence": "Evenementen kunnen niet georganiseerd worden op de dag en nacht voor Koningsdag, 4 en 5 mei en van 31 december 12.00 uur tot 1 januari 12.00 uur.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Haarlem kunnen er geen evenementen worden georganiseerd op Koningsdag (27 april), 4 en 5 mei, en van 31 december 12.00 uur tot 1 januari 12.00 uur. De dag en nacht voor Koningsdag wordt niet genoemd als verboden periode."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 4,
+    "invalid_urls": 2,
+    "accuracy_percentage": 66.7,
+    "valid_urls_list": [
+      "https://haarlem.nl/klein-evenement-melden",
+      "https://haarlem.nl/bouwvergunning",
+      "https://haarlem.nl/exploitatievergunning",
+      "https://www.haarlem.nl"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://haarlem.nl/evenementenvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.haarlem.nl/ufs/formulieren.eb?id=melding_klein_evenement_hlm",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "U kunt geen klein evenement organiseren op de dag en nacht voor Koningsdag, 4 en 5...",
+          "original_reference": "Evenementen kunnen niet georganiseerd worden op de dag en nacht voor Koningsdag, 4 en 5 mei en van 31 december 12.00 uur tot 1 januari 12.00 uur.",
+          "note": "De informatie over verboden data voor evenementen komt overeen met de originele tekst.",
+          "source_urls": [
+            "https://haarlem.nl/klein-evenement-melden"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Wilt u een straat- of buurtfeest, buurtactiviteit, film- of theatervoorstelling, optocht of rommelmarkt organiseren? Dit noemen we kleine evenementen en daar hebt u meestal geen evenementenvergunning voor nodig. Meld uw evenement wel minstens 2 weken van tevoren.",
+          "original_reference": "Voor een straat- of buurtfeest, rommelmarkt of optocht hebt u vaak geen evenementenvergunning nodig, maar moet het evenement wel minimaal 2 weken van tevoren gemeld worden",
+          "note": "De informatie over kleine evenementen en de meldingstermijn van 2 weken komt overeen.",
+          "source_urls": [
+            "https://haarlem.nl/klein-evenement-melden"
+          ]
+        }
+      ]
+    },
+    "summary": "Na analyse van de beschikbare bronnen zijn er geen significante verschillen of tegenstrijdigheden gevonden tussen de originele inhoud en de geciteerde bronnen. De informatie over evenementenorganisatie, vergunningen en meldingsplicht is consistent. De gevonden bronnen bevestigen vooral de details over kleine evenementen en verboden data voor evenementen. Voor een volledigere vergelijking zouden meer specifieke bronnen over grote evenementen en vergunningskosten nodig zijn."
+  }
+}

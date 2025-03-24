@@ -1,0 +1,89 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DEVENTER",
+      "contact": {
+        "phone": "14 0570",
+        "email": "gemeente@deventer.nl",
+        "website": "http://www.deventer.nl"
+      }
+    },
+    "service": {
+      "id": 16,
+      "name": "Registreren in het Landelijk Register Kinderopvang (LRK)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 10,
+    "true_sentences": 9,
+    "false_sentences": 1,
+    "accuracy_percentage": 90.0,
+    "false_statements": [
+      {
+        "sentence": "Dien het formulier online in via MijnGemeente, de persoonlijke internetpagina.",
+        "status": "false",
+        "note": "De aanvraag voor kinderopvang in Deventer moet worden ingediend via het Landelijk Register Kinderopvang (LRK) portaal met eHerkenning of DigiD, niet via 'MijnGemeente'"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.deventer.nl/loketten/digitaal-loket/kinderopvang-tegemoetkoming-aanvragen",
+      "https://www.deventer.nl/kinderopvang/kinderopvang-starten",
+      "https://www.deventer.nl/kinderopvangstarten",
+      "https://www.deventer.nl/kinderopvang/tegemoetkoming-kinderopvang-aanvragen",
+      "https://www.deventer.nl/kinderopvang"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.deventer.nl/kinderopvang-starten-en-wijzigen",
+        "reason": "INVALID: Error scraping https://www.deventer.nl/kinderopvang-starten-en-wijzigen: 404 Client Error: Not Found for url: https://www.deventer.nl/kinderopvang-starten-en-wijzigen"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wilt u een kinderopvangorganisatie of kindcentrum aanmelden, uitbreiden of overnemen, of wijzigen de gegevens? Dan moet u dit melden bij de gemeente.",
+          "original_reference": "Om een kinderopvangorganisatie te registeren in het Landelijk Register Kinderopvang (LRK) moet de organisatie voldoen aan de kwaliteitseisen die door de gemeente zijn opgesteld.",
+          "note": "De bronpagina's vermelden expliciet meer situaties waarbij registratie nodig is (uitbreiding, overname en wijzigingen) die niet genoemd worden in de originele tekst.",
+          "source_urls": [
+            "https://www.deventer.nl/kinderopvang/kinderopvang-starten",
+            "https://www.deventer.nl/kinderopvangstarten"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "LRK registratie, ingevuld indicatieformulier, verklaring geen/onvoldoende toeslag van de Belastingdienst",
+          "original_reference": "Overige gevraagde documenten, zoals vermeld op het aanvraagformulier",
+          "note": "De bronnen specificeren concrete documenten die nodig zijn, terwijl de originele tekst alleen algemeen verwijst naar 'overige gevraagde documenten'.",
+          "source_urls": [
+            "https://www.deventer.nl/loketten/digitaal-loket/kinderopvang-tegemoetkoming-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "In MijnGemeente, uw persoonlijke internetpagina, kunt u de status van uw aanvraag volgen, de documenten inzien en documenten toevoegen.",
+          "original_reference": "U kunt de status van uw aanvraag volgen in MijnGemeente.",
+          "note": "De bronnen vermelden extra functionaliteiten van MijnGemeente (documenten inzien en toevoegen) die niet genoemd worden in de originele tekst.",
+          "source_urls": [
+            "https://www.deventer.nl/kinderopvang/kinderopvang-starten"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten meer gedetailleerde informatie over het registratieproces, specifieke vereiste documenten en de functionaliteiten van MijnGemeente. De originele tekst is minder specifiek en mist enkele belangrijke details over de verschillende situaties waarbij registratie nodig is en welke exacte documenten vereist zijn."
+  }
+}

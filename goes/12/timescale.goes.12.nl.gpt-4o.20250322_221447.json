@@ -1,0 +1,87 @@
+{
+  "context": {
+    "municipality": {
+      "name": "GOES",
+      "contact": {
+        "phone": "14 0113",
+        "email": "stadskantoor@goes.nl",
+        "website": "http://www.goes.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "De gemeente beslist binnen 8 weken over uw aanvraag, maar deze termijn kan eenmalig met 6 weken verlengd worden.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Goes kan de reguliere procedure van 8 weken met maximaal 6 weken worden verlengd, maar dit is niet per definitie eenmalig. Bij complexe aanvragen of bijzondere omstandigheden kan de termijn meerdere keren worden verlengd, mits dit wordt gecommuniceerd."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.goes.nl/milieu-omgevingsvergunning-melding",
+      "https://www.goes.nl/conceptverzoek-omgevingsvergunning",
+      "https://www.goes.nl/omgevingsvergunning",
+      "https://www.goes.nl/participatie-en-omgevingswet"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.goes.nl/leeswijzer",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Sinds 1 januari 2024 geldt de Omgevingswet. Deze wet schrijft voor dat je een gesprek met de omgeving houdt als je een plan hebt om iets te bouwen of te ontwikkelen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de participatieverplichting onder de nieuwe Omgevingswet die sinds 2024 geldt. Dit is een belangrijke nieuwe voorwaarde voor aanvragers.",
+          "source_urls": [
+            "https://www.goes.nl/participatie-en-omgevingswet"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het conceptverzoek is gratis. Voordat u grote kosten maakt, weet u of uw plan kans van slagen heeft.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de mogelijkheid van een gratis conceptverzoek voorafgaand aan de definitieve aanvraag.",
+          "source_urls": [
+            "https://www.goes.nl/conceptverzoek-omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Doe de melding minimaal 4 weken voordat u uw activiteiten begint.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst specificeert geen minimale termijn voor het doen van een melding, terwijl de bron een termijn van 4 weken vooraf vereist.",
+          "source_urls": [
+            "https://www.goes.nl/milieu-omgevingsvergunning-melding"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten drie belangrijke verschillen met de originele tekst: de nieuwe participatieverplichting onder de Omgevingswet (2024), de mogelijkheid tot het indienen van een gratis conceptverzoek, en de specifieke termijn van 4 weken voor meldingen. Deze informatie ontbreekt in de originele tekst maar is wel relevant voor aanvragers."
+  }
+}

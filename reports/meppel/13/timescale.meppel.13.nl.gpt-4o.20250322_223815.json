@@ -1,0 +1,86 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MEPPEL",
+      "contact": {
+        "phone": "14 0522",
+        "email": "postbus@meppel.nl",
+        "website": "http://www.meppel.nl"
+      }
+    },
+    "service": {
+      "id": 13,
+      "name": "Omzettingsvergunning voor kamerverhuur aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "De aanvraag voor een omgevingsvergunning kunt u digitaal indienen via omgevingswet.overheid.nl of persoonlijk bij de gemeente.",
+        "status": "false",
+        "note": "De aanvraag voor een omgevingsvergunning in Meppel moet worden ingediend via het Omgevingsloket Online (www.omgevingsloket.nl) en niet via omgevingswet.overheid.nl"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 1,
+    "invalid_urls": 6,
+    "accuracy_percentage": 14.3,
+    "valid_urls_list": [
+      "https://www.meppel.nl/Ondernemer/Vergunningen_regelingen/Horeca/exploitatievergunning_horecabedrijf"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://overheid.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.meppel.nl/Inwoner/Wonen_ver_bouwen/Omgevingswet_n_wet_voor_onze_leefomgeving/Conceptaanvraag_haalbaarheid_ruimtelijk_initiatief_onderzoeken",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.meppel.nl/Inwoner/Wonen_ver_bouwen/Ver_bouwen_slopen/woning_splitsen_in_aparte_zelfstandige_woningen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://omgevingswet.overheid.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.meppel.nl/Inwoner/Wonen_ver_bouwen/Ver_bouwen_slopen/Omgevingsplan_afwijken",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.meppel.nl/Inwoner/Wonen_ver_bouwen/Ver_bouwen_slopen/Omgevingsvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor de oprichting of de overname van een horecabedrijf heeft u een horeca-exploitatievergunning nodig",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat specifieke informatie over horecavergunningen die niet voorkomt in de originele tekst. Dit is een belangrijk verschil omdat het een aanvullende vergunningsvereiste betreft voor een specifieke bedrijfsactiviteit.",
+          "source_urls": [
+            "https://www.meppel.nl/Ondernemer/Vergunningen_regelingen/Horeca/exploitatievergunning_horecabedrijf"
+          ]
+        }
+      ]
+    },
+    "summary": "De geanalyseerde bronpagina bevat voornamelijk specifieke informatie over horecavergunningen, terwijl de originele tekst zich richt op algemene omgevingsvergunningen. Er zijn geen directe tegenstrijdigheden gevonden in de overlappende informatie, maar wel aanvullende specifieke vereisten voor horecabedrijven die niet in de originele tekst worden genoemd."
+  }
+}

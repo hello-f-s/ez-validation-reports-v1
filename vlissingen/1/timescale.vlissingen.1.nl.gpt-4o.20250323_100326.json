@@ -1,0 +1,67 @@
+{
+  "context": {
+    "municipality": {
+      "name": "VLISSINGEN",
+      "contact": {
+        "phone": "(0118) 48 70 00",
+        "email": "gemeente@vlissingen.nl",
+        "website": "http://www.vlissingen.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "U kunt de vergunningen telefonisch aanvragen via telefoonnummer 14 0118 van de gemeente Vlissingen.",
+        "status": "false",
+        "note": "De alcoholwetvergunning kan niet telefonisch worden aangevraagd bij de gemeente Vlissingen. De aanvraag moet schriftelijk worden ingediend met het aanvraagformulier en alle benodigde bijlagen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 0,
+    "invalid_urls": 6,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.vlissingen.nl/sluitingstijd-horecabedrijven",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.vlissingen.nl/omgevingsvergunning-voor-bouwen-of-verbouwen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://example.com/alcoholwetvergunning",
+        "reason": "INVALID: Error scraping https://example.com/alcoholwetvergunning: 404 Client Error: Not Found for url: https://example.com/alcoholwetvergunning"
+      },
+      {
+        "url": "https://www.vlissingen.nl/alcoholwetvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.vlissingen.nl/bouw-en-verbouw-omgevingsvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.vlissingen.nl/alcohol-tijdelijk-schenken-ontheffing",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  }
+}

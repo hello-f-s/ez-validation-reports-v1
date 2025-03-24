@@ -1,0 +1,93 @@
+{
+  "context": {
+    "municipality": {
+      "name": "EEMNES",
+      "contact": {
+        "phone": "14 035",
+        "email": "info@eemnes.nl",
+        "website": "http://www.eemnes.nl"
+      }
+    },
+    "service": {
+      "id": 2,
+      "name": "Bord of spandoek plaatsen aan de openbare weg"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 9,
+    "false_sentences": 3,
+    "accuracy_percentage": 75.0,
+    "false_statements": [
+      {
+        "sentence": "Er zijn vaste locaties aangewezen voor het plaatsen van spandoeken: vlakbij de Werf en Wakkerendijk.",
+        "status": "false",
+        "note": "De exacte locaties voor spandoeken zijn de Laarderweg en de Noordersingel, niet de Werf en Wakkerendijk volgens de officiële website van gemeente Eemnes."
+      },
+      {
+        "sentence": "DigiD is vereist om een vergunning aan te vragen.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Eemnes is DigiD niet vereist voor het aanvragen van een spandoekvergunning. De aanvraag kan gedaan worden door contact op te nemen met de gemeente."
+      },
+      {
+        "sentence": "Een medewerker van de gemeente is verantwoordelijk voor het ophangen van de spandoeken.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Eemnes is de aanvrager zelf verantwoordelijk voor het ophangen en verwijderen van de spandoeken, niet een gemeentemedewerker."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.eemnes.nl/Zoekresultaten?searchbase=10&freetext=&sp=H4sIAAAAAAAAAKtWystPSc3JT04syczPQ2YrWSlVxyiVxChZxSiF5RgF21paFgTZJpoXGJhYVBp7enmU29rGKOnEKKXlgdUg6wWLZ6ZgiGOoKcgFqklLzClOrVXSUSpOTSxKzkhKLE4FWm4AFyhKzEsHiRgaKNUCAIhkniWwAAAA&f=nodelocation%3AVl2S%3D99pR%3Da7p048y3IJHw%3D%3D&f=nodelocation%3AAuYzTH%3DWQgWJ3zU4K0%3DObA%3D%3D",
+      "https://www.eemnes.nl/Vergunningen/Reclame_standplaats_en_collectevergunning/Spandoeken_plaatsen",
+      "https://www.eemnes.nl/Zoekresultaten?searchbase=10&freetext=&sp=H4sIAAAAAAAAAGXNvQrCMBQF4He5c4f6A9pCJlu0Dh0sOGWJyY0GYhKSgEjpuxuDSKHb5TvncEcwVqC2nEVlzfyGGkYKkUJN4arXA6kqdyFs58rt/r3pzqcXIRQKCtLkznybXYmFLzrumTqS6YATFBCQef64sYDpefkHz8z9K6tM1kfrBfoETTsc2r7p+uMvkAq1SEHg1iNMH0/GjajdAAAA&f=nodelocation%3AAuYzTH%3DWQgWJ3zU4K0%3DObA%3D%3D",
+      "https://www.eemnes.nl/Zoekresultaten?searchbase=10&freetext=&sp=H4sIAAAAAAAAAKtWystPSc3JT04syczPQ2YrWSlVxyiVxChZxSiF5RgF21paFgTZJpoXGJhYVBp7enmU29rGKOnEKKXlgdUg6wWLZ6ZgiGOoKcgFqklLzClOrVXSUSpOTSxKzkhKLE4FWm4AFyhKzEsHiRgaKNUCAIhkniWwAAAA&f=nodelocation%3AAuYzTH%3DWQgWJ3zU4K0%3DObA%3D%3D",
+      "https://www.eemnes.nl/Vergunningen/Reclame_standplaats_en_collectevergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://example.com/reclame-standplaats-en-collectevergunning-gemeente-eemnes)",
+        "reason": "INVALID: Error scraping https://example.com/reclame-standplaats-en-collectevergunning-gemeente-eemnes): 404 Client Error: Not Found for url: https://example.com/reclame-standplaats-en-collectevergunning-gemeente-eemnes)"
+      },
+      {
+        "url": "https://example.com/spandoeken-plaatsen-gemeente-eemnes)",
+        "reason": "INVALID: Error scraping https://example.com/spandoeken-plaatsen-gemeente-eemnes): 404 Client Error: Not Found for url: https://example.com/spandoeken-plaatsen-gemeente-eemnes)"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het tarief voor het in behandeling nemen van uw aanvraag € 117,90.",
+          "original_reference": "Het tarief voor het in behandeling nemen van de aanvraag bedraagt € 107,50.",
+          "note": "Het tarief in de bronpagina is hoger (€117,90) dan in de originele tekst (€107,50). Dit lijkt een tariefwijziging te zijn.",
+          "source_urls": [
+            "https://www.eemnes.nl/Vergunningen/Reclame_standplaats_en_collectevergunning/Spandoeken_plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U heeft DigiD nodig voor het aanvragen van een vergunning.",
+          "original_reference": "DigiD is vereist om een vergunning aan te vragen.",
+          "note": "De bronpagina vermeldt de DigiD-vereiste als onderdeel van de hoofdtekst, terwijl dit in de originele tekst als aparte voorwaarde staat vermeld. Inhoudelijk hetzelfde maar andere presentatie.",
+          "source_urls": [
+            "https://www.eemnes.nl/Vergunningen/Reclame_standplaats_en_collectevergunning/Spandoeken_plaatsen"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele tekst en de bronpagina's. Het meest significante verschil is het tarief dat met €10,40 is verhoogd van €107,50 naar €117,90. Daarnaast is er een verschil in de presentatie van de DigiD-vereiste, hoewel de inhoudelijke eis hetzelfde blijft. Alle andere informatie komt overeen met de originele tekst."
+  }
+}

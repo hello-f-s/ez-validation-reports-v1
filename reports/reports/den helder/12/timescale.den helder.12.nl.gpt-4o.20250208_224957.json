@@ -1,0 +1,71 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DEN HELDER",
+      "contact": {
+        "phone": "null",
+        "email": "info@denhelder.nl",
+        "website": "http://www.denhelder.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Anvragen kunt u indienen via het Omgevingsloket.",
+        "status": "false",
+        "note": "Er staat een spelfout in het woord 'Anvragen', dit moet 'Aanvragen' zijn. Dit is een feitelijke onjuistheid in de tekst die de leesbaarheid en professionaliteit van de informatie aantast."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 0,
+    "invalid_urls": 7,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.denhelder.nl\">Gemeente",
+        "reason": "INVALID: Error scraping https://www.denhelder.nl\">Gemeente: HTTPSConnectionPool(host='www.denhelder.nl%22%3egemeente', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x104e7f770>: Failed to resolve 'www.denhelder.nl%22%3egemeente' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.denhelder.nl/Onderwerpen/Bouwen_en_verbouwen/Omgevingsvergunning_Veelgestelde_vragen",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.denhelder.nl/Onderwerpen/Bouwen_en_verbouwen/Vergunningcheck_en_aanvraag",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.denhelder.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.denhelder.nl/Onderwerpen/Bouwen_en_verbouwen",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.denhelder.nl/Onderwerpen/Bouwen_en_verbouwen/Omgevingsvergunning",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://denhelder.nl/",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  }
+}

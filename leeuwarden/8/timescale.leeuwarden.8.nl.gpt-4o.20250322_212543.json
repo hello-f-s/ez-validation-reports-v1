@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LEEUWARDEN",
+      "contact": {
+        "phone": "14 058",
+        "email": "gemeente@leeuwarden.nl",
+        "website": "http://www.leeuwarden.nl"
+      }
+    },
+    "service": {
+      "id": 8,
+      "name": "Marktvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "Een standplaatsvergunning kost € 110,65.",
+        "status": "false",
+        "note": "Het exacte bedrag van € 110,65 is niet correct volgens de huidige tarieven van de gemeente Leeuwarden. De actuele legeskosten voor een standplaatsvergunning zijn anders en worden jaarlijks vastgesteld in de legesverordening."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.leeuwarden.nl/wonen/informatie-onroerend-goed/",
+      "https://www.leeuwarden.nl/andere-vergunningen-en-ontheffingen/standplaatsvergunning/",
+      "https://www.leeuwarden.nl/horeca/horecavergunning/",
+      "https://www.leeuwarden.nl/omgevingsvergunning/procedure-omgevingsvergunning-aanvragen-of-melden/",
+      "https://www.leeuwarden.nl/omgevingsvergunning/gebruikmaken-maken-of-veranderen-van-een-uitweg/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.example.com/standplaatsvergunning",
+        "reason": "INVALID: Error scraping https://www.example.com/standplaatsvergunning: 404 Client Error: Not Found for url: https://www.example.com/standplaatsvergunning"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Binnen 200 meter van een bijzondere verkoopstandplaatsen is geen andere standplaats mogelijk. De bijzondere standplaatsen staan op de Lange Pijp, het Beursplein en de Prins Hendrikbrug.",
+          "original_reference": "Binnen bepaalde afstanden van bijzondere verkoopstandplaatsen",
+          "note": "De originele tekst specificeert niet de exacte afstand van 200 meter en noemt niet de specifieke locaties van bijzondere standplaatsen",
+          "source_urls": [
+            "https://www.leeuwarden.nl/andere-vergunningen-en-ontheffingen/standplaatsvergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Er is geen standplaats mogelijk op de volgende locaties: De Nieuwestad, Het Wilhelminaplein, Het Lombardplein, Het Gouverneursplein, Het Hofplein, Het terrein aan weerszijden van de Harmonie, In de Prinsentuin en andere parken, Rondom de Grote Kerk, Het plein voor het Burmaniahuis aan de Nieuwestad",
+          "original_reference": "op specifieke locaties is geen standplaats mogelijk",
+          "note": "De originele tekst noemt niet de specifieke locaties waar geen standplaats mogelijk is",
+          "source_urls": [
+            "https://www.leeuwarden.nl/andere-vergunningen-en-ontheffingen/standplaatsvergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bij woningen of scholen is geen standplaats toegestaan. Bij toestemming van de eigenaar zijn er maximaal 2 standplaatsen toegestaan.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de specifieke regel over maximaal 2 standplaatsen op particuliere grond",
+          "source_urls": [
+            "https://www.leeuwarden.nl/andere-vergunningen-en-ontheffingen/standplaatsvergunning/"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende details die niet in de originele tekst staan, waaronder specifieke afstandsregels (200 meter), een uitgebreide lijst van locaties waar geen standplaats mogelijk is, en aanvullende regels voor standplaatsen op particuliere grond. Deze informatie is essentieel voor een complete en accurate weergave van de standplaatsvergunning voorwaarden."
+  }
+}

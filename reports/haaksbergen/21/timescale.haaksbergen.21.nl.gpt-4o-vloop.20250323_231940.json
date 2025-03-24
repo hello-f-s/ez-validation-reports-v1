@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HAAKSBERGEN",
+      "contact": {
+        "phone": "(053) 573 45 67",
+        "email": "gemeente@haaksbergen.nl",
+        "website": "http://www.haaksbergen.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "Adres: Blankenburgerstraat 28, 7481 EB Haaksbergen",
+        "status": "false",
+        "note": "Het juiste adres van de gemeente Haaksbergen is Blankenburgerstraat 28, 7481 GB Haaksbergen. De postcode in de tekst (EB) is onjuist, het moet GB zijn."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.haaksbergen.nl/inwoner/Persoonsgegevens-en-uittreksels/vog.html",
+      "https://www.haaksbergen.nl/Vergunningen/101107-Omgevingsvergunning.html",
+      "https://www.haaksbergen.nl/Vergunningen/kapvergunning.html",
+      "https://www.haaksbergen.nl/ondernemers/Bedrijf-voeren/Natuurwetgeving.html",
+      "https://www.haaksbergen.nl/ondernemers/Bedrijfstarten.html",
+      "https://www.haaksbergen.nl"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u aan een nieuwe baan begint, kan uw nieuwe werkgever vragen om een Verklaring Omtrent het Gedrag (VOG). Zo'n VOG heet in de volksmond ook wel 'bewijs van goed gedrag'.",
+          "original_reference": "Als ondernemer kun je een Verklaring Omtrent het Gedrag (VOG) aanvragen wanneer je begint met een nieuwe baan of opdracht en een opdrachtgever hierom vraagt.",
+          "note": "De bronpagina is algemener geformuleerd en vermeldt de volksnaam 'bewijs van goed gedrag', wat ontbreekt in de originele tekst. Ook richt de originele tekst zich specifiek op ondernemers, terwijl de brontekst voor iedereen geldt.",
+          "source_urls": [
+            "https://www.haaksbergen.nl/inwoner/Persoonsgegevens-en-uittreksels/vog.html"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Doe de VOG-check om te kijken of u kans maakt op een VOG.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt een VOG-check mogelijkheid die niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.haaksbergen.nl/inwoner/Persoonsgegevens-en-uittreksels/vog.html"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Of doe een \"papieren\" aanvraag.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina specificeert expliciet de mogelijkheid van een papieren aanvraag, wat niet duidelijk vermeld staat in de originele tekst.",
+          "source_urls": [
+            "https://www.haaksbergen.nl/inwoner/Persoonsgegevens-en-uittreksels/vog.html"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de doelgroep (algemeen publiek versus specifiek ondernemers), aanvullende informatie over de VOG-check mogelijkheid, en een explicietere vermelding van de papieren aanvraagmogelijkheid. De kernprocessen en kosten komen overeen, maar de bronpagina biedt meer context en praktische details voor aanvragers."
+  }
+}

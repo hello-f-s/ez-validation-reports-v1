@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AALTEN",
+      "contact": {
+        "phone": "(0543) 49 33 33",
+        "email": "gemeente@aalten.nl",
+        "website": "http://www.aalten.nl"
+      }
+    },
+    "service": {
+      "id": 6,
+      "name": "Integriteitsonderzoek (Wet Bibob)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "Bij twijfels over de gegevens kan de gemeente advies vragen aan het bureau Bibob, gevestigd in Den Haag.",
+        "status": "false",
+        "note": "Het Landelijk Bureau Bibob is gevestigd in Den Haag, maar dit is niet relevant voor de gemeente Aalten. De gemeente Aalten vraagt advies aan het Regionaal Bureau Bibob Oost-Nederland, dat is gevestigd in Enschede."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://aalten.nl/wet-bibob",
+      "https://www.aalten.nl/woo-verzoek-indienen",
+      "https://www.aalten.nl/informatie-over-beleid-of-besluiten-opvragen-who-verzoek",
+      "https://www.aalten.nl/bodeminformatie-opvragen",
+      "https://www.aalten.nl/overzicht-geleverde-persoonsgegevens-opvragen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als we daar goede redenen voor hebben, doen we ook een Bibob-onderzoek",
+          "original_reference": "Bij illegale bouw of als u een subsidie aanvraagt, vastgoedtransacties doet, of deelneemt aan een openbare aanbesteding, kan ook een Bibob-onderzoek worden uitgevoerd.",
+          "note": "De originele tekst suggereert dat deze onderzoeken automatisch kunnen plaatsvinden, terwijl de brontekst specificeert dat dit alleen gebeurt als er 'goede redenen' voor zijn.",
+          "source_urls": [
+            "https://aalten.nl/wet-bibob"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "de zogenaamde 24/7 fitnesscentra en sportscholen",
+          "original_reference": "24/7 sportscholen",
+          "note": "De brontekst specificeert dat het gaat om zowel fitnesscentra als sportscholen, terwijl de originele tekst alleen sportscholen noemt.",
+          "source_urls": [
+            "https://aalten.nl/wet-bibob"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Wanneer de gemeente reële twijfels heeft over de ingevulde gegevens of vanwege het weigeren om bepaalde gegevens te overleggen, kan zij een advies vragen aan het bureau Bibob, gevestigd in Den Haag",
+          "original_reference": "Bij twijfels over de gegevens kan de gemeente advies vragen aan het bureau Bibob, gevestigd in Den Haag",
+          "note": "De informatie komt overeen, maar de brontekst geeft meer specifieke details over de redenen voor het vragen van advies.",
+          "source_urls": [
+            "https://aalten.nl/wet-bibob"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont enkele belangrijke nuanceverschillen tussen de originele tekst en de bronnen. Het belangrijkste verschil betreft de voorwaarden waaronder aanvullende Bibob-onderzoeken worden uitgevoerd, waarbij de brontekst duidelijker aangeeft dat dit alleen gebeurt bij 'goede redenen'. Daarnaast is er een klein maar relevant verschil in de omschrijving van 24/7 sportfaciliteiten. De overige informatie is grotendeels consistent, waarbij de brontekst soms meer detail biedt."
+  }
+}

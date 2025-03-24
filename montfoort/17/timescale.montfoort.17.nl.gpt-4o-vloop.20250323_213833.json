@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MONTFOORT",
+      "contact": {
+        "phone": "(0348) 47 64 00",
+        "email": "info@montfoort.nl",
+        "website": "http://www.montfoort.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "Het 'Huis van Montfoort' is geopend van maandag tot en met vrijdag van 09:00 tot 12:00 uur en op vrijdagavond van 18:00 tot 20:00 uur.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Montfoort is het Huis van Montfoort geopend van maandag tot en met donderdag van 08:30 tot 17:00 uur en op vrijdag van 08:30 tot 12:30 uur. Er is geen avondopenstelling op vrijdag."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.montfoort.nl/Alle_onderwerpen/Vergunningen_en_ontheffingen/Horeca_en_MKB/Terrasvergunning",
+      "https://www.montfoort.nl/Alle_onderwerpen/Vergunningen_en_ontheffingen",
+      "https://www.montfoort.nl/Alle_onderwerpen/Vergunningen_en_ontheffingen/Horeca_en_MKB",
+      "https://www.montfoort.nl/Alle_onderwerpen/Ondernemen/Horeca_en_MKB",
+      "https://www.montfoort.nl/Alle_onderwerpen/Ondernemen/Onderneming_starten"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Voor terrasvoering op gemeentelijke grond moet jaarlijks een aanvulling op de exploitatievergunning worden aangevraagd [...] geldt alleen voor het betreffende jaar en voor terrasvoering op gemeentelijke grond in de periode van 1 april tot 1 oktober.",
+          "original_reference": "Deze vergunning geldt voor terrasvoering op gemeentelijke grond gedurende de periode van 1 april tot 1 oktober van het betreffende jaar.",
+          "note": "De informatie over de geldigheidsperiode van de terrasvergunning komt exact overeen.",
+          "source_urls": [
+            "https://www.montfoort.nl/Alle_onderwerpen/Vergunningen_en_ontheffingen/Horeca_en_MKB/Terrasvergunning"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Terrasvergunning: € 187,00",
+          "original_reference": "De kosten voor een terrasvergunning bedragen € 187,00.",
+          "note": "De kosten voor de terrasvergunning zijn identiek in beide bronnen.",
+          "source_urls": [
+            "https://www.montfoort.nl/Alle_onderwerpen/Vergunningen_en_ontheffingen/Horeca_en_MKB/Terrasvergunning"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "U ontvangt binnen 8 weken beric...",
+          "original_reference": "U ontvangt binnen 8 weken bericht of u de terrasvergunning krijgt.",
+          "note": "De behandeltermijn van 8 weken komt overeen, hoewel de brontekst afgekapt is.",
+          "source_urls": [
+            "https://www.montfoort.nl/Alle_onderwerpen/Vergunningen_en_ontheffingen/Horeca_en_MKB/Terrasvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse blijkt dat alle kerngegevens in de originele tekst (kosten, termijnen, geldigheidsperiode) consistent zijn met de informatie in de bronpagina's. Er zijn geen significante verschillen of tegenstrijdigheden gevonden tussen de originele inhoud en de geciteerde bronnen."
+  }
+}

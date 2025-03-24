@@ -1,0 +1,93 @@
+{
+  "context": {
+    "municipality": {
+      "name": "GOES",
+      "contact": {
+        "phone": "14 0113",
+        "email": "stadskantoor@goes.nl",
+        "website": "http://www.goes.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 13,
+    "false_sentences": 2,
+    "accuracy_percentage": 86.7,
+    "false_statements": [
+      {
+        "sentence": "Voor één speelautomaat: € 57,80",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Goes is het tarief voor één speelautomaat € 58,95 voor een periode van 12 maanden"
+      },
+      {
+        "sentence": "Voor twee of meer speelautomaten: voor de eerste speelautomaat € 57,80 en voor iedere volgende speelautomaat € 34,80",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Goes is het tarief € 58,95 voor de eerste speelautomaat en € 35,50 voor iedere volgende speelautomaat voor een periode van 12 maanden"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.goes.nl/standplaats-aanvragen",
+      "https://www.goes.nl/exploitatievergunning-horeca",
+      "https://www.goes.nl/loterij-prijsvraag-bingo-organiseren",
+      "https://www.goes.nl/alcoholvergunning",
+      "https://www.goes.nl"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.goes.nl/gokautomaat-plaatsen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor het organiseren van een loterij heeft u een vergunning nodig. Bij welke instantie u de vergunning aanvraagt, hangt af van de hoogte van de prijzen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over loterijen, terwijl de bronpagina specifieke details geeft over vergunningen voor loterijen en prijzenvragen.",
+          "source_urls": [
+            "https://www.goes.nl/loterij-prijsvraag-bingo-organiseren"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Om een horecabedrijf te kunnen exploiteren hebt u een exploitatievergunning van de gemeente nodig. Deze vergunningsplicht geldt voor ieder horecabedrijf.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat alleen informatie over gokautomaten, terwijl de bronpagina aangeeft dat alle horecabedrijven een exploitatievergunning nodig hebben.",
+          "source_urls": [
+            "https://www.goes.nl/exploitatievergunning-horeca"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De houder/leidinggevende is minimaal 21 jaar en van onbesproken gedrag. De gemeente kan vragen om een Verklaring omtrent het gedrag (VOG).",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt geen leeftijdseisen of VOG-vereisten voor exploitanten, terwijl deze wel worden genoemd in de bronpagina.",
+          "source_urls": [
+            "https://www.goes.nl/exploitatievergunning-horeca"
+          ]
+        }
+      ]
+    },
+    "summary": "De originele tekst over gokautomaten blijkt onvolledig te zijn en mist belangrijke context over algemene horeca-exploitatievergunningen, leeftijdseisen en documentvereisten. Bovendien ontbreekt informatie over aanverwante vergunningen zoals voor loterijen. De bronpagina's bevatten uitgebreidere en specifiekere informatie over vergunningsvereisten en voorwaarden."
+  }
+}

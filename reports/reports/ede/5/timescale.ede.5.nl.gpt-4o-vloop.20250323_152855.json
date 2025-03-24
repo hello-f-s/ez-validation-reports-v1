@@ -1,0 +1,90 @@
+{
+  "context": {
+    "municipality": {
+      "name": "EDE",
+      "contact": {
+        "phone": "14 0318",
+        "email": "info@ede.nl",
+        "website": "http://www.ede.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 31,
+    "true_sentences": 30,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.8,
+    "false_statements": [
+      {
+        "sentence": "Levensmiddelenbedrijven en cafetaria's mogen zwak alcoholhoudende drank verkopen zonder alcoholwetvergunning, maar dit mag niet ter plekke worden opgedronken.",
+        "status": "false",
+        "note": "Dit is onjuist volgens de Alcoholwet. Levensmiddelenbedrijven en cafetaria's hebben wel degelijk een alcoholwetvergunning nodig om zwak-alcoholhoudende drank te mogen verkopen, ongeacht of deze ter plekke wordt genuttigd of niet."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 3,
+    "invalid_urls": 2,
+    "accuracy_percentage": 60.0,
+    "valid_urls_list": [
+      "https://www.ede.nl/aanvragen-en-regelen/horecabedrijf",
+      "https://www.ede.nl/aanvragen-en-regelen/bouw-en-verbouwvergunning",
+      "https://www.ede.nl/aanvragen-en-regelen/ontheffing-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.ede.nl/aanvragen-en-regelen/kinderopvang-starten",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.ede.nl/aanvragen-en-regelen/verleende-vergunningen-inzien-en-opvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het aanvragen van een horeca exploitatievergunning kost € 612. Heeft u ook een terras? Dan zijn de kosten € 690.",
+          "original_reference": "De kosten voor een exploitatievergunning bedragen €306. Voor een terras op gemeentelijke grond betaalt u €690",
+          "note": "Er is een verschil in de kosten voor de exploitatievergunning. De bron vermeldt €612, terwijl de originele tekst €306 aangeeft.",
+          "source_urls": [
+            "https://www.ede.nl/aanvragen-en-regelen/horecabedrijf"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het wijzigen van een alcoholwetvergunning kost € 306.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de kosten voor het wijzigen van een alcoholwetvergunning, terwijl dit wel in de bron staat.",
+          "source_urls": [
+            "https://www.ede.nl/aanvragen-en-regelen/horecabedrijf"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Op basis van de Wet Bibob en ons Bibob-beleid voeren wij een Bibob-onderzoek uit bij uw horeca-aanvraag.",
+          "original_reference": "Op basis van de Wet Bibob en het Bibob-beleid van de gemeente Ede kan er een Bibob-onderzoek worden uitgevoerd bij uw horeca-aanvraag.",
+          "note": "De bron stelt dat er altijd een Bibob-onderzoek wordt uitgevoerd, terwijl de originele tekst aangeeft dat dit mogelijk is ('kan').",
+          "source_urls": [
+            "https://www.ede.nl/aanvragen-en-regelen/horecabedrijf"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn enkele belangrijke verschillen gevonden tussen de originele tekst en de bronnen, voornamelijk met betrekking tot de kosten van vergunningen en de aard van het Bibob-onderzoek. De kosten voor de exploitatievergunning verschillen (€306 vs €612), er ontbreekt informatie over de kosten voor het wijzigen van een alcoholwetvergunning in de originele tekst, en er is een verschil in de formulering over het Bibob-onderzoek (facultatief vs verplicht)."
+  }
+}

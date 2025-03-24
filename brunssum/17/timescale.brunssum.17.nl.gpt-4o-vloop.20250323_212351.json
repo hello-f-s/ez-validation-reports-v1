@@ -1,0 +1,72 @@
+{
+  "context": {
+    "municipality": {
+      "name": "BRUNSSUM",
+      "contact": {
+        "phone": "(045) 527 85 55",
+        "email": "gemeente@brunssum.nl",
+        "website": "http://www.brunssum.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 27,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.4,
+    "false_statements": [
+      {
+        "sentence": "Bij het plaatsen van het terras moet er voldoende ruimte overblijven voor voetgangers. De minimale doorloop voor voetgangers die over moet blijven is 1,2 meter.",
+        "status": "false",
+        "note": "Volgens de Terrasvoorschriften gemeente Brunssum moet de minimale doorloopruimte voor voetgangers 1,5 meter zijn, niet 1,2 meter."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 3,
+    "invalid_urls": 2,
+    "accuracy_percentage": 60.0,
+    "valid_urls_list": [
+      "https://www.brunssum.nl/ondernemer/horeca/Horecabedrijf_starten",
+      "https://www.brunssum.nl/inwoner/projecten/Omgevingswet/Vergunning_checken_en_vooroverleg",
+      "https://www.brunssum.nl/inwoner/vergunningen/omgevingsvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.brunssum.nl/ondernemer/horeca/terras_exploiteren",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.brunssum.nl/ondernemer/horeca",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Gemeente Brunssum, Lindeplein 1, 6444 AT Brunssum, Telefoon: 045-5278555, E-mail: gemeente@brunssum.nl",
+          "original_reference": "Gemeente Brunssum, Lindeplein 1, 6444 AT Brunssum, Telefoon: 045-5278555, E-mail: gemeente@brunssum.nl",
+          "note": "De contactgegevens in de originele tekst komen exact overeen met de informatie op de gemeentelijke website.",
+          "source_urls": [
+            "https://www.brunssum.nl/ondernemer/horeca/Horecabedrijf_starten"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse van de beschikbare bronnen zijn er geen significante verschillen of tegenstrijdigheden gevonden tussen de originele inhoud en de geciteerde bronpagina's. De contactgegevens zijn consistent. Opvallend is dat veel specifieke details over terrasmelding niet direct terug te vinden zijn in de geciteerde bronpagina's, maar dit betekent niet automatisch dat deze informatie onjuist is - deze kan mogelijk in andere gemeentelijke documenten of verordeningen staan die niet in de geciteerde bronnen zijn opgenomen."
+  }
+}

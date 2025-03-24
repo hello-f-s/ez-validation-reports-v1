@@ -1,0 +1,97 @@
+{
+  "context": {
+    "municipality": {
+      "name": "BEVERWIJK",
+      "contact": {
+        "phone": "(0251) 25 62 56",
+        "email": "info@beverwijk.nl",
+        "website": "http://www.beverwijk.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "De aanvraag kan verstuurd worden naar info@beverwijk.nl onder vermelding van 'horecavergunning'.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Beverwijk moet een alcoholvergunning worden aangevraagd via het officiële aanvraagformulier dat moet worden ingeleverd bij de gemeente, niet via e-mail."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.beverwijk.nl/form/aanvraag-exploitatievergunning-horeca/aanvraagformulier-exploitatievergunning-horeca-0",
+      "https://www.beverwijk.nl/tijdelijk-alcohol-schenken",
+      "https://www.beverwijk.nl/alcoholvergunning",
+      "https://www.beverwijk.nl/regels-omtrent-horeca",
+      "https://www.beverwijk.nl/overzicht-vragen-voor-jaarlijkse-subsidie-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.beverwijk.nl/gemeente-beverwijk/alcoholvergunning",
+        "reason": "INVALID: Error scraping https://www.beverwijk.nl/gemeente-beverwijk/alcoholvergunning: 404 Client Error: Not Found for url: https://www.beverwijk.nl/gemeente-beverwijk/alcoholvergunning"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 4,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor het in behandeling nemen van een aanvraag betaalt u € 182,16",
+          "original_reference": "Nieuwe vergunning: € 327,60",
+          "note": "Er is een verschil in de kosten. De bron vermeldt € 182,16 voor een tijdelijke alcoholontheffing, terwijl de originele tekst € 327,60 noemt voor een nieuwe vergunning. Dit zijn echter verschillende type vergunningen.",
+          "source_urls": [
+            "https://www.beverwijk.nl/tijdelijk-alcohol-schenken"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "geen strafverleden hebben",
+          "original_reference": "een goed gedrag hebben",
+          "note": "De bronpagina specificeert expliciet 'geen strafverleden' terwijl de originele tekst spreekt over 'goed gedrag'. Dit is een concretere formulering in de bron.",
+          "source_urls": [
+            "https://www.beverwijk.nl/alcoholvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "plattegrond van de inrichting met maatvoering, inclusief eventueel terras",
+          "original_reference": "No matching information",
+          "note": "De bron vereist een extra document (plattegrond) dat niet genoemd wordt in de originele voorwaarden.",
+          "source_urls": [
+            "https://www.beverwijk.nl/form/aanvraag-exploitatievergunning-horeca/aanvraagformulier-exploitatievergunning-horeca-0"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "BIBOB-vragenformulier en de gevraagde bijlage",
+          "original_reference": "No matching information",
+          "note": "De bron vereist een BIBOB-vragenformulier dat niet genoemd wordt in de originele voorwaarden.",
+          "source_urls": [
+            "https://www.beverwijk.nl/form/aanvraag-exploitatievergunning-horeca/aanvraagformulier-exploitatievergunning-horeca-0"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen tonen enkele belangrijke verschillen met de originele inhoud. Er zijn aanvullende documentvereisten (plattegrond en BIBOB-vragenformulier) die niet in de originele tekst staan. Ook is er een verschil in terminologie rond gedragseisen en zijn er verschillende tarieven voor verschillende type vergunningen. De bronnen geven specifiekere en uitgebreidere informatie over de vereisten."
+  }
+}

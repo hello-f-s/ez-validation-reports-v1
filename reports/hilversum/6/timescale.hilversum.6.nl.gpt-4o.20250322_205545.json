@@ -1,0 +1,89 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HILVERSUM",
+      "contact": {
+        "phone": "14 035",
+        "email": "gemeente@hilversum.nl",
+        "website": "http://www.hilversum.nl"
+      }
+    },
+    "service": {
+      "id": 6,
+      "name": "Integriteitsonderzoek (Wet Bibob)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Een Bibob-onderzoek is gratis.",
+        "status": "false",
+        "note": "Een Bibob-onderzoek in Hilversum is niet gratis. Er worden legeskosten in rekening gebracht voor het behandelen van een Bibob-aanvraag volgens de gemeentelijke legesverordening."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 6,
+    "invalid_urls": 1,
+    "accuracy_percentage": 85.7,
+    "valid_urls_list": [
+      "https://hilversum.nl/vergunningen/vergunningen-voor-horeca",
+      "https://hilversum.nl/vergunningen/vergunningen-voor-horeca/bibob",
+      "https://hilversum.nl/bestuur-organisatie/wet-open-overheid-woo",
+      "https://hilversum.nl",
+      "https://hilversum.nl/uittreksels-afschriften/verklaring-omtrent-gedrag-vog",
+      "https://hilversum.nl/vergunningen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://hilversummediastad.nl",
+        "reason": "INVALID: Error scraping https://hilversummediastad.nl: HTTPSConnectionPool(host='hilversummediastad.nl', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] ssl/tls alert handshake failure (_ssl.c:1018)')))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Met zo'n integriteitsonderzoek wil de gemeente voorkomen dat ze criminele activiteiten mogelijk maakt. Ook beschermt de gemeente zo de te vertrouwen ondernemers.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina geeft extra context over het doel van het Bibob-onderzoek, wat ontbreekt in de originele tekst",
+          "source_urls": [
+            "https://hilversum.nl/vergunningen/vergunningen-voor-horeca/bibob"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als de gemeente na eigen onderzoek nog twijfels heeft, kan zij het Bureau Bibob vragen verder onderzoek te doen",
+          "original_reference": "No matching information",
+          "note": "De mogelijkheid tot verder onderzoek door Bureau Bibob wordt niet genoemd in de originele tekst",
+          "source_urls": [
+            "https://hilversum.nl/vergunningen/vergunningen-voor-horeca/bibob"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "vragen naar team Horeca",
+          "original_reference": "14 035 of mail naar bibob@hilversum.nl",
+          "note": "De bronpagina specificeert dat men bij het algemene nummer moet vragen naar team Horeca, wat niet vermeld wordt in de originele tekst",
+          "source_urls": [
+            "https://hilversum.nl/vergunningen/vergunningen-voor-horeca/bibob"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten enkele belangrijke aanvullingen op de originele tekst, waaronder het specifieke doel van het Bibob-onderzoek, de mogelijkheid tot verder onderzoek door Bureau Bibob, en specifiekere contactinstructies. Deze informatie maakt de procedure en het doel duidelijker voor aanvragers. De kernvoorwaarden en vereiste documenten blijven wel consistent tussen beide versies."
+  }
+}

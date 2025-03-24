@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HOUTEN",
+      "contact": {
+        "phone": "(030) 639 26 11",
+        "email": "gemeentehuis@houten.nl",
+        "website": "http://www.houten.nl"
+      }
+    },
+    "service": {
+      "id": 8,
+      "name": "Marktvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 31,
+    "true_sentences": 29,
+    "false_sentences": 2,
+    "accuracy_percentage": 93.5,
+    "false_statements": [
+      {
+        "sentence": "Exploitatievergunning: €388,65",
+        "status": "false",
+        "note": "Dit bedrag is niet correct volgens de actuele legesverordening van gemeente Houten. De exacte tarieven kunnen worden opgevraagd bij de gemeente."
+      },
+      {
+        "sentence": "Ontheffing van de vergunningplicht: €83,50",
+        "status": "false",
+        "note": "Dit tarief komt niet overeen met de huidige legesverordening van gemeente Houten. Actuele tarieven zijn beschikbaar via de gemeente."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.houten.nl/wonen-en-leefomgeving/bouw-en-verbouw/omgevingsvergunning/aanvraagprocedure-omgevingsvergunning",
+      "https://www.houten.nl/ondernemen/regelen/horecabedrijf-exploiteren",
+      "https://www.houten.nl/ondernemen/regelen/standplaatsvergunning",
+      "https://www.houten.nl/sport-cultuur-en-recreatie/evenement-organiseren",
+      "https://www.houten.nl/ondernemen/starten-als-ondernemer"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Minimaal 10 werkdagen voor de activiteit doet u de melding",
+          "original_reference": "De verwerkingstijd voor een standplaatsvergunning voor een nieuwe locatie is minimaal 8 weken",
+          "note": "Er is een verschil in aanvraagtermijnen. De originele tekst noemt 8 weken voor standplaatsvergunningen, terwijl voor evenementenmeldingen 10 werkdagen geldt. Dit zijn echter verschillende type aanvragen.",
+          "source_urls": [
+            "https://www.houten.nl/sport-cultuur-en-recreatie/evenement-organiseren"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U vraagt de ontheffing uiterlijk 4 weken voor de gewenste openingsdatum aan",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist specifieke informatie over de aanvraagtermijn voor horecaontheffingen (4 weken), wat een belangrijke toevoeging is voor ondernemers.",
+          "source_urls": [
+            "https://www.houten.nl/ondernemen/regelen/horecabedrijf-exploiteren"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Maximaal één keer per jaar in september geeft de gemeente vrijgekomen standplaatsen in de centrumlocaties uit",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over de jaarlijkse uitgifteperiode van standplaatsvergunningen in september voor centrumlocaties.",
+          "source_urls": [
+            "https://www.houten.nl/ondernemen/regelen/standplaatsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont dat de originele tekst enkele belangrijke details mist over specifieke aanvraagtermijnen en procedures. Met name de jaarlijkse uitgifteperiode voor standplaatsvergunningen in september, de 4-weken termijn voor horecaontheffingen, en het verschil tussen aanvraagtermijnen voor verschillende type vergunningen zijn niet volledig of accuraat weergegeven in de originele tekst. Deze informatie is essentieel voor ondernemers die verschillende vergunningen willen aanvragen."
+  }
+}

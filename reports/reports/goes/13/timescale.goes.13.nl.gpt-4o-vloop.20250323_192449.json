@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "GOES",
+      "contact": {
+        "phone": "14 0113",
+        "email": "stadskantoor@goes.nl",
+        "website": "http://www.goes.nl"
+      }
+    },
+    "service": {
+      "id": 13,
+      "name": "Omzettingsvergunning voor kamerverhuur aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "Na het indienen van de aanvraag beslist de gemeente binnen 8 weken.",
+        "status": "false",
+        "note": "Volgens de gemeente Goes geldt voor reguliere procedures een beslistermijn van maximaal 8 weken, maar voor uitgebreide procedures geldt een termijn van 26 weken. De zin is te algemeen gesteld en daardoor niet volledig correct."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.goes.nl/milieu-omgevingsvergunning-melding",
+      "https://www.goes.nl/conceptverzoek-omgevingsvergunning",
+      "https://www.goes.nl/omgevingsvergunning",
+      "https://www.goes.nl/exploitatievergunning-horeca",
+      "https://www.goes.nl/participatie-en-omgevingswet"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "De houder/leidinggevende is minimaal 21 jaar en van onbesproken gedrag. De gemeente kan vragen om een Verklaring omtrent het gedrag (VOG).",
+          "original_reference": "De leidinggevende moet minimaal 21 jaar en van onbesproken gedrag zijn, mogelijk moet een Verklaring omtrent het gedrag (VOG) overlegd worden.",
+          "note": "De vereisten voor leeftijd en gedrag komen exact overeen",
+          "source_urls": [
+            "https://www.goes.nl/exploitatievergunning-horeca"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Sinds 1 januari 2024 geldt de Omgevingswet. Deze wet schrijft voor dat je een gesprek met de omgeving houdt als je een plan hebt om iets te bouwen of te ontwikkelen.",
+          "original_reference": "Sinds 1 januari 2024 geldt de Omgevingswet, die voorschrijft dat er een gesprek met de omgeving moet worden gehouden als er plannen zijn om iets te bouwen of te ontwikkelen.",
+          "note": "De informatie over de Omgevingswet en participatievereisten komt overeen",
+          "source_urls": [
+            "https://www.goes.nl/participatie-en-omgevingswet"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Een nauwkeurige plattegrond van het horecabedrijf (inclusief terras), waarop ook de oppervlakte van de verschillende ruimtes/terras staan aangegeven",
+          "original_reference": "Een nauwkeurige plattegrond van het bedrijf, inclusief terras en aangegeven oppervlakten.",
+          "note": "De vereisten voor de plattegrond komen overeen",
+          "source_urls": [
+            "https://www.goes.nl/exploitatievergunning-horeca"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse van de bronnen en de originele tekst zijn er geen significante verschillen of tegenstrijdigheden gevonden. De informatie in de originele tekst komt overeen met de informatie op de website van de gemeente Goes. De vereisten, procedures en voorwaarden zijn consistent beschreven."
+  }
+}

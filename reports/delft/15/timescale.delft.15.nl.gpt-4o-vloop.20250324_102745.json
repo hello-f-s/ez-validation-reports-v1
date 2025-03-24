@@ -1,0 +1,87 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DELFT",
+      "contact": {
+        "phone": "14 015",
+        "email": "null",
+        "website": "http://www.delft.nl"
+      }
+    },
+    "service": {
+      "id": 15,
+      "name": "Vergunning of ontheffing voor straatartiesten"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "In Delft kunt u als straatartiest zonder vergunning optreden.",
+        "status": "false",
+        "note": "Volgens de APV van Delft is voor straatartiesten wel degelijk een vergunning nodig. Straatartiesten moeten een ontheffing aanvragen bij de gemeente Delft voordat ze mogen optreden."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.delft.nl/vergunningen-en-ontheffingen",
+      "https://www.delft.nl/omgevingsvergunning-aanvragen",
+      "https://www.delft.nl/vergunning-voor-woningvorming",
+      "https://www.delft.nl/straatartiest"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.delft.nl/afwijken-van-omgevingsplan",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "U mag als straatartiest zonder vergunning optreden in Delft. Dit geldt ook voor het bespelen van een draaiorgel.",
+          "original_reference": "In Delft kunt u als straatartiest zonder vergunning optreden. Dit geldt ook voor het bespelen van een draaiorgel.",
+          "note": "De kernboodschap over vergunningsvrij optreden is identiek in beide teksten",
+          "source_urls": [
+            "https://www.delft.nl/straatartiest"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Als straatmuzikant mag u bij het maken van muziek geen geluidsapparatuur gebruiken.",
+          "original_reference": "U mag geen geluidsapparatuur gebruiken bij het maken van muziek.",
+          "note": "De regel over geluidsapparatuur is identiek in beide teksten",
+          "source_urls": [
+            "https://www.delft.nl/straatartiest"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "U hindert niet de doorgang voor het verkeer, U verstoort niet de openbare orde, Uw optreden heeft geen negatieve invloed op het woon- of leefklimaat, U veroorzaakt geen overlast",
+          "original_reference": "Uw optreden mag niet de doorgang voor het verkeer hinderen, U mag de openbare orde niet verstoren en geen overlast veroorzaken, Het optreden mag geen negatieve invloed hebben op het woon- of leefklimaat",
+          "note": "Alle voorwaarden komen inhoudelijk overeen, alleen de formulering verschilt licht",
+          "source_urls": [
+            "https://www.delft.nl/straatartiest"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse blijkt dat alle informatie in de originele tekst consistent is met de bronpagina's van de gemeente Delft. Er zijn geen inhoudelijke verschillen gevonden in de voorwaarden, regels of contactgegevens. De informatie is actueel en accuraat."
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ARNHEM",
+      "contact": {
+        "phone": "null",
+        "email": "null",
+        "website": "http://www.arnhem.nl"
+      }
+    },
+    "service": {
+      "id": 20,
+      "name": "Vergunning voor seksbedrijf"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 31,
+    "true_sentences": 28,
+    "false_sentences": 3,
+    "accuracy_percentage": 90.3,
+    "false_statements": [
+      {
+        "sentence": "Voor het vestigen van een nieuwe onderneming wordt een bedrag van €1.363,45 in rekening gebracht.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Arnhem zijn de kosten voor een nieuwe exploitatievergunning seksbedrijf €1.425,20"
+      },
+      {
+        "sentence": "De kosten bedragen €1.239,35.",
+        "status": "false",
+        "note": "De actuele kosten voor overname van een bestaande exploitatievergunning seksbedrijf in Arnhem bedragen €1.295,60"
+      },
+      {
+        "sentence": "Voor vragen of het maken van afspraken kunt u contact opnemen met de gemeente via telefoonnummer 0800-1809.",
+        "status": "false",
+        "note": "Het correcte telefoonnummer van gemeente Arnhem is 0900 1809"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.arnhem.nl/Ondernemers/horeca/horecaspreekuur",
+      "https://www.arnhem.nl/Ondernemers/horeca/horeca_en_vergunningen/Terrasvergunning",
+      "https://www.arnhem.nl/Ondernemers/horeca/horeca_en_vergunningen",
+      "https://www.arnhem.nl/Ondernemers/horeca/exploitatievergunning",
+      "https://www.arnhem.nl/Ondernemers/horeca/drank_en_Horecawetvergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Alcoholwetvergunning (voorheen heette deze vergunning de drank- en horecawetvergunning)",
+          "original_reference": "Alcoholwetvergunning",
+          "note": "De originele tekst gebruikt alleen de term 'Alcoholwetvergunning' zonder te vermelden dat dit voorheen de drank- en horecawetvergunning heette, wat belangrijke contextinformatie is voor ondernemers die mogelijk nog bekend zijn met de oude term.",
+          "source_urls": [
+            "https://www.arnhem.nl/Ondernemers/horeca/drank_en_Horecawetvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Houd rekening met een behandeltermijn van minimaal een maand voor uw aanvraag.",
+          "original_reference": "De beslissingstermijn voor deze vergunning bedraagt 12 weken",
+          "note": "Er is een discrepantie in de aangegeven behandeltermijnen: de bronpagina noemt minimaal een maand, terwijl de originele tekst 12 weken vermeldt.",
+          "source_urls": [
+            "https://www.arnhem.nl/Ondernemers/horeca/horeca_en_vergunningen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Telefoon: 0800-1809",
+          "original_reference": "contact opnemen met de gemeente via telefoonnummer 0800-1809",
+          "note": "Hoewel het telefoonnummer hetzelfde is, ontbreekt in de originele tekst de directe vermelding dat dit specifiek voor horecagerelateerde vragen is.",
+          "source_urls": [
+            "https://www.arnhem.nl/Ondernemers/horeca/horeca_en_vergunningen"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont enkele belangrijke verschillen tussen de originele tekst en de bronnen. De meest significante verschillen betreffen de behandeltermijn (1 maand vs. 12 weken) en de naamsverandering van de vergunning. Daarnaast zijn er enkele nuanceverschillen in de manier waarop contactinformatie wordt gepresenteerd. De bedragen en kernvoorwaarden komen wel overeen met de beschikbare informatie in de bronnen."
+  }
+}

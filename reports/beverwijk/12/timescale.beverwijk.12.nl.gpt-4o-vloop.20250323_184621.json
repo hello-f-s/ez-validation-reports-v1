@@ -1,0 +1,82 @@
+{
+  "context": {
+    "municipality": {
+      "name": "BEVERWIJK",
+      "contact": {
+        "phone": "(0251) 25 62 56",
+        "email": "info@beverwijk.nl",
+        "website": "http://www.beverwijk.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 27,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.4,
+    "false_statements": [
+      {
+        "sentence": "Voor een Indicatieverzoek zijn de kosten € 264,35.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Beverwijk zijn de kosten voor een principeverzoek/indicatieverzoek € 500,00. Het genoemde bedrag van € 264,35 is verouderd."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 4,
+    "valid_urls": 4,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.beverwijk.nl/milieu-melding-of-vergunning",
+      "https://www.beverwijk.nl/omgevingsvergunning-sloop",
+      "https://www.beverwijk.nl/hoe-kunt-u-een-initiatief-of-vergunning-aanvragen",
+      "https://www.beverwijk.nl/brandveiligheid"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Type A-bedrijven hebben weinig (negatieve) invloed op het milieu zoals kantoren en banken. Zij hebben geen meldingsplicht.",
+          "original_reference": "Type A-bedrijven: Geen meldingsplicht, zoals kantoren en banken.",
+          "note": "De beschrijving van Type A-bedrijven komt exact overeen met de originele tekst",
+          "source_urls": [
+            "https://www.beverwijk.nl/milieu-melding-of-vergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor meer informatie kunt u contact opnemen met Team Leefomgeving via telefoonnummer 0251 256 256 of via e-mailadres omgevingsdesk@beverwijk.nl",
+          "original_reference": "Voor meer informatie of specifiek advies over uw plannen kunt u contact opnemen met Team Leefomgeving via telefoonnummer 0251 256 256 of via e-mailadres omgevingsdesk@beverwijk.nl",
+          "note": "De contactinformatie is hetzelfde, maar wordt in de bron directer en beknopter gepresenteerd zonder de toevoeging 'specifiek advies over uw plannen'",
+          "source_urls": [
+            "https://www.beverwijk.nl/hoe-kunt-u-een-initiatief-of-vergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een sloopmelding is gratis. De kosten zijn afhankelijk van het aantal activiteiten waarvoor u een omgevingsvergunning aanvraagt. De kosten worden berekend nadat over de aanvraag is beslist.",
+          "original_reference": "Sloopmeldingen zijn gratis, maar voor een sloopvergunning worden kosten berekend na de aanvraag.",
+          "note": "De bronpagina specificeert duidelijker dat de kostenberekening pas na het besluit over de aanvraag plaatsvindt",
+          "source_urls": [
+            "https://www.beverwijk.nl/omgevingsvergunning-sloop"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont dat de meeste informatie consistent is tussen de originele tekst en de bronnen. De belangrijkste verschillen zitten in de formulering van de contactgegevens en de specificatie van het moment waarop kosten voor sloopvergunningen worden berekend. De verschillen zijn voornamelijk in detail en presentatie, niet in de kern van de informatie."
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HAAKSBERGEN",
+      "contact": {
+        "phone": "(053) 573 45 67",
+        "email": "gemeente@haaksbergen.nl",
+        "website": "http://www.haaksbergen.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 31,
+    "true_sentences": 30,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.8,
+    "false_statements": [
+      {
+        "sentence": "Adres: Blankenburgerstraat 28, 7481 EB Haaksbergen",
+        "status": "false",
+        "note": "Het juiste adres van het gemeentehuis van Haaksbergen is Blankenburgerstraat 28, 7481 GB Haaksbergen. De postcode 7481 EB is onjuist, het moet 7481 GB zijn."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.haaksbergen.nl/Vergunningen/Evenementenvergunning.html",
+      "https://www.haaksbergen.nl/Vergunningen/101107-Omgevingsvergunning.html",
+      "https://www.haaksbergen.nl/ondernemers/Ondernemend-Haaksbergen/Ondernemersplein.html",
+      "https://www.haaksbergen.nl/ondernemers/Bedrijfstarten.html",
+      "https://www.haaksbergen.nl/Vergunningen/Exploitatievergunning.html"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "het evenement voor het publiek toegankelijk is; het evenement in een tent groter dan 60 m2, in de open lucht of bestaand gebouw wordt gehouden, als die plaats daar normaal niet voor wordt gebruikt;",
+          "original_reference": "Het evenement voor het publiek toegankelijk is. Het in een tent groter dan 60 m², de open lucht of bestaand gebouw wordt gehouden als die plaats daar normaal niet voor wordt gebruikt.",
+          "note": "De basisvoorwaarden voor een evenementenvergunning komen exact overeen",
+          "source_urls": [
+            "https://www.haaksbergen.nl/Vergunningen/Evenementenvergunning.html"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Formulier Evenementenvergunning aanvragen (inclusief toelichting) (pdf | 150 kB)",
+          "original_reference": "Gebruik het \"Formulier Evenementenvergunning aanvragen\" inclusief toelichting, beschikbaar als pdf.",
+          "note": "De originele tekst vermeldt niet de bestandsgrootte (150 kB) van het formulier, wat een relevant detail is voor gebruikers",
+          "source_urls": [
+            "https://www.haaksbergen.nl/Vergunningen/Evenementenvergunning.html"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse blijken de meeste voorwaarden en procedures consistent tussen de originele tekst en de bronnen. Het enige noemenswaardige verschil is dat de originele tekst minder specifiek is over het aanvraagformulier door de bestandsgrootte niet te vermelden. De kernvoorwaarden, geluidsnormen en andere belangrijke criteria komen volledig overeen."
+  }
+}

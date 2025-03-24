@@ -1,0 +1,78 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MEPPEL",
+      "contact": {
+        "phone": "14 0522",
+        "email": "postbus@meppel.nl",
+        "website": "http://www.meppel.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "1e ontheffing: € 24,26 per maand voor gebieden zoals Bleekerseiland, Koekoekstraat, Stoombootkade, Vledderstraat en De Swaenenborgh.",
+        "status": "false",
+        "note": "De actuele tarieven voor parkeerontheffingen in Meppel zijn anders dan vermeld. De gemeente Meppel hanteert andere tarieven die jaarlijks worden vastgesteld. De genoemde specifieke bedragen en gebieden komen niet overeen met de huidige informatie op de officiële website van de gemeente Meppel."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 1,
+    "invalid_urls": 4,
+    "accuracy_percentage": 20.0,
+    "valid_urls_list": [
+      "https://www.meppel.nl/Ondernemer/Vergunningen_regelingen/Parkeren_vervoer/Parkeerontheffing_voor_bedrijven"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.meppel.nl/Inwoner/Parkeren_verkeer/Parkeren/Bewoners",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.meppel.nl/Inwoner/Parkeren_verkeer/Parkeren/Bewoners/Parkeervergunning_voor_bewoners",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.meppel.nl/Inwoner/Parkeren_verkeer/Parkeren/Bewoners/Parkeerontheffing_voor_bewoners",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.meppel.nl/Inwoner/Parkeren_verkeer/Parkeren/Bewoners/Ontheffing_voetgangersgebied",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wanneer u in een betaald parkeren gebied werkt of gevestigd bent en u geen parkeergelegenheid op eigen terrein heeft, kunt u een parkeerontheffing aanvragen.",
+          "original_reference": "Uw bedrijf moet gevestigd zijn in het betaald parkeren gebied of het voetgangersgebied.",
+          "note": "De bronpagina voegt een extra voorwaarde toe: geen parkeergelegenheid op eigen terrein hebben. Dit is een belangrijke aanvullende voorwaarde die niet in de originele tekst staat.",
+          "source_urls": [
+            "https://www.meppel.nl/Ondernemer/Vergunningen_regelingen/Parkeren_vervoer/Parkeerontheffing_voor_bedrijven"
+          ]
+        }
+      ]
+    },
+    "summary": "Bij analyse van de beschikbare broninhoud is één significant verschil gevonden: een aanvullende voorwaarde voor het verkrijgen van een parkeerontheffing. De brontekst specificeert dat bedrijven geen parkeergelegenheid op eigen terrein mogen hebben om in aanmerking te komen voor een ontheffing. Deze belangrijke voorwaarde ontbreekt in de originele tekst. Verdere vergelijking was beperkt omdat de volledige bronpagina niet beschikbaar was in het geciteerde materiaal."
+  }
+}

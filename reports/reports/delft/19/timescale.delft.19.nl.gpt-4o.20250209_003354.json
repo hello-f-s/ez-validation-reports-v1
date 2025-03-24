@@ -1,0 +1,94 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DELFT",
+      "contact": {
+        "phone": "14 015",
+        "email": "null",
+        "website": "http://www.delft.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 10,
+    "false_sentences": 2,
+    "accuracy_percentage": 83.3,
+    "false_statements": [
+      {
+        "sentence": "Vergunning voor onbepaalde tijd bij 1 automaat: € 226,50",
+        "status": "false",
+        "note": "Het actuele tarief voor een aanwezigheidsvergunning voor 1 speelautomaat in Delft is € 244,65 voor onbepaalde tijd volgens de meest recente legesverordening"
+      },
+      {
+        "sentence": "Vergunning voor onbepaalde tijd bij 2 automaten: € 362",
+        "status": "false",
+        "note": "Het actuele tarief voor een aanwezigheidsvergunning voor 2 speelautomaten in Delft is € 391,45 voor onbepaalde tijd volgens de meest recente legesverordening"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 6,
+    "invalid_urls": 1,
+    "accuracy_percentage": 85.7,
+    "valid_urls_list": [
+      "https://www.delft.nl/omgevingsvergunning-milieu",
+      "https://www.delft.nl",
+      "https://www.delft.nl/alcoholwetvergunning",
+      "https://www.delft.nl/klein-kansspel-melden",
+      "https://www.delft.nl/speelautomaten-plaatsen",
+      "https://www.delft.nl/omgevingsvergunning-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.delft.nl\">Gemeente",
+        "reason": "INVALID: Error scraping https://www.delft.nl\">Gemeente: HTTPSConnectionPool(host='www.delft.nl%22%3egemeente', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1058bb9d0>: Failed to resolve 'www.delft.nl%22%3egemeente' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Aanvraagformulier alcoholwetvergunning voor horecabedrijf en slijterij (PDF), Aanvraagformulier alcoholwetvergunning voor vereniging of stichting (PDF)",
+          "original_reference": "U moet de vergunning schriftelijk aanvragen bij de gemeente.",
+          "note": "De bronpagina specificeert twee concrete aanvraagformulieren (voor horecabedrijf/slijterij en voor vereniging/stichting), terwijl de originele tekst alleen algemeen spreekt over schriftelijk aanvragen.",
+          "source_urls": [
+            "https://www.delft.nl/alcoholwetvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Kosten 2025",
+          "original_reference": "Kosten en betalen",
+          "note": "De bronpagina specificeert dat de genoemde tarieven voor 2025 gelden, terwijl dit in de originele tekst niet wordt vermeld.",
+          "source_urls": [
+            "https://www.delft.nl/speelautomaten-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U mag een kansspelautomaat alleen plaatsen in een horecaonderneming met een hoogdrempelige inrichting. Zoals een café, restaurant of bar. U mag maximaal 2 automaten plaatsen.",
+          "original_reference": "U moet een hoogdrempelig horecabedrijf hebben, zoals een café, restaurant of bar.",
+          "note": "De bronpagina vermeldt expliciet de maximale limiet van 2 automaten, wat ontbreekt in de originele voorwaarden sectie.",
+          "source_urls": [
+            "https://www.delft.nl/speelautomaten-plaatsen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de specificatie van concrete aanvraagformulieren, het jaartal 2025 voor de tarieven, en een expliciete vermelding van de maximale limiet van 2 automaten. De overige informatie komt grotendeels overeen met de originele tekst."
+  }
+}

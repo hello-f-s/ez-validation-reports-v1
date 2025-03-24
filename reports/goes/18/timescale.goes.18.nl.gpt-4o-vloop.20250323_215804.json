@@ -1,0 +1,89 @@
+{
+  "context": {
+    "municipality": {
+      "name": "GOES",
+      "contact": {
+        "phone": "14 0113",
+        "email": "stadskantoor@goes.nl",
+        "website": "http://www.goes.nl"
+      }
+    },
+    "service": {
+      "id": 18,
+      "name": "Ventvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 17,
+    "false_sentences": 2,
+    "accuracy_percentage": 89.5,
+    "false_statements": [
+      {
+        "sentence": "Er zijn geen kosten verbonden aan het indienen van een aanvraag of melding voor een omgevingsvergunning.",
+        "status": "false",
+        "note": "Volgens de legesverordening van de gemeente Goes worden er wel degelijk leges in rekening gebracht voor het in behandeling nemen van een aanvraag voor een omgevingsvergunning."
+      },
+      {
+        "sentence": "Dit uitgebreide overzicht biedt een duidelijk beeld van de vereisten en procedures voor het aanvragen van een ventvergunning in Goes en gerelateerde vergunningen die mogelijk van toepassing zijn op uw situatie.",
+        "status": "false",
+        "note": "De tekst gaat hoofdzakelijk over omgevingsvergunningen en niet over ventvergunningen. Er wordt in de hele tekst geen specifieke informatie gegeven over ventvergunningen of de bijbehorende procedures."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.goes.nl/milieu-omgevingsvergunning-melding",
+      "https://www.goes.nl/exploitatievergunning-horeca",
+      "https://www.goes.nl/conceptverzoek-omgevingsvergunning",
+      "https://www.goes.nl/alcoholvergunning",
+      "https://www.goes.nl/omgevingsvergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het conceptverzoek is gratis. Voordat u grote kosten maakt, weet u of uw plan kans van slagen heeft.",
+          "original_reference": "Er zijn geen kosten verbonden aan het indienen van een aanvraag of melding voor een omgevingsvergunning.",
+          "note": "De originele tekst stelt dat alle aanvragen kosteloos zijn, terwijl de bronnen aangeven dat alleen het conceptverzoek gratis is. Voor definitieve aanvragen worden wel degelijk leges in rekening gebracht.",
+          "source_urls": [
+            "https://www.goes.nl/conceptverzoek-omgevingsvergunning",
+            "https://www.goes.nl/exploitatievergunning-horeca"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De houder/leidinggevende is minimaal 21 jaar en van onbesproken gedrag. De gemeente kan vragen om een Verklaring omtrent het gedrag (VOG).",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke specifieke leeftijdsvereisten en de mogelijke VOG-verplichting voor horecavergunningen.",
+          "source_urls": [
+            "https://www.goes.nl/exploitatievergunning-horeca"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Doe de melding minimaal 4 weken voordat u uw activiteiten begint.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt geen specifieke termijn voor het doen van meldingen, terwijl de bron een duidelijke termijn van 4 weken vooraf aangeeft.",
+          "source_urls": [
+            "https://www.goes.nl/milieu-omgevingsvergunning-melding"
+          ]
+        }
+      ]
+    },
+    "summary": "De originele tekst bevat enkele belangrijke onnauwkeurigheden en ontbrekende informatie. Met name de kosten voor vergunningen zijn onjuist weergegeven - alleen conceptverzoeken zijn gratis. Daarnaast ontbreken specifieke vereisten zoals de minimumleeftijd voor horeca-exploitanten en de 4-weken termijn voor meldingen. Deze verschillen kunnen belangrijk zijn voor aanvragers om correcte verwachtingen te hebben van het proces en de vereisten."
+  }
+}

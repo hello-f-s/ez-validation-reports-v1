@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ENSCHEDE",
+      "contact": {
+        "phone": "14 053",
+        "email": "postbus20@enschede.nl",
+        "website": "http://www.enschede.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "Voor een conceptverzoek zijn de kosten € 304,80.",
+        "status": "false",
+        "note": "Volgens de actuele Legesverordening 2024 van de gemeente Enschede bedragen de kosten voor een conceptaanvraag/principeverzoek € 312,40."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.enschede.nl/milieuregels",
+      "https://www.enschede.nl/vergunning-voor-kamerverhuur",
+      "https://www.enschede.nl/omgevingsvergunning",
+      "https://www.enschede.nl/omgevingsplan",
+      "https://www.enschede.nl/omgevingswet"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Stuur een e-mail naar vergunning@enschede.nl",
+          "original_reference": "omgevingsplan@enschede.nl",
+          "note": "Er wordt een ander e-mailadres genoemd voor vragen over het omgevingsplan in de bronpagina dan in de originele tekst",
+          "source_urls": [
+            "https://www.enschede.nl/omgevingsplan"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bel met 053 - 481 71 00",
+          "original_reference": "14 053",
+          "note": "Voor milieuregels wordt een ander telefoonnummer genoemd in de bronpagina dan het algemene nummer in de originele tekst",
+          "source_urls": [
+            "https://www.enschede.nl/milieuregels"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bij de aanvraag van een verhuurvergunning wordt een Bibob-onderzoek gedaan. Voeg een ingevuld formulier toe bij uw aanvraag",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt een aanvullende eis voor een Bibob-onderzoek die niet genoemd wordt in de originele tekst",
+          "source_urls": [
+            "https://www.enschede.nl/vergunning-voor-kamerverhuur"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen contactgegevens (e-mailadressen en telefoonnummers) en aanvullende vereisten zoals het Bibob-onderzoek die niet in de originele tekst worden genoemd. De kern van de procedures en voorwaarden komt wel overeen tussen de bronnen en de originele tekst."
+  }
+}

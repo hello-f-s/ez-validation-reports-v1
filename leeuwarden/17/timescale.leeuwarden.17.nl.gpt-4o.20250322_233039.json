@@ -1,0 +1,79 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LEEUWARDEN",
+      "contact": {
+        "phone": "14 058",
+        "email": "gemeente@leeuwarden.nl",
+        "website": "http://www.leeuwarden.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor de terrasvergunning zijn € 548,09.",
+        "status": "false",
+        "note": "Het exacte bedrag voor een terrasvergunning in Leeuwarden is € 557,00 voor een nieuwe aanvraag volgens de actuele legesverordening van de gemeente Leeuwarden."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.leeuwarden.nl/omgevingsvergunning/gebruikmaken-maken-of-veranderen-van-een-uitweg/",
+      "https://www.leeuwarden.nl/horeca/horecavergunning/",
+      "https://www.leeuwarden.nl/omgevingsvergunning/procedure-omgevingsvergunning-aanvragen-of-melden/",
+      "https://www.leeuwarden.nl/belastingen/precariobelasting/",
+      "https://www.leeuwarden.nl/andere-vergunningen-en-ontheffingen/gebruik-openbare-ruimte/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.overheid.nl/",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Doe dit minstens 3 weken voordat u die nodig heeft.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt geen minimale aanvraagtermijn voor de terrasvergunning, terwijl de bron aangeeft dat dit minstens 3 weken van tevoren moet.",
+          "source_urls": [
+            "https://www.leeuwarden.nl/andere-vergunningen-en-ontheffingen/gebruik-openbare-ruimte/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U machtigt de gemeente met een automatische incasso. Dit geldt alleen voor precariobelasting terras en ligplaats.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt geen betalingsmogelijkheden voor de precariobelasting, terwijl de bron specifieke betaalmethoden beschrijft inclusief automatische incasso.",
+          "source_urls": [
+            "https://www.leeuwarden.nl/belastingen/precariobelasting/"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont twee belangrijke verschillen met de originele tekst: (1) er ontbreekt informatie over de minimale aanvraagtermijn van 3 weken voor de terrasvergunning, en (2) de betalingsmogelijkheden voor precariobelasting worden niet vermeld in de originele tekst, terwijl de bron hier specifieke opties voor geeft. Deze informatie is relevant voor ondernemers die een terrasvergunning willen aanvragen."
+  }
+}

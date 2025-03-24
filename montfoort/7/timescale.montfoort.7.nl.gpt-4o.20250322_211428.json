@@ -1,0 +1,79 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MONTFOORT",
+      "contact": {
+        "phone": "(0348) 47 64 00",
+        "email": "info@montfoort.nl",
+        "website": "http://www.montfoort.nl"
+      }
+    },
+    "service": {
+      "id": 7,
+      "name": "Kabels en leidingen aanleggen en beheren"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 9,
+    "true_sentences": 8,
+    "false_sentences": 1,
+    "accuracy_percentage": 88.9,
+    "false_statements": [
+      {
+        "sentence": "Om een vergunning aan te vragen, is het noodzakelijk dat u zich mogelijk registreert bij het WOW Portaal of contact opneemt met MOOR Werkt indien u geen account heeft.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Montfoort moet men zich registreren bij MOOR (niet WOW Portaal) voor het aanvragen van een vergunning voor kabels en leidingen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.montfoort.nl/Alle_onderwerpen/Leefomgeving/Kabels_en_leidingen_leggen_in_openbare_grond",
+      "https://www.montfoort.nl/Alle_onderwerpen/Bouwen_en_verbouwen",
+      "https://www.montfoort.nl/Alle_onderwerpen/Vergunningen_en_ontheffingen",
+      "https://www.montfoort.nl/Alle_onderwerpen/Bouwen_en_verbouwen/Omgevingsvergunning/Omgevingsvergunning",
+      "https://www.montfoort.nl/Alle_onderwerpen/Ondernemen/Onderneming_starten"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.montfoort.nl/onderwerpen/kabels-en-leidingen-leggen-in-openbare-grond",
+        "reason": "INVALID: Error scraping https://www.montfoort.nl/onderwerpen/kabels-en-leidingen-leggen-in-openbare-grond: 404 Client Error:  for url: https://www.montfoort.nl/onderwerpen/kabels-en-leidingen-leggen-in-openbare-grond"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voeg bij de vergunningaanvraag de volgende documenten bij: Een duidelijke tekening, met legenda, van het te graven tracé op PDF.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de vereiste documentatie (tekening met legenda in PDF) die bij de aanvraag moet worden gevoegd.",
+          "source_urls": [
+            "https://www.montfoort.nl/Alle_onderwerpen/Leefomgeving/Kabels_en_leidingen_leggen_in_openbare_grond"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Kosten per aanvraag: € 324,15, Meerkosten bij aanvragen van meer dan 25 meter: € 1,55 per meter",
+          "original_reference": "Hier kan geen specifieke informatie over gevonden worden op de website van deze gemeente.",
+          "note": "De originele tekst vermeldt dat er geen informatie over kosten beschikbaar is, terwijl de bron wel specifieke tarieven noemt.",
+          "source_urls": [
+            "https://www.montfoort.nl/Alle_onderwerpen/Leefomgeving/Kabels_en_leidingen_leggen_in_openbare_grond"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele tekst en de bronnen. Ten eerste ontbreekt in de originele tekst de vermelding van verplichte documentatie (PDF-tekening met legenda). Ten tweede vermeldt de originele tekst dat er geen informatie over kosten beschikbaar is, terwijl de bron wel degelijk specifieke tarieven noemt (€324,15 basis plus €1,55 per meter boven 25 meter)."
+  }
+}

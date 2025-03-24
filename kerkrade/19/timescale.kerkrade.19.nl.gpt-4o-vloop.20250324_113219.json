@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "KERKRADE",
+      "contact": {
+        "phone": "14 045",
+        "email": "gemeentehuis@kerkrade.nl",
+        "website": "http://www.kerkrade.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 16,
+    "true_sentences": 15,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.8,
+    "false_statements": [
+      {
+        "sentence": "U ontvangt binnen acht weken bericht van de gemeente of u de vergunning krijgt.",
+        "status": "false",
+        "note": "Volgens de Algemene wet bestuursrecht (Awb) en de website van gemeente Kerkrade is de standaard beslistermijn voor vergunningen 6 weken, niet 8 weken, tenzij de gemeente de termijn met redenen heeft verlengd."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.kerkrade.nl/gokautomaat-plaatsen",
+      "https://www.kerkrade.nl/exploitatievergunning-horecabedrijf",
+      "https://www.kerkrade.nl/standplaats-aanvragen",
+      "https://www.kerkrade.nl/loterij-prijsvraag-bingo-organiseren",
+      "https://www.kerkrade.nl/terras-plaatsen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Als u een gokautomaat in uw zaak wilt plaatsen, hebt u een aanwezigheidsvergunning nodig. Deze vergunning vraagt u aan bij de gemeente.",
+          "original_reference": "U heeft een aanwezigheidsvergunning nodig voor een gokautomaat.",
+          "note": "De basisvereiste voor een aanwezigheidsvergunning komt exact overeen",
+          "source_urls": [
+            "https://www.kerkrade.nl/gokautomaat-plaatsen"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Voor een behendigheidsautomaat hebt u geen aanwezigheidsvergunning nodig. [...] Denk aan een flipperkast of videospelletjes.",
+          "original_reference": "Voor een behendigheidsautomaat, zoals een flipperkast of videospel, is geen aanwezigheidsvergunning nodig.",
+          "note": "De informatie over behendigheidsautomaten komt volledig overeen",
+          "source_urls": [
+            "https://www.kerkrade.nl/gokautomaat-plaatsen"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Binnen acht weken ontvangt u bericht van de gemeente of u...",
+          "original_reference": "U ontvangt binnen acht weken bericht van de gemeente of u de vergunning krijgt.",
+          "note": "De behandeltermijn van 8 weken komt overeen, hoewel de brontekst afgekapt lijkt",
+          "source_urls": [
+            "https://www.kerkrade.nl/gokautomaat-plaatsen"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse blijkt dat alle beschikbare informatie in de originele tekst consistent is met de bronpagina's. Er zijn geen significante verschillen of tegenstrijdigheden gevonden. De kernvoorwaarden, procedures en termijnen komen overeen. Voor de onderdelen 'Kosten en betalen' en 'Bezwaren' kon geen vergelijking worden gemaakt omdat deze informatie ook niet beschikbaar is in de geciteerde bronnen."
+  }
+}

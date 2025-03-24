@@ -1,0 +1,91 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OLDENZAAL",
+      "contact": {
+        "phone": "(0541) 58 81 11",
+        "email": "info@oldenzaal.nl",
+        "website": "http://www.oldenzaal.nl"
+      }
+    },
+    "service": {
+      "id": 6,
+      "name": "Integriteitsonderzoek (Wet Bibob)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 10,
+    "true_sentences": 9,
+    "false_sentences": 1,
+    "accuracy_percentage": 90.0,
+    "false_statements": [
+      {
+        "sentence": "Er is geen specifieke informatie over kosten en betalingen voor het Bibob-onderzoek bij de aanvraag van een vergunning.",
+        "status": "false",
+        "note": "Op de website van de gemeente Oldenzaal staat vermeld dat er legeskosten verbonden zijn aan de aanvraag van een exploitatievergunning inclusief Bibob-toets. Deze kosten worden jaarlijks vastgesteld in de legesverordening."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 6,
+    "invalid_urls": 1,
+    "accuracy_percentage": 85.7,
+    "valid_urls_list": [
+      "https://www.oldenzaal.nl/verklaring-omtrent-gedrag-vog",
+      "https://www.oldenzaal.nl",
+      "https://www.oldenzaal.nl/bijzondere-bijstand",
+      "https://www.oldenzaal.nl/individuele-inkomenstoeslag",
+      "https://www.oldenzaal.nl/exploitatievergunning",
+      "https://www.oldenzaal.nl/alcoholvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.oldenzaal.nl\">Gemeente",
+        "reason": "INVALID: Error scraping https://www.oldenzaal.nl\">Gemeente: HTTPSConnectionPool(host='www.oldenzaal.nl%22%3egemeente', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1056b3610>: Failed to resolve 'www.oldenzaal.nl%22%3egemeente' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Neem dan contact met ons op, zodat we met u een afspraak kunnen maken voor een vooroverleg. In dit overleg gaan we onder andere de volgende punten met u bespreken: Inschrijving KVK, Rechtsvorm, Wet Bibob, Milieubelastende activiteiten, Brandveiligheid, Terras",
+          "original_reference": "Bij het aanvragen van een exploitatievergunning voor een horecabedrijf moet het Bibob-formulier ingediend worden.",
+          "note": "De bronpagina beschrijft een uitgebreider voortraject met verplicht vooroverleg en meer onderwerpen dan alleen het Bibob-formulier. Dit is essentiële aanvullende informatie die ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.oldenzaal.nl/exploitatievergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Om deze vergunning aan te vragen moet u inloggen met uw DigiD of eHerkenning.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat DigiD of eHerkenning nodig is voor de aanvraag, wat een belangrijke technische vereiste is.",
+          "source_urls": [
+            "https://www.oldenzaal.nl/exploitatievergunning",
+            "https://www.oldenzaal.nl/alcoholvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De vergunning kunt u aanvragen via de Vergunningenchecker.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat de aanvraag via een specifieke Vergunningenchecker moet worden gedaan, wat een essentieel onderdeel is van de aanvraagprocedure.",
+          "source_urls": [
+            "https://www.oldenzaal.nl/exploitatievergunning",
+            "https://www.oldenzaal.nl/alcoholvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten belangrijke aanvullende informatie over het aanvraagproces die ontbreekt in de originele tekst. Het gaat vooral om het verplichte vooroverleg, de noodzaak van DigiD/eHerkenning en het gebruik van de Vergunningenchecker. Deze elementen zijn essentieel voor een correcte aanvraagprocedure maar worden niet genoemd in de originele tekst."
+  }
+}

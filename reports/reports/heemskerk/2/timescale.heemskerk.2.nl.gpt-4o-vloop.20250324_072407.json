@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HEEMSKERK",
+      "contact": {
+        "phone": "14 0251",
+        "email": "post@heemskerk.nl",
+        "website": "http://www.heemskerk.nl"
+      }
+    },
+    "service": {
+      "id": 2,
+      "name": "Bord of spandoek plaatsen aan de openbare weg"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "Er is een mogelijkheid dat u de aanvraag ook digitaal kunt indienen via DigiD, vergelijkbaar met de procedure voor standplaatsvergunningen.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Heemskerk moeten aanvragen voor reclameborden en spandoeken uitsluitend via het Omgevingsloket worden ingediend, niet via DigiD zoals bij standplaatsvergunningen. Dit is een andere procedure."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/vergunning-gebruik-openbare-weg",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/veelgestelde-vragen-omgevingsvergunning",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/standplaatsvergunning",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/vergunning-voorwerpen/materialen-op-de-weg"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Dit geeft u aan in de aanvraag: NAW-gegevens (naam, adres, woonplaats) en bij voorkeur telefoonnummer en e-mailadres van de aanvrager. NAW-gegevens uitvoerende bedrijf. Omschrijving van de activiteiten waarvoor de maatregel aangevraagd wordt. Begin- en einddatum van de periode waarin de maatregel aangevraagd wordt.",
+          "original_reference": "Een schets of tekening van het bord of spandoek met afmetingen. De exacte locatie waar het geplaatst zal worden.",
+          "note": "De bronpagina vermeldt aanvullende vereisten voor de aanvraag die niet in de originele tekst staan, zoals NAW-gegevens en periodeaanduiding.",
+          "source_urls": [
+            "https://www.heemskerk.nl/belastingen-en-vergunningen/vergunning-gebruik-openbare-weg"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Soms heeft u hier een vergunning voor nodig. En soms is een melding doen genoeg. Gebruik het online formulier hieronder om te checken wat voor u geldt.",
+          "original_reference": "Doe een vergunningscheck om te bepalen of een vergunning nodig is of een melding voldoende is.",
+          "note": "De bronpagina verwijst specifiek naar een online meldingsformulier voor voorwerpen/materialen, terwijl de originele tekst alleen algemeen verwijst naar een vergunningscheck.",
+          "source_urls": [
+            "https://www.heemskerk.nl/belastingen-en-vergunningen/vergunning-voorwerpen/materialen-op-de-weg"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele tekst en de bronpagina's. Ten eerste zijn er aanvullende specifieke vereisten voor de aanvraag die niet in de originele tekst worden genoemd. Ten tweede biedt de bronpagina een specifiek meldingsformulier aan voor voorwerpen/materialen, terwijl de originele tekst alleen een algemene vergunningscheck noemt. De overige informatie komt grotendeels overeen of is complementair aan elkaar."
+  }
+}

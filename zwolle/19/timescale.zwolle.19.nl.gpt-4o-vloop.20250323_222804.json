@@ -1,0 +1,99 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ZWOLLE",
+      "contact": {
+        "phone": "14 038",
+        "email": "postbus@zwolle.nl",
+        "website": "http://www.zwolle.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 31,
+    "true_sentences": 29,
+    "false_sentences": 2,
+    "accuracy_percentage": 93.5,
+    "false_statements": [
+      {
+        "sentence": "Eerste kansspelautomaat: € 56,50.",
+        "status": "false",
+        "note": "Het actuele tarief voor de eerste kansspelautomaat in Zwolle is € 58,20 volgens de legesverordening van de gemeente Zwolle"
+      },
+      {
+        "sentence": "Tweede kansspelautomaat: € 34,00.",
+        "status": "false",
+        "note": "Het actuele tarief voor de tweede kansspelautomaat in Zwolle is € 35,00 volgens de legesverordening van de gemeente Zwolle"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 3,
+    "invalid_urls": 3,
+    "accuracy_percentage": 50.0,
+    "valid_urls_list": [
+      "https://www.zwolle.nl/speelgelegenhedenvergunning",
+      "https://www.zwolle.nl/vergunning-voor-een-loterij-of-ander-kansspel",
+      "https://www.zwolle.nl/omgevingsvergunning-en-melding"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.zwolle.nl/vergunning-kansspelautomaten",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.zwolle.nl/veelgestelde-vragen-over-de-omgevingswet",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.zwolle.nl/kentekenparkeren-veelgestelde-vragen-voor-bedrijvenvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Zwolle heeft het beleid om slechts 1 speelgelegenheid toe te staan. Deze speelgelegenheid is momenteel gevestigd in het IJsseldeltastadion. Dit betekent dat er verder geen vergunningen voor speelgelegenheden worden verleend.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de beperking tot één speelgelegenheid in Zwolle en de locatie daarvan in het IJsseldeltastadion. Dit is een belangrijk beleidspunt dat ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.zwolle.nl/speelgelegenhedenvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Aan dit product zijn geen kosten verbonden.",
+          "original_reference": "Eerste kansspelautomaat: € 56,50. Tweede kansspelautomaat: € 34,00.",
+          "note": "Er is een tegenstrijdigheid in de kosteninformatie. De bron vermeldt dat er geen kosten zijn, terwijl de originele tekst specifieke bedragen noemt voor kansspelautomaten.",
+          "source_urls": [
+            "https://www.zwolle.nl/speelgelegenhedenvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Verordening Speelautomatenhal Zwolle 2018",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist een belangrijke verwijzing naar de Verordening Speelautomatenhal Zwolle 2018 in de lijst met relevante wetgeving.",
+          "source_urls": [
+            "https://www.zwolle.nl/speelgelegenhedenvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont drie belangrijke verschillen: 1) Het ontbreken van cruciale informatie over de beperking tot één speelgelegenheid in Zwolle, 2) Tegenstrijdige informatie over de kosten, en 3) Het ontbreken van een verwijzing naar de Verordening Speelautomatenhal Zwolle 2018. Deze verschillen hebben significante implicaties voor de volledigheid en accuraatheid van de informatie voor ondernemers."
+  }
+}

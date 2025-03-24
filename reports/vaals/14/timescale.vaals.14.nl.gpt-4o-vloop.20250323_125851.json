@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "VAALS",
+      "contact": {
+        "phone": "(043) 306 85 68",
+        "email": "info@vaals.nl",
+        "website": "http://www.vaals.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 27,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.4,
+    "false_statements": [
+      {
+        "sentence": "Een parkeerkaartje kost € 0,10 per 5 minuten.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Vaals kost een parkeerkaartje € 0,20 per 6 minuten."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.vaals.nl/inwoners/parkeren/parkeervergunning",
+      "https://www.vaals.nl/inwoners/vergunningen/",
+      "https://www.vaals.nl/inwoners/vergunningen/omgevingsvergunning",
+      "https://www.vaals.nl/inwoners/vergunningen/omgevingswet/meest-aangevraagde-activiteiten",
+      "https://www.vaals.nl/inwoners/vergunningen/omgevingswet/omgevingsvergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Komt u in Vaals wonen en neemt u een auto mee vanuit het buitenland? Dan bent u verplicht een Nederlands kenteken voor dit voertuig aan te vragen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de verplichting om een Nederlands kenteken aan te vragen bij verhuizing vanuit het buitenland. Dit is belangrijke aanvullende informatie voor nieuwe inwoners.",
+          "source_urls": [
+            "https://www.vaals.nl/inwoners/parkeren/parkeervergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Tussentijds een parkeervergunning opzeggen of aanvragen? Dat kan door contact op te nemen met het Klantcontactcentrum",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de mogelijkheid tot tussentijdse opzegging van de parkeervergunning, wat een belangrijk recht is voor vergunninghouders.",
+          "source_urls": [
+            "https://www.vaals.nl/inwoners/parkeren/parkeervergunning"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Een parkeervergunning kost € 42,- per jaar",
+          "original_reference": "Een parkeervergunning kost €42,- per jaar.",
+          "note": "De kosten voor de parkeervergunning zijn identiek in beide bronnen.",
+          "source_urls": [
+            "https://www.vaals.nl/inwoners/parkeren/parkeervergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten twee belangrijke aanvullende bepalingen die niet in de originele tekst staan: de verplichting voor het aanvragen van een Nederlands kenteken bij verhuizing vanuit het buitenland en de mogelijkheid tot tussentijdse opzegging van de parkeervergunning. De overige informatie, waaronder de kosten en algemene voorwaarden, komt overeen met de originele tekst."
+  }
+}

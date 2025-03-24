@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "VAALS",
+      "contact": {
+        "phone": "(043) 306 85 68",
+        "email": "info@vaals.nl",
+        "website": "http://www.vaals.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "U kunt bellen naar 043-3068568 of een e-mail sturen naar info@vaals.nl.",
+        "status": "false",
+        "note": "Het telefoonnummer van de gemeente Vaals is 043-3068500, niet 043-3068568. Dit is te verifiëren op de officiële website van de gemeente Vaals."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.vaals.nl/inwoners/vergunningen/omgevingsvergunning",
+      "https://www.vaals.nl/inwoners/vergunningen/omgevingswet/meest-aangevraagde-activiteiten",
+      "https://www.vaals.nl/inwoners/vergunningen/",
+      "https://www.vaals.nl/inwoners/vergunningen/omgevingswet/omgevingsvergunning",
+      "https://www.vaals.nl/ondernemers/ondernemersplein"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Nieuw bij het (ver)bouwen van een bouwwerk is dat er een knip wordt gemaakt. Deze bestaat uit een (technische) bouwactiviteit en een omgevingsplanactiviteit bouwen (ruimtelijk of planologisch deel).",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt een belangrijke nieuwe procedure ('knip') voor bouwactiviteiten die niet genoemd wordt in de originele tekst. Dit is essentiële informatie voor aanvragers.",
+          "source_urls": [
+            "https://www.vaals.nl/inwoners/vergunningen/omgevingswet/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Stuur dan gerust een mail naar omgevingsvergunningen@vaals.nl",
+          "original_reference": "omgevingsvergunningen@vaals.nl",
+          "note": "Het e-mailadres wordt in de bron anders gepresenteerd (als algemeen contactpunt voor vragen), terwijl het in de originele tekst specifiek voor vooroverleg wordt genoemd.",
+          "source_urls": [
+            "https://www.vaals.nl/inwoners/vergunningen/omgevingswet/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De Omgevingswet is de wet die alles regelt voor de ruimte waarin we wonen, werken en ontspannen: de leefomgeving.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina's bevatten belangrijke contextuele informatie over de Omgevingswet die niet wordt genoemd in de originele tekst.",
+          "source_urls": [
+            "https://www.vaals.nl/inwoners/vergunningen/"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten enkele belangrijke verschillen met de originele tekst, met name wat betreft de nieuwe 'knip'-procedure voor bouwactiviteiten en de bredere context van de Omgevingswet. Ook is er een verschil in hoe het e-mailadres voor omgevingsvergunningen wordt gepresenteerd. Deze informatie is relevant voor mensen die een terrasvergunning willen aanvragen."
+  }
+}

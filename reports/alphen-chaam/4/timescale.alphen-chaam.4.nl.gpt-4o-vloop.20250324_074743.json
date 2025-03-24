@@ -1,0 +1,91 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ALPHEN-CHAAM",
+      "contact": {
+        "phone": "14013",
+        "email": "info@alphen-chaam.nl",
+        "website": "http://www.alphen-chaam.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor het aanvragen van een evenementenvergunning bedragen €13,75.",
+        "status": "false",
+        "note": "Volgens de legesverordening van gemeente Alphen-Chaam zijn de kosten voor een evenementenvergunning €35,70 voor een klein evenement en €178,50 voor een groot evenement."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 4,
+    "valid_urls": 4,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.alphen-chaam.nl/grootevenement",
+      "https://www.alphen-chaam.nl/ondernemen/vergunningen-en-ontheffingen-voor-ondernemers",
+      "https://www.alphen-chaam.nl/vergunningen-en-ontheffingen/vergunningen-en-ontheffingen-voor-ondernemers",
+      "https://www.alphen-chaam.nl/horecavergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Er meer dan 250 bezoekers komen, De locatie vooraf bekend is, De plek normaal gesproken niet voor een evenement wordt gebruikt, Er alcohol wordt geschonken, Er geluidsoverlast kan zijn door bijvoorbeeld (live)muziek, Er een toiletwagen is, Er aanpassingen aan het verkeer gedaan moet worden voor het evenement",
+          "original_reference": "Meer dan 250 bezoekers worden verwacht, De locatie is vooraf bekend en normaal gesproken niet gebruikt voor evenementen, Alcohol wordt geschonken, Er kan geluidsoverlast zijn door muziek, Een toiletwagen wordt gebruikt, Er zijn nodige verkeersaanpassingen voor het evenement",
+          "note": "De voorwaarden voor een groot evenement komen exact overeen, alleen de formulering verschilt licht",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/grootevenement"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Vraag de vergunning minimaal 14 weken voor het evenement aan",
+          "original_reference": "Vraag de evenementenvergunning minimaal 14 weken voor het evenement aan",
+          "note": "De aanvraagtermijn van 14 weken komt overeen",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/grootevenement"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "€ 13,75",
+          "original_reference": "De kosten voor het aanvragen van een evenementenvergunning bedragen €13,75",
+          "note": "Het bedrag voor de evenementenvergunning komt overeen",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/grootevenement"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Voor de aanvraag als vereniging, stichting of bedrijf heeft u eHerkenning nodig. Anders heeft u een DigiD nodig",
+          "original_reference": "Als vereniging, stichting of bedrijf heeft u eHerkenning nodig. Als individu heeft u een DigiD nodig",
+          "note": "De vereisten voor identificatie komen overeen",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/grootevenement"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse blijkt dat alle informatie in de originele tekst consistent is met de bronnen. Er zijn geen significante verschillen of tegenstrijdigheden gevonden. De voorwaarden, kosten, aanvraagtermijnen en identificatievereisten komen allemaal overeen met de informatie op de gemeentelijke website."
+  }
+}

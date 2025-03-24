@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "IJSSELSTEIN",
+      "contact": {
+        "phone": "14 030",
+        "email": "info@ijsselstein.nl",
+        "website": "http://www.ijsselstein.nl"
+      }
+    },
+    "service": {
+      "id": 20,
+      "name": "Vergunning voor seksbedrijf"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 27,
+    "true_sentences": 26,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.3,
+    "false_statements": [
+      {
+        "sentence": "De burgemeester neemt binnen 8 weken een besluit over uw aanvraag.",
+        "status": "false",
+        "note": "Volgens de APV van IJsselstein heeft de burgemeester 12 weken de tijd om een besluit te nemen over een aanvraag voor een exploitatievergunning voor een seksbedrijf, niet 8 weken zoals vermeld."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 3,
+    "invalid_urls": 2,
+    "accuracy_percentage": 60.0,
+    "valid_urls_list": [
+      "https://www.ijsselstein.nl/Ondernemers/Vergunningen",
+      "https://www.ijsselstein.nl/Ondernemers/Vergunningen/Alcoholwetvergunning",
+      "https://www.ijsselstein.nl/Ondernemers/Handig_om_te_weten/Bedrijf_beginnen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.ijsselstein.nl/Ondernemers/Vergunningen/Exploitatievergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.ijsselstein.nl/Ondernemers/Vergunningen/Kansspel_organiseren_loterij_prijsvraag_of_bingo",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Er wordt geen specifieke informatie over seksbedrijven gevonden op de geciteerde pagina's",
+          "original_reference": "Uitgebreide informatie over vergunningen voor seksbedrijven",
+          "note": "De geciteerde bronpagina's bevatten geen specifieke informatie over vergunningen voor seksbedrijven, terwijl de originele tekst hier uitgebreid over is. Dit kan betekenen dat deze informatie verouderd is of op een andere locatie staat.",
+          "source_urls": [
+            "https://www.ijsselstein.nl/Ondernemers/Vergunningen",
+            "https://www.ijsselstein.nl/Ondernemers/Vergunningen/Alcoholwetvergunning",
+            "https://www.ijsselstein.nl/Ondernemers/Handig_om_te_weten/Bedrijf_beginnen"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "De meeste horecabedrijven moeten tussen 01.00 en 06.00 uur sluiten",
+          "original_reference": "alle seksbedrijven tussen 1.00 en 6.00 uur gesloten moeten zijn",
+          "note": "De sluitingstijden komen overeen met de algemene horecaregelgeving in de gemeente",
+          "source_urls": [
+            "https://www.ijsselstein.nl/Ondernemers/Vergunningen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste bevinding is dat de specifieke informatie over vergunningen voor seksbedrijven niet terug te vinden is op de geciteerde gemeentelijke webpagina's. Alleen de algemene sluitingstijden komen overeen met de horecaregelgeving. Dit suggereert dat de informatie mogelijk verouderd is of dat deze specifieke informatie op andere, niet-geciteerde pagina's te vinden is."
+  }
+}

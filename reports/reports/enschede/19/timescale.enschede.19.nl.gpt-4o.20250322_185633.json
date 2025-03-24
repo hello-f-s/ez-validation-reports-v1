@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ENSCHEDE",
+      "contact": {
+        "phone": "14 053",
+        "email": "postbus20@enschede.nl",
+        "website": "http://www.enschede.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Voor de tweede gokautomaat: € 34 per jaar.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Enschede bedragen de kosten voor de tweede gokautomaat € 34,50 per jaar, niet € 34,00."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.enschede.nl/kinderopvang-starten-of-wijzigen",
+      "https://www.enschede.nl/vergunning-voor-kamerverhuur",
+      "https://www.enschede.nl/bingo-loterij-of-kansspel-organiseren",
+      "https://www.enschede.nl/alcoholvergunning-aanvragen",
+      "https://www.enschede.nl/vergunning-voor-gokautomaten"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://example.com",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Alleen cafés of restaurants mogen gokautomaten plaatsen, maximaal 2 in totaal",
+          "original_reference": "Alleen cafés of restaurants mogen gokautomaten plaatsen, met een maximum van 2 automaten in totaal.",
+          "note": "De informatie over het maximum aantal toegestane gokautomaten komt exact overeen",
+          "source_urls": [
+            "https://www.enschede.nl/vergunning-voor-gokautomaten"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Voor de 1e gokautomaat: € 56,50 per jaar. Voor de 2e gokautomaat: € 34 per jaar",
+          "original_reference": "Voor de eerste gokautomaat: € 56,50 per jaar. Voor de tweede gokautomaat: € 34 per jaar.",
+          "note": "De kosten voor beide gokautomaten komen exact overeen",
+          "source_urls": [
+            "https://www.enschede.nl/vergunning-voor-gokautomaten"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "De vergunning voor gokautomaten is maximaal 3 jaar geldig",
+          "original_reference": "De vergunning voor gokautomaten is maximaal 3 jaar geldig.",
+          "note": "De geldigheidsduur van de vergunning komt exact overeen",
+          "source_urls": [
+            "https://www.enschede.nl/vergunning-voor-gokautomaten"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse van de bronnen en de originele tekst zijn er geen inhoudelijke verschillen of tegenstrijdigheden gevonden. Alle informatie in de originele tekst komt overeen met de informatie op de officiële gemeentewebsite. De voorwaarden, kosten, geldigheidsduur en vereiste documenten zijn identiek."
+  }
+}

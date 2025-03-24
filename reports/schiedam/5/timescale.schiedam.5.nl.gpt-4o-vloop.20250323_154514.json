@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "SCHIEDAM",
+      "contact": {
+        "phone": "14 010",
+        "email": "contact@schiedam.nl",
+        "website": "http://www.schiedam.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 31,
+    "true_sentences": 30,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.8,
+    "false_statements": [
+      {
+        "sentence": "Nieuwe exploitatievergunning: € 555,35.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van de gemeente Schiedam is het tarief voor een nieuwe exploitatievergunning anders. Dit bedrag is verouderd."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://schiedam.nl/a-tot-z/exploitatievergunning",
+      "https://www.schiedam.nl/a-tot-z/exploitatievergunning",
+      "https://schiedam.nl/a-tot-z/horecabedrijf-starten",
+      "https://www.schiedam.nl/a-tot-z/horecabedrijf-starten",
+      "https://www.schiedam.nl/a-tot-z/wijzigingen-in-een-bestaand-horecabedrijf"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor vergunningsvrije horeca heeft u wel eerst toestemming nodig. Deze toestemming vraagt u aan met een meldingsformulier.",
+          "original_reference": "Voor vergunningsvrije horeca heeft u wel eerst toestemming nodig, aan te vragen met een meldingsformulier.",
+          "note": "De bronpagina benadrukt duidelijker dat er eerst toestemming nodig is via een aparte zin, terwijl de originele tekst dit combineert in één zin. Dit kan tot verwarring leiden over het proces.",
+          "source_urls": [
+            "https://schiedam.nl/a-tot-z/exploitatievergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Door onderhoud kan deze dienst tijdelijk niet met DigiD en/of eHerkenning worden aangevraagd.",
+          "original_reference": "U kunt de exploitatievergunning en/of drank- en horecavergunning digitaal aanvragen, met of zonder DigiD.",
+          "note": "Er is een tegenstrijdigheid in de aanvraagmogelijkheden. De originele tekst stelt dat digitaal aanvragen mogelijk is, terwijl de bronpagina aangeeft dat dit tijdelijk niet mogelijk is vanwege onderhoud.",
+          "source_urls": [
+            "https://www.schiedam.nl/a-tot-z/wijzigingen-in-een-bestaand-horecabedrijf"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Direct na het indienen van de aanvraag kan de leidinggevende al aan de slag. Wel moet u dan een ontvangstbevestiging van de gemeente kunnen tonen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over het direct kunnen starten van nieuwe leidinggevenden na aanvraag, mits men een ontvangstbevestiging kan tonen.",
+          "source_urls": [
+            "https://www.schiedam.nl/a-tot-z/wijzigingen-in-een-bestaand-horecabedrijf"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn enkele belangrijke verschillen gevonden tussen de originele tekst en de bronpagina's. De meest significante verschillen betreffen de tijdelijke onbeschikbaarheid van digitale aanvraag, verduidelijking van het toestemmingsproces voor vergunningsvrije horeca, en aanvullende informatie over het direct kunnen starten van nieuwe leidinggevenden. Deze verschillen kunnen impact hebben op de actuele dienstverlening en procedures voor horecaondernemers."
+  }
+}

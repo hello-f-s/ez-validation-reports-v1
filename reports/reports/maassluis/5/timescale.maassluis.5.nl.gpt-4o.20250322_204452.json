@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MAASSLUIS",
+      "contact": {
+        "phone": "14 010",
+        "email": "gemeente@maassluis.nl",
+        "website": "http://www.maassluis.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 27,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.4,
+    "false_statements": [
+      {
+        "sentence": "Exploitatievergunning voor onbepaalde tijd inclusief terras en vergunning ontheffing sluitingstijden: € 1.034,60",
+        "status": "false",
+        "note": "Dit bedrag is niet actueel volgens de meest recente legesverordening van gemeente Maassluis. De actuele tarieven zijn anders dan de genoemde bedragen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.maassluis.nl/exploitatievergunning-horecabedrijf",
+      "https://www.maassluis.nl/vergunningen-voor-horeca",
+      "https://www.maassluis.nl/openingstijden-horeca-aanpassen",
+      "https://www.maassluis.nl",
+      "https://www.maassluis.nl/alcoholwetvergunning",
+      "https://www.maassluis.nl/bedrijfspandbedrijventerrein-huren-of-kopen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De gemeente kan vragen om een Verklaring Omtrent het Gedrag (VOG)",
+          "original_reference": "De eigenaar of leidinggevende moet van onbesproken gedrag zijn en minimaal 21 jaar oud.",
+          "note": "De brontekst specificeert dat een VOG kan worden gevraagd, wat een concrete invulling is van 'onbesproken gedrag'. Dit is aanvullende belangrijke informatie die niet in de originele tekst staat.",
+          "source_urls": [
+            "https://www.maassluis.nl/exploitatievergunning-horecabedrijf"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een ontheffing sluitingstijden kost € 33,15",
+          "original_reference": "No matching information",
+          "note": "De originele tekst noemt alleen de kosten voor de exploitatievergunning, maar niet de aparte kosten voor een ontheffing sluitingstijden.",
+          "source_urls": [
+            "https://www.maassluis.nl/openingstijden-horeca-aanpassen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Met een ontheffing sluitingstijden kunt u 8 Verlaatjes per kalenderjaar melden",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over het aantal toegestane Verlaatjes per jaar, wat een belangrijke beperking is voor horecaondernemers.",
+          "source_urls": [
+            "https://www.maassluis.nl/openingstijden-horeca-aanpassen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten enkele belangrijke aanvullende details die niet in de originele tekst staan, waaronder de mogelijke VOG-verplichting, de specifieke kosten voor ontheffing sluitingstijden (€33,15) en de beperking tot 8 Verlaatjes per kalenderjaar. Deze informatie is relevant voor horecaondernemers maar ontbreekt in de originele tekst."
+  }
+}

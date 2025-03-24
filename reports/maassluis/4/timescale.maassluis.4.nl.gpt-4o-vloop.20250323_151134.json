@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MAASSLUIS",
+      "contact": {
+        "phone": "14 010",
+        "email": "gemeente@maassluis.nl",
+        "website": "http://www.maassluis.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "Het bezoekadres is Koningshoek 93.050, 3144 BA Maassluis.",
+        "status": "false",
+        "note": "Het correcte bezoekadres van de gemeente Maassluis is Koningshoek 93.050, 3144 BA Maassluis. Het adres moet zijn: Koningshoek 93.050, 3144 BA Maassluis."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.maassluis.nl/evenement-organiseren",
+      "https://www.maassluis.nl/geluidsoverlast-veroorzaken",
+      "https://www.maassluis.nl/exploitatievergunning-horecabedrijf",
+      "https://www.maassluis.nl/subsidie-aanvragen",
+      "https://www.maassluis.nl/alcohol-schenken-tijdens-evenement",
+      "https://www.maassluis.nl/"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U moet de ontheffing [voor alcohol schenken] uiterlijk 2 weken voor het evenement bij de gemeente aan te vragen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt geen specifieke termijn voor het aanvragen van een alcoholontheffing, terwijl de bron een deadline van 2 weken vooraf specificeert.",
+          "source_urls": [
+            "https://www.maassluis.nl/alcohol-schenken-tijdens-evenement"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een ontheffing artikel 35 Alcoholwet kost € 50,00.",
+          "original_reference": "De website van de gemeente Maassluis biedt geen expliciete informatie over de kosten voor het aanvragen van een evenementenvergunning.",
+          "note": "De bron specificeert concrete kosten voor de alcoholontheffing, terwijl de originele tekst aangeeft dat er geen informatie over kosten beschikbaar is.",
+          "source_urls": [
+            "https://www.maassluis.nl/alcohol-schenken-tijdens-evenement"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "e-mailadres: gemeente@maassluis.nl",
+          "original_reference": "vergunningen@maassluis.nl",
+          "note": "Er is een verschil in het opgegeven e-mailadres voor contact. De originele tekst vermeldt vergunningen@maassluis.nl, terwijl de bron gemeente@maassluis.nl aangeeft.",
+          "source_urls": [
+            "https://www.maassluis.nl/geluidsoverlast-veroorzaken"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen specifieke termijnen voor alcoholontheffing (2 weken vooraf), concrete kosten voor de alcoholontheffing (€50) die niet in de originele tekst staan vermeld, en verschillende e-mailadressen voor contact. Deze informatie maakt de voorwaarden en procedures specifieker dan in de originele tekst."
+  }
+}

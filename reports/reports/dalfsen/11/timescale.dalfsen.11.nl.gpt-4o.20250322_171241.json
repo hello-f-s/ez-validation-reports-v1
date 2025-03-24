@@ -1,0 +1,89 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DALFSEN",
+      "contact": {
+        "phone": "14 0529",
+        "email": "gemeente@dalfsen.nl",
+        "website": "http://www.dalfsen.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 20,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.2,
+    "false_statements": [
+      {
+        "sentence": "In veel gevallen is delegatie met de gemeente verstandig om verrassingen te voorkomen.",
+        "status": "false",
+        "note": "De gemeente Dalfsen adviseert vooroverleg in plaats van delegatie. Delegatie is geen correcte term in deze context en wordt niet gebruikt door de gemeente voor het vooraf afstemmen van vergunningsaanvragen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.dalfsen.nl/omgevingsvergunning",
+      "https://www.dalfsen.nl/omgevingsplan-aanpassen",
+      "https://www.dalfsen.nl/vergunning-zonnepaneel-of-zonnecollector",
+      "https://www.dalfsen.nl/milieu-vergunning-of-melding",
+      "https://www.dalfsen.nl/bedrijfsactiviteiten-wijzigen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.dalfsen.nl/vergunning-of-melding",
+        "reason": "INVALID: Error scraping https://www.dalfsen.nl/vergunning-of-melding: 404 Client Error: Not Found for url: https://www.dalfsen.nl/vergunning-of-melding"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Overleg vooraf met de gemeente over uw plannen. Dan komt u niet voor verrassingen te staan. Dit heet een vooroverleg.",
+          "original_reference": "In veel gevallen is delegatie met de gemeente verstandig om verrassingen te voorkomen.",
+          "note": "De bronpagina gebruikt de correcte term 'vooroverleg' in plaats van 'delegatie' en specificeert dit als formele stap in het proces.",
+          "source_urls": [
+            "https://www.dalfsen.nl/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u zonnepanelen op de grond wilt plaatsen, is er altijd een omgevingsvergunning nodig.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over grondgebonden zonnepanelen die altijd vergunningplichtig zijn.",
+          "source_urls": [
+            "https://www.dalfsen.nl/vergunning-zonnepaneel-of-zonnecollector"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u voor uw woning een omgevingsvergunning aanvraagt, hebt u uw DigiD nodig.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt alleen eHerkenning voor bedrijven, maar mist de DigiD-vereiste voor particulieren.",
+          "source_urls": [
+            "https://www.dalfsen.nl/vergunning-zonnepaneel-of-zonnecollector",
+            "https://www.dalfsen.nl/omgevingsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de terminologie rond vooroverleg, ontbrekende informatie over grondgebonden zonnepanelen en het ontbreken van DigiD als identificatiemiddel voor particulieren. De originele tekst mist enkele specifieke details die wel in de bronpagina's staan vermeld."
+  }
+}

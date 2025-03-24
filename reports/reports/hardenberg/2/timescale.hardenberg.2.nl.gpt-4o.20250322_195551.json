@@ -1,0 +1,71 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HARDENBERG",
+      "contact": {
+        "phone": "14 0523",
+        "email": "gemeente@hardenberg.nl",
+        "website": "http://www.hardenberg.nl"
+      }
+    },
+    "service": {
+      "id": 2,
+      "name": "Bord of spandoek plaatsen aan de openbare weg"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "Voor een conceptverzoek duurt de behandeling meestal 6 tot 8 weken.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Hardenberg duurt de behandeling van een conceptverzoek (vooroverleg) maximaal 4 weken, niet 6 tot 8 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 0,
+    "invalid_urls": 7,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.hardenberg.nl/evenementen/spandoeken",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://gemeente.hardenberg.nl/spandoeken",
+        "reason": "INVALID: Error scraping https://gemeente.hardenberg.nl/spandoeken: HTTPSConnectionPool(host='gemeente.hardenberg.nl', port=443): Max retries exceeded with url: /spandoeken (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x107ca4550>: Failed to resolve 'gemeente.hardenberg.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.hardenberg.nl/ondernemers/markten-winkels-en-horeca/terrasvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://gemeente.hardenberg.nl/reclame-maken",
+        "reason": "INVALID: Error scraping https://gemeente.hardenberg.nl/reclame-maken: HTTPSConnectionPool(host='gemeente.hardenberg.nl', port=443): Max retries exceeded with url: /reclame-maken (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x107b37c50>: Failed to resolve 'gemeente.hardenberg.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.hardenberg.nl/parkeren/veelgestelde-vragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.hardenberg.nl/ondernemers/reclame",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.hardenberg.nl/bouwen-en-verbouwen/omgevingsvergunning/overleggen-met-de-gemeente",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  }
+}

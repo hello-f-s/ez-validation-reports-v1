@@ -1,0 +1,78 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MEDEMBLIK",
+      "contact": {
+        "phone": "(0229) 85 60 00",
+        "email": "info@medemblik.nl",
+        "website": "http://www.medemblik.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 31,
+    "true_sentences": 30,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.8,
+    "false_statements": [
+      {
+        "sentence": "Het postadres is Postbus 45, 1687 ZG Wognum en het bezoekadres is Dick Ketlaan 21, 1687 CD Wognum.",
+        "status": "false",
+        "note": "Het correcte bezoekadres van de gemeente Medemblik is Dick Ketlaan 21, 1687 CD WOGNUM, maar het postadres is Postbus 45, 1670 AA MEDEMBLIK (niet 1687 ZG Wognum)."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.medemblik.nl/bouwen-en-verbouwen/omgevingswet-en-bouwvergunningen/omgevingsvergunning",
+      "https://www.medemblik.nl/afval-en-milieu/melding-milieu",
+      "https://www.medemblik.nl/bouwen-en-verbouwen/omgevingswet-en-bouwvergunningen/vooroverleg-omgevingsaanvraag",
+      "https://www.medemblik.nl/bouwen-en-verbouwen/omgevingswet-en-bouwvergunningen/monument-vergunning-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.medemblik.nl/bouwen-en-verbouwen/omgevingswet-en-bouwvergunningen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het vooroverleg wordt uitgevoerd in twee fasen: 1) Intaketafel waar de kansrijkheid wordt beoordeeld, 2) Omgevingstafel waar de haalbaarheid wordt gecontroleerd inclusief wet- en regelgeving en gevolgen voor de omgeving",
+          "original_reference": "Het vooroverleg wordt aangeraden om in een vroeg stadium advies te krijgen over uw plannen",
+          "note": "De originele tekst beschrijft het vooroverleg oppervlakkig, terwijl de bron een gedetailleerd tweefasenproces beschrijft met specifieke doelen per fase",
+          "source_urls": [
+            "https://www.medemblik.nl/bouwen-en-verbouwen/omgevingswet-en-bouwvergunningen/vooroverleg-omgevingsaanvraag"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor Rijksmonumenten geldt een procedure waarbij eerst een ontwerpbesluit wordt gemaakt waarop binnen 6 weken zienswijzen kunnen worden ingediend. Bij advies van de Rijksdienst voor Cultureel Erfgoed is de termijn 26 weken (verlengbaar met 6 weken)",
+          "original_reference": "Bij een eenvoudige aanvraag ontvangt u binnen 8 weken bericht, terwijl een uitgebreide aanvraag binnen 26 weken wordt behandeld",
+          "note": "De originele tekst maakt geen onderscheid in procedures voor Rijksmonumenten, die een specifieke procedure en termijn hebben inclusief mogelijkheid tot zienswijzen",
+          "source_urls": [
+            "https://www.medemblik.nl/bouwen-en-verbouwen/omgevingswet-en-bouwvergunningen/monument-vergunning-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de meer gedetailleerde beschrijving van het vooroverlegproces in twee concrete fasen en de specifieke procedures voor Rijksmonumenten die in de originele tekst ontbreken. De bronnen bieden meer specifieke informatie over deze processen en bijbehorende termijnen. De overige informatie in de originele tekst komt grotendeels overeen met de bronnen."
+  }
+}

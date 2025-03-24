@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HILVERSUM",
+      "contact": {
+        "phone": "14 035",
+        "email": "gemeente@hilversum.nl",
+        "website": "http://www.hilversum.nl"
+      }
+    },
+    "service": {
+      "id": 13,
+      "name": "Omzettingsvergunning voor kamerverhuur aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "Het verhuur van een deel van de woning is mogelijk, zoals bij een bed and breakfast, maar niet als het om vaste kamerverhuur gaat",
+        "status": "false",
+        "note": "Deze stelling is onjuist. In Hilversum is zowel bed and breakfast als vaste kamerverhuur mogelijk, mits er een omgevingsvergunning is aangevraagd en wordt voldaan aan de voorwaarden uit het bestemmingsplan en het gemeentelijk beleid."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://hilversum.nl/wonen/toeristische-woningverhuur",
+      "https://hilversum.nl/bouwen-verbouwen/omgevingswet/aanvraag-omgevingsvergunning-uitgelegd",
+      "https://hilversum.nl/bouwen-verbouwen/omgevingswet/omgevingsloket",
+      "https://hilversum.nl/bouwen-verbouwen",
+      "https://hilversum.nl/vergunningen/vergunningen-voor-bouwen-verbouwen/omgevingsvergunning-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://example.com",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bij een bed and breakfast wordt woonruimte toeristisch verhuurd, terwijl de hoofdbewoner in de woning verblijft. [...] Het mag niet in een bijgebouw (mogelijk kan een vergunning worden aangevraagd om hier ontheffing voor te vragen)",
+          "original_reference": "Het verhuur van een deel van de woning is mogelijk, zoals bij een bed and breakfast, maar niet als het om vaste kamerverhuur gaat",
+          "note": "De bronpagina geeft meer specifieke details over B&B verhuur, waaronder de voorwaarde dat het niet in een bijgebouw mag (tenzij met ontheffing) en dat de hoofdbewoner aanwezig moet zijn. Dit zijn belangrijke aanvullende voorwaarden die niet in de originele tekst staan.",
+          "source_urls": [
+            "https://hilversum.nl/wonen/toeristische-woningverhuur"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U logt in met uw DigiD of eHerkenning. Hoe meer vragen u invult, hoe kleiner de kans dat uw project vertraging oploopt. Let op: het aanvragen van een vergunning kost geld",
+          "original_reference": "Het digitaal aanvraagformulier, volledig ingevuld met uw DigiD of eHerkenning",
+          "note": "De bronpagina benadrukt het belang van het volledig invullen van alle vragen om vertraging te voorkomen. Dit is een belangrijke nuance die niet in de originele tekst wordt vermeld.",
+          "source_urls": [
+            "https://hilversum.nl/bouwen-verbouwen/omgevingswet/omgevingsloket"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Soms heeft u voor meerdere activiteiten tegelijk een omgevingsvergunning nodig, bijvoorbeeld voor verbouwen en een boom kappen. U kunt deze vergunningen in 1 keer aanvragen",
+          "original_reference": "No matching information",
+          "note": "De mogelijkheid om meerdere vergunningen tegelijk aan te vragen wordt niet genoemd in de originele tekst, maar is wel een belangrijke optie voor aanvragers.",
+          "source_urls": [
+            "https://hilversum.nl/vergunningen/vergunningen-voor-bouwen-verbouwen/omgevingsvergunning-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten belangrijke aanvullende informatie die niet in de originele tekst staat, vooral met betrekking tot specifieke voorwaarden voor B&B verhuur, het belang van volledig ingevulde aanvragen, en de mogelijkheid om meerdere vergunningen tegelijk aan te vragen. Deze informatie is essentieel voor een complete en accurate beschrijving van het vergunningsproces."
+  }
+}

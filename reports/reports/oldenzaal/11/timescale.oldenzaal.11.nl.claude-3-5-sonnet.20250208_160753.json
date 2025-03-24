@@ -1,0 +1,87 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OLDENZAAL",
+      "contact": {
+        "phone": "(0541) 58 81 11",
+        "email": "info@oldenzaal.nl",
+        "website": "http://www.oldenzaal.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 8,
+    "true_sentences": 7,
+    "false_sentences": 1,
+    "accuracy_percentage": 87.5,
+    "false_statements": [
+      {
+        "sentence": "Na de definitieve aanvraag is er een wachttijd van 6 weken voor bezwaren.",
+        "status": "false",
+        "note": "Dit is niet correct. Voor een reguliere procedure geldt een beslistermijn van 8 weken (niet 6) waarin de gemeente een besluit moet nemen. Deze termijn kan eenmalig met 6 weken worden verlengd. De bezwaartermijn van 6 weken start pas na het besluit."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.oldenzaal.nl/standplaatsvergunning",
+      "https://www.oldenzaal.nl/omgevingsvergunning",
+      "https://www.oldenzaal.nl/reclame",
+      "https://www.oldenzaal.nl/aanleggen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.oldenzaal.nl/bouwen-en-verbouwen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Gaat u (ver)bouwen, slopen, een boom kappen of een bedrijf beginnen? Dan heeft u hiervoor vaak een omgevingsvergunning nodig.",
+          "original_reference": "Als ondernemer heeft u over het algemeen een omgevingsvergunning nodig voor werkzaamheden zoals bouwen, verbouwen, slopen, aanleggen van wegen of aanleggen van reclame.",
+          "note": "De bronpagina noemt aanvullende activiteiten waarvoor een omgevingsvergunning nodig is (boom kappen, bedrijf beginnen) die niet in de originele tekst staan.",
+          "source_urls": [
+            "https://www.oldenzaal.nl/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Stap 1: Een (ver)bouwplan maken\nSchrijf de uitgangspunten van uw plan op:\nwaar wilt u uw plan uitvoeren?\nhoe groot is uw plan? Denk daarbij aan inhouds- en oppervlaktematen,\nhoe gaat u uw plan gebruiken?",
+          "original_reference": "Een gedetailleerd plan met waar en wat u precies wilt realiseren, inclusief maatvoering en gebruiksdoel",
+          "note": "De bronpagina geeft een meer gestructureerde en specifieke uitleg van de planvereisten met concrete aandachtspunten.",
+          "source_urls": [
+            "https://www.oldenzaal.nl/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Om te kunnen bepalen of u voor de werkzaamheden een omgevingsvergunning voor de activiteit 'uitvoeren van werk of werkzaamheden' nodig heeft, moet u het bestemmingsplan raadplegen.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt de belangrijke stap van het raadplegen van het bestemmingsplan, wat niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.oldenzaal.nl/aanleggen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten enkele belangrijke aanvullingen op de originele tekst, waaronder extra activiteiten waarvoor een omgevingsvergunning nodig is, meer gedetailleerde planvereisten en de noodzaak om het bestemmingsplan te raadplegen. Deze informatie is essentieel voor een complete en correcte aanvraagprocedure."
+  }
+}

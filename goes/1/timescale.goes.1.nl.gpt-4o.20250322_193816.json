@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "GOES",
+      "contact": {
+        "phone": "14 0113",
+        "email": "stadskantoor@goes.nl",
+        "website": "http://www.goes.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "De houder/leidinggevende is minimaal 21 jaar en van onbesproken gedrag.",
+        "status": "false",
+        "note": "De minimumleeftijd voor een leidinggevende van een horecabedrijf met alcoholvergunning is 18 jaar, niet 21 jaar, volgens de huidige Alcoholwet en de richtlijnen van de gemeente Goes."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.goes.nl/exploitatievergunning-horeca",
+      "https://www.goes.nl",
+      "https://www.goes.nl/standplaats-aanvragen",
+      "https://www.goes.nl/alcohol-schenken-tijdens-evenementen",
+      "https://www.goes.nl/milieu-omgevingsvergunning-melding",
+      "https://www.goes.nl/alcoholvergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u een kantine, café, restaurant, bedrijfsrestaurant of slijterij wilt starten of overnemen. Als u een bestaande horecazaak van binnen verbouwt. Als de ondernemingsvorm verandert, bijvoorbeeld van een eenmanszaak in een BV. Als er een andere leidinggevende of eigenaar komt.",
+          "original_reference": "Mocht er iets in uw onderneming wijzigen, zoals de leidinggevende, ondernemingsvorm of de inrichting, neem dan contact op met de gemeente",
+          "note": "De bronpagina specificeert duidelijk WANNEER een vergunning moet worden aangevraagd, terwijl de originele tekst alleen algemeen verwijst naar wijzigingen. De bron is specifieker en noemt ook extra situaties zoals verbouwing en overname.",
+          "source_urls": [
+            "https://www.goes.nl/alcoholvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Deze ontheffing geldt alleen voor zwak alcoholische dranken (o.a. bier en wijn). Sterke drank mag alleen in horecazaken worden geschonken.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst maakt geen onderscheid tussen zwak-alcoholische dranken en sterke drank, terwijl dit een belangrijke beperking is die wel in de bronnen wordt genoemd.",
+          "source_urls": [
+            "https://www.goes.nl/alcohol-schenken-tijdens-evenementen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "de verantwoordelijke persoon van het alcohol schenken over de Verklaring Sociale Hygiëne beschikt",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de vereiste Verklaring Sociale Hygiëne voor de verantwoordelijke persoon, wat een belangrijke voorwaarde is.",
+          "source_urls": [
+            "https://www.goes.nl/alcohol-schenken-tijdens-evenementen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten belangrijke aanvullende informatie die niet in de originele tekst staat. Met name de specifieke situaties wanneer een vergunning nodig is, het onderscheid tussen zwak-alcoholische en sterke drank, en de vereiste Verklaring Sociale Hygiëne zijn belangrijke toevoegingen. Deze informatie is essentieel voor ondernemers die een alcoholvergunning willen aanvragen."
+  }
+}

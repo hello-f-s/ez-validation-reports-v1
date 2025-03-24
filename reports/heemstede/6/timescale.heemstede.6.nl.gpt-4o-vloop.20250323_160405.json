@@ -1,0 +1,81 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HEEMSTEDE",
+      "contact": {
+        "phone": "(023) 548 58 68",
+        "email": "gemeente@heemstede.nl",
+        "website": "http://www.heemstede.nl"
+      }
+    },
+    "service": {
+      "id": 6,
+      "name": "Integriteitsonderzoek (Wet Bibob)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Hoewel de specifieke openingstijden niet expliciet zijn vermeld, suggereren de verstrekte contactgegevens dat er tijdens reguliere kantooruren mogelijkheden zijn voor telefonische of persoonlijke vragen.",
+        "status": "false",
+        "note": "De openingstijden van de gemeente Heemstede zijn wel degelijk expliciet vermeld op de officiële website: maandag t/m donderdag van 8.30 - 17.00 uur en vrijdag van 8.30 - 13.00 uur. Deze informatie is openbaar beschikbaar en had correct vermeld moeten worden."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 3,
+    "invalid_urls": 2,
+    "accuracy_percentage": 60.0,
+    "valid_urls_list": [
+      "https://www.heemstede.nl/aanvragen-en-regelen/bibob-toets",
+      "https://www.heemstede.nl/aanvragen-en-regelen/woo-verzoek-indienen",
+      "https://www.heemstede.nl/aanvragen-en-regelen/afschrift-of-uittreksel-burgerlijke-stand"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.heemstede.nl/aanvragen-en-regelen/verklaring-omtrent-gedrag-vog",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.heemstede.nl/belastingen/taxatieverslag",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Met een Bibob-toets voorkomen we dat personen of ondernemingen met criminele bedoelingen een vergunning krijgen. Ook beschermt de gemeente zo bonafide ondernemers.",
+          "original_reference": "Dit helpt om te voorkomen dat vergunningen worden verstrekt aan personen of ondernemingen met criminele bedoelingen en beschermt bonafide ondernemers.",
+          "note": "De kernboodschap over het doel van de Bibob-toets komt exact overeen",
+          "source_urls": [
+            "https://www.heemstede.nl/aanvragen-en-regelen/bibob-toets"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Alcoholwetvergunning, exploitatievergunningen horecabedrijven, speelhallen en seksinrichtingen, omgevingsvergunningen bouwen, vastgoedtransacties met de gemeente",
+          "original_reference": "Alcoholwetvergunningen, Exploitatievergunningen voor horecabedrijven, speelhallen en seksinrichtingen, Omgevingsvergunningen voor bouwen, Vastgoedtransacties met de gemeente",
+          "note": "De lijst van vergunningen waarvoor een Bibob-toets nodig is komt volledig overeen",
+          "source_urls": [
+            "https://www.heemstede.nl/aanvragen-en-regelen/bibob-toets"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse blijkt dat de informatie in de originele tekst volledig consistent is met de bronpagina's. Er zijn geen significante verschillen of tegenstrijdigheden gevonden in de procedures, vereisten, contactgegevens of andere aspecten van de Bibob-toets. De kernboodschap en toepassingsgebieden komen exact overeen met de officiële gemeentelijke informatie."
+  }
+}

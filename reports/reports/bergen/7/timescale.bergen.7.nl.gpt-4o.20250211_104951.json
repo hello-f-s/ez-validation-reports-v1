@@ -1,0 +1,67 @@
+{
+  "context": {
+    "municipality": {
+      "name": "BERGEN",
+      "contact": {}
+    },
+    "service": {
+      "id": 7,
+      "name": "Kabels en leidingen aanleggen en beheren"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "U moet een melding doen bij het Kadaster voordat u begint met het aanleggen van kabels en leidingen.",
+        "status": "false",
+        "note": "De melding moet worden gedaan bij de gemeente Bergen, niet bij het Kadaster. Het Kadaster/KLIC is alleen voor het opvragen van informatie over bestaande kabels en leidingen. Voor het leggen van nieuwe kabels en leidingen is een vergunning of instemming van de gemeente vereist."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 0,
+    "invalid_urls": 7,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.kadaster.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.bergen.nl/kabels-en-leidingen-leggen-in-openbare-grond",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.bergen.nl/vergunningen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.gemeente.bergen.nl/",
+        "reason": "INVALID: Error scraping https://www.gemeente.bergen.nl/: HTTPSConnectionPool(host='www.gemeente.bergen.nl', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x108242350>: Failed to resolve 'www.gemeente.bergen.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.bergen.nl/bouwen-en-verbouwen-inwoners",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.bergen.nl/bodem-en-grond",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.bergen.nl/bouwen-en-verbouwen-ondernemers",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  }
+}

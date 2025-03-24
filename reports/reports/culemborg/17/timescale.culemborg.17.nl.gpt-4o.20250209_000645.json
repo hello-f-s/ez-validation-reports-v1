@@ -1,0 +1,97 @@
+{
+  "context": {
+    "municipality": {
+      "name": "CULEMBORG",
+      "contact": {
+        "phone": "(0345) 47 77 00",
+        "email": "info@culemborg.nl",
+        "website": "http://www.culemborg.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "Houten vlonders zijn verboden.",
+        "status": "false",
+        "note": "Volgens de officiële voorschriften van gemeente Culemborg zijn houten vlonders niet categorisch verboden. Ze zijn toegestaan mits ze voldoen aan de veiligheidsvoorschriften en er vooraf toestemming voor is verkregen van de gemeente."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.culemborg.nl/omgevingsvergunning",
+      "https://www.culemborg.nl/standplaatsvergunning",
+      "https://www.culemborg.nl/terrasvergunning",
+      "https://www.culemborg.nl/informatieverzoek-en-woo-verzoek",
+      "https://www.culemborg.nl/straatartiest"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.culemborg.nl)",
+        "reason": "INVALID: Error scraping https://www.culemborg.nl): HTTPSConnectionPool(host='www.culemborg.nl)', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x107a8a490>: Failed to resolve 'www.culemborg.nl)' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 4,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Menuborden mogen, mits deze geen overlast veroorzaken.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over menuborden, terwijl de bron expliciet vermeldt dat deze zijn toegestaan onder voorwaarden.",
+          "source_urls": [
+            "https://www.culemborg.nl/terrasvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Buiten het terrasseizoen moet al het meubilair van de openbare weg.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niets over het verwijderen van meubilair buiten het terrasseizoen.",
+          "source_urls": [
+            "https://www.culemborg.nl/terrasvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor terrasafscheidingen moet u een verzoek indienen. Mogen niemand hinderen. Maximaal 1.50 meter hoog zijn. Verplaatsbaar.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen specifieke regels voor terrasafscheidingen, terwijl de bron hier duidelijke voorwaarden voor stelt.",
+          "source_urls": [
+            "https://www.culemborg.nl/terrasvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het terras mag open tijdens openingstijden. Of tijdens de tijden van een evenement, mits dit kan. Op zondag mag een terras open vanaf 10.00 uur. Voor terrassen bij kerken geldt 13.00 uur.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over openingstijden van terrassen, terwijl de bron hier specifieke regels voor heeft, vooral voor zondagen en terrassen bij kerken.",
+          "source_urls": [
+            "https://www.culemborg.nl/terrasvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina bevat verschillende belangrijke aanvullende voorwaarden die niet in de originele tekst staan, waaronder regels over menuborden, seizoensgebonden verwijdering van meubilair, specifieke eisen voor terrasafscheidingen en gedetailleerde openingstijden. Deze informatie is essentieel voor terrashouders en zou in de originele tekst opgenomen moeten worden voor een volledig beeld van de voorwaarden."
+  }
+}

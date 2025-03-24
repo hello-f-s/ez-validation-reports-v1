@@ -1,0 +1,104 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OPMEER",
+      "contact": {
+        "phone": "(0226) 36 33 33",
+        "email": "gemeente@opmeer.nl",
+        "website": "http://www.opmeer.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "Dien uw aanvraag minimaal 8 weken voordat u start met de werkzaamheden in. Bij uitgebreide aanvragen minstens 6 maanden van tevoren.",
+        "status": "false",
+        "note": "Volgens de gemeente Opmeer moet een reguliere aanvraag minimaal 3 weken voor aanvang van de werkzaamheden worden ingediend, niet 8 weken. Voor uitgebreide aanvragen geldt geen vaste termijn van 6 maanden."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 10,
+    "valid_urls": 5,
+    "invalid_urls": 5,
+    "accuracy_percentage": 50.0,
+    "valid_urls_list": [
+      "https://www.opmeer.nl/milieu-vergunning-of-melding",
+      "https://www.opmeer.nl/omgevingsvergunning-en-omgevingsloket",
+      "https://www.opmeer.nl",
+      "https://www.opmeer.nl/privacy-omgevingswet",
+      "https://www.opmeer.nl/omgevingsvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://omgevingswet.overheid.nl/home\">Omgevingsloket",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://omgevingsloket.overheid.nl/",
+        "reason": "INVALID: Error scraping https://omgevingsloket.overheid.nl/: HTTPSConnectionPool(host='omgevingsloket.overheid.nl', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x105c6a490>: Failed to resolve 'omgevingsloket.overheid.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://omgevingswet.overheid.nl/home",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://omgevingsloket.overheid.nl/\">Omgevingsloket</a>,",
+        "reason": "INVALID: Error scraping https://omgevingsloket.overheid.nl/\">Omgevingsloket</a>,: HTTPSConnectionPool(host='omgevingsloket.overheid.nl', port=443): Max retries exceeded with url: /%22%3EOmgevingsloket%3C/a%3E, (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x105c6bb10>: Failed to resolve 'omgevingsloket.overheid.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.opmeer.nl/voorwerp-plaatsen-op-of-aan-de-weg",
+        "reason": "INVALID: Error scraping https://www.opmeer.nl/voorwerp-plaatsen-op-of-aan-de-weg: 404 Client Error: Not Found for url: https://www.opmeer.nl/voorwerp-plaatsen-op-of-aan-de-weg"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Heeft u een idee, plan of initiatief dat zorgt voor een verandering in de leefomgeving? Dan is het handig om vooraf met uw buren (en andere belanghebbenden) in gesprek te gaan over uw plannen. Neem de reacties vanuit uw gesprek(ken) op in uw vergunningsaanvraag.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina benadrukt het belang van overleg met buren en belanghebbenden en het opnemen van hun reacties in de aanvraag. Deze belangrijke stap ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.opmeer.nl/omgevingsvergunning-en-omgevingsloket"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Aanvragen die voor 1 januari 2024 via het OLO zijn ingediend, kunnen nog een half jaar - tot 1 juli 2024 - via het OLO worden aangevuld.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat specifieke overgangsregelingen voor aanvragen van vóór 2024, wat ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.opmeer.nl/omgevingsvergunning-en-omgevingsloket"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u voor uw woning een omgevingsvergunning aanvraagt, hebt u uw DigiD nodig.",
+          "original_reference": "eHerkenning met minimaal betrouwbaarheidsniveau 2.",
+          "note": "De bronpagina vermeldt DigiD voor woningaanvragen, terwijl de originele tekst alleen eHerkenning noemt. Dit is een belangrijk verschil in authenticatiemethode.",
+          "source_urls": [
+            "https://www.opmeer.nl/omgevingsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de authenticatiemethode (DigiD vs eHerkenning), het ontbreken van informatie over burenoverleg en de overgangsregeling voor oude aanvragen in de originele tekst. Deze verschillen zijn significant voor de volledigheid en accuraatheid van de informatie voor aanvragers."
+  }
+}

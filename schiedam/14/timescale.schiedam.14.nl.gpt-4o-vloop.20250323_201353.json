@@ -1,0 +1,81 @@
+{
+  "context": {
+    "municipality": {
+      "name": "SCHIEDAM",
+      "contact": {
+        "phone": "14 010",
+        "email": "contact@schiedam.nl",
+        "website": "http://www.schiedam.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 31,
+    "true_sentences": 30,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.8,
+    "false_statements": [
+      {
+        "sentence": "Bedrijfsvergunning: € 425,70 (januari 2025 tot en met december 2025), geldig gedurende de gehele tijd betaald parkeren.",
+        "status": "false",
+        "note": "Het huidige tarief voor een bedrijfsvergunning in Schiedam is € 425,70 voor 2024, niet 2025. De gemeente heeft de tarieven voor 2025 nog niet officieel vastgesteld."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 3,
+    "invalid_urls": 2,
+    "accuracy_percentage": 60.0,
+    "valid_urls_list": [
+      "https://schiedam.nl/a-tot-z/parkeren-bij-autobedrijven",
+      "https://www.schiedam.nl/a-tot-z/parkeren-bij-autobedrijven",
+      "https://www.schiedam.nl/a-tot-z/parkeervergunning-bewoners"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.schiedam.nl/a-tot-z/parkeervergunning-bedrijven-en-zorginstellingen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://schiedam.nl/a-tot-z/parkeervergunning-bedrijven-en-zorginstellingen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het is alleen mogelijk voor autobedrijven om een aanvraag voor het parkeren van auto's op de openbare weg te doen als: Geen parkeerbeperkingen gelden, Het parkeren geen gevaar oplevert voor de verkeersveiligheid, Het parkeren geen overlast biedt aan de omgeving, Geen andere alternatieven voorhanden zijn",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat specifieke voorwaarden voor autobedrijven die niet genoemd worden in de originele tekst. Dit zijn aanvullende, belangrijke voorwaarden voor een specifieke doelgroep.",
+          "source_urls": [
+            "https://schiedam.nl/a-tot-z/parkeren-bij-autobedrijven"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Toezicht en Handhaving (voorheen de Lichtblauwe Brigade)",
+          "original_reference": "Toezicht en Handhaving, ook bekend als de Licht Blauwe Brigade",
+          "note": "Er is een klein maar belangrijk verschil in de beschrijving van de handhavingsinstantie. De bronpagina geeft aan dat 'Lichtblauwe Brigade' een oude benaming is, terwijl de originele tekst suggereert dat beide namen nog actief gebruikt worden.",
+          "source_urls": [
+            "https://www.schiedam.nl/a-tot-z/parkeervergunning-bewoners"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont twee belangrijke verschillen: (1) Er zijn specifieke aanvullende voorwaarden voor autobedrijven die niet in de originele tekst worden genoemd, en (2) er is een verschil in de beschrijving van de handhavingsinstantie. De bronpagina's bevatten verder weinig overlappende informatie met de originele tekst, waardoor een volledige vergelijking beperkt mogelijk is."
+  }
+}

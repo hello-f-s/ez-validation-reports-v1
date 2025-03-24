@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HOUTEN",
+      "contact": {
+        "phone": "(030) 639 26 11",
+        "email": "gemeentehuis@houten.nl",
+        "website": "http://www.houten.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "De procedure voor de aanvraag van een omgevingsvergunning neemt in principe acht weken in beslag.",
+        "status": "false",
+        "note": "Volgens de gemeente Houten hanteert men voor reguliere aanvragen een beslistermijn van maximaal 8 weken, maar voor complexere aanvragen geldt een uitgebreide procedure met een termijn van 26 weken. De zin suggereert dat 8 weken de standaard is voor alle aanvragen, wat niet correct is."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.houten.nl/wonen-en-leefomgeving/bouw-en-verbouw/omgevingsvergunning/aanvraagprocedure-omgevingsvergunning",
+      "https://www.houten.nl/wonen-en-leefomgeving/bouw-en-verbouw/omgevingsvergunning",
+      "https://www.houten.nl/wonen-en-leefomgeving/omgevingswet",
+      "https://www.houten.nl/groen-water-en-duurzaamheid/milieu-omgevingsinformatie",
+      "https://www.houten.nl/wonen-en-leefomgeving/bouw-en-verbouw/omgevingsvergunning/principeverzoek/-ruimtelijk-initiatief"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Uw aanvraag wordt vervolgens gepubliceerd in het Houtens Nieuws.",
+          "original_reference": "het besluit wordt gepubliceerd in Houten Actueel en op www.houten.nl",
+          "note": "Er is een verschil in de publicatiekanalen: de bron noemt 'Houtens Nieuws' terwijl de originele tekst 'Houten Actueel' vermeldt.",
+          "source_urls": [
+            "https://www.houten.nl/wonen-en-leefomgeving/bouw-en-verbouw/omgevingsvergunning/aanvraagprocedure-omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Ook wordt uw plan getoetst aan de technische eisen van het Bouwbesluit.",
+          "original_reference": "No matching information",
+          "note": "De bron vermeldt specifiek toetsing aan het Bouwbesluit, wat niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.houten.nl/wonen-en-leefomgeving/bouw-en-verbouw/omgevingsvergunning/aanvraagprocedure-omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Die procedure gaat bovendien van 26 weken naar 8 weken.",
+          "original_reference": "De procedure voor de aanvraag van een omgevingsvergunning neemt in principe acht weken in beslag. Deze termijn kan in sommige gevallen verlengd worden naar 26 weken.",
+          "note": "De bron suggereert een algemene verkorting van 26 naar 8 weken, terwijl de originele tekst aangeeft dat 26 weken nog steeds mogelijk is als verlengingstermijn.",
+          "source_urls": [
+            "https://www.houten.nl/wonen-en-leefomgeving/omgevingswet"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de publicatiekanalen voor aanvragen (Houtens Nieuws vs. Houten Actueel), een extra toetsingscriterium (Bouwbesluit) dat niet in de originele tekst staat, en een onduidelijkheid over de proceduretijden. De bronnen zijn niet volledig consistent in hun beschrijving van de termijnen, waarbij de Omgevingswet-pagina een algemene verkorting suggereert terwijl de originele tekst nog steeds een mogelijke verlenging naar 26 weken vermeldt."
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LANDSMEER",
+      "contact": {
+        "phone": "(020) 487 71 11",
+        "email": "gemeente@Landsmeer.nl",
+        "website": "http://www.landsmeer.nl"
+      }
+    },
+    "service": {
+      "id": 13,
+      "name": "Omzettingsvergunning voor kamerverhuur aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 27,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.4,
+    "false_statements": [
+      {
+        "sentence": "Telefoon: 020 - 48 77 111 of 020 - 48 26 091",
+        "status": "false",
+        "note": "Het correcte telefoonnummer van gemeente Landsmeer is 020 487 7111. Het alternatieve nummer 020 - 48 26 091 is niet correct volgens de officiële website van de gemeente Landsmeer."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.landsmeer.nl/inwoners/bouwen_en_verbouwen/meer_onderwerpen/omgevingsvergunning_aanvragen",
+      "https://www.landsmeer.nl/ondernemers/vergunningen/horecabedrijf_beginnen",
+      "https://www.landsmeer.nl/ondernemers/vergunningen/standplaats_vergunning_aanvragen",
+      "https://www.landsmeer.nl/inwoners/bouwen_en_verbouwen/omgevingsplan/afwijken_van_het_omgevingsplan",
+      "https://www.landsmeer.nl/ondernemers/vergunningen/uitstalling_plaatsen_bij_een_bedrijf"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u een vergunning nodig heeft, vraagt u die aan via Omgevingsloket online. Doe dit minimaal 8 weken voordat u wilt starten met de werkzaamheden.",
+          "original_reference": "Dien de aanvraag in minimaal 8 weken voordat u wilt starten met de verhuuractiviteiten.",
+          "note": "De originele tekst specificeert 'verhuuractiviteiten' terwijl de brontekst algemener spreekt over 'werkzaamheden'. Dit is een belangrijk verschil in specificiteit.",
+          "source_urls": [
+            "https://www.landsmeer.nl/inwoners/bouwen_en_verbouwen/meer_onderwerpen/omgevingsvergunning_aanvragen"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Het bestemmingsplan kunt u inzien op de ruimtelijkeplannen.nl. In de voorschriften/regels van het bestemmingsplan ziet u wat er op uw locatie toegestaan is.",
+          "original_reference": "U kunt het bestemmingsplan inzien op ruimtelijkeplannen.nl om te controleren wat er op uw locatie toegestaan is.",
+          "note": "De informatie over het raadplegen van het bestemmingsplan komt overeen in beide teksten.",
+          "source_urls": [
+            "https://www.landsmeer.nl/inwoners/bouwen_en_verbouwen/meer_onderwerpen/omgevingsvergunning_aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De leges (kosten) bestaan uit een percentage van de bouwsom inclusief BTW. De hoogte wordt elk jaar opnieuw vastgesteld.",
+          "original_reference": "Leges voor een omgevingsvergunning zijn een percentage van de bouwsom inclusief BTW, vastgesteld door de gemeente en worden jaarlijks herzien.",
+          "note": "De brontekst is beknopter en minder specifiek over wie de leges vaststelt (de gemeente wordt niet expliciet genoemd).",
+          "source_urls": [
+            "https://www.landsmeer.nl/inwoners/bouwen_en_verbouwen/meer_onderwerpen/omgevingsvergunning_aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont enkele kleine maar belangrijke verschillen in specificiteit en formulering tussen de originele tekst en de bronnen. De belangrijkste verschillen betreffen de beschrijving van de activiteiten waarvoor de vergunning wordt aangevraagd en de beschrijving van de legeskosten. De kernprocessen en termijnen zijn grotendeels consistent tussen beide versies."
+  }
+}

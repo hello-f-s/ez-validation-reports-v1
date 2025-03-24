@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MEDEMBLIK",
+      "contact": {
+        "phone": "(0229) 85 60 00",
+        "email": "info@medemblik.nl",
+        "website": "http://www.medemblik.nl"
+      }
+    },
+    "service": {
+      "id": 10,
+      "name": "Nachtregister bijhouden"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "Werkelijke overnachtingen: € 2,30 per persoon per nacht.",
+        "status": "false",
+        "note": "Het huidige tarief voor werkelijke overnachtingen in gemeente Medemblik is € 2,35 per persoon per nacht volgens de officiële website van gemeente Medemblik voor 2024."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.medemblik.nl/belastingen-en-woz/verblijfsbelasting",
+      "https://www.medemblik.nl/burgerzaken/uittreksels-en-aktes/verklaring-omtrent-het-gedrag-vog",
+      "https://www.medemblik.nl/over-gemeente-medemblik/algemene-plaatselijke-verordening-apv/regels-in-medemblik",
+      "https://www.medemblik.nl/vergunningen/alcohol-en-horeca/ontheffing-sluitingstijden-horeca-aanvragen",
+      "https://www.medemblik.nl/vergunningen/alcohol-en-horeca/alcoholwetvergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "€ 2,30 per persoon per nacht, Forfaitair tarief op basis van maximaal 3 slaapplaatsen € 345,42, Forfaitair tarief op basis van 3 slaapplaatsen of meer € 1.074,64",
+          "original_reference": "Werkelijke overnachtingen: € 2,30 per persoon per nacht. Forfaitair tarief op basis van maximaal 3 slaapplaatsen: € 345,42. Forfaitair tarief op basis van 3 slaapplaatsen of meer: € 1.074,64.",
+          "note": "De tarieven voor 2025 komen exact overeen met de originele inhoud",
+          "source_urls": [
+            "https://www.medemblik.nl/belastingen-en-woz/verblijfsbelasting"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "U betaalt verblijfsbelasting als u tegen vergoeding, in welke vorm dan ook, overnachtingen aanbiedt voor personen die niet zijn ingeschreven in de Basisregistratie Personen bij gemeente Medemblik",
+          "original_reference": "Als ondernemer moet u verblijfsbelasting betalen wanneer u tegen vergoeding overnachtingen aanbiedt voor personen die niet zijn ingeschreven in de Basisregistratie Personen bij gemeente Medemblik",
+          "note": "De basisvoorwaarden voor verblijfsbelasting zijn identiek",
+          "source_urls": [
+            "https://www.medemblik.nl/belastingen-en-woz/verblijfsbelasting"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Extra informatie: Gebruikt u de vakantiewoning alleen voor uzelf of voor uw gezin? U vindt hierover meer informatie op de pagina forensenbelasting.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke aanvullende informatie over forensenbelasting voor eigen gebruik van vakantiewoningen",
+          "source_urls": [
+            "https://www.medemblik.nl/belastingen-en-woz/verblijfsbelasting"
+          ]
+        }
+      ]
+    },
+    "summary": "De meeste informatie in de originele tekst komt overeen met de bronnen. Er is één belangrijk verschil gevonden: de originele tekst mist informatie over forensenbelasting voor eigen gebruik van vakantiewoningen. De tarieven en basisvoorwaarden zijn consistent met de bronnen."
+  }
+}

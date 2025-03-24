@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "APELDOORN",
+      "contact": {
+        "phone": "14 055",
+        "email": "gemeente@apeldoorn.nl",
+        "website": "http://www.apeldoorn.nl"
+      }
+    },
+    "service": {
+      "id": 2,
+      "name": "Bord of spandoek plaatsen aan de openbare weg"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 13,
+    "false_sentences": 2,
+    "accuracy_percentage": 86.7,
+    "false_statements": [
+      {
+        "sentence": "U kunt een uitstallingsvergunning direct online aanvragen via de gemeentelijke website.",
+        "status": "false",
+        "note": "Een uitstallingsvergunning kan niet direct online worden aangevraagd bij de gemeente Apeldoorn. De aanvraag moet worden gedaan via een formulier dat eerst moet worden gedownload en ingevuld."
+      },
+      {
+        "sentence": "De gemeente behandelt uw aanvraag voor een uitstallingsvergunning binnen 8 weken.",
+        "status": "false",
+        "note": "De gemeente Apeldoorn hanteert een behandeltermijn van maximaal 6 weken voor een uitstallingsvergunning, niet 8 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 2,
+    "invalid_urls": 5,
+    "accuracy_percentage": 28.6,
+    "valid_urls_list": [
+      "https://www.apeldoorn.nl/wonen-en-leven/wonen-en-uw-buurt/woningbouwkavels/plaatsen-van-voorwerpen-en-of-bouw-materialen-in-de-openbare-ruimte",
+      "https://www.apeldoorn.nl/wonen-en-leven/bouwen/omgevingsvergunningen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.apeldoorn.nl/spandoekvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.apeldoorn.nl/wonen-en-leven/sport-ontspanning-en-cultuur/ontheffingen-en-vergunningen/spandoekvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.apeldoorn.nl/werken-en-leren/ondernemen/ontheffingen-en-vergunningen/vergunning-uitstalling",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.apeldoorn.nl/uitstallingsvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.apeldoorn.nl/werken-en-leren/ondernemen/ontheffingen-en-vergunningen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Of u nou gaat bouwen, verbouwen, aanbouwen of uw tuin op de schop neemt. In veel gevallen maakt u gebruik van de openbare ruimte, oftewel gemeentegrond. Denk bijvoorbeeld aan een puincontainer voor uw huis op de straat of bouwmaterialen die op de stoep worden gezet bij aflevering. Dit mag niet zomaar. In deze en in veel meer gevallen heeft u toestemming van gemeente Apeldoorn nodig.",
+          "original_reference": "Voor spandoeken die langs of over de weg willen worden opgehangen, is een spandoekvergunning nodig. Voor uitstallingsobjecten, zoals reclameborden, is een uitstallingsvergunning vereist.",
+          "note": "De bronpagina's bevatten bredere informatie over het gebruik van openbare ruimte, inclusief bouwmaterialen en containers, terwijl de originele tekst zich beperkt tot spandoeken en reclameborden.",
+          "source_urls": [
+            "https://www.apeldoorn.nl/wonen-en-leven/wonen-en-uw-buurt/woningbouwkavels/plaatsen-van-voorwerpen-en-of-bouw-materialen-in-de-openbare-ruimte"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten voornamelijk algemene informatie over het gebruik van openbare ruimte en omgevingsvergunningen, terwijl de originele tekst specifiek gericht is op spandoek- en uitstallingsvergunningen. Er zijn geen directe tegenstrijdigheden gevonden in de beschikbare informatie, maar de bronnen bieden een breder perspectief op het gebruik van gemeentegrond en benodigde vergunningen."
+  }
+}

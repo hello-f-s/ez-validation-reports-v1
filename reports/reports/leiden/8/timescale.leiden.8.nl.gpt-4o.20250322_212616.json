@@ -1,0 +1,79 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LEIDEN",
+      "contact": {
+        "phone": "14 071",
+        "email": "null",
+        "website": "http://www.leiden.nl/gemeente"
+      }
+    },
+    "service": {
+      "id": 8,
+      "name": "Marktvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "Voor een vaste standplaats die niet in het Standplaatsenplan staat, wordt binnen 12 weken een besluit genomen.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Leiden wordt voor een vaste standplaats die niet in het Standplaatsenplan staat binnen 8 weken een besluit genomen, niet binnen 12 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://gemeente.leiden.nl/inwoners-en-ondernemers/wonen-en-bouwen/omgevingsvergunningen/omgevingsvergunning-aanvragen",
+      "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers",
+      "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers/winkels-en-markten/vergunning-bijzondere-markten",
+      "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers/winkels-en-markten/marktstandplaatsvergunning",
+      "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers/vergunningen-en-ontheffingen/woning-splitsen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://example.com",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Dinsdag: Zuidwest, winkelcentrum De Luifelbaan, 08.00 – 13.00 uur. Een ochtendmarkt met 40 kramen.\nWoensdag: Leiden-centrum, 08.00 – 17.00 uur.\nDonderdag: Stevenshof, winkelcentrum De Stevensbloem, 08.00 – 16.00 uur.\nVrijdag: Merenwijk, winkelcentrum De Kopermolen, 08.00 – 17.00 uur.\nZaterdag: Leiden-centrum, 08.00 – 17.00 uur.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de specifieke marktdagen en -tijden, terwijl dit essentiële informatie is voor standplaatshouders.",
+          "source_urls": [
+            "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers/winkels-en-markten/marktstandplaatsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Er zijn 4 verschillende soorten marktstandplaatsen: dagstandplaatsen (zogenaamde meeloper), vaste standplaatsen, standwerkersplaatsen, seizoensstandplaatsen",
+          "original_reference": "No matching information",
+          "note": "De originele tekst specificeert niet de verschillende types standplaatsen, terwijl dit belangrijke informatie is voor aanvragers.",
+          "source_urls": [
+            "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers/winkels-en-markten/marktstandplaatsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten belangrijke aanvullende informatie die niet in de originele tekst staat, met name over de specifieke marktdagen en -tijden en de verschillende types standplaatsen. Deze informatie is essentieel voor potentiële standplaatshouders. De rest van de informatie in de originele tekst komt overeen met de bronnen."
+  }
+}

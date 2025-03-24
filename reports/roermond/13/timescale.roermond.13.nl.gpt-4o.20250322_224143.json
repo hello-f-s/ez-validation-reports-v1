@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ROERMOND",
+      "contact": {
+        "phone": "14 0475",
+        "email": "mail@roermond.nl",
+        "website": "http://www.roermond.nl"
+      }
+    },
+    "service": {
+      "id": 13,
+      "name": "Omzettingsvergunning voor kamerverhuur aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Indien u een conceptverzoek wilt indienen om uw aanvraag te controleren, stuur aanvullende gegevens naar mail@roermond.nl met uw registratienummer.",
+        "status": "false",
+        "note": "Het e-mailadres mail@roermond.nl is onjuist. Het correcte e-mailadres voor de gemeente Roermond is gemeente@roermond.nl."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.roermond.nl/omgevingsvergunning",
+      "https://www.roermond.nl/leegstandvergunning",
+      "https://www.roermond.nl/terrasvergunning",
+      "https://www.roermond.nl/exploitatievergunning-horeca",
+      "https://www.roermond.nl/aanvraag-bouwtekening-bouwdossier-of-dossier-omgevingsvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.roermond.nl",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De kosten voor het aanvragen van een bouwtekening, bouwdossier of dossier omgevingsvergunning bedragen minimaal € 14,- per aangevraagd adres.",
+          "original_reference": "De kosten voor een omgevingsvergunning hangen af van de bouwkosten en de activiteiten die u aanvraagt.",
+          "note": "De originele tekst is algemener over de kosten, terwijl de bron specifieke startkosten van €14,- noemt voor bepaalde documentaanvragen.",
+          "source_urls": [
+            "https://www.roermond.nl/aanvraag-bouwtekening-bouwdossier-of-dossier-omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Communicatie via berichtenbox jeleefomgeving.nl. Tijdens de behandeling van een aanvraag omgevingsvergunning, conceptverzoek of melding kunnen wij gebruik maken van een portaal waarmee we op een betrouwbare en veilige manier met burgers en bedrijven kunnen communiceren.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over het communicatiekanaal via jeleefomgeving.nl tijdens de behandeling van aanvragen.",
+          "source_urls": [
+            "https://www.roermond.nl/terrasvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Let op! Het is niet mogelijk om via het nieuwe omgevingsloket uw conceptverzoek digitaal aan te vullen.",
+          "original_reference": "Indien u een conceptverzoek wilt indienen om uw aanvraag te controleren, stuur aanvullende gegevens naar mail@roermond.nl met uw registratienummer.",
+          "note": "De bron benadrukt expliciet dat digitale aanvulling via het omgevingsloket niet mogelijk is, wat een belangrijke beperking is die in de originele tekst minder duidelijk wordt vermeld.",
+          "source_urls": [
+            "https://www.roermond.nl/omgevingsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten enkele belangrijke verschillen met de originele tekst, vooral wat betreft specifieke kostenaanduidingen, communicatiemethoden en beperkingen bij het aanvullen van conceptverzoeken. De originele tekst mist met name belangrijke details over het gebruik van de berichtenbox van jeleefomgeving.nl en is minder specifiek over de kosten. Ook is de beperking voor het digitaal aanvullen van conceptverzoeken duidelijker aangegeven in de bronnen."
+  }
+}

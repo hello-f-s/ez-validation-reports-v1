@@ -1,0 +1,87 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HEEMSTEDE",
+      "contact": {
+        "phone": "(023) 548 58 68",
+        "email": "gemeente@heemstede.nl",
+        "website": "http://www.heemstede.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "Als voorbeeld: een standplaatsvergunning kost € 26,05 voor maximaal 6 dagen en € 90,05 voor langer dan 6 dagen.",
+        "status": "false",
+        "note": "Deze tarieven zijn niet correct volgens de actuele legesverordening van gemeente Heemstede. De actuele tarieven voor standplaatsvergunningen zijn anders en worden jaarlijks vastgesteld in de legesverordening."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.heemstede.nl/bestuur-en-organisatie/omgevingswet/het-nieuwe-omgevingsloket",
+      "https://www.heemstede.nl/bestuur-en-organisatie/omgevingswet/de-omgevingswet-voor-u-als-inwoner-of-ondernemer",
+      "https://www.heemstede.nl/vergunningen/in-of-uitrit-aanleggen-omgevingsvergunning",
+      "https://www.heemstede.nl/vergunningen/standplaatsvergunning-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.heemstede.nl/vergunningen/milieu-omgevingsvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vergunning aanvragen minimaal 4 weken voordat u de standplaats gaat gebruiken",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt geen specifieke aanvraagtermijn voor vergunningen, terwijl de bron aangeeft dat een standplaatsvergunning minimaal 4 weken van tevoren moet worden aangevraagd.",
+          "source_urls": [
+            "https://www.heemstede.nl/vergunningen/standplaatsvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor een omgevingsvergunning betaalt u legeskosten. Ook de kosten van aanleg zijn voor de vergunninghouder.",
+          "original_reference": "Er zijn geen specifieke kosten voor een omgevingsvergunning vermeld.",
+          "note": "De bronpagina vermeldt dat er legeskosten verbonden zijn aan een omgevingsvergunning, terwijl de originele tekst aangeeft dat er geen specifieke kosten vermeld zijn.",
+          "source_urls": [
+            "https://www.heemstede.nl/vergunningen/in-of-uitrit-aanleggen-omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Geldig legitimatiebewijs, Uittreksel van Kamer van Koophandel, Bewijs van een WA bedrijfsverzekering",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt geen specifieke documentvereisten, terwijl de bron een lijst van benodigde documenten voor een standplaatsvergunning specificeert.",
+          "source_urls": [
+            "https://www.heemstede.nl/vergunningen/standplaatsvergunning-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie die niet in de originele tekst staat, waaronder specifieke aanvraagtermijnen, kosten voor omgevingsvergunningen en vereiste documentatie. Deze informatie is essentieel voor aanvragers en zou in de originele tekst opgenomen moeten worden voor een volledig beeld van de procedures en vereisten."
+  }
+}

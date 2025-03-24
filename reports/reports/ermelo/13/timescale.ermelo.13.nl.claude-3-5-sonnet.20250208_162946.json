@@ -1,0 +1,89 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ERMELO",
+      "contact": {
+        "phone": "(0341) 56 73 21",
+        "email": "gemeente@ermelo.nl",
+        "website": "http://www.ermelo.nl"
+      }
+    },
+    "service": {
+      "id": 13,
+      "name": "Omzettingsvergunning voor kamerverhuur aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 7,
+    "true_sentences": 7,
+    "false_sentences": 0,
+    "accuracy_percentage": 100.0,
+    "false_statements": []
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 4,
+    "invalid_urls": 3,
+    "accuracy_percentage": 57.1,
+    "valid_urls_list": [
+      "https://www.ermelo.nl/omgevingsplein/omgevingsloket",
+      "https://www.ermelo.nl/omgevingsplein/omgevingsloket/omgevingsvergunning-aanvragen",
+      "https://www.ermelo.nl/omgevingsplein/omgevingsloket/conceptverzoek-aanvragen",
+      "https://www.ermelo.nl/evenementen-en-horeca/horeca-en-alcohol/geluidsoverlast-veroorzaken"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.ermelo.nl/omgevingsplein/omgevingsloket/contact-over-bouwen-en-verbouwen",
+        "reason": "INVALID: Error scraping https://www.ermelo.nl/omgevingsplein/omgevingsloket/contact-over-bouwen-en-verbouwen: 404 Client Error: Not Found for url: https://www.ermelo.nl/omgevingsplein/omgevingsloket/contact-over-bouwen-en-verbouwen"
+      },
+      {
+        "url": "https://www.omgevingsloket.nl/\">https://www.omgevingsloket.nl/</a></p>",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.omgevingsloket.nl/",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "We raden u aan voordat u een omgevingsvergunning aanvraagt eerst een conceptverzoek aan te vragen. Let hierbij op de indieningsvereisten.",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden een belangrijke voorbereidende stap (conceptverzoek) die niet genoemd wordt in de originele tekst",
+          "source_urls": [
+            "https://www.ermelo.nl/omgevingsplein/omgevingsloket/conceptverzoek-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Nodig bij uw aanvraag: Uw DigiD om online aanvraag te doen.",
+          "original_reference": "No matching information",
+          "note": "De bronnen specificeren dat DigiD nodig is voor de aanvraag, wat niet vermeld wordt in de originele tekst",
+          "source_urls": [
+            "https://www.ermelo.nl/omgevingsplein/omgevingsloket/omgevingsvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Betrek de omgeving vroeg bij een bouwplan. Dit vergroot de haalbaarheid van uw plan en voorkomt vaak bezwaren in een latere stap in het proces.",
+          "original_reference": "No matching information",
+          "note": "De bronnen geven belangrijke aanvullende informatie over het betrekken van de omgeving bij bouwplannen, wat ontbreekt in de originele tekst",
+          "source_urls": [
+            "https://www.ermelo.nl/omgevingsplein/omgevingsloket/omgevingsvergunning-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie die ontbreekt in de originele tekst, waaronder de aanbeveling eerst een conceptverzoek in te dienen, de vereiste van DigiD voor de aanvraag, en het advies om de omgeving vroeg te betrekken bij bouwplannen. Deze informatie is essentieel voor een complete en succesvolle aanvraagprocedure."
+  }
+}

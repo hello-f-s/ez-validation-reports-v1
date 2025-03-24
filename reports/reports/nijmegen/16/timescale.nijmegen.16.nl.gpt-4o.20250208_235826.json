@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "NIJMEGEN",
+      "contact": {
+        "phone": "14 024",
+        "email": "gemeente@nijmegen.nl",
+        "website": "http://www.nijmegen.nl"
+      }
+    },
+    "service": {
+      "id": 16,
+      "name": "Registreren in het Landelijk Register Kinderopvang (LRK)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 9,
+    "true_sentences": 8,
+    "false_sentences": 1,
+    "accuracy_percentage": 88.9,
+    "false_statements": [
+      {
+        "sentence": "Het proces van aanmelden tot registratie duurt ongeveer 10 weken.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Nijmegen duurt het proces maximaal 13 weken vanaf het moment van aanvraag tot de definitieve beslissing over registratie in het LRK."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.nijmegen.nl/diensten/geboorte-en-overlijden/aangifte-van-geboorte/",
+      "https://www.nijmegen.nl/diensten/onderwijs-en-kinderopvang/kinderopvang-starten/",
+      "https://www.nijmegen.nl/diensten/onderwijs-en-kinderopvang/adressen-kinderopvang/",
+      "https://www.nijmegen.nl/diensten/onderscheidingen/kinderlintje-aanvragen/",
+      "https://www.nijmegen.nl/diensten/onderwijs-en-kinderopvang/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://example.com\">Kinderopvang",
+        "reason": "INVALID: Error scraping https://example.com\">Kinderopvang: HTTPSConnectionPool(host='example.com%22%3ekinderopvang', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1060cfe00>: Failed to resolve 'example.com%22%3ekinderopvang' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://example.com",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wilt u een kinderdagverblijf, buitenschoolse opvang, peutergroep, gastouderbureau of gastouderopvang beginnen?",
+          "original_reference": "Om een kinderopvang te starten, zoals een kinderdagverblijf of buitenschoolse opvang",
+          "note": "De originele tekst noemt slechts kinderdagverblijf en buitenschoolse opvang, terwijl de bron ook peutergroep, gastouderbureau en gastouderopvang noemt als mogelijke vormen van kinderopvang.",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/onderwijs-en-kinderopvang/kinderopvang-starten/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Op de website van de GGD kunt u via het webformulier een aanvraag indienen.",
+          "original_reference": "U moet zich inschrijven bij de GGD Gelderland Zuid met formulieren van de Rijksoverheid. Het aanvraagformulier stuurt u naar GGD Gelderland Zuid, Team Toezicht Kinderopvang, Postbus 1120, 6501 BC Nijmegen.",
+          "note": "De originele tekst suggereert een papieren aanvraagprocedure per post, terwijl de bron aangeeft dat dit via een webformulier op de GGD-website kan.",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/onderwijs-en-kinderopvang/kinderopvang-starten/"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele tekst en de bronnen. Ten eerste is de lijst van mogelijke kinderopvangvormen in de bron uitgebreider. Ten tweede verschilt de aanvraagprocedure: waar de originele tekst een papieren procedure beschrijft, biedt de bron een digitale aanvraagmogelijkheid via een webformulier. De overige informatie komt overeen met de bronnen."
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DEVENTER",
+      "contact": {
+        "phone": "14 0570",
+        "email": "gemeente@deventer.nl",
+        "website": "http://www.deventer.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "Een uitgebreide omgevingsvergunning kent een termijn van 6 maanden, met mogelijkheid tot een verlenging van 6 weken.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Deventer is de termijn voor een uitgebreide procedure 26 weken (ongeveer 6 maanden) met een mogelijke verlenging van maximaal 6 weken. De termijn van 6 maanden is niet exact genoeg aangezien 26 weken specifiek wordt genoemd."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 8,
+    "valid_urls": 5,
+    "invalid_urls": 3,
+    "accuracy_percentage": 62.5,
+    "valid_urls_list": [
+      "https://www.deventer.nl/vooroverleg",
+      "https://www.deventer.nl/ondernemen/bedrijf-vestigen/vergunningen-amp-regelingen",
+      "https://www.deventer.nl/omgevingsvergunning",
+      "https://www.deventer.nl/omgevingsvergunning-aanvragen",
+      "https://www.deventer.nl/milieu-1/omgevingsvergunning-voor-het-milieu-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.deventer.nl/omgevingsvergunning-milieubelastende-activiteit-aanvragen",
+        "reason": "INVALID: Error scraping https://www.deventer.nl/omgevingsvergunning-milieubelastende-activiteit-aanvragen: 404 Client Error: Not Found for url: https://www.deventer.nl/omgevingsvergunning-milieubelastende-activiteit-aanvragen"
+      },
+      {
+        "url": "https://www.deventer.nl/vergunningen-regelingen",
+        "reason": "INVALID: Error scraping https://www.deventer.nl/vergunningen-regelingen: 404 Client Error: Not Found for url: https://www.deventer.nl/vergunningen-regelingen"
+      },
+      {
+        "url": "https://www.deventer.nl/vooroverleg-voor-een-omgevingsvergunning-aanvragen",
+        "reason": "INVALID: Error scraping https://www.deventer.nl/vooroverleg-voor-een-omgevingsvergunning-aanvragen: 404 Client Error: Not Found for url: https://www.deventer.nl/vooroverleg-voor-een-omgevingsvergunning-aanvragen"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Let op: per 1 januari 2024 geldt de Omgevingswet. Dit is van invloed op omgevingsvergunningen die u na 1 januari aanvraagt.",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden een belangrijke wijziging per 1 januari 2024 (Omgevingswet) die impact heeft op vergunningsaanvragen. Deze informatie ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.deventer.nl/milieu-1/omgevingsvergunning-voor-het-milieu-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Sinds 1 juli 2023 zijn wij verplicht bepaalde aanvragen en besluiten digitaal ter inzage te leggen. Op deze stukken kunnen persoonsgegevens staan, zoals een naam op een bouwtekening. Die moeten eerst anoniem gemaakt worden.",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden nieuwe privacy-gerelateerde vereisten sinds 1 juli 2023 voor het anonimiseren van persoonsgegevens. Deze informatie ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.deventer.nl/vooroverleg",
+            "https://www.deventer.nl/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Is de omgevingsvergunning verleend, dan krijgt u deze samen met de voorschriften per e-mail toegestuurd.",
+          "original_reference": "No matching information",
+          "note": "De bronnen specificeren dat de vergunning per e-mail wordt toegestuurd, wat niet wordt vermeld in de originele tekst.",
+          "source_urls": [
+            "https://www.deventer.nl/omgevingsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen drie nieuwe elementen die niet in de originele tekst staan: de aanstaande wijziging door de Omgevingswet per 1 januari 2024, nieuwe privacy-vereisten voor het anonimiseren van persoonsgegevens sinds juli 2023, en de specificatie dat vergunningen per e-mail worden toegestuurd. Deze informatie is relevant voor de actualiteit en volledigheid van de dienstverlening."
+  }
+}

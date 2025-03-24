@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OLDENZAAL",
+      "contact": {
+        "phone": "(0541) 58 81 11",
+        "email": "info@oldenzaal.nl",
+        "website": "http://www.oldenzaal.nl"
+      }
+    },
+    "service": {
+      "id": 6,
+      "name": "Integriteitsonderzoek (Wet Bibob)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "Het stadhuis is geopend op maandag van 08.30 tot 20.00 uur, dinsdag tot en met donderdag van 08.30 tot 17.00 uur, en vrijdag van 08.30 tot 12.30 uur.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Oldenzaal is het stadhuis op maandag geopend van 08:30 tot 19:00 uur (niet tot 20:00 uur). De overige openingstijden zijn wel correct."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.oldenzaal.nl/alcoholvergunning",
+      "https://www.oldenzaal.nl/verklaring-omtrent-gedrag-vog",
+      "https://www.oldenzaal.nl/bijzondere-bijstand",
+      "https://www.oldenzaal.nl/individuele-inkomenstoeslag",
+      "https://www.oldenzaal.nl/exploitatievergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Neem dan contact met ons op, zodat we met u een afspraak kunnen maken voor een vooroverleg.",
+          "original_reference": "Na het indienen van uw aanvraag nodigen wij u uit voor een gesprek",
+          "note": "De bron geeft aan dat er eerst vooroverleg moet plaatsvinden, terwijl in de originele tekst staat dat het gesprek pas na de aanvraag plaatsvindt. Dit is een belangrijk procedureel verschil.",
+          "source_urls": [
+            "https://www.oldenzaal.nl/alcoholvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Milieubelastende activiteiten, Brandveiligheid, Terras, Speelautomaten",
+          "original_reference": "No matching information",
+          "note": "De bron noemt aanvullende onderwerpen die tijdens het gesprek worden besproken, die niet vermeld staan in de originele tekst.",
+          "source_urls": [
+            "https://www.oldenzaal.nl/alcoholvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u in uw horecabedrijf, verenigingsgebouw of op een andere plek alcoholhoudende dranken verkoopt, dan heeft u een vergunning nodig.",
+          "original_reference": "No matching information",
+          "note": "De bron specificeert duidelijker in welke gevallen een alcoholvergunning nodig is, wat ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.oldenzaal.nl/alcoholvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de volgorde van de procedure (vooroverleg versus gesprek na aanvraag), aanvullende gespreksonderwerpen die worden behandeld, en een duidelijkere specificatie van wanneer een alcoholvergunning nodig is. Deze verschillen zijn belangrijk voor de correcte informatievoorziening aan aanvragers."
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ROERMOND",
+      "contact": {
+        "phone": "14 0475",
+        "email": "mail@roermond.nl",
+        "website": "http://www.roermond.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "De aanvraag wordt normaal gesproken afgehandeld binnen acht weken.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Roermond bedraagt de behandeltermijn voor een alcoholwetvergunning 12 weken in plaats van 8 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.roermond.nl/parkeervergunning-voor-bedrijven-zorginstellingen-en-non-profit-instellingen",
+      "https://www.roermond.nl/omgevingsvergunning",
+      "https://www.roermond.nl/exploitatievergunning-horeca",
+      "https://www.roermond.nl/alcoholwetvergunning",
+      "https://www.roermond.nl/terrasvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://roermond.nl",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Verstuur de ingevulde formulieren en bijlagen per mail naar: mail@roermond.nl of per post naar: postbus 900, 6040 AX Roermond.",
+          "original_reference": "Stuur de benodigde formulieren per post naar: Postbus 900, 6040 AX Roermond.",
+          "note": "De originele tekst vermeldt alleen de postoptie, terwijl de bron aangeeft dat documenten ook per e-mail kunnen worden verzonden naar mail@roermond.nl",
+          "source_urls": [
+            "https://www.roermond.nl/exploitatievergunning-horeca"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De behandeltermijn is 8 weken bij een complete aanvraag. Deze termijn kan met 8 weken worden verlengd.",
+          "original_reference": "De aanvraag wordt normaal gesproken afgehandeld binnen acht weken.",
+          "note": "De originele tekst vermeldt niet de mogelijkheid tot verlenging van de behandeltermijn met 8 weken",
+          "source_urls": [
+            "https://www.roermond.nl/exploitatievergunning-horeca"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Controleer of u ook ingeschreven staat in het Register Sociale Hygiëne",
+          "original_reference": "U moet in het bezit zijn van een Verklaring Sociale Hygiëne en ingeschreven staan in het Register Sociale Hygiëne.",
+          "note": "De bron formuleert het als een controlepunt, terwijl de originele tekst het als harde eis stelt",
+          "source_urls": [
+            "https://www.roermond.nl/alcoholwetvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn drie belangrijke verschillen gevonden tussen de originele tekst en de bronnen. Het belangrijkste verschil is de aanvullende mogelijkheid om documenten per e-mail in te dienen. Daarnaast wordt in de bronnen expliciet vermeld dat de behandeltermijn van 8 weken verlengd kan worden met nog eens 8 weken, wat niet in de originele tekst staat. Tot slot verschilt de formulering rond de inschrijving in het Register Sociale Hygiëne, waarbij de bron dit als controlepunt formuleert en de originele tekst als absolute eis."
+  }
+}

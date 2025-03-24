@@ -1,0 +1,87 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OLDENZAAL",
+      "contact": {
+        "phone": "(0541) 58 81 11",
+        "email": "info@oldenzaal.nl",
+        "website": "http://www.oldenzaal.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 26,
+    "false_sentences": 2,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "Voor kleine evenementen gelden specifieke criteria zoals een maximum van 150 mensen en bepaalde tijdslimieten.",
+        "status": "false",
+        "note": "Volgens de APV Oldenzaal geldt voor kleine evenementen een maximum van 100 personen, niet 150."
+      },
+      {
+        "sentence": "Voor kleine evenementen moet de melding minimaal 10 werkdagen voor het evenement worden ingediend.",
+        "status": "false",
+        "note": "Volgens de gemeente Oldenzaal moet een melding voor een klein evenement minimaal 14 dagen van tevoren worden ingediend, niet 10 werkdagen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 3,
+    "invalid_urls": 2,
+    "accuracy_percentage": 60.0,
+    "valid_urls_list": [
+      "https://www.oldenzaal.nl/omgevingsvergunning",
+      "https://www.oldenzaal.nl/standplaatsvergunning",
+      "https://www.oldenzaal.nl/subsidie-evenementen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.oldenzaal.nl/evenement-organiseren-vergunning-of-melding",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.oldenzaal.nl/bouwen-en-verbouwen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "DigiD – voor personen Uw DigiD is een soort digitaal paspoort. Met uw DigiD laat u zien wie u bent als u op internet iets regelt. Zoals bij de overheid, het onderwijs, de zorg of voor uw pensioen. eHerkenning – voor bedrijven/organisaties/eenmanszaken",
+          "original_reference": "Inloggen met DigiD voor personen of eHerkenning voor ondernemers",
+          "note": "De beschrijving van DigiD en eHerkenning komt overeen met de originele tekst, met extra uitleg over het gebruik",
+          "source_urls": [
+            "https://www.oldenzaal.nl/omgevingsvergunning",
+            "https://www.oldenzaal.nl/standplaatsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vergunningenchecker in het Omgevingsloket",
+          "original_reference": "Vergunningenchecker",
+          "note": "De bronnen specificeren dat de vergunningenchecker onderdeel is van het Omgevingsloket, wat niet vermeld wordt in de originele tekst",
+          "source_urls": [
+            "https://www.oldenzaal.nl/omgevingsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De geanalyseerde bronnen tonen grotendeels consistente informatie met de originele tekst. Het belangrijkste verschil is de specificatie dat de Vergunningenchecker onderdeel is van het Omgevingsloket, wat extra context biedt voor gebruikers. De bronnen bevatten ook aanvullende details over DigiD en eHerkenning, maar deze zijn niet in tegenspraak met de originele informatie."
+  }
+}

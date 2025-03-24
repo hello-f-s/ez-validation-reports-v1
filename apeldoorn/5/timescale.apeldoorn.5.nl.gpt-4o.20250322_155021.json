@@ -1,0 +1,105 @@
+{
+  "context": {
+    "municipality": {
+      "name": "APELDOORN",
+      "contact": {
+        "phone": "14 055",
+        "email": "gemeente@apeldoorn.nl",
+        "website": "http://www.apeldoorn.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 13,
+    "false_sentences": 2,
+    "accuracy_percentage": 86.7,
+    "false_statements": [
+      {
+        "sentence": "Indien u alcoholvrije dranken wilt verstrekken, heeft u een vergunning als alcoholvrij bedrijf nodig.",
+        "status": "false",
+        "note": "Voor het verstrekken van alleen alcoholvrije dranken is geen specifieke horecavergunning nodig in Apeldoorn. Wel kunnen andere vergunningen nodig zijn afhankelijk van de bedrijfsactiviteiten."
+      },
+      {
+        "sentence": "De aanvraagprocedure kan maximaal 8 weken duren en een beslissing kan eenmalig worden uitgesteld met een periode van maximaal 8 weken.",
+        "status": "false",
+        "note": "De gemeente Apeldoorn hanteert voor horecavergunningen een behandeltermijn van maximaal 12 weken, niet 8 weken. Deze termijn kan wel eenmalig verlengd worden."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 1,
+    "invalid_urls": 5,
+    "accuracy_percentage": 16.7,
+    "valid_urls_list": [
+      "https://www.apeldoorn.nl/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.apeldoorn.nl/werken-en-leren/ondernemen/ontheffingen-en-vergunningen/vergunning-uitstalling",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.apeldoorn.nl/ondernemen/een-bedrijf-in-de-horeca",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.apeldoorn.nl/werken-en-leren/ondernemen/ontheffingen-en-vergunningen/vergunning-alcoholvrij-bedrijf",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.apeldoorn.nl/vergunning-speelautomatenhal-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.apeldoorn.nl/werken-en-leren/ondernemen/ontheffingen-en-vergunningen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor het aanvragen van een exploitatievergunning voor een horecabedrijf moet u een Bibob-formulier invullen en een Verklaring Omtrent Gedrag (VOG) aanleveren",
+          "original_reference": "Uw aanvraag wordt getoetst aan de Wet Bibob om te waarborgen dat de vergunning niet wordt gebruikt voor strafbare feiten",
+          "note": "De originele tekst noemt alleen de Bibob-toets, maar niet de specifieke vereisten van een Bibob-formulier en VOG die volgens de bronnen verplicht zijn",
+          "source_urls": [
+            "https://www.apeldoorn.nl/ondernemen/een-bedrijf-in-de-horeca"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De leges voor een exploitatievergunning horeca bedragen €567,50 (2024)",
+          "original_reference": "De kosten voor de vergunningaanvraag worden niet specifiek vermeld voor een horecabedrijf",
+          "note": "De originele tekst vermeldt geen specifieke kosten, terwijl de bron wel concrete legeskosten noemt",
+          "source_urls": [
+            "https://www.apeldoorn.nl/werken-en-leren/ondernemen/ontheffingen-en-vergunningen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U kunt uw aanvraag digitaal indienen via het ondernemersloket op de website",
+          "original_reference": "Neem contact op met het Apeldoorns omgevingsloket of via het telefoonnummer 14 055 om een afspraak te maken",
+          "note": "De originele tekst verwijst naar telefonisch contact en afspraken, terwijl er volgens de bron ook een digitale aanvraagmogelijkheid is via het ondernemersloket",
+          "source_urls": [
+            "https://www.apeldoorn.nl/werken-en-leren/ondernemen/ontheffingen-en-vergunningen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de specifieke vereisten voor de vergunningaanvraag (Bibob-formulier en VOG), de concrete legeskosten (€567,50) en de aanvraagmethode (ook digitaal mogelijk). De originele tekst is op deze punten onvolledig of minder specifiek dan de actuele informatie in de bronnen."
+  }
+}

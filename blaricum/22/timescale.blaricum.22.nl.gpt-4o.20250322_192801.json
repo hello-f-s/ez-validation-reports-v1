@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "BLARICUM",
+      "contact": {
+        "phone": "(035) 751 32 22",
+        "email": "info@blaricum.nl",
+        "website": "http://www.blaricum.nl"
+      }
+    },
+    "service": {
+      "id": 22,
+      "name": "Woonruimte splitsen of samenvoegen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Na splitsing moet elke nieuwe woning minstens 60 m² groot zijn.",
+        "status": "false",
+        "note": "Volgens het actuele splitsingsbeleid van gemeente Blaricum moet elke nieuwe woning na splitsing minimaal 75 m² gebruiksoppervlakte hebben, niet 60 m²."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.blaricum.nl/Bouwen_verbouwen_en_wonen/Bouwen_en_verbouwen",
+      "https://www.blaricum.nl/Nieuws/Nieuwsberichten/Ruimere_mogelijkheden_voor_het_splitsen_van_woningen_in_Blaricum",
+      "https://www.blaricum.nl/Bouwen_verbouwen_en_wonen",
+      "https://www.blaricum.nl/Bouwen_verbouwen_en_wonen/Bouwen_en_verbouwen/Omgevingsvergunning",
+      "https://www.blaricum.nl/Vergunningen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://data.blaricum.nl",
+        "reason": "INVALID: Error scraping https://data.blaricum.nl: HTTPSConnectionPool(host='data.blaricum.nl', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1062839d0>: Failed to resolve 'data.blaricum.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Op 1 januari 2024 is in heel Nederland de Omgevingswet ingevoerd. De regels voor het aanvragen van een vergunning worden helder en inwoners kunnen makkelijk zien hoe hun aanvraag verloopt.",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden specifiek de invoering van de nieuwe Omgevingswet per 1 januari 2024, wat belangrijke informatie is die ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.blaricum.nl/Bouwen_verbouwen_en_wonen/Bouwen_en_verbouwen/Omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Twijfelt u of uw bouw- of verbouwplannen haalbaar zijn, vraag dan een vooroverleg aan. Bel de gemeente via telefoonnummer 14 035.",
+          "original_reference": "Vooroverleg kan aangevraagd worden wanneer u twijfelt over de haalbaarheid van uw plannen.",
+          "note": "De brontekst geeft specifiek aan hoe vooroverleg kan worden aangevraagd (via telefoonnummer 14 035), wat ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.blaricum.nl/Bouwen_verbouwen_en_wonen/Bouwen_en_verbouwen/Omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het draagt bij aan het beter gebruik maken en behoud van grotere woningen en het behoud van cultureel erfgoed. Toch zijn er ook nadelen, zoals een verhoogde parkeerdruk en mogelijke overlast voor omwonenden.",
+          "original_reference": "No matching information",
+          "note": "De bronnen bevatten aanvullende voor- en nadelen van woningsplitsing die niet genoemd worden in de originele tekst.",
+          "source_urls": [
+            "https://www.blaricum.nl/Nieuws/Nieuwsberichten/Ruimere_mogelijkheden_voor_het_splitsen_van_woningen_in_Blaricum"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de invoering van de nieuwe Omgevingswet per 1 januari 2024, specifieke contactinformatie voor het aanvragen van vooroverleg, en aanvullende voor- en nadelen van woningsplitsing. De bronnen bieden meer context en praktische details die ontbreken in de originele tekst, maar de kernvoorwaarden en procedures blijven consistent."
+  }
+}

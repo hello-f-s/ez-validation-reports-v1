@@ -1,0 +1,79 @@
+{
+  "context": {
+    "municipality": {
+      "name": "S-HERTOGENBOSCH",
+      "contact": {
+        "phone": "(073) 615 51 55",
+        "email": "gemeente@s-hertogenbosch.nl",
+        "website": "http://www.s-hertogenbosch.nl"
+      }
+    },
+    "service": {
+      "id": 8,
+      "name": "Marktvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 22,
+    "false_sentences": 2,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "De warenmarkten in de binnenstad van 's-Hertogenbosch zijn geopend op woensdag van 9.00 – 15.00 uur, zaterdag van 9.00 – 17.00 uur, en zondag van 12.00 – 17.00 uur.",
+        "status": "false",
+        "note": "Er is geen reguliere warenmarkt op zondag in 's-Hertogenbosch. De warenmarkt is alleen op woensdag en zaterdag."
+      },
+      {
+        "sentence": "De exacte procedure voor het indienen van bezwaar staat niet vermeld op de website van de gemeente.",
+        "status": "false",
+        "note": "De bezwaarprocedure staat wel degelijk vermeld op de website van de gemeente 's-Hertogenbosch onder het kopje 'Bezwaar maken tegen een besluit'."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.s-hertogenbosch.nl/product/omgevingsvergunning/",
+      "https://www.s-hertogenbosch.nl/product/omgevingsvergunning-wabo/",
+      "https://www.s-hertogenbosch.nl/product/standplaats/",
+      "https://www.s-hertogenbosch.nl/product/horecabedrijf/",
+      "https://www.s-hertogenbosch.nl/product/parkeervergunning/"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor het uitdelen van flyeren en gedrukt promotiemateriaal hebt u geen vergunning nodig. Met gedrukt promotiemateriaal bedoelen wij folders.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over flyeren, terwijl de bronpagina specifiek vermeldt dat hiervoor geen vergunning nodig is. Dit is belangrijke aanvullende informatie voor ondernemers.",
+          "source_urls": [
+            "https://www.s-hertogenbosch.nl/product/standplaats/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Meldingen voor straatoptredens moeten minimaal 10 werkdagen van tevoren worden gedaan.",
+          "original_reference": "Meldingen voor straatoptredens moeten minimaal 10 werkdagen van tevoren worden gedaan.",
+          "note": "De informatie komt overeen, maar in de bronpagina wordt expliciet vermeld dat hiervoor DigiD nodig is, wat een belangrijke aanvullende voorwaarde is die niet in de originele tekst wordt benadrukt.",
+          "source_urls": [
+            "https://www.s-hertogenbosch.nl/product/standplaats/"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont aan dat de originele inhoud grotendeels consistent is met de bronpagina's. Er zijn twee noemenswaardige verschillen gevonden: het ontbreken van informatie over flyeren zonder vergunning en de DigiD-vereiste voor straatoptredens die niet expliciet wordt vermeld in de originele tekst. De kernvoorwaarden, kosten en procedures voor standplaats- en marktvergunningen komen overeen met de bronnen."
+  }
+}

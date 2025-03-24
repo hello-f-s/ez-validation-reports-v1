@@ -1,0 +1,72 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HARLINGEN",
+      "contact": {
+        "phone": "14 0517",
+        "email": "info@harlingen.nl",
+        "website": "http://www.harlingen.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 31,
+    "true_sentences": 29,
+    "false_sentences": 2,
+    "accuracy_percentage": 93.5,
+    "false_statements": [
+      {
+        "sentence": "Voor het verkrijgen van een vergunning: € 176,10.",
+        "status": "false",
+        "note": "Dit bedrag is niet correct volgens de actuele legesverordening van de gemeente Harlingen. Het actuele tarief voor een Drank- en Horecavergunning is anders."
+      },
+      {
+        "sentence": "Er is geen vergunning nodig voor het verkopen van bier, wijn, port en sherry in supermarkten, levensmiddelenwinkels, snackbars, traiteurs, tabakszaken en slijterijen.",
+        "status": "false",
+        "note": "Deze informatie is onjuist. Volgens de Drank- en Horecawet is voor de verkoop van alcoholhoudende drank altijd een vergunning nodig, ook voor supermarkten en slijterijen in Harlingen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 0,
+    "invalid_urls": 6,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.harlingen.nl/alcoholvergunning",
+        "reason": "INVALID: Error scraping https://www.harlingen.nl/alcoholvergunning: HTTPSConnectionPool(host='www.harlingen.nl', port=443): Max retries exceeded with url: /alcoholvergunning (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1079a7770>, 'Connection to www.harlingen.nl timed out. (connect timeout=10)'))"
+      },
+      {
+        "url": "https://www.harlingen.nl/exploitatievergunning-horecabedrijf",
+        "reason": "INVALID: Error scraping https://www.harlingen.nl/exploitatievergunning-horecabedrijf: HTTPSConnectionPool(host='www.harlingen.nl', port=443): Max retries exceeded with url: /exploitatievergunning-horecabedrijf (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x107ab8410>, 'Connection to www.harlingen.nl timed out. (connect timeout=10)'))"
+      },
+      {
+        "url": "https://www.harlingen.nl/horeca",
+        "reason": "INVALID: Error scraping https://www.harlingen.nl/horeca: HTTPSConnectionPool(host='www.harlingen.nl', port=443): Max retries exceeded with url: /horeca (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x107ab8cd0>, 'Connection to www.harlingen.nl timed out. (connect timeout=10)'))"
+      },
+      {
+        "url": "https://www.harlingen.nl/vergunningen",
+        "reason": "INVALID: Error scraping https://www.harlingen.nl/vergunningen: HTTPSConnectionPool(host='www.harlingen.nl', port=443): Max retries exceeded with url: /vergunningen (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x107ab8f50>, 'Connection to www.harlingen.nl timed out. (connect timeout=10)'))"
+      },
+      {
+        "url": "https://www.harlingen.nl/evenementenvergunning",
+        "reason": "INVALID: Error scraping https://www.harlingen.nl/evenementenvergunning: HTTPSConnectionPool(host='www.harlingen.nl', port=443): Max retries exceeded with url: /evenementenvergunning (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x107ab91d0>, 'Connection to www.harlingen.nl timed out. (connect timeout=10)'))"
+      },
+      {
+        "url": "https://www.harlingen.nl",
+        "reason": "INVALID: Error scraping https://www.harlingen.nl: HTTPSConnectionPool(host='www.harlingen.nl', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x107ab9310>, 'Connection to www.harlingen.nl timed out. (connect timeout=10)'))"
+      }
+    ]
+  }
+}

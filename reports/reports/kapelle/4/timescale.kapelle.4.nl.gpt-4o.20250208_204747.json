@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "KAPELLE",
+      "contact": {
+        "phone": "(0113) 33 31 10",
+        "email": "gemeente@kapelle.nl",
+        "website": "http://www.kapelle.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Bij twijfel wordt aangeraden vroegtijdig contact op te nemen met de gemeente via 140113.",
+        "status": "false",
+        "note": "Het telefoonnummer voor de gemeente Kapelle is 14 0113 (met een spatie), niet 140113. Dit is een belangrijk verschil in de notatie van het telefoonnummer."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.kapelle.nl/evenement-organiseren",
+      "https://kapelle.nl/evenementenbeleid",
+      "https://kapelle.nl/evenement-organiseren",
+      "https://kapelle.nl/kermis-organiseren",
+      "https://www.kapelle.nl/node/219"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.kapelle.nl/evenement-organiseren\">Gemeente",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.kapelle.nl/node/220",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor grote evenementen doet u dit minstens 16 weken van tevoren. Voor middelgrote evenementen doet u dit minstens 8 weken van tevoren.",
+          "original_reference": "Voor A-evenementen is de indieningstermijn 20 werkdagen. Voor B- en C-evenementen is deze 60 werkdagen voorafgaand aan het evenement.",
+          "note": "Er is een verschil in de aangegeven indieningstermijnen. De bronpagina gebruikt andere termijnen (16 en 8 weken) dan de originele tekst (20 en 60 werkdagen).",
+          "source_urls": [
+            "https://www.kapelle.nl/evenement-organiseren"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor kleine evenementen, zoals een straatfeest of een straatbarbecue, is een melding doen vaak al genoeg. Als u alleen een melding hoeft te doen, doet u dit minstens 3 weken van tevoren.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat aanvullende informatie over meldingsplicht voor kleine evenementen, wat niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.kapelle.nl/evenement-organiseren"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele tekst en de bronnen. Ten eerste zijn er afwijkende indieningstermijnen voor evenementenvergunningen. Daarnaast bevat de bronpagina aanvullende informatie over een meldingsplicht voor kleine evenementen die niet in de originele tekst staat vermeld. Deze verschillen kunnen van invloed zijn op de planning van evenementen."
+  }
+}

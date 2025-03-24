@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ROERMOND",
+      "contact": {
+        "phone": "14 0475",
+        "email": "mail@roermond.nl",
+        "website": "http://www.roermond.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 27,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.4,
+    "false_statements": [
+      {
+        "sentence": "Onze kantoren zijn geopend op maandag, dinsdag, woensdag en vrijdag van 9:00 tot 17:00 uur, en op donderdag van 9:00 tot 19:30 uur.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Roermond zijn de openingstijden van maandag tot en met vrijdag van 9:00 tot 17:00 uur, en op donderdag van 9:00 tot 20:00 uur."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.roermond.nl/omgevingsvergunning",
+      "https://www.roermond.nl/aanvraag-bouwtekening-bouwdossier-of-dossier-omgevingsvergunning",
+      "https://www.roermond.nl/omgevingsplan-0",
+      "https://www.roermond.nl/terrasvergunning",
+      "https://www.roermond.nl/reclame-plaatsen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Heeft u een idee dat in strijd is met het bestaande beleid of omgevingsplan? Breng dit vrijblijvend voordat u een aanvraag indient bij ons in. Wij bespreken uw idee vervolgens intern aan de intaketafel.",
+          "original_reference": "Heeft u een idee dat in strijd is met het bestaande beleid of omgevingsplan? Dan kunt u dit voorafgaand aan uw aanvraag bij ons inbrengen. Wij bespreken uw idee vervolgens intern aan de intaketafel",
+          "note": "De informatie over het bespreken van afwijkende plannen aan de intaketafel komt exact overeen",
+          "source_urls": [
+            "https://www.roermond.nl/omgevingsplan-0"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Tijdens de behandeling van een aanvraag omgevingsvergunning, conceptverzoek of melding kunnen wij gebruik maken van een portaal waarmee we op een betrouwbare en veilige manier met burgers en bedrijven kunnen communiceren. Het portaal betreft de berichtenbox van jeleefomgeving.nl",
+          "original_reference": "Tijdens de behandeling van een aanvraag omgevingsvergunning, conceptverzoek of melding maken wij gebruik van de berichtenbox op jeleefomgeving.nl",
+          "note": "De informatie over het gebruik van de berichtenbox voor communicatie komt overeen",
+          "source_urls": [
+            "https://www.roermond.nl/terrasvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De kosten voor het aanvragen van een bouwtekening, bouwdossier of dossier omgevingsvergunning bedragen minimaal € 14,- per aangevraagd adres",
+          "original_reference": "De kosten voor een omgevingsvergunning hangen af van de bouwkosten en de aangevraagde activiteiten",
+          "note": "De originele tekst is minder specifiek over de exacte kosten, terwijl de bron een concreet minimumbedrag noemt voor bepaalde documenten",
+          "source_urls": [
+            "https://www.roermond.nl/aanvraag-bouwtekening-bouwdossier-of-dossier-omgevingsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De meeste informatie in de originele tekst komt overeen met de bronnen. Het belangrijkste verschil betreft de specificatie van kosten, waarbij de bronpagina's concrete bedragen noemen terwijl de originele tekst algemener blijft. De procedures, voorwaarden en communicatiemethoden worden consistent beschreven in zowel de originele tekst als de bronnen."
+  }
+}

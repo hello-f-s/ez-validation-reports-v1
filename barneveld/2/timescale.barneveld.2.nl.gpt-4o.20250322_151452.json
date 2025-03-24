@@ -1,0 +1,89 @@
+{
+  "context": {
+    "municipality": {
+      "name": "BARNEVELD",
+      "contact": {
+        "phone": "14 0342",
+        "email": "info@barneveld.nl",
+        "website": "http://www.barneveld.nl"
+      }
+    },
+    "service": {
+      "id": 2,
+      "name": "Bord of spandoek plaatsen aan de openbare weg"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 10,
+    "true_sentences": 8,
+    "false_sentences": 2,
+    "accuracy_percentage": 80.0,
+    "false_statements": [
+      {
+        "sentence": "Borden mogen maximaal 2 weken voor de activiteit of het evenement worden geplaatst.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Barneveld mogen borden maximaal 3 weken voor de activiteit of het evenement worden geplaatst."
+      },
+      {
+        "sentence": "De ontheffing voor aankondigingsborden kan online worden aangevraagd via de daarvoor bestemde website van de gemeente Barneveld.",
+        "status": "false",
+        "note": "De aanvraag moet worden gedaan via het e-formulier op de website www.barneveld.nl/evenementen, niet via een aparte website."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.barneveld.nl/vergunningen-en-ontheffingen/evenementen",
+      "https://www.barneveld.nl/ondernemen/standplaatsvergunning-aanvragen",
+      "https://www.barneveld.nl/vergunningen-en-ontheffingen/horeca/exploitatievergunning-aanvragen",
+      "https://www.barneveld.nl/",
+      "https://www.barneveld.nl/vergunningen-en-ontheffingen/evenementen/aankondigingsborden-plaatsen",
+      "https://www.barneveld.nl/vergunningen-en-ontheffingen/evenementen/evenementenvergunning-aanvragen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "De borden mogen maximaal 2 weken voor de activiteit/evenement worden geplaatst.",
+          "original_reference": "Borden mogen maximaal 2 weken voor de activiteit of het evenement worden geplaatst.",
+          "note": "De informatie over de plaatsingstermijn komt exact overeen",
+          "source_urls": [
+            "https://www.barneveld.nl/vergunningen-en-ontheffingen/evenementen/aankondigingsborden-plaatsen"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Barneveld, Voorthuizen: € 24,30\nOverige kernen: € 9,65",
+          "original_reference": "Barneveld en Voorthuizen: € 24,30 per kern\nOverige kernen: € 9,65 per kern",
+          "note": "De tarieven voor de verschillende kernen komen exact overeen",
+          "source_urls": [
+            "https://www.barneveld.nl/vergunningen-en-ontheffingen/evenementen/aankondigingsborden-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bijlage B van de Algemene Plaatselijke Verordening",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist de verwijzing naar de juridische basis (APV) die wel in de bronpagina staat vermeld",
+          "source_urls": [
+            "https://www.barneveld.nl/vergunningen-en-ontheffingen/evenementen/aankondigingsborden-plaatsen"
+          ]
+        }
+      ]
+    },
+    "summary": "De meeste informatie in de originele tekst komt overeen met de bronnen. Het enige significante verschil is dat de originele tekst de verwijzing naar de juridische basis (Bijlage B van de APV) niet vermeldt. De kerngegevens zoals tarieven en plaatsingstermijnen zijn consistent."
+  }
+}

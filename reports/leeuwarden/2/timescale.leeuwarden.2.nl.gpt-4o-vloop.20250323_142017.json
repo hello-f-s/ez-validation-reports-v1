@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LEEUWARDEN",
+      "contact": {
+        "phone": "14 058",
+        "email": "gemeente@leeuwarden.nl",
+        "website": "http://www.leeuwarden.nl"
+      }
+    },
+    "service": {
+      "id": 2,
+      "name": "Bord of spandoek plaatsen aan de openbare weg"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 19,
+    "false_sentences": 2,
+    "accuracy_percentage": 90.5,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor een gevelreclamevergunning bedragen €165,20 per reclame uiting, met een maximum van €495,81 per aanvraag.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Leeuwarden zijn deze bedragen niet correct. De exacte kosten zijn anders en worden jaarlijks vastgesteld."
+      },
+      {
+        "sentence": "Voor het in behandeling nemen van een aanvraag voor het gebruik van openbare ruimte betaalt u €84,48.",
+        "status": "false",
+        "note": "Dit bedrag is niet actueel volgens de huidige legesverordening van gemeente Leeuwarden. De tarieven worden jaarlijks aangepast."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.leeuwarden.nl/andere-vergunningen-en-ontheffingen/gebruik-openbare-ruimte/",
+      "https://www.leeuwarden.nl/andere-vergunningen-en-ontheffingen/standplaatsvergunning/",
+      "https://www.leeuwarden.nl/omgevingsvergunning/reclame/",
+      "https://www.leeuwarden.nl/omgevingsvergunning/procedure-omgevingsvergunning-aanvragen-of-melden/",
+      "https://www.leeuwarden.nl/omgevingsvergunning/gebruikmaken-maken-of-veranderen-van-een-uitweg/"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Doe dit minstens 3 weken voordat u die nodig heeft.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt geen minimale aanvraagtermijn van 3 weken, wat een belangrijke voorwaarde is voor aanvragers.",
+          "source_urls": [
+            "https://www.leeuwarden.nl/andere-vergunningen-en-ontheffingen/gebruik-openbare-ruimte/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "€238,66 voor de behandeling van aanvraag uitweg",
+          "original_reference": "€84,48 voor het in behandeling nemen van een aanvraag voor het gebruik van openbare ruimte",
+          "note": "Er is een verschil in de vermelde kosten voor verschillende type aanvragen. De bronnen tonen andere bedragen dan de originele tekst.",
+          "source_urls": [
+            "https://www.leeuwarden.nl/omgevingsvergunning/gebruikmaken-maken-of-veranderen-van-een-uitweg/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Er wordt gewerkt volgens de Crow 96b. Dit houdt in dat afzettingsmateriaal voldoet aan de standaard RAW-Bepalingen 2015",
+          "original_reference": "De plaatsing moet gebeuren volgens de voorschriften van Crow 96b.",
+          "note": "De bron geeft meer specifieke details over de Crow 96b-voorschriften, inclusief de RAW-Bepalingen 2015, die niet in de originele tekst staan.",
+          "source_urls": [
+            "https://www.leeuwarden.nl/andere-vergunningen-en-ontheffingen/gebruik-openbare-ruimte/"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de aanvraagtermijn (3 weken vooraf), specifieke kostenbedragen en meer gedetailleerde voorschriften rond Crow 96b. De bronnen bevatten aanvullende specificaties die niet in de originele tekst zijn opgenomen, wat belangrijk kan zijn voor aanvragers om rekening mee te houden."
+  }
+}

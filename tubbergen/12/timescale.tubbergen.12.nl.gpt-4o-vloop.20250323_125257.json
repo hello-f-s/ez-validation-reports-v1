@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "TUBBERGEN",
+      "contact": {
+        "phone": "(0546) 62 80 00",
+        "email": "gemeente@tubbergen.nl",
+        "website": "http://www.tubbergen.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 31,
+    "true_sentences": 30,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.8,
+    "false_statements": [
+      {
+        "sentence": "Vrijdag van 8.30 uur tot 12.30 uur",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Tubbergen is de balie op vrijdag geopend van 08:30 tot 12:00 uur, niet tot 12:30 uur."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.tubbergen.nl/omgevingsvergunning-milieubelastende-activiteit-aanvragen",
+      "https://www.tubbergen.nl/omgevingsvergunning-bouwen",
+      "https://www.tubbergen.nl/de-omgevingsvergunning-vanaf-1-januari-2024",
+      "https://www.tubbergen.nl/ruimtelijke-plannen",
+      "https://www.tubbergen.nl/omgevingsvergunning-en-meldingen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De uitgebreide procedure, met een termijn van 26 weken, wordt vanaf januari 2024 een uitzondering. Dit vraagt wel om een ander type vooroverleg dan dat wij nu kennen. Meer zaken van een aanvraag worden straks in het vooroverleg beoordeeld om een overschrijding van de beslistermijn te voorkomen.",
+          "original_reference": "De wettelijke afhandeltermijn voor een omgevingsvergunning is meestal 8 weken. Deze termijn kan worden verlengd met 6 weken.",
+          "note": "De brontekst specificeert dat de uitgebreide procedure van 26 weken vanaf 2024 een uitzondering wordt en benadrukt het belang van vooroverleg, terwijl de originele tekst dit detail niet vermeldt.",
+          "source_urls": [
+            "https://www.tubbergen.nl/de-omgevingsvergunning-vanaf-1-januari-2024"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Met betrekking tot een omgevingsvergunning voor het bouwen of verbouwen is het afhankelijk van: de omvang van het bouwplan, waarvoor het gebruikt gaat worden en de plek (op het perceel) waar gebouwd zal worden.",
+          "original_reference": "No matching information",
+          "note": "De brontekst geeft specifieke criteria voor het bepalen of een omgevingsvergunning nodig is, wat ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.tubbergen.nl/omgevingsvergunning-bouwen"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "In de meeste gevallen hoeft u alleen een melding milieubelastende activiteit te doen.",
+          "original_reference": "In de meeste gevallen volstaat een melding van milieubelastende activiteit.",
+          "note": "De informatie over het volstaan van een melding is consistent tussen beide bronnen.",
+          "source_urls": [
+            "https://www.tubbergen.nl/omgevingsvergunning-milieubelastende-activiteit-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de meer gedetailleerde informatie over de uitgebreide procedure vanaf 2024 en de specifieke criteria voor het bepalen of een omgevingsvergunning nodig is. De bronnen bieden aanvullende context die niet in de originele tekst staat, maar de kernprocessen en basisvereisten blijven grotendeels consistent."
+  }
+}

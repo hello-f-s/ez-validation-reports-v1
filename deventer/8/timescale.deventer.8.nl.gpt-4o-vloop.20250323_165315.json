@@ -1,0 +1,85 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DEVENTER",
+      "contact": {
+        "phone": "14 0570",
+        "email": "gemeente@deventer.nl",
+        "website": "http://www.deventer.nl"
+      }
+    },
+    "service": {
+      "id": 8,
+      "name": "Marktvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 27,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.4,
+    "false_statements": [
+      {
+        "sentence": "De gemeente beslist binnen 8 weken na ontvangst van uw aanvraag.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Deventer wordt binnen 4 weken na ontvangst van een complete aanvraag een besluit genomen over een standplaatsvergunning, niet binnen 8 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.deventer.nl/marktstandplaats",
+      "https://www.deventer.nl/markten/marktstandplaats-aanvragen",
+      "https://www.deventer.nl/vooroverleg",
+      "https://www.deventer.nl/terrasvergunning",
+      "https://www.deventer.nl/markten/standplaatsvergunning-aanvragen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Dit is geregeld in artikel 12 van de Bekendmakingswet. Bij de publicatie vermelden wij geen privacygevoelige gegevens.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de wettelijke basis (artikel 12 Bekendmakingswet) voor publicatie en de bescherming van privacygegevens",
+          "source_urls": [
+            "https://www.deventer.nl/marktstandplaats",
+            "https://www.deventer.nl/markten/marktstandplaats-aanvragen"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Een geldig legitimatiebewijs, Een recent uittreksel van uw inschrijving bij de Kamer van Koophandel",
+          "original_reference": "Een geldig legitimatiebewijs. Een recent uittreksel van uw inschrijving bij de Kamer van Koophandel.",
+          "note": "De vereiste documenten komen exact overeen met de originele tekst",
+          "source_urls": [
+            "https://www.deventer.nl/markten/standplaatsvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "De gemeente beslist binnen 8 weken na ontvangst van uw aanvraag. Deze termijn mag de gemeente eenmaal verlengen.",
+          "original_reference": "De gemeente beslist binnen 8 weken na ontvangst van uw aanvraag. Deze termijn kan eenmaal worden verlengd.",
+          "note": "De beslissingstermijn en verlengingsmogelijkheid komen overeen",
+          "source_urls": [
+            "https://www.deventer.nl/marktstandplaats",
+            "https://www.deventer.nl/markten/marktstandplaats-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen en originele tekst komen grotendeels overeen. Het belangrijkste verschil is dat de originele tekst de wettelijke basis voor publicatie (artikel 12 Bekendmakingswet) en de bescherming van privacygegevens niet vermeldt. Overige informatie zoals vereiste documenten, beslissingstermijnen en procedures zijn consistent."
+  }
+}

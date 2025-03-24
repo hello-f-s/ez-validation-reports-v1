@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HOOGEVEEN",
+      "contact": {
+        "phone": "14 0528",
+        "email": "info@hoogeveen.nl",
+        "website": "http://www.hoogeveen.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "U hoort binnen 3 maanden of u de vergunning krijgt.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Hoogeveen wordt binnen 8 weken beslist over de aanvraag van een aanwezigheidsvergunning voor kansspelautomaten, niet binnen 3 maanden."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.hoogeveen.nl/vergunningen/vergunning-gokautomaten",
+      "https://www.hoogeveen.nl/vergunningen/omgevingsvergunningen",
+      "https://www.hoogeveen.nl/veelgestelde-vragen-coffeeshop",
+      "https://www.hoogeveen.nl/vergunningen/alcoholvergunning",
+      "https://www.hoogeveen.nl/vergunningen/klein-kansspel-of-loterij"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://hoogeveen.nl/vergunning-gokautomaten\">Gemeente",
+        "reason": "INVALID: Error scraping https://hoogeveen.nl/vergunning-gokautomaten\">Gemeente: 404 Client Error: Not Found for url: https://www.hoogeveen.nl/vergunning-gokautomaten%22%3EGemeente"
+      },
+      {
+        "url": "https://hoogeveen.nl/vergunning-gokautomaten",
+        "reason": "INVALID: Error scraping https://hoogeveen.nl/vergunning-gokautomaten: 404 Client Error: Not Found for url: https://www.hoogeveen.nl/vergunning-gokautomaten"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De aanwezigheidsvergunning geldt voor onbepaalde tijd, u hoeft deze dus niet jaarlijks te verlengen",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat de vergunning voor onbepaalde tijd geldt. Dit is belangrijke aanvullende informatie voor aanvragers.",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/vergunning-gokautomaten"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De aanwezigheidsvergunning is niet overdraagbaar. Als u een horecazaak met een gokautomaat overneemt van iemand anders, moet u dus opnieuw een vergunning aanvragen",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat de vergunning niet overdraagbaar is bij overname van een zaak. Dit is een belangrijke voorwaarde die ontbreekt.",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/vergunning-gokautomaten"
+          ]
+        }
+      ]
+    },
+    "summary": "De broninhoud bevat twee belangrijke aanvullende voorwaarden die niet in de originele tekst staan: de aanwezigheidsvergunning geldt voor onbepaalde tijd en is niet overdraagbaar bij overname van een zaak. Deze informatie is essentieel voor ondernemers die een vergunning willen aanvragen of een bestaande horecazaak willen overnemen."
+  }
+}

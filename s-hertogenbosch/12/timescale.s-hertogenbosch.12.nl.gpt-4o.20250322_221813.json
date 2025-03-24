@@ -1,0 +1,79 @@
+{
+  "context": {
+    "municipality": {
+      "name": "S-HERTOGENBOSCH",
+      "contact": {
+        "phone": "(073) 615 51 55",
+        "email": "gemeente@s-hertogenbosch.nl",
+        "website": "http://www.s-hertogenbosch.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Voor het aanvragen van een omgevingsvergunning via het Omgevingsloket heb je eHerkenning nodig.",
+        "status": "false",
+        "note": "Voor particulieren is DigiD voldoende voor het aanvragen van een omgevingsvergunning via het Omgevingsloket. Alleen bedrijven hebben eHerkenning nodig."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.s-hertogenbosch.nl/product/evenementenvergunning/",
+      "https://www.s-hertogenbosch.nl/omgevingsplan/",
+      "https://www.s-hertogenbosch.nl/product/omgevingsvergunning/",
+      "https://www.s-hertogenbosch.nl/omgevingswet/",
+      "https://www.s-hertogenbosch.nl/product/omgevingsvergunning-wabo/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://example.com",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De kosten van een vergunning zijn afhankelijk van de activiteit en de bouwkosten. Deze zijn te vinden in de Legesverordening 's-Hertogenbosch 2025",
+          "original_reference": "Hier kan geen specifieke informatie over gevonden worden op de website van deze gemeente.",
+          "note": "De originele tekst stelt dat er geen informatie over kosten beschikbaar is, terwijl de bron wel verwijst naar de Legesverordening met specifieke kostinformatie.",
+          "source_urls": [
+            "https://www.s-hertogenbosch.nl/product/omgevingsvergunning-wabo/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Past jouw plan in het bestemmingsplan, dan toetsen we het aan de welstandsnota. Wanneer jouw plan niet binnen het bestemmingsplan past, dan beoordelen wij of het kans van slagen heeft. Wanneer het plan kansrijk is, vragen we jou om een omgevingsdialoog te voeren.",
+          "original_reference": "Voor een conceptaanvraag worden de plannen vooraf getoetst aan het omgevingsplan en de Welstandsnota.",
+          "note": "De bronnen beschrijven een uitgebreider proces voor conceptaanvragen, inclusief een omgevingsdialoog bij afwijkingen van het bestemmingsplan, wat niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.s-hertogenbosch.nl/product/omgevingsvergunning/"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele tekst en de bronnen. Ten eerste blijkt er wel degelijk informatie over kosten beschikbaar te zijn via de Legesverordening, in tegenstelling tot wat de originele tekst vermeldt. Ten tweede is de procedure voor conceptaanvragen uitgebreider dan beschreven in de originele tekst, met name wat betreft de omgevingsdialoog bij afwijkingen van het bestemmingsplan."
+  }
+}

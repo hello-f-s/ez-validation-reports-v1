@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "PEEL EN MAAS",
+      "contact": {
+        "phone": "(077) 306 66 66",
+        "email": "info@peelenmaas.nl",
+        "website": "http://www.peelenmaas.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 9,
+    "true_sentences": 7,
+    "false_sentences": 2,
+    "accuracy_percentage": 77.8,
+    "false_statements": [
+      {
+        "sentence": "U moet uw evenement minimaal 3 weken van tevoren melden via het formulier: <a href=\"https://www.peelenmaas.nl/home/Wonen_en_leefomgeving/Bedrijven_en_Instellingen/evenementen_melden.htm\">Melden evenement</a>",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Peel en Maas moet een evenement minimaal 8 weken van tevoren worden gemeld, niet 3 weken."
+      },
+      {
+        "sentence": "Een evenementenvergunning aanvragen is gratis.",
+        "status": "false",
+        "note": "Voor het aanvragen van een evenementenvergunning worden leges in rekening gebracht volgens de legesverordening van de gemeente Peel en Maas."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 9,
+    "valid_urls": 0,
+    "invalid_urls": 9,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.peelenmaas.nl/vergunning-of-toestemming/omgevingsvergunning",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.peelenmaas.nl/home/Wonen_en_leefomgeving/Bedrijven_en_Instellingen/evenementen_melden.htm\">Melden",
+        "reason": "INVALID: Error scraping https://www.peelenmaas.nl/home/Wonen_en_leefomgeving/Bedrijven_en_Instellingen/evenementen_melden.htm\">Melden: 404 Client Error: Not Found for url: https://www.peelenmaas.nl/home/Wonen_en_leefomgeving/Bedrijven_en_Instellingen/evenementen_melden.htm%22%3EMelden"
+      },
+      {
+        "url": "https://www.peelenmaas.nl/home/Wonen_en_leefomgeving/Bedrijven_en_Instellingen/evenementenvergunning_aanvragen.htm",
+        "reason": "INVALID: Error scraping https://www.peelenmaas.nl/home/Wonen_en_leefomgeving/Bedrijven_en_Instellingen/evenementenvergunning_aanvragen.htm: 404 Client Error: Not Found for url: https://www.peelenmaas.nl/home/Wonen_en_leefomgeving/Bedrijven_en_Instellingen/evenementenvergunning_aanvragen.htm"
+      },
+      {
+        "url": "https://www.peelenmaas.nl/vergunning-of-toestemming/evenement-of-feest-organiseren",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.peelenmaas.nl/vergunning-of-toestemming/bedrijf-starten-of-wijzigen",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.peelenmaas.nl/vergunning-of-toestemming/",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.peelenmaas.nl/home/Wonen_en_leefomgeving/Bedrijven_en_Instellingen/evenementenvergunning_aanvragen.htm\">Evenementenvergunning",
+        "reason": "INVALID: Error scraping https://www.peelenmaas.nl/home/Wonen_en_leefomgeving/Bedrijven_en_Instellingen/evenementenvergunning_aanvragen.htm\">Evenementenvergunning: 404 Client Error: Not Found for url: https://www.peelenmaas.nl/home/Wonen_en_leefomgeving/Bedrijven_en_Instellingen/evenementenvergunning_aanvragen.htm%22%3EEvenementenvergunning"
+      },
+      {
+        "url": "https://www.peelenmaas.nl/home/Wonen_en_leefomgeving/Bedrijven_en_Instellingen/evenementen_melden.htm",
+        "reason": "INVALID: Error scraping https://www.peelenmaas.nl/home/Wonen_en_leefomgeving/Bedrijven_en_Instellingen/evenementen_melden.htm: 404 Client Error: Not Found for url: https://www.peelenmaas.nl/home/Wonen_en_leefomgeving/Bedrijven_en_Instellingen/evenementen_melden.htm"
+      },
+      {
+        "url": "https://www.peelenmaas.nl/vergunning-of-toestemming/alcohol-tijdelijk-aanbieden",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  }
+}

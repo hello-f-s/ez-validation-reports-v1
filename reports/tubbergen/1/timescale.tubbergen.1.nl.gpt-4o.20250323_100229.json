@@ -1,0 +1,87 @@
+{
+  "context": {
+    "municipality": {
+      "name": "TUBBERGEN",
+      "contact": {
+        "phone": "(0546) 62 80 00",
+        "email": "gemeente@tubbergen.nl",
+        "website": "http://www.tubbergen.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "U kunt de formulieren voor de aanvraag indienen via het beveiligde e-mailadres bibob@noaberkracht.nl of neem persoonlijk contact op met team APV en Bijzondere Wetten.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Tubbergen moet een alcoholvergunning worden aangevraagd via het algemene e-mailadres gemeente@tubbergen.nl, niet via bibob@noaberkracht.nl"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.tubbergen.nl/loterij",
+      "https://www.tubbergen.nl/omgevingsvergunning-bouwen",
+      "https://www.tubbergen.nl/verklaring-omtrent-gedrag-vog",
+      "https://www.tubbergen.nl/alcoholvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.tubbergen.nl/evenementenvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "U heeft een alcoholvergunning nodig als u tegen betaling alcoholhoudende dranken schenkt in een horecabedrijf. Ook wanneer u een slijterij bezit heeft u voor de verkoop van drank in flessen (voor het nuttigen op een andere locatie) een Alcoholvergunning nodig.",
+          "original_reference": "U heeft een alcoholvergunning nodig als u tegen betaling alcoholhoudende dranken schenkt in een horecabedrijf of een slijterij bezit voor de verkoop van drank in flessen voor consumptie op een andere locatie.",
+          "note": "De basisvereisten voor een alcoholvergunning komen overeen in beide teksten",
+          "source_urls": [
+            "https://www.tubbergen.nl/alcoholvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De procedure duurt normaal gesproken 8 weken.",
+          "original_reference": "Aanvraag voor paracommerciële instellingen duurt normaal gesproken 6 maanden.",
+          "note": "De brontekst vermeldt alleen een termijn van 8 weken voor reguliere horeca, terwijl de originele tekst ook een termijn van 6 maanden voor paracommerciële instellingen noemt",
+          "source_urls": [
+            "https://www.tubbergen.nl/alcoholvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "No matching information",
+          "original_reference": "De inrichting van uw horecazaak moet voldoen aan de regels van het Bouwbesluit en een oppervlakte van minimaal 35 m2 hebben.",
+          "note": "De specifieke oppervlakte-eis van 35 m2 wordt niet genoemd in de bronpagina's",
+          "source_urls": [
+            "https://www.tubbergen.nl/alcoholvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de vermelde proceduretijden en specifieke inrichtingseisen. De brontekst is minder gedetailleerd over bepaalde voorwaarden, zoals de minimale oppervlakte-eis van 35 m2. De basiseisen voor het verkrijgen van een alcoholvergunning komen wel overeen. Sommige specifieke details uit de originele tekst zijn niet terug te vinden in de bronpagina's."
+  }
+}

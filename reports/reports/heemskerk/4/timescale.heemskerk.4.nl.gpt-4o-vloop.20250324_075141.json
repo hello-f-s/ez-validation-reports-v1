@@ -1,0 +1,79 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HEEMSKERK",
+      "contact": {
+        "phone": "14 0251",
+        "email": "post@heemskerk.nl",
+        "website": "http://www.heemskerk.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 31,
+    "true_sentences": 29,
+    "false_sentences": 2,
+    "accuracy_percentage": 93.5,
+    "false_statements": [
+      {
+        "sentence": "Minder dan 200 bezoekers: € 59,88",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Heemskerk is het tarief voor evenementen met minder dan 200 bezoekers € 61,70"
+      },
+      {
+        "sentence": "Tussen de 200 en 1.000 bezoekers: € 239,50",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Heemskerk is het tarief voor evenementen tussen 200 en 1.000 bezoekers € 246,80"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/evenement-melden-of-vergunning-aanvragen",
+      "https://www.heemskerk.nl/aanvragen-en-regelen/subsidie-aanvragen-/-vaststellen/subsidie-evenementen",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca/exploitatievergunning",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/vergunning-gebruik-openbare-weg"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De hoogte van een evenementensubsidie [...] is maximaal € 2.750 (voor kleine, eenvoudige evenementen) respectievelijk € 16.500 (voor grote evenementen)",
+          "original_reference": "De hoogte van de subsidie hangt af van het beoogd aantal bezoekers en de verwachte totale kosten",
+          "note": "De originele tekst vermeldt niet de specifieke maximumbedragen voor subsidies, terwijl de bron concrete bedragen noemt: €2.750 voor kleine evenementen en €16.500 voor grote evenementen",
+          "source_urls": [
+            "https://www.heemskerk.nl/aanvragen-en-regelen/subsidie-aanvragen-/-vaststellen/subsidie-evenementen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bij de aanvraag betaalt u direct de legeskosten via iDeal",
+          "original_reference": "U betaalt de kosten achteraf",
+          "note": "Er is een tegenstrijdigheid in het betalingsmoment: de bron geeft aan dat er direct via iDeal betaald moet worden, terwijl de originele tekst achteraf betaling vermeldt",
+          "source_urls": [
+            "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca/exploitatievergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele tekst en de bronnen. Ten eerste ontbreken in de originele tekst de specifieke maximumbedragen voor evenementensubsidies. Ten tweede is er een tegenstrijdigheid in het betalingsmoment van de legeskosten. De overige informatie in de originele tekst komt overeen met de bronnen of kan niet geverifieerd worden met de beschikbare bronpagina's."
+  }
+}

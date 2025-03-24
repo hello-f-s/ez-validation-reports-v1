@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "TUBBERGEN",
+      "contact": {
+        "phone": "(0546) 62 80 00",
+        "email": "gemeente@tubbergen.nl",
+        "website": "http://www.tubbergen.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 22,
+    "false_sentences": 2,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Alcoholvergunning: € 357,00",
+        "status": "false",
+        "note": "Het actuele tarief voor een alcoholvergunning in gemeente Tubbergen is € 366,95 volgens de tarieventabel 2024 van de gemeente"
+      },
+      {
+        "sentence": "Aanvraag voor paracommerciële instellingen duurt normaal gesproken 6 maanden.",
+        "status": "false",
+        "note": "Volgens de gemeente Tubbergen geldt voor alle alcoholvergunningen een standaard behandeltermijn van 8 weken, er wordt geen onderscheid gemaakt voor paracommerciële instellingen"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.tubbergen.nl/alcoholvergunning",
+      "https://www.tubbergen.nl/loterij",
+      "https://www.tubbergen.nl/omgevingsvergunning-bouwen",
+      "https://www.tubbergen.nl/verklaring-omtrent-gedrag-vog",
+      "https://www.tubbergen.nl/evenementenvergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De procedure duurt normaal gesproken 8 weken.",
+          "original_reference": "Aanvraag voor paracommerciële instellingen duurt normaal gesproken 6 maanden.",
+          "note": "De originele tekst vermeldt een termijn van 6 maanden voor paracommerciële instellingen, terwijl de brontekst alleen een algemene termijn van 8 weken noemt zonder onderscheid tussen types.",
+          "source_urls": [
+            "https://www.tubbergen.nl/alcoholvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U kunt een vergunning aanvragen als uw loterij bedoeld is voor een algemeen belang (bijvoorbeeld sport en welzijn, cultuur, onderwijs)",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over loterijen of kansspelen, terwijl dit wel een relevante gemeentelijke dienst is met specifieke voorwaarden.",
+          "source_urls": [
+            "https://www.tubbergen.nl/loterij"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bij een nieuwe aanvraag of een overname moet u ook een Bibob-vragenformulier invullen.",
+          "original_reference": "Een Bibob-vragenformulier bij een nieuwe aanvraag of overname invullen.",
+          "note": "De brontekst presenteert dit als een verplichting ('moet'), terwijl de originele tekst dit meer als een onderdeel van de procedure beschrijft.",
+          "source_urls": [
+            "https://www.tubbergen.nl/alcoholvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont enkele belangrijke verschillen tussen de originele tekst en de bronnen. Het meest opvallende verschil betreft de proceduretijd voor paracommerciële instellingen. Daarnaast ontbreekt in de originele tekst informatie over loterijen. Ook is er een nuanceverschil in de formulering van de Bibob-vereisten. De overige informatie komt grotendeels overeen met de bronnen."
+  }
+}

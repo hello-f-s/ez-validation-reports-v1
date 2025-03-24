@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MAASSLUIS",
+      "contact": {
+        "phone": "14 010",
+        "email": "gemeente@maassluis.nl",
+        "website": "http://www.maassluis.nl"
+      }
+    },
+    "service": {
+      "id": 16,
+      "name": "Registreren in het Landelijk Register Kinderopvang (LRK)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "Gebruik een van de aanvraagformulieren en dien deze in bij de gemeente Rotterdam per mail of per post.",
+        "status": "false",
+        "note": "Deze informatie is onjuist voor Maassluis. De aanvraag moet worden ingediend bij de gemeente Maassluis, niet bij de gemeente Rotterdam. Dit is een essentiële fout omdat het om een andere gemeente gaat."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.maassluis.nl/kinderopvang-starten",
+      "https://www.maassluis.nl/meest-gestelde-vragen-kinderopvang",
+      "https://www.maassluis.nl/soorten-kinderopvang",
+      "https://www.maassluis.nl/kinderopvangtoeslag",
+      "https://www.maassluis.nl/hulp-voor-kinderen-en-gezinnen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "VVE Indicatie: sommige kinderen komen in aanmerking voor een zogenaamde VVE-indicatie van het consultatiebureau (CJG). [...] Als uw kind een VVE-indicatie heeft gekregen, heeft uw kind recht op 4 dagdelen peuteropvang. U betaalt voor de 2 extra dagdelen geen extra ouderbijdrage. Peuters die geen VVE-indicatie hebben komen twee dagdelen per week.",
+          "original_reference": "Voor meer informatie over kinderopvangtoeslag en andere ondersteunende diensten zoals de VVE-indicatie voor peuters, kunt u terecht bij het Centrum voor Jeugd en Gezin (CJG)",
+          "note": "De originele tekst mist belangrijke specifieke informatie over VVE-indicatie, namelijk dat kinderen met VVE-indicatie recht hebben op 4 dagdelen peuteropvang waarvan 2 dagdelen zonder extra kosten, terwijl kinderen zonder indicatie 2 dagdelen krijgen.",
+          "source_urls": [
+            "https://www.maassluis.nl/soorten-kinderopvang"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vraag een VOG Rechtspersonen aan. Hiermee kunt u bewijzen dat uw onderneming of werknemers op leidinggevende posities geen strafbare feiten hebben gepleegd.",
+          "original_reference": "VOG Rechtspersonen voor het ondernemings- en personeelsteam.",
+          "note": "De bronpagina specificeert dat de VOG Rechtspersonen specifiek bedoeld is voor de onderneming en leidinggevende posities, terwijl de originele tekst dit niet duidelijk maakt.",
+          "source_urls": [
+            "https://www.maassluis.nl/kinderopvang-starten"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont twee belangrijke verschillen: 1) De originele tekst mist cruciale details over de VVE-indicatie en de bijbehorende rechten en kosten voor peuteropvang, en 2) Er is een verduidelijking nodig over voor wie de VOG Rechtspersonen precies bedoeld is. De overige informatie in de originele tekst komt overeen met de bronnen."
+  }
+}

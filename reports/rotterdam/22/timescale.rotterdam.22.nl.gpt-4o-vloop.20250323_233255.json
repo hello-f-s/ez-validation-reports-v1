@@ -1,0 +1,86 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ROTTERDAM",
+      "contact": {
+        "phone": "14 010",
+        "email": "null",
+        "website": "http://www.rotterdam.nl"
+      }
+    },
+    "service": {
+      "id": 22,
+      "name": "Woonruimte splitsen of samenvoegen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 31,
+    "true_sentences": 29,
+    "false_sentences": 2,
+    "accuracy_percentage": 93.5,
+    "false_statements": [
+      {
+        "sentence": "Is het gebouw jonger dan 25 jaar of bevat het meer dan 24 woningen? Dan heeft u geen vergunning nodig.",
+        "status": "false",
+        "note": "Volgens de gemeente Rotterdam is ook voor gebouwen met meer dan 24 woningen een splitsingsvergunning nodig. De leeftijdsgrens van 25 jaar is wel correct."
+      },
+      {
+        "sentence": "Als de aanvraag voor toestemming van de gemeente compleet is, duurt de beslissing maximaal 6 weken.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Rotterdam duurt de behandeling van een complete aanvraag maximaal 8 weken, niet 6 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 3,
+    "invalid_urls": 2,
+    "accuracy_percentage": 60.0,
+    "valid_urls_list": [
+      "https://www.rotterdam.nl/vergunning-splitsen-gebouw-in-appartementsrechten-aanvragen",
+      "https://www.rotterdam.nl/grond-splitsen",
+      "https://www.rotterdam.nl/onderneming-starten"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.rotterdam.nl/vergunning-splitsen-gebouw-in-appartementsrechten-aanvragen/start-vergunning-splitsen-gebouw-in-appartementsrechten-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.rotterdam.nl/vergunning-of-toestemming-opkoopbescherming-aanvragen/start-vergunning-of-toestemming-opkoopbescherming-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u als eigenaar een gebouw wilt splitsen in losse, zelfstandige appartementen hebt u soms een vergunning nodig.",
+          "original_reference": "Als ondernemer in Rotterdam moet u een vergunning aanvragen als:",
+          "note": "De originele tekst stelt dat ondernemers altijd een vergunning nodig hebben onder bepaalde voorwaarden, terwijl de brontekst aangeeft dat dit slechts 'soms' nodig is. Dit is een belangrijk verschil in de absolute versus voorwaardelijke noodzaak van de vergunning.",
+          "source_urls": [
+            "https://www.rotterdam.nl/vergunning-splitsen-gebouw-in-appartementsrechten-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als eigenaar van een woning/bedrijf maakt u eerst de 'Zelftoets' om te controleren of u een vergunning nodig hebt.",
+          "original_reference": "Voordat u een vergunning aanvraagt, kunt u als eigenaar de 'Zelftoets' uitvoeren",
+          "note": "De brontekst presenteert de Zelftoets als een verplichte eerste stap ('maakt u eerst'), terwijl de originele tekst dit als optioneel presenteert ('kunt u').",
+          "source_urls": [
+            "https://www.rotterdam.nl/vergunning-splitsen-gebouw-in-appartementsrechten-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele tekst en de bronnen. Het eerste verschil betreft de noodzaak van een vergunning, waarbij de originele tekst stelliger is dan de brontekst. Het tweede verschil gaat over de status van de Zelftoets, die in de bron als verplicht wordt gepresenteerd maar in de originele tekst als optioneel wordt beschreven. Veel van de specifieke details uit de originele tekst (zoals kosten en termijnen) kunnen niet geverifieerd worden omdat deze informatie niet in de beschikbare bronnen staat."
+  }
+}

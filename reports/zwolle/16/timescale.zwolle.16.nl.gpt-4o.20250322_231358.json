@@ -1,0 +1,89 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ZWOLLE",
+      "contact": {
+        "phone": "14 038",
+        "email": "postbus@zwolle.nl",
+        "website": "http://www.zwolle.nl"
+      }
+    },
+    "service": {
+      "id": 16,
+      "name": "Registreren in het Landelijk Register Kinderopvang (LRK)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 13,
+    "false_sentences": 2,
+    "accuracy_percentage": 86.7,
+    "false_statements": [
+      {
+        "sentence": "Aanvraagkosten voor exploitatie gastouderopvang: € 98,00",
+        "status": "false",
+        "note": "Volgens de actuele tarieven van gemeente Zwolle bedragen de kosten voor een aanvraag exploitatie gastouderopvang € 182,00"
+      },
+      {
+        "sentence": "Aanvraagkosten voor exploitatie kinderdagverblijf, buitenschoolse opvang, gastouderbureau: € 198,00",
+        "status": "false",
+        "note": "Volgens de actuele tarieven van gemeente Zwolle bedragen de kosten voor een aanvraag exploitatie kinderdagverblijf, BSO of gastouderbureau € 2.580,00"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 2,
+    "invalid_urls": 3,
+    "accuracy_percentage": 40.0,
+    "valid_urls_list": [
+      "https://www.zwolle.nl/kinderopvang-starten-of-wijzigen",
+      "https://www.zwolle.nl/kindregeling"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.zwolle.nl/beleid-kinderopvang",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.zwolle.nl/subsidieregeling-gelijke-kansen-peuteropvang-voorschoolse-educatie-en-kinderopvang",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.zwolle.nl/kosten-kinderopvang",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De formulieren voor het aanmelden of wijzigen van een kinderdagverblijf, buitenschoolse opvang of gastouderbureau vindt u op de website van de Rijksoverheid. Wanneer u het formulier heeft gedownload en ingevuld kunt u deze uploaden via bovenstaande knop.",
+          "original_reference": "Ingevuld formulier: Dit kun je vinden op de website van de Rijksoverheid en moet worden gedownload, ingevuld en geüpload.",
+          "note": "De bronpagina specificeert dat het formulier via een specifieke knop op de gemeentewebsite moet worden geüpload, terwijl dit detail ontbreekt in de originele tekst. Ook wordt expliciet vermeld dat dit geldt voor zowel aanmelden als wijzigen.",
+          "source_urls": [
+            "https://www.zwolle.nl/kinderopvang-starten-of-wijzigen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Om als kinderopvang geregistreerd te mogen zijn in het LRK, moet u dus bij de gemeente een aanvraag doen. Daarna doet de GGD een inspectie. De gemeente volgt het advies van de GGD en geeft daarna formeel wel of geen toestemming.",
+          "original_reference": "Je dient een aanvraag in bij de gemeente waar de opvang gevestigd zal zijn. Dit aanvraagproces wordt verder beoordeeld door de gemeente en er volgt een inspectie door de GGD.",
+          "note": "De bronpagina verduidelijkt de volgorde van het proces en benadrukt dat de gemeente het GGD-advies volgt bij de formele toestemming, wat specifieker is dan de originele tekst.",
+          "source_urls": [
+            "https://www.zwolle.nl/kinderopvang-starten-of-wijzigen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de specifieke details over het uploadproces van het aanvraagformulier en een duidelijkere beschrijving van de procedure waarbij de gemeente het GGD-advies volgt voor formele toestemming. De bronnen bieden meer specifieke procedurestappen dan de originele tekst, hoewel de kern van de informatie grotendeels overeenkomt."
+  }
+}

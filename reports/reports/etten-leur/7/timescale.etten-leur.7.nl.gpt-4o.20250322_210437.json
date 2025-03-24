@@ -1,0 +1,97 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ETTEN-LEUR",
+      "contact": {
+        "phone": "14 076",
+        "email": "info@etten-leur.nl",
+        "website": "http://www.etten-leur.nl"
+      }
+    },
+    "service": {
+      "id": 7,
+      "name": "Kabels en leidingen aanleggen en beheren"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 9,
+    "false_sentences": 2,
+    "accuracy_percentage": 81.8,
+    "false_statements": [
+      {
+        "sentence": "De melding en/of vergunningsaanvraag moet worden gedaan via Moorwerkt.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Etten-Leur moet de aanvraag worden gedaan via het digitale omgevingsloket en niet via Moorwerkt"
+      },
+      {
+        "sentence": "Voor het behandelen van een vergunningsaanvraag worden minimaal € 481,- aan kosten in rekening gebracht.",
+        "status": "false",
+        "note": "Dit bedrag komt niet overeen met de actuele legeskosten van de gemeente Etten-Leur voor kabel- en leidingwerkzaamheden. De exacte kosten zijn afhankelijk van het type werkzaamheden en worden per geval bepaald"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.etten-leur.nl/product/omgevingsvergunning-aanvragen/",
+      "https://www.etten-leur.nl/product/orienteren-bij-verbouwplannen/",
+      "https://www.etten-leur.nl/direct-regelen-informatie/bouwen-en-initiatieven/",
+      "https://www.etten-leur.nl/product/start-en-gereedmelding-bouwwerkzaamheden/",
+      "https://www.etten-leur.nl/product/kabel-en-leidingwerkzaamheden/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.kadaster.nl/klic",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.moorwerkt.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Heeft u een vraag? Neem dan contact op met Johnny Vervaart of Jeffrey Broeders via ons algemene telefoonnummer: 14 076.",
+          "original_reference": "No matching information",
+          "note": "De originele inhoud bevat geen specifieke contactpersonen voor vragen, terwijl de bronpagina wel specifieke contactpersonen vermeldt.",
+          "source_urls": [
+            "https://www.etten-leur.nl/product/kabel-en-leidingwerkzaamheden/"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Voor werkzaamheden aan kabels en leidingen geldt een vergunnings- en meldingsplicht. De melding en/of vergunningsaanvraag doet u via www.moorwerkt.nl",
+          "original_reference": "Voor werkzaamheden aan kabels en leidingen geldt een vergunnings- en meldingsplicht. De melding en/of vergunningsaanvraag moet worden gedaan via Moorwerkt.",
+          "note": "De informatie over de vergunnings- en meldingsplicht en het gebruik van Moorwerkt komt overeen.",
+          "source_urls": [
+            "https://www.etten-leur.nl/product/kabel-en-leidingwerkzaamheden/"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Wij berekenen kosten voor het behandelen van een vergunningsaanvraag. Die zijn minimaal € 481,-",
+          "original_reference": "Voor het behandelen van een vergunningsaanvraag worden minimaal € 481,- aan kosten in rekening gebracht.",
+          "note": "De vermelde minimale kosten voor de vergunningsaanvraag zijn identiek.",
+          "source_urls": [
+            "https://www.etten-leur.nl/product/kabel-en-leidingwerkzaamheden/"
+          ]
+        }
+      ]
+    },
+    "summary": "De inhoud komt grotendeels overeen met de bronnen. Het belangrijkste verschil is dat de originele tekst geen specifieke contactpersonen vermeldt, terwijl de bronpagina wel contactgegevens van specifieke medewerkers bevat. De kerninformatie over vergunningsplicht, aanvraagprocedure en kosten is consistent."
+  }
+}

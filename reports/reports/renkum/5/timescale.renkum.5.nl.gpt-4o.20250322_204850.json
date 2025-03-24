@@ -1,0 +1,91 @@
+{
+  "context": {
+    "municipality": {
+      "name": "RENKUM",
+      "contact": {
+        "phone": "(026) 334 81 11",
+        "email": "info@renkum.nl",
+        "website": "http://www.renkum.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "Voor specifieke vergunningen zoals een terrasvergunning bedraagt de prijs € 122,50 (2025).",
+        "status": "false",
+        "note": "Het genoemde bedrag van €122,50 voor 2025 is onjuist. Volgens de actuele legesverordening van gemeente Renkum bedraagt het tarief voor een terrasvergunning €122,50 voor 2024, niet voor 2025."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 1,
+    "invalid_urls": 5,
+    "accuracy_percentage": 16.7,
+    "valid_urls_list": [
+      "https://www.renkum.nl/Ondernemers/Bouwen_en_vestigen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://gemeente.renkum.nl",
+        "reason": "INVALID: Error scraping https://gemeente.renkum.nl: HTTPSConnectionPool(host='gemeente.renkum.nl', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x107d00690>: Failed to resolve 'gemeente.renkum.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.renkum.nl/Ondernemers/Horeca",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.renkum.nl/Ondernemers/Horeca/Terrasvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.renkum.nl/Ondernemers/Horeca/Speelautomaten",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.renkum.nl/Ondernemers/Bouwen_en_vestigen/Zaken_om_rekening_mee_te_houden/Seksbedrijf_exploitatievergunning",
+        "reason": "INVALID: Error scraping https://www.renkum.nl/Ondernemers/Bouwen_en_vestigen/Zaken_om_rekening_mee_te_houden/Seksbedrijf_exploitatievergunning: 404 Client Error:  for url: https://www.renkum.nl/Ondernemers/Bouwen_en_vestigen/Zaken_om_rekening_mee_te_houden/Seksbedrijf_exploitatievergunning"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor het exploiteren van een seksbedrijf heeft u een exploitatievergunning nodig. De vergunning moet worden aangevraagd bij de gemeente. De aanvraag wordt getoetst aan de Algemene Plaatselijke Verordening (APV).",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen specifieke informatie over exploitatievergunningen voor seksbedrijven, terwijl dit wel een aparte categorie is met eigen voorwaarden volgens de bronnen.",
+          "source_urls": [
+            "https://www.renkum.nl/Ondernemers/Bouwen_en_vestigen/Zaken_om_rekening_mee_te_houden/Seksbedrijf_exploitatievergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De kosten voor een terrasvergunning bedragen € 122,50 voor 2024",
+          "original_reference": "Voor specifieke vergunningen zoals een terrasvergunning bedraagt de prijs € 122,50 (2025)",
+          "note": "Er is een verschil in het jaartal waarvoor de terrasvergunningkosten gelden: de originele tekst noemt 2025, terwijl de bronnen 2024 vermelden.",
+          "source_urls": [
+            "https://www.renkum.nl/Ondernemers/Horeca/Terrasvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele tekst en de bronnen. Ten eerste ontbreekt in de originele tekst informatie over exploitatievergunningen voor seksbedrijven. Ten tweede is er een discrepantie in het jaartal voor de terrasvergunningkosten (2024 vs 2025). De overige informatie in de originele tekst komt overeen met de bronnen of kan niet geverifieerd worden door ontbrekende informatie in de geciteerde bronnen."
+  }
+}

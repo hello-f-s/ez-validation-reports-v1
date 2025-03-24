@@ -1,0 +1,95 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ERMELO",
+      "contact": {
+        "phone": "(0341) 56 73 21",
+        "email": "gemeente@ermelo.nl",
+        "website": "http://www.ermelo.nl"
+      }
+    },
+    "service": {
+      "id": 7,
+      "name": "Kabels en leidingen aanleggen en beheren"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 16,
+    "true_sentences": 14,
+    "false_sentences": 2,
+    "accuracy_percentage": 87.5,
+    "false_statements": [
+      {
+        "sentence": "Melding spoedeisende werkzaamheden: € 215,55",
+        "status": "false",
+        "note": "Dit bedrag is niet correct volgens de actuele legesverordening van gemeente Ermelo"
+      },
+      {
+        "sentence": "Aanvraag instemmingsbesluit: € 602,60",
+        "status": "false",
+        "note": "Dit bedrag komt niet overeen met de huidige tarieven van gemeente Ermelo voor een instemmingsbesluit"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 3,
+    "invalid_urls": 2,
+    "accuracy_percentage": 60.0,
+    "valid_urls_list": [
+      "https://www.ermelo.nl/graafmelding",
+      "https://www.ermelo.nl/omgevingsplein/bouwen-en-verbouwen/start-controle-en-gereedmelding-bouw",
+      "https://www.ermelo.nl/kabels-en-leidingen-leggen-in-openbare-grond"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.ermelo.nl/omgevingsplein/zie-ook",
+        "reason": "INVALID: Error scraping https://www.ermelo.nl/omgevingsplein/zie-ook: 404 Client Error: Not Found for url: https://www.ermelo.nl/omgevingsplein/zie-ook"
+      },
+      {
+        "url": "https://www.ermelo.nl/omgevingsplein/omgevingsloket/contact-over-bouwen-en-verbouwen",
+        "reason": "INVALID: Error scraping https://www.ermelo.nl/omgevingsplein/omgevingsloket/contact-over-bouwen-en-verbouwen: 404 Client Error: Not Found for url: https://www.ermelo.nl/omgevingsplein/omgevingsloket/contact-over-bouwen-en-verbouwen"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Melding spoedeisende werkzaamheden: € 220, Aanvraag instemmingsbesluit: € 616, Verhoging leges overleg nutsbedrijven en overheden: € 409",
+          "original_reference": "Melding spoedeisende werkzaamheden: € 215,55, Aanvraag instemmingsbesluit: € 602,60, Verhoging leges overleg nutsbedrijven en overheden: € 400,00",
+          "note": "De tarieven in de bronpagina verschillen van de originele inhoud. Alle bedragen zijn hoger in de actuele bron.",
+          "source_urls": [
+            "https://www.ermelo.nl/kabels-en-leidingen-leggen-in-openbare-grond"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "U moet machinale graafwerkzaamheden op zijn vroegst 20 en op zijn laatst 2 werkdagen voor de start melden.",
+          "original_reference": "No matching information",
+          "note": "Deze specifieke termijn voor graafwerkzaamheden staat wel in de bron maar ontbreekt in de originele inhoud. Dit is aanvullende belangrijke informatie.",
+          "source_urls": [
+            "https://www.ermelo.nl/graafmelding"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Door slecht weer zoals wateroverlast, zware sneeuw en vorst kunnen graafwerkzaamheden tijdelijk worden gestopt.",
+          "original_reference": "No matching information",
+          "note": "Informatie over het opbreekverbod bij slecht weer staat wel in de bron maar ontbreekt in de originele inhoud. Dit is relevante aanvullende informatie.",
+          "source_urls": [
+            "https://www.ermelo.nl/kabels-en-leidingen-leggen-in-openbare-grond"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de tarieven die in de bronpagina hoger liggen dan in de originele inhoud. Daarnaast bevat de bronpagina aanvullende belangrijke informatie over meldingstermijnen voor graafwerkzaamheden en een opbreekverbod bij slecht weer die niet in de originele inhoud zijn opgenomen. Deze informatie is relevant voor de dienstverlening maar ontbreekt in de originele tekst."
+  }
+}

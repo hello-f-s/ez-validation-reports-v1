@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MAASSLUIS",
+      "contact": {
+        "phone": "14 010",
+        "email": "gemeente@maassluis.nl",
+        "website": "http://www.maassluis.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 42,
+    "true_sentences": 41,
+    "false_sentences": 1,
+    "accuracy_percentage": 97.6,
+    "false_statements": [
+      {
+        "sentence": "Bezoekadres: Koningshoek 93.05, 3144 BA Maassluis",
+        "status": "false",
+        "note": "Het correcte bezoekadres van de gemeente Maassluis is Koningshoek 93.50 (niet 93.05), 3144 BA Maassluis volgens de officiële website van de gemeente."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.maassluis.nl/milieu-vergunning-of-melding",
+      "https://www.maassluis.nl/omgevingsvergunning",
+      "https://www.maassluis.nl/uitrit-of-inrit-aanleggen",
+      "https://www.maassluis.nl/boom-kappen",
+      "https://www.maassluis.nl/bedrijfsactiviteiten-wijzigen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor alle bomen met een minimale stamdoorsnede van 10 cm of groter, gemeten op 1,30 meter hoogte boven het maaiveld, is een omgevingsvergunning nodig. [...] Let op! U heeft geen kapvergunning nodig voor: achtertuinen die kleiner zijn dan 120 m², voortuinen die kleiner zijn dan 20 m²",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen specifieke details over wanneer een kapvergunning nodig is, terwijl de bronpagina concrete afmetingen en uitzonderingen noemt.",
+          "source_urls": [
+            "https://www.maassluis.nl/boom-kappen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wanneer u in uw bedrijf veranderingen doorvoert [...] dan moet u dat aan de gemeente of de DCMR Milieudienst Rijnmond te melden.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst noemt de DCMR Milieudienst Rijnmond niet als betrokken instantie bij bedrijfswijzigingen, terwijl dit volgens de bron wel een belangrijke partij is.",
+          "source_urls": [
+            "https://www.maassluis.nl/bedrijfsactiviteiten-wijzigen"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Type A: geen melding en geen vergunning, Type B: melding, Type C: vergunning",
+          "original_reference": "Type A: Geen melding of vergunning nodig, weinig of geen impact. Type B: Melding nodig, aanzienlijke impact. Type C: Vergunning nodig, grote impact.",
+          "note": "De categorisering van bedrijfstypes en bijbehorende vergunningsvereisten komt overeen in beide teksten.",
+          "source_urls": [
+            "https://www.maassluis.nl/milieu-vergunning-of-melding"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen het ontbreken van specifieke informatie over kapvergunningen en de rol van de DCMR Milieudienst Rijnmond in de originele tekst. De basisinformatie over vergunningstypen en procedures komt grotendeels overeen. De bronnen bieden op enkele punten meer gedetailleerde informatie dan de originele tekst."
+  }
+}

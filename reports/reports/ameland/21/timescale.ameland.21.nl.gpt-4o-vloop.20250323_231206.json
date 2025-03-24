@@ -1,0 +1,75 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AMELAND",
+      "contact": {
+        "phone": "(0519) 55 55 55",
+        "email": "info@ameland.nl",
+        "website": "http://www.ameland.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 27,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.4,
+    "false_statements": [
+      {
+        "sentence": "Telefoon: (0519) 555 555",
+        "status": "false",
+        "note": "Het correcte telefoonnummer van de gemeente Ameland is (0519) 555 555 555"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.ameland.nl/verklaring-omtrent-het-gedrag-vog",
+      "https://www.ameland.nl/woo-verzoeken",
+      "https://www.ameland.nl/woo-verzoek-indienen",
+      "https://www.ameland.nl/omgevingsvergunning",
+      "https://www.ameland.nl/uitrit-of-inrit-aanleggen",
+      "https://ameland.nl"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U kunt een VOG op drie manieren aanvragen.",
+          "original_reference": "U kunt een VOG op de volgende manieren aanvragen: [vier manieren genoemd]",
+          "note": "De originele tekst noemt vier aanvraagmethoden, terwijl de bronpagina specifiek drie manieren vermeldt. Dit is een inhoudelijk verschil in het aantal beschikbare opties.",
+          "source_urls": [
+            "https://www.ameland.nl/verklaring-omtrent-het-gedrag-vog"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Leraren, taxichauffeurs en mensen die werken in de kinderopvang moeten een VOG hebben. U kunt ook een VOG nodig hebben, omdat: u lid wilt worden van een schietvereniging, u verhuist naar het buitenland",
+          "original_reference": "Een VOG kan ook nodig zijn voor specifieke beroepen zoals leraren, taxichauffeurs, of als u in de kinderopvang gaat werken.",
+          "note": "De bronpagina noemt aanvullende redenen voor een VOG-aanvraag die niet in de originele tekst staan, zoals lidmaatschap van een schietvereniging en verhuizing naar het buitenland.",
+          "source_urls": [
+            "https://www.ameland.nl/verklaring-omtrent-het-gedrag-vog"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele tekst en de bronnen. Ten eerste verschilt het aantal aanvraagmethoden voor een VOG (drie versus vier). Ten tweede biedt de bronpagina meer specifieke situaties waarin een VOG vereist is. De overige informatie, zoals contactgegevens en algemene procedures, komt overeen met de originele tekst."
+  }
+}

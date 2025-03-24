@@ -1,0 +1,87 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DELFT",
+      "contact": {
+        "phone": "14 015",
+        "email": "null",
+        "website": "http://www.delft.nl"
+      }
+    },
+    "service": {
+      "id": 7,
+      "name": "Kabels en leidingen aanleggen en beheren"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 27,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.4,
+    "false_statements": [
+      {
+        "sentence": "Omgevingsvergunning voor aanleg kost € 580,40",
+        "status": "false",
+        "note": "De exacte kosten voor een omgevingsvergunning zijn niet als vast bedrag te noemen omdat deze afhankelijk zijn van de specifieke situatie en worden berekend op basis van verschillende factoren volgens de legesverordening van de gemeente Delft."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.delft.nl/vergunning-voor-graven-gemeentegrond",
+      "https://www.delft.nl/omgevingsvergunning-voor-aanleg",
+      "https://www.delft.nl/omgevingsvergunning-milieu",
+      "https://www.delft.nl/omgevingsvergunning-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.delft.nl/bouwplan-melden-bij-de-gemeente",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vraag uw vergunning en instemmingsbesluit minimaal 8 weken van tevoren aan.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt geen minimale aanvraagtermijn voor vergunningen en instemmingsbesluiten, terwijl de bron specifiek 8 weken vooraf vereist.",
+          "source_urls": [
+            "https://www.delft.nl/vergunning-voor-graven-gemeentegrond"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Er zijn geen kosten.",
+          "original_reference": "Omgevingsvergunning voor aanleg kost € 580,40",
+          "note": "De bron vermeldt bij omgevingsvergunning milieu dat er geen kosten zijn, terwijl de originele tekst specifieke kosten noemt voor de aanleg.",
+          "source_urls": [
+            "https://www.delft.nl/omgevingsvergunning-milieu"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De vergunning is om archeologisch waardevolle zaken in de bodem te beschermen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet het doel van de vergunning m.b.t. bescherming van archeologische waarden.",
+          "source_urls": [
+            "https://www.delft.nl/omgevingsvergunning-voor-aanleg"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de aanvraagtermijn (8 weken vooraf vereist), tegenstrijdige informatie over kosten, en aanvullende informatie over het doel van de vergunning (archeologische bescherming). De bronnen bevatten specifiekere details over bepaalde aspecten die niet in de originele tekst zijn opgenomen."
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OPMEER",
+      "contact": {
+        "phone": "(0226) 36 33 33",
+        "email": "gemeente@opmeer.nl",
+        "website": "http://www.opmeer.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 27,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.4,
+    "false_statements": [
+      {
+        "sentence": "Adres: Klaproos 1, 1716 VS Opmeer",
+        "status": "false",
+        "note": "Het juiste bezoekadres van de gemeente Opmeer is Nieuwstraat 16, 1715 HC Spanbroek"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 3,
+    "valid_urls": 3,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.opmeer.nl/omgevingsvergunning",
+      "https://www.opmeer.nl/milieu-vergunning-of-melding",
+      "https://www.opmeer.nl/privacy-omgevingswet"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u voor uw woning een omgevingsvergunning aanvraagt, hebt u uw DigiD nodig.",
+          "original_reference": "eHerkenning om in te loggen bij het Omgevingsloket.",
+          "note": "De originele tekst vermeldt alleen eHerkenning als inlogmiddel, terwijl de bron aangeeft dat DigiD nodig is voor woningaanvragen. Dit is een belangrijk verschil omdat het om verschillende authenticatiemethoden gaat.",
+          "source_urls": [
+            "https://www.opmeer.nl/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De persoonsgegevens in Omgevingsloket worden niet langer bewaard dan nodig is voor de behandeling van de aanvraag en/of melding. Dit betekent dat de gegevens na behandelen van de aanvraag maximaal 3 maanden in Omgevingsloket online worden bewaard na het afsluiten van het dossier.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over bewaartermijnen van persoonsgegevens in het Omgevingsloket, terwijl dit wel relevant is voor aanvragers.",
+          "source_urls": [
+            "https://www.opmeer.nl/privacy-omgevingswet"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Doe de melding minimaal 4 weken voordat u start met uw activiteiten.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt geen specifieke termijn voor het doen van een melding Activiteitenbesluit, terwijl de bron een termijn van 4 weken voorschrijft.",
+          "source_urls": [
+            "https://www.opmeer.nl/milieu-vergunning-of-melding"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn drie belangrijke verschillen gevonden tussen de originele tekst en de bronnen. Ten eerste is er een discrepantie in de authenticatiemethode (DigiD vs. eHerkenning). Ten tweede ontbreekt in de originele tekst informatie over de bewaartermijnen van persoonsgegevens. Ten derde mist de originele tekst een specifieke termijn voor het doen van een melding Activiteitenbesluit. Deze verschillen zijn relevant voor de volledigheid en accuraatheid van de informatievoorziening aan aanvragers."
+  }
+}

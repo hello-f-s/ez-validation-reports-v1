@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ROERMOND",
+      "contact": {
+        "phone": "14 0475",
+        "email": "mail@roermond.nl",
+        "website": "http://www.roermond.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 11,
+    "false_sentences": 2,
+    "accuracy_percentage": 84.6,
+    "false_statements": [
+      {
+        "sentence": "Evenement categorie A: € 33,70",
+        "status": "false",
+        "note": "Het actuele tarief voor een categorie A evenement in Roermond is € 34,85 voor 2024"
+      },
+      {
+        "sentence": "De burgemeester beoordeelt uw aanvraag en geeft advies binnen de wettelijke termijnen. Dit kan maximaal 8 weken in beslag nemen, afhankelijk van de promptheid en volledigheid van uw aanvraag.",
+        "status": "false",
+        "note": "De maximale behandeltermijn is niet 8 weken maar varieert per categorie: 8 weken voor categorie A en 14 weken voor categorie B en C evenementen"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.roermond.nl/terrasvergunning",
+      "https://www.roermond.nl/evenementen",
+      "https://www.roermond.nl/alcoholwetvergunning",
+      "https://www.roermond.nl/exploitatievergunning-horeca",
+      "https://www.roermond.nl/omgevingsvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://roermond.nl/",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een melding is voldoende als: het evenement in de open lucht is; het niet langer dan twee aaneengesloten dagen duurt; er minder dan 150 personen zijn; het evenement niet voor 8:00 uur begint en uiterlijk om 23.00 uur stopt",
+          "original_reference": "No matching information",
+          "note": "De originele tekst maakt geen onderscheid tussen vergunningplichtige evenementen en meldingsplichtige evenementen. Dit is essentiële informatie voor organisatoren.",
+          "source_urls": [
+            "https://www.roermond.nl/evenementen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Neem contact op met onze evenementencoördinator via evenementen@roermond.nl",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt geen contactgegevens van de evenementencoördinator, terwijl dit een belangrijk eerste contactpunt is.",
+          "source_urls": [
+            "https://www.roermond.nl/evenementen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten twee belangrijke verschillen met de originele tekst. Ten eerste ontbreekt in de originele tekst informatie over wanneer een melding volstaat in plaats van een vergunning. Ten tweede worden de contactgegevens van de evenementencoördinator niet vermeld in de originele tekst, terwijl dit een belangrijk aanspreekpunt is voor organisatoren. Deze informatie zou toegevoegd moeten worden voor een complete en accurate informatievoorziening."
+  }
+}

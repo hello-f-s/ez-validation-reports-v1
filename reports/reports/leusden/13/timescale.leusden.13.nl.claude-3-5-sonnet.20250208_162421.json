@@ -1,0 +1,99 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LEUSDEN",
+      "contact": {
+        "phone": "14 033",
+        "email": "gemeente@leusden.nl",
+        "website": "http://www.leusden.nl/"
+      }
+    },
+    "service": {
+      "id": 13,
+      "name": "Omzettingsvergunning voor kamerverhuur aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 8,
+    "false_sentences": 3,
+    "accuracy_percentage": 72.7,
+    "false_statements": [
+      {
+        "sentence": "Kosten en betalen: Hier kan geen specifieke informatie over gevonden worden op de website van deze gemeente.",
+        "status": "false",
+        "note": "Op de website van gemeente Leusden staat wel degelijk informatie over de kosten van een omgevingsvergunning. Deze zijn te vinden in de legesverordening die op de gemeentelijke website staat."
+      },
+      {
+        "sentence": "Hoe lang duurt het? Hier kan geen specifieke informatie over gevonden worden op de website van deze gemeente.",
+        "status": "false",
+        "note": "De gemeente Leusden vermeldt op haar website dat de reguliere procedure 8 weken duurt en de uitgebreide procedure 26 weken."
+      },
+      {
+        "sentence": "Bezwaren: Hier kan geen specifieke informatie over gevonden worden op de website van deze gemeente.",
+        "status": "false",
+        "note": "De gemeente Leusden heeft wel degelijk informatie over bezwaarprocedures op haar website staan, inclusief termijnen en wijze van indienen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.leusden.nl/en/ondernemersloket/vergunningen-en-meldingen-voor-ondernemers",
+      "https://www.leusden.nl/en/bouwen-en-wonen/kamergewijze-verhuur",
+      "https://www.leusden.nl/ondernemersloket/vergunningen-en-meldingen-voor-ondernemers",
+      "https://www.leusden.nl/en/bouwen-en-wonen/omgevingsvergunning-aanvragen",
+      "https://www.leusden.nl/bouwen-en-wonen/omgevingsvergunning-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.omgevingsloket.nl/)",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De behandeltermijn in een reguliere procedure is maximaal 8 weken. De gemeente kan deze termijn eenmalig met maximaal 6 weken verlengen. De behandeltermijn van een complexe aanvraag is maximaal 6 maanden.",
+          "original_reference": "No matching information",
+          "note": "De originele inhoud bevat geen informatie over behandeltermijnen, terwijl de bronnen specifieke termijnen vermelden voor verschillende types aanvragen.",
+          "source_urls": [
+            "https://www.leusden.nl/bouwen-en-wonen/omgevingsvergunning-aanvragen",
+            "https://www.leusden.nl/en/bouwen-en-wonen/omgevingsvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voordat u met een nieuw plan begint is het belangrijk te weten wat voor effect uw plan heeft op uw omgeving en wie er met uw plannen te maken krijgt... Het op tijd betrekken heet 'participatie'.",
+          "original_reference": "No matching information",
+          "note": "De bronnen bevatten belangrijke informatie over participatie en het betrekken van belanghebbenden, wat niet genoemd wordt in de originele inhoud.",
+          "source_urls": [
+            "https://www.leusden.nl/bouwen-en-wonen/omgevingsvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het adviesteam ruimtelijke kwaliteit adviseert graag over uw (ver)bouwplannen in een vroeg stadium.",
+          "original_reference": "No matching information",
+          "note": "De mogelijkheid tot vooroverleg met het adviesteam ruimtelijke kwaliteit wordt wel genoemd in de bronnen maar niet in de originele inhoud.",
+          "source_urls": [
+            "https://www.leusden.nl/ondernemersloket/vergunningen-en-meldingen-voor-ondernemers"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie die niet in de originele inhoud staat, waaronder specifieke behandeltermijnen voor vergunningaanvragen, informatie over participatie met belanghebbenden, en de mogelijkheid tot vooroverleg met het adviesteam ruimtelijke kwaliteit. Deze informatie is essentieel voor aanvragers van een omgevingsvergunning."
+  }
+}

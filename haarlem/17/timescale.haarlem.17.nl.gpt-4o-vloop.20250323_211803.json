@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HAARLEM",
+      "contact": {
+        "phone": "14 023",
+        "email": "antwoord@haarlem.nl",
+        "website": "http://www.haarlem.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 27,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.4,
+    "false_statements": [
+      {
+        "sentence": "U betaalt € 425 voor het aanvragen van een terrasvergunning, ongeacht of deze wordt goedgekeurd of afgewezen.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van de gemeente Haarlem bedraagt het tarief voor een terrasvergunning € 437,85 voor 2024. Dit bedrag wordt jaarlijks geïndexeerd."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://haarlem.nl/terrasvergunning",
+      "https://www.haarlem.nl/ufs/formulieren.eb?id=terrasvergunning",
+      "https://haarlem.nl/bouwvergunning",
+      "https://haarlem.nl/aanlegvergunning",
+      "https://haarlem.nl/exploitatievergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u een horecazaak hebt, mag u een terras plaatsen.",
+          "original_reference": "Als u een horecazaak hebt, kunt u een terras plaatsen.",
+          "note": "De bronpagina gebruikt een meer permissieve formulering ('mag') terwijl de originele tekst een neutralere formulering ('kunt') gebruikt. Dit suggereert een subtiel verschil in de interpretatie van rechten.",
+          "source_urls": [
+            "https://haarlem.nl/terrasvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bij inloggen via DigiD een kopie uittreksel van de KvK (niet ouder dan 3 maanden)",
+          "original_reference": "Kopie uittreksel van de KvK, niet ouder dan 3 maanden bij gebruik van DigiD.",
+          "note": "De bronpagina specificeert duidelijker dat het KvK-uittreksel alleen nodig is bij DigiD-gebruik, terwijl dit in de originele tekst minder expliciet is geformuleerd.",
+          "source_urls": [
+            "https://www.haarlem.nl/ufs/formulieren.eb?id=terrasvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Schriftelijke verklaring (machtiging) met ondertekening van de ondernemer als de vergunningsaanvraag door iemand anders wordt gedaan.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt een extra vereiste voor machtiging bij aanvraag door derden, wat niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.haarlem.nl/ufs/formulieren.eb?id=terrasvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont drie belangrijke verschillen tussen de originele tekst en de bronpagina's. Het gaat om nuanceverschillen in de formulering van rechten, een verduidelijking over het KvK-uittreksel bij DigiD-gebruik, en een ontbrekende vereiste in de originele tekst betreffende machtiging bij aanvraag door derden. Deze verschillen hebben mogelijk impact op de duidelijkheid van de informatie voor aanvragers."
+  }
+}

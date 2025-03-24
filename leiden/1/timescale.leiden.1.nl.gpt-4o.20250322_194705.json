@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LEIDEN",
+      "contact": {
+        "phone": "14 071",
+        "email": "null",
+        "website": "http://www.leiden.nl/gemeente"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "Als de gemeente besluit dat u geen vergunning krijgt, kunt u 25% van de verschuldigde kosten terugkrijgen.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Leiden wordt er bij afwijzing van de vergunning geen deel van de leges terugbetaald."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers/winkels-en-markten/drank-schenken-en-eten-verkopen-op-straat",
+      "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers/horeca/leidinggevende-horeca-wijzigen",
+      "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers/horeca/alcoholvergunning-voorheen-drank-en-horecavergunning",
+      "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers/horeca/drank-en-horecaverlof",
+      "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers/horeca/vergunning-terras-of-terrasboot"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als de gemeente besluit dat u geen drank- en horecaverlof krijgt? Of stelt de gemeente uw aanvraag buiten behandeling? Dan krijgt u een deel van het betaalde bedrag terug.",
+          "original_reference": "Als de gemeente besluit dat u geen vergunning krijgt, kunt u 25% van de verschuldigde kosten terugkrijgen.",
+          "note": "De originele tekst specificeert een terugbetaling van 25%, terwijl de brontekst alleen spreekt over 'een deel' zonder specifiek percentage te noemen. Ook is er een extra voorwaarde voor terugbetaling genoemd (buiten behandeling stelling).",
+          "source_urls": [
+            "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers/horeca/drank-en-horecaverlof"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De aanvraag kost € 351,30",
+          "original_reference": "De aanvraag van een alcoholvergunning kost € 661,10",
+          "note": "Er is een verschil in kosten tussen een drank- en horecaverlof (€351,30) en een alcoholvergunning (€661,10). Dit zijn echter twee verschillende vergunningen, dus technisch geen tegenstrijdigheid maar wel belangrijk onderscheid.",
+          "source_urls": [
+            "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers/horeca/drank-en-horecaverlof"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Hebt u een alcoholvergunning voor een slijterij? Dan hoeft u een nieuwe leidinggevende niet te melden bij de gemeente. Dit komt door de wijziging van de Alcoholwet op 1 april 2024.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de specifieke uitzondering voor slijterijen m.b.t. het melden van nieuwe leidinggevenden vanaf 1 april 2024.",
+          "source_urls": [
+            "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers/horeca/leidinggevende-horeca-wijzigen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de terugbetalingsregeling bij afwijzing (zonder specifiek percentage in de brontekst), verschillende tarieven voor verschillende type vergunningen, en een nieuwe uitzondering voor slijterijen m.b.t. het melden van leidinggevenden vanaf april 2024. De bronnen bevatten over het algemeen meer gedetailleerde informatie en actuele wijzigingen die niet in de originele tekst zijn opgenomen."
+  }
+}

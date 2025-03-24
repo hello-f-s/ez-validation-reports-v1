@@ -1,0 +1,52 @@
+{
+  "context": {
+    "municipality": {
+      "name": "EMMEN",
+      "contact": {
+        "phone": "14 0591",
+        "email": "gemeente@emmen.nl",
+        "website": "http://www.emmen.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 26,
+    "false_sentences": 2,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "Het aanvragen van een evenementenvergunning is gratis.",
+        "status": "false",
+        "note": "Volgens de legesverordening van gemeente Emmen zijn er wel degelijk kosten verbonden aan het aanvragen van een evenementenvergunning. De exacte kosten zijn afhankelijk van het type evenement."
+      },
+      {
+        "sentence": "Eventuele ontheffingen of andere toestemmingen hebben verschillende tarieven zoals tijdelijke alcoholvergunning voor €90,90 en RVV-ontheffing voor €22,00 (tarieven voor 2025).",
+        "status": "false",
+        "note": "De genoemde tarieven voor 2025 kunnen niet geverifieerd worden aangezien deze nog niet officieel zijn vastgesteld door de gemeente Emmen. Daarnaast wijken de genoemde bedragen af van de huidige tarieven in de legesverordening."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 1,
+    "valid_urls": 0,
+    "invalid_urls": 1,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.emmen.nl",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  }
+}

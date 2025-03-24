@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "BEVERWIJK",
+      "contact": {
+        "phone": "(0251) 25 62 56",
+        "email": "info@beverwijk.nl",
+        "website": "http://www.beverwijk.nl"
+      }
+    },
+    "service": {
+      "id": 8,
+      "name": "Marktvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 10,
+    "false_sentences": 1,
+    "accuracy_percentage": 90.9,
+    "false_statements": [
+      {
+        "sentence": "De beslistermijn is maximaal 8 weken.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Beverwijk is de wettelijke beslistermijn voor een marktvergunning maximaal 6 weken, niet 8 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.beverwijk.nl/standplaatsvergunning",
+      "https://www.beverwijk.nl/overzicht-vragen-voor-eenmalige-subsidie-aanvragen",
+      "https://www.beverwijk.nl/overzicht-vragen-voor-jaarlijkse-subsidie-aanvragen",
+      "https://www.beverwijk.nl/form/aanvraag-exploitatievergunning-horeca/aanvraagformulier-exploitatievergunning-horeca-0",
+      "https://www.beverwijk.nl/e-loket-bedrijven"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://gemeente.beverwijk.nl",
+        "reason": "INVALID: Error scraping https://gemeente.beverwijk.nl: HTTPSConnectionPool(host='gemeente.beverwijk.nl', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1079bf610>: Failed to resolve 'gemeente.beverwijk.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "een tijdelijke vergunning is een standplaats voor een periode van maximaal 3 maanden; een vaste vergunning is de standplaats voor (een groot gedeelte van) een jaar en wordt structureel of regelmatig ingenomen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst maakt geen onderscheid tussen tijdelijke en vaste vergunningen, terwijl dit een belangrijk verschil is voor aanvragers.",
+          "source_urls": [
+            "https://www.beverwijk.nl/standplaatsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Doet u een aanvraag voor een bakkraam? Dan controleert de brandweer of de standplaats voldoet aan de brandveiligheidseisen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de specifieke brandweercontrole voor bakkramen, wat een belangrijke aanvullende voorwaarde is.",
+          "source_urls": [
+            "https://www.beverwijk.nl/standplaatsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De gemeente kan besluiten om een Bibob-onderzoek in te stellen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de mogelijkheid van een Bibob-onderzoek, wat een belangrijk onderdeel van het vergunningsproces kan zijn.",
+          "source_urls": [
+            "https://www.beverwijk.nl/standplaatsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie die niet in de originele tekst staat, waaronder het onderscheid tussen tijdelijke en vaste vergunningen, de specifieke brandweercontrole voor bakkramen en de mogelijkheid van een Bibob-onderzoek. Deze informatie is essentieel voor potentiële aanvragers van een marktvergunning."
+  }
+}

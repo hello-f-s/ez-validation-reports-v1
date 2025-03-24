@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "BEVERWIJK",
+      "contact": {
+        "phone": "(0251) 25 62 56",
+        "email": "info@beverwijk.nl",
+        "website": "http://www.beverwijk.nl"
+      }
+    },
+    "service": {
+      "id": 2,
+      "name": "Bord of spandoek plaatsen aan de openbare weg"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "Leges voor reclame aan lichtmasten: € 103,67",
+        "status": "false",
+        "note": "Het exacte legesbedrag voor reclame aan lichtmasten in Beverwijk is niet € 103,67. De actuele tarieven zijn te vinden in de legesverordening van de gemeente Beverwijk en kunnen jaarlijks wijzigen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.beverwijk.nl/standplaatsvergunning",
+      "https://www.beverwijk.nl/reclamevergunning",
+      "https://www.beverwijk.nl/terrassen",
+      "https://www.beverwijk.nl/gemeentegrond-gebruiken",
+      "https://www.beverwijk.nl/overzicht-vragen-voor-jaarlijkse-subsidie-aanvragen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wilt u gratis folders of flyers onder het publiek uitdelen of aanbieden op de openbare weg? Dan heeft u daarvoor geen ontheffing nodig.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over het verspreiden van folders en flyers, terwijl de brontekst expliciet vermeldt dat hiervoor geen ontheffing nodig is.",
+          "source_urls": [
+            "https://www.beverwijk.nl/reclamevergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Treedt er door de verspreiding vervuiling op? Dan kunnen wij u opdracht geven om dit op te ruimen en schoon te maken. De kosten daarvan zijn dan voor uw rekening.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de verantwoordelijkheid voor het opruimen van vervuiling door reclameverspreiding.",
+          "source_urls": [
+            "https://www.beverwijk.nl/reclamevergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De tarieven zijn de tweede week van januari bekend.",
+          "original_reference": "Leges voor reclame aan lichtmasten: € 103,67\nPrecariobelasting: € 6,27 per bord per dag",
+          "note": "De brontekst geeft aan dat tarieven in januari bekend worden, terwijl de originele tekst specifieke bedragen noemt zonder vermelding van mogelijke wijzigingen.",
+          "source_urls": [
+            "https://www.beverwijk.nl/reclamevergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen aanvullende informatie over flyerverspreiding en de daarbij horende verantwoordelijkheden die niet in de originele tekst staan. Ook is er een verschil in de communicatie over tarieven: waar de originele tekst vaste bedragen noemt, geeft de brontekst aan dat tarieven jaarlijks worden vastgesteld in januari."
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "context": {
+    "municipality": {
+      "name": "EDE",
+      "contact": {
+        "phone": "14 0318",
+        "email": "info@ede.nl",
+        "website": "http://www.ede.nl"
+      }
+    },
+    "service": {
+      "id": 18,
+      "name": "Ventvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 19,
+    "false_sentences": 2,
+    "accuracy_percentage": 90.5,
+    "false_statements": [
+      {
+        "sentence": "Kosten voor het opzoeken van bouw- en omgevingsvergunningen bedragen €18,20 per adres.",
+        "status": "false",
+        "note": "Dit bedrag is niet correct volgens de actuele legesverordening van gemeente Ede. De actuele tarieven zijn anders en worden jaarlijks vastgesteld."
+      },
+      {
+        "sentence": "Een tapontheffing, geluidsontheffing en andere ontheffingen kosten elk €38,50.",
+        "status": "false",
+        "note": "Dit tarief is niet correct volgens de actuele legesverordening van gemeente Ede. De gemeente hanteert andere tarieven voor verschillende soorten ontheffingen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.ede.nl/aanvragen-en-regelen/bouw-en-verbouwvergunning-voor-bedrijven",
+      "https://www.ede.nl/aanvragen-en-regelen/bouw-en-verbouwvergunning",
+      "https://www.ede.nl/aanvragen-en-regelen/evenementenvergunning",
+      "https://www.ede.nl/aanvragen-en-regelen/ontheffing-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.ede.nl/aanvragen-en-regelen/verleende-vergunningen-inzien-en-opvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vraag uw evenementenvergunning minimaal 6 tot 16 weken van tevoren aan",
+          "original_reference": "ten minste 10 werkdagen van tevoren in te dienen",
+          "note": "Er is een significant verschil in de aanvraagtermijn. De bronnen geven een veel langere termijn aan van 6-16 weken voor evenementenvergunningen, terwijl de originele tekst slechts 10 werkdagen vermeldt.",
+          "source_urls": [
+            "https://www.ede.nl/aanvragen-en-regelen/evenementenvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Kosten voor organisatie, maatregelen, wegafzettingen en schoonmaak van het evenemententerrein zijn voor rekening van de organisatie van het evenement",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt belangrijke aanvullende kostenposten die niet genoemd worden in de originele tekst.",
+          "source_urls": [
+            "https://www.ede.nl/aanvragen-en-regelen/evenementenvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Eet- en drinkwaren moeten aan de eisen van de Nederlandse Voedsel- en Warenautoriteit voldoen",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt een belangrijke voorwaarde met betrekking tot voedsel en drank die ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.ede.nl/aanvragen-en-regelen/evenementenvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de aanvraagtermijn (6-16 weken versus 10 werkdagen), ontbrekende informatie over kostenverantwoordelijkheid voor organisatoren, en aanvullende eisen rond voedsel en drank. Deze verschillen zijn significant voor de volledigheid en accuraatheid van de informatie voor aanvragers."
+  }
+}

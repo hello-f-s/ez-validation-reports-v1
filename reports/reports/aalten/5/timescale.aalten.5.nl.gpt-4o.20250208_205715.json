@@ -1,0 +1,80 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AALTEN",
+      "contact": {
+        "phone": "(0543) 49 33 33",
+        "email": "gemeente@aalten.nl",
+        "website": "http://www.aalten.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor het in behandeling nemen van de aanvraag voor een exploitatievergunning bedragen € 406,90 voor het jaar 2024.",
+        "status": "false",
+        "note": "Volgens de officiële legesverordening van de gemeente Aalten bedragen de kosten voor een exploitatievergunning € 408,90 voor het jaar 2024, niet € 406,90."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 6,
+    "invalid_urls": 1,
+    "accuracy_percentage": 85.7,
+    "valid_urls_list": [
+      "https://www.aalten.nl/exploitatievergunning-horecabedrijf",
+      "https://www.aalten.nl/alcoholvergunning",
+      "https://www.aalten.nl/openingstijden-horeca-eenmalig-aanpassen",
+      "https://www.aalten.nl",
+      "https://www.aalten.nl/ondernemersplein",
+      "https://www.aalten.nl/standplaats-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.aalten.nl\">Gemeente",
+        "reason": "INVALID: Error scraping https://www.aalten.nl\">Gemeente: HTTPSConnectionPool(host='www.aalten.nl%22%3egemeente', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x107f2b770>: Failed to resolve 'www.aalten.nl%22%3egemeente' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het tarief 2024 bedraagt € 14,40 voor het in behandeling nemen van een aanvraag vergunning.",
+          "original_reference": "De kosten voor het in behandeling nemen van de aanvraag voor een exploitatievergunning bedragen € 406,90 voor het jaar 2024.",
+          "note": "Er is een significant verschil in de vermelde kosten voor 2024. Echter, dit komt omdat de brontekst over standplaatsvergunningen gaat en niet over exploitatievergunningen. Deze bedragen zijn voor verschillende type vergunningen.",
+          "source_urls": [
+            "https://www.aalten.nl/standplaats-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U vraagt minimaal 8 weken van tevoren een ontheffing aan bij de gemeente.",
+          "original_reference": "U krijgt binnen 8 weken bericht over de aanvraag.",
+          "note": "Er is een verschil in de context van de 8-weken termijn. In de bron gaat het over de minimale aanvraagtermijn voor een ontheffing op openingstijden, terwijl in de originele tekst de 8 weken verwijst naar de behandeltermijn van de vergunningsaanvraag.",
+          "source_urls": [
+            "https://www.aalten.nl/openingstijden-horeca-eenmalig-aanpassen"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont twee belangrijke verschillen aan. Ten eerste is er een verschil in de vermelde kosten, maar dit betreft verschillende type vergunningen. Ten tweede is er een verschil in de context van de 8-weken termijn tussen aanvraagtermijn en behandeltermijn. De overige informatie in de originele tekst komt overeen met de bronnen of kan niet geverifieerd worden omdat deze informatie niet in de geciteerde bronnen voorkomt."
+  }
+}

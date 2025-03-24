@@ -1,0 +1,73 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LANDGRAAF",
+      "contact": {
+        "phone": "14 045",
+        "email": "gemeente@landgraaf.nl",
+        "website": "http://www.landgraaf.nl"
+      }
+    },
+    "service": {
+      "id": 10,
+      "name": "Nachtregister bijhouden"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 12,
+    "false_sentences": 0,
+    "accuracy_percentage": 100.0,
+    "false_statements": []
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.landgraaf.nl/evenement-organiseren",
+      "https://www.landgraaf.nl/verklaring-omtrent-het-gedrag-vog",
+      "https://www.landgraaf.nl/nachtregister-bijhouden",
+      "https://www.landgraaf.nl/exploitatievergunning-horecabedrijf",
+      "https://www.landgraaf.nl/aanvragen-en-regelen-ondernemers"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.landgraaf.nl/nachtregister-bijhouden\">Nachtregister",
+        "reason": "INVALID: Error scraping https://www.landgraaf.nl/nachtregister-bijhouden\">Nachtregister: 404 Client Error: Not Found for url: https://www.landgraaf.nl/nachtregister-bijhouden%22%3ENachtregister"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Dat is belangrijk als er bijvoorbeeld brand is. De brandweer weet dan welke mensen aanwezig zijn.",
+          "original_reference": "No matching information",
+          "note": "De bron geeft een specifieke veiligheidsreden voor het bijhouden van het nachtregister (brandveiligheid) die niet genoemd wordt in de originele tekst",
+          "source_urls": [
+            "https://www.landgraaf.nl/nachtregister-bijhouden"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De politie of de gemeente (Boa) kan u vragen om inzage in uw nachtregister.",
+          "original_reference": "De politie of de gemeente kan controles uitvoeren en u om inzage vragen.",
+          "note": "De bron specificeert dat een Boa de controle kan uitvoeren namens de gemeente, wat niet vermeld wordt in de originele tekst",
+          "source_urls": [
+            "https://www.landgraaf.nl/nachtregister-bijhouden"
+          ]
+        }
+      ]
+    },
+    "summary": "De broninhoud komt grotendeels overeen met de originele tekst, maar bevat twee belangrijke aanvullingen: 1) een specifieke veiligheidsreden voor het bijhouden van het nachtregister (brandveiligheid) en 2) de specificatie dat een Boa namens de gemeente controles kan uitvoeren. Deze details maken de informatie completer en specifieker dan de originele tekst."
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ALKMAAR",
+      "contact": {
+        "phone": "14 072",
+        "email": "post@alkmaar.nl",
+        "website": "http://www.alkmaar.nl"
+      }
+    },
+    "service": {
+      "id": 13,
+      "name": "Omzettingsvergunning voor kamerverhuur aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Voor het onttrekken van een woning, hetgeen een onderdeel kan zijn van het omzetten naar kamerverhuur, betaalt u € 1.205,51.",
+        "status": "false",
+        "note": "Het actuele tarief voor een omzettingsvergunning in Alkmaar is € 1.235,65 voor één woning. Het genoemde bedrag van € 1.205,51 is verouderd."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.alkmaar.nl/direct-regelen/wonen-verhuizen-en-verbouwen/vergunningen/omgevingsvergunning",
+      "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/bouwen-en-verbouwen/boom-kappen-vergunning",
+      "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/huisvesting/woning-onttrekken-vergunning",
+      "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/huisvesting/kamerverhuur",
+      "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/bouwen-en-verbouwen/omgevingsloket"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.alkmaar.nl/kamerverhuur",
+        "reason": "INVALID: Error scraping https://www.alkmaar.nl/kamerverhuur: 404 Client Error: Not Found for url: https://www.alkmaar.nl/kamerverhuur"
+      },
+      {
+        "url": "https://www.alkmaar.nl/omgevingsvergunning",
+        "reason": "INVALID: Error scraping https://www.alkmaar.nl/omgevingsvergunning: 404 Client Error: Not Found for url: https://www.alkmaar.nl/omgevingsvergunning"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Tot 1 januari 2024 deed u een aanvraag of een melding via het Omgevingsloket online (OLO). Op 1 januari 2024 is de nieuwe Omgevingswet ingegaan. U doet de aanvraag nu in het nieuwe Omgevingsloket.",
+          "original_reference": "Log in via het Omgevingsloket van de Gemeente Alkmaar met uw DigiD of eHerkenning.",
+          "note": "De originele tekst verwijst naar een verouderd systeem. Sinds 1 januari 2024 moet de aanvraag via het nieuwe Omgevingsloket worden gedaan.",
+          "source_urls": [
+            "https://www.alkmaar.nl/direct-regelen/wonen-verhuizen-en-verbouwen/vergunningen/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Met onzelfstandige woonruimte bedoelen we één of meer kamers om te verhuren.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat een definitie van onzelfstandige woonruimte die ontbreekt in de originele tekst, wat belangrijk is voor het begrip van de vergunningsvereisten.",
+          "source_urls": [
+            "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/huisvesting/kamerverhuur"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Andere gebouwen: Een omzettingsvergunning heeft u alleen nodig voor het omzetten van een woonruimte. Voor het omzetten van andere gebouwen heeft u geen omzettingsvergunning nodig (alleen een omgevingsvergunning).",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over de behandeling van niet-woonruimtes, wat een essentieel onderscheid is in het vergunningsproces.",
+          "source_urls": [
+            "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/huisvesting/kamerverhuur"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de recente overgang naar het nieuwe Omgevingsloket per 1 januari 2024, wat niet wordt vermeld in de originele tekst. Daarnaast ontbreken in de originele tekst enkele belangrijke definities en specificaties, zoals de definitie van onzelfstandige woonruimte en de verschillende behandeling van woonruimtes versus andere gebouwen. Deze informatie is essentieel voor een correct begrip van de vergunningsvereisten."
+  }
+}

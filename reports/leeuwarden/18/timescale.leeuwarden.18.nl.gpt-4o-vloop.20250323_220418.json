@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LEEUWARDEN",
+      "contact": {
+        "phone": "14 058",
+        "email": "gemeente@leeuwarden.nl",
+        "website": "http://www.leeuwarden.nl"
+      }
+    },
+    "service": {
+      "id": 18,
+      "name": "Ventvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 27,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.4,
+    "false_statements": [
+      {
+        "sentence": "Het gemeentehuis is open van maandag tot woensdag en vrijdag van 08:30 tot 17:00 uur, en op donderdag van 08:30 tot 19:30 uur.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Leeuwarden is het gemeentehuis geopend van maandag tot en met vrijdag van 8:30 tot 17:00 uur, en op donderdag van 8:30 tot 20:00 uur (niet 19:30 uur)."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.leeuwarden.nl/omgevingsvergunning/procedure-omgevingsvergunning-aanvragen-of-melden/",
+      "https://www.leeuwarden.nl/horeca/horecavergunning/",
+      "https://www.leeuwarden.nl/omgevingsvergunning/gebruikmaken-maken-of-veranderen-van-een-uitweg/",
+      "https://www.leeuwarden.nl/melden-bij-de-gemeente/woo-verzoek-indienen/",
+      "https://www.leeuwarden.nl/wonen/informatie-onroerend-goed/"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De kosten voor de behandeling van uw aanvraag zijn € 238,66.",
+          "original_reference": "Er zijn kosten verbonden aan het indienen van een conceptverzoek en een definitieve aanvraag.",
+          "note": "De originele tekst noemt alleen dat er kosten zijn, terwijl de bron een specifiek bedrag van €238,66 noemt voor de behandeling van een uitweg-aanvraag.",
+          "source_urls": [
+            "https://www.leeuwarden.nl/omgevingsvergunning/gebruikmaken-maken-of-veranderen-van-een-uitweg/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Is de uitkomst, door de reden Flora en fauna-activiteit of Natura 2000-activiteit, dat u contact moet opnemen met de gemeente? Neem dan contact op met de Provincie Fryslân en niet met de gemeente.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over dat voor Flora en fauna-activiteiten of Natura 2000-activiteiten contact moet worden opgenomen met de Provincie Fryslân in plaats van de gemeente.",
+          "source_urls": [
+            "https://www.leeuwarden.nl/omgevingsvergunning/procedure-omgevingsvergunning-aanvragen-of-melden/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Privacy gevoelige informatie wordt bijvoorbeeld niet gegeven. Dit geldt ook voor bedrijfsgegevens of fabricage gegevens.",
+          "original_reference": "Zorg ervoor dat u alle benodigde documenten compleet en zonder privacygevoelige informatie indient om vertragingen te voorkomen.",
+          "note": "De originele tekst spreekt alleen over het niet indienen van privacygevoelige informatie, terwijl de bron specificeert dat ook bedrijfsgegevens en fabricagegegevens niet worden verstrekt.",
+          "source_urls": [
+            "https://www.leeuwarden.nl/melden-bij-de-gemeente/woo-verzoek-indienen/"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont drie belangrijke verschillen tussen de originele tekst en de bronnen: 1) specifieke kostenbedragen die ontbreken in de originele tekst, 2) ontbrekende informatie over de rol van de Provincie Fryslân bij Flora en fauna-activiteiten, en 3) aanvullende details over privacygevoelige informatie en bedrijfsgegevens. Deze verschillen maken de originele tekst minder specifiek en volledig dan de bronnen."
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "GEMERT-BAKEL",
+      "contact": {
+        "phone": "(0492) 37 85 00",
+        "email": "gemeente@gemert-bakel.nl",
+        "website": "http://www.gemert-bakel.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 35,
+    "true_sentences": 33,
+    "false_sentences": 2,
+    "accuracy_percentage": 94.3,
+    "false_statements": [
+      {
+        "sentence": "De doorlooptijd voor de ontheffing bedraagt maximaal acht weken.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Gemert-Bakel bedraagt de doorlooptijd maximaal 6 weken, niet 8 weken."
+      },
+      {
+        "sentence": "Vrijdag: 09.00 - 12.30 uur",
+        "status": "false",
+        "note": "Volgens de actuele openingstijden op de website van gemeente Gemert-Bakel is het gemeentehuis op vrijdag open van 09:00 tot 12:00 uur, niet tot 12:30 uur."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.gemert-bakel.nl/parkeerontheffing",
+      "https://www.gemert-bakel.nl/evenementen-vergunning",
+      "https://www.gemert-bakel.nl/omgevingsvergunning",
+      "https://www.gemert-bakel.nl/verzoek-op-basis-van-de-wet-open-overheid-woo",
+      "https://www.gemert-bakel.nl/omgevingsvergunning-activiteit-uitvoeren-van-een-werk"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bewoners van het Hof van Nazareth komen in aanmerking voor een ontheffing.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet specifiek dat bewoners van het Hof van Nazareth in aanmerking komen voor een ontheffing, terwijl dit wel expliciet genoemd wordt in de bronpagina.",
+          "source_urls": [
+            "https://www.gemert-bakel.nl/parkeerontheffing"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Op een ontheffing kunt u twee kentekens aangeven, die hiervan gebruik mogen maken. Let op, deze kentekens kunnen dus niet tegelijk op één ontheffing parkeren in de blauwe zone.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de mogelijkheid om twee kentekens op één ontheffing te registreren en de beperking dat deze niet tegelijkertijd mogen parkeren.",
+          "source_urls": [
+            "https://www.gemert-bakel.nl/parkeerontheffing"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Parkeerterrein Kapelaanstraat, Kerkstraat, Nieuwstraat, Vroonhof, Elisabethplaats-Oost zijn uitgezonderd van de ontheffing",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de specifieke locaties waar de parkeerontheffing niet geldig is, terwijl de bronpagina deze uitzonderingen wel expliciet noemt.",
+          "source_urls": [
+            "https://www.gemert-bakel.nl/parkeerontheffing"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten belangrijke aanvullende informatie die niet in de originele tekst staat, waaronder specifieke uitzonderingslocaties voor de parkeerontheffing, de mogelijkheid om twee kentekens op één ontheffing te registreren (maar niet gelijktijdig te gebruiken), en de specifieke vermelding dat bewoners van het Hof van Nazareth in aanmerking komen voor een ontheffing. Deze informatie is essentieel voor een volledig begrip van de parkeerontheffingsregeling."
+  }
+}

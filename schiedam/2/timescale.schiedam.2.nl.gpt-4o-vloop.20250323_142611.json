@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "SCHIEDAM",
+      "contact": {
+        "phone": "14 010",
+        "email": "contact@schiedam.nl",
+        "website": "http://www.schiedam.nl"
+      }
+    },
+    "service": {
+      "id": 2,
+      "name": "Bord of spandoek plaatsen aan de openbare weg"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "In 2025 bedragen deze kosten €19,30.",
+        "status": "false",
+        "note": "Dit bedrag kan niet met zekerheid worden vastgesteld voor 2025 aangezien de gemeente Schiedam de legeskosten jaarlijks vaststelt en deze nog niet bekend zijn gemaakt voor 2025."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://schiedam.nl/a-tot-z/informatiestand-plaatsen",
+      "https://www.schiedam.nl/a-tot-z/informatiestand-plaatsen",
+      "https://schiedam.nl/a-tot-z/standplaatsvergunning",
+      "https://www.schiedam.nl/a-tot-z/standplaatsvergunning",
+      "https://www.schiedam.nl/a-tot-z/voorwerpen-op-aan-de-weg-plaatsen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een aanvraag voor een standplaatsvergunning moet ten minste drie weken voordat de standplaats wordt ingenomen, worden ingediend.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt geen minimale aanvraagtermijn voor vergunningen, terwijl de bron specificeert dat dit minimaal 3 weken van tevoren moet.",
+          "source_urls": [
+            "https://schiedam.nl/a-tot-z/standplaatsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Kopie uittreksel Kamer van Koophandel",
+          "original_reference": "No matching information",
+          "note": "De originele tekst noemt niet dat een KvK-uittreksel nodig is voor de aanvraag, terwijl dit wel een vereiste is volgens de bronpagina voor standplaatsvergunningen.",
+          "source_urls": [
+            "https://schiedam.nl/a-tot-z/standplaatsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De reden waarom u de informatiestand wilt plaatsen; Het tijdstip of de periode wanneer u de informatiestand gebruikt;",
+          "original_reference": "No matching information",
+          "note": "De originele tekst specificeert niet dat de reden en periode van gebruik moet worden opgegeven bij de aanvraag, terwijl dit wel vereist is volgens de bronpagina voor informatiestanden.",
+          "source_urls": [
+            "https://schiedam.nl/a-tot-z/informatiestand-plaatsen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten enkele belangrijke aanvullende vereisten die niet in de originele tekst worden genoemd, waaronder de minimale aanvraagtermijn van 3 weken, de verplichting van een KvK-uittreksel, en specifieke informatievereisten voor informatiestanden. Deze informatie is essentieel voor een complete en correcte aanvraagprocedure."
+  }
+}

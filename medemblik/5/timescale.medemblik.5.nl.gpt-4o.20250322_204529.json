@@ -1,0 +1,93 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MEDEMBLIK",
+      "contact": {
+        "phone": "(0229) 85 60 00",
+        "email": "info@medemblik.nl",
+        "website": "http://www.medemblik.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 10,
+    "false_sentences": 2,
+    "accuracy_percentage": 83.3,
+    "false_statements": [
+      {
+        "sentence": "Maak eerst een afspraak met een medewerker van het team Omgevingszaken.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Medemblik is het niet nodig om eerst een afspraak te maken met een medewerker van team Omgevingszaken voor het aanvragen van een alcoholwetvergunning."
+      },
+      {
+        "sentence": "Log in met DigiD om uw aanvraag voor de alcoholwetvergunning in te dienen.",
+        "status": "false",
+        "note": "De alcoholwetvergunning kan niet direct via DigiD worden aangevraagd. Volgens de website van gemeente Medemblik moet het aanvraagformulier worden gedownload en ingevuld, waarna het kan worden ingediend bij de gemeente."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.medemblik.nl/vergunningen/alcohol-en-horeca/ontheffing-sluitingstijden-horeca-aanvragen",
+      "https://www.medemblik.nl/vergunningen",
+      "https://www.medemblik.nl/vergunningen/alcohol-en-horeca/alcoholwetvergunning",
+      "https://www.medemblik.nl/ondernemen/aanbestedingen",
+      "https://www.medemblik.nl/ondernemen/ondernemersloket"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.medemblik.nl/alcoholwetvergunning-gemeente-medemblik",
+        "reason": "INVALID: Error scraping https://www.medemblik.nl/alcoholwetvergunning-gemeente-medemblik: 404 Client Error: Not Found for url: https://www.medemblik.nl/alcoholwetvergunning-gemeente-medemblik"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "alle leidinggevenden zijn minimaal 21 jaar, alle leidinggevenden zijn van goed gedrag, er is altijd minimaal 1 leidinggevende aanwezig, elke leidinggevende heeft een Verklaring sociale hygiëne, uw horecabedrijf of slijterij voldoet aan bepaalde eisen over oppervlakte, hoogte, ventilatie en toiletruimte",
+          "original_reference": "bepaalde voorwaarden zoals beschreven op de pagina voor alcoholwetvergunningen",
+          "note": "De originele tekst noemt alleen algemeen 'bepaalde voorwaarden', terwijl de bron specifieke voorwaarden opsomt inclusief leeftijdseisen, gedragseisen en inrichtingseisen",
+          "source_urls": [
+            "https://www.medemblik.nl/vergunningen/alcohol-en-horeca/alcoholwetvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Kosten model A (commercieel) 2025: Vestigen van een nieuwe ondernemer € 616,20, Vestigen van een nieuw bedrijf € 616,20",
+          "original_reference": "Hier kan geen specifieke informatie over gevonden worden op de website van deze gemeente",
+          "note": "De originele tekst vermeldt dat er geen informatie over kosten beschikbaar is, terwijl de bron wel degelijk specifieke tarieven voor 2025 vermeldt",
+          "source_urls": [
+            "https://www.medemblik.nl/vergunningen/alcohol-en-horeca/alcoholwetvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor verenigingen en stichtingen die alcohol verkopen gelden extra voorwaarden: u moet de huisregels ophangen in de kantine(s), u moet cursussen bieden voor vrijwilligers achter de bar, u moet een bestuursreglement opstellen",
+          "original_reference": "verenigingen en stichtingen moeten model B invullen",
+          "note": "De originele tekst noemt alleen het invullen van model B, terwijl de bron aanvullende specifieke voorwaarden voor verenigingen en stichtingen vermeldt",
+          "source_urls": [
+            "https://www.medemblik.nl/vergunningen/alcohol-en-horeca/alcoholwetvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten aanzienlijk meer gedetailleerde informatie dan de originele tekst, vooral wat betreft specifieke voorwaarden en kosten. De originele tekst mist belangrijke details over concrete vereisten voor zowel commerciële bedrijven als verenigingen/stichtingen, en stelt onterecht dat er geen informatie over kosten beschikbaar is terwijl deze wel degelijk gepubliceerd zijn."
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "BARNEVELD",
+      "contact": {
+        "phone": "14 0342",
+        "email": "info@barneveld.nl",
+        "website": "http://www.barneveld.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "Gebruik het inlogformulier via DigiD of eHerkenning Niveau 2+ om de evenementenvergunning aan te vragen.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Barneveld is eHerkenning niveau 3 vereist voor bedrijven om een evenementenvergunning aan te vragen, niet niveau 2+."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.barneveld.nl/vergunningen-en-ontheffingen/evenementen/evenementenvergunning-aanvragen",
+      "https://www.barneveld.nl/vergunningen-en-ontheffingen/evenementen",
+      "https://www.barneveld.nl/vergunningen-en-ontheffingen/horeca/exploitatievergunning-aanvragen",
+      "https://www.barneveld.nl/ondersteuning-werk-en-inkomen/subsidies/evenementenfonds-subsidie-aanvragen",
+      "https://www.barneveld.nl/vergunningen-en-ontheffingen/evenementen/loterij-organiseren"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U dient minimaal 8 weken voor het evenement de aanvraag in. Een adviescommissie beoordeelt en adviseert de gemeente over de subsidieaanvraag. Het besluit van de gemeente ontvangt u uiterlijk 2 weken voor het evenement.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt geen specifieke aanvraagtermijn voor evenementensubsidies, terwijl de bron een duidelijke termijn van minimaal 8 weken vooraf en besluit 2 weken voor het evenement specificeert.",
+          "source_urls": [
+            "https://www.barneveld.nl/ondersteuning-werk-en-inkomen/subsidies/evenementenfonds-subsidie-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als het prijzenpakket minder dan € 4.500 waard is, vraagt u de vergunning aan bij de gemeente. Als het prijzenpakket € 4.500 of meer waard is, vraagt u de vergunning aan bij de Kansspelautoriteit.",
+          "original_reference": "Voor het organiseren van een loterij heeft u mogelijk een aparte vergunning nodig, afhankelijk van de waarde van het prijzenpakket.",
+          "note": "De originele tekst is vaag over de grenswaarde voor loterijvergunningen, terwijl de bron het specifieke bedrag van €4.500 noemt als scheidslijn tussen gemeentelijke en Kansspelautoriteit vergunningen.",
+          "source_urls": [
+            "https://www.barneveld.nl/vergunningen-en-ontheffingen/evenementen/loterij-organiseren"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Minimaal 40% van de opbrengst van de loterij moet aan het goede doel worden afgedragen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de vereiste dat 40% van de loterijopbrengst aan een goed doel moet worden afgedragen.",
+          "source_urls": [
+            "https://www.barneveld.nl/vergunningen-en-ontheffingen/evenementen/loterij-organiseren"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen ontbrekende specifieke termijnen voor subsidieaanvragen, concrete grenswaarden voor loterijvergunningen en vereisten voor goede doelen bij loterijen. De originele tekst is op deze punten minder specifiek of mist deze informatie volledig. Deze details zijn belangrijk voor aanvragers om correcte procedures te volgen."
+  }
+}

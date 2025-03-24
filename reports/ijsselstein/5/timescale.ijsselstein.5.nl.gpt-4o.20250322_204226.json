@@ -1,0 +1,87 @@
+{
+  "context": {
+    "municipality": {
+      "name": "IJSSELSTEIN",
+      "contact": {
+        "phone": "14 030",
+        "email": "info@ijsselstein.nl",
+        "website": "http://www.ijsselstein.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 19,
+    "false_sentences": 2,
+    "accuracy_percentage": 90.5,
+    "false_statements": [
+      {
+        "sentence": "De burgemeester neemt vervolgens binnen 8 weken een besluit over uw aanvraag. Na dit besluit volgt een Bibob-onderzoek.",
+        "status": "false",
+        "note": "Het Bibob-onderzoek is onderdeel van de aanvraagprocedure en vindt plaats vóór het besluit van de burgemeester, niet erna. Dit is een belangrijk onderdeel van de beoordeling van de aanvraag."
+      },
+      {
+        "sentence": "Betaling kan contant of via pin bij de gemeente.",
+        "status": "false",
+        "note": "De gemeente IJsselstein accepteert geen contante betalingen meer, alleen pinbetalingen zijn mogelijk bij de balie."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 4,
+    "invalid_urls": 2,
+    "accuracy_percentage": 66.7,
+    "valid_urls_list": [
+      "https://www.ijsselstein.nl/Ondernemers/Handig_om_te_weten/Bedrijf_beginnen",
+      "https://www.ijsselstein.nl/Ondernemers/Vergunningen/Alcoholwetvergunning",
+      "https://www.ijsselstein.nl/Ondernemers/Handig_om_te_weten",
+      "https://www.ijsselstein.nl/Ondernemers/Vergunningen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.ijsselstein.nl/Ondernemers/Vergunningen/Exploitatievergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://lokaleregelgeving.overheid.nl/",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wij adviseren u om een afspraak te maken voor een intakegesprek. We leggen u alles uit en geven u de formulieren mee. Houd rekening met 3 weken om alle gevraagde informatie te verzamelen. Daarna maakt u een vervolgafspraak voor een exploitatievergunning.",
+          "original_reference": "Vraag de aanvraagformulieren op bij Team Klant van de gemeente via 14 030 of info@ijsselstein.nl.",
+          "note": "De bronnen beschrijven een ander aanvraagproces met een intakegesprek en vervolgafspraak, terwijl de originele tekst alleen vermeldt dat formulieren opgevraagd moeten worden bij Team Klant.",
+          "source_urls": [
+            "https://www.ijsselstein.nl/Ondernemers/Vergunningen/Alcoholwetvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Contact opnemen met de accountmanager van de gemeente IJsselstein via info@ijsselstein.nl",
+          "original_reference": "Vraag de aanvraagformulieren op bij Team Klant van de gemeente via 14 030 of info@ijsselstein.nl",
+          "note": "De bronnen verwijzen naar een accountmanager als contactpersoon, terwijl de originele tekst Team Klant noemt.",
+          "source_urls": [
+            "https://www.ijsselstein.nl/Ondernemers/Handig_om_te_weten/Bedrijf_beginnen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen het aanvraagproces en de contactpersonen. De bronnen beschrijven een uitgebreider proces met intakegesprek en vervolgafspraak, en verwijzen naar een accountmanager als contactpersoon in plaats van Team Klant. Deze verschillen kunnen van invloed zijn op hoe ondernemers het aanvraagproces benaderen."
+  }
+}

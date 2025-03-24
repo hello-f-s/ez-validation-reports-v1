@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AMELAND",
+      "contact": {
+        "phone": "(0519) 55 55 55",
+        "email": "info@ameland.nl",
+        "website": "http://www.ameland.nl"
+      }
+    },
+    "service": {
+      "id": 10,
+      "name": "Nachtregister bijhouden"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 4,
+    "true_sentences": 3,
+    "false_sentences": 1,
+    "accuracy_percentage": 75.0,
+    "false_statements": [
+      {
+        "sentence": "Om het aangifteformulier op een juiste manier in te kunnen vullen, moet u het aantal overnachtingen van personen van vier jaar en ouder registreren.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Ameland geldt de toeristenbelasting voor personen van 2 jaar en ouder, niet vanaf 4 jaar."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.ameland.nl/alcoholvergunning",
+      "https://www.ameland.nl/woo-verzoeken",
+      "https://www.ameland.nl/woo-verzoek-indienen",
+      "https://www.ameland.nl/uitrit-of-inrit-aanleggen",
+      "https://www.ameland.nl/toeristenbelasting"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.gemeenteameland.nl/toeristenbelasting",
+        "reason": "INVALID: Error scraping https://www.gemeenteameland.nl/toeristenbelasting: 439 Client Error: status code 439 for url: https://www.gemeenteameland.nl/toeristenbelasting"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wat doen we met de opbrengst van de toeristenbelasting? De gemeente is belast met onder meer de aanleg en instandhouding van de wegen, brandweer, openbare verlichting, fiets- en wandelroutes en plantsoenen.",
+          "original_reference": "No matching information",
+          "note": "De bron bevat extra informatie over het doel en de besteding van de toeristenbelasting die niet in de originele tekst staat vermeld.",
+          "source_urls": [
+            "https://www.ameland.nl/toeristenbelasting"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Biedt u slaapgelegenheid aan in uw hotel, pension, groepsaccommodatie, recreatiewoning of camping? Dan krijgt u een aanslag toeristenbelasting.",
+          "original_reference": "No matching information",
+          "note": "De bron specificeert de verschillende types accommodaties die onder de toeristenbelasting vallen, wat niet in de originele tekst staat.",
+          "source_urls": [
+            "https://www.ameland.nl/toeristenbelasting"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "U kunt dit bedrag doorberekenen aan de toerist (vanaf leeftijd 4 jaar) die bij u overnacht.",
+          "original_reference": "Om het aangifteformulier op een juiste manier in te kunnen vullen, moet u het aantal overnachtingen van personen van vier jaar en ouder registreren.",
+          "note": "De leeftijdsgrens van 4 jaar komt overeen in beide teksten.",
+          "source_urls": [
+            "https://www.ameland.nl/toeristenbelasting"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina bevat belangrijke aanvullende informatie over het doel van de toeristenbelasting en specificeert de types accommodaties die hieronder vallen. Deze details ontbreken in de originele tekst. De kernvoorwaarden zoals de leeftijdsgrens van 4 jaar zijn consistent tussen beide versies."
+  }
+}

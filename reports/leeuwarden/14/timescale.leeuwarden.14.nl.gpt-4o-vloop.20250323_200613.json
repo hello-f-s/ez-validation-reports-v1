@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LEEUWARDEN",
+      "contact": {
+        "phone": "14 058",
+        "email": "gemeente@leeuwarden.nl",
+        "website": "http://www.leeuwarden.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 42,
+    "true_sentences": 41,
+    "false_sentences": 1,
+    "accuracy_percentage": 97.6,
+    "false_statements": [
+      {
+        "sentence": "Na de aanvraag hoort u binnen 2 werkdagen of u de vergunning of ontheffing ontvangt.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Leeuwarden duurt de behandeling van een parkeervergunning maximaal 8 weken. De genoemde 2 werkdagen is onjuist."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.leeuwarden.nl/parkeren-verkeer-en-vervoer/parkeren-voor-bedrijven/",
+      "https://www.leeuwarden.nl/parkeren-verkeer-en-vervoer/parkeren-voor-inwoners/",
+      "https://www.leeuwarden.nl/andere-vergunningen-en-ontheffingen/gebruik-openbare-ruimte/",
+      "https://www.leeuwarden.nl/omgevingsvergunning/gebruikmaken-maken-of-veranderen-van-een-uitweg/",
+      "https://www.leeuwarden.nl/omgevingsvergunning/procedure-omgevingsvergunning-aanvragen-of-melden/"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bedrijven in Grou kunnen geen parkeervergunning krijgen voor hun bedrijf.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat bedrijven in Grou zijn uitgesloten van parkeervergunningen. Dit is een belangrijke beperking die ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.leeuwarden.nl/parkeren-verkeer-en-vervoer/parkeren-voor-bedrijven/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor de binnenstad van Leeuwarden is het maximum 1 parkeervergunning per adres.",
+          "original_reference": "Per adres kunt u maximaal 2 parkeervergunningen aanvragen.",
+          "note": "Er is een specifieke beperking voor de binnenstad (max. 1 vergunning) die niet wordt genoemd in de originele tekst, waar alleen de algemene regel van maximaal 2 vergunningen wordt vermeld.",
+          "source_urls": [
+            "https://www.leeuwarden.nl/parkeren-verkeer-en-vervoer/parkeren-voor-inwoners/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een parkeervergunning of parkeerontheffing geldt vanaf het moment van aanvraag of verlenging",
+          "original_reference": "Een parkeervergunning of parkeerontheffing geldt tot 31 december van het jaar van aanvraag",
+          "note": "De brontext specificeert dat de geldigheid start vanaf het moment van aanvraag, terwijl de originele tekst alleen het eindmoment vermeldt.",
+          "source_urls": [
+            "https://www.leeuwarden.nl/parkeren-verkeer-en-vervoer/parkeren-voor-bedrijven/",
+            "https://www.leeuwarden.nl/parkeren-verkeer-en-vervoer/parkeren-voor-inwoners/"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn drie belangrijke verschillen gevonden tussen de originele tekst en de bronnen: 1) De uitsluiting van bedrijven in Grou voor parkeervergunningen wordt niet vermeld in de originele tekst, 2) De specifieke beperking van maximaal 1 vergunning voor de binnenstad ontbreekt in de originele tekst, en 3) Het startmoment van de geldigheid van vergunningen wordt verschillend beschreven. Deze verschillen kunnen belangrijk zijn voor aanvragers van parkeervergunningen."
+  }
+}

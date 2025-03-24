@@ -1,0 +1,87 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ERMELO",
+      "contact": {
+        "phone": "(0341) 56 73 21",
+        "email": "gemeente@ermelo.nl",
+        "website": "http://www.ermelo.nl"
+      }
+    },
+    "service": {
+      "id": 13,
+      "name": "Omzettingsvergunning voor kamerverhuur aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 19,
+    "false_sentences": 2,
+    "accuracy_percentage": 90.5,
+    "false_statements": [
+      {
+        "sentence": "Regulier conceptverzoek: € 153",
+        "status": "false",
+        "note": "Het correcte bedrag voor een regulier conceptverzoek in Ermelo is € 156 volgens de actuele legesverordening van de gemeente Ermelo"
+      },
+      {
+        "sentence": "Voor vragen kunt u contact opnemen met de gemeente via telefoonnummer 0341 56 73 21",
+        "status": "false",
+        "note": "Het correcte algemene telefoonnummer van de gemeente Ermelo is 0341 56 73 00"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 4,
+    "valid_urls": 4,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.ermelo.nl/omgevingsplein/omgevingsloket/conceptverzoek-aanvragen",
+      "https://www.ermelo.nl/omgevingsplein/omgevingsloket",
+      "https://www.ermelo.nl/omgevingsplein/omgevingsloket/omgevingsvergunning-aanvragen",
+      "https://www.ermelo.nl/evenementen-en-horeca/horeca-en-alcohol/geluidsoverlast-veroorzaken"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wilt u bouwen, verbouwen of slopen?Heeft u een conceptverzoek ingediend? En een positief besluit op uw conceptverzoek?",
+          "original_reference": "Na goedkeuring van het conceptverzoek kunt u verder met de officiële aanvraag van de omgevingsvergunning via hetzelfde loket.",
+          "note": "De bronpagina benadrukt expliciet dat een positief besluit op het conceptverzoek nodig is voordat men een omgevingsvergunning kan aanvragen. Dit is specifieker dan de originele tekst.",
+          "source_urls": [
+            "https://www.ermelo.nl/omgevingsplein/omgevingsloket/omgevingsvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Betrek de omgeving vroeg bij een bouwplan. Dit vergroot de haalbaarheid van uw plan en voorkomt vaak bezwaren in een latere stap in het proces.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat een belangrijke aanvullende aanbeveling over het vroegtijdig betrekken van de omgeving die niet in de originele tekst staat.",
+          "source_urls": [
+            "https://www.ermelo.nl/omgevingsplein/omgevingsloket/omgevingsvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als uw conceptverzoek complex is dan vragen wij u om een quickscanformulier in te vullen. Deze krijgt u toegestuurd.",
+          "original_reference": "Complexe verzoeken kunnen een quickscan vereisen.",
+          "note": "De bronpagina specificeert dat het quickscanformulier wordt toegestuurd, wat extra detail is ten opzichte van de originele tekst.",
+          "source_urls": [
+            "https://www.ermelo.nl/omgevingsplein/omgevingsloket/conceptverzoek-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten enkele belangrijke aanvullende details die niet in de originele tekst staan, waaronder de expliciete eis van een positief besluit op het conceptverzoek, het advies om de omgeving vroeg te betrekken bij bouwplannen, en specifieke informatie over het toesturen van het quickscanformulier. Deze details maken de procedures en vereisten duidelijker voor aanvragers."
+  }
+}

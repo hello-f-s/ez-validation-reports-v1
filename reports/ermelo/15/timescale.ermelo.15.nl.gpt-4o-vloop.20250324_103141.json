@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ERMELO",
+      "contact": {
+        "phone": "(0341) 56 73 21",
+        "email": "gemeente@ermelo.nl",
+        "website": "http://www.ermelo.nl"
+      }
+    },
+    "service": {
+      "id": 15,
+      "name": "Vergunning of ontheffing voor straatartiesten"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "De gemeente Ermelo is vandaag geopend van 08.00 tot 12.30 uur.",
+        "status": "false",
+        "note": "De openingstijden van de gemeente Ermelo zijn van 08.30 tot 17.00 uur op werkdagen. Op donderdag is het gemeentehuis geopend tot 19.00 uur. De genoemde openingstijd is onjuist volgens de officiële website van de gemeente Ermelo."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.ermelo.nl/evenementen-en-horeca/evenement-of-activiteit-organiseren/optreden-als-straatartiest",
+      "https://www.ermelo.nl/evenementen-en-horeca/horeca-en-alcohol",
+      "https://www.ermelo.nl/omgevingsplein/zie-ook/voorwerp-plaatsen-op-of-aan-de-weg",
+      "https://www.ermelo.nl/evenementen-en-horeca/horeca-en-alcohol/geluidsoverlast-veroorzaken",
+      "https://www.ermelo.nl/evenementen-en-horeca/horeca-en-alcohol/terras-plaatsen",
+      "https://www.ermelo.nl"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vandaag tot 17.30",
+          "original_reference": "De gemeente Ermelo is vandaag geopend van 08.00 tot 12.30 uur",
+          "note": "De openingstijden verschillen: de bronpagina vermeldt sluiting om 17:30, terwijl de originele tekst 12:30 aangeeft",
+          "source_urls": [
+            "https://www.ermelo.nl"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Maak een afspraak",
+          "original_reference": "Voor een persoonlijk bezoek is het verstandig om vooraf een afspraak te maken",
+          "note": "De bronpagina stelt een afspraak als vereiste, terwijl de originele tekst dit alleen als advies geeft",
+          "source_urls": [
+            "https://www.ermelo.nl"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Voor de kosten van de aanvragen verwijzen we u door naar paragraaf 3 van de bijlage in de legesverordening",
+          "original_reference": "De kosten voor de ontheffing worden vermeld in paragraaf 3 van de bijlage in de legesverordening",
+          "note": "De verwijzing naar de kosten in de legesverordening is consistent in beide bronnen",
+          "source_urls": [
+            "https://www.ermelo.nl/evenementen-en-horeca/evenement-of-activiteit-organiseren/optreden-als-straatartiest"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de openingstijden van de gemeente en de verplichting tot het maken van een afspraak. De bronpagina's tonen langere openingstijden (tot 17:30) en stellen een afspraak verplicht, terwijl de originele tekst kortere openingstijden vermeldt (tot 12:30) en een afspraak alleen adviseert. Overige informatie, zoals de kostenstructuur en contactgegevens, komt overeen."
+  }
+}

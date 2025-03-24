@@ -1,0 +1,51 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DEN HELDER",
+      "contact": {
+        "phone": "null",
+        "email": "info@denhelder.nl",
+        "website": "http://www.denhelder.nl"
+      }
+    },
+    "service": {
+      "id": 6,
+      "name": "Integriteitsonderzoek (Wet Bibob)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 10,
+    "false_sentences": 1,
+    "accuracy_percentage": 90.9,
+    "false_statements": [
+      {
+        "sentence": "Het Stadhuis is maandag geopend van 08:30 tot 19:30.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Den Helder is het stadhuis op maandag geopend van 8:30 tot 17:00 uur, met uitzondering van maandagavond op afspraak van 17:00 tot 19:30 uur."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 2,
+    "valid_urls": 0,
+    "invalid_urls": 2,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.denhelder.nl/Onderwerpen/Evenementen_en_feesten/Een_horecabedrijf_starten/Bibob",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.denhelder.nl/Onderwerpen/Bestuur_en_organisatie/Beleid/Woo_verzoek_indienen",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  }
+}

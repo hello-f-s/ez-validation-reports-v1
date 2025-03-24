@@ -1,0 +1,77 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DEVENTER",
+      "contact": {
+        "phone": "14 0570",
+        "email": "gemeente@deventer.nl",
+        "website": "http://www.deventer.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor een VOG aanvraag zijn afhankelijk van de gekozen aanvraagwijze en eventuele specifieke regelingen zoals voor vrijwilligers.",
+        "status": "false",
+        "note": "De kosten voor een VOG zijn landelijk vastgesteld op €41,35. Voor vrijwilligers is de VOG gratis. De kosten zijn niet afhankelijk van de gekozen aanvraagwijze."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.deventer.nl/vooroverleg",
+      "https://www.deventer.nl/vog",
+      "https://www.deventer.nl/verklaring-omtrent-het-gedrag",
+      "https://www.deventer.nl/omgevingsvergunning",
+      "https://www.deventer.nl/omgevingsvergunning-aanvragen",
+      "https://www.deventer.nl"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Aanvraagformulier VOG kinderopvang, Aanvraagformulier VOG natuurlijke personen (NP) in Nederlands en Engels, Aanvraagformulier VOG bedrijven",
+          "original_reference": "Het aanvraagformulier Verklaring Omtrent het Gedrag",
+          "note": "De bronnen specificeren verschillende types VOG-aanvraagformulieren (kinderopvang, natuurlijke personen, bedrijven) terwijl de originele tekst slechts één algemeen aanvraagformulier noemt",
+          "source_urls": [
+            "https://www.deventer.nl/vog",
+            "https://www.deventer.nl/verklaring-omtrent-het-gedrag"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vindt u het lastig om dingen online te regelen? U kunt gratis persoon...",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden ondersteuning bij online aanvragen, wat niet genoemd wordt in de originele tekst",
+          "source_urls": [
+            "https://www.deventer.nl/vog",
+            "https://www.deventer.nl/verklaring-omtrent-het-gedrag"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten enkele aanvullende details die niet in de originele tekst staan, met name over verschillende soorten VOG-aanvraagformulieren en ondersteuning bij online aanvragen. De kernprocedures en vereisten komen verder overeen met de originele tekst."
+  }
+}

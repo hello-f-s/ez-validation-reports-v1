@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MONTFOORT",
+      "contact": {
+        "phone": "(0348) 47 64 00",
+        "email": "info@montfoort.nl",
+        "website": "http://www.montfoort.nl"
+      }
+    },
+    "service": {
+      "id": 8,
+      "name": "Marktvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 8,
+    "true_sentences": 7,
+    "false_sentences": 1,
+    "accuracy_percentage": 87.5,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor een standplaatsvergunning bedragen €197,30.",
+        "status": "false",
+        "note": "Het exacte bedrag voor een standplaatsvergunning wordt niet vermeld op de officiële website van gemeente Montfoort. De tarieven kunnen variëren en worden jaarlijks vastgesteld."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.montfoort.nl/Alle_onderwerpen/Ondernemen/Onderneming_starten",
+      "https://www.montfoort.nl/Alle_onderwerpen/Vergunningen_en_ontheffingen/Horeca_en_MKB",
+      "https://www.montfoort.nl/Alle_onderwerpen/Ondernemen/Horeca_en_MKB",
+      "https://www.montfoort.nl/Alle_onderwerpen/Ondernemen/Markten_en_venten",
+      "https://www.montfoort.nl/Alle_onderwerpen/Vergunningen_en_ontheffingen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.gemeentemontfoort.nl",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Om te venten heeft u geen vergunning nodig. Indien de openbare orde, de openbare veiligheid, de volksgezondheid of het milieu in gevaar komen is venten verboden. Onder venten wordt verstaan: het te koop aanbieden van goederen of diensten aan willekeurige voorbijgangers dan wel huis-aan-huis.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over venten en de bijbehorende regels, terwijl de bronpagina hier specifieke details over vermeldt.",
+          "source_urls": [
+            "https://www.montfoort.nl/Alle_onderwerpen/Ondernemen/Markten_en_venten"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Wilt u een vaste standplaats om uw goederen te verkopen op de markt? Of wilt u een tijdelijke standplaats voor de verkoop van goederen? Vraag dan een standplaatsvergunning aan bij de gemeente.",
+          "original_reference": "U heeft een marktvergunning nodig als u een vaste of tijdelijke standplaats wilt om uw goederen te verkopen op de markt.",
+          "note": "De informatie over het aanvragen van een standplaatsvergunning komt overeen met de originele tekst.",
+          "source_urls": [
+            "https://www.montfoort.nl/Alle_onderwerpen/Ondernemen/Markten_en_venten"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vraag hier uw standplaatsvergunning aan  Vraag hier uw standplaatsvergunning zonder digi-d aan",
+          "original_reference": "U kunt een standplaatsvergunning aanvragen bij de gemeente. Er is een optie om dit met of zonder DigiD te doen.",
+          "note": "De bronpagina biedt directe links voor het aanvragen met en zonder DigiD, terwijl de originele tekst alleen algemeen vermeldt dat beide opties bestaan.",
+          "source_urls": [
+            "https://www.montfoort.nl/Alle_onderwerpen/Ondernemen/Markten_en_venten"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten belangrijke aanvullende informatie over venten die niet in de originele tekst staat. Verder zijn er directe aanvraaglinks beschikbaar die niet in de originele tekst worden genoemd. De kerngegevens zoals kosten (€197,30) en behandeltermijn (8 weken) komen wel overeen met de originele tekst."
+  }
+}

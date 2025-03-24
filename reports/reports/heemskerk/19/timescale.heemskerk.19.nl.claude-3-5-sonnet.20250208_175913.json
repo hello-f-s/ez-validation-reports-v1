@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HEEMSKERK",
+      "contact": {
+        "phone": "14 0251",
+        "email": "post@heemskerk.nl",
+        "website": "http://www.heemskerk.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "U vraagt een kansspelautomaat vergunning aan via het webformulier: Exploitatievergunning aanvragen DigiD (https://www.overheid.nl/loket-diensten/producten_en_diensten/exploitatievergunning)",
+        "status": "false",
+        "note": "De aanvraag voor een kansspelautomatenvergunning in Heemskerk verloopt niet via overheid.nl maar moet worden aangevraagd via de gemeente Heemskerk zelf. De juiste procedure staat beschreven op de gemeentelijke website van Heemskerk."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/kansspel-organiseren-melding-of-vergunning",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/veelgestelde-vragen-omgevingsvergunning",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca/kansspelautomaat",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca/exploitatievergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.overheid.nl/loket-diensten/producten_en_diensten/exploitatievergunning)</p>",
+        "reason": "INVALID: Error scraping https://www.overheid.nl/loket-diensten/producten_en_diensten/exploitatievergunning)</p>: 410 Client Error: Gone for url: https://www.overheid.nl/loket-diensten/producten_en_diensten/exploitatievergunning)%3C/p%3E"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De vergunning verlenen we voor onbepaalde tijd. Tenzij u dat anders wenst.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de geldigheidsduur van de vergunning, terwijl de bron specificeert dat deze voor onbepaalde tijd geldt tenzij anders gewenst.",
+          "source_urls": [
+            "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca/kansspelautomaat"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De ruimte moet een café of restaurant zijn, mét een geldige alcoholvergunning. Het café- of restaurantbezoek moet op zichzelf staan. Er mogen geen andere activiteiten plaatsvinden waaraan een zelfstandige betekenis kan worden toegekend.",
+          "original_reference": "Uw horecazaak moet hoogdrempelig zijn (gericht op personen van 18 jaar en ouder met een geldige alcoholvergunning).",
+          "note": "De bron geeft een uitgebreidere definitie van 'hoogdrempelig' met specifieke voorwaarden over zelfstandige activiteiten die niet in de originele tekst staan.",
+          "source_urls": [
+            "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca/kansspelautomaat"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Samengestelde inrichtingen: Sommige bedrijven hebben zowel een hoogdrempelig als een laagdrempelig gedeelte. [...] De 2 ruimtes zijn van elkaar gescheiden.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over samengestelde inrichtingen en de specifieke voorwaarden hiervoor, terwijl de bron deze wel vermeldt.",
+          "source_urls": [
+            "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca/kansspelautomaat"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie die niet in de originele tekst staat, waaronder de geldigheidsduur van de vergunning, een uitgebreidere definitie van 'hoogdrempelig', en specifieke voorwaarden voor samengestelde inrichtingen. Deze informatie is essentieel voor een volledig begrip van de vergunningvereisten voor kansspelautomaten."
+  }
+}

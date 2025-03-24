@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "STEENBERGEN",
+      "contact": {
+        "phone": "14 0167",
+        "email": "info@gemeente-steenbergen.nl",
+        "website": "http://www.gemeente-steenbergen.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 27,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.4,
+    "false_statements": [
+      {
+        "sentence": "Bij overschrijding van deze termijn wordt de vergunning automatisch verleend.",
+        "status": "false",
+        "note": "Bij termijnoverschrijding wordt een vergunning niet automatisch verleend. De Wet dwangsom en beroep bij niet tijdig beslissen is van toepassing, waarbij u de gemeente in gebreke kunt stellen, maar de vergunning wordt niet automatisch verleend."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.gemeente-steenbergen.nl/inwoners_overzicht/bouwen_en_verbouwen/aanvraagmogelijkheden_en_termijnen/",
+      "https://www.gemeente-steenbergen.nl/inwoners_overzicht/bouwen_en_verbouwen/aanvraagmogelijkheden_en_termijnen/aanvraagmogelijkheden_en_termijnen",
+      "https://www.gemeente-steenbergen.nl/inwoners_overzicht/subsidie/meestgestelde_vragen/aanvraagprocedure",
+      "https://www.gemeente-steenbergen.nl/inwoners_overzicht/bouwen_en_verbouwen/digitaal_aanvragen_van_een_omgevingsvergunning/digitaal_aanvragen_van_een_omgevingsvergunning_",
+      "https://www.gemeente-steenbergen.nl/inwoners_overzicht/bouwen_en_verbouwen/digitaal_aanvragen_van_een_omgevingsvergunning/"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U kunt alle nodige vergunningen in 1 keer aanvragen. Dat is makkelijk. Maar het is niet verplicht. U mag de nodige vergunningen ook apart aanvragen.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt expliciet de mogelijkheid om vergunningen apart of gecombineerd aan te vragen, wat belangrijke informatie is die ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.gemeente-steenbergen.nl/inwoners_overzicht/bouwen_en_verbouwen/aanvraagmogelijkheden_en_termijnen/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De omgevingsvergunning kan bijvoorbeeld in 2 fasen worden aangevraagd.",
+          "original_reference": "No matching information",
+          "note": "De mogelijkheid om de omgevingsvergunning in twee fasen aan te vragen wordt niet genoemd in de originele tekst, wat een belangrijke procedurele optie is.",
+          "source_urls": [
+            "https://www.gemeente-steenbergen.nl/inwoners_overzicht/bouwen_en_verbouwen/aanvraagmogelijkheden_en_termijnen/"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "De beslistermijn is daarbij 8 weken. Die termijn is gerekend vanaf de ontvangstdatum van de aanvraag. Deze termijn kan één keer met 6 weken worden verlengd.",
+          "original_reference": "Voor eenvoudige aanvragen, zoals bouwen of slopen, geldt een beslistermijn van 8 weken, te verlengen met 6 weken.",
+          "note": "De termijnen voor normale procedures komen exact overeen in beide bronnen.",
+          "source_urls": [
+            "https://www.gemeente-steenbergen.nl/inwoners_overzicht/bouwen_en_verbouwen/aanvraagmogelijkheden_en_termijnen/"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten enkele belangrijke aanvullende opties die niet in de originele tekst worden genoemd, zoals de mogelijkheid om vergunningen apart aan te vragen en het aanvragen in twee fasen. De kernprocedures en termijnen komen wel overeen. Deze extra opties kunnen belangrijk zijn voor aanvragers om een weloverwogen keuze te maken in hun aanvraagproces."
+  }
+}

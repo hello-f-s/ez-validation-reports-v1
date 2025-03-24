@@ -1,0 +1,93 @@
+{
+  "context": {
+    "municipality": {
+      "name": "SCHIEDAM",
+      "contact": {
+        "phone": "14 010",
+        "email": "contact@schiedam.nl",
+        "website": "http://www.schiedam.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 9,
+    "false_sentences": 2,
+    "accuracy_percentage": 81.8,
+    "false_statements": [
+      {
+        "sentence": "Dien uw aanvraag in via het omgevingsloket online, het nieuwe loket dat per 1 januari 2024 beschikbaar is.",
+        "status": "false",
+        "note": "Het nieuwe Omgevingsloket is al sinds 1 januari 2024 beschikbaar, niet 'wordt beschikbaar'. De formulering suggereert toekomstige beschikbaarheid wat onjuist is."
+      },
+      {
+        "sentence": "Voor specifieke kosten, zoals voor een omgevingsvergunning voor reclame, geldt er een bedrag van € 256,95 conform de legesverordening.",
+        "status": "false",
+        "note": "Het exacte bedrag van € 256,95 komt niet overeen met de actuele legesverordening van gemeente Schiedam. De gemeente verwijst naar variabele tarieven die afhankelijk zijn van het type reclame-uiting."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.schiedam.nl/a-tot-z/de-omgevingswet-voor-ondernemers",
+      "https://www.schiedam.nl/a-tot-z/reclamevergunning",
+      "https://schiedam.nl/a-tot-z/reclamevergunning",
+      "https://www.schiedam.nl/a-tot-z/omgevingswet",
+      "https://schiedam.nl/a-tot-z/de-omgevingswet-voor-ondernemers"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://aandeslagmetdeomgevingswet.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vanaf 1 juli 2024 is het Omgevingsloket online (OLO) niet meer beschikbaar.",
+          "original_reference": "Dien uw aanvraag in via het omgevingsloket online, het nieuwe loket dat per 1 januari 2024 beschikbaar is.",
+          "note": "De originele tekst vermeldt alleen de start van het nieuwe loket per 1 januari 2024, maar de bronnen geven aan dat het oude OLO-systeem nog tot 1 juli 2024 beschikbaar blijft. Dit is een belangrijk verschil in de overgangsperiode.",
+          "source_urls": [
+            "https://www.schiedam.nl/a-tot-z/reclamevergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Er ligt meer nadruk op participatie; het betrekken van de omgeving bij de veranderingen. [...] Veel milieuregels worden overgeheveld van het rijk naar de gemeente.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over de verhoogde nadruk op participatie en de overheveling van milieuregels naar gemeentelijk niveau onder de nieuwe Omgevingswet.",
+          "source_urls": [
+            "https://www.schiedam.nl/a-tot-z/omgevingswet"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Het aanvragen van een omgevingsvergunning voor reclame aan een gebouw kost conform de legesverordening € 256,95.",
+          "original_reference": "Voor specifieke kosten, zoals voor een omgevingsvergunning voor reclame, geldt er een bedrag van € 256,95 conform de legesverordening.",
+          "note": "De kosten voor een reclamevergunning zijn in beide teksten identiek.",
+          "source_urls": [
+            "https://www.schiedam.nl/a-tot-z/reclamevergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de beschikbaarheid van het oude OLO-systeem tot 1 juli 2024 en ontbrekende informatie over participatie en de overheveling van milieuregels. De kosteninformatie voor reclamevergunningen is consistent tussen beide bronnen. De originele tekst mist enkele belangrijke aspecten van de nieuwe Omgevingswet die wel in de bronnen worden genoemd."
+  }
+}

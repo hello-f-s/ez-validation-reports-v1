@@ -1,0 +1,92 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AMERSFOORT",
+      "contact": {
+        "phone": "14 033",
+        "email": "info@amersfoort.nl",
+        "website": "http://www.amersfoort.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "Voor het indienen van een principeplan worden kosten gerekend: 0,15% van de bouwkosten, met een minimum van € 250,- en een maximum van € 1600,-.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Amersfoort bedragen de kosten voor een principeplan 0,15% van de bouwkosten met een minimum van € 500,- en een maximum van € 2.500,-, niet € 250,- en € 1600,- zoals vermeld."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.amersfoort.nl/aanleggen",
+      "https://www.amersfoort.nl/reclame",
+      "https://www.amersfoort.nl/omgevingsvergunning-voor-bouwen-en-verbouwen",
+      "https://www.amersfoort.nl/een-vergunning-aangevraagd-en-nu",
+      "https://www.amersfoort.nl/boom-kappen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://voorbeeldurl2.nl",
+        "reason": "INVALID: Error scraping https://voorbeeldurl2.nl: HTTPSConnectionPool(host='voorbeeldurl2.nl', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106328690>: Failed to resolve 'voorbeeldurl2.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://voorbeeldurl1.nl",
+        "reason": "INVALID: Error scraping https://voorbeeldurl1.nl: HTTPSConnectionPool(host='voorbeeldurl1.nl', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106177ed0>: Failed to resolve 'voorbeeldurl1.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Binnen 2 weken neemt de casemanager contact met je op. Let op: door de drukte halen we deze termijn helaas niet altijd.",
+          "original_reference": "Na de indiening van je aanvraag, wordt deze behandeld door een casemanager die contact met je zal opnemen.",
+          "note": "De originele tekst specificeert geen termijn voor contact door de casemanager, terwijl de bron een 2-weken termijn noemt met de kanttekening dat deze niet altijd wordt gehaald.",
+          "source_urls": [
+            "https://www.amersfoort.nl/een-vergunning-aangevraagd-en-nu"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Aan een kapvergunning zijn geen kosten verbonden.",
+          "original_reference": "De kosten voor de aanvraag worden bepaald door de specifieke activiteiten en bouwkosten van je project.",
+          "note": "De originele tekst suggereert dat alle vergunningen kosten hebben, terwijl de bron specifiek vermeldt dat kapvergunningen kosteloos zijn.",
+          "source_urls": [
+            "https://www.amersfoort.nl/boom-kappen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Je mag wel meteen beginnen.",
+          "original_reference": "Indien geen bezwaren worden ingediend na de termijn, wordt de vergunning definitief en kan met de werkzaamheden worden gestart.",
+          "note": "Bij reclamevergunningen mag men volgens de bron direct na verlening starten, terwijl de originele tekst aangeeft dat men moet wachten tot na de bezwaartermijn.",
+          "source_urls": [
+            "https://www.amersfoort.nl/reclame"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de termijn voor contact door de casemanager (2 weken), de kosteloze kapvergunning, en het direct mogen starten bij reclamevergunningen. De originele tekst is op deze punten minder specifiek of wijkt af van de actuele informatie in de bronnen."
+  }
+}

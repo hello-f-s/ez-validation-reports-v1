@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DALFSEN",
+      "contact": {
+        "phone": "14 0529",
+        "email": "gemeente@dalfsen.nl",
+        "website": "http://www.dalfsen.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "Openingstijden voor paracommerciële instellingen: maandag tot en met vrijdag tussen 19.00 en 24.00 uur, zaterdag en zon- en feestdagen van 12.00 tot 19.00 uur.",
+        "status": "false",
+        "note": "Volgens de Alcoholverordening gemeente Dalfsen 2014 zijn de schenktijden voor paracommerciële instellingen: maandag t/m vrijdag van 19.00 tot 24.00 uur, zaterdag en zondag van 12.00 tot 24.00 uur (niet tot 19.00 uur zoals vermeld)."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.dalfsen.nl/alcoholvergunning",
+      "https://www.dalfsen.nl/exploitatievergunning-horecabedrijf",
+      "https://www.dalfsen.nl/alcohol-schenken-tijdens-evenement",
+      "https://www.dalfsen.nl/omgevingsvergunning",
+      "https://www.dalfsen.nl/watervergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De houder/leidinggevende is minimaal 18 jaar en van onbesproken gedrag.",
+          "original_reference": "Alle leidinggevenden moeten minimaal 21 jaar oud zijn.",
+          "note": "Er is een tegenstrijdigheid in de minimumleeftijd voor leidinggevenden. Bij de exploitatievergunning wordt 18 jaar genoemd, terwijl bij de alcoholvergunning 21 jaar wordt vereist.",
+          "source_urls": [
+            "https://www.dalfsen.nl/exploitatievergunning-horecabedrijf"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Sterke drank (met meer dan 15% alcohol) mag niet worden geschonken of verkocht op het evenement.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen specifieke informatie over het verbod op sterke drank bij evenementen, terwijl dit wel een belangrijke beperking is die in de bronnen wordt genoemd.",
+          "source_urls": [
+            "https://www.dalfsen.nl/alcohol-schenken-tijdens-evenement"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De exploitatie van de openbare inrichting is niet in strijd met het geldende omgevingsplan.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist deze belangrijke voorwaarde met betrekking tot het omgevingsplan die wel in de bronnen wordt genoemd.",
+          "source_urls": [
+            "https://www.dalfsen.nl/exploitatievergunning-horecabedrijf"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de minimumleeftijd voor leidinggevenden (18 vs 21 jaar), het ontbreken van informatie over het verbod op sterke drank bij evenementen, en het missen van de voorwaarde over conformiteit met het omgevingsplan. Deze verschillen zijn significant voor de volledigheid en accuraatheid van de informatievoorziening."
+  }
+}

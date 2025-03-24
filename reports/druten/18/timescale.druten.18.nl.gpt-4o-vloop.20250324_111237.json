@@ -1,0 +1,96 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DRUTEN",
+      "contact": {
+        "phone": "(088) 432 70 00",
+        "email": "info@druten.nl",
+        "website": "http://www.druten.nl"
+      }
+    },
+    "service": {
+      "id": 18,
+      "name": "Ventvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 22,
+    "false_sentences": 2,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Voor het in behandeling nemen van uw aanvraag wordt een bedrag van €177,25 in rekening gebracht.",
+        "status": "false",
+        "note": "Het exacte bedrag voor een exploitatievergunning in Druten is €182,70 volgens de actuele legesverordening van de gemeente Druten."
+      },
+      {
+        "sentence": "Het gemeentehuis van Druten is op maandag geopend van 8.30 tot 19.00 uur.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Druten is het gemeentehuis op maandag geopend van 8:30 tot 17:00 uur, met uitzondering van de avondopenstelling op afspraak tot 19:30 uur."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 4,
+    "valid_urls": 2,
+    "invalid_urls": 2,
+    "accuracy_percentage": 50.0,
+    "valid_urls_list": [
+      "https://www.druten.nl/exploitatievergunning-horecabedrijf",
+      "https://www.druten.nl/informatie-opvragen-woo-verzoek"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.druten.nl/omgevingsvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.druten.nl/monument-verbouwen-herstellen-of-onderhouden",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Whatsapp: +31625689928",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen WhatsApp contactmogelijkheid, terwijl dit wel een officieel contactkanaal van de gemeente blijkt te zijn",
+          "source_urls": [
+            "https://www.druten.nl/exploitatievergunning-horecabedrijf",
+            "https://www.druten.nl/informatie-opvragen-woo-verzoek"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Heuvel 1, 6651 DA Druten",
+          "original_reference": "No matching information",
+          "note": "Het fysieke adres van het gemeentehuis ontbreekt in de originele tekst",
+          "source_urls": [
+            "https://www.druten.nl/exploitatievergunning-horecabedrijf",
+            "https://www.druten.nl/informatie-opvragen-woo-verzoek"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Telefonische bereikbaarheid: 8.30 - 16.30 uur",
+          "original_reference": "Telefonisch is de gemeente bereikbaar op maandag van 8.30 tot 16.30 uur",
+          "note": "De originele tekst vermeldt alleen maandag als telefonische bereikbaarheid, terwijl de bronnen aangeven dat dit de algemene bereikbaarheidstijden zijn",
+          "source_urls": [
+            "https://www.druten.nl/exploitatievergunning-horecabedrijf"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de contactmogelijkheden: de originele tekst mist het WhatsApp-nummer en het fysieke adres van het gemeentehuis. Daarnaast is er een discrepantie in de telefonische bereikbaarheidstijden. De overige informatie over de exploitatievergunning komt overeen met de bronnen, voor zover deze informatie in de bronnen beschikbaar is."
+  }
+}

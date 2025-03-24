@@ -1,0 +1,76 @@
+{
+  "context": {
+    "municipality": {
+      "name": "APELDOORN",
+      "contact": {
+        "phone": "14 055",
+        "email": "gemeente@apeldoorn.nl",
+        "website": "http://www.apeldoorn.nl"
+      }
+    },
+    "service": {
+      "id": 7,
+      "name": "Kabels en leidingen aanleggen en beheren"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "De aanvraag voor een vergunning voor kabels en leidingen kan worden ingediend via mijnmoorwerkt.nl.",
+        "status": "false",
+        "note": "De aanvraag voor een vergunning voor kabels en leidingen in Apeldoorn moet worden ingediend via het digitale omgevingsloket van de gemeente Apeldoorn, niet via mijnmoorwerkt.nl"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 3,
+    "invalid_urls": 3,
+    "accuracy_percentage": 50.0,
+    "valid_urls_list": [
+      "https://www.apeldoorn.nl/wonen-en-leven/bouwen/omgevingsvergunningen",
+      "https://www.apeldoorn.nl/omgevingswet/een-vergunning-aanvragen-binnen-de-omgevingswet-hoe-werkt-dat",
+      "https://www.apeldoorn.nl/omgevingswet/voorbeeld-aanvraag-na-1-januari-2024"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.gemeente-apeldoorn.nl",
+        "reason": "INVALID: Error scraping https://www.gemeente-apeldoorn.nl: HTTPSConnectionPool(host='www.gemeente-apeldoorn.nl', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1018)')))"
+      },
+      {
+        "url": "https://www.apeldoorn.nl/wonen-en-leven/wonen-en-uw-buurt/woningbouwkavels/kabels-en-leidingen-plaatsen-in-openbare-grond",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.apeldoorn.nl/wonen-en-leven/bouwen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Aanvragen moeten worden ingediend via het landelijke Omgevingsloket",
+          "original_reference": "De aanvraag voor een vergunning voor kabels en leidingen kan worden ingediend via mijnmoorwerkt.nl",
+          "note": "De originele tekst verwijst naar een verouderd aanvraagsysteem (mijnmoorwerkt.nl). Volgens de nieuwe bronnen moet dit via het landelijke Omgevingsloket gebeuren sinds de invoering van de Omgevingswet.",
+          "source_urls": [
+            "https://www.apeldoorn.nl/omgevingswet/een-vergunning-aanvragen-binnen-de-omgevingswet-hoe-werkt-dat"
+          ]
+        }
+      ]
+    },
+    "summary": "Het belangrijkste verschil betreft het aanvraagsysteem voor vergunningen. De originele tekst verwijst naar een verouderd systeem, terwijl aanvragen nu via het landelijke Omgevingsloket moeten worden gedaan. Voor de overige aspecten van de procedure (voorwaarden, benodigde documenten, termijnen) is geen tegenstrijdige informatie gevonden in de beschikbare bronnen."
+  }
+}

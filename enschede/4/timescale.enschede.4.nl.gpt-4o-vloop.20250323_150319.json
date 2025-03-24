@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ENSCHEDE",
+      "contact": {
+        "phone": "14 053",
+        "email": "postbus20@enschede.nl",
+        "website": "http://www.enschede.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 31,
+    "true_sentences": 30,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.8,
+    "false_statements": [
+      {
+        "sentence": "Tenten zijn niet groter dan 50 vierkante meter en mogen maximaal 50 personen bevatten.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Enschede mogen tenten bij een melding niet groter zijn dan 25 vierkante meter. De genoemde 50 vierkante meter is onjuist."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.enschede.nl/evenement-organiseren",
+      "https://www.enschede.nl/vergunning-voor-kamerverhuur",
+      "https://www.enschede.nl/subsidie-sportevenementen",
+      "https://www.enschede.nl/subsidie-evenementen-voor-studenten",
+      "https://www.enschede.nl/wegomleiding-of-verkeersmaatregelen-aanvragen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Er is geen tribune hoger dan 2 meter, of iets anders groots",
+          "original_reference": "No matching information",
+          "note": "De originele tekst noemt geen specifieke hoogtebeperkingen voor tribunes, terwijl de bron een maximale hoogte van 2 meter specificeert",
+          "source_urls": [
+            "https://www.enschede.nl/evenement-organiseren"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "tot 55 decibel (A) / 70 decibel (C) (tussen 9.00 en 19.00 uur) en tot 50 decibel (A) / 65 decibel (C) (tussen 19.00 en 0.00 uur). Dit wordt gemeten op 20 meter van de geluidsbron",
+          "original_reference": "Er is geen harde muziek, alleen achtergrondmuziek tot bepaalde decibelniveaus",
+          "note": "De originele tekst specificeert niet de exacte decibelniveaus en meetafstand, terwijl de bron deze details wel vermeldt",
+          "source_urls": [
+            "https://www.enschede.nl/evenement-organiseren"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Van Heekplein, Oude Markt, Ei van Ko, Kruispunt de Graaf, Stationsplein, Plein Zuidmolen, Willem Wilminkplein en Volkspark",
+          "original_reference": "Het evenement is niet op specifieke plekken zoals het Van Heekplein of de Oude Markt",
+          "note": "De originele tekst noemt slechts twee voorbeeldlocaties, terwijl de bron een complete lijst van acht specifieke locaties bevat",
+          "source_urls": [
+            "https://www.enschede.nl/evenement-organiseren"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen specifieke technische details die in de originele tekst ontbreken of minder gedetailleerd zijn beschreven. Dit gaat vooral om exacte geluidsnormen met meetafstanden, een complete lijst van uitgesloten locaties, en specifieke hoogterestricties voor tribunes. Deze details zijn belangrijk voor organisatoren om aan alle voorwaarden te kunnen voldoen."
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "EDE",
+      "contact": {
+        "phone": "14 0318",
+        "email": "info@ede.nl",
+        "website": "http://www.ede.nl"
+      }
+    },
+    "service": {
+      "id": 9,
+      "name": "Mobiele puinbreker gebruiken"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "Als er een vergunning nodig is, kan het gebruik €1 per vierkante meter per week kosten.",
+        "status": "false",
+        "note": "Dit tarief is niet correct volgens de officiële website van gemeente Ede. De gemeente hanteert verschillende tarieven voor precariobelasting die afhankelijk zijn van het type gebruik en de locatie, maar niet specifiek €1 per vierkante meter per week."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.ede.nl/aanvragen-en-regelen/gebruik-openbare-ruimte",
+      "https://www.ede.nl/aanvragen-en-regelen/boom-kappen",
+      "https://www.ede.nl/aanvragen-en-regelen/bouw-en-verbouwvergunning-voor-bedrijven",
+      "https://www.ede.nl/aanvragen-en-regelen/slopen-van-bouwwerken",
+      "https://www.ede.nl/aanvragen-en-regelen/bouw-en-verbouwvergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Dit doet u minimaal twee weken van tevoren.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt geen minimale aanvraagtermijn van twee weken, wat een belangrijke voorwaarde is voor het gebruik van openbare ruimte.",
+          "source_urls": [
+            "https://www.ede.nl/aanvragen-en-regelen/gebruik-openbare-ruimte"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bijvoorbeeld als u de ruimte meer dan veertien dagen gebruikt, meer dan dertig vierkante meter nodig heeft, anderen hindert of in een parkeersector of betaald parkeren gebied staat.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst specificeert niet de exacte situaties waarin een vergunning vereist is, terwijl de bron concrete criteria noemt.",
+          "source_urls": [
+            "https://www.ede.nl/aanvragen-en-regelen/gebruik-openbare-ruimte"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Bij een melding zijn wij direct akkoord. Als wij nog vragen hebben, nemen wij binnen vijf werkdagen contact met u op.",
+          "original_reference": "Bij een melding is er onmiddellijk akkoord, tenzij er binnen vijf werkdagen vragen zijn.",
+          "note": "De informatie over de verwerkingstijd van meldingen komt overeen.",
+          "source_urls": [
+            "https://www.ede.nl/aanvragen-en-regelen/gebruik-openbare-ruimte"
+          ]
+        }
+      ]
+    },
+    "summary": "De broninhoud bevat enkele belangrijke aanvullende details die niet in de originele tekst staan, met name de verplichte aanvraagtermijn van twee weken en specifieke criteria voor wanneer een vergunning nodig is. De basisinformatie over meldingen en verwerkingstijden komt wel overeen. Deze extra details zijn essentieel voor een correcte dienstverlening."
+  }
+}

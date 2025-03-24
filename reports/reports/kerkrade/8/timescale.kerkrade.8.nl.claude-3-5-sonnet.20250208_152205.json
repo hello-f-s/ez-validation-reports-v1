@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "KERKRADE",
+      "contact": {
+        "phone": "14 045",
+        "email": "gemeentehuis@kerkrade.nl",
+        "website": "http://www.kerkrade.nl"
+      }
+    },
+    "service": {
+      "id": 8,
+      "name": "Marktvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 8,
+    "true_sentences": 7,
+    "false_sentences": 1,
+    "accuracy_percentage": 87.5,
+    "false_statements": [
+      {
+        "sentence": "Bent u het niet eens met de beslissing van de gemeente? Dan kunt u binnen 6 weken bezwaar maken.",
+        "status": "false",
+        "note": "Volgens de Algemene wet bestuursrecht en de website van gemeente Kerkrade moet bezwaar worden gemaakt binnen 6 weken na de verzenddatum van het besluit, niet alleen 'binnen 6 weken'. Dit is een belangrijke juridische nuance die het startpunt van de bezwaartermijn specificeert."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.kerkrade.nl/marktplaats-aanvragen",
+      "https://www.kerkrade.nl/standplaats-aanvragen",
+      "https://www.kerkrade.nl/exploitatievergunning-horecabedrijf",
+      "https://www.kerkrade.nl/rommelmarkt",
+      "https://www.kerkrade.nl/milieu-vergunning-of-melding"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De wachttijd voor een vaste plaats verschilt per markt en per branche. Staat u op een wachtlijst? Dan moet u dit elk jaar laten verlengen.",
+          "original_reference": "No matching information",
+          "note": "De originele inhoud vermeldt niet de informatie over wachtlijsten en de jaarlijkse verlengingsplicht voor wachtlijstregistratie",
+          "source_urls": [
+            "https://www.kerkrade.nl/marktplaats-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De marktmeester wijst elke marktdag de dagplaatsen per branche toe aan meelopers. Dagplaatsen zijn vaste plaatsen die vrij komen als een ondernemer met een vaste plaats er een keer niet is.",
+          "original_reference": "No matching information",
+          "note": "De originele inhoud maakt geen melding van het systeem met dagplaatsen en meelopers",
+          "source_urls": [
+            "https://www.kerkrade.nl/marktplaats-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U ontvangt binnen 8 weken bericht of u de vergunning krijgt.",
+          "original_reference": "Hier kan geen specifieke informatie over gevonden worden op de website van deze gemeente.",
+          "note": "De bron vermeldt een specifieke behandeltermijn van 8 weken, terwijl de originele tekst aangeeft dat hier geen informatie over beschikbaar is",
+          "source_urls": [
+            "https://www.kerkrade.nl/standplaats-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie die niet in de originele tekst staat, waaronder het systeem van wachtlijsten met jaarlijkse verlengingsplicht, het systeem van dagplaatsen en meelopers, en een concrete behandeltermijn van 8 weken voor vergunningsaanvragen. Deze informatie is essentieel voor een volledig begrip van de marktplaatsvergunning procedure."
+  }
+}

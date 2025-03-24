@@ -1,0 +1,91 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HAARLEM",
+      "contact": {
+        "phone": "14 023",
+        "email": "antwoord@haarlem.nl",
+        "website": "http://www.haarlem.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Na een complete aanvraag hoort u meestal binnen 8 weken of u de vergunning krijgt.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Haarlem is de reguliere procedure voor een omgevingsvergunning maximaal 8 weken, maar voor complexere aanvragen geldt de uitgebreide procedure van 26 weken. De termijn van 8 weken is dus niet 'meestal' van toepassing."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 4,
+    "invalid_urls": 2,
+    "accuracy_percentage": 66.7,
+    "valid_urls_list": [
+      "https://haarlem.nl/bouwvergunning",
+      "https://haarlem.nl/aanlegvergunning",
+      "https://haarlem.nl/afwijken-omgevingsplan",
+      "https://haarlem.nl/milieuvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://haarlem.nl/sloopmelding-en-vergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://GemeenteHaarlem.nl",
+        "reason": "INVALID: Error scraping https://GemeenteHaarlem.nl: 439 Client Error: status code 439 for url: https://gemeentehaarlem.nl/"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De milieudienst ODIJmond verzorgt de uitvoering van de milieutaken voor de gemeente.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat ODIJmond de uitvoerende milieudienst is, wat belangrijke informatie is voor aanvragers.",
+          "source_urls": [
+            "https://haarlem.nl/milieuvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Soms volstaat een milieumelding. Dit is afhankelijk van hoe zwaar uw bedrijf het milieu belast.",
+          "original_reference": "afhankelijk van de milieubelasting van uw activiteiten",
+          "note": "De brontekst is specifieker over de mogelijkheid van een milieumelding als alternatief voor een vergunning.",
+          "source_urls": [
+            "https://haarlem.nl/milieuvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Publiekhal Zijlvest 39 2011 VB Haarlem Openingstijden Elke werkdag: 9.00 tot 16.00 uur Donderdag: ook van 16.00 tot 20.00 uur",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen contactgegevens of openingstijden van de publiekhal, wat belangrijke praktische informatie is.",
+          "source_urls": [
+            "https://haarlem.nl/milieuvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen aanvullende informatie die niet in de originele tekst staat: de rol van ODIJmond als uitvoerende milieudienst, meer specifieke details over milieumelding als alternatief, en praktische informatie over de publiekhal. Deze informatie is relevant voor mensen die een milieuvergunning willen aanvragen."
+  }
+}

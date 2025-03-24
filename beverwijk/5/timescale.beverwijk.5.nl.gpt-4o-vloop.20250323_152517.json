@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "BEVERWIJK",
+      "contact": {
+        "phone": "(0251) 25 62 56",
+        "email": "info@beverwijk.nl",
+        "website": "http://www.beverwijk.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "Voor het aanvragen van een nieuwe exploitatievergunning bedragen de kosten €327,60.",
+        "status": "false",
+        "note": "Dit bedrag is niet correct volgens de actuele legesverordening van de gemeente Beverwijk. De exacte kosten voor een exploitatievergunning zijn €335,80 voor 2024."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.beverwijk.nl/regels-omtrent-horeca",
+      "https://www.beverwijk.nl/exploitatievergunning-midi-center",
+      "https://www.beverwijk.nl/alcoholvergunning",
+      "https://www.beverwijk.nl/exploitatievergunning-coffeeshop",
+      "https://www.beverwijk.nl"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Het is niet toegestaan om tussen 03:00 uur en 07:00 uur nieuwe bezoekers tot een horecabedrijf toe te laten. Daarnaast is het verboden om een terras voor bezoekers geopend te hebben en daar bezoekers toe te laten of te laten verblijven op: maandag tot en met vrijdag tussen 00:00 uur en 07:00 uur, en op zaterdag en zondag tussen 01:00 uur en 07:00 uur.",
+          "original_reference": "Het is niet toegestaan om tussen 03:00 uur en 07:00 uur nieuwe bezoekers tot een horecabedrijf toe te laten. Daarnaast is het verboden om een terras voor bezoekers geopend te hebben en daar bezoekers toe te laten of te laten verblijven op: maandag tot en met vrijdag tussen 00:00 uur en 07:00 uur, en op zaterdag en zondag tussen 01:00 uur en 07:00 uur.",
+          "note": "De openingstijden en regels komen exact overeen met de originele tekst",
+          "source_urls": [
+            "https://www.beverwijk.nl/regels-omtrent-horeca"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De houder van de vergunning is samen met de leidinggevende(n) verantwoordelijk voor een goed verloop in het bedrijf en de directe omgeving",
+          "original_reference": "No matching information",
+          "note": "Deze belangrijke verantwoordelijkheid staat wel in de bronpagina maar ontbreekt in de originele tekst",
+          "source_urls": [
+            "https://www.beverwijk.nl/regels-omtrent-horeca"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Er kan voor een of meer horecabedrijven (tijdelijke) sluitingstijden vastgesteld worden",
+          "original_reference": "No matching information",
+          "note": "Deze aanvullende bepaling over tijdelijke sluitingstijden ontbreekt in de originele tekst",
+          "source_urls": [
+            "https://www.beverwijk.nl/regels-omtrent-horeca"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten twee belangrijke aanvullende bepalingen die niet in de originele tekst staan: de gezamenlijke verantwoordelijkheid van vergunninghouder en leidinggevenden voor het bedrijf en omgeving, en de mogelijkheid tot het opleggen van tijdelijke sluitingstijden. De overige informatie, waaronder openingstijden en basiseisen, komt overeen met de originele tekst."
+  }
+}

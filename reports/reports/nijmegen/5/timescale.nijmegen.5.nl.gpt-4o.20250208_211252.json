@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "NIJMEGEN",
+      "contact": {
+        "phone": "14 024",
+        "email": "gemeente@nijmegen.nl",
+        "website": "http://www.nijmegen.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "Er is geen specifieke informatie over bezwaarprocedures voor deze vergunning op de website van de gemeente Nijmegen.",
+        "status": "false",
+        "note": "Er is wel degelijk informatie over bezwaarprocedures beschikbaar op de website van gemeente Nijmegen. Tegen alle beschikkingen kan binnen 6 weken na bekendmaking bezwaar worden gemaakt bij het college van B&W."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.nijmegen.nl/diensten/vergunningen/drank-en-horeca/",
+      "https://www.nijmegen.nl/diensten/vergunningen/drank-en-horeca/exploitatievergunning-horeca-zonder-alcohol/",
+      "https://www.nijmegen.nl",
+      "https://www.nijmegen.nl/diensten/ondernemen/horecabedrijf-starten/",
+      "https://www.nijmegen.nl/diensten/vergunningen/drank-en-horeca/alcoholvergunning/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.nijmegen.nl\">Gemeente",
+        "reason": "INVALID: Error scraping https://www.nijmegen.nl\">Gemeente: HTTPSConnectionPool(host='www.nijmegen.nl%22%3egemeente', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1038c7770>: Failed to resolve 'www.nijmegen.nl%22%3egemeente' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.nijmegen.nl/formulieren/exploitatievergunning-aanvragen/",
+        "reason": "INVALID: Error scraping https://www.nijmegen.nl/formulieren/exploitatievergunning-aanvragen/: 404 Client Error: Not Found for url: https://www.nijmegen.nl/formulieren/exploitatievergunning-aanvragen/"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bel 024-329 98 00 of mail ondernemerspunt@nijmegen.nl",
+          "original_reference": "telefonisch via 024-329 98 00 of per email naar ondernemerspunt@nijmegen.nl",
+          "note": "Het telefoonnummer in de originele tekst is correct, maar er is een inconsistentie in de schrijfwijze van het woord 'email' vs 'mail'. Dit is echter een minimaal tekstueel verschil zonder inhoudelijke impact.",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/vergunningen/drank-en-horeca/exploitatievergunning-horeca-zonder-alcohol/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bij een complete aanvraag maakt het Horeca Actie Team (HAT) met u een afspraak voor een gesprek.",
+          "original_reference": "Het Horeca Actie Team (HAT) maakt vervolgens een afspraak voor een gesprek.",
+          "note": "De bronpagina specificeert dat het HAT alleen een afspraak maakt bij een complete aanvraag, wat een belangrijke voorwaarde is die niet in de originele tekst wordt vermeld.",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/vergunningen/drank-en-horeca/exploitatievergunning-horeca-zonder-alcohol/"
+          ]
+        }
+      ]
+    },
+    "summary": "De gevonden verschillen zijn overwegend klein en hebben geen significante impact op de procedures of vereisten. Het belangrijkste verschil is de specificatie dat het HAT alleen een afspraak maakt bij een complete aanvraag, wat een nuttige verduidelijking is van het proces. De kernvoorwaarden, kosten en procedures komen overeen met de originele tekst."
+  }
+}

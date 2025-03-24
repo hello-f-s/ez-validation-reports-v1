@@ -1,0 +1,86 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HAARLEM",
+      "contact": {
+        "phone": "14 023",
+        "email": "antwoord@haarlem.nl",
+        "website": "http://www.haarlem.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 19,
+    "false_sentences": 2,
+    "accuracy_percentage": 90.5,
+    "false_statements": [
+      {
+        "sentence": "Als u nu een aanvraag doet, loopt de vergunning tot en met 31 december 2026.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Haarlem loopt de vergunning tot en met 31 december 2025, niet 2026."
+      },
+      {
+        "sentence": "De Publiekshal is op werkdagen geopend van 9.00 tot 16.00 uur en op donderdag ook van 16.00 tot 20.00 uur.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Haarlem is de Publiekshal geopend van 8.30 tot 16.00 uur op werkdagen en op donderdag van 8.30 tot 20.00 uur."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://haarlem.nl/kansspelvergunning",
+      "https://haarlem.nl/bouwvergunning",
+      "https://haarlem.nl/exploitatievergunning",
+      "https://haarlem.nl/terrasvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://haarlem.nl/vergunning-gokautomaten",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor het serveren van eten en non-alcoholische drank in uw onderneming, hebt u een exploitatievergunning nodig. [...] Als u alcohol serveert, hebt u een alcoholvergunning nodig en hoeft u geen exploitatievergunning aan te vragen.",
+          "original_reference": "U een restaurant of café met een alcoholvergunning hebt.",
+          "note": "De originele tekst suggereert dat een alcoholvergunning voldoende is, terwijl de brontekst aangeeft dat voor alcoholserverende zaken juist geen exploitatievergunning nodig is. Dit is een belangrijk verschil in de vergunningsvereisten.",
+          "source_urls": [
+            "https://haarlem.nl/exploitatievergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Geen informatie over kansspelautomaten of gokautomaten gevonden in de geciteerde bronnen",
+          "original_reference": "Volledige sectie over kansspelautomatenvergunning",
+          "note": "De originele tekst bevat uitgebreide informatie over kansspelautomatenvergunningen, maar deze informatie is niet terug te vinden in de geciteerde bronpagina's. Dit suggereert dat de informatie mogelijk verouderd is of op een andere pagina staat.",
+          "source_urls": [
+            "https://haarlem.nl/kansspelvergunning",
+            "https://haarlem.nl/exploitatievergunning",
+            "https://haarlem.nl/terrasvergunning",
+            "https://haarlem.nl/bouwvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden. Ten eerste is er een tegenstrijdigheid in de vergunningsvereisten voor horecazaken die alcohol serveren. Daarnaast is de informatie over kansspelautomatenvergunningen niet terug te vinden in de geciteerde bronnen, wat suggereert dat deze informatie mogelijk niet actueel is of elders wordt behandeld. Het is aan te raden deze informatie te verifiëren bij de gemeente."
+  }
+}

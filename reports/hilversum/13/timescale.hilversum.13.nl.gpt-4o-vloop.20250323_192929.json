@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HILVERSUM",
+      "contact": {
+        "phone": "14 035",
+        "email": "gemeente@hilversum.nl",
+        "website": "http://www.hilversum.nl"
+      }
+    },
+    "service": {
+      "id": 13,
+      "name": "Omzettingsvergunning voor kamerverhuur aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 31,
+    "true_sentences": 30,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.8,
+    "false_statements": [
+      {
+        "sentence": "Het verhuur van een deel van de woning is mogelijk, zoals bij een bed and breakfast, maar niet als het om vaste kamerverhuur gaat.",
+        "status": "false",
+        "note": "Volgens het beleid van de gemeente Hilversum is kamerverhuur wel degelijk mogelijk, mits er wordt voldaan aan de voorwaarden van de omgevingsvergunning en het bestemmingsplan. Deze informatie is incorrect en in tegenspraak met het officiële beleid van de gemeente."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://hilversum.nl/bouwen-verbouwen/omgevingswet/aanvraag-omgevingsvergunning-uitgelegd",
+      "https://hilversum.nl/vergunningen/vergunningen-voor-bouwen-verbouwen/omgevingsvergunning-aanvragen",
+      "https://hilversum.nl/bouwen-verbouwen",
+      "https://hilversum.nl/wonen/toeristische-woningverhuur",
+      "https://hilversum.nl/bouwen-verbouwen/omgevingswet/omgevingsloket"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bij een bed and breakfast wordt woonruimte toeristisch verhuurd, terwijl de hoofdbewoner in de woning verblijft. [...] Er mag geen geen eigen kookgelegenheid zijn",
+          "original_reference": "Het verhuur van een deel van de woning is mogelijk, zoals bij een bed and breakfast, maar niet als het om vaste kamerverhuur gaat.",
+          "note": "De bronpagina specificeert aanvullende voorwaarden voor B&B die niet in de originele tekst staan, zoals de aanwezigheid van de hoofdbewoner en het verbod op eigen kookgelegenheid",
+          "source_urls": [
+            "https://hilversum.nl/wonen/toeristische-woningverhuur"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De regels die voor u kunnen gelden, kunt u via omgevingswet.overheid.nl bekijken op de pagina 'Regels op de kaart'",
+          "original_reference": "No matching information",
+          "note": "De bronpagina verwijst naar een specifieke tool 'Regels op de kaart' voor het controleren van lokale regelgeving, wat niet wordt genoemd in de originele tekst",
+          "source_urls": [
+            "https://hilversum.nl/vergunningen/vergunningen-voor-bouwen-verbouwen/omgevingsvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als particulier ontvangt u de berichten ook in uw berichtenbox van MijnOverheid",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt dat berichten ook via de berichtenbox van MijnOverheid worden verstuurd, wat niet wordt genoemd in de originele tekst",
+          "source_urls": [
+            "https://hilversum.nl/bouwen-verbouwen/omgevingswet/omgevingsloket"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten enkele belangrijke aanvullende details die niet in de originele tekst staan, met name specifieke voorwaarden voor B&B verhuur, het gebruik van de 'Regels op de kaart' tool, en communicatie via de berichtenbox van MijnOverheid. Deze informatie is relevant voor een volledig begrip van de procedures en vereisten."
+  }
+}

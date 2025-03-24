@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "NIJMEGEN",
+      "contact": {
+        "phone": "14 024",
+        "email": "gemeente@nijmegen.nl",
+        "website": "http://www.nijmegen.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "Voor een voorlopige beoordeling (conceptverzoek) betaalt u € 104,55.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van de gemeente Nijmegen bedraagt het tarief voor een conceptaanvraag/vooroverleg € 107,70 (tarief 2024)."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.nijmegen.nl/diensten/bouwen-en-wonen/vooroverleg-omgevingsvergunning/",
+      "https://www.nijmegen.nl/diensten/bouwen-en-wonen/vooroverleg-omgevingsvergunning/kosten-omgevingsvergunning/",
+      "https://www.nijmegen.nl/diensten/bouwen-en-wonen/inzien-van-bouw-en-sloopplannen/",
+      "https://www.nijmegen.nl/diensten/bouwen-en-wonen/vergunning-of-melding-voor-bedrijven/",
+      "https://www.nijmegen.nl/diensten/bouwen-en-wonen/inrit-aanleggen/"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "€ 643,40 voor inrit vergunning - Omgevingsvergunning",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt geen specifiek bedrag voor een inritvergunning, terwijl de bron een concreet bedrag van € 643,40 noemt.",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/bouwen-en-wonen/inrit-aanleggen/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u binnen 6 maanden na het overleg een vergunning aanvraagt, krijgt u de kosten voor het overleg vaak terug",
+          "original_reference": "De kosten voor een omgevingstafeloverleg bedragen € 784,30, maar u krijgt deze vaak terug als u binnen zes maanden na het overleg een vergunning aanvraagt.",
+          "note": "De originele tekst noemt het specifieke bedrag van € 784,30 voor het omgevingstafeloverleg, wat niet in de bronpagina's wordt genoemd.",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/bouwen-en-wonen/vooroverleg-omgevingsvergunning/kosten-omgevingsvergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De bouw- en sloopkosten berekenen we voor elk geheel bedrag € 100,-",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de berekeningswijze voor bouw- en sloopkosten per € 100, wat wel in de bron wordt genoemd.",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/bouwen-en-wonen/vooroverleg-omgevingsvergunning/kosten-omgevingsvergunning/"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen vooral specifieke kostenaspecten. De bronnen bevatten gedetailleerdere informatie over tarieven en berekeningswijzen die niet in de originele tekst staan, waaronder het concrete bedrag voor een inritvergunning en de berekeningswijze voor bouw- en sloopkosten. Ook is er een discrepantie in de vermelding van het bedrag voor het omgevingstafeloverleg, dat wel in de originele tekst staat maar niet in de bronnen wordt genoemd."
+  }
+}

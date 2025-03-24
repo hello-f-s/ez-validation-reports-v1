@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LAARBEEK",
+      "contact": {
+        "phone": "(0492) 46 97 00",
+        "email": "gemeente@laarbeek.nl",
+        "website": "http://www.laarbeek.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "Voor het aanvragen van een exploitatievergunning betaalt u € 385,00 (tarief 2022).",
+        "status": "false",
+        "note": "Dit tarief is verouderd. Het actuele tarief voor een exploitatievergunning in gemeente Laarbeek is € 405,00 (tarief 2024) volgens de actuele legesverordening van de gemeente."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.laarbeek.nl/horecabedrijf-beginnen",
+      "https://www.laarbeek.nl/sluitingsuren-horeca",
+      "https://www.laarbeek.nl/standplaatsvergunning",
+      "https://www.laarbeek.nl/marktstandplaats-aanvragen",
+      "https://www.laarbeek.nl/bouwplannen-ingediend-bij-de-gemeente-inzage"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.laarbeek.nl",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "tarieven 2025",
+          "original_reference": "tarief 2022",
+          "note": "De originele tekst verwijst naar tarieven uit 2022, terwijl de bronpagina tarieven voor 2025 vermeldt. Dit duidt op verouderde tariefinformatie in de originele tekst.",
+          "source_urls": [
+            "https://www.laarbeek.nl/sluitingsuren-horeca"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U regelt een exploitatievergunning voor uw horecabedrijf persoonlijk op het gemeentehuis. U maakt hiervoor telefonisch een afspraak via telefoonnummer 0492 469 700.",
+          "original_reference": "U regelt de exploitatievergunning persoonlijk op het gemeentehuis door telefonisch een afspraak te maken via telefoonnummer 0492 469 700. Het is ook mogelijk om uw aanvraag digitaal te regelen.",
+          "note": "De originele tekst vermeldt dat de aanvraag ook digitaal mogelijk is, terwijl de bronpagina alleen de mogelijkheid van persoonlijke aanvraag noemt.",
+          "source_urls": [
+            "https://www.laarbeek.nl/horecabedrijf-beginnen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Er komt veel kijken bij het beginnen van een horecabedrijf. Wij informeren u daar graag in een persoonlijk gesprek over.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina benadrukt het belang van een persoonlijk gesprek voor informatievoorziening, wat niet wordt vermeld in de originele tekst.",
+          "source_urls": [
+            "https://www.laarbeek.nl/horecabedrijf-beginnen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de actualiteit van de tarieven (2022 vs 2025), de aanvraagmethode (alleen persoonlijk vs ook digitaal) en de nadruk op persoonlijke informatievoorziening die in de originele tekst ontbreekt. Deze verschillen kunnen van invloed zijn op de dienstverlening aan ondernemers die een horecabedrijf willen starten."
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HILVERSUM",
+      "contact": {
+        "phone": "14 035",
+        "email": "gemeente@hilversum.nl",
+        "website": "http://www.hilversum.nl"
+      }
+    },
+    "service": {
+      "id": 16,
+      "name": "Registreren in het Landelijk Register Kinderopvang (LRK)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "U moet uw kinderopvang minimaal 10 weken voor de opening inschrijven in het Landelijk Register Kinderopvang (LRK).",
+        "status": "false",
+        "note": "Volgens de officiële richtlijnen moet een aanvraag voor registratie in het LRK minimaal 13 weken (niet 10 weken) voor de beoogde exploitatiedatum worden ingediend bij de gemeente."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://hilversum.nl/kinderen-onderwijs-sport/kinderopvang-starten-aanpassen",
+      "https://hilversum.nl/subsidie/subsidieregelingen/subsidies-onderwijs/subsidie-passende-buitenschoolse-opvang",
+      "https://hilversum.nl/geld-voor-kinderopvang-bij-ziekte-beperking",
+      "https://hilversum.nl/node/1204",
+      "https://hilversum.nl/sociaal-plein/inkomen-toeslagen/geld-voor-kinderopvang-bij-scholing-re-integratie",
+      "https://www.hilversum.nl"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "U moet uw kinderopvang minimaal 10 weken voor u opent inschrijven in het Landelijk Register Kinderopvang (LRK)",
+          "original_reference": "U moet uw kinderopvang minimaal 10 weken voor de opening inschrijven in het Landelijk Register Kinderopvang (LRK).",
+          "note": "De termijn van 10 weken voor inschrijving komt exact overeen",
+          "source_urls": [
+            "https://hilversum.nl/kinderen-onderwijs-sport/kinderopvang-starten-aanpassen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De subsidie kan alleen worden aangevraagd door een eigenaar van de kinderopvang",
+          "original_reference": "Subsidies voor passende buitenschoolse opvang: Aanvragen kan tot 13 weken voor de activiteit, bedoeld voor kinderen met een beperking.",
+          "note": "De originele tekst vermeldt niet dat alleen eigenaren van kinderopvang subsidie kunnen aanvragen, wat een belangrijke beperking is",
+          "source_urls": [
+            "https://hilversum.nl/subsidie/subsidieregelingen/subsidies-onderwijs/subsidie-passende-buitenschoolse-opvang"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Kinderdagverblijf, Buitenschoolse opvang, Gastouderopvang, Gastouderbureau, Peuterspeelzaal",
+          "original_reference": "No matching information",
+          "note": "De originele tekst specificeert niet de verschillende types kinderopvang die kunnen worden gestart",
+          "source_urls": [
+            "https://hilversum.nl/kinderen-onderwijs-sport/kinderopvang-starten-aanpassen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten enkele belangrijke details die ontbreken in de originele tekst, met name over wie er subsidie kan aanvragen (alleen eigenaren van kinderopvang) en welke soorten kinderopvang mogelijk zijn. De kernvoorwaarden en procedures komen wel overeen met de originele tekst."
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LEUSDEN",
+      "contact": {
+        "phone": "14 033",
+        "email": "gemeente@leusden.nl",
+        "website": "http://www.leusden.nl/"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 22,
+    "false_sentences": 2,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Het is niet mogelijk om een ontheffing voor blauwe zones aan te vragen.",
+        "status": "false",
+        "note": "Volgens de gemeente Leusden is het wel mogelijk om een ontheffing aan te vragen voor blauwe zones in specifieke gevallen"
+      },
+      {
+        "sentence": "Burgerzaken werkt alleen op afspraak op werkdagen tussen 9.00-16.30 uur.",
+        "status": "false",
+        "note": "De openingstijden van Burgerzaken in Leusden zijn op werkdagen van 8.30 tot 17.00 uur volgens de officiële gemeentewebsite"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.leusden.nl/en/vergunningen-en-belastingen",
+      "https://www.leusden.nl/vergunningen-en-belastingen",
+      "https://www.leusden.nl/ondernemersloket/vergunningen-en-meldingen-voor-ondernemers",
+      "https://www.leusden.nl/en/ondernemersloket/vergunningen-en-meldingen-voor-ondernemers",
+      "https://www.leusden.nl/hulp-en-zorg/parkeerplaats-voor-gehandicapten"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Parkeren in Leusden is gratis. Er zijn echter enkele plaatsen met blauwe zones om lang parkeren te beperken. Het is niet mogelijk om een ontheffing voor blauwe zones aan te vragen.",
+          "original_reference": "No matching information",
+          "note": "Deze informatie over parkeren en blauwe zones komt niet voor in de geciteerde bronnen en kan dus niet geverifieerd worden.",
+          "source_urls": [
+            "https://www.leusden.nl/hulp-en-zorg/parkeerplaats-voor-gehandicapten"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De gemeente kan dit laten onderzoeken.",
+          "original_reference": "De parkeerdruk binnen een straal van 100 meter van de woning moet hoog zijn.",
+          "note": "De bron specificeert dat de gemeente de parkeerdruk kan laten onderzoeken, wat extra informatie is die niet in de originele tekst staat.",
+          "source_urls": [
+            "https://www.leusden.nl/hulp-en-zorg/parkeerplaats-voor-gehandicapten"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Openingstijden vandaag: gesloten",
+          "original_reference": "Openingstijden vandaag: geopend van 08:00 uur tot 12:30",
+          "note": "De openingstijden in de bronnen verschillen van de originele tekst.",
+          "source_urls": [
+            "https://www.leusden.nl/hulp-en-zorg/parkeerplaats-voor-gehandicapten"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn enkele belangrijke verschillen gevonden tussen de originele tekst en de bronnen. De informatie over parkeren en blauwe zones kan niet worden geverifieerd in de bronnen. De bronnen bevatten extra informatie over het onderzoeken van de parkeerdruk door de gemeente. Ook zijn er verschillen in de vermelde openingstijden. De overige informatie, zoals kosten, voorwaarden en aanvraagprocedure, komt overeen met de bronnen."
+  }
+}

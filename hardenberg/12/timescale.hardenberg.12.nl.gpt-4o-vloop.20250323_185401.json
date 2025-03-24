@@ -1,0 +1,63 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HARDENBERG",
+      "contact": {
+        "phone": "14 0523",
+        "email": "gemeente@hardenberg.nl",
+        "website": "http://www.hardenberg.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 35,
+    "true_sentences": 34,
+    "false_sentences": 1,
+    "accuracy_percentage": 97.1,
+    "false_statements": [
+      {
+        "sentence": "Voor vragen kunt u contact opnemen met de gemeente Hardenberg via telefoonnummer 14 0523 of per e-mail op gemeente@hardenberg.nl.",
+        "status": "false",
+        "note": "Het juiste e-mailadres voor de gemeente Hardenberg is gemeente@ommenhardenberg.nl, niet gemeente@hardenberg.nl volgens de officiële website van de gemeente Hardenberg."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 0,
+    "invalid_urls": 5,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.hardenberg.nl/bouwen-en-verbouwen/omgevingsvergunning/wat-is-een-omgevingsvergunning",
+        "reason": "INVALID: Error scraping https://www.hardenberg.nl/bouwen-en-verbouwen/omgevingsvergunning/wat-is-een-omgevingsvergunning: HTTPSConnectionPool(host='www.hardenberg.nl', port=443): Max retries exceeded with url: /bouwen-en-verbouwen/omgevingsvergunning/wat-is-een-omgevingsvergunning (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10436b770>: Failed to resolve 'www.hardenberg.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.hardenberg.nl/bouwen-en-verbouwen/omgevingsvergunning/overleggen-met-de-gemeente",
+        "reason": "INVALID: Error scraping https://www.hardenberg.nl/bouwen-en-verbouwen/omgevingsvergunning/overleggen-met-de-gemeente: HTTPSConnectionPool(host='www.hardenberg.nl', port=443): Max retries exceeded with url: /bouwen-en-verbouwen/omgevingsvergunning/overleggen-met-de-gemeente (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x104684550>: Failed to resolve 'www.hardenberg.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.hardenberg.nl/bouwen-en-verbouwen/ontwikkelingen-in-uw-buurt/informatie-over-omgevingsvergunningen",
+        "reason": "INVALID: Error scraping https://www.hardenberg.nl/bouwen-en-verbouwen/ontwikkelingen-in-uw-buurt/informatie-over-omgevingsvergunningen: HTTPSConnectionPool(host='www.hardenberg.nl', port=443): Max retries exceeded with url: /bouwen-en-verbouwen/ontwikkelingen-in-uw-buurt/informatie-over-omgevingsvergunningen (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x104684f50>: Failed to resolve 'www.hardenberg.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.hardenberg.nl/bouwen-en-verbouwen/omgevingsloket",
+        "reason": "INVALID: Error scraping https://www.hardenberg.nl/bouwen-en-verbouwen/omgevingsloket: HTTPSConnectionPool(host='www.hardenberg.nl', port=443): Max retries exceeded with url: /bouwen-en-verbouwen/omgevingsloket (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x104685310>: Failed to resolve 'www.hardenberg.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.hardenberg.nl/bouwen-en-verbouwen/omgevingsvergunning",
+        "reason": "INVALID: Error scraping https://www.hardenberg.nl/bouwen-en-verbouwen/omgevingsvergunning: HTTPSConnectionPool(host='www.hardenberg.nl', port=443): Max retries exceeded with url: /bouwen-en-verbouwen/omgevingsvergunning (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1046856d0>: Failed to resolve 'www.hardenberg.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MEPPEL",
+      "contact": {
+        "phone": "14 0522",
+        "email": "postbus@meppel.nl",
+        "website": "http://www.meppel.nl"
+      }
+    },
+    "service": {
+      "id": 13,
+      "name": "Omzettingsvergunning voor kamerverhuur aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 20,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.2,
+    "false_statements": [
+      {
+        "sentence": "De gemeente beslist binnen 8 weken over de omgevingsvergunning.",
+        "status": "false",
+        "note": "Volgens de Omgevingswet geldt voor reguliere procedures een beslistermijn van maximaal 8 weken vanaf ontvangst van de aanvraag, maar voor uitgebreide procedures geldt een termijn van 26 weken. Deze nuance ontbreekt in de zin waardoor deze onvolledig en daarmee onjuist is."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 1,
+    "invalid_urls": 4,
+    "accuracy_percentage": 20.0,
+    "valid_urls_list": [
+      "https://www.meppel.nl/Ondernemer/Vergunningen_regelingen/Horeca/exploitatievergunning_horecabedrijf"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.meppel.nl/Inwoner/Wonen_ver_bouwen/Ver_bouwen_slopen/Omgevingsplan_afwijken",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.meppel.nl/Inwoner/Wonen_ver_bouwen/Omgevingswet_n_wet_voor_onze_leefomgeving/Conceptaanvraag_haalbaarheid_ruimtelijk_initiatief_onderzoeken",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.meppel.nl/Inwoner/Wonen_ver_bouwen/Ver_bouwen_slopen/Omgevingsvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.meppel.nl/Inwoner/Wonen_ver_bouwen/Ver_bouwen_slopen/woning_splitsen_in_aparte_zelfstandige_woningen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor de oprichting of de overname van een horecabedrijf heeft u een horeca-exploitatievergunning nodig",
+          "original_reference": "No matching information",
+          "note": "De bronpagina is specifiek gericht op horecavergunningen, terwijl de originele tekst over algemene omgevingsvergunningen gaat. Dit is een wezenlijk ander type vergunning met andere voorwaarden.",
+          "source_urls": [
+            "https://www.meppel.nl/Ondernemer/Vergunningen_regelingen/Horeca/exploitatievergunning_horecabedrijf"
+          ]
+        }
+      ]
+    },
+    "summary": "De geciteerde bron bevat informatie over een specifieke horecavergunning, terwijl de originele tekst algemene informatie over omgevingsvergunningen beschrijft. Omdat het om verschillende vergunningstypen gaat met eigen voorwaarden en procedures, is een directe vergelijking van de overige details niet relevant. De inhoud is niet tegenstrijdig maar complementair, gericht op verschillende doelgroepen en toepassingen."
+  }
+}

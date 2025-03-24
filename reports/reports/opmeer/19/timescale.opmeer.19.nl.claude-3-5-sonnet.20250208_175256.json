@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OPMEER",
+      "contact": {
+        "phone": "(0226) 36 33 33",
+        "email": "gemeente@opmeer.nl",
+        "website": "http://www.opmeer.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "De behandelingstermijn van de aanvraag voor een aanwezigheidsvergunning is 8 weken.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Opmeer is de behandelingstermijn voor een aanwezigheidsvergunning voor kansspelautomaten 6 weken, niet 8 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.opmeer.nl/alcoholwetvergunning",
+      "https://www.opmeer.nl/loterij-prijsvraag-bingo-organiseren",
+      "https://www.opmeer.nl/kansspelautomaat-aanwezigheidsvergunning-aanvragen",
+      "https://www.opmeer.nl/omgevingsvergunning",
+      "https://www.opmeer.nl/standplaats-aanvragen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "U mag maximaal 2 kansspelautomaten aanwezig hebben in de inrichting.",
+          "original_reference": "U mag maximaal 2 kansspelautomaten aanwezig hebben in een hoogdrempelige horecainrichting",
+          "note": "De informatie over het maximaal aantal toegestane kansspelautomaten komt overeen",
+          "source_urls": [
+            "https://www.opmeer.nl/kansspelautomaat-aanwezigheidsvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor een behendigheidsautomaat heeft u geen vergunning nodig. U mag in een laagdrempelige- en hoogdrempelige inrichting zonder vergunning alleen behendigheidsautomaten aanwezig hebben.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst maakt geen onderscheid tussen behendigheids- en kansspelautomaten, terwijl dit wel relevant is omdat behendigheidsautomaten geen vergunning vereisen",
+          "source_urls": [
+            "https://www.opmeer.nl/kansspelautomaat-aanwezigheidsvergunning-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen en originele tekst komen grotendeels overeen wat betreft de basisvoorwaarden en procedures. Het belangrijkste verschil is dat de originele tekst geen informatie bevat over het onderscheid tussen behendigheids- en kansspelautomaten, wat wel belangrijke informatie is voor ondernemers omdat behendigheidsautomaten geen vergunning vereisen."
+  }
+}

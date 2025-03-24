@@ -1,0 +1,92 @@
+{
+  "context": {
+    "municipality": {
+      "name": "EDE",
+      "contact": {
+        "phone": "14 0318",
+        "email": "info@ede.nl",
+        "website": "http://www.ede.nl"
+      }
+    },
+    "service": {
+      "id": 2,
+      "name": "Bord of spandoek plaatsen aan de openbare weg"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 22,
+    "false_sentences": 2,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Bij een melding gaat de gemeente direct akkoord.",
+        "status": "false",
+        "note": "Dit is onjuist. De gemeente Ede beoordeelt eerst elke melding voordat er akkoord wordt gegeven. Er is geen sprake van automatische goedkeuring."
+      },
+      {
+        "sentence": "Uw vergunningsaanvraag wordt doorgaans binnen vijf werkdagen afgehandeld.",
+        "status": "false",
+        "note": "Dit is niet correct. Volgens de gemeente Ede duurt de behandeling van een reguliere vergunningsaanvraag maximaal 8 weken, met mogelijke verlenging tot 14 weken. Vijf werkdagen is niet de standaard behandeltermijn."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.ede.nl/aanvragen-en-regelen/gebruik-openbare-ruimte",
+      "https://www.ede.nl/aanvragen-en-regelen/bouw-en-verbouwvergunning-voor-bedrijven",
+      "https://www.ede.nl/aanvragen-en-regelen/bouw-en-verbouwvergunning",
+      "https://www.ede.nl/nieuws/gemeente-ede-plaatst-15-vrije-plakplaatsen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.ede.nl/aanvragen-en-regelen/verleende-vergunningen-inzien-en-opvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U moet dit minimaal twee weken van tevoren melden",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de minimale aanvraagtermijn van twee weken vooraf, wat een belangrijke voorwaarde is",
+          "source_urls": [
+            "https://www.ede.nl/aanvragen-en-regelen/gebruik-openbare-ruimte"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U betaalt leges voor de behandeling van uw aanvraag. U betaalt dus ook leges als uw aanvraag geweigerd of buiten behandeling wordt gesteld.",
+          "original_reference": "Voor het opzoeken van bouw- en omgevingsvergunningen geldt een tarief van €18,20 per adres",
+          "note": "De originele tekst specificeert alleen kosten voor het opzoeken van vergunningen, maar niet dat er leges betaald moeten worden ongeacht de uitkomst van de aanvraag",
+          "source_urls": [
+            "https://www.ede.nl/aanvragen-en-regelen/bouw-en-verbouwvergunning-voor-bedrijven"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Uw vergunningaanvraag wordt behandeld door Omgevingsdienst De Vallei",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat de Omgevingsdienst De Vallei de vergunningaanvragen behandelt",
+          "source_urls": [
+            "https://www.ede.nl/aanvragen-en-regelen/bouw-en-verbouwvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn drie belangrijke verschillen gevonden tussen de originele tekst en de bronnen. De originele tekst mist essentiële informatie over de minimale aanvraagtermijn van twee weken, de verplichting tot het betalen van leges ongeacht de uitkomst, en de rol van Omgevingsdienst De Vallei bij de behandeling van vergunningaanvragen. Deze informatie is belangrijk voor aanvragers om een volledig beeld te krijgen van het proces en de voorwaarden."
+  }
+}

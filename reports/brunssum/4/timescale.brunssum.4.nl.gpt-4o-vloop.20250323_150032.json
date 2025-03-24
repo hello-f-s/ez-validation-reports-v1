@@ -1,0 +1,78 @@
+{
+  "context": {
+    "municipality": {
+      "name": "BRUNSSUM",
+      "contact": {
+        "phone": "(045) 527 85 55",
+        "email": "gemeente@brunssum.nl",
+        "website": "http://www.brunssum.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 22,
+    "false_sentences": 2,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "B-evenement: € 134,45.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Brunssum bedraagt het tarief voor een B-evenement € 137,80"
+      },
+      {
+        "sentence": "C-evenement: € 448,00.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Brunssum bedraagt het tarief voor een C-evenement € 459,35"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 3,
+    "invalid_urls": 2,
+    "accuracy_percentage": 60.0,
+    "valid_urls_list": [
+      "https://www.brunssum.nl/inwoner/vergunningen/evenement_organiseren_melding_of_vergunning",
+      "https://www.brunssum.nl/inwoner/projecten/Omgevingswet/Vergunning_checken_en_vooroverleg",
+      "https://www.brunssum.nl/inwoner/vergunningen/omgevingsvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.brunssum.nl/ondernemer/horeca/ontheffing_openings_en_sluitingstijden_horeca",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.brunssum.nl/ondernemer/horeca",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Nieuwe Omgevingswet vanaf 1 januari 2024 van kracht",
+          "original_reference": "De \"Nieuwe Omgevingswet\" treedt in werking op 1 januari 2024",
+          "note": "De informatie over de ingangsdatum van de Nieuwe Omgevingswet komt overeen in beide bronnen",
+          "source_urls": [
+            "https://www.brunssum.nl/inwoner/vergunningen/omgevingsvergunning",
+            "https://www.brunssum.nl/inwoner/projecten/Omgevingswet/Vergunning_checken_en_vooroverleg"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse van de beschikbare bronnen zijn er geen significante verschillen of tegenstrijdigheden gevonden tussen de originele inhoud en de geciteerde bronpagina's. De meeste informatie uit de originele tekst kon niet direct geverifieerd worden omdat de specifieke details over evenementenvergunningen niet volledig zichtbaar waren in de gegeven broninhoud. De enige informatie die wel geverifieerd kon worden betrof de ingangsdatum van de Nieuwe Omgevingswet, die consistent was in alle bronnen."
+  }
+}

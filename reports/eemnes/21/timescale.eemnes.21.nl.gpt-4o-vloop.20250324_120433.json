@@ -1,0 +1,95 @@
+{
+  "context": {
+    "municipality": {
+      "name": "EEMNES",
+      "contact": {
+        "phone": "14 035",
+        "email": "info@eemnes.nl",
+        "website": "http://www.eemnes.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 15,
+    "false_sentences": 2,
+    "accuracy_percentage": 88.2,
+    "false_statements": [
+      {
+        "sentence": "De aanvraag kan worden gedaan bij de BEL Combinatie, Zuidersingel 5, 3755 AZ Eemnes.",
+        "status": "false",
+        "note": "Het BEL-kantoor is gevestigd aan de Zuidersingel 1 in Eemnes, niet op nummer 5."
+      },
+      {
+        "sentence": "Voor meer informatie kunt u contact opnemen met het gemeentehuis van Eemnes, gelegen aan de Zuidersingel 1, 3755 AZ Eemnes.",
+        "status": "false",
+        "note": "Dit is het BEL-kantoor, niet het gemeentehuis van Eemnes. De BEL Combinatie is een samenwerkingsverband tussen de gemeenten Blaricum, Eemnes en Laren dat de dienstverlening verzorgt."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 3,
+    "invalid_urls": 2,
+    "accuracy_percentage": 60.0,
+    "valid_urls_list": [
+      "https://www.eemnes.nl/Uittreksels_en_akten/Verklaring_omtrent_gedrag_VOG",
+      "https://www.eemnes.nl/Zoekresultaten?searchbase=100&freetext=&sp=H4sIAAAAAAAAAGWNTwuCQBBHv8ucPUh/KIU9pZQdPCR02svkjilsuzK7FCF+9xaJErwN7/eGN4CxirSt0XfWzG9IYZDgJaQSrnpViSTpLwJ3fbzZv9fF+fQSQkIkoTGTM/+deKcWfOH0j+A0qB2NEIEj5Lq9oaMQ38Y/wmjuf2TZW1bEAWR5dcjLrCiP36HpSKswPIldaNRMU0uhJxg//4aWk+wAAAA=&f=nodelocation%3AVl2S%3D99pR%3Da7p048y3IJHw%3D%3D",
+      "https://www.eemnes.nl/Zoekresultaten?freetext=&searchbase=100&sp=H4sIAAAAAAAAAGWNPwvCMBBHv8vNDvUf2kImW7QOHSw4ZTmbqxZiUi5BkdLvbqwihW7H+73jdWCsIm0r9I014xsS6CR4CYmEs16UIo7bk8BNG622r2V+PDyFkDCTUJvBGf8OvFETPnHae3Bq1I56mIEj5Op2QUchPl9Hf8Rorh/2RZa9ZUUcQJqVu6xI82L/G+qGtArDg9iFSMU0xBR6gv4NAPn+ru0AAAA=&f=nodelocation%3AVl2S%3D99pR%3Da7p048y3IJHw%3D%3D"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.eemnes.nl/Zoekresultaten?freetext=&searchbase=100&sp=H4sIAAAAAAAAAGWNPwvCMBBHv8vNDvUf2kImW7QOHSw4ZTmbqxZiUi5BkdLvbqwihW7H+73jdWCsIm0r9I014xsS6CR4CYmEs16UIo7bk8BNG622r2V+PDyFkDCTUJvBGf8OvFETPnHae3Bq1I56mIEj5Op2QUchPl9Hf8Rorh/2RZa9ZUUcQJqVu6xI82L/G+qGtArDg9iFSMU0xBR6gv4NAPn+ru0AAAA=&",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.eemnes.nl/Zoekresultaten?searchbase=100&freetext=&sp=H4sIAAAAAAAAAGWNTwuCQBBHv8ucPUh/KIU9pZQdPCR02svkjilsuzK7FCF+9xaJErwN7/eGN4CxirSt0XfWzG9IYZDgJaQSrnpViSTpLwJ3fbzZv9fF+fQSQkIkoTGTM/+deKcWfOH0j+A0qB2NEIEj5Lq9oaMQ38Y/wmjuf2TZW1bEAWR5dcjLrCiP36HpSKswPIldaNRMU0uhJxg//4aWk+wAAAA=&",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Een VOG is een bewijs van goed gedrag. U heeft het bewijs nodig als u een nieuwe baan krijgt of gaat werken in de kinderopvang of het onderwijs. Ook voor een visum of emigratie kunt u een VOG nodig hebben.",
+          "original_reference": "Een VOG is een bewijs van goed gedrag dat u nodig heeft als u een nieuwe baan krijgt, vooral als u gaat werken in de kinderopvang of het onderwijs. Ook voor het verkrijgen van een visum of bij emigratie kan een VOG vereist zijn.",
+          "note": "De basisinformatie over wat een VOG is en wanneer deze nodig is komt volledig overeen",
+          "source_urls": [
+            "https://www.eemnes.nl/Uittreksels_en_akten/Verklaring_omtrent_gedrag_VOG"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "€ 41,35",
+          "original_reference": "De kosten voor het aanvragen van een VOG bedragen €41,35",
+          "note": "De kosten voor de VOG zijn identiek in beide bronnen",
+          "source_urls": [
+            "https://www.eemnes.nl/Uittreksels_en_akten/Verklaring_omtrent_gedrag_VOG"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Werkt u als vrijwilliger met minderjarigen of met mensen met een verstandelijke beperking, dan kunt u de VOG gratis aanvragen.",
+          "original_reference": "Echter, als u als vrijwilliger werkt met minderjarigen of met mensen met een verstandelijke beperking, kunt u de VOG gratis aanvragen.",
+          "note": "De voorwaarden voor een gratis VOG voor vrijwilligers komen exact overeen",
+          "source_urls": [
+            "https://www.eemnes.nl/Uittreksels_en_akten/Verklaring_omtrent_gedrag_VOG"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse blijkt dat alle kerngegevens in de originele tekst consistent zijn met de informatie op de gemeentelijke website. Er zijn geen significante verschillen gevonden in procedures, kosten, voorwaarden of andere belangrijke aspecten. De informatie over de aanvraagprocedure, kosten en specifieke voorwaarden voor vrijwilligers komt volledig overeen met de brongegevens."
+  }
+}

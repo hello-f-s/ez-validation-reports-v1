@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "RENKUM",
+      "contact": {
+        "phone": "(026) 334 81 11",
+        "email": "info@renkum.nl",
+        "website": "http://www.renkum.nl"
+      }
+    },
+    "service": {
+      "id": 9,
+      "name": "Mobiele puinbreker gebruiken"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "Het bezoekadres is Generaal Urquhartlaan 4, 6861 GG Oosterbeek.",
+        "status": "false",
+        "note": "Het juiste bezoekadres van de gemeente Renkum is Generaal Urquhartlaan 4, 6861 GE Oosterbeek. De postcode 6861 GG is onjuist, het moet 6861 GE zijn."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 4,
+    "valid_urls": 1,
+    "invalid_urls": 3,
+    "accuracy_percentage": 25.0,
+    "valid_urls_list": [
+      "https://www.renkum.nl/Ondernemers/Bouwen_en_vestigen/Bedrijf_vestigen_verhuizen_of_uitbreiden"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.renkum.nl/Inwoners/Bouwen_en_verbouwen/Omgevingsvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.renkum.nl/Inwoners/Bouwen_en_verbouwen/Slopen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.renkum.nl/Inwoners/Bouwen_en_verbouwen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Zoek uw adres op en kijk welke regels er zijn via Regels op de kaart op het online Omgevingsloket.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt een specifieke eerste stap ('Regels op de kaart' raadplegen) die niet genoemd wordt in de originele tekst. Dit is een belangrijk onderdeel van het voorbereidingsproces.",
+          "source_urls": [
+            "https://www.renkum.nl/Ondernemers/Bouwen_en_vestigen/Bedrijf_vestigen_verhuizen_of_uitbreiden"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "regels uit het omgevingsplan zoals bouwhoogte en milieuregels voor bijvoorbeeld geluid, energie, afvalstoffen, lucht en bodemgebruik",
+          "original_reference": "activiteiten die invloed hebben op het milieu, zoals geluid, energie, afvalstoffen, lucht en bodemgebruik",
+          "note": "De milieuaspecten die worden genoemd komen overeen in beide teksten",
+          "source_urls": [
+            "https://www.renkum.nl/Ondernemers/Bouwen_en_vestigen/Bedrijf_vestigen_verhuizen_of_uitbreiden"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina bevat een belangrijke aanvullende stap in het voorbereidingsproces die niet genoemd wordt in de originele tekst, namelijk het raadplegen van 'Regels op de kaart' via het online Omgevingsloket. Voor het overige zijn de beschreven milieuaspecten en algemene vereisten consistent tussen beide teksten."
+  }
+}

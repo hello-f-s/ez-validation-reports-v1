@@ -1,0 +1,93 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HEEMSTEDE",
+      "contact": {
+        "phone": "(023) 548 58 68",
+        "email": "gemeente@heemstede.nl",
+        "website": "http://www.heemstede.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 10,
+    "false_sentences": 1,
+    "accuracy_percentage": 90.9,
+    "false_statements": [
+      {
+        "sentence": "Specifieke documenten of formulieren zijn niet genoemd voor de exploitatievergunning van een horecabedrijf.",
+        "status": "false",
+        "note": "Volgens de website van gemeente Heemstede zijn er wel degelijk specifieke documenten genoemd voor een horecavergunning, waaronder een plattegrond van het pand, een kopie van het legitimatiebewijs, en een Verklaring Sociale Hygiëne."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 2,
+    "invalid_urls": 3,
+    "accuracy_percentage": 40.0,
+    "valid_urls_list": [
+      "https://www.heemstede.nl/vergunningen/standplaatsvergunning-aanvragen",
+      "https://www.heemstede.nl/vergunningen/alcoholwetvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.heemstede.nl/ondernemen/bedrijvenloket",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.heemstede.nl/vergunningen/exploitatievergunning-speelautomatenhal-aanvragen",
+        "reason": "INVALID: Error scraping https://www.heemstede.nl/vergunningen/exploitatievergunning-speelautomatenhal-aanvragen: 404 Client Error: Not Found for url: https://www.heemstede.nl/vergunningen/exploitatievergunning-speelautomatenhal-aanvragen"
+      },
+      {
+        "url": "https://www.heemstede.nl/ondernemen/horecazaak-starten",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Commerciële instellingen en slijterijen moeten aanvraagformulier Model A, Verklaring leidinggevende A en de Bibob-vragenlijst invullen. Verenigingen en stichtingen moeten aanvraagformulier Model B en Verklaring leidinggevende B invullen.",
+          "original_reference": "Specifieke documenten of formulieren zijn niet genoemd voor de exploitatievergunning van een horecabedrijf.",
+          "note": "De bronpagina specificeert wel degelijk welke formulieren nodig zijn, terwijl de originele tekst aangeeft dat er geen specifieke documenten genoemd zijn.",
+          "source_urls": [
+            "https://www.heemstede.nl/vergunningen/alcoholwetvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U moet de volgende stukken aanleveren: kopie arbeidscontract leidinggevende(n), kopie koop- en/of huurakte pand, eventueel overnamecontract bedrijf, bestuursreglement (voor verenigingen), lijst van tapinstructies en barvrijwilligers",
+          "original_reference": "Mogelijk heeft u de volgende documenten nodig: Alcoholwetvergunning en bijbehorende formulieren",
+          "note": "De bronpagina geeft een veel uitgebreidere en specifiekere lijst van benodigde documenten dan de originele tekst.",
+          "source_urls": [
+            "https://www.heemstede.nl/vergunningen/alcoholwetvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U moet opnieuw een vergunning aanvragen als er iets aan de vergunning verandert. Bijvoorbeeld als de ondernemingsvorm of de inrichting (bouwtechnisch) verandert",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt belangrijke informatie over het vernieuwen van de vergunning bij wijzigingen, wat volledig ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.heemstede.nl/vergunningen/alcoholwetvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De originele tekst blijkt onvolledig en te algemeen te zijn vergeleken met de bronpagina's. Er ontbreken belangrijke details over specifieke formulieren, vereiste documenten en procedures voor vergunningswijzigingen. De bronpagina's bieden veel specifiekere informatie over de aanvraagprocedure en benodigde documentatie voor verschillende type ondernemingen."
+  }
+}

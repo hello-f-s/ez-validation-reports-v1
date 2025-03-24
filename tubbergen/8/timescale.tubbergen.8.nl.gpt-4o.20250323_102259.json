@@ -1,0 +1,97 @@
+{
+  "context": {
+    "municipality": {
+      "name": "TUBBERGEN",
+      "contact": {
+        "phone": "(0546) 62 80 00",
+        "email": "gemeente@tubbergen.nl",
+        "website": "http://www.tubbergen.nl"
+      }
+    },
+    "service": {
+      "id": 8,
+      "name": "Marktvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 11,
+    "false_sentences": 2,
+    "accuracy_percentage": 84.6,
+    "false_statements": [
+      {
+        "sentence": "Voor het aanvragen van de vergunning zijn bijlagen zoals constructiegegevens en mogelijke verkeersplannen nodig, afhankelijk van de situatie.",
+        "status": "false",
+        "note": "Volgens de gemeente Tubbergen zijn voor een standplaatsvergunning specifiek een situatietekening, kopie legitimatiebewijs en verzekeringsbewijs nodig. Constructiegegevens en verkeersplannen worden niet genoemd als vereiste bijlagen."
+      },
+      {
+        "sentence": "De duur van de aanvraag wordt niet specifiek vermeld, maar zorg ervoor dat je alle documenten en bijlagen digitaliseert om de procedure te versnellen en eventuele verlengingen van de beslistermijn te voorkomen.",
+        "status": "false",
+        "note": "De gemeente Tubbergen hanteert een specifieke beslistermijn van 8 weken voor standplaatsvergunningen. Deze informatie staat wel degelijk vermeld op de gemeentelijke website."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.tubbergen.nl/omgevingsvergunning-milieubelastende-activiteit-aanvragen",
+      "https://www.tubbergen.nl/standplaatsvergunning",
+      "https://www.tubbergen.nl/omgevingsvergunning-bouwen",
+      "https://www.tubbergen.nl/aanvraag-evenementenvergunning",
+      "https://www.tubbergen.nl/loterij"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://omgevingswet.overheid.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://zoek.officielebekendmakingen.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Welke standplaatsen zijn er in de gemeente? Weekmarkten: - Tubbergen op dinsdagochtend. Minimarkten: - Geesteren op donderdag van 12.30 uur tot 18.00 uur; - Langeveen op donderdag van 08:00 uur tot 18.00 uur; - Albergen op vrijdag van 08.00 uur tot 12.30 uur.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen specifieke informatie over beschikbare standplaatslocaties en markttijden, terwijl de bron deze wel gedetailleerd vermeldt.",
+          "source_urls": [
+            "https://www.tubbergen.nl/standplaatsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Branchebeperkingen per kern: Manderveen (geen bloemen/planten), Vasse/Harbrinkhoek/Mariaparochie (geen brood/banket, zuivel/vlees, groenten/fruit), Reutum (geen brood/banket)",
+          "original_reference": "Houd rekening met eventuele branchebeperkingen per locatie",
+          "note": "De originele tekst noemt alleen algemeen dat er branchebeperkingen zijn, terwijl de bron specifieke beperkingen per kern vermeldt.",
+          "source_urls": [
+            "https://www.tubbergen.nl/standplaatsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U hebt een standplaatsvergunning nodig voor een kraam of wagen op eigen grond.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat een standplaatsvergunning ook nodig is voor een kraam op eigen grond, wat belangrijke aanvullende informatie is.",
+          "source_urls": [
+            "https://www.tubbergen.nl/standplaatsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De broninhoud bevat aanzienlijk meer specifieke details over standplaatslocaties, markttijden en branchebeperkingen per kern dan de originele tekst. Ook wordt expliciet vermeld dat een standplaatsvergunning ook nodig is voor kramen op eigen grond, wat een belangrijk detail is dat ontbreekt in de originele tekst. Deze informatie is essentieel voor potentiële aanvragers van een standplaatsvergunning."
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "context": {
+    "municipality": {
+      "name": "GRONINGEN",
+      "contact": {
+        "phone": "14 050",
+        "email": "info@groningen.nl",
+        "website": "http://gemeente.groningen.nl"
+      }
+    },
+    "service": {
+      "id": 7,
+      "name": "Kabels en leidingen aanleggen en beheren"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 31,
+    "true_sentences": 29,
+    "false_sentences": 2,
+    "accuracy_percentage": 93.5,
+    "false_statements": [
+      {
+        "sentence": "Het integraal vooroverleg kost €160,33 per aanvraag, zoals beschreven in de legesverordening 2025.",
+        "status": "false",
+        "note": "Er wordt verwezen naar de legesverordening 2025, maar deze bestaat nog niet. De huidige legesverordening is van 2024."
+      },
+      {
+        "sentence": "Voor het integraal vooroverleg betaalt u een vast bedrag van €160,33.",
+        "status": "false",
+        "note": "Het genoemde exacte bedrag van €160,33 is niet te verifiëren in de huidige legesverordening van de gemeente Groningen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 3,
+    "invalid_urls": 2,
+    "accuracy_percentage": 60.0,
+    "valid_urls_list": [
+      "https://gemeente.groningen.nl/omgevingsvergunning-aanvragen",
+      "https://gemeente.groningen.nl/bedrijf-starten",
+      "https://gemeente.groningen.nl/milieuvergunning-aanvragen-of-melden"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://gemeente.groningen.nl/gemeentegrond-tijdelijk-gebruiken",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://gemeente.groningen.nl/onttrekkingsvergunning-voor-bedrijfsdoeleinden-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Minstens 4 weken voor oprichten of verandering van uw bedrijf moet u de milieuvergunning aanvragen of de melding doen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt geen specifieke aanvraagtermijn voor vergunningen, terwijl de bron aangeeft dat dit minstens 4 weken van tevoren moet gebeuren.",
+          "source_urls": [
+            "https://gemeente.groningen.nl/milieuvergunning-aanvragen-of-melden"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Europapark, Harm Buiterplein 1",
+          "original_reference": "Loket Bouwen en Wonen in het Europapark, Harm Buiterplein 1",
+          "note": "De bron vermeldt dat er in overleg ook gebruik gemaakt kan worden van Loket Haren of Ten Boer, wat niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://gemeente.groningen.nl/milieuvergunning-aanvragen-of-melden"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U hoeft zich niet eerst te registreren bij de gemeente.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over registratie bij de gemeente, terwijl de bron expliciet vermeldt dat dit niet nodig is.",
+          "source_urls": [
+            "https://gemeente.groningen.nl/bedrijf-starten"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten enkele belangrijke aanvullende details die niet in de originele tekst staan, zoals de specifieke aanvraagtermijn van 4 weken voor vergunningen, de beschikbaarheid van extra servicelocaties in Haren en Ten Boer, en verduidelijking over gemeentelijke registratie. Deze informatie zou nuttig zijn voor de volledigheid van de originele tekst."
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HAARLEM",
+      "contact": {
+        "phone": "14 023",
+        "email": "antwoord@haarlem.nl",
+        "website": "http://www.haarlem.nl"
+      }
+    },
+    "service": {
+      "id": 3,
+      "name": "Certificaat voor opgraving aanvragen en vondst melden"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 1,
+    "true_sentences": 1,
+    "false_sentences": 0,
+    "accuracy_percentage": 100.0,
+    "false_statements": []
+  },
+  "url_analysis": {
+    "total_urls": 4,
+    "valid_urls": 2,
+    "invalid_urls": 2,
+    "accuracy_percentage": 50.0,
+    "valid_urls_list": [
+      "https://haarlem.nl/adresonderzoek",
+      "https://haarlem.nl/bouwtekeningen-opvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://haarlem.nl/monumentenvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://haarlem.nl/bodeminformatie-voor-nutsbedrijven-en-onderzoeksbureaus",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U kunt ons vragen onderzoek te doen als er op uw adres iemand staat ingeschreven die er niet woont. Een adresonderzoek duurt ongeveer 3 maanden.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat specifieke informatie over adresonderzoek en de duur ervan, terwijl deze informatie volledig ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://haarlem.nl/adresonderzoek"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Digitale kopie ontvangen via gemeente: € 13,95. U betaalt geen kosten als u bouwtekeningen opvraagt binnen de bezwaartermijn van 6 weken",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat specifieke kostinformatie voor het opvragen van bouwtekeningen, terwijl deze informatie ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://haarlem.nl/bouwtekeningen-opvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De originele tekst bevat geen specifieke informatie, terwijl de bronpagina's gedetailleerde informatie bevatten over adresonderzoek en het opvragen van bouwtekeningen, inclusief procedures, kosten en termijnen. Dit vormt een significant verschil in informatievoorziening."
+  }
+}

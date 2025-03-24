@@ -1,0 +1,79 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ETTEN-LEUR",
+      "contact": {
+        "phone": "14 076",
+        "email": "info@etten-leur.nl",
+        "website": "http://www.etten-leur.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 17,
+    "false_sentences": 2,
+    "accuracy_percentage": 89.5,
+    "false_statements": [
+      {
+        "sentence": "Onderste wijzigingen in vergunningen: € 58",
+        "status": "false",
+        "note": "Het correcte bedrag voor wijzigingen in vergunningen is € 57,50 volgens de actuele legesverordening van gemeente Etten-Leur"
+      },
+      {
+        "sentence": "Onderste wijzigingen ontheffing Alcoholwet: € 19",
+        "status": "false",
+        "note": "Het correcte bedrag voor wijzigingen in ontheffing Alcoholwet is € 18,50 volgens de actuele legesverordening van gemeente Etten-Leur"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.etten-leur.nl/product/evenement/",
+      "https://www.etten-leur.nl/product/omgevingsvergunning-aanvragen/",
+      "https://www.etten-leur.nl/product/ventvergunning/",
+      "https://www.etten-leur.nl/product/terrasvergunning/",
+      "https://www.etten-leur.nl/product/loterijvergunning/"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "als het evenement een keer eerder in dezelfde vorm (qua opzet, aard/karakter, duur, omvang, locatie, aantal bezoekers, doelgroep, muzieksoort) in Etten-Leur heeft plaatsgevonden",
+          "original_reference": "Als uw evenement al eerder in dezelfde vorm in Etten-Leur heeft plaatsgevonden",
+          "note": "De bronpagina specificeert gedetailleerder wat 'dezelfde vorm' inhoudt met concrete criteria zoals opzet, aard/karakter, duur, omvang, locatie, aantal bezoekers, doelgroep en muzieksoort. Deze details ontbreken in de originele tekst.",
+          "source_urls": [
+            "https://www.etten-leur.nl/product/evenement/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u een evenement wilt organiseren en aan bepaalde voorwaarden wordt voldaan, dan is melden genoeg.",
+          "original_reference": "Als aan alle voorwaarden wordt voldaan, kan een melding voldoende zijn.",
+          "note": "De bronpagina stelt dit directer en stelliger: 'dan is melden genoeg' versus de meer voorzichtige formulering 'kan een melding voldoende zijn' in de originele tekst.",
+          "source_urls": [
+            "https://www.etten-leur.nl/product/evenement/"
+          ]
+        }
+      ]
+    },
+    "summary": "De verschillen tussen de originele tekst en de bronpagina's zijn voornamelijk gerelateerd aan de mate van detail en de formulering van voorwaarden. De bronpagina biedt specifiekere criteria voor meerjarenvergunningen en gebruikt stelligere bewoordingen rond de meldingsplicht. De overige informatie, zoals kosten, contactgegevens en procedures, komt overeen met de originele tekst."
+  }
+}

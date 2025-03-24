@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ERMELO",
+      "contact": {
+        "phone": "(0341) 56 73 21",
+        "email": "gemeente@ermelo.nl",
+        "website": "http://www.ermelo.nl"
+      }
+    },
+    "service": {
+      "id": 22,
+      "name": "Woonruimte splitsen of samenvoegen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "Na verlening van de vergunning wordt een overeenkomst opgesteld dat kadastrale splitsing niet wordt toegepast.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Ermelo wordt er geen overeenkomst opgesteld over het niet toepassen van kadastrale splitsing. Bij woningsplitsing is juist wel kadastrale splitsing mogelijk, mits dit past binnen het bestemmingsplan en voldoet aan de overige voorwaarden."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.ermelo.nl/omgevingsplein/bouwen-en-verbouwen/kavelsplitsing-aanvragen",
+      "https://www.ermelo.nl/wonen-en-verhuizen/huisnummer-aanvragen",
+      "https://www.ermelo.nl/omgevingsplein/bouwen-en-verbouwen/woningsplitsing-aanvragen",
+      "https://www.ermelo.nl/subsidies-en-leningen/leningen/lening-toekomstbestendig-wonen",
+      "https://www.ermelo.nl/wonen-en-verhuizen/tijdelijke-verhuur-leegstaand-pand"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.ermelo.nl)",
+        "reason": "INVALID: Error scraping https://www.ermelo.nl): HTTPSConnectionPool(host='www.ermelo.nl)', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10c008550>: Failed to resolve 'www.ermelo.nl)' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Door woningsplitsing kan 1 bestaande woning worden gesplitst in 2 of meer woningen. Die woningen kunnen worden verhuurd.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet expliciet dat de gesplitste woningen verhuurd kunnen worden. Dit is belangrijke aanvullende informatie voor potentiële aanvragers.",
+          "source_urls": [
+            "https://www.ermelo.nl/omgevingsplein/bouwen-en-verbouwen/woningsplitsing-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De complete voorwaarden leest u in de Beleidsregel woning- en kavelsplitsing gemeente Ermelo 2024",
+          "original_reference": "No matching information",
+          "note": "De originele tekst verwijst niet naar de specifieke beleidsregel uit 2024 waarin alle voorwaarden staan. Dit is een belangrijke referentie voor aanvragers.",
+          "source_urls": [
+            "https://www.ermelo.nl/omgevingsplein/bouwen-en-verbouwen/woningsplitsing-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De wettelijk voorgeschreven stukken:",
+          "original_reference": "No matching information",
+          "note": "De bronpagina specificeert dat het om wettelijk voorgeschreven stukken gaat, wat in de originele tekst niet wordt vermeld.",
+          "source_urls": [
+            "https://www.ermelo.nl/omgevingsplein/bouwen-en-verbouwen/woningsplitsing-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten enkele belangrijke aanvullende details die niet in de originele tekst staan, waaronder de mogelijkheid tot verhuur van gesplitste woningen, een verwijzing naar de specifieke beleidsregel uit 2024, en de specificatie dat bepaalde documenten wettelijk voorgeschreven zijn. Deze informatie is relevant voor mensen die een woningsplitsing willen aanvragen."
+  }
+}

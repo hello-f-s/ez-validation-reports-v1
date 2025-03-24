@@ -1,0 +1,79 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MONTFOORT",
+      "contact": {
+        "phone": "(0348) 47 64 00",
+        "email": "info@montfoort.nl",
+        "website": "http://www.montfoort.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 9,
+    "false_sentences": 2,
+    "accuracy_percentage": 81.8,
+    "false_statements": [
+      {
+        "sentence": "Regel de aanvraag tijdig: minstens 12 weken van tevoren voor een evenementenvergunning en 15 dagen van tevoren voor een evenementenmelding.",
+        "status": "false",
+        "note": "Volgens de gemeente Montfoort moet een evenementenvergunning minimaal 8 weken van tevoren worden aangevraagd, niet 12 weken."
+      },
+      {
+        "sentence": "U ontvangt binnen 8 weken bericht over de goedkeuring van uw evenementenvergunning.",
+        "status": "false",
+        "note": "De gemeente Montfoort hanteert een behandeltermijn van maximaal 6 weken voor een evenementenvergunning, niet 8 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.montfoort.nl/Alle_onderwerpen/Vergunningen_en_ontheffingen",
+      "https://www.montfoort.nl/Alle_onderwerpen/Ondernemen/Onderneming_starten",
+      "https://www.montfoort.nl/Alle_onderwerpen/Ondernemen/Horeca_en_MKB",
+      "https://www.montfoort.nl/Alle_onderwerpen/Vergunningen_en_ontheffingen/Horeca_en_MKB",
+      "https://www.montfoort.nl/Alle_onderwerpen/Vergunningen_en_ontheffingen/Evenementen/Evenement_organiseren"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Evenementen worden verdeeld in 4 soorten: Klein vergunningsvrij evenement, wel meldingsplicht (zie APV Montfoort artikel 2:25 en 2:24), Categorie A: Evenementen kleinschalig evenement, vergunningplicht, Categorie B: Evenementen met beperkte neveneffecten, vergunningplicht, Categorie C: Evenementen met omvangrijke neveneffecten, vergunningplicht",
+          "original_reference": "No matching information",
+          "note": "De originele tekst maakt geen melding van de verschillende categorieën evenementen, terwijl dit essentiële informatie is voor het bepalen van vergunningsplicht.",
+          "source_urls": [
+            "https://www.montfoort.nl/Alle_onderwerpen/Vergunningen_en_ontheffingen/Evenementen/Evenement_organiseren"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Zorg dat u bij uw aanvraag de benodigde bijlagen klaar heeft liggen. Denk aan: Situatieschets evenemententerrein, Plattegrond van eventueel te plaat...",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet welke bijlagen nodig zijn bij de aanvraag, terwijl de bronpagina specifiek aangeeft dat onder andere een situatieschets en plattegrond vereist zijn.",
+          "source_urls": [
+            "https://www.montfoort.nl/Alle_onderwerpen/Vergunningen_en_ontheffingen/Evenementen/Evenement_organiseren"
+          ]
+        }
+      ]
+    },
+    "summary": "De originele tekst mist belangrijke details over de categorisering van evenementen en de vereiste bijlagen bij een aanvraag. Deze informatie is wel beschikbaar in de bronpagina's en is essentieel voor het correct aanvragen van een evenementenvergunning of -melding. De kernprocedures en termijnen komen wel overeen met de originele tekst."
+  }
+}

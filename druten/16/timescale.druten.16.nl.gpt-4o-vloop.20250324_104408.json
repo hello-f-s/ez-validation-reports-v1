@@ -1,0 +1,93 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DRUTEN",
+      "contact": {
+        "phone": "(088) 432 70 00",
+        "email": "info@druten.nl",
+        "website": "http://www.druten.nl"
+      }
+    },
+    "service": {
+      "id": 16,
+      "name": "Registreren in het Landelijk Register Kinderopvang (LRK)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 15,
+    "false_sentences": 2,
+    "accuracy_percentage": 88.2,
+    "false_statements": [
+      {
+        "sentence": "Telefonische bereikbaarheid: Maandag: 8.30 - 16.30 uur",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Druten is de telefonische bereikbaarheid op maandag van 8:30 tot 17:00 uur"
+      },
+      {
+        "sentence": "Vergunning voor kindercentrum of gastouderbureau: € 1.175,40",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Druten bedraagt het tarief voor een vergunning kindercentrum of gastouderbureau € 1.205,00"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 3,
+    "invalid_urls": 3,
+    "accuracy_percentage": 50.0,
+    "valid_urls_list": [
+      "https://www.druten.nl/sociale-kaart/",
+      "https://www.druten.nl/jeugdhulp",
+      "https://www.druten.nl"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.druten.nl/kinderopvang-en-peuteropvang",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.druten.nl/erkenning-van-een-kind",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.druten.nl/onderwijs-en-kinderopvang",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Heuvel 1, 6651 DA Druten\nBel: 088 432 70 00\nWhatsapp: +31625689928\ninfo@druten.nl",
+          "original_reference": "Adres: Heuvel 1, 6651 DA Druten\nTelefoon: 088 432 70 00\nWhatsApp: +31625689928\nEmail: info@druten.nl",
+          "note": "De contactgegevens in de bronnen komen exact overeen met de originele inhoud",
+          "source_urls": [
+            "https://www.druten.nl/sociale-kaart/",
+            "https://www.druten.nl/jeugdhulp",
+            "https://www.druten.nl"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Morgen: 8.30 - 16.30 uur",
+          "original_reference": "Maandag: 8.30 - 19.00 uur",
+          "note": "De openingstijden in de bronnen tonen andere sluitingstijden dan in de originele inhoud. De bronnen vermelden 16:30 als sluitingstijd voor reguliere dagen, terwijl de originele inhoud 19:00 vermeldt voor maandag",
+          "source_urls": [
+            "https://www.druten.nl/sociale-kaart/",
+            "https://www.druten.nl"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont enkele belangrijke verschillen in de openingstijden. Waar de originele inhoud specifiek vermeldt dat maandag open is tot 19:00 uur, suggereren de bronnen andere openingstijden tot 16:30 uur. De contactgegevens zijn wel consistent tussen alle bronnen. Voor de overige informatie zoals kosten, voorwaarden en aanvraagprocedures is geen vergelijkingsmateriaal gevonden in de geciteerde bronnen."
+  }
+}

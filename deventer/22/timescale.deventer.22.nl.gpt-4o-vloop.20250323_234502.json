@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DEVENTER",
+      "contact": {
+        "phone": "14 0570",
+        "email": "gemeente@deventer.nl",
+        "website": "http://www.deventer.nl"
+      }
+    },
+    "service": {
+      "id": 22,
+      "name": "Woonruimte splitsen of samenvoegen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 31,
+    "true_sentences": 30,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.8,
+    "false_statements": [
+      {
+        "sentence": "Een vooroverleg kost € 626, maar deze kosten worden verrekend als u binnen 6 maanden een omgevingsvergunning aanvraagt voor hetzelfde plan.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van de gemeente Deventer kost een vooroverleg € 650 (2024). Dit bedrag wordt verrekend bij een definitieve aanvraag binnen 26 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.deventer.nl/bouwen-en-verbouwen/bouw-en-verbouw-vergunning",
+      "https://www.deventer.nl/loketten/digitaal-loket/bouw-en-verbouw-vergunning",
+      "http://www.deventer.nl/loketten/digitaal-loket/bouw-en-verbouw-vergunning",
+      "https://www.deventer.nl/vooroverleg",
+      "https://www.deventer.nl/kamersverhuren",
+      "https://www.deventer.nl"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Gaat u nieuwbouwwoningen bouwen? Of kantoren van 100m2 of groter? Dan moet u een milieuprestatieberekening en een energieprestatieberekening toevoegen bij de aanvraag van een omgevingsvergunning.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist de specifieke vereiste voor milieuprestatieberekening en energieprestatieberekening bij nieuwbouwwoningen en grote kantoren.",
+          "source_urls": [
+            "https://www.deventer.nl/bouwen-en-verbouwen/bouw-en-verbouw-vergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U heeft geen omzettingsvergunning nodig als de vastgestelde WOZ-waarde van het kamerverhuurpand ten tijde van de aanvraag boven de NHG-grens blijft. In 2025 is dit € 450.000.",
+          "original_reference": "als de WOZ-waarde van het pand onder de NHG-grens ligt",
+          "note": "De originele tekst beschrijft de voorwaarde incorrect. Een omzettingsvergunning is juist niet nodig als de WOZ-waarde boven (niet onder) de NHG-grens ligt. Ook specificeert de bron het bedrag van € 450.000 voor 2025.",
+          "source_urls": [
+            "https://www.deventer.nl/kamersverhuren"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voordat u een aanvraag doet, kunt u contact opnemen met de gemeente via telefoonnummer 14 0570. Zo kunt u onderzoeken of er nog ruimte is voor een nieuw kamerverhuurpand binnen het postcodegebied.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist de belangrijke voorwaarde dat er eerst gecontroleerd moet worden of er ruimte is voor een nieuw kamerverhuurpand in het postcodegebied.",
+          "source_urls": [
+            "https://www.deventer.nl/kamersverhuren"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn enkele belangrijke verschillen gevonden tussen de originele tekst en de bronnen. De originele tekst mist essentiële informatie over milieuprestatieberekeningen voor nieuwbouw, bevat een onjuiste beschrijving van de WOZ-waarde voorwaarde voor kamerverhuur, en vermeldt niet de belangrijke eerste stap van het controleren van beschikbare ruimte in het postcodegebied voor kamerverhuur. Deze verschillen kunnen significant zijn voor mensen die deze diensten willen gebruiken."
+  }
+}

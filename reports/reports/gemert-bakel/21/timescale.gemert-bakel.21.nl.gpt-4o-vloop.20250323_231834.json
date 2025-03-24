@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "GEMERT-BAKEL",
+      "contact": {
+        "phone": "(0492) 37 85 00",
+        "email": "gemeente@gemert-bakel.nl",
+        "website": "http://www.gemert-bakel.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 22,
+    "false_sentences": 2,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Een VOG schriftelijk aanvragen via de gemeente kost € 41,35.",
+        "status": "false",
+        "note": "Het actuele tarief voor een VOG aanvraag in 2024 is € 46,25, niet € 41,35."
+      },
+      {
+        "sentence": "Fax: 0492-366325",
+        "status": "false",
+        "note": "De gemeente Gemert-Bakel gebruikt geen faxnummer meer voor communicatie volgens de officiële gemeentelijke website."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.gemert-bakel.nl/verklaring-omtrent-het-gedrag-vog",
+      "https://www.gemert-bakel.nl/verzoek-op-basis-van-de-wet-open-overheid-woo",
+      "https://www.gemert-bakel.nl/omgevingsvergunning-activiteit-uitvoeren-van-een-werk",
+      "https://www.gemert-bakel.nl/omgevingsvergunning-activiteit-milieu",
+      "https://www.gemert-bakel.nl/evenementen-vergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Staat u niet ingeschreven in een gemeente in Nederland dan vraagt u de VOG rechtstreeks aan bij het ministerie van Veiligheid en Justitie.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over wat te doen als iemand niet in Nederland staat ingeschreven. Dit is essentiële informatie voor niet-ingezetenen.",
+          "source_urls": [
+            "https://www.gemert-bakel.nl/verklaring-omtrent-het-gedrag-vog"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Let op! Aan dit product zijn kosten verbonden. Deze kunt u betalen met iDeal.",
+          "original_reference": "Betaling geschiedt direct bij de aanvraag aan de balie.",
+          "note": "De originele tekst vermeldt alleen betaling aan de balie, terwijl de bron aangeeft dat online betaling via iDeal ook mogelijk is.",
+          "source_urls": [
+            "https://www.gemert-bakel.nl/verklaring-omtrent-het-gedrag-vog"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Bezoekadres: Ridderplein 1, 5421 CV Gemert",
+          "original_reference": "Bezoekadres: Ridderplein 1, 5421 CV Gemert",
+          "note": "De contactgegevens en het bezoekadres komen exact overeen in beide bronnen.",
+          "source_urls": [
+            "https://www.gemert-bakel.nl/omgevingsvergunning-activiteit-milieu"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont twee belangrijke verschillen aan: de originele tekst mist informatie over de procedure voor niet-ingezetenen en vermeldt niet de mogelijkheid tot online betaling via iDeal. De contactgegevens en openingstijden zijn wel consistent tussen de bronnen. Deze verschillen zijn relevant voor de volledigheid en actualiteit van de dienstverlening."
+  }
+}

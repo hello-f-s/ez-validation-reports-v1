@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HILVERSUM",
+      "contact": {
+        "phone": "14 035",
+        "email": "gemeente@hilversum.nl",
+        "website": "http://www.hilversum.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "De gemeente heeft 8 weken de tijd om op uw aanvraag te beslissen en mag deze termijn met 8 weken verlengen.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Hilversum heeft de gemeente 12 weken de tijd om op een aanvraag voor een exploitatievergunning te beslissen, niet 8 weken. Deze termijn kan wel met 8 weken worden verlengd."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://hilversum.nl/vergunningen/vergunningen-voor-horeca/alcoholwetvergunning-voor-horeca-slijterijen",
+      "https://hilversum.nl/vergunningen/vergunningen-voor-horeca/exploitatievergunning-horeca",
+      "https://hilversum.nl/bouwen-verbouwen/omgevingswet/aanvraag-omgevingsvergunning-uitgelegd",
+      "https://hilversum.nl/vergunningen/vergunningen-voor-horeca",
+      "https://hilversum.nl/vergunningen/vergunningen-voor-bouwen-verbouwen/omgevingsvergunning-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.hilversum.nl/home/Ondernemer/Exploitatievergunning_horeca",
+        "reason": "INVALID: Error scraping https://www.hilversum.nl/home/Ondernemer/Exploitatievergunning_horeca: 404 Client Error: Not Found for url: https://hilversum.nl/home/Ondernemer/Exploitatievergunning_horeca"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een vergunning is alleen nodig als bezoekers in uw zaak kunnen eten en drinken. Voor een afhaalzaak heeft u geen exploitatievergunning nodig. U mag dan geen tafels, bar of stoelen plaatsen en geen terras hebben!",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen specifieke informatie over afhaalzaken en wanneer een exploitatievergunning wel/niet nodig is. Dit is belangrijke aanvullende informatie voor ondernemers.",
+          "source_urls": [
+            "https://hilversum.nl/vergunningen/vergunningen-voor-horeca/exploitatievergunning-horeca"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor onder andere bedrijfskantines, slijterijen, zorginstellingen, crematoria, rouwcentra, begraafplaatsen, heeft u geen exploitatievergunning nodig",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de specifieke uitzonderingen waar geen exploitatievergunning voor nodig is.",
+          "source_urls": [
+            "https://hilversum.nl/vergunningen/vergunningen-voor-horeca/exploitatievergunning-horeca"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor een horecabedrijf moet u ook een milieumelding doen. U heeft hiervoor uw DigiD of eHerkenning nodig",
+          "original_reference": "No matching information",
+          "note": "De originele tekst noemt wel dat een milieumelding mogelijk nodig is, maar specificeert niet dat dit verplicht is en dat DigiD of eHerkenning hiervoor nodig is.",
+          "source_urls": [
+            "https://hilversum.nl/vergunningen/vergunningen-voor-horeca/exploitatievergunning-horeca"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie die niet in de originele tekst staat, met name over wanneer een exploitatievergunning wel/niet nodig is (afhaalzaken en specifieke uitzonderingen) en de verplichting tot het doen van een milieumelding. Deze informatie is essentieel voor ondernemers die een horecazaak willen starten of overnemen."
+  }
+}

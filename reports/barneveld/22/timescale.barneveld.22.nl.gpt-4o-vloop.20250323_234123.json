@@ -1,0 +1,87 @@
+{
+  "context": {
+    "municipality": {
+      "name": "BARNEVELD",
+      "contact": {
+        "phone": "14 0342",
+        "email": "info@barneveld.nl",
+        "website": "http://www.barneveld.nl"
+      }
+    },
+    "service": {
+      "id": 22,
+      "name": "Woonruimte splitsen of samenvoegen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "Kosten zijn afhankelijk van de specifieke aanvraag en staan vermeld in de legesverordening 2025.",
+        "status": "false",
+        "note": "De legesverordening 2025 bestaat nog niet. De gemeente Barneveld werkt momenteel met de legesverordening 2024."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.barneveld.nl/bouwen-wonen-en-verhuizen/wonen/het-gebruik-van-een-woning-veranderen",
+      "https://www.barneveld.nl/bouwen-wonen-en-verhuizen/omgevingsvergunning/omgevingsvergunning-aanvragen",
+      "https://www.barneveld.nl/vergunningen-en-ontheffingen/horeca/exploitatievergunning-aanvragen",
+      "https://www.barneveld.nl/ondernemen/aanbestedingen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.barneveld.nl/bouwen-wonen-en-verhuizen/omgevingsvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U heeft bij kamerverhuur een omgevingsvergunning nodig.",
+          "original_reference": "Om deze anders te gebruiken of op te splitsen, kan toestemming van de gemeente nodig zijn.",
+          "note": "De brontekst stelt expliciet dat een omgevingsvergunning nodig is voor kamerverhuur, terwijl de originele tekst dit als mogelijkheid presenteert.",
+          "source_urls": [
+            "https://www.barneveld.nl/bouwen-wonen-en-verhuizen/wonen/het-gebruik-van-een-woning-veranderen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De gemeente publiceert de aanvraag. [...] De gemeente publiceert het besluit.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat de gemeente zowel de aanvraag als het besluit publiceert, wat belangrijke procedurestappen zijn.",
+          "source_urls": [
+            "https://www.barneveld.nl/bouwen-wonen-en-verhuizen/omgevingsvergunning/omgevingsvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U ontvangt bericht via de Omgevingsdienst de Vallei (OddV) of de gemeente.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat berichten via de Omgevingsdienst de Vallei (OddV) kunnen komen, wat relevant is voor de communicatie.",
+          "source_urls": [
+            "https://www.barneveld.nl/bouwen-wonen-en-verhuizen/omgevingsvergunning/omgevingsvergunning-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn drie belangrijke verschillen gevonden tussen de originele tekst en de bronnen. De vereisten voor kamerverhuur zijn strikter in de bronnen, er ontbreekt informatie over de publicatie van aanvragen en besluiten, en de rol van de Omgevingsdienst de Vallei wordt niet genoemd in de originele tekst. Deze verschillen hebben vooral betrekking op procedurele aspecten en communicatie."
+  }
+}

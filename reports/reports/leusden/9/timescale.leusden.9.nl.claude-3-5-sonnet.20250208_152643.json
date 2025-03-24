@@ -1,0 +1,80 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LEUSDEN",
+      "contact": {
+        "phone": "14 033",
+        "email": "gemeente@leusden.nl",
+        "website": "http://www.leusden.nl/"
+      }
+    },
+    "service": {
+      "id": 9,
+      "name": "Mobiele puinbreker gebruiken"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 10,
+    "false_sentences": 1,
+    "accuracy_percentage": 90.9,
+    "false_statements": [
+      {
+        "sentence": "Het mobiel breken van puin moet gemeld worden bij de gemeente (RUD Utrecht)",
+        "status": "false",
+        "note": "Het mobiel breken van puin moet niet bij de gemeente Leusden worden gemeld maar direct bij de RUD Utrecht. De gemeente is hierin geen tussenpersoon."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.leusden.nl/en/bouwobjecten",
+      "https://www.leusden.nl/bouwobjecten",
+      "https://www.leusden.nl/bouwen-en-wonen/vraag-en-antwoord-asbest-en-sloopmelding",
+      "https://www.leusden.nl/en/bouwen-en-wonen/vraag-en-antwoord-asbest-en-sloopmelding"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.leusden.nl/en/publicaties/bekendmakingen/bekendmakingen?tx_windgvop_windgvopdetail%5Baction%5D=detail&tx_windgvop_windgvopdetail%5Bcontroller%5D=Publication&tx_windgvop_windgvopdetail%5Bpublication%5D=1970&cHash=5923632836f2e3c5fdfe5bbc64cb87bf",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor het plaatsen van een bouwcontainer/bouwkeet/bouwkraan vraagt u dit minimaal 2 weken van te voren aan.",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden een specifieke aanvraagtermijn van 2 weken voor bouwobjecten, terwijl dit niet genoemd wordt in de originele tekst over puinbreken.",
+          "source_urls": [
+            "https://www.leusden.nl/bouwobjecten",
+            "https://www.leusden.nl/en/bouwobjecten"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "maximaal 2 parkeerplaatsen mogen bezet worden gehouden bij het plaatsen van een container/bouwkeet; de directe buren worden door u geïnformeerd over het bouwobject",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden aanvullende voorwaarden over parkeerplaatsgebruik en informeren van buren die niet in de originele tekst staan.",
+          "source_urls": [
+            "https://www.leusden.nl/bouwobjecten",
+            "https://www.leusden.nl/en/bouwobjecten"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten enkele aanvullende specifieke voorwaarden voor het gebruik van gemeentegrond die niet in de originele tekst over puinbreken zijn opgenomen, zoals termijnen en beperkingen voor parkeerplaatsgebruik. Echter, er is geen directe informatie gevonden die tegenstrijdig is met de kernvoorwaarden voor het mobiel breken van puin zoals beschreven in de originele tekst."
+  }
+}

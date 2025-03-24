@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ARNHEM",
+      "contact": {
+        "phone": "null",
+        "email": "null",
+        "website": "http://www.arnhem.nl"
+      }
+    },
+    "service": {
+      "id": 9,
+      "name": "Mobiele puinbreker gebruiken"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "Voor vragen over vergunningen kunt u de Omgevingsdienst Regio Arnhem (ODRA) bereiken op telefoonnummer 0800-1809 of via e-mail op erfgoed@arnhem.nl.",
+        "status": "false",
+        "note": "Het telefoonnummer 0800-1809 is onjuist. Het correcte telefoonnummer voor de ODRA is 026-3771600 volgens de officiële website van de gemeente Arnhem."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.arnhem.nl/Inwoners/wonen_en_milieu/afval/afval_abc/puin",
+      "https://www.arnhem.nl/Ondernemers/vergunningen_ondernemers/overige_vergunningen_en_meldingen",
+      "https://www.arnhem.nl/Inwoners/bouwen_en_verbouwen/Waar_mag_u_wonen_werken_of_ondernemen",
+      "https://www.arnhem.nl/Inwoners/wonen_en_milieu/Bodem",
+      "https://www.arnhem.nl/Inwoners/bouwen_en_verbouwen/U_wilt_bouwen_of_verbouwen/omgevingsvergunning/sloopmelding"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Kleine hoeveelheden puin zijn gratis aan te leveren.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat kleine hoeveelheden puin gratis kunnen worden aangeleverd bij afvalbrengstations. Dit is belangrijke informatie voor inwoners.",
+          "source_urls": [
+            "https://www.arnhem.nl/Inwoners/wonen_en_milieu/afval/afval_abc/puin"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U heeft een omgevingsvergunning nodig als: In het omgevingsplan is geregeld dat u een vergunning nodig heeft voor slopen.",
+          "original_reference": "een omgevingsvergunning nodig als u van plan bent om een monument of een gebouw binnen een beschermd stadsgezicht te verbouwen of te slopen",
+          "note": "De bronpagina noemt een extra voorwaarde voor een omgevingsvergunning die niet in de originele tekst staat, namelijk wanneer dit in het omgevingsplan is geregeld.",
+          "source_urls": [
+            "https://www.arnhem.nl/Inwoners/bouwen_en_verbouwen/U_wilt_bouwen_of_verbouwen/omgevingsvergunning/sloopmelding"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Neem hiervoor contact op met erfgoed@arnhem.nl",
+          "original_reference": "Voor vragen over vergunningen kunt u de Omgevingsdienst Regio Arnhem (ODRA) bereiken op telefoonnummer 0800-1809 of via e-mail op erfgoed@arnhem.nl",
+          "note": "De bronpagina specificeert dat het e-mailadres erfgoed@arnhem.nl specifiek bedoeld is voor advies over monumenten en beschermde stadsgezichten, niet voor algemene vergunningsvragen zoals in de originele tekst staat.",
+          "source_urls": [
+            "https://www.arnhem.nl/Inwoners/bouwen_en_verbouwen/U_wilt_bouwen_of_verbouwen/omgevingsvergunning/sloopmelding"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn drie belangrijke verschillen gevonden tussen de originele tekst en de bronpagina's. De originele tekst mist informatie over gratis aanlevering van kleine hoeveelheden puin, een aanvullende voorwaarde voor omgevingsvergunningen uit het omgevingsplan, en bevat een onjuiste beschrijving van het gebruik van het erfgoed e-mailadres. Deze verschillen zijn relevant voor inwoners die willen slopen of puin willen afvoeren."
+  }
+}

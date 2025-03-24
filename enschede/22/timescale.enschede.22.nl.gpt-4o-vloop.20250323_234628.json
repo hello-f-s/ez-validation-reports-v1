@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ENSCHEDE",
+      "contact": {
+        "phone": "14 053",
+        "email": "postbus20@enschede.nl",
+        "website": "http://www.enschede.nl"
+      }
+    },
+    "service": {
+      "id": 22,
+      "name": "Woonruimte splitsen of samenvoegen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 27,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.4,
+    "false_statements": [
+      {
+        "sentence": "Voor het aanvragen van een omgevingsvergunning zijn kosten verbonden die ook in rekening worden gebracht als de aanvraag wordt geweigerd.",
+        "status": "false",
+        "note": "Volgens de gemeente Enschede worden er geen legeskosten in rekening gebracht als een aanvraag wordt geweigerd. Dit is vastgelegd in artikel 2.5.2 van de Legesverordening Enschede."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.enschede.nl/vergunning-voor-kamerverhuur",
+      "https://www.enschede.nl/informatie-voor-kamerverhuurders",
+      "https://www.enschede.nl/regels-voor-kamerverhuurpanden",
+      "https://www.enschede.nl/omgevingsvergunning",
+      "https://www.enschede.nl/kinderopvang-starten-of-wijzigen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als er hierdoor drie of meer mensen in de woning wonen dan heeft u daar in Enschede een omgevingsvergunning voor nodig.",
+          "original_reference": "In Enschede is een omgevingsvergunning voor kamerverhuur verplicht als er door kamerverhuur drie of meer personen in een woning komen te wonen.",
+          "note": "De originele tekst suggereert dat de vergunning nodig is specifiek voor kamerverhuur, terwijl de brontekst duidelijker aangeeft dat het gaat om het totale aantal bewoners in de woning.",
+          "source_urls": [
+            "https://www.enschede.nl/informatie-voor-kamerverhuurders"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "€ 304,80 voor conceptverzoek",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt geen specifiek bedrag voor een conceptverzoek, terwijl de bron dit wel expliciet noemt.",
+          "source_urls": [
+            "https://www.enschede.nl/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De woningen waar op dit moment kamerverhuur is toegestaan staan op de kaart Legale kamerverhuurpanden in Enschede.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist de belangrijke informatie over de beschikbaarheid van een kaart met legale kamerverhuurpanden.",
+          "source_urls": [
+            "https://www.enschede.nl/regels-voor-kamerverhuurpanden"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten enkele belangrijke aanvullingen die niet in de originele tekst staan, waaronder specifieke kosten voor een conceptverzoek (€304,80) en het bestaan van een kaart met legale kamerverhuurpanden. Ook is er een nuanceverschil in de formulering van wanneer een vergunning nodig is. De meeste andere informatie komt overeen met de originele tekst."
+  }
+}

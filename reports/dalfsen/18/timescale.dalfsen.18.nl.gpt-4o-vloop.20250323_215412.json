@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DALFSEN",
+      "contact": {
+        "phone": "14 0529",
+        "email": "gemeente@dalfsen.nl",
+        "website": "http://www.dalfsen.nl"
+      }
+    },
+    "service": {
+      "id": 18,
+      "name": "Ventvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 35,
+    "true_sentences": 34,
+    "false_sentences": 1,
+    "accuracy_percentage": 97.1,
+    "false_statements": [
+      {
+        "sentence": "Voor uitgebreide aanvragen dient u dit minimaal 6 maanden van tevoren te doen.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Dalfsen geldt voor uitgebreide procedures een termijn van 26 weken (ongeveer 6,5 maanden), niet precies 6 maanden. De termijn kan bovendien nog verlengd worden met 6 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.dalfsen.nl/omgevingsvergunning",
+      "https://www.dalfsen.nl/exploitatievergunning-horecabedrijf",
+      "https://www.dalfsen.nl/alcoholvergunning",
+      "https://www.dalfsen.nl/watervergunning",
+      "https://www.dalfsen.nl/vergunning-zonnepaneel-of-zonnecollector"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bij een uitgebreide aanvraag maakt de gemeente eerst een ontwerpbesluit over uw aanvraag. Dit ontwerpbesluit is nog geen definitief besluit. Iedereen kan binnen 6 weken zijn of haar mening over dit ontwerpbesluit geven. Dit heet een zienswijze.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over het ontwerpbesluit en de mogelijkheid tot het indienen van zienswijzen bij uitgebreide aanvragen",
+          "source_urls": [
+            "https://www.dalfsen.nl/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u zonnepanelen op de grond wilt plaatsen, is er altijd een omgevingsvergunning nodig.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat grondgebonden zonnepanelen altijd vergunningplichtig zijn",
+          "source_urls": [
+            "https://www.dalfsen.nl/vergunning-zonnepaneel-of-zonnecollector"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Situatietekening (schaal 1:1000)",
+          "original_reference": "Situatietekening en gevelaanzichten",
+          "note": "De bronpagina specificeert een exacte schaal (1:1000) voor de situatietekening, wat niet vermeld staat in de originele tekst",
+          "source_urls": [
+            "https://www.dalfsen.nl/vergunning-zonnepaneel-of-zonnecollector"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten enkele belangrijke aanvullende details die niet in de originele tekst staan. Met name de procedure rond het ontwerpbesluit en zienswijzen bij uitgebreide aanvragen, de vergunningplicht voor grondgebonden zonnepanelen en specifieke schaaleisen voor tekeningen zijn relevante toevoegingen. Deze informatie is essentieel voor een complete en accurate beschrijving van het vergunningsproces."
+  }
+}

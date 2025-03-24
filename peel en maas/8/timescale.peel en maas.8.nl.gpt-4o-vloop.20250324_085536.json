@@ -1,0 +1,68 @@
+{
+  "context": {
+    "municipality": {
+      "name": "PEEL EN MAAS",
+      "contact": {
+        "phone": "(077) 306 66 66",
+        "email": "info@peelenmaas.nl",
+        "website": "http://www.peelenmaas.nl"
+      }
+    },
+    "service": {
+      "id": 8,
+      "name": "Marktvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 15,
+    "false_sentences": 2,
+    "accuracy_percentage": 88.2,
+    "false_statements": [
+      {
+        "sentence": "Maandag: 8.30 - 19.30 uur voor in-person bezoeken",
+        "status": "false",
+        "note": "De correcte openingstijden op maandag zijn van 08.30 - 17.00 uur, met uitzondering van de avondopenstelling op afspraak van 17.00 - 19.30 uur"
+      },
+      {
+        "sentence": "Telefonisch bereikbaar: Maandag van 8.30 - 17.00 uur",
+        "status": "false",
+        "note": "De gemeente is telefonisch bereikbaar van maandag t/m vrijdag van 08.30 tot 17.00 uur. De informatie is onvolledig omdat alleen maandag wordt genoemd"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 0,
+    "invalid_urls": 5,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.peelenmaas.nl/vergunning-of-toestemming/bedrijf-starten-of-wijzigen",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.peelenmaas.nl/vergunning-of-toestemming/omgevingsvergunning",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.peelenmaas.nl/vergunning-of-toestemming/Weekmarktvergunning",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.peelenmaas.nl/vergunning-of-toestemming/",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.peelenmaas.nl/vergunning-of-toestemming/horecabedrijf-beginnen",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  }
+}

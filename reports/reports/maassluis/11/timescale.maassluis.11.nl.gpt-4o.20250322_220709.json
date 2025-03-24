@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MAASSLUIS",
+      "contact": {
+        "phone": "14 010",
+        "email": "gemeente@maassluis.nl",
+        "website": "http://www.maassluis.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "U ontvangt binnen 8 weken bericht van de gemeente over uw aanvraag.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Maassluis is de reguliere procedure maximaal 8 weken, maar voor complexere aanvragen geldt de uitgebreide procedure van 26 weken. De zin is onvolledig omdat deze niet alle mogelijke procedures en bijbehorende termijnen vermeldt."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.maassluis.nl/boom-kappen",
+      "https://www.maassluis.nl/uitrit-of-inrit-aanleggen",
+      "https://www.maassluis.nl/milieu-vergunning-of-melding",
+      "https://www.maassluis.nl/omgevingsplan-wijzigen",
+      "https://www.maassluis.nl/omgevingsvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://alook.com/omgevingsvergunning2",
+        "reason": "INVALID: Error scraping https://alook.com/omgevingsvergunning2: 'NoneType' object has no attribute 'strip'"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor alle bomen met een minimale stamdoorsnede van 10 cm of groter, gemeten op 1,30 meter hoogte boven het maaiveld, is een omgevingsvergunning nodig.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst specificeert niet de minimale stamdoorsnede voor kapvergunningen, terwijl de bron deze belangrijke voorwaarde wel vermeldt.",
+          "source_urls": [
+            "https://www.maassluis.nl/boom-kappen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bij uw aanvraag omgevingsvergunning moet u alle informatie geven die de gemeente nodig heeft om uw aanvraag te kunnen beoordelen.",
+          "original_reference": "Nodig voor aanvragen: Situatietekening, Foto's van de huidige situatie, Eventuele bouwtekeningen en een omschrijving van uw bouwplannen",
+          "note": "De bronpagina benadrukt dat ALLE benodigde informatie moet worden aangeleverd, terwijl de originele tekst specifieke maar mogelijk niet complete documentatie opsomt.",
+          "source_urls": [
+            "https://www.maassluis.nl/uitrit-of-inrit-aanleggen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bij plannen die afwijken van het bestaande omgevingsplan is een participatieverslag verplicht als u een omgevingsvergunning aanvraagt. Participatie is het in een vroeg stadium betrekken van belanghebbenden bij uw initiatief.",
+          "original_reference": "Bij afwijkingen van het omgevingsplan is participatie van belanghebbenden vereist.",
+          "note": "De bron specificeert dat een participatieverslag verplicht is en legt uit wat participatie inhoudt, terwijl de originele tekst minder specifiek is over deze vereiste.",
+          "source_urls": [
+            "https://www.maassluis.nl/omgevingsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen specifieke details die in de originele tekst ontbreken: concrete maatvoering voor kapvergunningen, de nadruk op volledigheid van aan te leveren informatie, en meer gedetailleerde uitleg over het participatieproces. Deze aanvullende informatie maakt de vereisten en procedures duidelijker voor aanvragers."
+  }
+}

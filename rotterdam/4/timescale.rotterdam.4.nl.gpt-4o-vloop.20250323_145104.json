@@ -1,0 +1,86 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ROTTERDAM",
+      "contact": {
+        "phone": "14 010",
+        "email": "null",
+        "website": "http://www.rotterdam.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 11,
+    "false_sentences": 2,
+    "accuracy_percentage": 84.6,
+    "false_statements": [
+      {
+        "sentence": "De aanvraag moet minimaal 4 weken voor het evenement worden ingediend, en er zijn speciale perioden waarin de aanvraag voor het volgende kalenderjaar kan worden gedaan (januari-maart, oktober-december).",
+        "status": "false",
+        "note": "Volgens de officiële website van Rotterdam moet een evenementenvergunning minimaal 8 weken voor het evenement worden aangevraagd, niet 4 weken. Er worden ook geen specifieke aanvraagperioden genoemd voor het volgende kalenderjaar."
+      },
+      {
+        "sentence": "Als persoon logt u in met DigiD, en als bedrijf logt u in met eHerkenning niveau 2.",
+        "status": "false",
+        "note": "Volgens de gemeente Rotterdam is voor bedrijven eHerkenning niveau 3 vereist, niet niveau 2."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 3,
+    "invalid_urls": 2,
+    "accuracy_percentage": 60.0,
+    "valid_urls_list": [
+      "https://www.rotterdam.nl/vergunning-a-evenement-aanvragen",
+      "https://www.rotterdam.nl/exploitatievergunning-aanvragen/start-exploitatievergunning-aanvragen",
+      "https://www.rotterdam.nl/voorlopige-exploitatievergunning-aanvragen/start-voorlopige-exploitatievergunning-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.rotterdam.nl/alles-over-evenementenvergunningen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.rotterdam.nl/omgevingsvergunning-bouwen-aanvragen/start-omgevingsvergunning-bouwen-per-post-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een A-evenement is een evenement met weinig invloed op de omgeving, zoals een klein festival, braderie of een straatspeeldag. Zo'n evenement zorgt voor een minimaal risico.",
+          "original_reference": "Voor type A-evenementen zijn er verschillende voorwaarden afhankelijk van het soort evenement, zoals een evenementenmarkt of horeca-evenement.",
+          "note": "De bronpagina geeft een duidelijkere definitie van A-evenementen met specifieke voorbeelden (klein festival, braderie, straatspeeldag) en benadrukt het minimale risico, terwijl de originele tekst alleen spreekt over evenementenmarkt en horeca-evenement.",
+          "source_urls": [
+            "https://www.rotterdam.nl/vergunning-a-evenement-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U vraagt online de vergunning aan. Als persoon logt u in met DigiD. Als bedrijf logt u in met eHerkenning niveau 2.",
+          "original_reference": "Voor een A-evenement kunt u de vergunning online aanvragen. Als persoon logt u in met DigiD, en als bedrijf logt u in met eHerkenning niveau 2.",
+          "note": "De bronpagina formuleert het als een verplichting ('U vraagt online aan') terwijl de originele tekst het als een mogelijkheid presenteert ('kunt u aanvragen').",
+          "source_urls": [
+            "https://www.rotterdam.nl/vergunning-a-evenement-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont twee belangrijke verschillen tussen de originele tekst en de bronpagina's. Het eerste verschil betreft de definitie en voorbeelden van A-evenementen, waarbij de bronpagina specifieker is en het risicoprofiel benoemt. Het tweede verschil zit in de formulering van de aanvraagprocedure, waarbij de bronpagina dit als verplichting stelt terwijl de originele tekst dit als optie presenteert. Voor veel onderdelen uit de originele tekst (zoals kosten, bezwaren en specifieke aanvraagperioden) is geen verificatie mogelijk omdat deze informatie niet in de geciteerde bronpagina's staat."
+  }
+}

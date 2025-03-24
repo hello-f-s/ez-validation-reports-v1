@@ -1,0 +1,93 @@
+{
+  "context": {
+    "municipality": {
+      "name": "APELDOORN",
+      "contact": {
+        "phone": "14 055",
+        "email": "gemeente@apeldoorn.nl",
+        "website": "http://www.apeldoorn.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 19,
+    "false_sentences": 2,
+    "accuracy_percentage": 90.5,
+    "false_statements": [
+      {
+        "sentence": "Leidinggevenden moeten ten minste 21 jaar zijn (Artikel 8 lid 1c).",
+        "status": "false",
+        "note": "Volgens de huidige Alcoholwet moeten leidinggevenden minimaal 18 jaar zijn, niet 21 jaar."
+      },
+      {
+        "sentence": "Vergunning alcoholvrij bedrijf: Deze vergunning is vereist als u alcoholvrije dranken zoals koffie en frisdrank wilt verkopen in uw bedrijf.",
+        "status": "false",
+        "note": "Er bestaat geen specifieke vergunning voor het verkopen van alcoholvrije dranken in Apeldoorn. Voor het verkopen van alleen alcoholvrije dranken is geen aparte vergunning nodig."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 2,
+    "invalid_urls": 4,
+    "accuracy_percentage": 33.3,
+    "valid_urls_list": [
+      "https://www.apeldoorn.nl/werken-en-leren/ondernemen/ontheffingen-en-vergunningen/alcoholvergunning-1",
+      "https://www.apeldoorn.nl/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.apeldoorn.nl/werken-en-leren/ondernemen/ontheffingen-en-vergunningen/vergunning-alcoholvrij-bedrijf",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.apeldoorn.nl/werken-en-leren/ondernemen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.apeldoorn.nl/ondernemen/een-bedrijf-in-de-horeca",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.apeldoorn.nl/werken-en-leren/ondernemen/ontheffingen-en-vergunningen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "maximaal 2 maanden",
+          "original_reference": "maximaal 8 weken",
+          "note": "De bronpagina vermeldt een behandelingsduur van maximaal 2 maanden, terwijl de originele tekst spreekt over maximaal 8 weken. Hoewel dit in de praktijk op hetzelfde neerkomt, is er een verschil in formulering.",
+          "source_urls": [
+            "https://www.apeldoorn.nl/werken-en-leren/ondernemen/ontheffingen-en-vergunningen/alcoholvergunning-1"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "€ 1.478,38 voor een alcoholvergunning, € 422,36 voor een wijziging alcoholvergunning, € 158,34 voor een melding wijziging leidinggevende",
+          "original_reference": "De kosten voor het aanvragen van een alcoholvergunning bedragen €1.478,38. Voor een wijziging in de alcoholvergunning zijn de kosten €422,36, en voor een melding van een wijziging van een leidinggevende bedragen de kosten €158,34.",
+          "note": "De kosten zijn exact hetzelfde in beide bronnen.",
+          "source_urls": [
+            "https://www.apeldoorn.nl/werken-en-leren/ondernemen/ontheffingen-en-vergunningen/alcoholvergunning-1"
+          ]
+        }
+      ]
+    },
+    "summary": "Bij vergelijking van de bronnen met de originele tekst is er slechts één klein verschil gevonden in de formulering van de behandelingsduur (2 maanden versus 8 weken). De vermelde kosten zijn volledig consistent. Veel van de gedetailleerde voorwaarden en vereisten uit de originele tekst zijn niet terug te vinden in de geciteerde bronpagina's, maar dit betekent niet dat deze onjuist zijn - ze zijn simpelweg niet zichtbaar in de beschikbare bronfragmenten."
+  }
+}

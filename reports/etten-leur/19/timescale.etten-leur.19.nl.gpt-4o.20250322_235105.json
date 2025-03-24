@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ETTEN-LEUR",
+      "contact": {
+        "phone": "14 076",
+        "email": "info@etten-leur.nl",
+        "website": "http://www.etten-leur.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 13,
+    "false_sentences": 2,
+    "accuracy_percentage": 86.7,
+    "false_statements": [
+      {
+        "sentence": "Eén kansspelautomaat voor 12 maanden: € 56,50",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Etten-Leur is het correcte tarief voor één kansspelautomaat € 57,50 per 12 maanden"
+      },
+      {
+        "sentence": "Twee kansspelautomaten voor 12 maanden: € 90,50",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Etten-Leur is het correcte tarief voor twee kansspelautomaten € 91,50 per 12 maanden"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.etten-leur.nl/product/loterijvergunning/",
+      "https://www.etten-leur.nl/product/kansspelautomaten/",
+      "https://www.etten-leur.nl/product/omgevingsvergunning-aanvragen/",
+      "https://www.etten-leur.nl/product/horeca-en-slijterijvergunning/",
+      "https://www.etten-leur.nl/product/terrasvergunning/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://website.com/kansspelautomaten",
+        "reason": "INVALID: Error scraping https://website.com/kansspelautomaten: 404 Client Error: Not Found for url: https://www.website.com/kansspelautomaten"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "het horecabedrijf rechtmatig wordt uitgeoefend, het café en het restaurantbezoek op zichzelf staat en waar geen andere activiteiten plaatsvinden, waaraan een zelfstandige betekenis kan worden gegeven, de activiteiten zich in belangrijke mate richten op personen van 18 jaar en ouder.",
+          "original_reference": "In hoogdrempelige horeca-inrichtingen zijn maximaal 2 speelautomaten toegestaan.",
+          "note": "De originele tekst noemt alleen het maximum aantal automaten voor hoogdrempelige inrichtingen, terwijl de brontekst specifieke voorwaarden definieert waaraan een hoogdrempelige inrichting moet voldoen.",
+          "source_urls": [
+            "https://www.etten-leur.nl/product/kansspelautomaten/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een laagdrempelige inrichting is een inrichting, waar rechtmatig het horecabedrijf wordt uitgeoefend die verder niet voldoet aan de eisen voor een hoogdrempelige inrichting.",
+          "original_reference": "In laagdrempelige inrichtingen zijn maximaal 2 behendigheidsautomaten toegestaan.",
+          "note": "De originele tekst geeft geen definitie van een laagdrempelige inrichting, terwijl de brontekst deze wel specificeert.",
+          "source_urls": [
+            "https://www.etten-leur.nl/product/kansspelautomaten/"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de mate van detail in de definities en voorwaarden. De originele tekst is minder specifiek over de exacte criteria voor hoog- en laagdrempelige horeca-inrichtingen, terwijl de bronpagina deze wel duidelijk definieert. De overige informatie over aantallen toegestane automaten, kosten en procedures komt overeen."
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "context": {
+    "municipality": {
+      "name": "BOXTEL",
+      "contact": {
+        "phone": "(0411) 65 59 11",
+        "email": "gemeente@boxtel.nl",
+        "website": "http://www.boxtel.nl"
+      }
+    },
+    "service": {
+      "id": 7,
+      "name": "Kabels en leidingen aanleggen en beheren"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Voor omgevingsvergunningen stelt de Wet kwaliteitsborging voor het bouwen dat de beslissing binnen 8 weken na indiening van de aanvraag moet worden genomen (https://www.omgevingswetboxtel.nl).",
+        "status": "false",
+        "note": "De reguliere procedure voor een omgevingsvergunning duurt inderdaad 8 weken, maar dit wordt bepaald door de Omgevingswet en niet door de Wet kwaliteitsborging voor het bouwen (Wkb). De Wkb gaat over de technische bouwkwaliteit en het toezicht daarop."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.boxtel.nl/vragen-en-antwoorden-informatieavond-juli",
+      "https://www.boxtel.nl/aanvragen-regelen-en-melden/vergunningen/evenementen-en-horeca",
+      "https://www.boxtel.nl/omgevingswet",
+      "https://www.boxtel.nl/wet-kwaliteitsborging-voor-het-bouwen-wkb",
+      "https://www.boxtel.nl/omgevingsvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.omgevingswetboxtel.nl",
+        "reason": "INVALID: Error scraping https://www.omgevingswetboxtel.nl: HTTPSConnectionPool(host='www.omgevingswetboxtel.nl', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x107503e00>: Failed to resolve 'www.omgevingswetboxtel.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Geen specifieke informatie over kabels en leidingen gevonden in de geciteerde bronnen",
+          "original_reference": "Voor het aanleggen van kabels en leidingen in de grond moet je rekening houden met de fysieke leefomgeving zoals beschreven in het omgevingsplan",
+          "note": "De originele tekst bevat specifieke informatie over kabels en leidingen die niet wordt ondersteund door de geciteerde bronpagina's. De bronnen bevatten geen informatie over deze specifieke activiteit.",
+          "source_urls": [
+            "https://www.boxtel.nl/omgevingsvergunning",
+            "https://www.boxtel.nl/omgevingswet"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Geen verwijzing naar omgevingswetboxtel.nl in de bronnen",
+          "original_reference": "https://www.omgevingswetboxtel.nl",
+          "note": "De originele tekst verwijst herhaaldelijk naar omgevingswetboxtel.nl, maar deze URL komt niet voor in de geciteerde bronpagina's. Dit kan duiden op verouderde of onjuiste verwijzingen.",
+          "source_urls": [
+            "https://www.boxtel.nl/omgevingsvergunning",
+            "https://www.boxtel.nl/omgevingswet"
+          ]
+        }
+      ]
+    },
+    "summary": "De originele inhoud bevat specifieke informatie over kabels en leidingen en verwijzingen naar omgevingswetboxtel.nl die niet worden ondersteund door de geciteerde bronnen. Dit suggereert dat de originele tekst mogelijk verouderd is of gebaseerd is op niet-gepubliceerde informatie. De geciteerde bronnen bevatten alleen algemene informatie over omgevingsvergunningen en de omgevingswet, zonder specifieke details over kabels en leidingen."
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OPMEER",
+      "contact": {
+        "phone": "(0226) 36 33 33",
+        "email": "gemeente@opmeer.nl",
+        "website": "http://www.opmeer.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 13,
+    "false_sentences": 4,
+    "accuracy_percentage": 76.5,
+    "false_statements": [
+      {
+        "sentence": "Het tarief voor een aanvraag om een Alcoholwetvergunning bedraagt € 451,80.",
+        "status": "false",
+        "note": "Dit bedrag komt niet overeen met de actuele tarieven van gemeente Opmeer voor 2024"
+      },
+      {
+        "sentence": "Het tarief voor een melding als bedoeld in artikel 30 van de Alcoholwet bedraagt € 369,85.",
+        "status": "false",
+        "note": "Dit tarief is niet correct volgens de huidige legesverordening van gemeente Opmeer"
+      },
+      {
+        "sentence": "Voor een aanvraag om een ontheffing als bedoeld in artikel 35 van de Alcoholwet kost het € 112,40.",
+        "status": "false",
+        "note": "Dit bedrag komt niet overeen met de actuele tarieven van gemeente Opmeer"
+      },
+      {
+        "sentence": "Voor een meer jaren ontheffing kost het € 177,05.",
+        "status": "false",
+        "note": "Dit tarief is niet correct volgens de huidige legesverordening van gemeente Opmeer"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 4,
+    "invalid_urls": 2,
+    "accuracy_percentage": 66.7,
+    "valid_urls_list": [
+      "https://www.opmeer.nl/alcoholwetvergunning",
+      "https://www.opmeer.nl/geluidsoverlast-veroorzaken",
+      "https://www.opmeer.nl/exploitatievergunning-horecabedrijf",
+      "https://www.opmeer.nl/omgevingsvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://gemeenteopmeer.nl",
+        "reason": "INVALID: Error scraping https://gemeenteopmeer.nl: 439 Client Error: status code 439 for url: https://gemeenteopmeer.nl/"
+      },
+      {
+        "url": "https://www.opmeer.nl/voorwerp-plaatsen-op-of-aan-de-weg",
+        "reason": "INVALID: Error scraping https://www.opmeer.nl/voorwerp-plaatsen-op-of-aan-de-weg: 404 Client Error: Not Found for url: https://www.opmeer.nl/voorwerp-plaatsen-op-of-aan-de-weg"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Para-commerciële sportverenigingen (waarbij horeca niet de hoofdactiviteit is) zonder terras zijn vrijgesteld van de exploitatievergunningsplicht volgens artikel 2:28 lid 3 van de APV",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt deze vrijstelling voor para-commerciële sportverenigingen niet, wat een belangrijke uitzondering is op de vergunningplicht",
+          "source_urls": [
+            "https://www.opmeer.nl/exploitatievergunning-horecabedrijf"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Tevens is de Wet bevordering integriteitsbeoordelingen door het openbaar bestuurd (Wet Bibob) veelal van toepassing. U dient naast uw aanvraag om een Alcoholwetvergunning ook de vragenformulieren Bibob in te dienen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de vereiste Bibob-vragenformulieren die moeten worden ingediend bij de aanvraag",
+          "source_urls": [
+            "https://www.opmeer.nl/alcoholwetvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden: 1) Een vrijstelling van de exploitatievergunningplicht voor para-commerciële sportverenigingen zonder terras die niet in de originele tekst staat vermeld, en 2) De verplichting tot het indienen van Bibob-vragenformulieren bij de alcoholwetvergunning aanvraag die ontbreekt in de originele tekst. Deze informatie is relevant voor de volledigheid van de vergunningaanvraag."
+  }
+}

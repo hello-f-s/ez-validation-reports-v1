@@ -1,0 +1,102 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HAARLEM",
+      "contact": {
+        "phone": "14 023",
+        "email": "antwoord@haarlem.nl",
+        "website": "http://www.haarlem.nl"
+      }
+    },
+    "service": {
+      "id": 18,
+      "name": "Ventvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 42,
+    "true_sentences": 38,
+    "false_sentences": 4,
+    "accuracy_percentage": 90.5,
+    "false_statements": [
+      {
+        "sentence": "Deze vergunning is noodzakelijk voor verschillende activiteiten zoals het bouwen, exploiteren van een bedrijf, of het aanleggen van een toegangspad.",
+        "status": "false",
+        "note": "Een ventvergunning is specifiek bedoeld voor ambulante handel (verkoop op straat), niet voor bouwen of bedrijfsexploitatie. Dit zijn aparte vergunningen."
+      },
+      {
+        "sentence": "- **Exploitatievergunning**: € 605 per aanvraag.",
+        "status": "false",
+        "note": "Dit tarief is niet correct volgens de actuele legesverordening van de gemeente Haarlem."
+      },
+      {
+        "sentence": "- **Aanlegvergunning**: € 698 per aanvraag.",
+        "status": "false",
+        "note": "Dit specifieke tarief komt niet overeen met de actuele legesverordening van de gemeente Haarlem."
+      },
+      {
+        "sentence": "- **Uitweg-/Inritvergunning**: € 521 per aanvraag.",
+        "status": "false",
+        "note": "Dit tarief komt niet overeen met de actuele legesverordening van de gemeente Haarlem."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://haarlem.nl/bouwvergunning",
+      "https://haarlem.nl/exploitatievergunning",
+      "https://haarlem.nl/aanlegvergunning",
+      "https://haarlem.nl/uitweg-inritvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.haarlem.nl/ufs/formulieren.eb?id=aanvraag_exploitatievergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u alcohol serveert, hebt u een alcoholvergunning nodig en hoeft u geen exploitatievergunning aan te vragen.",
+          "original_reference": "Exploitatievergunning: Benodigd voor het serveren van eten en drinken.",
+          "note": "De originele tekst is incorrect. Een exploitatievergunning is alleen nodig voor het serveren van non-alcoholische dranken. Voor alcoholische dranken is een aparte alcoholvergunning nodig.",
+          "source_urls": [
+            "https://haarlem.nl/exploitatievergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Nadat u een aanvraag hebt ingediend krijgt u meestal binnen 8 weken bericht over de uitkomst.",
+          "original_reference": "De verwerkingstijd voor aanvragen is meestal 8 weken, maar kan met 6 weken verlengd worden voor uitgebreide of complexe aanvragen. In uitzonderlijke gevallen kan het proces 26 weken duren.",
+          "note": "De bronpagina voor uitweg/inritvergunning vermeldt alleen een standaard verwerkingstijd van 8 weken, zonder vermelding van mogelijke verlengingen.",
+          "source_urls": [
+            "https://haarlem.nl/uitweg-inritvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "uittreksel uit de Kamer van Koophandel (niet ouder dan 3 maanden)",
+          "original_reference": "U heeft een uittreksel van de Kamer van Koophandel nodig",
+          "note": "De originele tekst specificeert niet dat het KvK-uittreksel niet ouder mag zijn dan 3 maanden.",
+          "source_urls": [
+            "https://haarlem.nl/exploitatievergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn enkele belangrijke verschillen gevonden tussen de originele tekst en de bronpagina's. De meest significante verschillen betreffen de voorwaarden voor de exploitatievergunning (specifiek met betrekking tot alcohol), de geldigheidsduur van het KvK-uittreksel, en de beschrijving van de verwerkingstijden. De originele tekst bevat enkele onnauwkeurigheden en mist belangrijke details die wel in de bronpagina's staan vermeld."
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ARNHEM",
+      "contact": {
+        "phone": "null",
+        "email": "null",
+        "website": "http://www.arnhem.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 11,
+    "false_sentences": 2,
+    "accuracy_percentage": 84.6,
+    "false_statements": [
+      {
+        "sentence": "Parkeervergunning (maandag tot zondag 7.00 - 19.00 uur): € 317 per jaar of € 177 per half jaar.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Arnhem kost een parkeervergunning voor bedrijven € 322,80 per jaar of € 180,40 per half jaar voor deze tijden."
+      },
+      {
+        "sentence": "Parkeervergunning (maandag tot zondag 00.00 - 24.00 uur): € 538 per jaar of € 286 per half jaar.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Arnhem kost een parkeervergunning voor bedrijven € 548,25 per jaar of € 291,75 per half jaar voor 24-uurs parkeren."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.arnhem.nl/Inwoners/parkeren/parkeervergunning_bezoekers",
+      "https://www.arnhem.nl/Ondernemers/parkeren_en_verkeer/parkeervergunning_bedrijven",
+      "https://www.arnhem.nl/Ondernemers/parkeren_en_verkeer/ontheffing_verkeersregels_wegenverkeerswet",
+      "https://www.arnhem.nl/Ondernemers/parkeren_en_verkeer",
+      "https://www.arnhem.nl/Inwoners/parkeren/parkeervergunning_bewoners"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Uitzodering hierop zijn de Burgemeesterswijk, Heijenoord, de Transvaalbuurt en het Nieuwe Kadekwartier. Hier worden 2 parkeervergunningen per bedrijf en/ of per vestigingsadres verleend",
+          "original_reference": "Per bedrijf en/of per vestigingsadres wordt één parkeervergunning verleend; uitzonderingen zijn er voor bepaalde wijken.",
+          "note": "De originele tekst noemt alleen dat er uitzonderingen zijn, terwijl de brontekst specifiek aangeeft dat in Burgemeesterswijk, Heijenoord, Transvaalbuurt en Nieuwe Kadekwartier 2 vergunningen worden verleend.",
+          "source_urls": [
+            "https://www.arnhem.nl/Ondernemers/parkeren_en_verkeer/parkeervergunning_bedrijven"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Heeft u parkeergelegenheid op eigen terrein, dan trekken wij dit af van het totaal aantal vergunningen dat u kunt aanvragen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over de aftrek van parkeergelegenheid op eigen terrein bij het bepalen van het aantal vergunningen.",
+          "source_urls": [
+            "https://www.arnhem.nl/Ondernemers/parkeren_en_verkeer/parkeervergunning_bedrijven"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U ontvangt binnen 5 werkdagen na uw aanvragen een reactie.",
+          "original_reference": "Voor een ontheffing ontvangt u binnen 5 werkdagen na uw aanvraag een reactie.",
+          "note": "De originele tekst specificeert alleen de reactietermijn voor ontheffingen, terwijl dit volgens de bron geldt voor zowel tijdelijke als vaste ontheffingen.",
+          "source_urls": [
+            "https://www.arnhem.nl/Ondernemers/parkeren_en_verkeer/ontheffing_verkeersregels_wegenverkeerswet"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de specifieke details over het aantal toegestane parkeervergunningen in bepaalde wijken, de aftrekregeling voor parkeergelegenheid op eigen terrein, en de verduidelijking van de reactietermijn voor verschillende soorten ontheffingen. De originele tekst mist enkele belangrijke nuances en details die wel in de bronpagina's worden vermeld."
+  }
+}

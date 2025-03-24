@@ -1,0 +1,70 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HILVERSUM",
+      "contact": {
+        "phone": "14 035",
+        "email": "gemeente@hilversum.nl",
+        "website": "http://www.hilversum.nl"
+      }
+    },
+    "service": {
+      "id": 9,
+      "name": "Mobiele puinbreker gebruiken"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 20,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.2,
+    "false_statements": [
+      {
+        "sentence": "Bron: Bekijk ook: Hilversum Mediastad",
+        "status": "false",
+        "note": "De link naar hilversum.mediastad.nl is onjuist. De officiële website van de gemeente Hilversum is hilversum.nl. Er bestaat geen officieel domein 'hilversum.mediastad.nl'."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://hilversum.nl/vergunningen/vergunningen-voor-bouwen-verbouwen/mobiele-puinbreker",
+      "https://hilversum.nl/vergunningen/vergunningen-voor-bouwen-verbouwen",
+      "https://hilversum.nl/ondernemen/vergunningen-meldingen-voor-ondernemers",
+      "https://hilversum.nl/bestuur-organisatie/bekendmakingen",
+      "https://hilversum.nl/vergunningen/vergunningen-voor-bouwen-verbouwen/omgevingsvergunning-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://hilversum.mediastad.nl",
+        "reason": "INVALID: Error scraping https://hilversum.mediastad.nl: HTTPSConnectionPool(host='hilversum.mediastad.nl', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1061cbb10>: Failed to resolve 'hilversum.mediastad.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U doet hiervoor een online melding. Minimaal 15 werkdagen voor u met de werkzaamheden begint.",
+          "original_reference": "De online melding moet minimaal 4 weken voor aanvang van de werkzaamheden worden gedaan.",
+          "note": "Er is een tegenstrijdigheid in de aanmeldingstermijn. De bron vermeldt 15 werkdagen terwijl de originele tekst 4 weken voorschrijft.",
+          "source_urls": [
+            "https://hilversum.nl/vergunningen/vergunningen-voor-bouwen-verbouwen/mobiele-puinbreker"
+          ]
+        }
+      ]
+    },
+    "summary": "Er is één significant verschil gevonden tussen de originele inhoud en de bronnen, namelijk de vereiste aanmeldingstermijn voor het gebruik van een mobiele puinbreker. De bronnen vermelden verschillende termijnen (15 werkdagen versus 4 weken), wat verwarrend kan zijn voor aanvragers. Voor het overige komt de informatie in de bronnen overeen met de originele inhoud wat betreft voorwaarden, benodigde gegevens en procedures."
+  }
+}

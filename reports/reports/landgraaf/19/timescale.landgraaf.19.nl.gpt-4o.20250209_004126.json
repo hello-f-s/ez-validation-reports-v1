@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LANDGRAAF",
+      "contact": {
+        "phone": "14 045",
+        "email": "gemeente@landgraaf.nl",
+        "website": "http://www.landgraaf.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor een aanwezigheidsvergunning bedragen € 56,50 voor één gok- of kansspelautomaat.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van de gemeente Landgraaf zijn de kosten voor een aanwezigheidsvergunning voor één kansspelautomaat € 58,00 en niet € 56,50."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.landgraaf.nl/form/informatieverzoek-indienen",
+      "https://www.landgraaf.nl/loterij-prijsvraag-bingo-organiseren",
+      "https://www.landgraaf.nl/exploitatievergunning-horecabedrijf",
+      "https://www.landgraaf.nl/gokautomaat-plaatsen",
+      "https://www.landgraaf.nl/aanvragen-en-regelen-ondernemers"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.landgraaf.nl/exploitatievergunning-horecabedrijf\">gemeente.landgraaf.nl/exploitatievergunning-horecabedrijf</a></li>",
+        "reason": "INVALID: Error scraping https://www.landgraaf.nl/exploitatievergunning-horecabedrijf\">gemeente.landgraaf.nl/exploitatievergunning-horecabedrijf</a></li>: 404 Client Error: Not Found for url: https://www.landgraaf.nl/exploitatievergunning-horecabedrijf%22%3Egemeente.landgraaf.nl/exploitatievergunning-horecabedrijf%3C/a%3E%3C/li%3E"
+      },
+      {
+        "url": "https://www.landgraaf.nl/gokautomaat-plaatsen\">gemeente.landgraaf.nl/gokautomaat-plaatsen</a></li>",
+        "reason": "INVALID: Error scraping https://www.landgraaf.nl/gokautomaat-plaatsen\">gemeente.landgraaf.nl/gokautomaat-plaatsen</a></li>: 404 Client Error: Not Found for url: https://www.landgraaf.nl/gokautomaat-plaatsen%22%3Egemeente.landgraaf.nl/gokautomaat-plaatsen%3C/a%3E%3C/li%3E"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Een aanwezigheidsvergunning kost € 56,50 voor 1 gok- of kansspelautomaat. Voor elke volgende gok- of kansspelautomaat betaalt u € 34,00.",
+          "original_reference": "De kosten voor een aanwezigheidsvergunning bedragen € 56,50 voor één gok- of kansspelautomaat. Voor elke volgende gok- of kansspelautomaat betaalt u € 34,00.",
+          "note": "De kosten komen exact overeen met de originele tekst",
+          "source_urls": [
+            "https://www.landgraaf.nl/gokautomaat-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een behendigheidsautomaat is bijvoorbeeld een flipperkast of videospelletjes. Voor een behendigheidsautomaat heeft u geen aanwezigheidsvergunning nodig.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst maakt geen onderscheid tussen gokautomaten en behendigheidsautomaten, terwijl dit wel relevant is voor de vergunningplicht",
+          "source_urls": [
+            "https://www.landgraaf.nl/gokautomaat-plaatsen"
+          ]
+        }
+      ]
+    },
+    "summary": "De broninhoud komt grotendeels overeen met de originele tekst. Het belangrijkste verschil is dat de bronnen aanvullende informatie bevatten over behendigheidsautomaten, waarvoor geen vergunning nodig is. Dit is een belangrijk onderscheid dat ontbreekt in de originele tekst. De tarieven en andere voorwaarden zijn consistent tussen beide versies."
+  }
+}

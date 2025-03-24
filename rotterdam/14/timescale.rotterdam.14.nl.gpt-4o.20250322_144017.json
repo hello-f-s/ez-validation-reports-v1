@@ -1,0 +1,80 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ROTTERDAM",
+      "contact": {
+        "phone": "14 010",
+        "email": "null",
+        "website": "http://www.rotterdam.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 11,
+    "false_sentences": 2,
+    "accuracy_percentage": 84.6,
+    "false_statements": [
+      {
+        "sentence": "Vul het formulier 'Aanvraag parkeervergunning bedrijf of schoolbestuur' in en stuur het samen met de benodigde documenten per post naar Gemeente Rotterdam, Publiekszaken, Postbus 70013, 3000 KR Rotterdam.",
+        "status": "false",
+        "note": "Het correcte postadres voor parkeervergunningen is: Gemeente Rotterdam, Afdeling Parkeren, Postbus 11111, 3000 EW Rotterdam"
+      },
+      {
+        "sentence": "U hoort binnen 4 weken na aanvraag of u de vergunning krijgt.",
+        "status": "false",
+        "note": "Volgens de officiële website van Rotterdam wordt er binnen 8 weken een besluit genomen over de aanvraag van een parkeervergunning voor bedrijven, niet binnen 4 weken"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 8,
+    "valid_urls": 0,
+    "invalid_urls": 8,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.rotterdam.nl/parkeervergunning-voor-bezoekers-aanvragen/start-parkeervergunning-voor-bezoekers-per-post-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.rotterdam.nl/parkeervergunning-bewoner-aanvragen/start-parkeervergunning-bewoner-online-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.rotterdam.nl/parkeervergunning-bedrijven-organisaties-en-instellingen-aanvragen/start-parkeervergunning-bedrijven-organisaties-en-instellingen-per-post-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.rotterdam.nl/start-parkeervergunning-bedrijven-organisaties-en-instellingen-per-post-aanvragen",
+        "reason": "INVALID: Error scraping https://www.rotterdam.nl/start-parkeervergunning-bedrijven-organisaties-en-instellingen-per-post-aanvragen: 404 Client Error: Not Found for url: https://www.rotterdam.nl/start-parkeervergunning-bedrijven-organisaties-en-instellingen-per-post-aanvragen"
+      },
+      {
+        "url": "https://www.rotterdam.nl/ontheffing-parkeerverbod-aanvragen/start-ontheffing-parkeerverbod-per-post-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.rotterdam.nl/ontheffing-parkeerverbod-aanvragen/start-ontheffing-parkeerverbod-online-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.rotterdam.nl/start-ontheffing-parkeerverbod-per-post-aanvragen",
+        "reason": "INVALID: Error scraping https://www.rotterdam.nl/start-ontheffing-parkeerverbod-per-post-aanvragen: 404 Client Error: Not Found for url: https://www.rotterdam.nl/start-ontheffing-parkeerverbod-per-post-aanvragen"
+      },
+      {
+        "url": "https://www.rotterdam.nl/start-ontheffing-parkeerverbod-online-aanvragen",
+        "reason": "INVALID: Error scraping https://www.rotterdam.nl/start-ontheffing-parkeerverbod-online-aanvragen: 404 Client Error: Not Found for url: https://www.rotterdam.nl/start-ontheffing-parkeerverbod-online-aanvragen"
+      }
+    ]
+  }
+}

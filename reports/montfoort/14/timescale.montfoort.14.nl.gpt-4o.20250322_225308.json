@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MONTFOORT",
+      "contact": {
+        "phone": "(0348) 47 64 00",
+        "email": "info@montfoort.nl",
+        "website": "http://www.montfoort.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 9,
+    "true_sentences": 8,
+    "false_sentences": 1,
+    "accuracy_percentage": 88.9,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor de eerste parkeervergunning of ontheffing zijn € 135,95 per kalenderjaar, en voor de tweede vergunning op hetzelfde adres betaalt u € 203,90 per jaar.",
+        "status": "false",
+        "note": "Deze specifieke bedragen voor parkeervergunningen zijn niet terug te vinden op de officiële website van gemeente Montfoort. De gemeente publiceert geen vaste tarieven voor ondernemersparkeervergunningen op hun website."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.montfoort.nl/Alle_onderwerpen/Vergunningen_en_ontheffingen",
+      "https://www.montfoort.nl/Alle_onderwerpen/Vergunningen_en_ontheffingen/Horeca_en_MKB",
+      "https://www.montfoort.nl/Alle_onderwerpen/Vergunningen_en_ontheffingen/Caravan_parkeren_op_openbare_weg",
+      "https://www.montfoort.nl/Alle_onderwerpen/Ondernemen/Horeca_en_MKB",
+      "https://www.montfoort.nl/Alle_onderwerpen/Verkeer_en_vervoer/Parkeren/Parkeren_met_parkeerschijf_blauwe_zone"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U krijgt de ontheffing als u voldoet aan de volgende voorwaarden:\n- Parkeren neemt niet te veel parkeerruimte in.\n- Het straatbeeld wordt niet nadelig beïnvloed.\n- U parkeert op een door de gemeente bij ontheffing aangewezen plaats.\n- Parkeren levert geen overlast op voor de bewoners en weggebruikers",
+          "original_reference": "Er zijn geen specifieke voorwaarden vermeld voor het aanvragen van een parkeervergunning of ontheffing voor ondernemers.",
+          "note": "De bronpagina vermeldt wel degelijk specifieke voorwaarden voor het parkeren met ontheffing, terwijl de originele tekst stelt dat er geen voorwaarden zijn.",
+          "source_urls": [
+            "https://www.montfoort.nl/Alle_onderwerpen/Vergunningen_en_ontheffingen/Caravan_parkeren_op_openbare_weg"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een ontheffing om lang te kunnen parkeren in het blauwe zone gebied kunt u alleen krijgen als u in het gebied woont of een bedrijf hebt.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina specificeert dat een ontheffing alleen mogelijk is voor bewoners of bedrijven in het blauwe zone gebied. Deze belangrijke voorwaarde ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.montfoort.nl/Alle_onderwerpen/Verkeer_en_vervoer/Parkeren/Parkeren_met_parkeerschijf_blauwe_zone"
+          ]
+        }
+      ]
+    },
+    "summary": "De originele tekst mist belangrijke voorwaarden die wel in de bronpagina's staan vermeld. Het gaat specifiek om de voorwaarden voor het verkrijgen van een parkeerontheffing en de beperking dat ontheffingen alleen beschikbaar zijn voor bewoners of bedrijven in het blauwe zone gebied. Deze informatie is essentieel voor aanvragers en zou in de originele tekst opgenomen moeten worden."
+  }
+}

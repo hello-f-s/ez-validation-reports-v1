@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MAASSLUIS",
+      "contact": {
+        "phone": "14 010",
+        "email": "gemeente@maassluis.nl",
+        "website": "http://www.maassluis.nl"
+      }
+    },
+    "service": {
+      "id": 20,
+      "name": "Vergunning voor seksbedrijf"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 31,
+    "true_sentences": 30,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.8,
+    "false_statements": [
+      {
+        "sentence": "Bezoekadres: Koningshoek 93.050, 3144 BA Maassluis",
+        "status": "false",
+        "note": "Het correcte bezoekadres van de gemeente Maassluis is Koningshoek 93.050, 3144 BA Maassluis. Het huisnummer is incorrect weergegeven met een punt (93.050). Het juiste adres is Koningshoek 93050."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.maassluis.nl/seksbedrijf-starten",
+      "https://www.maassluis.nl/exploitatievergunning-horecabedrijf",
+      "https://www.maassluis.nl/alcoholwetvergunning",
+      "https://www.maassluis.nl/standplaats-aanvragen",
+      "https://www.maassluis.nl/geluidsoverlast-veroorzaken"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "De eigenaar en de eventuele beheerder(s) zijn 21 jaar of ouder. De prostituees die er werken zijn 21 jaar of ouder.",
+          "original_reference": "De eigenaar en de eventuele beheerder(s) moeten 21 jaar of ouder zijn. De prostituees die er werken moeten 21 jaar of ouder zijn.",
+          "note": "De leeftijdsvereisten komen exact overeen, alleen de formulering verschilt licht",
+          "source_urls": [
+            "https://www.maassluis.nl/seksbedrijf-starten"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Koningshoek 93.050",
+          "original_reference": "Koningshoek 93.050, 3144 BA Maassluis",
+          "note": "Het bezoekadres in de bronpagina's is onvolledig weergegeven zonder postcode en plaatsnaam",
+          "source_urls": [
+            "https://www.maassluis.nl/geluidsoverlast-veroorzaken"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "e-mailadres: gemeente@maassluis.nl",
+          "original_reference": "Email: vergunningen@maassluis.nl",
+          "note": "Het e-mailadres verschilt tussen de originele tekst en de bronpagina",
+          "source_urls": [
+            "https://www.maassluis.nl/geluidsoverlast-veroorzaken"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont enkele kleine maar belangrijke verschillen in contactgegevens. Het e-mailadres in de originele tekst (vergunningen@maassluis.nl) verschilt van dat in de bronpagina (gemeente@maassluis.nl). Ook is het bezoekadres in de bronpagina's minder volledig weergegeven. De kernvoorwaarden en vereisten voor het starten van een seksbedrijf zijn wel consistent tussen beide bronnen."
+  }
+}

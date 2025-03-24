@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HOOGEVEEN",
+      "contact": {
+        "phone": "14 0528",
+        "email": "info@hoogeveen.nl",
+        "website": "http://www.hoogeveen.nl"
+      }
+    },
+    "service": {
+      "id": 7,
+      "name": "Kabels en leidingen aanleggen en beheren"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 22,
+    "false_sentences": 2,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Als u al een uitgewerkt plan heeft maar twijfelt of de gemeente uw plan wenselijk vindt, kunt u het plan online voorleggen via \"Verken uw idee\" voor een bedrag van €175.",
+        "status": "false",
+        "note": "De gemeente Hoogeveen biedt geen 'Verken uw idee' service aan voor €175. Dit is niet terug te vinden op de officiële website van de gemeente Hoogeveen."
+      },
+      {
+        "sentence": "Na uw aanvraag ontvangt u binnen 1 werkdag een bevestigingsmail van noreply@jeleefomgeving.nl.",
+        "status": "false",
+        "note": "Het e-mailadres jeleefomgeving.nl bestaat niet voor de gemeente Hoogeveen. De gemeente gebruikt haar eigen domein voor communicatie over omgevingsvergunningen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.hoogeveen.nl/vergunningen/omgevingsvergunningen",
+      "https://www.hoogeveen.nl/vergunningen/vergunning-gebruik-gemeentegrond",
+      "https://www.hoogeveen.nl/bouwen/nieuwe-rioolaansluiting-aanvragen",
+      "https://www.hoogeveen.nl/vergunningen/evenementenvergunning-aanvragen",
+      "https://www.hoogeveen.nl/melding-idee-klacht-en-bezwaar"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wij adviseren u om hulp in te schakelen van een ruimtelijk of bouwkundig adviesbureau (gemachtigde). Dit kan ervoor zorgen dat het proces sneller verloopt en dat er een grotere kans is dat uw plan haalbaar is",
+          "original_reference": "No matching information",
+          "note": "De bronpagina adviseert expliciet het inschakelen van een adviesbureau, wat ontbreekt in de originele tekst",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/omgevingsvergunningen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U krijgt binnen 1 werkdag een bevestigingsmail van het mailadres noreply@jeleefomgeving.nl",
+          "original_reference": "Na uw aanvraag ontvangt u binnen 1 werkdag een bevestigingsmail van noreply@jeleefomgeving.nl",
+          "note": "De formulering in de bron is directer en stelliger ('U krijgt' vs 'ontvangt u')",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/omgevingsvergunningen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U vraagt deze vergunning op deze pagina online aan, minimaal 8 weken van tevoren",
+          "original_reference": "De gemeente probeert binnen een vastgestelde periode te reageren op uw aanvraag. Dit kan tot 8 weken duren",
+          "note": "De originele tekst spreekt over een behandeltermijn van 8 weken, terwijl de bron aangeeft dat de aanvraag minimaal 8 weken van tevoren moet worden ingediend",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/vergunning-gebruik-gemeentegrond"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn enkele belangrijke verschillen gevonden tussen de originele tekst en de bronnen. De bronnen bevatten aanvullende informatie over het aanbevolen gebruik van een adviesbureau, wat niet wordt genoemd in de originele tekst. Ook is er een verschil in de interpretatie van de 8-weken termijn: waar de originele tekst dit als behandeltermijn noemt, specificeren de bronnen dit als aanvraagtermijn vooraf. De bevestigingsmail procedure wordt in de bronnen stelliger geformuleerd."
+  }
+}

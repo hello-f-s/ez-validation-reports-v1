@@ -1,0 +1,89 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HOUTEN",
+      "contact": {
+        "phone": "(030) 639 26 11",
+        "email": "gemeentehuis@houten.nl",
+        "website": "http://www.houten.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 22,
+    "false_sentences": 2,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Betrokken personen hebben een periode van maximaal zes weken om bezwaar in te dienen na de publicatie van het besluit over de omgevingsvergunning in <i>Houten Actueel</i> en op de gemeentelijke website.",
+        "status": "false",
+        "note": "De publicatie gebeurt in 'Houtens Nieuws' en niet in 'Houten Actueel'. Dit werd eerder in de tekst correct vermeld."
+      },
+      {
+        "sentence": "Het is mogelijk om zowel digitaal als op papier een aanvraag in te dienen.",
+        "status": "false",
+        "note": "Volgens de gemeente Houten kunnen omgevingsvergunningen sinds de invoering van de Omgevingswet alleen nog digitaal worden aangevraagd via het Omgevingsloket."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.houten.nl/wonen-en-leefomgeving/bouw-en-verbouw/omgevingsvergunning/aanvraagprocedure-omgevingsvergunning",
+      "https://www.houten.nl/wonen-en-leefomgeving/bouw-en-verbouw/omgevingsvergunning",
+      "https://www.houten.nl/wonen-en-leefomgeving/omgevingswet",
+      "https://www.houten.nl/wonen-en-leefomgeving/bouw-en-verbouw/omgevingsvergunning/principeverzoek/-ruimtelijk-initiatief",
+      "https://www.houten.nl/wonen-en-leefomgeving/bouw-en-verbouw/omgevingsvergunning/omgevingsvergunning-reguliere-en-uitgebreide-procedure",
+      "https://www.houten.nl/"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De omgevingsvergunning kunt u digitaal aanvragen via omgevingswet.overheid.nl",
+          "original_reference": "U vraagt de omgevingsvergunning digitaal aan via het Omgevingsloket online",
+          "note": "De originele tekst verwijst naar het oude Omgevingsloket online, terwijl de bron het nieuwe portaal omgevingswet.overheid.nl noemt dat sinds 1 januari 2024 wordt gebruikt",
+          "source_urls": [
+            "https://www.houten.nl/wonen-en-leefomgeving/bouw-en-verbouw/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Uw aanvraag wordt vervolgens gepubliceerd in het Houtens Nieuws",
+          "original_reference": "wordt uw aanvraag gepubliceerd in Houtens Nieuws",
+          "note": "Er is een verschil in de publicatiekanalen: de originele tekst noemt alleen Houtens Nieuws, terwijl het besluit volgens de bronnen ook op www.houten.nl en in Houten Actueel wordt gepubliceerd",
+          "source_urls": [
+            "https://www.houten.nl/wonen-en-leefomgeving/bouw-en-verbouw/omgevingsvergunning/aanvraagprocedure-omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De pilot is vooralsnog alleen bedoeld voor het plaatsen van dakkapellen bij woningen",
+          "original_reference": "flitsprocedure voor snelle afhandeling van bepaalde aanvragen, zoals voor dakkapellen",
+          "note": "De originele tekst suggereert dat de flitsprocedure voor meerdere type aanvragen geldt, terwijl de bron specificeert dat het alleen voor dakkapellen bij woningen is",
+          "source_urls": [
+            "https://www.houten.nl/wonen-en-leefomgeving/bouw-en-verbouw/omgevingsvergunning/omgevingsvergunning-reguliere-en-uitgebreide-procedure"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen het nieuwe aanvraagportaal (omgevingswet.overheid.nl), de bredere publicatie van vergunningsbesluiten via meerdere kanalen, en een specifiekere afbakening van de flitsprocedure die alleen voor dakkapellen bij woningen geldt. Deze verschillen zijn vooral relevant voor de actualiteit en nauwkeurigheid van de informatie voor aanvragers."
+  }
+}

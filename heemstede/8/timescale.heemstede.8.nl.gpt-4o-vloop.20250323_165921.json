@@ -1,0 +1,96 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HEEMSTEDE",
+      "contact": {
+        "phone": "(023) 548 58 68",
+        "email": "gemeente@heemstede.nl",
+        "website": "http://www.heemstede.nl"
+      }
+    },
+    "service": {
+      "id": 8,
+      "name": "Marktvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 22,
+    "false_sentences": 2,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Vaste plaats per kwartaal per strekkende meter: € 45,85",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Heemstede is dit tarief niet correct. Het huidige tarief voor een vaste plaats per kwartaal per strekkende meter is anders."
+      },
+      {
+        "sentence": "1 marktstandplaats (exclusief kraamgeld) of standwerkersplaats: € 16",
+        "status": "false",
+        "note": "Dit tarief komt niet overeen met de actuele tarieven van de gemeente Heemstede voor marktstandplaatsen zoals vermeld in de legesverordening."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 4,
+    "invalid_urls": 2,
+    "accuracy_percentage": 66.7,
+    "valid_urls_list": [
+      "https://www.heemstede.nl/vergunningen/standplaatsvergunning-aanvragen",
+      "https://www.heemstede.nl/vergunningen/marktstandplaatsvergunning",
+      "https://www.heemstede.nl/bestuur-en-organisatie/omgevingswet/de-omgevingswet-voor-u-als-inwoner-of-ondernemer",
+      "https://www.heemstede.nl"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.heemstede.nl/vergunningen/milieu-omgevingsvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.heemstede.nl/ondernemen/bedrijvenloket",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vergunning voor maximaal 6 dagen: € 26,05, Vergunning langer dan 6 dagen: € 90,05",
+          "original_reference": "Vaste plaats per kwartaal per strekkende meter: € 45,85, 1 marktstandplaats: € 16, 1 standwerkersplaats per dag: € 16, Standwerkersplaats of dagplaats per strekkende meter: € 4",
+          "note": "De tariefstructuur in de bronpagina is anders dan in de originele tekst. De bron noemt tarieven voor korte en lange termijn vergunningen die niet in de originele tekst staan.",
+          "source_urls": [
+            "https://www.heemstede.nl/vergunningen/standplaatsvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor de weekmarkt op woensdag heeft u voor een standplaats altijd een marktstandplaatsvergunning nodig. Als u geen vaste plaats heeft, kunt u meedingen naar een plaats als meeloper.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat specifieke informatie over de woensdagmarkt en de mogelijkheid om als meeloper mee te dingen, wat niet in de originele tekst staat vermeld.",
+          "source_urls": [
+            "https://www.heemstede.nl/vergunningen/marktstandplaatsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een gegadigde met branchevreemde artikelen krijgt voorrang bij het toewijzen van een dagplaats",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt een voorrangsregeling voor branchevreemde artikelen bij dagplaatsen, wat niet in de originele tekst staat.",
+          "source_urls": [
+            "https://www.heemstede.nl/vergunningen/marktstandplaatsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de tariefstructuur voor vergunningen, waarbij de bron andere categorieën en bedragen noemt dan de originele tekst. Daarnaast bevat de bronpagina aanvullende belangrijke informatie over de woensdagmarkt, de mogelijkheid om als meeloper deel te nemen en een voorrangsregeling voor branchevreemde artikelen die niet in de originele tekst zijn opgenomen."
+  }
+}

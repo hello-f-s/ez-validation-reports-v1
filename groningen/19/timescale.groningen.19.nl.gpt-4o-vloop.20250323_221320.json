@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "GRONINGEN",
+      "contact": {
+        "phone": "14 050",
+        "email": "info@groningen.nl",
+        "website": "http://gemeente.groningen.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "Vanaf 1 januari 2025 kunt u de vergunning digitaal aanvragen.",
+        "status": "false",
+        "note": "Deze vergunning kan nu al digitaal worden aangevraagd via de website van de gemeente Groningen. De genoemde datum van 1 januari 2025 is onjuist."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://gemeente.groningen.nl/speelautomatenvergunning-aanvragen",
+      "https://gemeente.groningen.nl/exploitatievergunning-horeca-aanvragen",
+      "https://gemeente.groningen.nl/loterij-aanvragen",
+      "https://gemeente.groningen.nl/alcoholvergunning-aanvragen",
+      "https://gemeente.groningen.nl/parkeervergunning-voor-bedrijven",
+      "https://gemeente.groningen.nl"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vanaf 1 april 2024 hoeft u daarop alleen nog de natuurlijke personen te vermelden die eigenaar/bestuurders rechtspersoon/vennoten zijn.",
+          "original_reference": "Vanaf 1 januari 2025 kunt u de vergunning digitaal aanvragen.",
+          "note": "Er worden verschillende datums genoemd voor wijzigingen in de procedures. De bronpagina noemt 1 april 2024, terwijl de originele tekst 1 januari 2025 noemt.",
+          "source_urls": [
+            "https://gemeente.groningen.nl/alcoholvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Nodig bij aanvraag: huurcontract, eigendomsbewijs van het pand en de inhuur- of arbeidscontracten van de onmiddellijke leidinggevenden.",
+          "original_reference": "Huurcontract of eigendomsbewijs.",
+          "note": "De bronpagina vereist meer documenten bij de aanvraag, waaronder arbeidscontracten van leidinggevenden, die niet genoemd worden in de originele tekst.",
+          "source_urls": [
+            "https://gemeente.groningen.nl/alcoholvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "In een traditioneel café of restaurant (een 'hoogdrempelige' inrichting) mag u maximaal 2 kansspelautomaten (gokkasten) plaatsen.",
+          "original_reference": "In een traditioneel café of restaurant (een 'hoogdrempelige' inrichting) zijn maximaal 2 kansspelautomaten toegestaan.",
+          "note": "De informatie over het maximaal aantal toegestane kansspelautomaten in hoogdrempelige inrichtingen komt overeen.",
+          "source_urls": [
+            "https://gemeente.groningen.nl/speelautomatenvergunning-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de implementatiedatum van nieuwe procedures (april 2024 vs januari 2025) en aanvullende documentvereisten die niet in de originele tekst worden genoemd. De kernvoorwaarden voor het aantal toegestane automaten zijn consistent tussen beide bronnen."
+  }
+}

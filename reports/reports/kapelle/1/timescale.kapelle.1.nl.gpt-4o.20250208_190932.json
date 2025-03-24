@@ -1,0 +1,89 @@
+{
+  "context": {
+    "municipality": {
+      "name": "KAPELLE",
+      "contact": {
+        "phone": "(0113) 33 31 10",
+        "email": "gemeente@kapelle.nl",
+        "website": "http://www.kapelle.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "Leidinggevenden moeten minimaal 21 jaar zijn, beschikken over een erkend diploma of certificaat van Sociale Hygiëne van Lcsh, en geregistreerd staan in het Register Sociale Hygiëne.",
+        "status": "false",
+        "note": "De minimumleeftijd voor leidinggevenden is 18 jaar, niet 21 jaar volgens de Alcoholwet die ook in gemeente Kapelle van toepassing is."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 3,
+    "invalid_urls": 4,
+    "accuracy_percentage": 42.9,
+    "valid_urls_list": [
+      "https://kapelle.nl/exploitatievergunning-horecabedrijf",
+      "https://kapelle.nl/alcoholwet-vergunning",
+      "https://kapelle.nl/alcohol-schenken-tijdens-evenement"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.kapelle.nl/node/224",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.gemeentekapelle.nl\">Gemeente",
+        "reason": "INVALID: Error scraping https://www.gemeentekapelle.nl\">Gemeente: HTTPSConnectionPool(host='www.gemeentekapelle.nl%22%3egemeente', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106308910>: Failed to resolve 'www.gemeentekapelle.nl%22%3egemeente' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.kapelle.nl/node/225",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.gemeentekapelle.nl",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een bedrijfs- of ondernemingsplan, een document waaruit blijkt dat de aanvrager over de ruimte beschikt, een nauwkeurige plattegrond van het horecabedrijf (inclusief terras), waarop ook de oppervlakte van de verschillende ruimtes/terras staan aangegeven",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt aanvullende documenten die nodig zijn voor de aanvraag die niet in de originele tekst staan vermeld, waaronder een bedrijfsplan en plattegrond.",
+          "source_urls": [
+            "https://kapelle.nl/exploitatievergunning-horecabedrijf"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor verenigingen en stichtingen die alcohol schenken gelden extra voorwaarden: De uren waarop alcohol wordt geschonken en de leeftijdsgrens is op een goed zichtbare plek opgehangen. Er zijn binnen de vereniging of stichting minstens twee leidinggevenden met een SVH Verklaring Sociale Hygiëne.",
+          "original_reference": "Gewaarmerkt bestuursreglement, indien van toepassing voor verenigingen en stichtingen.",
+          "note": "De bronpagina specificeert aanvullende voorwaarden voor verenigingen en stichtingen die niet in de originele tekst staan, zoals zichtbare aanduiding van schenkuren en minimaal twee leidinggevenden met SVH verklaring.",
+          "source_urls": [
+            "https://kapelle.nl/alcoholwet-vergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten belangrijke aanvullende informatie die niet in de originele tekst staat. Het gaat vooral om extra documentatievereisten voor de aanvraag (zoals bedrijfsplan en plattegrond) en specifiekere voorwaarden voor verenigingen en stichtingen. Deze informatie is essentieel voor een complete aanvraag maar ontbreekt in de originele tekst."
+  }
+}

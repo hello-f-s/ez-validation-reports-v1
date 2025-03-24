@@ -1,0 +1,97 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LANDGRAAF",
+      "contact": {
+        "phone": "14 045",
+        "email": "gemeente@landgraaf.nl",
+        "website": "http://www.landgraaf.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "Er zijn kosten verbonden aan het in behandeling nemen van een conceptverzoek.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Landgraaf is het indienen van een conceptverzoek (vooroverleg) kosteloos. Alleen voor de definitieve vergunningaanvraag worden legeskosten in rekening gebracht."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 9,
+    "valid_urls": 6,
+    "invalid_urls": 3,
+    "accuracy_percentage": 66.7,
+    "valid_urls_list": [
+      "https://www.landgraaf.nl/omgevingsvergunning-of-melding",
+      "https://www.landgraaf.nl/het-omgevingsloket",
+      "https://www.landgraaf.nl/aanvragen-en-regelen-ondernemers",
+      "https://www.landgraaf.nl/evenement-organiseren",
+      "https://www.landgraaf.nl/form/informatieverzoek-indienen",
+      "https://www.landgraaf.nl/omgevingsloket"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.landgraaf.nl/omgevingsvergunning",
+        "reason": "INVALID: Error scraping https://www.landgraaf.nl/omgevingsvergunning: 404 Client Error: Not Found for url: https://www.landgraaf.nl/omgevingsvergunning"
+      },
+      {
+        "url": "https://www.landgraaf.nl/omgevingsvergunning\">Gemeente",
+        "reason": "INVALID: Error scraping https://www.landgraaf.nl/omgevingsvergunning\">Gemeente: 404 Client Error: Not Found for url: https://www.landgraaf.nl/omgevingsvergunning%22%3EGemeente"
+      },
+      {
+        "url": "https://www.landgraaf.nl/omgevingsloket\">Gemeente",
+        "reason": "INVALID: Error scraping https://www.landgraaf.nl/omgevingsloket\">Gemeente: 404 Client Error: Not Found for url: https://www.landgraaf.nl/omgevingsloket%22%3EGemeente"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vanaf 1 januari 2024 gaat dit via het (nieuwe) Omgevingsloket.",
+          "original_reference": "Gebruik het Omgevingsloket om uw aanvraag in te dienen",
+          "note": "De bronnen specificeren een concrete startdatum voor het nieuwe Omgevingsloket (1 januari 2024), terwijl de originele tekst dit niet vermeldt. Dit is een belangrijk tijdsgebonden detail.",
+          "source_urls": [
+            "https://www.landgraaf.nl/het-omgevingsloket"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Klein commercieel evenement of snuffelmarkt: € 43,05. Grootschalig commercieel evenement: € 113,45.",
+          "original_reference": "De legeskosten voor een vergunningaanvraag of melding variëren per type.",
+          "note": "De bronnen vermelden specifieke tarieven voor verschillende soorten evenementen, terwijl de originele tekst alleen algemeen spreekt over variërende legeskosten.",
+          "source_urls": [
+            "https://www.landgraaf.nl/evenement-organiseren"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De Omgevingswet vervangt een groot aantal wetten zoals de Wabo, de Wet ruimtelijke ordening, de Wet natuurbescherming, het Activiteitenbesluit en het Bouwbesluit.",
+          "original_reference": "No matching information",
+          "note": "De bronnen geven specifieke informatie over welke wetten de Omgevingswet vervangt, wat ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.landgraaf.nl/omgevingsvergunning-of-melding"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de implementatiedatum van het nieuwe Omgevingsloket (1 januari 2024), specifieke kostentarieven voor verschillende vergunningen, en aanvullende details over de wetten die de Omgevingswet vervangt. Deze informatie maakt de voorwaarden en procedures concreter dan in de originele tekst."
+  }
+}

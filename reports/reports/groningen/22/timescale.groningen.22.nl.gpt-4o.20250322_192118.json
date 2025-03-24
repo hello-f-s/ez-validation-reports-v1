@@ -1,0 +1,89 @@
+{
+  "context": {
+    "municipality": {
+      "name": "GRONINGEN",
+      "contact": {
+        "phone": "14 050",
+        "email": "info@groningen.nl",
+        "website": "http://gemeente.groningen.nl"
+      }
+    },
+    "service": {
+      "id": 22,
+      "name": "Woonruimte splitsen of samenvoegen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "Voor het kadastraal splitsen van bedrijfsruimte is geen vergunning nodig.",
+        "status": "false",
+        "note": "Voor het kadastraal splitsen van bedrijfsruimte is wel degelijk een vergunning nodig. Volgens de gemeente Groningen is een onttrekkingsvergunning vereist wanneer men bedrijfsruimte wil splitsen of onttrekken aan de bestemming."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 6,
+    "invalid_urls": 1,
+    "accuracy_percentage": 85.7,
+    "valid_urls_list": [
+      "https://www.gemeente.groningen.nl/woning-splitsen",
+      "https://gemeente.groningen.nl/omgevingsvergunning-aanvragen",
+      "https://gemeente.groningen.nl/bedrijf-starten",
+      "https://gemeente.groningen.nl/woning-splitsen",
+      "https://www.gemeente.groningen.nl/omgevingsvergunning-aanvragen",
+      "https://gemeente.groningen.nl/voorwaarden-voor-kamerverhuur"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://gemeente.groningen.nl/onttrekkingsvergunning-voor-bedrijfsdoeleinden-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De indeling van het gebouw moet geschikt zijn voor splitsing",
+          "original_reference": "Het pand moet goed onderhouden zijn en geschikt voor splitsing",
+          "note": "De bronformulering is specifieker door te verwijzen naar 'de indeling van het gebouw' in plaats van algemene geschiktheid",
+          "source_urls": [
+            "https://www.gemeente.groningen.nl/woning-splitsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als uw woning 15 jaar of ouder is, hebt u een splitsingsvergunning nodig",
+          "original_reference": "De woning moet minstens 15 jaar oud zijn",
+          "note": "De brontekst formuleert het als voorwaarde voor vergunningplicht, terwijl de originele tekst het als algemene voorwaarde stelt",
+          "source_urls": [
+            "https://www.gemeente.groningen.nl/woning-splitsen"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "De termijn van een splitsingsvergunning is maximaal 8 weken. Deze termijn kan worden verlengd met 6 weken",
+          "original_reference": "Termijn voor een splitsingsvergunning is maximaal 8 weken, verlengbaar met 6 weken",
+          "note": "De termijnen komen exact overeen in beide teksten",
+          "source_urls": [
+            "https://www.gemeente.groningen.nl/woning-splitsen"
+          ]
+        }
+      ]
+    },
+    "summary": "De verschillen tussen de originele tekst en de bronnen zijn voornamelijk tekstueel van aard, waarbij de bronnen soms specifiekere of anders geformuleerde informatie bevatten. De kernvoorwaarden en termijnen blijven inhoudelijk gelijk. Opvallend is dat sommige informatie uit de originele tekst (zoals de kosten voor Integraal Vooroverleg en details over bezwaren) niet terug te vinden is in de geciteerde bronnen."
+  }
+}

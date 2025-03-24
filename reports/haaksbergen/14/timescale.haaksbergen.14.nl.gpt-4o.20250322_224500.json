@@ -1,0 +1,85 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HAAKSBERGEN",
+      "contact": {
+        "phone": "(053) 573 45 67",
+        "email": "gemeente@haaksbergen.nl",
+        "website": "http://www.haaksbergen.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "U kunt de parkeervergunning aanvragen via het bestemde aanvraagformulier, in te vullen en op te sturen met DigiD.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Haaksbergen is er geen mogelijkheid om een parkeervergunning digitaal met DigiD aan te vragen. De aanvraag kan alleen persoonlijk aan de balie van het gemeentehuis worden gedaan."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 3,
+    "invalid_urls": 3,
+    "accuracy_percentage": 50.0,
+    "valid_urls_list": [
+      "https://www.haaksbergen.nl/Vergunningen/101107-Omgevingsvergunning.html",
+      "https://www.haaksbergen.nl/Vergunningen/Evenementenvergunning.html",
+      "https://www.haaksbergen.nl/Vergunningen/Exploitatievergunning.html"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.haaksbergen.nl/ondernemers/Ondernemend-Haaksbergen/Ondernemersplein.html",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.haaksbergen.nl/parkeervergunning-bewoners",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.haaksbergen.nl/inwoner/Wegen-verkeer-en-parkeren/Parkeervergunning.html",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het aanvragen van een vergunning kan alleen digitaal. Het is dus niet mogelijk om een aanvraag uit te printen en op te sturen.",
+          "original_reference": "Het formulier kan ook aan de balie van het gemeentehuis worden aangevraagd en ingevuld.",
+          "note": "Er is een tegenstrijdigheid in de aanvraagmethode. De bronpagina stelt dat aanvragen alleen digitaal mogelijk is, terwijl de originele tekst aangeeft dat het ook aan de balie kan.",
+          "source_urls": [
+            "https://www.haaksbergen.nl/Vergunningen/101107-Omgevingsvergunning.html"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een reguliere vergunningsperiode duurt acht weken. Dit is een termijn van orde. [...] Een uitgebreide procedure duurt zes maanden.",
+          "original_reference": "Hier kan geen specifieke informatie over gevonden worden op de website van deze gemeente.",
+          "note": "De originele tekst vermeldt geen verwerkingstijd, terwijl de bronpagina specifieke termijnen noemt van 8 weken voor reguliere en 6 maanden voor uitgebreide procedures.",
+          "source_urls": [
+            "https://www.haaksbergen.nl/Vergunningen/101107-Omgevingsvergunning.html"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele tekst en de bronnen. Ten eerste is er een tegenstrijdigheid in de aanvraagmethode, waarbij de bron alleen digitale aanvragen toestaat terwijl de originele tekst ook balie-aanvragen noemt. Ten tweede geeft de bron specifieke verwerkingstijden aan die niet in de originele tekst worden vermeld. Deze verschillen kunnen van invloed zijn op de verwachtingen van aanvragers."
+  }
+}

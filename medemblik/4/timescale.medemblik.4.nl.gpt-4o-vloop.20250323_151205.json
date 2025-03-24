@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MEDEMBLIK",
+      "contact": {
+        "phone": "(0229) 85 60 00",
+        "email": "info@medemblik.nl",
+        "website": "http://www.medemblik.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 26,
+    "false_sentences": 2,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "Bezoekadres: Dick Ketlaan 21, 1687 CD Wognum",
+        "status": "false",
+        "note": "Het juiste bezoekadres van de gemeente Medemblik is Dick Ketlaan 21, 1687 CD Wognum én Oosterhaven 1, 1671 AA Medemblik. De gemeente heeft twee locaties voor publieke dienstverlening."
+      },
+      {
+        "sentence": "Als er binnen 5 werkdagen geen contact met u wordt opgenomen nadat u het evenement heeft gemeld als zijnde klein eendaags, kunt u ervan uitgaan dat het evenement kan doorgaan.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Medemblik moet u 10 werkdagen wachten voordat u ervan uit kunt gaan dat het evenement kan doorgaan als u geen bericht heeft ontvangen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.medemblik.nl/vergunningen/evenementen-en-activiteiten/evenementen-melden-en-vergunning-aanvragen",
+      "https://www.medemblik.nl/vergunningen/evenementen-en-activiteiten/kansspel/loterij-organiseren",
+      "https://www.medemblik.nl/bouwen-en-verbouwen/omgevingswet-en-bouwvergunningen/omgevingsvergunning",
+      "https://www.medemblik.nl/vergunningen/alcohol-en-horeca/alcoholwetvergunning",
+      "https://www.medemblik.nl/ondernemen/aanbestedingen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "op zondag beginnen de activiteiten na 13.00 uur",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat activiteiten op zondag pas na 13:00 uur mogen beginnen. Dit is een belangrijke aanvullende tijdsbeperking.",
+          "source_urls": [
+            "https://www.medemblik.nl/vergunningen/evenementen-en-activiteiten/evenementen-melden-en-vergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "de activiteiten mogen alleen plaatsvinden op plekken waar verkeer en hulpdiensten geen last hebben, zoals: de rijbaan, het (brom)fietspad, een parkeerplaats",
+          "original_reference": "Het evenement mag verkeer en hulpdiensten niet hinderen.",
+          "note": "De bronpagina geeft specifieke voorbeelden van locaties waar activiteiten niet mogen plaatsvinden, terwijl de originele tekst alleen een algemene regel noemt.",
+          "source_urls": [
+            "https://www.medemblik.nl/vergunningen/evenementen-en-activiteiten/evenementen-melden-en-vergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "fiets-, wandel- of skeelertocht",
+          "original_reference": "fiets- of wandeltochten",
+          "note": "De bronpagina noemt ook skeelertochten als voorbeeld van kleine eendaagse evenementen, wat niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.medemblik.nl/vergunningen/evenementen-en-activiteiten/evenementen-melden-en-vergunning-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten enkele belangrijke aanvullende details die niet in de originele tekst staan, met name de beperking voor zondagsactiviteiten (start na 13:00 uur), specifiekere locatievoorschriften voor evenementen, en een extra voorbeeld van toegestane activiteiten (skeelertochten). Deze verschillen zijn relevant voor de volledigheid van de informatie voor evenementorganisatoren."
+  }
+}

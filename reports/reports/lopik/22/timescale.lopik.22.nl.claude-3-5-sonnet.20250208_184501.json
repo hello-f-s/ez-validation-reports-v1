@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LOPIK",
+      "contact": {
+        "phone": "(0348) 55 99 55",
+        "email": "gemeente@lopik.nl",
+        "website": "http://www.lopik.nl"
+      }
+    },
+    "service": {
+      "id": 22,
+      "name": "Woonruimte splitsen of samenvoegen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "U dient een omgevingsvergunning aan te vragen via www.omgevingswet.overheid.nl.",
+        "status": "false",
+        "note": "Het correcte aanvraagportaal voor een omgevingsvergunning is www.omgevingsloket.nl, niet www.omgevingswet.overheid.nl"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.lopik.nl/tijdelijke-verhuur-leegstaand-pand",
+      "https://www.lopik.nl/omgevingsvergunning",
+      "https://www.lopik.nl/milieu-vergunning-of-melding",
+      "https://www.lopik.nl/huisvestingsvergunning",
+      "https://www.lopik.nl/woning-splitsen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "In enkele gevallen (karakteristieke en monumentale panden) is het in het Landelijk Gebied mogelijk om uw woning te splitsen in twee zelfstandige wooneenheden. Binnen de kernen kunnen bepaalde panden soms in meerdere wooneenheden gesplitst worden.",
+          "original_reference": "In het landelijk gebied is splitsing van een woning in twee zelfstandige wooneenheden alleen mogelijk voor karakteristieke en monumentale panden. Binnen de kernen kunnen bepaalde panden soms in meerdere wooneenheden gesplitst worden.",
+          "note": "De informatie over splitsingsmogelijkheden in zowel het landelijk gebied als binnen de kernen komt exact overeen",
+          "source_urls": [
+            "https://www.lopik.nl/woning-splitsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U dient bij de gemeente een omgevingsvergunning aan te vragen via www.omgevingswet.overheid.nl",
+          "original_reference": "U dient een omgevingsvergunning aan te vragen via www.omgevingswet.overheid.nl",
+          "note": "De brontekst specificeert dat de aanvraag 'bij de gemeente' moet worden gedaan, wat een kleine maar relevante toevoeging is voor de duidelijkheid",
+          "source_urls": [
+            "https://www.lopik.nl/woning-splitsen"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse blijkt dat de meeste informatie consistent is tussen de originele tekst en de bronnen. Er is slechts één klein maar relevant verschil gevonden in de specificatie van de aanvraagprocedure. De bronnen bevatten geen tegenstrijdige informatie over kosten, termijnen of voorwaarden ten opzichte van de originele tekst."
+  }
+}

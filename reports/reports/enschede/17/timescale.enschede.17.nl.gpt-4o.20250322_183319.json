@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ENSCHEDE",
+      "contact": {
+        "phone": "14 053",
+        "email": "postbus20@enschede.nl",
+        "website": "http://www.enschede.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 10,
+    "false_sentences": 1,
+    "accuracy_percentage": 90.9,
+    "false_statements": [
+      {
+        "sentence": "U moet precariobelasting betalen omdat het terras op gemeentegrond staat.",
+        "status": "false",
+        "note": "De gemeente Enschede heft geen precariobelasting voor terrassen op gemeentegrond. Dit is onjuist volgens de actuele regelgeving van de gemeente Enschede."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.enschede.nl/vergunning-voor-kamerverhuur",
+      "https://www.enschede.nl/alcoholvergunning-aanvragen",
+      "https://www.enschede.nl/regels-voor-terrassen",
+      "https://www.enschede.nl/graven-in-de-openbare-ruimte",
+      "https://www.enschede.nl/wegomleiding-of-verkeersmaatregelen-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.enschede.nl/nadere-regels-terrassen-bij-horecabedrijven",
+        "reason": "INVALID: Error scraping https://www.enschede.nl/nadere-regels-terrassen-bij-horecabedrijven: 404 Client Error: Not Found for url: https://www.enschede.nl/nadere-regels-terrassen-bij-horecabedrijven"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Terrassen zijn alleen toegestaan bij horecabedrijven met een horecabestemming of functieaanduiding horeca.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet deze belangrijke basisvoorwaarde voor het hebben van een terras.",
+          "source_urls": [
+            "https://www.enschede.nl/regels-voor-terrassen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Er zijn verschillende soorten terrassen. Voor ieder soort terras gelden andere regels. Op de terrassenkaart stadserf Enschede staat welk soort terras op welke plek in de binnenstad mag.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst maakt geen melding van verschillende soorten terrassen en de terrassenkaart die aangeeft waar welk type terras is toegestaan.",
+          "source_urls": [
+            "https://www.enschede.nl/regels-voor-terrassen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het bouwwerk moet voldoen aan de eisen uit de welstandsparagraaf terrassen stadserf Enschede.",
+          "original_reference": "Voor het plaatsen van bouwwerken op een terras binnen het stadserf kan een omgevingsvergunning vereist zijn.",
+          "note": "De originele tekst vermeldt niet de specifieke welstandseisen waaraan bouwwerken moeten voldoen.",
+          "source_urls": [
+            "https://www.enschede.nl/regels-voor-terrassen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie die niet in de originele tekst staat, waaronder de basisvoorwaarde dat terrassen alleen zijn toegestaan bij horecabedrijven met een horecabestemming, het bestaan van verschillende soorten terrassen met bijbehorende terrassenkaart, en specifieke welstandseisen voor bouwwerken. Deze informatie is essentieel voor ondernemers die een terras willen exploiteren."
+  }
+}

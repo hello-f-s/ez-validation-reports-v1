@@ -1,0 +1,92 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HAAKSBERGEN",
+      "contact": {
+        "phone": "(053) 573 45 67",
+        "email": "gemeente@haaksbergen.nl",
+        "website": "http://www.haaksbergen.nl"
+      }
+    },
+    "service": {
+      "id": 13,
+      "name": "Omzettingsvergunning voor kamerverhuur aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "De reguliere vergunningsprocedure duurt acht weken.",
+        "status": "false",
+        "note": "Volgens de gemeente Haaksbergen duurt de reguliere procedure maximaal 8 weken, maar kan deze eenmalig met 6 weken worden verlengd. Deze mogelijke verlenging wordt niet genoemd in de zin, wat de informatie onvolledig en daarmee onjuist maakt."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.haaksbergen.nl/ondernemers/Bedrijfstarten/Vergunningen-voor-bedrijven.html",
+      "https://www.haaksbergen.nl/Vergunningen/101107-Omgevingsvergunning.html",
+      "https://www.haaksbergen.nl/ondernemers/Bedrijfstarten.html",
+      "https://www.haaksbergen.nl",
+      "https://www.haaksbergen.nl/ondernemers/Bedrijfstarten/Vergunningen-voor-bedrijven/Milieuvergunning-of-melding-bedrijven.html"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.haaksbergen.nl/ondernemers/Ondernemend-Haaksbergen/Ondernemersplein.html",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.omgevingsloket.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het aanvragen van een vergunning kan alleen digitaal. Het is dus niet mogelijk om een aanvraag uit te printen en op te sturen. Heeft u hulp nodig met het invullen van de vergunningcheck of het doen van een aanvraag? Neem contact op via vergunningen@haaksbergen.nl om een gesprek in te plannen met een medewerker.",
+          "original_reference": "De aanvraag verloopt volledig digitaal via het Omgevingsloket. U kunt geen papieren aanvraag indienen.",
+          "note": "De bron biedt specifiekere informatie over hulp bij het aanvragen en vermeldt expliciet de mogelijkheid om een gesprek in te plannen met een medewerker voor ondersteuning.",
+          "source_urls": [
+            "https://www.haaksbergen.nl/Vergunningen/101107-Omgevingsvergunning.html"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Dit is een termijn van orde. Dat betekent dat overschrijding van de termijn niet leidt tot sancties of andere gevolgen.",
+          "original_reference": "De reguliere vergunningsprocedure duurt acht weken.",
+          "note": "De bron geeft belangrijke aanvullende informatie over de aard van de termijn, namelijk dat overschrijding geen sancties tot gevolg heeft.",
+          "source_urls": [
+            "https://www.haaksbergen.nl/Vergunningen/101107-Omgevingsvergunning.html"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "In de Omgevingswet is participatie voor het eerst juridisch vastgelegd als vereiste voor Omgevingsvergunningen.",
+          "original_reference": "Participatie kan vereist zijn.",
+          "note": "De bron is specifieker over de wettelijke basis van participatie en geeft aan dat dit een verplicht onderdeel is geworden, terwijl de originele tekst dit als mogelijkheid presenteert.",
+          "source_urls": [
+            "https://www.haaksbergen.nl/Vergunningen/101107-Omgevingsvergunning.html"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende details over de vergunningsprocedure die niet in de originele tekst staan. Met name de mogelijkheid tot persoonlijke ondersteuning bij de aanvraag, de niet-bindende aard van de proceduretermijn, en de wettelijke verplichting tot participatie zijn belangrijke verschillen. Deze informatie maakt de voorwaarden en procedures duidelijker voor aanvragers."
+  }
+}

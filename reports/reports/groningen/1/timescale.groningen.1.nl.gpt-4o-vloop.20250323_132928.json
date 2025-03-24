@@ -1,0 +1,90 @@
+{
+  "context": {
+    "municipality": {
+      "name": "GRONINGEN",
+      "contact": {
+        "phone": "14 050",
+        "email": "info@groningen.nl",
+        "website": "http://gemeente.groningen.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 20,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.2,
+    "false_statements": [
+      {
+        "sentence": "Geen alcoholvergunning is nodig voor het schenken van zwak alcoholische dranken tijdens evenementen, hiervoor is een ontheffing artikel 35 Alcoholwet vereist.",
+        "status": "false",
+        "note": "Deze stelling is niet volledig correct. Voor het schenken van zowel zwak- als sterk alcoholische dranken tijdens evenementen is een ontheffing artikel 35 Alcoholwet nodig. Het is niet zo dat er geen alcoholvergunning nodig is specifiek voor zwak alcoholische dranken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 3,
+    "invalid_urls": 2,
+    "accuracy_percentage": 60.0,
+    "valid_urls_list": [
+      "https://gemeente.groningen.nl/alcoholvergunning-aanvragen",
+      "https://gemeente.groningen.nl/alcoholwet-ontheffing-aanvragen",
+      "https://gemeente.groningen.nl/exploitatievergunning-horeca-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://gemeente.groningen.nl/nieuwe-leidinggevende-of-andere-aanpassing-alcoholvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://gemeente.groningen.nl/onttrekkingsvergunning-voor-bedrijfsdoeleinden-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Tijdens de openingsuren van de slijterij moet er altijd een leidinggevende aanwezig zijn.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de verplichting dat er tijdens openingsuren altijd een leidinggevende aanwezig moet zijn in een slijterij. Dit is een belangrijke aanvullende voorwaarde.",
+          "source_urls": [
+            "https://gemeente.groningen.nl/alcoholvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De leidinggevenden moeten zijn ingeschreven in het SVH register en zij moeten 21 jaar of ouder zijn.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de specifieke vereisten voor leidinggevenden (SVH-registratie en minimumleeftijd van 21 jaar).",
+          "source_urls": [
+            "https://gemeente.groningen.nl/alcoholwet-ontheffing-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bedrijven die al voor 1 januari 2025 bestaan, moeten in sommige gevallen van de burgemeester een vergunning aanvragen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over deze specifieke verplichting voor bestaande bedrijven vóór 2025.",
+          "source_urls": [
+            "https://gemeente.groningen.nl/exploitatievergunning-horeca-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten enkele belangrijke aanvullende vereisten die niet in de originele tekst staan vermeld: de verplichte aanwezigheid van een leidinggevende in slijterijen tijdens openingsuren, specifieke kwalificatie-eisen voor leidinggevenden (SVH-registratie en minimumleeftijd), en een specifieke vergunningsverplichting voor bestaande bedrijven vóór 2025. Deze informatie is essentieel voor horecaondernemers maar ontbreekt in de originele tekst."
+  }
+}

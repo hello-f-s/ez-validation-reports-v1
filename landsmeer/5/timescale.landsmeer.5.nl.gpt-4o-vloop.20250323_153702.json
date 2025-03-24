@@ -1,0 +1,87 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LANDSMEER",
+      "contact": {
+        "phone": "(020) 487 71 11",
+        "email": "gemeente@Landsmeer.nl",
+        "website": "http://www.landsmeer.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "Indien er wijzigingen zijn in uw horecabedrijf of u beëindigt de exploitatie, dient u dit binnen drie dagen aan de gemeente te melden.",
+        "status": "false",
+        "note": "Volgens de APV van gemeente Landsmeer moet een wijziging of beëindiging binnen 14 dagen worden gemeld aan de gemeente, niet binnen 3 dagen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.landsmeer.nl/ondernemers/vergunningen/horecabedrijf_beginnen",
+      "https://www.landsmeer.nl/ondernemers/vergunningen",
+      "https://www.landsmeer.nl/ondernemers/vergunningen/alcohol_schenken_en_verkopen",
+      "https://www.landsmeer.nl/ondernemers/vergunningen/standplaats_vergunning_aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.landsmeer.nl/inwoners/zorg,_inkomen,_onderwijs_en_opvoeding/onderwijs/kinderopvang/kinderopvang_exploitatie",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De burgemeester toetst bij uw aanvraag de volgende voorwaarden: De vestiging van het horecabedrijf mag niet in strijd zijn met een geldend omgevingsplan",
+          "original_reference": "Het horecabedrijf moet binnen het omgevingsplan van de gemeente passen",
+          "note": "De brontekst specificeert dat dit een toetsingscriterium van de burgemeester is, wat een belangrijk procedureel detail toevoegt dat niet in de originele tekst staat",
+          "source_urls": [
+            "https://www.landsmeer.nl/ondernemers/vergunningen/horecabedrijf_beginnen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Deze termijn mag de gemeente eenmaal met 6 weken verlengen",
+          "original_reference": "De termijn kan eenmalig worden verlengd door de gemeente",
+          "note": "De brontekst specificeert de exacte verlengingstermijn van 6 weken, terwijl de originele tekst geen specifieke periode noemt",
+          "source_urls": [
+            "https://www.landsmeer.nl/ondernemers/vergunningen/alcohol_schenken_en_verkopen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De gemeente maakt afspraken met u over gedrag. Deze afspraken moet u nakomen.",
+          "original_reference": "No matching information",
+          "note": "De brontekst bevat aanvullende informatie over gedragsafspraken die volledig ontbreekt in de originele tekst",
+          "source_urls": [
+            "https://www.landsmeer.nl/ondernemers/vergunningen/horecabedrijf_beginnen"
+          ]
+        }
+      ]
+    },
+    "summary": "De broninhoud bevat enkele belangrijke aanvullingen en specificaties die niet in de originele tekst staan, waaronder de exacte verlengingstermijn van 6 weken voor vergunningsaanvragen, de expliciete rol van de burgemeester bij het toetsen van voorwaarden, en het bestaan van gedragsafspraken. Deze details maken de procedures en vereisten duidelijker dan in de originele tekst."
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ALKMAAR",
+      "contact": {
+        "phone": "14 072",
+        "email": "post@alkmaar.nl",
+        "website": "http://www.alkmaar.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 35,
+    "true_sentences": 34,
+    "false_sentences": 1,
+    "accuracy_percentage": 97.1,
+    "false_statements": [
+      {
+        "sentence": "U moet 21 jaar of ouder zijn (voor alcoholvrije ondernemingen).",
+        "status": "false",
+        "note": "Voor alcoholvrije horecaondernemingen in Alkmaar geldt een minimumleeftijd van 18 jaar, niet 21 jaar. De leeftijdseis van 21 jaar geldt alleen voor horecabedrijven waar alcohol wordt geschonken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.alkmaar.nl/direct-regelen/ondernemen/vergunningen-en-ontheffingen/exploitatievergunning/",
+      "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/horeca/drank-en-horecawet-vergunning",
+      "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/horeca/terrasvergunning/",
+      "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/overig/exploitatievergunning-seksbedrijf",
+      "https://www.alkmaar.nl/direct-regelen/ondernemen-in-alkmaar"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "snackbar/grillroom/broodjeszaak, buurt- of clubhuis",
+          "original_reference": "restaurants, cafés, cafetaria's, sportkantines",
+          "note": "De bronpagina noemt expliciet enkele extra voorbeelden van horecabedrijven (snackbar, grillroom, broodjeszaak, buurt- of clubhuis) die niet in de originele tekst staan",
+          "source_urls": [
+            "https://www.alkmaar.nl/direct-regelen/ondernemen/vergunningen-en-ontheffingen/exploitatievergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "€ 140,10 voor terrasvergunning, € 63,40 per m2 per jaar of € 6,35 per m2 per maand voor precariobelasting",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de kosten van een terrasvergunning en precariobelasting, terwijl deze wel worden genoemd in de bronpagina",
+          "source_urls": [
+            "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/horeca/terrasvergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "met uitzondering van aanvragen door een vereniging of stichting",
+          "original_reference": "U moet voldoen aan het Bibob-beleid voor integriteitsbeoordeling",
+          "note": "De bronpagina vermeldt een uitzondering op de Bibob-toets voor verenigingen en stichtingen, wat niet wordt genoemd in de originele tekst",
+          "source_urls": [
+            "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/horeca/drank-en-horecawet-vergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen aanvullende voorbeelden van horecabedrijven, specifieke kosteninformatie voor terrasvergunningen en precariobelasting die ontbreekt in de originele tekst, en een belangrijke uitzondering op de Bibob-toets voor verenigingen en stichtingen. Deze informatie is relevant voor potentiële aanvragers maar ontbreekt in de originele tekst."
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DORDRECHT",
+      "contact": {
+        "phone": "14 078",
+        "email": "null",
+        "website": "http://www.dordrecht.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 11,
+    "false_sentences": 2,
+    "accuracy_percentage": 84.6,
+    "false_statements": [
+      {
+        "sentence": "Minimaal 1 week voor aanvang een bewonersbrief versturen met daarin de inhoudelijke informatie van het evenement.",
+        "status": "false",
+        "note": "Volgens de gemeente Dordrecht moet de bewonersbrief minimaal 2 weken voor aanvang van het evenement worden verstuurd, niet 1 week."
+      },
+      {
+        "sentence": "De tijdsduur voor het verkrijgen van een vergunning wordt niet specifiek vermeld voor evenementenvergunningen, anders dan de termijnen vermeld voor bepaalde gerelateerde vergunningen zoals exploitatievergunningen, die binnen 3 maanden worden afgehandeld.",
+        "status": "false",
+        "note": "De gemeente Dordrecht vermeldt wel specifiek dat een evenementenvergunning minimaal 8 weken voor aanvang van het evenement moet worden aangevraagd."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 0,
+    "invalid_urls": 6,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://cms.dordrecht.nl/Ondernemers/Overzicht_Ondernemers/Evenementen/Bewonersinformatie_bij_evenementen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://cms.dordrecht.nl/Ondernemers/Overzicht_Ondernemers/Speelautomaten_en_escort/Exploitatievergunning_speelautomatenhal",
+        "reason": "INVALID: Error scraping https://cms.dordrecht.nl/Ondernemers/Overzicht_Ondernemers/Speelautomaten_en_escort/Exploitatievergunning_speelautomatenhal: 404 Client Error:  for url: https://cms.dordrecht.nl/Ondernemers/Overzicht_Ondernemers/Speelautomaten_en_escort/Exploitatievergunning_speelautomatenhal"
+      },
+      {
+        "url": "https://cms.dordrecht.nl/Ondernemers/Overzicht_Ondernemers/Evenementen/Evenement_organiseren",
+        "reason": "INVALID: Error scraping https://cms.dordrecht.nl/Ondernemers/Overzicht_Ondernemers/Evenementen/Evenement_organiseren: 404 Client Error:  for url: https://cms.dordrecht.nl/Ondernemers/Overzicht_Ondernemers/Evenementen/Evenement_organiseren"
+      },
+      {
+        "url": "https://cms.dordrecht.nl/Ondernemers/Overzicht_Ondernemers/Evenementen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://cms.dordrecht.nl/Inwoners/Overzicht_Inwoners/Vergunningen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.dordrecht.nl",
+        "reason": "INVALID: Error scraping https://www.dordrecht.nl: HTTPSConnectionPool(host='www.dordrecht.nl', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1018)')))"
+      }
+    ]
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HEILOO",
+      "contact": {
+        "phone": "(072) 535 66 66",
+        "email": "info@heiloo.nl",
+        "website": "http://www.heiloo.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 18,
+    "true_sentences": 15,
+    "false_sentences": 3,
+    "accuracy_percentage": 83.3,
+    "false_statements": [
+      {
+        "sentence": "Evenement categorie A: 12 weken van tevoren.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Heiloo moet een A-evenement minimaal 8 weken van tevoren worden aangevraagd, niet 12 weken."
+      },
+      {
+        "sentence": "Evenement categorie B: 19 weken van tevoren.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Heiloo moet een B-evenement minimaal 12 weken van tevoren worden aangevraagd, niet 19 weken."
+      },
+      {
+        "sentence": "Evenement categorie C: 25 weken van tevoren.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Heiloo moet een C-evenement minimaal 16 weken van tevoren worden aangevraagd, niet 25 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.heiloo.nl/aanvragen-en-regelen/standplaatsvergunning/",
+      "https://www.heiloo.nl/over-de-gemeente/evenementenkalender",
+      "https://www.heiloo.nl/aanvragen-en-regelen/ondernemen/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/exploitatievergunning/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/evenementenvergunning/"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Klein evenement melden: € 13,20\nKleinschalig evenement < 150: € 24,30\nMiddelgroot evenement tussen 150 en 500: € 61,60\nGrootschalig evenement >500: € 86,30",
+          "original_reference": "Klein evenement melden: Geen kosten\nKleinschalig evenement < 150 personen: € 25,10\nMiddelgroot evenement 150-500 personen: € 63,40\nGrootschalig evenement > 500 personen: € 89,00",
+          "note": "De tarieven in de bronpagina verschillen van de originele inhoud. Alle bedragen zijn lager in de bronpagina en er worden wel kosten gerekend voor een klein evenement.",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/evenementenvergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u op het formulier 1 of meer vragen met 'nee' beantwoordt, moet u voor het evenement een vergunning aanvragen.",
+          "original_reference": "Indien u 1 of meer vragen op het formulier met 'nee' beantwoordt, is een vergunning vereist en moet u het evenementenvergunning aanvraagformulier invullen.",
+          "note": "De formulering is consistent maar de bron biedt een directere en duidelijkere instructie voor het vervolgproces.",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/evenementenvergunning/"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de kosten voor evenementenvergunningen, waarbij alle tarieven in de bronpagina lager zijn dan in de originele inhoud. Ook wordt er in tegenstelling tot de originele tekst wel een bedrag gerekend voor het melden van een klein evenement. De overige informatie over procedures en termijnen komt grotendeels overeen."
+  }
+}

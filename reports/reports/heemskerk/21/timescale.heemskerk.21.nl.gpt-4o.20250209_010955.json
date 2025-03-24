@@ -1,0 +1,92 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HEEMSKERK",
+      "contact": {
+        "phone": "14 0251",
+        "email": "post@heemskerk.nl",
+        "website": "http://www.heemskerk.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 10,
+    "false_sentences": 1,
+    "accuracy_percentage": 90.9,
+    "false_statements": [
+      {
+        "sentence": "U kunt een afspraak maken bij de gemeente waar u staat ingeschreven om de VOG aan te vragen.",
+        "status": "false",
+        "note": "Deze informatie is niet correct voor gemeente Heemskerk. Een VOG kan alleen online worden aangevraagd via de website van Dienst Justis met DigiD, niet bij de gemeente zelf."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/veelgestelde-vragen-omgevingsvergunning",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/omgevingsvergunning",
+      "https://www.heemskerk.nl/aanvragen-en-regelen/nederlander-worden",
+      "https://www.heemskerk.nl/aanvragen-en-regelen/verklaring-omtrent-gedrag-vog",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/vergunning-gebruik-openbare-weg"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://gemeentewebsite.example.com\">Gemeente",
+        "reason": "INVALID: Error scraping https://gemeentewebsite.example.com\">Gemeente: HTTPSConnectionPool(host='gemeentewebsite.example.com%22%3egemeente', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1046b3110>: Failed to resolve 'gemeentewebsite.example.com%22%3egemeente' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://gemeentewebsite.example.com",
+        "reason": "INVALID: Error scraping https://gemeentewebsite.example.com: HTTPSConnectionPool(host='gemeentewebsite.example.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1046b3390>: Failed to resolve 'gemeentewebsite.example.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Kosten 2025\nVOG € 41,35",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt geen specifiek bedrag voor de VOG, terwijl de bronpagina een concreet tarief van €41,35 voor 2025 noemt.",
+          "source_urls": [
+            "https://www.heemskerk.nl/aanvragen-en-regelen/verklaring-omtrent-gedrag-vog"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Jongeren tussen de 16 en 18 jaar hebben geen toestemming nodig van hun ouder, voogd of gezaghebber. Zij kunnen zelf een VOG-aanvraag indienen. Kinderen jonger dan 16 jaar moeten toestemming van ouder, voogd of gezaghebber meenemen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over leeftijdsvereisten en toestemmingsregels voor minderjarigen, terwijl de bronpagina hier specifieke regels voor heeft.",
+          "source_urls": [
+            "https://www.heemskerk.nl/aanvragen-en-regelen/verklaring-omtrent-gedrag-vog"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Maak een afspraak",
+          "original_reference": "U kunt een afspraak maken bij de gemeente waar u staat ingeschreven om de VOG aan te vragen.",
+          "note": "De bronpagina biedt een directe link om een afspraak te maken, wat niet vermeld wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.heemskerk.nl/aanvragen-en-regelen/verklaring-omtrent-gedrag-vog"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen het concrete VOG-tarief voor 2025 (€41,35), specifieke regels voor minderjarige aanvragers, en de aanwezigheid van een online afspraaksysteem. Deze informatie ontbreekt in de originele tekst maar is wel belangrijk voor potentiële aanvragers."
+  }
+}

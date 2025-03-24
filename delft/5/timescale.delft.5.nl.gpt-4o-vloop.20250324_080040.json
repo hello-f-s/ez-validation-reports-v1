@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DELFT",
+      "contact": {
+        "phone": "14 015",
+        "email": "null",
+        "website": "http://www.delft.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "Vergunning voor het schenken van alcoholvrije dranken.",
+        "status": "false",
+        "note": "Er bestaat geen aparte vergunning voor het schenken van alcoholvrije dranken in de gemeente Delft. Dit is onjuiste informatie aangezien voor het schenken van alcoholvrije dranken geen specifieke vergunning nodig is."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.delft.nl/exploitatievergunning-coffeeshops",
+      "https://www.delft.nl/alcoholwetvergunning",
+      "https://www.delft.nl/vergunningen-en-ontheffingen",
+      "https://www.delft.nl/vergunning-seksinrichting-escortbedrijf",
+      "https://www.delft.nl/omgevingsvergunning-milieu"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor overige horecabedrijven heeft u geen vergunning nodig.",
+          "original_reference": "No matching information",
+          "note": "De brontekst geeft aan dat overige horecabedrijven geen vergunning nodig hebben, terwijl de originele tekst suggereert dat er wel een exploitatievergunning nodig is voor horecabedrijven door tarieven hiervoor te vermelden.",
+          "source_urls": [
+            "https://www.delft.nl/exploitatievergunning-coffeeshops"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Is uw aanvraag compleet? Dan handelt de gemeente uw aanvraag binnen 12 weken af. De gemeente kan deze periode met 12 weken verlengen.",
+          "original_reference": "De gemeente handelt een complete vergunningsaanvraag binnen 3 maanden af.",
+          "note": "De brontekst specificeert dat de behandelperiode met 12 weken verlengd kan worden, wat niet vermeld wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.delft.nl/vergunning-seksinrichting-escortbedrijf"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "€ 1.069,35",
+          "original_reference": "De kosten voor een exploitatievergunning voor een coffeeshop in 2025 bedragen € 1.069,35.",
+          "note": "De kosten voor een exploitatievergunning coffeeshop in 2025 komen overeen met het bedrag in de originele tekst.",
+          "source_urls": [
+            "https://www.delft.nl/exploitatievergunning-coffeeshops"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn enkele belangrijke verschillen gevonden tussen de originele tekst en de bronnen. Het meest opvallende verschil is dat volgens de bron overige horecabedrijven geen vergunning nodig hebben, terwijl de originele tekst wel tarieven noemt voor horeca-exploitatievergunningen. Daarnaast vermeldt de bron een mogelijke verlenging van de behandeltermijn met 12 weken, wat niet in de originele tekst staat. De tarieven voor coffeeshops in 2025 zijn wel consistent tussen beide bronnen."
+  }
+}

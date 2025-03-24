@@ -1,0 +1,79 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ENSCHEDE",
+      "contact": {
+        "phone": "14 053",
+        "email": "postbus20@enschede.nl",
+        "website": "http://www.enschede.nl"
+      }
+    },
+    "service": {
+      "id": 7,
+      "name": "Kabels en leidingen aanleggen en beheren"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "Een KLIC-melding online doen of bellen voor detailinformatie op 053 - 481 76 00.",
+        "status": "false",
+        "note": "Het telefoonnummer 053 - 481 76 00 is niet het correcte nummer voor KLIC-meldingen. KLIC-meldingen moeten gedaan worden via het Kadaster (KLIC) op nummer 0800-0080 of via www.kadaster.nl/klic."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.enschede.nl/omgevingsvergunning",
+      "https://www.enschede.nl/graven-in-de-openbare-ruimte",
+      "https://www.enschede.nl/vergunning-voor-kamerverhuur",
+      "https://www.enschede.nl/milieuregels",
+      "https://www.enschede.nl/voorwerp-plaatsen-in-de-openbare-ruimte"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://graven-in-de-openbare-ruimte.enschede.nl",
+        "reason": "INVALID: Error scraping https://graven-in-de-openbare-ruimte.enschede.nl: HTTPSConnectionPool(host='graven-in-de-openbare-ruimte.enschede.nl', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x103b2b750>: Failed to resolve 'graven-in-de-openbare-ruimte.enschede.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u alleen in particuliere grond graaft, hoeft u geen toestemming van de gemeente te hebben.",
+          "original_reference": "Voor werkzaamheden in particuliere grond naast de openbare ruimte heeft u schriftelijke toestemming van de grondeigenaren nodig.",
+          "note": "De originele tekst suggereert dat toestemming nodig is voor particuliere grond naast openbare ruimte, terwijl de brontekst aangeeft dat voor alleen particuliere grond geen toestemming nodig is van de gemeente.",
+          "source_urls": [
+            "https://www.enschede.nl/graven-in-de-openbare-ruimte"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Werkzaamheden aan kabels en leidingen over een lengte van minder dan 25 meter, waarbij de maximale sleufbreedte 0,6 meter is. Hier horen ook (tijdelijke) huisaansluitingen met een gezamenlijke lengte van minder dan 25 meter bij.",
+          "original_reference": "No matching information",
+          "note": "De brontekst specificeert aanvullende details over wanneer alleen een melding volstaat (lengte < 25m en sleufbreedte max 0,6m) die niet in de originele tekst staan vermeld.",
+          "source_urls": [
+            "https://www.enschede.nl/graven-in-de-openbare-ruimte"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele tekst en de bronnen. Ten eerste is er een tegenstrijdigheid over de vereisten voor werkzaamheden in particuliere grond. Daarnaast bevat de brontekst specifiekere criteria voor wanneer een melding volstaat in plaats van een vergunning, die niet in de originele tekst zijn opgenomen. De overige informatie komt overeen met de originele tekst."
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LOPIK",
+      "contact": {
+        "phone": "(0348) 55 99 55",
+        "email": "gemeente@lopik.nl",
+        "website": "http://www.lopik.nl"
+      }
+    },
+    "service": {
+      "id": 20,
+      "name": "Vergunning voor seksbedrijf"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "Gebruik het Omgevingsloket om te controleren of u een vergunning nodig hebt of een melding moet doen. Dit kan online worden gedaan via www.omgevingswet.overheid.nl met eHerkenning.",
+        "status": "false",
+        "note": "De genoemde website www.omgevingswet.overheid.nl is onjuist. Het correcte adres voor het Omgevingsloket is www.omgevingsloket.nl"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.lopik.nl/seksbedrijf-starten",
+      "https://www.lopik.nl/exploitatievergunning-horecabedrijf",
+      "https://www.lopik.nl/milieu-vergunning-of-melding",
+      "https://www.lopik.nl/kermis-organiseren",
+      "https://www.lopik.nl/terras-plaatsen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Dit doet u via www.omgevingswet.overheid.nl met eHerkenning. U kunt de aanvraag of melding alleen online doen.",
+          "original_reference": "Gebruik het Omgevingsloket om te controleren of u een vergunning nodig hebt of een melding moet doen.",
+          "note": "De originele tekst specificeert niet dat eHerkenning vereist is en dat aanvragen alleen online kunnen worden gedaan.",
+          "source_urls": [
+            "https://www.lopik.nl/milieu-vergunning-of-melding"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "seksbioscoopen, bordelen, escortbedrijven, erotische massagesalons",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen specificatie van de verschillende types seksbedrijven, terwijl de bronpagina deze wel expliciet noemt.",
+          "source_urls": [
+            "https://www.lopik.nl/seksbedrijf-starten"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "De eigenaar en de eventuele beheerder(s) zijn 21 jaar of ouder. De prostituees die er werken zijn 21 jaar of ouder.",
+          "original_reference": "De eigenaar en eventuele beheerders van het seksbedrijf moeten 21 jaar of ouder zijn. Prostituees die werken bij het bedrijf moeten ook 21 jaar of ouder zijn.",
+          "note": "De leeftijdsvereisten komen exact overeen in beide teksten.",
+          "source_urls": [
+            "https://www.lopik.nl/seksbedrijf-starten"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de aanvullende specificatie over online aanvragen met eHerkenning en de types seksbedrijven die in de originele tekst ontbreken. De overige voorwaarden en vereisten komen grotendeels overeen. Er zijn geen tegenstrijdigheden gevonden in de kernvoorwaarden of procedures."
+  }
+}

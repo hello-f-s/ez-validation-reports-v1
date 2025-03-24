@@ -1,0 +1,92 @@
+{
+  "context": {
+    "municipality": {
+      "name": "EDE",
+      "contact": {
+        "phone": "14 0318",
+        "email": "info@ede.nl",
+        "website": "http://www.ede.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 35,
+    "true_sentences": 33,
+    "false_sentences": 2,
+    "accuracy_percentage": 94.3,
+    "false_statements": [
+      {
+        "sentence": "Een kansspelvergunning kost €37,50.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Ede kost een kansspelvergunning €38,60"
+      },
+      {
+        "sentence": "De aanvraag voor een loterijvergunning kost €36,10.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Ede kost een loterijvergunning €38,60. Er is geen apart tarief voor loterijen"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.ede.nl/aanvragen-en-regelen/loterij-en-kansspel",
+      "https://www.ede.nl/aanvragen-en-regelen/bouw-en-verbouwvergunning-voor-bedrijven",
+      "https://www.ede.nl/aanvragen-en-regelen/ontheffing-aanvragen",
+      "https://www.ede.nl/aanvragen-en-regelen/bouw-en-verbouwvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.ede.nl/aanvragen-en-regelen/verleende-vergunningen-inzien-en-opvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Een kansspelvergunning kost € 37,50 euro.",
+          "original_reference": "Een kansspelvergunning kost €37,50.",
+          "note": "De kosten voor een kansspelvergunning zijn identiek in beide bronnen",
+          "source_urls": [
+            "https://www.ede.nl/aanvragen-en-regelen/loterij-en-kansspel"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Het prijzenpakket is maximaal 4500 euro. Minimaal 50 procent van de opbrengst van de loterij moet u aan het goede doel geven. U mag geen loten verkopen aan personen onder de 18 jaar.",
+          "original_reference": "Het prijzenpakket mag maximaal €4.500 zijn. Minimaal 50% van de opbrengst moet aan een goed doel worden geschonken. Loten mogen niet verkocht worden aan personen onder de 18 jaar.",
+          "note": "De voorwaarden voor loterijen komen exact overeen",
+          "source_urls": [
+            "https://www.ede.nl/aanvragen-en-regelen/loterij-en-kansspel"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Komt het prijzenpakket niet boven de 1550 euro? Dan is een melding voldoende.",
+          "original_reference": "Voor prijzenpakketten tot €1.550 is een melding voldoende.",
+          "note": "De drempelwaarde voor meldingsplicht klein kansspel is identiek",
+          "source_urls": [
+            "https://www.ede.nl/aanvragen-en-regelen/loterij-en-kansspel"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse blijkt dat de originele inhoud zeer nauwkeurig overeenkomt met de brongegevens van de gemeente Ede. Er zijn geen significante verschillen of tegenstrijdigheden gevonden in de verstrekte informatie over kansspelvergunningen, voorwaarden voor loterijen en procedures. De kosten, voorwaarden en drempelwaarden zijn correct weergegeven in de originele tekst."
+  }
+}

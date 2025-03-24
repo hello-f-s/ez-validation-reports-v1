@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ERMELO",
+      "contact": {
+        "phone": "(0341) 56 73 21",
+        "email": "gemeente@ermelo.nl",
+        "website": "http://www.ermelo.nl"
+      }
+    },
+    "service": {
+      "id": 6,
+      "name": "Integriteitsonderzoek (Wet Bibob)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "Een exploitatievergunning, inclusief het Bibob-onderzoek, kost € 206.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van de gemeente Ermelo bedraagt het tarief voor een exploitatievergunning horeca € 424,45. Het genoemde bedrag van € 206 is onjuist."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.ermelo.nl/bezwaar-zienswijze-en-woo/informatie-opvragen-via-woo-en-who",
+      "https://www.ermelo.nl/evenementen-en-horeca/horeca-en-alcohol/exploitatievergunning-horeca",
+      "https://www.ermelo.nl/wonen-en-verhuizen/adresonderzoek",
+      "https://www.ermelo.nl/over-deze-website/avg-verzoek-indienen",
+      "https://www.ermelo.nl/verklaring-omtrent-gedrag-vog"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een exploitatievergunning aanvragen? Maak dan een afspraak met de vakafdeling zodat u uw aanvraag compleet kan indienen.",
+          "original_reference": "Maak een afspraak met de vakafdeling om uw aanvraag compleet in te dienen.",
+          "note": "De originele tekst presenteert dit als een algemene instructie, terwijl de brontekst dit specifiek koppelt aan het moment van aanvragen.",
+          "source_urls": [
+            "https://www.ermelo.nl/evenementen-en-horeca/horeca-en-alcohol/exploitatievergunning-horeca"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Melding brandveilig gebruik",
+          "original_reference": "No matching information",
+          "note": "De bron vermeldt een extra vereiste document (melding brandveilig gebruik) die niet in de originele lijst van benodigdheden staat.",
+          "source_urls": [
+            "https://www.ermelo.nl/evenementen-en-horeca/horeca-en-alcohol/exploitatievergunning-horeca"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "€ 41,35",
+          "original_reference": "€ 206",
+          "note": "Er is een verschil in de vermelde kosten. De originele tekst noemt €206 voor de exploitatievergunning inclusief Bibob-onderzoek, terwijl in de bron alleen de VOG-kosten (€41,35) worden genoemd.",
+          "source_urls": [
+            "https://www.ermelo.nl/verklaring-omtrent-gedrag-vog"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn drie belangrijke verschillen gevonden tussen de originele tekst en de bronnen: een nuanceverschil in de instructie voor het maken van een afspraak, een ontbrekend vereist document (melding brandveilig gebruik) in de originele tekst, en verschillende kostenvermeldingen. De bronnen geven ook specifiekere details over bepaalde onderdelen van het proces."
+  }
+}

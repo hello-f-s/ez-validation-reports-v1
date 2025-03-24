@@ -1,0 +1,85 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LANDGRAAF",
+      "contact": {
+        "phone": "14 045",
+        "email": "gemeente@landgraaf.nl",
+        "website": "http://www.landgraaf.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Drank- en Horecawet (DHW): € 281,35",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Landgraaf bedragen de leges voor een Drank- en Horecavergunning € 286,95 (2024 tarief)"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.landgraaf.nl/alcoholvergunning",
+      "https://www.landgraaf.nl/exploitatievergunning-horecabedrijf",
+      "https://www.landgraaf.nl/form/informatieverzoek-indienen",
+      "https://www.landgraaf.nl/alcohol-schenken-tijdens-evenement",
+      "https://www.landgraaf.nl/aanvragen-en-regelen-ondernemers"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Drank- en Horecawet (DHW): € 287,80\nExploitatievergunning: € 287,80",
+          "original_reference": "Drank- en Horecawet (DHW): € 281,35\nExploitatievergunning: € 281,35",
+          "note": "De kosten voor zowel de DHW-vergunning als de exploitatievergunning zijn hoger in de actuele bronnen (€287,80 vs €281,35)",
+          "source_urls": [
+            "https://www.landgraaf.nl/alcoholvergunning",
+            "https://www.landgraaf.nl/exploitatievergunning-horecabedrijf"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Is niet van slecht levensgedrag (geen strafblad)",
+          "original_reference": "Geen van de leidinggevenden heeft een strafblad",
+          "note": "De bronformulering is anders en specifieker door te verwijzen naar 'slecht levensgedrag' in combinatie met geen strafblad",
+          "source_urls": [
+            "https://www.landgraaf.nl/alcohol-schenken-tijdens-evenement"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wijziging leidinggevende: € 95,80\nAanleggen/wijzigen terras: € 26,70\nArtikel 35 DHW ontheffing: € 62,45",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden aanvullende kosten voor specifieke wijzigingen en ontheffingen die niet in de originele tekst staan",
+          "source_urls": [
+            "https://www.landgraaf.nl/alcoholvergunning",
+            "https://www.landgraaf.nl/exploitatievergunning-horecabedrijf"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de tarieven die in de bronnen hoger liggen dan in de originele tekst. Daarnaast bevatten de bronnen aanvullende kostenoverzichten voor specifieke wijzigingen en ontheffingen. Ook is er een nuanceverschil in de formulering rond het strafblad-vereiste. De overige voorwaarden en procedures komen grotendeels overeen."
+  }
+}

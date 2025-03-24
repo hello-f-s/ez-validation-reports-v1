@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ALKMAAR",
+      "contact": {
+        "phone": "14 072",
+        "email": "post@alkmaar.nl",
+        "website": "http://www.alkmaar.nl"
+      }
+    },
+    "service": {
+      "id": 2,
+      "name": "Bord of spandoek plaatsen aan de openbare weg"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "De kosten bedragen € 66,72 per jaar.",
+        "status": "false",
+        "note": "Volgens de actuele tarieven van de gemeente Alkmaar bedragen de legeskosten voor een uitstallingvergunning € 68,70 per jaar (2024 tarief)."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.alkmaar.nl/direct-regelen/ondernemen/vergunningen-en-ontheffingen/uitstalling-vergunning",
+      "https://www.alkmaar.nl/direct-regelen/ondernemen/vergunningen-en-ontheffingen/exploitatievergunning/",
+      "https://www.alkmaar.nl/direct-regelen/ondernemen/vergunningen-en-ontheffingen/reclame",
+      "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/reclame-maken/promotieactie-sampling-of-flyeren-vergunning",
+      "https://www.alkmaar.nl/direct-regelen/ondernemen/vergunningen-en-ontheffingen/standplaats-vergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://metadata2.com",
+        "reason": "INVALID: Error scraping https://metadata2.com: HTTPSConnectionPool(host='metadata2.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x107a77a10>: Failed to resolve 'metadata2.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://metadata1.com",
+        "reason": "INVALID: Error scraping https://metadata1.com: HTTPSConnectionPool(host='metadata1.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'metadata1.com'. (_ssl.c:1018)\")))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "In smalle straten wordt maatwerk toegepast. Dit zorgt ervoor dat publiek, verkeer en hulpdiensten daar goed kunnen bewegen. Het gaat om 3,5 meter minimale doorgang. Daarbij zijn de uitstallingen niet dieper dan 0,50 meter uit de gevel.",
+          "original_reference": "Uitstallingen moeten tegen de gevel staan en mogen niet dieper zijn dan 0,50 meter uit de gevel.",
+          "note": "De bron specificeert dat in smalle straten maatwerk wordt toegepast, terwijl dit niet wordt vermeld in de originele tekst. Dit is een belangrijke nuancering van de algemene regel.",
+          "source_urls": [
+            "https://www.alkmaar.nl/direct-regelen/ondernemen/vergunningen-en-ontheffingen/uitstalling-vergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een uitstalling in de binnenstad (tussen de singels en het Noordhollandsch Kanaal) mag niet dieper zijn dan 0,80 meter uit de gevel van het pand",
+          "original_reference": "Uitstallingen moeten tegen de gevel staan en mogen niet dieper zijn dan 0,50 meter uit de gevel.",
+          "note": "De bron vermeldt een andere maximale diepte (0,80 meter) voor uitstallingen in de binnenstad, terwijl de originele tekst uitgaat van 0,50 meter voor alle locaties.",
+          "source_urls": [
+            "https://www.alkmaar.nl/direct-regelen/ondernemen/vergunningen-en-ontheffingen/uitstalling-vergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden met betrekking tot de uitstallingseisen. Ten eerste wordt in de bronnen specifiek vermeld dat er in smalle straten maatwerk wordt toegepast. Ten tweede geldt er in de binnenstad een afwijkende maximale diepte van 0,80 meter uit de gevel, terwijl de originele tekst uitgaat van een algemene regel van 0,50 meter. Deze nuanceringen zijn belangrijk voor ondernemers in verschillende delen van de stad."
+  }
+}

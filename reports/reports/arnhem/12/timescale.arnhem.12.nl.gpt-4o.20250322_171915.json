@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ARNHEM",
+      "contact": {
+        "phone": "null",
+        "email": "null",
+        "website": "http://www.arnhem.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "Specifieke informatie over de doorlooptijd van een aanvraag is niet gespecificeerd.",
+        "status": "false",
+        "note": "De gemeente Arnhem specificeert wel degelijk de doorlooptijden: 8 weken voor reguliere procedures en 26 weken voor uitgebreide procedures. Deze termijnen kunnen eenmalig verlengd worden met 6 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.arnhem.nl/Inwoners/bouwen_en_verbouwen/U_wilt_bouwen_of_verbouwen/omgevingsvergunning/Milieubelastende_werkzaamheden",
+      "https://www.arnhem.nl/Inwoners/bouwen_en_verbouwen/U_wilt_bouwen_of_verbouwen/Groene_leges_bij_duurzame_maatregelen",
+      "https://www.arnhem.nl/Inwoners/bouwen_en_verbouwen/U_wilt_bouwen_of_verbouwen/omgevingsvergunning",
+      "https://www.arnhem.nl/Inwoners/bouwen_en_verbouwen/U_wilt_bouwen_of_verbouwen/omgevingsvergunning/Reclame_uitingen_plaatsen",
+      "https://www.arnhem.nl/Ondernemers/vergunningen_ondernemers/overige_vergunningen_en_meldingen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.gemeentearnhem.nl/",
+        "reason": "INVALID: Error scraping https://www.gemeentearnhem.nl/: 439 Client Error: status code 439 for url: https://www.gemeentearnhem.nl/"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U betaalt geen kosten voor een omgevingsvergunning bij: bestaande woningen isoleren, renoveren tot nul-op-de-meter-woning, een groen dak aanleggen, een buitenunit installeren voor een warmtepomp, zonnecollectoren plaatsen voor zonneboiler, zonnepanelen plaatsen op gevels of daken, zonnepanelen plaatsen op monumentale panden",
+          "original_reference": "Bij duurzame maatregelen kan korting of volledige vrijstelling van leges gelden, bijvoorbeeld bij het plaatsen van zonnepanelen of isoleren van woningen",
+          "note": "De bronpagina geeft een veel uitgebreidere en specifiekere lijst van maatregelen waarvoor geen kosten worden gerekend, inclusief concrete voorbeelden die niet in de originele tekst staan",
+          "source_urls": [
+            "https://www.arnhem.nl/Inwoners/bouwen_en_verbouwen/U_wilt_bouwen_of_verbouwen/Groene_leges_bij_duurzame_maatregelen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U betaalt de helft van de kosten bij: zonnevelden aanleggen, windturbine(s) bouwen",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de specifieke 50% korting voor zonnevelden en windturbines",
+          "source_urls": [
+            "https://www.arnhem.nl/Inwoners/bouwen_en_verbouwen/U_wilt_bouwen_of_verbouwen/Groene_leges_bij_duurzame_maatregelen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Omgevingsvergunning voor reclame € 189",
+          "original_reference": "Kosten voor een omgevingsvergunning variëren afhankelijk van de aard van de werkzaamheden",
+          "note": "De bronpagina noemt een specifiek bedrag voor reclamevergunningen, terwijl de originele tekst alleen spreekt over variërende kosten",
+          "source_urls": [
+            "https://www.arnhem.nl/Inwoners/bouwen_en_verbouwen/U_wilt_bouwen_of_verbouwen/omgevingsvergunning/Reclame_uitingen_plaatsen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de specificatie van kosten en vrijstellingen. De bronpagina's geven veel gedetailleerdere informatie over duurzame maatregelen die in aanmerking komen voor vrijstelling of korting op leges, en noemen concrete bedragen voor specifieke vergunningen zoals reclamevergunningen. Deze details ontbreken in de originele tekst die algemener van aard is."
+  }
+}

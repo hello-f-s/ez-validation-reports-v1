@@ -1,0 +1,93 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LEIDEN",
+      "contact": {
+        "phone": "14 071",
+        "email": "null",
+        "website": "http://www.leiden.nl/gemeente"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 15,
+    "false_sentences": 2,
+    "accuracy_percentage": 88.2,
+    "false_statements": [
+      {
+        "sentence": "Online aanvraag: € 33,85.",
+        "status": "false",
+        "note": "Het actuele tarief voor een online VOG-aanvraag is € 41,35 (2024)"
+      },
+      {
+        "sentence": "Aan de balie: € 41,35.",
+        "status": "false",
+        "note": "Het tarief voor een VOG-aanvraag aan de balie is € 47,55 (2024)"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers/vergunningen-en-ontheffingen/woning-splitsen",
+      "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers/vergunningen-en-ontheffingen/bomen-kappen",
+      "https://gemeente.leiden.nl/inwoners-en-ondernemers/melding-klacht-overlast/klacht-of-compliment/woo-verzoek",
+      "https://gemeente.leiden.nl/inwoners-en-ondernemers/paspoort-rijbewijs-uittreksels/verklaring-en-legalisatie/verklaring-omtrent-gedrag-vog",
+      "https://gemeente.leiden.nl/inwoners-en-ondernemers/wonen-en-bouwen/omgevingsvergunningen/omgevingsvergunning-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.gemeente.leiden.nl",
+        "reason": "INVALID: Error scraping https://www.gemeente.leiden.nl: HTTPSConnectionPool(host='www.gemeente.leiden.nl', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1041a6fd0>: Failed to resolve 'www.gemeente.leiden.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U vraagt een VOG aan samen met degene die erom vraagt. Meestal is dat een werkgever of vereniging.",
+          "original_reference": "U vraagt een VOG aan samen met degene die erom vraagt. Meestal is dat een werkgever of vereniging. Als ondernemer zult u mogelijk een VOG moeten aanvragen voor specifieke taken waarvoor dit vereist is.",
+          "note": "De originele tekst bevat extra informatie over ondernemers die niet in de bronpagina staat. De bronpagina is beknopter in de beschrijving van wie een VOG kan aanvragen.",
+          "source_urls": [
+            "https://gemeente.leiden.nl/inwoners-en-ondernemers/paspoort-rijbewijs-uittreksels/verklaring-en-legalisatie/verklaring-omtrent-gedrag-vog"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Let op: Er zijn bedrijven die tegen betaling een VOG voor u aanvragen. De gemeente raadt dit af. Vanwege extra kosten en de veiligheid van uw persoonlijke gegevens.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat een belangrijke waarschuwing over externe bedrijven die VOG's aanvragen, die niet in de originele tekst staat vermeld.",
+          "source_urls": [
+            "https://gemeente.leiden.nl/inwoners-en-ondernemers/paspoort-rijbewijs-uittreksels/verklaring-en-legalisatie/verklaring-omtrent-gedrag-vog"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een werkgever kan bijvoorbeeld om een VOG vragen als u met kinderen of als u met persoonsgegevens gaat werken.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina geeft specifieke voorbeelden van wanneer een VOG nodig kan zijn, die niet in de originele tekst staan.",
+          "source_urls": [
+            "https://gemeente.leiden.nl/inwoners-en-ondernemers/paspoort-rijbewijs-uittreksels/verklaring-en-legalisatie/verklaring-omtrent-gedrag-vog"
+          ]
+        }
+      ]
+    },
+    "summary": "De originele tekst verschilt op enkele belangrijke punten van de bronpagina. De bronpagina bevat een belangrijke waarschuwing over externe VOG-aanvraagbedrijven en geeft concrete voorbeelden van situaties waarin een VOG nodig is. De originele tekst bevat daarentegen extra informatie over ondernemers die niet in de bronpagina staat. Deze verschillen kunnen van belang zijn voor de volledigheid en duidelijkheid van de informatievoorziening aan burgers."
+  }
+}

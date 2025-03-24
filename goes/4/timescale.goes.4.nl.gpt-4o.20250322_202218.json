@@ -1,0 +1,89 @@
+{
+  "context": {
+    "municipality": {
+      "name": "GOES",
+      "contact": {
+        "phone": "14 0113",
+        "email": "stadskantoor@goes.nl",
+        "website": "http://www.goes.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 17,
+    "false_sentences": 2,
+    "accuracy_percentage": 89.5,
+    "false_statements": [
+      {
+        "sentence": "Voor B en C-evenementen moet de aanvraag vóór 1 november van het voorgaande jaar worden aangemeld.",
+        "status": "false",
+        "note": "Volgens de website van gemeente Goes geldt deze deadline alleen voor C-evenementen, niet voor B-evenementen."
+      },
+      {
+        "sentence": "Een 0-evenement heeft alleen een meldingsplicht en geen vergunning nodig zolang het voldoet aan specifieke voorwaarden zoals maximaal 150 personen.",
+        "status": "false",
+        "note": "De gemeente Goes hanteert een maximum van 100 personen voor 0-evenementen, niet 150 personen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.goes.nl/evenement-organiseren-0",
+      "https://www.goes.nl/indeling-categorieen-evenementen",
+      "https://www.goes.nl/aanmelden-evenement-2025",
+      "https://www.goes.nl/exploitatievergunning-horeca",
+      "https://www.goes.nl/milieu-omgevingsvergunning-melding",
+      "https://www.goes.nl"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een 0-evenement voldoet aan de volgende voorwaarden: Maximaal 150 personen; Het evenement tussen 09.00 en 00.30 uur plaatsvindt; Geen muziek ten gehore wordt gebracht voor 07.00 uur of na 23.00 uur; Geen hinder op de openbare weg; Er mogen alleen kleine objecten worden geplaatst met een oppervlakte van minder dan 10 m2.",
+          "original_reference": "Een 0-evenement heeft alleen een meldingsplicht en geen vergunning nodig zolang het voldoet aan specifieke voorwaarden zoals maximaal 150 personen.",
+          "note": "De originele tekst noemt alleen het maximum aantal personen, terwijl de bron specifiekere voorwaarden vermeldt zoals tijdstippen, muziekrestricties en objectgrootte.",
+          "source_urls": [
+            "https://www.goes.nl/indeling-categorieen-evenementen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Organisatoren van evenementen moeten hun evenement(en) die zij in 2025 willen houden, aanmelden vóór 1 november 2024.",
+          "original_reference": "Voor B en C-evenementen moet de aanvraag vóór 1 november van het voorgaande jaar worden aangemeld.",
+          "note": "De bron geeft aan dat dit geldt voor alle evenementen, niet alleen B en C-evenementen zoals vermeld in de originele tekst.",
+          "source_urls": [
+            "https://www.goes.nl/aanmelden-evenement-2025"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Na de melding van een 0-evenement wordt altijd een beoordeling gedaan. Mogelijk is er tóch een evenementenvergunning nodig, bijvoorbeeld omdat de doelgroep of locatie meer risico met zich meebrengt.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over de mogelijke herbeoordeling van 0-evenementen die alsnog vergunningplichtig kunnen worden.",
+          "source_urls": [
+            "https://www.goes.nl/indeling-categorieen-evenementen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de specifieke voorwaarden voor 0-evenementen, de aanmeldtermijn voor evenementen en de mogelijke herbeoordeling van 0-evenementen. De bronnen bevatten meer gedetailleerde voorwaarden en nuances die niet in de originele tekst zijn opgenomen. Ook is de aanmeldtermijn in de originele tekst beperkter beschreven dan in werkelijkheid het geval is."
+  }
+}

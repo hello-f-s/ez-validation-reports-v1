@@ -1,0 +1,82 @@
+{
+  "context": {
+    "municipality": {
+      "name": "EMMEN",
+      "contact": {
+        "phone": "14 0591",
+        "email": "gemeente@emmen.nl",
+        "website": "http://www.emmen.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 31,
+    "true_sentences": 30,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.8,
+    "false_statements": [
+      {
+        "sentence": "Het gemeentehuis is geopend op maandag, dinsdag, woensdag en vrijdag van 08.30 tot 16.30 uur, donderdag van 08.30 tot 19.00 uur, en zaterdag van 08.30 tot 12.00 uur.",
+        "status": "false",
+        "note": "Het gemeentehuis van Emmen is niet op zaterdag geopend. Volgens de officiële website van de gemeente Emmen is het gemeentehuis alleen doordeweeks geopend: maandag t/m woensdag en vrijdag van 8.30 tot 16.30 uur, en donderdag van 8.30 tot 19.00 uur."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 4,
+    "valid_urls": 4,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.emmen.nl/alcohol-schenken-en-verkopen",
+      "https://www.emmen.nl/alcohol-schenken-tijdens-evenement",
+      "https://www.emmen.nl/horecabedrijf-starten",
+      "https://www.emmen.nl/vergunning-kantine-buurthuis"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De aanvraag voor een exploitatievergunning wordt binnen 12 weken afgehandeld.",
+          "original_reference": "De gemeente beslist binnen 8 weken op een aanvraag voor een exploitatievergunning",
+          "note": "Er is een verschil in de behandeltermijn voor exploitatievergunningen. De bronpagina noemt 12 weken terwijl de originele tekst 8 weken vermeldt.",
+          "source_urls": [
+            "https://www.emmen.nl/horecabedrijf-starten"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U kunt een ontheffing aanvragen voor meerdere jaren. Het evenement moet dan wel aan dezelfde voorwaarden voldoen.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt de mogelijkheid om een meerjarige ontheffing aan te vragen voor terugkerende evenementen, wat niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.emmen.nl/alcohol-schenken-tijdens-evenement"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Zodra er iets verandert, moet u dit binnen 3 dagen doorgeven aan de gemeente.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina specificeert een termijn van 3 dagen voor het doorgeven van wijzigingen, wat niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.emmen.nl/vergunning-kantine-buurthuis"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn drie belangrijke verschillen gevonden tussen de originele tekst en de bronpagina's. Het gaat om de behandeltermijn voor exploitatievergunningen (8 vs 12 weken), de mogelijkheid voor meerjarige evenementenontheffingen die niet in de originele tekst staat, en de 3-dagen meldingstermijn voor wijzigingen bij buurthuizen/kantines die ook niet in de originele tekst wordt genoemd. Deze verschillen kunnen van belang zijn voor aanvragers van de verschillende vergunningen."
+  }
+}

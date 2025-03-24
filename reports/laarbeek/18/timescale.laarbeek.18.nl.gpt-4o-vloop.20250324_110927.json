@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LAARBEEK",
+      "contact": {
+        "phone": "(0492) 46 97 00",
+        "email": "gemeente@laarbeek.nl",
+        "website": "http://www.laarbeek.nl"
+      }
+    },
+    "service": {
+      "id": 18,
+      "name": "Ventvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor het aanvragen van een horeca-exploitatievergunning bedragen €385,00 (tarief 2022).",
+        "status": "false",
+        "note": "Dit tarief is verouderd. Volgens de actuele legesverordening van gemeente Laarbeek geldt een ander tarief voor 2024."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.laarbeek.nl/horecabedrijf-beginnen",
+      "https://www.laarbeek.nl/omgevingsvergunning",
+      "https://www.laarbeek.nl/reclame-uitingen-plaatsen-omgevingsvergunning",
+      "https://www.laarbeek.nl/standplaatsvergunning",
+      "https://www.laarbeek.nl/verklaring-omtrent-het-gedrag"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Er komt veel kijken bij het beginnen van een horecabedrijf. Wij informeren u daar graag in een persoonlijk gesprek over.",
+          "original_reference": "Tijdens het gesprek met de gemeente krijgt u informatie over de eisen vanuit de Algemene Plaatselijke Verordening (APV), met name de artikelen 2:27 en 2:28, en andere relevante zaken voor uw aanvraag.",
+          "note": "De originele tekst specificeert concrete APV-artikelen, terwijl de brontekst algemener is over de informatieverstrekking tijdens het gesprek.",
+          "source_urls": [
+            "https://www.laarbeek.nl/horecabedrijf-beginnen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U regelt een exploitatievergunning voor uw horecabedrijf persoonlijk op het gemeentehuis.",
+          "original_reference": "U regelt de aanvraag van een horeca-exploitatievergunning persoonlijk op het gemeentehuis.",
+          "note": "De brontekst gebruikt de term 'exploitatievergunning' zonder het voorvoegsel 'horeca', wat mogelijk tot verwarring kan leiden.",
+          "source_urls": [
+            "https://www.laarbeek.nl/horecabedrijf-beginnen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De originele tekst noemt €385,00 (tarief 2022) maar dit wordt niet bevestigd in de bronpagina's",
+          "original_reference": "De kosten voor het aanvragen van een horeca-exploitatievergunning bedragen €385,00 (tarief 2022).",
+          "note": "Het genoemde tariefbedrag kan niet worden geverifieerd in de beschikbare bronnen.",
+          "source_urls": [
+            "https://www.laarbeek.nl/horecabedrijf-beginnen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de specificiteit van de informatieverstrekking tijdens het gesprek, de benaming van de vergunning, en het niet kunnen verifiëren van de kosten. De bronnen bevatten minder specifieke details over bepaalde aspecten dan de originele tekst. Sommige informatie uit de originele tekst (zoals kosten en specifieke APV-artikelen) kon niet worden teruggevonden in de beschikbare bronnen."
+  }
+}

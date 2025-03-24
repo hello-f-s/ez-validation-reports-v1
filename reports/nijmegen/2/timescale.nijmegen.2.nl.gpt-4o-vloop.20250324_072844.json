@@ -1,0 +1,87 @@
+{
+  "context": {
+    "municipality": {
+      "name": "NIJMEGEN",
+      "contact": {
+        "phone": "14 024",
+        "email": "gemeente@nijmegen.nl",
+        "website": "http://www.nijmegen.nl"
+      }
+    },
+    "service": {
+      "id": 2,
+      "name": "Bord of spandoek plaatsen aan de openbare weg"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "Maximum van drie keer per jaar gebruik van barbecue op een horeca-terras.",
+        "status": "false",
+        "note": "Deze regel over barbecuegebruik op horeca-terrassen staat niet in de officiële regelgeving van de gemeente Nijmegen. Het barbecuebeleid voor horeca wordt per geval beoordeeld via de reguliere vergunningsprocedure."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.nijmegen.nl/diensten/vergunningen/objectvergunning/",
+      "https://www.nijmegen.nl/diensten/evenementen/schema-vergunningen-activiteiten/tekstversie/",
+      "https://www.nijmegen.nl/diensten/vergunningen/standplaatsvergunningen/",
+      "https://www.nijmegen.nl/diensten/vergunningen/standplaatsvergunningen/vergunning-standplaats-priveterrein/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.nijmegen.nl/diensten/vergunningen/informatiekraam-melden-of-vergunning/",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wij geven geen vergunning af voor voorwerpen met commerciële reclame. Kijk hiervoor naar reclame op straat maken. Wilt u een object plaatsen met niet-commerciële reclame? Wij verwachten dan een uitleg hierover in het aanvraagformulier.",
+          "original_reference": "Geen commerciële reclame op het voorwerp; dan is een andere vergunning nodig.",
+          "note": "De brontekst specificeert dat bij niet-commerciële reclame een uitleg in het aanvraagformulier nodig is. Deze belangrijke voorwaarde ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/vergunningen/objectvergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor meer informatie over objecten op uw horecaterras neemt u contact op met het Ondernemerspunt.",
+          "original_reference": "No matching information",
+          "note": "De brontekst verwijst naar het Ondernemerspunt voor meer informatie over horeca-objecten. Deze doorverwijzing ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/vergunningen/objectvergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Let op: deze vergunning is niet voor bouwmaterialen. Wilt u bouwmaterialen plaatsen zoals een container of hijskraan? Maak dan een melding of vraag een vergunning aan via Bouwmaterialen op openbaar terrein.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist de belangrijke uitsluiting van bouwmaterialen en de verwijzing naar de juiste procedure hiervoor.",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/vergunningen/objectvergunning/"
+          ]
+        }
+      ]
+    },
+    "summary": "De broninhoud bevat enkele belangrijke aanvullingen die ontbreken in de originele tekst: de vereiste toelichting bij niet-commerciële reclame, het bestaan van het Ondernemerspunt voor horeca-gerelateerde vragen, en de uitsluiting van bouwmaterialen van deze vergunning. Deze informatie is essentieel voor een complete en accurate beschrijving van de objectvergunning."
+  }
+}

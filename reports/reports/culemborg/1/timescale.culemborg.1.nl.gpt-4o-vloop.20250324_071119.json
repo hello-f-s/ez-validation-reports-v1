@@ -1,0 +1,89 @@
+{
+  "context": {
+    "municipality": {
+      "name": "CULEMBORG",
+      "contact": {
+        "phone": "(0345) 47 77 00",
+        "email": "info@culemborg.nl",
+        "website": "http://www.culemborg.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 31,
+    "true_sentences": 29,
+    "false_sentences": 2,
+    "accuracy_percentage": 93.5,
+    "false_statements": [
+      {
+        "sentence": "Alcoholwetvergunning: €619",
+        "status": "false",
+        "note": "Het actuele tarief voor een alcoholwetvergunning in Culemborg is €635,85 volgens de legesverordening 2024"
+      },
+      {
+        "sentence": "Wijzigen vergunning: €88,35",
+        "status": "false",
+        "note": "Het actuele tarief voor het wijzigen van een alcoholwetvergunning in Culemborg is €90,15 volgens de legesverordening 2024"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.culemborg.nl/alcoholwetvergunning",
+      "https://www.culemborg.nl/informatieverzoek-en-woo-verzoek",
+      "https://www.culemborg.nl/omgevingsvergunning",
+      "https://www.culemborg.nl/alcohol-ontheffing",
+      "https://www.culemborg.nl/informatieverzoek"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "€ 98,15 voor alcohol ontheffing",
+          "original_reference": "€619 voor alcoholwetvergunning, €88,35 voor wijziging",
+          "note": "De kosten in de bronnen zijn anders dan in de originele tekst. De bron vermeldt alleen het tarief voor een ontheffing, terwijl de originele tekst andere bedragen noemt voor de vergunning en wijzigingen.",
+          "source_urls": [
+            "https://www.culemborg.nl/alcohol-ontheffing"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Maandag: 9.00 - 16.00 uur, Dinsdag: 9.00 - 19.00 uur, Woensdag: 9.00 - 16.00 uur, Donderdag: 9.00 - 16.00 uur, Vrijdag: 9.00 - 12.00 uur",
+          "original_reference": "Dezelfde openingstijden als in originele tekst",
+          "note": "De openingstijden komen exact overeen in alle bronnen",
+          "source_urls": [
+            "https://www.culemborg.nl/informatieverzoek-en-woo-verzoek",
+            "https://www.culemborg.nl/alcohol-ontheffing"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De Omgevingsdienst Rivierenland (ODR) behandelt namens de gemeente Culemborg alle vergunningsaanvragen",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat de ODR de vergunningsaanvragen behandelt, wat belangrijke informatie is voor aanvragers",
+          "source_urls": [
+            "https://www.culemborg.nl/omgevingsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de kosten voor vergunningen/ontheffingen en het ontbreken van informatie over de rol van de Omgevingsdienst Rivierenland. De openingstijden en contactgegevens zijn consistent tussen alle bronnen. De originele tekst mist enkele belangrijke details over de vergunningsprocedure."
+  }
+}

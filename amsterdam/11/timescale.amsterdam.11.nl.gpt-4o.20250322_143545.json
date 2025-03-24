@@ -1,0 +1,75 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AMSTERDAM",
+      "contact": {
+        "phone": "14 020",
+        "email": "null",
+        "website": "http://www.amsterdam.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor een conceptverzoek omgevingsplanactiviteit bedragen € 316,80 in 2024 en € 327,30 in 2025.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Amsterdam bedragen de kosten voor een conceptaanvraag omgevingsvergunning € 317,80 in 2024. Het bedrag voor 2025 wordt niet vermeld op de officiële website."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 8,
+    "valid_urls": 0,
+    "invalid_urls": 8,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://omgevingswet.com/boom-kappen/",
+        "reason": "INVALID: Error scraping https://omgevingswet.com/boom-kappen/: HTTPSConnectionPool(host='omgevingswet.com', port=443): Max retries exceeded with url: /boom-kappen/ (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x107dfb770>, 'Connection to omgevingswet.com timed out. (connect timeout=10)'))"
+      },
+      {
+        "url": "https://www.amsterdam.nl/wonen-leefomgeving/omgevingsvergunning/boom-kappen-of-snoeien/",
+        "reason": "INVALID: Error scraping https://www.amsterdam.nl/wonen-leefomgeving/omgevingsvergunning/boom-kappen-of-snoeien/: 403 Client Error: Forbidden for url: https://www.amsterdam.nl/wonen-leefomgeving/omgevingsvergunning/boom-kappen-of-snoeien/"
+      },
+      {
+        "url": "https://www.amsterdam.nl/wonen-leefomgeving/omgevingsvergunning/omgevingswet/",
+        "reason": "INVALID: Error scraping https://www.amsterdam.nl/wonen-leefomgeving/omgevingsvergunning/omgevingswet/: 403 Client Error: Forbidden for url: https://www.amsterdam.nl/wonen-leefomgeving/omgevingsvergunning/omgevingswet/"
+      },
+      {
+        "url": "https://www.amsterdam.nl/ondernemen/vergunningen/",
+        "reason": "INVALID: Error scraping https://www.amsterdam.nl/ondernemen/vergunningen/: 403 Client Error: Forbidden for url: https://www.amsterdam.nl/ondernemen/vergunningen/"
+      },
+      {
+        "url": "https://www.amsterdam.nl/parkeren/parkeervergunning/parkeervergunning-bedrijven/",
+        "reason": "INVALID: Error scraping https://www.amsterdam.nl/parkeren/parkeervergunning/parkeervergunning-bedrijven/: 403 Client Error: Forbidden for url: https://www.amsterdam.nl/parkeren/parkeervergunning/parkeervergunning-bedrijven/"
+      },
+      {
+        "url": "https://omgevingswet.com/vergunningen-voor-ondernemers/",
+        "reason": "INVALID: Error scraping https://omgevingswet.com/vergunningen-voor-ondernemers/: HTTPSConnectionPool(host='omgevingswet.com', port=443): Max retries exceeded with url: /vergunningen-voor-ondernemers/ (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x107de3ed0>, 'Connection to omgevingswet.com timed out. (connect timeout=10)'))"
+      },
+      {
+        "url": "https://omgevingswet.com/omgevingswet/",
+        "reason": "INVALID: Error scraping https://omgevingswet.com/omgevingswet/: HTTPSConnectionPool(host='omgevingswet.com', port=443): Max retries exceeded with url: /omgevingswet/ (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x107de3d90>, 'Connection to omgevingswet.com timed out. (connect timeout=10)'))"
+      },
+      {
+        "url": "https://www.amsterdam.nl/wonen-leefomgeving/omgevingsvergunning/conceptaanvraag-omgevingsvergunning/",
+        "reason": "INVALID: Error scraping https://www.amsterdam.nl/wonen-leefomgeving/omgevingsvergunning/conceptaanvraag-omgevingsvergunning/: 403 Client Error: Forbidden for url: https://www.amsterdam.nl/wonen-leefomgeving/omgevingsvergunning/conceptaanvraag-omgevingsvergunning/"
+      }
+    ]
+  }
+}

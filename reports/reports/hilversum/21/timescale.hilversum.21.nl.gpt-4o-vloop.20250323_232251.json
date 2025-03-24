@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HILVERSUM",
+      "contact": {
+        "phone": "14 035",
+        "email": "gemeente@hilversum.nl",
+        "website": "http://www.hilversum.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 20,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.2,
+    "false_statements": [
+      {
+        "sentence": "Het aanvragen van een VOG kost €41,35.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Hilversum kost een VOG €41,95. Het genoemde bedrag van €41,35 is onjuist."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://hilversum.nl/uittreksels-afschriften/verklaring-omtrent-gedrag-vog",
+      "https://hilversum.nl/vergunningen/vergunningen-voor-bouwen-verbouwen/omgevingsvergunning-aanvragen",
+      "https://hilversum.nl/bouwen-verbouwen/omgevingswet/aanvraag-omgevingsvergunning-uitgelegd",
+      "https://hilversum.nl/paspoort-id-kaart/nederlander-worden",
+      "https://hilversum.nl/node/1735"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De organisatie waar u vrijwilliger bent, kan in sommige gevallen een gratis VOG aanvragen",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over de mogelijkheid van een gratis VOG voor vrijwilligers",
+          "source_urls": [
+            "https://hilversum.nl/uittreksels-afschriften/verklaring-omtrent-gedrag-vog"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een VOG is alleen in het Nederlands verkrijgbaar. Wilt u een internationale VOG? Dan moet u de VOG laten vertalen door een beëdigd vertaler",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de taal waarin de VOG wordt uitgegeven en de mogelijkheid tot vertaling",
+          "source_urls": [
+            "https://hilversum.nl/uittreksels-afschriften/verklaring-omtrent-gedrag-vog"
+          ]
+        }
+      ]
+    },
+    "summary": "De broninhoud bevat twee belangrijke aanvullende details die niet in de originele tekst voorkomen: de mogelijkheid van een gratis VOG voor vrijwilligersorganisaties en informatie over de taal van de VOG en de vertaalmogelijkheden. Deze informatie kan belangrijk zijn voor specifieke doelgroepen zoals vrijwilligers en internationale aanvragers. Voor het overige komt de informatie in beide teksten overeen."
+  }
+}

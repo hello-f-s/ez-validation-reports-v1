@@ -1,0 +1,67 @@
+{
+  "context": {
+    "municipality": {
+      "name": "EINDHOVEN",
+      "contact": {
+        "phone": "14 040",
+        "email": "gemeente@eindhoven.nl",
+        "website": "http://www.eindhoven.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 16,
+    "true_sentences": 15,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.8,
+    "false_statements": [
+      {
+        "sentence": "Specificaties over de bezwaarschriftprocedure zijn niet gedetailleerd beschreven op de gemeentelijke website.",
+        "status": "false",
+        "note": "De bezwaarschriftprocedure is wel degelijk gedetailleerd beschreven op de website van gemeente Eindhoven, inclusief termijnen, vereisten en het proces. Deze informatie is te vinden onder het kopje 'Bezwaar en beroep' op eindhoven.nl."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.eindhoven.nl/stad-en-wonen/stad/parkeren/parkeervergunningen",
+      "https://www.eindhoven.nl/handleiding-parkeervergunning-voor-bedrijven",
+      "https://www.eindhoven.nl/bouwen/vergunningen/omgevingsvergunning-voor-een-omgevingsplanactiviteit-aanleggen",
+      "https://www.eindhoven.nl/handleiding-p-loket-voor-bewoners",
+      "https://www.eindhoven.nl/gehandicaptenparkeerkaart-aanvragen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Geen tegenstrijdige informatie gevonden in de geciteerde bronnen",
+          "original_reference": "Alle informatie in de originele tekst",
+          "note": "De geciteerde bronpagina's bevatten geen inhoudelijke informatie die in tegenspraak is met de originele tekst. De bronpagina's lijken voornamelijk navigatiemenu's en headers te bevatten zonder de daadwerkelijke inhoud over parkeervergunningen.",
+          "source_urls": [
+            "https://www.eindhoven.nl/stad-en-wonen/stad/parkeren/parkeervergunningen",
+            "https://www.eindhoven.nl/handleiding-parkeervergunning-voor-bedrijven",
+            "https://www.eindhoven.nl/handleiding-p-loket-voor-bewoners"
+          ]
+        }
+      ]
+    },
+    "summary": "De aangeleverde bronpagina's bevatten alleen navigatie-elementen en geen inhoudelijke informatie over parkeervergunningen. Hierdoor kunnen er geen concrete verschillen of inconsistenties worden vastgesteld met de originele inhoud. Een grondige vergelijking van de daadwerkelijke inhoud van deze pagina's zou nodig zijn om betekenisvolle verschillen te kunnen identificeren."
+  }
+}

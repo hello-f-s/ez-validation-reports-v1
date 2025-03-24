@@ -1,0 +1,91 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DRUTEN",
+      "contact": {
+        "phone": "(088) 432 70 00",
+        "email": "info@druten.nl",
+        "website": "http://www.druten.nl"
+      }
+    },
+    "service": {
+      "id": 2,
+      "name": "Bord of spandoek plaatsen aan de openbare weg"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Wordt er niet binnen deze termijn besloten, dan krijgt u automatisch de vergunning.",
+        "status": "false",
+        "note": "Dit is onjuist. Bij het uitblijven van een besluit binnen de gestelde termijn is er geen sprake van automatische vergunningverlening. Er geldt dan de Wet dwangsom en beroep bij niet tijdig beslissen, waarbij eerst een ingebrekestelling nodig is."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 9,
+    "valid_urls": 5,
+    "invalid_urls": 4,
+    "accuracy_percentage": 55.6,
+    "valid_urls_list": [
+      "https://www.druten.nl/exploitatievergunning-horecabedrijf",
+      "https://www.druten.nl/voorwerp-plaatsen-op-of-aan-de-weg",
+      "https://www.druten.nl/reclame-en-terrassenbeleid",
+      "https://www.druten.nl/standplaatsvergunning",
+      "https://www.druten.nl/reclame-plaatsen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://gemeente.digitale-gids.nl/thema/Reclame-terrassenbeleid\">Reclame-",
+        "reason": "INVALID: Error scraping https://gemeente.digitale-gids.nl/thema/Reclame-terrassenbeleid\">Reclame-: HTTPSConnectionPool(host='gemeente.digitale-gids.nl', port=443): Max retries exceeded with url: /thema/Reclame-terrassenbeleid%22%3EReclame- (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x108253e00>: Failed to resolve 'gemeente.digitale-gids.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://gemeente.digitale-gids.nl/thema/Reclame-plaatsen",
+        "reason": "INVALID: Error scraping https://gemeente.digitale-gids.nl/thema/Reclame-plaatsen: HTTPSConnectionPool(host='gemeente.digitale-gids.nl', port=443): Max retries exceeded with url: /thema/Reclame-plaatsen (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x108236e90>: Failed to resolve 'gemeente.digitale-gids.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://gemeente.digitale-gids.nl/thema/Reclame-terrassenbeleid",
+        "reason": "INVALID: Error scraping https://gemeente.digitale-gids.nl/thema/Reclame-terrassenbeleid: HTTPSConnectionPool(host='gemeente.digitale-gids.nl', port=443): Max retries exceeded with url: /thema/Reclame-terrassenbeleid (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x108237610>: Failed to resolve 'gemeente.digitale-gids.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://gemeente.digitale-gids.nl/thema/Reclame-plaatsen\">Reclame",
+        "reason": "INVALID: Error scraping https://gemeente.digitale-gids.nl/thema/Reclame-plaatsen\">Reclame: HTTPSConnectionPool(host='gemeente.digitale-gids.nl', port=443): Max retries exceeded with url: /thema/Reclame-plaatsen%22%3EReclame (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x108690cd0>: Failed to resolve 'gemeente.digitale-gids.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor een reclamebord tegen de gevel in het winkelgebied van Druten dat voldoet aan de eisen vanuit het reclame- en terrassenbeleid is bijvoorbeeld geen omgevingsvergunning nodig",
+          "original_reference": "Een vergunning is nodig als er bouwactiviteiten zijn verbonden aan de plaatsing van de reclame, zoals het ophangen van een reclamebord of blokletters aan een gevel",
+          "note": "De originele tekst stelt dat een vergunning nodig is voor reclameborden aan gevels, terwijl de bron aangeeft dat dit niet nodig is als het binnen het reclamebeleid past",
+          "source_urls": [
+            "https://www.druten.nl/reclame-en-terrassenbeleid"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u een constructie gaat bouwen voor het aanbrengen van reclame, dan heeft u een vergunning nodig voor het bouwen van deze constructie. Hiervoor doet u een aanvraag voor een bouwactiviteit.",
+          "original_reference": "Een vergunning is nodig als er bouwactiviteiten zijn verbonden aan de plaatsing van de reclame",
+          "note": "De bron specificeert duidelijker dat het om een vergunning voor een bouwactiviteit gaat, terwijl de originele tekst alleen spreekt over 'een vergunning'",
+          "source_urls": [
+            "https://www.druten.nl/reclame-plaatsen"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden in de informatie over reclamevergunningen. Ten eerste is er een tegenstrijdigheid over de vergunningsplicht voor reclameborden aan gevels in het winkelgebied. Ten tweede geeft de bronpagina een specifiekere omschrijving van het type vergunning dat nodig is voor bouwconstructies ten behoeve van reclame. Deze verschillen kunnen van invloed zijn op de vergunningsaanvraag voor ondernemers."
+  }
+}

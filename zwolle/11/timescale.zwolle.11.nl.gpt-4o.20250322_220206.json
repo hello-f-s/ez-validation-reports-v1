@@ -1,0 +1,81 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ZWOLLE",
+      "contact": {
+        "phone": "14 038",
+        "email": "postbus@zwolle.nl",
+        "website": "http://www.zwolle.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "De procedure duurt meestal 8 weken wanneer alle documenten compleet zijn.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Zwolle duurt een reguliere procedure maximaal 8 weken, niet 'meestal' 8 weken. Dit is een wettelijke termijn die in de Omgevingswet is vastgelegd."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 3,
+    "invalid_urls": 2,
+    "accuracy_percentage": 60.0,
+    "valid_urls_list": [
+      "https://www.zwolle.nl/omgevingswet",
+      "https://www.zwolle.nl/conceptverzoek-omgevingsvergunning",
+      "https://www.zwolle.nl/omgevingsvergunning-en-melding"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.zwolle.nl/veelgestelde-vragen-over-de-omgevingswet",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.zwolle.nl/u-heeft-een-omgevingsvergunning-ontvangen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een conceptverzoek kost geld. De kosten vindt u op onze pagina Leges omgevingsvergunning.",
+          "original_reference": "De kosten voor de aanvraag van een omgevingsvergunning zijn afhankelijk van de aard en omvang van het project. Specifieke kosteninformatie kan bij de gemeente worden opgevraagd.",
+          "note": "De originele tekst vermeldt niet specifiek dat een conceptverzoek apart kosten met zich meebrengt en verwijst niet naar de pagina met legestarieven.",
+          "source_urls": [
+            "https://www.zwolle.nl/conceptverzoek-omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Meestal moet u tekeningen, foto's of berekeningen meesturen.",
+          "original_reference": "Voor het aanvragen heeft u alle relevante bouwtekeningen, berekeningen en, indien van toepassing, een advies van een kwaliteitsborger nodig.",
+          "note": "De bronpagina noemt expliciet foto's als mogelijke bijlage, terwijl dit in de originele tekst niet wordt genoemd.",
+          "source_urls": [
+            "https://www.zwolle.nl/omgevingsvergunning-en-melding"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden: de specificatie van kosten voor conceptverzoeken en de vereiste documentatie. De bronnen zijn specifieker over de kosten voor conceptverzoeken en noemen extra documentatie-eisen (foto's). De overige informatie komt grotendeels overeen met de originele tekst of is aanvullend zonder direct tegenstrijdig te zijn."
+  }
+}

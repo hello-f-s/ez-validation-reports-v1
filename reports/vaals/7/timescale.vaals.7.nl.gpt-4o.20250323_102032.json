@@ -1,0 +1,92 @@
+{
+  "context": {
+    "municipality": {
+      "name": "VAALS",
+      "contact": {
+        "phone": "(043) 306 85 68",
+        "email": "info@vaals.nl",
+        "website": "http://www.vaals.nl"
+      }
+    },
+    "service": {
+      "id": 7,
+      "name": "Kabels en leidingen aanleggen en beheren"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "Er zijn twee procedures: de korte procedure, waarbij de beslistermijn normaal maximaal 8 weken is, en de uitgebreide procedure, die een langere beslistermijn heeft maar slechts in specifieke gevallen wordt toegepast.",
+        "status": "false",
+        "note": "De reguliere (korte) procedure heeft een beslistermijn van maximaal 8 weken met mogelijkheid tot verlenging van 6 weken. De uitgebreide procedure heeft een beslistermijn van 26 weken met mogelijkheid tot verlenging van 6 weken volgens de informatie van gemeente Vaals."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.vaals.nl/inwoners/vergunningen/omgevingswet/omgevingsvergunning",
+      "https://www.vaals.nl/inwoners/vergunningen/omgevingsvergunning",
+      "https://www.vaals.nl/inwoners/vergunningen/omgevingswet/veelgestelde-vragen",
+      "https://www.vaals.nl/inwoners/vergunningen/omgevingswet/meest-aangevraagde-activiteiten",
+      "https://www.vaals.nl/ondernemers/ondernemersplein"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "http://www.vaals.nl/veelgestelde-vragen-gemeente-vaals",
+        "reason": "INVALID: Error scraping http://www.vaals.nl/veelgestelde-vragen-gemeente-vaals: 404 Client Error: Not Found for url: https://www.vaals.nl/veelgestelde-vragen-gemeente-vaals"
+      },
+      {
+        "url": "http://www.vaals.nl/omgevingsvergunning-gemeente-vaals",
+        "reason": "INVALID: Error scraping http://www.vaals.nl/omgevingsvergunning-gemeente-vaals: 404 Client Error: Not Found for url: https://www.vaals.nl/omgevingsvergunning-gemeente-vaals"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Nieuw bij het (ver)bouwen van een bouwwerk is dat er een knip wordt gemaakt. Deze bestaat uit een (technische) bouwactiviteit en een omgevingsplanactiviteit bouwen (ruimtelijk of planologisch deel).",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat belangrijke nieuwe informatie over de 'knip' in bouwactiviteiten die niet genoemd wordt in de originele tekst. Dit is een essentieel onderdeel van de nieuwe Omgevingswet.",
+          "source_urls": [
+            "https://www.vaals.nl/inwoners/vergunningen/omgevingswet/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor sommige bouwwerken of activiteiten heeft u geen omgevingsvergunning nodig. Bijvoorbeeld voor een kleine dakkapel aan de achterkant van uw woning. Voor een dakkapel aan de voorkant van je woning, dient u altijd een vergunning aan te vragen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist concrete voorbeelden van vergunningvrije activiteiten die wel in de bronpagina worden genoemd.",
+          "source_urls": [
+            "https://www.vaals.nl/inwoners/vergunningen/omgevingswet/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Klant Contactcentrum Telefoonnummer: 043-3068568, E-mailadres: info@vaals.nl",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen specifieke contactgegevens die wel in de bronpagina worden vermeld.",
+          "source_urls": [
+            "https://www.vaals.nl/inwoners/vergunningen/omgevingsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten enkele belangrijke aanvullingen die niet in de originele tekst voorkomen, waaronder de nieuwe 'knip' in bouwactiviteiten onder de Omgevingswet, specifieke voorbeelden van vergunningvrije activiteiten en concrete contactgegevens. Deze informatie is essentieel voor een volledig begrip van de vergunningsprocedure onder de nieuwe Omgevingswet."
+  }
+}

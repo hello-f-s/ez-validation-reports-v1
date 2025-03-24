@@ -1,0 +1,82 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ALPHEN-CHAAM",
+      "contact": {
+        "phone": "14013",
+        "email": "info@alphen-chaam.nl",
+        "website": "http://www.alphen-chaam.nl"
+      }
+    },
+    "service": {
+      "id": 6,
+      "name": "Integriteitsonderzoek (Wet Bibob)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "Het bezoekadres is Willibrordplein 1, 5131 AV Alphen.",
+        "status": "false",
+        "note": "Het juiste bezoekadres van de gemeente Alphen-Chaam is Willibrordplein 1, 5131 AV Alphen NB. Het ontbreekt aan de toevoeging 'NB' (Noord-Brabant) in het adres."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 4,
+    "valid_urls": 4,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.alphen-chaam.nl/woo",
+      "https://www.alphen-chaam.nl/horecavergunning",
+      "https://www.alphen-chaam.nl/uittreksels-en-verklaringen",
+      "https://www.alphen-chaam.nl/vog"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "€ 178,95",
+          "original_reference": "Het Bibob-onderzoek zelf brengt geen directe kosten met zich mee",
+          "note": "De originele tekst stelt dat er geen directe kosten zijn voor het Bibob-onderzoek, maar de bron vermeldt specifieke kosten van €178,95 voor de horecavergunning",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/horecavergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Slijterijen",
+          "original_reference": "Er wordt geen Bibob-onderzoek uitgevoerd voor slijterijen",
+          "note": "De originele tekst stelt dat slijterijen zijn uitgezonderd van Bibob-onderzoek, maar de bron noemt slijterijen wel als vergunningplichtig",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/horecavergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "€ 41,35",
+          "original_reference": "€ 0,05 per enkelzijdige pagina",
+          "note": "De originele tekst noemt andere kosten voor kopieën dan de werkelijke kosten voor een VOG die €41,35 bedragen",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/vog"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn belangrijke verschillen gevonden in de kosten en toepassingsgebied van de Bibob-procedure. De originele tekst bevat onjuiste informatie over de kosten van de horecavergunning en de uitsluiting van slijterijen. Ook zijn de vermelde kosten voor documentatie niet accuraat vergeleken met de werkelijke VOG-kosten. Deze verschillen hebben significante implicaties voor ondernemers die een horecavergunning willen aanvragen."
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LEEUWARDEN",
+      "contact": {
+        "phone": "14 058",
+        "email": "gemeente@leeuwarden.nl",
+        "website": "http://www.leeuwarden.nl"
+      }
+    },
+    "service": {
+      "id": 13,
+      "name": "Omzettingsvergunning voor kamerverhuur aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 20,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.2,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor het indienen van een aanvraag bedragen € 238,66.",
+        "status": "false",
+        "note": "Dit bedrag is niet correct. De legeskosten voor vergunningaanvragen in Leeuwarden variëren per type aanvraag en worden jaarlijks vastgesteld in de legesverordening. Er is geen vast bedrag van € 238,66 voor alle aanvragen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.leeuwarden.nl/omgevingsvergunning/procedure-omgevingsvergunning-aanvragen-of-melden/",
+      "https://www.leeuwarden.nl/omgevingsvergunning/gebruikmaken-maken-of-veranderen-van-een-uitweg/",
+      "https://www.leeuwarden.nl/omgevingsvergunning/milieu-melding-of-vergunning/",
+      "https://www.leeuwarden.nl/vergunningen/",
+      "https://www.leeuwarden.nl/horeca/horecavergunning/"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Is de uitkomst 'Neem contact op met uw gemeente'? Is de uitkomst, door de reden Flora en fauna-activiteit of Natura 2000-activiteit, dat u contact moet opnemen met de gemeente? Neem dan contact op met de Provincie Fryslân en niet met de gemeente.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over dat bij Flora en fauna-activiteiten of Natura 2000-activiteiten contact moet worden opgenomen met de Provincie Fryslân in plaats van de gemeente.",
+          "source_urls": [
+            "https://www.leeuwarden.nl/omgevingsvergunning/procedure-omgevingsvergunning-aanvragen-of-melden/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De kosten voor de aanleg van een uitweg betaalt u zelf. De hoogte van deze kosten hangen af van de werkzaamheden die verricht moeten worden. U ontvangt hiervoor een offerte.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat er naast de vergunningskosten ook aanlegkosten zijn voor een uitweg, die apart geoffreerd worden.",
+          "source_urls": [
+            "https://www.leeuwarden.nl/omgevingsvergunning/gebruikmaken-maken-of-veranderen-van-een-uitweg/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Met Maatregelen op Maat weet u welke regels voor u gelden en wat u kunt doen om zich aan die regels te houden.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist informatie over de 'Maatregelen op Maat'-tool die helpt bij het bepalen van geldende regels en vereiste maatregelen.",
+          "source_urls": [
+            "https://www.leeuwarden.nl/omgevingsvergunning/milieu-melding-of-vergunning/"
+          ]
+        }
+      ]
+    },
+    "summary": "De originele tekst mist enkele belangrijke details die wel in de bronnen staan: specifieke instructies voor Flora en fauna-activiteiten, informatie over aanlegkosten bij uitwegen, en het bestaan van de 'Maatregelen op Maat'-tool. Deze informatie is relevant voor gebruikers die specifieke vergunningen willen aanvragen."
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DRUTEN",
+      "contact": {
+        "phone": "(088) 432 70 00",
+        "email": "info@druten.nl",
+        "website": "http://www.druten.nl"
+      }
+    },
+    "service": {
+      "id": 2,
+      "name": "Bord of spandoek plaatsen aan de openbare weg"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "Als de gemeente niet binnen de termijn beslist, krijgt u automatisch de vergunning.",
+        "status": "false",
+        "note": "Dit is onjuist. Bij het niet tijdig beslissen door de gemeente krijgt men niet automatisch een vergunning. Er geldt de reguliere Wet dwangsom en beroep bij niet tijdig beslissen, waarbij men eerst de gemeente in gebreke moet stellen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.druten.nl/reclame-plaatsen",
+      "https://www.druten.nl/voorwerp-plaatsen-op-of-aan-de-weg",
+      "https://www.druten.nl/standplaatsvergunning",
+      "https://www.druten.nl/reclame-en-terrassenbeleid",
+      "https://www.druten.nl/exploitatievergunning-horecabedrijf"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor sommige reclame uitingen heeft u een vergunning nodig. Als u een constructie gaat bouwen voor het aanbrengen van reclame, dan heeft u een vergunning nodig voor het bouwen van deze constructie.",
+          "original_reference": "No matching information",
+          "note": "De bronnen specificeren dat er een onderscheid is tussen verschillende soorten reclamevergunningen, waaronder een specifieke bouwvergunning voor constructies. Deze nuance ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.druten.nl/reclame-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor een reclamebord tegen de gevel in het winkelgebied van Druten dat voldoet aan de eisen vanuit het reclame- en terrassenbeleid is bijvoorbeeld geen omgevingsvergunning nodig",
+          "original_reference": "No matching information",
+          "note": "De originele tekst maakt geen onderscheid tussen verschillende gebieden en vermeldt niet dat sommige reclameborden geen vergunning nodig hebben als ze aan het beleid voldoen.",
+          "source_urls": [
+            "https://www.druten.nl/reclame-en-terrassenbeleid"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "€ 136,30. Daarnaast betaalt u per dag € 16,40, per week € 54,70 en/of per maand € 136,30",
+          "original_reference": "Er zijn geen specifieke kosten vermeld voor het aanvragen van een vergunning voor een reclamebord aan de openbare weg.",
+          "note": "De bronnen vermelden wel specifieke kosten voor het plaatsen van voorwerpen op of aan de weg, terwijl de originele tekst aangeeft dat er geen specifieke kosten zijn.",
+          "source_urls": [
+            "https://www.druten.nl/voorwerp-plaatsen-op-of-aan-de-weg"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie die ontbreekt in de originele tekst, met name over verschillende soorten vergunningen, uitzonderingen voor bepaalde gebieden en specifieke kostentarieven. Ook wordt duidelijk dat niet alle reclameborden een vergunning nodig hebben als ze voldoen aan het reclame- en terrassenbeleid van de gemeente."
+  }
+}

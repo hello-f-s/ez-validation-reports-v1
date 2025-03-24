@@ -1,0 +1,79 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ARNHEM",
+      "contact": {
+        "phone": "null",
+        "email": "null",
+        "website": "http://www.arnhem.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 19,
+    "false_sentences": 2,
+    "accuracy_percentage": 90.5,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor een behendigheidsautomaat zijn nihil.",
+        "status": "false",
+        "note": "Volgens de legesverordening van gemeente Arnhem worden er wel degelijk kosten in rekening gebracht voor behendigheidsautomaten, deze zijn niet nihil"
+      },
+      {
+        "sentence": "Vragen? Neem contact op met de Afdeling Vergunningen Openbare Ruimte via het contactformulier of telefoonnummer 0800-1809.",
+        "status": "false",
+        "note": "Het telefoonnummer 0800-1809 is onjuist. Het correcte algemene contactnummer van gemeente Arnhem is 0900-1809"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.arnhem.nl/Ondernemers/horeca/horeca_en_vergunningen/kansspelautomaten_aanwezigheidsvergunning_voor_gokken_gokautomaat",
+      "https://www.arnhem.nl/Ondernemers/vergunningen_ondernemers/bingo_en_loterij",
+      "https://www.arnhem.nl/Ondernemers/horeca/horeca_en_vergunningen",
+      "https://www.arnhem.nl/Ondernemers/horeca/horeca_en_vergunningen/Terrasvergunning",
+      "https://www.arnhem.nl/Ondernemers/horeca/horecaspreekuur"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De aanwezigheidsvergunning is 5 jaar geldig en moet daarna opnieuw worden aangevraagd. De vergunning geldt voor 1 locatie of vestiging.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de geldigheidsduur van 5 jaar voor de vergunning en de beperking tot één locatie per vergunning.",
+          "source_urls": [
+            "https://www.arnhem.nl/Ondernemers/horeca/horeca_en_vergunningen/kansspelautomaten_aanwezigheidsvergunning_voor_gokken_gokautomaat"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor het plaatsen van een behendigheidsautomaat hebt u geen aanwezigheidsvergunning nodig.",
+          "original_reference": "De kosten voor een behendigheidsautomaat zijn nihil.",
+          "note": "De originele tekst suggereert alleen dat er geen kosten zijn voor behendigheidsautomaten, terwijl de bron expliciet vermeldt dat er helemaal geen vergunning nodig is.",
+          "source_urls": [
+            "https://www.arnhem.nl/Ondernemers/horeca/horeca_en_vergunningen/kansspelautomaten_aanwezigheidsvergunning_voor_gokken_gokautomaat"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele tekst en de bronnen. Ten eerste ontbreekt in de originele tekst de belangrijke informatie over de geldigheidsduur van 5 jaar en de beperking tot één locatie per vergunning. Ten tweede is er een verschil in de manier waarop behendigheidsautomaten worden behandeld - de originele tekst spreekt alleen over kosten, terwijl er in werkelijkheid helemaal geen vergunning nodig is."
+  }
+}

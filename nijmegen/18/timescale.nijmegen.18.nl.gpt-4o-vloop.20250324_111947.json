@@ -1,0 +1,78 @@
+{
+  "context": {
+    "municipality": {
+      "name": "NIJMEGEN",
+      "contact": {
+        "phone": "14 024",
+        "email": "gemeente@nijmegen.nl",
+        "website": "http://www.nijmegen.nl"
+      }
+    },
+    "service": {
+      "id": 18,
+      "name": "Ventvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 27,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.4,
+    "false_statements": [
+      {
+        "sentence": "Kosten nieuwe Alcoholvergunning: € 828,60.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Nijmegen bedragen de kosten voor een nieuwe alcoholvergunning € 848,60 (2024 tarief). Het genoemde bedrag is onjuist."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.nijmegen.nl/diensten/vergunningen/drank-en-horeca/alcoholvergunning/",
+      "https://www.nijmegen.nl/diensten/evenementen/schema-vergunningen-activiteiten/tekstversie/",
+      "https://www.nijmegen.nl/diensten/parkeren-verkeer-en-vervoer/parkeervergunning-bedrijven/",
+      "https://www.nijmegen.nl/diensten/uittreksels-en-verklaringen/verklaring-omtrent-gedrag/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.nijmegen.nl/diensten/vergunningen/informatiekraam-melden-of-vergunning/",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als een vennoot vertrekt uit een Vennootschap Onder Firma (VOF) raden wij u aan om de alcoholvergunning te laten aanpassen. U kunt dan niet meer aangesproken worden voor het handelen van die vennoot.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over het aanpassen van de vergunning bij het vertrek van een VOF-vennoot. Dit is belangrijke aanvullende informatie voor ondernemers.",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/vergunningen/drank-en-horeca/alcoholvergunning/"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Maak voordat u online een aanvraag doet, een afspraak met het OndernemersPunt voor een adviesgesprek. Een medewerker van het OndernemersPunt kan u helpen bij het invullen van uw aanvraag zodat deze compleet is.",
+          "original_reference": "Maak een afspraak met het OndernemersPunt: Voor een adviesgesprek. Een medewerker helpt u bij het invullen van uw aanvraag.",
+          "note": "De procedure voor het maken van een afspraak met het OndernemersPunt komt overeen met de originele tekst.",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/vergunningen/drank-en-horeca/alcoholvergunning/"
+          ]
+        }
+      ]
+    },
+    "summary": "Bij vergelijking van de bronnen met de originele tekst is er één belangrijk verschil gevonden: aanvullende informatie over het aanpassen van de alcoholvergunning bij het vertrek van een VOF-vennoot. De overige informatie in de originele tekst komt overeen met de bronnen. De procedures, vereisten en stappen zijn consistent beschreven."
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LANDGRAAF",
+      "contact": {
+        "phone": "14 045",
+        "email": "gemeente@landgraaf.nl",
+        "website": "http://www.landgraaf.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 13,
+    "false_sentences": 2,
+    "accuracy_percentage": 86.7,
+    "false_statements": [
+      {
+        "sentence": "In de gemeente Landgraaf is een parkeervergunning niet nodig omdat parkeren gratis is.",
+        "status": "false",
+        "note": "Dit is niet volledig correct. Er zijn in Landgraaf wel degelijk zones waar betaald parkeren geldt en waar een parkeervergunning nodig kan zijn, zoals bij het Burgerhoes."
+      },
+      {
+        "sentence": "Daarnaast kunt u een ontheffing aanvragen voor laden en lossen op het Raadhuisplein en parkeren aan de Bartokring.",
+        "status": "false",
+        "note": "Het Raadhuisplein bestaat niet meer in Landgraaf, dit is nu het Burgerhoes aan het Sweelinckplein. De Bartokring wordt niet specifiek genoemd in het ontheffingenbeleid van de gemeente."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 3,
+    "valid_urls": 3,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.landgraaf.nl/parkeervergunning",
+      "https://www.landgraaf.nl/verkeersontheffing-aanvragen",
+      "https://www.landgraaf.nl/aanvragen-en-regelen-ondernemers"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "In onze gemeente hoeft u niet te betalen om te parkeren; ook een parkeervergunning is niet nodig.",
+          "original_reference": "In de gemeente Landgraaf is een parkeervergunning niet nodig omdat parkeren gratis is.",
+          "note": "De informatie over gratis parkeren en dat er geen parkeervergunning nodig is komt overeen.",
+          "source_urls": [
+            "https://www.landgraaf.nl/parkeervergunning"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "parkeren in blauwe zones (parkeerontheffing), inrijden in natuurgebieden, laden en lossen op het Raadhuisplein, parkeren aan de Bartokring",
+          "original_reference": "parkeren in blauwe zones of bij evenementen [...] laden en lossen op het Raadhuisplein en parkeren aan de Bartokring",
+          "note": "De mogelijke situaties voor ontheffingen komen grotendeels overeen, met als enige toevoeging in de bron dat ook ontheffing mogelijk is voor natuurgebieden.",
+          "source_urls": [
+            "https://www.landgraaf.nl/verkeersontheffing-aanvragen"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Tijdelijke ontheffing van langer dan 1 dag en tot en met 1 maand: € 14,40, Tijdelijke ontheffing van langer dan 1 maand en tot en met 6 maanden: € 22,95, Tijdelijke ontheffing van langer dan 6 maanden: € 45,70",
+          "original_reference": "Tijdelijke ontheffing van langer dan 1 dag en tot en met 1 maand: € 14,40, Tijdelijke ontheffing van langer dan 1 maand en tot en met 6 maanden: € 22,95, Tijdelijke ontheffing van langer dan 6 maanden: € 45,70",
+          "note": "De tarieven voor ontheffingen zijn exact hetzelfde in beide bronnen.",
+          "source_urls": [
+            "https://www.landgraaf.nl/verkeersontheffing-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De informatie in de originele tekst komt grotendeels overeen met de bronnen. Het enige noemenswaardige verschil is dat de bronnen ook vermelden dat er ontheffingen mogelijk zijn voor het inrijden van natuurgebieden, wat niet in de originele tekst staat. Verder zijn alle vermelde tarieven, procedures en contactgegevens consistent."
+  }
+}

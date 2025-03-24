@@ -1,0 +1,103 @@
+{
+  "context": {
+    "municipality": {
+      "name": "BARNEVELD",
+      "contact": {
+        "phone": "14 0342",
+        "email": "info@barneveld.nl",
+        "website": "http://www.barneveld.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 10,
+    "true_sentences": 9,
+    "false_sentences": 1,
+    "accuracy_percentage": 90.0,
+    "false_statements": [
+      {
+        "sentence": "U ontvangt binnen 8 weken bericht als de aanvraag compleet is ingevuld.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Barneveld wordt binnen 12 weken een besluit genomen op een complete aanvraag voor een alcoholvergunning, niet binnen 8 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 3,
+    "invalid_urls": 3,
+    "accuracy_percentage": 50.0,
+    "valid_urls_list": [
+      "https://www.barneveld.nl/vergunningen-en-ontheffingen/horeca/alcoholvergunning-aanvragen",
+      "https://www.barneveld.nl/vergunningen-en-ontheffingen/evenementen/evenementenvergunning-aanvragen",
+      "https://www.barneveld.nl/vergunningen-en-ontheffingen/horeca/exploitatievergunning-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.barneveld.nl/vergunningen-en-ontheffingen/horeca/kansspelautomaat-vergunning-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.gemeentebarneveld.nl",
+        "reason": "INVALID: Error scraping https://www.gemeentebarneveld.nl: 439 Client Error: status code 439 for url: https://www.gemeentebarneveld.nl/"
+      },
+      {
+        "url": "https://www.barneveld.nl/vergunningen-en-ontheffingen/evenementen/drank-met-alcohol-schenken-op-een-evenement",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 4,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Cafetaria's, supermarkten en levensmiddelenbedrijven mogen alleen zwak alcoholische dranken verkopen. Ze hebben daarvoor geen alcoholvergunning voor nodig.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over uitzonderingen voor bepaalde bedrijfstypen die geen alcoholvergunning nodig hebben",
+          "source_urls": [
+            "https://www.barneveld.nl/vergunningen-en-ontheffingen/horeca/alcoholvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Kosten terras op openbaar terrein: Zomerseizoen (1 maart – 1 november): € 26,55 per m2, Heel jaar: € 39,80 per m2",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de kosten voor terrassen, terwijl dit wel relevant is voor horecaondernemers",
+          "source_urls": [
+            "https://www.barneveld.nl/vergunningen-en-ontheffingen/horeca/alcoholvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voorwaarden: Alle leidinggevenden zijn minimaal 21 jaar, zijn van goed gedrag, hebben een Verklaring Sociale Hygiëne",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist specifieke voorwaarden waaraan leidinggevenden moeten voldoen voor het verkrijgen van een alcoholvergunning",
+          "source_urls": [
+            "https://www.barneveld.nl/vergunningen-en-ontheffingen/horeca/alcoholvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Alcoholvergunning paracommerciële organisatie: € 235,00",
+          "original_reference": "Alcoholvergunning: € 317,75",
+          "note": "Er wordt een verschillend tarief gehanteerd voor paracommerciële organisaties, wat niet vermeld staat in de originele tekst",
+          "source_urls": [
+            "https://www.barneveld.nl/vergunningen-en-ontheffingen/horeca/alcoholvergunning-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De broninhoud bevat belangrijke aanvullende informatie die ontbreekt in de originele tekst, waaronder uitzonderingen voor bepaalde bedrijfstypen, specifieke voorwaarden voor leidinggevenden, verschillende tarieven voor paracommerciële organisaties en informatie over terraskosten. Deze informatie is essentieel voor een volledig begrip van de voorwaarden en kosten rond alcoholvergunningen."
+  }
+}

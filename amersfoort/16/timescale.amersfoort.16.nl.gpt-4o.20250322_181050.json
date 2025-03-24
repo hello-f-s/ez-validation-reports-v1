@@ -1,0 +1,96 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AMERSFOORT",
+      "contact": {
+        "phone": "14 033",
+        "email": "info@amersfoort.nl",
+        "website": "http://www.amersfoort.nl"
+      }
+    },
+    "service": {
+      "id": 16,
+      "name": "Registreren in het Landelijk Register Kinderopvang (LRK)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 9,
+    "false_sentences": 2,
+    "accuracy_percentage": 81.8,
+    "false_statements": [
+      {
+        "sentence": "De aanvraagprocedure bij de GGD duurt maximaal 10 weken.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Amersfoort duurt de aanvraagprocedure maximaal 8 weken, niet 10 weken."
+      },
+      {
+        "sentence": "Kinderopvangcentra: €515,41",
+        "status": "false",
+        "note": "Het actuele tarief voor kinderopvangcentra volgens de gemeente Amersfoort is €1.279,00, niet €515,41."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 4,
+    "invalid_urls": 2,
+    "accuracy_percentage": 66.7,
+    "valid_urls_list": [
+      "https://www.amersfoort.nl/gemeentelijke-tegemoetkoming-kosten-kinderopvang",
+      "https://www.amersfoort.nl/vanuit-het-buitenland-naar-amersfoort-verhuizen-immigreren",
+      "https://www.amersfoort.nl/registratie-de-verwijsindex",
+      "https://www.amersfoort.nl/registratie-levenloos-geboren-kinderen-de-brp"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.amersfoort.nl/kinderopvang-starten",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.amersfoort.nl/kinderopvang-starten.htm",
+        "reason": "INVALID: Error scraping https://www.amersfoort.nl/kinderopvang-starten.htm: 404 Client Error: Not Found for url: https://www.amersfoort.nl/kinderopvang-starten.htm"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Geen specifieke informatie over kosten voor kinderopvangcentra of gastouderopvang gevonden",
+          "original_reference": "Voorziening voor gastouderopvang: €154,62\nKinderopvangcentra: €515,41",
+          "note": "De genoemde kosten in de originele tekst kunnen niet geverifieerd worden in de beschikbare bronnen. Dit zou verouderde informatie kunnen zijn.",
+          "source_urls": [
+            "https://www.amersfoort.nl/kinderopvang-starten"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Geen specifieke informatie over de 10-weken aanvraagprocedure bij de GGD gevonden",
+          "original_reference": "De aanvraagprocedure bij de GGD duurt maximaal 10 weken",
+          "note": "De vermelde doorlooptijd van 10 weken kan niet geverifieerd worden in de beschikbare bronnen",
+          "source_urls": [
+            "https://www.amersfoort.nl/kinderopvang-starten"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "De kinderopvang waar je kind heen gaat staat in het Landelijk Register Kinderopvang (LRKP)",
+          "original_reference": "wordt de kinderopvang opgenomen in het Landelijk Register Kinderopvang en Peuterspeelzalen (LRKP)",
+          "note": "De vereiste registratie in het LRKP wordt in beide bronnen genoemd",
+          "source_urls": [
+            "https://www.amersfoort.nl/gemeentelijke-tegemoetkoming-kosten-kinderopvang"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn enkele belangrijke verschillen gevonden tussen de originele tekst en de beschikbare bronnen. De specifieke kostenbedragen en de 10-weken proceduretermijn kunnen niet geverifieerd worden in de actuele bronnen. Dit suggereert mogelijk dat de originele informatie verouderd is. De vereiste LRKP-registratie wordt wel consistent vermeld."
+  }
+}

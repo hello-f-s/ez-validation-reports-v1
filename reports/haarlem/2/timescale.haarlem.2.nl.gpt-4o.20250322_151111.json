@@ -1,0 +1,76 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HAARLEM",
+      "contact": {
+        "phone": "14 023",
+        "email": "antwoord@haarlem.nl",
+        "website": "http://www.haarlem.nl"
+      }
+    },
+    "service": {
+      "id": 2,
+      "name": "Bord of spandoek plaatsen aan de openbare weg"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 13,
+    "false_sentences": 0,
+    "accuracy_percentage": 100.0,
+    "false_statements": []
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 4,
+    "invalid_urls": 2,
+    "accuracy_percentage": 66.7,
+    "valid_urls_list": [
+      "https://haarlem.nl/aanlegvergunning",
+      "https://haarlem.nl/bouwvergunning",
+      "https://haarlem.nl/regels-uitstallingen-en-reclame",
+      "https://haarlem.nl/terrasvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.haarlem.nl/ondernemen/vergunningen/vergunning-gevelreclame/",
+        "reason": "INVALID: Error scraping https://www.haarlem.nl/ondernemen/vergunningen/vergunning-gevelreclame/: 404 Client Error: Not Found for url: https://haarlem.nl/ondernemen/vergunningen/vergunning-gevelreclame/"
+      },
+      {
+        "url": "https://haarlem.nl/vergunning-gevelreclame",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Voor het plaatsen van reclame-uitingen zoals borden of spandoeken op uw gevel hebt u een vergunning nodig.",
+          "original_reference": "Voor het plaatsen van reclame-uitingen zoals borden of spandoeken op uw gevel hebt u een vergunning nodig.",
+          "note": "De basisvereiste voor een vergunning voor gevelreclame komt overeen in beide bronnen",
+          "source_urls": [
+            "https://haarlem.nl/regels-uitstallingen-en-reclame"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Uitstallingen voor daghandel in versproducten en dagbladen zijn toegestaan. Hierbij geldt dat de uitstalling maximaal 1 meter uit de gevel mag steken, mits er minimaal 1.50 meter van het voor voetgangers bestemde gedeelte van de weg vrij blijft. De maximale hoogte van de uitstalling is 1.50 meter",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen specifieke afmetingen voor uitstallingen, terwijl de bronpagina wel concrete maten voorschrijft",
+          "source_urls": [
+            "https://haarlem.nl/regels-uitstallingen-en-reclame"
+          ]
+        }
+      ]
+    },
+    "summary": "De meeste informatie in de originele tekst komt overeen met de bronnen. Het belangrijkste verschil is dat de originele tekst geen specifieke afmetingen en maten bevat voor uitstallingen, terwijl deze wel duidelijk zijn vastgelegd in de bronpagina's. De technische vereisten en procedures zijn verder consistent."
+  }
+}

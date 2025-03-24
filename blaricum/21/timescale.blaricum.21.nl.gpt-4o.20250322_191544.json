@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "BLARICUM",
+      "contact": {
+        "phone": "(035) 751 32 22",
+        "email": "info@blaricum.nl",
+        "website": "http://www.blaricum.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor het aanvragen van een VOG bedragen € 41,35.",
+        "status": "false",
+        "note": "De actuele kosten voor een VOG bedragen € 41,95 (per 1 januari 2024), niet € 41,35."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.blaricum.nl/Bouwen_verbouwen_en_wonen/Bouwen_en_verbouwen",
+      "https://www.blaricum.nl/Uittreksels_en_akten/Verklaring_omtrent_gedrag_VOG",
+      "https://www.blaricum.nl/",
+      "https://www.blaricum.nl/Bouwen_verbouwen_en_wonen/Bouwen_en_verbouwen/Omgevingsvergunning",
+      "https://www.blaricum.nl/Bestuur_en_organisatie/Organisatie/WOO_verzoek"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.blaricum.nl/Verhuizen/Nederlandse_nationaliteit_aanvragen",
+        "reason": "INVALID: Error scraping https://www.blaricum.nl/Verhuizen/Nederlandse_nationaliteit_aanvragen: 404 Client Error:  for url: https://www.blaricum.nl/Verhuizen/Nederlandse_nationaliteit_aanvragen"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Maak een afspraak voor het aanvragen van een VOG. Neem het ingevulde aanvraagformulier en uw identiteitsbewijs mee.",
+          "original_reference": "Werkgevers kunnen een VOG rechtstreeks aanvragen bij de Dienst Justis.",
+          "note": "De bronpagina vermeldt een extra aanvraagmogelijkheid via een persoonlijke afspraak bij de gemeente, wat niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.blaricum.nl/Uittreksels_en_akten/Verklaring_omtrent_gedrag_VOG"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Iemand anders kan voor u een VOG aanvragen. Deze persoon moet u dan wel machtigen door een schriftelijke machtiging op te stellen.",
+          "original_reference": "No matching information",
+          "note": "De mogelijkheid om iemand te machtigen voor een VOG-aanvraag ontbreekt volledig in de originele tekst.",
+          "source_urls": [
+            "https://www.blaricum.nl/Uittreksels_en_akten/Verklaring_omtrent_gedrag_VOG"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Werkt u als vrijwilliger met minderjarigen of met mensen met een verstandelijke beperking, dan kunt u de VOG gratis aanvragen.",
+          "original_reference": "VOG voor vrijwilligers kan gratis worden aangevraagd als u met bepaalde groepen werkt.",
+          "note": "De bronpagina specificeert expliciet welke doelgroepen in aanmerking komen voor een gratis VOG voor vrijwilligers (minderjarigen en mensen met verstandelijke beperking).",
+          "source_urls": [
+            "https://www.blaricum.nl/Uittreksels_en_akten/Verklaring_omtrent_gedrag_VOG"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina bevat belangrijke aanvullende informatie over aanvraagmogelijkheden die niet in de originele tekst staan, waaronder de mogelijkheid tot persoonlijke aanvraag bij de gemeente en machtiging van derden. Ook worden de voorwaarden voor een gratis VOG voor vrijwilligers specifieker beschreven. Deze informatie is essentieel voor een volledig begrip van de VOG-aanvraagprocedure."
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "context": {
+    "municipality": {
+      "name": "KAPELLE",
+      "contact": {
+        "phone": "(0113) 33 31 10",
+        "email": "gemeente@kapelle.nl",
+        "website": "http://www.kapelle.nl"
+      }
+    },
+    "service": {
+      "id": 6,
+      "name": "Integriteitsonderzoek (Wet Bibob)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "U kunt het ingevulde formulier sturen naar het e-mailadres j.vermunt@kapelle.nl.",
+        "status": "false",
+        "note": "Dit specifieke e-mailadres wordt niet vermeld op de officiële website van de gemeente Kapelle voor Bibob-aanvragen. De gemeente gebruikt het algemene e-mailadres gemeente@kapelle.nl voor correspondentie."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 4,
+    "invalid_urls": 2,
+    "accuracy_percentage": 66.7,
+    "valid_urls_list": [
+      "https://kapelle.nl/wet-bibob-0",
+      "https://kapelle.nl/verklaring-omtrent-gedrag-vog",
+      "https://kapelle.nl/informatie-opvragen-woo-verzoek",
+      "https://www.kapelle.nl"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://kapelle.nl/bodeminformatie",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.kapelle.nl/aanvraagformulier-adresonderzoek",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De gemeente Kapelle voert geen onderzoekt uit bij paracommerciële partijen of (semi) overheidsinstanties.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet deze belangrijke uitsluiting voor paracommerciële partijen en (semi) overheidsinstanties bij Bibob-onderzoeken.",
+          "source_urls": [
+            "https://kapelle.nl/wet-bibob-0"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "j.vermunt@kapelle.nl",
+          "original_reference": "gemeente@kapelle.nl",
+          "note": "Er is een discrepantie in het e-mailadres voor het verzenden van Bibob-formulieren. De originele tekst noemt j.vermunt@kapelle.nl, terwijl de algemene contactinformatie gemeente@kapelle.nl vermeldt.",
+          "source_urls": [
+            "https://kapelle.nl/wet-bibob-0"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "bouwsom hoger dan € 500.00...",
+          "original_reference": "bouwsom hoger dan € 500.000,--",
+          "note": "Er is een verschil in de weergave van het drempelbedrag voor bouwsommen. De originele tekst vermeldt €500.000,-- terwijl de brontekst een onvolledig bedrag weergeeft.",
+          "source_urls": [
+            "https://kapelle.nl/wet-bibob-0"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont enkele belangrijke verschillen tussen de originele tekst en de bronnen. Het meest significante verschil is de uitsluiting van paracommerciële partijen en (semi) overheidsinstanties van Bibob-onderzoeken, wat niet vermeld wordt in de originele tekst. Daarnaast is er verwarring over het juiste e-mailadres voor het indienen van Bibob-formulieren. Ook is er een inconsistentie in de weergave van het drempelbedrag voor bouwsommen in de verschillende teksten."
+  }
+}

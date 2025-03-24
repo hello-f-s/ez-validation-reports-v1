@@ -1,0 +1,93 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HEEMSKERK",
+      "contact": {
+        "phone": "14 0251",
+        "email": "post@heemskerk.nl",
+        "website": "http://www.heemskerk.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Voor horecabedrijf/slijtersbedrijf: 4 weken voor oprichting of verandering melding doen bij Omgevingsdienst IJmond",
+        "status": "false",
+        "note": "Volgens de website van gemeente Heemskerk moet een horecavergunning worden aangevraagd bij de gemeente Heemskerk zelf, niet bij Omgevingsdienst IJmond. Alleen milieutechnische meldingen gaan via de Omgevingsdienst IJmond."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 8,
+    "valid_urls": 6,
+    "invalid_urls": 2,
+    "accuracy_percentage": 75.0,
+    "valid_urls_list": [
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/vergunning-gebruik-openbare-weg",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/omgevingsvergunning",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/veelgestelde-vragen-omgevingsvergunning",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/omgevingsplan-bekijken-of-afwijken",
+      "https://www.heemskerk.nl/horeca",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.heemskerk.nl/omgevingsvergunning",
+        "reason": "INVALID: Error scraping https://www.heemskerk.nl/omgevingsvergunning: 404 Client Error: Not Found for url: https://www.heemskerk.nl/omgevingsvergunning"
+      },
+      {
+        "url": "https://www.heemskerk.nl/veelgestelde-vragen-omgevingsvergunning",
+        "reason": "INVALID: Error scraping https://www.heemskerk.nl/veelgestelde-vragen-omgevingsvergunning: 404 Client Error: Not Found for url: https://www.heemskerk.nl/veelgestelde-vragen-omgevingsvergunning"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Sinds 1 januari 2024 geldt De Omgevingswet. Deze wet regelt alles voor de ruimte waarin we wonen, werken en ontspannen: de leefomgeving.",
+          "original_reference": "No matching information",
+          "note": "De originele inhoud bevat geen informatie over de nieuwe Omgevingswet die sinds 1 januari 2024 van kracht is. Dit is een belangrijke wijziging in het vergunningenstelsel.",
+          "source_urls": [
+            "https://www.heemskerk.nl/belastingen-en-vergunningen/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Aanvragen van vóór 1 januari 2024, kunt u in de oude omgeving aanvullen tot 1 juli 2024.",
+          "original_reference": "No matching information",
+          "note": "De originele inhoud mist belangrijke overgangsinformatie over het aanvullen van oude aanvragen tot 1 juli 2024.",
+          "source_urls": [
+            "https://www.heemskerk.nl/belastingen-en-vergunningen/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bekijk Wet Natuurbescherming. Het is belangrijk om van te voren te weten of het plan misschien schade aan de natuur veroorzaakt.",
+          "original_reference": "No matching information",
+          "note": "De originele inhoud mist de vereiste om de Wet Natuurbescherming te controleren en mogelijk een natuurrapport toe te voegen bij de aanvraag.",
+          "source_urls": [
+            "https://www.heemskerk.nl/belastingen-en-vergunningen/veelgestelde-vragen-omgevingsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie die niet in de originele tekst staat, met name over de nieuwe Omgevingswet (2024), overgangsregelingen en natuurwetgeving. Deze informatie is essentieel voor het correct aanvragen van vergunningen onder het nieuwe stelsel. De originele tekst lijkt verouderd te zijn en mist deze cruciale updates in wet- en regelgeving."
+  }
+}

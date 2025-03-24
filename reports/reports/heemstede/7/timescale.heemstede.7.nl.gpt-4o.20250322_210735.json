@@ -1,0 +1,100 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HEEMSTEDE",
+      "contact": {
+        "phone": "(023) 548 58 68",
+        "email": "gemeente@heemstede.nl",
+        "website": "http://www.heemstede.nl"
+      }
+    },
+    "service": {
+      "id": 7,
+      "name": "Kabels en leidingen aanleggen en beheren"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Participatie is verplicht en dient te worden meegenomen in het proces.",
+        "status": "false",
+        "note": "Volgens de gemeente Heemstede is participatie niet in alle gevallen verplicht. Bij sommige projecten wordt participatie wel sterk aanbevolen, maar er is geen algemene verplichting voor participatie bij alle aanvragen voor kabels en leidingen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 9,
+    "valid_urls": 5,
+    "invalid_urls": 4,
+    "accuracy_percentage": 55.6,
+    "valid_urls_list": [
+      "https://www.heemstede.nl/aanvragen-en-regelen/aansluiting-op-gemeenteriool",
+      "https://www.heemstede.nl/bestuur-en-organisatie/omgevingswet/de-omgevingswet-voor-u-als-inwoner-of-ondernemer",
+      "https://www.heemstede.nl/vergunningen/in-of-uitrit-aanleggen-omgevingsvergunning",
+      "https://www.heemstede.nl/vergunningen/vergunning-voor-bouwen-en-verbouwen",
+      "https://heemstede.nl/omgevingswet/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://heemstede.nl/uitrit-aanleggen/",
+        "reason": "INVALID: Error scraping https://heemstede.nl/uitrit-aanleggen/: 404 Client Error: Not Found for url: https://www.heemstede.nl/uitrit-aanleggen/"
+      },
+      {
+        "url": "https://heemstede.nl/milieu-omgevingsvergunning/",
+        "reason": "INVALID: Error scraping https://heemstede.nl/milieu-omgevingsvergunning/: 404 Client Error: Not Found for url: https://www.heemstede.nl/milieu-omgevingsvergunning/"
+      },
+      {
+        "url": "https://www.heemstede.nl/vergunningen/milieu-omgevingsvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://heemstede.nl/vergunning-bouwen-verbouwen/",
+        "reason": "INVALID: Error scraping https://heemstede.nl/vergunning-bouwen-verbouwen/: 404 Client Error: Not Found for url: https://www.heemstede.nl/vergunning-bouwen-verbouwen/"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor een omgevingsvergunning betaalt u legeskosten. Ook de kosten van aanleg zijn voor de vergunninghouder.",
+          "original_reference": "Er is geen specifieke informatie gevonden over de kosten voor het aanleggen van kabels en leidingen.",
+          "note": "De bronnen vermelden specifiek dat er legeskosten betaald moeten worden voor de vergunning en dat aanlegkosten voor rekening van de vergunninghouder zijn, terwijl de originele tekst aangeeft dat er geen specifieke kosteninformatie beschikbaar is.",
+          "source_urls": [
+            "https://www.heemstede.nl/vergunningen/in-of-uitrit-aanleggen-omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u de omgevingsvergunning heeft ontvangen, neem dan telefonisch contact op met afdeling Ruimtelijk Beheer van de gemeente via 14 023 over de planning van de aanleg.",
+          "original_reference": "No matching information",
+          "note": "De bronnen bevatten een specifieke vervolgstap (contact opnemen met Ruimtelijk Beheer) die niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.heemstede.nl/vergunningen/in-of-uitrit-aanleggen-omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vanaf 1 januari 2024 geldt de Omgevingswet.",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden een specifieke ingangsdatum voor de Omgevingswet die niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://heemstede.nl/omgevingswet/"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie over kosten (legeskosten en aanlegkosten), specifieke procedurestappen (contact met Ruimtelijk Beheer) en de ingangsdatum van de Omgevingswet (1 januari 2024) die niet in de originele tekst staat. Deze informatie is essentieel voor een complete en accurate beschrijving van het proces."
+  }
+}

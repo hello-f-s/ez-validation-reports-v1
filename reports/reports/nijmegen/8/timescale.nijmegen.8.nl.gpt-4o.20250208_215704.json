@@ -1,0 +1,106 @@
+{
+  "context": {
+    "municipality": {
+      "name": "NIJMEGEN",
+      "contact": {
+        "phone": "14 024",
+        "email": "gemeente@nijmegen.nl",
+        "website": "http://www.nijmegen.nl"
+      }
+    },
+    "service": {
+      "id": 8,
+      "name": "Marktvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 16,
+    "true_sentences": 14,
+    "false_sentences": 2,
+    "accuracy_percentage": 87.5,
+    "false_statements": [
+      {
+        "sentence": "Themamarktvergunning kost € 398,45.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Nijmegen kost een themamarktvergunning € 401,85 voor 2024."
+      },
+      {
+        "sentence": "Voor een standplaats op een wijkmarkt zijn de legeskosten € 321,60.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Nijmegen zijn de legeskosten voor een standplaats op een wijkmarkt € 324,35 voor 2024."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.nijmegen.nl",
+      "https://www.nijmegen.nl/diensten/vergunningen/standplaatsvergunningen/vergunning-standplaats-wijkmarkt/",
+      "https://www.nijmegen.nl/diensten/vergunningen/markt/themamarktvergunning-organisatievergunning/",
+      "https://www.nijmegen.nl/diensten/evenementen/schema-vergunningen-activiteiten/tekstversie/",
+      "https://www.nijmegen.nl/diensten/vergunningen/markt/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.nijmegen.nl/diensten/vergunningen/informatiekraam-melden-of-vergunning/",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.nijmegen.nl\">Gemeente",
+        "reason": "INVALID: Error scraping https://www.nijmegen.nl\">Gemeente: HTTPSConnectionPool(host='www.nijmegen.nl%22%3egemeente', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x107d37c50>: Failed to resolve 'www.nijmegen.nl%22%3egemeente' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 4,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "€ 416,65 voor themamarktvergunning",
+          "original_reference": "€ 398,45 voor themamarktvergunning",
+          "note": "Het bedrag voor de themamarktvergunning is hoger in de bronnen dan in de originele tekst",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/vergunningen/markt/themamarktvergunning-organisatievergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vraag uw vergunning niet eerder dan 16 weken en uiterlijk 8 weken van tevoren aan",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt geen aanvraagtermijn voor themamarkten, terwijl de bron specifieke termijnen noemt",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/vergunningen/markt/themamarktvergunning-organisatievergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "€ 2,59 per jaar per m2 grond voor precariobelasting",
+          "original_reference": "Precariobelasting geldt voor het gebruik van gemeentegrond",
+          "note": "De originele tekst noemt alleen dat er precariobelasting geldt, maar specificeert niet het bedrag per m2 dat in de bron wordt genoemd",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/vergunningen/markt/themamarktvergunning-organisatievergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U krijgt voor de wijkmarkt een vergunning van maximaal 10 jaar",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de maximale geldigheidsduur van 10 jaar voor wijkmarktvergunningen",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/vergunningen/standplaatsvergunningen/vergunning-standplaats-wijkmarkt/"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn enkele belangrijke verschillen gevonden tussen de originele tekst en de bronnen. De kosten voor een themamarktvergunning zijn hoger (€416,65 i.p.v. €398,45), er zijn specifieke aanvraagtermijnen die niet in de originele tekst staan, het precieze bedrag voor precariobelasting wordt genoemd in de bronnen, en de maximale geldigheidsduur van wijkmarktvergunningen (10 jaar) ontbreekt in de originele tekst. Deze verschillen zijn relevant voor aanvragers van marktvergunningen."
+  }
+}

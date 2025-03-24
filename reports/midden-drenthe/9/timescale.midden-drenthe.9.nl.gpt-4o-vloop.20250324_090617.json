@@ -1,0 +1,64 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MIDDEN-DRENTHE",
+      "contact": {
+        "phone": "(0593) 53 92 22",
+        "email": "gemeente@middendrenthe.nl",
+        "website": "http://www.middendrenthe.nl"
+      }
+    },
+    "service": {
+      "id": 9,
+      "name": "Mobiele puinbreker gebruiken"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 19,
+    "false_sentences": 2,
+    "accuracy_percentage": 90.5,
+    "false_statements": [
+      {
+        "sentence": "U kunt een melding doen via [Omgevingswet.overheid.nl](https://www.omgevingswet.overheid.nl).",
+        "status": "false",
+        "note": "De correcte website voor het doen van meldingen is het Omgevingsloket Online (olo.nl) of via de website van de gemeente Midden-Drenthe. Omgevingswet.overheid.nl is geen correct meldpunt."
+      },
+      {
+        "sentence": "Voor meldingen en vergunningaanvragen kunt u gebruik maken van [Omgevingswet.overheid.nl](https://www.omgevingswet.overheid.nl).",
+        "status": "false",
+        "note": "Dit is een onjuiste verwijzing. Meldingen en vergunningaanvragen voor de gemeente Midden-Drenthe verlopen via het Omgevingsloket Online (olo.nl) of via de gemeentelijke website."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 4,
+    "valid_urls": 0,
+    "invalid_urls": 4,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.middendrenthe.nl/bouwen-wonen/gebouw-of-woning-slopen",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.middendrenthe.nl/vergunningen-ontheffingen/boom-kappen",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.middendrenthe.nl/bouwen-wonen/bouwen-of-verbouwen",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.middendrenthe.nl/afval/afval-scheiden?tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=268&cHash=fd925255cf1e51edc226ccebff29db2a",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  }
+}

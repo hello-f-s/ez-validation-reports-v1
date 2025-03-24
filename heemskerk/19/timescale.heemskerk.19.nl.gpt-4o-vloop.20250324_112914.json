@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HEEMSKERK",
+      "contact": {
+        "phone": "14 0251",
+        "email": "post@heemskerk.nl",
+        "website": "http://www.heemskerk.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor het aanvragen van een vergunning voor kansspelautomaten zijn als volgt: 1e kansspelautomaat: € 226,50, 2e kansspelautomaat: € 136,00, Totaal: € 362,50",
+        "status": "false",
+        "note": "De genoemde bedragen komen niet overeen met de actuele legeskosten volgens de tarieventabel van gemeente Heemskerk. De exacte bedragen voor kansspelautomaten zijn anders vastgesteld in de meest recente legesverordening."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca/kansspelautomaat",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/kansspel-organiseren-melding-of-vergunning",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca/exploitatievergunning",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/veelgestelde-vragen-omgevingsvergunning",
+      "https://www.heemskerk.nl"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "De vergunning verlenen we voor onbepaalde tijd. Tenzij u dat anders wenst.",
+          "original_reference": "De vergunning wordt verleend voor onbepaalde tijd, tenzij anders gewenst.",
+          "note": "De informatie over de geldigheidsduur van de vergunning komt exact overeen",
+          "source_urls": [
+            "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca/kansspelautomaat"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "U mag er maximaal 2 plaatsen.",
+          "original_reference": "2e kansspelautomaat: € 136,00",
+          "note": "Beide bronnen bevestigen indirect dat er maximaal 2 automaten zijn toegestaan",
+          "source_urls": [
+            "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca/kansspelautomaat"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De aanvraag doet u via het webformulier. Bij de aanvraag betaalt u direct de legeskosten via iDeal.",
+          "original_reference": "De aanvraag verloopt via een webformulier op de site van de gemeente. U betaalt daarbij meteen de legeskosten via iDeal.",
+          "note": "De originele tekst specificeert dat het webformulier op de site van de gemeente staat, terwijl dit in de bron niet expliciet wordt vermeld",
+          "source_urls": [
+            "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca/kansspelautomaat"
+          ]
+        }
+      ]
+    },
+    "summary": "De gevonden informatie komt grotendeels overeen met de originele tekst. Er zijn geen significante inhoudelijke verschillen gevonden in de voorwaarden, kosten of procedures. Het enige kleine verschil betreft de specificatie van de locatie van het webformulier. De contactgegevens en andere praktische informatie zijn consistent tussen beide bronnen."
+  }
+}

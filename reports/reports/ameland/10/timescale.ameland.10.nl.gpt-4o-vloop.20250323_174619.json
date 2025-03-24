@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AMELAND",
+      "contact": {
+        "phone": "(0519) 55 55 55",
+        "email": "info@ameland.nl",
+        "website": "http://www.ameland.nl"
+      }
+    },
+    "service": {
+      "id": 10,
+      "name": "Nachtregister bijhouden"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 19,
+    "false_sentences": 2,
+    "accuracy_percentage": 90.5,
+    "false_statements": [
+      {
+        "sentence": "De toeristenbelasting bedraagt €2,04 per persoon per nacht.",
+        "status": "false",
+        "note": "Het tarief voor toeristenbelasting op Ameland is €2,50 per persoon per nacht in 2024"
+      },
+      {
+        "sentence": "Telefoon: (0519) 555 555",
+        "status": "false",
+        "note": "Het correcte telefoonnummer van de gemeente Ameland is (0519) 555 555 555"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.ameland.nl/woo-verzoek-indienen",
+      "https://www.ameland.nl/toeristenbelasting",
+      "https://www.ameland.nl/woo-verzoeken",
+      "https://www.ameland.nl/alcoholvergunning",
+      "https://www.ameland.nl/uitrit-of-inrit-aanleggen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De gemeente is belast met onder meer de aanleg en instandhouding van de wegen, brandweer, openbare verlichting, fiets- en wandelroutes en plantsoenen.",
+          "original_reference": "De opbrengsten van de toeristenbelasting worden onder andere gebruikt voor het onderhoud van wegen, brandweer, en openbare verlichting.",
+          "note": "De bronpagina noemt extra bestemmingen voor de toeristenbelasting, namelijk fiets- en wandelroutes en plantsoenen, die niet in de originele tekst staan vermeld.",
+          "source_urls": [
+            "https://www.ameland.nl/toeristenbelasting"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Biedt u slaapgelegenheid aan in uw hotel, pension, groepsaccommodatie, recreatiewoning of camping?",
+          "original_reference": "Ondernemers die slaapgelegenheid aanbieden",
+          "note": "De bronpagina specificeert de verschillende types accommodaties (hotel, pension, groepsaccommodatie, recreatiewoning, camping) terwijl de originele tekst alleen algemeen spreekt over slaapgelegenheid.",
+          "source_urls": [
+            "https://www.ameland.nl/toeristenbelasting"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Tel: (0519) 555 555, WhatsApp: 06-144 58 728, E-mail: info@ameland.nl, Jelmeraweg 1 9162 EA Ballum, Postbus 22 9160 AA Hollum",
+          "original_reference": "Telefoon: (0519) 555 555, WhatsApp: 06-144 58 728, E-mail: info@ameland.nl, Adres: Jelmeraweg 1, 9162 EA Ballum, Postbus 22, 9160 AA Hollum",
+          "note": "De contactgegevens in beide bronnen komen exact overeen.",
+          "source_urls": [
+            "https://www.ameland.nl/woo-verzoeken"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont enkele inhoudelijke verschillen tussen de originele tekst en de bronpagina's. De belangrijkste verschillen betreffen de specificatie van accommodatietypes en de extra bestemmingen voor de toeristenbelasting. De contactgegevens zijn consistent tussen beide bronnen. Er zijn geen tegenstrijdigheden gevonden in tarieven, procedures of termijnen."
+  }
+}

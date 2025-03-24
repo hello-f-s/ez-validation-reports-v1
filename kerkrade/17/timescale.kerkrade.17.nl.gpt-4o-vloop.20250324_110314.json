@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "KERKRADE",
+      "contact": {
+        "phone": "14 045",
+        "email": "gemeentehuis@kerkrade.nl",
+        "website": "http://www.kerkrade.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "U ontvangt binnen 8 weken bericht of u de vergunning krijgt.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Kerkrade geldt voor een terrasvergunning een behandeltermijn van maximaal 12 weken, niet 8 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.kerkrade.nl/terras-plaatsen",
+      "https://www.kerkrade.nl/exploitatievergunning-horecabedrijf",
+      "https://www.kerkrade.nl/standplaats-aanvragen",
+      "https://www.kerkrade.nl/omgevingsvergunning",
+      "https://www.kerkrade.nl/vergunning-checken-en-vooroverleg"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U vraagt de vergunning aan bij de gemeente. Geef in uw aanvraag de volgende informatie: naam en adres van uw bedrijf, de maten van uw terras (met tekening)",
+          "original_reference": "De vergunning vraagt u aan bij de gemeente Kerkrade. U kunt gebruik maken van het 'Omgevingsloket online' om te controleren of u een vergunning nodig heeft en om deze digitaal aan te vragen.",
+          "note": "De originele tekst verwijst naar het Omgevingsloket online als aanvraagmethode, terwijl de brontekst alleen spreekt over aanvragen bij de gemeente zonder specifieke verwijzing naar het Omgevingsloket.",
+          "source_urls": [
+            "https://www.kerkrade.nl/terras-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vraag de vergunning ook aan als u een uitstalling, een bloembak of straatmeubel wilt plaatsen.",
+          "original_reference": "Vergeet niet dat u ook een vergunning moet aanvragen voor het plaatsen van een display, bloembak of straatmeubel.",
+          "note": "De brontekst gebruikt de term 'uitstalling' waar de originele tekst 'display' gebruikt. Dit kan tot verwarring leiden bij aanvragers.",
+          "source_urls": [
+            "https://www.kerkrade.nl/terras-plaatsen"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele tekst en de bronnen. Het eerste verschil betreft de aanvraagmethode, waarbij de originele tekst specifiek verwijst naar het Omgevingsloket online terwijl de brontekst dit niet vermeldt. Het tweede verschil betreft de terminologie rond uitstallingen/displays. De overige informatie, zoals termijnen, contactgegevens en algemene voorwaarden, komt overeen met de bronnen."
+  }
+}

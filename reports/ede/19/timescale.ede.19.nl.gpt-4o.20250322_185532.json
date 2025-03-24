@@ -1,0 +1,82 @@
+{
+  "context": {
+    "municipality": {
+      "name": "EDE",
+      "contact": {
+        "phone": "14 0318",
+        "email": "info@ede.nl",
+        "website": "http://www.ede.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 1,
+    "true_sentences": 1,
+    "false_sentences": 0,
+    "accuracy_percentage": 100.0,
+    "false_statements": []
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.ede.nl/aanvragen-en-regelen/ontheffing-aanvragen",
+      "https://www.ede.nl/aanvragen-en-regelen/loterij-en-kansspel",
+      "https://www.ede.nl/aanvragen-en-regelen/bouw-en-verbouwvergunning-voor-bedrijven",
+      "https://www.ede.nl/aanvragen-en-regelen/bouw-en-verbouwvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.ede.nl/aanvragen-en-regelen/verleende-vergunningen-inzien-en-opvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een kansspelvergunning kost € 37,50 euro. [...] Het aanvragen van een kansspelvergunning kost € 36,10.",
+          "original_reference": "No matching information",
+          "note": "Er is een tegenstrijdigheid in de kosten voor een kansspelvergunning binnen dezelfde bronpagina. Er worden twee verschillende bedragen genoemd: €37,50 en €36,10.",
+          "source_urls": [
+            "https://www.ede.nl/aanvragen-en-regelen/loterij-en-kansspel"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Soms moet u een ontheffing aanvragen. Bijvoorbeeld als u alcohol wilt verkopen of buiten muziek gaat afspelen. [...] De aanvraag doet u online en minimaal tien werkdagen van tevoren.",
+          "original_reference": "No matching information",
+          "note": "De website bevat specifieke informatie over ontheffingen en aanvraagprocedures die niet in de originele inhoud staat vermeld.",
+          "source_urls": [
+            "https://www.ede.nl/aanvragen-en-regelen/ontheffing-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Heeft u bouw- of verbouwplannen of wilt u iets slopen? Dan heeft u hier misschien een vergunning voor nodig of u kunt mogelijk een melding doen. Officieel heet dit een omgevingsvergunning.",
+          "original_reference": "No matching information",
+          "note": "De website bevat uitgebreide informatie over bouw- en verbouwvergunningen die niet in de originele inhoud staat vermeld.",
+          "source_urls": [
+            "https://www.ede.nl/aanvragen-en-regelen/bouw-en-verbouwvergunning",
+            "https://www.ede.nl/aanvragen-en-regelen/bouw-en-verbouwvergunning-voor-bedrijven"
+          ]
+        }
+      ]
+    },
+    "summary": "De gemeentelijke website bevat veel meer specifieke informatie dan de originele inhoud suggereert. Er is gedetailleerde informatie beschikbaar over kansspelvergunningen, ontheffingen en bouwvergunningen. Opvallend is een tegenstrijdigheid in de kosten voor kansspelvergunningen. De website biedt duidelijke procedures, voorwaarden en aanvraagtermijnen voor verschillende vergunningen en ontheffingen."
+  }
+}

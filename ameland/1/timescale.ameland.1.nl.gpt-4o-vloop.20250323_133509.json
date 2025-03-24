@@ -1,0 +1,94 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AMELAND",
+      "contact": {
+        "phone": "(0519) 55 55 55",
+        "email": "info@ameland.nl",
+        "website": "http://www.ameland.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 31,
+    "true_sentences": 28,
+    "false_sentences": 3,
+    "accuracy_percentage": 90.3,
+    "false_statements": [
+      {
+        "sentence": "Telefoon: (0519) 555 555",
+        "status": "false",
+        "note": "Het correcte telefoonnummer van gemeente Ameland is (0519) 555 555 555"
+      },
+      {
+        "sentence": "WhatsApp: 06-144 58 728",
+        "status": "false",
+        "note": "De gemeente Ameland heeft geen officieel WhatsApp nummer voor contact"
+      },
+      {
+        "sentence": "Aanvraag nieuwe horecavergunning: € 974,35",
+        "status": "false",
+        "note": "Dit bedrag komt niet overeen met de actuele legeskosten van de gemeente Ameland voor een nieuwe horecavergunning"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.ameland.nl/alcoholvergunning",
+      "https://www.ameland.nl/woo-verzoeken",
+      "https://www.ameland.nl/omgevingsvergunning",
+      "https://www.ameland.nl/uitrit-of-inrit-aanleggen",
+      "https://www.ameland.nl/woo-verzoek-indienen",
+      "https://www.ameland.nl"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Voor het verkopen van alcoholhoudende dranken met een alcoholpercentage van minder dan 15%, voor elders dan gebruik ter plaatse, heeft u geen vergunning nodig. Dit geldt bijvoorbeeld voor een supermarkt of andere detailhandel.",
+          "original_reference": "Voor het verkopen van alcoholhoudende dranken met een alcoholpercentage van minder dan 15%, voor elders dan gebruik ter plaatse, heeft u geen vergunning nodig. Dit geldt bijvoorbeeld voor een supermarkt of andere detailhandel.",
+          "note": "De informatie over vrijstelling voor verkoop van alcohol onder 15% is exact hetzelfde in beide bronnen",
+          "source_urls": [
+            "https://www.ameland.nl/alcoholvergunning"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Aanvraag nieuwe horecavergunning € 974,35\nWijziging vergunning € 150,90\nWijziging leidinggevende € 27,95",
+          "original_reference": "Aanvraag nieuwe horecavergunning: € 974,35\nWijziging van de vergunning: € 150,90\nWijziging leidinggevende: € 27,95",
+          "note": "De tarieven voor vergunningen en wijzigingen komen exact overeen",
+          "source_urls": [
+            "https://www.ameland.nl/alcoholvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als er een nieuwe leidinggevende bijkomt, moet u dit melden bij de gemeente. U hoeft hiervoor geen nieuwe vergunning aan te vragen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist deze belangrijke verduidelijking over het melden van nieuwe leidinggevenden",
+          "source_urls": [
+            "https://www.ameland.nl/alcoholvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De meeste informatie in de originele tekst komt overeen met de bronnen. Er is één belangrijk verschil gevonden: de originele tekst mist informatie over het alleen hoeven melden (geen nieuwe vergunning nodig) bij nieuwe leidinggevenden. De tarieven en voorwaarden voor vrijstelling zijn consistent tussen beide bronnen."
+  }
+}

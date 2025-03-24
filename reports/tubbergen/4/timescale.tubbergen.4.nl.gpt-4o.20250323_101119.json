@@ -1,0 +1,92 @@
+{
+  "context": {
+    "municipality": {
+      "name": "TUBBERGEN",
+      "contact": {
+        "phone": "(0546) 62 80 00",
+        "email": "gemeente@tubbergen.nl",
+        "website": "http://www.tubbergen.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "De aanvraag wordt beoordeeld door verschillende adviseurs (zoals politie, brandweer, technische experts) en de duur is minimaal 8 weken vanaf het moment van een complete aanvraag.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Tubbergen is de behandeltermijn minimaal 12 weken vanaf het moment van een complete aanvraag, niet 8 weken zoals vermeld in de tekst."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.tubbergen.nl/loterij",
+      "https://www.tubbergen.nl/aanvraag-evenementenvergunning",
+      "https://www.tubbergen.nl/alcoholvergunning",
+      "https://www.tubbergen.nl/evenementenvergunning",
+      "https://www.tubbergen.nl/omgevingsvergunning-bouwen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://gemeentetubbergen.nl",
+        "reason": "INVALID: Error scraping https://gemeentetubbergen.nl: 439 Client Error: status code 439 for url: https://gemeentetubbergen.nl/"
+      },
+      {
+        "url": "https://websiteenaanvragen/nl",
+        "reason": "INVALID: Error scraping https://websiteenaanvragen/nl: HTTPSConnectionPool(host='websiteenaanvragen', port=443): Max retries exceeded with url: /nl (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x107833ed0>: Failed to resolve 'websiteenaanvragen' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Geen vergunning nodig, wel een melding doen. Soms is een evenementenvergunning niet nodig en is een melding voldoende.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat er situaties zijn waarbij alleen een melding volstaat in plaats van een volledige vergunning. Dit is belangrijke aanvullende informatie voor organisatoren.",
+          "source_urls": [
+            "https://www.tubbergen.nl/evenementenvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De burgemeester kan een evenementenvergunning weigeren in het belang van de openbare orde, de openbare veiligheid, de volksgezondheid en de bescherming van het milieu. Of als de aanvraag niet in overeenstemming is met het gemeentelijk beleid.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de specifieke gronden waarop een evenementenvergunning kan worden geweigerd. Dit zijn belangrijke voorwaarden die aanvragers moeten weten.",
+          "source_urls": [
+            "https://www.tubbergen.nl/evenementenvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wilt u een 'nieuw' evenement organiseren en hebt u een vergunning nodig? Overleg dan eerst met de evenementenconsulent.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist de aanbeveling om eerst met een evenementenconsulent te overleggen bij nieuwe evenementen. Dit is een belangrijke voorbereidende stap.",
+          "source_urls": [
+            "https://www.tubbergen.nl/aanvraag-evenementenvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten enkele belangrijke aanvullende details die niet in de originele tekst staan: de mogelijkheid van een eenvoudige melding in plaats van een vergunning voor kleine evenementen, specifieke weigeringsgronden voor vergunningen, en het advies om bij nieuwe evenementen eerst met een evenementenconsulent te overleggen. Deze informatie is essentieel voor een complete en accurate beschrijving van het vergunningsproces."
+  }
+}

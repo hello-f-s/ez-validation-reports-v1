@@ -1,0 +1,85 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OLDEBROEK",
+      "contact": {
+        "phone": "(0525) 63 82 00",
+        "email": "gemeente@oldebroek.nl",
+        "website": "http://www.oldebroek.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 31,
+    "true_sentences": 28,
+    "false_sentences": 3,
+    "accuracy_percentage": 90.3,
+    "false_statements": [
+      {
+        "sentence": "Voor het indienen van een conceptverzoek zijn er kosten verbonden. Deze bestaan uit een basisbedrag van €135,- plus 9% van wat een volledige omgevingsvergunning zou kosten.",
+        "status": "false",
+        "note": "De gemeente Oldebroek hanteert andere tarieven voor conceptverzoeken. Deze specifieke bedragen komen niet overeen met de actuele legesverordening van de gemeente Oldebroek."
+      },
+      {
+        "sentence": "Houd rekening met een verwerkingstijd van ongeveer 6 maanden voor de afhandeling van een conceptverzoek.",
+        "status": "false",
+        "note": "De gemeente Oldebroek hanteert andere verwerkingstijden voor conceptverzoeken. Een termijn van 6 maanden is niet correct volgens de officiële informatie van de gemeente."
+      },
+      {
+        "sentence": "De tarieven voor een omgevingsvergunning zijn afhankelijk van uw specifieke plannen en kunt u vinden in de legesverordening 2025.",
+        "status": "false",
+        "note": "Er wordt verwezen naar de legesverordening 2025, maar deze bestaat nog niet. De actuele legesverordening is van een eerder jaar."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 2,
+    "invalid_urls": 3,
+    "accuracy_percentage": 40.0,
+    "valid_urls_list": [
+      "https://www.oldebroek.nl/Inwoners/Bouwen_en_verbouwen/Omgevingsvergunning",
+      "https://www.oldebroek.nl/Inwoners/Bouwen_en_verbouwen/Boom_kappen/Wel_of_geen_vergunning_voor_bomenkap"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.oldebroek.nl/Inwoners/Bouwen_en_verbouwen/Omgevingsvergunning/Conceptverzoek_omgevingsvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.oldebroek.nl/Inwoners/Vergunningen/Kabels_en_leidingen_plaatsen_in_openbare_grond",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.oldebroek.nl/Inwoners/Vergunningen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Controleer in het Omgevingsloket of u een vergunning nodig heeft voor uw activiteit. Is dit niet het geval, dan hoeft u geen contact op te nemen met de gemeente en kunt u aan de slag.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist een belangrijke eerste stap: het controleren of een vergunning überhaupt nodig is via het Omgevingsloket voordat men het aanvraagproces start.",
+          "source_urls": [
+            "https://www.oldebroek.nl/Inwoners/Bouwen_en_verbouwen/Omgevingsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont één belangrijk verschil: de originele tekst begint direct met het aanvraagproces voor een terrasvergunning, terwijl de bronpagina aangeeft dat men eerst moet controleren of een vergunning wel nodig is via het Omgevingsloket. Dit is een essentiële eerste stap die ontbreekt in de originele tekst. Verder zijn er geen concrete tegenstrijdigheden gevonden in de beschikbare brongegevens, hoewel opgemerkt moet worden dat veel specifieke details uit de originele tekst (zoals kosten, verwerkingstijden en exacte documentvereisten) niet direct verifieerbaar zijn in de gegeven bronpagina's."
+  }
+}

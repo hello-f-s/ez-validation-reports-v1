@@ -1,0 +1,63 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AMSTERDAM",
+      "contact": {
+        "phone": "14 020",
+        "email": "null",
+        "website": "http://www.amsterdam.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "Omwonenden en belanghebbenden kunnen binnen 2 weken na publicatie van de aanvraag een zienswijze indienen die in aanmerking wordt genomen bij de beslissing over de aanvraag.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Amsterdam hebben belanghebbenden 6 weken (niet 2 weken) de tijd om een zienswijze in te dienen na publicatie van de aanvraag."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 0,
+    "invalid_urls": 5,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.amsterdam.nl/ondernemen/vergunningen/evenement-organiseren/",
+        "reason": "INVALID: Error scraping https://www.amsterdam.nl/ondernemen/vergunningen/evenement-organiseren/: 403 Client Error: Forbidden for url: https://www.amsterdam.nl/ondernemen/vergunningen/evenement-organiseren/"
+      },
+      {
+        "url": "https://www.amsterdam.nl/veelgevraagd/?productid=%7BAAAEF61D-7074-4F16-A976-66961C8E45E6%7D",
+        "reason": "INVALID: Error scraping https://www.amsterdam.nl/veelgevraagd/?productid=%7BAAAEF61D-7074-4F16-A976-66961C8E45E6%7D: 403 Client Error: Forbidden for url: https://www.amsterdam.nl/veelgevraagd/?productid=%7BAAAEF61D-7074-4F16-A976-66961C8E45E6%7D"
+      },
+      {
+        "url": "https://www.amsterdam.nl/ondernemen/vergunningen/",
+        "reason": "INVALID: Error scraping https://www.amsterdam.nl/ondernemen/vergunningen/: 403 Client Error: Forbidden for url: https://www.amsterdam.nl/ondernemen/vergunningen/"
+      },
+      {
+        "url": "https://www.amsterdam.nl/parkeren/parkeervergunning/parkeervergunning-bedrijven/",
+        "reason": "INVALID: Error scraping https://www.amsterdam.nl/parkeren/parkeervergunning/parkeervergunning-bedrijven/: 403 Client Error: Forbidden for url: https://www.amsterdam.nl/parkeren/parkeervergunning/parkeervergunning-bedrijven/"
+      },
+      {
+        "url": "https://www.amsterdam.nl/subsidies/vragen-subsidies",
+        "reason": "INVALID: Error scraping https://www.amsterdam.nl/subsidies/vragen-subsidies: 403 Client Error: Forbidden for url: https://www.amsterdam.nl/subsidies/vragen-subsidies"
+      }
+    ]
+  }
+}

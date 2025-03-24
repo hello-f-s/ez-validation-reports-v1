@@ -1,0 +1,79 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MEPPEL",
+      "contact": {
+        "phone": "14 0522",
+        "email": "postbus@meppel.nl",
+        "website": "http://www.meppel.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "1e ontheffing: € 24,26 per maand voor gebieden zoals Bleekerseiland, Koekoekstraat, Stoombootkade, Vledderstraat en De Swaenenborgh.",
+        "status": "false",
+        "note": "De exacte tarieven voor parkeerontheffingen in Meppel zijn recent gewijzigd. Het huidige tarief voor een eerste bedrijfsparkeerontheffing is € 25,00 per maand volgens de officiële website van gemeente Meppel."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 2,
+    "invalid_urls": 4,
+    "accuracy_percentage": 33.3,
+    "valid_urls_list": [
+      "https://www.meppel.nl/Ondernemer/Vergunningen_regelingen/Parkeren_vervoer/Parkeerontheffing_voor_bedrijven",
+      "https://www.meppel.nl/Inwoner/Parkeren_verkeer/Parkeren/Bewoners"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://parkeren.meppel.nl",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.meppel.nl/Inwoner/Parkeren_verkeer/Parkeren/Bewoners/Parkeervergunning_voor_bewoners",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.meppel.nl/Inwoner/Parkeren_verkeer/Parkeren/Bewoners/Ontheffing_voetgangersgebied",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.meppel.nl/Inwoner/Parkeren_verkeer/Parkeren/Bewoners/Parkeerontheffing_voor_bewoners",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Deze ontheffing is snel en eenvoudig online te regelen",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt dat de aanvraag snel en eenvoudig online te regelen is, terwijl de originele tekst deze informatie over de snelheid van afhandeling niet bevat.",
+          "source_urls": [
+            "https://www.meppel.nl/Ondernemer/Vergunningen_regelingen/Parkeren_vervoer/Parkeerontheffing_voor_bedrijven"
+          ]
+        }
+      ]
+    },
+    "summary": "Bij vergelijking van de originele inhoud met de bronpagina's is er slechts één relevant verschil gevonden. De bronpagina bevat een extra toezegging over de snelheid en het gemak van de online aanvraagprocedure die niet in de originele tekst staat vermeld. Overige informatie zoals voorwaarden, kosten en procedures lijkt consistent te zijn, hoewel niet alle informatie uit de originele tekst in de getoonde bronfragmenten te verifiëren is vanwege de onvolledige weergave van de bronpagina's."
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "context": {
+    "municipality": {
+      "name": "GRONINGEN",
+      "contact": {
+        "phone": "14 050",
+        "email": "info@groningen.nl",
+        "website": "http://gemeente.groningen.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 22,
+    "false_sentences": 2,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Exploitatievergunning voor alcoholverstrekkend bedrijf zonder terras: € 119",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Groningen is het correcte tarief voor een exploitatievergunning voor alcoholverstrekkend bedrijf zonder terras € 545,10"
+      },
+      {
+        "sentence": "Exploitatievergunning voor alcoholverstrekkend bedrijf met terrasvergunning: € 221,30",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Groningen is het correcte tarief voor een exploitatievergunning voor alcoholverstrekkend bedrijf met terrasvergunning € 647,40"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://gemeente.groningen.nl/exploitatievergunning-horeca-aanvragen",
+      "https://gemeente.groningen.nl/bedrijf-starten",
+      "https://gemeente.groningen.nl/alcoholvergunning-aanvragen",
+      "https://gemeente.groningen.nl/vergunning-voor-seksbedrijf-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://gemeente.groningen.nl/onttrekkingsvergunning-voor-bedrijfsdoeleinden-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vanaf 1 april 2024 hoeft u daarop alleen nog de natuurlijke personen te vermelden die eigenaar/bestuurders rechtspersoon/vennoten zijn.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de wijziging per 1 april 2024 betreffende het vermelden van leidinggevenden op het aanhangsel van de alcoholvergunning.",
+          "source_urls": [
+            "https://gemeente.groningen.nl/alcoholvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bedrijven die al voor 1 januari 2025 bestaan, moeten in sommige gevallen van de burgemeester een vergunning aanvragen.",
+          "original_reference": "Vanaf 1 januari 2025 kunt u de exploitatievergunning digitaal aanvragen.",
+          "note": "De brontext vermeldt een aanvullende verplichting voor bestaande bedrijven, terwijl de originele tekst alleen de digitale aanvraagmogelijkheid vanaf 2025 noemt.",
+          "source_urls": [
+            "https://gemeente.groningen.nl/exploitatievergunning-horeca-aanvragen"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Een exploitatievergunning is verplicht als klanten direct bij u eten en drinken kunnen consumeren. Dit geldt ook voor een terras, gokkasten of speelautomaten.",
+          "original_reference": "Een exploitatievergunning is vereist wanneer klanten direct bij u kunnen eten en drinken, inclusief terras, gokkasten of speelautomaten.",
+          "note": "De voorwaarden voor het verkrijgen van een exploitatievergunning komen overeen in beide teksten.",
+          "source_urls": [
+            "https://gemeente.groningen.nl/exploitatievergunning-horeca-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen nieuwe regelgeving per 1 april 2024 voor het vermelden van leidinggevenden op alcoholvergunningen en aanvullende verplichtingen voor bestaande bedrijven vóór 2025. De kernvoorwaarden voor exploitatievergunningen zijn consistent tussen de bronnen."
+  }
+}

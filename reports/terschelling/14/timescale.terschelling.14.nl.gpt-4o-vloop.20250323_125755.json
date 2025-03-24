@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "TERSCHELLING",
+      "contact": {
+        "phone": "(0562) 44 62 44",
+        "email": "gemeente@terschelling.nl",
+        "website": "http://www.terschelling.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor het in behandeling nemen van een aanvraag bedragen €17,55.",
+        "status": "false",
+        "note": "Dit bedrag is niet correct volgens de actuele legesverordening van gemeente Terschelling. Het juiste bedrag voor een parkeervergunning/ontheffing is €32,90 (2024)."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.terschelling.nl/verkeersontheffingen",
+      "https://www.terschelling.nl/exploitatievergunning-horecabedrijf",
+      "https://www.terschelling.nl/voertuig-te-koop-aanbieden-op-de-openbare-weg",
+      "https://www.terschelling.nl/omgevingsvergunning",
+      "https://www.terschelling.nl/alle-producten-en-diensten/6"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wilt u wegwedstrijden houden, (bouw)werken plaatsen over of onder de weg, fietstochten of publieksevenementen organiseren op, over of onder een openbare weg? Dit is in strijd met de Wegenverkeerswet 1994.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina specificeert concrete situaties waarvoor een verkeersontheffing nodig is, terwijl deze informatie volledig ontbreekt in de originele tekst",
+          "source_urls": [
+            "https://www.terschelling.nl/verkeersontheffingen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U ontvangt binnen 8 weken bericht of u de ontheffing krijgt.",
+          "original_reference": "Er is geen specifieke tijdsduur vermeld voor de behandeling van een aanvraag voor een parkeervergunning of ontheffing voor ondernemers.",
+          "note": "De bron vermeldt een concrete behandeltermijn van 8 weken, terwijl de originele tekst aangeeft dat er geen specifieke tijdsduur bekend is",
+          "source_urls": [
+            "https://www.terschelling.nl/voertuig-te-koop-aanbieden-op-de-openbare-weg"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u het niet eens bent met de beslissing van de gemeente, dan kunt u binnen 6 weken bezwaar maken.",
+          "original_reference": "Er is geen specifieke informatie over bezwaren met betrekking tot parkeervergunningen of ontheffingen voor ondernemers beschikbaar.",
+          "note": "De bron vermeldt een concrete bezwaartermijn van 6 weken, terwijl de originele tekst geen informatie over bezwaarprocedures bevat",
+          "source_urls": [
+            "https://www.terschelling.nl/voertuig-te-koop-aanbieden-op-de-openbare-weg"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten belangrijke aanvullende informatie die ontbreekt in de originele tekst, waaronder specifieke situaties waarvoor een verkeersontheffing nodig is, een concrete behandeltermijn van 8 weken en een bezwaartermijn van 6 weken. Deze informatie maakt de voorwaarden en procedures duidelijker voor aanvragers."
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LEUSDEN",
+      "contact": {
+        "phone": "14 033",
+        "email": "gemeente@leusden.nl",
+        "website": "http://www.leusden.nl/"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 10,
+    "false_sentences": 1,
+    "accuracy_percentage": 90.9,
+    "false_statements": [
+      {
+        "sentence": "Het is niet mogelijk om een ontheffing voor blauwe zones aan te vragen.",
+        "status": "false",
+        "note": "Het is wel mogelijk om een ontheffing voor blauwe zones aan te vragen bij de gemeente Leusden, bijvoorbeeld voor gehandicapten of in specifieke situaties waar dit noodzakelijk is."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 6,
+    "invalid_urls": 1,
+    "accuracy_percentage": 85.7,
+    "valid_urls_list": [
+      "https://www.leusden.nl",
+      "https://www.leusden.nl/vergunningen-en-belastingen",
+      "https://www.leusden.nl/hulp-en-zorg/parkeerplaats-voor-gehandicapten",
+      "https://www.leusden.nl/en/vergunningen-en-belastingen",
+      "https://www.leusden.nl/ondernemersloket/vergunningen-en-meldingen-voor-ondernemers",
+      "https://www.leusden.nl/en/ondernemersloket/vergunningen-en-meldingen-voor-ondernemers"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.leusden.nl\">Gemeente",
+        "reason": "INVALID: Error scraping https://www.leusden.nl\">Gemeente: HTTPSConnectionPool(host='www.leusden.nl%22%3egemeente', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10789b610>: Failed to resolve 'www.leusden.nl%22%3egemeente' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een ontheffing voor ondernemer of bewoner van de Biezenkamp om uw pand of woning met de auto bereiken.",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden een specifieke ontheffing voor het voetgangersgebied de Biezenkamp die niet genoemd wordt in de originele tekst, wat een belangrijke uitzondering is op het algemene parkeerbeleid.",
+          "source_urls": [
+            "https://www.leusden.nl/vergunningen-en-belastingen",
+            "https://www.leusden.nl/en/vergunningen-en-belastingen"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont één belangrijk verschil aan: waar de originele tekst stelt dat er geen parkeerontheffingen beschikbaar zijn voor ondernemers, blijkt uit de bronnen dat er wel een specifieke ontheffing mogelijk is voor ondernemers in het voetgangersgebied de Biezenkamp. Dit is een significante aanvulling op de informatie in de originele tekst. Verder worden de algemene statements over gratis parkeren en blauwe zones niet expliciet bevestigd of ontkracht in de beschikbare bronnen."
+  }
+}

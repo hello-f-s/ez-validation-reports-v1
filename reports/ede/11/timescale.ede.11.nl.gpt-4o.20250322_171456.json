@@ -1,0 +1,104 @@
+{
+  "context": {
+    "municipality": {
+      "name": "EDE",
+      "contact": {
+        "phone": "14 0318",
+        "email": "info@ede.nl",
+        "website": "http://www.ede.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Wel wordt gestreefd om aanvragen voor kopieën van reeds verleende vergunningen binnen vijf werkdagen te behandelen.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Ede worden kopieën van verleende vergunningen binnen 2 werkdagen verstrekt, niet binnen 5 werkdagen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 4,
+    "invalid_urls": 3,
+    "accuracy_percentage": 57.1,
+    "valid_urls_list": [
+      "https://www.ede.nl/aanvragen-en-regelen/bouw-en-verbouwvergunning",
+      "https://www.ede.nl/aanvragen-en-regelen/bouw-en-verbouwvergunning-voor-bedrijven",
+      "https://www.ede.nl/aanvragen-en-regelen/omgevingsplan",
+      "https://www.ede.nl/aanvragen-en-regelen/schetsplan"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.ede.nl/aanvragen-en-regelen/verleende-vergunningen-inzien-en-opvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.overheid.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.gemeente-ede.nl",
+        "reason": "INVALID: Error scraping https://www.gemeente-ede.nl: 439 Client Error: status code 439 for url: https://www.gemeente-ede.nl/"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 4,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U heeft DigiD nodig voor particulieren, eHerkenning voor bedrijven",
+          "original_reference": "eHerkenning om toegang te krijgen tot het Omgevingsloket",
+          "note": "De originele tekst vermeldt alleen eHerkenning, terwijl particulieren DigiD nodig hebben en alleen bedrijven eHerkenning gebruiken",
+          "source_urls": [
+            "https://www.ede.nl/aanvragen-en-regelen/bouw-en-verbouwvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De kosten voor het beoordelen van een conceptverzoek bedragen € 225,00",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt geen specifiek bedrag voor conceptverzoeken, terwijl de bron dit wel specificeert",
+          "source_urls": [
+            "https://www.ede.nl/aanvragen-en-regelen/schetsplan"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Uw vergunningaanvraag wordt behandeld door Omgevingsdienst De Vallei",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat de Omgevingsdienst De Vallei de aanvragen behandelt",
+          "source_urls": [
+            "https://www.ede.nl/aanvragen-en-regelen/bouw-en-verbouwvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als uw bedrijf verandert, kunt u te maken krijgen met andere of nieuwe milieuvoorschriften",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over milieuvoorschriften bij bedrijfsveranderingen",
+          "source_urls": [
+            "https://www.ede.nl/aanvragen-en-regelen/bouw-en-verbouwvergunning-voor-bedrijven"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie die ontbreekt in de originele tekst, waaronder het onderscheid tussen DigiD en eHerkenning, specifieke kosten voor conceptverzoeken, de rol van Omgevingsdienst De Vallei, en informatie over milieuvoorschriften voor bedrijven. Deze informatie is essentieel voor een volledig begrip van de procedures en vereisten."
+  }
+}

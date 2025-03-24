@@ -1,0 +1,90 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OPMEER",
+      "contact": {
+        "phone": "(0226) 36 33 33",
+        "email": "gemeente@opmeer.nl",
+        "website": "http://www.opmeer.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "U ontvangt binnen 8 weken bericht of u de vergunning krijgt.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Opmeer is de behandeltermijn voor een terrasvergunning maximaal 6 weken, niet 8 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 3,
+    "invalid_urls": 2,
+    "accuracy_percentage": 60.0,
+    "valid_urls_list": [
+      "https://www.opmeer.nl/standplaats-aanvragen",
+      "https://www.opmeer.nl/exploitatievergunning-horecabedrijf",
+      "https://www.opmeer.nl/omgevingsvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.opmeer.nl/terras-plaatsen",
+        "reason": "INVALID: Error scraping https://www.opmeer.nl/terras-plaatsen: 404 Client Error: Not Found for url: https://www.opmeer.nl/terras-plaatsen"
+      },
+      {
+        "url": "https://www.opmeer.nl/voorwerp-plaatsen-op-of-aan-de-weg",
+        "reason": "INVALID: Error scraping https://www.opmeer.nl/voorwerp-plaatsen-op-of-aan-de-weg: 404 Client Error: Not Found for url: https://www.opmeer.nl/voorwerp-plaatsen-op-of-aan-de-weg"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Ook het bijbehorende terras hoort bij de inrichting. U mag niet zomaar een terras plaatsen wanneer dit terras niet op de exploitatievergunning staat.",
+          "original_reference": "U hebt een vergunning nodig als u een terras wilt plaatsen bij uw horecabedrijf, zelfs als u het terras op eigen terrein plaatst.",
+          "note": "De brontext specificeert dat het terras op de exploitatievergunning moet staan, wat een aanvullende voorwaarde is die niet in de originele tekst wordt genoemd.",
+          "source_urls": [
+            "https://www.opmeer.nl/exploitatievergunning-horecabedrijf"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Indien de standplaatsvergunning een geldigheidsduur heeft langer dan 1 maand, voor iedere extra kalendermaand: € 16,45",
+          "original_reference": "Indien de vergunning een geldigheidsduur heeft langer dan 1 maand: € 124,80",
+          "note": "De kosten voor vergunningen langer dan 1 maand worden anders berekend in de bron (per extra maand) dan in de originele tekst (vast bedrag).",
+          "source_urls": [
+            "https://www.opmeer.nl/standplaats-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Indien er gebruik wordt gemaakt van gemeentelijke aansluitingen op elektra en/of water kunnen daar kosten voor in rekening worden gebracht.",
+          "original_reference": "No matching information",
+          "note": "De bron vermeldt mogelijke extra kosten voor gebruik van gemeentelijke voorzieningen, wat niet wordt genoemd in de originele tekst.",
+          "source_urls": [
+            "https://www.opmeer.nl/standplaats-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn drie belangrijke verschillen gevonden tussen de originele tekst en de bronnen. Ten eerste moet het terras expliciet op de exploitatievergunning vermeld staan. Ten tweede verschilt de kostenstructuur voor langdurige vergunningen. Ten derde worden in de bron extra mogelijke kosten genoemd voor het gebruik van gemeentelijke voorzieningen die niet in de originele tekst staan vermeld. Deze verschillen hebben significante implicaties voor de volledigheid en accuraatheid van de informatie voor ondernemers."
+  }
+}

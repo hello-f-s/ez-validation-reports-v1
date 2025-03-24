@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "GRONINGEN",
+      "contact": {
+        "phone": "14 050",
+        "email": "info@groningen.nl",
+        "website": "http://gemeente.groningen.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 19,
+    "false_sentences": 2,
+    "accuracy_percentage": 90.5,
+    "false_statements": [
+      {
+        "sentence": "Bedrijvenvergunning kost per jaar €131,40. De tweede en volgende bedrijvenvergunningen kosten €587,65 per jaar.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Groningen kost een eerste bedrijvenvergunning €134,40 per jaar en een tweede en volgende vergunning €599,40 per jaar (tarieven 2024)."
+      },
+      {
+        "sentence": "Dagvergunningen kost in zone 1 en 2 €36,00 en in zone 3 en 4 €21,60.",
+        "status": "false",
+        "note": "Volgens de actuele tarieven van de gemeente Groningen kosten dagvergunningen in zone 1 en 2 €37,20 en in zone 3 en 4 €22,20 (tarieven 2024)."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://gemeente.groningen.nl/parkeervergunning-voor-bedrijven",
+      "https://gemeente.groningen.nl/parkeervergunning-voor-bewoners",
+      "https://gemeente.groningen.nl/maatschappelijke-parkeervergunning",
+      "https://gemeente.groningen.nl/ontheffing-voor-3-of-meer-bedrijfsvoertuigen-op-de-stoep",
+      "https://gemeente.groningen.nl/parkeervergunning-voor-markthandelaar-aanvragen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Meerdere kentekens: U kunt meerdere kentekens in uw bedrijfsaccount opnemen. De kentekens hoeven niet op naam of bedrijfsnaam te staan.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de mogelijkheid om meerdere kentekens te registreren en dat deze niet op naam van het bedrijf hoeven te staan. Dit is belangrijke aanvullende informatie voor bedrijven.",
+          "source_urls": [
+            "https://gemeente.groningen.nl/parkeervergunning-voor-bedrijven"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een aanvraag kost € 120. U krijgt geen geld terug als u geen ontheffing krijgt.",
+          "original_reference": "Bij aanvraag van een ontheffing voor bedrijfsvoertuigen bedragen de kosten €120.",
+          "note": "De originele tekst vermeldt niet dat het bedrag niet wordt terugbetaald bij afwijzing van de aanvraag. Dit is belangrijke informatie voor aanvragers.",
+          "source_urls": [
+            "https://gemeente.groningen.nl/ontheffing-voor-3-of-meer-bedrijfsvoertuigen-op-de-stoep"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Doe de aanvraag minimaal 8 weken van tevoren.",
+          "original_reference": "Een ontheffingsaanvraag kan tot 8 weken duren voor er bericht komt.",
+          "note": "De originele tekst spreekt over een verwerkingstijd van 8 weken, terwijl de bron aangeeft dat de aanvraag minimaal 8 weken van tevoren moet worden ingediend. Dit is een belangrijk verschil in timing.",
+          "source_urls": [
+            "https://gemeente.groningen.nl/ontheffing-voor-3-of-meer-bedrijfsvoertuigen-op-de-stoep"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen aanvullende informatie over kentekenbeheer, niet-restitueerbare aanvraagkosten en verschillende interpretaties van de 8-weken termijn. De bronnen bevatten enkele belangrijke specificaties die niet in de originele tekst zijn opgenomen, met name rond kentekenvereisten en financiële voorwaarden. Deze informatie is essentieel voor bedrijven die een parkeervergunning willen aanvragen."
+  }
+}

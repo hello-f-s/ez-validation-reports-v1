@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AMERSFOORT",
+      "contact": {
+        "phone": "14 033",
+        "email": "info@amersfoort.nl",
+        "website": "http://www.amersfoort.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 20,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.2,
+    "false_statements": [
+      {
+        "sentence": "Na het indienen van een volledige aanvraag ontvang je binnen 8 weken een besluit over je aanvraag.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Amersfoort is de behandeltermijn voor een terrasvergunning maximaal 12 weken, niet 8 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.amersfoort.nl/terrasvergunning",
+      "https://www.amersfoort.nl/aanleggen",
+      "https://www.amersfoort.nl/reclame",
+      "https://www.amersfoort.nl/exploitatie-horeca-inrichting",
+      "https://www.amersfoort.nl/een-vergunning-aangevraagd-en-nu"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Je mag wel meteen beginnen",
+          "original_reference": "Na goedkeuring mag je het terras openen",
+          "note": "De bron geeft aan dat men direct na vergunningverlening mag beginnen, terwijl de originele tekst suggereert dat men moet wachten tot na goedkeuring. Dit is een belangrijk procedureel verschil.",
+          "source_urls": [
+            "https://www.amersfoort.nl/reclame"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor dit formulier heb je DigiD of eHerkenning nodig",
+          "original_reference": "Voor andere gerelateerde diensten kan het gebruik van DigiD of eHerkenning vereist zijn",
+          "note": "De originele tekst is minder specifiek over DigiD/eHerkenning vereisten en noemt dit alleen voor 'andere diensten', terwijl de bron aangeeft dat deze direct nodig zijn voor de aanvraag.",
+          "source_urls": [
+            "https://www.amersfoort.nl/exploitatie-horeca-inrichting"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Binnen 2 weken neemt de casemanager contact met je op. Let op: door de drukte halen we deze termijn helaas niet altijd.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over de eerste contactopname door een casemanager binnen 2 weken na aanvraag.",
+          "source_urls": [
+            "https://www.amersfoort.nl/een-vergunning-aangevraagd-en-nu"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de startdatum van exploitatie na vergunningverlening, de vereisten voor DigiD/eHerkenning, en ontbrekende informatie over de initiële contactopname door een casemanager. De originele tekst mist enkele procedurele details die wel in de bronnen worden vermeld."
+  }
+}

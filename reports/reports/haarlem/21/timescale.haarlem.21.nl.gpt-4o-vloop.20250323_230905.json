@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HAARLEM",
+      "contact": {
+        "phone": "14 023",
+        "email": "antwoord@haarlem.nl",
+        "website": "http://www.haarlem.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "De publiekshal is geopend op elke werkdag van 9.00 tot 16.00 uur en op donderdag van 16.00 tot 20.00 uur.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Haarlem is de publiekshal geopend van maandag t/m vrijdag van 8.30 tot 16.00 uur, en op donderdag van 8.30 tot 20.00 uur."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://haarlem.nl/verklaring-omtrent-gedrag-vog",
+      "https://haarlem.nl/alle-regels-en-documenten-vergunningsplichtige-activiteiten",
+      "https://haarlem.nl/nederlander-worden",
+      "https://www.haarlem.nl/ufs/formulieren.eb?id=aanvraag_alcoholvergunning_model_a_hlm",
+      "https://www.haarlem.nl/ufs/formulieren.eb?id=aanvraag_alcoholvergunning_model_b_hlm"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Het Ministerie van Veiligheid en Justitie beoordeelt uw aanvraag. Binnen 4 weken krijgt u de VOG of een afwijzing per post thuisgestuurd.",
+          "original_reference": "Na het indienen van uw aanvraag beoordeelt het Ministerie van Veiligheid en Justitie deze. U ontvangt binnen 4 weken per post de VOG of een afwijzing.",
+          "note": "De informatie over de beoordelingstermijn en verzending is consistent tussen beide bronnen",
+          "source_urls": [
+            "https://haarlem.nl/verklaring-omtrent-gedrag-vog"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Publiekshal Zijlvest 39 2011 VB Haarlem Openingstijden Elke werkdag: 9.00 tot 16.00 uur Donderdag: ook van 16.00 tot 20.00 uur",
+          "original_reference": "De publiekshal is geopend op elke werkdag van 9.00 tot 16.00 uur en op donderdag van 16.00 tot 20.00 uur.",
+          "note": "De openingstijden van de publiekshal komen exact overeen",
+          "source_urls": [
+            "https://haarlem.nl/alle-regels-en-documenten-vergunningsplichtige-activiteiten"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse van de bronnen en de originele tekst zijn er geen significante verschillen of tegenstrijdigheden gevonden. De informatie over openingstijden, procedures en termijnen komt overeen. De beschikbare bronnen bevestigen de juistheid van de informatie in de originele tekst."
+  }
+}

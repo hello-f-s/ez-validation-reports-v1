@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DEVENTER",
+      "contact": {
+        "phone": "14 0570",
+        "email": "gemeente@deventer.nl",
+        "website": "http://www.deventer.nl"
+      }
+    },
+    "service": {
+      "id": 16,
+      "name": "Registreren in het Landelijk Register Kinderopvang (LRK)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "De aanvraag voor een tegemoetkoming kan maximaal 8 weken duren.",
+        "status": "false",
+        "note": "Volgens de Wet kinderopvang heeft de gemeente 10 weken de tijd om een besluit te nemen op een aanvraag voor registratie in het LRK, niet 8 weken. Dit wordt ook bevestigd in de eerste alinea van de tekst waar staat dat de GGD binnen 10 weken controleert."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.deventer.nl/kinderopvang/kinderopvang-starten",
+      "https://www.deventer.nl/kinderopvangstarten",
+      "https://www.deventer.nl/kinderopvang",
+      "https://www.deventer.nl/kinderopvang/tegemoetkoming-kinderopvang-aanvragen",
+      "https://www.deventer.nl/loketten/digitaal-loket/kinderopvang-tegemoetkoming-aanvragen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De gemeente ziet erop toe dat kinderopvangorganisaties voldoen aan kwaliteitseisen. Ook zorgt de gemeente voor registratie bij het Landelijk Register Kinderopvang.",
+          "original_reference": "Om een kinderopvangorganisatie te registeren in het Landelijk Register Kinderopvang (LRK) moet de organisatie voldoen aan de kwaliteitseisen die door de gemeente zijn opgesteld.",
+          "note": "De originele tekst suggereert dat de gemeente de kwaliteitseisen opstelt, terwijl de brontekst aangeeft dat de gemeente alleen toeziet op de naleving van de eisen.",
+          "source_urls": [
+            "https://www.deventer.nl/kinderopvang/kinderopvang-starten"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Houd er rekening mee dat wij verplicht zijn uw aanvraag te publiceren. Bij de publicatie vermelden wij geen privacygevoelige gegevens.",
+          "original_reference": "De gemeente publiceert uw aanvraag maar dit betekent niet automatisch goedkeuring.",
+          "note": "De brontekst geeft belangrijke aanvullende informatie over privacy en de verplichte publicatie die ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.deventer.nl/kinderopvang/kinderopvang-starten",
+            "https://www.deventer.nl/kinderopvangstarten"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vul het formulier in en sla de pdf op uw computer op.",
+          "original_reference": "Vul het formulier in, bewaar het als PDF en voeg de benodigde documenten toe.",
+          "note": "De brontext specificeert duidelijker dat het formulier eerst op de computer moet worden opgeslagen voordat het verder verwerkt kan worden.",
+          "source_urls": [
+            "https://www.deventer.nl/kinderopvang/kinderopvang-starten"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont enkele belangrijke verschillen tussen de originele tekst en de bronnen. De rol van de gemeente bij kwaliteitseisen wordt anders beschreven, er is aanvullende informatie over privacy bij publicatie van aanvragen, en de procedure voor het indienen van formulieren wordt in de bronnen preciezer beschreven. De meeste basis-informatie komt wel overeen, maar de bronnen zijn specifieker en completer in hun beschrijvingen."
+  }
+}

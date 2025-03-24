@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HOOGEVEEN",
+      "contact": {
+        "phone": "14 0528",
+        "email": "info@hoogeveen.nl",
+        "website": "http://www.hoogeveen.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 27,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.4,
+    "false_statements": [
+      {
+        "sentence": "Dit kost €175.",
+        "status": "false",
+        "note": "Het vooroverleg ('Verken uw idee') kost volgens de actuele legesverordening van gemeente Hoogeveen €250, niet €175."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.hoogeveen.nl/vergunningen/omgevingsvergunningen",
+      "https://www.hoogeveen.nl/raad-en-college/woo-verzoek",
+      "https://www.hoogeveen.nl/dossiers/omgevingswet",
+      "https://www.hoogeveen.nl/melding-idee-klacht-en-bezwaar",
+      "https://www.hoogeveen.nl/vergunningen/evenementenvergunning-aanvragen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U krijgt binnen 1 werkdag een bevestigingsmail van het mailadres noreply@jeleefomgeving.nl",
+          "original_reference": "Na het indienen van een aanvraag, ontvangt u binnen 1 werkdag een bevestiging",
+          "note": "De originele tekst specificeert niet dat de bevestiging per e-mail komt en van welk specifiek e-mailadres",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/omgevingsvergunningen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Dan kunt u uw plan online aan ons voorleggen via Verken uw idee. Als wij het plan wenselijk vinden, laten wij u weten wat u kunt doen om het plan mogelijk te maken.",
+          "original_reference": "kunt u uw plan online aan ons voorleggen via de optie \"Verken uw idee\"",
+          "note": "De brontext bevat extra informatie over wat er gebeurt na het voorleggen van het plan via 'Verken uw idee'",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/omgevingsvergunningen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het Omgevingsloket is het nieuwe loket waar u online een vergunning kunt aanvragen, een melding kunt doen of aanvullende informatie kunt doorgeven.",
+          "original_reference": "u kunt een (concept)aanvraag indienen via het Omgevingsloket",
+          "note": "De brontekst geeft een completere beschrijving van de functionaliteit van het Omgevingsloket",
+          "source_urls": [
+            "https://www.hoogeveen.nl/dossiers/omgevingswet"
+          ]
+        }
+      ]
+    },
+    "summary": "De gevonden verschillen zijn voornamelijk aanvullend van aard en niet tegenstrijdig. De bronnen bevatten meer specifieke details over het bevestigingsproces, de 'Verken uw idee' optie en de functionaliteit van het Omgevingsloket. Deze extra informatie maakt de procedures duidelijker voor de aanvrager maar verandert de kern van de informatie niet."
+  }
+}

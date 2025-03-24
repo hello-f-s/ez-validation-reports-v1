@@ -1,0 +1,81 @@
+{
+  "context": {
+    "municipality": {
+      "name": "VAALS",
+      "contact": {
+        "phone": "(043) 306 85 68",
+        "email": "info@vaals.nl",
+        "website": "http://www.vaals.nl"
+      }
+    },
+    "service": {
+      "id": 10,
+      "name": "Nachtregister bijhouden"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 1,
+    "true_sentences": 1,
+    "false_sentences": 0,
+    "accuracy_percentage": 100.0,
+    "false_statements": []
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.vaals.nl/inwoners/vergunningen/omgevingswet/meest-aangevraagde-activiteiten",
+      "https://www.vaals.nl/inwoners/verhuizen/verhuizen-naar-het-buitenland-emigratie",
+      "https://www.vaals.nl/privacy/",
+      "https://www.vaals.nl/bestuur-en-organisatie/bezwaar-en-beroep/klacht-indienen-tegen-medewerker-of-bestuurder"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.vaals.nl/inwoners/uittreksels/verklaring-omtrent-het-gedrag-vog",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Gaat u voor langer dan 8 maanden of misschien definitief naar het buitenland? Dan moet u bij de gemeente aangifte doen van uw vertrek. We schrijven u dan uit de Basisregistratie Personen. Doe dit tenminste 5 dagen voor de dag van uw vertrek.",
+          "original_reference": "No matching information",
+          "note": "De bron bevat specifieke informatie over emigratie-procedures die niet in de originele tekst staat, waaronder de 8-maanden regel en 5-dagen aanmeldingstermijn.",
+          "source_urls": [
+            "https://www.vaals.nl/inwoners/verhuizen/verhuizen-naar-het-buitenland-emigratie"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U heeft er recht op dat de gemeente Vaals zorgvuldig en vertrouwelijk met uw persoonsgegevens omgaat. Dat is vastgelegd in diverse wetten (Algemene Verordening Gegevensbescherming, de Wet basisregistratie persoonsgegevens, de Telecommunicatiewet en de Wet algemene bepalingen burgerservicenummer.",
+          "original_reference": "No matching information",
+          "note": "De bron bevat gedetailleerde informatie over privacybeleid en wetgeving die niet in de originele tekst wordt genoemd.",
+          "source_urls": [
+            "https://www.vaals.nl/privacy/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het aanvragen van een vergunning is iets wat veel mensen niet jaarlijks doen. Om u hierin verder te begeleiden, hebben wij een overzicht voor u gemaakt met de meest aangevraagde activiteiten binnen het Omgevingsloket.",
+          "original_reference": "No matching information",
+          "note": "De bron bevat specifieke informatie over het aanvragen van vergunningen via het Omgevingsloket die niet in de originele tekst staat.",
+          "source_urls": [
+            "https://www.vaals.nl/inwoners/vergunningen/omgevingswet/meest-aangevraagde-activiteiten"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten veel meer specifieke informatie dan de originele tekst, waaronder details over emigratie-procedures, privacybeleid en vergunningsaanvragen. De originele tekst bevat geen van deze informatie, wat suggereert dat deze onvolledig of niet up-to-date is. De bronnen bieden uitgebreide, concrete informatie over gemeentelijke diensten en procedures."
+  }
+}

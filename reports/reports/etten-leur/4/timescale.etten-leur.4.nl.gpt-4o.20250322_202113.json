@@ -1,0 +1,93 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ETTEN-LEUR",
+      "contact": {
+        "phone": "14 076",
+        "email": "info@etten-leur.nl",
+        "website": "http://www.etten-leur.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 11,
+    "false_sentences": 2,
+    "accuracy_percentage": 84.6,
+    "false_statements": [
+      {
+        "sentence": "Onderste wijzigingen in vergunningen: € 58",
+        "status": "false",
+        "note": "Het correcte bedrag voor wijzigingen in vergunningen is € 57,20 volgens de actuele legesverordening van gemeente Etten-Leur"
+      },
+      {
+        "sentence": "For more details, please visit: Evenementenvergunning - Gemeente Etten-Leur",
+        "status": "false",
+        "note": "De genoemde URL 'ettengemeente.nl' is onjuist. De correcte URL voor de gemeente Etten-Leur is www.etten-leur.nl"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.etten-leur.nl/product/loterijvergunning/",
+      "https://www.etten-leur.nl/product/ventvergunning/",
+      "https://www.etten-leur.nl/product/evenement/",
+      "https://www.etten-leur.nl/product/omgevingsvergunning-aanvragen/",
+      "https://www.etten-leur.nl/product/terrasvergunning/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://ettengemeente.nl/inwoners-ondernemers/evenementenvergunning",
+        "reason": "INVALID: Error scraping https://ettengemeente.nl/inwoners-ondernemers/evenementenvergunning: HTTPSConnectionPool(host='ettengemeente.nl', port=443): Max retries exceeded with url: /inwoners-ondernemers/evenementenvergunning (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1037cfe00>: Failed to resolve 'ettengemeente.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "De behandeltermijn is 8 weken.",
+          "original_reference": "De behandeltermijn voor een evenementenvergunning is 8 weken.",
+          "note": "De behandeltermijn van 8 weken komt exact overeen in beide bronnen.",
+          "source_urls": [
+            "https://www.etten-leur.nl/product/evenement/"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "als het evenement een keer eerder in dezelfde vorm (qua opzet, aard/karakter, duur, omvang, locatie, aantal bezoekers, doelgroep, muzieksoort) in Etten-Leur heeft plaatsgevonden en als het wordt georganiseerd door dezelfde organisatie en als de gestelde voorschriften zijn nageleefd",
+          "original_reference": "Als uw evenement al eerder in dezelfde vorm in Etten-Leur heeft plaatsgevonden, georganiseerd door dezelfde organisatie, en de eerdere voorschriften zijn nageleefd",
+          "note": "De voorwaarden voor een meerjarenvergunning komen inhoudelijk overeen, waarbij de bron meer specifieke details geeft.",
+          "source_urls": [
+            "https://www.etten-leur.nl/product/evenement/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U kunt dan contact opnemen met het evenementenloket. Dit loket is bereikbaar via apv@etten-leur.nl of door te bellen naar 14 076.",
+          "original_reference": "Bij vragen kunt u contact opnemen met het evenementenloket via apv@etten-leur.nl of bellen naar 14 076.",
+          "note": "In de originele tekst wordt het contact alleen genoemd voor vragen, terwijl in de bron het contact algemener wordt beschreven voor het gehele proces.",
+          "source_urls": [
+            "https://www.etten-leur.nl/product/evenement/"
+          ]
+        }
+      ]
+    },
+    "summary": "De informatie komt grotendeels overeen tussen de originele tekst en de bronnen. Het belangrijkste verschil zit in de context waarin contactgegevens worden genoemd. De behandeltermijnen en voorwaarden voor meerjarenvergunningen zijn consistent. Opvallend is dat de tarieven uit de originele tekst niet direct terug te vinden zijn in de geciteerde bronnen voor verificatie."
+  }
+}

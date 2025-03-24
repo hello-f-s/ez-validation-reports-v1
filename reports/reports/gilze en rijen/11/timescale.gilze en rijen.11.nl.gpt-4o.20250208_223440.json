@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "GILZE EN RIJEN",
+      "contact": {
+        "phone": "14 0161",
+        "email": "info@gilzerijen.nl",
+        "website": "http://www.gilzerijen.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Binnen 8 weken na de aanvraag hoort u of u de vergunning krijgt.",
+        "status": "false",
+        "note": "De standaard behandeltermijn voor een reguliere omgevingsvergunning is niet altijd 8 weken. Voor een reguliere procedure geldt een termijn van maximaal 8 weken, die eenmalig verlengd kan worden met 6 weken. Voor uitgebreide procedures geldt een termijn van 26 weken die verlengd kan worden met 6 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 10,
+    "valid_urls": 0,
+    "invalid_urls": 10,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.gilzerijen.nl/omgevingsvergunning",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.gilzerijen.nl/conceptverzoek",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://gemeente.gilzerijen.nl/conceptverzoek",
+        "reason": "INVALID: Error scraping https://gemeente.gilzerijen.nl/conceptverzoek: HTTPSConnectionPool(host='gemeente.gilzerijen.nl', port=443): Max retries exceeded with url: /conceptverzoek (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10562f890>: Failed to resolve 'gemeente.gilzerijen.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.gilzerijen.nl/omgevingswet-voor-bedrijven",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.gilzerijen.nl/ondernemen/vergunningen-en-ontheffingen-voor-ondernemers",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.gilzerijen.nl/beroep-of-bedrijf-aan-huis",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://gemeente.gilzerijen.nl/omgevingsvergunning\">https://gemeente.gilzerijen.nl/omgevingsvergunning</a>,",
+        "reason": "INVALID: Error scraping https://gemeente.gilzerijen.nl/omgevingsvergunning\">https://gemeente.gilzerijen.nl/omgevingsvergunning</a>,: HTTPSConnectionPool(host='gemeente.gilzerijen.nl', port=443): Max retries exceeded with url: /omgevingsvergunning%22%3Ehttps://gemeente.gilzerijen.nl/omgevingsvergunning%3C/a%3E, (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10562f4d0>: Failed to resolve 'gemeente.gilzerijen.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://gemeente.gilzerijen.nl/onethings",
+        "reason": "INVALID: Error scraping https://gemeente.gilzerijen.nl/onethings: HTTPSConnectionPool(host='gemeente.gilzerijen.nl', port=443): Max retries exceeded with url: /onethings (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10562f9d0>: Failed to resolve 'gemeente.gilzerijen.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://gemeente.gilzerijen.nl/omgevingswet",
+        "reason": "INVALID: Error scraping https://gemeente.gilzerijen.nl/omgevingswet: HTTPSConnectionPool(host='gemeente.gilzerijen.nl', port=443): Max retries exceeded with url: /omgevingswet (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10562f890>: Failed to resolve 'gemeente.gilzerijen.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://gemeente.gilzerijen.nl/omgevingsvergunning",
+        "reason": "INVALID: Error scraping https://gemeente.gilzerijen.nl/omgevingsvergunning: HTTPSConnectionPool(host='gemeente.gilzerijen.nl', port=443): Max retries exceeded with url: /omgevingsvergunning (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10562f250>: Failed to resolve 'gemeente.gilzerijen.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  }
+}

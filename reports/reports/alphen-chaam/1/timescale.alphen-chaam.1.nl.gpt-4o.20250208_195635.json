@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ALPHEN-CHAAM",
+      "contact": {
+        "phone": "14013",
+        "email": "info@alphen-chaam.nl",
+        "website": "http://www.alphen-chaam.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 14,
+    "false_sentences": 0,
+    "accuracy_percentage": 100.0,
+    "false_statements": []
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 6,
+    "invalid_urls": 1,
+    "accuracy_percentage": 85.7,
+    "valid_urls_list": [
+      "https://www.alphen-chaam.nl",
+      "https://www.alphen-chaam.nl/vergunningen-en-ontheffingen/vergunningen-en-ontheffingen-voor-ondernemers",
+      "https://www.alphen-chaam.nl/woo",
+      "https://www.alphen-chaam.nl/ondernemen/vergunningen-en-ontheffingen-voor-ondernemers",
+      "https://www.alphen-chaam.nl/alcoholvergunning",
+      "https://www.alphen-chaam.nl/horecavergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.alphen-chaam.nl\">Gemeente",
+        "reason": "INVALID: Error scraping https://www.alphen-chaam.nl\">Gemeente: HTTPSConnectionPool(host='www.alphen-chaam.nl%22%3egemeente', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10589ae90>: Failed to resolve 'www.alphen-chaam.nl%22%3egemeente' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "€ 178,95",
+          "original_reference": "Hier kan geen specifieke informatie over gevonden worden op de website van deze gemeente.",
+          "note": "De originele tekst vermeldt geen kosten, terwijl de bronpagina specifiek vermeldt dat een horecavergunning € 178,95 kost.",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/horecavergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bibob staat voor Bevordering van Integriteits Beoordelingen door het Openbaar Bestuur. Met de Wet Bibob kunnen we voorkomen dat we criminele activiteiten mogelijk maken. Als u een horecavergunning aanvraagt doen wi...",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat aanvullende belangrijke informatie over de Wet Bibob-toetsing die niet in de originele tekst wordt genoemd.",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/horecavergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De vergunning geldt voor het adres waarvoor u deze aanvraagt. De vergunning geldt voor de ondernemer op wie zijn naam u deze aanvraagt.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat specifieke informatie over de geldigheid van de vergunning die niet in de originele tekst wordt genoemd.",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/horecavergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn drie belangrijke verschillen gevonden tussen de originele tekst en de bronpagina's. De originele tekst mist informatie over de specifieke kosten (€ 178,95), vermeldt niets over de Wet Bibob-toetsing, en bevat geen details over de geldigheid van de vergunning qua locatie en eigenaar. Deze informatie is wel beschikbaar op de gemeentelijke website en is relevant voor aanvragers van een horecavergunning."
+  }
+}

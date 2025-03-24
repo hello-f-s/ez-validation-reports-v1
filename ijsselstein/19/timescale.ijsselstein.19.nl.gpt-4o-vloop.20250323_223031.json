@@ -1,0 +1,78 @@
+{
+  "context": {
+    "municipality": {
+      "name": "IJSSELSTEIN",
+      "contact": {
+        "phone": "14 030",
+        "email": "info@ijsselstein.nl",
+        "website": "http://www.ijsselstein.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "Voor het behandelen van een aanvraag voor een loterij betaalt u €30,90.",
+        "status": "false",
+        "note": "Dit bedrag is verouderd. Volgens de actuele legesverordening van de gemeente IJsselstein zijn de kosten voor een loterijvergunning in 2024 anders vastgesteld."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.ijsselstein.nl/Ondernemers/Vergunningen/Exploitatievergunning",
+      "https://www.ijsselstein.nl/Ondernemers/Vergunningen",
+      "https://www.ijsselstein.nl/Ondernemers/Vergunningen/Alcoholwetvergunning",
+      "https://www.ijsselstein.nl/Inwoners/Bouwen_verbouwen_en_slopen/Omgevingsvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.ijsselstein.nl/Ondernemers/Vergunningen/Kansspel_organiseren_loterij_prijsvraag_of_bingo",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De meeste horecabedrijven moeten tussen 01.00 en 06.00 uur sluiten.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over verplichte sluitingstijden voor horecabedrijven, terwijl dit een belangrijke beperking is voor ondernemers.",
+          "source_urls": [
+            "https://www.ijsselstein.nl/Ondernemers/Vergunningen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wij adviseren u om een afspraak te maken voor een intakegesprek. We leggen u alles uit en geven u de formulieren mee. Houd rekening met 3 weken om alle gevraagde informatie te verzamelen.",
+          "original_reference": "Vraag de benodigde formulieren op bij Team Klant van de gemeente via 14 030 of info@ijsselstein.nl",
+          "note": "De bronpagina adviseert een persoonlijk intakegesprek en geeft een specifieke voorbereidingstijd van 3 weken aan, terwijl de originele tekst alleen verwijst naar het opvragen van formulieren via telefoon of email.",
+          "source_urls": [
+            "https://www.ijsselstein.nl/Ondernemers/Vergunningen/Alcoholwetvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele tekst en de bronpagina's. Ten eerste ontbreekt in de originele tekst informatie over verplichte sluitingstijden voor horecabedrijven. Ten tweede verschilt de aanvraagprocedure: waar de originele tekst alleen verwijst naar het opvragen van formulieren, adviseert de gemeente in werkelijkheid een persoonlijk intakegesprek met een voorbereidingstijd van 3 weken. Deze verschillen zijn relevant voor ondernemers die een vergunning willen aanvragen."
+  }
+}

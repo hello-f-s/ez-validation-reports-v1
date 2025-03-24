@@ -1,0 +1,103 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ZWOLLE",
+      "contact": {
+        "phone": "14 038",
+        "email": "postbus@zwolle.nl",
+        "website": "http://www.zwolle.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 21,
+    "false_sentences": 3,
+    "accuracy_percentage": 87.5,
+    "false_statements": [
+      {
+        "sentence": "U kunt een evenementenvergunning aanvragen: Als ondernemer, met eHerkenning.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Zwolle kan iedereen een evenementenvergunning aanvragen, niet alleen ondernemers met eHerkenning."
+      },
+      {
+        "sentence": "Vergunning voor een groot evenement: € 1.017",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Zwolle kost een vergunning voor een groot evenement € 1.047,70"
+      },
+      {
+        "sentence": "U kunt voor vragen contact opnemen met een vergunningverlener van de gemeente Zwolle: Carla Jacobs, Jolanda Boezelman, Annerie Liefers of Antonie van Leussen via telefoonnummer 14 038.",
+        "status": "false",
+        "note": "De gemeente Zwolle vermeldt op haar website geen specifieke namen van vergunningverleners. Contact verloopt via het algemene nummer 14 038."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 8,
+    "valid_urls": 3,
+    "invalid_urls": 5,
+    "accuracy_percentage": 37.5,
+    "valid_urls_list": [
+      "https://www.zwolle.nl/omgevingsvergunning-en-melding",
+      "https://www.zwolle.nl",
+      "https://www.zwolle.nl/melding-klein-evenement-doorgeven"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.zwolle.nl/veelgestelde-vragen-over-de-omgevingswet",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.zwolle.nl/vergunning-voor-evenement-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://omgevingswet.overheid.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.zwolle.nl/leges-evenementenvergunningen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.zwolle.nl/melding-evenementenkalender-volgend-jaar",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "er zijn niet meer dan 250 personen aanwezig; het evenement vindt plaats tussen 07:00 uur en 23:00 uur",
+          "original_reference": "No matching information",
+          "note": "De originele tekst maakt geen onderscheid voor kleine evenementen met specifieke tijden en maximaal 250 personen. Dit is belangrijke aanvullende informatie voor kleine evenementen die alleen een melding vereisen in plaats van een vergunning.",
+          "source_urls": [
+            "https://www.zwolle.nl/melding-klein-evenement-doorgeven"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u een klein evenement organiseert, moet u dat ten minste 10 werkdagen voorafgaand aan het evenement bij de gemeente melden",
+          "original_reference": "De aanvraagtermijn voor een grootschalig evenement is minimaal 12 weken voor het plaatsvinden, terwijl overige evenementen ten minste 8 weken vooraf aangevraagd moeten worden",
+          "note": "Er is een verschil in aanvraagtermijnen. De originele tekst noemt geen 10 werkdagen termijn voor kleine evenementen die alleen een melding vereisen.",
+          "source_urls": [
+            "https://www.zwolle.nl/melding-klein-evenement-doorgeven"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de categorisering en aanvraagtermijnen voor kleine evenementen. De bronnen maken onderscheid voor evenementen met maximaal 250 personen die alleen een melding vereisen (10 werkdagen vooraf), terwijl de originele tekst deze categorie niet noemt. Dit is essentiële informatie voor organisatoren van kleine evenementen die mogelijk geen volledige vergunningsprocedure hoeven te doorlopen."
+  }
+}

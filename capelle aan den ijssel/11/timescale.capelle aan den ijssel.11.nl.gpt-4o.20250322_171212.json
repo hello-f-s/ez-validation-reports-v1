@@ -1,0 +1,67 @@
+{
+  "context": {
+    "municipality": {
+      "name": "CAPELLE AAN DEN IJSSEL",
+      "contact": {
+        "phone": "14 010",
+        "email": "gemeente@capelleaandenijssel.nl",
+        "website": "http://www.capelleaandenijssel.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "Het besluit op een vergunningaanvraag kan variëren: voor eenvoudige initiatieven is dit doorgaans 8 weken, terwijl meer complexe aanvragen een minimum van 26 weken kunnen duren.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Capelle aan den IJssel is de reguliere procedure maximaal 8 weken (met mogelijke verlenging van 6 weken) en de uitgebreide procedure maximaal 26 weken (met mogelijke verlenging van 6 weken). Het is dus niet correct dat complexe aanvragen een minimum van 26 weken duren, dit is het maximum."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 0,
+    "invalid_urls": 6,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.capelleaandenijssel.nl/kamer-verhuren",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.capelleaandenijssel.nl/activiteit-leefomgeving",
+        "reason": "INVALID: Error scraping https://www.capelleaandenijssel.nl/activiteit-leefomgeving: 404 Client Error: Not Found for url: https://www.capelleaandenijssel.nl/activiteit-leefomgeving"
+      },
+      {
+        "url": "https://www.capelleaandenijssel.nl/bekendmakingen-22-januari-2025",
+        "reason": "INVALID: Error scraping https://www.capelleaandenijssel.nl/bekendmakingen-22-januari-2025: 404 Client Error: Not Found for url: https://www.capelleaandenijssel.nl/bekendmakingen-22-januari-2025"
+      },
+      {
+        "url": "https://www.capelleaandenijssel.nl/activiteiten-in-de-leefomgeving-zoals-bouwen-verbouwen-slopen-veranderen",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.capelleaandenijssel.nl/informatie-opvragen-via-wet-open-overheid-woo",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.capelleaandenijssel.nl/als-ondernemer-iets-regelen-met-de-gemeente",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  }
+}

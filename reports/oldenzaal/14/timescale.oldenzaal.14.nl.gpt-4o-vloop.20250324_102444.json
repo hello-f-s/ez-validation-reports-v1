@@ -1,0 +1,89 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OLDENZAAL",
+      "contact": {
+        "phone": "(0541) 58 81 11",
+        "email": "info@oldenzaal.nl",
+        "website": "http://www.oldenzaal.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 31,
+    "true_sentences": 29,
+    "false_sentences": 2,
+    "accuracy_percentage": 93.5,
+    "false_statements": [
+      {
+        "sentence": "Parkeervergunning bedrijven: € 190 per kalenderjaar, inclusief € 20 leges.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Oldenzaal kost een bedrijfsparkeervergunning € 195,60 per kalenderjaar (2024)"
+      },
+      {
+        "sentence": "Bewonersvergunning betaald parkeren: € 80 per kalenderjaar.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Oldenzaal kost een bewonersvergunning € 82,80 per kalenderjaar (2024)"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.oldenzaal.nl/parkeervergunning",
+      "https://www.oldenzaal.nl/standplaatsvergunning",
+      "https://www.oldenzaal.nl/omgevingsvergunning",
+      "https://www.oldenzaal.nl/gehandicaptenparkeerkaart",
+      "https://www.oldenzaal.nl/inrijontheffing",
+      "https://www.oldenzaal.nl"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u eigen parkeerruimte heeft, komt u niet of maar beperkt in aanmerking voor een parkeervergunning.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet deze belangrijke beperking voor mensen met eigen parkeerruimte.",
+          "source_urls": [
+            "https://www.oldenzaal.nl/parkeervergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Laden en lossen mag alleen op hieronder genoemde dagen en tijden: Maandag tot en met vrijdag tussen 07.00 uur en 13.00 uur en tussen 18.00 en 20.00 uur. Zaterdag tussen 07.00 uur en 11.00 uur.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de specifieke tijden voor laden en lossen in de binnenstad.",
+          "source_urls": [
+            "https://www.oldenzaal.nl/inrijontheffing"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bewonersvergunning gebied vergunninghouders: Met deze vergunning kunnen bewoners parkeren in hun eigen zone. Het kost € 80 per kalenderjaar.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst noemt deze specifieke vergunning voor bewoners in vergunninghoudersgebieden niet, terwijl dit wel een beschikbare optie is.",
+          "source_urls": [
+            "https://www.oldenzaal.nl/parkeervergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten enkele belangrijke aanvullende voorwaarden en specificaties die niet in de originele tekst staan. Met name de beperking voor mensen met eigen parkeerruimte, de specifieke laad- en lostijden voor de binnenstad, en een extra type parkeervergunning voor bewoners in vergunninghoudersgebieden zijn relevante toevoegingen. Deze informatie is essentieel voor een volledig begrip van de parkeer- en ontheffingsregelingen."
+  }
+}

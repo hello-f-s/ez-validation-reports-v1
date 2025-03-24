@@ -1,0 +1,87 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ERMELO",
+      "contact": {
+        "phone": "(0341) 56 73 21",
+        "email": "gemeente@ermelo.nl",
+        "website": "http://www.ermelo.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "De behandeltermijn voor een conceptverzoek is 8 weken.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Ermelo is de behandeltermijn voor een conceptverzoek 4 weken, niet 8 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.ermelo.nl/omgevingsplein/omgevingsloket/omgevingsvergunning-aanvragen",
+      "https://www.ermelo.nl/omgevingsplein/omgevingsloket/conceptverzoek-aanvragen",
+      "https://www.ermelo.nl/omgevingsplein/bouwen-en-verbouwen/dakopbouw",
+      "https://www.ermelo.nl/omgevingsplein/omgevingsloket"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.ermelo.nl/omgevingsplein/omgevingsloket/contact-over-bouwen-en-verbouwen",
+        "reason": "INVALID: Error scraping https://www.ermelo.nl/omgevingsplein/omgevingsloket/contact-over-bouwen-en-verbouwen: 404 Client Error: Not Found for url: https://www.ermelo.nl/omgevingsplein/omgevingsloket/contact-over-bouwen-en-verbouwen"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Regulier conceptverzoek kost € 153",
+          "original_reference": "Een regulier conceptverzoek kost € 150",
+          "note": "Er is een verschil in de kosten voor een regulier conceptverzoek. De bronpagina vermeldt €153 terwijl in de originele tekst €150 staat.",
+          "source_urls": [
+            "https://www.ermelo.nl/omgevingsplein/bouwen-en-verbouwen/dakopbouw"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Complex of niet complex verzoek - uw conceptverzoek wordt beoordeeld op complexiteit. Niet complexe verzoeken hebben een kortere behandeltijd dan complexe verzoeken.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat aanvullende belangrijke informatie over verschillende behandeltijden afhankelijk van de complexiteit van het verzoek. Dit onderscheid wordt niet genoemd in de originele tekst.",
+          "source_urls": [
+            "https://www.ermelo.nl/omgevingsplein/omgevingsloket/conceptverzoek-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Intaketafel en Omgevingstafel proces beschrijving",
+          "original_reference": "No matching information",
+          "note": "De bronpagina beschrijft een gedetailleerd proces met intaketafel en omgevingstafel wat niet wordt genoemd in de originele tekst. Dit zijn belangrijke processtappen die ontbreken in de originele informatie.",
+          "source_urls": [
+            "https://www.ermelo.nl/omgevingsplein/omgevingsloket/conceptverzoek-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de kosten van een conceptverzoek (€153 vs €150) en het ontbreken van essentiële procesinformatie in de originele tekst. Met name het onderscheid tussen complexe en niet-complexe verzoeken en het proces met intake- en omgevingstafel zijn belangrijke elementen die niet in de originele tekst worden genoemd maar wel in de bronpagina's staan vermeld. Deze informatie is relevant voor aanvragers om een volledig beeld te krijgen van het proces."
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MAASSLUIS",
+      "contact": {
+        "phone": "14 010",
+        "email": "gemeente@maassluis.nl",
+        "website": "http://www.maassluis.nl"
+      }
+    },
+    "service": {
+      "id": 16,
+      "name": "Registreren in het Landelijk Register Kinderopvang (LRK)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "U moet de aanvraag minstens 10 weken voordat u wilt starten versturen. Gebruik een van de aanvraagformulieren en dien deze in bij de gemeente Rotterdam per mail: registerkinderopvang@rotterdam.nl of per post naar:",
+        "status": "false",
+        "note": "Deze informatie is onjuist voor Maassluis. Aanvragen moeten worden ingediend bij de gemeente Maassluis, niet bij de gemeente Rotterdam. De contactgegevens en het e-mailadres zijn voor Rotterdam en niet voor Maassluis."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 8,
+    "valid_urls": 5,
+    "invalid_urls": 3,
+    "accuracy_percentage": 62.5,
+    "valid_urls_list": [
+      "https://www.maassluis.nl/kinderopvang-starten",
+      "https://www.maassluis.nl/hulp-voor-kinderen-en-gezinnen",
+      "https://www.maassluis.nl/meest-gestelde-vragen-kinderopvang",
+      "https://www.maassluis.nl/soorten-kinderopvang",
+      "https://www.maassluis.nl/kinderopvangtoeslag"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "http://ondernemersplein.kvk.nl/",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "http://gemeentemaassluis.nl/",
+        "reason": "INVALID: Error scraping http://gemeentemaassluis.nl/: 439 Client Error:  for url: http://gemeentemaassluis.nl/"
+      },
+      {
+        "url": "http://rijksoverheid.nl/",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vraag een VOG Rechtspersonen aan. Hiermee kunt u bewijzen dat uw onderneming of werknemers op leidinggevende posities geen strafbare feiten hebben gepleegd.",
+          "original_reference": "Iedere medewerker moet in bezit zijn van een Verklaring Omtrent het Gedrag (VOG) met screeningsprofiel 84 of 86.",
+          "note": "De bronpagina specificeert dat de VOG Rechtspersonen specifiek voor de onderneming en leidinggevenden is, terwijl de originele tekst dit voor alle medewerkers vereist. Ook worden de screeningsprofielen 84 of 86 niet genoemd in de bronpagina.",
+          "source_urls": [
+            "https://www.maassluis.nl/kinderopvang-starten"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "registerkinderopvang@rotterdam.nl",
+          "original_reference": "No matching information",
+          "note": "Het e-mailadres voor registratie kinderopvang verwijst naar Rotterdam, terwijl de bronpagina's van gemeente Maassluis zijn. Dit lijkt incorrect voor de gemeente Maassluis.",
+          "source_urls": [
+            "https://www.maassluis.nl/kinderopvang-starten"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Postbus 70014, 3000 KS Rotterdam",
+          "original_reference": "No matching information",
+          "note": "Het postadres verwijst naar Rotterdam terwijl de informatie over gemeente Maassluis gaat. Dit lijkt incorrect voor de gemeente Maassluis.",
+          "source_urls": [
+            "https://www.maassluis.nl/kinderopvang-starten"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de VOG-vereisten, waarbij de originele tekst specifiekere eisen stelt dan de bronpagina's. Daarnaast bevat de originele tekst contact- en adresgegevens van Rotterdam, terwijl de informatie over gemeente Maassluis gaat. Dit suggereert dat de contactgegevens mogelijk niet correct zijn voor de gemeente Maassluis."
+  }
+}

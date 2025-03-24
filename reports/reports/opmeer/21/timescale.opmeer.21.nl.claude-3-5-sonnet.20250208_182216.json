@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OPMEER",
+      "contact": {
+        "phone": "(0226) 36 33 33",
+        "email": "gemeente@opmeer.nl",
+        "website": "http://www.opmeer.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "€ 41,35 bij aanvraag aan de balie",
+        "status": "false",
+        "note": "Het tarief voor een VOG aanvraag aan de balie in gemeente Opmeer is niet € 41,35. Het actuele tarief is € 47,55 volgens de legesverordening van gemeente Opmeer."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.opmeer.nl/verklaring-omtrent-het-gedrag-vog",
+      "https://www.opmeer.nl/informatie-over-beleid-of-besluiten-opvragen-who-verzoek",
+      "https://www.opmeer.nl/form/aanvraagformulier-woo-verzoek",
+      "https://www.opmeer.nl/nederlander-worden-door-optie",
+      "https://www.opmeer.nl/omgevingsvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.justis.nl/producten/vog/aanvragen/online-aanvragen/\">https://www.justis.nl/producten/vog/aanvragen/online-aanvragen/</a>",
+        "reason": "INVALID: Error scraping https://www.justis.nl/producten/vog/aanvragen/online-aanvragen/\">https://www.justis.nl/producten/vog/aanvragen/online-aanvragen/</a>: 404 Client Error: Not Found for url: https://www.justis.nl/producten/vog/aanvragen/online-aanvragen/%22%3Ehttps:/www.justis.nl/producten/vog/aanvragen/online-aanvragen/%3C/a%3E"
+      },
+      {
+        "url": "https://www.justis.nl/producten/vog/aanvragen/online-aanvragen/",
+        "reason": "INVALID: Error scraping https://www.justis.nl/producten/vog/aanvragen/online-aanvragen/: 404 Client Error: Not Found for url: https://www.justis.nl/producten/vog/aanvragen/online-aanvragen/"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Binnen 1 tot 4 weken na de aanvraag krijgt u de VOG of de afwijzing per post thuisgestuurd.",
+          "original_reference": "U ontvangt binnen 4 weken bericht over uw aanvraag.",
+          "note": "De bron specificeert een kortere minimale verwerkingstijd (1-4 weken) dan de originele tekst (4 weken)",
+          "source_urls": [
+            "https://www.opmeer.nl/verklaring-omtrent-het-gedrag-vog"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Organisaties die u om een VOG vragen kunnen dit ook elektronisch doen. De organisatie moet wel beschikken over eHerkenning.",
+          "original_reference": "No matching information",
+          "note": "De bron vermeldt een extra aanvraagmogelijkheid via de organisatie zelf met eHerkenning, die niet genoemd wordt in de originele tekst",
+          "source_urls": [
+            "https://www.opmeer.nl/verklaring-omtrent-het-gedrag-vog"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele tekst en de bronnen. Ten eerste wordt in de bron een kortere minimale verwerkingstijd genoemd voor de VOG. Ten tweede beschrijft de bron een extra aanvraagmogelijkheid via organisaties met eHerkenning die niet in de originele tekst staat vermeld. De overige informatie zoals kosten, voorwaarden en bezwaarprocedures komt overeen met de originele tekst."
+  }
+}

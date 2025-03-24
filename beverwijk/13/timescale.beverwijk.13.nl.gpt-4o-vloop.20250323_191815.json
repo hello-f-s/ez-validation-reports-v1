@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "BEVERWIJK",
+      "contact": {
+        "phone": "(0251) 25 62 56",
+        "email": "info@beverwijk.nl",
+        "website": "http://www.beverwijk.nl"
+      }
+    },
+    "service": {
+      "id": 13,
+      "name": "Omzettingsvergunning voor kamerverhuur aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 10,
+    "true_sentences": 9,
+    "false_sentences": 1,
+    "accuracy_percentage": 90.0,
+    "false_statements": [
+      {
+        "sentence": "De beslistermijn voor een eenvoudige aanvraag is 8 weken, en kan eenmalig met 6 weken worden verlengd.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Beverwijk kan de reguliere procedure van 8 weken met maximaal 6 weken worden verlengd, maar dit is niet beperkt tot eenmalig. De gemeente kan onder bepaalde omstandigheden meerdere keren verlengen binnen deze 6 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.beverwijk.nl/omgevingsvergunning-sloop",
+      "https://www.beverwijk.nl/tijdelijk-verhuur-woning",
+      "https://www.beverwijk.nl/hoe-kunt-u-een-initiatief-of-vergunning-aanvragen",
+      "https://www.beverwijk.nl/vuurwerkvergunning",
+      "https://www.beverwijk.nl/milieu-melding-of-vergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Stap 1: Zelfonderzoek - Als u plannen heeft om te (ver)bouwen of een gebouw anders te gebruiken, kan het zijn dat u een vergunning nodig heeft. Dit kunt u zelf controleren op de website Omgevingsloket online.",
+          "original_reference": "U kunt de omgevingsvergunning aanvragen via het Omgevingsloket.",
+          "note": "De bronpagina benadrukt een voorafgaande zelfonderzoekstap die niet genoemd wordt in de originele tekst. Dit is een belangrijke procedurestap die voorafgaat aan de daadwerkelijke aanvraag.",
+          "source_urls": [
+            "https://www.beverwijk.nl/hoe-kunt-u-een-initiatief-of-vergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor moeilijke plannen is het handig om eerst te overleggen met de gemeente via een Indicatieverzoek en Omgevingsinitiatief.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina beschrijft een vooroverlegprocedure met twee specifieke stappen die niet genoemd worden in de originele tekst, wat een belangrijk verschil is in het aanvraagproces.",
+          "source_urls": [
+            "https://www.beverwijk.nl/hoe-kunt-u-een-initiatief-of-vergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor meer informatie kunt u contact opnemen met Team Leefomgeving via telefoonnummer 0251 256 256 of via e-mailadres omgevingsdesk@beverwijk.nl",
+          "original_reference": "Neem contact op met de gemeente Beverwijk voor specifieke kosteninformatie.",
+          "note": "De bronpagina geeft specifieke contactgegevens van Team Leefomgeving die niet vermeld staan in de originele tekst.",
+          "source_urls": [
+            "https://www.beverwijk.nl/hoe-kunt-u-een-initiatief-of-vergunning-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen het ontbreken van essentiële voorbereidende stappen in de originele tekst, zoals het zelfonderzoek en de mogelijkheid tot vooroverleg. Ook ontbreken specifieke contactgegevens in de originele tekst. Deze informatie is belangrijk voor een complete en accurate beschrijving van het aanvraagproces."
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HAARLEM",
+      "contact": {
+        "phone": "14 023",
+        "email": "antwoord@haarlem.nl",
+        "website": "http://www.haarlem.nl"
+      }
+    },
+    "service": {
+      "id": 10,
+      "name": "Nachtregister bijhouden"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 35,
+    "true_sentences": 33,
+    "false_sentences": 2,
+    "accuracy_percentage": 94.3,
+    "false_statements": [
+      {
+        "sentence": "U mag maximaal 2 kamers in uw woning verhuren.",
+        "status": "false",
+        "note": "Volgens de huidige regels van gemeente Haarlem mag men maximaal 40% van het woonoppervlak gebruiken voor B&B, er staat geen specifieke beperking op het aantal kamers."
+      },
+      {
+        "sentence": "De B&B mag maximaal 50 m² groot zijn en niet meer dan 35% van de totale oppervlakte van uw woning beslaan.",
+        "status": "false",
+        "note": "Volgens de actuele regelgeving van gemeente Haarlem mag een B&B maximaal 40% van het woonoppervlak beslaan. Er is geen absolute maximale oppervlakte van 50 m² vastgesteld."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 4,
+    "valid_urls": 2,
+    "invalid_urls": 2,
+    "accuracy_percentage": 50.0,
+    "valid_urls_list": [
+      "https://haarlem.nl/regels-vakantieverhuur",
+      "https://www.haarlem.nl/ufs/formulieren.eb?id=aanvraag_alcoholvergunning_model_b_hlm"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://haarlem.nl/vakantieverhuur-registreren",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://haarlem.nl/documenten-van-en-informatie-over-alle-logies-haarlem",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "U staat op het adres van de woning ingeschreven en woont er zelf",
+          "original_reference": "U moet ingeschreven staan op het adres van de woning en er daadwerkelijk wonen",
+          "note": "De vereiste over inschrijving en bewoning komt exact overeen",
+          "source_urls": [
+            "https://haarlem.nl/regels-vakantieverhuur"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse van de beschikbare bronnen zijn er geen significante inhoudelijke verschillen gevonden tussen de originele tekst en de geciteerde bronnen. De kernvoorwaarden en regels komen overeen. Wel is op te merken dat de bronpagina's niet alle details bevatten die in de originele tekst staan - met name specifieke informatie over B&B's en gedetailleerde procedures zijn niet volledig terug te vinden in de geciteerde bronnen. Dit betekent echter niet dat deze informatie onjuist is, alleen dat deze niet geverifieerd kan worden met de beschikbare bronnen."
+  }
+}

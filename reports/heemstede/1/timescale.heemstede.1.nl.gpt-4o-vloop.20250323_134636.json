@@ -1,0 +1,90 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HEEMSTEDE",
+      "contact": {
+        "phone": "(023) 548 58 68",
+        "email": "gemeente@heemstede.nl",
+        "website": "http://www.heemstede.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 20,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.2,
+    "false_statements": [
+      {
+        "sentence": "Leidinggevenden moeten minimaal 21 jaar zijn.",
+        "status": "false",
+        "note": "Volgens de Alcoholwet moet een leidinggevende minimaal 21 jaar zijn, maar deze leeftijdseis is per 1 juli 2021 verlaagd naar 18 jaar."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 3,
+    "invalid_urls": 2,
+    "accuracy_percentage": 60.0,
+    "valid_urls_list": [
+      "https://www.heemstede.nl/vergunningen/alcoholwetvergunning",
+      "https://www.heemstede.nl/vergunningen/evenementenvergunning",
+      "https://www.heemstede.nl/vergunningen/standplaatsvergunning-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.heemstede.nl/ondernemen/horecazaak-starten",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.heemstede.nl/vergunningen/alcohol-schenken-en-verkopen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "€ 26,05 voor vergunning maximaal 6 dagen, € 90,05 voor vergunning langer dan 6 dagen",
+          "original_reference": "Alcoholwetvergunning: € 490",
+          "note": "De tarieven in de bronnen zijn anders dan in de originele tekst. De originele tekst noemt alleen één vast tarief van €490, terwijl de brontekst verschillende tarieven hanteert voor verschillende periodes.",
+          "source_urls": [
+            "https://www.heemstede.nl/vergunningen/standplaatsvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U vraagt de vergunning 8-12 weken voor het evenement plaatsvindt aan",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over aanvraagtermijnen, terwijl de bron specifieke termijnen noemt voor evenementenvergunningen.",
+          "source_urls": [
+            "https://www.heemstede.nl/vergunningen/evenementenvergunning"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Doorgeven wijziging leidinggevende, zie 'Zo werkt het'",
+          "original_reference": "Voor wijzigingen in leidinggevenden of de inrichting [...] vult u respectievelijk het formulier Melding wijziging leidinggevenden of Melding wijziging inrichting in.",
+          "note": "De informatie over het doorgeven van wijzigingen in leidinggevenden komt overeen met de originele tekst.",
+          "source_urls": [
+            "https://www.heemstede.nl/vergunningen/alcoholwetvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de kosten voor vergunningen en specifieke aanvraagtermijnen die niet in de originele tekst worden genoemd. De originele tekst mist enkele belangrijke details over termijnen en verschillende tariefstructuren. De procedures voor het wijzigen van leidinggevenden komen wel overeen met de bronnen."
+  }
+}

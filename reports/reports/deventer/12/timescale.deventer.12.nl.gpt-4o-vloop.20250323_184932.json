@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DEVENTER",
+      "contact": {
+        "phone": "14 0570",
+        "email": "gemeente@deventer.nl",
+        "website": "http://www.deventer.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 31,
+    "true_sentences": 30,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.8,
+    "false_statements": [
+      {
+        "sentence": "Alle gemeentelijke afdelingen zijn vandaag gesloten.",
+        "status": "false",
+        "note": "Dit is een onjuiste algemene uitspraak die niet kan kloppen aangezien de openingstijden van de gemeente Deventer vast staan en niet dynamisch in de tekst kunnen worden weergegeven. De gemeente Deventer heeft vaste openingstijden die via de officiële website te raadplegen zijn."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.deventer.nl/milieu-1/omgevingsvergunning-voor-het-milieu-aanvragen",
+      "https://www.deventer.nl/omgevingsvergunning-aanvragen",
+      "https://www.deventer.nl/omgevingsvergunning",
+      "https://www.deventer.nl/vooroverleg",
+      "https://www.deventer.nl/ondernemen/bedrijf-vestigen/vergunningen-amp-regelingen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Is de omgevingsvergunning verleend, dan krijgt u deze samen met de voorschriften per e-mail toegestuurd.",
+          "original_reference": "Is de omgevingsvergunning toegekend, dan krijgt u deze samen met de voorschriften thuisgestuurd.",
+          "note": "De bronnen specificeren dat de vergunning per e-mail wordt toegestuurd, terwijl de originele tekst alleen spreekt over 'thuisgestuurd'.",
+          "source_urls": [
+            "https://www.deventer.nl/omgevingsvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u een horecabedrijf wilt beginnen op een locatie waar nog geen horeca is, kunt u via dit formulier een pre-advies aanvragen.",
+          "original_reference": "No matching information",
+          "note": "De bronnen bevatten specifieke informatie over horeca-gerelateerde vooroverleg die niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.deventer.nl/vooroverleg"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U hebt bij de gemeente zo veel mogelijk 1 contactpersoon, bij wie u terecht kunt met al uw vragen over ondernemen in Deventer.",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden een één-contactpersoon systeem voor ondernemers dat niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.deventer.nl/ondernemen/bedrijf-vestigen/vergunningen-amp-regelingen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de wijze van verzending van de vergunning (specifiek per e-mail volgens de bronnen), aanvullende informatie over horeca-gerelateerde vooroverleg, en het één-contactpersoon systeem voor ondernemers. Deze informatie is wel aanwezig in de bronnen maar ontbreekt in de originele tekst. De kernprocessen en voorwaarden zijn verder grotendeels consistent tussen de originele tekst en de bronnen."
+  }
+}

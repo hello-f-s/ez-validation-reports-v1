@@ -1,0 +1,77 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DELFT",
+      "contact": {
+        "phone": "14 015",
+        "email": "null",
+        "website": "http://www.delft.nl"
+      }
+    },
+    "service": {
+      "id": 3,
+      "name": "Certificaat voor opgraving aanvragen en vondst melden"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 1,
+    "true_sentences": 1,
+    "false_sentences": 0,
+    "accuracy_percentage": 100.0,
+    "false_statements": []
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.delft.nl/bodeminformatie-aanvragen",
+      "https://www.delft.nl/wat-vindt-u-van-de-gemeente",
+      "https://www.delft.nl/archeologie",
+      "https://www.delft.nl/adresonderzoek",
+      "https://www.delft.nl/overlijden-aangeven"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bodeminformatie kunt u gratis opvragen. U ontvangt de informatie via e-mail.",
+          "original_reference": "No matching information",
+          "note": "De bron bevat specifieke informatie over het gratis opvragen van bodeminformatie via email, terwijl dit in de originele tekst ontbreekt.",
+          "source_urls": [
+            "https://www.delft.nl/bodeminformatie-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een adresonderzoek duurt 6 tot 10 weken. Bij bijzonderheden kan het langer duren.",
+          "original_reference": "No matching information",
+          "note": "De bron specificeert de doorlooptijd van een adresonderzoek, wat niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.delft.nl/adresonderzoek"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een overlijden geeft u binnen 6 werkdagen aan. Doe dit in de gemeente waar het overlijden plaatsvond.",
+          "original_reference": "No matching information",
+          "note": "De bron bevat specifieke termijnen en locatie-eisen voor aangifte van overlijden, die niet in de originele tekst staan.",
+          "source_urls": [
+            "https://www.delft.nl/overlijden-aangeven"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten veel specifieke informatie over gemeentelijke diensten die niet in de originele tekst staat. Het gaat om concrete procedures, termijnen en voorwaarden voor verschillende diensten zoals bodeminformatie, adresonderzoek en overlijdensaangifte. De originele tekst bevatte geen van deze specifieke details."
+  }
+}

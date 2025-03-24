@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MONTFOORT",
+      "contact": {
+        "phone": "(0348) 47 64 00",
+        "email": "info@montfoort.nl",
+        "website": "http://www.montfoort.nl"
+      }
+    },
+    "service": {
+      "id": 6,
+      "name": "Integriteitsonderzoek (Wet Bibob)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "Eventuele wijzigingen aan een exploitatievergunning (artikel 30) kosten € 406,45.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van de gemeente Montfoort is dit bedrag niet correct. De exacte kosten voor wijzigingen aan een exploitatievergunning zijn anders dan het genoemde bedrag."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.montfoort.nl/Contact",
+      "https://www.montfoort.nl/Alle_onderwerpen/Vergunningen_en_ontheffingen/Horeca_en_MKB/Exploitatievergunning",
+      "https://www.montfoort.nl/Alle_onderwerpen/Burgerzaken/Uittreksels_en_verklaringen",
+      "https://www.montfoort.nl/Alle_onderwerpen/Bestuur_en_organisatie/Wob_verzoek_indienen",
+      "https://www.montfoort.nl/Alle_onderwerpen/Burgerzaken/Uittreksels_en_verklaringen/Verklaring_Omtrent_Gedrag"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De balie Burgerzaken is van maandag t/m vrijdag van 09.00 - 12.00 uur geopend en vrijdagavond van 18:00 tot 20:00 uur.",
+          "original_reference": "Het Huis van Montfoort is geopend van maandag tot en met vrijdag van 09.00 tot 12.00 uur en op vrijdagavond van 18.00 tot 20.00 uur.",
+          "note": "De originele tekst spreekt over 'Huis van Montfoort' terwijl de bron specifiek verwijst naar 'balie Burgerzaken'. Dit is een precisering van de dienst.",
+          "source_urls": [
+            "https://www.montfoort.nl/Contact"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een Verklaring Omtrent het Gedrag (VOG) kost: € 41,35",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt geen specifieke kosten voor een VOG, terwijl dit wel wordt genoemd in de bronpagina.",
+          "source_urls": [
+            "https://www.montfoort.nl/Alle_onderwerpen/Burgerzaken/Uittreksels_en_verklaringen/Verklaring_Omtrent_Gedrag"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Na het aanvragen van een exploitatievergunning controleert de gemeente of u voldoet aan alle in de APV gestelde eisen zoals: Het geldend bestemmingsplan, Exploitatieplan of voorbereidingsbesluit, Alle leidinggevenden zijn van goed levensgedrag",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist specifieke voorwaarden voor de exploitatievergunning die wel in de bron worden genoemd.",
+          "source_urls": [
+            "https://www.montfoort.nl/Alle_onderwerpen/Vergunningen_en_ontheffingen/Horeca_en_MKB/Exploitatievergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten enkele belangrijke aanvullingen en preciseringen die niet in de originele tekst staan, waaronder de exacte kosten van een VOG (€41,35), specifieke voorwaarden voor de exploitatievergunning, en een preciezere aanduiding van de openingstijden voor de balie Burgerzaken. Deze informatie maakt de dienstverlening concreter en transparanter voor burgers."
+  }
+}

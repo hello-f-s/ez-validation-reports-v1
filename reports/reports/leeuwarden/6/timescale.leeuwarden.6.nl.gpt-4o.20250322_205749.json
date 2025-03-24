@@ -1,0 +1,80 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LEEUWARDEN",
+      "contact": {
+        "phone": "14 058",
+        "email": "gemeente@leeuwarden.nl",
+        "website": "http://www.leeuwarden.nl"
+      }
+    },
+    "service": {
+      "id": 6,
+      "name": "Integriteitsonderzoek (Wet Bibob)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Er is geen informatie gevonden over de kosten voor het aanvragen van een Bibob-onderzoek.",
+        "status": "false",
+        "note": "Deze informatie is wel beschikbaar op de website van gemeente Leeuwarden. Voor een Bibob-onderzoek worden legeskosten in rekening gebracht volgens de geldende legesverordening van de gemeente Leeuwarden."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.leeuwarden.nl/fy-nl/hoareka/wet-bevordering-integriteitsbeoordeling-openbaar-bestuur-wet-bibob/",
+      "https://www.leeuwarden.nl/melden-bij-de-gemeente/woo-verzoek-indienen/",
+      "https://www.leeuwarden.nl/en/catering/wet-bevordering-integriteitsbeoordeling-openbaar-bestuur-wet-bibob/",
+      "https://www.leeuwarden.nl/leefomgeving/wet-bevordering-integriteitsbeoordeling-openbaar-bestuur-wet-bibob/",
+      "https://www.leeuwarden.nl/melden-bij-de-gemeente/verzoek-hergebruik-van-overheidsinformatie/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://overheid.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het Bibob-onderzoek start met het invullen van het Bibob-vragenformulier. Als een Bibob-onderzoek noodzakelijk is, krijgt u dit formulier bij uw aanvraagformulier of vlak er na. Bij opdrachten van de overheid en het kopen of verkopen van gebouwen of grond volgt dit al uit de voorwaarden.",
+          "original_reference": "U moet het Bibob-vragenformulier invullen en versturen naar de gemeente Leeuwarden. Dit formulier ontvangt u bij uw aanvraagformulier of kort daarna.",
+          "note": "De bronnen specificeren dat bij overheidsopdrachten en vastgoedtransacties het Bibob-onderzoek automatisch volgt uit de voorwaarden. Deze belangrijke nuance ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.leeuwarden.nl/leefomgeving/wet-bevordering-integriteitsbeoordeling-openbaar-bestuur-wet-bibob/",
+            "https://www.leeuwarden.nl/en/catering/wet-bevordering-integriteitsbeoordeling-openbaar-bestuur-wet-bibob/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Met de gegevens die u invult op het vragenformulier, doet de gemeente een integriteitsonderzoek naar uw bedrijf en de mensen die daarbij horen.",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden specifiek dat er een integriteitsonderzoek wordt gedaan naar het bedrijf én de betrokken personen. Deze belangrijke informatie ontbreekt volledig in de originele tekst.",
+          "source_urls": [
+            "https://www.leeuwarden.nl/leefomgeving/wet-bevordering-integriteitsbeoordeling-openbaar-bestuur-wet-bibob/"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten twee belangrijke aanvullende details die niet in de originele tekst staan: 1) de automatische toepassing van Bibob-onderzoek bij overheidsopdrachten en vastgoedtransacties, en 2) de specifieke reikwijdte van het integriteitsonderzoek dat zich uitstrekt tot zowel het bedrijf als de betrokken personen. Deze informatie is essentieel voor een volledig begrip van de Bibob-procedure."
+  }
+}

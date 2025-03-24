@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "UTRECHT",
+      "contact": {
+        "phone": "(014) 030",
+        "email": "Gemeente@utrecht.nl",
+        "website": "http://www.utrecht.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 20,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.2,
+    "false_statements": [
+      {
+        "sentence": "Na de aanvraag maakt de gemeente binnen 8 weken een beslissing.",
+        "status": "false",
+        "note": "Volgens de gemeente Utrecht geldt voor reguliere procedures een beslistermijn van 8 weken die eenmalig met 6 weken verlengd kan worden. Voor uitgebreide procedures geldt een termijn van 26 weken die eenmalig met 6 weken verlengd kan worden. De stelling is dus onvolledig en daarmee onjuist."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.utrecht.nl/ondernemen/vergunningen-en-regels/ondernemen-en-milieu/milieu-melding-doen-of-omgevingsvergunning-aanvragen",
+      "https://www.utrecht.nl/ondernemen/vergunningen-en-regels/werkzaamheden-vergunning-aanvragen",
+      "https://www.utrecht.nl/ondernemen/vergunningen-en-regels/ondernemen-en-milieu",
+      "https://www.utrecht.nl/ondernemen/vergunningen-en-regels",
+      "https://www.utrecht.nl/wonen-en-leven/bouwen-en-verbouwen/u-wilt-bouwen-of-verbouwen/woning-aan-de-binnenkant-verbouwen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Dit moet in de meeste gevallen 4 weken van tevoren.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina specificeert een termijn van 4 weken vooraf voor het doen van een melding of aanvragen vergunning. Deze termijn ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.utrecht.nl/ondernemen/vergunningen-en-regels/ondernemen-en-milieu/milieu-melding-doen-of-omgevingsvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor de meeste activiteiten die schade aan het milieu kunnen geven, is geen vergunning nodig. Wel moet u zich altijd houden aan regels.",
+          "original_reference": "Bedrijven die het milieu zwaar (kunnen) belasten, zoals cafés, restaurants, garages, transportbedrijven en tankstations, moeten altijd een omgevingsvergunning voor een milieubelastende activiteit aanvragen.",
+          "note": "De bronpagina geeft aan dat voor de meeste milieubelastende activiteiten geen vergunning nodig is, terwijl de originele tekst suggereert dat bepaalde bedrijfstypen altijd een vergunning nodig hebben. Dit is een belangrijk inhoudelijk verschil.",
+          "source_urls": [
+            "https://www.utrecht.nl/ondernemen/vergunningen-en-regels/ondernemen-en-milieu/milieu-melding-doen-of-omgevingsvergunning-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele tekst en de bronpagina's. Ten eerste ontbreekt in de originele tekst de belangrijke termijn van 4 weken vooraf voor meldingen en vergunningsaanvragen. Ten tweede is er een tegenstrijdigheid in de vereisten voor vergunningen: waar de originele tekst stelt dat bepaalde bedrijfstypen altijd een vergunning nodig hebben, geeft de bronpagina aan dat voor de meeste milieubelastende activiteiten alleen regels gelden zonder vergunningplicht."
+  }
+}

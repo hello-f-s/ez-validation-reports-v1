@@ -1,0 +1,75 @@
+{
+  "context": {
+    "municipality": {
+      "name": "GOUDA",
+      "contact": {
+        "phone": "14 0182",
+        "email": "gemeente@gouda.nl",
+        "website": "http://www.gouda.nl"
+      }
+    },
+    "service": {
+      "id": 18,
+      "name": "Ventvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 9,
+    "true_sentences": 7,
+    "false_sentences": 2,
+    "accuracy_percentage": 77.8,
+    "false_statements": [
+      {
+        "sentence": "U kunt maximaal 3 parkeervergunningen per bedrijf aanvragen via de website van Parkeerservice.",
+        "status": "false",
+        "note": "In Gouda worden parkeervergunningen niet via Parkeerservice aangevraagd maar via de gemeente Gouda zelf."
+      },
+      {
+        "sentence": "Voor een tweede of derde bedrijfsparkeervergunning moet u kunnen aantonen dat u voor het vervoer van zware, kwetsbare, bederfelijke, kostbare of omvangrijke goederen minstens vijf keer per dag een voertuig nodig heeft.",
+        "status": "false",
+        "note": "Deze specifieke voorwaarde voor een tweede of derde bedrijfsparkeervergunning wordt niet genoemd in de officiële bronnen van de gemeente Gouda."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.gouda.nl/gouda-werkt-aan-de-stad/wijkmobiliteitsplannen/wijkmobiliteitsplan-korte-akkeren/verslag-over-parkeren-in-korte-akkeren-15-april-2024/",
+      "https://www.gouda.nl/gouda-werkt-aan-de-stad/wijkmobiliteitsplannen/wijkmobiliteitsplan-korte-akkeren/veelgestelde-vragen-parkeren-korte-akkeren/",
+      "https://www.gouda.nl/gouda-werkt-aan-de-stad/wijkmobiliteitsplannen/wijkmobiliteitsplan-kort-haarlem/veelgestelde-vragen-parkeren-kadenbuurt-en-kort-haarlem/",
+      "https://www.gouda.nl/contact/contactformulier/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.gouda.nl/gouda-werkt-aan-de-stad/omgekeerd-inzamelen/veelgestelde-vragen-en-antwoorden-omgekeerd-inzamelen/",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Er wordt momenteel een raadpleging gehouden over de invoering van betaald en vergunning parkeren in Korte Akkeren en Kort Haarlem",
+          "original_reference": "No matching information",
+          "note": "De bronnen tonen aan dat er momenteel een participatieproces loopt voor de invoering van een nieuw parkeersysteem, terwijl dit niet genoemd wordt in de originele tekst",
+          "source_urls": [
+            "https://www.gouda.nl/gouda-werkt-aan-de-stad/wijkmobiliteitsplannen/wijkmobiliteitsplan-korte-akkeren/veelgestelde-vragen-parkeren-korte-akkeren/",
+            "https://www.gouda.nl/gouda-werkt-aan-de-stad/wijkmobiliteitsplannen/wijkmobiliteitsplan-kort-haarlem/veelgestelde-vragen-parkeren-kadenbuurt-en-kort-haarlem/"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten voornamelijk informatie over een lopend participatieproces voor de invoering van betaald parkeren en vergunningparkeren in specifieke wijken (Korte Akkeren en Kort Haarlem). Er is echter onvoldoende concrete informatie beschikbaar over de huidige procedure voor het aanvragen van parkeervergunningen voor particulieren om een volledige vergelijking te maken met de originele tekst. De gevonden informatie suggereert dat het parkeersysteem momenteel in ontwikkeling is."
+  }
+}

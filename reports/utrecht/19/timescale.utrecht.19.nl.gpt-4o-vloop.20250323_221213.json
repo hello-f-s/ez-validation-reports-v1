@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "UTRECHT",
+      "contact": {
+        "phone": "(014) 030",
+        "email": "Gemeente@utrecht.nl",
+        "website": "http://www.utrecht.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 17,
+    "false_sentences": 2,
+    "accuracy_percentage": 89.5,
+    "false_statements": [
+      {
+        "sentence": "De gemeente Utrecht is bereikbaar van maandag tot en met vrijdag tussen 9:00 en 17:00 uur.",
+        "status": "false",
+        "note": "De openingstijden van de gemeente Utrecht zijn van maandag tot en met vrijdag van 8.30 tot 17.00 uur volgens de officiële website van de gemeente Utrecht."
+      },
+      {
+        "sentence": "Dit zijn de tijden waarop u telefonisch of via een bezoek aan het Stadskantoor ondersteuning kunt krijgen.",
+        "status": "false",
+        "note": "Het Stadskantoor heeft andere openingstijden dan vermeld: maandag, dinsdag, woensdag en vrijdag van 8.30-17.00 uur, donderdag van 8.30-20.00 uur volgens de officiële website van de gemeente Utrecht."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.utrecht.nl/ondernemen/vergunningen-en-regels/horecaloket",
+      "https://www.utrecht.nl/ondernemen/vergunningen-en-regels",
+      "https://www.utrecht.nl/wonen-en-leven/bouwen-en-verbouwen/hebt-u-een-vraag-over-bouwplan-of-bedrijfsplan",
+      "https://www.utrecht.nl/ondernemen/sekswerk/exploitanten",
+      "https://www.utrecht.nl/ondernemen/evenement-organiseren"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U vraagt een vergunning gokautomaat aan als u een kansspelautomaat wilt neerzetten.",
+          "original_reference": "Informatie over de aanvraag van een vergunning voor een speelautomaat of speelautomatenhal was oorspronkelijk niet specifiek beschikbaar",
+          "note": "De brontekst vermeldt expliciet dat er een vergunning voor gokautomaten moet worden aangevraagd, terwijl de originele tekst suggereert dat deze informatie niet beschikbaar was.",
+          "source_urls": [
+            "https://www.utrecht.nl/ondernemen/vergunningen-en-regels/horecaloket"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Weet u al welke vergunning of ontheffing u nodig hebt? Vraag de vergunning of ontheffing direct aan in het online loket.",
+          "original_reference": "De aanvraag voor een vergunning kan via het online loket van de gemeente Utrecht worden ingediend.",
+          "note": "De brontekst is specifieker en biedt een directe verwijzing naar het aanvraagproces via het online loket, terwijl de originele tekst algemener is.",
+          "source_urls": [
+            "https://www.utrecht.nl/ondernemen/vergunningen-en-regels"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Op dit moment is het erg druk en duurt het langer voor u antwoord krijgt.",
+          "original_reference": "No matching information",
+          "note": "De brontekst bevat een belangrijke waarschuwing over langere wachttijden die niet in de originele tekst wordt vermeld.",
+          "source_urls": [
+            "https://www.utrecht.nl/wonen-en-leven/bouwen-en-verbouwen/hebt-u-een-vraag-over-bouwplan-of-bedrijfsplan"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont aan dat de originele tekst onvolledig en minder specifiek is dan de bronnen. Er is concrete informatie beschikbaar over de vergunningaanvraag voor gokautomaten, een direct toegankelijk online loket, en actuele informatie over wachttijden die niet in de originele tekst zijn opgenomen. Deze verschillen maken de originele tekst minder accuraat en minder praktisch bruikbaar voor ondernemers die een vergunning willen aanvragen."
+  }
+}

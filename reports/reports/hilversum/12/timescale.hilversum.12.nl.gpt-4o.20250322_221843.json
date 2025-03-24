@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HILVERSUM",
+      "contact": {
+        "phone": "14 035",
+        "email": "gemeente@hilversum.nl",
+        "website": "http://www.hilversum.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "Na indiening van uw aanvraag of melding krijgt u binnen 8 weken bericht over het besluit, met een mogelijke verlenging van 6 weken.",
+        "status": "false",
+        "note": "Volgens de gemeente Hilversum is de standaard beslistermijn voor een omgevingsvergunning 8 weken, maar kan deze verlengd worden met maximaal 8 weken (niet 6 weken zoals vermeld)."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://hilversum.nl/bouwen-verbouwen",
+      "https://hilversum.nl/bouwen-verbouwen/omgevingswet/aanvraag-omgevingsvergunning-uitgelegd",
+      "https://hilversum.nl/ondernemen/vergunningen-meldingen-voor-ondernemers",
+      "https://hilversum.nl/bouwen-verbouwen/omgevingswet/omgevingsloket",
+      "https://hilversum.nl/vergunningen/vergunningen-voor-bouwen-verbouwen/omgevingsvergunning-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://omgevingswet.overheid.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "In Hilversum werken we met 3 verschillende processen voor het onderzoeken van een ruimtelijk idee en het (vervolgens) aanvragen van een omgevingsvergunning",
+          "original_reference": "No matching information",
+          "note": "De bronnen beschrijven een specifiek proces met 3 verschillende routes (vooronderzoek, idee verkennen, directe aanvraag) wat niet genoemd wordt in de originele tekst",
+          "source_urls": [
+            "https://hilversum.nl/bouwen-verbouwen/omgevingswet/aanvraag-omgevingsvergunning-uitgelegd"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wij sturen u berichten via de e-mail als u uw e-mailadres heeft opgegeven. Anders doen we dat via de post",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet hoe communicatie over de aanvraag plaatsvindt",
+          "source_urls": [
+            "https://hilversum.nl/bouwen-verbouwen/omgevingswet/omgevingsloket"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Regels op de kaart: Overzicht welke regels er gelden per gebied of plaats. Vul uw adres in of zoek op de kaart",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden een extra functionaliteit 'Regels op de kaart' in het Omgevingsloket die niet genoemd wordt in de originele tekst",
+          "source_urls": [
+            "https://hilversum.nl/bouwen-verbouwen/omgevingswet/omgevingsloket"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten enkele belangrijke aanvullingen op de originele tekst, waaronder een gedetailleerder aanvraagproces met drie verschillende routes, specifieke communicatiemethoden en extra functionaliteiten in het Omgevingsloket. De kern van de informatie blijft echter consistent met de originele tekst wat betreft de hoofdprocedures, vereisten en termijnen."
+  }
+}

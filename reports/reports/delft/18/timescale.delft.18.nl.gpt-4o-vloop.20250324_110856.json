@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DELFT",
+      "contact": {
+        "phone": "14 015",
+        "email": "null",
+        "website": "http://www.delft.nl"
+      }
+    },
+    "service": {
+      "id": 18,
+      "name": "Ventvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 37,
+    "true_sentences": 35,
+    "false_sentences": 2,
+    "accuracy_percentage": 94.6,
+    "false_statements": [
+      {
+        "sentence": "Een ventvergunning is nodig voor verschillende activiteiten binnen de gemeente Delft, zoals bouwen, verbouwen, slopen van bouwwerken, wijzigen van monumenten, kappen van bomen, uitvoeren van milieubelastende activiteiten, en plaatsen van gevelreclame.",
+        "status": "false",
+        "note": "Dit beschrijft een omgevingsvergunning, niet een ventvergunning. Een ventvergunning is specifiek bedoeld voor ambulante handel (verkoop op straat) en heeft niets te maken met bouwen of verbouwen."
+      },
+      {
+        "sentence": "Voor een vooroverleg zijn er kosten afhankelijk van het type en de omvang van het bouwplan, variërend van €179,90 voor bestaande woningverbouwingen tot €1.542 voor buitenplanse activiteiten met bindend advies van de gemeenteraad.",
+        "status": "false",
+        "note": "Deze bedragen zijn niet actueel volgens de legesverordening van de gemeente Delft. Bovendien zijn deze kosten niet van toepassing op een ventvergunning."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.delft.nl/omgevingsvergunning-milieu",
+      "https://www.delft.nl/omgevingsvergunning-aanvragen",
+      "https://www.delft.nl/uw-plan-voorleggen-aan-de-gemeente",
+      "https://www.delft.nl/woo-verzoek-doen",
+      "https://www.delft.nl/stappen-voor-uw-plan"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Er zijn geen kosten.",
+          "original_reference": "Voor een vooroverleg zijn er kosten afhankelijk van het type en de omvang van het bouwplan, variërend van €179,90 voor bestaande woningverbouwingen tot €1.542 voor buitenplanse activiteiten",
+          "note": "De originele tekst vermeldt kosten voor vooroverleg, terwijl de bronpagina expliciet vermeldt dat er geen kosten zijn",
+          "source_urls": [
+            "https://www.delft.nl/omgevingsvergunning-milieu"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Verwijder persoonsgegevens uit bijlagen. De gemeente publiceert alle bijlagen bij de aanvraag van een omgevingsvergunning online.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over het verwijderen van persoonsgegevens uit bijlagen voordat deze worden ingediend",
+          "source_urls": [
+            "https://www.delft.nl/omgevingsvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Doorloop eerst het stappenplan voordat u een vooroverleg aanvraagt. Dit beantwoordt al veel van uw vragen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist de voorwaarde dat eerst het stappenplan moet worden doorlopen voordat een vooroverleg kan worden aangevraagd",
+          "source_urls": [
+            "https://www.delft.nl/uw-plan-voorleggen-aan-de-gemeente"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn enkele belangrijke verschillen gevonden tussen de originele tekst en de bronnen. De belangrijkste verschillen betreffen de kosten (wel/niet), het ontbreken van informatie over het verwijderen van persoonsgegevens uit bijlagen, en de vereiste om eerst een stappenplan te doorlopen voor het vooroverleg. Deze informatie is essentieel voor een correcte aanvraagprocedure."
+  }
+}

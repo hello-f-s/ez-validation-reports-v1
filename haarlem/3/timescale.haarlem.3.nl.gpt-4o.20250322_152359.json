@@ -1,0 +1,78 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HAARLEM",
+      "contact": {
+        "phone": "14 023",
+        "email": "antwoord@haarlem.nl",
+        "website": "http://www.haarlem.nl"
+      }
+    },
+    "service": {
+      "id": 3,
+      "name": "Certificaat voor opgraving aanvragen en vondst melden"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 1,
+    "true_sentences": 1,
+    "false_sentences": 0,
+    "accuracy_percentage": 100.0,
+    "false_statements": []
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 2,
+    "invalid_urls": 3,
+    "accuracy_percentage": 40.0,
+    "valid_urls_list": [
+      "https://haarlem.nl/bouwtekeningen-opvragen",
+      "https://haarlem.nl/adresonderzoek"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://haarlem.nl/monumentenvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.haarlem.nl/ufs/ufsmain?formid=algemene_vraag",
+        "reason": "INVALID: Error scraping https://www.haarlem.nl/ufs/ufsmain?formid=algemene_vraag: 'NoneType' object has no attribute 'strip'"
+      },
+      {
+        "url": "https://haarlem.nl/bodeminformatie-voor-nutsbedrijven-en-onderzoeksbureaus",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bouwdossiers tot 2010 vraagt u op bij het Noord-Hollands Archief. Voor bouwdossiers na 2010 mailt u ons. Digitale kopie ontvangen via gemeente: € 13,95",
+          "original_reference": "No matching information",
+          "note": "De bron bevat specifieke informatie over het opvragen van bouwtekeningen, inclusief waar deze op te vragen zijn en de kosten, terwijl dit in de originele tekst ontbreekt",
+          "source_urls": [
+            "https://haarlem.nl/bouwtekeningen-opvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U kunt ons vragen onderzoek te doen als er op uw adres iemand staat ingeschreven die er niet woont. Een adresonderzoek duurt ongeveer 3 maanden.",
+          "original_reference": "No matching information",
+          "note": "De bron bevat concrete informatie over adresonderzoek en de duur ervan, wat niet aanwezig is in de originele tekst",
+          "source_urls": [
+            "https://haarlem.nl/adresonderzoek"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten substantieel meer specifieke informatie over gemeentelijke diensten dan de originele tekst. Met name details over het opvragen van bouwtekeningen (inclusief kosten en procedures) en het uitvoeren van adresonderzoek (inclusief doorlooptijd) zijn aanwezig in de bronnen maar ontbreken in de originele tekst."
+  }
+}

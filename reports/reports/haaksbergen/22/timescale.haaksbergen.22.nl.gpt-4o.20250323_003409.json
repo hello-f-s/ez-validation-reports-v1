@@ -1,0 +1,87 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HAAKSBERGEN",
+      "contact": {
+        "phone": "(053) 573 45 67",
+        "email": "gemeente@haaksbergen.nl",
+        "website": "http://www.haaksbergen.nl"
+      }
+    },
+    "service": {
+      "id": 22,
+      "name": "Woonruimte splitsen of samenvoegen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Zie de gemeentelijke Legesverordening 2025 voor informatie over de kosten betreffende de aanvraag.",
+        "status": "false",
+        "note": "Er wordt verwezen naar de Legesverordening 2025, maar deze bestaat nog niet. De huidige geldende legesverordening is die van 2024."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 8,
+    "valid_urls": 5,
+    "invalid_urls": 3,
+    "accuracy_percentage": 62.5,
+    "valid_urls_list": [
+      "https://www.haaksbergen.nl/omgevingsvergunning",
+      "https://www.haaksbergen.nl/ondernemers/Bedrijfstarten.html",
+      "https://www.haaksbergen.nl/Vergunningen/101107-Omgevingsvergunning.html",
+      "https://www.haaksbergen.nl/Vergunningen/huisnummer.html",
+      "https://www.haaksbergen.nl/ondernemers/Bedrijfstarten/Vergunningen-voor-bedrijven.html"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.haaksbergen.nl/huisnummer-aanvragen",
+        "reason": "INVALID: Error scraping https://www.haaksbergen.nl/huisnummer-aanvragen: 404 Client Error: Not Found for url: https://www.haaksbergen.nl/Pagina-niet-gevonden?channel=CHD&errorpath=https:%2f%2fwww.haaksbergen.nl%2fhuisnummer-aanvragen&statusCode=404"
+      },
+      {
+        "url": "https://www.haaksbergen.nl/ondernemersplein",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.haaksbergen.nl/ondernemers/Ondernemend-Haaksbergen/Ondernemersplein.html",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het aanvragen van een vergunning kan alleen digitaal. Het is dus niet mogelijk om een aanvraag uit te printen en op te sturen.",
+          "original_reference": "Print het formulier, vul het volledig in en stuur het met de bijlagen naar de gemeente Haaksbergen.",
+          "note": "Er is een tegenstrijdigheid in de aanvraagmethode. De bronpagina geeft aan dat aanvragen alleen digitaal mogelijk is, terwijl de originele tekst spreekt over het printen en opsturen van een formulier.",
+          "source_urls": [
+            "https://www.haaksbergen.nl/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een reguliere vergunningsperiode duurt acht weken. Dit is een termijn van orde. Dat betekent dat overschrijding van de termijn niet leidt tot sancties of andere gevolgen. Een uitgebreide procedure duurt zes maanden.",
+          "original_reference": "Er is geen specifieke duur vermeld voor de procedure van nummeraanduiding bij splitsing of samenvoeging van woonruimten op de website.",
+          "note": "De bronpagina specificeert concrete behandeltermijnen (8 weken voor reguliere en 6 maanden voor uitgebreide procedures), terwijl de originele tekst aangeeft dat er geen specifieke duur wordt vermeld.",
+          "source_urls": [
+            "https://www.haaksbergen.nl/omgevingsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele tekst en de bronnen. Ten eerste is er een tegenstrijdigheid in de aanvraagmethode: waar de originele tekst spreekt over een papieren aanvraag, stellen de bronnen dat dit alleen digitaal kan. Ten tweede worden in de bronnen wel specifieke behandeltermijnen genoemd, terwijl de originele tekst stelt dat deze niet vermeld zijn. Deze verschillen kunnen tot verwarring leiden bij aanvragers."
+  }
+}

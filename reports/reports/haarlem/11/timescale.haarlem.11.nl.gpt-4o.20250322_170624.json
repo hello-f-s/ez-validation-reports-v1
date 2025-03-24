@@ -1,0 +1,92 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HAARLEM",
+      "contact": {
+        "phone": "14 023",
+        "email": "antwoord@haarlem.nl",
+        "website": "http://www.haarlem.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "Tijdens de bezwaartermijn mag u al beginnen met de werkzaamheden, tenzij het gaat om sloop of veranderingen aan een monument.",
+        "status": "false",
+        "note": "Dit is onjuist. Volgens de gemeente Haarlem mag men pas starten met de werkzaamheden nadat de vergunning definitief is geworden, dat wil zeggen na afloop van de bezwaartermijn van 6 weken én als er geen bezwaren zijn ingediend. Het is niet toegestaan om tijdens de bezwaartermijn al te beginnen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 10,
+    "valid_urls": 9,
+    "invalid_urls": 1,
+    "accuracy_percentage": 90.0,
+    "valid_urls_list": [
+      "https://www.haarlem.nl/aanlegvergunning",
+      "https://www.haarlem.nl/afwijken-omgevingsplan",
+      "https://haarlem.nl/uitweg-inritvergunning",
+      "https://haarlem.nl/bouwvergunning",
+      "https://www.haarlem.nl/bouwvergunning",
+      "https://haarlem.nl/afwijken-omgevingsplan",
+      "https://www.haarlem.nl/milieuvergunning",
+      "https://haarlem.nl/aanlegvergunning",
+      "https://haarlem.nl/milieuvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.haarlem.nl/uitwegvergunning",
+        "reason": "INVALID: Error scraping https://www.haarlem.nl/uitwegvergunning: 404 Client Error: Not Found for url: https://haarlem.nl/uitwegvergunning"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Plattegrond (schaal 1:500) met de grenzen van uw terrein, waarop ook de afstand van het bouwwerk tot de woning van de buren is te zien",
+          "original_reference": "Plattegronden en tekeningen van het bouwwerk (verschillende schalen)",
+          "note": "De bronpagina specificeert een exacte schaal (1:500) en vereist expliciet dat de afstand tot buren zichtbaar is, terwijl de originele tekst alleen algemeen spreekt over 'verschillende schalen'",
+          "source_urls": [
+            "https://haarlem.nl/bouwvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De milieudienst ODIJmond verzorgt de uitvoering van de milieutaken voor de gemeente",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over de uitvoerende partij voor milieutaken (ODIJmond)",
+          "source_urls": [
+            "https://haarlem.nl/milieuvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Soms volstaat een milieumelding. Dit is afhankelijk van hoe zwaar uw bedrijf het milieu belast",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist de mogelijkheid van een milieumelding als alternatief voor een vergunning",
+          "source_urls": [
+            "https://haarlem.nl/milieuvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen specifiekere eisen voor bouwtekeningen, het ontbreken van informatie over de uitvoerende milieudienst ODIJmond, en de niet-vermelde optie van een milieumelding als alternatief voor een milieuvergunning. Deze informatie is relevant voor aanvragers maar ontbreekt in de originele tekst."
+  }
+}

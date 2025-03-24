@@ -1,0 +1,100 @@
+{
+  "context": {
+    "municipality": {
+      "name": "VOORSCHOTEN",
+      "contact": {
+        "phone": "14 071",
+        "email": "gemeente@voorschoten.nl",
+        "website": "http://www.voorschoten.nl"
+      }
+    },
+    "service": {
+      "id": 7,
+      "name": "Kabels en leidingen aanleggen en beheren"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "De aanvraag voor gebruik van openbare grond moet minimaal 8 weken voor gebruik worden ingediend.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Voorschoten moet een aanvraag voor gebruik openbare grond minimaal 3 weken (niet 8 weken) voor aanvang worden ingediend."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 1,
+    "invalid_urls": 5,
+    "accuracy_percentage": 16.7,
+    "valid_urls_list": [
+      "https://www.voorschoten.nl/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.voorschoten.nl/bouwwerk-gereedmelding",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.voorschoten.nl/gebruik-openbare-grond",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.voorschoten.nl/graafmelding",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.voorschoten.nl/uw-vragen-over-glasvezel-in-de-gemeente-voorschoten",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.voorschoten.nl/mag-ik-een-stroomkabel-over-de-stoep-neerleggen-om-mijn-auto-op-te-laden",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor een graafmelding moet u zich registreren bij het Kadaster. Dit kan via www.kadaster.nl/klic. Na registratie kunt u inloggen op het KLIC-portaal om uw graafmelding te doen.",
+          "original_reference": "Voor een eenmalige graafmelding gebruikt u het formulier KLIC Graafmelding. Voor regelmatig graafmeldingen moet u zich registreren als klant van Kadaster-KLIC.",
+          "note": "De bronpagina vermeldt alleen registratie als vereiste en specificeert de website, terwijl de originele tekst onderscheid maakt tussen eenmalige en regelmatige meldingen.",
+          "source_urls": [
+            "https://www.voorschoten.nl/graafmelding"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor gebruik van de openbare ruimte moet u minimaal 3 weken van tevoren een melding doen. Voor een vergunning is dit minimaal 8 weken.",
+          "original_reference": "De aanvraag voor gebruik van openbare grond moet minimaal 8 weken voor gebruik worden ingediend. Voor een melding is dit minimaal 2 weken.",
+          "note": "De termijn voor een melding verschilt: 3 weken volgens de bronpagina versus 2 weken in de originele tekst.",
+          "source_urls": [
+            "https://www.voorschoten.nl/gebruik-openbare-grond"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U kunt bezwaar maken tegen een besluit binnen 6 weken na bekendmaking van het besluit.",
+          "original_reference": "Hier kan geen specifieke informatie over gevonden worden op de website van deze gemeente.",
+          "note": "De bronpagina bevat wel degelijk informatie over bezwaarmogelijkheden, terwijl dit in de originele tekst ontbreekt.",
+          "source_urls": [
+            "https://www.voorschoten.nl/gebruik-openbare-grond"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de aanvraagprocedure voor graafmeldingen, de termijnen voor meldingen van gebruik openbare ruimte (3 vs 2 weken), en de aanwezigheid van bezwaarprocedure-informatie die in de originele tekst ontbreekt. Deze verschillen hebben significante impact op de dienstverlening en procedures voor inwoners."
+  }
+}

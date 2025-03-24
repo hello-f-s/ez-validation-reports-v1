@@ -1,0 +1,67 @@
+{
+  "context": {
+    "municipality": {
+      "name": "GILZE EN RIJEN",
+      "contact": {
+        "phone": "14 0161",
+        "email": "info@gilzerijen.nl",
+        "website": "http://www.gilzerijen.nl"
+      }
+    },
+    "service": {
+      "id": 20,
+      "name": "Vergunning voor seksbedrijf"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 8,
+    "true_sentences": 7,
+    "false_sentences": 1,
+    "accuracy_percentage": 87.5,
+    "false_statements": [
+      {
+        "sentence": "Vul het formulier (https://www.gilzerijen.nl/leesvoor) in voor een horecavergunning.",
+        "status": "false",
+        "note": "De gegeven URL (https://www.gilzerijen.nl/leesvoor) is niet correct. Het juiste formulier voor een horecavergunning is te vinden via het digitale loket op de website van de gemeente Gilze en Rijen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 0,
+    "invalid_urls": 6,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.gilzerijen.nl/horecavergunning",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.gilzerijen.nl/alcoholvergunning",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.gilzerijen.nl/beroep-of-bedrijf-aan-huis",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.gilzerijen.nl/leesvoor)",
+        "reason": "INVALID: Error scraping https://www.gilzerijen.nl/leesvoor): 404 Client Error: Not Found for url: https://www.gilzerijen.nl/leesvoor)"
+      },
+      {
+        "url": "https://www.gilzerijen.nl/woo",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.gilzerijen.nl/ondernemen/vergunningen-en-ontheffingen-voor-ondernemers",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  }
+}

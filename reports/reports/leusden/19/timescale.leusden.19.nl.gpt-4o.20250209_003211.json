@@ -1,0 +1,99 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LEUSDEN",
+      "contact": {
+        "phone": "14 033",
+        "email": "gemeente@leusden.nl",
+        "website": "http://www.leusden.nl/"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "Het document wordt binnen 2 werkdagen toegestuurd.",
+        "status": "false",
+        "note": "Op de officiële website van gemeente Leusden wordt geen specifieke termijn genoemd voor het toesturen van het aanvraagformulier voor een vergunning speelautomaten."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 9,
+    "valid_urls": 3,
+    "invalid_urls": 6,
+    "accuracy_percentage": 33.3,
+    "valid_urls_list": [
+      "https://www.leusden.nl/en/vergunningen-en-belastingen/drank-en-horeca/vergunning-speelautomaten",
+      "https://www.leusden.nl/en/vergunningen-en-belastingen/drank-en-horeca/drank-en-horecavergunning",
+      "https://www.leusden.nl/vergunningen-en-belastingen/drank-en-horeca/vergunning-speelautomaten"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.leusden.nl/publicaties/bekendmakingen/bekendmakingen?tx_windgvop_windgvopdetail%5Baction%5D=detail&tx_windgvop_windgvopdetail%5Bcontroller%5D=Publication&tx_windgvop_windgvopdetail%5Bpublication%5D=1435&cHash=d1463e4109404faa730b9886f56291e6",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.leusden.nl/bestuur-en-organisatie/bezwaar.html",
+        "reason": "INVALID: Error scraping https://www.leusden.nl/bestuur-en-organisatie/bezwaar.html: 404 Client Error: Not Found for url: https://www.leusden.nl/bestuur-en-organisatie/bezwaar"
+      },
+      {
+        "url": "https://www.leusden.nl/bestuur-en-organisatie/bezwaar.html\">webformulier</a>.</p>",
+        "reason": "INVALID: Error scraping https://www.leusden.nl/bestuur-en-organisatie/bezwaar.html\">webformulier</a>.</p>: 404 Client Error: Not Found for url: https://www.leusden.nl/bestuur-en-organisatie/bezwaar.html%22%3Ewebformulier%3C/a%3E.%3C/p%3E"
+      },
+      {
+        "url": "https://www.rijksoverheid.nl/documenten/brochures/2015/04/14/bezwaar-en-beroep-tegen-een-beslissing-van-de-overheid\">website",
+        "reason": "INVALID: Error scraping https://www.rijksoverheid.nl/documenten/brochures/2015/04/14/bezwaar-en-beroep-tegen-een-beslissing-van-de-overheid\">website: 404 Client Error: Not Found for url: https://www.rijksoverheid.nl/documenten/brochures/2015/04/14/bezwaar-en-beroep-tegen-een-beslissing-van-de-overheid%22%3Ewebsite"
+      },
+      {
+        "url": "https://www.rijksoverheid.nl/documenten/brochures/2015/04/14/bezwaar-en-beroep-tegen-een-beslissing-van-de-overheid",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.leusden.nl/en/publicaties/bekendmakingen/bekendmakingen?tx_windgvop_windgvopdetail%5Baction%5D=detail&tx_windgvop_windgvopdetail%5Bcontroller%5D=Publication&tx_windgvop_windgvopdetail%5Bpublication%5D=1435&cHash=d1463e4109404faa730b9886f56291e6",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Kansspelautomaten mogen alleen worden geplaatst in een hoogdrempelige inrichting of een hoogdrempelige lokaliteit in een samengestelde inrichting",
+          "original_reference": "Kansspelautomaten kunnen alleen worden geplaatst in een hoogdrempelige inrichting zoals cafés, bars, en restaurants",
+          "note": "De bronnen vermelden specifiek ook de mogelijkheid van plaatsing in een 'hoogdrempelige lokaliteit in een samengestelde inrichting', wat extra informatie is die niet in de originele tekst staat",
+          "source_urls": [
+            "https://www.leusden.nl/vergunningen-en-belastingen/drank-en-horeca/vergunning-speelautomaten",
+            "https://www.leusden.nl/en/vergunningen-en-belastingen/drank-en-horeca/vergunning-speelautomaten"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Kosten 2025",
+          "original_reference": "Kosten en betalen",
+          "note": "De bronnen specificeren dat de genoemde tarieven voor 2025 gelden, wat belangrijke aanvullende informatie is die niet in de originele tekst staat",
+          "source_urls": [
+            "https://www.leusden.nl/vergunningen-en-belastingen/drank-en-horeca/vergunning-speelautomaten",
+            "https://www.leusden.nl/en/vergunningen-en-belastingen/drank-en-horeca/vergunning-speelautomaten"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten twee belangrijke specificaties die niet in de originele tekst staan: de mogelijkheid tot plaatsing van kansspelautomaten in een hoogdrempelige lokaliteit binnen een samengestelde inrichting, en de vermelding dat de genoemde tarieven specifiek voor 2025 gelden. Voor het overige komt alle informatie overeen met de originele tekst."
+  }
+}

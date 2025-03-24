@@ -1,0 +1,101 @@
+{
+  "context": {
+    "municipality": {
+      "name": "EMMEN",
+      "contact": {
+        "phone": "14 0591",
+        "email": "gemeente@emmen.nl",
+        "website": "http://www.emmen.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 13,
+    "false_sentences": 2,
+    "accuracy_percentage": 86.7,
+    "false_statements": [
+      {
+        "sentence": "Aanvraag alcoholvergunning voor een commerciële onderneming: € 499,80",
+        "status": "false",
+        "note": "Het actuele tarief voor een alcoholvergunning voor een commerciële onderneming in Emmen is € 509,80 (2024)"
+      },
+      {
+        "sentence": "Aanvraag alcohol- en exploitatievergunning samen: € 593,75",
+        "status": "false",
+        "note": "Het actuele tarief voor een gecombineerde alcohol- en exploitatievergunning voor para-commerciële instellingen in Emmen is € 605,63 (2024)"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 9,
+    "valid_urls": 9,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://gemeente.emmen.nl/alcohol-schenken-tijdens-evenement",
+      "https://gemeente.emmen.nl/vergunning-kantine-of-buurthuis",
+      "https://www.emmen.nl/vergunning-kantine-buurthuis",
+      "https://www.emmen.nl/horecabedrijf-starten",
+      "https://gemeente.emmen.nl/woo-verzoek",
+      "https://gemeente.emmen.nl/horecabedrijf-starten",
+      "https://www.emmen.nl/alcohol-schenken-en-verkopen",
+      "https://gemeente.emmen.nl/alcohol-schenken-en-verkopen",
+      "https://www.emmen.nl/alcohol-schenken-tijdens-evenement"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 4,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De aanvraag voor een exploitatievergunning wordt binnen 12 weken afgehandeld.",
+          "original_reference": "De gemeente beslist binnen 8 weken op een aanvraag voor een exploitatievergunning",
+          "note": "Er is een verschil in de aangegeven behandeltermijn voor exploitatievergunningen: 12 weken volgens de bron versus 8 weken in de originele tekst.",
+          "source_urls": [
+            "https://gemeente.emmen.nl/horecabedrijf-starten"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Formulieren voor (commerciële) horecabedrijven en slijterijen: een aanvraagformulier Model A",
+          "original_reference": "Aanvraagformulier Model B",
+          "note": "Er wordt een ander type aanvraagformulier genoemd: Model A voor commerciële bedrijven in de bron versus Model B in de originele tekst.",
+          "source_urls": [
+            "https://gemeente.emmen.nl/alcohol-schenken-en-verkopen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "arbeidsovereenkomsten van leidinggevenden",
+          "original_reference": "No matching information",
+          "note": "De bron vereist extra documentatie (arbeidsovereenkomsten) die niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://gemeente.emmen.nl/alcohol-schenken-en-verkopen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "ingevuld formulier Wet Bibob met de gevraagde documenten uit de bijlagen",
+          "original_reference": "No matching information",
+          "note": "De bron vereist een Bibob-formulier dat niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://gemeente.emmen.nl/alcohol-schenken-en-verkopen"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn belangrijke verschillen gevonden in de behandeltermijn van vergunningen, het type aanvraagformulier en aanvullende documentatie-eisen. De bronnen vermelden extra vereisten zoals arbeidsovereenkomsten en een Bibob-formulier die niet in de originele tekst staan. Ook is er een discrepantie in het type aanvraagformulier (Model A vs Model B) en de behandeltermijn (12 vs 8 weken)."
+  }
+}

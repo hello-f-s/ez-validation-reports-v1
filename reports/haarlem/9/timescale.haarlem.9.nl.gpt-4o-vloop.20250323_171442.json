@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HAARLEM",
+      "contact": {
+        "phone": "14 023",
+        "email": "antwoord@haarlem.nl",
+        "website": "http://www.haarlem.nl"
+      }
+    },
+    "service": {
+      "id": 9,
+      "name": "Mobiele puinbreker gebruiken"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "De openingstijden zijn elke werkdag van 9.00 tot 16.00 uur en donderdag van 16.00 tot 20.00 uur.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Haarlem is de Publiekshal geopend van maandag t/m vrijdag van 9.00 tot 16.00 uur, en op donderdag van 9.00 tot 20.00 uur. De informatie over de donderdagopening is dus niet correct weergegeven."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 2,
+    "invalid_urls": 3,
+    "accuracy_percentage": 40.0,
+    "valid_urls_list": [
+      "https://haarlem.nl/bouwvergunning",
+      "https://haarlem.nl/afvalwijzer"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://haarlem.nl/sloopmelding-en-vergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://haarlem.nl/grofvuil-en-afval-wegbrengen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://haarlem.nl/vergunning-openbreken-openbare-weg",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Algemene informatie Publiekshal Zijlvest 39 2011 VB Haarlem Openingstijden Elke werkdag: 9.00 tot 16.00 uur Donderdag: ook van 16.00 tot 20.00 uur Wij helpen u alleen op afspraak.",
+          "original_reference": "Voor meer informatie kunt u terecht bij de Publiekshal, Zijlvest 39, 2011 VB Haarlem. De openingstijden zijn elke werkdag van 9.00 tot 16.00 uur en donderdag van 16.00 tot 20.00 uur.",
+          "note": "De bronpagina vermeldt expliciet dat bezoekers alleen op afspraak worden geholpen, terwijl dit niet wordt vermeld in de originele tekst. Dit is een belangrijk verschil in de serviceverlening.",
+          "source_urls": [
+            "https://haarlem.nl/afvalwijzer"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Nodig bij uw aanvraag: Overzicht van de bouwkosten, plattegrond (schaal 1:500), plattegrond van het gebouw (schaal 1:100), tekening van de gevel, langsdoorsnede van het gebouw",
+          "original_reference": "Wanneer u een sloopvergunning aanvraagt, kan het nodig zijn een archeologisch rapport te laten opstellen",
+          "note": "De bronpagina noemt specifieke technische documentvereisten voor bouwaanvragen die niet worden genoemd in de originele tekst over sloopvergunningen. Dit geeft een completer beeld van de benodigde documenten.",
+          "source_urls": [
+            "https://haarlem.nl/bouwvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont twee belangrijke verschillen: 1) De verplichting om alleen op afspraak te komen wordt niet vermeld in de originele tekst, wat essentiële informatie is voor bezoekers. 2) Er zijn specifieke technische documentvereisten die wel in de bronpagina worden genoemd maar niet in de originele tekst. De overige informatie komt overeen of is complementair aan elkaar."
+  }
+}

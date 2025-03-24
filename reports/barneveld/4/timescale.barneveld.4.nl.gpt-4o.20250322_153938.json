@@ -1,0 +1,93 @@
+{
+  "context": {
+    "municipality": {
+      "name": "BARNEVELD",
+      "contact": {
+        "phone": "14 0342",
+        "email": "info@barneveld.nl",
+        "website": "http://www.barneveld.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 15,
+    "false_sentences": 2,
+    "accuracy_percentage": 88.2,
+    "false_statements": [
+      {
+        "sentence": "Gebruik het inlogformulier via DigiD of eHerkenning Niveau 2+ om de evenementenvergunning aan te vragen.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Barneveld moet een evenementenvergunning worden aangevraagd via het E-formulier op de website, er wordt niet specifiek DigiD of eHerkenning niveau 2+ vereist."
+      },
+      {
+        "sentence": "Dit bedrag krijgt u niet terug als de aanvraag wordt afgewezen.",
+        "status": "false",
+        "note": "Deze informatie wordt niet vermeld op de officiële website van gemeente Barneveld met betrekking tot evenementenvergunningen en kan dus niet als feit worden gesteld."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.barneveld.nl/ondersteuning-werk-en-inkomen/subsidies/evenementenfonds-subsidie-aanvragen",
+      "https://www.barneveld.nl/vergunningen-en-ontheffingen/evenementen/loterij-organiseren",
+      "https://www.barneveld.nl/vergunningen-en-ontheffingen/evenementen/evenementenvergunning-aanvragen",
+      "https://www.barneveld.nl/vergunningen-en-ontheffingen/evenementen",
+      "https://www.barneveld.nl/vergunningen-en-ontheffingen/horeca/exploitatievergunning-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.example.com/event-permit",
+        "reason": "INVALID: Error scraping https://www.example.com/event-permit: 404 Client Error: Not Found for url: https://www.example.com/event-permit"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U dient minimaal 8 weken voor het evenement de aanvraag in. Een adviescommissie beoordeelt en adviseert de gemeente over de subsidieaanvraag. Het besluit van de gemeente ontvangt u uiterlijk 2 weken voor het evenement.",
+          "original_reference": "Er wordt geen specifieke termijn genoemd voor het verkrijgen van de evenementenvergunning.",
+          "note": "De bronnen vermelden specifieke aanvraag- en behandeltermijnen (8 weken van tevoren aanvragen, besluit 2 weken voor evenement) terwijl dit in de originele tekst ontbreekt.",
+          "source_urls": [
+            "https://www.barneveld.nl/ondersteuning-werk-en-inkomen/subsidies/evenementenfonds-subsidie-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Checklist bijlagen bij aanvraag: Altijd meesturen: Een op schaal gemaakte situatietekening (schaal 1:1000), met daarop alle objecten zoals tenten, tappunten, bak- en braadinrichting, gasflessen etc. Programma van activiteiten en/of omschrijving van het evenement",
+          "original_reference": "Mogelijk moet u bepaalde formulieren invullen, zoals het veiligheidsplan of een ontheffing van de Alcoholwet, afhankelijk van het evenement.",
+          "note": "De bronnen specificeren verplichte bijlagen zoals situatietekening en programma, die niet genoemd worden in de originele tekst.",
+          "source_urls": [
+            "https://www.barneveld.nl/vergunningen-en-ontheffingen/evenementen/evenementenvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Kleine evenementen op maandag tot en met zaterdag kunnen mogelijk volstaan met een melding.",
+          "original_reference": "U moet een evenementenvergunning aanvragen wanneer u een evenement organiseert dat niet als een klein evenement kan worden gemeld.",
+          "note": "De bron specificeert dat kleine evenementen alleen op maandag t/m zaterdag met een melding kunnen volstaan, deze tijdsbeperking ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.barneveld.nl/vergunningen-en-ontheffingen/evenementen/evenementenvergunning-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen het ontbreken van specifieke termijnen in de originele tekst, het niet vermelden van verplichte bijlagen bij de aanvraag, en het ontbreken van de dagbeperking voor kleine evenementen. De bronnen bevatten meer gedetailleerde informatie over de aanvraagprocedure en vereisten."
+  }
+}

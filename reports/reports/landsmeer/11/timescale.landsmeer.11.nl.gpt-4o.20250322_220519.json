@@ -1,0 +1,98 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LANDSMEER",
+      "contact": {
+        "phone": "(020) 487 71 11",
+        "email": "gemeente@Landsmeer.nl",
+        "website": "http://www.landsmeer.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 19,
+    "false_sentences": 0,
+    "accuracy_percentage": 100.0,
+    "false_statements": []
+  },
+  "url_analysis": {
+    "total_urls": 10,
+    "valid_urls": 5,
+    "invalid_urls": 5,
+    "accuracy_percentage": 50.0,
+    "valid_urls_list": [
+      "https://www.landsmeer.nl/inwoners/bouwen_en_verbouwen/omgevingsplan/afwijken_van_het_omgevingsplan",
+      "https://www.landsmeer.nl/ondernemers/vergunningen/uitstalling_plaatsen_bij_een_bedrijf",
+      "https://www.landsmeer.nl/inwoners/bouwen_en_verbouwen/producten_en_diensten/gebouw_of_woning_slopen",
+      "https://www.landsmeer.nl/inwoners/bouwen_en_verbouwen/meer_onderwerpen/omgevingsvergunning_aanvragen",
+      "https://www.landsmeer.nl/inwoners/parkeren,_verkeer_en_vervoer/verkeer/ontheffing_van_verkeersregels_aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "http://Gemeente Landsmeer | Gebouw of woning slopen",
+        "reason": "INVALID: Error scraping http://Gemeente Landsmeer | Gebouw of woning slopen: HTTPConnectionPool(host='gemeente%20landsmeer%20%7c%20gebouw%20of%20woning%20slopen', port=80): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPConnection object at 0x1074bcc20>: Failed to resolve 'gemeente%20landsmeer%20%7c%20gebouw%20of%20woning%20slopen' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "http://Gemeente Landsmeer | Afwijken van het omgevingsplan",
+        "reason": "INVALID: Error scraping http://Gemeente Landsmeer | Afwijken van het omgevingsplan: Failed to parse: 'gemeente%20landsmeer%20%7c%20afwijken%20van%20het%20omgevingsplan', label empty or too long"
+      },
+      {
+        "url": "http://Gemeente Landsmeer | Uitstalling plaatsen bij een bedrijf",
+        "reason": "INVALID: Error scraping http://Gemeente Landsmeer | Uitstalling plaatsen bij een bedrijf: Failed to parse: 'gemeente%20landsmeer%20%7c%20uitstalling%20plaatsen%20bij%20een%20bedrijf', label empty or too long"
+      },
+      {
+        "url": "http://Gemeente",
+        "reason": "INVALID: Error scraping http://Gemeente: HTTPConnectionPool(host='gemeente', port=80): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPConnection object at 0x107443490>: Failed to resolve 'gemeente' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "http://Gemeente Landsmeer | Ontheffing van verkeersregels aanvragen",
+        "reason": "INVALID: Error scraping http://Gemeente Landsmeer | Ontheffing van verkeersregels aanvragen: Failed to parse: 'gemeente%20landsmeer%20%7c%20ontheffing%20van%20verkeersregels%20aanvragen', label empty or too long"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Directe verkoop vanuit de uitstalling is niet toegestaan.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat directe verkoop vanuit de uitstalling verboden is, wat een belangrijke beperking is voor ondernemers.",
+          "source_urls": [
+            "https://www.landsmeer.nl/ondernemers/vergunningen/uitstalling_plaatsen_bij_een_bedrijf"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Er zijn 2 procedures bij het verlenen van een omgevingsvergunning. De reguliere procedure geldt voor een gewone omgevingsvergunning. Heeft de activiteit waarvoor u een vergunningaanvraag doet een groot risico voor de omgeving? Of voert de gemeente een natuurtoets uit? Dan geldt de uitgebreide procedure.",
+          "original_reference": "Bij de reguliere procedure moet u binnen 8 weken bericht krijgen over de beslissing op uw aanvraag.",
+          "note": "De originele tekst legt niet uit dat er twee verschillende procedures zijn en wanneer welke procedure van toepassing is, met name de uitgebreide procedure bij risicovolle activiteiten of natuurtoets.",
+          "source_urls": [
+            "https://www.landsmeer.nl/inwoners/bouwen_en_verbouwen/meer_onderwerpen/omgevingsvergunning_aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De gemeente heeft namelijk gebieden aangewezen waarbinnen u zonder vergunning een uitstalling bij uw bedrijf mag plaatsen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat er specifieke gebieden zijn aangewezen waar geen vergunning nodig is voor een uitstalling.",
+          "source_urls": [
+            "https://www.landsmeer.nl/ondernemers/vergunningen/uitstalling_plaatsen_bij_een_bedrijf"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten enkele belangrijke aanvullende bepalingen die niet in de originele tekst staan, waaronder het verbod op directe verkoop vanuit uitstallingen, het bestaan van vergunningvrije gebieden voor uitstallingen, en een duidelijker onderscheid tussen reguliere en uitgebreide vergunningsprocedures. Deze informatie is essentieel voor ondernemers en aanvragers om de juiste procedures te volgen."
+  }
+}

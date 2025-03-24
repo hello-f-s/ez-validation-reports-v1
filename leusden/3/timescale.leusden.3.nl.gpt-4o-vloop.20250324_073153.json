@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LEUSDEN",
+      "contact": {
+        "phone": "14 033",
+        "email": "gemeente@leusden.nl",
+        "website": "http://www.leusden.nl/"
+      }
+    },
+    "service": {
+      "id": 3,
+      "name": "Certificaat voor opgraving aanvragen en vondst melden"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 22,
+    "false_sentences": 2,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "De afdeling Burgerzaken werkt uitsluitend op afspraak op werkdagen van 9.00 tot 16.30 uur.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Leusden is de afdeling Burgerzaken geopend van 8.30 tot 17.00 uur op werkdagen"
+      },
+      {
+        "sentence": "De kosten bedragen € 20,80 per kwartier voor het opvragen van informatie uit het archief.",
+        "status": "false",
+        "note": "Dit tarief is niet correct volgens de actuele legesverordening van gemeente Leusden. Het exacte tarief voor archiefonderzoek dient te worden opgevraagd bij de gemeente"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.leusden.nl/en/bouwen-en-wonen/opvragen-bodeminformatie",
+      "https://www.leusden.nl/bouwen-en-wonen/opvragen-bodeminformatie",
+      "https://www.leusden.nl/bouwen-en-wonen/omgevingsvergunning-aanvragen",
+      "https://www.leusden.nl/en/bouwen-en-wonen/omgevingsvergunning-aanvragen",
+      "https://www.leusden.nl/over-leusden/monumenten"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Kosten 2025",
+          "original_reference": "Kosten en Tarieven",
+          "note": "De originele tekst specificeert niet dat de genoemde tarieven voor 2025 zijn, wat een belangrijk tijdsgebonden detail is.",
+          "source_urls": [
+            "https://www.leusden.nl/bouwen-en-wonen/opvragen-bodeminformatie"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Openingstijden milieustraat - Vandaag: gesloten, Morgen: geopend van 08:00 uur tot 12:30",
+          "original_reference": "Vandaag: geopend van 08:00 uur tot 12:30 uur, Morgen: geopend van 08:00 uur tot 15:00 uur",
+          "note": "De openingstijden in de originele tekst komen niet overeen met de openingstijden van de milieustraat in de bronpagina. Ook wordt in de originele tekst niet gespecificeerd dat het om de milieustraat gaat.",
+          "source_urls": [
+            "https://www.leusden.nl/bouwen-en-wonen/opvragen-bodeminformatie"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bekijk voor meer informatie de archeologische kaart",
+          "original_reference": "Raadpleeg de archeologische beleidskaart",
+          "note": "De bronpagina verwijst naar een 'archeologische kaart' terwijl de originele tekst spreekt over een 'archeologische beleidskaart', wat mogelijk tot verwarring kan leiden.",
+          "source_urls": [
+            "https://www.leusden.nl/bouwen-en-wonen/opvragen-bodeminformatie"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de specificatie van het jaartal 2025 voor de tarieven, afwijkende openingstijden en verschillende benamingen voor de archeologische kaart. De originele tekst bevat enkele onnauwkeurigheden in tijdsaanduidingen en specifieke benamingen van documenten. De kern van de dienstverlening en procedures komt wel overeen met de bronpagina's."
+  }
+}

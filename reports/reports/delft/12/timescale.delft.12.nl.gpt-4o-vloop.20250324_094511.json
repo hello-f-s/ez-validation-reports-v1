@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DELFT",
+      "contact": {
+        "phone": "14 015",
+        "email": "null",
+        "website": "http://www.delft.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "Er zijn geen kosten verbonden aan de aanvraag van een omgevingsvergunning of melding milieubeheer.",
+        "status": "false",
+        "note": "Deze bewering is onjuist. Volgens de legesverordening van de gemeente Delft zijn er wel degelijk kosten (leges) verbonden aan het aanvragen van een omgevingsvergunning. De exacte kosten zijn afhankelijk van het type vergunning en de aard van de activiteiten."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.delft.nl/omgevingsvergunning-milieu",
+      "https://www.delft.nl/omgevingsvergunning-aanvragen",
+      "https://www.delft.nl/omgevingsvergunning-voor-aanleg",
+      "https://www.delft.nl/uw-plan-voorleggen-aan-de-gemeente",
+      "https://www.delft.nl/omgevingsvergunning-bouwen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De gemeente kan deze periode eenmalig verlengen met 6 weken. En met de tijd die u nodig heeft om ontbrekende gegevens in te leveren.",
+          "original_reference": "De gemeente kan hierbij een eenmalige verlenging van 6 weken toepassen.",
+          "note": "De bronpagina vermeldt expliciet dat de verlengingsperiode ook wordt verlengd met de tijd die nodig is voor het aanleveren van ontbrekende gegevens. Dit detail ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.delft.nl/omgevingsvergunning-bouwen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De gemeente publiceert alle bijlagen bij de aanvraag van een omgevingsvergunning online. Zoals bouwtekeningen en rapporten. In deze documenten kunnen persoonsgegevens van uzelf of van anderen staan. Neem daarom alles vooraf goed door. En zorg dat u de documenten zonder persoonsgegevens meestuurt bij uw aanvraag.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over het verwijderen van persoonsgegevens uit bijlagen voordat deze worden ingediend, omdat deze online worden gepubliceerd.",
+          "source_urls": [
+            "https://www.delft.nl/omgevingsvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De gemeente neemt alleen een complete aanvraag in behandeling. Is uw aanvraag nog niet compleet? Dan kunt u uw aanvraag nog 1 keer aanvullen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist de belangrijke informatie dat een aanvraag slechts één keer kan worden aangevuld als deze niet compleet is.",
+          "source_urls": [
+            "https://www.delft.nl/omgevingsvergunning-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten enkele belangrijke aanvullende details die ontbreken in de originele tekst: de verlenging van de behandeltermijn met de tijd voor het aanleveren van ontbrekende gegevens, de verplichting om persoonsgegevens uit bijlagen te verwijderen vanwege online publicatie, en de beperking tot één aanvullingsmogelijkheid bij incomplete aanvragen. Deze informatie is essentieel voor een correcte aanvraagprocedure."
+  }
+}

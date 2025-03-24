@@ -1,0 +1,93 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HAARLEM",
+      "contact": {
+        "phone": "14 023",
+        "email": "antwoord@haarlem.nl",
+        "website": "http://www.haarlem.nl"
+      }
+    },
+    "service": {
+      "id": 20,
+      "name": "Vergunning voor seksbedrijf"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 13,
+    "false_sentences": 2,
+    "accuracy_percentage": 86.7,
+    "false_statements": [
+      {
+        "sentence": "Exploitatievergunning voor seksinrichting: € 780",
+        "status": "false",
+        "note": "Het correcte bedrag voor een exploitatievergunning voor een seksinrichting in Haarlem is € 795,50"
+      },
+      {
+        "sentence": "Exploitatievergunning voor escortbedrijf: € 561",
+        "status": "false",
+        "note": "Het correcte bedrag voor een exploitatievergunning voor een escortbedrijf in Haarlem is € 572,25"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 2,
+    "invalid_urls": 4,
+    "accuracy_percentage": 33.3,
+    "valid_urls_list": [
+      "https://haarlem.nl/bouwvergunning",
+      "https://haarlem.nl/exploitatievergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.haarlem.nl/ufs/formulieren.eb?id=seksinrichting_of_escortbedrijf",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.gemeente.haarlem.nl",
+        "reason": "INVALID: Error scraping https://www.gemeente.haarlem.nl: HTTPSConnectionPool(host='www.gemeente.haarlem.nl', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1040e0910>: Failed to resolve 'www.gemeente.haarlem.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://haarlem.nl/alcoholvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://haarlem.nl/vergunning-seksinrichting-escortbedrijf",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor het serveren van eten en non-alcoholische drank in uw onderneming, hebt u een exploitatievergunning nodig. Bijvoorbeeld als u een cafetaria, coffeeshop of ijssalon hebt.",
+          "original_reference": "Wanneer u een seksinrichting of escortbedrijf wilt starten of overnemen, dient u een exploitatievergunning aan te vragen.",
+          "note": "De bronpagina over exploitatievergunningen beschrijft een ander type vergunning (voor horeca) dan de originele tekst (voor seksinrichtingen). Dit wijst op verschillende soorten exploitatievergunningen met verschillende voorwaarden.",
+          "source_urls": [
+            "https://haarlem.nl/exploitatievergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "een tekening van de inrichting met de lokaliteit(en), schaal minimaal 1 : 1000",
+          "original_reference": "Een nauwkeurige plattegrondtekening van de gehele inrichting, schaal 1:100",
+          "note": "Er is een verschil in de vereiste schaal van de plattegrondtekening. De originele tekst vraagt om 1:100, terwijl de bronpagina 1:1000 vermeldt.",
+          "source_urls": [
+            "https://haarlem.nl/exploitatievergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de context van de exploitatievergunning (horeca versus seksinrichtingen) en technische specificaties zoals de schaalvereisten voor plattegronden. De bronpagina's bevatten geen specifieke informatie over vergunningen voor seksinrichtingen, wat suggereert dat deze mogelijk op een andere locatie wordt beheerd of een aparte procedure volgt."
+  }
+}

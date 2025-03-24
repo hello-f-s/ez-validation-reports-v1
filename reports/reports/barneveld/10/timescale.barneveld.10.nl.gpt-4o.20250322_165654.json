@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "BARNEVELD",
+      "contact": {
+        "phone": "14 0342",
+        "email": "info@barneveld.nl",
+        "website": "http://www.barneveld.nl"
+      }
+    },
+    "service": {
+      "id": 10,
+      "name": "Nachtregister bijhouden"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 8,
+    "true_sentences": 7,
+    "false_sentences": 1,
+    "accuracy_percentage": 87.5,
+    "false_statements": [
+      {
+        "sentence": "U moet een nachtregister bijhouden als u uw woning verhuurt aan toeristen.",
+        "status": "false",
+        "note": "Volgens de gemeente Barneveld is een nachtregister alleen verplicht voor hotels, pensions en B&B's, niet voor particuliere woningverhuur aan toeristen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.barneveld.nl/ondernemen/overnachting-aanbieden-aan-gasten",
+      "https://www.barneveld.nl/vergunningen-en-ontheffingen/evenementen/evenementenvergunning-aanvragen",
+      "https://www.barneveld.nl/vergunningen-en-ontheffingen/horeca/exploitatievergunning-aanvragen/vragenlijst-bibob",
+      "https://www.barneveld.nl/ondernemen",
+      "https://www.barneveld.nl/paspoort-rijbewijs-documenten/persoonsgegevens/register-van-verwerkingen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De verhuur is voor maximaal 60 nachten per kalenderjaar. U mag alleen ruimte te huur aanbieden als u zelf in de woning woont.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de belangrijke beperking van maximaal 60 nachten per jaar en de voorwaarde dat men zelf in de woning moet wonen.",
+          "source_urls": [
+            "https://www.barneveld.nl/ondernemen/overnachting-aanbieden-aan-gasten"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De gasten moeten parkeergelegenheid hebben op uw terrein.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de verplichting voor parkeergelegenheid op eigen terrein.",
+          "source_urls": [
+            "https://www.barneveld.nl/ondernemen/overnachting-aanbieden-aan-gasten"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U moet u daarvoor aanmelden bij de gemeente.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat men zich moet aanmelden bij de gemeente voor toeristenbelasting.",
+          "source_urls": [
+            "https://www.barneveld.nl/ondernemen/overnachting-aanbieden-aan-gasten"
+          ]
+        }
+      ]
+    },
+    "summary": "De broninhoud bevat verschillende belangrijke aanvullende voorwaarden die niet in de originele tekst staan vermeld: een maximum van 60 nachten verhuur per jaar, de verplichting om zelf in de woning te wonen, parkeergelegenheid op eigen terrein en de aanmeldplicht bij de gemeente voor toeristenbelasting. Deze voorwaarden zijn essentieel voor het correct aanbieden van overnachtingen aan gasten."
+  }
+}

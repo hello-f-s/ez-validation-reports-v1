@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "VAALS",
+      "contact": {
+        "phone": "(043) 306 85 68",
+        "email": "info@vaals.nl",
+        "website": "http://www.vaals.nl"
+      }
+    },
+    "service": {
+      "id": 2,
+      "name": "Bord of spandoek plaatsen aan de openbare weg"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 20,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.2,
+    "false_statements": [
+      {
+        "sentence": "De korte procedure, die het uitgangspunt is in de Omgevingswet, heeft een beslistermijn van maximaal 8 weken.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Vaals is de reguliere procedure maximaal 8 weken met mogelijkheid tot verlenging van 6 weken. De term 'korte procedure' wordt niet gebruikt in de officiële communicatie."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.vaals.nl/inwoners/vergunningen/omgevingsvergunning",
+      "https://www.vaals.nl/inwoners/vergunningen/omgevingswet/meest-aangevraagde-activiteiten",
+      "https://www.vaals.nl/inwoners/vergunningen/",
+      "https://www.vaals.nl/inwoners/vergunningen/omgevingswet/omgevingsvergunning",
+      "https://www.vaals.nl/ondernemers/ondernemersplein"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "http://vaals.nl",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Nieuw bij het (ver)bouwen van een bouwwerk is dat er een knip wordt gemaakt. Deze bestaat uit een (technische) bouwactiviteit en een omgevingsplanactiviteit bouwen (ruimtelijk of planologisch deel).",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat belangrijke nieuwe informatie over de 'knip' in bouwactiviteiten die niet in de originele tekst staat vermeld. Dit is een essentieel onderdeel van de nieuwe Omgevingswet.",
+          "source_urls": [
+            "https://www.vaals.nl/inwoners/vergunningen/omgevingswet/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor een dakkapel aan de voorkant van je woning, dient u altijd een vergunning aan te vragen.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina geeft specifieke voorbeelden van vergunningplichtige activiteiten die niet in de originele tekst staan.",
+          "source_urls": [
+            "https://www.vaals.nl/inwoners/vergunningen/omgevingswet/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "De kosten voor het in behandeling nemen van een aanvraag omgevingsvergunning zijn afhankelijk van het soort activiteiten (bouwen, kappen, milieu, bestemming, etc) dat wordt aangevraagd.",
+          "original_reference": "De kosten voor het in behandeling nemen van een aanvraag omgevingsvergunning zijn afhankelijk van het soort activiteiten dat wordt aangevraagd, zoals bouwen, kappen, milieu, bestemming, etc.",
+          "note": "De informatie over kosten komt exact overeen tussen beide bronnen.",
+          "source_urls": [
+            "https://www.vaals.nl/inwoners/vergunningen/omgevingsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen nieuwe informatie in de bronpagina's over de 'knip' in bouwactiviteiten onder de Omgevingswet en specifieke voorbeelden van vergunningplichtige activiteiten. Deze essentiële details ontbreken in de originele tekst. De basisinformatie over kosten en procedures komt wel overeen."
+  }
+}

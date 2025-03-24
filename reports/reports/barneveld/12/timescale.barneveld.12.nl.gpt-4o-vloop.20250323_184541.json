@@ -1,0 +1,93 @@
+{
+  "context": {
+    "municipality": {
+      "name": "BARNEVELD",
+      "contact": {
+        "phone": "14 0342",
+        "email": "info@barneveld.nl",
+        "website": "http://www.barneveld.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 27,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.4,
+    "false_statements": [
+      {
+        "sentence": "Alle kosten staan in de legesverordening 2025.",
+        "status": "false",
+        "note": "De legesverordening 2025 bestaat nog niet. De huidige geldende legesverordening is die van 2024 volgens de officiële website van gemeente Barneveld."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 2,
+    "invalid_urls": 3,
+    "accuracy_percentage": 40.0,
+    "valid_urls_list": [
+      "https://www.barneveld.nl/bouwen-wonen-en-verhuizen/omgevingsvergunning/omgevingsvergunning-aanvragen",
+      "https://www.barneveld.nl/bouwen-wonen-en-verhuizen/omgevingsvergunning/monument-vergunning-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.barneveld.nl/bouwen-wonen-en-verhuizen/omgevingsvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.barneveld.nl/bouwen-wonen-en-verhuizen/bouwen-slopen-verbouwen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.barneveld.nl/bouwen-wonen-en-verhuizen/omgevingsvergunning/kopie-vergunning-of-tekening-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor het verbouwen van een monument vraagt u een omgevingsvergunning aan. U heeft geen vergunning nodig als de monumentale waarde niet lager wordt door de werkzaamheden. Bijvoorbeeld bij het: opschuren en schilderen in dezelfde kleur vervangen van kapotte ruiten opstoppen van rieten daken",
+          "original_reference": "Voor monumenten gelden extra regels waarbij het behoud van monumentale waarde van belang is.",
+          "note": "De bronpagina specificeert concrete uitzonderingen waarbij geen vergunning nodig is voor monumenten, terwijl de originele tekst alleen algemeen spreekt over extra regels. Dit is belangrijke aanvullende informatie voor inwoners.",
+          "source_urls": [
+            "https://www.barneveld.nl/bouwen-wonen-en-verhuizen/omgevingsvergunning/monument-vergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Check altijd eerst via monumenten@barneveld.nl of u een vergunning nodig heeft.",
+          "original_reference": "Bij monumenten eventuele goedkeuring van de gemeente",
+          "note": "De bronpagina geeft een specifiek e-mailadres voor monumentenvragen, terwijl de originele tekst alleen algemeen spreekt over goedkeuring van de gemeente.",
+          "source_urls": [
+            "https://www.barneveld.nl/bouwen-wonen-en-verhuizen/omgevingsvergunning/monument-vergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Denk aan participatie: bespreek uw plannen op tijd met uw buren.",
+          "original_reference": "Eventueel participatie met omwonenden",
+          "note": "De bronpagina formuleert participatie als een nadrukkelijk advies, terwijl de originele tekst dit als optioneel presenteert.",
+          "source_urls": [
+            "https://www.barneveld.nl/bouwen-wonen-en-verhuizen/omgevingsvergunning/omgevingsvergunning-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de specifieke details over monumentenvergunningen, waarbij de bronpagina's concrete uitzonderingen en een specifiek contactpunt vermelden. Ook is er een verschil in de formulering van participatie met omwonenden, waarbij de bronpagina dit sterker adviseert. Deze details maken de informatie concreter en praktischer voor inwoners."
+  }
+}

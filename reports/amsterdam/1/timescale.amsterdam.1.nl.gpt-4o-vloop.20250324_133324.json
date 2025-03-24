@@ -1,0 +1,56 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AMSTERDAM",
+      "contact": {
+        "phone": "14 020",
+        "email": "null",
+        "website": "http://www.amsterdam.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "Omwonenden en belanghebbenden kunnen binnen 2 weken na publicatie van de aanvraag een zienswijze indienen die in aanmerking wordt genomen bij de beslissing over de aanvraag.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Amsterdam hebben belanghebbenden 6 weken (niet 2 weken) de tijd om een zienswijze in te dienen na publicatie van de aanvraag."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 2,
+    "valid_urls": 1,
+    "invalid_urls": 1,
+    "accuracy_percentage": 50.0,
+    "valid_urls_list": [
+      "https://www.amsterdam.nl/subsidies/vragen-subsidies"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.amsterdam.nl/parkeren/parkeervergunning/parkeervergunning-bedrijven/",
+        "reason": "INVALID: Error scraping https://www.amsterdam.nl/parkeren/parkeervergunning/parkeervergunning-bedrijven/: 403 Client Error: Forbidden for url: https://www.amsterdam.nl/parkeren/parkeervergunning/parkeervergunning-bedrijven/"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": []
+    },
+    "summary": "De geciteerde bronpagina bevat geen relevante informatie over alcoholvergunningen die vergeleken kan worden met de originele inhoud. De bron gaat volledig over subsidies en bevat geen informatie over horeca- of alcoholvergunningen. Er kunnen daarom geen concrete verschillen of tegenstrijdigheden worden vastgesteld. Een grondige vergelijking is niet mogelijk omdat de onderwerpen niet overeenkomen."
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LANDSMEER",
+      "contact": {
+        "phone": "(020) 487 71 11",
+        "email": "gemeente@Landsmeer.nl",
+        "website": "http://www.landsmeer.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 20,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.2,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor een VOG voor natuurlijke personen zijn € 41,35.",
+        "status": "false",
+        "note": "Het actuele tarief voor een VOG is € 41,35 bij online aanvragen en € 47,55 bij aanvragen aan de balie van de gemeente Landsmeer. Het genoemde bedrag is dus onvolledig."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.landsmeer.nl/inwoners/paspoort,_rijbewijs,_identiteitskaart_en_uittreksels/uittreksels/verklaring_omtrent_het_gedrag_aanvragen",
+      "https://www.landsmeer.nl/inwoners/paspoort,_rijbewijs,_identiteitskaart_en_uittreksels/uittreksels/bewijs_van_nederlandse_nationaliteit_aanvragen",
+      "https://www.landsmeer.nl/inwoners/bouwen_en_verbouwen/meer_onderwerpen/omgevingsvergunning_aanvragen",
+      "https://www.landsmeer.nl/inwoners/parkeren,_verkeer_en_vervoer/verkeer/ontheffing_van_verkeersregels_aanvragen",
+      "https://www.landsmeer.nl/ondernemers/evenementen/optreden_op_straat"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.landsmeer.nl/verklaring-omtrent-het-gedrag-aanvragen",
+        "reason": "INVALID: Error scraping https://www.landsmeer.nl/verklaring-omtrent-het-gedrag-aanvragen: 404 Client Error: Not Found for url: https://www.landsmeer.nl/verklaring-omtrent-het-gedrag-aanvragen"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Doe de VOG-check van Justis om te zien wat uw kans op een VOG is.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist de mogelijkheid om vooraf een VOG-check te doen via Justis om de slagingskans te bepalen.",
+          "source_urls": [
+            "https://www.landsmeer.nl/inwoners/paspoort,_rijbewijs,_identiteitskaart_en_uittreksels/uittreksels/verklaring_omtrent_het_gedrag_aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Heeft u als vrijwilliger een VOG nodig? Het ministerie is bezig met een proef voor het afgeven van een gratis VOG aan vrijwilligers. Het gaat tijdens deze proef om vrijwilligers bij: Bonden die zijn aangesloten bij NOC*NSF, Scouting Nederland, of kindervakantieorganisaties die zijn aangesloten bij Steunpunt Kindervakanties.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de mogelijkheid van een gratis VOG voor bepaalde groepen vrijwilligers.",
+          "source_urls": [
+            "https://www.landsmeer.nl/inwoners/paspoort,_rijbewijs,_identiteitskaart_en_uittreksels/uittreksels/verklaring_omtrent_het_gedrag_aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De broninhoud bevat twee belangrijke aanvullingen die niet in de originele tekst staan: de mogelijkheid om vooraf een VOG-check te doen via Justis, en informatie over een proef voor gratis VOG's voor bepaalde groepen vrijwilligers. Deze informatie kan belangrijk zijn voor aanvragers om een betere inschatting te maken van hun kansen en mogelijke kostenbesparingen."
+  }
+}

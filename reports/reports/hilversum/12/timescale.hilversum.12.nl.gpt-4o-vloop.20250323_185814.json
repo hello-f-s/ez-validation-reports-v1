@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HILVERSUM",
+      "contact": {
+        "phone": "14 035",
+        "email": "gemeente@hilversum.nl",
+        "website": "http://www.hilversum.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 27,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.4,
+    "false_statements": [
+      {
+        "sentence": "Na indiening van uw aanvraag of melding krijgt u binnen 8 weken bericht over het besluit, met een mogelijke verlenging van 6 weken.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Hilversum geldt voor reguliere procedures een beslistermijn van 8 weken met een mogelijke verlenging van maximaal 6 weken, maar voor uitgebreide procedures geldt een termijn van 26 weken met een mogelijke verlenging van 6 weken. De zin is onvolledig omdat deze niet alle mogelijke procedures en bijbehorende termijnen vermeldt."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://hilversum.nl/vergunningen/vergunningen-voor-bouwen-verbouwen/omgevingsvergunning-aanvragen",
+      "https://hilversum.nl/bouwen-verbouwen/omgevingswet/aanvraag-omgevingsvergunning-uitgelegd",
+      "https://hilversum.nl/ondernemen/vergunningen-meldingen-voor-ondernemers",
+      "https://hilversum.nl/bouwen-verbouwen",
+      "https://hilversum.nl/bouwen-verbouwen/omgevingswet/omgevingsloket"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor ingewikkelde of grotere plannen adviseren we u om de haalbaarheid eerst te toetsen via de optie 'idee verkennen'. [...] Als er voldoende draagvlak is voor uw plannen, worden ze besproken tijdens een omgevingstafel met alle relevante adviseurs, u en betrokken personen uit de buurt",
+          "original_reference": "Voor complexere of grotere plannen kunt u gebruikmaken van de opties 'idee verkennen' of een vooronderzoek aanvragen. Uw plan wordt dan getoetst aan de welstandsnota door de Commissie Ruimtelijke Kwaliteit en Monumenten (CRK&M)",
+          "note": "De bronpagina beschrijft een uitgebreider proces met een omgevingstafel waarbij ook buurtbewoners betrokken worden, terwijl de originele tekst alleen toetsing door de CRK&M noemt",
+          "source_urls": [
+            "https://hilversum.nl/bouwen-verbouwen/omgevingswet/aanvraag-omgevingsvergunning-uitgelegd"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het Omgevingsloket bestaat uit verschillende onderdelen: Vergunningcheck, Aanvragen, Regels op de kaart, Maatregelen op maat, Mijn Omgevingsloket",
+          "original_reference": "Het Omgevingsloket biedt diverse functies, zoals de vergunningcheck en de mogelijkheid om regels op de kaart te bekijken",
+          "note": "De bronpagina noemt meer specifieke onderdelen van het Omgevingsloket, waaronder 'Maatregelen op maat' en 'Mijn Omgevingsloket' die niet in de originele tekst worden genoemd",
+          "source_urls": [
+            "https://hilversum.nl/bouwen-verbouwen/omgevingswet/omgevingsloket"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen het vergunningsproces en de functionaliteiten van het Omgevingsloket. De bronnen beschrijven een uitgebreider participatieproces met omgevingstafels en meer betrokkenheid van buurtbewoners. Daarnaast worden er in de bronnen meer specifieke onderdelen van het Omgevingsloket genoemd die niet in de originele tekst staan vermeld."
+  }
+}

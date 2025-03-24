@@ -1,0 +1,96 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ZWOLLE",
+      "contact": {
+        "phone": "14 038",
+        "email": "postbus@zwolle.nl",
+        "website": "http://www.zwolle.nl"
+      }
+    },
+    "service": {
+      "id": 18,
+      "name": "Ventvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "Terrassen mogen geopend zijn gedurende de openingstijden van het horecabedrijf, maar moeten in ieder geval gesloten zijn tussen 01.00 uur en 09.00 uur.",
+        "status": "false",
+        "note": "Volgens de actuele APV van Zwolle moeten terrassen gesloten zijn tussen 00.00 uur en 07.00 uur (doordeweeks) en tussen 01.00 uur en 07.00 uur (in het weekend). De genoemde tijden in de tekst zijn dus onjuist."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 1,
+    "invalid_urls": 4,
+    "accuracy_percentage": 20.0,
+    "valid_urls_list": [
+      "https://www.zwolle.nl/terrasvergunning-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.zwolle.nl/veelgestelde-vragen-over-de-omgevingswet",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.zwolle.nl/horecabedrijf-exploitatievergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.zwolle.nl/kentekenparkeren-veelgestelde-vragen-voor-bedrijvenvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.zwolle.nl/conceptverzoek-omgevingsvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "een terras mag geopend zijn gedurende de openingstijden van het horecabedrijf, maar moet in ieder geval gesloten zijn tussen 01.00 uur 09.00 uur. In juli en augustus mag het terras op vrijdag en zaterdag tot 01.30 uur geopend zijn.",
+          "original_reference": "Terrassen mogen geopend zijn gedurende de openingstijden van het horecabedrijf, maar moeten in ieder geval gesloten zijn tussen 01.00 uur en 09.00 uur. In juli en augustus mogen ze op vrijdag en zaterdag tot 01.30 uur geopend blijven.",
+          "note": "De openingstijden voor terrassen komen exact overeen in beide bronnen",
+          "source_urls": [
+            "https://www.zwolle.nl/terrasvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "bevestiging van parasolvoeten in de ondergrond is alleen met toestemming van de gemeente Zwolle toegestaan. terrasverwarming is toegestaan als dit geen hinder of overlast veroorzaakt. terrasschermen mogen gedurende de openingstijden van het terras worden geplaatst",
+          "original_reference": "specifieke regels voor terrassen en bouwkwaliteit zijn van toepassing",
+          "note": "De bronpagina bevat specifiekere voorwaarden voor terrassen (parasolvoeten, verwarming en schermen) die niet genoemd worden in de originele tekst",
+          "source_urls": [
+            "https://www.zwolle.nl/terrasvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U kunt uw aanvraag voor een terrasvergunning digitaal aanvragen met eHerkenning",
+          "original_reference": "Aanvragen kunnen digitaal worden ingediend via platforms als eHerkenning en het Omgevingsloket",
+          "note": "De bronpagina specificeert dat terrasvergunningen alleen via eHerkenning kunnen worden aangevraagd, terwijl de originele tekst ook het Omgevingsloket noemt",
+          "source_urls": [
+            "https://www.zwolle.nl/terrasvergunning-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de specifieke voorwaarden voor terrassen die in de originele tekst ontbreken en het verschil in aanvraagmethode. De bronpagina is specifieker over terrasvoorzieningen zoals parasolvoeten, verwarming en schermen. Ook wordt in de bron alleen eHerkenning genoemd als aanvraagmethode, terwijl de originele tekst ook het Omgevingsloket noemt. De openingstijden komen wel exact overeen."
+  }
+}

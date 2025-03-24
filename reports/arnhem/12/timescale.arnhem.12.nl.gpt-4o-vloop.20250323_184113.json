@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ARNHEM",
+      "contact": {
+        "phone": "null",
+        "email": "null",
+        "website": "http://www.arnhem.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "Voor zonnevelden en windturbines betaalt u de helft van de kosten.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Arnhem geldt er geen standaard 50% korting voor zonnevelden en windturbines. De kosten worden berekend op basis van de bouwkosten en het type project, waarbij verschillende tarieven kunnen gelden."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.arnhem.nl/Inwoners/bouwen_en_verbouwen/U_wilt_bouwen_of_verbouwen/omgevingsvergunning/Milieubelastende_werkzaamheden",
+      "https://www.arnhem.nl/Inwoners/bouwen_en_verbouwen/U_wilt_bouwen_of_verbouwen/omgevingsvergunning",
+      "https://www.arnhem.nl/Inwoners/bouwen_en_verbouwen/U_wilt_bouwen_of_verbouwen/Groene_leges_bij_duurzame_maatregelen",
+      "https://www.arnhem.nl/Ondernemers/vergunningen_ondernemers/overige_vergunningen_en_meldingen",
+      "https://www.arnhem.nl/Inwoners/bouwen_en_verbouwen/U_wilt_bouwen_of_verbouwen/omgevingsvergunning/Reclame_uitingen_plaatsen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "€ 189 voor omgevingsvergunning voor reclame",
+          "original_reference": "Kosten voor een omgevingsvergunning variëren afhankelijk van de aard van de werkzaamheden",
+          "note": "De originele tekst noemt alleen dat kosten variëren, terwijl de bron een specifiek bedrag van €189 noemt voor reclame-vergunningen",
+          "source_urls": [
+            "https://www.arnhem.nl/Inwoners/bouwen_en_verbouwen/U_wilt_bouwen_of_verbouwen/omgevingsvergunning/Reclame_uitingen_plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U betaalt geen kosten voor: bestaande woningen isoleren, renoveren tot nul-op-de-meter-woning, een groen dak aanleggen, een buitenunit installeren voor een warmtepomp, zonnecollectoren plaatsen voor zonneboiler, zonnepanelen plaatsen op gevels of daken, zonnepanelen plaatsen op monumentale panden",
+          "original_reference": "Bij duurzame maatregelen kan korting of volledige vrijstelling van leges gelden, bijvoorbeeld bij het plaatsen van zonnepanelen of isoleren van woningen",
+          "note": "De bron geeft een veel uitgebreidere en specifiekere lijst van maatregelen waarvoor geen kosten worden gerekend dan de originele tekst",
+          "source_urls": [
+            "https://www.arnhem.nl/Inwoners/bouwen_en_verbouwen/U_wilt_bouwen_of_verbouwen/Groene_leges_bij_duurzame_maatregelen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Reclame-uitingen binnen in een pand, opschriften en aankondigingen op (plak)zuilen, borden, muren die door de overheid zijn aangewezen, opschriften over verkoop/verhuur, opschriften over beroep/dienst/bedrijf in een pand",
+          "original_reference": "Uitzonderingen op deze regels staan in de Algemene Plaatselijke Verordening (APV), zoals voor tijdelijke opschriften en aankondigingen van maximaal 9 weken",
+          "note": "De bron noemt specifieke uitzonderingen voor reclame-uitingen die niet genoemd worden in de originele tekst, terwijl de originele tekst alleen tijdelijke opschriften noemt",
+          "source_urls": [
+            "https://www.arnhem.nl/Inwoners/bouwen_en_verbouwen/U_wilt_bouwen_of_verbouwen/omgevingsvergunning/Reclame_uitingen_plaatsen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de specificatie van kosten voor reclame-vergunningen, een uitgebreidere lijst van kostenvrije duurzaamheidsmaatregelen, en meer gedetailleerde uitzonderingen voor reclame-uitingen. De bronnen bevatten specifiekere informatie dan de originele tekst, maar zijn niet tegenstrijdig met de hoofdlijnen van de originele informatie."
+  }
+}

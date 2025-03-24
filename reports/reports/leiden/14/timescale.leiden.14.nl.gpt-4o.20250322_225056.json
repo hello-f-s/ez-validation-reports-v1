@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LEIDEN",
+      "contact": {
+        "phone": "14 071",
+        "email": "null",
+        "website": "http://www.leiden.nl/gemeente"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 22,
+    "false_sentences": 2,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Zone A: € 125,00 per kwartaal voor werknemersvergunning, € 135,00 voor bedrijfsvergunning.",
+        "status": "false",
+        "note": "De actuele tarieven voor zone A zijn: € 127,50 per kwartaal voor werknemersvergunning en € 137,70 voor bedrijfsvergunning."
+      },
+      {
+        "sentence": "Zone B+C: € 175,00 per kalenderjaar voor werknemersvergunning, € 416,00 voor bedrijfsvergunning.",
+        "status": "false",
+        "note": "De actuele tarieven voor zone B+C zijn: € 178,50 per kalenderjaar voor werknemersvergunning en € 424,32 voor bedrijfsvergunning."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers/parkeren-voor-ondernemers/parkeervergunning-voor-zorgverleners",
+      "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers/parkeren-voor-ondernemers/parkeervergunning-voor-werknemers",
+      "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers/vervoer/overige-verkeersontheffingen",
+      "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers/vergunningen-en-ontheffingen/voorwerpen-plaatsen-op-openbare-grond",
+      "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers/parkeren-voor-ondernemers/parkeervergunning-voor-bedrijven"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "In zone A kunt u maximaal 1 bedrijfsparkeervergunning krijgen. In zone B en C maximaal 2.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet het maximum aantal vergunningen per zone, wat een belangrijke beperking is voor ondernemers.",
+          "source_urls": [
+            "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers/parkeren-voor-ondernemers/parkeervergunning-voor-bedrijven"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Zone B (verdeeld in zones B1.1 t/m B1.4 en B2.5 t/m B2.9) en Zone C (verdeeld in zones C1, C2, C3 en C4)",
+          "original_reference": "zone A, B, of C",
+          "note": "De originele tekst noemt alleen de hoofdzones, terwijl de bronpagina specifieke subzones vermeldt die belangrijk zijn voor de exacte parkeerlocatie.",
+          "source_urls": [
+            "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers/parkeren-voor-ondernemers/parkeervergunning-voor-bedrijven"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Moeten er door uw werkzaamheden verkeersmaatregelen worden genomen (zoals het plaatsen van hekken of borden bij de afsluiting van een weg of rijbaan)? Dan verzorgt de gemeente Leiden dit. U mag dit niet zelf doen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat verkeersmaatregelen alleen door de gemeente mogen worden uitgevoerd, wat een belangrijke beperking is.",
+          "source_urls": [
+            "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers/vervoer/overige-verkeersontheffingen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten enkele belangrijke details die niet in de originele tekst staan, waaronder limieten op het aantal vergunningen per zone, specifieke subzone-indelingen, en de verplichting dat verkeersmaatregelen alleen door de gemeente mogen worden uitgevoerd. Deze informatie is essentieel voor ondernemers die een vergunning willen aanvragen."
+  }
+}

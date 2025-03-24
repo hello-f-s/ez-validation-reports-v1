@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LAARBEEK",
+      "contact": {
+        "phone": "(0492) 46 97 00",
+        "email": "gemeente@laarbeek.nl",
+        "website": "http://www.laarbeek.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "Voor het voeren van een terras is geen aparte terrasvergunning nodig.",
+        "status": "false",
+        "note": "Volgens de gemeente Laarbeek is er wel een aparte terrasvergunning nodig als het terras zich op gemeentegrond bevindt. Dit staat vermeld in de APV van de gemeente Laarbeek."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.laarbeek.nl/alcoholvergunning",
+      "https://www.laarbeek.nl/alcohol-schenken-bij-evenementen",
+      "https://www.laarbeek.nl/horecabedrijf-beginnen",
+      "https://www.laarbeek.nl/reclame-uitingen-plaatsen-omgevingsvergunning",
+      "https://www.laarbeek.nl/verzoek-op-basis-van-de-wet-open-overheid-woo"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U regelt een alcoholvergunning persoonlijk op het gemeentehuis. U maakt hiervoor telefonisch een afspraak via telefoonnummer 0492 469 700.",
+          "original_reference": "U vraagt de alcoholvergunning aan bij de gemeente Laarbeek persoonlijk op het gemeentehuis. U maakt hiervoor telefonisch een afspraak via telefoonnummer 0492 469 700. Digitale aanvragen zijn ook mogelijk via DigiD voor particulieren en eHerkenning voor bedrijven.",
+          "note": "De originele tekst vermeldt dat digitale aanvragen mogelijk zijn, maar dit wordt niet bevestigd in de bronpagina. De bron vermeldt alleen de mogelijkheid tot persoonlijke aanvraag op het gemeentehuis.",
+          "source_urls": [
+            "https://www.laarbeek.nl/alcoholvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De leidinggevenden moeten voldoen aan de voorwaarden van hoofdstuk 3, Eisen zedelijk gedrag leidinggevende volgens het Alcoholbesluit.",
+          "original_reference": "Leidinggevenden moeten voldoen aan de eisen van hoofdstuk 3, Eisen zedelijk gedrag leidinggevende volgens het Alcoholbesluit.",
+          "note": "De formulering in de bron is specifieker door het gebruik van 'voorwaarden' in plaats van 'eisen', hoewel de betekenis hetzelfde blijft.",
+          "source_urls": [
+            "https://www.laarbeek.nl/alcoholvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont twee belangrijke verschillen tussen de originele tekst en de bronnen. Het meest significante verschil betreft de aanvraagmethode: waar de originele tekst zowel persoonlijke als digitale aanvragen vermeldt, beschrijft de bron alleen de mogelijkheid tot persoonlijke aanvraag. Daarnaast is er een klein verschil in formulering betreffende de eisen aan leidinggevenden, hoewel dit geen inhoudelijke impact heeft. De overige informatie komt overeen met de bronnen."
+  }
+}

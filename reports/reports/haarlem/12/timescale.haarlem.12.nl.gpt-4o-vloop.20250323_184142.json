@@ -1,0 +1,87 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HAARLEM",
+      "contact": {
+        "phone": "14 023",
+        "email": "antwoord@haarlem.nl",
+        "website": "http://www.haarlem.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 20,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.2,
+    "false_statements": [
+      {
+        "sentence": "De openingstijden zijn elke werkdag van 9:00 tot 16:00 uur, en op donderdag van 16:00 tot 20:00 uur.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Haarlem zijn de openingstijden van de Publiekshal op werkdagen van 8:30 tot 16:00 uur, en op donderdag van 8:30 tot 20:00 uur."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://haarlem.nl/milieuvergunning",
+      "https://haarlem.nl/bouwvergunning",
+      "https://haarlem.nl/afwijken-omgevingsplan",
+      "https://haarlem.nl/aanlegvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://haarlem.nl/sloopmelding-en-vergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u een bedrijf start dat het milieu belast, hebt u misschien een milieuvergunning nodig.",
+          "original_reference": "Als u een bedrijf start dat het milieu belast, hebt u misschien een omgevingsvergunning of milieumelding nodig",
+          "note": "De bronpagina spreekt alleen over een 'milieuvergunning', terwijl de originele tekst specifieker is door te spreken over zowel een 'omgevingsvergunning' als 'milieumelding'.",
+          "source_urls": [
+            "https://haarlem.nl/milieuvergunning"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "De milieudienst ODIJmond verzorgt de uitvoering van de milieutaken voor de gemeente.",
+          "original_reference": "Milieudienst ODIJmond, die de uitvoering van de milieutaken voor de gemeente verzorgt",
+          "note": "De informatie over de rol van ODIJmond is consistent tussen beide bronnen.",
+          "source_urls": [
+            "https://haarlem.nl/milieuvergunning"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Openingstijden Elke werkdag: 9.00 tot 16.00 uur, Donderdag: ook van 16.00 tot 20.00 uur",
+          "original_reference": "De openingstijden zijn elke werkdag van 9:00 tot 16:00 uur, en op donderdag van 16:00 tot 20:00 uur",
+          "note": "De openingstijden komen exact overeen in beide bronnen.",
+          "source_urls": [
+            "https://haarlem.nl/milieuvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont één belangrijk verschil in terminologie tussen de bronpagina en de originele tekst met betrekking tot het type vergunning. De overige informatie, waaronder de rol van ODIJmond en de openingstijden, is consistent tussen beide bronnen. De bronpagina's bevatten minder gedetailleerde informatie over procedures en termijnen dan de originele tekst."
+  }
+}

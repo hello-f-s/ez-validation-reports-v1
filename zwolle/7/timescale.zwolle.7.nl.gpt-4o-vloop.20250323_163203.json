@@ -1,0 +1,89 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ZWOLLE",
+      "contact": {
+        "phone": "14 038",
+        "email": "postbus@zwolle.nl",
+        "website": "http://www.zwolle.nl"
+      }
+    },
+    "service": {
+      "id": 7,
+      "name": "Kabels en leidingen aanleggen en beheren"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 31,
+    "true_sentences": 29,
+    "false_sentences": 2,
+    "accuracy_percentage": 93.5,
+    "false_statements": [
+      {
+        "sentence": "Dit kunt u navragen bij KLIC Oost.",
+        "status": "false",
+        "note": "KLIC Oost bestaat niet meer. KLIC-meldingen verlopen via het Kadaster (KLIC) voor heel Nederland, niet via een regionaal kantoor."
+      },
+      {
+        "sentence": "Aanvragen voor een vergunning of instemming verlopen via de website Moorwerkt.nl.",
+        "status": "false",
+        "note": "Aanvragen voor vergunningen en instemmingsbesluiten voor kabels en leidingen in Zwolle verlopen via MijnAansluiting.nl, niet via Moorwerkt.nl."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 2,
+    "invalid_urls": 3,
+    "accuracy_percentage": 40.0,
+    "valid_urls_list": [
+      "https://www.zwolle.nl/kabels-en-leidingen",
+      "https://www.zwolle.nl/verzoek-om-handhaving-bouwregels"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.zwolle.nl/toestemming-aanleg-kabels-en-leidingen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.zwolle.nl/veelgestelde-vragen-over-de-omgevingswet",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.zwolle.nl/u-heeft-een-omgevingsvergunning-ontvangen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Zoals veel andere gemeenten staat de gemeente Zwolle voor een enorme opgave omdat er steeds meer kabels en leidingen de grond in moeten. De ruimte om deze onder de grond neer te leggen wordt alleen niet groter. De ondergrond van de Zwolse binnenstad is bijvoorbeeld van oudsher relatief krap.",
+          "original_reference": "Door de hoge dichtheid van de ondergrondse infrastructuur in Zwolle, waar kabels en leidingen voor gas, elektriciteit, internet en riolering al aanwezig zijn, is de coördinatie van nieuwe projecten complex.",
+          "note": "De brontekst benadrukt specifiek de krappe situatie in de binnenstad en de toenemende druk op ondergrondse ruimte, wat een gedetailleerdere beschrijving is dan in de originele tekst.",
+          "source_urls": [
+            "https://www.zwolle.nl/kabels-en-leidingen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als we alle kabels en leidingen in de gemeente Zwolle achter elkaar leggen kunnen we daarmee heen en weer naar Barcelona reizen!",
+          "original_reference": "No matching information",
+          "note": "Deze concrete illustratie van de omvang van het kabel- en leidingnetwerk ontbreekt volledig in de originele tekst.",
+          "source_urls": [
+            "https://www.zwolle.nl/kabels-en-leidingen"
+          ]
+        }
+      ]
+    },
+    "summary": "De broninhoud bevat enkele belangrijke aanvullende details over de infrastructuur van kabels en leidingen in Zwolle, met name over de specifieke uitdagingen in de binnenstad en een concrete illustratie van de omvang van het netwerk. De kerninhoud blijft grotendeels consistent, maar de bronnen bieden meer context en specifieke details die ontbreken in de originele tekst."
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MEDEMBLIK",
+      "contact": {
+        "phone": "(0229) 85 60 00",
+        "email": "info@medemblik.nl",
+        "website": "http://www.medemblik.nl"
+      }
+    },
+    "service": {
+      "id": 10,
+      "name": "Nachtregister bijhouden"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 10,
+    "false_sentences": 1,
+    "accuracy_percentage": 90.9,
+    "false_statements": [
+      {
+        "sentence": "Forfaitair tarief op basis van maximaal 3 slaapplaatsen: € 345,42.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Medemblik is het forfaitair tarief voor maximaal 3 slaapplaatsen € 345,00, niet € 345,42."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.medemblik.nl/burgerzaken/uittreksels-en-aktes/verklaring-omtrent-het-gedrag-vog",
+      "https://www.medemblik.nl/belastingen-en-woz/verblijfsbelasting",
+      "https://www.medemblik.nl/vergunningen/alcohol-en-horeca/alcoholwetvergunning",
+      "https://www.medemblik.nl/vergunningen/alcohol-en-horeca/ontheffing-sluitingstijden-horeca-aanvragen",
+      "https://www.medemblik.nl/over-gemeente-medemblik/algemene-plaatselijke-verordening-apv/regels-in-medemblik"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "U betaalt verblijfsbelasting als u tegen vergoeding, in welke vorm dan ook, overnachtingen aanbiedt voor personen die niet zijn ingeschreven in de Basisregistratie Personen bij gemeente Medemblik.",
+          "original_reference": "Als ondernemer moet u verblijfsbelasting betalen wanneer u tegen vergoeding overnachtingen aanbiedt voor personen die niet zijn ingeschreven in de Basisregistratie Personen bij gemeente Medemblik.",
+          "note": "De basisvoorwaarden voor verblijfsbelasting zijn identiek in beide teksten",
+          "source_urls": [
+            "https://www.medemblik.nl/belastingen-en-woz/verblijfsbelasting"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Dit geldt voor hotels, pensions, huisvesting voor werknemers, particulier verhuurde ruimtes en mobiele kampeermiddelen zonder vaste plek. Heeft u gasten in vakantieonderkomens, stacaravans, bungalows, chalets of mobiele kampeermiddelen op een vaste plek? Dan mag u een vaste schatting (forfaitair) gebruiken voor de aangifte.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina specificeert voor welke type accommodaties de verschillende berekeningsmethoden gelden. Deze belangrijke details ontbreken in de originele tekst.",
+          "source_urls": [
+            "https://www.medemblik.nl/belastingen-en-woz/verblijfsbelasting"
+          ]
+        }
+      ]
+    },
+    "summary": "De informatie is grotendeels consistent, maar de originele tekst mist belangrijke details over de verschillende type accommodaties waarvoor de werkelijke telling of forfaitaire berekening geldt. Deze informatie is wel aanwezig in de bronpagina en is essentieel voor ondernemers om te bepalen welke berekeningsmethode voor hen van toepassing is."
+  }
+}

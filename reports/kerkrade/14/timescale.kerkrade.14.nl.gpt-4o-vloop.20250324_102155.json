@@ -1,0 +1,73 @@
+{
+  "context": {
+    "municipality": {
+      "name": "KERKRADE",
+      "contact": {
+        "phone": "14 045",
+        "email": "gemeentehuis@kerkrade.nl",
+        "website": "http://www.kerkrade.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 20,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.2,
+    "false_statements": [
+      {
+        "sentence": "Abonnementen voor parkeren in parkeergarages zoals Orlandopassage en Wijngracht zijn beschikbaar.",
+        "status": "false",
+        "note": "De Orlandopassage parkeergarage bestaat niet meer in Kerkrade. Deze is in 2019 gesloopt. De huidige parkeergarages in Kerkrade zijn onder andere de Parkeergarage Centrum en de Parkeergarage Markt."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 4,
+    "valid_urls": 4,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.kerkrade.nl/vergunningen-abonnementen-en-ontheffingen",
+      "https://www.kerkrade.nl/verkeersontheffing-aanvragen",
+      "https://www.kerkrade.nl/caravan-parkeren-op-de-openbare-weg",
+      "https://www.kerkrade.nl/voertuig-te-koop-aanbieden-op-de-openbare-weg"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "In de situatie dat één auto op eigen terrein geparkeerd kan worden, dan mag op dit adres nog één parkeervergunning in de openbare ruimte aangevraagd worden.",
+          "original_reference": "Als er meerdere parkeerplekken op eigen terrein zijn, zoals een oprit of garage, kan men niet in aanmerking komen voor een parkeervergunning.",
+          "note": "De originele tekst stelt dat bij parkeerplekken op eigen terrein geen vergunning mogelijk is, terwijl de bron aangeeft dat bij één parkeerplek op eigen terrein nog één vergunning mogelijk is.",
+          "source_urls": [
+            "https://www.kerkrade.nl/vergunningen-abonnementen-en-ontheffingen"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Met ingang van 1 januari 2021 moeten alle inwoners en ondernemers hun parkeervergunning of ontheffing elk jaar opnieuw aanvragen.",
+          "original_reference": "Met ingang van 1 januari 2021 moeten alle inwoners en ondernemers hun parkeervergunning of ontheffing elk jaar opnieuw aanvragen.",
+          "note": "De jaarlijkse vernieuwingsverplichting wordt in beide teksten identiek beschreven.",
+          "source_urls": [
+            "https://www.kerkrade.nl/vergunningen-abonnementen-en-ontheffingen"
+          ]
+        }
+      ]
+    },
+    "summary": "Er is één belangrijk verschil gevonden in de voorwaarden voor parkeervergunningen bij parkeerplekken op eigen terrein. De bronpagina biedt meer nuance en mogelijkheden dan de originele tekst. Overige informatie komt grotendeels overeen, hoewel sommige details uit de originele tekst niet direct verifieerbaar zijn in de beschikbare bronnen."
+  }
+}

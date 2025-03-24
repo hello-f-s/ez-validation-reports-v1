@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LANDSMEER",
+      "contact": {
+        "phone": "(020) 487 71 11",
+        "email": "gemeente@Landsmeer.nl",
+        "website": "http://www.landsmeer.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 27,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.4,
+    "false_statements": [
+      {
+        "sentence": "Begin uw aanvraag minimaal 8 weken voor de start van de werkzaamheden voor de reguliere procedure en 6 maanden voor de uitgebreide procedure.",
+        "status": "false",
+        "note": "Volgens de officiële richtlijnen van de gemeente Landsmeer wordt aanbevolen om een aanvraag voor een reguliere procedure minimaal 12 weken voor de start van de werkzaamheden in te dienen, niet 8 weken, om voldoende tijd te hebben voor eventuele aanvullingen en de behandelingstermijn."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.landsmeer.nl/inwoners/bouwen_en_verbouwen/meer_onderwerpen/omgevingsvergunning_aanvragen",
+      "https://www.landsmeer.nl/inwoners/bouwen_en_verbouwen/omgevingsplan/afwijken_van_het_omgevingsplan",
+      "https://www.landsmeer.nl/ondernemers/vergunningen/uitstalling_plaatsen_bij_een_bedrijf",
+      "https://www.landsmeer.nl/inwoners/bouwen_en_verbouwen/producten_en_diensten/gebouw_of_woning_slopen",
+      "https://www.landsmeer.nl/inwoners/parkeren,_verkeer_en_vervoer/verkeer/ontheffing_van_verkeersregels_aanvragen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "De leges (kosten) bestaan uit een percentage van de bouwsom inclusief BTW. De hoogte wordt elk jaar opnieuw vastgesteld.",
+          "original_reference": "De leges voor een omgevingsvergunning verschillen per situatie en bestaan uit een percentage van de bouwsom inclusief BTW. Deze kosten worden jaarlijks vastgesteld.",
+          "note": "De informatie over leges en jaarlijkse vaststelling komt overeen",
+          "source_urls": [
+            "https://www.landsmeer.nl/inwoners/bouwen_en_verbouwen/meer_onderwerpen/omgevingsvergunning_aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De gemeente beslist binnen 6 maanden over uw vergunningaanvraag. Deze termijn kan de gemeente eenmaal verlengen met 6 weken.",
+          "original_reference": "Beslissing binnen 8 weken, met een mogelijke verlenging van 6 weken.",
+          "note": "Er is een verschil in de standaard beslissingstermijn voor reguliere aanvragen. De originele tekst noemt 8 weken voor de reguliere procedure, terwijl de bron 6 maanden noemt voor sloopvergunningen.",
+          "source_urls": [
+            "https://www.landsmeer.nl/inwoners/bouwen_en_verbouwen/producten_en_diensten/gebouw_of_woning_slopen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als de sloop slecht is voor beschermde planten- en diersoorten, dan moet u een ontheffing bij de provincie aanvragen.",
+          "original_reference": "Bij het indienen van een aanvraag moet u rekening houden met mogelijke nadelige effecten op beschermde gebieden, planten- of diersoorten.",
+          "note": "De bron specificeert dat een provinciale ontheffing nodig is bij effect op beschermde soorten, wat niet vermeld wordt in de originele tekst",
+          "source_urls": [
+            "https://www.landsmeer.nl/inwoners/bouwen_en_verbouwen/producten_en_diensten/gebouw_of_woning_slopen"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont enkele belangrijke verschillen in procedures en vereisten. Het meest opvallende verschil betreft de beslissingstermijnen voor vergunningen, waarbij de bronnen verschillende termijnen noemen. Ook is er aanvullende informatie over de noodzaak van een provinciale ontheffing bij effecten op beschermde soorten, wat niet expliciet vermeld wordt in de originele tekst. De overige informatie, zoals de legesberekening en algemene procedures, komt grotendeels overeen."
+  }
+}

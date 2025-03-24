@@ -1,0 +1,93 @@
+{
+  "context": {
+    "municipality": {
+      "name": "EDE",
+      "contact": {
+        "phone": "14 0318",
+        "email": "info@ede.nl",
+        "website": "http://www.ede.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 22,
+    "false_sentences": 2,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Voor de behandeling van uw aanvraag betaalt u leges.",
+        "status": "false",
+        "note": "De zin is te algemeen gesteld. Niet voor alle horecagerelateerde aanvragen worden leges in rekening gebracht. Voor bijvoorbeeld een ontheffing artikel 35 Alcoholwet worden geen leges in rekening gebracht volgens de actuele legesverordening van gemeente Ede."
+      },
+      {
+        "sentence": "Specifieke kosten zijn onder andere €38,50 voor een tapontheffing of geluidsontheffing, €306 voor een wijziging van de alcoholvergunning en €612 voor een nieuwe alcoholvergunning.",
+        "status": "false",
+        "note": "Deze bedragen komen niet overeen met de actuele legesverordening van gemeente Ede. De actuele tarieven zijn anders dan de genoemde bedragen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.ede.nl/aanvragen-en-regelen/ontheffing-aanvragen",
+      "https://www.ede.nl/aanvragen-en-regelen/bouw-en-verbouwvergunning-voor-bedrijven",
+      "https://www.ede.nl/aanvragen-en-regelen/horecabedrijf",
+      "https://www.ede.nl/aanvragen-en-regelen/evenementen-melden-ontheffing-vergunning",
+      "https://www.ede.nl"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.ede.nl/aanvragen-en-regelen/verleende-vergunningen-inzien-en-opvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U heeft een horecabedrijf als u bedrijfsmatig etenswaren, (alcoholische) dranken, overnachtingen of tabaksproducten verstrekt. Dit kan bijvoorbeeld een hotel, slijterij, restaurant, café, snackbar, afhaalzaak, discotheek, buurthuis of clubhuis zijn.",
+          "original_reference": "U heeft een horecabedrijf als u bedrijfsmatig (alcoholische) dranken verstrekt.",
+          "note": "De bronpagina geeft een bredere definitie van een horecabedrijf, inclusief etenswaren, overnachtingen en tabaksproducten, met specifieke voorbeelden van type bedrijven.",
+          "source_urls": [
+            "https://www.ede.nl/aanvragen-en-regelen/horecabedrijf"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het aanvragen van een exploitatievergunning (in combinatie met een alcolholwetvergunning) kost € 306. Het aanvragen van een horeca exploitatievergunning kost € 612. Heeft u ook een terras? Dan zijn de kosten € 690.",
+          "original_reference": "€612 voor een nieuwe alcoholvergunning",
+          "note": "De bronpagina specificeert verschillende tarieven voor verschillende type vergunningen, inclusief extra kosten voor terrassen, wat niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.ede.nl/aanvragen-en-regelen/horecabedrijf"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U kunt één keer per jaar een ontheffing voor een marathonbijeenkomst aanvragen.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt een specifieke beperking voor marathonbijeenkomsten die niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.ede.nl/aanvragen-en-regelen/ontheffing-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen een bredere definitie van horecabedrijven, meer gedetailleerde kostenoverzichten voor verschillende vergunningen en aanvullende specifieke regels zoals de beperking op marathonbijeenkomsten. De bronpagina's bevatten meer specifieke details en nuances die niet in de originele tekst zijn opgenomen."
+  }
+}

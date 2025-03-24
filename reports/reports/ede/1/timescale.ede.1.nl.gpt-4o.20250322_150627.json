@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "EDE",
+      "contact": {
+        "phone": "14 0318",
+        "email": "info@ede.nl",
+        "website": "http://www.ede.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "De specifieke behandeltijd voor het aanvragen van een alcoholvergunning wordt niet vermeld, maar doorgaans kan het enkele weken duren afhankelijk van de aard van de vergunning en het eventuele Bibob-onderzoek.",
+        "status": "false",
+        "note": "De gemeente Ede vermeldt op haar website wel degelijk een specifieke behandeltijd voor alcoholvergunningen: de wettelijke beslistermijn is 8 weken, met mogelijke verlenging van 8 weken bij een Bibob-onderzoek."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.ede.nl/aanvragen-en-regelen/bouw-en-verbouwvergunning-voor-bedrijven",
+      "https://www.ede.nl/aanvragen-en-regelen/ontheffing-aanvragen",
+      "https://www.ede.nl/aanvragen-en-regelen/evenementen-melden-ontheffing-vergunning",
+      "https://www.ede.nl/aanvragen-en-regelen/horecabedrijf",
+      "https://www.ede.nl"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.ede.nl/aanvragen-en-regelen/verleende-vergunningen-inzien-en-opvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U heeft een horecabedrijf als u bedrijfsmatig etenswaren, (alcoholische) dranken, overnachtingen of tabaksproducten verstrekt. Dit kan bijvoorbeeld een hotel, slijterij, restaurant, café, snackbar, afhaalzaak, discotheek, buurthuis of clubhuis zijn.",
+          "original_reference": "U heeft een horecabedrijf als u bedrijfsmatig (alcoholische) dranken verstrekt.",
+          "note": "De bronpagina geeft een bredere definitie van een horecabedrijf, inclusief etenswaren, overnachtingen en tabaksproducten, met specifieke voorbeelden van type bedrijven.",
+          "source_urls": [
+            "https://www.ede.nl/aanvragen-en-regelen/horecabedrijf"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het aanvragen van een alcoholwetvergunning kost € 612. Het wijzigen van een alcoholwetvergunning kost € 306.",
+          "original_reference": "Voor de behandeling van uw aanvraag betaalt u leges.",
+          "note": "De bronpagina specificeert de exacte kosten voor het aanvragen en wijzigen van een alcoholwetvergunning, terwijl de originele tekst alleen algemeen spreekt over leges.",
+          "source_urls": [
+            "https://www.ede.nl/aanvragen-en-regelen/horecabedrijf"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U vraagt deze ontheffing uiterlijk tien werkdagen van tevoren aan.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt een specifieke aanvraagtermijn van tien werkdagen voor bepaalde ontheffingen, wat niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.ede.nl/aanvragen-en-regelen/ontheffing-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten belangrijke aanvullende informatie over de definitie van horecabedrijven, specifieke kosten voor vergunningen en aanvraagtermijnen die niet in de originele tekst staan. Deze informatie is essentieel voor ondernemers die een horecavergunning willen aanvragen."
+  }
+}

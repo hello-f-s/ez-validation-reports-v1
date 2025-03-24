@@ -1,0 +1,75 @@
+{
+  "context": {
+    "municipality": {
+      "name": "NIJMEGEN",
+      "contact": {
+        "phone": "14 024",
+        "email": "gemeente@nijmegen.nl",
+        "website": "http://www.nijmegen.nl"
+      }
+    },
+    "service": {
+      "id": 16,
+      "name": "Registreren in het Landelijk Register Kinderopvang (LRK)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Het gehele proces van aanmelden tot registratie duurt ongeveer 10 weken.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Nijmegen duurt het proces maximaal 14 weken. De gemeente heeft namelijk 14 weken de tijd om een besluit te nemen op de aanvraag."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.nijmegen.nl/diensten/onderwijs-en-kinderopvang/kinderopvang-starten/",
+      "https://www.nijmegen.nl/diensten/onderwijs-en-kinderopvang/adressen-kinderopvang/",
+      "https://www.nijmegen.nl/diensten/onderwijs-en-kinderopvang/",
+      "https://www.nijmegen.nl/diensten/onderscheidingen/kinderlintje-aanvragen/",
+      "https://www.nijmegen.nl/diensten/geboorte-en-overlijden/aangifte-van-geboorte/",
+      "https://www.nijmegen.nl"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "GGD Gelderland Zuid controleert of uw kinderopvang aan de wettelijke kwaliteitseisen van de 'Wet Kinderopvang en Kwaliteitseisen Peuterspeelzalen' voldoet.",
+          "original_reference": "Om uw kinderopvang in het Landelijk Register Kinderopvang en Peuterspeelzalen te laten registreren, moet uw voorziening voldoen aan de wettelijke kwaliteitseisen van de 'Wet Kinderopvang en Kwaliteitseisen Peuterspeelzalen'.",
+          "note": "De wettelijke vereisten en controle door GGD komen overeen in beide bronnen",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/onderwijs-en-kinderopvang/kinderopvang-starten/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Op de website van de GGD kunt u via het webformulier een aanvraag indienen.",
+          "original_reference": "U stuurt het aanvraagformulier naar GGD Gelderland Zuid, Team Toezicht Kinderopvang, Postbus 1120, 6501 BC Nijmegen.",
+          "note": "De bronwebsite verwijst alleen naar digitale aanvraag via webformulier, terwijl de originele tekst een postadres vermeldt",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/onderwijs-en-kinderopvang/kinderopvang-starten/"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de aanvraagprocedure. Waar de originele tekst een postadres vermeldt voor het indienen van aanvragen, verwijst de actuele gemeentewebsite alleen naar digitale aanvraag via het webformulier van de GGD. De overige informatie, zoals wettelijke vereisten, controles en termijnen, komt overeen tussen beide bronnen."
+  }
+}

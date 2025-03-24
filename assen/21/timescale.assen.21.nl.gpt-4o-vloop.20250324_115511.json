@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ASSEN",
+      "contact": {
+        "phone": "(0592) 36 69 11",
+        "email": "info@assen.nl",
+        "website": "http://www.assen.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 20,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.2,
+    "false_statements": [
+      {
+        "sentence": "Contant betalen is mogelijk iedere dinsdagmiddag op afspraak.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Assen is contant betalen niet mogelijk. Er kan alleen met PIN betaald worden bij de gemeente Assen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 4,
+    "valid_urls": 1,
+    "invalid_urls": 3,
+    "accuracy_percentage": 25.0,
+    "valid_urls_list": [
+      "https://www.assen.nl/forms/afspraak-maken"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.assen.nl/verklaring-omtrent-het-gedrag-vog-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.assen.nl/omgevingsvergunning-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.assen.nl/nederlandse-nationaliteit-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Geen directe informatie over VOG-aanvragen gevonden in de geciteerde bron",
+          "original_reference": "Volledige VOG-informatie zoals vermeld in originele tekst",
+          "note": "De geciteerde bron (afsprakenplanner) bevat geen specifieke informatie over VOG-aanvragen die de originele inhoud tegenspreekt of aanvult. De bron toont alleen een algemene afsprakenplanner voor gemeentelijke diensten.",
+          "source_urls": [
+            "https://www.assen.nl/forms/afspraak-maken"
+          ]
+        }
+      ]
+    },
+    "summary": "De geciteerde bron bevat geen inhoudelijke informatie over VOG-aanvragen die vergeleken kan worden met de originele tekst. De bron toont alleen een afsprakenplanner voor diverse gemeentelijke diensten. Er kunnen daarom geen concrete verschillen of tegenstrijdigheden worden vastgesteld."
+  }
+}

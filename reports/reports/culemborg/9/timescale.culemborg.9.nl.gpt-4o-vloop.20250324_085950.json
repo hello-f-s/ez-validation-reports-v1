@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "CULEMBORG",
+      "contact": {
+        "phone": "(0345) 47 77 00",
+        "email": "info@culemborg.nl",
+        "website": "http://www.culemborg.nl"
+      }
+    },
+    "service": {
+      "id": 9,
+      "name": "Mobiele puinbreker gebruiken"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "De gemeente is bereikbaar van maandag tot en met donderdag van 9.00 tot 16.00 uur en op vrijdag van 9.00 tot 12.00 uur.",
+        "status": "false",
+        "note": "De openingstijden van de gemeente Culemborg zijn volgens de officiële website: maandag t/m donderdag van 9.00 tot 17.00 uur en vrijdag van 9.00 tot 12.30 uur."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 4,
+    "valid_urls": 4,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.culemborg.nl/afval-van-uw-bedrijf",
+      "https://www.culemborg.nl/omgevingsvergunning",
+      "https://www.culemborg.nl/informatieverzoek-en-woo-verzoek",
+      "https://www.culemborg.nl/informatieverzoek"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "dinsdag 9.00 - 19.00 uur",
+          "original_reference": "maandag tot en met donderdag van 9.00 tot 16.00 uur en op vrijdag van 9.00 tot 12.00 uur",
+          "note": "De originele tekst mist de afwijkende dinsdagavond openingstijd tot 19:00 uur",
+          "source_urls": [
+            "https://www.culemborg.nl/afval-van-uw-bedrijf",
+            "https://www.culemborg.nl/informatieverzoek-en-woo-verzoek"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De Omgevingsdienst Rivierenland (ODR) behandelt namens de gemeente Culemborg alle vergunningsaanvragen",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat de ODR de vergunningsaanvragen behandelt, wat belangrijke informatie is voor het aanvraagproces",
+          "source_urls": [
+            "https://www.culemborg.nl/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U kunt een contract sluiten met Avri om het afval gescheiden te laten ophalen. Avri plaatst dan containers bij uw bedrijf",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist de mogelijkheid om afval te laten ophalen door Avri via een contract",
+          "source_urls": [
+            "https://www.culemborg.nl/afval-van-uw-bedrijf"
+          ]
+        }
+      ]
+    },
+    "summary": "De originele tekst bevat enkele belangrijke omissies in vergelijking met de bronnen. De openingstijden zijn niet volledig accuraat (dinsdagavond ontbreekt), de rol van de ODR bij vergunningsaanvragen wordt niet vermeld, en de optie voor afvalophaling door Avri ontbreekt. Deze informatie is essentieel voor een volledig begrip van de dienstverlening."
+  }
+}

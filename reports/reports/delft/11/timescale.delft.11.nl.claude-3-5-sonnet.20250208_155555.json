@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DELFT",
+      "contact": {
+        "phone": "14 015",
+        "email": "null",
+        "website": "http://www.delft.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Gewone omgevingsvergunning: 8 weken",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Delft duurt een reguliere procedure voor een omgevingsvergunning maximaal 8 weken, met de mogelijkheid tot verlenging met 6 weken. Deze verlengingsmogelijkheid ontbreekt in de oorspronkelijke zin."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.delft.nl/omgevingsvergunning-bouwen",
+      "https://www.delft.nl/omgevingsvergunning-voor-aanleg",
+      "https://www.delft.nl/omgevingsvergunning-milieu",
+      "https://www.delft.nl/uw-plan-voorleggen-aan-de-gemeente",
+      "https://www.delft.nl/omgevingsvergunning-aanvragen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De omgevingsvergunning bouwen bestaat uit 2 delen: Ruimtelijk deel en Bouwtechnische deel. [...] U heeft een kwaliteitsborger nodig die dit voor u controleert.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat de omgevingsvergunning uit twee delen bestaat en dat er een kwaliteitsborger nodig is voor het bouwtechnische deel. Dit is belangrijke aanvullende informatie voor aanvragers.",
+          "source_urls": [
+            "https://www.delft.nl/omgevingsvergunning-bouwen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Er zijn geen kosten.",
+          "original_reference": "Hier kan geen specifieke informatie over gevonden worden op de website van deze gemeente.",
+          "note": "De bron vermeldt expliciet dat er geen kosten zijn voor de milieuvergunning, terwijl de originele tekst aangeeft dat er geen informatie over kosten beschikbaar is.",
+          "source_urls": [
+            "https://www.delft.nl/omgevingsvergunning-milieu"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De gemeente kan deze periode eenmalig verlengen met 6 weken. En met de tijd die u nodig heeft om ontbrekende gegevens in te leveren.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de mogelijkheid tot verlenging van de behandelperiode met 6 weken en de extra tijd voor het aanleveren van ontbrekende gegevens.",
+          "source_urls": [
+            "https://www.delft.nl/omgevingsvergunning-bouwen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten enkele belangrijke aanvullingen op de originele tekst. Met name de tweedeling van de omgevingsvergunning (ruimtelijk en bouwtechnisch) en de vereiste kwaliteitsborger zijn essentiële toevoegingen. Ook is er duidelijkheid over de kosten (geen) en de mogelijke verlenging van behandeltermijnen die in de originele tekst ontbreken. Deze informatie is belangrijk voor een complete en accurate voorlichting aan aanvragers."
+  }
+}

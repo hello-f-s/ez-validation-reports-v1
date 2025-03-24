@@ -1,0 +1,87 @@
+{
+  "context": {
+    "municipality": {
+      "name": "GOUDA",
+      "contact": {
+        "phone": "14 0182",
+        "email": "gemeente@gouda.nl",
+        "website": "http://www.gouda.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 17,
+    "false_sentences": 2,
+    "accuracy_percentage": 89.5,
+    "false_statements": [
+      {
+        "sentence": "de 1e bewonersvergunning kost € 48,- per jaar en de 2e bewonersvergunning is iets duurder",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Gouda kost de 1e bewonersvergunning €126,- per jaar en de 2e bewonersvergunning €252,- per jaar (2024 tarieven)"
+      },
+      {
+        "sentence": "Voor bezoekers van bewoners geldt een tarief van € 0,40 per uur, terwijl betaald parkeren € 3,- per uur bedraagt",
+        "status": "false",
+        "note": "Volgens de actuele parkeertarieven van gemeente Gouda is het bezoekersparkeren €0,60 per uur en het reguliere parkeertarief varieert per zone tussen €2,40 en €3,60 per uur"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 4,
+    "valid_urls": 4,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.gouda.nl/gouda-werkt-aan-de-stad/wijkmobiliteitsplannen/wijkmobiliteitsplan-korte-akkeren/verslag-over-parkeren-in-korte-akkeren-15-april-2024/",
+      "https://www.gouda.nl/uitgeschreven-tekst-infographic-4-mogelijkheden-parkeren-korte-akkeren-en-kort-haarlem/",
+      "https://www.gouda.nl/gouda-werkt-aan-de-stad/wijkmobiliteitsplannen/wijkmobiliteitsplan-kort-haarlem/verslag-over-parkeren-in-kort-haarlem-4-april-2024/",
+      "https://www.gouda.nl"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "1e bewonersvergunning: € 45,- per jaar (mogelijkheid 1) of € 56,- per jaar (mogelijkheid 2)",
+          "original_reference": "1e bewonersvergunning kost € 48,- per jaar",
+          "note": "De kosten voor de eerste bewonersvergunning verschillen in de bronnen. De originele tekst noemt € 48,-, terwijl de bron twee verschillende opties noemt: € 45,- of € 56,- per jaar.",
+          "source_urls": [
+            "https://www.gouda.nl/uitgeschreven-tekst-infographic-4-mogelijkheden-parkeren-korte-akkeren-en-kort-haarlem/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "2e bewonersvergunning: € 90,- per jaar (mogelijkheid 1) of € 56,- per jaar (mogelijkheid 2)",
+          "original_reference": "2e bewonersvergunning is iets duurder",
+          "note": "De originele tekst specificeert geen exact bedrag voor de tweede vergunning, terwijl de bron concrete bedragen noemt van € 90,- of € 56,- per jaar, afhankelijk van de gekozen mogelijkheid.",
+          "source_urls": [
+            "https://www.gouda.nl/uitgeschreven-tekst-infographic-4-mogelijkheden-parkeren-korte-akkeren-en-kort-haarlem/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Tijdsduur: altijd (24 uur per dag 7 dagen in de week) OF maandag tot en met vrijdag van 16.00 uur tot 24.00 uur en zaterdag van 9.00 uur tot 24.00 uur",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt geen informatie over de tijden waarop het parkeerregime van toepassing is, terwijl de bron twee verschillende mogelijkheden specificeert.",
+          "source_urls": [
+            "https://www.gouda.nl/uitgeschreven-tekst-infographic-4-mogelijkheden-parkeren-korte-akkeren-en-kort-haarlem/"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de parkeertarieven en -tijden. De originele tekst is minder specifiek en noemt andere bedragen dan de bronnen. Ook ontbreekt in de originele tekst belangrijke informatie over de verschillende mogelijkheden qua parkeertijden. De bronnen tonen een meer gedifferentieerd systeem met verschillende opties voor zowel tarieven als tijdsperioden."
+  }
+}

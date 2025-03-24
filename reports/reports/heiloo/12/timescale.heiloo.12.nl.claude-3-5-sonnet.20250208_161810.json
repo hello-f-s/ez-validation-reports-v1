@@ -1,0 +1,89 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HEILOO",
+      "contact": {
+        "phone": "(072) 535 66 66",
+        "email": "info@heiloo.nl",
+        "website": "http://www.heiloo.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "U ontvangt binnen 2 weken bericht wie uw aanvraag behandelt.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Heiloo wordt niet specifiek vermeld dat u binnen 2 weken bericht ontvangt over wie uw aanvraag behandelt. Deze termijn wordt niet genoemd in de officiële informatie over omgevingsvergunningen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.heiloo.nl/aanvragen-en-regelen/standplaatsvergunning/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/omgevingswet/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/toezicht-en-handhaving/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/omgevingsvergunning/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/exploitatievergunning/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.omgevingsloket.nl)",
+        "reason": "INVALID: Error scraping https://www.omgevingsloket.nl): HTTPSConnectionPool(host='www.omgevingsloket.nl)', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10472ccd0>: Failed to resolve 'www.omgevingsloket.nl)' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u van plan om uw woning of bedrijf te (ver)bouwen, een boom te kappen, iets te slopen, een dakkapel aan te brengen of ideeën heeft voor een leegstaand gebouw of een braakliggend terrein",
+          "original_reference": "Als u van plan bent uw bedrijf te (ver)bouwen, iets te slopen, of ideeën heeft voor een leegstaand gebouw of een braakliggend terrein",
+          "note": "De bronpagina noemt expliciet extra activiteiten waarvoor een omgevingsvergunning nodig is (boom kappen, dakkapel aanbrengen) die niet in de originele tekst staan",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/omgevingsvergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Meld de start van de bouw of sloop minimaal 2 dagen van tevoren aan bij toezichthouder van de gemeente",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist de belangrijke verplichting om de start van bouw- of sloopwerkzaamheden 2 dagen van tevoren te melden",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/toezicht-en-handhaving/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vanaf 1 januari 2024 geldt de Omgevingswet. Alle vastgestelde bestemmingsplannen gaan op in een tijdelijk omgevingsplan",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de nieuwe Omgevingswet die per 1 januari 2024 is ingegaan en de overgang naar het tijdelijke omgevingsplan",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/omgevingsvergunning/",
+            "https://www.heiloo.nl/aanvragen-en-regelen/omgevingswet/"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten belangrijke aanvullende informatie die niet in de originele tekst staat, waaronder extra vergunningplichtige activiteiten, de meldingsplicht voor start bouw/sloop, en de invoering van de nieuwe Omgevingswet per 2024. Deze informatie is essentieel voor een complete en actuele weergave van de vergunningsprocedures."
+  }
+}

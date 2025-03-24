@@ -1,0 +1,90 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AMERSFOORT",
+      "contact": {
+        "phone": "14 033",
+        "email": "info@amersfoort.nl",
+        "website": "http://www.amersfoort.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "Voor overleggen aan de omgevingstafel worden kosten van € 2.500,- in rekening gebracht.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Amersfoort bedragen de kosten voor een omgevingstafeloverleg € 2.000,- en niet € 2.500,-"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 3,
+    "invalid_urls": 2,
+    "accuracy_percentage": 60.0,
+    "valid_urls_list": [
+      "https://www.amersfoort.nl/reclame",
+      "https://www.amersfoort.nl/aanleggen",
+      "https://www.amersfoort.nl/een-vergunning-aangevraagd-en-nu"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.amersfoort.nl/omgevingsvergunning-voor-bouwen-en-verbouwen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.amersfoort.nl/vergunningen-inzien-en-bezwaar-maken",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als deze termijn voorbij is en er geen bezwaar is ingediend, mag je beginnen met de werkzaamheden.",
+          "original_reference": "Mocht je het niet eens zijn met het besluit, dan kun je binnen 6 weken bezwaar maken. Ook andere belanghebbenden kunnen bezwaar maken.",
+          "note": "De bronpagina geeft aan dat men moet wachten met starten tot na de bezwaartermijn en als er geen bezwaar is ingediend, terwijl de originele tekst deze beperking niet vermeldt.",
+          "source_urls": [
+            "https://www.amersfoort.nl/aanleggen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Binnen 2 weken neemt de casemanager contact met je op. Let op: door de drukte halen we deze termijn helaas niet altijd.",
+          "original_reference": "Je aanvraag komt bij een casemanager terecht die je aanvraag behandelt en als aanspreekpunt fungeert.",
+          "note": "De bronpagina specificeert een contacttermijn van 2 weken voor de casemanager met een voorbehoud, wat niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.amersfoort.nl/een-vergunning-aangevraagd-en-nu"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Dat kan de procedure van 8 weken zijn, van 12 weken of de uitgebreide procedure van 26 weken.",
+          "original_reference": "De behandeltermijn varieert tussen 8 en 26 weken, afhankelijk van de procedure.",
+          "note": "De bronpagina noemt specifiek een tussenliggende termijn van 12 weken die niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.amersfoort.nl/een-vergunning-aangevraagd-en-nu"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de start van werkzaamheden na de bezwaartermijn, de specifieke contacttermijn voor de casemanager, en een extra proceduretijd van 12 weken die niet in de originele tekst staat vermeld. Deze details maken de informatie in de bronpagina's specifieker en uitgebreider dan de originele tekst."
+  }
+}

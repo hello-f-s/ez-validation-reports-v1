@@ -1,0 +1,81 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OPMEER",
+      "contact": {
+        "phone": "(0226) 36 33 33",
+        "email": "gemeente@opmeer.nl",
+        "website": "http://www.opmeer.nl"
+      }
+    },
+    "service": {
+      "id": 2,
+      "name": "Bord of spandoek plaatsen aan de openbare weg"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "Het tarief voor het in behandeling nemen van een aanvraag tot het verkrijgen van een reclameborden/spandoeken vergunning bedraagt € 52,65.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Opmeer is dit bedrag niet correct. Het huidige tarief voor een reclame/objectvergunning is anders vastgesteld."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 3,
+    "valid_urls": 3,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.opmeer.nl/spandoek-ophangen",
+      "https://www.opmeer.nl/reclame-plaatsen",
+      "https://www.opmeer.nl/aankondigingsbord-plaatsen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U mag niet zomaar reclame plaatsen op of aan een gebouw. De reclame mag, bijvoorbeeld, het verkeer niet in gevaar brengen. Wilt u een reclamebord plaatsen aan een pand, dan vraagt u een omgevingsvergunning aan bij de gemeente.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina maakt onderscheid tussen reclameborden aan gebouwen (omgevingsvergunning) en langs de weg (reclamevergunning). Dit belangrijke onderscheid ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.opmeer.nl/reclame-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Is normaal gebruik van de weg mogelijk? Is de veiligheid van voetgangers en ander verkeer in gevaar? Is er overlast voor omwonenden? Wordt het straatbeeld ontsierd?",
+          "original_reference": "de reclame de omgeving niet past, weggebruikers stoort, de weg beschadigt of het onderhouden en beheren van de weg hindert",
+          "note": "De bronpagina noemt specifiekere weigeringsgronden, waaronder overlast voor omwonenden en ontsieren straatbeeld, die niet in de originele tekst staan.",
+          "source_urls": [
+            "https://www.opmeer.nl/aankondigingsbord-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "wanneer en hoelang u het aankondigingsbord plaatst",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vereist extra informatie over de plaatsingsduur bij de aanvraag, wat niet wordt genoemd in de originele tekst.",
+          "source_urls": [
+            "https://www.opmeer.nl/aankondigingsbord-plaatsen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten belangrijke aanvullende informatie over verschillende vergunningstypen (omgevings- vs. reclamevergunning), specifiekere weigeringsgronden en extra aanvraagvereisten die niet in de originele tekst staan. Deze verschillen zijn relevant voor een complete en accurate informatievoorziening aan aanvragers."
+  }
+}

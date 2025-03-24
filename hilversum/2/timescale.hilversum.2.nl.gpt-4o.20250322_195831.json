@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HILVERSUM",
+      "contact": {
+        "phone": "14 035",
+        "email": "gemeente@hilversum.nl",
+        "website": "http://www.hilversum.nl"
+      }
+    },
+    "service": {
+      "id": 2,
+      "name": "Bord of spandoek plaatsen aan de openbare weg"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "Na de aanvraag ontvangt u binnen 8 weken een besluit.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Hilversum geldt voor reguliere procedures een beslistermijn van maximaal 8 weken, maar voor uitgebreide procedures geldt een termijn van 26 weken. De zin is dus niet volledig correct omdat niet voor alle aanvragen een besluit binnen 8 weken wordt genomen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://hilversum.nl/vergunningen/vergunningen-voor-bouwen-verbouwen/omgevingsvergunning-aanvragen",
+      "https://hilversum.nl/vergunningen/vergunningen-meldingen-openbare-ruimte",
+      "https://hilversum.nl/bouwen-verbouwen/dakopbouw",
+      "https://hilversum.nl/bouwen-verbouwen/omgevingswet/aanvraag-omgevingsvergunning-uitgelegd",
+      "https://hilversum.nl/vergunningen/andere-vergunningen/vaste-standplaats"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Aanvragen doet u minimaal 4 weken en maximaal 8 weken van tevoren",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt geen minimale of maximale aanvraagtermijn vooraf, terwijl de bron specifieke termijnen noemt.",
+          "source_urls": [
+            "https://hilversum.nl/vergunningen/andere-vergunningen/vaste-standplaats"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Kosten vaste standplaats: 1 maand (€46,50), 1 maand - maximaal 2 jaar eerste aanvraag bestaande plek (€309,50), 1 maand - maximaal 2 jaar eerste aanvraag nieuwe plek (€455,25)",
+          "original_reference": "Er worden kosten in rekening gebracht voor het behandelen van een vergunningaanvraag. Deze kosten verschillen per aanvraag en zijn vastgelegd in de legesverordening.",
+          "note": "De bronpagina geeft specifieke tarieven voor verschillende situaties, terwijl de originele tekst alleen algemeen verwijst naar variabele kosten.",
+          "source_urls": [
+            "https://hilversum.nl/vergunningen/andere-vergunningen/vaste-standplaats"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "precariobelasting €22,68 per m2 per jaar bij een dag per week",
+          "original_reference": "U betaalt ook precariobelasting, afhankelijk van het aantal dagen en vierkante meters van gebruik.",
+          "note": "De bron noemt een specifiek tarief voor precariobelasting, terwijl de originele tekst alleen de algemene regel vermeldt.",
+          "source_urls": [
+            "https://hilversum.nl/vergunningen/andere-vergunningen/vaste-standplaats"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de specifieke details over aanvraagtermijnen en kosten. De bronpagina's bevatten concrete bedragen en termijnen die niet in de originele tekst staan vermeld. Dit maakt de informatie in de bronnen specifieker en praktischer voor aanvragers."
+  }
+}

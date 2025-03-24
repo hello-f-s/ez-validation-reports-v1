@@ -1,0 +1,87 @@
+{
+  "context": {
+    "municipality": {
+      "name": "APELDOORN",
+      "contact": {
+        "phone": "14 055",
+        "email": "gemeente@apeldoorn.nl",
+        "website": "http://www.apeldoorn.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 17,
+    "false_sentences": 2,
+    "accuracy_percentage": 89.5,
+    "false_statements": [
+      {
+        "sentence": "De vergunning is onbeperkt geldig, maar wijzigingen in omvang, ligging of rechtsvorm vereisen een nieuwe aanvraag.",
+        "status": "false",
+        "note": "Volgens de gemeente Apeldoorn is een terrasvergunning niet onbeperkt geldig. De vergunning moet periodiek worden vernieuwd."
+      },
+      {
+        "sentence": "De aanvraag voor een terrasvergunning kost € 668,68.",
+        "status": "false",
+        "note": "Dit bedrag is niet correct volgens de actuele legesverordening van de gemeente Apeldoorn. De exacte kosten kunnen variëren en moeten bij de gemeente worden opgevraagd."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 1,
+    "invalid_urls": 5,
+    "accuracy_percentage": 16.7,
+    "valid_urls_list": [
+      "https://www.apeldoorn.nl/omgevingswet/een-vergunning-aanvragen-binnen-de-omgevingswet-hoe-werkt-dat"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.apeldoorn.nl/werken-en-leren/ondernemen/ontheffingen-en-vergunningen/terrasvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.apeldoorn.nl/werken-en-leren/ondernemen/ontheffingen-en-vergunningen/vergunning-uitstalling",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.apeldoorn.nl/ondernemen/een-bedrijf-in-de-horeca",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.apeldoorn.nl/wonen-en-leven/leven-reizen-en-papieren/adres/omgevingsvergunning-kamerverhuur",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.apeldoorn.nl/terrasvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een verandering aan uw huis, uw erf of uw bedrijf is soms aan regels gebonden. Vraagt uw verandering om een vergunning of een melding? Of moet u uw gemeente informeren over uw project? Dit kunt u zelf nagaan in het landelijke Omgevingsloket.",
+          "original_reference": "Er is geen specifieke documentatie benoemd, maar controleer of het gebruik van de locatie als terras toegestaan is in het omgevingsplan.",
+          "note": "De bron verwijst specifiek naar het landelijke Omgevingsloket voor het controleren van vergunningsplicht, terwijl de originele tekst alleen verwijst naar het omgevingsplan zonder het Omgevingsloket te noemen.",
+          "source_urls": [
+            "https://www.apeldoorn.nl/omgevingswet/een-vergunning-aanvragen-binnen-de-omgevingswet-hoe-werkt-dat"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste discrepantie tussen de broninhoud en de originele tekst betreft de verwijzing naar het controlemechanisme voor vergunningsplicht. De bron verwijst expliciet naar het landelijke Omgevingsloket als tool om te controleren of een vergunning nodig is, terwijl dit in de originele tekst niet wordt genoemd. Verdere vergelijking is beperkt omdat de bronpagina vooral algemene informatie over de Omgevingswet bevat en niet specifiek ingaat op terrasvergunningen."
+  }
+}

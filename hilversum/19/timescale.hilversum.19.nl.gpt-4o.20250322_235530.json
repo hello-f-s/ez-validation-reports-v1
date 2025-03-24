@@ -1,0 +1,79 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HILVERSUM",
+      "contact": {
+        "phone": "14 035",
+        "email": "gemeente@hilversum.nl",
+        "website": "http://www.hilversum.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "De aanvraag voor een aanwezigheidsvergunning kan gedaan worden via de knop bovenaan de betreffende pagina op de website van Hilversum Mediastad.",
+        "status": "false",
+        "note": "De aanvraag voor een aanwezigheidsvergunning moet worden gedaan via het digitale aanvraagformulier op de website van gemeente Hilversum (hilversum.nl) en niet via een specifieke knop op de website van Hilversum Mediastad."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://hilversum.nl/vergunningen/vergunningen-voor-horeca",
+      "https://hilversum.nl/vergunningen/vergunningen-voor-horeca/speelautomaten",
+      "https://hilversum.nl/vergunningen/vergunningen-voor-horeca/exploitatievergunning-horeca",
+      "https://hilversum.nl/vergunningen",
+      "https://hilversum.nl/vergunningen/loterij-kansspel"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://hilversum.nl/speelautomaten",
+        "reason": "INVALID: Error scraping https://hilversum.nl/speelautomaten: 404 Client Error: Not Found for url: https://hilversum.nl/speelautomaten"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De huidige periode loopt van 1 januari 2022 tot en met 31 december 2025. Vraagt u tijdens deze periode een aanwezigheidsvergunning aan, dan betaalt u alleen voor de rest van de periode",
+          "original_reference": "De kosten voor een aanwezigheidsvergunning bedragen € 90,50 per 12 maanden, wat neerkomt op € 362,00 voor de volledige periode van 4 kalenderjaren.",
+          "note": "De bronpagina specificeert de exacte geldigheidsdatum van de huidige vergunningsperiode en vermeldt dat bij tussentijdse aanvraag alleen het resterende deel betaald hoeft te worden. Deze belangrijke informatie ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://hilversum.nl/vergunningen/vergunningen-voor-horeca/speelautomaten"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U houdt zich aan de Voorwaarden aanwezigheidsvergunning van de Kansspelautoriteit",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt een aanvullende voorwaarde over het naleven van de regels van de Kansspelautoriteit die niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://hilversum.nl/vergunningen/vergunningen-voor-horeca/speelautomaten"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele tekst en de bronnen. Ten eerste ontbreekt in de originele tekst de specifieke informatie over de huidige vergunningsperiode en de mogelijkheid om alleen voor de resterende periode te betalen. Ten tweede wordt in de bronpagina een aanvullende voorwaarde genoemd over het naleven van de regels van de Kansspelautoriteit die niet in de originele tekst staat vermeld."
+  }
+}

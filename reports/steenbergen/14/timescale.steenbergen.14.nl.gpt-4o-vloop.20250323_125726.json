@@ -1,0 +1,87 @@
+{
+  "context": {
+    "municipality": {
+      "name": "STEENBERGEN",
+      "contact": {
+        "phone": "14 0167",
+        "email": "info@gemeente-steenbergen.nl",
+        "website": "http://www.gemeente-steenbergen.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "Voor eenvoudige aanvragen krijgt u automatisch de vergunning als er niet binnen de termijn wordt beslist.",
+        "status": "false",
+        "note": "Dit is onjuist volgens de Wet algemene bepalingen omgevingsrecht (Wabo). Bij het niet tijdig beslissen op een aanvraag is er geen sprake van automatische vergunningverlening. Er geldt wel een dwangsom bij niet tijdig beslissen, maar de vergunning wordt niet automatisch verleend."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.gemeente-steenbergen.nl/inwoners_overzicht/bouwen_en_verbouwen/aanvraagmogelijkheden_en_termijnen/",
+      "https://www.gemeente-steenbergen.nl/inwoners_overzicht/bouwen_en_verbouwen/aanvraagmogelijkheden_en_termijnen/aanvraagmogelijkheden_en_termijnen",
+      "https://www.gemeente-steenbergen.nl/inwoners_overzicht/bouwen_en_verbouwen/digitaal_aanvragen_van_een_omgevingsvergunning/digitaal_aanvragen_van_een_omgevingsvergunning_",
+      "https://www.gemeente-steenbergen.nl/inwoners_overzicht/bouwen_en_verbouwen/digitaal_aanvragen_van_een_omgevingsvergunning/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.gemeente-steenbergen.nl/inwoners_overzicht/belastingen/bezwaar_tegen_belastingaanslag",
+        "reason": "INVALID: Error scraping https://www.gemeente-steenbergen.nl/inwoners_overzicht/belastingen/bezwaar_tegen_belastingaanslag: HTTPSConnectionPool(host='samenwerkendegemeenten.equalit.nl', port=443): Max retries exceeded with url: /formulier/nl-NL/Steenbergen/scBezwaargemeentelijkebelastingen.aspx (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1018)')))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De omgevingsvergunning kan bijvoorbeeld in 2 fasen worden aangevraagd. Wij vertellen u hier meer over als u dit soort projecten van plan bent.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt specifiek de mogelijkheid om een omgevingsvergunning in 2 fasen aan te vragen voor ingewikkelde projecten. Deze belangrijke optie ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.gemeente-steenbergen.nl/inwoners_overzicht/bouwen_en_verbouwen/aanvraagmogelijkheden_en_termijnen/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Denk daarbij aan bouwen, kappen en slopen.",
+          "original_reference": "zoals bouwen en slopen",
+          "note": "De bronpagina noemt expliciet 'kappen' als voorbeeld van een eenvoudige aanvraag, terwijl dit in de originele tekst ontbreekt.",
+          "source_urls": [
+            "https://www.gemeente-steenbergen.nl/inwoners_overzicht/bouwen_en_verbouwen/aanvraagmogelijkheden_en_termijnen/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De vragen worden bedacht met hulp van algemene wetten én lokale regels. Het resultaat van de check kan dus per gemeente verschillend zijn.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina geeft belangrijke aanvullende informatie over de vergunningscheck die gebaseerd is op zowel algemene als lokale regels. Deze nuance ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.gemeente-steenbergen.nl/inwoners_overzicht/bouwen_en_verbouwen/digitaal_aanvragen_van_een_omgevingsvergunning/"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten enkele belangrijke aanvullende details die niet in de originele tekst staan, waaronder de mogelijkheid om een vergunning in twee fasen aan te vragen, 'kappen' als voorbeeld van een eenvoudige aanvraag, en specifieke informatie over hoe de vergunningscheck werkt met lokale en algemene regels. Deze informatie maakt de procedures en mogelijkheden duidelijker voor aanvragers."
+  }
+}

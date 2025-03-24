@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LEEUWARDEN",
+      "contact": {
+        "phone": "14 058",
+        "email": "gemeente@leeuwarden.nl",
+        "website": "http://www.leeuwarden.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 27,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.4,
+    "false_statements": [
+      {
+        "sentence": "Voor aanvragen voor een uitweg bedragen de kosten bijvoorbeeld € 238,66.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van de gemeente Leeuwarden bedragen de kosten voor een uitweg/inrit € 244,70 (tarief 2024)."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.leeuwarden.nl/omgevingsvergunning/procedure-omgevingsvergunning-aanvragen-of-melden/",
+      "https://www.leeuwarden.nl/omgevingsvergunning/gebruikmaken-maken-of-veranderen-van-een-uitweg/",
+      "https://www.leeuwarden.nl/omgevingsvergunning/milieu-melding-of-vergunning/",
+      "https://www.leeuwarden.nl/omgevingswet/waarom-de-omgevingswet/",
+      "https://www.leeuwarden.nl/andere-vergunningen-en-ontheffingen/bodeminformatie/"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Nederland heeft veel wetten en regels voor onze leefomgeving. Op 1 januari 2024 is de Omgevingswet ingegaan.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen specifieke informatie over de ingangsdatum van de Omgevingswet, wat een belangrijk detail is voor de context van vergunningsaanvragen.",
+          "source_urls": [
+            "https://www.leeuwarden.nl/omgevingswet/waarom-de-omgevingswet/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De periode van uw vergunningaanvraag wordt korter. Voor de meeste vergunningen is dit 8 weken. En niet meer maximaal 26 weken, zoals nu het geval is.",
+          "original_reference": "Reguliere procedure: Maximaal 8 weken, met mogelijke verlenging van 6 weken.",
+          "note": "De brontekst vermeldt een oude maximale termijn van 26 weken, terwijl de originele tekst alleen spreekt over 8 weken met mogelijke verlenging van 6 weken.",
+          "source_urls": [
+            "https://www.leeuwarden.nl/omgevingswet/waarom-de-omgevingswet/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Maatregelen op Maat weet u welke regels voor u gelden en wat u kunt doen om zich aan die regels te houden. Ook als u geen vergunning of melding nodig heeft.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist informatie over 'Maatregelen op Maat', wat een belangrijk hulpmiddel is voor ondernemers om aan regelgeving te voldoen.",
+          "source_urls": [
+            "https://www.leeuwarden.nl/omgevingsvergunning/milieu-melding-of-vergunning/"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de recente invoering van de Omgevingswet per 1 januari 2024, aangepaste proceduretermijnen, en het ontbreken van informatie over 'Maatregelen op Maat' in de originele tekst. Deze verschillen zijn relevant voor de actualiteit en volledigheid van de informatie over omgevingsvergunningen."
+  }
+}

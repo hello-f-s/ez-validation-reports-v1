@@ -1,0 +1,78 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LANDGRAAF",
+      "contact": {
+        "phone": "14 045",
+        "email": "gemeente@landgraaf.nl",
+        "website": "http://www.landgraaf.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 35,
+    "true_sentences": 33,
+    "false_sentences": 2,
+    "accuracy_percentage": 94.3,
+    "false_statements": [
+      {
+        "sentence": "Klein commercieel evenement of snuffelmarkt: € 43,05.",
+        "status": "false",
+        "note": "Dit bedrag is niet actueel volgens de legesverordening van gemeente Landgraaf. De actuele tarieven zijn anders."
+      },
+      {
+        "sentence": "Grootschalig commercieel evenement: € 113,45.",
+        "status": "false",
+        "note": "Dit bedrag is niet actueel volgens de legesverordening van gemeente Landgraaf. De actuele tarieven zijn anders."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 4,
+    "valid_urls": 4,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.landgraaf.nl/evenement-organiseren",
+      "https://www.landgraaf.nl/aanvragen-en-regelen-ondernemers",
+      "https://www.landgraaf.nl/exploitatievergunning-horecabedrijf",
+      "https://www.landgraaf.nl/evenementen-subsidie"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Subsidiebedrag voor buurtevenement maximaal € 250,-",
+          "original_reference": "Subsidiebedragen variëren en kunnen tot een maximum van €1.000,- zijn voor een nieuw evenement",
+          "note": "Het subsidiebedrag voor buurtevenementen is specifiek vastgesteld op maximaal €250,-, terwijl de originele tekst spreekt over een maximum van €1.000,- voor nieuwe evenementen. Dit is een concreet verschil in subsidiebedragen.",
+          "source_urls": [
+            "https://www.landgraaf.nl/evenementen-subsidie"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Exploitatievergunning: € 287,80. Wijziging leidinggevende: € 95,80. Aanleggen/wijzigen terras: € 26,70.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat aanvullende specifieke kosten voor horeca-gerelateerde vergunningen die niet genoemd worden in de originele tekst.",
+          "source_urls": [
+            "https://www.landgraaf.nl/exploitatievergunning-horecabedrijf"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de subsidiebedragen, waarbij de bronpagina een lager maximumbedrag vermeldt voor buurtevenementen (€250,- vs €1.000,-). Daarnaast bevat de bronpagina aanvullende specifieke kosten voor horeca-gerelateerde vergunningen die niet in de originele tekst staan. De overige informatie in de bronpagina's komt grotendeels overeen met of vult de originele tekst aan zonder directe tegenspraak."
+  }
+}

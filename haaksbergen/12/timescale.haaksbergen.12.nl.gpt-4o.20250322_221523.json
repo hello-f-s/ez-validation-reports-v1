@@ -1,0 +1,89 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HAAKSBERGEN",
+      "contact": {
+        "phone": "(053) 573 45 67",
+        "email": "gemeente@haaksbergen.nl",
+        "website": "http://www.haaksbergen.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "Voor een omgevingsvergunning voor de activiteit milieu of melding worden geen leges in rekening gebracht.",
+        "status": "false",
+        "note": "Voor een omgevingsvergunning milieu worden wel degelijk leges in rekening gebracht volgens de legesverordening van gemeente Haaksbergen. Alleen voor meldingen in het kader van het Activiteitenbesluit worden geen leges gerekend."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 6,
+    "invalid_urls": 1,
+    "accuracy_percentage": 85.7,
+    "valid_urls_list": [
+      "https://www.haaksbergen.nl",
+      "https://www.haaksbergen.nl/woneninhaaksbergen/Meldingen/bouwsloopmelding.html",
+      "https://www.haaksbergen.nl/ondernemers/Bedrijfstarten/Vergunningen-voor-bedrijven/Milieuvergunning-of-melding-bedrijven.html",
+      "https://www.haaksbergen.nl/Vergunningen/101107-Omgevingsvergunning.html",
+      "https://www.haaksbergen.nl/ondernemers/Bedrijf-voeren/Milieu.html",
+      "https://www.haaksbergen.nl/ondernemers/Bedrijfstarten/Vergunningen-voor-bedrijven.html"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.omgevingsloket.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een uitgebreide procedure duurt zes maanden. Dit komt voor bij ingewikkelde plannen en plannen die niet binnen het Omgevingsplan passen. Denk hierbij bijvoorbeeld aan een verbouwing van een monument of de bouw van een kantoorpand waar meer dan 50 personen aanwezig zullen zijn.",
+          "original_reference": "In het geval van een complexe aanvraag kan deze periode oplopen tot zes maanden.",
+          "note": "De brontekst specificeert concrete voorbeelden van wanneer een uitgebreide procedure van toepassing is (monumenten, grote kantoorpanden), terwijl de originele tekst alleen algemeen spreekt over 'complexe aanvragen'.",
+          "source_urls": [
+            "https://www.haaksbergen.nl/Vergunningen/101107-Omgevingsvergunning.html"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Dit is een termijn van orde. Dat betekent dat overschrijding van de termijn niet leidt tot sancties of andere gevolgen.",
+          "original_reference": "No matching information",
+          "note": "De brontekst bevat belangrijke aanvullende informatie over de juridische status van de behandeltermijn die niet in de originele tekst staat vermeld.",
+          "source_urls": [
+            "https://www.haaksbergen.nl/Vergunningen/101107-Omgevingsvergunning.html"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "In de Omgevingswet is participatie voor het eerst juridisch vastgelegd als vereiste voor Omgevingsvergunningen.",
+          "original_reference": "No matching information",
+          "note": "De brontekst bevat essentiële informatie over verplichte participatie bij vergunningsaanvragen die volledig ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.haaksbergen.nl/Vergunningen/101107-Omgevingsvergunning.html"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie die niet in de originele tekst staat, met name over de juridische status van behandeltermijnen, specifieke voorbeelden van uitgebreide procedures, en de verplichte participatie bij vergunningsaanvragen. Deze informatie is essentieel voor een volledig begrip van het vergunningsproces."
+  }
+}

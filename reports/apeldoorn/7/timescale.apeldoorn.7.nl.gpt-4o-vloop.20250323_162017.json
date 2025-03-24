@@ -1,0 +1,78 @@
+{
+  "context": {
+    "municipality": {
+      "name": "APELDOORN",
+      "contact": {
+        "phone": "14 055",
+        "email": "gemeente@apeldoorn.nl",
+        "website": "http://www.apeldoorn.nl"
+      }
+    },
+    "service": {
+      "id": 7,
+      "name": "Kabels en leidingen aanleggen en beheren"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "U ontvangt binnen 4 weken (voor telecombedrijven geldt 8 weken) een brief met de beslissing.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Apeldoorn geldt voor reguliere aanvragen een beslistermijn van 8 weken, niet 4 weken. Voor telecombedrijven geldt inderdaad ook 8 weken conform de Telecommunicatiewet."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.apeldoorn.nl/wonen-en-leven/wonen-en-uw-buurt/woningbouwkavels/kabels-en-leidingen-plaatsen-in-openbare-grond",
+      "https://www.apeldoorn.nl/omgevingswet/een-vergunning-aanvragen-binnen-de-omgevingswet-hoe-werkt-dat",
+      "https://www.apeldoorn.nl/wonen-en-leven/bouwen/omgevingsvergunningen",
+      "https://www.apeldoorn.nl/omgevingswet/voorbeeld-aanvraag-na-1-januari-2024"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.apeldoorn.nl/wonen-en-leven/bouwen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Voor de aanleg, instandhouding en/of het opruimen van kabels en leidingen in de openbare grond is een vergunning of instemming van de gemeente nodig.",
+          "original_reference": "Voor het aanleggen, instandhouden en/of opruimen van kabels en leidingen in de openbare grond is een vergunning of instemming van de gemeente nodig.",
+          "note": "De kernboodschap over vergunningplicht is consistent tussen beide bronnen",
+          "source_urls": [
+            "https://www.apeldoorn.nl/wonen-en-leven/wonen-en-uw-buurt/woningbouwkavels/kabels-en-leidingen-plaatsen-in-openbare-grond"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Binnen 4 weken",
+          "original_reference": "U ontvangt binnen 4 weken (voor telecombedrijven geldt 8 weken) een brief met de beslissing.",
+          "note": "De bron vermeldt alleen een algemene termijn van 4 weken, terwijl de originele tekst specificeert dat er voor telecombedrijven een termijn van 8 weken geldt",
+          "source_urls": [
+            "https://www.apeldoorn.nl/wonen-en-leven/wonen-en-uw-buurt/woningbouwkavels/kabels-en-leidingen-plaatsen-in-openbare-grond"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont dat de meeste informatie consistent is tussen de bronnen en de originele tekst. Het belangrijkste verschil betreft de behandeltermijn, waarbij de bron een vereenvoudigde versie geeft zonder de specifieke termijn voor telecombedrijven te vermelden. De overige informatie over vergunningplicht, voorwaarden en procedures komt overeen."
+  }
+}

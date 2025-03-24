@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AMERSFOORT",
+      "contact": {
+        "phone": "14 033",
+        "email": "info@amersfoort.nl",
+        "website": "http://www.amersfoort.nl"
+      }
+    },
+    "service": {
+      "id": 7,
+      "name": "Kabels en leidingen aanleggen en beheren"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "Door technische problemen is het momenteel niet mogelijk om online een afspraak te maken voor burgerzaken.",
+        "status": "false",
+        "note": "Via de officiële website van gemeente Amersfoort (amersfoort.nl) is het wel mogelijk om online een afspraak te maken voor burgerzaken. Er zijn momenteel geen technische problemen gemeld die dit verhinderen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.amersfoort.nl/aanleggen",
+      "https://www.amersfoort.nl/omgevingsvergunning-voor-bouwen-en-verbouwen",
+      "https://www.amersfoort.nl/reclame",
+      "https://www.amersfoort.nl/openbare-weg-gebruiken",
+      "https://www.amersfoort.nl/bedrijf-aan-huis"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.amersfoort.nl/leges",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Je mag wel meteen beginnen",
+          "original_reference": "Indien er geen bezwaar wordt ingediend binnen deze periode, mag je verdergaan met de werkzaamheden",
+          "note": "De bron geeft aan dat men direct na vergunningverlening mag beginnen, terwijl de originele tekst stelt dat men moet wachten tot na de bezwaartermijn. Dit is een belangrijk procedureel verschil.",
+          "source_urls": [
+            "https://www.amersfoort.nl/reclame"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Naast jezelf mag je 2 mensen in dienst hebben",
+          "original_reference": "No matching information",
+          "note": "De bron specificeert een concrete personeelslimiet voor bedrijven aan huis die niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.amersfoort.nl/bedrijf-aan-huis"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Je krijgt binnen 2 weken een beslissing op je aanvraag",
+          "original_reference": "Meestal ontvang je binnen 8 weken een besluit",
+          "note": "Er is een significant verschil in de aangegeven beslissingstermijn tussen de bronnen (2 weken vs 8 weken).",
+          "source_urls": [
+            "https://www.amersfoort.nl/openbare-weg-gebruiken"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn drie belangrijke verschillen gevonden tussen de originele tekst en de bronnen. Het meest kritieke verschil betreft het moment waarop men mag beginnen na vergunningverlening. Ook zijn er verschillende beslissingstermijnen genoemd (2 vs 8 weken) en bevat één bron specifieke personeelslimieten die niet in de originele tekst staan. Deze verschillen kunnen leiden tot verwarring bij aanvragers en vereisen verduidelijking."
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "context": {
+    "municipality": {
+      "name": "EDE",
+      "contact": {
+        "phone": "14 0318",
+        "email": "info@ede.nl",
+        "website": "http://www.ede.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "De gemeente streeft ernaar om uw aanvraag binnen vijf werkdagen af te handelen.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Ede geldt voor terrasvergunningen een reguliere procedure met een wettelijke beslistermijn van 8 weken. Er is geen sprake van een streven naar afhandeling binnen 5 werkdagen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.ede.nl/aanvragen-en-regelen/bouw-en-verbouwvergunning-voor-bedrijven",
+      "https://www.ede.nl/aanvragen-en-regelen/ontheffing-aanvragen",
+      "https://www.ede.nl/aanvragen-en-regelen/bouw-en-verbouwvergunning",
+      "https://www.ede.nl/aanvragen-en-regelen/gebruik-openbare-ruimte"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.ede.nl/aanvragen-en-regelen/verleende-vergunningen-inzien-en-opvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U vraagt deze ontheffing uiterlijk tien werkdagen van tevoren aan.",
+          "original_reference": "De gemeente streeft ernaar om uw aanvraag binnen vijf werkdagen af te handelen.",
+          "note": "Er is een verschil in de aanvraagtermijn. De bronnen geven aan dat ontheffingen minimaal 10 werkdagen van tevoren moeten worden aangevraagd, terwijl de originele tekst spreekt over een afhandelingstermijn van 5 werkdagen.",
+          "source_urls": [
+            "https://www.ede.nl/aanvragen-en-regelen/ontheffing-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wilt u een bouwcontainer, bouwmateriaal, steiger, mobiele kraan, hoogwerker neerzetten op grond die van de gemeente is? Dan meldt u dat bij ons via de onderstaande knop. Dit doet u minimaal twee weken van tevoren.",
+          "original_reference": "No matching information",
+          "note": "De bronnen bevatten specifieke informatie over termijnen voor gebruik van openbare ruimte (2 weken vooraf melden) die niet in de originele tekst staat vermeld.",
+          "source_urls": [
+            "https://www.ede.nl/aanvragen-en-regelen/gebruik-openbare-ruimte"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U houdt een doorgang van minimaal 3,5 meter breed vrij voor hulpdiensten. Plaatst u een voorwerp op de stoep? Houd dan een strook van 1,50 meter breed vrij",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden specifieke afstandseisen voor doorgangen die niet in de originele tekst staan genoemd.",
+          "source_urls": [
+            "https://www.ede.nl/aanvragen-en-regelen/gebruik-openbare-ruimte"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de aanvraagtermijnen (10 werkdagen vs. 5 werkdagen afhandeling) en ontbrekende specifieke informatie in de originele tekst over het gebruik van openbare ruimte, zoals minimale doorgangbreedtes en aanmeldtermijnen. Deze informatie is wel aanwezig in de bronpagina's maar ontbreekt in de originele tekst."
+  }
+}

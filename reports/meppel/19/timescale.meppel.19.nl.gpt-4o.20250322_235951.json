@@ -1,0 +1,85 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MEPPEL",
+      "contact": {
+        "phone": "14 0522",
+        "email": "postbus@meppel.nl",
+        "website": "http://www.meppel.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 10,
+    "false_sentences": 1,
+    "accuracy_percentage": 90.9,
+    "false_statements": [
+      {
+        "sentence": "Voor één kansspelautomaat voor een periode van drie jaar kost de aanvraag € 169,50.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Meppel kost een vergunning voor één kansspelautomaat € 226,00 voor een periode van drie jaar, niet € 169,50."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 3,
+    "invalid_urls": 3,
+    "accuracy_percentage": 50.0,
+    "valid_urls_list": [
+      "https://www.meppel.nl/Ondernemer/Vergunningen_regelingen/Horeca/exploitatievergunning_horecabedrijf",
+      "https://www.meppel.nl/Ondernemer/Vergunningen_regelingen/Horeca/Gok_en_kansspelautomaten_vergunning",
+      "https://www.meppel.nl/Ondernemer/Vergunningen_regelingen/Horeca/alcohol_schenken_in_horecabedrijven"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.meppel.nl/product/speelautomaten-vergunning",
+        "reason": "INVALID: Error scraping https://www.meppel.nl/product/speelautomaten-vergunning: 404 Client Error:  for url: https://www.meppel.nl/product/speelautomaten-vergunning"
+      },
+      {
+        "url": "https://www.meppel.nl/Ondernemer/Vergunningen_regelingen/Evenementen/loterij_organiseren",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.meppel.nl/Inwoner/Sport_Vrije_tijd/Evenementen/optocht_organiseren",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Als u een kansspelautomaat in uw horecaonderneming (café of restaurant) wilt plaatsen, moet u een aanwezigheidsvergunning kansspelautomaten aanvragen.",
+          "original_reference": "U mag de automaten pas plaatsen nadat de gemeente de aanwezigheidsvergunning heeft afgegeven.",
+          "note": "De vereiste voor een aanwezigheidsvergunning wordt in beide teksten consistent vermeld.",
+          "source_urls": [
+            "https://www.meppel.nl/Ondernemer/Vergunningen_regelingen/Horeca/Gok_en_kansspelautomaten_vergunning"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Deze vergunning geldt voor één locatie. Voor elke vestiging hebt u een apart...",
+          "original_reference": "De vergunning geldt voor één locatie. Voor elke vestiging heeft u een aparte vergunning nodig.",
+          "note": "De voorwaarde dat de vergunning locatiegebonden is wordt in beide teksten consistent vermeld.",
+          "source_urls": [
+            "https://www.meppel.nl/Ondernemer/Vergunningen_regelingen/Horeca/Gok_en_kansspelautomaten_vergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse van de beschikbare bronnen zijn er geen significante verschillen of tegenstrijdigheden gevonden tussen de originele inhoud en de bronpagina's. De kernvoorwaarden en procedures komen overeen. Wel valt op dat de bronpagina's niet alle details bevatten die in de originele tekst staan, zoals specifieke kosten en behandeltermijnen, maar dit betekent niet dat deze informatie onjuist is."
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OMMEN",
+      "contact": {
+        "phone": "0529",
+        "email": "gemeente@ommen.nl",
+        "website": "http://www.ommen.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Dit kan telefonisch via 14 0529 of online via hun website.",
+        "status": "false",
+        "note": "Het telefoonnummer voor de gemeente Ommen is 14 0529, maar het is niet mogelijk om online een afspraak te maken voor een exploitatievergunning via de website. Dit moet telefonisch of aan de balie gebeuren."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 8,
+    "valid_urls": 5,
+    "invalid_urls": 3,
+    "accuracy_percentage": 62.5,
+    "valid_urls_list": [
+      "https://www.ommen.nl/opvang-vluchtelingen-asielzoekers/crisisnoodopvang-gemeentehuis/veel-gestelde-vragen-crisisnoodopvang/",
+      "https://www.ommen.nl/praktische-vragen-rondom-oekraine/",
+      "https://www.ommen.nl/bekendmakingen/",
+      "https://www.ommen.nl/opvang-vluchtelingen-asielzoekers/crisisnoodopvang/veel-gestelde-vragen-crisisnoodopvang-hotel-paping/",
+      "https://www.ommen.nl/contact/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://lokaleregelgeving.overheid.nl/\">overheid.nl</a>",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.officielebekendmakingen.nl/",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://lokaleregelgeving.overheid.nl/",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "gemeente@ommen.nl",
+          "original_reference": "14 0529",
+          "note": "De originele tekst vermeldt alleen het telefoonnummer voor contact, terwijl er ook een algemeen e-mailadres beschikbaar is voor communicatie met de gemeente.",
+          "source_urls": [
+            "https://www.ommen.nl/contact/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wij zijn telefonisch bereikbaar van maandag tot en met vrijdag tussen 8.30 en 17.00 uur",
+          "original_reference": "No matching information",
+          "note": "De originele tekst specificeert geen openingstijden voor telefonisch contact, terwijl de bronpagina wel specifieke tijden vermeldt.",
+          "source_urls": [
+            "https://www.ommen.nl/contact/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Chevalleraustraat 2, 7731 EE Ommen",
+          "original_reference": "No matching information",
+          "note": "Het fysieke adres van de gemeente ontbreekt in de originele tekst, wat belangrijke informatie is voor het indienen van aanvragen.",
+          "source_urls": [
+            "https://www.ommen.nl/contact/"
+          ]
+        }
+      ]
+    },
+    "summary": "De originele tekst mist enkele essentiële contactgegevens en specifieke details over bereikbaarheid die wel beschikbaar zijn op de gemeentewebsite. Het gaat vooral om het ontbreken van het e-mailadres, de specifieke openingstijden en het fysieke adres van de gemeente. Deze informatie is belangrijk voor inwoners die een exploitatievergunning willen aanvragen."
+  }
+}

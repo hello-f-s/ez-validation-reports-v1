@@ -1,0 +1,79 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DALFSEN",
+      "contact": {
+        "phone": "14 0529",
+        "email": "gemeente@dalfsen.nl",
+        "website": "http://www.dalfsen.nl"
+      }
+    },
+    "service": {
+      "id": 22,
+      "name": "Woonruimte splitsen of samenvoegen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Woningen in het buitengebied met een inhoud van meer dan 900 m³ kunnen worden gesplitst onder de regels van het omgevingsplan.",
+        "status": "false",
+        "note": "Volgens het huidige beleid van gemeente Dalfsen geldt voor woningsplitsing in het buitengebied een minimale inhoudsmaat van 1000 m³, niet 900 m³."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.dalfsen.nl/woningsplitsing",
+      "https://www.dalfsen.nl/exploitatieovereenkomst",
+      "https://www.dalfsen.nl/omgevingsvergunning",
+      "https://www.dalfsen.nl/tijdelijke-verhuur-leegstaand-pand",
+      "https://www.dalfsen.nl"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.dalfsen.nl/form/aanvraagformulier-verzilverlening",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Deze beleidsregels zijn bedoeld voor bestaande en vergunde inwoonsituaties, die al bestonden voor de inwerkingtreding van de bestemmingsplannen voor het buitengebied (2013), de kernen (2017) en Recreatieterreinen en recreatiewoningen (2014)",
+          "original_reference": "De gemeenteraad van Dalfsen heeft specifieke beleidsregels voor woningsplitsing vastgesteld. Deze zijn bedoeld voor bestaande en vergunde inwoonsituaties.",
+          "note": "De originele tekst mist de specifieke tijdsbeperking dat de inwoonsituaties moeten dateren van vóór de inwerkingtreding van de genoemde bestemmingsplannen (2013/2014/2017)",
+          "source_urls": [
+            "https://www.dalfsen.nl/woningsplitsing"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De gemeenteraad heeft op 29 maart 2021 de beleidsregels: 'Woningsplitsing inwoonsituaties gemeente Dalfsen 2021' vastgesteld",
+          "original_reference": "De gemeenteraad van Dalfsen heeft specifieke beleidsregels voor woningsplitsing vastgesteld",
+          "note": "De originele tekst vermeldt niet de specifieke datum (29 maart 2021) en de exacte naam van de beleidsregels",
+          "source_urls": [
+            "https://www.dalfsen.nl/woningsplitsing"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen ontbrekende details in de originele tekst over de tijdsbeperking voor bestaande inwoonsituaties en de specifieke datum en naam van de beleidsregels. Deze details zijn wel belangrijk voor een complete en accurate informatievoorziening aan inwoners. De kern van de informatie blijft wel consistent tussen beide bronnen."
+  }
+}

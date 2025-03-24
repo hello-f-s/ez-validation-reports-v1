@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "KAPELLE",
+      "contact": {
+        "phone": "(0113) 33 31 10",
+        "email": "gemeente@kapelle.nl",
+        "website": "http://www.kapelle.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "Heeft u geen strafblad? Dan krijgt u altijd een VOG.",
+        "status": "false",
+        "note": "Deze stelling is onjuist. Ook zonder strafblad is er geen garantie op het verkrijgen van een VOG. Justis beoordeelt elke aanvraag individueel en kijkt naar meerdere factoren, niet alleen naar de aanwezigheid van een strafblad."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://kapelle.nl/verklaring-omtrent-gedrag-vog",
+      "https://kapelle.nl/pas-op-voor-commerciele-tussenpartijen-vog-aanvragen",
+      "https://kapelle.nl/omgevingsvergunning-0",
+      "https://www.kapelle.nl/verklaring-omtrent-gedrag-vog",
+      "https://www.kapelle.nl/pas-op-voor-commerciele-tussenpartijen-vog-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.kapelle.nl/informatieverzoek-derden-aanvraag-nederlandse-nationaliteit",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U kunt de verklaring digitaal aanvragen. U heeft hierbij uw DigiD nodig.",
+          "original_reference": "Digitale aanvraag: DigiD, iDEAL en een geldig e-mailadres zijn vereist.",
+          "note": "De bronpagina vermeldt alleen DigiD als vereiste voor digitale aanvraag, terwijl de originele tekst ook iDEAL en een geldig e-mailadres als vereisten noemt.",
+          "source_urls": [
+            "https://kapelle.nl/verklaring-omtrent-gedrag-vog"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U kunt ook langskomen op het gemeentehuis. U maakt hiervoor een afspraak.",
+          "original_reference": "Schriftelijk aanvragen: Het formulier moet bij de gemeente worden ingediend waar de aanvrager staat ingeschreven.",
+          "note": "De bronpagina specificeert dat er een afspraak gemaakt moet worden voor schriftelijke aanvraag, wat niet vermeld wordt in de originele tekst.",
+          "source_urls": [
+            "https://kapelle.nl/verklaring-omtrent-gedrag-vog"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor het voorbereiden van de VOG-aanvraag door zo'n tussenpartij betaalt de aanvrager eerst (voorbereidings-)kosten aan dat bedrijf. Deze kosten kunnen oplopen tot tientallen euro's. Daarnaast moeten de leges van €33,85 aan Justis voor de behandeling van de VOG-aanvraag worden betaald.",
+          "original_reference": "Schriftelijke aanvraag: €41,35",
+          "note": "De bronpagina vermeldt alleen het tarief van €33,85 voor digitale aanvraag en noemt geen specifiek tarief voor schriftelijke aanvraag, terwijl de originele tekst €41,35 voor schriftelijke aanvraag vermeldt.",
+          "source_urls": [
+            "https://kapelle.nl/pas-op-voor-commerciele-tussenpartijen-vog-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn drie belangrijke verschillen gevonden tussen de originele tekst en de bronpagina's: 1) verschillende vereisten voor digitale aanvraag, 2) extra informatie over het maken van een afspraak voor schriftelijke aanvraag, en 3) verschillende tariefinformatie. De bronpagina's vermelden minder vereisten voor digitale aanvraag, voegen een afspraakplicht toe voor schriftelijke aanvragen, en tonen andere tarieven dan de originele tekst."
+  }
+}

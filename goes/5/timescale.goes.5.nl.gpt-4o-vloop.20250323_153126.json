@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "GOES",
+      "contact": {
+        "phone": "14 0113",
+        "email": "stadskantoor@goes.nl",
+        "website": "http://www.goes.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 20,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.2,
+    "false_statements": [
+      {
+        "sentence": "Een exploitatievergunning vraagt u aan bij de gemeente Goes. Dit kan online via hun website.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Goes kan een exploitatievergunning niet volledig online worden aangevraagd. De aanvraag moet persoonlijk worden ingediend bij de gemeente."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.goes.nl/exploitatievergunning-horeca",
+      "https://www.goes.nl/alcoholvergunning",
+      "https://www.goes.nl/standplaats-aanvragen",
+      "https://www.goes.nl/milieu-omgevingsvergunning-melding",
+      "https://www.goes.nl/parkeervergunning-voor-bedrijven"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "De houder/leidinggevende is minimaal 21 jaar en van onbesproken gedrag. De gemeente kan vragen om een Verklaring omtrent het gedrag (VOG).",
+          "original_reference": "De houder/leidinggevende moet minimaal 21 jaar oud zijn en van onbesproken gedrag. De gemeente kan vragen om een Verklaring omtrent het gedrag (VOG).",
+          "note": "De leeftijds- en gedragsvereisten komen exact overeen met de originele tekst",
+          "source_urls": [
+            "https://www.goes.nl/exploitatievergunning-horeca"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wilt u een horecabedrijf starten of overnemen? Dan heeft u in ieder geval een exploitatievergunning nodig. Wilt u alcohol verkopen in het horecabedrijf? Dan heeft u ook een Alcoholvergunning nodig.",
+          "original_reference": "Als u alcohol wilt verkopen in uw horecabedrijf, heeft u naast een exploitatievergunning ook een Alcoholvergunning nodig.",
+          "note": "De bronpagina benadrukt duidelijker de volgorde en noodzaak van beide vergunningen, terwijl de originele tekst dit minder expliciet vermeldt",
+          "source_urls": [
+            "https://www.goes.nl/alcoholvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als de ondernemingsvorm verandert, bijvoorbeeld van een eenmanszaak in een BV. Als er een andere leidinggevende of eigenaar komt.",
+          "original_reference": "Wijzigingen in de bedrijfsvoering, zoals veranderingen in leidinggevenden of de ondernemingsvorm, moeten ook bij de gemeente worden gemeld.",
+          "note": "De bronpagina geeft specifiekere voorbeelden van wijzigingen en noemt expliciet eigenaarswisseling als reden voor een nieuwe vergunning",
+          "source_urls": [
+            "https://www.goes.nl/alcoholvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont dat de kerninhoud grotendeels consistent is, maar de bronpagina's bieden op enkele punten meer specifieke details en duidelijkere voorbeelden. Met name bij de vereisten rond vergunningswijzigingen en de samenhang tussen exploitatie- en alcoholvergunningen is de informatie in de bronnen explicieter. De verschillen zijn niet tegenstrijdig maar eerder aanvullend van aard."
+  }
+}

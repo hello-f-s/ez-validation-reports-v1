@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MEDEMBLIK",
+      "contact": {
+        "phone": "(0229) 85 60 00",
+        "email": "info@medemblik.nl",
+        "website": "http://www.medemblik.nl"
+      }
+    },
+    "service": {
+      "id": 8,
+      "name": "Marktvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 12,
+    "false_sentences": 2,
+    "accuracy_percentage": 85.7,
+    "false_statements": [
+      {
+        "sentence": "De aanvraag voor een standplaatsvergunning dient minimaal 8 weken voor het innemen van de standplaats gedaan te worden.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Medemblik moet een standplaatsvergunning minimaal 6 weken (niet 8 weken) voor het innemen van de standplaats worden aangevraagd."
+      },
+      {
+        "sentence": "Eén dag of gedeelte daarvan per jaar: €54,25",
+        "status": "false",
+        "note": "Dit tarief komt niet overeen met de actuele tarieven op de website van gemeente Medemblik. De tarieven zijn recentelijk aangepast en deze specifieke categorie wordt niet meer zo vermeld."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.medemblik.nl/bouwen-en-verbouwen/omgevingswet-en-bouwvergunningen/omgevingsvergunning",
+      "https://www.medemblik.nl/ondernemen/aanbestedingen",
+      "https://www.medemblik.nl/vergunningen/evenementen-en-activiteiten/kansspel/loterij-organiseren",
+      "https://www.medemblik.nl/vergunningen/alcohol-en-horeca/alcoholwetvergunning",
+      "https://www.medemblik.nl/vergunningen/collecte-verkoop-en-reclame/standplaatsvergunning/melding-ideele-standplaats"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.medemblik.nl/loket/standplaatsvergunning-melding-ide%C3%ABle-standplaats",
+        "reason": "INVALID: Error scraping https://www.medemblik.nl/loket/standplaatsvergunning-melding-ide%C3%ABle-standplaats: 404 Client Error: Not Found for url: https://www.medemblik.nl/loket/standplaatsvergunning-melding-ide%C3%ABle-standplaats"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wilt u een standplaats innemen voor een niet-commerciële sociaal-culturele, sportieve, educatieve, levensbeschouwelijke of godsdienstige activiteit? Of een activiteit die publiekscampagnes van de (semi-)overheid ondersteunen? Dan meldt u dit tenminste 4 weken voor ingebruikname",
+          "original_reference": "De aanvraag voor een standplaatsvergunning dient minimaal 8 weken voor het innemen van de standplaats gedaan te worden",
+          "note": "Er is een verschillend tijdspad voor ideële standplaatsen (4 weken) versus reguliere standplaatsen (8 weken)",
+          "source_urls": [
+            "https://www.medemblik.nl/vergunningen/collecte-verkoop-en-reclame/standplaatsvergunning/melding-ideele-standplaats"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Per m2 voor één dag of een gedeelte daarvan per week gedurende een kalenderjaar",
+          "original_reference": "Per m2 voor één dag of gedeelte daarvan (excl. elektra)",
+          "note": "De originele tekst specificeert niet dat het tarief per week gedurende een kalenderjaar geldt, wat een belangrijk verschil is in de kostenstructuur",
+          "source_urls": [
+            "https://www.medemblik.nl/vergunningen/collecte-verkoop-en-reclame/standplaatsvergunning/melding-ideele-standplaats"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de aanvraagtermijnen voor verschillende types standplaatsen en de specificatie van de tariefstructuur. Voor ideële standplaatsen geldt een kortere aanvraagtermijn van 4 weken, terwijl reguliere standplaatsen 8 weken van tevoren moeten worden aangevraagd. Daarnaast is er een verduidelijking nodig in de kostenstructuur voor wat betreft de berekening per m2, waarbij de brontekst specifieker is over de periode waarover dit tarief geldt."
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DEN HELDER",
+      "contact": {
+        "phone": "null",
+        "email": "info@denhelder.nl",
+        "website": "http://www.denhelder.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 10,
+    "false_sentences": 2,
+    "accuracy_percentage": 83.3,
+    "false_statements": [
+      {
+        "sentence": "Gebruik alleen het formulier van juni 2020.",
+        "status": "false",
+        "note": "Dit is onjuist omdat er geen specifieke eis is voor een formulier uit juni 2020. Het meest recente formulier van Dienst Justis moet worden gebruikt."
+      },
+      {
+        "sentence": "Een online aanvraag van een VOG kost € 33,85, terwijl een papieren aanvraag € 41,35 kost.",
+        "status": "false",
+        "note": "De genoemde bedragen zijn niet correct volgens de actuele tarieven van de gemeente Den Helder. De actuele tarieven kunnen worden gevonden op de website van de gemeente."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 0,
+    "invalid_urls": 7,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.denhelder.nl/Onderwerpen/Bestuur_en_organisatie/Beleid/Woo_verzoek_indienen",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://example.com/source1",
+        "reason": "INVALID: Error scraping https://example.com/source1: 404 Client Error: Not Found for url: https://example.com/source1"
+      },
+      {
+        "url": "https://www.denhelder.nl/Onderwerpen/Bouwen_en_verbouwen/Omgevingsvergunning",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.denhelder.nl/Onderwerpen/Uittreksels/Verklaring_omtrent_gedrag_VOG_aanvragen",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.denhelder.nl/Zoekresultaten_oud?searchbase=50&freetext=&sp=H4sIAAAAAAAAAKtWystPSc3JT04syczPQ2YrWSlVxyiVxChZxShVGRY4VjmaBwV6G5VmuppkVniFe6YG2trGKOnEKKXlgdUg6wWLZ6ZgiGOoKcgFqklLzClOrVXSUSpOTSxKzkhKLE4FWm5iABcpSsxLBwkZGijVAgA2jSE5sQAAAA==&",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.denhelder.nl/Onderwerpen/Paspoort_identiteitskaart_en_rijbewijs/Nederlandse_nationaliteit_aanvragen",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://example.com/source2",
+        "reason": "INVALID: Error scraping https://example.com/source2: 404 Client Error: Not Found for url: https://example.com/source2"
+      }
+    ]
+  }
+}

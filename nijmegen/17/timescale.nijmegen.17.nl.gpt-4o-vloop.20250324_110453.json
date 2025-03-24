@@ -1,0 +1,87 @@
+{
+  "context": {
+    "municipality": {
+      "name": "NIJMEGEN",
+      "contact": {
+        "phone": "14 024",
+        "email": "gemeente@nijmegen.nl",
+        "website": "http://www.nijmegen.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor een nieuwe terrasvergunning bedragen € 1.305,20.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Nijmegen bedragen de kosten voor een nieuwe terrasvergunning € 1.331,30 (tarief 2024)."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.nijmegen.nl/diensten/vergunningen/drank-en-horeca/terrasvergunning-aanvragen-of-wijzigen/",
+      "https://www.nijmegen.nl/diensten/vergunningen/objectvergunning/",
+      "https://www.nijmegen.nl/diensten/evenementen/schema-vergunningen-activiteiten/tekstversie/",
+      "https://www.nijmegen.nl/diensten/vergunningen/standplaatsvergunningen/vergunning-standplaats-priveterrein/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.nijmegen.nl/diensten/vergunningen/informatiekraam-melden-of-vergunning/",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een nieuw terras sluit aan bij naastgelegen terrassen",
+          "original_reference": "No matching information",
+          "note": "Deze voorwaarde voor aansluiting bij naastgelegen terrassen ontbreekt in de originele tekst maar staat wel in de bronnen als extra vereiste",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/vergunningen/drank-en-horeca/terrasvergunning-aanvragen-of-wijzigen/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het gevelterras is niet breder dan de voor- en/ of zijgevel van het pand. Hierbij wordt haaks gemeten op de gevel",
+          "original_reference": "No matching information",
+          "note": "Deze specifieke maatvoering voor de breedte van gevelterrassen ontbreekt in de originele tekst",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/vergunningen/drank-en-horeca/terrasvergunning-aanvragen-of-wijzigen/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor meer informatie over objecten op uw horecaterras neemt u contact op met het Ondernemerspunt",
+          "original_reference": "Neem contact op met het Ondernemerspunt voor meer informatie",
+          "note": "De originele tekst verwijst alleen naar objectvergunningen, terwijl de bron specifiek verwijst naar objecten op horecaterrassen",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/vergunningen/objectvergunning/"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten enkele aanvullende specifieke voorwaarden voor terrassen die niet in de originele tekst zijn opgenomen, met name over de aansluiting bij naastgelegen terrassen en de maximale breedte van gevelterrassen. Ook is er een nuanceverschil in de verwijzing naar het Ondernemerspunt. De kern van de informatie blijft echter grotendeels consistent."
+  }
+}

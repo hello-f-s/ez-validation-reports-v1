@@ -1,0 +1,89 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LOPIK",
+      "contact": {
+        "phone": "(0348) 55 99 55",
+        "email": "gemeente@lopik.nl",
+        "website": "http://www.lopik.nl"
+      }
+    },
+    "service": {
+      "id": 7,
+      "name": "Kabels en leidingen aanleggen en beheren"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "Doe graafmelding bij het Kadaster, 20 werkdagen voor het graven begint.",
+        "status": "false",
+        "note": "Een graafmelding moet minimaal 3 werkdagen (niet 20) voor aanvang van de graafwerkzaamheden worden gedaan bij het Kadaster via KLIC. De termijn van 20 werkdagen is onjuist volgens de officiële richtlijnen van de gemeente Lopik."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 6,
+    "invalid_urls": 1,
+    "accuracy_percentage": 85.7,
+    "valid_urls_list": [
+      "https://www.lopik.nl/graafmelding",
+      "https://www.lopik.nl/omgevingsvergunning",
+      "https://www.lopik.nl/milieu-vergunning-of-melding",
+      "https://www.lopik.nl",
+      "https://www.lopik.nl/exploitatieovereenkomst",
+      "https://www.lopik.nl/kabels-en-leidingen-leggen-in-openbare-grond"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.lopik.nl\">Title:",
+        "reason": "INVALID: Error scraping https://www.lopik.nl\">Title:: HTTPSConnectionPool(host='www.lopik.nl%22%3etitle', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10994d010>: Failed to resolve 'www.lopik.nl%22%3etitle' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Kabels en leidingen in de grond mag u alleen leggen in openbaar gebied. Dit moet u eerst melden bij het Kadaster.",
+          "original_reference": "Kabels en leidingen mag u alleen leggen in openbaar gebied, na melding bij het Kadaster.",
+          "note": "De informatie over het leggen van kabels en leidingen in openbaar gebied en de meldingsplicht bij het Kadaster komt exact overeen.",
+          "source_urls": [
+            "https://www.lopik.nl/kabels-en-leidingen-leggen-in-openbare-grond"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Als u nieuwe buisleidingen voor gevaarlijke stoffen op een nieuw traject plaatst, vraag dan om het bestemmingsplan aan te passen.",
+          "original_reference": "Voor nieuwe buisleidingen voor gevaarlijke stoffen: pas het bestemmingsplan aan of vraag een omgevingsvergunning aan.",
+          "note": "De vereisten voor nieuwe buisleidingen voor gevaarlijke stoffen komen overeen met de originele tekst.",
+          "source_urls": [
+            "https://www.lopik.nl/kabels-en-leidingen-leggen-in-openbare-grond"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "U moet een graafmelding doen als u dieper graaft dan een halve meter. U doet de melding bij het Kadaster.",
+          "original_reference": "Een graafmelding is verplicht bij graven dieper dan een halve meter.",
+          "note": "De dieptegrens voor graafmeldingen en de meldingsplicht bij het Kadaster komen overeen.",
+          "source_urls": [
+            "https://www.lopik.nl/graafmelding"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse van de bronnen zijn er geen significante verschillen gevonden tussen de originele inhoud en de geciteerde bronnen. De kernpunten over vergunningen, meldingsplicht, termijnen en procedures komen overeen. De informatie in de originele tekst lijkt actueel en accuraat te zijn."
+  }
+}

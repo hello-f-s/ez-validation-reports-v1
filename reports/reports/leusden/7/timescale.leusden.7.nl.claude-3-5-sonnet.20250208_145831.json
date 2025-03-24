@@ -1,0 +1,85 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LEUSDEN",
+      "contact": {
+        "phone": "14 033",
+        "email": "gemeente@leusden.nl",
+        "website": "http://www.leusden.nl/"
+      }
+    },
+    "service": {
+      "id": 7,
+      "name": "Kabels en leidingen aanleggen en beheren"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 8,
+    "true_sentences": 7,
+    "false_sentences": 1,
+    "accuracy_percentage": 87.5,
+    "false_statements": [
+      {
+        "sentence": "U moet een melding doen of een vergunning aanvragen voor het aanleggen van kabels en leidingen. Dit kunt u doen op de pagina Kabels en leidingen van de gemeentewebsite.",
+        "status": "false",
+        "note": "Volgens de website van gemeente Leusden moet u een vergunning aanvragen via het MOOR-portaal (Meldpunt Opbrekingen Openbare Ruimte) en niet direct via de gemeentewebsite."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.leusden.nl/en/vergunningen-en-belastingen",
+      "https://www.leusden.nl/bouwen-en-wonen/kabels-en-leidingen",
+      "https://www.leusden.nl/en/bouwen-en-wonen/kabels-en-leidingen",
+      "https://www.leusden.nl/en/ondernemersloket/vergunningen-en-meldingen-voor-ondernemers",
+      "https://www.leusden.nl/ondernemersloket/vergunningen-en-meldingen-voor-ondernemers"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.leusden.nl/ondernemers/vergunningen-en-meldingen-voor-ondernemers",
+        "reason": "INVALID: Error scraping https://www.leusden.nl/ondernemers/vergunningen-en-meldingen-voor-ondernemers: 404 Client Error: Not Found for url: https://www.leusden.nl/ondernemers/vergunningen-en-meldingen-voor-ondernemers"
+      },
+      {
+        "url": "https://www.leusden.nl/gemeente/kabels-en-leidingen",
+        "reason": "INVALID: Error scraping https://www.leusden.nl/gemeente/kabels-en-leidingen: 404 Client Error: Not Found for url: https://www.leusden.nl/gemeente/kabels-en-leidingen"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U vraagt de vergunning aan bij het Meldpunt Opbrekingen Openbare Ruimte (MOOR)",
+          "original_reference": "U moet een melding doen of een vergunning aanvragen voor het aanleggen van kabels en leidingen. Dit kunt u doen op de pagina Kabels en leidingen van de gemeentewebsite.",
+          "note": "De bronnen specificeren dat de aanvraag specifiek via MOOR moet worden gedaan, terwijl de originele tekst alleen verwijst naar de gemeentewebsite",
+          "source_urls": [
+            "https://www.leusden.nl/bouwen-en-wonen/kabels-en-leidingen",
+            "https://www.leusden.nl/en/bouwen-en-wonen/kabels-en-leidingen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het handboek beleidsregels kabels en leidingen 2023",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden een belangrijk document (handboek beleidsregels) dat niet genoemd wordt in de originele tekst",
+          "source_urls": [
+            "https://www.leusden.nl/bouwen-en-wonen/kabels-en-leidingen",
+            "https://www.leusden.nl/en/bouwen-en-wonen/kabels-en-leidingen"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele inhoud en de bronnen. Ten eerste wordt in de bronnen specifiek vermeld dat aanvragen via MOOR moeten worden gedaan, wat preciezer is dan de originele tekst. Ten tweede wordt er in de bronnen verwezen naar een handboek beleidsregels uit 2023 dat niet genoemd wordt in de originele tekst maar wel relevant is voor aanvragers."
+  }
+}

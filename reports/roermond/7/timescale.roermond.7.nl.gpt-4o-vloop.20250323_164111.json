@@ -1,0 +1,72 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ROERMOND",
+      "contact": {
+        "phone": "14 0475",
+        "email": "mail@roermond.nl",
+        "website": "http://www.roermond.nl"
+      }
+    },
+    "service": {
+      "id": 7,
+      "name": "Kabels en leidingen aanleggen en beheren"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 27,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.4,
+    "false_statements": [
+      {
+        "sentence": "Openingstijden: maandag, dinsdag, woensdag en vrijdag van 9:00 tot 17:00 uur, donderdag van 9:00 tot 19:30 uur.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Roermond zijn de openingstijden: maandag t/m vrijdag van 9:00 tot 17:00 uur, donderdag van 9:00 tot 20:00 uur."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 3,
+    "invalid_urls": 2,
+    "accuracy_percentage": 60.0,
+    "valid_urls_list": [
+      "https://www.roermond.nl/omgevingsvergunning",
+      "https://www.roermond.nl/werkzaamheden",
+      "https://www.roermond.nl/checklist-starten-in-roermond"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.roermond.nl/object-plaatsen-op-openbare-gemeentegrond",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.roermond.nl/reclame-plaatsen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Hiervoor heeft u een DigiD nodig. Bent u een ondernemer? Dan heeft u eHerkenning (minimaal niveau 2) nodig. [...] Let op! Het is niet mogelijk om via het nieuwe omgevingsloket uw conceptverzoek digitaal aan te vullen. Als u het conceptverzoek nog wilt aanvullen, dient u de aanvullende gegevens te sturen naar mail@roermond.nl onder vermelding van uw registratienummer.",
+          "original_reference": "Een aanvraag kan worden ingediend via het nieuwe omgevingsloket (Digitaal Stelsel Omgevingswet, DSO). Hiervoor heeft u als inwoner een DigiD nodig en als ondernemer eHerkenning (minimaal niveau 2).",
+          "note": "De bronpagina bevat belangrijke aanvullende informatie over het niet digitaal kunnen aanvullen van conceptverzoeken en specificeert dat aanvullingen per e-mail moeten worden verstuurd. Deze informatie ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.roermond.nl/omgevingsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "Bij analyse van de bronnen is één significant verschil gevonden met betrekking tot de aanvraagprocedure. De originele tekst mist belangrijke informatie over de beperkingen van het digitale systeem en de procedure voor het aanvullen van conceptverzoeken. De overige informatie in de originele tekst komt overeen met de bronnen of kon niet worden geverifieerd in de beschikbare bronpagina's."
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HAAKSBERGEN",
+      "contact": {
+        "phone": "(053) 573 45 67",
+        "email": "gemeente@haaksbergen.nl",
+        "website": "http://www.haaksbergen.nl"
+      }
+    },
+    "service": {
+      "id": 10,
+      "name": "Nachtregister bijhouden"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 1,
+    "true_sentences": 1,
+    "false_sentences": 0,
+    "accuracy_percentage": 100.0,
+    "false_statements": []
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.haaksbergen.nl/Vergunningen/Evenementenvergunning.html",
+      "https://www.haaksbergen.nl/Haaksbergen/servicenormen.html",
+      "https://www.haaksbergen.nl/ondernemers/Bedrijfstarten.html",
+      "https://www.haaksbergen.nl/Vergunningen/101107-Omgevingsvergunning.html"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.haaksbergen.nl/Overig/Ter-inzage-of-inzien-of-verzoek-om-informatie.html",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een reguliere vergunningsperiode duurt acht weken. Dit is een termijn van orde. [...] Een uitgebreide procedure duurt zes maanden.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat specifieke informatie over vergunningsprocedures en doorlooptijden die niet in de originele inhoud staat.",
+          "source_urls": [
+            "https://www.haaksbergen.nl/Vergunningen/101107-Omgevingsvergunning.html"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u een afspraak heeft met de Publieksbalie wordt u binnen vijf minuten geholpen. Wanneer u ons belt onder openingstijden, nemen wij uw telefonische oproep binnen dertig seconden op.",
+          "original_reference": "No matching information",
+          "note": "De servicenormen van de gemeente met concrete tijdsindicaties ontbreken in de originele inhoud.",
+          "source_urls": [
+            "https://www.haaksbergen.nl/Haaksbergen/servicenormen.html"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U hebt een vergunning nodig als u een evenement wilt organiseren [...] Voor meer informatie hierover: zie de website van de Veiligheidsregio Twente.",
+          "original_reference": "No matching information",
+          "note": "Specifieke informatie over evenementenvergunningen en de rol van Veiligheidsregio Twente ontbreekt in de originele inhoud.",
+          "source_urls": [
+            "https://www.haaksbergen.nl/Vergunningen/Evenementenvergunning.html"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten veel meer specifieke informatie dan de originele inhoud, waaronder concrete servicenormen, vergunningsprocedures en voorwaarden voor evenementen. De originele inhoud mist essentiële informatie over gemeentelijke dienstverlening die wel beschikbaar is op de website van de gemeente Haaksbergen."
+  }
+}

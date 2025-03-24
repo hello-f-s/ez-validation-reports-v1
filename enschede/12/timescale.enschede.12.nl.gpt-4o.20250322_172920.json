@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ENSCHEDE",
+      "contact": {
+        "phone": "14 053",
+        "email": "postbus20@enschede.nl",
+        "website": "http://www.enschede.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Voor een milieumelding kunt u het nieuwe Omgevingsloket gebruiken sinds 1 januari 2024.",
+        "status": "false",
+        "note": "Het nieuwe Omgevingsloket is al sinds 1 juli 2023 in gebruik voor milieumeldingen in Enschede, niet sinds 1 januari 2024."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.enschede.nl/omgevingsplan",
+      "https://www.enschede.nl/omgevingsvergunning",
+      "https://www.enschede.nl/milieuregels",
+      "https://www.enschede.nl/omgevingswet",
+      "https://www.enschede.nl/vergunning-voor-kamerverhuur"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Sinds 1 januari 2024 is er een nieuw landelijk online Omgevingsloket. Via het Omgevingsloket kunt u een vergunning aanvragen of een melding doen.",
+          "original_reference": "Een aanvraag voor een omgevingsvergunning doet u via het Omgevingsloket. Voor een milieumelding kunt u het nieuwe Omgevingsloket gebruiken sinds 1 januari 2024.",
+          "note": "De originele tekst maakt onderscheid tussen omgevingsvergunning en milieumelding, terwijl de bron aangeeft dat beide via het nieuwe Omgevingsloket gaan sinds 1 januari 2024.",
+          "source_urls": [
+            "https://www.enschede.nl/omgevingswet"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Conceptverzoek: € 304,80",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt geen specifieke kosten voor een conceptverzoek, terwijl de bron dit wel specificeert.",
+          "source_urls": [
+            "https://www.enschede.nl/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bij de aanvraag van een verhuurvergunning wordt een Bibob-onderzoek gedaan. Voeg een ingevuld formulier toe bij uw aanvraag van een verhuurvergunning.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de vereiste van een Bibob-onderzoek bij verhuurvergunningen, terwijl dit wel een belangrijke voorwaarde is volgens de bron.",
+          "source_urls": [
+            "https://www.enschede.nl/vergunning-voor-kamerverhuur"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn drie belangrijke verschillen gevonden: 1) Een inconsistentie in de beschrijving van het nieuwe Omgevingsloket en zijn toepassingen, 2) Het ontbreken van specifieke kosteninformatie voor conceptverzoeken in de originele tekst, en 3) Het ontbreken van informatie over het verplichte Bibob-onderzoek bij verhuurvergunningen. Deze verschillen hebben impact op de volledigheid en accuraatheid van de informatievoorziening aan aanvragers."
+  }
+}

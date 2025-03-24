@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "VAALS",
+      "contact": {
+        "phone": "(043) 306 85 68",
+        "email": "info@vaals.nl",
+        "website": "http://www.vaals.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 32,
+    "true_sentences": 31,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.9,
+    "false_statements": [
+      {
+        "sentence": "Telefoonnummer: 043-3068568.",
+        "status": "false",
+        "note": "Het correcte telefoonnummer van de gemeente Vaals is 043-3068600, niet 043-3068568 volgens de officiële website van de gemeente Vaals."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.vaals.nl/inwoners/vergunningen/omgevingsvergunning",
+      "https://www.vaals.nl/inwoners/vergunningen/omgevingswet/omgevingsvergunning",
+      "https://www.vaals.nl/inwoners/vergunningen/omgevingswet/meest-aangevraagde-activiteiten",
+      "https://www.vaals.nl/inwoners/vergunningen/omgevingswet/veelgestelde-vragen",
+      "https://www.vaals.nl/inwoners/vergunningen/omgevingswet/omgevingsloket"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Nieuw bij het (ver)bouwen van een bouwwerk is dat er een knip wordt gemaakt. Deze bestaat uit een (technische) bouwactiviteit en een omgevingsplanactiviteit bouwen (ruimtelijk of planologisch deel).",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat specifieke informatie over de nieuwe 'knip' in bouwactiviteiten onder de Omgevingswet die niet in de originele tekst wordt genoemd. Dit is een belangrijk verschil in de vergunningsprocedure.",
+          "source_urls": [
+            "https://www.vaals.nl/inwoners/vergunningen/omgevingswet/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het Omgevingsloket vervangt de volgende loketten: Omgevingsloket online (OLO), Activiteitenbesluit Internet Module (AIM), Ruimtelijkeplannen.nl, Meldpunt bodemkwaliteit.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat het nieuwe Omgevingsloket meerdere bestaande loketten vervangt. Dit is belangrijke aanvullende informatie over de digitale dienstverlening.",
+          "source_urls": [
+            "https://www.vaals.nl/inwoners/vergunningen/omgevingswet/omgevingsloket"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor een dakkapel aan de voorkant van je woning, dient u altijd een vergunning aan te vragen.",
+          "original_reference": "zoals voor een kleine dakkapel aan de achterkant van uw woning",
+          "note": "De bronpagina specificeert dat een dakkapel aan de voorkant altijd vergunningplichtig is, terwijl de originele tekst alleen het voorbeeld van een vergunningvrije dakkapel aan de achterkant noemt.",
+          "source_urls": [
+            "https://www.vaals.nl/inwoners/vergunningen/omgevingswet/omgevingsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de nieuwe 'knip' in bouwactiviteiten onder de Omgevingswet, de vervanging van meerdere bestaande loketten door het nieuwe Omgevingsloket, en specifiekere regels rond dakkapellen. De bronpagina's bevatten meer gedetailleerde informatie over de veranderingen onder de Omgevingswet die niet in de originele tekst worden genoemd."
+  }
+}

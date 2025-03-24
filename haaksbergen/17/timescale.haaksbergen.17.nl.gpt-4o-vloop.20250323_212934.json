@@ -1,0 +1,87 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HAAKSBERGEN",
+      "contact": {
+        "phone": "(053) 573 45 67",
+        "email": "gemeente@haaksbergen.nl",
+        "website": "http://www.haaksbergen.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Voor het exploiteren van een terras heeft u deze vergunning nodig, mits het terras binnen een horecagelegenheid valt.",
+        "status": "false",
+        "note": "Deze zin is incorrect geformuleerd. Het woord 'mits' impliceert een voorwaarde waaronder de vergunning nodig is, terwijl het juist andersom is. Een terrasvergunning is altijd nodig voor een terras bij een horecagelegenheid. Het woord 'tenzij' zou hier correcter zijn."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.haaksbergen.nl/Vergunningen/101107-Omgevingsvergunning.html",
+      "https://www.haaksbergen.nl/ondernemers/Bedrijfstarten.html",
+      "https://www.haaksbergen.nl/Vergunningen/Evenementenvergunning.html",
+      "https://www.haaksbergen.nl/Vergunningen/Exploitatievergunning.html"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.haaksbergen.nl/ondernemers/Ondernemend-Haaksbergen/Ondernemersplein.html",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor de volgende openbare inrichtingen moet u een exploitatievergunning aanvragen: Hotel, Restaurant of eetcafé, Pension, (Internet)Café, Waterpijpcafé, Cafetaria, Snackbar, Discotheek, Buurthuis, Afhaalzaak, Clubhuis/Kantine, Terras",
+          "original_reference": "U moet een exploitatievergunning aanvragen voor openbare inrichtingen zoals een terras in de gemeente Haaksbergen.",
+          "note": "De bronpagina geeft een veel uitgebreidere lijst van inrichtingen waarvoor een exploitatievergunning nodig is, terwijl de originele tekst alleen terrassen noemt.",
+          "source_urls": [
+            "https://www.haaksbergen.nl/Vergunningen/Exploitatievergunning.html"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Uitzonderingen: Een restauratie in een winkelbedrijf als het een nevenactiviteit betreft, een restauratie van een zorginstelling of museum, een bedrijfskantine/restaurant (voor eigen personeel), als u ook een alcoholvergunning aanvraagt kan u in aanmerking komen voor een vrijstelling.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt geen uitzonderingen op de vergunningplicht, terwijl de bronpagina wel specifieke uitzonderingen noemt.",
+          "source_urls": [
+            "https://www.haaksbergen.nl/Vergunningen/Exploitatievergunning.html"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wilt u weten of het pand waar u zich wil vestigen de juiste bestemming heeft kijk dan op www.ruimtelijkeplannen.nl",
+          "original_reference": "De exploitatie moet passen binnen de bestemmingen die zijn vastgelegd op ruimtelijke plannen.",
+          "note": "De bronpagina verwijst specifiek naar de website ruimtelijkeplannen.nl voor het controleren van bestemmingen, wat ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.haaksbergen.nl/Vergunningen/Exploitatievergunning.html"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de reikwijdte van de vergunningplicht, waarbij de bronpagina een veel uitgebreidere lijst van inrichtingen en specifieke uitzonderingen noemt die niet in de originele tekst staan. Ook biedt de bronpagina meer concrete hulpmiddelen zoals de verwijzing naar ruimtelijkeplannen.nl voor het controleren van bestemmingen. Deze informatie maakt de vereisten en mogelijkheden voor ondernemers duidelijker dan in de originele tekst."
+  }
+}

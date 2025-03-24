@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ENSCHEDE",
+      "contact": {
+        "phone": "14 053",
+        "email": "postbus20@enschede.nl",
+        "website": "http://www.enschede.nl"
+      }
+    },
+    "service": {
+      "id": 20,
+      "name": "Vergunning voor seksbedrijf"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "De GGD controleert of u voldoet aan de veiligheid en gezondheidseisen voor uw medewerkers.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Enschede is het de Nederlandse Arbeidsinspectie (voorheen Inspectie SZW) die controleert of wordt voldaan aan de veiligheid en gezondheidseisen voor medewerkers, niet de GGD."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.enschede.nl/vergunning-voor-kamerverhuur",
+      "https://www.enschede.nl/kinderopvang-starten-of-wijzigen",
+      "https://www.enschede.nl/vergunning-voor-gokautomaten",
+      "https://www.enschede.nl/alcoholvergunning-aanvragen",
+      "https://www.enschede.nl/vergunning-seksbedrijven"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De GGD controleert op verzoek van de gemeente of u uw pand goed schoonmaakt. Ook controleert de GGD of u zorgt voor de veiligheid en gezondheid van uw medewerkers",
+          "original_reference": "De GGD controleert of u voldoet aan de veiligheid en gezondheidseisen voor uw medewerkers.",
+          "note": "De brontekst specificeert dat de GGD ook de schoonmaak van het pand controleert, wat niet vermeld staat in de originele tekst. Daarnaast wordt in de bron vermeld dat de GGD dit doet 'op verzoek van de gemeente', wat een belangrijk procedureel detail is.",
+          "source_urls": [
+            "https://www.enschede.nl/vergunning-seksbedrijven"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "De vergunning geldt voor 3 jaar",
+          "original_reference": "No matching information",
+          "note": "De geldigheidsduur van de vergunning (3 jaar) wordt wel genoemd in de bron maar ontbreekt in de originele tekst. Dit is belangrijke aanvullende informatie.",
+          "source_urls": [
+            "https://www.enschede.nl/vergunning-seksbedrijven"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "De vergunning is persoons- en pandgebonden en kunt u niet overdragen",
+          "original_reference": "No matching information",
+          "note": "Deze belangrijke beperking van de vergunning wordt wel genoemd in de bron maar ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.enschede.nl/vergunning-seksbedrijven"
+          ]
+        }
+      ]
+    },
+    "summary": "De broninhoud komt grotendeels overeen met de originele tekst, maar bevat enkele belangrijke aanvullende details die ontbreken in de originele tekst. Het belangrijkste verschil betreft de rol van de GGD, die volgens de bron ook de schoonmaak controleert en dit doet op verzoek van de gemeente. Daarnaast bevat de bron aanvullende belangrijke informatie over de geldigheidsduur van de vergunning (3 jaar) en het feit dat de vergunning persoons- en pandgebonden is en niet overdraagbaar is."
+  }
+}

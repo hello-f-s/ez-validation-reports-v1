@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HOOGEVEEN",
+      "contact": {
+        "phone": "14 0528",
+        "email": "info@hoogeveen.nl",
+        "website": "http://www.hoogeveen.nl"
+      }
+    },
+    "service": {
+      "id": 7,
+      "name": "Kabels en leidingen aanleggen en beheren"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 9,
+    "false_sentences": 2,
+    "accuracy_percentage": 81.8,
+    "false_statements": [
+      {
+        "sentence": "U kunt uw plan voorleggen via het online loket 'Verken uw idee' voor € 175,50 om te zien of het haalbaar is",
+        "status": "false",
+        "note": "Het bedrag van €175,50 komt niet overeen met de actuele tarieven van gemeente Hoogeveen. De gemeente Hoogeveen heeft geen vast tarief voor het voorleggen van een plan via 'Verken uw idee'."
+      },
+      {
+        "sentence": "U krijgt binnen 8 weken te horen of uw aanvraag voor een omgevingsvergunning is goedgekeurd nadat de gemeente alle benodigde informatie heeft ontvangen.",
+        "status": "false",
+        "note": "De standaard behandeltermijn voor een reguliere omgevingsvergunning is volgens de gemeente Hoogeveen maximaal 8 weken, met de mogelijkheid tot verlenging met 6 weken. De formulering suggereert een garantie van 8 weken die niet correct is."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.hoogeveen.nl/melding-idee-klacht-en-bezwaar",
+      "https://www.hoogeveen.nl/vergunningen/vergunning-gebruik-gemeentegrond",
+      "https://www.hoogeveen.nl/vergunningen/omgevingsvergunningen",
+      "https://www.hoogeveen.nl/vergunningen/evenementenvergunning-aanvragen",
+      "https://www.hoogeveen.nl/bouwen/nieuwe-rioolaansluiting-aanvragen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Mail het aanvraagformulier naar info@hoogeveen.nl. Stuur mee: een overzichtstekening van de locatie",
+          "original_reference": "U kunt uw plan voorleggen via het online loket 'Verken uw idee'",
+          "note": "De bronnen tonen een andere aanvraagprocedure via e-mail, terwijl de originele tekst verwijst naar een online loket",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/vergunning-gebruik-gemeentegrond"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Mail omgevingsvergunningen@dewoldenhoogeveen.nl of bel 14 0528",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden specifieke contactgegevens voor omgevingsvergunningen die niet in de originele tekst staan",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/omgevingsvergunningen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U krijgt binnen 1 werkdag een bevestigingsmail van het mailadres noreply@jeleefomgeving.nl",
+          "original_reference": "No matching information",
+          "note": "De bronnen specificeren een bevestigingsprocedure die niet genoemd wordt in de originele tekst",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/omgevingsvergunningen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de aanvraagprocedure (e-mail vs. online loket), aanvullende contactgegevens en communicatieprocedures die niet in de originele tekst staan vermeld. De bronnen geven meer gedetailleerde informatie over het aanvraagproces en de communicatie na de aanvraag."
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MAASSLUIS",
+      "contact": {
+        "phone": "14 010",
+        "email": "gemeente@maassluis.nl",
+        "website": "http://www.maassluis.nl"
+      }
+    },
+    "service": {
+      "id": 8,
+      "name": "Marktvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 21,
+    "false_sentences": 3,
+    "accuracy_percentage": 87.5,
+    "false_statements": [
+      {
+        "sentence": "U moet geregistreerd zijn bij het Hoofd Bedrijfschap Detailhandel (HBD).",
+        "status": "false",
+        "note": "Het Hoofdbedrijfschap Detailhandel (HBD) bestaat niet meer sinds 2015. Deze registratie is niet meer nodig of mogelijk."
+      },
+      {
+        "sentence": "Meestal is een vestigingsvergunning nodig.",
+        "status": "false",
+        "note": "De vestigingswet is in 2007 afgeschaft. Er is geen vestigingsvergunning meer nodig voor markthandel."
+      },
+      {
+        "sentence": "De kosten voor het aanvragen van een marktvergunning bedragen € 28,90.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Maassluis zijn de kosten voor een marktvergunning in 2024 anders. Dit bedrag is verouderd."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 4,
+    "valid_urls": 4,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.maassluis.nl/marktplaats-aanvragen",
+      "https://www.maassluis.nl/standplaats-aanvragen",
+      "https://www.maassluis.nl/antenne-of-schotelantenne-plaatsen",
+      "https://www.maassluis.nl/uitrit-of-inrit-aanleggen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De gemeente verleent direct de vergunning waarmee u zich kunt laten inschrijven als meeloper. Dagplaatsen zijn vaste plaatsen die niet bezet zijn in verband met ziekte, vakantie etcetera.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over meelopers en dagplaatsen, terwijl dit een belangrijk onderdeel is van het vergunningensysteem.",
+          "source_urls": [
+            "https://www.maassluis.nl/marktplaats-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De wachttijd voor een vaste plaats verschilt per markt en per branche.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niets over wachttijden voor vaste plaatsen, wat belangrijke informatie is voor potentiële aanvragers.",
+          "source_urls": [
+            "https://www.maassluis.nl/marktplaats-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De meeste ondernemers moeten zich inschrijven bij het product- en/of bedrijfschap van de branche.",
+          "original_reference": "U moet geregistreerd zijn bij het Hoofd Bedrijfschap Detailhandel (HBD).",
+          "note": "De bronpagina is minder specifiek over de registratie-eisen en noemt ook product- en/of bedrijfschappen als mogelijkheid, terwijl de originele tekst alleen HBD-registratie vereist.",
+          "source_urls": [
+            "https://www.maassluis.nl/marktplaats-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen aanvullende informatie over het systeem van meelopers en dagplaatsen, variabele wachttijden voor vaste plaatsen, en een breder geformuleerde eis voor registratie bij bedrijfschappen. Deze informatie ontbreekt in de originele tekst maar is wel relevant voor potentiële aanvragers van een marktvergunning."
+  }
+}

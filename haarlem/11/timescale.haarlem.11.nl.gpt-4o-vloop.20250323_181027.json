@@ -1,0 +1,87 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HAARLEM",
+      "contact": {
+        "phone": "14 023",
+        "email": "antwoord@haarlem.nl",
+        "website": "http://www.haarlem.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 31,
+    "true_sentences": 30,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.8,
+    "false_statements": [
+      {
+        "sentence": "De Publiekshal is geopend van maandag tot en met vrijdag van 9.00 tot 16.00 uur en op donderdag ook van 16.00 tot 20.00 uur.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Haarlem is de Publiekshal geopend van maandag tot en met vrijdag van 8.30 tot 16.00 uur, en op donderdag van 8.30 tot 20.00 uur."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 9,
+    "valid_urls": 9,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://haarlem.nl/bouwvergunning",
+      "https://haarlem.nl/milieuvergunning",
+      "https://haarlem.nl/afwijken-omgevingsplan",
+      "https://haarlem.nl/aanlegvergunning",
+      "https://haarlem.nl/uitweg-inritvergunning",
+      "https://www.haarlem.nl/bouwvergunning",
+      "https://www.haarlem.nl/milieuvergunning",
+      "https://www.haarlem.nl/afwijken-omgevingsplan",
+      "https://www.haarlem.nl/aanlegvergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Plattegrond (schaal 1:500) met de grenzen van uw terrein, waarop ook de afstand van het bouwwerk tot de woning van de buren is te zien",
+          "original_reference": "Plattegronden en tekeningen van het bouwwerk (verschillende schalen)",
+          "note": "De bronpagina specificeert exacte schaaleisen (1:500) en vereist expliciet dat de afstand tot buren zichtbaar is, wat niet vermeld staat in de originele tekst",
+          "source_urls": [
+            "https://haarlem.nl/bouwvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De milieudienst ODIJmond verzorgt de uitvoering van de milieutaken voor de gemeente",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over ODIJmond als uitvoerende milieudienst voor de gemeente",
+          "source_urls": [
+            "https://haarlem.nl/milieuvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Soms volstaat een milieumelding. Dit is afhankelijk van hoe zwaar uw bedrijf het milieu belast",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist de mogelijkheid van een milieumelding als alternatief voor een vergunning",
+          "source_urls": [
+            "https://haarlem.nl/milieuvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten enkele belangrijke details die ontbreken in de originele tekst, waaronder specifieke schaaleisen voor bouwtekeningen, informatie over de rol van ODIJmond bij milieuvergunningen, en de mogelijkheid van een milieumelding als alternatief voor een vergunning. Deze informatie zou nuttig zijn voor aanvragers om een volledig beeld te krijgen van de vereisten en mogelijkheden."
+  }
+}

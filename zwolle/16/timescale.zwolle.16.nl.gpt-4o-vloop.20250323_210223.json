@@ -1,0 +1,93 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ZWOLLE",
+      "contact": {
+        "phone": "14 038",
+        "email": "postbus@zwolle.nl",
+        "website": "http://www.zwolle.nl"
+      }
+    },
+    "service": {
+      "id": 16,
+      "name": "Registreren in het Landelijk Register Kinderopvang (LRK)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 31,
+    "true_sentences": 30,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.8,
+    "false_statements": [
+      {
+        "sentence": "E-mail: info@opordezwolle.nl",
+        "status": "false",
+        "note": "Dit e-mailadres is onjuist. Het correcte e-mailadres voor de gemeente Zwolle is postbus@zwolle.nl volgens de officiële website van de gemeente Zwolle."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 2,
+    "invalid_urls": 3,
+    "accuracy_percentage": 40.0,
+    "valid_urls_list": [
+      "https://www.zwolle.nl/kinderopvang-starten-of-wijzigen",
+      "https://www.zwolle.nl/kindregeling"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.zwolle.nl/kosten-kinderopvang",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.zwolle.nl/beleid-kinderopvang",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.zwolle.nl/subsidieregeling-gelijke-kansen-peuteropvang-voorschoolse-educatie-en-kinderopvang",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Start u een kinderdagverblijf, buitenschoolse opvang, gastouderbureau of gastouderopvang? Dan moet u zich laten registreren bij de gemeente waarin u de opvang hebt.",
+          "original_reference": "Je dient een aanvraag in bij de gemeente waar de opvang gevestigd zal zijn.",
+          "note": "De informatie over waar de registratie moet plaatsvinden komt overeen",
+          "source_urls": [
+            "https://www.zwolle.nl/kinderopvang-starten-of-wijzigen"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "De formulieren voor het aanmelden of wijzigen van een kinderdagverblijf, buitenschoolse opvang of gastouderbureau vindt u op de website van de Rijksoverheid",
+          "original_reference": "Voor verschillende soorten opvang zoals kinderdagverblijf, buitenschoolse opvang, gastouderbureau en gastouderopvang zijn specifieke formulieren beschikbaar.",
+          "note": "De informatie over de beschikbaarheid van specifieke formulieren komt overeen",
+          "source_urls": [
+            "https://www.zwolle.nl/kinderopvang-starten-of-wijzigen"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "medewerkers controleren of u aan de landelijke kwaliteitseisen voldoet",
+          "original_reference": "Medewerkers controleren of je aan de landelijke kwaliteitseisen voldoet",
+          "note": "De informatie over GGD controle en kwaliteitseisen komt overeen",
+          "source_urls": [
+            "https://www.zwolle.nl/kinderopvang-starten-of-wijzigen"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse van de bronnen zijn er geen significante inhoudelijke verschillen gevonden tussen de originele tekst en de geciteerde bronnen. De kernpunten over registratie, formulieren en GGD-inspectie komen overeen. Wel is op te merken dat de bronpagina's minder gedetailleerde informatie bevatten dan de originele tekst, maar dit vormt geen tegenstrijdigheid."
+  }
+}

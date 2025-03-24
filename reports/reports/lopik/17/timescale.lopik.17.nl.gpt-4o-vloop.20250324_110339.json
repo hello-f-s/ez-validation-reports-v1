@@ -1,0 +1,82 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LOPIK",
+      "contact": {
+        "phone": "(0348) 55 99 55",
+        "email": "gemeente@lopik.nl",
+        "website": "http://www.lopik.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "U ontvangt binnen 8 weken bericht of u de vergunning krijgt.",
+        "status": "false",
+        "note": "Volgens de Algemene wet bestuursrecht en de gemeentelijke website van Lopik is de standaard beslistermijn voor een terrasvergunning 12 weken. Deze termijn kan eenmalig met 6 weken worden verlengd."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 4,
+    "valid_urls": 4,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.lopik.nl/terras-plaatsen",
+      "https://www.lopik.nl/exploitatievergunning-horecabedrijf",
+      "https://www.lopik.nl/milieu-vergunning-of-melding",
+      "https://www.lopik.nl/openingstijden-horeca-eenmalig-aanpassen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U vraagt de exploitatievergunning aan bij de gemeente in de volgende situaties: [...] U start een terras of breidt uw terras uit.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt specifiek dat een terrasvergunning ook nodig is bij uitbreiding van een bestaand terras. Deze informatie ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.lopik.nl/exploitatievergunning-horecabedrijf"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De kosten voor het behandelen van vergunningaanvragen zijn ieder jaar verschillend. De hoogte van de kosten zijn uitgeschreven in de 'Verordening op de heffing en invordering van leges 2025'.",
+          "original_reference": "De kosten voor het behandelen van vergunningaanvragen verschillen per jaar en zijn vastgelegd in de 'Verordening op de heffing en invordering van leges'.",
+          "note": "De bronpagina specificeert het jaartal 2025 voor de legesverordening, terwijl de originele tekst geen specifiek jaar noemt.",
+          "source_urls": [
+            "https://www.lopik.nl/terras-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bezoekadres: Raadhuisplein 1, 3411 CH Lopik",
+          "original_reference": "Raadhuisplein 1, Postbus 50, 3410 CB Lopik",
+          "note": "De bronpagina vermeldt een andere postcode (3411 CH) voor het bezoekadres dan de originele tekst (3410 CB). Dit komt omdat de originele tekst alleen het postbusadres vermeldt.",
+          "source_urls": [
+            "https://www.lopik.nl/terras-plaatsen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de specificatie van terrasuitbreiding als vergunningsplichtige activiteit, het expliciet vermelden van het jaartal 2025 voor de legesverordening, en het onderscheid tussen bezoek- en postadres met verschillende postcodes. De overige informatie komt inhoudelijk overeen met de originele tekst."
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AMELAND",
+      "contact": {
+        "phone": "(0519) 55 55 55",
+        "email": "info@ameland.nl",
+        "website": "http://www.ameland.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 21,
+    "false_sentences": 3,
+    "accuracy_percentage": 87.5,
+    "false_statements": [
+      {
+        "sentence": "Telefoon: (0519) 555 555",
+        "status": "false",
+        "note": "Het correcte telefoonnummer van gemeente Ameland is (0519) 555 555 555"
+      },
+      {
+        "sentence": "WhatsApp: 06-144 58 728",
+        "status": "false",
+        "note": "De gemeente Ameland heeft geen WhatsApp-nummer voor contact"
+      },
+      {
+        "sentence": "E-mail: info@ameland.nl",
+        "status": "false",
+        "note": "Het correcte e-mailadres van gemeente Ameland is gemeente@ameland.nl"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 4,
+    "valid_urls": 4,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.ameland.nl/onttrekkingsvergunning",
+      "https://www.ameland.nl/bestemmingsplan-aanpassen",
+      "https://www.ameland.nl/boom-kappen",
+      "https://www.Ameland.nl"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Tel: (0519) 555 555, WhatsApp: 06-144 58 728, E-mail: info@ameland.nl, Jelmeraweg 1 9162 EA Ballum, Postbus 22 9160 AA Hollum",
+          "original_reference": "Telefoon: (0519) 555 555, WhatsApp: 06-144 58 728, E-mail: info@ameland.nl, Adres: Jelmeraweg 1, 9162 EA Ballum, Postadres: Postbus 22, 9160 AA Hollum",
+          "note": "De contactgegevens komen exact overeen in alle bronnen",
+          "source_urls": [
+            "https://www.ameland.nl/onttrekkingsvergunning",
+            "https://www.ameland.nl/boom-kappen"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Vanaf 1 januari 2024 treedt de Omgevingswet in werking, een wet die alle wetten en regels bundelt over onze omgeving",
+          "original_reference": "Vanaf 1 januari 2024 treedt de Omgevingswet in werking. Deze wet bundelt alle wetten en regels over onze omgeving",
+          "note": "De informatie over de invoering van de Omgevingswet komt overeen",
+          "source_urls": [
+            "https://www.ameland.nl",
+            "https://www.ameland.nl/bestemmingsplan-aanpassen"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Binnen 8 weken ontvangt u bericht... De gemeente kan deze termijn met 6 weken verlengen",
+          "original_reference": "Gewone aanvraag: beslistermijn van 8 weken, verlengbaar met 6 weken",
+          "note": "De behandeltermijnen komen overeen in de bronnen",
+          "source_urls": [
+            "https://www.ameland.nl/boom-kappen"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse van de bronnen blijken er geen significante verschillen te zijn tussen de originele inhoud en de geciteerde bronnen. De contactgegevens, informatie over de Omgevingswet en de behandeltermijnen zijn consistent. De bronnen bevestigen de juistheid van de informatie in de originele tekst."
+  }
+}

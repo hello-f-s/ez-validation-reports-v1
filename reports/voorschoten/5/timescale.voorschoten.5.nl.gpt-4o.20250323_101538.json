@@ -1,0 +1,104 @@
+{
+  "context": {
+    "municipality": {
+      "name": "VOORSCHOTEN",
+      "contact": {
+        "phone": "14 071",
+        "email": "gemeente@voorschoten.nl",
+        "website": "http://www.voorschoten.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "De eigenaar of leidinggevende moet van onbesproken gedrag zijn en minimaal 21 jaar oud.",
+        "status": "false",
+        "note": "De minimumleeftijd voor een leidinggevende van een horecabedrijf in Voorschoten is 18 jaar, niet 21 jaar. Dit is in lijn met de algemene horecawetgeving in Nederland."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 1,
+    "invalid_urls": 6,
+    "accuracy_percentage": 14.3,
+    "valid_urls_list": [
+      "https://www.voorschoten.nl/form/vs-1022-1-horeca-exploitatievergunning-met-digid/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.voorschoten.nl/exploitatievergunning-horecabedrijf",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.voorschoten.nl/standplaats-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.voorschoten.nl/terras-plaatsen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.voorschoten.nl/marktplaats-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "http://www.digid.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "http://www.eherkenning.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U heeft een exploitatievergunning nodig als u een horecabedrijf gaat starten, overnemen, uitbreiden of veranderen.",
+          "original_reference": "No matching information",
+          "note": "De bron specificeert expliciet wanneer een exploitatievergunning nodig is (bij start, overname, uitbreiding of verandering), wat ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.voorschoten.nl/form/vs-1022-1-horeca-exploitatievergunning-met-digid/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een recente Verklaring Omtrent het Gedrag van alle exploitanten. (alleen nodig als u geen Alcoholvergunning aanvraagt)",
+          "original_reference": "Een Verklaring Omtrent het Gedrag (VOG) kan vereist zijn.",
+          "note": "De bron specificeert dat een VOG alleen nodig is als er geen alcoholvergunning wordt aangevraagd, terwijl de originele tekst dit als algemene mogelijke vereiste noemt.",
+          "source_urls": [
+            "https://www.voorschoten.nl/form/vs-1022-1-horeca-exploitatievergunning-met-digid/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Omschrijving van tot de inrichting behorende lokaliteiten en in aantal m², Bijvoorbeeld: 1e verdieping, restaurant - 30m².",
+          "original_reference": "Plattegrond van het pand.",
+          "note": "De bron vraagt specifiek om een omschrijving met oppervlaktes in m², terwijl de originele tekst alleen om een plattegrond vraagt.",
+          "source_urls": [
+            "https://www.voorschoten.nl/form/vs-1022-1-horeca-exploitatievergunning-met-digid/"
+          ]
+        }
+      ]
+    },
+    "summary": "De broninhoud bevat enkele belangrijke specificaties die niet of anders vermeld staan in de originele tekst. Met name de voorwaarden voor de VOG zijn specifieker omschreven, er worden exacte situaties genoemd wanneer een exploitatievergunning nodig is, en er worden meer gedetailleerde eisen gesteld aan de beschrijving van het pand. Deze verschillen maken de vereisten en procedures duidelijker voor de aanvrager."
+  }
+}

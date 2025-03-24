@@ -1,0 +1,75 @@
+{
+  "context": {
+    "municipality": {
+      "name": "CULEMBORG",
+      "contact": {
+        "phone": "(0345) 47 77 00",
+        "email": "info@culemborg.nl",
+        "website": "http://www.culemborg.nl"
+      }
+    },
+    "service": {
+      "id": 8,
+      "name": "Marktvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 21,
+    "false_sentences": 3,
+    "accuracy_percentage": 87.5,
+    "false_statements": [
+      {
+        "sentence": "Standplaatsvergunning voor 1 dag: €16,55",
+        "status": "false",
+        "note": "Dit tarief is niet correct volgens de actuele legesverordening van gemeente Culemborg. Het huidige tarief voor een standplaatsvergunning voor 1 dag is €17,05"
+      },
+      {
+        "sentence": "Standplaatsvergunning voor 1 week: €33,15",
+        "status": "false",
+        "note": "Dit tarief is niet correct volgens de actuele legesverordening van gemeente Culemborg. Het huidige tarief voor een standplaatsvergunning voor 1 week is €34,15"
+      },
+      {
+        "sentence": "Standplaatsvergunning voor maximaal 5 jaar: €170,50",
+        "status": "false",
+        "note": "Dit tarief is niet correct volgens de actuele legesverordening van gemeente Culemborg. Het huidige tarief voor een standplaatsvergunning voor maximaal 5 jaar is €175,60"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.culemborg.nl/omgevingsvergunning",
+      "https://www.culemborg.nl/informatieverzoek",
+      "https://www.culemborg.nl/standplaatsvergunning",
+      "https://www.culemborg.nl/informatieverzoek-en-woo-verzoek",
+      "https://www.culemborg.nl/parkeervergunning-voor-bedrijven"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een schriftelijke verklaring van de grondeigenaar van de verkooplocatie (indien van toepassing)",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist een belangrijk vereist document: een schriftelijke verklaring van de grondeigenaar wanneer van toepassing. Dit is een aanvullende eis die wel in de bronpagina staat.",
+          "source_urls": [
+            "https://www.culemborg.nl/standplaatsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "Bij vergelijking van de originele inhoud met de bronpagina's is er één significant verschil gevonden. De originele tekst mist de vermelding van een belangrijk vereist document bij de aanvraag van een standplaatsvergunning, namelijk de schriftelijke verklaring van de grondeigenaar indien van toepassing. Voor het overige komt alle informatie over procedures, kosten, openingstijden en vereiste documenten overeen met de bronpagina's."
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "NIJMEGEN",
+      "contact": {
+        "phone": "14 024",
+        "email": "gemeente@nijmegen.nl",
+        "website": "http://www.nijmegen.nl"
+      }
+    },
+    "service": {
+      "id": 13,
+      "name": "Omzettingsvergunning voor kamerverhuur aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 11,
+    "false_sentences": 2,
+    "accuracy_percentage": 84.6,
+    "false_statements": [
+      {
+        "sentence": "Een omzettingsvergunning kost €1.341,15",
+        "status": "false",
+        "note": "Volgens de actuele tarieven van de gemeente Nijmegen kost een omzettingsvergunning €1.375,85"
+      },
+      {
+        "sentence": "Een omgevingsvergunning voor kamerverhuur kost €750,-",
+        "status": "false",
+        "note": "De kosten voor een omgevingsvergunning voor kamerverhuur zijn variabel en worden berekend op basis van de bouwkosten. Er is geen vast tarief van €750"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.nijmegen.nl/diensten/bouwen-en-wonen/vooroverleg-omgevingsvergunning/kosten-omgevingsvergunning/",
+      "https://www.nijmegen.nl/diensten/bouwen-en-wonen/kamers-verhuren/",
+      "https://www.nijmegen.nl/diensten/bouwen-en-wonen/vooroverleg-omgevingsvergunning/",
+      "https://www.nijmegen.nl/diensten/evenementen/schema-vergunningen-activiteiten/tekstversie/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.nijmegen.nl/diensten/vergunningen/informatiekraam-melden-of-vergunning/",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als hospita verhuurt u kamers en woont u zelf ook in het huis. U heeft geen vergunning nodig als hospita als alle volgende regels voor u gelden: U verhuurt maximaal 2 onzelfstandige woonruimten, aan maximaal 2 personen",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over hospitaverhuur en de bijbehorende vrijstelling voor verhuur van maximaal 2 kamers. Dit is belangrijke aanvullende informatie voor potentiële verhuurders.",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/bouwen-en-wonen/kamers-verhuren/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u een bijstandsuitkering heeft: Bel ons dan altijd op 14 024 als u woonruimte wilt delen of verhuren. Delen of verhuren kan invloed hebben op het bedrag van uw uitkering.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de gevolgen van kamerverhuur voor bijstandsgerechtigden. Dit is een belangrijke waarschuwing die ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/bouwen-en-wonen/kamers-verhuren/"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten twee belangrijke aanvullende informatie-elementen die niet in de originele tekst staan: de regels voor hospitaverhuur (waarbij geen vergunning nodig is voor maximaal 2 kamers) en specifieke instructies voor bijstandsgerechtigden. Voor de overige aspecten zoals kosten, voorwaarden en procedures komt de informatie overeen met de originele tekst of is niet volledig te verifiëren in de beschikbare bronnen."
+  }
+}

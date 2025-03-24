@@ -1,0 +1,97 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DRUTEN",
+      "contact": {
+        "phone": "(088) 432 70 00",
+        "email": "info@druten.nl",
+        "website": "http://www.druten.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 26,
+    "false_sentences": 2,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "Het Gemeentehuis Druten is geopend op maandag van 8.30 tot 19.00 uur.",
+        "status": "false",
+        "note": "Het gemeentehuis van Druten is op maandag geopend van 8:30 tot 17:00 uur, met uitzondering van de avondopenstelling op afspraak tot 19:00 uur."
+      },
+      {
+        "sentence": "Telefonische bereikbaarheid is op maandag van 8.30 tot 16.30 uur.",
+        "status": "false",
+        "note": "De gemeente Druten is telefonisch bereikbaar van maandag t/m donderdag van 8:30 tot 17:00 uur en op vrijdag van 8:30 tot 13:00 uur."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 4,
+    "invalid_urls": 2,
+    "accuracy_percentage": 66.7,
+    "valid_urls_list": [
+      "https://www.druten.nl/evenement-organiseren",
+      "https://www.druten.nl/openingstijden-horeca-eenmalig-aanpassen",
+      "https://www.druten.nl/alcoholwetvergunning",
+      "https://www.druten.nl"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.druten.nl/exploitatievergunning-horecabedrijf",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.druten.nl/omgevingsvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U vraagt minimaal 8 weken van tevoren een ontheffing aan bij de gemeente",
+          "original_reference": "De aanvraag voor een vergunning dient 12 weken voor het evenement te gebeuren",
+          "note": "Er is een discrepantie in de aanvraagtermijnen. De bronpagina voor horeca-ontheffingen noemt 8 weken, terwijl de originele tekst 12 weken aangeeft voor evenementenvergunningen. Dit zijn echter verschillende type aanvragen, dus beide termijnen kunnen correct zijn voor hun specifieke context.",
+          "source_urls": [
+            "https://www.druten.nl/openingstijden-horeca-eenmalig-aanpassen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het in behandeling nemen van uw aanvraag kost € 81,45",
+          "original_reference": "Categorie A (regulier evenement): € 167,60, Categorie B (aandacht evenement): € 615,30, Categorie C (risico evenement): € 783,40",
+          "note": "De kosten voor een horeca-ontheffing (€81,45) verschillen van de tarieven voor evenementenvergunningen. Dit betreft echter verschillende type vergunningen.",
+          "source_urls": [
+            "https://www.druten.nl/openingstijden-horeca-eenmalig-aanpassen"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Whatsapp: +31625689928, Bel: 088 432 70 00, info@druten.nl",
+          "original_reference": "Telefoon: 088 432 70 00, WhatsApp: +31625689928, Email: info@druten.nl",
+          "note": "De contactgegevens in de bronnen komen exact overeen met de originele tekst.",
+          "source_urls": [
+            "https://www.druten.nl",
+            "https://www.druten.nl/evenement-organiseren"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont enkele verschillen in termijnen en kosten tussen verschillende type vergunningen/ontheffingen, maar deze zijn verklaarbaar omdat het om verschillende procedures gaat. De contactgegevens zijn consistent tussen alle bronnen. De basisinformatie over evenementen en vergunningen komt overeen met de originele tekst."
+  }
+}

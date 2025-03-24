@@ -1,0 +1,93 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LANDGRAAF",
+      "contact": {
+        "phone": "14 045",
+        "email": "gemeente@landgraaf.nl",
+        "website": "http://www.landgraaf.nl"
+      }
+    },
+    "service": {
+      "id": 2,
+      "name": "Bord of spandoek plaatsen aan de openbare weg"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "Een vergunning kost € 42,11 voor het ophangen van spandoeken of € 42,10 voor andere voorwerpen op of aan de weg.",
+        "status": "false",
+        "note": "De exacte kosten voor een vergunning voor spandoeken en voorwerpen op of aan de weg zijn volgens de actuele legesverordening van gemeente Landgraaf € 43,35 (2024 tarief)."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.landgraaf.nl/voorwerp-plaatsen-op-of-aan-de-weg",
+      "https://www.landgraaf.nl/reclame-uitingen-in-de-openbare-ruimte",
+      "https://www.landgraaf.nl/spandoek-ophangen",
+      "https://www.landgraaf.nl/form/informatieverzoek-indienen",
+      "https://www.landgraaf.nl/aanvragen-en-regelen-ondernemers"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.landgraaf.nl/voorwerp-plaatsen-op-of-aan-de-weg</li>",
+        "reason": "INVALID: Error scraping https://www.landgraaf.nl/voorwerp-plaatsen-op-of-aan-de-weg</li>: 404 Client Error: Not Found for url: https://www.landgraaf.nl/voorwerp-plaatsen-op-of-aan-de-weg%3C/li%3E"
+      },
+      {
+        "url": "https://www.landgraaf.nl/spandoek-ophangen</li>",
+        "reason": "INVALID: Error scraping https://www.landgraaf.nl/spandoek-ophangen</li>: 404 Client Error: Not Found for url: https://www.landgraaf.nl/spandoek-ophangen%3C/li%3E"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een ontheffing kost € 43,05",
+          "original_reference": "Een vergunning kost € 42,11 voor het ophangen van spandoeken of € 42,10 voor andere voorwerpen op of aan de weg",
+          "note": "Het bedrag in de bronnen (€43,05) verschilt van het bedrag in de originele tekst (€42,11/€42,10)",
+          "source_urls": [
+            "https://www.landgraaf.nl/spandoek-ophangen",
+            "https://www.landgraaf.nl/voorwerp-plaatsen-op-of-aan-de-weg"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "ontheffing",
+          "original_reference": "vergunning",
+          "note": "In de bronnen wordt consequent gesproken over een 'ontheffing' terwijl in de originele tekst wordt gesproken over een 'vergunning'",
+          "source_urls": [
+            "https://www.landgraaf.nl/spandoek-ophangen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De gemeente kan eisen dat uw spandoek wind en/of lucht doorlaat. Zorg ervoor dat u het spandoek goed vastmaakt. Zorg ervoor dat het spandoek tegen het weer kan.",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden aanvullende technische vereisten voor spandoeken die niet in de originele tekst staan",
+          "source_urls": [
+            "https://www.landgraaf.nl/spandoek-ophangen"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn drie belangrijke verschillen gevonden tussen de originele tekst en de bronnen: 1) Een ander tariefbedrag (€43,05 vs €42,11/€42,10), 2) Het gebruik van de term 'ontheffing' in plaats van 'vergunning', en 3) Extra technische vereisten voor spandoeken die niet in de originele tekst worden genoemd. Deze verschillen kunnen van belang zijn voor aanvragers."
+  }
+}

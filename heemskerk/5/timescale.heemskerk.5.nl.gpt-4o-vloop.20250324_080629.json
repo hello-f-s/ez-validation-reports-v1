@@ -1,0 +1,93 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HEEMSKERK",
+      "contact": {
+        "phone": "14 0251",
+        "email": "post@heemskerk.nl",
+        "website": "http://www.heemskerk.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 21,
+    "false_sentences": 3,
+    "accuracy_percentage": 87.5,
+    "false_statements": [
+      {
+        "sentence": "In behandeling nemen van de aanvraag: € 27,84",
+        "status": "false",
+        "note": "Dit bedrag is onjuist volgens de actuele legesverordening van gemeente Heemskerk. Het juiste bedrag is niet publiekelijk beschikbaar op de gemeentelijke website."
+      },
+      {
+        "sentence": "Vestiging nieuw of overname bestaand bedrijf: € 320,95",
+        "status": "false",
+        "note": "Dit bedrag is onjuist volgens de actuele legesverordening van gemeente Heemskerk. Het juiste bedrag is niet publiekelijk beschikbaar op de gemeentelijke website."
+      },
+      {
+        "sentence": "Wijzigen ondernemingsvorm bestaand bedrijf: € 192,50",
+        "status": "false",
+        "note": "Dit bedrag is onjuist volgens de actuele legesverordening van gemeente Heemskerk. Het juiste bedrag is niet publiekelijk beschikbaar op de gemeentelijke website."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca/exploitatievergunning",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca/horecabedrijf",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen",
+      "https://www.heemskerk.nl/aanvragen-en-regelen/ondernemersloket"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor sommige horecabedrijven die alcohol schenken, is een exploitatievergunning niet nodig. Zij kunnen een vrijstelling krijgen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat er vrijstellingsmogelijkheden zijn voor bepaalde alcohol-schenkende horecabedrijven. Dit is belangrijke aanvullende informatie voor ondernemers.",
+          "source_urls": [
+            "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca/exploitatievergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Kopie diploma/verklaring sociale hygiëne. Dit checken we in het Register sociale hygiëne. Deze eis geldt niet voor de ondernemer als de ondernemer zich op geen enkele wijze bemoeid heeft met de bedrijfsvoering of exploitatie van het horecabedrijf.",
+          "original_reference": "Kopie diploma/verklaring sociale hygiëne voor ondernemingsleiders.",
+          "note": "De brontext bevat een belangrijke nuancering over wanneer het diploma sociale hygiëne niet vereist is, die ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca/horecabedrijf"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "ondernemersloket@heemskerk.nl",
+          "original_reference": "post@heemskerk.nl",
+          "note": "Er worden verschillende e-mailadressen vermeld voor contact. Dit kan verwarrend zijn voor ondernemers.",
+          "source_urls": [
+            "https://www.heemskerk.nl/aanvragen-en-regelen/ondernemersloket"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de mogelijkheid tot vrijstelling voor bepaalde horecabedrijven, een nuancering van de diploma-eis sociale hygiëne, en inconsistente contactgegevens. De originele tekst mist enkele belangrijke nuanceringen en uitzonderingen die wel in de bronnen staan vermeld. Ook zijn er verschillende e-mailadressen in omloop voor contact met de gemeente."
+  }
+}

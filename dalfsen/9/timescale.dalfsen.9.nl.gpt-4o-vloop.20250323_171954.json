@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DALFSEN",
+      "contact": {
+        "phone": "14 0529",
+        "email": "gemeente@dalfsen.nl",
+        "website": "http://www.dalfsen.nl"
+      }
+    },
+    "service": {
+      "id": 9,
+      "name": "Mobiele puinbreker gebruiken"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 20,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.2,
+    "false_statements": [
+      {
+        "sentence": "Servicepunt Nieuwleusen: Kon. Julianalaan 1, 7711 KK Nieuwleusen",
+        "status": "false",
+        "note": "Het servicepunt Nieuwleusen is niet meer actief. De gemeente Dalfsen heeft alleen nog een gemeentehuis in Dalfsen aan de Raadhuisstraat 1."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.dalfsen.nl/voorwerp-plaatsen-op-of-aan-de-weg",
+      "https://www.dalfsen.nl/uitstallingen",
+      "https://www.dalfsen.nl/sloopmelding-gebouw-of-deel-gebouw",
+      "https://www.dalfsen.nl/informatie-over-beleid-of-besluiten-opvragen-who-verzoek",
+      "https://www.dalfsen.nl/regelingen-voor-mensen-met-een-laag-inkomen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Soms hebben wij advies en toestemming van een andere organisatie (bevoegd gezag) nodig. Dan komen er nog 4 weken bij.",
+          "original_reference": "De gemeente kan deze periode met 6 weken verlengen indien extra advies of toestemming van andere instanties nodig is.",
+          "note": "De bronpagina vermeldt een verlengingstermijn van 4 weken bij advies van andere instanties, terwijl de originele tekst 6 weken aangeeft.",
+          "source_urls": [
+            "https://www.dalfsen.nl/voorwerp-plaatsen-op-of-aan-de-weg"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Kon. Julianalaan 10, 7711 KK Nieuwleusen",
+          "original_reference": "Kon. Julianalaan 1, 7711 KK Nieuwleusen",
+          "note": "Het adres van het Servicepunt Nieuwleusen verschilt: nummer 10 in de bronnen versus nummer 1 in de originele tekst.",
+          "source_urls": [
+            "https://www.dalfsen.nl/uitstallingen",
+            "https://www.dalfsen.nl/voorwerp-plaatsen-op-of-aan-de-weg"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor het plaatsen van voorwerpen op, boven of onder gemeentegrond wordt een vergoeding (precariobelasting) gevraagd.",
+          "original_reference": "Voor het plaatsen van voorwerpen op, boven of onder gemeentelijke grond kan een precariobelasting in rekening worden gebracht.",
+          "note": "De bronpagina stelt dat precariobelasting altijd wordt gevraagd, terwijl de originele tekst aangeeft dat dit 'kan' worden gevraagd.",
+          "source_urls": [
+            "https://www.dalfsen.nl/uitstallingen"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn drie belangrijke verschillen gevonden tussen de originele tekst en de bronpagina's: een afwijkende verlengingstermijn voor aanvragen (4 vs 6 weken), een verschillend huisnummer voor het Servicepunt Nieuwleusen, en een verschil in de formulering rond precariobelasting (verplicht vs optioneel). Deze verschillen kunnen impact hebben op de dienstverlening en dienen te worden verduidelijkt."
+  }
+}

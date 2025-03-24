@@ -1,0 +1,76 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DEVENTER",
+      "contact": {
+        "phone": "14 0570",
+        "email": "gemeente@deventer.nl",
+        "website": "http://www.deventer.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 27,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.4,
+    "false_statements": [
+      {
+        "sentence": "Wilt u betalen via factuur, dan duurt het na betaling nog 1 maand voordat uw parkeervergunning actief wordt.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Deventer wordt een parkeervergunning bij factuurbetaling direct na ontvangst van de betaling geactiveerd, niet pas na 1 maand."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.deventer.nl/loketten/digitaal-loket/parkeervergunning-bedrijven",
+      "https://www.deventer.nl/parkeervergunningbedrijven",
+      "https://www.deventer.nl/parkeren/parkeervergunningen/parkeervergunning-bedrijven",
+      "http://www.deventer.nl/loketten/digitaal-loket/parkeervergunning-bedrijven",
+      "https://www.deventer.nl/parkeren/parkeervergunningen/parkeervergunning-bezoekers",
+      "https://www.deventer.nl"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De auto met het kenteken dat is geactiveerd in de mijn.2Park.nl, mag op dat moment gebruikmaken van de parkeervergunning.",
+          "original_reference": "No matching information",
+          "note": "De bronnen specificeren dat alleen auto's met geactiveerde kentekens gebruik mogen maken van de vergunning. Deze belangrijke beperking ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.deventer.nl/loketten/digitaal-loket/parkeervergunning-bedrijven",
+            "https://www.deventer.nl/parkeervergunningbedrijven"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het Parkeerloket is het systeem waarin u de parkeervergunning aanvraagt en beëindigt.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat het Parkeerloket ook gebruikt wordt voor het beëindigen van vergunningen, wat een belangrijke functionaliteit is.",
+          "source_urls": [
+            "https://www.deventer.nl/loketten/digitaal-loket/parkeervergunning-bedrijven"
+          ]
+        }
+      ]
+    },
+    "summary": "Bij vergelijking van de originele tekst met de bronnen zijn er twee belangrijke verschillen gevonden. Ten eerste ontbreekt in de originele tekst de cruciale informatie dat alleen auto's met geactiveerde kentekens gebruik mogen maken van de vergunning. Ten tweede wordt niet vermeld dat het Parkeerloket ook dient voor het beëindigen van vergunningen. Deze informatie is belangrijk voor het correct gebruik van de parkeervergunning."
+  }
+}

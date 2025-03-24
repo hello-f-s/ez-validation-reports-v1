@@ -1,0 +1,75 @@
+{
+  "context": {
+    "municipality": {
+      "name": "GOUDA",
+      "contact": {
+        "phone": "14 0182",
+        "email": "gemeente@gouda.nl",
+        "website": "http://www.gouda.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 11,
+    "false_sentences": 2,
+    "accuracy_percentage": 84.6,
+    "false_statements": [
+      {
+        "sentence": "U kunt de parkeervergunning voor uw bedrijf aanvragen via de website van Parkeerservice Gouda.",
+        "status": "false",
+        "note": "Parkeervergunningen in Gouda worden niet aangevraagd via Parkeerservice Gouda maar via de gemeente Gouda zelf. Er bestaat geen aparte 'Parkeerservice Gouda' website."
+      },
+      {
+        "sentence": "Indien u het niet eens bent met de beslissing omtrent uw aanvraag voor een parkeervergunning, kunt u bezwaar maken via dezelfde website van Parkeerservice Gouda.",
+        "status": "false",
+        "note": "Bezwaren tegen parkeervergunningen moeten worden ingediend bij de gemeente Gouda zelf, niet via een 'Parkeerservice Gouda' website die niet bestaat."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.gouda.nl/gouda-werkt-aan-de-stad/wijkmobiliteitsplannen/wijkmobiliteitsplan-kort-haarlem/veelgestelde-vragen-parkeren-kadenbuurt-en-kort-haarlem/",
+      "https://www.gouda.nl/gouda-werkt-aan-de-stad/wijkmobiliteitsplannen/wijkmobiliteitsplan-korte-akkeren/veelgestelde-vragen-parkeren-korte-akkeren/",
+      "https://www.gouda.nl/gouda-werkt-aan-de-stad/wijkmobiliteitsplannen/wijkmobiliteitsplan-korte-akkeren/verslag-over-parkeren-in-korte-akkeren-15-april-2024/",
+      "https://www.gouda.nl/gouda-werkt-aan-de-stad/wijkmobiliteitsplannen/wijkmobiliteitsplan-kort-haarlem/verslag-over-parkeren-in-kort-haarlem-4-april-2024/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.gouda.nl/uitgeschreven-tekst-infographic-4-mogelijkheden-parkeren-korte-akkeren-en-kort-haarlem/",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De gemeente vindt het belangrijk om te weten welke mogelijkheid het meeste draagvlak onder de bewoners heeft. Dit wil de gemeente weten voordat zij een beslissing neemt over hoe het betaald en vergunning parkeren er uit ziet.",
+          "original_reference": "De kosten voor de parkeervergunningen kunnen variëren. Het is nog niet exact vastgelegd hoeveel een parkeervergunning voor een bedrijf gaat kosten, dit beslist de gemeenteraad na een raadpleging.",
+          "note": "De bronnen tonen aan dat er een raadplegingsproces met bewoners plaatsvindt voordat beslissingen over het parkeersysteem worden genomen, terwijl de originele tekst alleen spreekt over een raadpleging voor de kosten.",
+          "source_urls": [
+            "https://www.gouda.nl/gouda-werkt-aan-de-stad/wijkmobiliteitsplannen/wijkmobiliteitsplan-korte-akkeren/veelgestelde-vragen-parkeren-korte-akkeren/",
+            "https://www.gouda.nl/gouda-werkt-aan-de-stad/wijkmobiliteitsplannen/wijkmobiliteitsplan-kort-haarlem/veelgestelde-vragen-parkeren-kadenbuurt-en-kort-haarlem/"
+          ]
+        }
+      ]
+    },
+    "summary": "Er is één significant verschil gevonden tussen de originele tekst en de bronnen. Dit betreft voornamelijk de reikwijdte van de bewonersraadpleging. Waar de originele tekst suggereert dat alleen over de kosten wordt geraadpleegd, blijkt uit de bronnen dat bewoners worden betrokken bij het gehele besluitvormingsproces over de invoering van het parkeersysteem. Veel van de specifieke details uit de originele tekst (zoals voorwaarden voor vergunningen en aanvraagprocedures) zijn niet terug te vinden in de geciteerde bronnen, waardoor verdere vergelijking niet mogelijk is."
+  }
+}

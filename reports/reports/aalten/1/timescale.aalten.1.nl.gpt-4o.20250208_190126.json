@@ -1,0 +1,97 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AALTEN",
+      "contact": {
+        "phone": "(0543) 49 33 33",
+        "email": "gemeente@aalten.nl",
+        "website": "http://www.aalten.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 15,
+    "false_sentences": 2,
+    "accuracy_percentage": 88.2,
+    "false_statements": [
+      {
+        "sentence": "Het tarief voor het jaar 2024 bedraagt € 406,90 voor het in behandeling nemen van een vergunningaanvraag.",
+        "status": "false",
+        "note": "Het exacte tarief voor 2024 voor een alcoholvergunning in gemeente Aalten is € 412,35"
+      },
+      {
+        "sentence": "Voor verenigingen of stichtingen kan dit binnen 6 maanden zijn.",
+        "status": "false",
+        "note": "De gemeente Aalten hanteert voor alle aanvragen, inclusief die van verenigingen en stichtingen, een maximale behandeltermijn van 8 weken"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.aalten.nl/alcohol-schenken-tijdens-evenement",
+      "https://www.aalten.nl/openingstijden-horeca-eenmalig-aanpassen",
+      "https://www.aalten.nl/exploitatievergunning-horecabedrijf",
+      "https://www.aalten.nl/alcoholvergunning",
+      "https://www.aalten.nl/omgevingsvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.gemeenteaalten.nl/alcoholvergunning\">gemeenteaalten.nl/alcoholvergunning</a></p>",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.gemeenteaalten.nl/alcoholvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor verenigingen en stichtingen die alcohol schenken gelden extra voorwaarden: De uren waarop alcohol wordt geschonken en de leeftijdsgrens is op een goed zichtbare plek opgehangen. Er zijn binnen de vereniging of stichting minstens 2 leidinggevenden met een SVH Verklaring Sociale Hygiëne. Wanneer er alcohol wordt geschonken is 1 van deze leidinggevenden aanwezig.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat niet de specifieke extra voorwaarden voor verenigingen en stichtingen, zoals het zichtbaar ophangen van schenktijden en leeftijdsgrens, en de vereiste van minimaal 2 leidinggevenden met SVH.",
+          "source_urls": [
+            "https://www.aalten.nl/alcoholvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Serveert u ook alcoholhoudende drank, dan is naast de exploitatievergunning ook een alcoholvergunning noodzakelijk.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat naast een alcoholvergunning ook een exploitatievergunning nodig is voor een horecabedrijf.",
+          "source_urls": [
+            "https://www.aalten.nl/exploitatievergunning-horecabedrijf"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een ingevuld Bibob-formulier",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de vereiste van een Bibob-formulier bij de aanvraag, terwijl dit wel wordt genoemd in de bronnen.",
+          "source_urls": [
+            "https://www.aalten.nl/exploitatievergunning-horecabedrijf"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie die niet in de originele tekst staat, waaronder specifieke extra voorwaarden voor verenigingen en stichtingen, de vereiste van een exploitatievergunning naast de alcoholvergunning, en de noodzaak van een Bibob-formulier. Deze informatie is essentieel voor een complete en correcte vergunningaanvraag."
+  }
+}

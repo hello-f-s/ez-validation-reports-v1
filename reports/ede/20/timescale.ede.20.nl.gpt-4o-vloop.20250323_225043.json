@@ -1,0 +1,97 @@
+{
+  "context": {
+    "municipality": {
+      "name": "EDE",
+      "contact": {
+        "phone": "14 0318",
+        "email": "info@ede.nl",
+        "website": "http://www.ede.nl"
+      }
+    },
+    "service": {
+      "id": 20,
+      "name": "Vergunning voor seksbedrijf"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 14,
+    "false_sentences": 3,
+    "accuracy_percentage": 82.4,
+    "false_statements": [
+      {
+        "sentence": "Zo kost het aanvragen van een alcoholwetvergunning € 612, terwijl het wijzigen van deze vergunning € 306 kost.",
+        "status": "false",
+        "note": "De exacte bedragen voor alcoholwetvergunningen in Ede komen niet overeen met de officiële tarieven van de gemeente Ede voor 2024"
+      },
+      {
+        "sentence": "Indien u een terras wilt toevoegen aan uw horecabedrijf, bedragen de kosten voor een horeca exploitatievergunning € 690.",
+        "status": "false",
+        "note": "Dit specifieke bedrag voor een horeca exploitatievergunning met terras komt niet overeen met de actuele legestarieven van de gemeente Ede"
+      },
+      {
+        "sentence": "Voor het wijzigen van leidinggevenden betaalt u € 153 per aanvraag.",
+        "status": "false",
+        "note": "Dit bedrag voor het wijzigen van leidinggevenden komt niet overeen met de actuele tarieven van de gemeente Ede"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.ede.nl/aanvragen-en-regelen/horecabedrijf",
+      "https://www.ede.nl/aanvragen-en-regelen/bouw-en-verbouwvergunning-voor-bedrijven",
+      "https://www.ede.nl/aanvragen-en-regelen/kinderopvang-starten",
+      "https://www.ede.nl/aanvragen-en-regelen/ontheffing-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.ede.nl/aanvragen-en-regelen/verleende-vergunningen-inzien-en-opvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het aanvragen van een horeca exploitatievergunning kost € 612. Heeft u ook een terras? Dan zijn de kosten € 690.",
+          "original_reference": "het aanvragen van een horeca exploitatievergunning € 690",
+          "note": "Er is een verschil in de kosten voor de horeca exploitatievergunning. In de originele tekst wordt alleen € 690 genoemd voor een vergunning met terras, terwijl de bron verschillende bedragen noemt: € 612 voor de basisvergunning en € 690 met terras.",
+          "source_urls": [
+            "https://www.ede.nl/aanvragen-en-regelen/horecabedrijf"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het aanvragen van een exploitatievergunning (in combinatie met een alcolholwetvergunning) kost € 306.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist informatie over het gecombineerd aanvragen van een exploitatievergunning met alcoholwetvergunning, wat volgens de bron € 306 kost.",
+          "source_urls": [
+            "https://www.ede.nl/aanvragen-en-regelen/horecabedrijf"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U vraagt deze ontheffing uiterlijk tien werkdagen van tevoren aan.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de aanvraagtermijn voor ontheffingen, terwijl de bron specificeert dat dit minimaal 10 werkdagen van tevoren moet gebeuren.",
+          "source_urls": [
+            "https://www.ede.nl/aanvragen-en-regelen/ontheffing-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de kosten van vergunningen, waarbij de originele tekst onvolledig is over verschillende tariefstructuren. Ook ontbreekt in de originele tekst belangrijke informatie over combinatievergunningen en specifieke aanvraagtermijnen voor ontheffingen. De bronnen bevatten gedetailleerdere en actuelere informatie over de verschillende vergunningstypen en bijbehorende voorwaarden."
+  }
+}

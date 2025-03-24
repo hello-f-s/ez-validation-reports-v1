@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LEEUWARDEN",
+      "contact": {
+        "phone": "14 058",
+        "email": "gemeente@leeuwarden.nl",
+        "website": "http://www.leeuwarden.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "Voor aanvragen voor een uitweg bedragen de kosten bijvoorbeeld € 238,66.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Leeuwarden bedragen de kosten voor een uitweg € 243,45 (2024 tarief). Het genoemde bedrag van € 238,66 is verouderd."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.leeuwarden.nl/omgevingsvergunning/milieu-melding-of-vergunning/",
+      "https://www.leeuwarden.nl/andere-vergunningen-en-ontheffingen/bodeminformatie/",
+      "https://www.leeuwarden.nl/omgevingsvergunning/gebruikmaken-maken-of-veranderen-van-een-uitweg/",
+      "https://www.leeuwarden.nl/omgevingswet/waarom-de-omgevingswet/",
+      "https://www.leeuwarden.nl/omgevingsvergunning/procedure-omgevingsvergunning-aanvragen-of-melden/"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De periode van uw vergunningaanvraag wordt korter. Voor de meeste vergunningen is dit 8 weken. En niet meer maximaal 26 weken, zoals nu het geval is.",
+          "original_reference": "Reguliere procedure: Maximaal 8 weken, met mogelijke verlenging van 6 weken. Uitgebreide procedure: Maximaal 6 maanden, met mogelijke verlenging van 6 weken.",
+          "note": "De brontekst vermeldt een kortere standaardtermijn van 8 weken zonder vermelding van verlengingsmogelijkheden, terwijl de originele tekst specifiekere termijnen en verlengingsmogelijkheden noemt.",
+          "source_urls": [
+            "https://www.leeuwarden.nl/omgevingswet/waarom-de-omgevingswet/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Is de uitkomst, door de reden Flora en fauna-activiteit of Natura 2000-activiteit, dat u contact moet opnemen met de gemeente? Neem dan contact op met de Provincie Fryslân en niet met de gemeente.",
+          "original_reference": "No matching information",
+          "note": "De brontekst bevat belangrijke aanvullende informatie over het contact met de Provincie Fryslân voor Flora, fauna en Natura 2000-activiteiten, wat niet vermeld wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.leeuwarden.nl/omgevingsvergunning/procedure-omgevingsvergunning-aanvragen-of-melden/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De kosten voor de aanleg van een uitweg betaalt u zelf. De hoogte van deze kosten hangen af van de werkzaamheden die verricht moeten worden. U ontvangt hiervoor een offerte.",
+          "original_reference": "Voor aanvragen voor een uitweg bedragen de kosten bijvoorbeeld € 238,66.",
+          "note": "De originele tekst vermeldt alleen de aanvraagkosten, terwijl de bron verduidelijkt dat er aanvullende kosten zijn voor de daadwerkelijke aanleg die per situatie verschillen.",
+          "source_urls": [
+            "https://www.leeuwarden.nl/omgevingsvergunning/gebruikmaken-maken-of-veranderen-van-een-uitweg/"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de proceduretermijnen, aanvullende informatie over Flora en fauna-activiteiten, en verduidelijking van de kostenstructuur voor uitwegen. De bronnen bevatten meer gedetailleerde en actuele informatie die niet volledig wordt weergegeven in de originele tekst."
+  }
+}

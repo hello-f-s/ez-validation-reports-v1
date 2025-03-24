@@ -1,0 +1,76 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ALPHEN AAN DEN RIJN",
+      "contact": {
+        "phone": "14 0172",
+        "email": "gemeente@alphenaandenrijn.nl",
+        "website": "http://www.alphenaandenrijn.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 12,
+    "false_sentences": 2,
+    "accuracy_percentage": 85.7,
+    "false_statements": [
+      {
+        "sentence": "Kosten voor de ontheffing variëren afhankelijk van het object en de grootte. De kosten voor objecten tot 15 m2 beginnen bij € 45,15.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Alphen aan den Rijn beginnen de kosten voor een ontheffing gebruik openbare weg bij € 46,50 voor objecten tot 15 m2."
+      },
+      {
+        "sentence": "Extra kosten van € 49,65 als de ontheffing binnen 3 weken nodig is.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Alphen aan den Rijn bedragen de spoedkosten voor een ontheffing binnen 3 weken € 51,15."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 0,
+    "invalid_urls": 7,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.alphenaandenrijn.nl/Parkeren_en_verkeer/Parkeren/Vergunningen_en_parkeerplaatsen/Parkeervergunningen/Parkeervergunning",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://example.com/metada2",
+        "reason": "INVALID: Error scraping https://example.com/metada2: 404 Client Error: Not Found for url: https://example.com/metada2"
+      },
+      {
+        "url": "https://example.com/metada1",
+        "reason": "INVALID: Error scraping https://example.com/metada1: 404 Client Error: Not Found for url: https://example.com/metada1"
+      },
+      {
+        "url": "https://www.alphenaandenrijn.nl/Parkeren_en_verkeer/Parkeren/Vergunningen_en_parkeerplaatsen/Parkeervergunningen/Parkeervergunning_bedrijven",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.alphenaandenrijn.nl/Bouwen_en_verbouwen/Ontheffing_gebruik_openbare_weg",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.alphenaandenrijn.nl/Parkeren_en_verkeer/Parkeren/Vergunningen_en_parkeerplaatsen/Parkeervergunningen",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.alphenaandenrijn.nl/Vergunningen_en_toestemming/Vergunningen_openbare_weg/Openbare_weg_en_standplaatsen/Ontheffing_gebruik_openbare_weg",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ZWOLLE",
+      "contact": {
+        "phone": "14 038",
+        "email": "postbus@zwolle.nl",
+        "website": "http://www.zwolle.nl"
+      }
+    },
+    "service": {
+      "id": 7,
+      "name": "Kabels en leidingen aanleggen en beheren"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 11,
+    "false_sentences": 2,
+    "accuracy_percentage": 84.6,
+    "false_statements": [
+      {
+        "sentence": "Dit kunt u navragen bij KLIC Oost.",
+        "status": "false",
+        "note": "KLIC-meldingen verlopen via het Kadaster/KLIC, niet via 'KLIC Oost'. KLIC Oost bestaat niet als organisatie."
+      },
+      {
+        "sentence": "Aanvragen voor een vergunning of instemming verlopen via de website Moorwerkt.nl.",
+        "status": "false",
+        "note": "Aanvragen voor vergunningen en instemmingen voor kabels en leidingen in Zwolle verlopen via het centrale loket op de website van de gemeente Zwolle, niet via Moorwerkt.nl."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 3,
+    "invalid_urls": 3,
+    "accuracy_percentage": 50.0,
+    "valid_urls_list": [
+      "https://www.zwolle.nl/toestemming-aanleg-kabels-en-leidingen",
+      "https://www.zwolle.nl/kabels-en-leidingen",
+      "https://www.zwolle.nl/verzoek-om-handhaving-bouwregels"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.zwolle.nl/u-heeft-een-omgevingsvergunning-ontvangen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.moorwerkt.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.zwolle.nl/veelgestelde-vragen-over-de-omgevingswet",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als we alle kabels en leidingen in de gemeente Zwolle achter elkaar leggen kunnen we daarmee heen en weer naar Barcelona reizen!",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat aanvullende context over de omvang van het kabel- en leidingnetwerk in Zwolle die niet in de originele tekst staat vermeld.",
+          "source_urls": [
+            "https://www.zwolle.nl/kabels-en-leidingen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De ondergrond van de Zwolse binnenstad is bijvoorbeeld van oudsher relatief krap. Daar is het moeilijker om nieuwe kabels en leidingen aan te leggen.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt specifieke uitdagingen voor de binnenstad van Zwolle die niet in de originele tekst worden genoemd.",
+          "source_urls": [
+            "https://www.zwolle.nl/kabels-en-leidingen"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Graafwerkzaamheden aan de openbare weg voor uitbreiding en/of onderhoud van deze netwerken mogen alleen als er een vergunning en/of instemming van de gemeente is.",
+          "original_reference": "Voor de aanleg van kabels en leidingen moet er een vergunning en/of instemming van de gemeente Zwolle zijn.",
+          "note": "De vereiste voor vergunning/instemming komt overeen met de originele tekst.",
+          "source_urls": [
+            "https://www.zwolle.nl/toestemming-aanleg-kabels-en-leidingen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten grotendeels consistente informatie met de originele tekst, maar bieden aanvullende context over de complexiteit en omvang van het kabel- en leidingnetwerk in Zwolle, met name specifieke uitdagingen in de binnenstad. De kernprocessen en vereisten blijven hetzelfde."
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "context": {
+    "municipality": {
+      "name": "APELDOORN",
+      "contact": {
+        "phone": "14 055",
+        "email": "gemeente@apeldoorn.nl",
+        "website": "http://www.apeldoorn.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 11,
+    "false_sentences": 2,
+    "accuracy_percentage": 84.6,
+    "false_statements": [
+      {
+        "sentence": "De vergunning is onbeperkt geldig, maar wijzigingen in omvang, ligging of rechtsvorm vereisen een nieuwe aanvraag.",
+        "status": "false",
+        "note": "Volgens de gemeente Apeldoorn is een terrasvergunning niet onbeperkt geldig. De vergunning moet periodiek worden verlengd."
+      },
+      {
+        "sentence": "De aanvraag voor een terrasvergunning kost € 668,68.",
+        "status": "false",
+        "note": "Het genoemde bedrag is niet correct volgens de actuele legesverordening van de gemeente Apeldoorn. De exacte kosten kunnen variëren en worden jaarlijks vastgesteld."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 2,
+    "invalid_urls": 4,
+    "accuracy_percentage": 33.3,
+    "valid_urls_list": [
+      "https://www.apeldoorn.nl/omgevingswet/een-vergunning-aanvragen-binnen-de-omgevingswet-hoe-werkt-dat",
+      "https://www.apeldoorn.nl/ondernemen/een-bedrijf-in-de-horeca"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.apeldoorn.nl/werken-en-leren/ondernemen/ontheffingen-en-vergunningen/vergunning-uitstalling",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.apeldoorn.nl/werken-en-leren/ondernemen/ontheffingen-en-vergunningen/terrasvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.apeldoorn.nl/terrasvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.apeldoorn.nl/wonen-en-leven/leven-reizen-en-papieren/adres/omgevingsvergunning-kamerverhuur",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Geen specifieke informatie over terrasvergunningen gevonden in de geciteerde bronnen",
+          "original_reference": "De aanvraag voor een terrasvergunning kost € 668,68",
+          "note": "De genoemde kosten van €668,68 kunnen niet geverifieerd worden in de beschikbare bronnen. Dit is een belangrijk verschil aangezien concrete kosteninformatie ontbreekt in de bronpagina's.",
+          "source_urls": [
+            "https://www.apeldoorn.nl/werken-en-leren/ondernemen/ontheffingen-en-vergunningen/terrasvergunning",
+            "https://www.apeldoorn.nl/ondernemen/een-bedrijf-in-de-horeca"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Geen specifieke informatie over geldigheidsduur van terrasvergunningen gevonden",
+          "original_reference": "De vergunning is onbeperkt geldig",
+          "note": "De claim dat de vergunning onbeperkt geldig is kan niet geverifieerd worden in de beschikbare bronnen. Dit is een belangrijk verschil omdat de geldigheidsduur van de vergunning niet wordt genoemd in de bronpagina's.",
+          "source_urls": [
+            "https://www.apeldoorn.nl/werken-en-leren/ondernemen/ontheffingen-en-vergunningen/terrasvergunning",
+            "https://www.apeldoorn.nl/ondernemen/een-bedrijf-in-de-horeca"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont aan dat er belangrijke verschillen zijn tussen de originele inhoud en de beschikbare bronnen. Met name de specifieke kosten (€668,68) en de onbeperkte geldigheid van de vergunning kunnen niet geverifieerd worden in de bronpagina's. Het is opmerkelijk dat de bronnen weinig concrete informatie bevatten over de terrasvergunning procedure, kosten en voorwaarden."
+  }
+}

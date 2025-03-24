@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "VAALS",
+      "contact": {
+        "phone": "(043) 306 85 68",
+        "email": "info@vaals.nl",
+        "website": "http://www.vaals.nl"
+      }
+    },
+    "service": {
+      "id": 8,
+      "name": "Marktvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 27,
+    "true_sentences": 25,
+    "false_sentences": 2,
+    "accuracy_percentage": 92.6,
+    "false_statements": [
+      {
+        "sentence": "Hoewel er op de officiële website van de gemeente Vaals geen specifieke informatie te vinden was, hebben we aanvullende details verzameld om u te helpen bij het aanvragen van een marktvergunning.",
+        "status": "false",
+        "note": "Er is wel degelijk specifieke informatie over marktvergunningen te vinden op de website van gemeente Vaals onder het kopje 'Standplaats- en marktvergunning'"
+      },
+      {
+        "sentence": "U kunt een vooroverleg aanvragen door een e-mail te sturen naar omgevingsvergunningen@vaals.nl.",
+        "status": "false",
+        "note": "Het correcte e-mailadres voor het aanvragen van een vooroverleg is info@vaals.nl, niet omgevingsvergunningen@vaals.nl"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.vaals.nl/inwoners/vergunningen/omgevingswet/meest-aangevraagde-activiteiten",
+      "https://www.vaals.nl/inwoners/vergunningen/omgevingsvergunning",
+      "https://www.vaals.nl/inwoners/vergunningen/",
+      "https://www.vaals.nl/inwoners/vergunningen/omgevingswet/omgevingsvergunning",
+      "https://www.vaals.nl/ondernemers/ondernemersplein"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Nieuw bij het (ver)bouwen van een bouwwerk is dat er een knip wordt gemaakt. Deze bestaat uit een (technische) bouwactiviteit en een omgevingsplanactiviteit bouwen (ruimtelijk of planologisch deel).",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over de nieuwe 'knip' in bouwactiviteiten sinds de invoering van de Omgevingswet, wat een essentieel onderdeel is van het vergunningsproces.",
+          "source_urls": [
+            "https://www.vaals.nl/inwoners/vergunningen/omgevingswet/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een omgevingsvergunning kan benodigd zijn voor: (buitenplanse) omgevingsplanactiviteit, technische bouwactiviteit, rijksmonumenten activiteit, milieubelastende activiteit, flora- en fauna activiteit, lozingsactiviteit, wateronttrekkingsactiviteit",
+          "original_reference": "No matching information",
+          "note": "De originele tekst specificeert niet de verschillende types activiteiten waarvoor een omgevingsvergunning nodig kan zijn, wat belangrijke informatie is voor aanvragers.",
+          "source_urls": [
+            "https://www.vaals.nl/inwoners/vergunningen/omgevingswet/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Stuur dan gerust een mail naar omgevingsvergunningen@vaals.nl",
+          "original_reference": "omgevingsvergunningen@vaals.nl",
+          "note": "De originele tekst vermeldt dit e-mailadres alleen voor vooroverleg, terwijl het volgens de bron ook gebruikt kan worden voor algemene vragen over vergunningvrij bouwen.",
+          "source_urls": [
+            "https://www.vaals.nl/inwoners/vergunningen/omgevingswet/omgevingsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie die niet in de originele tekst staat, met name over de nieuwe 'knip' in bouwactiviteiten en specifieke types vergunningsplichtige activiteiten. Ook is er een verschil in het gebruik van het e-mailadres voor omgevingsvergunningen. Deze informatie is essentieel voor een volledig begrip van het vergunningsproces onder de nieuwe Omgevingswet."
+  }
+}

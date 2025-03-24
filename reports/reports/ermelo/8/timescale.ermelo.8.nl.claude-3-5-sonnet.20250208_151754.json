@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ERMELO",
+      "contact": {
+        "phone": "(0341) 56 73 21",
+        "email": "gemeente@ermelo.nl",
+        "website": "http://www.ermelo.nl"
+      }
+    },
+    "service": {
+      "id": 8,
+      "name": "Marktvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 9,
+    "true_sentences": 8,
+    "false_sentences": 1,
+    "accuracy_percentage": 88.9,
+    "false_statements": [
+      {
+        "sentence": "Dit kost € 62,30.",
+        "status": "false",
+        "note": "Het exacte bedrag voor een marktplaatsvergunning in Ermelo is € 63,70 volgens de actuele legesverordening van de gemeente Ermelo."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.ermelo.nl/omgevingsplein/omgevingsloket/conceptverzoek-aanvragen",
+      "https://www.ermelo.nl/evenementen-en-horeca/standplaats-aanvragen",
+      "https://www.ermelo.nl/evenementen-en-horeca",
+      "https://www.ermelo.nl/evenementen-en-horeca/evenement-of-activiteit-organiseren",
+      "https://www.ermelo.nl/evenementen-en-horeca/marktplaatsvergunning-weekmarkt"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Aanvragen van een marktplaatsvergunning kost € 63,70",
+          "original_reference": "Dit kost € 62,30",
+          "note": "Het bedrag in de bronpagina (€63,70) verschilt van het bedrag in de originele tekst (€62,30)",
+          "source_urls": [
+            "https://www.ermelo.nl/evenementen-en-horeca/marktplaatsvergunning-weekmarkt"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "De weekmarkt is elke dinsdagochtend van 08.00 tot 12.30 uur op het Raadhuisplein",
+          "original_reference": "No matching information",
+          "note": "Deze belangrijke informatie over de marktdag en -tijden ontbreekt in de originele tekst maar staat wel in de bron",
+          "source_urls": [
+            "https://www.ermelo.nl/evenementen-en-horeca/marktplaatsvergunning-weekmarkt"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "De marktmeester wijst elke marktdag de dagplaatsen per branche toe aan meelopers. Dagplaatsen zijn vaste plaatsen die vrijkomen als een ondernemer met een vaste plaats er een keer niet is.",
+          "original_reference": "No matching information",
+          "note": "Aanvullende belangrijke informatie over dagplaatsen en de rol van de marktmeester ontbreekt in de originele tekst",
+          "source_urls": [
+            "https://www.ermelo.nl/evenementen-en-horeca/marktplaatsvergunning-weekmarkt"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen het tarief voor de marktplaatsvergunning dat €1,40 hoger ligt in de bronpagina. Daarnaast bevat de bronpagina essentiële aanvullende informatie over de marktdag en -tijden en over het systeem van dagplaatsen die niet in de originele tekst staat vermeld. De overige voorwaarden en procedures komen overeen met de originele tekst."
+  }
+}

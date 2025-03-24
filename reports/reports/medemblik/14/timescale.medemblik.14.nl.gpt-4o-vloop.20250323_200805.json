@@ -1,0 +1,92 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MEDEMBLIK",
+      "contact": {
+        "phone": "(0229) 85 60 00",
+        "email": "info@medemblik.nl",
+        "website": "http://www.medemblik.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 16,
+    "true_sentences": 14,
+    "false_sentences": 2,
+    "accuracy_percentage": 87.5,
+    "false_statements": [
+      {
+        "sentence": "Parkeervergunning: Gratis",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Medemblik zijn er kosten verbonden aan een parkeervergunning. Deze is niet gratis."
+      },
+      {
+        "sentence": "Er is geen specifieke informatie over bezwaarprocedures voor parkeervergunningen of ontheffingen genoemd op de website van de gemeente Medemblik.",
+        "status": "false",
+        "note": "Op de website van gemeente Medemblik staat wel degelijk informatie over de bezwaarprocedure. Tegen elk besluit van de gemeente kan binnen 6 weken bezwaar worden gemaakt."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.medemblik.nl/bouwen-en-verbouwen/omgevingswet-en-bouwvergunningen/omgevingsvergunning",
+      "https://www.medemblik.nl/vergunningen/opslag-woningbeheer-en-parkeren/parkeervergunning-oostelijk-deel-westereiland-medemblik",
+      "https://www.medemblik.nl/parkeren-en-verkeer/gehandicaptenparkeerkaart-aanvragen-sociaal-loket-medemblik",
+      "https://www.medemblik.nl/vergunningen/collecte-verkoop-en-reclame/standplaatsvergunning/melding-ideele-standplaats"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.medemblik.nl/parkeren-en-verkeer/gehandicaptenparkeerplaats-aanvragen-sociaal-loket-medemblik",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Gebied tussen Westereiland 67 en kruising Westereiland/Hoogesteeg.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst specificeert niet het exacte gebied waar de parkeervergunning geldig is, terwijl de bron dit wel duidelijk aangeeft.",
+          "source_urls": [
+            "https://www.medemblik.nl/vergunningen/opslag-woningbeheer-en-parkeren/parkeervergunning-oostelijk-deel-westereiland-medemblik"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wat te doen bij: Verhuizing: de huidige bewoner geeft de parkeervergunning/ontheffing aan de nieuwe bewoner. De nieuwe bewoner moet deze 'oude' parkeervergunning/ontheffing namelijk inleveren bij de aanvraag voor een nieuwe vergunning/ontheffing. Ander voertuig: laat het kenteken overschrijven Leenauto: vraag tijdelijke vergunning aan",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over procedures bij verhuizing, wijziging van voertuig of gebruik van een leenauto, terwijl dit belangrijke praktische informatie is die wel in de bron staat.",
+          "source_urls": [
+            "https://www.medemblik.nl/vergunningen/opslag-woningbeheer-en-parkeren/parkeervergunning-oostelijk-deel-westereiland-medemblik"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Plaats vergunning/ontheffing goed zichtbaar achter de voorruit",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat de vergunning/ontheffing zichtbaar achter de voorruit moet worden geplaatst, wat een belangrijke gebruiksvoorwaarde is.",
+          "source_urls": [
+            "https://www.medemblik.nl/vergunningen/opslag-woningbeheer-en-parkeren/parkeervergunning-oostelijk-deel-westereiland-medemblik"
+          ]
+        }
+      ]
+    },
+    "summary": "De broninhoud bevat belangrijke aanvullende informatie die ontbreekt in de originele tekst, waaronder het specifieke gebied waar de vergunning geldig is, procedures bij verhuizing of voertuigwijziging, en de verplichting om de vergunning zichtbaar te plaatsen. Deze informatie is essentieel voor het correct gebruik van de parkeervergunning."
+  }
+}

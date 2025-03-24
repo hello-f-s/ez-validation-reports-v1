@@ -1,0 +1,111 @@
+{
+  "context": {
+    "municipality": {
+      "name": "UTRECHT",
+      "contact": {
+        "phone": "(014) 030",
+        "email": "Gemeente@utrecht.nl",
+        "website": "http://www.utrecht.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "Als u een bezwaar wilt indienen tegen het besluit van uw vergunningaanvraag, kunt u dat doen door een zienswijze in te dienen op overheid.nl.",
+        "status": "false",
+        "note": "Bezwaren tegen een vergunningaanvraag kunnen niet via overheid.nl worden ingediend. Volgens de officiële website van de gemeente Utrecht moet een bezwaarschrift schriftelijk worden ingediend bij het college van burgemeester en wethouders of via het digitale formulier op utrecht.nl."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 10,
+    "valid_urls": 6,
+    "invalid_urls": 4,
+    "accuracy_percentage": 60.0,
+    "valid_urls_list": [
+      "https://www.utrecht.nl/ondernemen/evenement-organiseren",
+      "https://utrecht.nl/evenementen",
+      "https://www.utrecht.nl/ondernemen/evenement-organiseren/buitenlocaties",
+      "https://www.utrecht.nl/wonen-en-leven/vrije-tijd/evenementen",
+      "https://www.utrecht.nl/ondernemen/vergunningen-en-regels",
+      "https://www.utrecht.nl/vergunningcheckevenement/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://utrecht.nl/vergunningen-en-regels-voor-ondernemers",
+        "reason": "INVALID: Error scraping https://utrecht.nl/vergunningen-en-regels-voor-ondernemers: 404 Client Error: Not Found for url: https://www.utrecht.nl/vergunningen-en-regels-voor-ondernemers"
+      },
+      {
+        "url": "https://utrecht.nl/evenement-vergunningcheck-doen",
+        "reason": "INVALID: Error scraping https://utrecht.nl/evenement-vergunningcheck-doen: 404 Client Error: Not Found for url: https://www.utrecht.nl/evenement-vergunningcheck-doen"
+      },
+      {
+        "url": "https://utrecht.nl/evenementen-organiseren",
+        "reason": "INVALID: Error scraping https://utrecht.nl/evenementen-organiseren: 404 Client Error: Not Found for url: https://www.utrecht.nl/evenementen-organiseren"
+      },
+      {
+        "url": "https://utrecht.nl/buitenlocaties",
+        "reason": "INVALID: Error scraping https://utrecht.nl/buitenlocaties: 404 Client Error: Not Found for url: https://www.utrecht.nl/buitenlocaties"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 4,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Meld uw evenement aan voor de reserveringskalender. Dat kan alleen tussen 1 augustus en 31 augustus. Staat uw evenement op de reserveringskalender? Dan heeft uw vergunningaanvraag voorrang op andere aanvragen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over de reserveringskalender en de specifieke aanmeldperiode in augustus, wat invloed heeft op de voorrang van vergunningaanvragen.",
+          "source_urls": [
+            "https://www.utrecht.nl/ondernemen/evenement-organiseren",
+            "https://www.utrecht.nl/wonen-en-leven/vrije-tijd/evenementen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een straatfeest mag niet in een park zijn.",
+          "original_reference": "No matching information",
+          "note": "Deze specifieke beperking voor straatfeesten wordt niet genoemd in de originele tekst maar is wel een belangrijke voorwaarde.",
+          "source_urls": [
+            "https://www.utrecht.nl/vergunningcheckevenement/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een melding doen is gratis.",
+          "original_reference": "Het doen van een melding, indien van toepassing, is gratis.",
+          "note": "De bronnen vermelden dit directer en duidelijker dan de originele tekst die het meer omslachtig formuleert.",
+          "source_urls": [
+            "https://www.utrecht.nl/vergunningcheckevenement/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Minimaal 2 weken voor het evenement doet u de melding.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt alleen de 12 weken termijn voor vergunningen, maar niet de 2 weken termijn voor meldingen.",
+          "source_urls": [
+            "https://www.utrecht.nl/vergunningcheckevenement/"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie die ontbreekt in de originele tekst, met name over de reserveringskalender, specifieke termijnen voor meldingen, en beperkingen voor straatfeesten. Ook zijn er verschillen in hoe bepaalde informatie wordt gepresenteerd, waarbij de bronnen vaak directere en specifiekere formuleringen gebruiken."
+  }
+}

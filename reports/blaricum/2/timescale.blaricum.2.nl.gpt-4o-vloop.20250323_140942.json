@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "BLARICUM",
+      "contact": {
+        "phone": "(035) 751 32 22",
+        "email": "info@blaricum.nl",
+        "website": "http://www.blaricum.nl"
+      }
+    },
+    "service": {
+      "id": 2,
+      "name": "Bord of spandoek plaatsen aan de openbare weg"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 19,
+    "false_sentences": 2,
+    "accuracy_percentage": 90.5,
+    "false_statements": [
+      {
+        "sentence": "Het tarief voor de behandeling van uw aanvraag is € 79,30. Dit dekt één week plaatsing.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Blaricum is dit tarief niet correct. Het huidige tarief voor reclameborden en spandoeken is anders vastgesteld."
+      },
+      {
+        "sentence": "Voor elke extra week betaalt u ook € 79,30.",
+        "status": "false",
+        "note": "Dit bedrag komt niet overeen met de actuele legesverordening van gemeente Blaricum voor extra weken plaatsing van reclameborden of spandoeken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.blaricum.nl/Vergunningen/Reclame_standplaats_en_collectevergunning/Reclameborden_of_spandoeken_plaatsen",
+      "https://www.blaricum.nl/Vergunningen/Reclame_standplaats_en_collectevergunning",
+      "https://www.blaricum.nl/Bouwen_verbouwen_en_wonen/Bouwen_en_verbouwen/Steiger_container_of_bouwkraan_plaatsen",
+      "https://www.blaricum.nl/Bouwen_verbouwen_en_wonen/Bouwen_en_verbouwen/Omgevingsvergunning",
+      "https://www.blaricum.nl/Vergunningen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor het ophangen van de spandoeken zijn vaste locaties aangewezen",
+          "original_reference": "Ze moeten worden opgehangen op aangewezen locaties zoals Huizerweg, Naarderweg, Randweg, en Torenlaan",
+          "note": "De originele tekst suggereert dat de genoemde locaties voorbeelden zijn, terwijl de brontekst aangeeft dat dit vaste, specifieke locaties zijn",
+          "source_urls": [
+            "https://www.blaricum.nl/Vergunningen/Reclame_standplaats_en_collectevergunning/Reclameborden_of_spandoeken_plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U moet zelf zorgen voor het ophangen van de spandoeken",
+          "original_reference": "No matching information",
+          "note": "De brontekst specificeert expliciet dat men zelf verantwoordelijk is voor het ophangen van spandoeken, wat niet vermeld wordt in de originele tekst",
+          "source_urls": [
+            "https://www.blaricum.nl/Vergunningen/Reclame_standplaats_en_collectevergunning/Reclameborden_of_spandoeken_plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Moeten ijzeren ogen hebben",
+          "original_reference": "No matching information",
+          "note": "De brontekst vermeldt een specifieke technische vereiste voor spandoeken (ijzeren ogen) die niet genoemd wordt in de originele tekst",
+          "source_urls": [
+            "https://www.blaricum.nl/Vergunningen/Reclame_standplaats_en_collectevergunning/Reclameborden_of_spandoeken_plaatsen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de specificaties voor spandoeken. De brontekst is specifieker over de ophanglocaties (deze zijn vast in plaats van voorbeelden), vermeldt expliciet dat men zelf verantwoordelijk is voor het ophangen, en specificeert technische vereisten (ijzeren ogen) die niet in de originele tekst staan. De overige informatie komt overeen met de originele tekst."
+  }
+}

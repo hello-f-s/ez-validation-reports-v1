@@ -1,0 +1,68 @@
+{
+  "context": {
+    "municipality": {
+      "name": "GILZE EN RIJEN",
+      "contact": {
+        "phone": "14 0161",
+        "email": "info@gilzerijen.nl",
+        "website": "http://www.gilzerijen.nl"
+      }
+    },
+    "service": {
+      "id": 18,
+      "name": "Ventvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 22,
+    "false_sentences": 2,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Voor een aanvraag van een omgevingsvergunning worden kosten in rekening gebracht, bekend als leges. Deze kosten staan vermeld in de legesverordening, en er zijn specifieke kosten voor bijvoorbeeld een horecavergunning, die € 142,20 bedraagt.",
+        "status": "false",
+        "note": "Het specifieke bedrag van €142,20 voor een horecavergunning kan niet geverifieerd worden op de officiële website van de gemeente Gilze en Rijen en is mogelijk verouderd of onjuist"
+      },
+      {
+        "sentence": "Verwacht dat uw vergunningaanvraag binnen 8 weken wordt behandeld.",
+        "status": "false",
+        "note": "De gemeente Gilze en Rijen specificeert geen vaste behandeltermijn van 8 weken voor alle vergunningaanvragen. De termijn kan variëren afhankelijk van het type vergunning"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 0,
+    "invalid_urls": 5,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.gilzerijen.nl/ondernemen/vergunningen-en-ontheffingen-voor-ondernemers",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.gilzerijen.nl/omgevingsvergunning",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.gilzerijen.nl/horecavergunning",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.gilzerijen.nl/woo",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.gilzerijen.nl/conceptverzoek",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  }
+}

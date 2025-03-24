@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "CULEMBORG",
+      "contact": {
+        "phone": "(0345) 47 77 00",
+        "email": "info@culemborg.nl",
+        "website": "http://www.culemborg.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 20,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.2,
+    "false_statements": [
+      {
+        "sentence": "De kosten bedragen €619 voor de Alcoholwetvergunning en €88,35 voor het wijzigen van de vergunning.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Culemborg zijn de kosten voor een Alcoholwetvergunning €632,35 en voor het wijzigen van de vergunning €90,10 (tarieven 2024)."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.culemborg.nl/alcoholwetvergunning",
+      "https://www.culemborg.nl/parkeervergunning-voor-bedrijven",
+      "https://www.culemborg.nl/omgevingsvergunning",
+      "https://www.culemborg.nl/bedrijvenloket",
+      "https://www.culemborg.nl/terrasvergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vanaf 1 januari zijn alle wetten en regels over onze leefomgeving samengevoegd in één wet: de Omgevingswet",
+          "original_reference": "No matching information",
+          "note": "De originele tekst maakt geen melding van de nieuwe Omgevingswet, wat een belangrijke wettelijke verandering is die impact kan hebben op vergunningsaanvragen",
+          "source_urls": [
+            "https://www.culemborg.nl/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De Omgevingsdienst Rivierenland (ODR) behandelt namens de gemeente Culemborg alle vergunningsaanvragen",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat de ODR de vergunningsaanvragen behandelt, wat een essentieel onderdeel is van het aanvraagproces",
+          "source_urls": [
+            "https://www.culemborg.nl/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Neem contact op via ondernemen@culemborg.nl",
+          "original_reference": "info@culemborg.nl",
+          "note": "Er wordt een ander e-mailadres vermeld voor ondernemersvragen in de bronnen dan in de originele tekst",
+          "source_urls": [
+            "https://www.culemborg.nl/bedrijvenloket"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de implementatie van de nieuwe Omgevingswet, de rol van de Omgevingsdienst Rivierenland bij vergunningsaanvragen, en verschillende contactgegevens voor ondernemers. Deze informatie ontbreekt in de originele tekst maar is wel relevant voor de aanvraagprocedure van horecavergunningen."
+  }
+}

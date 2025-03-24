@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HAAKSBERGEN",
+      "contact": {
+        "phone": "(053) 573 45 67",
+        "email": "gemeente@haaksbergen.nl",
+        "website": "http://www.haaksbergen.nl"
+      }
+    },
+    "service": {
+      "id": 22,
+      "name": "Woonruimte splitsen of samenvoegen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "Zie de gemeentelijke Legesverordening 2025 voor informatie over de kosten betreffende de aanvraag.",
+        "status": "false",
+        "note": "Er wordt verwezen naar de Legesverordening 2025, maar deze bestaat nog niet. De huidige geldende legesverordening is die van 2024."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.haaksbergen.nl/Vergunningen/101107-Omgevingsvergunning.html",
+      "https://www.haaksbergen.nl/ondernemers/Bedrijfstarten.html",
+      "https://www.haaksbergen.nl/ondernemers/Bedrijfstarten/Vergunningen-voor-bedrijven.html",
+      "https://www.haaksbergen.nl/Vergunningen/huisnummer.html",
+      "https://www.haaksbergen.nl/omgevingsvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.haaksbergen.nl/ondernemers/Ondernemend-Haaksbergen/Ondernemersplein.html",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.haaksbergen.nl/ondernemersplein",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het aanvragen van een vergunning kan alleen digitaal. Het is dus niet mogelijk om een aanvraag uit te printen en op te sturen.",
+          "original_reference": "Print het formulier, vul het volledig in en stuur het met de bijlagen naar de gemeente Haaksbergen.",
+          "note": "Er is een tegenstrijdigheid in de aanvraagmethode. De bronnen geven aan dat aanvragen alleen digitaal mogelijk is, terwijl de originele tekst spreekt over het printen en opsturen van een formulier.",
+          "source_urls": [
+            "https://www.haaksbergen.nl/Vergunningen/101107-Omgevingsvergunning.html",
+            "https://www.haaksbergen.nl/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Denk hierbij bijvoorbeeld aan een verbouwing van een monument of de bouw van een kantoorpand waar meer dan 50 personen aanwezig zullen zijn.",
+          "original_reference": "Deze uitgebreide procedure is van toepassing op complexe plannen die niet binnen het Omgevingsplan passen.",
+          "note": "De bronnen geven specifieke voorbeelden van wanneer een uitgebreide procedure van toepassing is, terwijl de originele tekst alleen algemeen spreekt over 'complexe plannen'.",
+          "source_urls": [
+            "https://www.haaksbergen.nl/Vergunningen/101107-Omgevingsvergunning.html"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de aanvraagprocedure (digitaal versus papier) en de specificatie van situaties waarin een uitgebreide procedure nodig is. De bronnen zijn specifieker en actueler in hun beschrijving van de procedures dan de originele tekst."
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HAARLEM",
+      "contact": {
+        "phone": "14 023",
+        "email": "antwoord@haarlem.nl",
+        "website": "http://www.haarlem.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 31,
+    "true_sentences": 29,
+    "false_sentences": 2,
+    "accuracy_percentage": 93.5,
+    "false_statements": [
+      {
+        "sentence": "Centrum en Schalkwijk: € 252 per jaar.",
+        "status": "false",
+        "note": "Het correcte tarief voor een bedrijfsparkeervergunning in het centrum en Schalkwijk is € 255,96 per jaar volgens de officiële website van gemeente Haarlem"
+      },
+      {
+        "sentence": "U ontvangt binnen 8 weken een e-mail waarin staat of u de parkeervergunning krijgt.",
+        "status": "false",
+        "note": "Volgens de gemeente Haarlem website wordt een parkeervergunning direct online verleend na goedkeuring van de aanvraag, niet binnen 8 weken"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 3,
+    "invalid_urls": 2,
+    "accuracy_percentage": 60.0,
+    "valid_urls_list": [
+      "https://haarlem.nl/parkeervergunning-voor-bedrijven",
+      "https://haarlem.nl/parkeervergunning-voor-bewoners",
+      "https://haarlem.nl/parkeervergunning-voor-uw-bezoek"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://haarlem.nl/tijdelijke-parkeervergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://haarlem.nl/ontheffing-voor-rijden-voetgangersgebied",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Per adres kan 1 persoon de parkeervergunning voor bezoekers aanvragen. Deze persoon is 18 jaar of ouder en staat ingeschreven op het adres waarvoor de vergunning wordt aangevraagd",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de leeftijdseis en het maximum aantal aanvragers per adres voor bezoekersparkeren",
+          "source_urls": [
+            "https://haarlem.nl/parkeervergunning-voor-uw-bezoek"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als het kenteken niet op uw naam staat: scan van uw leasecontract of leaseverklaring (bij kenteken op naam van leasebedrijf), werkgeversverklaring (bij kenteken op naam van de werkgever)",
+          "original_reference": "Voor een parkeervergunning: het kenteken waarvoor de vergunning moet gelden.",
+          "note": "De originele tekst specificeert niet de aanvullende documentatie die nodig is voor leaseauto's of bedrijfsauto's",
+          "source_urls": [
+            "https://haarlem.nl/parkeervergunning-voor-bewoners"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "U krijgt binnen 8 weken een e-mail waarin staat of u de vergunning krijgt",
+          "original_reference": "U ontvangt binnen 8 weken een e-mail waarin staat of u de parkeervergunning krijgt.",
+          "note": "De verwerkingstijd van 8 weken komt overeen in beide bronnen",
+          "source_urls": [
+            "https://haarlem.nl/parkeervergunning-voor-bedrijven"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen aanvullende voorwaarden en vereisten die niet in de originele tekst staan vermeld. Met name de leeftijdseis en het maximum aantal aanvragers per adres voor bezoekersparkeren, en de specifieke documentatie-eisen voor lease- en bedrijfsauto's zijn belangrijke toevoegingen die in de originele tekst ontbreken. De verwerkingstermijn van 8 weken wordt wel consistent vermeld in alle bronnen."
+  }
+}

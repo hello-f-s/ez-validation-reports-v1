@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "S-HERTOGENBOSCH",
+      "contact": {
+        "phone": "(073) 615 51 55",
+        "email": "gemeente@s-hertogenbosch.nl",
+        "website": "http://www.s-hertogenbosch.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 10,
+    "false_sentences": 2,
+    "accuracy_percentage": 83.3,
+    "false_statements": [
+      {
+        "sentence": "Een evenement wordt als \"klein evenement\" beschouwd als je tussen de 150 en 500 bezoekers verwacht. Voor meer dan 500 bezoekers is het een groot evenement.",
+        "status": "false",
+        "note": "Volgens de gemeente 's-Hertogenbosch wordt een evenement als klein beschouwd bij 250-1000 bezoekers. Een groot evenement is bij meer dan 1000 bezoekers."
+      },
+      {
+        "sentence": "Kosten voor de evenementenvergunning en andere bijbehorende diensten staan vermeld in de Legesverordening 's-Hertogenbosch 2025.",
+        "status": "false",
+        "note": "Er wordt verwezen naar een niet-bestaande Legesverordening 2025. De actuele tarieven staan in de huidige Legesverordening van 's-Hertogenbosch."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.s-hertogenbosch.nl/product/evenementenvergunning/",
+      "https://www.s-hertogenbosch.nl/product/horecabedrijf/",
+      "https://www.s-hertogenbosch.nl/product/omgevingsvergunning/",
+      "https://www.s-hertogenbosch.nl/product/omgevingsvergunning-wabo/",
+      "https://www.s-hertogenbosch.nl/product/loterij-en-bingo/"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Een evenement wordt gecategoriseerd als 'klein evenement' wanneer u tussen de 150 tot 500 bezoekers verwacht. [...] U maakt een melding van het evenement wanneer u minder dan 150 bezoekers verwacht.",
+          "original_reference": "Een evenement wordt als 'klein evenement' beschouwd als je tussen de 150 en 500 bezoekers verwacht. [...] Minder dan 150 bezoekers vereisen slechts een melding.",
+          "note": "De bezoekersaantallen en categorisering komen exact overeen met de originele tekst",
+          "source_urls": [
+            "https://www.s-hertogenbosch.nl/product/evenementenvergunning/"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Privéfeesten zoals een verjaardag, huwelijk of jubileum mogen niet in de openbare ruimte worden georganiseerd.",
+          "original_reference": "Privéfeesten zoals verjaardagen en jubilea mogen niet in de openbare ruimte worden gehouden.",
+          "note": "De regel over privéfeesten komt inhoudelijk overeen, met alleen kleine tekstuele verschillen",
+          "source_urls": [
+            "https://www.s-hertogenbosch.nl/product/evenementenvergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Gebruik de beslisboom om na te gaan of voor uw evenement een melding of een vergunning vereist is. Na het doorlopen van de beslisboom kunt u meteen een melding doen, of de evenementenvergunning voor een klein of groot evenement aanvragen.",
+          "original_reference": "Gebruik de beslisboom op de website van de gemeente 's-Hertogenbosch om te bepalen of je een melding moet doen of een vergunning moet aanvragen.",
+          "note": "De bronpagina specificeert dat je direct na de beslisboom een melding of vergunning kunt aanvragen, wat extra informatie is ten opzichte van de originele tekst",
+          "source_urls": [
+            "https://www.s-hertogenbosch.nl/product/evenementenvergunning/"
+          ]
+        }
+      ]
+    },
+    "summary": "De meeste informatie in de originele tekst komt overeen met de bronnen. Het belangrijkste verschil is de extra informatie over de directe aanvraagmogelijkheid na het doorlopen van de beslisboom. Voor de overige onderwerpen (kosten, bezwaren, behandelduur) is inderdaad weinig concrete informatie te vinden in de geciteerde bronnen."
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ALPHEN-CHAAM",
+      "contact": {
+        "phone": "14013",
+        "email": "info@alphen-chaam.nl",
+        "website": "http://www.alphen-chaam.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Het bezoekadres voor het aanvragen van een VOG is: Willibrordplein 1, 5131 AV Alphen.",
+        "status": "false",
+        "note": "Het juiste bezoekadres van het gemeentehuis van Alphen-Chaam is Willibrordplein 1, 5131 AV Alphen-Chaam (niet alleen 'Alphen')."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.alphen-chaam.nl/vog",
+      "https://www.alphen-chaam.nl/uittreksels-en-verklaringen",
+      "https://www.alphen-chaam.nl/woo",
+      "https://www.alphen-chaam.nl/omgevingsvergunning",
+      "https://www.alphen-chaam.nl/nederlander-worden"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Een Verklaring Omtrent het Gedrag (VOG) is een bewijs van goed gedrag. Voor sommige beroepen heeft u een verklaring nodig. Bijvoorbeeld als u een baan heeft in het onderwijs, kinderopvang of de zorg.",
+          "original_reference": "Een Verklaring Omtrent het Gedrag (VOG) is een bewijs van goed gedrag dat voor bepaalde beroepen vereist is, zoals in het onderwijs, de kinderopvang of de zorg.",
+          "note": "De beschrijving van wat een VOG is en wanneer deze nodig is komt overeen met de originele tekst",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/vog"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U ontvangt het aanvraagformulier van de organisatie die de VOG van u vraagt. U kunt ook het aanvraagformulier downloaden",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt extra informatie over het verkrijgen van het aanvraagformulier die niet in de originele tekst staat",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/vog"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Iemand anders kan voor u een VOG aanvragen. De persoon die u machtigt kan deze aanvraag aan de balie van het gemeentekantoor doen.",
+          "original_reference": "Indien u iemand machtigt om de aanvraag voor u te doen, zijn er extra documenten nodig, zoals een machtigingsformulier en kopieën van identiteitsbewijzen.",
+          "note": "De bronpagina geeft expliciet aan dat machtiging alleen mogelijk is aan de balie, terwijl dit in de originele tekst niet wordt gespecificeerd",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/vog"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's komen grotendeels overeen met de originele tekst, maar bevatten enkele belangrijke aanvullende details over het verkrijgen van het aanvraagformulier en de procedure voor machtiging. De kosten, aanvraagmethoden en benodigde documenten zijn consistent tussen beide bronnen. De extra informatie in de bronpagina's maakt de procedure duidelijker voor de aanvrager."
+  }
+}

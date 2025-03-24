@@ -1,0 +1,78 @@
+{
+  "context": {
+    "municipality": {
+      "name": "KAPELLE",
+      "contact": {
+        "phone": "(0113) 33 31 10",
+        "email": "gemeente@kapelle.nl",
+        "website": "http://www.kapelle.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "U vraagt een aanwezigheidsvergunning aan bij de gemeente. Als u eigenaar bent van de gokautomaat moet u ook een exploitatievergunning aanvragen bij de gemeente.",
+        "status": "false",
+        "note": "De exploitatievergunning moet worden aangevraagd bij de Kansspelautoriteit, niet bij de gemeente. Dit staat ook eerder correct vermeld in de voorwaarden."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://kapelle.nl/gokautomaat-plaatsen",
+      "https://kapelle.nl/loterij-prijsvraag-bingo-organiseren",
+      "https://kapelle.nl/kermis-organiseren",
+      "https://kapelle.nl/standplaats-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.kapelle.nl/aanwezigheidsvergunning-speelautomaten",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Alleen horecabedrijven en speelautomaathallen mogen een gokkast plaatsen. De eigenaar van de gokautomaat moet een exploitatievergunning hebben van de Kansspelautoriteit.",
+          "original_reference": "Alleen horecabedrijven en speelautomaathallen mogen een gokkast plaatsen. De eigenaar van de gokautomaat moet een exploitatievergunning hebben van de Kansspelautoriteit.",
+          "note": "De basisvoorwaarden voor het plaatsen van gokautomaten zijn exact hetzelfde in beide bronnen",
+          "source_urls": [
+            "https://kapelle.nl/gokautomaat-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor een behendigheidsautomaat heeft u geen aanwezigheidsvergunning nodig.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst maakt geen onderscheid tussen gokautomaten en behendigheidsautomaten, terwijl dit een belangrijke uitzondering is die wel in de bronpagina wordt vermeld",
+          "source_urls": [
+            "https://kapelle.nl/gokautomaat-plaatsen"
+          ]
+        }
+      ]
+    },
+    "summary": "De broninhoud komt grotendeels overeen met de originele tekst, maar bevat één belangrijke aanvullende informatie over behendigheidsautomaten die niet in de originele tekst staat vermeld. Dit is een relevant verschil omdat het een belangrijke uitzondering betreft op de vergunningplicht. Voor het overige zijn alle voorwaarden, aanvraagprocedures en vereiste informatie consistent tussen beide versies."
+  }
+}

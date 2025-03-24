@@ -1,0 +1,91 @@
+{
+  "context": {
+    "municipality": {
+      "name": "SCHIEDAM",
+      "contact": {
+        "phone": "14 010",
+        "email": "contact@schiedam.nl",
+        "website": "http://www.schiedam.nl"
+      }
+    },
+    "service": {
+      "id": 22,
+      "name": "Woonruimte splitsen of samenvoegen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "U kunt de vergunning aanvraag via het contactformulier van de gemeente indienen, aangezien de dienst tijdelijk niet met DigiD en/of eHerkenning kan worden aangevraagd.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Schiedam moet een splitsingsvergunning worden aangevraagd via het Omgevingsloket Online (OLO) met DigiD of eHerkenning. Er wordt niet vermeld dat dit tijdelijk niet mogelijk is of dat aanvragen via een contactformulier mogelijk is."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 3,
+    "invalid_urls": 4,
+    "accuracy_percentage": 42.9,
+    "valid_urls_list": [
+      "https://schiedam.nl/a-tot-z/splitsingsvergunning-kadastraal-splitsen",
+      "https://www.schiedam.nl/a-tot-z/splitsingsvergunning-kadastraal-splitsen",
+      "https://www.schiedam.nl/a-tot-z/ik-ben-verhuurder-en-wil-meer-informatie"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://schiedam.nl/a-tot-z/vergunning-woningvorming-bouwkundig-splitsen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.schiedam.nl/content/vergunning-woningvorming-bouwkundig-splitsen-schiedam",
+        "reason": "INVALID: Error scraping https://www.schiedam.nl/content/vergunning-woningvorming-bouwkundig-splitsen-schiedam: 404 Client Error: Not Found for url: https://www.schiedam.nl/content/vergunning-woningvorming-bouwkundig-splitsen-schiedam"
+      },
+      {
+        "url": "https://www.schiedam.nl/content/splitsingsvergunning-kadastraal-splitsen-schiedam",
+        "reason": "INVALID: Error scraping https://www.schiedam.nl/content/splitsingsvergunning-kadastraal-splitsen-schiedam: 404 Client Error: Not Found for url: https://www.schiedam.nl/content/splitsingsvergunning-kadastraal-splitsen-schiedam"
+      },
+      {
+        "url": "https://www.schiedam.nl/a-tot-z/vergunning-woningvorming-bouwkundig-splitsen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Ook is een omgevingsvergunning nodig, omdat de brandcompartimentering wordt gewijzigd.",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden een extra vereiste voor bouwkundig splitsen: een omgevingsvergunning vanwege wijziging in brandcompartimentering. Dit wordt niet genoemd in de originele tekst.",
+          "source_urls": [
+            "https://schiedam.nl/a-tot-z/splitsingsvergunning-kadastraal-splitsen",
+            "https://www.schiedam.nl/a-tot-z/splitsingsvergunning-kadastraal-splitsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wilt u een gebouw splitsen dat uitsluitend uit bedrijfsruimten bestaat? Dan is er géén splitsingsvergunning nodig.",
+          "original_reference": "No matching information",
+          "note": "De bronnen specificeren een belangrijke uitzondering: geen splitsingsvergunning nodig voor gebouwen met uitsluitend bedrijfsruimten. Deze uitzondering staat niet in de originele tekst.",
+          "source_urls": [
+            "https://schiedam.nl/a-tot-z/splitsingsvergunning-kadastraal-splitsen",
+            "https://www.schiedam.nl/a-tot-z/splitsingsvergunning-kadastraal-splitsen"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele tekst en de bronnen. Ten eerste is er een aanvullende vergunningsvereiste (omgevingsvergunning voor brandcompartimentering) bij bouwkundig splitsen die niet in de originele tekst staat. Ten tweede wordt in de bronnen een belangrijke uitzondering genoemd voor gebouwen met alleen bedrijfsruimten, die niet vermeld wordt in de originele tekst. Deze informatie is essentieel voor een volledig begrip van de splitsingsregels."
+  }
+}

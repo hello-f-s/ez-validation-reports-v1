@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MAASSLUIS",
+      "contact": {
+        "phone": "14 010",
+        "email": "gemeente@maassluis.nl",
+        "website": "http://www.maassluis.nl"
+      }
+    },
+    "service": {
+      "id": 15,
+      "name": "Vergunning of ontheffing voor straatartiesten"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "Bezoekadres: Koningshoek 93.05, 3144 BA Maassluis.",
+        "status": "false",
+        "note": "Het huidige bezoekadres van de gemeente Maassluis is Koningshoek 93.50 (niet 93.05), 3144 BA Maassluis volgens de officiële website van de gemeente."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.maassluis.nl/geluidsoverlast-veroorzaken",
+      "https://www.maassluis.nl/straatartiest-optreden",
+      "https://www.maassluis.nl/uitrit-of-inrit-aanleggen",
+      "https://www.maassluis.nl/voorwerp-plaatsen-op-of-aan-de-weg",
+      "https://www.maassluis.nl/antenne-of-schotelantenne-plaatsen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wilt u muziek maken op straat of werkt u met apparatuur of (bouw)machines die geluid maken dat op straat te horen is? U hebt hiervoor een ontheffing nodig van de gemeente.",
+          "original_reference": "Wilt u in het openbaar optreden als straatartiest in de gemeente Maassluis, dan is op dit moment geen ontheffing nodig aangezien er geen openbare plaatsen zijn aangewezen waar het verbod van toepassing is.",
+          "note": "Er is een tegenstrijdigheid tussen de algemene geluidsoverlast pagina die stelt dat een ontheffing nodig is voor muziek maken op straat, en de specifieke straatartiesten pagina die aangeeft dat geen ontheffing nodig is.",
+          "source_urls": [
+            "https://www.maassluis.nl/geluidsoverlast-veroorzaken"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Tarief: € 31,30.",
+          "original_reference": "Er zijn geen kosten voor het aanvragen van een ontheffing voor straatartiesten gezien de afwezigheid van een formele aanvraagprocedure op dit moment.",
+          "note": "De geluidsoverlast pagina noemt specifieke kosten voor een ontheffing, terwijl de originele tekst aangeeft dat er geen kosten zijn omdat er geen formele procedure is.",
+          "source_urls": [
+            "https://www.maassluis.nl/geluidsoverlast-veroorzaken"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke tegenstrijdigheden gevonden tussen de algemene regelgeving voor geluidsoverlast en de specifieke regels voor straatartiesten. Dit betreft zowel de noodzaak van een ontheffing als de daaraan verbonden kosten. Deze tegenstrijdigheid zou kunnen leiden tot verwarring bij potentiële straatartiesten over welke regels precies van toepassing zijn."
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "TERSCHELLING",
+      "contact": {
+        "phone": "(0562) 44 62 44",
+        "email": "gemeente@terschelling.nl",
+        "website": "http://www.terschelling.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 20,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.2,
+    "false_statements": [
+      {
+        "sentence": "Voor meldingen kunt u 4 weken na het indienen al starten met activiteiten.",
+        "status": "false",
+        "note": "Voor meldingen Activiteitenbesluit moet u minimaal 4 weken wachten voordat u mag starten met de activiteiten, niet precies na 4 weken. Sommige activiteiten kunnen direct na melding starten en voor anderen gelden andere termijnen volgens de gemeente Terschelling."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.terschelling.nl/alle-producten-en-diensten/21",
+      "https://www.terschelling.nl/gereedmelding-bouwwerk",
+      "https://www.terschelling.nl/omgevingsvergunning",
+      "https://www.terschelling.nl/wonen",
+      "https://www.terschelling.nl/milieuvergunning-of-melding"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wij werken samen met de gemeente Harlingen op het gebied van vergunningverlening.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de samenwerking met gemeente Harlingen voor vergunningverlening, wat een belangrijk detail is voor aanvragers.",
+          "source_urls": [
+            "https://www.terschelling.nl/omgevingsvergunning",
+            "https://www.terschelling.nl/gereedmelding-bouwwerk"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De hele procedure, van delen van uw plan voor het bouwen van een woning tot het verlenen van de uiteindelijke vergunning, kan lang duren: twee jaar of langer.",
+          "original_reference": "Voor een gewone aanvraag ontvangt u binnen 8 weken bericht, met een mogelijke verlenging van 6 weken.",
+          "note": "De bronnen vermelden een veel langere totale proceduretijd (2+ jaar) voor woningbouw dan de algemene termijnen in de originele tekst.",
+          "source_urls": [
+            "https://www.terschelling.nl/wonen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u volgens de regels gebouwd hebt, dan mag u het bouwwerk gaan gebruiken. U meldt bij de gemeente dat u klaar bent met het bouwwerk en dat u het wilt gebruiken.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist informatie over de verplichte gereedmelding na afronding van de bouwwerkzaamheden.",
+          "source_urls": [
+            "https://www.terschelling.nl/gereedmelding-bouwwerk"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de samenwerking met gemeente Harlingen voor vergunningverlening, de werkelijke doorlooptijd voor woningbouwprojecten (2+ jaar versus 8-14 weken) en het ontbreken van informatie over de verplichte gereedmelding na afronding van bouwwerkzaamheden. Deze informatie is essentieel voor een volledig begrip van het vergunningsproces."
+  }
+}

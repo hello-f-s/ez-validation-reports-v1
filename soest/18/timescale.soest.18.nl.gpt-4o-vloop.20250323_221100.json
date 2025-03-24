@@ -1,0 +1,79 @@
+{
+  "context": {
+    "municipality": {
+      "name": "SOEST",
+      "contact": {
+        "phone": "(035) 609 34 11",
+        "email": "null",
+        "website": "http://www.soest.nl/contact"
+      }
+    },
+    "service": {
+      "id": 18,
+      "name": "Ventvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 9,
+    "true_sentences": 8,
+    "false_sentences": 1,
+    "accuracy_percentage": 88.9,
+    "false_statements": [
+      {
+        "sentence": "Het Telefonisch Informatiepunt van de gemeente is bereikbaar op werkdagen van 8:30 tot 12:30 uur.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Soest is het Telefonisch Informatiepunt bereikbaar op werkdagen van 8:30 tot 17:00 uur."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 1,
+    "valid_urls": 1,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "http://www.soest.nl/contact"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Wilt u ons een e-mail sturen? Gebruik dan het contactformulier. Het contactformulier werkt snel en eenvoudig. Uw vraag wordt automatisch geregistreerd in ons zaaksysteem. U logt in met uw DigiD. Wilt u geen DigiD gebruiken, maar wel contact met de gemeente? Dan kunt u het contactformulier ook gebruiken zonder DigiD.",
+          "original_reference": "Voor vragen of contact met de gemeente Soest kunt u gebruikmaken van het contactformulier. Dit formulier werkt snel en eenvoudig en uw vraag wordt automatisch geregistreerd in ons zaaksysteem. U kunt inloggen met uw DigiD, maar het is ook mogelijk het formulier zonder DigiD te gebruiken als u dat wenst.",
+          "note": "De informatie over het contactformulier en DigiD-gebruik komt volledig overeen",
+          "source_urls": [
+            "http://www.soest.nl/contact"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Bezoekadres: Raadhuisplein 1, 3762 AV Soest Postadres: Postbus 2000, 3760 CA Soest",
+          "original_reference": "Bezoekadres: Raadhuisplein 1, 3762 AV Soest\nPostadres: Postbus 2000, 3760 CA Soest",
+          "note": "De bezoek- en postadresgegevens zijn identiek",
+          "source_urls": [
+            "http://www.soest.nl/contact"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Het Telefonisch Informatiepunt is bereikbaar op werkdagen van 8.30 tot 12.30 uur.",
+          "original_reference": "Het Telefonisch Informatiepunt van de gemeente is bereikbaar op werkdagen van 8:30 tot 12:30 uur.",
+          "note": "De openingstijden van het Telefonisch Informatiepunt komen overeen",
+          "source_urls": [
+            "http://www.soest.nl/contact"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse blijkt dat alle informatie in de originele tekst consistent is met de informatie op de officiële website van de gemeente Soest. Er zijn geen tegenstrijdigheden of significante verschillen gevonden in de contactgegevens, openingstijden, procedures of andere vermelde informatie."
+  }
+}

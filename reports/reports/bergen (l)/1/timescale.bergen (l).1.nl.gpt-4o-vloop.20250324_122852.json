@@ -1,0 +1,63 @@
+{
+  "context": {
+    "municipality": {
+      "name": "BERGEN (L)",
+      "contact": {
+        "phone": "(0485) 34 83 83",
+        "email": "info@bergen.nl",
+        "website": "http://www.bergen.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 32,
+    "true_sentences": 31,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.9,
+    "false_statements": [
+      {
+        "sentence": "Als u de vergunning aanvraagt voor uw zaak, krijgt u binnen 8 weken bericht. Als u de vergunning aanvraagt voor een vereniging of stichting, krijgt u binnen 6 maanden bericht.",
+        "status": "false",
+        "note": "Volgens de Algemene wet bestuursrecht en de website van gemeente Bergen (L) geldt voor alle alcoholvergunningen een standaard beslistermijn van 8 weken. Er wordt geen onderscheid gemaakt tussen reguliere horeca en verenigingen/stichtingen wat betreft de beslistermijn."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 0,
+    "invalid_urls": 5,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.bergen.nl/alcoholvergunning",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.bergen.nl/horeca",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.bergen.nl/alcohol-schenken-tijdens-evenement",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.bergen.nl/evenementen-vergunningen-en-ontheffingen",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.bergen.nl/exploitatievergunning-horecabedrijf",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  }
+}

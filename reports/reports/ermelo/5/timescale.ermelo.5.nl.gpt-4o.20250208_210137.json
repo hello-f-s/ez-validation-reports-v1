@@ -1,0 +1,92 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ERMELO",
+      "contact": {
+        "phone": "(0341) 56 73 21",
+        "email": "gemeente@ermelo.nl",
+        "website": "http://www.ermelo.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 16,
+    "true_sentences": 15,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.8,
+    "false_statements": [
+      {
+        "sentence": "Een exploitatievergunning kost € 206.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Ermelo kost een exploitatievergunning € 208,70 voor 2024, niet € 206."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.ermelo.nl/ondernemen-in-ermelo/starten-of-vestigen-van-een-bedrijf",
+      "https://www.ermelo.nl/evenementen-en-horeca/horeca-en-alcohol",
+      "https://www.ermelo.nl/evenementen-en-horeca/horeca-en-alcohol/exploitatievergunning-horeca",
+      "https://www.ermelo.nl/evenementen-en-horeca/horeca-en-alcohol/speelautomaat-plaatsen",
+      "https://www.ermelo.nl/evenementen-en-horeca"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://example.com",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://example.com\">Gemeente",
+        "reason": "INVALID: Error scraping https://example.com\">Gemeente: HTTPSConnectionPool(host='example.com%22%3egemeente', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x107dcfd90>: Failed to resolve 'example.com%22%3egemeente' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voordat u uw aanvraag start: Bekijk eerst of uw onderneming in het bestemmingsplan past of vraag de gemeente om advies. Vul een Bibob-vragenlijst in.",
+          "original_reference": "Uw horecabedrijf moet passen in het bestemmingsplan.",
+          "note": "De bron geeft expliciet aan dat men eerst advies kan vragen aan de gemeente over het bestemmingsplan, deze optie ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.ermelo.nl/evenementen-en-horeca/horeca-en-alcohol/exploitatievergunning-horeca"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bij de aanvraag van een exploitatievergunning vult u ook de Bibob-vragenlijst in. U moet hierin vragen beantwoorden over onder andere: financiering, bedrijfsvoering en zeggenschapsstructuur van het bedrijf.",
+          "original_reference": "Een volledig ingevuld Bibob-vragenformulier (Justis).",
+          "note": "De bron geeft meer specifieke details over wat er in de Bibob-vragenlijst moet worden ingevuld (financiering, bedrijfsvoering en zeggenschapsstructuur), deze details ontbreken in de originele tekst.",
+          "source_urls": [
+            "https://www.ermelo.nl/evenementen-en-horeca/horeca-en-alcohol/exploitatievergunning-horeca"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als er bijvoorbeeld sprake is van een crimineel verleden, kan de gemeente besluiten om u geen vergunning te geven.",
+          "original_reference": "No matching information",
+          "note": "De bron vermeldt expliciet dat een crimineel verleden kan leiden tot het weigeren van de vergunning. Deze belangrijke voorwaarde ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.ermelo.nl/evenementen-en-horeca/horeca-en-alcohol/exploitatievergunning-horeca"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie over de mogelijkheid om gemeentelijk advies in te winnen over het bestemmingsplan, specifieke details over de Bibob-vragenlijst en de gevolgen van een crimineel verleden voor de vergunningverlening. Deze informatie ontbreekt in de originele tekst maar is wel relevant voor aanvragers."
+  }
+}

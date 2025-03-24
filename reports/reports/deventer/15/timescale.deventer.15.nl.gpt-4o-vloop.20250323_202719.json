@@ -1,0 +1,91 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DEVENTER",
+      "contact": {
+        "phone": "14 0570",
+        "email": "gemeente@deventer.nl",
+        "website": "http://www.deventer.nl"
+      }
+    },
+    "service": {
+      "id": 15,
+      "name": "Vergunning of ontheffing voor straatartiesten"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 22,
+    "false_sentences": 2,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor de aanvraag bedragen €41.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Deventer bedragen de legeskosten voor een ontheffing straatoptreden €42,60 (2024)."
+      },
+      {
+        "sentence": "Betaling heeft voorkeur via PIN.",
+        "status": "false",
+        "note": "Op de officiële website van gemeente Deventer wordt niet specifiek aangegeven dat PIN-betaling de voorkeur heeft. De betaling verloopt via iDEAL bij online aanvragen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.deventer.nl/optredenopstraat",
+      "https://www.deventer.nl/wegenverkeerswet",
+      "https://www.deventer.nl/parkeren/ontheffing-binnenstad-aanvragen",
+      "https://www.deventer.nl/bouwen-en-verbouwen/ontheffing-aanvragen-voor-geluidsoverlast-bij-bouwen-of-slopen",
+      "https://www.deventer.nl/geluidsoverlastbouwenslopen",
+      "https://www.deventer.nl"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Kosten voor kortdurende ontheffing: € 12,10",
+          "original_reference": "De kosten voor de aanvraag bedragen €41",
+          "note": "De kosten voor een ontheffing verschillen aanzienlijk tussen de bronnen. De originele tekst noemt €41, terwijl de bronpagina's €12,10 vermelden.",
+          "source_urls": [
+            "https://www.deventer.nl/wegenverkeerswet",
+            "https://www.deventer.nl/parkeren/ontheffing-binnenstad-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Postbus 5000, 7400 GC Deventer",
+          "original_reference": "Postbus 5000, 7400 GC Deventer",
+          "note": "Het postadres in de originele tekst heeft een andere postcode (GC vs GV) dan sommige bronpagina's waar 7400 GV wordt vermeld.",
+          "source_urls": [
+            "https://www.deventer.nl/wegenverkeerswet",
+            "https://www.deventer.nl"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "u treedt op tussen 09.00 en 21.00 uur (maandag tot en met zaterdag), of tussen 13.00 en 21.00 uur(zondag)",
+          "original_reference": "Optredens mogen plaatsvinden tussen 09.00 en 21.00 uur van maandag tot en met zaterdag, en tussen 13.00 en 21.00 uur op zondag",
+          "note": "De tijden voor optredens zijn consistent tussen de originele tekst en de bronnen",
+          "source_urls": [
+            "https://www.deventer.nl/optredenopstraat"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn enkele belangrijke verschillen gevonden tussen de originele tekst en de bronnen. Het meest opvallende verschil betreft de kosten voor een ontheffing (€41 vs €12,10). Daarnaast is er een inconsistentie in de postcode van het postadres. De overige informatie, zoals openingstijden en voorwaarden voor straatartiesten, komt overeen met de bronnen."
+  }
+}

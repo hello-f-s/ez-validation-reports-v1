@@ -1,0 +1,93 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ZWOLLE",
+      "contact": {
+        "phone": "14 038",
+        "email": "postbus@zwolle.nl",
+        "website": "http://www.zwolle.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 31,
+    "true_sentences": 30,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.8,
+    "false_statements": [
+      {
+        "sentence": "Telefoon: 14 038 (bereikbaar tussen 08.30 en 17.00 uur)",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Zwolle is het telefoonnummer 14038 bereikbaar van 8:30 tot 17:00 uur op werkdagen. De toevoeging 'op werkdagen' ontbreekt in de oorspronkelijke tekst, wat de informatie onvolledig maakt."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 2,
+    "invalid_urls": 3,
+    "accuracy_percentage": 40.0,
+    "valid_urls_list": [
+      "https://www.zwolle.nl/omgevingswet",
+      "https://www.zwolle.nl/omgevingsvergunning-en-melding"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.zwolle.nl/veelgestelde-vragen-over-de-omgevingswet",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.zwolle.nl/conceptverzoek-omgevingsvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.zwolle.nl/u-heeft-een-omgevingsvergunning-ontvangen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Doe daarom eerst de vergunningcheck op het Omgevingsloket",
+          "original_reference": "Als ondernemer moet u controleren of uw bouwplan past binnen het omgevingsplan. Dit kunt u doen via het Omgevingsloket door een vergunningscheck te doen.",
+          "note": "De informatie over de vergunningcheck is consistent tussen beide bronnen",
+          "source_urls": [
+            "https://www.zwolle.nl/omgevingsvergunning-en-melding"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het kan zijn dat u meerdere vergunningen nodig heeft of meerdere meldingen moet doen. Bedenk van tevoren goed in welke volgorde u de vergunningen aanvraagt of de meldingen doet.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat belangrijke aanvullende informatie over het mogelijk moeten aanvragen van meerdere vergunningen en de volgorde daarvan. Deze informatie ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.zwolle.nl/omgevingsvergunning-en-melding"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Doet u een WKB-bouwmelding? Controleer dan eerst of u rekening moet houden met bijzondere lokale omstandigheden.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina noemt specifiek het controleren van bijzondere lokale omstandigheden bij WKB-bouwmeldingen, wat niet wordt vermeld in de originele tekst.",
+          "source_urls": [
+            "https://www.zwolle.nl/omgevingsvergunning-en-melding"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont dat de kerninhoud grotendeels consistent is, maar er zijn enkele belangrijke ontbrekende elementen in de originele tekst. Met name informatie over het aanvragen van meerdere vergunningen en de volgorde daarvan, evenals specifieke aandachtspunten voor WKB-bouwmeldingen ontbreken. Deze informatie zou waardevol kunnen zijn voor aanvragers om een complete en correcte aanvraag in te dienen."
+  }
+}

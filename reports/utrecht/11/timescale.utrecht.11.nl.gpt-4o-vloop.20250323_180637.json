@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "UTRECHT",
+      "contact": {
+        "phone": "(014) 030",
+        "email": "Gemeente@utrecht.nl",
+        "website": "http://www.utrecht.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "Voor bouwkosten onder €1.000.000 betaalt u 3,01%, met een minimale betaling van €181.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van de gemeente Utrecht zijn de percentages en minimumbedragen anders. Het exacte percentage en minimumbedrag varieert en wordt jaarlijks vastgesteld in de legesverordening."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.utrecht.nl/ondernemen/vergunningen-en-regels/werkzaamheden-vergunning-aanvragen",
+      "https://www.utrecht.nl/ondernemen/vergunningen-en-regels",
+      "https://www.utrecht.nl/ondernemen/vergunningen-en-regels/ondernemen-en-milieu/milieu-melding-doen-of-omgevingsvergunning-aanvragen",
+      "https://www.utrecht.nl/wonen-en-leven/bouwen-en-verbouwen/u-wilt-bouwen-of-verbouwen",
+      "https://www.utrecht.nl/wonen-en-leven/bouwen-en-verbouwen/u-wilt-bouwen-of-verbouwen/woning-aan-de-binnenkant-verbouwen",
+      "https://www.utrecht.nl"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Dit moet in de meeste gevallen 4 weken van tevoren.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt geen vooraf vereiste termijn van 4 weken voor het doen van meldingen, terwijl dit wel wordt genoemd in de bronpagina.",
+          "source_urls": [
+            "https://www.utrecht.nl/ondernemen/vergunningen-en-regels/ondernemen-en-milieu/milieu-melding-doen-of-omgevingsvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bedrijven hebben hiervoor e-herkenning nodig.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat e-herkenning nodig is voor bedrijven om een milieumelding te doen, terwijl dit wel een specifieke vereiste is volgens de bronpagina.",
+          "source_urls": [
+            "https://www.utrecht.nl/ondernemen/vergunningen-en-regels/ondernemen-en-milieu/milieu-melding-doen-of-omgevingsvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Hebt u ook bouw- of verbouwplannen waarvoor u een omgevingsvergunning nodig hebt? Dan kunt u die tegelijk aanvragen met de sloopmelding.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de mogelijkheid om een omgevingsvergunning gelijktijdig met een sloopmelding aan te vragen.",
+          "source_urls": [
+            "https://www.utrecht.nl/ondernemen/vergunningen-en-regels/werkzaamheden-vergunning-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten enkele belangrijke aanvullende vereisten en mogelijkheden die niet in de originele tekst worden genoemd, waaronder de 4-weken termijn voor meldingen, de e-herkenning vereiste voor bedrijven, en de mogelijkheid om aanvragen te combineren. Deze informatie is essentieel voor een correcte aanvraagprocedure."
+  }
+}

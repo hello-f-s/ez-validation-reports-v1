@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ETTEN-LEUR",
+      "contact": {
+        "phone": "14 076",
+        "email": "info@etten-leur.nl",
+        "website": "http://www.etten-leur.nl"
+      }
+    },
+    "service": {
+      "id": 18,
+      "name": "Ventvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 10,
+    "false_sentences": 1,
+    "accuracy_percentage": 90.9,
+    "false_statements": [
+      {
+        "sentence": "Voor het in behandeling nemen van de aanvraag bedragen de kosten € 197,-, exclusief eventuele pachtsommen.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Etten-Leur bedragen de legeskosten voor een ventvergunning € 201,- (2024). Het genoemde bedrag van € 197,- is niet correct."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.etten-leur.nl/product/orienteren-bij-verbouwplannen/",
+      "https://www.etten-leur.nl/product/verklaring-omtrent-het-gedrag/",
+      "https://www.etten-leur.nl/product/omgevingsvergunning-aanvragen/",
+      "https://www.etten-leur.nl/product/ventvergunning/",
+      "https://www.etten-leur.nl/product/bouwtekeningen-en-omgevingsvergunningen-opvragen/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://example.com",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Voor het te koop aanbieden/verkopen/afgeven van goederen of het aanbieden van diensten in de open lucht is een ventvergunning nodig. Bij venten worden de goederen of diensten op straat (maar niet vanaf een standplaats) of huis-aan-huis aangeboden.",
+          "original_reference": "Om goederen of diensten in de open lucht aan te bieden of te verkopen, is een ventvergunning vereist. Dit betekent dat de verkoop niet vanaf een vaste standplaats plaatsvindt en kan zowel op straat als huis-aan-huis zijn.",
+          "note": "De beschrijving van wat een ventvergunning is en wanneer deze nodig is komt exact overeen met de originele tekst.",
+          "source_urls": [
+            "https://www.etten-leur.nl/product/ventvergunning/"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Het in behandeling nemen van een aanvraag kost € 197,- (plus eventuele pachtsommen).",
+          "original_reference": "Voor het in behandeling nemen van de aanvraag bedragen de kosten € 197,-, exclusief eventuele pachtsommen.",
+          "note": "De kosten voor het aanvragen van een ventvergunning zijn identiek in beide teksten.",
+          "source_urls": [
+            "https://www.etten-leur.nl/product/ventvergunning/"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Meestal heeft u binnen 5 werkdagen bericht of de vergunning wordt verleend. Anders geldt een maximale afhandeltijd van 8 weken",
+          "original_reference": "U ontvangt meestal binnen 5 werkdagen bericht of de vergunning wordt verleend. In sommige gevallen kan de maximale afhandeltermijn oplopen tot 8 weken.",
+          "note": "De behandeltermijnen komen overeen in beide teksten.",
+          "source_urls": [
+            "https://www.etten-leur.nl/product/ventvergunning/"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse blijkt dat alle informatie in de originele tekst consistent is met de informatie op de gemeentelijke website. Er zijn geen tegenstrijdigheden of significante verschillen gevonden in de voorwaarden, kosten, aanvraagprocedure of behandeltermijnen voor ventvergunningen."
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "context": {
+    "municipality": {
+      "name": "EDE",
+      "contact": {
+        "phone": "14 0318",
+        "email": "info@ede.nl",
+        "website": "http://www.ede.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 12,
+    "false_sentences": 2,
+    "accuracy_percentage": 85.7,
+    "false_statements": [
+      {
+        "sentence": "Er is geen specifieke informatie over de tijdsduur voor de behandeling van de aanvraag van een exploitatievergunning voor een horecabedrijf in de gemeente Ede.",
+        "status": "false",
+        "note": "De gemeente Ede geeft op haar website aan dat de behandeltermijn voor een exploitatievergunning maximaal 8 weken bedraagt."
+      },
+      {
+        "sentence": "Informatie over de specifieke kosten voor het aanvragen van een exploitatievergunning wordt niet vermeld.",
+        "status": "false",
+        "note": "De gemeente Ede publiceert de legeskosten voor horecavergunningen in haar legesverordening en deze zijn te vinden op de gemeentelijke website."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 4,
+    "invalid_urls": 3,
+    "accuracy_percentage": 57.1,
+    "valid_urls_list": [
+      "https://www.ede.nl/aanvragen-en-regelen/bouw-en-verbouwvergunning",
+      "https://www.ede.nl/aanvragen-en-regelen/ontheffing-aanvragen",
+      "https://ondernemen.ede.nl",
+      "https://www.ede.nl/aanvragen-en-regelen/horecabedrijf"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.ede.nl/aanvragen-en-regelen/verleende-vergunningen-inzien-en-opvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.ede.nl/aanvragen-en-regelen/kinderopvang-starten",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.eherkenning.nl/",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het aanvragen van een exploitatievergunning (in combinatie met een alcolholwetvergunning) kost € 306. Het aanvragen van een horeca exploitatievergunning kost € 612. Heeft u ook een terras? Dan zijn de kosten € 690.",
+          "original_reference": "Informatie over de specifieke kosten voor het aanvragen van een exploitatievergunning wordt niet vermeld.",
+          "note": "De originele tekst vermeldt dat er geen specifieke kosteninformatie beschikbaar is, terwijl de bronpagina wel degelijk gedetailleerde tarieven noemt voor verschillende type vergunningen.",
+          "source_urls": [
+            "https://www.ede.nl/aanvragen-en-regelen/horecabedrijf"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U kunt alleen een ontheffing sluitingstijd aanvragen als u in het bezit bent van een geldige exploitatievergunning of Alcoholwetvergunning. U vraagt deze ontheffing uiterlijk tien werkdagen van tevoren aan.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de mogelijkheid tot het aanvragen van ontheffing sluitingstijd en de bijbehorende voorwaarden, terwijl dit wel een belangrijke optie is voor horecaondernemers.",
+          "source_urls": [
+            "https://www.ede.nl/aanvragen-en-regelen/ontheffing-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wilt u een Bed & Breakfast starten? Kijk voor meer informatie op ondernemen.ede.nl",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist specifieke informatie over Bed & Breakfast ondernemingen, terwijl de bronpagina hier wel naar verwijst met aanvullende informatiebron.",
+          "source_urls": [
+            "https://www.ede.nl/aanvragen-en-regelen/horecabedrijf"
+          ]
+        }
+      ]
+    },
+    "summary": "De originele tekst mist belangrijke informatie over specifieke kosten voor verschillende vergunningen, mogelijkheden voor ontheffingen en specifieke informatie voor Bed & Breakfast ondernemingen. De bronpagina's bevatten meer gedetailleerde en concrete informatie die nuttig is voor horecaondernemers, waaronder exacte bedragen en aanvraagtermijnen."
+  }
+}

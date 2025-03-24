@@ -1,0 +1,82 @@
+{
+  "context": {
+    "municipality": {
+      "name": "IJSSELSTEIN",
+      "contact": {
+        "phone": "14 030",
+        "email": "info@ijsselstein.nl",
+        "website": "http://www.ijsselstein.nl"
+      }
+    },
+    "service": {
+      "id": 13,
+      "name": "Omzettingsvergunning voor kamerverhuur aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Informatie over het indienen van bezwaar kan niet direct worden aangetroffen in de beschikbare informatie.",
+        "status": "false",
+        "note": "Deze informatie is wel direct beschikbaar op de website van gemeente IJsselstein. Bij elke vergunningsbeschikking staat vermeld dat belanghebbenden binnen 6 weken na bekendmaking bezwaar kunnen maken bij het college van burgemeester en wethouders."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 4,
+    "invalid_urls": 2,
+    "accuracy_percentage": 66.7,
+    "valid_urls_list": [
+      "https://www.ijsselstein.nl/Ondernemers/Handig_om_te_weten/Bedrijf_beginnen",
+      "https://www.ijsselstein.nl/Inwoners/Bouwen_verbouwen_en_slopen/Omgevingsvergunning",
+      "https://www.ijsselstein.nl/Ondernemers/Vergunningen/Alcoholwetvergunning",
+      "https://www.ijsselstein.nl/Ondernemers/Vergunningen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.ijsselstein.nl/Ondernemers/Vergunningen/Exploitatievergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.odru.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u de vergunningscheck van het Omgevingsloket invult krijgt u meteen duidelijkheid. Bij het Omgevingsloket kunt u ook in één keer ongeveer 25 vergunningen, die met bouwen te maken hebben, aanvragen.",
+          "original_reference": "De aanvraag moet via het Omgevingsloket worden ingediend. Controleer eerst of een vergunning nodig is door de vergunningscheck in te vullen die slechts enkele minuten duurt.",
+          "note": "De bronpagina specificeert dat er ongeveer 25 verschillende bouwgerelateerde vergunningen tegelijk kunnen worden aangevraagd, wat aanvullende belangrijke informatie is die niet in de originele tekst staat.",
+          "source_urls": [
+            "https://www.ijsselstein.nl/Inwoners/Bouwen_verbouwen_en_slopen/Omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Stap 1: Vergunning wel of niet nodig? [...] Stap 2: Check het bestemmingsplan",
+          "original_reference": "Om een omgevingsvergunning aan te vragen voor kamerverhuur, moet uw project in het bestemmingsplan van de gemeente IJsselstein passen.",
+          "note": "De bronpagina beschrijft een duidelijk stappenplan waarbij eerst de vergunningscheck wordt gedaan en daarna pas het bestemmingsplan wordt gecontroleerd, terwijl de originele tekst deze volgorde niet specificeert.",
+          "source_urls": [
+            "https://www.ijsselstein.nl/Inwoners/Bouwen_verbouwen_en_slopen/Omgevingsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de extra informatie over de mogelijkheid om 25 verschillende vergunningen tegelijk aan te vragen en een duidelijkere procedurevolgorde in de bronpagina's. De meeste andere informatie uit de originele tekst kon niet worden geverifieerd omdat deze niet in de beschikbare bronpagina's voorkomt."
+  }
+}

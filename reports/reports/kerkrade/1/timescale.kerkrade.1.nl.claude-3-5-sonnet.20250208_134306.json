@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "KERKRADE",
+      "contact": {
+        "phone": "14 045",
+        "email": "gemeentehuis@kerkrade.nl",
+        "website": "http://www.kerkrade.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 16,
+    "true_sentences": 14,
+    "false_sentences": 2,
+    "accuracy_percentage": 87.5,
+    "false_statements": [
+      {
+        "sentence": "U krijgt binnen 8 weken bericht. Voor verenigingen en stichtingen is dit 6 maanden.",
+        "status": "false",
+        "note": "Volgens de gemeente Kerkrade geldt voor alle aanvragen een wettelijke beslistermijn van 8 weken. Er wordt geen onderscheid gemaakt tussen reguliere horeca en verenigingen/stichtingen."
+      },
+      {
+        "sentence": "Alle leidinggevenden moeten minimaal 21 jaar zijn en een SVH Verklaring Sociale hygiëne of Verklaring Vakbekwaamheid hebben",
+        "status": "false",
+        "note": "Volgens de gemeente Kerkrade moeten leidinggevenden minimaal 18 jaar zijn, niet 21 jaar. De eis voor een SVH Verklaring Sociale Hygiëne klopt wel."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.kerkrade.nl/openingstijden-horeca-eenmalig-aanpassen",
+      "https://www.kerkrade.nl/milieu-vergunning-of-melding",
+      "https://www.kerkrade.nl/alcoholvergunning",
+      "https://www.kerkrade.nl/exploitatievergunning-horecabedrijf",
+      "https://www.kerkrade.nl/alcohol-schenken-tijdens-evenement"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De persoon die de leiding heeft over de alcohol: is minimaal 21 jaar, Is niet van slecht levensgedrag (geen strafblad)",
+          "original_reference": "Alle leidinggevenden moeten minimaal 21 jaar zijn en een SVH Verklaring Sociale hygiëne of Verklaring Vakbekwaamheid hebben",
+          "note": "Voor evenementen geldt niet de eis van SVH Verklaring Sociale hygiëne, alleen leeftijdseis en geen strafblad",
+          "source_urls": [
+            "https://www.kerkrade.nl/alcohol-schenken-tijdens-evenement"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor verenigingen en stichtingen gelden extra voorwaarden: De uren waarop alcohol wordt geschonken en de leeftijdsgrens is op een goed zichtbare plek opgehangen. Er zijn binnen de vereniging of stichting minstens twee leidinggevenden met een SVH Verklaring Sociale Hygiëne.",
+          "original_reference": "Officieel bestuursreglement (voor verenigingen en stichtingen)",
+          "note": "De bronnen vermelden specifiekere eisen voor verenigingen en stichtingen die niet in de originele tekst staan, zoals zichtbare aanduiding van schenktijden en minimaal twee leidinggevenden met SVH",
+          "source_urls": [
+            "https://www.kerkrade.nl/alcoholvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u alcohol wilt schenken op een besloten feest, hoeft u geen drank- en horecavergunning of ontheffing aan te vragen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de uitzondering voor besloten feesten, wat een belangrijke nuance is in de regelgeving",
+          "source_urls": [
+            "https://www.kerkrade.nl/alcohol-schenken-tijdens-evenement"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten enkele belangrijke nuanceringen en aanvullingen die niet in de originele tekst staan. Met name de specifieke eisen voor verenigingen/stichtingen zijn uitgebreider beschreven, er gelden andere regels voor evenementen wat betreft de SVH-eis, en er is een belangrijke uitzondering voor besloten feesten die niet in de originele tekst wordt genoemd. Deze verschillen zijn relevant voor een volledig begrip van de alcoholregelgeving."
+  }
+}

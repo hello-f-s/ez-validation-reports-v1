@@ -1,0 +1,79 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DEN HAAG",
+      "contact": {
+        "phone": "14 070",
+        "email": "null",
+        "website": "http://www.denhaag.nl"
+      }
+    },
+    "service": {
+      "id": 16,
+      "name": "Registreren in het Landelijk Register Kinderopvang (LRK)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "Na het invullen van de benodigde formulieren, moet u deze via e-mail versturen naar IBdienstpost@denhaag.nl.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Den Haag moeten aanvragen voor kinderopvang worden ingediend via het Landelijk Register Kinderopvang (LRK) portaal en niet via IBdienstpost@denhaag.nl."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 9,
+    "valid_urls": 0,
+    "invalid_urls": 9,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.denhaag.nl/nl/onderwijs-en-studeren/vrijstelling-van-schoolinschrijving-aanvragen/",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.denhaag.nl/nl/ondernemen/kinderopvang-starten/",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.denhaag.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.denhaag.nl/nl/opgroeien-en-opvoeden/kwaliteit-kinderopvang/",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.denhaag.nl/nl/geld-en-schulden/vergoeding-kinderopvang/",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.denhaag.nl\">denhaag.nl</a></p>",
+        "reason": "INVALID: Error scraping https://www.denhaag.nl\">denhaag.nl</a></p>: HTTPSConnectionPool(host='www.denhaag.nl%22%3edenhaag.nl%3c', port=443): Max retries exceeded with url: /a%3E%3C/p%3E (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1034c7610>: Failed to resolve 'www.denhaag.nl%22%3edenhaag.nl%3c' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.rijksoverheid.nl\">website",
+        "reason": "INVALID: Error scraping https://www.rijksoverheid.nl\">website: HTTPSConnectionPool(host='www.rijksoverheid.nl%22%3ewebsite', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1034c6e90>: Failed to resolve 'www.rijksoverheid.nl%22%3ewebsite' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.denhaag.nl/nl/overlijden/levenloos-geboren-kindje-registreren-in-de-brp/",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.rijksoverheid.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MEPPEL",
+      "contact": {
+        "phone": "14 0522",
+        "email": "postbus@meppel.nl",
+        "website": "http://www.meppel.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "Voor de evenementenvergunning worden geen leges gevraagd.",
+        "status": "false",
+        "note": "Er worden wel degelijk leges in rekening gebracht voor een evenementenvergunning in Meppel. De hoogte van de leges is afhankelijk van het type evenement en staat vermeld in de legesverordening van de gemeente Meppel."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 1,
+    "invalid_urls": 6,
+    "accuracy_percentage": 14.3,
+    "valid_urls_list": [
+      "https://www.meppel.nl/Ondernemer/Vergunningen_regelingen/Evenementen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://meppel.nl",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.meppel.nl/Inwoner/Sport_Vrije_tijd/Evenementen/Evenement_organiseren_vergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://overheid.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.meppel.nl/Inwoner/Sport_Vrije_tijd/Evenementen/Evenement_organiseren",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.meppel.nl/Inwoner/Sport_Vrije_tijd/Evenementen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.meppel.nl/Ondernemer/Vergunningen_regelingen/Evenementen/evenement_organiseren_vergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De aanvraag voor een evenementenvergunning moet minimaal 12 weken voor aanvang van het evenement worden ingediend.",
+          "original_reference": "De evenementenvergunning moet uiterlijk 8 weken voor het evenement aangevraagd worden.",
+          "note": "De aanvraagtermijn in de bronnen (12 weken) is langer dan in de originele tekst (8 weken).",
+          "source_urls": [
+            "https://www.meppel.nl/Inwoner/Sport_Vrije_tijd/Evenementen/Evenement_organiseren_vergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor evenementen met meer dan 250 bezoekers is een veiligheidsplan verplicht.",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden een specifieke drempel voor het vereiste veiligheidsplan die niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.meppel.nl/Ondernemer/Vergunningen_regelingen/Evenementen/evenement_organiseren_vergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Aanvragen kunnen zowel per e-mail als via het digitale loket worden ingediend",
+          "original_reference": "Vul het Aanvraagformulier Evenementenvergunning digitaal in en mail dit naar postbus@meppel.nl met de benodigde bijlagen.",
+          "note": "De bronnen bieden een extra aanvraagmogelijkheid via het digitale loket die niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.meppel.nl/Inwoner/Sport_Vrije_tijd/Evenementen/Evenement_organiseren"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn drie belangrijke verschillen gevonden tussen de originele tekst en de bronnen: een langere aanvraagtermijn (12 weken i.p.v. 8 weken), een specifieke drempel voor het vereiste veiligheidsplan (meer dan 250 bezoekers), en een extra aanvraagmogelijkheid via het digitale loket. Deze verschillen hebben significante impact op de planning en uitvoering van evenementen."
+  }
+}

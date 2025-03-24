@@ -1,0 +1,101 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DRUTEN",
+      "contact": {
+        "phone": "(088) 432 70 00",
+        "email": "info@druten.nl",
+        "website": "http://www.druten.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "Het gemeentehuis van Druten is geopend op maandag van 8.30 tot 19.00 uur.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Druten is het gemeentehuis op maandag geopend van 8:30 tot 17:00 uur, met uitzondering van maandagavond op afspraak van 17:00 tot 20:00 uur."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 4,
+    "valid_urls": 1,
+    "invalid_urls": 3,
+    "accuracy_percentage": 25.0,
+    "valid_urls_list": [
+      "https://www.druten.nl/voorwerp-plaatsen-op-of-aan-de-weg"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.druten.nl/exploitatievergunning-horecabedrijf",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.druten.nl/reclame-en-terrassenbeleid",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.druten.nl/omgevingsvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Heuvel 1, 6651 DA Druten, Telefoon: 088 432 70 00, WhatsApp: +31625689928, Email: info@druten.nl",
+          "original_reference": "Heuvel 1, 6651 DA Druten, Telefoon: 088 432 70 00, WhatsApp: +31625689928, Email: info@druten.nl",
+          "note": "De contactgegevens komen exact overeen met de originele inhoud",
+          "source_urls": [
+            "https://www.druten.nl/voorwerp-plaatsen-op-of-aan-de-weg"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een vergunning kunt u online aanvragen met DigiD of eHerkenning",
+          "original_reference": "Het is mogelijk om bepaalde aanvragen online in te dienen via DigiD of eHerkenning",
+          "note": "De brontekst is specifieker over de online aanvraagmogelijkheid voor deze specifieke vergunning, terwijl de originele tekst algemener is geformuleerd",
+          "source_urls": [
+            "https://www.druten.nl/voorwerp-plaatsen-op-of-aan-de-weg"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een vergunning kost € 136,30. Daarnaast betaalt u per dag € 16,40, per week € 54,70 en/of per maand € 136,30",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de kosten van de vergunning, terwijl de brontekst specifieke tarieven vermeldt",
+          "source_urls": [
+            "https://www.druten.nl/voorwerp-plaatsen-op-of-aan-de-weg"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U doet de aanvraag minimaal 5 werkdagen van tevoren",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt geen aanvraagtermijn, terwijl de brontekst een specifieke termijn van 5 werkdagen vooraf vereist",
+          "source_urls": [
+            "https://www.druten.nl/voorwerp-plaatsen-op-of-aan-de-weg"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont enkele belangrijke verschillen tussen de originele tekst en de broninhoud. De originele tekst mist cruciale informatie over kosten, specifieke aanvraagtermijnen en concrete voorwaarden voor de vergunning. De contactgegevens zijn wel consistent. De brontekst biedt meer specifieke details over het online aanvraagproces en bevat concrete tariefinformatie die ontbreekt in de originele tekst."
+  }
+}

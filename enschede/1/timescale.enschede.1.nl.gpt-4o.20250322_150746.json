@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ENSCHEDE",
+      "contact": {
+        "phone": "14 053",
+        "email": "postbus20@enschede.nl",
+        "website": "http://www.enschede.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 42,
+    "true_sentences": 41,
+    "false_sentences": 1,
+    "accuracy_percentage": 97.6,
+    "false_statements": [
+      {
+        "sentence": "Minimaal 21 jaar oud zijn (bij alcoholvrije horeca minimaal 18 jaar).",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Enschede en de Drank- en Horecawet moet men minimaal 21 jaar oud zijn voor een alcoholvergunning, maar voor alcoholvrije horeca is de minimumleeftijd 16 jaar (niet 18 jaar)."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.enschede.nl/vergunning-voor-gokautomaten",
+      "https://www.enschede.nl/alcoholvergunning-aanvragen",
+      "https://www.enschede.nl/tijdelijk-alcohol-schenken",
+      "https://www.enschede.nl/vergunning-voor-kamerverhuur",
+      "https://www.enschede.nl/bibob-onderzoek"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Stuur een e-mail naar horeca@enschede.nl",
+          "original_reference": "Email naar: postbus20@enschede.nl",
+          "note": "Het e-mailadres voor het indienen van aanvragen verschilt tussen de bronnen. De bron verwijst naar horeca@enschede.nl terwijl de originele tekst postbus20@enschede.nl vermeldt.",
+          "source_urls": [
+            "https://www.enschede.nl/tijdelijk-alcohol-schenken"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Na een ontvangstbevestiging van de gemeente mag de nieuwe leidinggevende meteen actief zijn in uw horecazaak. De ontvangstbevestiging bewaart u bij uw alcoholvergunning.",
+          "original_reference": "Nieuwe leidinggevenden moeten binnen één maand worden aangemeld bij personeelswisselingen.",
+          "note": "De bron geeft aanvullende informatie over het proces na aanmelding van nieuwe leidinggevenden, namelijk dat ze na ontvangstbevestiging direct mogen starten en dat deze bevestiging bewaard moet worden. Deze details ontbreken in de originele tekst.",
+          "source_urls": [
+            "https://www.enschede.nl/alcoholvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "minimaal 21 jaar (bij alcoholvrije horeca minimaal 18 jaar); van onbesproken levensgedrag; in het bezit van een verklaring sociale hygiëne (bij alcoholvrije horeca is dit geen vereiste)",
+          "original_reference": "Minimaal 21 jaar oud zijn (bij alcoholvrije horeca minimaal 18 jaar). Van onbesproken levensgedrag zijn. In het bezit van een verklaring sociale hygiëne (bij alcoholvrije horeca is dit geen vereiste).",
+          "note": "De leeftijdseisen en voorwaarden voor leidinggevenden komen exact overeen met de originele tekst.",
+          "source_urls": [
+            "https://www.enschede.nl/alcoholvergunning-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "Uit de analyse blijken twee belangrijke verschillen: een afwijkend e-mailadres voor het indienen van aanvragen en aanvullende informatie over het proces na aanmelding van nieuwe leidinggevenden. De overige voorwaarden en vereisten komen grotendeels overeen met de originele tekst. De bronnen bevatten geen informatie die de overige details uit de originele tekst tegenspreekt."
+  }
+}

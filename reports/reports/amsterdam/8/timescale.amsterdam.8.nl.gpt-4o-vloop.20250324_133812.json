@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AMSTERDAM",
+      "contact": {
+        "phone": "14 020",
+        "email": "null",
+        "website": "http://www.amsterdam.nl"
+      }
+    },
+    "service": {
+      "id": 8,
+      "name": "Marktvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 22,
+    "false_sentences": 2,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "De ventvergunning kost € 23,20 en moet direct aan de balie worden betaald.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Amsterdam kost een ventvergunning € 24,70 (tarief 2024)."
+      },
+      {
+        "sentence": "U ontvangt de ventvergunning binnen een paar dagen na aanvraag.",
+        "status": "false",
+        "note": "Volgens de gemeente Amsterdam duurt de behandeling van een ventvergunning maximaal 8 weken na ontvangst van een complete aanvraag."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 4,
+    "valid_urls": 1,
+    "invalid_urls": 3,
+    "accuracy_percentage": 25.0,
+    "valid_urls_list": [
+      "https://www.amsterdam.nl/ondernemen/vergunningen/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.amsterdam.nl/parkeren/parkeervergunning/parkeervergunning-bedrijven/",
+        "reason": "INVALID: Error scraping https://www.amsterdam.nl/parkeren/parkeervergunning/parkeervergunning-bedrijven/: 403 Client Error: Forbidden for url: https://www.amsterdam.nl/parkeren/parkeervergunning/parkeervergunning-bedrijven/"
+      },
+      {
+        "url": "https://www.amsterdam.nl/veelgevraagd/eten-drinken-of-bloemen-verkopen-op-straat-zonder-vaste-plek-91020",
+        "reason": "INVALID: Error scraping https://www.amsterdam.nl/veelgevraagd/eten-drinken-of-bloemen-verkopen-op-straat-zonder-vaste-plek-91020: 403 Client Error: Forbidden for url: https://www.amsterdam.nl/veelgevraagd/eten-drinken-of-bloemen-verkopen-op-straat-zonder-vaste-plek-91020"
+      },
+      {
+        "url": "https://www.amsterdam.nl/subsidies/vragen-subsidies",
+        "reason": "INVALID: Error scraping https://www.amsterdam.nl/subsidies/vragen-subsidies: 403 Client Error: Forbidden for url: https://www.amsterdam.nl/subsidies/vragen-subsidies"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Geen specifieke informatie over ventvergunningen of Register Ambulante Handel (RAH) gevonden op de geciteerde webpagina",
+          "original_reference": "Uitgebreide informatie over ventvergunningen en RAH-registratie",
+          "note": "De geciteerde bron bevat alleen algemene vergunningsinformatie maar geen specifieke details over ventvergunningen of het Register Ambulante Handel. Dit suggereert dat deze informatie mogelijk is verplaatst of via een andere pagina wordt aangeboden.",
+          "source_urls": [
+            "https://www.amsterdam.nl/ondernemen/vergunningen/"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Bel 14 020 maandag tot en met vrijdag van 08.00 tot 18.00 uur",
+          "original_reference": "bel 14 020, maandag tot en met vrijdag van 08.00 tot 18.00 uur",
+          "note": "De contactgegevens en openingstijden komen exact overeen",
+          "source_urls": [
+            "https://www.amsterdam.nl/ondernemen/vergunningen/"
+          ]
+        }
+      ]
+    },
+    "summary": "De geciteerde bronpagina bevat alleen algemene vergunningsinformatie en mist specifieke details over ventvergunningen die in de originele tekst worden beschreven. Dit kan erop wijzen dat deze informatie via andere gemeentelijke pagina's wordt aangeboden. De algemene contactgegevens zijn wel consistent tussen beide bronnen."
+  }
+}

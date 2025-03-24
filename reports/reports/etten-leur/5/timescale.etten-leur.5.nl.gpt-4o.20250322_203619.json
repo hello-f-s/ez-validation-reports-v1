@@ -1,0 +1,85 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ETTEN-LEUR",
+      "contact": {
+        "phone": "14 076",
+        "email": "info@etten-leur.nl",
+        "website": "http://www.etten-leur.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Indien gelijktijdig een Alcoholwetvergunning wordt aangevraagd: € 213,- voor beiden.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Etten-Leur bedragen de leges voor een gecombineerde aanvraag van een exploitatievergunning en Alcoholwetvergunning € 633,- (€ 420,- + € 213,-) en niet € 213,- voor beiden samen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.etten-leur.nl/",
+      "https://www.etten-leur.nl/product/horeca-en-slijterijvergunning/",
+      "https://www.etten-leur.nl/product/ventvergunning/",
+      "https://www.etten-leur.nl/product/standplaatsvergunning/",
+      "https://www.etten-leur.nl/product/sluitingstijden-horeca/",
+      "https://www.etten-leur.nl/product/terrasvergunning/"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "€ 632,- voor een aanvraag Alcoholwet, € 410,- voor een Horeca-Exploitatievergunning",
+          "original_reference": "€ 420,- voor horeca-exploitatievergunning, € 213,- indien gelijktijdig met Alcoholwetvergunning",
+          "note": "De kosten in de bronnen zijn significant anders dan in de originele tekst. De bronnen tonen hogere bedragen en een andere structuur voor de kosten.",
+          "source_urls": [
+            "https://www.etten-leur.nl/product/terrasvergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "minstens 8 weken van tevoren aanvragen",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt geen aanvraagtermijn, terwijl de bronnen een minimale aanvraagtermijn van 8 weken specificeren.",
+          "source_urls": [
+            "https://www.etten-leur.nl/product/terrasvergunning/",
+            "https://www.etten-leur.nl/product/sluitingstijden-horeca/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bij wijziging inrichting: € 47,- voor aanpassing Horeca-Exploitatievergunning",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over kosten voor wijzigingen, terwijl de bronnen specifieke tarieven noemen voor aanpassingen van vergunningen.",
+          "source_urls": [
+            "https://www.etten-leur.nl/product/terrasvergunning/"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de kosten voor vergunningen, die in de bronnen significant hoger liggen dan in de originele tekst. Daarnaast ontbreken in de originele tekst belangrijke details over aanvraagtermijnen (8 weken) en kosten voor wijzigingen van vergunningen. De informatie in de originele tekst lijkt verouderd te zijn ten opzichte van de actuele informatie op de gemeentewebsite."
+  }
+}

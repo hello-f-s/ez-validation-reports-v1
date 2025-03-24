@@ -1,0 +1,93 @@
+{
+  "context": {
+    "municipality": {
+      "name": "NIJMEGEN",
+      "contact": {
+        "phone": "14 024",
+        "email": "gemeente@nijmegen.nl",
+        "website": "http://www.nijmegen.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Voor deelname aan een vooroverleg betaalt u € 100,-.",
+        "status": "false",
+        "note": "Het correcte bedrag voor een vooroverleg bij de gemeente Nijmegen is € 250,- volgens de actuele legesverordening van de gemeente Nijmegen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 8,
+    "valid_urls": 6,
+    "invalid_urls": 2,
+    "accuracy_percentage": 75.0,
+    "valid_urls_list": [
+      "https://www.nijmegen.nl/formulieren/conceptaanvraag-omgevingsvergunning-aanvullen-of-wijzigen/",
+      "https://www.nijmegen.nl/diensten/bouwen-en-wonen/vooroverleg-omgevingsvergunning/",
+      "https://www.nijmegen.nl/diensten/bouwen-en-wonen/inzien-van-bouw-en-sloopplannen/",
+      "https://www.nijmegen.nl/",
+      "https://www.nijmegen.nl/diensten/vergunningen/bekendmakingen/",
+      "https://www.nijmegen.nl/diensten/bouwen-en-wonen/vergunning-of-melding-voor-bedrijven/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://overheid.nl/",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://overheid.nl/\">overheid.nl</a>,",
+        "reason": "INVALID: Error scraping https://overheid.nl/\">overheid.nl</a>,: 410 Client Error: Gone for url: https://overheid.nl/%22%3Eoverheid.nl%3C/a%3E,"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "We vragen u om nog voor uw aanvraag aan bewoners in de buurt te vragen wat ze van uw idee of plan vinden. Schrijf kort op wat de bezwaren van de bewoners zijn en welke mogelijke voor- of nadelen (belangen) ze hebben bij uw plan.",
+          "original_reference": "Informeer daarnaast uw buren over uw plannen en noteer eventuele bezwaren en wensen.",
+          "note": "De bronpagina is specifieker over het burenoverleg en vereist expliciet het documenteren van voor- en nadelen en belangen, niet alleen bezwaren en wensen.",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/bouwen-en-wonen/vooroverleg-omgevingsvergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Uw plan wordt ook bekeken door de Adviescommissie Omgevingskwaliteit (oude naam 'welstandscommissie'). De commissie beoordeelt het uiterlijk van een gebouw.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat er een beoordeling plaatsvindt door de Adviescommissie Omgevingskwaliteit, wat een belangrijk onderdeel van het proces blijkt te zijn.",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/bouwen-en-wonen/vooroverleg-omgevingsvergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "In het digitaal gebouwendossier vindt u aanvragen en bouwtekeningen van bestaande gebouwen in de gemeente Nijmegen",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist informatie over de mogelijkheid om bestaande bouwtekeningen en aanvragen in te zien via het digitaal gebouwendossier.",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/bouwen-en-wonen/inzien-van-bouw-en-sloopplannen/"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten belangrijke aanvullende informatie die niet in de originele tekst staat, waaronder de rol van de Adviescommissie Omgevingskwaliteit, meer gedetailleerde vereisten voor het burenoverleg, en de toegang tot het digitaal gebouwendossier. Deze informatie is essentieel voor een volledig begrip van het vergunningsproces."
+  }
+}

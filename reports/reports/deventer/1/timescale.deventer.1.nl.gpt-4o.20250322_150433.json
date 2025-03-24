@@ -1,0 +1,99 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DEVENTER",
+      "contact": {
+        "phone": "14 0570",
+        "email": "gemeente@deventer.nl",
+        "website": "http://www.deventer.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 17,
+    "false_sentences": 2,
+    "accuracy_percentage": 89.5,
+    "false_statements": [
+      {
+        "sentence": "U heeft een exploitatievergunning nodig als u eten, alcoholische drank en tabak verkoopt of slaapplekken verhuurt.",
+        "status": "false",
+        "note": "Volgens de gemeente Deventer is een exploitatievergunning alleen nodig voor het exploiteren van een horecabedrijf. Het verkopen van eten, tabak of het verhuren van slaapplekken alleen vereist niet automatisch een exploitatievergunning."
+      },
+      {
+        "sentence": "Drie dagen na indiening ontvangt u een zaaknummer, dat u in alle correspondentie dient te vermelden.",
+        "status": "false",
+        "note": "De gemeente Deventer specificeert niet dat het zaaknummer precies na drie dagen wordt verstrekt. Het zaaknummer wordt bij de bevestiging van de aanvraag verstrekt, zonder specifieke tijdsindicatie."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.deventer.nl/alcoholwetvergunning",
+      "https://www.deventer.nl/exploitatievergunning",
+      "https://www.deventer.nl/alcoholtijdelijkschenken",
+      "https://www.deventer.nl/vooroverleg",
+      "https://www.deventer.nl/terrasvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.deventer.nl/diensten/horecabedrijf-beginnen",
+        "reason": "INVALID: Error scraping https://www.deventer.nl/diensten/horecabedrijf-beginnen: 404 Client Error: Not Found for url: https://www.deventer.nl/diensten/horecabedrijf-beginnen"
+      },
+      {
+        "url": "https://www.deventer.nl/diensten/alcohol-schenken-en-verkopen",
+        "reason": "INVALID: Error scraping https://www.deventer.nl/diensten/alcohol-schenken-en-verkopen: 404 Client Error: Not Found for url: https://www.deventer.nl/diensten/alcohol-schenken-en-verkopen"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een ontheffing voor het verstrekken van zwak-alcoholhoudende dranken kost € 129.",
+          "original_reference": "Op de website wordt niet specifiek vermeld wat de kosten voor de aanvraag van een alcoholwetvergunning zijn.",
+          "note": "De originele tekst vermeldt dat kosten niet specifiek genoemd worden, terwijl de bron wel concrete kosten noemt voor een ontheffing voor zwak-alcoholhoudende dranken.",
+          "source_urls": [
+            "https://www.deventer.nl/alcoholtijdelijkschenken"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor toegang tot het aanvraagformulier heeft u eHerkenning nodig.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat eHerkenning nodig is voor het aanvragen, terwijl dit wel een belangrijke voorwaarde is volgens de bronnen.",
+          "source_urls": [
+            "https://www.deventer.nl/exploitatievergunning",
+            "https://www.deventer.nl/terrasvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Pas als u een vergunning heeft, mag uw bedrijf opengaan. Zolang u wacht op de vergunning, kunt u nog niet starten.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist deze belangrijke informatie over dat het bedrijf pas mag starten na ontvangst van de vergunning.",
+          "source_urls": [
+            "https://www.deventer.nl/alcoholwetvergunning",
+            "https://www.deventer.nl/exploitatievergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen het ontbreken van specifieke informatie in de originele tekst over de kosten (€129 voor ontheffing), de vereiste van eHerkenning voor het aanvragen, en de expliciete vermelding dat een bedrijf pas mag starten na ontvangst van de vergunning. Deze informatie is wel aanwezig in de bronpagina's en is essentieel voor ondernemers die een alcoholvergunning willen aanvragen."
+  }
+}

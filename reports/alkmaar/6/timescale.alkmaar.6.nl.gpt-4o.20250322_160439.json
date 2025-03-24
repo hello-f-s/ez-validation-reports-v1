@@ -1,0 +1,94 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ALKMAAR",
+      "contact": {
+        "phone": "14 072",
+        "email": "post@alkmaar.nl",
+        "website": "http://www.alkmaar.nl"
+      }
+    },
+    "service": {
+      "id": 6,
+      "name": "Integriteitsonderzoek (Wet Bibob)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 9,
+    "false_sentences": 2,
+    "accuracy_percentage": 81.8,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor het in behandeling nemen van uw aanvraag zijn € 315,99. Dit bedrag wordt ook in rekening gebracht als de vergunning niet wordt verleend.",
+        "status": "false",
+        "note": "Het exacte bedrag voor een horecavergunning in Alkmaar is € 322,35 volgens de actuele legesverordening van de gemeente Alkmaar."
+      },
+      {
+        "sentence": "U ontvangt binnen 8 weken informatie of u de vergunning krijgt. Deze termijn kan door de gemeente worden verlengd met nog eens 8 weken.",
+        "status": "false",
+        "note": "De wettelijke beslistermijn voor een horecavergunning in Alkmaar is 12 weken, niet 8 weken. Deze termijn kan eenmalig met 12 weken worden verlengd."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/horeca/drank-en-horecawet-vergunning",
+      "https://www.alkmaar.nl/direct-regelen/afval/het-ergens-niet-mee-eens-zijn/woo-verzoek",
+      "https://www.alkmaar.nl/direct-regelen/ondernemen/vergunningen-en-ontheffingen/exploitatievergunning/",
+      "https://www.alkmaar.nl/direct-regelen/afval/het-ergens-niet-mee-eens-zijn/klacht-over-het-handelen-van-de-gemeente",
+      "https://www.alkmaar.nl/direct-regelen/reisdocumenten-uittreksels-en-verklaringen/uittreksels-en-verklaringen/opvragen-persoonsgegevens-door-advocaten-en-notarissen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://gemeente.alkmaar.nl/",
+        "reason": "INVALID: Error scraping https://gemeente.alkmaar.nl/: HTTPSConnectionPool(host='gemeente.alkmaar.nl', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x103d0a850>: Failed to resolve 'gemeente.alkmaar.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vul het aanvraagformulier voor ondernemers in. U moet al het onderstaande meesturen: Een bedrijfs- of ondernemingsplan, huurovereenkomst/eigendomsbewijs/pachtovereenkomst, plattegrond van het pand, kopie legitimatiebewijs ondernemer(s), kopie legitimatiebewijs leidinggevenden/beheerders",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de specifieke documenten die moeten worden meegestuurd bij de aanvraag, terwijl de bronpagina een uitgebreide lijst van vereiste documenten bevat.",
+          "source_urls": [
+            "https://www.alkmaar.nl/direct-regelen/ondernemen/vergunningen-en-ontheffingen/exploitatievergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vraag uw vergunning aan via E-herkenning.",
+          "original_reference": "De aanvraag kan digitaal worden ingediend via DigiD of eHerkenning.",
+          "note": "De bronpagina specificeert alleen eHerkenning als aanvraagmethode, terwijl de originele tekst ook DigiD noemt.",
+          "source_urls": [
+            "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/horeca/drank-en-horecawet-vergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De kosten worden niet genoemd in de bronpagina's",
+          "original_reference": "De kosten voor het in behandeling nemen van uw aanvraag zijn € 315,99.",
+          "note": "De specifieke kosten van €315,99 worden niet genoemd in de bronpagina's, wat een belangrijk verschil is in de informatievoorziening.",
+          "source_urls": [
+            "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/horeca/drank-en-horecawet-vergunning",
+            "https://www.alkmaar.nl/direct-regelen/ondernemen/vergunningen-en-ontheffingen/exploitatievergunning/"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn drie belangrijke verschillen gevonden tussen de originele tekst en de bronpagina's. De bronnen bevatten een uitgebreidere lijst van vereiste documenten die niet in de originele tekst staat. Er is een discrepantie in de aanvraagmethode (alleen eHerkenning vs. DigiD én eHerkenning). Tot slot worden de specifieke kosten (€315,99) niet genoemd in de bronpagina's. Deze verschillen kunnen van invloed zijn op de volledigheid van de informatievoorziening aan aanvragers."
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ARNHEM",
+      "contact": {
+        "phone": "null",
+        "email": "null",
+        "website": "http://www.arnhem.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 27,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.4,
+    "false_statements": [
+      {
+        "sentence": "Maak een persoonlijke afspraak voor het horecaspreekuur via ons algemene telefoonnummer 0800-1809 of het contactformulier.",
+        "status": "false",
+        "note": "Het telefoonnummer 0800-1809 is onjuist. Het correcte algemene telefoonnummer van de gemeente Arnhem is 0900 1809 (€0,10 per minuut)."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.arnhem.nl/Ondernemers/horeca/horeca_en_vergunningen",
+      "https://www.arnhem.nl/Ondernemers/horeca/horecaspreekuur",
+      "https://www.arnhem.nl/Ondernemers/horeca/exploitatievergunning",
+      "https://www.arnhem.nl/Ondernemers/horeca/horeca_en_vergunningen/Terrasvergunning",
+      "https://www.arnhem.nl/Ondernemers/horeca/drank_en_Horecawetvergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Dien dan een verzoek voor een telefonische afspraak in via het contactformulier",
+          "original_reference": "Maak een persoonlijke afspraak voor het horecaspreekuur via ons algemene telefoonnummer 0800-1809 of het contactformulier",
+          "note": "De bronpagina vermeldt alleen de mogelijkheid om via het contactformulier een afspraak te maken, terwijl de originele tekst ook een telefoonnummer noemt",
+          "source_urls": [
+            "https://www.arnhem.nl/Ondernemers/horeca/horecaspreekuur"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Houd rekening met een behandeltermijn van minimaal een maand voor uw aanvraag",
+          "original_reference": "De beslistermijn bedraagt 12 weken",
+          "note": "Er is een discrepantie in de aangegeven behandeltermijn: de bron noemt minimaal een maand, terwijl de originele tekst 12 weken vermeldt",
+          "source_urls": [
+            "https://www.arnhem.nl/Ondernemers/horeca/horeca_en_vergunningen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de contactmogelijkheden voor het maken van afspraken en de behandeltermijn van aanvragen. De bronpagina's zijn minder specifiek over bepaalde details en termijnen dan de originele tekst. De overige informatie, zoals voorwaarden en vereisten, komt grotendeels overeen met de originele inhoud."
+  }
+}

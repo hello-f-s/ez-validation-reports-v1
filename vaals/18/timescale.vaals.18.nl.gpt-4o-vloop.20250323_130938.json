@@ -1,0 +1,78 @@
+{
+  "context": {
+    "municipality": {
+      "name": "VAALS",
+      "contact": {
+        "phone": "(043) 306 85 68",
+        "email": "info@vaals.nl",
+        "website": "http://www.vaals.nl"
+      }
+    },
+    "service": {
+      "id": 18,
+      "name": "Ventvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "De korte procedure heeft een beslistermijn van maximaal 8 weken.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Vaals is de reguliere procedure maximaal 8 weken met mogelijkheid tot verlenging met 6 weken. De term 'korte procedure' wordt niet gebruikt en is daarmee incorrect."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.vaals.nl/inwoners/vergunningen/omgevingsvergunning",
+      "https://www.vaals.nl/inwoners/vergunningen/omgevingswet/meest-aangevraagde-activiteiten",
+      "https://www.vaals.nl/inwoners/vergunningen/",
+      "https://www.vaals.nl/inwoners/vergunningen/omgevingswet/omgevingsvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.vaals.nl/inwoners/uittreksels/verklaring-omtrent-het-gedrag-vog",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Stuur dan gerust een mail naar omgevingsvergunningen@vaals.nl",
+          "original_reference": "info@vaals.nl",
+          "note": "Er wordt een ander e-mailadres genoemd voor specifieke vragen over omgevingsvergunningen, terwijl in de originele tekst alleen het algemene e-mailadres wordt vermeld.",
+          "source_urls": [
+            "https://www.vaals.nl/inwoners/vergunningen/omgevingswet/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Nieuw bij het (ver)bouwen van een bouwwerk is dat er een knip wordt gemaakt. Deze bestaat uit een (technische) bouwactiviteit en een omgevingsplanactiviteit bouwen (ruimtelijk of planologisch deel).",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat specifieke nieuwe informatie over de 'knip' in bouwactiviteiten die niet in de originele tekst wordt genoemd, wat een belangrijke procedurele wijziging is onder de Omgevingswet.",
+          "source_urls": [
+            "https://www.vaals.nl/inwoners/vergunningen/omgevingswet/omgevingsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen het specifieke e-mailadres voor omgevingsvergunningen en aanvullende informatie over de nieuwe 'knip' in bouwactiviteiten die niet in de originele tekst wordt genoemd. Deze informatie is relevant voor de nieuwe werkwijze onder de Omgevingswet vanaf 1 januari 2024."
+  }
+}

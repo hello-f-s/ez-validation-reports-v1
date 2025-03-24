@@ -1,0 +1,82 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MEPPEL",
+      "contact": {
+        "phone": "14 0522",
+        "email": "postbus@meppel.nl",
+        "website": "http://www.meppel.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "De gemeente laat binnen 8 weken weten of u de omgevingsvergunning krijgt.",
+        "status": "false",
+        "note": "Sinds de invoering van de Omgevingswet op 1 januari 2024 geldt er een standaard beslistermijn van 6 weken voor enkelvoudige aanvragen en 8 weken voor meervoudige aanvragen, niet standaard 8 weken voor alle aanvragen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 1,
+    "invalid_urls": 5,
+    "accuracy_percentage": 16.7,
+    "valid_urls_list": [
+      "https://meppel.nl"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.meppel.nl/Inwoner/Wonen_ver_bouwen/Ver_bouwen_slopen/Omgevingsplan_afwijken",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.meppel.nl/Inwoner/Wonen_ver_bouwen/Omgevingswet_n_wet_voor_onze_leefomgeving/Conceptaanvraag_haalbaarheid_ruimtelijk_initiatief_onderzoeken",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.meppel.nl/Inwoner/Wonen_ver_bouwen/Ver_bouwen_slopen/Omgevingsvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.meppel.nl/Inwoner/Wonen_ver_bouwen/Ver_bouwen_slopen/bouwplannen_ingediend_bij_de_gemeente_inzage",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.meppel.nl/Ondernemer/Vergunningen_regelingen/Afval_milieu/milieuvergunningen_en_meldingen_vergunningen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "De informatie op de geciteerde bronpagina bevat geen specifieke details over omgevingsvergunningen die kunnen worden geverifieerd tegen de originele inhoud",
+          "original_reference": "Alle informatie over omgevingsvergunningen zoals beschreven in de originele tekst",
+          "note": "De bronpagina bevat alleen een algemeen navigatiemenu zonder specifieke informatie over omgevingsvergunningen die kan worden vergeleken met de originele inhoud",
+          "source_urls": [
+            "https://meppel.nl"
+          ]
+        }
+      ]
+    },
+    "summary": "De aangeleverde bronpagina bevat alleen een algemeen navigatiemenu van de gemeente Meppel website zonder specifieke informatie over omgevingsvergunningen. Hierdoor kunnen er geen concrete verschillen of inconsistenties worden geïdentificeerd met de originele inhoud. Voor een gedegen vergelijking zou toegang tot de specifieke vergunningenpagina's van de gemeente Meppel nodig zijn."
+  }
+}

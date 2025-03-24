@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ENSCHEDE",
+      "contact": {
+        "phone": "14 053",
+        "email": "postbus20@enschede.nl",
+        "website": "http://www.enschede.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "Een conceptverzoek kost €304,80.",
+        "status": "false",
+        "note": "Het exacte bedrag voor een conceptverzoek is niet vast te stellen uit de officiële bronnen van de gemeente Enschede. De legeskosten kunnen variëren en worden jaarlijks vastgesteld in de legesverordening. Het noemen van een specifiek bedrag is daarom niet correct."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.enschede.nl/vergunning-voor-kamerverhuur",
+      "https://www.enschede.nl/omgevingsvergunning",
+      "https://www.enschede.nl/omgevingsplan",
+      "https://www.enschede.nl/omgevingswet",
+      "https://www.enschede.nl/milieuregels"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://enschede.nl",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Plattegrondtekening van het perceel, inclusief eventuele buitenberging met het gebruiksoppervlakte",
+          "original_reference": "Plattegrondtekeningen van het gebouw of perceel, bij voorkeur schaal 1:100, waarop alle gebruiksfuncties en gebruiksoppervlakten van de ruimtes zijn aangegeven",
+          "note": "De bronpagina specificeert expliciet dat ook een buitenberging moet worden opgenomen in de plattegrond, wat niet vermeld staat in de originele tekst",
+          "source_urls": [
+            "https://www.enschede.nl/vergunning-voor-kamerverhuur"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De Omgevingswet geldt sinds 1 januari 2024",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de specifieke ingangsdatum van de Omgevingswet, wat belangrijke contextuele informatie is voor de vergunningsaanvraag",
+          "source_urls": [
+            "https://www.enschede.nl/omgevingswet"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Stuur een e-mail naar omgevingsplan@enschede.nl",
+          "original_reference": "vergunning@enschede.nl",
+          "note": "Er worden verschillende e-mailadressen genoemd voor vragen over het omgevingsplan",
+          "source_urls": [
+            "https://www.enschede.nl/omgevingsplan"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen aanvullende specificaties voor de plattegrondtekeningen, de concrete ingangsdatum van de Omgevingswet (1 januari 2024) die ontbreekt in de originele tekst, en verschillende e-mailadressen voor vragen over het omgevingsplan. Deze verschillen zijn relevant voor de volledigheid en actualiteit van de informatie voor aanvragers."
+  }
+}

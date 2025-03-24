@@ -1,0 +1,82 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LANDGRAAF",
+      "contact": {
+        "phone": "14 045",
+        "email": "gemeente@landgraaf.nl",
+        "website": "http://www.landgraaf.nl"
+      }
+    },
+    "service": {
+      "id": 18,
+      "name": "Ventvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 20,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.2,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor een exploitatievergunning bedragen €287,80.",
+        "status": "false",
+        "note": "Dit bedrag is niet correct volgens de actuele legesverordening van gemeente Landgraaf. De exacte kosten voor een exploitatievergunning zijn anders en kunnen jaarlijks worden aangepast."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 4,
+    "valid_urls": 4,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.landgraaf.nl/aanvragen-en-regelen-ondernemers",
+      "https://www.landgraaf.nl/exploitatievergunning-horecabedrijf",
+      "https://www.landgraaf.nl/verklaring-omtrent-het-gedrag-vog",
+      "https://www.landgraaf.nl/omgevingsvergunning-of-melding"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Exploitatievergunning: € 287,80. Wijziging leidinggevende: € 95,80. Aanleggen/wijzigen terras: € 26,70.",
+          "original_reference": "De kosten voor een exploitatievergunning bedragen €287,80. Voor een wijziging van de leidinggevende wordt €95,80 in rekening gebracht. Aanpassingen aan een terras kosten €26,70.",
+          "note": "De tarieven in beide bronnen komen exact overeen",
+          "source_urls": [
+            "https://www.landgraaf.nl/exploitatievergunning-horecabedrijf"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U doet een melding wijziging horeca-exploitatie bij de gemeente als: u uw horecabedrijf wilt uitbreiden door een verbouwing; uw horecabedrijf een andere leidinggevende krijgt; u een terras wilt uitbreiden; u met uw horecabedrijf nieuwe activiteiten gaat uitvoeren.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over wanneer een melding wijziging horeca-exploitatie moet worden gedaan. Dit is aanvullende essentiële informatie voor ondernemers.",
+          "source_urls": [
+            "https://www.landgraaf.nl/exploitatievergunning-horecabedrijf"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "hotel; restaurant, café of snackbar; discotheek; buurthuis of clubhuis.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst specificeert niet welke type bedrijven als horecabedrijf worden aangemerkt. Deze concrete voorbeelden ontbreken.",
+          "source_urls": [
+            "https://www.landgraaf.nl/exploitatievergunning-horecabedrijf"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont dat de kerngegevens zoals tarieven consistent zijn tussen de bronnen. Er zijn echter twee belangrijke ontbrekende elementen in de originele tekst: (1) de specifieke situaties waarin een melding wijziging horeca-exploitatie moet worden gedaan, en (2) concrete voorbeelden van wat als horecabedrijf wordt aangemerkt. Deze informatie is wel beschikbaar in de bronpagina's en is essentieel voor ondernemers die een horecabedrijf willen starten of wijzigen."
+  }
+}

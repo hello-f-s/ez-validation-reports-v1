@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ALPHEN-CHAAM",
+      "contact": {
+        "phone": "14013",
+        "email": "info@alphen-chaam.nl",
+        "website": "http://www.alphen-chaam.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "Het gemeentehuis is gevestigd op Willibrordplein 1, 5131 AV Alphen.",
+        "status": "false",
+        "note": "Het gemeentehuis van Alphen-Chaam is gevestigd aan Willibrordplein 1, 5131 AV in Alphen-Chaam, niet alleen 'Alphen'. De correcte gemeentenaam moet volledig worden vermeld."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.alphen-chaam.nl/omgevingsvergunning",
+      "https://www.alphen-chaam.nl/conceptverzoek",
+      "https://www.alphen-chaam.nl/omgevingswet-voor-bedrijven",
+      "https://www.alphen-chaam.nl/wonen-en-verbouwen/bouwen-of-verbouwen",
+      "https://www.alphen-chaam.nl/vergunningen-en-ontheffingen/vergunningen-en-ontheffingen-voor-ondernemers",
+      "https://www.alphen-chaam.nl"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De Omgevingswet geldt vanaf 1 januari voor iedereen in Nederland",
+          "original_reference": "die vanaf 1 januari 2024 geldt",
+          "note": "De bronpagina specificeert het jaartal 2024 niet expliciet bij de ingangsdatum van de Omgevingswet, wat minder precies is dan de originele tekst",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/omgevingswet-voor-bedrijven"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een bedrijf dat niets verandert aan de eigen bedrijfsvoering, hoeft met het in werking treden van de Omgevingswet bijna nooit direct iets te doen. Zo hoeven bedrijven voor een inrichting niet opnieuw een melding te doen. Omgevingsvergunningen blijven automatisch gelden.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat belangrijke aanvullende informatie over bestaande bedrijven die niet in de originele tekst staat vermeld",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/omgevingswet-voor-bedrijven"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "We onderzoeken of uw (bouw)plannen passen binnen het omgevingsplan. Waar nodig vragen we advies aan de commissie Ruimtelijke Kwaliteit.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina specificeert aanvullende details over het beoordelingsproces die niet in de originele tekst staan",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/conceptverzoek"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de mate van detail in de beschrijving van de Omgevingswet, waarbij de bronpagina's aanvullende informatie bevatten over de gevolgen voor bestaande bedrijven en het beoordelingsproces. Ook is de ingangsdatum in de bronpagina's minder specifiek geformuleerd. De kernprocessen en procedures zijn verder consistent tussen de originele tekst en de bronpagina's."
+  }
+}

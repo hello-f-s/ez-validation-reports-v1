@@ -1,0 +1,92 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ARNHEM",
+      "contact": {
+        "phone": "null",
+        "email": "null",
+        "website": "http://www.arnhem.nl"
+      }
+    },
+    "service": {
+      "id": 7,
+      "name": "Kabels en leidingen aanleggen en beheren"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "Na goedkeuring kan binnen een half jaar een digitale graafmelding worden gedaan, daarna vervalt het instemmingsbesluit.",
+        "status": "false",
+        "note": "Volgens de officiële richtlijnen van de gemeente Arnhem is de geldigheidsduur van een instemmingsbesluit één jaar na afgifte, niet een half jaar."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.arnhem.nl/Inwoners/bouwen_en_verbouwen/U_wilt_bouwen_of_verbouwen",
+      "https://www.arnhem.nl/Ondernemers/vergunningen_ondernemers",
+      "https://www.arnhem.nl/Ondernemers/vergunningen_ondernemers/overige_vergunningen_en_meldingen",
+      "https://www.arnhem.nl/Inwoners/bouwen_en_verbouwen/Waar_mag_u_wonen_werken_of_ondernemen",
+      "https://www.arnhem.nl/Ondernemers/vergunningen_ondernemers/kabels_en_leidingen_plaatsen_in_openbare_grond"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://ltcworld.com/account-aanvragen/",
+        "reason": "INVALID: Error scraping https://ltcworld.com/account-aanvragen/: HTTPSConnectionPool(host='ltcworld.com', port=443): Max retries exceeded with url: /account-aanvragen/ (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10548fa10>: Failed to resolve 'ltcworld.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://ltc.andes.nl/ltcmv",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Particulieren en bedrijven mogen geen kabels en/of leidingen in openbare grond hebben.",
+          "original_reference": "Kabels en leidingen mogen in openbare grond alleen door nuts- en telecombedrijven worden aangelegd.",
+          "note": "De bronformulering is explicieter in het uitsluiten van particulieren en bedrijven, terwijl de originele tekst alleen de toegestane partijen noemt. De betekenis is hetzelfde maar de brontekst is duidelijker.",
+          "source_urls": [
+            "https://www.arnhem.nl/Ondernemers/vergunningen_ondernemers/kabels_en_leidingen_plaatsen_in_openbare_grond"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Dit proces geschiedt digitaal.",
+          "original_reference": "Aanvragen kunnen alleen door nuts- en telecombedrijven digitaal worden gedaan.",
+          "note": "De brontekst is beknopter maar minder specifiek over wie er mag aanvragen.",
+          "source_urls": [
+            "https://www.arnhem.nl/Ondernemers/vergunningen_ondernemers/kabels_en_leidingen_plaatsen_in_openbare_grond"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als het tracé is goedgekeurd en ee...",
+          "original_reference": "Na goedkeuring kan binnen een half jaar een digitale graafmelding worden gedaan, daarna vervalt het instemmingsbesluit.",
+          "note": "De brontekst lijkt onvolledig te zijn afgebroken, terwijl de originele tekst complete informatie bevat over de vervaltermijn van het instemmingsbesluit.",
+          "source_urls": [
+            "https://www.arnhem.nl/Ondernemers/vergunningen_ondernemers/kabels_en_leidingen_plaatsen_in_openbare_grond"
+          ]
+        }
+      ]
+    },
+    "summary": "De verschillen tussen de originele tekst en de bronnen zijn voornamelijk stilistisch van aard, waarbij de bronnen soms beknopter of juist explicieter zijn in hun formulering. Er is één geval waar de brontekst onvolledig lijkt te zijn afgebroken. De kerninhoud en procedures komen grotendeels overeen. Er zijn geen significante inhoudelijke tegenstrijdigheden gevonden."
+  }
+}

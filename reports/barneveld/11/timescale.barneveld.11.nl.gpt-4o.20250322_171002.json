@@ -1,0 +1,102 @@
+{
+  "context": {
+    "municipality": {
+      "name": "BARNEVELD",
+      "contact": {
+        "phone": "14 0342",
+        "email": "info@barneveld.nl",
+        "website": "http://www.barneveld.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 13,
+    "false_sentences": 2,
+    "accuracy_percentage": 86.7,
+    "false_statements": [
+      {
+        "sentence": "Als uw aanvraag is goedgekeurd, kunt u digitale kopieën van de vergunningen aanvragen via MijnBarneveld.",
+        "status": "false",
+        "note": "Kopieën van vergunningen kunnen worden aangevraagd via een specifiek formulier op de gemeentewebsite of aan de balie van het gemeentehuis, niet via MijnBarneveld."
+      },
+      {
+        "sentence": "U kunt de status van uw aanvraag volgen via MijnBarneveld.",
+        "status": "false",
+        "note": "De status van een omgevingsvergunning kan worden gevolgd via het Omgevingsloket Online, niet via MijnBarneveld."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 2,
+    "invalid_urls": 4,
+    "accuracy_percentage": 33.3,
+    "valid_urls_list": [
+      "https://www.barneveld.nl/bouwen-wonen-en-verhuizen/omgevingsvergunning/omgevingsvergunning-aanvragen",
+      "https://www.barneveld.nl/vergunningen-en-ontheffingen/horeca/exploitatievergunning-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.barneveld.nl/bouwen-wonen-en-verhuizen/omgevingsvergunning/kopie-vergunning-of-tekening-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://gemeente.barneveld/omgevingsvergunning",
+        "reason": "INVALID: Error scraping https://gemeente.barneveld/omgevingsvergunning: HTTPSConnectionPool(host='gemeente.barneveld', port=443): Max retries exceeded with url: /omgevingsvergunning (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1038b0550>: Failed to resolve 'gemeente.barneveld' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.barneveld.nl/bouwen-wonen-en-verhuizen/omgevingsvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.barneveld.nl/bouwen-wonen-en-verhuizen/bouwen-slopen-verbouwen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bij een eenvoudige aanvraag ontvangt u meestal binnen 8 weken een besluit. Bij een uitgebreide aanvraag ontvangt u meestal binnen 6 maanden een besluit. Een verlenging van 6 weken is mogelijk.",
+          "original_reference": "Er is geen specifieke tijdsduur vermeld voor de afhandeling van de aanvraag.",
+          "note": "De originele tekst vermeldt geen specifieke behandeltermijnen, terwijl de bron concrete termijnen noemt: 8 weken voor eenvoudige aanvragen en 6 maanden voor uitgebreide aanvragen, met mogelijke verlenging van 6 weken.",
+          "source_urls": [
+            "https://www.barneveld.nl/bouwen-wonen-en-verhuizen/omgevingsvergunning/omgevingsvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U ontvangt bericht via de Omgevingsdienst de Vallei (OddV) of de gemeente. De gemeente publiceert het besluit.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat berichten via de Omgevingsdienst de Vallei (OddV) worden verstuurd en dat besluiten worden gepubliceerd door de gemeente.",
+          "source_urls": [
+            "https://www.barneveld.nl/bouwen-wonen-en-verhuizen/omgevingsvergunning/omgevingsvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor een vergunningsaanvraag betaalt u kosten. Deze kosten verschillen per aanvraag. De berekening hiervan is afhankelijk van veel zaken",
+          "original_reference": "Er worden kosten in rekening gebracht bij het aanvragen van de vergunning, maar specifieke bedragen staan niet vermeld.",
+          "note": "De bron geeft meer context over de kostenstructuur en vermeldt dat deze varieert per aanvraag, terwijl de originele tekst alleen meldt dat er kosten zijn zonder verdere toelichting.",
+          "source_urls": [
+            "https://www.barneveld.nl/bouwen-wonen-en-verhuizen/omgevingsvergunning/omgevingsvergunning-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de behandeltermijnen die wel specifiek worden genoemd in de bronnen maar niet in de originele tekst, de rol van de Omgevingsdienst de Vallei (OddV) bij de communicatie, en meer detail over de kostenstructuur. Deze informatie maakt de procedures en verwachtingen duidelijker voor aanvragers."
+  }
+}

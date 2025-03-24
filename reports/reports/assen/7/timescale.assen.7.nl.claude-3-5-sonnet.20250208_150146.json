@@ -1,0 +1,101 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ASSEN",
+      "contact": {
+        "phone": "(0592) 36 69 11",
+        "email": "info@assen.nl",
+        "website": "http://www.assen.nl"
+      }
+    },
+    "service": {
+      "id": 7,
+      "name": "Kabels en leidingen aanleggen en beheren"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 13,
+    "false_sentences": 2,
+    "accuracy_percentage": 86.7,
+    "false_statements": [
+      {
+        "sentence": "Tracés vanaf 250 m1 tot 1500 m2: € 426,64",
+        "status": "false",
+        "note": "De eenheid is onjuist aangegeven. Het moet zijn 'm1' (strekkende meter) in plaats van 'm2' (vierkante meter) voor tracés."
+      },
+      {
+        "sentence": "Tracés vanaf 1500 m1 tot 5000 m2: € 426,64",
+        "status": "false",
+        "note": "De eenheid is onjuist aangegeven. Het moet zijn 'm1' (strekkende meter) in plaats van 'm2' (vierkante meter) voor tracés."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 1,
+    "invalid_urls": 4,
+    "accuracy_percentage": 20.0,
+    "valid_urls_list": [
+      "https://www.assen.nl/kabels-en-leidingen-aanleggen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.assen.nl/stappenplan-aanvraag-omgevingsvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.assen.nl/forms/omgevingsloket",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.assen.nl/bouwgrond-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.assen.nl/omgevingsvergunning-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Geen specifieke tariefinformatie gevonden in de bronpagina's",
+          "original_reference": "Tracés tot 250 m1: € 367,02, Tracés vanaf 250 m1 tot 1500 m2: € 426,64, etc.",
+          "note": "De tariefinformatie uit de originele tekst kan niet worden geverifieerd in de beschikbare bronnen. De gemeentelijke website bevat geen gedetailleerde tariefinformatie voor het aanleggen van kabels en leidingen.",
+          "source_urls": [
+            "https://www.assen.nl/kabels-en-leidingen-aanleggen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Geen informatie over MOOR-platform gevonden",
+          "original_reference": "U vraagt toestemming aan via de website van MOOR werkt",
+          "note": "In de beschikbare bronnen wordt het MOOR-platform niet genoemd als aanvraagmethode voor het aanleggen van kabels en leidingen.",
+          "source_urls": [
+            "https://www.assen.nl/kabels-en-leidingen-aanleggen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Geen informatie over behandeltermijn gevonden",
+          "original_reference": "De gemeente beslist binnen 8 weken na ontvangst van uw aanvraag",
+          "note": "De genoemde behandeltermijn van 8 weken kan niet worden geverifieerd in de beschikbare bronnen.",
+          "source_urls": [
+            "https://www.assen.nl/kabels-en-leidingen-aanleggen"
+          ]
+        }
+      ]
+    },
+    "summary": "De beschikbare bronpagina's bevatten aanzienlijk minder informatie dan de originele tekst. Belangrijke details over tarieven, het aanvraagproces via MOOR en behandeltermijnen kunnen niet worden geverifieerd. De gemeentelijke webpagina lijkt niet alle actuele informatie te bevatten die in de originele tekst wordt genoemd."
+  }
+}

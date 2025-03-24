@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DEVENTER",
+      "contact": {
+        "phone": "14 0570",
+        "email": "gemeente@deventer.nl",
+        "website": "http://www.deventer.nl"
+      }
+    },
+    "service": {
+      "id": 10,
+      "name": "Nachtregister bijhouden"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Registratie moet anoniem zijn voor bepaalde gegevens zoals namen.",
+        "status": "false",
+        "note": "Dit is onjuist volgens de richtlijnen van gemeente Deventer. De registratie mag juist niet anoniem zijn - alle persoonlijke gegevens moeten worden geregistreerd voor controledoeleinden, wat ook wordt bevestigd door de latere zin dat interne registratie van namen noodzakelijk is voor controles."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.deventer.nl/langereopeningstijdenhoreca",
+      "https://www.deventer.nl//langereopeningstijdenhoreca",
+      "https://www.deventer.nl/belastingen-1/overige-belastingen/toeristenbelasting-betalen",
+      "https://www.deventer.nl/loketten/digitaal-loket/winkeltijden-ontheffing",
+      "https://www.deventer.nl/ontheffingwinkeltijden",
+      "https://deventer.nl"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Je bent belastingplichtig voor de toeristenbelasting als je aan de volgende voorwaarden voldoet: Je biedt gelegenheid tot verblijf met overnachting [...] De mensen die bij je overnachten, staan niet ingeschreven in de Basisregistratie Personen (BRP) van de gemeente Deventer [...] Je ontvangt voor het overnachten een vergoeding.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke voorwaarden voor belastingplicht, zoals dat gasten niet in de BRP van Deventer mogen staan ingeschreven en dat er een vergoeding moet worden ontvangen voor de overnachting.",
+          "source_urls": [
+            "https://www.deventer.nl/belastingen-1/overige-belastingen/toeristenbelasting-betalen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Stuur een e-mail naar belastingen@dowr.nl, met daarin jouw naam, jouw adresgegevens en de adresgegevens van de accommodatie.",
+          "original_reference": "dan meldt u dit bij de gemeente Deventer via e-mail met uw naam en adresgegevens.",
+          "note": "De bronpagina specificeert een exact e-mailadres (belastingen@dowr.nl) en vereist ook de adresgegevens van de accommodatie, wat niet vermeld staat in de originele tekst.",
+          "source_urls": [
+            "https://www.deventer.nl/belastingen-1/overige-belastingen/toeristenbelasting-betalen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "gegevens uit de bedrijfsinformatie",
+          "original_reference": "Bewijsstukken van het aantal overnachtingen, zoals een nachtverblijfregister, eigen registratiesysteem, of accountantsverklaring.",
+          "note": "De bronpagina noemt 'gegevens uit de bedrijfsinformatie' als extra mogelijkheid voor bewijsstukken, wat niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.deventer.nl/belastingen-1/overige-belastingen/toeristenbelasting-betalen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten belangrijke aanvullende informatie over de voorwaarden voor toeristenbelasting die niet in de originele tekst staat. Dit betreft vooral specifieke criteria voor belastingplicht, een concreet e-mailadres voor contact, en extra mogelijkheden voor bewijsvoering. Deze informatie is essentieel voor een complete en accurate beschrijving van de toeristenbelasting procedure."
+  }
+}

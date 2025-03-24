@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HEEMSKERK",
+      "contact": {
+        "phone": "14 0251",
+        "email": "post@heemskerk.nl",
+        "website": "http://www.heemskerk.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 42,
+    "true_sentences": 41,
+    "false_sentences": 1,
+    "accuracy_percentage": 97.6,
+    "false_statements": [
+      {
+        "sentence": "Voor vragen kunt u contact opnemen met het team Vergunningen, Toezicht, Handhaving & Veiligheid via telefoonnummer 14 0251 of via e-mail op post@heemskerk.nl.",
+        "status": "false",
+        "note": "Het juiste e-mailadres voor de gemeente Heemskerk is gemeente@heemskerk.nl, niet post@heemskerk.nl volgens de officiële website van de gemeente Heemskerk."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca/slijtersbedrijf",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca/horecabedrijf",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca/exploitatievergunning",
+      "https://www.heemskerk.nl/horeca"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "De ondernemer staat ingeschreven in het Handelsregister van de Kamer van Koophandel.",
+          "original_reference": "De ondernemer moet ingeschreven staan in het Handelsregister van de Kamer van Koophandel.",
+          "note": "De vereiste KvK-inschrijving wordt op dezelfde manier beschreven in beide bronnen",
+          "source_urls": [
+            "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca/slijtersbedrijf"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Dit checken we in het Register sociale hygiëne",
+          "original_reference": "Alle betrokkenen moeten een diploma/verklaring sociale hygiëne hebben",
+          "note": "De bronpagina specificeert dat de verificatie plaatsvindt via het Register sociale hygiëne, wat niet vermeld wordt in de originele tekst",
+          "source_urls": [
+            "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca/slijtersbedrijf"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "We willen voorkomen dat via het horecabedrijf crimineel geld wordt uitgegeven of verwerkt. Of strafbare feiten worden gepleegd. Daarom stellen we een onderzoek in naar het verleden van de ondernemer. Dit doen we in het kader van de Wet Bibob",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat belangrijke aanvullende informatie over de Wet Bibob-toetsing die niet genoemd wordt in de originele tekst",
+          "source_urls": [
+            "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca/exploitatievergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's komen grotendeels overeen met de originele tekst, maar bevatten twee belangrijke aanvullingen: 1) de specifieke vermelding van het Register sociale hygiëne voor verificatie van diploma's, en 2) informatie over de Wet Bibob-toetsing die wordt uitgevoerd om criminele activiteiten te voorkomen. Deze elementen ontbreken in de originele tekst maar zijn wel relevant voor de procedure."
+  }
+}

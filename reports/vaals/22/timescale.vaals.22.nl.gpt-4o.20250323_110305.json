@@ -1,0 +1,89 @@
+{
+  "context": {
+    "municipality": {
+      "name": "VAALS",
+      "contact": {
+        "phone": "(043) 306 85 68",
+        "email": "info@vaals.nl",
+        "website": "http://www.vaals.nl"
+      }
+    },
+    "service": {
+      "id": 22,
+      "name": "Woonruimte splitsen of samenvoegen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Onder de Omgevingswet, die vanaf 1 januari 2024 geldt, is de beslistermijn voor een korte procedure maximaal 8 weken.",
+        "status": "false",
+        "note": "De standaard beslistermijn onder de Omgevingswet voor een reguliere procedure is niet 8 maar 6 weken. Deze termijn kan eenmalig met 6 weken worden verlengd."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 6,
+    "invalid_urls": 1,
+    "accuracy_percentage": 85.7,
+    "valid_urls_list": [
+      "https://www.vaals.nl/ondernemers/ondernemersplein",
+      "https://www.vaals.nl/inwoners/vergunningen/omgevingswet/omgevingsvergunning",
+      "https://www.vaals.nl/",
+      "https://www.vaals.nl/inwoners/vergunningen/omgevingswet/meest-aangevraagde-activiteiten",
+      "https://www.vaals.nl/inwoners/vergunningen/omgevingswet/veelgestelde-vragen",
+      "https://www.vaals.nl/inwoners/vergunningen/omgevingsvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.omgevingsloket.nl/",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Nieuw bij het (ver)bouwen van een bouwwerk is dat er een knip wordt gemaakt. Deze bestaat uit een (technische) bouwactiviteit en een omgevingsplanactiviteit bouwen (ruimtelijk of planologisch deel).",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden een belangrijke nieuwe 'knip' in de vergunningaanvraag die niet genoemd wordt in de originele tekst. Dit is essentiële informatie voor aanvragers.",
+          "source_urls": [
+            "https://www.vaals.nl/inwoners/vergunningen/omgevingswet/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Alvorens u een omgevingsvergunning aanvraagt, raden wij u altijd aan om eerst een vooroverleg aan te vragen bij de gemeente.",
+          "original_reference": "No matching information",
+          "note": "De bronnen adviseren expliciet een vooroverleg aan te vragen, wat niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.vaals.nl/inwoners/vergunningen/omgevingswet/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor sommige bouwwerken of activiteiten heeft u geen omgevingsvergunning nodig. Bijvoorbeeld voor een kleine dakkapel aan de achterkant van uw woning.",
+          "original_reference": "No matching information",
+          "note": "De bronnen geven concrete voorbeelden van vergunningvrije activiteiten die niet genoemd worden in de originele tekst.",
+          "source_urls": [
+            "https://www.vaals.nl/inwoners/vergunningen/omgevingswet/omgevingsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie die niet in de originele tekst staat, waaronder de nieuwe 'knip' in de vergunningaanvraag, het advies voor vooroverleg en voorbeelden van vergunningvrije activiteiten. Deze informatie is essentieel voor mensen die een vergunning willen aanvragen en zou in de originele tekst opgenomen moeten worden voor volledigheid."
+  }
+}

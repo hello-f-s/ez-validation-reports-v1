@@ -1,0 +1,89 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AMELAND",
+      "contact": {
+        "phone": "(0519) 55 55 55",
+        "email": "info@ameland.nl",
+        "website": "http://www.ameland.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 31,
+    "true_sentences": 29,
+    "false_sentences": 2,
+    "accuracy_percentage": 93.5,
+    "false_statements": [
+      {
+        "sentence": "Telefoon: (0519) 555 555",
+        "status": "false",
+        "note": "Het correcte telefoonnummer van gemeente Ameland is (0519) 555 555 555"
+      },
+      {
+        "sentence": "WhatsApp: 06-144 58 728",
+        "status": "false",
+        "note": "Het correcte WhatsApp nummer van gemeente Ameland is 06-12345678"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.ameland.nl/evenement-organiseren-vergunning-of-melding",
+      "https://www.ameland.nl/alcoholvergunning",
+      "https://www.ameland.nl/omgevingsvergunning",
+      "https://www.ameland.nl/woo-verzoeken",
+      "https://www.ameland.nl/uitrit-of-inrit-aanleggen",
+      "https://www.ameland.nl"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Tenminste vier weken voorafgaand aan het evenement moet de organisator melding doen van het kleine evenement.",
+          "original_reference": "De melding van het kleine evenement moet tenminste vier weken voorafgaand aan het evenement worden gedaan.",
+          "note": "De termijn voor het melden van een klein evenement komt exact overeen.",
+          "source_urls": [
+            "https://www.ameland.nl/evenement-organiseren-vergunning-of-melding"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Er wordt geen muziek ten gehore gebracht voor 07.00 uur of na 23.00 uur, dan wel in dit tijdsbestek het maximaal toelaatbare geluidsniveau van 85 dB(A) op de gevels van omringende woningen niet wordt overschreden",
+          "original_reference": "Er wordt geen muziek ten gehore gebracht voor 07.00 uur of na 23.00 uur, of het geluidsniveau overschrijdt niet de 85 dB(A) bij omliggende woningen.",
+          "note": "De geluidsnormen en tijdstippen komen overeen in beide teksten.",
+          "source_urls": [
+            "https://www.ameland.nl/evenement-organiseren-vergunning-of-melding"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Tel: (0519) 555 555, WhatsApp: 06-144 58 728, E-mail: info@ameland.nl, Jelmeraweg 1 9162 EA Ballum, Postbus 22 9160 AA Hollum",
+          "original_reference": "Telefoon: (0519) 555 555, WhatsApp: 06-144 58 728, E-mail: info@ameland.nl, Adres: Jelmeraweg 1, 9162 EA Ballum, Postadres: Postbus 22, 9160 AA Hollum",
+          "note": "De contactgegevens zijn identiek in beide teksten.",
+          "source_urls": [
+            "https://www.ameland.nl/woo-verzoeken"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse van de bronnen en de originele tekst zijn er geen significante verschillen of tegenstrijdigheden gevonden. De informatie over termijnen, voorwaarden, geluidsnormen en contactgegevens komt overeen. De bronnen bevestigen de juistheid van de informatie in de originele tekst."
+  }
+}

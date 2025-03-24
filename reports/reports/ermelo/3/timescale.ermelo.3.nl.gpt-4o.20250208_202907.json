@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ERMELO",
+      "contact": {
+        "phone": "(0341) 56 73 21",
+        "email": "gemeente@ermelo.nl",
+        "website": "http://www.ermelo.nl"
+      }
+    },
+    "service": {
+      "id": 3,
+      "name": "Certificaat voor opgraving aanvragen en vondst melden"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 1,
+    "true_sentences": 1,
+    "false_sentences": 0,
+    "accuracy_percentage": 100.0,
+    "false_statements": []
+  },
+  "url_analysis": {
+    "total_urls": 4,
+    "valid_urls": 2,
+    "invalid_urls": 2,
+    "accuracy_percentage": 50.0,
+    "valid_urls_list": [
+      "https://www.ermelo.nl/omgevingsplein/zie-ook/inzien-bouwdossiers-en-vergunningen",
+      "https://www.ermelo.nl/wonen-en-verhuizen/adresonderzoek"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.ermelo.nl/omgevingsplein/zie-ook",
+        "reason": "INVALID: Error scraping https://www.ermelo.nl/omgevingsplein/zie-ook: 404 Client Error: Not Found for url: https://www.ermelo.nl/omgevingsplein/zie-ook"
+      },
+      {
+        "url": "https://www.ermelo.nl/geboorte-trouwen-en-overlijden/overlijden/aangifte-overlijden-door-uitvaartondernemers",
+        "reason": "INVALID: Error scraping https://www.ermelo.nl/geboorte-trouwen-en-overlijden/overlijden/aangifte-overlijden-door-uitvaartondernemers: 404 Client Error: Not Found for url: https://www.ermelo.nl/geboorte-trouwen-en-overlijden/overlijden/aangifte-overlijden-door-uitvaartondernemers"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bouwdossiers voor 2010 kunt u niet opvragen bij de gemeente. Deze vraagt u op bij het Streekarchivariaat. U vraagt bij de gemeente alleen bouwdossiers op van na 2010.",
+          "original_reference": "No matching information",
+          "note": "De bron bevat specifieke informatie over het opvragen van bouwdossiers met een duidelijke scheiding in behandeling voor en na 2010, terwijl deze informatie volledig ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.ermelo.nl/omgevingsplein/zie-ook/inzien-bouwdossiers-en-vergunningen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U kunt een adresonderzoek aanvragen als iemand: Staat ingeschreven bij u, maar die persoon woont niet bij u. Een briefadres heeft op uw adres en u kunt die persoon niet meer bereiken. Een briefadres heeft op uw adres en u wilt uw toestemming intrekken.",
+          "original_reference": "No matching information",
+          "note": "De bron bevat gedetailleerde informatie over de mogelijkheden en voorwaarden voor het aanvragen van een adresonderzoek, wat volledig ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.ermelo.nl/wonen-en-verhuizen/adresonderzoek"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten substantieel meer specifieke informatie over gemeentelijke diensten dan de originele tekst, met name over bouwdossiers en adresonderzoeken. De originele tekst bevat geen enkele concrete informatie, terwijl de bronnen gedetailleerde procedures, voorwaarden en contactgegevens bevatten."
+  }
+}

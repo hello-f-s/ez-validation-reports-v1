@@ -1,0 +1,92 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ENSCHEDE",
+      "contact": {
+        "phone": "14 053",
+        "email": "postbus20@enschede.nl",
+        "website": "http://www.enschede.nl"
+      }
+    },
+    "service": {
+      "id": 2,
+      "name": "Bord of spandoek plaatsen aan de openbare weg"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor het aanvragen van een omgevingsvergunning bedragen € 274,20.",
+        "status": "false",
+        "note": "Het exacte bedrag voor een omgevingsvergunning voor reclame in Enschede is € 278,50 volgens de actuele legesverordening van de gemeente Enschede."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.enschede.nl/reclame-plaatsen",
+      "https://www.enschede.nl/vergunning-voor-kamerverhuur",
+      "https://www.enschede.nl/voorwerp-plaatsen-in-de-openbare-ruimte",
+      "https://www.enschede.nl/graven-in-de-openbare-ruimte",
+      "https://www.enschede.nl/wegomleiding-of-verkeersmaatregelen-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.enschede.nl/bezwaar-maken",
+        "reason": "INVALID: Error scraping https://www.enschede.nl/bezwaar-maken: 404 Client Error: Not Found for url: https://www.enschede.nl/bezwaar-maken"
+      },
+      {
+        "url": "https://www.omgevingsloket.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Reclame plaatsen in de openbare ruimte (gemeentegrond) mag onder bepaalde voorwaarden. [...] Op eigen terrein mag u zelf reclame plaatsen. Wel zijn er regels.",
+          "original_reference": "Als ondernemer mag u geen reclamebord of spandoek zelfstandig in de openbare ruimte plaatsen.",
+          "note": "De bronpagina maakt een duidelijk onderscheid tussen reclame op eigen terrein (toegestaan) en openbare ruimte (via exploitanten), terwijl de originele tekst alleen de beperking voor openbare ruimte noemt.",
+          "source_urls": [
+            "https://www.enschede.nl/reclame-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "In het centrum gelden strengere regels. Lees het document Beeldkwaliteit gevels en reclame in het centrum van Enschede.pdf",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt specifieke aanvullende regels voor het centrum die niet genoemd worden in de originele tekst.",
+          "source_urls": [
+            "https://www.enschede.nl/reclame-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Maakt u reclame bij of aan een monument, dan moet u altijd een vergunning aanvragen.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina specificeert dat voor reclame bij monumenten altijd een vergunning nodig is, wat niet vermeld wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.enschede.nl/reclame-plaatsen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina bevat belangrijke aanvullende informatie die ontbreekt in de originele tekst, waaronder de mogelijkheid voor reclame op eigen terrein, specifieke regels voor het centrum van Enschede en verplichte vergunningen voor reclame bij monumenten. Deze informatie is essentieel voor een volledig begrip van de regelgeving rondom het plaatsen van reclame in Enschede."
+  }
+}

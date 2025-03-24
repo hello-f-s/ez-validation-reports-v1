@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "KERKRADE",
+      "contact": {
+        "phone": "14 045",
+        "email": "gemeentehuis@kerkrade.nl",
+        "website": "http://www.kerkrade.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "De aanvraag van een VOG kost € 41.35.",
+        "status": "false",
+        "note": "De actuele kosten voor een VOG in Kerkrade bedragen € 41,85 volgens de officiële website van de gemeente Kerkrade."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.kerkrade.nl/verklaring-omtrent-het-gedrag-vog",
+      "https://www.kerkrade.nl/nederlander-worden-door-optie",
+      "https://www.kerkrade.nl/nederlander-worden-door-naturalisatie",
+      "https://www.kerkrade.nl/milieu-vergunning-of-melding",
+      "https://www.kerkrade.nl/kinderopvang-starten"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Leraren, taxichauffeurs en mensen die werken in de kinderopvang moeten een VOG hebben. U kunt ook een VOG nodig hebben, omdat: een toekomstige werkgever hierom vraagt, u zzp'er bent en een opdrachtgever hierom vraagt, u vrijwilligerswerk wilt doen, u een visumaanvraag doet, u lid wilt worden van een schietvereniging, u verhuist naar het buitenland",
+          "original_reference": "Als ondernemer kunt u een VOG nodig hebben omdat een toekomstige opdrachtgever hierom vraagt of als u bijvoorbeeld vrijwilligerswerk wilt doen.",
+          "note": "De bronpagina noemt meer specifieke situaties waarin een VOG vereist is, waaronder leraren, taxichauffeurs, visumaanvragen, lidmaatschap schietvereniging en verhuizing naar het buitenland. Deze informatie ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.kerkrade.nl/verklaring-omtrent-het-gedrag-vog"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Als u geen strafbare feiten hebt gepleegd, krijgt u de VOG. Als u wel strafbare feiten hebt gepleegd, is verder onderzoek nodig. Justis bekijkt of de strafbare feiten belangrijk zijn voor de aanvraag.",
+          "original_reference": "Als u geen strafbare feiten hebt gepleegd, ontvangt u de VOG zonder verder onderzoek. Heeft u wel strafbare feiten gepleegd, dan vindt er een verder onderzoek plaats door Justis.",
+          "note": "De informatie over de beoordeling van strafbare feiten en de rol van Justis komt overeen in beide teksten.",
+          "source_urls": [
+            "https://www.kerkrade.nl/verklaring-omtrent-het-gedrag-vog"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen vooral de volledigheid van de informatie. De bronpagina biedt een uitgebreider overzicht van situaties waarin een VOG vereist is, terwijl de originele tekst zich beperkt tot ondernemers en vrijwilligers. De kernprocessen en voorwaarden zijn verder consistent tussen beide versies."
+  }
+}

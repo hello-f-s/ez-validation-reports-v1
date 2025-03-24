@@ -1,0 +1,78 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HAARLEM",
+      "contact": {
+        "phone": "14 023",
+        "email": "antwoord@haarlem.nl",
+        "website": "http://www.haarlem.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 19,
+    "false_sentences": 2,
+    "accuracy_percentage": 90.5,
+    "false_statements": [
+      {
+        "sentence": "Bestaand evenement met gemiddeld risico (B): Aanvraag vergunning kost € 1.694.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Haarlem kost een bestaand evenement met gemiddeld risico (B) € 1.728,00"
+      },
+      {
+        "sentence": "Nieuw evenement met gemiddeld risico (B): Aanvraag vergunning kost € 3.498.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Haarlem kost een nieuw evenement met gemiddeld risico (B) € 3.568,00"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 4,
+    "invalid_urls": 2,
+    "accuracy_percentage": 66.7,
+    "valid_urls_list": [
+      "https://haarlem.nl/exploitatievergunning",
+      "https://haarlem.nl/bouwvergunning",
+      "https://www.haarlem.nl",
+      "https://haarlem.nl/klein-evenement-melden"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.haarlem.nl/ufs/formulieren.eb?id=melding_klein_evenement_hlm",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://haarlem.nl/evenementenvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Meld uw evenement wel minstens 2 weken van tevoren",
+          "original_reference": "Uw evenementenvergunning moet uiterlijk drie maanden voor het evenement worden aangevraagd",
+          "note": "Er is een verschil in aanvraagtermijnen tussen kleine evenementen (2 weken) en reguliere evenementen (3 maanden). Dit is een belangrijk onderscheid dat niet duidelijk wordt gemaakt in de originele tekst.",
+          "source_urls": [
+            "https://haarlem.nl/klein-evenement-melden"
+          ]
+        }
+      ]
+    },
+    "summary": "Bij analyse van de bronnen is één significant verschil gevonden met betrekking tot de aanvraagtermijnen voor verschillende soorten evenementen. De originele tekst maakt geen onderscheid tussen kleine en grote evenementen qua aanvraagtermijn, terwijl dit wel relevant is. Voor kleine evenementen geldt een kortere aanmeldtermijn van 2 weken, terwijl voor reguliere evenementen de termijn van 3 maanden blijft gelden. De overige informatie in de originele tekst komt overeen met de bronnen of kon niet geverifieerd worden omdat de relevante informatie niet in de geciteerde bronnen aanwezig was."
+  }
+}

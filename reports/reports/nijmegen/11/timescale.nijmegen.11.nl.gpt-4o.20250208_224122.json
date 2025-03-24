@@ -1,0 +1,89 @@
+{
+  "context": {
+    "municipality": {
+      "name": "NIJMEGEN",
+      "contact": {
+        "phone": "14 024",
+        "email": "gemeente@nijmegen.nl",
+        "website": "http://www.nijmegen.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "De doorlooptijd voor het verwerken van een omgevingsvergunning aanvraag wordt niet specifiek vermeld op de website van de gemeente Nijmegen.",
+        "status": "false",
+        "note": "De doorlooptijd wordt wel degelijk vermeld op de website van gemeente Nijmegen. Voor een reguliere procedure geldt een termijn van 8 weken (met mogelijke verlenging van 6 weken) en voor een uitgebreide procedure geldt een termijn van 26 weken (met mogelijke verlenging van 6 weken)."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 6,
+    "invalid_urls": 1,
+    "accuracy_percentage": 85.7,
+    "valid_urls_list": [
+      "https://www.nijmegen.nl/",
+      "https://www.nijmegen.nl/diensten/bouwen-en-wonen/vooroverleg-omgevingsvergunning/kosten-omgevingsvergunning/",
+      "https://www.nijmegen.nl/diensten/bouwen-en-wonen/inzien-van-bouw-en-sloopplannen/",
+      "https://www.nijmegen.nl/diensten/bouwen-en-wonen/inrit-aanleggen/",
+      "https://www.nijmegen.nl/diensten/bouwen-en-wonen/vooroverleg-omgevingsvergunning/",
+      "https://www.nijmegen.nl/diensten/bouwen-en-wonen/vergunning-of-melding-voor-bedrijven/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.nijmegen.nl/\">Gemeente",
+        "reason": "INVALID: Error scraping https://www.nijmegen.nl/\">Gemeente: 404 Client Error: Not Found for url: https://www.nijmegen.nl/%22%3EGemeente"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Heeft u een vooroverleg gehad? De kosten hiervan moet u betalen, ook als u daarna een vergunning aanvraagt",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat vooroverlegkosten apart worden berekend en betaald moeten worden, ook bij een latere vergunningsaanvraag",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/bouwen-en-wonen/vooroverleg-omgevingsvergunning/kosten-omgevingsvergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Informeer eerst uw buren. We vragen u om nog voor uw aanvraag aan bewoners in de buurt te vragen wat ze van uw idee of plan vinden.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de vereiste om buren te informeren voorafgaand aan de aanvraag",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/bouwen-en-wonen/vooroverleg-omgevingsvergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De bouw- en sloopkosten zijn zonder btw. De bouw- en sloopkosten berekenen we voor elk geheel bedrag € 100,-",
+          "original_reference": "De kosten voor een omgevingsvergunning zijn afhankelijk van de aard van de bouw- en ontwikkelprojecten",
+          "note": "De originele tekst specificeert niet dat kosten zonder btw zijn en hoe ze precies worden berekend per €100",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/bouwen-en-wonen/vooroverleg-omgevingsvergunning/kosten-omgevingsvergunning/"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie die niet in de originele tekst staat, waaronder de verplichting om buren te informeren voor de aanvraag, specifieke details over kostenberekening (zonder btw, per €100), en de verduidelijking dat vooroverlegkosten apart worden berekend. Deze informatie is essentieel voor een complete en accurate beschrijving van het aanvraagproces."
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LAARBEEK",
+      "contact": {
+        "phone": "(0492) 46 97 00",
+        "email": "gemeente@laarbeek.nl",
+        "website": "http://www.laarbeek.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "Voor 1 jaar: € 56,50 voor de eerste kansspelautomaat en € 34,00 voor iedere volgende.",
+        "status": "false",
+        "note": "De genoemde tarieven zijn verouderd (2022). De actuele tarieven voor 2024 zijn anders volgens de tarievenlijst van gemeente Laarbeek."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 6,
+    "invalid_urls": 1,
+    "accuracy_percentage": 85.7,
+    "valid_urls_list": [
+      "https://www.laarbeek.nl/speelautomaat-plaatsen",
+      "https://www.laarbeek.nl/standplaatsvergunning",
+      "https://www.laarbeek.nl/omgevingsvergunning",
+      "https://www.laarbeek.nl/kansspel-organiseren",
+      "https://www.laarbeek.nl",
+      "https://www.laarbeek.nl/horecabedrijf-beginnen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.laarbeek.nl\">Gemeente",
+        "reason": "INVALID: Error scraping https://www.laarbeek.nl\">Gemeente: HTTPSConnectionPool(host='www.laarbeek.nl%22%3egemeente', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1057af250>: Failed to resolve 'www.laarbeek.nl%22%3egemeente' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U kunt maximaal voor twee kansspelautomaten een vergunning krijgen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt geen maximum aantal automaten, terwijl de bron specifiek aangeeft dat er maximaal twee kansspelautomaten zijn toegestaan.",
+          "source_urls": [
+            "https://www.laarbeek.nl/speelautomaat-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De bezoekers van het laagdrempelige gedeelte kunnen dit gedeelte betreden zonder het hoogdrempelige gedeelte te hoeven betreden",
+          "original_reference": "Indien er zowel een hoog- als een laagdrempelig gedeelte is, moeten automaten in het hoogdrempelige deel worden geplaatst, en de twee ruimtes moeten van elkaar gescheiden zijn.",
+          "note": "De bron bevat een extra voorwaarde over toegankelijkheid van het laagdrempelige gedeelte die niet in de originele tekst staat vermeld.",
+          "source_urls": [
+            "https://www.laarbeek.nl/speelautomaat-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De eigenaar van de kansspelautomaat heeft een exploitatievergunning nodig.",
+          "original_reference": "Een exploitatievergunning voor het horecabedrijf.",
+          "note": "Er is een verschil in wie de exploitatievergunning nodig heeft: volgens de bron is dit de eigenaar van de automaat, volgens de originele tekst betreft het het horecabedrijf.",
+          "source_urls": [
+            "https://www.laarbeek.nl/speelautomaat-plaatsen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen het maximum aantal toegestane kansspelautomaten (2), een extra voorwaarde voor de toegankelijkheid van laagdrempelige gedeeltes, en een verschil in wie de exploitatievergunning moet bezitten. Deze verschillen zijn significant voor de correcte naleving van de regelgeving."
+  }
+}

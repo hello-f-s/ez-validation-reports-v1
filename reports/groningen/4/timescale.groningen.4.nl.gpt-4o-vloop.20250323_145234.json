@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "GRONINGEN",
+      "contact": {
+        "phone": "14 050",
+        "email": "info@groningen.nl",
+        "website": "http://gemeente.groningen.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 22,
+    "false_sentences": 2,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "U kunt een evenementenvergunning aanvragen via het contactformulier op de website van de gemeente Groningen.",
+        "status": "false",
+        "note": "Evenementenvergunningen in Groningen moeten worden aangevraagd via het digitale aanvraagformulier op de website, niet via een algemeen contactformulier."
+      },
+      {
+        "sentence": "Vanaf 2025 zijn er updates of veranderingen in het digitale aanvraagproces voor evenementenvergunningen.",
+        "status": "false",
+        "note": "Er is geen officiële informatie beschikbaar op de website van de gemeente Groningen over specifieke veranderingen in het digitale aanvraagproces voor evenementenvergunningen in 2025."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://gemeente.groningen.nl/evenementenvergunning-aanvragen",
+      "https://gemeente.groningen.nl/evenement-organiseren",
+      "https://gemeente.groningen.nl/straatfeest-of-ander-klein-evenement-melden",
+      "https://gemeente.groningen.nl/exploitatievergunning-horeca-aanvragen",
+      "https://gemeente.groningen.nl/alcoholvergunning-aanvragen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wilt u een evenement voor een kleine groep organiseren (maximaal 300 mensen), zoals een straatfeest, buurtfeest of klein sporttoernooi? Dan moet u dit minimaal 3 weken van tevoren melden aan de gemeente.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt geen specifieke termijn voor kleine evenementen/straatfeesten, terwijl de bron aangeeft dat deze minimaal 3 weken van tevoren gemeld moeten worden.",
+          "source_urls": [
+            "https://gemeente.groningen.nl/straatfeest-of-ander-klein-evenement-melden"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor meer informatie kunt u contact opnemen met afdeling evenementen: 050 - 367 11 55 of em@groningen.nl",
+          "original_reference": "Voor hulp bij de aanvraag kunt u ook bellen naar 14 050 of gebruikmaken van WhatsApp via 06 12 82 39 73",
+          "note": "De contactgegevens verschillen tussen de bronnen en de originele tekst. De bron vermeldt een specifiek telefoonnummer en e-mailadres voor de afdeling evenementen.",
+          "source_urls": [
+            "https://gemeente.groningen.nl/evenement-organiseren"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u een straatfeest of klein evenement in de binnenstad organiseert: er komen niet meer dan 100 bezoeker of deelnemers.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst maakt geen onderscheid in maximaal aantal bezoekers voor evenementen in de binnenstad, terwijl de bron een specifieke limiet van 100 bezoekers aangeeft voor de binnenstad.",
+          "source_urls": [
+            "https://gemeente.groningen.nl/straatfeest-of-ander-klein-evenement-melden"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de aanvraag- en meldingstermijnen voor kleine evenementen, andere contactgegevens voor de evenementenafdeling, en specifieke beperkingen voor evenementen in de binnenstad. De bronnen bevatten aanvullende details die niet in de originele tekst zijn opgenomen, wat kan leiden tot onduidelijkheid bij aanvragers."
+  }
+}

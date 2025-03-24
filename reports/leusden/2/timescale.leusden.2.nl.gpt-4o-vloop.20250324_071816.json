@@ -1,0 +1,78 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LEUSDEN",
+      "contact": {
+        "phone": "14 033",
+        "email": "gemeente@leusden.nl",
+        "website": "http://www.leusden.nl/"
+      }
+    },
+    "service": {
+      "id": 2,
+      "name": "Bord of spandoek plaatsen aan de openbare weg"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 17,
+    "false_sentences": 2,
+    "accuracy_percentage": 89.5,
+    "false_statements": [
+      {
+        "sentence": "Er moet een melding worden gedaan minimaal drie weken van tevoren.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Leusden moet een aanvraag minimaal 4 weken van tevoren worden ingediend, niet 3 weken."
+      },
+      {
+        "sentence": "De aanvraag moet schriftelijk worden gedaan, minstens drie weken van tevoren, bij het college van de gemeente Leusden.",
+        "status": "false",
+        "note": "De termijn van 3 weken is onjuist. De gemeente Leusden vereist dat aanvragen minimaal 4 weken voor de gewenste plaatsingsdatum worden ingediend."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 2,
+    "valid_urls": 2,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.leusden.nl/vergunningen-en-belastingen",
+      "https://www.leusden.nl/en/vergunningen-en-belastingen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Het ophangen van een spandoek moet minimaal 3 weken van tevoren schriftelijk worden gemeld.",
+          "original_reference": "Er moet een melding worden gedaan minimaal drie weken van tevoren.",
+          "note": "De termijn voor het melden van een spandoek is consistent in beide bronnen (3 weken).",
+          "source_urls": [
+            "https://www.leusden.nl/vergunningen-en-belastingen",
+            "https://www.leusden.nl/en/vergunningen-en-belastingen"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Burgerzaken werkt alleen op afspraak op werkdagen tussen 9.00-16.30 uur. Langskomen zonder afspraak is niet mogelijk.",
+          "original_reference": "Burgerzaken werkt alleen op afspraak op werkdagen tussen 9.00-16.30 uur. Langskomen zonder afspraak is niet mogelijk.",
+          "note": "De openingstijden en afspraakpolicy zijn exact hetzelfde in beide bronnen.",
+          "source_urls": [
+            "https://www.leusden.nl/vergunningen-en-belastingen",
+            "https://www.leusden.nl/en/vergunningen-en-belastingen"
+          ]
+        }
+      ]
+    },
+    "summary": "Na analyse van de bronnen blijken de meeste kerngegevens consistent te zijn met de originele inhoud. Veel van de gedetailleerde voorwaarden voor spandoeken uit de originele tekst (zoals maximaal 4 locaties, hoogte van 4 meter, etc.) zijn niet terug te vinden in de geciteerde bronnen, maar er zijn geen directe tegenstrijdigheden gevonden. De contactgegevens en openingstijden komen overeen. De milieustraat-openingstijden verschillen tussen de bronnen, maar kunnen niet geverifieerd worden omdat deze informatie onvolledig is in de geciteerde bronnen."
+  }
+}

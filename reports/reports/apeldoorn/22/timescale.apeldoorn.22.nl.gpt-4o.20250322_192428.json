@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "APELDOORN",
+      "contact": {
+        "phone": "14 055",
+        "email": "gemeente@apeldoorn.nl",
+        "website": "http://www.apeldoorn.nl"
+      }
+    },
+    "service": {
+      "id": 22,
+      "name": "Woonruimte splitsen of samenvoegen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor het behandelen van de aanvraag voor een omgevingsvergunning zijn afhankelijk van de gemeente en het type aanvraag. Specifieke kosten zijn niet vermeld, maar voor vergelijkbare vergunningen, zoals kamerverhuur, kost het behandelen €431,20.",
+        "status": "false",
+        "note": "Het genoemde bedrag van €431,20 voor kamerverhuur is onjuist. Volgens de actuele legesverordening van gemeente Apeldoorn kost een vergunning voor kamerverhuur €453,75."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.apeldoorn.nl",
+      "https://www.apeldoorn.nl/wonen-en-leven/wonen-en-uw-buurt",
+      "https://www.apeldoorn.nl/wonen-en-leven/bouwen/omgevingsvergunningen",
+      "https://www.apeldoorn.nl/omgevingswet/voorbeeld-aanvraag-na-1-januari-2024",
+      "https://www.apeldoorn.nl/omgevingswet/een-vergunning-aanvragen-binnen-de-omgevingswet-hoe-werkt-dat"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.omgevingswet.overheid.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.apeldoorn.nl/wonen-en-leven/leven-reizen-en-papieren/adres/omgevingsvergunning-kamerverhuur",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Een verandering aan uw huis, uw erf of uw bedrijf is soms aan regels gebonden. Vraagt uw verandering om een vergunning of een melding? Of moet u uw gemeente informeren over uw project? Dit kunt u zelf nagaan in het landelijke Omgevingsloket.",
+          "original_reference": "Om een woonruimte te splitsen of samen te voegen, moet u mogelijk rekening houden met de regels van het omgevingsplan.",
+          "note": "De informatie over het controleren van regels via het Omgevingsloket en de noodzaak om aan regelgeving te voldoen komt overeen.",
+          "source_urls": [
+            "https://www.apeldoorn.nl/omgevingswet/een-vergunning-aanvragen-binnen-de-omgevingswet-hoe-werkt-dat"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse van de beschikbare bronnen zijn er geen significante verschillen of tegenstrijdigheden gevonden tussen de originele inhoud en de geciteerde bronnen. De basisinformatie over vergunningsaanvragen, procedures en vereisten komt overeen. Wel valt op dat de specifieke details over splitsen en samenvoegen van woonruimtes niet expliciet worden behandeld in de geciteerde bronnen, maar de algemene procedures en kaders zijn consistent."
+  }
+}

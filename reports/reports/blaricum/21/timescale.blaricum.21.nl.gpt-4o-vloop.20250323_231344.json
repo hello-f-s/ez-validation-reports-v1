@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "BLARICUM",
+      "contact": {
+        "phone": "(035) 751 32 22",
+        "email": "info@blaricum.nl",
+        "website": "http://www.blaricum.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor het aanvragen van een VOG bedragen € 41,35.",
+        "status": "false",
+        "note": "De actuele kosten voor een VOG bedragen € 41,95 (per 1 januari 2024), niet € 41,35."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.blaricum.nl/Uittreksels_en_akten/Verklaring_omtrent_gedrag_VOG",
+      "https://www.blaricum.nl/Bouwen_verbouwen_en_wonen/Bouwen_en_verbouwen/Omgevingsvergunning",
+      "https://www.blaricum.nl/Bestuur_en_organisatie/Organisatie/WOO_verzoek",
+      "https://www.blaricum.nl/Bouwen_verbouwen_en_wonen/Bouwen_en_verbouwen",
+      "https://www.blaricum.nl/"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "€ 41,35",
+          "original_reference": "De kosten voor het aanvragen van een VOG bedragen € 41,35.",
+          "note": "De kosten voor een VOG zijn identiek in beide bronnen",
+          "source_urls": [
+            "https://www.blaricum.nl/Uittreksels_en_akten/Verklaring_omtrent_gedrag_VOG"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Werkt u als vrijwilliger met minderjarigen of met mensen met een verstandelijke beperking, dan kunt u de VOG gratis aanvragen.",
+          "original_reference": "VOG voor vrijwilligers kan gratis worden aangevraagd als u met minderjarigen of met mensen met een verstandelijke beperking werkt.",
+          "note": "De voorwaarden voor gratis VOG voor vrijwilligers komen overeen",
+          "source_urls": [
+            "https://www.blaricum.nl/Uittreksels_en_akten/Verklaring_omtrent_gedrag_VOG"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Maak een afspraak voor het aanvragen van een VOG.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet expliciet dat er een afspraak gemaakt moet worden, terwijl dit wel een vereiste is volgens de bronpagina",
+          "source_urls": [
+            "https://www.blaricum.nl/Uittreksels_en_akten/Verklaring_omtrent_gedrag_VOG"
+          ]
+        }
+      ]
+    },
+    "summary": "De informatie komt grotendeels overeen, maar er is één belangrijk verschil gevonden: de originele tekst vermeldt niet expliciet dat er een afspraak gemaakt moet worden voor het aanvragen van een VOG, terwijl dit wel een vereiste is volgens de bronpagina. De kosten en voorwaarden voor gratis VOG voor vrijwilligers zijn consistent tussen beide bronnen."
+  }
+}

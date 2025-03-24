@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LEUSDEN",
+      "contact": {
+        "phone": "14 033",
+        "email": "gemeente@leusden.nl",
+        "website": "http://www.leusden.nl/"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 10,
+    "true_sentences": 9,
+    "false_sentences": 1,
+    "accuracy_percentage": 90.0,
+    "false_statements": [
+      {
+        "sentence": "Voor complexe aanvragen is de termijn maximaal 6 maanden.",
+        "status": "false",
+        "note": "Voor complexe aanvragen (uitgebreide procedure) geldt een wettelijke beslistermijn van 26 weken (ongeveer 6,5 maanden), niet 6 maanden. Deze termijn kan nog eenmaal verlengd worden met 6 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.leusden.nl/bouwen-en-wonen/omgevingsvergunning-aanvragen",
+      "https://www.leusden.nl/en/omgevingswet-gemeente-leusden",
+      "https://www.leusden.nl/en/bouwen-en-wonen/omgevingsvergunning-aanvragen",
+      "https://www.leusden.nl/ondernemersloket/vergunningen-en-meldingen-voor-ondernemers",
+      "https://www.leusden.nl/en/ondernemersloket/vergunningen-en-meldingen-voor-ondernemers"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U ontvangt van ons berichten over de voortgang, het verloop en de afhandeling van uw vergunningaanvraag of sloopmelding. Gemeente Leusden gebruikt een veilige berichtenomgeving via de website Jeleefomgeving.",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden een specifiek communicatiesysteem (Jeleefomgeving) voor het volgen van aanvragen, wat niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.leusden.nl/bouwen-en-wonen/omgevingsvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het adviesteam ruimtelijke kwaliteit adviseert graag over uw (ver)bouwplannen in een vroeg stadium.",
+          "original_reference": "No matching information",
+          "note": "De mogelijkheid tot vooroverleg met het adviesteam ruimtelijke kwaliteit wordt genoemd in de bronnen maar ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.leusden.nl/ondernemersloket/vergunningen-en-meldingen-voor-ondernemers"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De proceduretijd wordt korter van 26 naar 8 weken.",
+          "original_reference": "De reguliere behandeltermijn is maximaal 8 weken",
+          "note": "De bron vermeldt een recente wijziging in de proceduretijd (van 26 naar 8 weken) in het kader van de nieuwe Omgevingswet, wat extra context geeft die ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.leusden.nl/en/omgevingswet-gemeente-leusden"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie over het communicatiesysteem (Jeleefomgeving), de mogelijkheid tot vooroverleg met een adviesteam, en context over de nieuwe Omgevingswet die de proceduretijd heeft verkort. Deze informatie ontbreekt in de originele tekst maar is wel relevant voor aanvragers van een omgevingsvergunning."
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DORDRECHT",
+      "contact": {
+        "phone": "14 078",
+        "email": "null",
+        "website": "http://www.dordrecht.nl"
+      }
+    },
+    "service": {
+      "id": 3,
+      "name": "Certificaat voor opgraving aanvragen en vondst melden"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 7,
+    "true_sentences": 6,
+    "false_sentences": 1,
+    "accuracy_percentage": 85.7,
+    "false_statements": [
+      {
+        "sentence": "Het aanspreekpunt voor vragen met betrekking tot archeologische opgravingen is L. Groenenboom. U kunt contact opnemen via e-mail: l.groenenboom@dordrecht.nl of telefonisch op 078 770 4976.",
+        "status": "false",
+        "note": "Deze contactgegevens zijn verouderd. Op de huidige website van gemeente Dordrecht staat geen specifiek aanspreekpunt genoemd voor archeologische opgravingen met deze contactgegevens."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 0,
+    "invalid_urls": 5,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://cms.dordrecht.nl/Inwoners/Overzicht_Inwoners/Bouwen_en_verbouwen_voor_inwoners/Aanbouw_en_uitbouwen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://cms.dordrecht.nl/Inwoners/Overzicht_Inwoners/Bestemmingsplan_en_archief/Regionaal_Archief_Dordrecht",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://cms.dordrecht.nl/Inwoners/Overzicht_Inwoners/Melden_bij_de_gemeente/Klachten_over_de_gemeente",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://cms.dordrecht.nl/Inwoners/Overzicht_Inwoners/Melden_bij_de_gemeente/Status_volgen_van_aangevraagde_producten_diensten",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.dordrecht.nl/pls/idad/!mozEgemMbScherm1.toonDossier?F_DOS_VOLGNR=1904331&F_NOCACHE=55885385",
+        "reason": "INVALID: Error scraping https://www.dordrecht.nl/pls/idad/!mozEgemMbScherm1.toonDossier?F_DOS_VOLGNR=1904331&F_NOCACHE=55885385: HTTPSConnectionPool(host='www.dordrecht.nl', port=443): Max retries exceeded with url: /pls/idad/!mozEgemMbScherm1.toonDossier?F_DOS_VOLGNR=1904331&F_NOCACHE=55885385 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1018)')))"
+      }
+    ]
+  }
+}

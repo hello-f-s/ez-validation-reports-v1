@@ -1,0 +1,55 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HARLINGEN",
+      "contact": {
+        "phone": "14 0517",
+        "email": "info@harlingen.nl",
+        "website": "http://www.harlingen.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "In uw bedrijf mogen geen andere activiteiten plaatsvinden, zoals bij een bowlingcentrum.",
+        "status": "false",
+        "note": "Deze stelling is onjuist. Volgens de regelgeving van de Kansspelautoriteit en gemeente Harlingen mogen er wel andere activiteiten plaatsvinden in het bedrijf, zolang de hoofdactiviteit horeca blijft en het een hoogdrempelige inrichting betreft. Een bowlingcentrum kan bijvoorbeeld wel degelijk kansspelautomaten hebben als het voldoet aan de overige voorwaarden."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 3,
+    "valid_urls": 0,
+    "invalid_urls": 3,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.harlingen.nl/exploitatievergunning-horecabedrijf",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.harlingen.nl/vergunningen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.harlingen.nl",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  }
+}

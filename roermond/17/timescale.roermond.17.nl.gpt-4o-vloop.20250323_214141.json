@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ROERMOND",
+      "contact": {
+        "phone": "14 0475",
+        "email": "mail@roermond.nl",
+        "website": "http://www.roermond.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "Foto's van het terrasmeubilair (stoelen alleen in rotan of rotanlook).",
+        "status": "false",
+        "note": "Volgens het huidige terrassenbeleid van de gemeente Roermond zijn er geen specifieke beperkingen meer voor het materiaal van terrasmeubilair tot alleen rotan of rotanlook. Het meubilair moet wel van duurzame kwaliteit zijn en passen in het straatbeeld."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.roermond.nl/terrasvergunning",
+      "https://www.roermond.nl/exploitatievergunning-horeca",
+      "https://www.roermond.nl/marktstandplaats-aanvragen",
+      "https://www.roermond.nl/omgevingsvergunning",
+      "https://www.roermond.nl/alcoholwetvergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U kunt uw aanvraag eenvoudig indienen via bovenstaande online formulieren. Een aanvraag op papier is ook nog mogelijk.",
+          "original_reference": "Dien uw aanvraag in via de online formulieren of per post naar:",
+          "note": "De originele tekst suggereert gelijkwaardige opties, terwijl de brontekst benadrukt dat online de voorkeursroute is en papier een alternatief.",
+          "source_urls": [
+            "https://www.roermond.nl/terrasvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Verstuur de aanvraag naar mail@roermond.nl of per post",
+          "original_reference": "Dien uw aanvraag in via de online formulieren of per post naar:",
+          "note": "De bronnen vermelden een e-mailoptie (mail@roermond.nl) die niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.roermond.nl/exploitatievergunning-horeca"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De behandeltermijn is 8 weken bij een complete aanvraag. Deze termijn kan met 8 weken worden verlengd.",
+          "original_reference": "De gemeente beslist binnen 8 weken over uw vergunning. Deze termijn kan worden verlengd indien niet alle benodigde informatie is ingediend.",
+          "note": "De bron specificeert een concrete verlengingstermijn van 8 weken, terwijl de originele tekst geen specifieke verlengingstermijn noemt.",
+          "source_urls": [
+            "https://www.roermond.nl/exploitatievergunning-horeca"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de aanvraagmethoden (extra e-mailoptie), de nadruk op online aanvragen als voorkeursroute, en een specifiekere beschrijving van de verlengingstermijn (8 weken) in de bronnen. Deze verschillen hebben impact op de praktische uitvoering van de aanvraagprocedure."
+  }
+}

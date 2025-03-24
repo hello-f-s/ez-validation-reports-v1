@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LEEUWARDEN",
+      "contact": {
+        "phone": "14 058",
+        "email": "gemeente@leeuwarden.nl",
+        "website": "http://www.leeuwarden.nl"
+      }
+    },
+    "service": {
+      "id": 2,
+      "name": "Bord of spandoek plaatsen aan de openbare weg"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor een gevelreclamevergunning bedragen €165,20 per reclame uiting.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Leeuwarden bedragen de legeskosten voor een gevelreclamevergunning €167,85 per reclame-uiting (tarief 2024), niet €165,20."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.leeuwarden.nl/omgevingsvergunning/gebruikmaken-maken-of-veranderen-van-een-uitweg/",
+      "https://www.leeuwarden.nl/omgevingsvergunning/procedure-omgevingsvergunning-aanvragen-of-melden/",
+      "https://www.leeuwarden.nl/andere-vergunningen-en-ontheffingen/gebruik-openbare-ruimte/",
+      "https://www.leeuwarden.nl/omgevingsvergunning/reclame/",
+      "https://www.leeuwarden.nl/andere-vergunningen-en-ontheffingen/standplaatsvergunning/"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Doe dit minstens 3 weken voordat u die nodig heeft.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt geen minimale aanvraagtermijn voor een vergunning, terwijl de bron specificeert dat dit minstens 3 weken van tevoren moet.",
+          "source_urls": [
+            "https://www.leeuwarden.nl/andere-vergunningen-en-ontheffingen/gebruik-openbare-ruimte/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Zelf objecten plaatsen in de openbare ruimte is niet toegestaan.",
+          "original_reference": "Om een bord of spandoek aan de openbare weg te plaatsen, moet uw aanvraag voldoen aan de gemeentelijke regelgeving.",
+          "note": "De bron vermeldt expliciet dat het zelf plaatsen van objecten in de openbare ruimte niet is toegestaan, terwijl de originele tekst suggereert dat dit wel mogelijk is met een vergunning.",
+          "source_urls": [
+            "https://www.leeuwarden.nl/omgevingsvergunning/reclame/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor uitstallingen bij winkels, instellingen en toeristische attracties is geen omgevingsvergunning nodig als wordt voldaan aan bepaalde voorwaarden.",
+          "original_reference": "Eventueel een omgevingsvergunning indien vereist",
+          "note": "De bron specificeert dat voor bepaalde uitstallingen geen omgevingsvergunning nodig is, terwijl de originele tekst dit als mogelijke vereiste noemt.",
+          "source_urls": [
+            "https://www.leeuwarden.nl/omgevingsvergunning/reclame/"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn belangrijke verschillen gevonden tussen de originele tekst en de bronnen, vooral met betrekking tot de aanvraagtermijn, het zelf plaatsen van objecten in de openbare ruimte, en de vereisten voor omgevingsvergunningen. De bronnen zijn specifieker en strikter in hun voorwaarden dan de originele tekst suggereert."
+  }
+}

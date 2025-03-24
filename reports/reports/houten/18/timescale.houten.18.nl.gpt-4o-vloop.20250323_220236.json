@@ -1,0 +1,98 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HOUTEN",
+      "contact": {
+        "phone": "(030) 639 26 11",
+        "email": "gemeentehuis@houten.nl",
+        "website": "http://www.houten.nl"
+      }
+    },
+    "service": {
+      "id": 18,
+      "name": "Ventvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 35,
+    "true_sentences": 31,
+    "false_sentences": 4,
+    "accuracy_percentage": 88.6,
+    "false_statements": [
+      {
+        "sentence": "Vanaf 1 november 2024 is een huisvestingsvergunning nodig voor nieuwbouwwoningen tot €405.000.",
+        "status": "false",
+        "note": "De prijsgrens voor huisvestingsvergunningen in Houten is anders dan vermeld en de ingangsdatum is niet correct volgens de gemeentelijke website"
+      },
+      {
+        "sentence": "Exploitatievergunning horeca: €388,65",
+        "status": "false",
+        "note": "Dit tarief komt niet overeen met de actuele tarieven van de gemeente Houten"
+      },
+      {
+        "sentence": "Ontheffing van vergunningplicht: €83,50",
+        "status": "false",
+        "note": "Dit tarief komt niet overeen met de actuele tarieven van de gemeente Houten"
+      },
+      {
+        "sentence": "Huisvestingsvergunning: €86,80",
+        "status": "false",
+        "note": "Dit tarief komt niet overeen met de actuele tarieven van de gemeente Houten"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.houten.nl/wonen-en-leefomgeving/bouw-en-verbouw/omgevingsvergunning/aanvraagprocedure-omgevingsvergunning",
+      "https://www.houten.nl/ondernemen/regelen/horecabedrijf-exploiteren",
+      "https://www.houten.nl/sport-cultuur-en-recreatie/evenement-organiseren",
+      "https://www.houten.nl/uittreksels-verklaringen-en-aktes/verklaring-omtrent-gedrag",
+      "https://www.houten.nl/wonen-en-leefomgeving/woning-zoeken/aanvragen-huisvestingsvergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Vanaf 1 november 2024 is een huisvestingsvergunning nodig voor nieuwbouwwoningen tot €405.000",
+          "original_reference": "Vanaf 1 november 2024 is een huisvestingsvergunning nodig voor nieuwbouwwoningen tot €405.000",
+          "note": "De informatie over de ingangsdatum en prijsgrens voor huisvestingsvergunningen komt exact overeen",
+          "source_urls": [
+            "https://www.houten.nl/wonen-en-leefomgeving/woning-zoeken/aanvragen-huisvestingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "VOG kosten in 2025: €41,35 (eigen aanvraag) of €33,85 (via werkgever)",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de kosten van een VOG, terwijl dit wel vermeld staat in de bronpagina",
+          "source_urls": [
+            "https://www.houten.nl/uittreksels-verklaringen-en-aktes/verklaring-omtrent-gedrag"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Minimaal 10 werkdagen voor de activiteit doet u de melding",
+          "original_reference": "12 tot 16 weken voor het evenement worden aangevraagd",
+          "note": "Er is een verschil in aanvraagtermijnen: de bron maakt onderscheid tussen meldingen (10 werkdagen) en vergunningen (12-16 weken), terwijl de originele tekst alleen de langere termijn noemt",
+          "source_urls": [
+            "https://www.houten.nl/sport-cultuur-en-recreatie/evenement-organiseren"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont enkele belangrijke verschillen tussen de originele tekst en de bronnen. Met name de kosten voor VOG-aanvragen ontbreken in de originele tekst, en er is een belangrijk onderscheid in aanvraagtermijnen voor evenementen dat niet volledig wordt weergegeven. De informatie over huisvestingsvergunningen is wel consistent tussen beide bronnen. Het zou nuttig zijn om de originele tekst aan te vullen met de ontbrekende informatie over VOG-kosten en het onderscheid tussen meldingen en vergunningen voor evenementen duidelijker te maken."
+  }
+}

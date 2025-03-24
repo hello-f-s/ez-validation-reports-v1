@@ -1,0 +1,68 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AMERSFOORT",
+      "contact": {
+        "phone": "14 033",
+        "email": "info@amersfoort.nl",
+        "website": "http://www.amersfoort.nl"
+      }
+    },
+    "service": {
+      "id": 16,
+      "name": "Registreren in het Landelijk Register Kinderopvang (LRK)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 17,
+    "false_sentences": 2,
+    "accuracy_percentage": 89.5,
+    "false_statements": [
+      {
+        "sentence": "De aanvraagprocedure bij de GGD duurt maximaal 10 weken.",
+        "status": "false",
+        "note": "Volgens de officiële richtlijnen duurt de aanvraagprocedure bij de GGD maximaal 13 weken, niet 10 weken."
+      },
+      {
+        "sentence": "Voorziening voor gastouderopvang: €154,62",
+        "status": "false",
+        "note": "De actuele legeskosten voor een voorziening voor gastouderopvang in Amersfoort bedragen €159,00 volgens de legesverordening 2024."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 0,
+    "invalid_urls": 5,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.amersfoort.nl/kinderopvang-starten",
+        "reason": "INVALID: Error scraping https://www.amersfoort.nl/kinderopvang-starten: HTTPSConnectionPool(host='www.amersfoort.nl', port=443): Max retries exceeded with url: /kinderopvang-starten (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x107f63770>: Failed to resolve 'www.amersfoort.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.amersfoort.nl/registratie-levenloos-geboren-kinderen-de-brp",
+        "reason": "INVALID: Error scraping https://www.amersfoort.nl/registratie-levenloos-geboren-kinderen-de-brp: HTTPSConnectionPool(host='www.amersfoort.nl', port=443): Max retries exceeded with url: /registratie-levenloos-geboren-kinderen-de-brp (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x108080690>: Failed to resolve 'www.amersfoort.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.amersfoort.nl/gemeentelijke-tegemoetkoming-kosten-kinderopvang",
+        "reason": "INVALID: Error scraping https://www.amersfoort.nl/gemeentelijke-tegemoetkoming-kosten-kinderopvang: HTTPSConnectionPool(host='www.amersfoort.nl', port=443): Max retries exceeded with url: /gemeentelijke-tegemoetkoming-kosten-kinderopvang (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x108081090>: Failed to resolve 'www.amersfoort.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.amersfoort.nl/vanuit-het-buitenland-naar-amersfoort-verhuizen-immigreren",
+        "reason": "INVALID: Error scraping https://www.amersfoort.nl/vanuit-het-buitenland-naar-amersfoort-verhuizen-immigreren: HTTPSConnectionPool(host='www.amersfoort.nl', port=443): Max retries exceeded with url: /vanuit-het-buitenland-naar-amersfoort-verhuizen-immigreren (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x108081450>: Failed to resolve 'www.amersfoort.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.amersfoort.nl/registratie-de-verwijsindex",
+        "reason": "INVALID: Error scraping https://www.amersfoort.nl/registratie-de-verwijsindex: HTTPSConnectionPool(host='www.amersfoort.nl', port=443): Max retries exceeded with url: /registratie-de-verwijsindex (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x108081810>: Failed to resolve 'www.amersfoort.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  }
+}

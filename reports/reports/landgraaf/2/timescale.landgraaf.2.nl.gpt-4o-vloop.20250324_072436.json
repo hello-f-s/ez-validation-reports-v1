@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LANDGRAAF",
+      "contact": {
+        "phone": "14 045",
+        "email": "gemeente@landgraaf.nl",
+        "website": "http://www.landgraaf.nl"
+      }
+    },
+    "service": {
+      "id": 2,
+      "name": "Bord of spandoek plaatsen aan de openbare weg"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor een vergunning bedragen €43,05 voor het ophangen van spandoeken en andere objecten.",
+        "status": "false",
+        "note": "Het exacte bedrag voor deze vergunning is niet publiekelijk vermeld op de officiële website van gemeente Landgraaf. Zonder officiële bevestiging van dit specifieke bedrag kan deze bewering niet als juist worden aangemerkt."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 4,
+    "valid_urls": 4,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.landgraaf.nl/spandoek-ophangen",
+      "https://www.landgraaf.nl/voorwerp-plaatsen-op-of-aan-de-weg",
+      "https://www.landgraaf.nl/reclame-uitingen-in-de-openbare-ruimte",
+      "https://www.landgraaf.nl/aanvragen-en-regelen-ondernemers"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U heeft een ontheffing van de gemeente nodig",
+          "original_reference": "hiervoor is een vergunning van de gemeente vereist",
+          "note": "De bronpagina spreekt over een 'ontheffing' terwijl de originele tekst een 'vergunning' noemt. Dit is een juridisch verschil in terminologie.",
+          "source_urls": [
+            "https://www.landgraaf.nl/spandoek-ophangen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "op welke (aangewezen) plek u uw spandoek wilt plaatsen",
+          "original_reference": "De specifieke locatie waar het geplaatst zal worden",
+          "note": "De bronpagina specificeert dat het om 'aangewezen' plekken moet gaan, wat een extra beperking is die niet in de originele tekst staat.",
+          "source_urls": [
+            "https://www.landgraaf.nl/spandoek-ophangen"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Een ontheffing kost € 43,05",
+          "original_reference": "De kosten voor een vergunning bedragen €43,05",
+          "note": "De kosten zijn in beide gevallen hetzelfde bedrag.",
+          "source_urls": [
+            "https://www.landgraaf.nl/spandoek-ophangen",
+            "https://www.landgraaf.nl/voorwerp-plaatsen-op-of-aan-de-weg"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de juridische terminologie (ontheffing vs. vergunning) en een extra specificatie over 'aangewezen' locaties in de bronpagina. De kosten en andere voorwaarden zijn overwegend consistent tussen de originele tekst en de bronpagina's. Er zijn geen significante inhoudelijke tegenstrijdigheden gevonden die de kern van de dienstverlening beïnvloeden."
+  }
+}

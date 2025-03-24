@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ALKMAAR",
+      "contact": {
+        "phone": "14 072",
+        "email": "post@alkmaar.nl",
+        "website": "http://www.alkmaar.nl"
+      }
+    },
+    "service": {
+      "id": 6,
+      "name": "Integriteitsonderzoek (Wet Bibob)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 17,
+    "false_sentences": 2,
+    "accuracy_percentage": 89.5,
+    "false_statements": [
+      {
+        "sentence": "De aanvrager moet ingeschreven staan bij de Kamer van Koophandel, voldoen aan eisen van sociale hygiëne, en ouder zijn dan 21 jaar.",
+        "status": "false",
+        "note": "De minimumleeftijd voor een horecavergunning in Alkmaar is 18 jaar, niet 21 jaar."
+      },
+      {
+        "sentence": "De kosten voor het in behandeling nemen van uw aanvraag zijn € 315,99. Dit bedrag wordt ook in rekening gebracht als de vergunning niet wordt verleend.",
+        "status": "false",
+        "note": "Dit bedrag komt niet overeen met de actuele legeskosten volgens de tarieventabel van de gemeente Alkmaar."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.alkmaar.nl/direct-regelen/afval/het-ergens-niet-mee-eens-zijn/woo-verzoek",
+      "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/horeca/drank-en-horecawet-vergunning",
+      "https://www.alkmaar.nl/direct-regelen/ondernemen/vergunningen-en-ontheffingen/exploitatievergunning/",
+      "https://www.alkmaar.nl/direct-regelen/reisdocumenten-uittreksels-en-verklaringen/uittreksels-en-verklaringen/opvragen-persoonsgegevens-door-advocaten-en-notarissen",
+      "https://www.alkmaar.nl/direct-regelen/afval/het-ergens-niet-mee-eens-zijn/klacht-over-het-handelen-van-de-gemeente"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Bij de aanvraag van horecavergunningen wordt altijd een Bibob-toets gedaan (met uitzondering van aanvragen door een vereniging of stichting).",
+          "original_reference": "De aanvraag voor het Bibob-onderzoek is vereist bij de aanvraag van horecavergunningen, met uitzondering van aanvragen door een vereniging of stichting.",
+          "note": "De informatie over de Bibob-toets en de uitzondering voor verenigingen en stichtingen komt exact overeen",
+          "source_urls": [
+            "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/horeca/drank-en-horecawet-vergunning"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "U hoort binnen 8 weken of u de vergunning krijgt. De gemeente kan deze termijn verlengen, met nog eens 8 weken.",
+          "original_reference": "U ontvangt binnen 8 weken informatie of u de vergunning krijgt. Deze termijn kan door de gemeente worden verlengd met nog eens 8 weken.",
+          "note": "De behandeltermijn en mogelijke verlenging komen overeen",
+          "source_urls": [
+            "https://www.alkmaar.nl/direct-regelen/ondernemen/vergunningen-en-ontheffingen/exploitatievergunning/"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Een bedrijfs- of ondernemingsplan; Een huurovereenkomst, eigendomsbewijs of pachtovereenkomst van het pand; Een plattegrond van het pand; Een kopie van een geldig legitimatiebewijs van de ondernemer(s) en alle leidinggevenden / beheerders die in loondienst zijn.",
+          "original_reference": "Een bedrijfs- of ondernemingsplan; Een huurovereenkomst, eigendomsbewijs of pachtovereenkomst van het pand; Een plattegrond van het pand; Een kopie van een geldig legitimatiebewijs van de ondernemer(s) en alle leidinggevenden / beheerders die in loondienst zijn.",
+          "note": "De vereiste documenten voor de aanvraag komen exact overeen",
+          "source_urls": [
+            "https://www.alkmaar.nl/direct-regelen/ondernemen/vergunningen-en-ontheffingen/exploitatievergunning/"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse van de bronnen zijn er geen significante verschillen gevonden tussen de originele inhoud en de geciteerde bronnen. De informatie over de Bibob-toets, behandeltermijnen en vereiste documenten komt overeen. De kosten en overige voorwaarden konden niet worden geverifieerd omdat deze informatie niet in de geciteerde bronnen voorkomt."
+  }
+}

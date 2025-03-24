@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HAARLEM",
+      "contact": {
+        "phone": "14 023",
+        "email": "antwoord@haarlem.nl",
+        "website": "http://www.haarlem.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor het aanvragen van een VOG bedragen € 41,35.",
+        "status": "false",
+        "note": "De actuele kosten voor een VOG bedragen € 41,35 bij digitale aanvraag en € 47,55 bij aanvraag aan de balie van de gemeente Haarlem."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.haarlem.nl/ufs/formulieren.eb?id=aanvraag_alcoholvergunning_model_b_hlm",
+      "https://www.haarlem.nl/ufs/formulieren.eb?id=aanvraag_alcoholvergunning_model_a_hlm",
+      "https://haarlem.nl/nederlander-worden",
+      "https://haarlem.nl/alle-regels-en-documenten-vergunningsplichtige-activiteiten",
+      "https://haarlem.nl/verklaring-omtrent-gedrag-vog"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een VOG vraagt u aan bij Dienst Justis. De werkgever of instantie die de VOG van u vraagt, moet de aanvraag eerst klaarzetten in het systeem.",
+          "original_reference": "De VOG-aanvraag kan worden ingediend bij Dienst Justis. Als ondernemer kunt u ook de aanvraag indienen in de publiekshal van de gemeente.",
+          "note": "De originele tekst suggereert dat ondernemers direct kunnen aanvragen, terwijl de brontekst aangeeft dat de werkgever/instantie de aanvraag eerst moet klaarzetten in het systeem.",
+          "source_urls": [
+            "https://haarlem.nl/verklaring-omtrent-gedrag-vog"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor sommige beroepen hebt u een Verklaring Omtrent het Gedrag (VOG) nodig. Dit is een bewijs van goed gedrag.",
+          "original_reference": "Als ondernemer kunt u een Verklaring Omtrent Gedrag (VOG) aanvragen voor natuurlijke personen.",
+          "note": "De originele tekst richt zich specifiek op ondernemers, terwijl de brontekst algemener is en aangeeft dat het voor 'sommige beroepen' nodig is.",
+          "source_urls": [
+            "https://haarlem.nl/verklaring-omtrent-gedrag-vog"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U kunt de VOG ook aanvragen in de publiekshal. Hiervoor maakt u een afspraak",
+          "original_reference": "Als ondernemer kunt u ook de aanvraag indienen in de publiekshal van de gemeente. Maak hiervoor een afspraak.",
+          "note": "De brontekst is algemener en stelt de mogelijkheid open voor iedereen, niet alleen voor ondernemers zoals in de originele tekst.",
+          "source_urls": [
+            "https://haarlem.nl/verklaring-omtrent-gedrag-vog"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de doelgroep en het aanvraagproces. De originele tekst is specifiek gericht op ondernemers, terwijl de brontekst een breder publiek aanspreekt. Ook blijkt uit de bron dat een werkgever/instantie eerst de aanvraag moet klaarzetten, wat niet vermeld wordt in de originele tekst. Dit is een belangrijk procedureel verschil dat het aanvraagproces kan beïnvloeden."
+  }
+}

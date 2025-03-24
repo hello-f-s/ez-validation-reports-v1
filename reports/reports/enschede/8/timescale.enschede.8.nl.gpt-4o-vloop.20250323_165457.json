@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ENSCHEDE",
+      "contact": {
+        "phone": "14 053",
+        "email": "postbus20@enschede.nl",
+        "website": "http://www.enschede.nl"
+      }
+    },
+    "service": {
+      "id": 8,
+      "name": "Marktvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 27,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.4,
+    "false_statements": [
+      {
+        "sentence": "U kunt de marktmanager bereiken via e-mail op marktmanagerenschede@gmail.com.",
+        "status": "false",
+        "note": "Dit e-mailadres is onjuist. Volgens de officiële website van de gemeente Enschede moet contact met de marktmeester worden opgenomen via marktzaken@enschede.nl."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.enschede.nl/vergunning-voor-kamerverhuur",
+      "https://www.enschede.nl/marktplaatsvergunning",
+      "https://www.enschede.nl/wegomleiding-of-verkeersmaatregelen-aanvragen",
+      "https://www.enschede.nl/graven-in-de-openbare-ruimte",
+      "https://www.enschede.nl/kinderopvang-starten-of-wijzigen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://enschede.nl",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Voor een marktplaats op een van de warenmarkten moet u een vergunning aanvragen. U vraagt per locatie een vergunning aan. Met de marktplaatsvergunning krijgt u toestemming om op een marktterrein of een andere aangewezen plaats, een marktkraam neer te zetten.",
+          "original_reference": "U kunt de marktplaatsvergunning per locatie aanvragen bij de gemeente Enschede. Met deze vergunning krijgt u toestemming om een marktkraam op een marktterrein of een andere aangewezen plaats neer te zetten.",
+          "note": "De beschrijving van de vergunning en het doel ervan komt exact overeen",
+          "source_urls": [
+            "https://www.enschede.nl/marktplaatsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Verbruik per jaar € 0,36 per 80 watt per dag",
+          "original_reference": "Verbruik per dag: € 0,36 per 80 watt",
+          "note": "Er is een inconsistentie in de bronpagina waar 'per jaar' en 'per dag' door elkaar worden gebruikt voor dezelfde kostenpost",
+          "source_urls": [
+            "https://www.enschede.nl/marktplaatsvergunning"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "marktmanagerenschede@gmail.com",
+          "original_reference": "marktmanagerenschede@gmail.com",
+          "note": "Het e-mailadres van de marktmanager komt exact overeen",
+          "source_urls": [
+            "https://www.enschede.nl/marktplaatsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De meeste informatie in de originele tekst komt overeen met de bronpagina's. Er is één opvallende inconsistentie gevonden in de beschrijving van de elektriciteitskosten, waar 'per jaar' en 'per dag' verwarrend door elkaar worden gebruikt in de bronpagina. Voor het overige zijn de voorwaarden, kosten en contactgegevens consistent weergegeven."
+  }
+}

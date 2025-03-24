@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OPMEER",
+      "contact": {
+        "phone": "(0226) 36 33 33",
+        "email": "gemeente@opmeer.nl",
+        "website": "http://www.opmeer.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 27,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.4,
+    "false_statements": [
+      {
+        "sentence": "De kosten hiervoor bedragen € 41,35.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Opmeer bedragen de kosten voor een VOG-aanvraag aan de balie € 41,85, niet € 41,35."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.opmeer.nl/verklaring-omtrent-het-gedrag-vog/",
+      "https://www.opmeer.nl/verklaring-omtrent-het-gedrag-vog",
+      "https://www.opmeer.nl/nederlander-worden-door-optie",
+      "https://www.opmeer.nl/informatie-over-beleid-of-besluiten-opvragen-who-verzoek",
+      "https://www.opmeer.nl/omgevingsvergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "U heeft hiervoor uw DigiD nodig en een scan van het ingevulde en ondertekende aanvraagformulier. Deze scan moet worden geüpload tijdens de digitale aanvraag. Bij de aanvraag wordt u meteen verzocht om vooraf via iDEAL € 33,85 te betalen.",
+          "original_reference": "U heeft hiervoor uw DigiD nodig en een scan van het ingevulde aanvraagformulier. De betaling van € 33,85 wordt via iDEAL gedaan.",
+          "note": "De broninhoud specificeert expliciet dat het formulier ondertekend moet zijn en geüpload moet worden, wat meer gedetailleerd is dan de originele tekst maar niet tegenstrijdig.",
+          "source_urls": [
+            "https://www.opmeer.nl/verklaring-omtrent-het-gedrag-vog/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U krijgt een formulier van uw werkgever of andere organisatie.",
+          "original_reference": "No matching information",
+          "note": "De bron vermeldt een extra stap die niet in de originele tekst staat: dat het formulier van de werkgever of organisatie moet komen.",
+          "source_urls": [
+            "https://www.opmeer.nl/verklaring-omtrent-het-gedrag-vog/"
+          ]
+        }
+      ]
+    },
+    "summary": "De broninhoud komt grotendeels overeen met de originele tekst, maar bevat enkele belangrijke aanvullende details. Met name wordt gespecificeerd dat het aanvraagformulier van de werkgever of organisatie moet komen en dat het formulier expliciet ondertekend en geüpload moet worden bij een online aanvraag. Deze details ontbreken in de originele tekst maar zijn wel relevant voor de aanvraagprocedure."
+  }
+}

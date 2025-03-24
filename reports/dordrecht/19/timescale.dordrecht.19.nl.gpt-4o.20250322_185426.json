@@ -1,0 +1,71 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DORDRECHT",
+      "contact": {
+        "phone": "14 078",
+        "email": "null",
+        "website": "http://www.dordrecht.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 10,
+    "true_sentences": 9,
+    "false_sentences": 1,
+    "accuracy_percentage": 90.0,
+    "false_statements": [
+      {
+        "sentence": "Voor een kansspelautomaat: U ontvangt binnen 3 weken bericht.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Dordrecht duurt de behandeling van een aanvraag voor een kansspelautomaat maximaal 8 weken, niet 3 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 0,
+    "invalid_urls": 7,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://cms.dordrecht.nl/Ondernemers/Overzicht_Ondernemers/Speelautomaten_en_escort/Loterij_prijsvraag_of_bingo_organiseren",
+        "reason": "INVALID: Error scraping https://cms.dordrecht.nl/Ondernemers/Overzicht_Ondernemers/Speelautomaten_en_escort/Loterij_prijsvraag_of_bingo_organiseren: 404 Client Error:  for url: https://cms.dordrecht.nl/Ondernemers/Overzicht_Ondernemers/Speelautomaten_en_escort/Loterij_prijsvraag_of_bingo_organiseren"
+      },
+      {
+        "url": "https://cms.dordrecht.nl/Ondernemers/Overzicht_Ondernemers/Speelautomaten_en_escort/Exploitatievergunning_speelautomatenhal",
+        "reason": "INVALID: Error scraping https://cms.dordrecht.nl/Ondernemers/Overzicht_Ondernemers/Speelautomaten_en_escort/Exploitatievergunning_speelautomatenhal: 404 Client Error:  for url: https://cms.dordrecht.nl/Ondernemers/Overzicht_Ondernemers/Speelautomaten_en_escort/Exploitatievergunning_speelautomatenhal"
+      },
+      {
+        "url": "https://cms.dordrecht.nl/Ondernemers/Overzicht_Ondernemers/Speelautomaten_en_escort",
+        "reason": "INVALID: Error scraping https://cms.dordrecht.nl/Ondernemers/Overzicht_Ondernemers/Speelautomaten_en_escort: 404 Client Error:  for url: https://cms.dordrecht.nl/Ondernemers/Overzicht_Ondernemers/Speelautomaten_en_escort"
+      },
+      {
+        "url": "https://cms.dordrecht.nl/Ondernemers/Overzicht_Ondernemers/Speelautomaten_en_escort/Aanwezigheidsvergunning",
+        "reason": "INVALID: Error scraping https://cms.dordrecht.nl/Ondernemers/Overzicht_Ondernemers/Speelautomaten_en_escort/Aanwezigheidsvergunning: 404 Client Error:  for url: https://cms.dordrecht.nl/Ondernemers/Overzicht_Ondernemers/Speelautomaten_en_escort/Aanwezigheidsvergunning"
+      },
+      {
+        "url": "https://cms.dordrecht.nl/Inwoners/Overzicht_Inwoners/Vergunningen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.dordrecht.nl/ondernemers/kansspelautomaat-plaatsen",
+        "reason": "INVALID: Error scraping https://www.dordrecht.nl/ondernemers/kansspelautomaat-plaatsen: HTTPSConnectionPool(host='www.dordrecht.nl', port=443): Max retries exceeded with url: /ondernemers/kansspelautomaat-plaatsen (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1018)')))"
+      },
+      {
+        "url": "https://www.dordrecht.nl/ondernemers/exploitatievergunning-speelhal",
+        "reason": "INVALID: Error scraping https://www.dordrecht.nl/ondernemers/exploitatievergunning-speelhal: HTTPSConnectionPool(host='www.dordrecht.nl', port=443): Max retries exceeded with url: /ondernemers/exploitatievergunning-speelhal (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1018)')))"
+      }
+    ]
+  }
+}

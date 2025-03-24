@@ -1,0 +1,76 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ASSEN",
+      "contact": {
+        "phone": "(0592) 36 69 11",
+        "email": "info@assen.nl",
+        "website": "http://www.assen.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 17,
+    "false_sentences": 2,
+    "accuracy_percentage": 89.5,
+    "false_statements": [
+      {
+        "sentence": "Voor evenementen met minder dan 50 personen is alleen een melding vereist, geen vergunning.",
+        "status": "false",
+        "note": "Volgens de gemeente Assen wordt een evenement als 'klein evenement' beschouwd bij minder dan 100 personen, niet 50 personen. Voor kleine evenementen is een melding vereist."
+      },
+      {
+        "sentence": "Voor A-evenementen moet de aanvraag minimaal 12 weken voorafgaand aan het evenement worden gedaan.",
+        "status": "false",
+        "note": "Volgens de gemeente Assen moet een evenementenvergunning minimaal 8 weken van tevoren worden aangevraagd, niet 12 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 0,
+    "invalid_urls": 7,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.assen.nl/evenement-organiseren-gemeente-assen\">Gemeente",
+        "reason": "INVALID: Error scraping https://www.assen.nl/evenement-organiseren-gemeente-assen\">Gemeente: 404 Client Error: Not Found for url: https://www.assen.nl/evenement-organiseren-gemeente-assen%22%3EGemeente"
+      },
+      {
+        "url": "https://www.assen.nl/evenement-organiseren-gemeente-assen",
+        "reason": "INVALID: Error scraping https://www.assen.nl/evenement-organiseren-gemeente-assen: 404 Client Error: Not Found for url: https://www.assen.nl/evenement-organiseren-gemeente-assen"
+      },
+      {
+        "url": "https://www.assen.nl/evenementenkalender",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.assen.nl/langere-openingstijden-voor-uw-horecabedrijf-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.assen.nl/adviescommissie-evenementsubsidies",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.assen.nl/een-evenement-organiseren",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.assen.nl/verkoopdemonstratie-houden-in-horecagelegenheid",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  }
+}

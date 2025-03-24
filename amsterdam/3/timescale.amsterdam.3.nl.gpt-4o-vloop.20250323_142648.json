@@ -1,0 +1,89 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AMSTERDAM",
+      "contact": {
+        "phone": "14 020",
+        "email": "null",
+        "website": "http://www.amsterdam.nl"
+      }
+    },
+    "service": {
+      "id": 3,
+      "name": "Certificaat voor opgraving aanvragen en vondst melden"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Telefonisch contact is ook mogelijk via 14 020, van maandag tot en met vrijdag tussen 08.00 en 18.00 uur.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Amsterdam is het algemene telefoonnummer 14 020 bereikbaar van maandag tot en met vrijdag van 08.00 tot 17.00 uur, niet tot 18.00 uur."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 4,
+    "valid_urls": 2,
+    "invalid_urls": 2,
+    "accuracy_percentage": 50.0,
+    "valid_urls_list": [
+      "https://www.amsterdam.nl/kunst-cultuur/monumenten/archeologie/wetgeving/",
+      "https://www.amsterdam.nl/veelgevraagd/klacht-indienen-over-de-gemeente-42fd5"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.amsterdam.nl/kunst-cultuur/monumenten/vragen/archeologie/archeologisch-object-gevonden/",
+        "reason": "INVALID: Error scraping https://www.amsterdam.nl/kunst-cultuur/monumenten/vragen/archeologie/archeologisch-object-gevonden/: 403 Client Error: Forbidden for url: https://www.amsterdam.nl/kunst-cultuur/monumenten/vragen/archeologie/archeologisch-object-gevonden/"
+      },
+      {
+        "url": "https://www.amsterdam.nl/kunst-cultuur/monumenten/vragen/",
+        "reason": "INVALID: Error scraping https://www.amsterdam.nl/kunst-cultuur/monumenten/vragen/: 403 Client Error: Forbidden for url: https://www.amsterdam.nl/kunst-cultuur/monumenten/vragen/"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Alleen gecertificeerde organisaties die werken volgens de Kwaliteitsnorm Nederlandse Archeologie (KNA) zijn bevoegd om archeologisch onderzoek uit te voeren",
+          "original_reference": "Alleen gecertificeerde organisaties die voldoen aan de Kwaliteitsnorm Nederlandse Archeologie (KNA) mogen archeologisch onderzoek uitvoeren",
+          "note": "De informatie over certificeringsvereisten komt overeen met de originele tekst",
+          "source_urls": [
+            "https://www.amsterdam.nl/kunst-cultuur/monumenten/archeologie/wetgeving/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De basis voor het archeologiebeleid in Nederland werd gelegd met het verdrag van Malta dat in 1992 door de Europese lidstaten werd getekend",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke historische context over het verdrag van Malta uit 1992, wat de basis vormt voor het huidige archeologiebeleid",
+          "source_urls": [
+            "https://www.amsterdam.nl/kunst-cultuur/monumenten/archeologie/wetgeving/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Gemeenten hebben sindsdien de taak om archeologisch erfgoed zorgvuldig en vroegtijdig mee te wegen in ruimtelijke ontwikkelingen, zodat ontwikkelaars en particulieren hierop kunnen anticiperen en planvertraging wordt voorkomen",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist informatie over de preventieve rol van gemeenten bij het voorkomen van planvertragingen door vroegtijdige archeologische overwegingen",
+          "source_urls": [
+            "https://www.amsterdam.nl/kunst-cultuur/monumenten/archeologie/wetgeving/"
+          ]
+        }
+      ]
+    },
+    "summary": "De originele tekst bevat de kernpunten over archeologische vondsten en certificeringsvereisten, maar mist enkele belangrijke contextuele elementen. Met name ontbreekt informatie over het verdrag van Malta uit 1992 en de preventieve rol van gemeenten bij ruimtelijke ontwikkelingen. Deze elementen zijn wel aanwezig in de bronpagina's en geven belangrijke achtergrond bij het huidige beleid."
+  }
+}

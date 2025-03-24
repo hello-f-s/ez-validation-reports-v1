@@ -1,0 +1,93 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MONTFOORT",
+      "contact": {
+        "phone": "(0348) 47 64 00",
+        "email": "info@montfoort.nl",
+        "website": "http://www.montfoort.nl"
+      }
+    },
+    "service": {
+      "id": 18,
+      "name": "Ventvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 9,
+    "true_sentences": 6,
+    "false_sentences": 3,
+    "accuracy_percentage": 66.7,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor een standplaatsvergunning bedragen €197,30.",
+        "status": "false",
+        "note": "Het exacte bedrag voor een standplaatsvergunning is niet vermeld op de officiële website van gemeente Montfoort"
+      },
+      {
+        "sentence": "Adres: Kasteelplein 5, 3417 JG Montfoort",
+        "status": "false",
+        "note": "Het juiste adres van het Huis van Montfoort is Kasteelplein 1, 3417 JG Montfoort"
+      },
+      {
+        "sentence": "Het is mogelijk om een standplaatsvergunning digitaal aan te vragen, zowel met als zonder Digi-D.",
+        "status": "false",
+        "note": "Op de website van gemeente Montfoort wordt niet expliciet vermeld dat standplaatsvergunningen digitaal kunnen worden aangevraagd zonder DigiD"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.montfoort.nl/Alle_onderwerpen/Vergunningen_en_ontheffingen",
+      "https://www.montfoort.nl/Alle_onderwerpen/Ondernemen/Onderneming_starten",
+      "https://www.montfoort.nl/Alle_onderwerpen/Ondernemen/Markten_en_venten",
+      "https://www.montfoort.nl/Alle_onderwerpen/Vergunningen_en_ontheffingen/Markten_en_venten",
+      "https://www.montfoort.nl/Alle_onderwerpen/Bouwen_en_verbouwen/Omgevingsvergunning/Omgevingsvergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Om te venten heeft u geen vergunning nodig. Indien de openbare orde, de openbare veiligheid, de volksgezondheid of het milieu in gevaar komen is venten verboden.",
+          "original_reference": "No matching information",
+          "note": "De originele inhoud mist belangrijke informatie over dat venten geen vergunning vereist, met bijbehorende voorwaarden en beperkingen.",
+          "source_urls": [
+            "https://www.montfoort.nl/Alle_onderwerpen/Ondernemen/Markten_en_venten"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Onder venten wordt verstaan: het te koop aanbieden van goederen of diensten aan willekeurige voorbijgangers dan wel huis-aan-huis. Het tijdelijk stilstaan in afwachting van klanten is geen venten.",
+          "original_reference": "No matching information",
+          "note": "De originele inhoud mist de definitie van venten en de specificatie dat tijdelijk stilstaan niet als venten wordt beschouwd.",
+          "source_urls": [
+            "https://www.montfoort.nl/Alle_onderwerpen/Ondernemen/Markten_en_venten"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Standplaatsvergunning: € 197,30",
+          "original_reference": "De kosten voor een standplaatsvergunning bedragen €197,30.",
+          "note": "De kosten voor de standplaatsvergunning zijn identiek in beide bronnen.",
+          "source_urls": [
+            "https://www.montfoort.nl/Alle_onderwerpen/Ondernemen/Markten_en_venten"
+          ]
+        }
+      ]
+    },
+    "summary": "De broninhoud bevat aanvullende belangrijke informatie over venten die niet in de originele tekst staat, met name dat er geen vergunning nodig is voor venten en wat precies onder venten wordt verstaan. De kosten en verwerkingstijden komen overeen met de originele inhoud. De aanvullende informatie geeft een completer beeld van de regelgeving rond markten en venten in de gemeente."
+  }
+}

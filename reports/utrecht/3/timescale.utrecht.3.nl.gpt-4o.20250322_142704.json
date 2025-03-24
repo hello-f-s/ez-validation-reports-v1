@@ -1,0 +1,82 @@
+{
+  "context": {
+    "municipality": {
+      "name": "UTRECHT",
+      "contact": {
+        "phone": "(014) 030",
+        "email": "Gemeente@utrecht.nl",
+        "website": "http://www.utrecht.nl"
+      }
+    },
+    "service": {
+      "id": 3,
+      "name": "Certificaat voor opgraving aanvragen en vondst melden"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 14,
+    "false_sentences": 0,
+    "accuracy_percentage": 100.0,
+    "false_statements": []
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.utrecht.nl/ondernemen/vergunningen-en-regels/gegevens-van-een-gebouw-of-stuk-grond-opvragen",
+      "https://erfgoed.utrecht.nl",
+      "https://www.utrecht.nl/ondernemen/vergunningen-en-regels/werkzaamheden-vergunning-aanvragen",
+      "https://www.utrecht.nl/wonen-en-leven/gezonde-leefomgeving/bodemkwaliteit",
+      "https://www.utrecht.nl/wonen-en-leven/vrije-tijd/erfgoed-en-monumenten"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.utrecht.nl/bestuur-en-organisatie/publicaties/nieuwsbrieven/nieuwsbrief-keldereigenaren-wervengebied/laatste-nieuwsbrief",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U moet dan uw ontdekking zo snel mogelijk bij ons melden [...] Ook houdt u uw vondst 6 maanden beschikbaar voor onderzoek.",
+          "original_reference": "U bent wettelijk verplicht een archeologische vondst te melden bij de gemeente.",
+          "note": "De bronpagina specificeert een belangrijke extra voorwaarde: de vondst moet 6 maanden beschikbaar blijven voor onderzoek. Deze termijn ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.utrecht.nl/wonen-en-leven/vrije-tijd/erfgoed-en-monumenten"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De vondst blijft uw eigendom.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt expliciet dat de vondst eigendom blijft van de vinder. Deze belangrijke informatie ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.utrecht.nl/wonen-en-leven/vrije-tijd/erfgoed-en-monumenten"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U mag een metaaldetector gebruiken in de openbare ruimte. Hiervoor gelden wel regels.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat aanvullende informatie over het gebruik van metaaldetectors die relevant is voor vinders maar ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.utrecht.nl/wonen-en-leven/vrije-tijd/erfgoed-en-monumenten"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten enkele belangrijke aanvullende details die ontbreken in de originele tekst: de verplichting om vondsten 6 maanden beschikbaar te houden voor onderzoek, de eigendomsrechten van de vinder, en regelgeving rond metaaldetectorgebruik. Deze informatie is relevant voor mensen die archeologische vondsten willen melden."
+  }
+}

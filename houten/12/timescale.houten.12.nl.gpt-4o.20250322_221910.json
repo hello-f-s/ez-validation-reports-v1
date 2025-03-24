@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HOUTEN",
+      "contact": {
+        "phone": "(030) 639 26 11",
+        "email": "gemeentehuis@houten.nl",
+        "website": "http://www.houten.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 10,
+    "false_sentences": 1,
+    "accuracy_percentage": 90.9,
+    "false_statements": [
+      {
+        "sentence": "Vooroverleg aanvragen kan via inloggen met DigiD of eHerkenning Niveau 2+ op de website van de gemeente.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Houten moet een principeverzoek/vooroverleg worden ingediend via een formulier dat kan worden gedownload van de gemeentelijke website. Er is geen mogelijkheid om dit direct via DigiD of eHerkenning aan te vragen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.houten.nl/wonen-en-leefomgeving/bouw-en-verbouw/omgevingsvergunning",
+      "https://www.houten.nl/wonen-en-leefomgeving/omgevingswet",
+      "https://www.houten.nl/wonen-en-leefomgeving/bouw-en-verbouw/omgevingsvergunning/aanvraagprocedure-omgevingsvergunning",
+      "https://www.houten.nl/groen-water-en-duurzaamheid/milieu-omgevingsinformatie",
+      "https://www.houten.nl/wonen-en-leefomgeving/bouw-en-verbouw/omgevingsvergunning/principeverzoek/-ruimtelijk-initiatief"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De omgevingsvergunning kunt u digitaal aanvragen via omgevingswet.overheid.nl. Een aanvraag voor een omgevingsvergunning kan zowel op papier als digitaal worden ingediend.",
+          "original_reference": "Een omgevingsvergunning vraag je aan via het Omgevingsloket online. Hierbij moeten alle bijlagen digitaal worden ingediend.",
+          "note": "De bronpagina vermeldt expliciet dat aanvragen zowel op papier als digitaal kunnen worden ingediend, terwijl de originele tekst alleen digitale indiening noemt.",
+          "source_urls": [
+            "https://www.houten.nl/wonen-en-leefomgeving/bouw-en-verbouw/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U heeft (bouw)plannen die niet binnen het tijdelijk omgevingsplan passen.",
+          "original_reference": "Als ondernemer moet je nagaan of je plannen passen binnen het bestemmingsplan of beheersverordening.",
+          "note": "De bronpagina verwijst naar het 'tijdelijk omgevingsplan' terwijl de originele tekst spreekt over 'bestemmingsplan of beheersverordening', wat duidt op een overgang naar de nieuwe Omgevingswet.",
+          "source_urls": [
+            "https://www.houten.nl/wonen-en-leefomgeving/bouw-en-verbouw/omgevingsvergunning/principeverzoek/-ruimtelijk-initiatief"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele tekst en de bronpagina's. Ten eerste is er een verschil in de aanvraagmogelijkheden: waar de originele tekst alleen digitale indiening noemt, blijkt ook papieren indiening mogelijk. Ten tweede is er een terminologische update zichtbaar in het kader van de nieuwe Omgevingswet, waarbij 'bestemmingsplan/beheersverordening' is vervangen door 'tijdelijk omgevingsplan'. Deze verschillen wijzen op een transitieperiode naar de nieuwe Omgevingswet."
+  }
+}

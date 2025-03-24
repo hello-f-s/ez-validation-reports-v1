@@ -1,0 +1,104 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HILVERSUM",
+      "contact": {
+        "phone": "14 035",
+        "email": "gemeente@hilversum.nl",
+        "website": "http://www.hilversum.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "U kunt uw aanvraag niet als concept indienen.",
+        "status": "false",
+        "note": "Dit is onjuist. Via het Omgevingsloket kunnen aanvragen wel degelijk als concept worden opgeslagen en later worden afgemaakt. Dit wordt expliciet vermeld op de website van gemeente Hilversum."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 10,
+    "valid_urls": 5,
+    "invalid_urls": 5,
+    "accuracy_percentage": 50.0,
+    "valid_urls_list": [
+      "https://hilversum.nl/bouwen-verbouwen",
+      "https://hilversum.nl/vergunningen/vergunningen-voor-bouwen-verbouwen/omgevingsvergunning-aanvragen",
+      "https://hilversum.nl/vergunningen/vergunningen-voor-bouwen-verbouwen",
+      "https://hilversum.nl/bouwen-verbouwen/omgevingswet/omgevingsloket",
+      "https://hilversum.nl/bouwen-verbouwen/omgevingswet/aanvraag-omgevingsvergunning-uitgelegd"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://puurhilversum.nl/bouwen-en-verbouwen",
+        "reason": "INVALID: Error scraping https://puurhilversum.nl/bouwen-en-verbouwen: HTTPSConnectionPool(host='puurhilversum.nl', port=443): Max retries exceeded with url: /bouwen-en-verbouwen (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1079a9010>: Failed to resolve 'puurhilversum.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://puurhilversum.nl/aanvraag-omgevingsvergunning",
+        "reason": "INVALID: Error scraping https://puurhilversum.nl/aanvraag-omgevingsvergunning: HTTPSConnectionPool(host='puurhilversum.nl', port=443): Max retries exceeded with url: /aanvraag-omgevingsvergunning (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1079e07d0>: Failed to resolve 'puurhilversum.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://puurhilversum.nl/vergunningen-bouwen-en-verbouwen",
+        "reason": "INVALID: Error scraping https://puurhilversum.nl/vergunningen-bouwen-en-verbouwen: HTTPSConnectionPool(host='puurhilversum.nl', port=443): Max retries exceeded with url: /vergunningen-bouwen-en-verbouwen (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1078a79d0>: Failed to resolve 'puurhilversum.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://puurhilversum.nl/omgevingsloket",
+        "reason": "INVALID: Error scraping https://puurhilversum.nl/omgevingsloket: HTTPSConnectionPool(host='puurhilversum.nl', port=443): Max retries exceeded with url: /omgevingsloket (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1078a7750>: Failed to resolve 'puurhilversum.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://puurhilversum.nl/omgevingsvergunning-aanvragen",
+        "reason": "INVALID: Error scraping https://puurhilversum.nl/omgevingsvergunning-aanvragen: HTTPSConnectionPool(host='puurhilversum.nl', port=443): Max retries exceeded with url: /omgevingsvergunning-aanvragen (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1078a7d90>: Failed to resolve 'puurhilversum.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het Omgevingsloket vindt u op omgevingswet.overheid.nl",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de specifieke URL van het Omgevingsloket, wat essentiële informatie is voor gebruikers",
+          "source_urls": [
+            "https://hilversum.nl/bouwen-verbouwen/omgevingswet/omgevingsloket"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor ingewikkelde of grotere plannen adviseren we u om de haalbaarheid eerst te toetsen via de optie 'idee verkennen'",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over de mogelijkheid om eerst de haalbaarheid van complexe plannen te toetsen via 'idee verkennen'",
+          "source_urls": [
+            "https://hilversum.nl/bouwen-verbouwen/omgevingswet/aanvraag-omgevingsvergunning-uitgelegd"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wij sturen u berichten via de e-mail als u uw e-mailadres heeft opgegeven. Anders doen we dat via de post",
+          "original_reference": "No matching information",
+          "note": "De originele tekst specificeert niet hoe de gemeente communiceert over de aanvraag, terwijl dit wel belangrijke informatie is voor aanvragers",
+          "source_urls": [
+            "https://hilversum.nl/bouwen-verbouwen/omgevingswet/omgevingsloket"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten enkele belangrijke aanvullende details die ontbreken in de originele tekst, waaronder de specifieke URL van het Omgevingsloket, de mogelijkheid om eerst de haalbaarheid van complexe plannen te toetsen, en informatie over hoe de gemeente communiceert over aanvragen. Deze informatie is essentieel voor een complete dienstverlening aan aanvragers."
+  }
+}

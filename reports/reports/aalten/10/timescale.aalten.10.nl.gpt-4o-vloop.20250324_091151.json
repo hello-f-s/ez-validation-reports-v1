@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AALTEN",
+      "contact": {
+        "phone": "(0543) 49 33 33",
+        "email": "gemeente@aalten.nl",
+        "website": "http://www.aalten.nl"
+      }
+    },
+    "service": {
+      "id": 10,
+      "name": "Nachtregister bijhouden"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 27,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.4,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor het in behandeling nemen van een aanvraag voor een exploitatievergunning bedragen € 415,85 voor het jaar 2025.",
+        "status": "false",
+        "note": "Dit bedrag kan niet geverifieerd worden voor het jaar 2025 aangezien de gemeente Aalten nog geen legestarieven heeft gepubliceerd voor dat jaar. Toekomstige tarieven kunnen niet met zekerheid worden vastgesteld."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.aalten.nl/hotel-bed-and-breakfast-of-camping-starten",
+      "https://www.aalten.nl/openingstijden-horeca-eenmalig-aanpassen",
+      "https://www.aalten.nl/verzoek-om-handhaving",
+      "https://www.aalten.nl/overzicht-geleverde-persoonsgegevens-opvragen",
+      "https://www.aalten.nl/exploitatievergunning-horecabedrijf"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor de kosten verwijzen wij u naar de tarieventabel in de legesverordening. Zie lokale regelgeving.",
+          "original_reference": "De kosten voor het in behandeling nemen van een aanvraag voor een exploitatievergunning bedragen € 415,85 voor het jaar 2025.",
+          "note": "De originele tekst noemt een specifiek bedrag voor 2025, terwijl de bronwebsite verwijst naar de tarieventabel in de legesverordening zonder specifiek bedrag te noemen.",
+          "source_urls": [
+            "https://www.aalten.nl/openingstijden-horeca-eenmalig-aanpassen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Verklaring Sociale Hygiëne voor alle personen/ leidinggevenden die op de vergunning worden genoemd. Een bedrijfs- of ondernemingsplan, huurovereenkomst, plattegrond, kopie legitimatiebewijs, arbeidsovereenkomst en Bibob-formulier.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke vereiste documenten voor de exploitatievergunning die wel in de bronwebsite worden genoemd.",
+          "source_urls": [
+            "https://www.aalten.nl/exploitatievergunning-horecabedrijf"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele tekst en de bronwebsites. Ten eerste verschilt de informatie over de kosten, waarbij de originele tekst een specifiek bedrag noemt terwijl de website verwijst naar een tarieventabel. Ten tweede ontbreekt in de originele tekst een uitgebreide lijst van vereiste documenten voor de exploitatievergunning die wel op de gemeentewebsite staat vermeld. Deze verschillen zijn relevant voor de volledigheid en actualiteit van de informatie."
+  }
+}

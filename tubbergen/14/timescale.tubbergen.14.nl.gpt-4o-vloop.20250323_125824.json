@@ -1,0 +1,79 @@
+{
+  "context": {
+    "municipality": {
+      "name": "TUBBERGEN",
+      "contact": {
+        "phone": "(0546) 62 80 00",
+        "email": "gemeente@tubbergen.nl",
+        "website": "http://www.tubbergen.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 31,
+    "true_sentences": 29,
+    "false_sentences": 2,
+    "accuracy_percentage": 93.5,
+    "false_statements": [
+      {
+        "sentence": "Voor de aanvraag van een parkeerontheffing moeten leges van €45,15 worden betaald.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Tubbergen bedraagt het tarief voor een parkeerontheffing €46,30"
+      },
+      {
+        "sentence": "Vrijdag: 8.30 uur tot 12.30 uur",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Tubbergen is het gemeentehuis op vrijdag geopend van 08:30 tot 12:00 uur"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.tubbergen.nl/ontheffing-parkeerschijfzone",
+      "https://www.tubbergen.nl/gehandicaptenparkeerplaats",
+      "https://www.tubbergen.nl/omgevingsvergunning-bouwen",
+      "https://www.tubbergen.nl/gehandicaptenparkeerkaart",
+      "https://www.tubbergen.nl/loterij"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u een leaseauto heeft Mocht u een leaseauto hebben dan kun u middels het berijdersformulier aangeven dat u degene bent die gebuikt maakt van de auto. De berijdersverklaring (zie downloads) kunt u meesturen met het aanvraagformulier voor de parkeervergunning.",
+          "original_reference": "Indien u een leaseauto heeft, moet u tevens een berijdersverklaring meesturen.",
+          "note": "De bron geeft meer specifieke uitleg over het doel van de berijdersverklaring bij leaseauto's, terwijl de originele tekst alleen de vereiste noemt.",
+          "source_urls": [
+            "https://www.tubbergen.nl/ontheffing-parkeerschijfzone"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het wijzigen van een ontheffing als gevolg van een adres- of kentekenwijziging is niet mogelijk. U moet een nieuwe ontheffing aanvragen.",
+          "original_reference": "Bij wijzigingen in het woonadres of het kenteken vervalt de ontheffing en moet een nieuwe ontheffing worden aangevraagd met het vastgestelde aanvraagformulier.",
+          "note": "De bron stelt explicieter dat wijziging niet mogelijk is, terwijl de originele tekst alleen het vervallen en opnieuw aanvragen beschrijft.",
+          "source_urls": [
+            "https://www.tubbergen.nl/ontheffing-parkeerschijfzone"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee kleine maar betekenisvolle verschillen gevonden tussen de originele tekst en de bronnen. Het eerste verschil betreft een uitgebreidere toelichting over de berijdersverklaring voor leaseauto's. Het tweede verschil heeft betrekking op de formulering rond wijzigingen van de ontheffing, waarbij de bron directer aangeeft dat wijzigingen niet mogelijk zijn. De overige informatie komt overeen met de originele tekst."
+  }
+}

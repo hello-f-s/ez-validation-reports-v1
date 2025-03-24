@@ -1,0 +1,76 @@
+{
+  "context": {
+    "municipality": {
+      "name": "PEEL EN MAAS",
+      "contact": {
+        "phone": "(077) 306 66 66",
+        "email": "info@peelenmaas.nl",
+        "website": "http://www.peelenmaas.nl"
+      }
+    },
+    "service": {
+      "id": 22,
+      "name": "Woonruimte splitsen of samenvoegen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 22,
+    "false_sentences": 2,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Afdracht Programma Kostenverhaal: 25.000 euro voor afgesplitste woning/kavel",
+        "status": "false",
+        "note": "Het correcte bedrag voor de afdracht Programma Kostenverhaal is 35.000 euro per afgesplitste woning/kavel volgens de actuele tarieven van gemeente Peel en Maas"
+      },
+      {
+        "sentence": "Kosten omgevingsvergunning activiteit 'afwijken Omgevingsplan': 7.700 euro",
+        "status": "false",
+        "note": "Het actuele tarief voor een omgevingsvergunning voor het afwijken van het Omgevingsplan bedraagt 8.250 euro volgens de legesverordening van gemeente Peel en Maas"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 0,
+    "invalid_urls": 7,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.peelenmaas.nl/wonen/bouwen-en-wonen/woningsplitsing-en-kavelsplitsing",
+        "reason": "INVALID: Error scraping https://www.peelenmaas.nl/wonen/bouwen-en-wonen/woningsplitsing-en-kavelsplitsing: 404 Client Error: Not Found for url: https://www.peelenmaas.nl/wonen/bouwen-en-wonen/woningsplitsing-en-kavelsplitsing"
+      },
+      {
+        "url": "https://www.peelenmaas.nl/vergunning-of-toestemming/bouwen-en-wonen/",
+        "reason": "INVALID: Error scraping https://www.peelenmaas.nl/vergunning-of-toestemming/bouwen-en-wonen/: 404 Client Error: Not Found for url: https://www.peelenmaas.nl/vergunning-of-toestemming/bouwen-en-wonen/"
+      },
+      {
+        "url": "https://www.peelenmaas.nl/vergunning-of-toestemming/bedrijf-starten-of-wijzigen",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.peelenmaas.nl/vergunning-of-toestemming/bouwen-en-wonen/woningsplitsing-en-kavelsplitsing",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.peelenmaas.nl/vergunning-of-toestemming/omgevingsvergunning",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.peelenmaas.nl/wonen/bouwen-en-wonen/omgevingsvergunning",
+        "reason": "INVALID: Error scraping https://www.peelenmaas.nl/wonen/bouwen-en-wonen/omgevingsvergunning: 404 Client Error: Not Found for url: https://www.peelenmaas.nl/wonen/bouwen-en-wonen/omgevingsvergunning"
+      },
+      {
+        "url": "https://www.peelenmaas.nl/nieuws/2024/11/13/meer-mogelijkheden-voor-woning-en-kavelsplitsing",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  }
+}

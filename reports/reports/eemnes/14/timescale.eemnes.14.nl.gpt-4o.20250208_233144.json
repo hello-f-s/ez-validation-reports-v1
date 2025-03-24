@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "EEMNES",
+      "contact": {
+        "phone": "14 035",
+        "email": "info@eemnes.nl",
+        "website": "http://www.eemnes.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "De verwerking van de aanvraag duurt maximaal 5 dagen.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Eemnes duurt de verwerking van de aanvraag maximaal 8 weken, niet 5 dagen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.eemnes.nl/Zoekresultaten?searchbase=0&searchrange=100&sp=H4sIAAAAAAAAAGXNQQuCQBAF4P8yZw9iRSnsKaXs4CGh00KM7lgb666sCxHif2+VCMHb43tvmAG0EaRMjU4avcyQwMDBcUg43FRUsjjurgz3Xbg9fDb55fxmjEPAodHzZnk7uxQrX2261m8aVD2NEEBPaOtnhT355+EfLOrHJNFuImOdsYKshzQrj1mR5sXpVzSSlPDFlO+melHtNLYE4xdgXAK95wAAAA==&f=nodelocation%3A77Eoj7xYQyiXXbaih4FVLQ%3D%3D",
+      "https://www.eemnes.nl/Zoekresultaten?sp=H4sIAAAAAAAAAKtWystPSc3JT04syczPQ2YrWSlVxyiVxChZxSiF5RgF21paFgTZJpoXGJhYVBp7enmU29rGKOnEKKXlgdUg6wWLZ6ZgiGOoKcgFqklLzClOrVXSUSpOTSxKzkhKLE4FWm4AFyhKzEsHiRgaKNUCAIhkniWwAAAA&searchbase=0&sortfield=sort_objectname&sortorder=descending&f=nodelocation%3AVl2S%3D99pR%3Da7p048y3IJHw%3D%3D&f=nodelocation%3A77Eoj7xYQyiXXbaih4FVLQ%3D%3D",
+      "https://www.eemnes.nl/Parkeren_en_verkeer/Parkeren/Toestemming_parkeren_vrachtauto",
+      "https://www.eemnes.nl/Zoekresultaten?sp=H4sIAAAAAAAAAKtWystPSc3JT04syczPQ2YrWSlVxyiVxChZxSiF5RgF21paFgTZJpoXGJhYVBp7enmU29rGKOnEKKXlgdUg6wWLZ6ZgiGOoKcgFqklLzClOrVXSUSpOTSxKzkhKLE4FWm4AFyhKzEsHiRgaKNUCAIhkniWwAAAA&searchbase=0&sortfield=score&sortorder=descending&f=nodelocation%3AVl2S%3D99pR%3Da7p048y3IJHw%3D%3D&f=nodelocation%3A77Eoj7xYQyiXXbaih4FVLQ%3D%3D",
+      "https://www.eemnes.nl/Zoekresultaten?searchbase=0&searchrange=50&sp=H4sIAAAAAAAAAGXNQQuCQBAF4P8yZw9iRSnsKaXs4CGh00KM7lgb666sCxHif2+VCMHb43tvmAG0EaRMjU4avcyQwMDBcUg43FRUsjjurgz3Xbg9fDb55fxmjEPAodHzZnk7uxQrX2261m8aVD2NEEBPaOtnhT355+EfLOrHJNFuImOdsYKshzQrj1mR5sXpVzSSlPDFlO+melHtNLYE4xdgXAK95wAAAA==&f=nodelocation%3A77Eoj7xYQyiXXbaih4FVLQ%3D%3D"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://gemeente-eemnes.nl/Parkeren_en_verkeer/Parkeren/Toestemming_parkeren_vrachtauto).</p>",
+        "reason": "INVALID: Error scraping https://gemeente-eemnes.nl/Parkeren_en_verkeer/Parkeren/Toestemming_parkeren_vrachtauto).</p>: HTTPSConnectionPool(host='gemeente-eemnes.nl', port=443): Max retries exceeded with url: /Parkeren_en_verkeer/Parkeren/Toestemming_parkeren_vrachtauto).%3C/p%3E (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1039dbc50>: Failed to resolve 'gemeente-eemnes.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "€ 321,85 voor aanvraag, € 186,90 voor verlenging",
+          "original_reference": "€ 293,50 voor aanvraag, € 171 voor verlenging",
+          "note": "De kosten in de bronnen zijn hoger dan in de originele tekst. Het verschil is € 28,35 voor de aanvraag en € 15,90 voor de verlenging.",
+          "source_urls": [
+            "https://www.eemnes.nl/Parkeren_en_verkeer/Parkeren/Toestemming_parkeren_vrachtauto"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "maximaal 1 ontheffing per bedrijf voor bedrijven zonder parkeerruimte, maximaal 3 ontheffingen per bedrijf voor chauffeurs zonder bedrijfsvestiging",
+          "original_reference": "No matching information",
+          "note": "De bronpagina specificeert maximale aantallen ontheffingen per type bedrijf, wat niet vermeld staat in de originele tekst.",
+          "source_urls": [
+            "https://www.eemnes.nl/Parkeren_en_verkeer/Parkeren/Toestemming_parkeren_vrachtauto"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Op meer dan 50 km afstand vanaf Eemnes gevestigd zijn en waarvan de chauffeur in de gemeente Eemnes woont",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt een specifieke afstandseis van 50 km die niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.eemnes.nl/Parkeren_en_verkeer/Parkeren/Toestemming_parkeren_vrachtauto"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de tarieven die hoger zijn in de actuele bronnen en aanvullende specificaties over het maximaal aantal ontheffingen per type bedrijf. Ook wordt er een specifieke afstandseis van 50 km genoemd die niet in de originele tekst staat. Deze details maken de voorwaarden concreter dan in de originele tekst."
+  }
+}

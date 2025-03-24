@@ -1,0 +1,80 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LANDSMEER",
+      "contact": {
+        "phone": "(020) 487 71 11",
+        "email": "gemeente@Landsmeer.nl",
+        "website": "http://www.landsmeer.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "De gemeente beslist binnen 8 weken over uw aanvraag.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Landsmeer wordt er binnen 3 weken beslist over een aanvraag voor een ontheffing van verkeersregels, niet binnen 8 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.landsmeer.nl/inwoners/parkeren,_verkeer_en_vervoer/parkeren/parkeren_in_een_blauwe_zone",
+      "https://www.landsmeer.nl/ondernemers/vergunningen/standplaats_vergunning_aanvragen",
+      "https://www.landsmeer.nl/inwoners/parkeren,_verkeer_en_vervoer/verkeer/ontheffing_van_verkeersregels_aanvragen",
+      "https://www.landsmeer.nl/ondernemers/evenementen/optreden_op_straat",
+      "https://www.landsmeer.nl/inwoners/bouwen_en_verbouwen/meer_onderwerpen/omgevingsvergunning_aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.landsmeer.nl",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "De gemeente beslist binnen 8 weken over uw aanvraag. Lukt dat niet? Dan mag de gemeente deze periode 1 keer verlengen.",
+          "original_reference": "De gemeente beslist binnen 8 weken over uw aanvraag. Indien nodig kan deze periode één keer verlengd worden.",
+          "note": "De informatie over de beslissingstermijn en mogelijke verlenging komt exact overeen.",
+          "source_urls": [
+            "https://www.landsmeer.nl/inwoners/parkeren,_verkeer_en_vervoer/verkeer/ontheffing_van_verkeersregels_aanvragen",
+            "https://www.landsmeer.nl/inwoners/parkeren,_verkeer_en_vervoer/parkeren/parkeren_in_een_blauwe_zone"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Bent u het niet eens met de beslissing van de gemeente? Dan kunt u bezwaar maken... binnen 6 weken... Bent u het daarna nog steeds niet eens met de beslissing? Dan kunt u aan de rechtbank...",
+          "original_reference": "Als u het niet eens bent met de beslissing van de gemeente, kunt u binnen 6 weken bezwaar maken. Indien u het vervolgens niet eens bent met de uitspraak op uw bezwaarschrift, kunt u in beroep gaan bij de rechtbank binnen 6 weken.",
+          "note": "De bezwaar- en beroepsprocedure komt volledig overeen met de originele tekst.",
+          "source_urls": [
+            "https://www.landsmeer.nl/inwoners/parkeren,_verkeer_en_vervoer/verkeer/ontheffing_van_verkeersregels_aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse van de bronnen en de originele tekst zijn er geen significante verschillen of tegenstrijdigheden gevonden. De informatie over aanvraagprocedures, termijnen, bezwaarmogelijkheden en voorwaarden komt overeen met de originele tekst. De bronnen bevestigen de juistheid van de gepresenteerde informatie."
+  }
+}

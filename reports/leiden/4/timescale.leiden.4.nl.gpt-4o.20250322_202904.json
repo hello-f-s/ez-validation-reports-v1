@@ -1,0 +1,89 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LEIDEN",
+      "contact": {
+        "phone": "14 071",
+        "email": "null",
+        "website": "http://www.leiden.nl/gemeente"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 22,
+    "false_sentences": 2,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "A-evenement: Kosten € 87,45. Aanvraag dient 4 tot 6 weken van tevoren te worden ingediend.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Leiden bedragen de kosten voor een A-evenement € 89,20 (2024 tarief)."
+      },
+      {
+        "sentence": "B-evenement zonder risico: Kosten € 118,70. Aanvraag moet 8 weken van tevoren worden ingediend.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Leiden bedragen de kosten voor een B-evenement zonder risico € 121,10 (2024 tarief)."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://gemeente.leiden.nl",
+      "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers/evenement-organiseren/materialen-van-de-gemeente-lenen",
+      "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers/vergunningen-en-ontheffingen/woning-splitsen",
+      "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers",
+      "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers/evenement-organiseren/evenement-organiseren",
+      "https://gemeente.leiden.nl/inwoners-en-ondernemers/wonen-en-bouwen/omgevingsvergunningen/omgevingsvergunning-aanvragen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u aan alle onderstaande punten voldoet is een melding voldoende: [...] Er komen maximaal 75 bezoekers.",
+          "original_reference": "Melding: Geen kosten. Aanvraag moet minimaal 2 weken voor het evenement worden ingediend.",
+          "note": "De originele tekst specificeert geen maximaal aantal bezoekers voor meldingen, terwijl de bron aangeeft dat er maximaal 75 bezoekers mogen zijn voor een melding.",
+          "source_urls": [
+            "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers/evenement-organiseren/evenement-organiseren"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De muziek heeft een geluidssterkte van maximaal 70 decibel en duurt tot uiterlijk 20.00 uur.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt geen specifieke geluidsnormen of eindtijden voor evenementen, terwijl de bron deze wel specificeert voor meldingsplichtige evenementen.",
+          "source_urls": [
+            "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers/evenement-organiseren/evenement-organiseren"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Doe uw aanvraag minimaal 6 weken voor de start van uw evenement.",
+          "original_reference": "4-6 weken voor A-evenementen.",
+          "note": "Er is een discrepantie in de minimale aanvraagtermijn voor materialen (6 weken) versus de termijn voor A-evenementen (4-6 weken).",
+          "source_urls": [
+            "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers/evenement-organiseren/materialen-van-de-gemeente-lenen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen specifieke voorwaarden voor meldingsplichtige evenementen die niet in de originele tekst staan vermeld, zoals het maximum aantal bezoekers (75) en geluidsnormen (70 decibel tot 20:00 uur). Daarnaast is er een verschil in de aanvraagtermijnen voor materialen versus evenementenvergunningen. De bronnen bevatten meer gedetailleerde voorwaarden en beperkingen die nuttig zijn voor organisatoren maar niet in de originele tekst zijn opgenomen."
+  }
+}

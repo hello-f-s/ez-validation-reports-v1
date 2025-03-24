@@ -1,0 +1,78 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LANDGRAAF",
+      "contact": {
+        "phone": "14 045",
+        "email": "gemeente@landgraaf.nl",
+        "website": "http://www.landgraaf.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "De aanvraag bij de gemeente voor een VOG natuurlijke personen kost € 41,35.",
+        "status": "false",
+        "note": "Het actuele tarief voor een VOG in de gemeente Landgraaf is € 41,85, niet € 41,35."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.landgraaf.nl/form/informatieverzoek-indienen",
+      "https://www.landgraaf.nl/nederlander-worden-door-optie",
+      "https://www.landgraaf.nl/aanvragen-en-regelen-ondernemers",
+      "https://www.landgraaf.nl/verklaring-omtrent-het-gedrag-vog"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.landgraaf.nl/form/woo-verzoek",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Een aanvraag bij de gemeente voor een VOG natuurlijke personen kost € 41,35",
+          "original_reference": "De aanvraag bij de gemeente voor een VOG natuurlijke personen kost € 41,35.",
+          "note": "De kosten voor een VOG zijn exact hetzelfde in beide bronnen",
+          "source_urls": [
+            "https://www.landgraaf.nl/verklaring-omtrent-het-gedrag-vog"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "U moet de VOG rechtstreeks bij Justis aanvragen als u niet voorkomt in de Basisregistratie Personen (BRP) of als u geen vaste woon- of verblijfplaats hebt.",
+          "original_reference": "Direct aanvragen bij Justis is nodig als u niet voorkomt in de Basisregistratie Personen (BRP) of geen vaste woon- of verblijfplaats hebt.",
+          "note": "De voorwaarden voor directe aanvraag bij Justis komen overeen",
+          "source_urls": [
+            "https://www.landgraaf.nl/verklaring-omtrent-het-gedrag-vog"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse van de bronnen en de originele inhoud zijn er geen significante verschillen gevonden. Alle kerngegevens zoals kosten, procedures en voorwaarden komen overeen. De informatie in de originele tekst is actueel en accuraat."
+  }
+}

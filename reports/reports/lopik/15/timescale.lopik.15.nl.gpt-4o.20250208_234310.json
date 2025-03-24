@@ -1,0 +1,91 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LOPIK",
+      "contact": {
+        "phone": "(0348) 55 99 55",
+        "email": "gemeente@lopik.nl",
+        "website": "http://www.lopik.nl"
+      }
+    },
+    "service": {
+      "id": 15,
+      "name": "Vergunning of ontheffing voor straatartiesten"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "U ontvangt binnen 8 weken bericht of u de ontheffing krijgt.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Lopik wordt er binnen 6 weken (niet 8 weken) een besluit genomen over de ontheffingsaanvraag."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 6,
+    "invalid_urls": 1,
+    "accuracy_percentage": 85.7,
+    "valid_urls_list": [
+      "https://www.lopik.nl/straatartiest-optreden",
+      "https://www.lopik.nl/verkeersontheffing-aanvragen",
+      "https://www.lopik.nl/omgevingsvergunning",
+      "https://www.lopik.nl",
+      "https://www.lopik.nl/geluidsoverlast-veroorzaken",
+      "https://www.lopik.nl/voorwerp-plaatsen-op-of-aan-de-weg"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.lopik.nl\">Gemeente",
+        "reason": "INVALID: Error scraping https://www.lopik.nl\">Gemeente: HTTPSConnectionPool(host='www.lopik.nl%22%3egemeente', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1064e8550>: Failed to resolve 'www.lopik.nl%22%3egemeente' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Dit doet u door een e-mail te sturen naar gemeente@lopik.nl",
+          "original_reference": "De aanvraag kan meestal schriftelijk via een e-mail aan de gemeente",
+          "note": "De bron specificeert het exacte e-mailadres (gemeente@lopik.nl) terwijl dit in de originele tekst ontbreekt",
+          "source_urls": [
+            "https://www.lopik.nl/voorwerp-plaatsen-op-of-aan-de-weg"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bezoekadres: Raadhuisplein 1, 3411 CH Lopik",
+          "original_reference": "Raadhuisplein 1, Postbus 50, 3410 CB Lopik",
+          "note": "Het bezoekadres heeft een andere postcode (3411 CH) dan het postadres (3410 CB) in de originele tekst. Dit onderscheid ontbreekt in de originele tekst",
+          "source_urls": [
+            "https://www.lopik.nl/straatartiest-optreden",
+            "https://www.lopik.nl/voorwerp-plaatsen-op-of-aan-de-weg"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Telefoon 0348 - 55 99 55 of 14 0348",
+          "original_reference": "No matching information",
+          "note": "De telefoonnummers ontbreken volledig in de originele tekst terwijl deze wel belangrijk zijn voor contact met de gemeente",
+          "source_urls": [
+            "https://www.lopik.nl/straatartiest-optreden",
+            "https://www.lopik.nl/voorwerp-plaatsen-op-of-aan-de-weg"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende contactgegevens die ontbreken in de originele tekst, waaronder het specifieke e-mailadres, telefoonnummers en een duidelijk onderscheid tussen bezoek- en postadres. De kern van de procedures en voorwaarden komt wel overeen met de originele tekst."
+  }
+}

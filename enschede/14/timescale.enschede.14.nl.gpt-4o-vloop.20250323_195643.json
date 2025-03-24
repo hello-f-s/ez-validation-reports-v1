@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ENSCHEDE",
+      "contact": {
+        "phone": "14 053",
+        "email": "postbus20@enschede.nl",
+        "website": "http://www.enschede.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "Een tijdelijke ontheffing voor toegang plus parkeren, 1 tot 4 dagen, kost € 19,05 en een jaaraanvraag kost € 165,50.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Enschede kost een tijdelijke ontheffing voor toegang plus parkeren voor 1 tot 4 dagen € 19,50 (niet € 19,05) en een jaarontheffing € 165,00 (niet € 165,50)."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.enschede.nl/ontheffing-verkeersmaatregelen",
+      "https://www.enschede.nl/vergunning-voor-kamerverhuur",
+      "https://www.enschede.nl/parkeervergunning",
+      "https://www.enschede.nl/toegang-en-parkeren-binnenstad",
+      "https://www.enschede.nl/wegomleiding-of-verkeersmaatregelen-aanvragen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een ontheffing moet u minimaal 3 weken vooraf aanvragen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt geen minimale aanvraagtermijn voor ontheffingen, terwijl de bron specificeert dat dit minimaal 3 weken van tevoren moet.",
+          "source_urls": [
+            "https://www.enschede.nl/ontheffing-verkeersmaatregelen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Kosten ontheffing verkeersmaatregelen: 1 week: € 111,30, 1 maand: € 154,60, Half jaar: € 296,65, 1 jaar: € 463,55",
+          "original_reference": "Een tijdelijke ontheffing voor toegang plus parkeren, 1 tot 4 dagen, kost € 19,05 en een jaaraanvraag kost € 165,50",
+          "note": "De kosten voor ontheffingen verschillen significant tussen de originele tekst en de bronpagina, met andere tarieven en tijdsperioden.",
+          "source_urls": [
+            "https://www.enschede.nl/ontheffing-verkeersmaatregelen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bedrijven in zone 1 kunnen geen vergunningen aanvr...",
+          "original_reference": "Parkeervergunningen voor ondernemers in zone 1 kosten € 621 per jaar voor maandag tot en met vrijdag of € 730 per jaar voor de hele week",
+          "note": "Er is een tegenstrijdigheid: de bron geeft aan dat bedrijven in zone 1 geen vergunningen kunnen aanvragen, terwijl de originele tekst tarieven noemt voor zone 1.",
+          "source_urls": [
+            "https://www.enschede.nl/parkeervergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn enkele belangrijke verschillen gevonden tussen de originele tekst en de bronnen. De meest significante verschillen betreffen de aanvraagtermijnen voor ontheffingen, de kostentarieven voor verschillende typen ontheffingen, en tegenstrijdige informatie over de mogelijkheid tot het aanvragen van parkeervergunningen in zone 1 voor bedrijven. Deze verschillen kunnen leiden tot verwarring bij aanvragers en vereisen verduidelijking."
+  }
+}

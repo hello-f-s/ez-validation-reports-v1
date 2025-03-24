@@ -1,0 +1,76 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DEVENTER",
+      "contact": {
+        "phone": "14 0570",
+        "email": "gemeente@deventer.nl",
+        "website": "http://www.deventer.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Kenteken(s) van medewerkers hoeft u bij de aanvraag nog niet op te geven.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Deventer moet het kenteken wel direct bij de aanvraag worden opgegeven. Dit is een verplicht onderdeel van de aanvraagprocedure voor een bedrijfsparkeervergunning."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.deventer.nl",
+      "https://www.deventer.nl/loketten/digitaal-loket/parkeervergunning-bedrijven",
+      "http://www.deventer.nl/loketten/digitaal-loket/parkeervergunning-bedrijven",
+      "https://www.deventer.nl/parkeervergunningbedrijven",
+      "https://www.deventer.nl/parkeren/parkeervergunningen/parkeervergunning-bedrijven",
+      "https://www.deventer.nl/parkeren/parkeervergunningen/parkeervergunning-bezoekers"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het parkeervergunningsysteem bestaat uit 2 onderdelen: het Parkeerloket en de mijn.2Park.nl. Het Parkeerloket is het systeem waarin u de parkeervergunning aanvraagt en beëindigt. In de mijn.2Park.nl regelt u het gebruik van uw parkeervergunning. U koppelt hier de kenteken(s) van medewerkers aan uw parkeervergunning. Zonder koppeling heeft u geen geldige parkeervergunning.",
+          "original_reference": "No matching information",
+          "note": "De bronnen beschrijven een tweedelig systeem (Parkeerloket en mijn.2Park.nl) en het belang van kentekenkoppeling voor een geldige vergunning. Deze essentiële systeeminformatie ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.deventer.nl/loketten/digitaal-loket/parkeervergunning-bedrijven",
+            "https://www.deventer.nl/parkeervergunningbedrijven"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor de Binnenstad bestaan er 2 soorten bedrijfsvergunningen: uitgebreid of beperkt. Het verschil zit hem in het aantal uren en dagen dat u wilt parkeren.",
+          "original_reference": "Er zijn twee soorten bedrijfsvergunningen: uitgebreid of beperkt, afhankelijk van het aantal uren en dagen dat u wilt parkeren.",
+          "note": "De bronnen specificeren dat deze vergunningstypen specifiek voor de Binnenstad gelden, wat niet vermeld wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.deventer.nl/loketten/digitaal-loket/parkeervergunning-bedrijven"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie over het tweedelige vergunningensysteem (Parkeerloket en mijn.2Park.nl) en de noodzaak van kentekenkoppeling die niet in de originele tekst staat. Ook wordt in de bronnen specifiek vermeld dat de twee soorten bedrijfsvergunningen alleen voor de Binnenstad gelden, een belangrijk detail dat ontbreekt in de originele tekst."
+  }
+}

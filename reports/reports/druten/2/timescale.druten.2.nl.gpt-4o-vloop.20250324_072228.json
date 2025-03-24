@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DRUTEN",
+      "contact": {
+        "phone": "(088) 432 70 00",
+        "email": "info@druten.nl",
+        "website": "http://www.druten.nl"
+      }
+    },
+    "service": {
+      "id": 2,
+      "name": "Bord of spandoek plaatsen aan de openbare weg"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 22,
+    "false_sentences": 2,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Beslist de gemeente niet binnen de termijn, dan krijgt u automatisch de vergunning.",
+        "status": "false",
+        "note": "Dit is onjuist. Bij het uitblijven van een beslissing binnen de termijn is er geen sprake van automatische vergunningverlening. De Wet dwangsom en beroep bij niet tijdig beslissen is hier van toepassing."
+      },
+      {
+        "sentence": "Maandag: 8.30 - 19.00 uur (nu gesloten)",
+        "status": "false",
+        "note": "De openingstijden van het gemeentehuis in Druten zijn op maandag van 8.30 - 17.00 uur, met een avondopenstelling op afspraak tot 19.00 uur. De vermelding is onvolledig en niet geheel correct."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.druten.nl/reclame-plaatsen",
+      "https://www.druten.nl/voorwerp-plaatsen-op-of-aan-de-weg",
+      "https://www.druten.nl/standplaatsvergunning",
+      "https://www.druten.nl/reclame-en-terrassenbeleid"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.druten.nl/exploitatievergunning-horecabedrijf",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor een reclamebord tegen de gevel in het winkelgebied van Druten dat voldoet aan de eisen vanuit het reclame- en terrassenbeleid is bijvoorbeeld geen omgevingsvergunning nodig. Ook niet voor een losstaand bord op eigen grond in het buitengebied dat voldoet aan de eisen van het reclame- en terrassenbeleid.",
+          "original_reference": "U heeft een vergunning nodig als er sprake is van bouwactiviteiten voor het plaatsen van de reclame.",
+          "note": "De bronpagina specificeert dat bepaalde reclameborden geen vergunning nodig hebben, terwijl de originele tekst algemener stelt dat een vergunning nodig is bij bouwactiviteiten. Dit geeft meer specifieke uitzonderingen aan.",
+          "source_urls": [
+            "https://www.druten.nl/reclame-en-terrassenbeleid"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u een constructie gaat bouwen voor het aanbrengen van reclame, dan heeft u een vergunning nodig voor het bouwen van deze constructie. Hiervoor doet u een aanvraag voor een bouwactiviteit. Hiervan is bijvoorbeeld sprake, als u een reclamebord ophangt of blokletters aan de gevel hangt.",
+          "original_reference": "U heeft een vergunning nodig als er sprake is van bouwactiviteiten voor het plaatsen van de reclame.",
+          "note": "De bronpagina geeft specifiekere voorbeelden van wat onder bouwactiviteiten valt (zoals blokletters en reclameborden), terwijl de originele tekst dit niet specificeert.",
+          "source_urls": [
+            "https://www.druten.nl/reclame-plaatsen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de specificatie van wanneer wel/geen vergunning nodig is voor reclameborden. De bronpagina's geven meer gedetailleerde informatie over specifieke situaties en uitzonderingen dan de originele tekst. Dit maakt het voor ondernemers duidelijker wanneer ze wel of geen vergunning nodig hebben."
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "context": {
+    "municipality": {
+      "name": "NIJMEGEN",
+      "contact": {
+        "phone": "14 024",
+        "email": "gemeente@nijmegen.nl",
+        "website": "http://www.nijmegen.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "Beheerders zijn minimaal 21 jaar",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Nijmegen moeten beheerders minimaal 18 jaar zijn, niet 21 jaar"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.nijmegen.nl/diensten/vergunningen/drank-en-horeca/alcoholvergunning/",
+      "https://www.nijmegen.nl/diensten/vergunningen/drank-en-horeca/",
+      "https://www.nijmegen.nl/diensten/ondernemen/horecabedrijf-starten/",
+      "https://www.nijmegen.nl/diensten/vergunningen/drank-en-horeca/exploitatievergunning-horeca-zonder-alcohol/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.nijmegen.nl/formulieren/exploitatievergunning-aanvragen/",
+        "reason": "INVALID: Error scraping https://www.nijmegen.nl/formulieren/exploitatievergunning-aanvragen/: 404 Client Error: Not Found for url: https://www.nijmegen.nl/formulieren/exploitatievergunning-aanvragen/"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bel 024-329 98 00 of mail ondernemerspunt@nijmegen.nl",
+          "original_reference": "No matching information",
+          "note": "De originele inhoud bevat geen specifieke contactgegevens voor het OndernemersPunt, terwijl de bronnen wel een telefoonnummer en e-mailadres vermelden",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/vergunningen/drank-en-horeca/exploitatievergunning-horeca-zonder-alcohol/",
+            "https://www.nijmegen.nl/diensten/vergunningen/drank-en-horeca/alcoholvergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De afdeling Horeca vergunningen is voor u het aanspreekpunt van uw vergunningaanvraag",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden specifiek dat de afdeling Horeca vergunningen het aanspreekpunt is, wat niet genoemd wordt in de originele tekst",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/vergunningen/drank-en-horeca/exploitatievergunning-horeca-zonder-alcohol/"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen aanvullende contactinformatie en specificatie van het aanspreekpunt die niet in de originele tekst staan. De kernvoorwaarden, kosten en procedures komen overeen met de originele inhoud. De bronnen bieden meer specifieke details over de communicatiekanalen met de gemeente."
+  }
+}

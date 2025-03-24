@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ALKMAAR",
+      "contact": {
+        "phone": "14 072",
+        "email": "post@alkmaar.nl",
+        "website": "http://www.alkmaar.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 26,
+    "false_sentences": 2,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "Betaling kan alleen via iDeal, contant betalen is niet mogelijk.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Alkmaar is betaling ook mogelijk via pin bij het Servicepunt Parkeren, niet alleen via iDeal."
+      },
+      {
+        "sentence": "Bezoekersvergunning is gratis, parkeerkosten via bezoekersapp: € 3,25 per uur.",
+        "status": "false",
+        "note": "Het actuele tarief voor bezoekers via de bezoekersapp in Alkmaar is € 3,50 per uur, niet € 3,25."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.alkmaar.nl/direct-regelen/verkeer-vervoer-parkeren/verkeer-en-vervoer/verkeersregels-ontheffing",
+      "https://www.alkmaar.nl/direct-regelen/verkeer-vervoer-parkeren/parkeren-toekomstige-bewoner/veel-gestelde-parkeervragen",
+      "https://www.alkmaar.nl/direct-regelen/verkeer-vervoer-parkeren/parkeren-bedrijven-en-organisaties/bedrijfsvergunning",
+      "https://www.alkmaar.nl/direct-regelen/verkeer-vervoer-parkeren/parkeren-bedrijven-en-organisaties/bedrijfsvergunning-centrum",
+      "https://www.alkmaar.nl/direct-regelen/verkeer-vervoer-parkeren/parkeren-bedrijven-en-organisaties/bezoekersvergunning-bedrijven"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Nieuwe ontheffingen, vanaf 1 mei 2024, worden half april geprint en verstuurd.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de specifieke timing van het printen en versturen van nieuwe ontheffingen voor 2024. Dit is belangrijke aanvullende informatie voor aanvragers.",
+          "source_urls": [
+            "https://www.alkmaar.nl/direct-regelen/verkeer-vervoer-parkeren/verkeer-en-vervoer/verkeersregels-ontheffing"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "0-5 dagen: € 7,34, per maand: € 24,35, per jaar: € 15,23",
+          "original_reference": "Maandag t/m vrijdag: € 293,00, Gehele week: € 640,00",
+          "note": "De tariefstructuur in de bronnen verschilt significant van de originele tekst. De bronnen tonen andere bedragen en een andere indeling (dagen/maand/jaar versus weekdagen/hele week).",
+          "source_urls": [
+            "https://www.alkmaar.nl/direct-regelen/verkeer-vervoer-parkeren/verkeer-en-vervoer/verkeersregels-ontheffing"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "contant betalen is niet mogelijk",
+          "original_reference": "Betaling kan alleen via iDeal, contant betalen is niet mogelijk.",
+          "note": "Hoewel beide bronnen aangeven dat contant betalen niet mogelijk is, specificeert de originele tekst dat alleen iDeal mogelijk is, terwijl de bron alleen vermeldt dat contant betalen niet kan zonder alternatieve betaalmethoden te noemen.",
+          "source_urls": [
+            "https://www.alkmaar.nl/direct-regelen/verkeer-vervoer-parkeren/parkeren-bedrijven-en-organisaties/bezoekersvergunning-bedrijven"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de tariefstructuur en bedragen voor vergunningen, waarbij de bronnen significant andere bedragen en indelingen tonen. Daarnaast bevat de broninhoud nieuwe informatie over de timing van ontheffingen voor 2024 die niet in de originele tekst staat. Ook zijn er nuanceverschillen in de beschrijving van betaalmogelijkheden. De overige informatie komt grotendeels overeen met de originele tekst."
+  }
+}

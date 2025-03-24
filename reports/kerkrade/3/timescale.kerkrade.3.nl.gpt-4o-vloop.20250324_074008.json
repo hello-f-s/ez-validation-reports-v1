@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "KERKRADE",
+      "contact": {
+        "phone": "14 045",
+        "email": "gemeentehuis@kerkrade.nl",
+        "website": "http://www.kerkrade.nl"
+      }
+    },
+    "service": {
+      "id": 3,
+      "name": "Certificaat voor opgraving aanvragen en vondst melden"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 22,
+    "false_sentences": 2,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor het opvragen van bouwplannen uit het gemeentelijk archief bedragen meestal €17,20, met aanvullende kosten voor kopieën indien nodig.",
+        "status": "false",
+        "note": "Dit bedrag is niet correct volgens de actuele legesverordening van de gemeente Kerkrade. De exacte kosten worden bepaald op basis van de specifieke aanvraag en staan niet vast op €17,20."
+      },
+      {
+        "sentence": "Het Stadskantoor is geopend op de volgende tijden: - **Maandag**: 9.00 - 16.00 uur - **Dinsdag**: 9.00 - 16.00 uur - **Woensdag**: 9.00 - 16.00 uur - **Donderdag**: 9.00 - 20.00 uur - **Vrijdag**: 9.00 - 12.00 uur",
+        "status": "false",
+        "note": "De openingstijden zijn niet correct. Volgens de officiële website van de gemeente Kerkrade is het stadskantoor op maandag t/m donderdag geopend van 8.30 - 17.00 uur en op vrijdag van 8.30 - 12.30 uur. Op donderdag is er avondopenstelling tot 19.00 uur."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.kerkrade.nl/bodeminformatie-opvragen",
+      "https://www.kerkrade.nl/bodeminformatie",
+      "https://www.kerkrade.nl/bouwtekeningen-opvragen-uit-archief-gemeente",
+      "https://www.kerkrade.nl/contact",
+      "https://www.kerkrade.nl/adresonderzoek"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De gemeente kan zelf een historisch onderzoek uitvoeren en een rapportage hiervan leveren. Dit laatste heeft de voorkeur als de gemeente in een later stadium de rapportage van het bodemonderzoek moet beoordelen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat de gemeente zelf historisch onderzoek kan uitvoeren en dat dit de voorkeur heeft bij latere beoordeling van bodemonderzoek. Dit is belangrijke aanvullende informatie voor aanvragers.",
+          "source_urls": [
+            "https://www.kerkrade.nl/bodeminformatie"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het zelf maken van foto's van archiefstukken is toegestaan.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat het toegestaan is om zelf foto's te maken van archiefstukken. Dit is relevante informatie voor kostenbesparende opties.",
+          "source_urls": [
+            "https://www.kerkrade.nl/bouwtekeningen-opvragen-uit-archief-gemeente"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De kosten zijn afhankelijk van de omvang van de gevraagde stukken (spreek: de benodigde tijd om de stukken te verzamelen)",
+          "original_reference": "De kosten voor het opvragen van bouwplannen uit het gemeentelijk archief bedragen meestal €17,20",
+          "note": "De originele tekst suggereert een vast bedrag, terwijl de bron aangeeft dat kosten variabel zijn afhankelijk van de omvang van de aanvraag.",
+          "source_urls": [
+            "https://www.kerkrade.nl/bouwtekeningen-opvragen-uit-archief-gemeente"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen aanvullende diensten en kostenstructuren die niet in de originele tekst worden genoemd. De gemeente biedt meer flexibiliteit in dienstverlening dan oorspronkelijk vermeld, zoals de mogelijkheid tot het zelf uitvoeren van historisch onderzoek en het maken van foto's van archiefstukken. Ook is de kostenstructuur meer variabel dan in de originele tekst wordt gesuggereerd."
+  }
+}

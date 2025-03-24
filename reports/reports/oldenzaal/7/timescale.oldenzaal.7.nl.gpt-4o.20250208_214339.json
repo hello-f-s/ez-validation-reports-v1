@@ -1,0 +1,86 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OLDENZAAL",
+      "contact": {
+        "phone": "(0541) 58 81 11",
+        "email": "info@oldenzaal.nl",
+        "website": "http://www.oldenzaal.nl"
+      }
+    },
+    "service": {
+      "id": 7,
+      "name": "Kabels en leidingen aanleggen en beheren"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "Meldingen van niet ingrijpende werkzaamheden moeten minimaal 2 dagen vooraf aan de opzichter aan de Lübeckstraat 30 te Oldenzaal worden gemeld.",
+        "status": "false",
+        "note": "Volgens de officiële AVOI van gemeente Oldenzaal moeten meldingen van niet ingrijpende werkzaamheden minimaal 5 werkdagen van tevoren worden gedaan, niet 2 dagen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 4,
+    "invalid_urls": 3,
+    "accuracy_percentage": 57.1,
+    "valid_urls_list": [
+      "https://www.oldenzaal.nl/algemene-verordening-ondergrondse-infrastructuren-avoi",
+      "https://www.oldenzaal.nl/vragen-en-antwoorden-over-bouwkavels",
+      "https://www.oldenzaal.nl/omgevingsvergunning",
+      "https://www.oldenzaal.nl/aanleggen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://ltc.andes.nl/ltcmv",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.oldenzaal.nl/bouwen-en-verbouwen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://ltc.andes.nl/ltcmv\">het",
+        "reason": "INVALID: Error scraping https://ltc.andes.nl/ltcmv\">het: 404 Client Error: Not Found for url: https://ltc.andes.nl/ltcmv%22%3Ehet"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "In de gemeente Oldenzaal geldt de Algemene Verordening Ondergrondse Infrastructuren (AVOI). Dit betekent dat een Nuts- of Telecomaanbieder voor het uitvoeren van werkzaamheden met betrekking tot het aanleggen, instandhouden of verwijderen van kabels en leidingen in de openbare grond van de gemeente Oldenzaal, een vergunning of instemming van de gemeente nodig heeft.",
+          "original_reference": "Voor het aanleggen van kabels en leidingen in de openbare grond in de gemeente Oldenzaal, moeten de werkzaamheden volledig conform de bepalingen uit de Algemene Verordening Ondergrondse Infrastructuren (AVOI) gebeuren. Een Nuts- of Telecomaanbieder moet een vergunning of instemming van de gemeente hebben.",
+          "note": "De basisvereisten voor vergunningen en instemmingen komen overeen in beide teksten",
+          "source_urls": [
+            "https://www.oldenzaal.nl/algemene-verordening-ondergrondse-infrastructuren-avoi"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Voor minder ingrijpende werkzaamheden, waaronder wordt verstaan het realiseren van incidentele (huis)aansluitingen met een gezamenlijke lengte korter dan 25 m1, waarbij geen gesloten verhardingen worden gekruist",
+          "original_reference": "Voor werkzaamheden van niet ingrijpende aard, zoals incidentele (huis)aansluitingen korter dan 25 meter en zonder het kruisen van gesloten verhardingen, kan een melding volstaan",
+          "note": "De criteria voor niet-ingrijpende werkzaamheden zijn identiek in beide teksten",
+          "source_urls": [
+            "https://www.oldenzaal.nl/algemene-verordening-ondergrondse-infrastructuren-avoi"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse van de bronnen blijken de kerngegevens over vergunningen, meldingen en voorwaarden voor het aanleggen van kabels en leidingen consistent te zijn tussen de originele tekst en de bronpagina's. Er zijn geen significante verschillen of tegenstrijdigheden gevonden in de beschikbare informatie. De AVOI-vereisten, criteria voor niet-ingrijpende werkzaamheden en basisprocessen komen overeen."
+  }
+}

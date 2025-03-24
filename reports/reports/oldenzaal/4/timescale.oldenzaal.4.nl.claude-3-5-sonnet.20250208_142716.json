@@ -1,0 +1,86 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OLDENZAAL",
+      "contact": {
+        "phone": "(0541) 58 81 11",
+        "email": "info@oldenzaal.nl",
+        "website": "http://www.oldenzaal.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 11,
+    "false_sentences": 2,
+    "accuracy_percentage": 84.6,
+    "false_statements": [
+      {
+        "sentence": "Voor kleine evenementen: minimaal 10 werkdagen van tevoren een melding indienen via de Vergunningenchecker.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Oldenzaal moet een melding voor kleine evenementen minimaal 14 dagen (niet 10 werkdagen) van tevoren worden ingediend."
+      },
+      {
+        "sentence": "Leges voor grote evenementen: €75 (A-evenement), €150 (B-evenement), €300 (C-evenement).",
+        "status": "false",
+        "note": "De genoemde legesbedragen zijn onjuist. Volgens de legesverordening van gemeente Oldenzaal zijn de actuele tarieven: €62,65 voor een A-evenement, €125,30 voor een B-evenement en €250,60 voor een C-evenement."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 3,
+    "invalid_urls": 2,
+    "accuracy_percentage": 60.0,
+    "valid_urls_list": [
+      "https://www.oldenzaal.nl/subsidie-evenementen",
+      "https://www.oldenzaal.nl/omgevingsvergunning",
+      "https://www.oldenzaal.nl/standplaatsvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.oldenzaal.nl/bouwen-en-verbouwen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.oldenzaal.nl/evenement-organiseren-vergunning-of-melding",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De subsidieregeling is een stimuleringsmiddel voor organisatoren van evenementen die een bijdrage leveren aan het op de kaart zetten van Oldenzaal als aantrekkelijke evenementenstad.",
+          "original_reference": "No matching information",
+          "note": "De originele inhoud bevat geen informatie over de mogelijkheid tot het aanvragen van subsidie voor evenementen, wat een belangrijke aanvulling is voor evenementorganisatoren.",
+          "source_urls": [
+            "https://www.oldenzaal.nl/subsidie-evenementen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Per criterium kennen we een van de volgende waarden toe: 'onvoldoende', 'voldoende' of 'goed'. Op basis van de beoordeling van uw subsidieaanvraag en de omvang van uw evenement bepalen we of en voor hoeveel subsidie uw evenement in aanmerking komt.",
+          "original_reference": "No matching information",
+          "note": "De originele inhoud vermeldt niet het beoordelingssysteem voor evenementen en de criteria die worden gebruikt voor subsidietoekenning.",
+          "source_urls": [
+            "https://www.oldenzaal.nl/subsidie-evenementen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste aanvulling op de originele inhoud betreft de mogelijkheid tot het aanvragen van subsidie voor evenementen. Dit is een significant verschil omdat het een extra financieringsmogelijkheid biedt voor organisatoren. De bronnen bevatten een gedetailleerd beoordelingssysteem voor subsidieaanvragen dat niet in de originele inhoud wordt genoemd. De kernvoorwaarden en procedures voor evenementenvergunningen komen verder overeen met de originele inhoud."
+  }
+}

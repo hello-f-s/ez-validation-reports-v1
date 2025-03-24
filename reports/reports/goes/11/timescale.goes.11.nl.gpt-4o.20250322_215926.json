@@ -1,0 +1,95 @@
+{
+  "context": {
+    "municipality": {
+      "name": "GOES",
+      "contact": {
+        "phone": "14 0113",
+        "email": "stadskantoor@goes.nl",
+        "website": "http://www.goes.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "U heeft eHerkenning nodig om een digitale aanvraag te doen.",
+        "status": "false",
+        "note": "Dit is onjuist omdat particulieren ook met DigiD een digitale aanvraag kunnen doen. eHerkenning is alleen nodig voor ondernemers, niet voor alle aanvragers."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 4,
+    "invalid_urls": 3,
+    "accuracy_percentage": 57.1,
+    "valid_urls_list": [
+      "https://www.goes.nl/omgevingsvergunning",
+      "https://www.goes.nl/participatie-en-omgevingswet",
+      "https://www.goes.nl/milieu-omgevingsvergunning-melding",
+      "https://www.goes.nl/conceptverzoek-omgevingsvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.overheid.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.omgevingsloket.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.goes.nl/leeswijzer",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Sinds 1 januari 2024 geldt de Omgevingswet. Deze wet schrijft voor dat je een gesprek met de omgeving houdt als je een plan hebt om iets te bouwen of te ontwikkelen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de participatieverplichting onder de nieuwe Omgevingswet die sinds 2024 geldt. Dit is een belangrijke nieuwe voorwaarde voor aanvragers.",
+          "source_urls": [
+            "https://www.goes.nl/participatie-en-omgevingswet"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het conceptverzoek is gratis. Voordat u grote kosten maakt, weet u of uw plan kans van slagen heeft.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de mogelijkheid van een gratis conceptverzoek voorafgaand aan de definitieve aanvraag, wat een belangrijke kostenbesparende optie is voor aanvragers.",
+          "source_urls": [
+            "https://www.goes.nl/conceptverzoek-omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bij een ingewikkelde aanvraag wordt er eerst een ontwerpbesluit gemaakt over uw aanvraag. Iedereen kan binnen 6 weken zijn of haar mening (zienswijze) hierover geven.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist informatie over de mogelijkheid van een ontwerpbesluit bij complexe aanvragen en de bijbehorende zienswijzeprocedure van 6 weken.",
+          "source_urls": [
+            "https://www.goes.nl/milieu-omgevingsvergunning-melding"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten drie belangrijke aanvullingen op de originele tekst: de nieuwe participatieverplichting onder de Omgevingswet (2024), de mogelijkheid van een gratis conceptverzoek, en de procedure rond ontwerpbesluiten bij complexe aanvragen. Deze informatie is essentieel voor een volledig begrip van het aanvraagproces voor een omgevingsvergunning."
+  }
+}

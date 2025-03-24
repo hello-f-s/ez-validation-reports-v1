@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HEEMSTEDE",
+      "contact": {
+        "phone": "(023) 548 58 68",
+        "email": "gemeente@heemstede.nl",
+        "website": "http://www.heemstede.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "De precariobelasting voor een terras bedraagt: Per m² per week: € 1,78, Per m² per maand: € 4,86, Per m² per jaar: € 48,26, Terras boven water, per m² per jaar: € 33,33",
+        "status": "false",
+        "note": "De genoemde tarieven voor precariobelasting zijn verouderd. De actuele tarieven voor 2024 zijn anders volgens de gemeentelijke belastingverordening van Heemstede."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.heemstede.nl/vergunningen/terrasvergunning",
+      "https://www.heemstede.nl/vergunningen/standplaatsvergunning-aanvragen",
+      "https://www.heemstede.nl/vergunningen/in-of-uitrit-aanleggen-omgevingsvergunning",
+      "https://www.heemstede.nl/bestuur-en-organisatie/omgevingswet/de-omgevingswet-voor-u-als-inwoner-of-ondernemer",
+      "https://www.heemstede.nl/vergunningen/alcoholwetvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.heemstede.nl/ondernemer/horeca-en-evenementen/terras-plaatsen/",
+        "reason": "INVALID: Error scraping https://www.heemstede.nl/ondernemer/horeca-en-evenementen/terras-plaatsen/: 404 Client Error: Not Found for url: https://www.heemstede.nl/ondernemer/horeca-en-evenementen/terras-plaatsen/"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Op een terras mag u geen bouwwerken of overkappingen plaatsen. Met uitzondering van terrasafscheidingen. Deze: Mogen maximaal 1,5 meter hoog zijn, Zijn tot 1 meter vergunningsvrij",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de maximale hoogte van terrasafscheidingen en de vergunningsvrije hoogte, wat belangrijke voorwaarden zijn voor terrasplaatsing",
+          "source_urls": [
+            "https://www.heemstede.nl/vergunningen/terrasvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Terrassen voetgangers niet mogen belemmeren, Rolstoelen en kinderwagens zonder problemen langs het terras moeten kunnen, Voor het centrum geldt: een minimale doorloopruimte van 2 meter, Voor alle andere locaties geldt: een minimale doorloopruimte van 1,5 meter",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist essentiële informatie over minimale doorloopruimtes en toegankelijkheidseisen voor voetgangers, rolstoelen en kinderwagens",
+          "source_urls": [
+            "https://www.heemstede.nl/vergunningen/terrasvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Let op: een terras moet u altijd kunnen verwijderen. Eventuele wanden, meubilair en parasols mag u niet permanent verankeren",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist de belangrijke voorwaarde dat terrassen verwijderbaar moeten zijn en dat permanente verankering niet is toegestaan",
+          "source_urls": [
+            "https://www.heemstede.nl/vergunningen/terrasvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten belangrijke aanvullende voorwaarden voor het plaatsen van terrassen die niet in de originele tekst staan vermeld. Dit betreft specifieke regels over terrasafscheidingen, minimale doorloopruimtes voor voetgangers en de eis dat terrassen verwijderbaar moeten zijn. Deze informatie is essentieel voor ondernemers die een terras willen plaatsen."
+  }
+}

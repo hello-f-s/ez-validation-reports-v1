@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LEEUWARDEN",
+      "contact": {
+        "phone": "14 058",
+        "email": "gemeente@leeuwarden.nl",
+        "website": "http://www.leeuwarden.nl"
+      }
+    },
+    "service": {
+      "id": 8,
+      "name": "Marktvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 22,
+    "false_sentences": 2,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Het gemeentehuis is geopend van maandag, dinsdag, woensdag, en vrijdag van 08:30 tot 17:00 uur, en op donderdag van 08:30 tot 19:30 uur.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Leeuwarden is het gemeentehuis geopend van maandag t/m vrijdag van 8:30 tot 17:00 uur, en op donderdag van 8:30 tot 20:00 uur."
+      },
+      {
+        "sentence": "Een standplaatsvergunning kost € 110,65.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Leeuwarden bedragen de kosten voor een standplaatsvergunning € 113,95."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.leeuwarden.nl/omgevingsvergunning/procedure-omgevingsvergunning-aanvragen-of-melden/",
+      "https://www.leeuwarden.nl/andere-vergunningen-en-ontheffingen/standplaatsvergunning/",
+      "https://www.leeuwarden.nl/wonen/informatie-onroerend-goed/",
+      "https://www.leeuwarden.nl/horeca/horecavergunning/",
+      "https://www.leeuwarden.nl/omgevingsvergunning/gebruikmaken-maken-of-veranderen-van-een-uitweg/"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Maakt u langer dan 30 dagen onafgebroken gebruik van de verkoopstandplaats, dan vraagt u een standplaatsvergunning aan in combinatie met een tijdelijke omgevingsvergunning.",
+          "original_reference": "Deze is nodig als de gebruiksperiode langer dan 30 dagen onafgebroken is.",
+          "note": "De originele tekst vermeldt alleen een standplaatsvergunning voor gebruik langer dan 30 dagen, terwijl de bron aangeeft dat er ook een tijdelijke omgevingsvergunning nodig is.",
+          "source_urls": [
+            "https://www.leeuwarden.nl/andere-vergunningen-en-ontheffingen/standplaatsvergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bij woningen of scholen is geen standplaats toegestaan.",
+          "original_reference": "Binnen 200 meter van scholen is geen standplaats mogelijk.",
+          "note": "De bron vermeldt een algemeen verbod bij woningen en scholen, terwijl de originele tekst alleen spreekt over een afstand van 200 meter bij scholen.",
+          "source_urls": [
+            "https://www.leeuwarden.nl/andere-vergunningen-en-ontheffingen/standplaatsvergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bij toestemming van de eigenaar zijn er maximaal 2 standplaatsen toegestaan.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over het maximaal aantal toegestane standplaatsen op particuliere grond.",
+          "source_urls": [
+            "https://www.leeuwarden.nl/andere-vergunningen-en-ontheffingen/standplaatsvergunning/"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn enkele belangrijke verschillen gevonden tussen de originele tekst en de bronnen. De belangrijkste verschillen betreffen de aanvullende eis van een tijdelijke omgevingsvergunning bij gebruik langer dan 30 dagen, strengere regels voor standplaatsen bij woningen, en ontbrekende informatie over het maximaal aantal toegestane standplaatsen op particuliere grond. Deze verschillen hebben significante implicaties voor standplaatshouders."
+  }
+}

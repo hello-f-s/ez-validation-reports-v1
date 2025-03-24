@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AMERSFOORT",
+      "contact": {
+        "phone": "14 033",
+        "email": "info@amersfoort.nl",
+        "website": "http://www.amersfoort.nl"
+      }
+    },
+    "service": {
+      "id": 18,
+      "name": "Ventvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 31,
+    "true_sentences": 30,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.8,
+    "false_statements": [
+      {
+        "sentence": "Een ventvergunning is nodig voor diverse activiteiten zoals het aanleggen of verharden van een weg, het aanleggen of dempen van een sloot, of het afgraven of verhogen van grond.",
+        "status": "false",
+        "note": "Dit is onjuist - deze activiteiten vallen onder een omgevingsvergunning, niet onder een ventvergunning. Een ventvergunning is specifiek bedoeld voor het venten/verkopen van goederen op straat in de gemeente Amersfoort."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.amersfoort.nl/aanleggen",
+      "https://www.amersfoort.nl/exploitatie-horeca-inrichting",
+      "https://www.amersfoort.nl/reclame",
+      "https://www.amersfoort.nl/omgevingsvergunning-voor-bouwen-en-verbouwen",
+      "https://www.amersfoort.nl/een-vergunning-aangevraagd-en-nu"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wil je reclame maken in de openbare ruimte? Bijvoorbeeld op lichtmasten, bushokjes of europanels? Dan hoef je geen vergunning aan te vragen. De gemeente heeft dit namelijk uitbesteed aan verschillende bedrijven.",
+          "original_reference": "Naast de algemene bouw- en milieuregels zijn er specifieke lokale regels, zoals het beleid voor reclame in de openbare ruimte.",
+          "note": "De originele tekst suggereert dat er vergunningen nodig zijn voor reclame in de openbare ruimte, terwijl de brontekst specifiek aangeeft dat dit is uitbesteed en geen vergunning vereist is.",
+          "source_urls": [
+            "https://www.amersfoort.nl/reclame"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Binnen 2 weken neemt de casemanager contact met je op. Let op: door de drukte halen we deze termijn helaas niet altijd.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over de eerste contactopname door een casemanager en de mogelijke vertraging hierin.",
+          "source_urls": [
+            "https://www.amersfoort.nl/een-vergunning-aangevraagd-en-nu"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Is de vergunning verleend? Dan volgt een bezwaartermijn van 6 weken. Je mag wel meteen beginnen.",
+          "original_reference": "De bezwaartermijn start na het verlenen van de vergunning en duurt 6 weken.",
+          "note": "De brontekst specificeert dat je bij reclamevergunningen direct mag beginnen tijdens de bezwaartermijn, terwijl de originele tekst dit niet vermeldt.",
+          "source_urls": [
+            "https://www.amersfoort.nl/reclame"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont enkele belangrijke verschillen tussen de originele tekst en de bronnen. Met name rond de vergunningsvereisten voor reclame in de openbare ruimte, de rol van de casemanager in het proces, en de mogelijkheid om direct te starten met werkzaamheden tijdens de bezwaartermijn bij reclamevergunningen. Deze informatie is essentieel voor aanvragers om het proces correct te begrijpen."
+  }
+}

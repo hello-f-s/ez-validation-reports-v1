@@ -1,0 +1,78 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LAARBEEK",
+      "contact": {
+        "phone": "(0492) 46 97 00",
+        "email": "gemeente@laarbeek.nl",
+        "website": "http://www.laarbeek.nl"
+      }
+    },
+    "service": {
+      "id": 6,
+      "name": "Integriteitsonderzoek (Wet Bibob)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 27,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.4,
+    "false_statements": [
+      {
+        "sentence": "Voor subsidies wordt nog beleid ontwikkeld.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Laarbeek is het Bibob-beleid voor subsidies al ontwikkeld en opgenomen in de vastgestelde beleidsregels, niet 'nog in ontwikkeling'."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.laarbeek.nl/bibob-wet-bevordering-integriteitsbeoordelingen-door-het-openbaar-bestuur",
+      "https://www.laarbeek.nl/verklaring-omtrent-het-gedrag",
+      "https://www.laarbeek.nl/adresonderzoek-aanvragen",
+      "https://www.laarbeek.nl/inzien-beelden-bodycam"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.laarbeek.nl/verzoek-op-basis-van-de-wet-open-overheid-woo",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De formulieren voor het Bibob onderzoek ontvangt u tijdens een intakegesprek. In een aantal gevallen wordt het formulier u per post of e-mail toegezonden.",
+          "original_reference": "De formulieren voor het Bibob-onderzoek ontvangt u tijdens een intakegesprek. In sommige gevallen kunnen de formulieren per post of e-mail worden toegezonden.",
+          "note": "De brontekst spreekt over 'het formulier' in enkelvoud, terwijl de originele tekst 'formulieren' in meervoud gebruikt. Dit is een klein maar relevant verschil in de procedurele beschrijving.",
+          "source_urls": [
+            "https://www.laarbeek.nl/bibob-wet-bevordering-integriteitsbeoordelingen-door-het-openbaar-bestuur"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "De gemeente krijgt steeds meer te maken met ondermijnende criminaliteit. Ondermijnende criminaliteit bestaat uit alle vormen van criminaliteit die een bedreiging zijn voor de integriteit van onze maatschappij.",
+          "original_reference": "De gemeente Laarbeek wordt steeds vaker geconfronteerd met ondermijnende criminaliteit. Dit zijn vormen van criminaliteit die de integriteit van onze maatschappij bedreigen",
+          "note": "De kernboodschap over ondermijnende criminaliteit is inhoudelijk consistent tussen beide bronnen, alleen anders geformuleerd.",
+          "source_urls": [
+            "https://www.laarbeek.nl/bibob-wet-bevordering-integriteitsbeoordelingen-door-het-openbaar-bestuur"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse van de bronnen zijn er weinig significante verschillen gevonden. Het belangrijkste verschil betreft de beschrijving van de formulierenverstrekking, waarbij de brontekst spreekt over een enkelvoudig formulier terwijl de originele tekst meervoud gebruikt. De overige informatie, waaronder de beschrijving van ondermijnende criminaliteit, procedures en doelstellingen, is grotendeels consistent tussen de bronnen."
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LAARBEEK",
+      "contact": {
+        "phone": "(0492) 46 97 00",
+        "email": "gemeente@laarbeek.nl",
+        "website": "http://www.laarbeek.nl"
+      }
+    },
+    "service": {
+      "id": 10,
+      "name": "Nachtregister bijhouden"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 7,
+    "true_sentences": 6,
+    "false_sentences": 1,
+    "accuracy_percentage": 85.7,
+    "false_statements": [
+      {
+        "sentence": "De gemeente Laarbeek kiest voor een bedrag van € 2,25 per persoon per nacht voor accommodaties met vaste slaapplekken, zoals de huisvesting van arbeidsmigranten, maar ook overnachtingen in hotels, Bed & Breakfasts en accommodaties op een camping.",
+        "status": "false",
+        "note": "Het exacte bedrag voor toeristenbelasting in Laarbeek kan niet geverifieerd worden op basis van de officiële gemeentelijke bronnen. Dit tarief wordt niet vermeld op de website van de gemeente Laarbeek."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.laarbeek.nl/verklaring-omtrent-het-gedrag",
+      "https://www.laarbeek.nl/horecabedrijf-beginnen",
+      "https://www.laarbeek.nl/sluitingsuren-horeca",
+      "https://www.laarbeek.nl/verzoek-op-basis-van-de-wet-open-overheid-woo"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.laarbeek.nl/registreer-huisvesting-arbeidsmigranten-bij-de-gemeente",
+        "reason": "INVALID: Error scraping https://www.laarbeek.nl/registreer-huisvesting-arbeidsmigranten-bij-de-gemeente: 404 Client Error: Not Found for url: https://www.laarbeek.nl/registreer-huisvesting-arbeidsmigranten-bij-de-gemeente"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Er kan geen informatie over verblijfsbelasting, tarieven of nachtregisters gevonden worden in de geciteerde bronnen",
+          "original_reference": "Alle informatie over verblijfsbelasting, tarieven en nachtregisters",
+          "note": "De geciteerde bronpagina's bevatten geen informatie over verblijfsbelasting of overnachtingstarieven. Dit maakt het onmogelijk om de juistheid van de originele inhoud te verifiëren.",
+          "source_urls": [
+            "https://www.laarbeek.nl/horecabedrijf-beginnen",
+            "https://www.laarbeek.nl/verzoek-op-basis-van-de-wet-open-overheid-woo",
+            "https://www.laarbeek.nl/sluitingsuren-horeca",
+            "https://www.laarbeek.nl/verklaring-omtrent-het-gedrag",
+            "https://www.laarbeek.nl/registreer-huisvesting-arbeidsmigranten-bij-de-gemeente"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse kon niet volledig worden uitgevoerd omdat de geciteerde bronnen geen specifieke informatie bevatten over verblijfsbelasting, tarieven of nachtregisters. Hierdoor was het niet mogelijk om de juistheid van de originele inhoud te verifiëren of verschillen te identificeren. Voor een complete analyse zouden aanvullende bronnen nodig zijn die wel specifiek over deze onderwerpen gaan."
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ALKMAAR",
+      "contact": {
+        "phone": "14 072",
+        "email": "post@alkmaar.nl",
+        "website": "http://www.alkmaar.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "Kosten voor het in behandeling nemen van de aanvraag: € 140,10. Dit bedrag betaalt u ongeacht of u de vergunning krijgt.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Alkmaar bedragen de legeskosten voor een terrasvergunning € 142,90 (2024). Het genoemde bedrag van € 140,10 is niet correct."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/bouwen-en-verbouwen/boom-kappen-vergunning",
+      "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/horeca/terrasvergunning/",
+      "https://www.alkmaar.nl/direct-regelen/wonen-verhuizen-en-verbouwen/vergunningen/omgevingsvergunning",
+      "https://www.alkmaar.nl/direct-regelen/ondernemen/vergunningen-en-ontheffingen/exploitatievergunning/",
+      "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/bouwen-en-verbouwen/omgevingsloket"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "In 2022 worden de precario kwijtgescholden als tegemoetkoming.",
+          "original_reference": "Precariobelasting voor het exploiteren van een terras: € 63,40 per m² per jaar of € 6,35 per m² per maand.",
+          "note": "De originele tekst vermeldt niet de kwijtschelding van precariobelasting in 2022, wat een belangrijk verschil is in de kostenstructuur.",
+          "source_urls": [
+            "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/horeca/terrasvergunning/"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "U vraagt uw vergunning aan via e-Herkenning.",
+          "original_reference": "U vraagt de terrasvergunning aan via eHerkenning.",
+          "note": "De aanvraagmethode via eHerkenning komt overeen in beide bronnen.",
+          "source_urls": [
+            "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/horeca/terrasvergunning/"
+          ]
+        }
+      ]
+    },
+    "summary": "Bij vergelijking van de originele inhoud met de bronnen is er één significant verschil gevonden met betrekking tot de precariobelasting, waarbij de bron vermeldt dat deze in 2022 werd kwijtgescholden. De overige informatie, waaronder aanvraagprocedures, kosten en voorwaarden, komt overeen met de originele tekst. De informatie over bezwaren ontbreekt inderdaad in de bronnen, wat consistent is met de originele vermelding dat hierover geen specifieke informatie beschikbaar is."
+  }
+}

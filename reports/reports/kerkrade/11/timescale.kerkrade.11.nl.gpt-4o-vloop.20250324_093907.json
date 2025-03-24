@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "KERKRADE",
+      "contact": {
+        "phone": "14 045",
+        "email": "gemeentehuis@kerkrade.nl",
+        "website": "http://www.kerkrade.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 31,
+    "true_sentences": 30,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.8,
+    "false_statements": [
+      {
+        "sentence": "De omgevingsbalie is geopend op donderdag van 09:00-12:00 en 16:00-18:00.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Kerkrade is de omgevingsbalie geopend op maandag t/m vrijdag van 09:00-12:00 uur en op donderdag ook van 14:00-19:00 uur."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.kerkrade.nl/omgevingsvergunning",
+      "https://www.kerkrade.nl/milieu-vergunning-of-melding",
+      "https://www.kerkrade.nl/vergunning-checken-en-vooroverleg",
+      "https://www.kerkrade.nl/gemeente-kerkrade-helpt-u-bij-de-omgevingswet",
+      "https://www.kerkrade.nl/omgevingsvergunning-strijdig-gebruik"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "De omgevingsbalie is vanaf januari elke donderdag van 09:00-12:00 en 16:00-18:00 geopend.",
+          "original_reference": "De omgevingsbalie is geopend op donderdag van 09:00-12:00 en 16:00-18:00.",
+          "note": "De openingstijden van de omgevingsbalie komen exact overeen.",
+          "source_urls": [
+            "https://www.kerkrade.nl/gemeente-kerkrade-helpt-u-bij-de-omgevingswet"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als initiatiefnemer kunt u in het nieuwe Omgevingsloket een vergunningcheck doen [...] Een vooroverleg is niet verplicht.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt expliciet dat vooroverleg niet verplicht is, terwijl dit in de originele tekst niet wordt genoemd.",
+          "source_urls": [
+            "https://www.kerkrade.nl/vergunning-checken-en-vooroverleg"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Doe de melding minimaal 4 weken voor de start van uw activiteiten",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt geen minimale termijn voor het doen van meldingen, terwijl de bron een termijn van 4 weken specificeert.",
+          "source_urls": [
+            "https://www.kerkrade.nl/milieu-vergunning-of-melding"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont enkele belangrijke verschillen tussen de originele tekst en de bronnen. De bronnen bevatten aanvullende informatie over de niet-verplichte aard van vooroverleg en specificeren een minimale meldingstermijn van 4 weken voor activiteiten. Deze details ontbreken in de originele tekst. De openingstijden van de omgevingsbalie zijn consistent in beide bronnen."
+  }
+}

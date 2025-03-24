@@ -1,0 +1,67 @@
+{
+  "context": {
+    "municipality": {
+      "name": "RENKUM",
+      "contact": {
+        "phone": "(026) 334 81 11",
+        "email": "info@renkum.nl",
+        "website": "http://www.renkum.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor een VOG bedragen € 41,35.",
+        "status": "false",
+        "note": "De actuele kosten voor een VOG bedragen € 41,95 volgens de officiële website van gemeente Renkum."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 0,
+    "invalid_urls": 6,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.renkum.nl/Inwoners/Bouwen_en_verbouwen/Omgevingsvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.renkum.nl/Inwoners/Uittreksels_aktes_bewijzen/Verklaring_Omtrent_het_Gedrag",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.renkum.nl/Ondernemers/Bouwen_en_vestigen/Bedrijf_vestigen_verhuizen_of_uitbreiden",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.renkum.nl/Bestuur_en_organisatie/Wet_open_overheid_Woo/Woo_verzoek",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.renkum.nl/Inwoners/Uittreksels_aktes_bewijzen/Persoonsgegevens_opvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://website",
+        "reason": "INVALID: Error scraping https://website: HTTPSConnectionPool(host='website', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x107a2f9d0>: Failed to resolve 'website' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  }
+}

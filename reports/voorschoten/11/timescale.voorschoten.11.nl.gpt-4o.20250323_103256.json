@@ -1,0 +1,86 @@
+{
+  "context": {
+    "municipality": {
+      "name": "VOORSCHOTEN",
+      "contact": {
+        "phone": "14 071",
+        "email": "gemeente@voorschoten.nl",
+        "website": "http://www.voorschoten.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 10,
+    "false_sentences": 1,
+    "accuracy_percentage": 90.9,
+    "false_statements": [
+      {
+        "sentence": "U ontvangt binnen 8 weken bericht of u de vergunning krijgt.",
+        "status": "false",
+        "note": "De standaard behandeltermijn voor een reguliere omgevingsvergunning is inderdaad 8 weken, maar de gemeente kan deze termijn eenmalig met 6 weken verlengen. Dit wordt niet vermeld in de zin, waardoor deze onvolledig en daarmee onjuist is."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 1,
+    "invalid_urls": 6,
+    "accuracy_percentage": 14.3,
+    "valid_urls_list": [
+      "https://www.voorschoten.nl/form/vs-1213-omgevingsvergunningen-inzien"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.voorschoten.nl/terras-plaatsen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.voorschoten.nl/vooroverleg",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.digid.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.voorschoten.nl/bouwloket-producten",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.eherkenning.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.voorschoten.nl/omgevingsplan-bekijken",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Er zijn geen kosten verbonden aan het digitaal toegestuurd krijgen van aangevraagde en verleende omgevingsvergunningen die ter inzage liggen.",
+          "original_reference": "indien u bouwtekeningen wilt bekijken of aanvragen, zijn de kosten €15,20 per adres",
+          "note": "Er is een tegenstrijdigheid in de kostenstructuur. De originele tekst vermeldt kosten van €15,20 per adres voor het inzien van bouwtekeningen, terwijl de bronpagina expliciet vermeldt dat er geen kosten zijn verbonden aan het digitaal ontvangen van omgevingsvergunningen.",
+          "source_urls": [
+            "https://www.voorschoten.nl/form/vs-1213-omgevingsvergunningen-inzien"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste tegenstrijdigheid betreft de kosten voor het inzien van vergunningen. Waar de originele tekst kosten van €15,20 per adres vermeldt voor het inzien van bouwtekeningen, geeft de bronpagina expliciet aan dat er geen kosten zijn verbonden aan het digitaal ontvangen van omgevingsvergunningen. Dit kan verwarring veroorzaken bij aanvragers over welke diensten wel of niet kosteloos zijn."
+  }
+}

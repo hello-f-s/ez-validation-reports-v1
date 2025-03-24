@@ -1,0 +1,68 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DEN HAAG",
+      "contact": {
+        "phone": "14 070",
+        "email": "null",
+        "website": "http://www.denhaag.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 31,
+    "true_sentences": 29,
+    "false_sentences": 2,
+    "accuracy_percentage": 93.5,
+    "false_statements": [
+      {
+        "sentence": "Kosten van de vergunning: € 433,15 per jaar. Voor een auto-share vergunning met gereserveerde parkeerplaats bedragen de kosten € 97,05.",
+        "status": "false",
+        "note": "De actuele tarieven voor 2024 zijn anders. Een zakelijke parkeervergunning kost €445,80 per jaar en een auto-share vergunning met gereserveerde parkeerplaats kost €99,60 volgens de officiële website van gemeente Den Haag."
+      },
+      {
+        "sentence": "Bij de aanvraag: € 16,75.",
+        "status": "false",
+        "note": "Het actuele tarief voor de aanvraag van een parkeervergunning in 2024 is €17,20 volgens de officiële website van gemeente Den Haag."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 0,
+    "invalid_urls": 5,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.denhaag.nl/nl/parkeren/parkeervergunning-voor-bedrijven-aanvragen/",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.denhaag.nl/nl/parkeren/parkeervergunning-voor-bezoekers-van-bedrijven-aanvragen/",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.denhaag.nl/nl/parkeren/bedrijfsparkeervergunning-voor-autodate-aanvragen/",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.denhaag.nl/nl/parkeren/parkeervergunning-voor-bezoekers-aanvragen/",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.denhaag.nl/nl/parkeren/parkeervergunning-voor-bewoners-aanvragen/",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  }
+}

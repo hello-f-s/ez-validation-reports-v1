@@ -1,0 +1,98 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HEEMSKERK",
+      "contact": {
+        "phone": "14 0251",
+        "email": "post@heemskerk.nl",
+        "website": "http://www.heemskerk.nl"
+      }
+    },
+    "service": {
+      "id": 16,
+      "name": "Registreren in het Landelijk Register Kinderopvang (LRK)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 8,
+    "true_sentences": 7,
+    "false_sentences": 1,
+    "accuracy_percentage": 87.5,
+    "false_statements": [
+      {
+        "sentence": "De beoordeling van de aanvraag gebeurt binnen 10 weken.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Heemskerk wordt er geen specifieke termijn van 10 weken genoemd voor de beoordeling van aanvragen. De behandeltermijn kan variëren afhankelijk van het type aanvraag."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 6,
+    "invalid_urls": 1,
+    "accuracy_percentage": 85.7,
+    "valid_urls_list": [
+      "https://www.heemskerk.nl/aanvragen-en-regelen/ondernemersloket",
+      "https://www.heemskerk.nl/aanvragen-en-regelen/verklaring-omtrent-gedrag-vog",
+      "https://www.heemskerk.nl/aanvragen-en-regelen/aangifte-levenloos-geboren-kind",
+      "https://www.heemskerk.nl/werk-inkomen-zorg-en-welzijn/kindpakket",
+      "https://www.heemskerk.nl/",
+      "https://www.heemskerk.nl/over-heemskerk/kinderopvang-ondernemers"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.heemskerk.nl/\">Gemeente",
+        "reason": "INVALID: Error scraping https://www.heemskerk.nl/\">Gemeente: 404 Client Error: Not Found for url: https://www.heemskerk.nl/%22%3EGemeente"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Vul het aanvraagformulier van de Rijksoverheid in. Mail het ingevulde aanvraagformulier naar ons via post@heemskerk.nl",
+          "original_reference": "Vul het aanvraagformulier van de Rijksoverheid in. Mail het ingevulde formulier naar post@heemskerk.nl.",
+          "note": "De aanvraagprocedure en het e-mailadres komen exact overeen met de originele inhoud",
+          "source_urls": [
+            "https://www.heemskerk.nl/over-heemskerk/kinderopvang-ondernemers"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "De GGD controleert of de organisatie voldoet aan alle landelijke kwaliteitseisen",
+          "original_reference": "De GGD voert een inspectie uit om te controleren of aan deze eisen wordt voldaan.",
+          "note": "De GGD-inspectie en controle van kwaliteitseisen wordt op dezelfde manier beschreven",
+          "source_urls": [
+            "https://www.heemskerk.nl/over-heemskerk/kinderopvang-ondernemers"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "GGD maakt gebruik van Streng aan de Poort",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt een specifieke methode 'Streng aan de Poort' die niet genoemd wordt in de originele tekst",
+          "source_urls": [
+            "https://www.heemskerk.nl/over-heemskerk/kinderopvang-ondernemers"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Ook wijzigingen vult u in een formulier in en stuurt u naar ons toe",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat aanvullende informatie over het doorgeven van wijzigingen die niet in de originele tekst staat",
+          "source_urls": [
+            "https://www.heemskerk.nl/over-heemskerk/kinderopvang-ondernemers"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina bevat grotendeels dezelfde informatie als de originele tekst, maar biedt twee belangrijke aanvullingen: het gebruik van de 'Streng aan de Poort' methode door de GGD en informatie over het doorgeven van wijzigingen via een apart formulier. De kernprocessen en vereisten zijn verder consistent met de originele tekst."
+  }
+}

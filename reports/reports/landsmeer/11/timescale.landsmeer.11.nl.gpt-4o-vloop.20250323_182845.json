@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LANDSMEER",
+      "contact": {
+        "phone": "(020) 487 71 11",
+        "email": "gemeente@Landsmeer.nl",
+        "website": "http://www.landsmeer.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 42,
+    "true_sentences": 41,
+    "false_sentences": 1,
+    "accuracy_percentage": 97.6,
+    "false_statements": [
+      {
+        "sentence": "Telefoon: 020 - 48 77 111 of 020 - 48 26 091",
+        "status": "false",
+        "note": "Het correcte telefoonnummer van de gemeente Landsmeer is 020 487 7111. Het alternatieve nummer 020 - 48 26 091 is niet correct volgens de officiële website van de gemeente Landsmeer."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.landsmeer.nl/inwoners/bouwen_en_verbouwen/meer_onderwerpen/omgevingsvergunning_aanvragen",
+      "https://www.landsmeer.nl/inwoners/bouwen_en_verbouwen/omgevingsplan/afwijken_van_het_omgevingsplan",
+      "https://www.landsmeer.nl/ondernemers/vergunningen/uitstalling_plaatsen_bij_een_bedrijf",
+      "https://www.landsmeer.nl/inwoners/parkeren,_verkeer_en_vervoer/verkeer/ontheffing_van_verkeersregels_aanvragen",
+      "https://www.landsmeer.nl/inwoners/bouwen_en_verbouwen/producten_en_diensten/gebouw_of_woning_slopen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u gaat (ver)bouwen dan zijn er een aantal activiteiten die mogelijk zonder vergunning kunnen worden uitgevoerd. Het is mogelijk om voor deze activiteiten een verklaring vergunningsvrij bouwen aan te vragen.",
+          "original_reference": "Voor bepaalde bouwactiviteiten kunt u een \"Verklaring Vergunningvrij Bouwen\" aanvragen, waarvoor ook leges in rekening worden gebracht.",
+          "note": "De originele tekst suggereert dat er altijd leges in rekening worden gebracht voor een verklaring vergunningvrij bouwen, terwijl dit niet expliciet wordt vermeld in de brontekst.",
+          "source_urls": [
+            "https://www.landsmeer.nl/inwoners/bouwen_en_verbouwen/meer_onderwerpen/omgevingsvergunning_aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De gemeente beslist binnen 6 maanden over uw vergunningaanvraag. Deze termijn kan de gemeente eenmaal verlengen met 6 weken.",
+          "original_reference": "Voor ingewikkeldere aanvragen zoals de uitgebreide procedure kan het tot 6 maanden duren, met een mogelijke verlenging van 6 weken.",
+          "note": "Bij sloopvergunningen wordt specifiek een beslissingstermijn van 6 maanden genoemd, terwijl de originele tekst dit alleen voor 'ingewikkeldere aanvragen' noemt.",
+          "source_urls": [
+            "https://www.landsmeer.nl/inwoners/bouwen_en_verbouwen/producten_en_diensten/gebouw_of_woning_slopen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De gemeente heeft namelijk gebieden aangewezen waarbinnen u zonder vergunning een uitstalling bij uw bedrijf mag plaatsen.",
+          "original_reference": "Als ondernemer moet u vaak een omgevingsvergunning aanvragen wanneer u wilt bouwen, verbouwen of iets aan uw omgeving wilt veranderen. Dit geldt ook voor het plaatsen van een uitstalling bij uw bedrijf, afhankelijk van de locatie.",
+          "note": "De brontekst specificeert dat er aangewezen gebieden zijn waar geen vergunning nodig is voor uitstallingen, terwijl dit detail ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.landsmeer.nl/ondernemers/vergunningen/uitstalling_plaatsen_bij_een_bedrijf"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn enkele belangrijke verschillen gevonden tussen de originele tekst en de bronnen. De belangrijkste verschillen betreffen de specificaties rond vergunningvrij bouwen, de termijnen voor sloopvergunningen, en de regelgeving rond uitstallingen in aangewezen gebieden. De bronnen bevatten in sommige gevallen meer specifieke details die niet in de originele tekst zijn opgenomen."
+  }
+}

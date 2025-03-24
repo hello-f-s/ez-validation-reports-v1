@@ -1,0 +1,100 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LEIDEN",
+      "contact": {
+        "phone": "14 071",
+        "email": "null",
+        "website": "http://www.leiden.nl/gemeente"
+      }
+    },
+    "service": {
+      "id": 2,
+      "name": "Bord of spandoek plaatsen aan de openbare weg"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 10,
+    "false_sentences": 1,
+    "accuracy_percentage": 90.9,
+    "false_statements": [
+      {
+        "sentence": "U kunt online een vergunning aanvragen via het Omgevingsloket. Hiervoor moet u inloggen met DigiD.",
+        "status": "false",
+        "note": "Voor bedrijven is inloggen met eHerkenning vereist, niet met DigiD. DigiD is alleen voor particulieren. Ondernemers moeten eHerkenning gebruiken voor het aanvragen van een omgevingsvergunning via het Omgevingsloket."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 9,
+    "valid_urls": 5,
+    "invalid_urls": 4,
+    "accuracy_percentage": 55.6,
+    "valid_urls_list": [
+      "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers/vergunningen-en-ontheffingen/voorwerpen-plaatsen-op-openbare-grond",
+      "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers/vergunningen-en-ontheffingen/kabels-en-leidingen-in-openbare-grond",
+      "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers/collecte-en-reclame/reclamemateriaal-verspreiden",
+      "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers/horeca/vergunning-terras-of-terrasboot",
+      "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers/vergunningen-en-ontheffingen/reclame-uitingen-plaatsen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.gemeente-leiden.nl/inwoners-en-bedrijven/omgevingsvergunning/",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.gemeente-leiden.nl/legesverordening.pdf",
+        "reason": "INVALID: Error scraping https://www.gemeente-leiden.nl/legesverordening.pdf: 439 Client Error: status code 439 for url: https://www.gemeente-leiden.nl/legesverordening.pdf"
+      },
+      {
+        "url": "https://www.omgevingsloket.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.gemeente-leiden.nl/modelenboek-gevelreclame.pdf",
+        "reason": "INVALID: Error scraping https://www.gemeente-leiden.nl/modelenboek-gevelreclame.pdf: 439 Client Error: status code 439 for url: https://www.gemeente-leiden.nl/modelenboek-gevelreclame.pdf"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U moet inloggen met DigiD of eHerkenning",
+          "original_reference": "Hiervoor moet u inloggen met DigiD",
+          "note": "De originele tekst vermeldt alleen DigiD als inlogmethode, terwijl de bronpagina aangeeft dat ook eHerkenning mogelijk is voor bedrijven",
+          "source_urls": [
+            "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers/vergunningen-en-ontheffingen/reclame-uitingen-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Lichtmastreclame plaatsen: neem contact op met het Nationaal Publiciteitsbureau (NPB). Bel 088-1335555 of kijk op de website van het Nationaal Publiciteitsbureau.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over lichtmastreclame en de benodigde contactgegevens voor het Nationaal Publiciteitsbureau",
+          "source_urls": [
+            "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers/vergunningen-en-ontheffingen/reclame-uitingen-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Reclame plaatsen op A0-reclamedisplays (bevestigd aan lantaarnpalen): neem contact op met Hoffman Outdoor Media. Bel 050-5250525",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist informatie over A0-reclamedisplays en de contactgegevens van Hoffman Outdoor Media",
+          "source_urls": [
+            "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers/vergunningen-en-ontheffingen/reclame-uitingen-plaatsen"
+          ]
+        }
+      ]
+    },
+    "summary": "De originele tekst mist enkele belangrijke details over specifieke vormen van reclame-uitingen, zoals lichtmastreclame en A0-displays, en de bijbehorende contactgegevens. Ook is de informatie over inlogmethoden onvolledig, aangezien eHerkenning als optie voor bedrijven niet wordt genoemd. Deze aanvullende informatie is wel beschikbaar in de bronpagina's."
+  }
+}

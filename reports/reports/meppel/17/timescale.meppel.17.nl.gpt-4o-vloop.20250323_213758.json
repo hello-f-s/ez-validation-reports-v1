@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MEPPEL",
+      "contact": {
+        "phone": "14 0522",
+        "email": "postbus@meppel.nl",
+        "website": "http://www.meppel.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 35,
+    "true_sentences": 34,
+    "false_sentences": 1,
+    "accuracy_percentage": 97.1,
+    "false_statements": [
+      {
+        "sentence": "De verwerkingstijd voor de vergunning is 12 weken, maar kan in sommige gevallen langer zijn.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Meppel is de wettelijke beslistermijn voor een terrasvergunning 8 weken, niet 12 weken. Deze termijn kan wel worden verlengd met maximaal 8 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 2,
+    "invalid_urls": 3,
+    "accuracy_percentage": 40.0,
+    "valid_urls_list": [
+      "https://www.meppel.nl/Ondernemer/Vergunningen_regelingen/Horeca/exploitatievergunning_horecabedrijf",
+      "https://www.meppel.nl/Ondernemer/Vergunningen_regelingen/Horeca/alcohol_schenken_in_horecabedrijven"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.meppel.nl/Inwoner/Wonen_ver_bouwen/Ver_bouwen_slopen/Omgevingsplan_afwijken",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.meppel.nl/Inwoner/Wonen_ver_bouwen/Omgevingswet_n_wet_voor_onze_leefomgeving/Conceptaanvraag_haalbaarheid_ruimtelijk_initiatief_onderzoeken",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.meppel.nl/Inwoner/Sport_Vrije_tijd/Evenementen/optocht_organiseren",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor de oprichting of de overname van een horecabedrijf heeft u een horeca-exploitatievergunning nodig",
+          "original_reference": "Voor het aanvragen van een terrasvergunning in de gemeente Meppel zijn specifieke procedures en voorwaarden van toepassing",
+          "note": "De originele tekst focust specifiek op terrasvergunningen, terwijl de bronpagina aangeeft dat een algemene horeca-exploitatievergunning nodig is. Dit suggereert dat een terrasvergunning mogelijk onderdeel is van of gekoppeld is aan de bredere horeca-exploitatievergunning.",
+          "source_urls": [
+            "https://www.meppel.nl/Ondernemer/Vergunningen_regelingen/Horeca/exploitatievergunning_horecabedrijf"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U heeft een alcoholvergunning nodig als u alcohol verkoopt in uw horecabedrijf of slijterij",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over de noodzaak van een alcoholvergunning bij het schenken van alcohol, wat relevant kan zijn voor terrasexploitatie",
+          "source_urls": [
+            "https://www.meppel.nl/Ondernemer/Vergunningen_regelingen/Horeca/alcohol_schenken_in_horecabedrijven"
+          ]
+        }
+      ]
+    },
+    "summary": "De originele tekst bevat onvolledige informatie over de benodigde vergunningen voor horeca-exploitatie. Er wordt niet vermeld dat een terrasvergunning mogelijk onderdeel is van een bredere horeca-exploitatievergunning, en de vereiste alcoholvergunning voor het schenken van alcohol wordt niet genoemd. Dit zijn belangrijke aanvullingen voor ondernemers die een terras willen exploiteren waar alcohol wordt geschonken."
+  }
+}

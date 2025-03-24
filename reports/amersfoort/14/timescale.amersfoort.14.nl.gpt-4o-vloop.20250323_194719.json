@@ -1,0 +1,89 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AMERSFOORT",
+      "contact": {
+        "phone": "14 033",
+        "email": "info@amersfoort.nl",
+        "website": "http://www.amersfoort.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 31,
+    "true_sentences": 29,
+    "false_sentences": 2,
+    "accuracy_percentage": 93.5,
+    "false_statements": [
+      {
+        "sentence": "De eerste bewonersvergunning kost € 30,- per jaar, terwijl een zonevrije bedrijfsvergunning € 1.200 per jaar kost (prijspeil 2025).",
+        "status": "false",
+        "note": "De genoemde tarieven zijn onjuist. Volgens de officiële website van ParkeerService Amersfoort kost een eerste bewonersvergunning €156,- per jaar en een zonevrije bedrijfsvergunning €1.440,- per jaar (2024 tarieven)."
+      },
+      {
+        "sentence": "Tot en met zondag 16 februari 2025 kon op het voorstel worden gereageerd en de definitieve vaststelling is in het voorjaar van 2025.",
+        "status": "false",
+        "note": "Deze specifieke datum en tijdlijn komen niet overeen met de officiële communicatie van de gemeente Amersfoort over het parkeerbeleid. De genoemde data zijn niet terug te vinden in officiële bronnen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 2,
+    "invalid_urls": 3,
+    "accuracy_percentage": 40.0,
+    "valid_urls_list": [
+      "https://www.amersfoort.nl/wonen-en-parkeren",
+      "https://www.amersfoort.nl/vergunningparkeren"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.amersfoort.nl/werken-en-parkeren",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.amersfoort.nl/vergunningen-inzien-en-bezwaar-maken",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.amersfoort.nl/betaald-parkeren-en-parkeervergunningen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "In de wijken rondom de binnenstad van Amersfoort (B-vergunninggebieden) kan van maandag tot en met zaterdag tussen 9.00 en 20.30 uur alleen geparkeerd worden met een parkeervergunning.",
+          "original_reference": "Zone 2: maandag t/m zaterdag 9.00 tot 0.00 uur, zondag: 12.00 tot 0.00 uur.",
+          "note": "De parkeertijden verschillen: in de bronnen wordt 9:00-20:30 genoemd voor B-vergunninggebieden, terwijl in de originele tekst 9:00-0:00 staat met ook zondagstijden.",
+          "source_urls": [
+            "https://www.amersfoort.nl/vergunningparkeren"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Tot en met zondag 16 februari 2025 kon op het voorstel worden gereageerd. De definitieve vaststelling is in het voorjaar van 2025.",
+          "original_reference": "Tot en met zondag 16 februari 2025 kon op het voorstel worden gereageerd en de definitieve vaststelling is in het voorjaar van 2025.",
+          "note": "De brontekst bevestigt de einddatum voor reacties en de vaststelling in voorjaar 2025, maar presenteert dit als nieuwe informatie terwijl de originele tekst dit als historisch feit presenteert.",
+          "source_urls": [
+            "https://www.amersfoort.nl/wonen-en-parkeren"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele tekst en de bronnen. Het eerste betreft de parkeertijden voor vergunninghouders, waarbij verschillende tijdsperiodes worden genoemd. Het tweede verschil betreft de presentatie van de implementatiedatum van het nieuwe parkeerbeleid. De overige informatie in de originele tekst komt overeen met de bronnen of kan niet geverifieerd worden omdat deze informatie niet in de gegeven bronnen voorkomt."
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ZWOLLE",
+      "contact": {
+        "phone": "14 038",
+        "email": "postbus@zwolle.nl",
+        "website": "http://www.zwolle.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Voor bedrijven met horeca als nevenactiviteit, mag de horeca maximaal 20% van het totale winkeloppervlak beslaan, met een maximum van 75 m².",
+        "status": "false",
+        "note": "Volgens de officiële richtlijnen van de gemeente Zwolle mag bij horeca als nevenactiviteit het horecagedeelte maximaal 30% (niet 20%) van het totale winkeloppervlak beslaan, met een maximum van 100 m² (niet 75 m²)."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 2,
+    "invalid_urls": 4,
+    "accuracy_percentage": 33.3,
+    "valid_urls_list": [
+      "https://www.zwolle.nl/speelgelegenhedenvergunning",
+      "https://www.zwolle.nl/terrasvergunning-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.zwolle.nl/horecabedrijf-exploitatievergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.zwolle.nl/bedrijfsvergunningen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.zwolle.nl/horeca-exploitatievergunning]",
+        "reason": "INVALID: Error scraping https://www.zwolle.nl/horeca-exploitatievergunning]: 404 Client Error: Not Found for url: https://www.zwolle.nl/horeca-exploitatievergunning%5D"
+      },
+      {
+        "url": "https://www.zwolle.nl/kentekenparkeren-veelgestelde-vragen-voor-bedrijvenvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Zwolle heeft het beleid om slechts 1 speelgelegenheid toe te staan. Deze speelgelegenheid is momenteel gevestigd in het IJsseldeltastadion.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over het specifieke beleid rond speelgelegenheden, terwijl de bron aangeeft dat er een strikte beperking is tot één speelgelegenheid in Zwolle.",
+          "source_urls": [
+            "https://www.zwolle.nl/speelgelegenhedenvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "een terras mag geopend zijn gedurende de openingstijden van het horecabedrijf, maar moet in ieder geval gesloten zijn tussen 01.00 uur 09.00 uur. In juli en augustus mag het terras op vrijdag en zaterdag tot 01.30 uur geopend zijn.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen specifieke informatie over terrassen en openingstijden, terwijl de bron gedetailleerde tijden en seizoensgebonden uitzonderingen vermeldt.",
+          "source_urls": [
+            "https://www.zwolle.nl/terrasvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Aan dit product zijn geen kosten verbonden.",
+          "original_reference": "De kosten voor het in behandeling nemen van een aanvraag zijn te vinden in de legestabel.",
+          "note": "Er is een tegenstrijdigheid in de kostenstructuur: de originele tekst verwijst naar kosten in een legestabel, terwijl ten minste één vergunning (speelgelegenhedenvergunning) expliciet kosteloos is.",
+          "source_urls": [
+            "https://www.zwolle.nl/speelgelegenhedenvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen het ontbreken van specifieke informatie over speelgelegenheden en terrasvergunningen in de originele tekst, evenals tegenstrijdige informatie over kosten. De bronnen bevatten aanvullende specifieke regelgeving die niet in de originele tekst is opgenomen, zoals de beperking tot één speelgelegenheid in Zwolle en gedetailleerde terrasvoorschriften inclusief openingstijden."
+  }
+}

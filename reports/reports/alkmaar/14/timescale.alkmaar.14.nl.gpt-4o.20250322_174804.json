@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ALKMAAR",
+      "contact": {
+        "phone": "14 072",
+        "email": "post@alkmaar.nl",
+        "website": "http://www.alkmaar.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 19,
+    "false_sentences": 2,
+    "accuracy_percentage": 90.5,
+    "false_statements": [
+      {
+        "sentence": "Betaling kan alleen via iDeal, contant betalen is niet mogelijk.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Alkmaar is betaling ook mogelijk via pin bij het Servicepunt Parkeren, niet alleen via iDeal."
+      },
+      {
+        "sentence": "Bezoekersvergunning is gratis, parkeerkosten via bezoekersapp: € 3,25 per uur.",
+        "status": "false",
+        "note": "Het actuele tarief voor bezoekers via de bezoekersapp is € 2,50 per uur volgens de officiële website van gemeente Alkmaar, niet € 3,25."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.alkmaar.nl/direct-regelen/verkeer-vervoer-parkeren/parkeren-bedrijven-en-organisaties/bezoekersvergunning-bedrijven",
+      "https://www.alkmaar.nl/direct-regelen/verkeer-vervoer-parkeren/parkeren-toekomstige-bewoner/veel-gestelde-parkeervragen",
+      "https://www.alkmaar.nl/direct-regelen/verkeer-vervoer-parkeren/parkeren-bedrijven-en-organisaties/bedrijfsvergunning-centrum",
+      "https://www.alkmaar.nl/direct-regelen/verkeer-vervoer-parkeren/verkeer-en-vervoer/verkeersregels-ontheffing",
+      "https://www.alkmaar.nl/direct-regelen/verkeer-vervoer-parkeren/parkeren-bedrijven-en-organisaties/bedrijfsvergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Nieuwe ontheffingen, vanaf 1 mei 2024, worden half april geprint en verstuurd.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de specifieke datum waarop nieuwe ontheffingen worden verwerkt en verzonden voor 2024.",
+          "source_urls": [
+            "https://www.alkmaar.nl/direct-regelen/verkeer-vervoer-parkeren/verkeer-en-vervoer/verkeersregels-ontheffing"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "0-5 dagen € 7,34, per maand € 24,35, per jaar € 15,23",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt deze specifieke tarieven voor ontheffingen niet, terwijl deze wel in de bronnen staan.",
+          "source_urls": [
+            "https://www.alkmaar.nl/direct-regelen/verkeer-vervoer-parkeren/verkeer-en-vervoer/verkeersregels-ontheffing"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Ontheffing verhuiswagen moet ingediend worden door het verhuisbedrijf. (Niet door de persoon die gaat verhuizen.)",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen specifieke informatie over wie een verhuiswagenontheffing moet aanvragen.",
+          "source_urls": [
+            "https://www.alkmaar.nl/direct-regelen/verkeer-vervoer-parkeren/verkeer-en-vervoer/verkeersregels-ontheffing"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen aanvullende informatie die niet in de originele tekst staat, waaronder specifieke datums voor ontheffingen in 2024, gedetailleerde tarieven voor verschillende soorten ontheffingen, en specifieke regels voor verhuiswagenontheffingen. Deze informatie is wel relevant voor gebruikers maar ontbreekt in de oorspronkelijke tekst."
+  }
+}

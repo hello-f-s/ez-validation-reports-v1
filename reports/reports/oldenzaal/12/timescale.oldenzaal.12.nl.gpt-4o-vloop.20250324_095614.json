@@ -1,0 +1,85 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OLDENZAAL",
+      "contact": {
+        "phone": "(0541) 58 81 11",
+        "email": "info@oldenzaal.nl",
+        "website": "http://www.oldenzaal.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 27,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.4,
+    "false_statements": [
+      {
+        "sentence": "Bij vragen of hulp bij uw online aanvraag of melding kunt u terecht bij de formulierenservice bij Impuls of op het stadhuis.",
+        "status": "false",
+        "note": "De formulierenservice bij Impuls bestaat niet meer in Oldenzaal. Voor hulp bij formulieren kan men terecht bij het Informatiepunt Digitale Overheid in de bibliotheek Oldenzaal of bij het stadhuis."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 3,
+    "valid_urls": 2,
+    "invalid_urls": 1,
+    "accuracy_percentage": 66.7,
+    "valid_urls_list": [
+      "https://www.oldenzaal.nl/omgevingsvergunning",
+      "https://www.oldenzaal.nl/aanleggen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.oldenzaal.nl/bouwen-en-verbouwen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Maandag: 08.30 - 20.00 uur, Dinsdag: 08.30 - 17.00 uur, Woensdag: 08.30 - 17.00 uur, Donderdag: 08.30 - 17.00 uur, Vrijdag: 08.30 - 12.30 uur",
+          "original_reference": "Maandag: 08.30 - 20.00 uur, Dinsdag: 08.30 - 17.00 uur, Woensdag: 08.30 - 17.00 uur, Donderdag: 08.30 - 17.00 uur, Vrijdag: 08.30 - 12.30 uur",
+          "note": "De openingstijden komen exact overeen in beide bronnen",
+          "source_urls": [
+            "https://www.oldenzaal.nl/aanleggen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "WhatsApp 06 14 10 54 96",
+          "original_reference": "No matching information",
+          "note": "Het WhatsApp-nummer ontbreekt in de originele tekst maar staat wel vermeld in de bronpagina",
+          "source_urls": [
+            "https://www.oldenzaal.nl/aanleggen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Postadres: Postbus 354, 7571 CD Oldenzaal",
+          "original_reference": "No matching information",
+          "note": "Het postadres ontbreekt in de originele tekst maar staat wel vermeld in de bronpagina",
+          "source_urls": [
+            "https://www.oldenzaal.nl/aanleggen"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont dat de kerninhoud grotendeels consistent is tussen de bronnen. De belangrijkste verschillen betreffen ontbrekende contactgegevens in de originele tekst: het WhatsApp-nummer en het postadres van de gemeente zijn niet opgenomen in de originele tekst maar wel beschikbaar in de bronpagina's. De openingstijden en andere procedurele informatie komen overeen."
+  }
+}

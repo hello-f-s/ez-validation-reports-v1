@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LANDSMEER",
+      "contact": {
+        "phone": "(020) 487 71 11",
+        "email": "gemeente@Landsmeer.nl",
+        "website": "http://www.landsmeer.nl"
+      }
+    },
+    "service": {
+      "id": 6,
+      "name": "Integriteitsonderzoek (Wet Bibob)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 31,
+    "true_sentences": 30,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.8,
+    "false_statements": [
+      {
+        "sentence": "U vuurwerk wilt importeren.",
+        "status": "false",
+        "note": "De gemeente Landsmeer heeft geen bevoegdheid voor vuurwerkimport. Dit valt onder de Inspectie Leefomgeving en Transport (ILT) op nationaal niveau, niet onder gemeentelijke Bibob-onderzoeken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.landsmeer.nl/ondernemers/vergunningen/bibob-onderzoek",
+      "https://www.landsmeer.nl/inwoners/paspoort,_rijbewijs,_identiteitskaart_en_uittreksels/uittreksels/verklaring_omtrent_het_gedrag_aanvragen",
+      "https://www.landsmeer.nl/ondernemers/vergunningen/uittreksel_persoonsgegevens_brp_voor_ondernemers",
+      "https://www.landsmeer.nl/bestuur_en_organisatie/beleid_en_regelgeving/wet_open_overheid_(woo)",
+      "https://www.landsmeer.nl/inwoners/paspoort,_rijbewijs,_identiteitskaart_en_uittreksels/uittreksels/bewijs_van_nederlandse_nationaliteit_aanvragen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De gemeente kan het Landelijk Bureau Bibob om hulp vragen [...] Of als de officier van justitie hierom vraagt.",
+          "original_reference": "De gemeente kan het Landelijk Bureau Bibob inschakelen indien nodig. Dit bureau adviseert de gemeente en doet extra onderzoek, bijvoorbeeld als de gemeente zelf te weinig informatie heeft.",
+          "note": "De bronpagina vermeldt een extra reden voor het inschakelen van Bureau Bibob, namelijk op verzoek van de officier van justitie. Deze informatie ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.landsmeer.nl/ondernemers/vergunningen/bibob-onderzoek"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Blijkt dat er zwart geld of crimineel verdiend geld in uw bedrijf omgaat? Dan kan de gemeente de vergunning, subsidie of opdracht weigeren of intrekken.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt specifiek de consequentie van zwart geld of crimineel geld, namelijk weigering of intrekking van vergunning/subsidie/opdracht. Deze concrete consequentie ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.landsmeer.nl/ondernemers/vergunningen/bibob-onderzoek"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont twee belangrijke verschillen tussen de originele tekst en de bronpagina. De bronpagina bevat aanvullende informatie over wanneer Bureau Bibob kan worden ingeschakeld (op verzoek van de officier van justitie) en specificeert duidelijker de consequenties van het aantreffen van zwart of crimineel geld. Deze informatie zou de originele tekst completer en duidelijker maken voor de gebruiker."
+  }
+}

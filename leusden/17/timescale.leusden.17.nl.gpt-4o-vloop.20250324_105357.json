@@ -1,0 +1,79 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LEUSDEN",
+      "contact": {
+        "phone": "14 033",
+        "email": "gemeente@leusden.nl",
+        "website": "http://www.leusden.nl/"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 22,
+    "false_sentences": 2,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Burgerzaken werkt alleen op afspraak op werkdagen tussen 9.00-16.30 uur.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Leusden is Burgerzaken geopend op maandag t/m vrijdag van 8.30 tot 12.30 uur en op maandagmiddag van 13.30 tot 17.00 uur."
+      },
+      {
+        "sentence": "De kosten voor een terrasvergunning worden niet specifiek vermeld, maar vergelijkbaar met de drank- en horecavergunning, waarvoor een fee van € 474,00 geldt, zijn er mogelijk vergelijkbare kosten verbonden aan een terrasvergunning.",
+        "status": "false",
+        "note": "Volgens de legesverordening van gemeente Leusden bedragen de kosten voor een terrasvergunning € 246,00, niet € 474,00."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 4,
+    "valid_urls": 4,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.leusden.nl/en/vergunningen-en-belastingen/drank-en-horeca/drank-en-horecavergunning",
+      "https://www.leusden.nl/vergunningen-en-belastingen/drank-en-horeca/drank-en-horecavergunning",
+      "https://www.leusden.nl/vergunningen-en-belastingen",
+      "https://www.leusden.nl/en/vergunningen-en-belastingen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U komt alleen in aanmerking voor een drank- en horecavergunning als: U minimaal 21 jaar bent, Uw onderneming staat ingeschreven in de Kamer van Koophandel, U beschikt over een SVH-diploma, U niet op enige negatieve wijze bekend bent bij justitie of politie, Het pand waarin uw horecabedrijf is gevestigd ten minste voldoet aan de eisen uit het Bouwbesluit.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke specifieke voorwaarden voor vergunningen die wel in de bronnen staan, zoals minimumleeftijd van 21 jaar, SVH-diploma vereiste, en inschrijving KvK.",
+          "source_urls": [
+            "https://www.leusden.nl/en/vergunningen-en-belastingen/drank-en-horeca/drank-en-horecavergunning",
+            "https://www.leusden.nl/vergunningen-en-belastingen/drank-en-horeca/drank-en-horecavergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Today: closed\nTomorrow:...",
+          "original_reference": "Vandaag: geopend van 08:00 uur tot 12:30 uur\nMorgen: geopend van 08:00 uur tot 15:00 uur",
+          "note": "De openingstijden in de originele tekst komen niet overeen met de informatie in de bronnen, waar staat dat de locatie vandaag gesloten is.",
+          "source_urls": [
+            "https://www.leusden.nl/en/vergunningen-en-belastingen"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden: 1) De originele tekst mist cruciale voorwaarden voor het verkrijgen van vergunningen die wel in de bronnen worden genoemd, zoals minimumleeftijd, diploma-eisen en KvK-inschrijving. 2) Er is een discrepantie in de openingstijden tussen de originele tekst en de bronnen. Deze verschillen kunnen van significant belang zijn voor aanvragers van vergunningen."
+  }
+}

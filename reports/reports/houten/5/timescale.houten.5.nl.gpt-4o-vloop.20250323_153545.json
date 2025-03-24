@@ -1,0 +1,93 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HOUTEN",
+      "contact": {
+        "phone": "(030) 639 26 11",
+        "email": "gemeentehuis@houten.nl",
+        "website": "http://www.houten.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 16,
+    "false_sentences": 3,
+    "accuracy_percentage": 84.2,
+    "false_statements": [
+      {
+        "sentence": "Aanvraag exploitatievergunning: €388,65",
+        "status": "false",
+        "note": "Het actuele tarief voor een exploitatievergunning in Houten is €401,30 volgens de gemeentelijke legesverordening 2024"
+      },
+      {
+        "sentence": "Aanvraag ontheffing van de vergunningplicht: €83,50",
+        "status": "false",
+        "note": "Het actuele tarief voor een ontheffing van de vergunningplicht in Houten is €86,00 volgens de gemeentelijke legesverordening 2024"
+      },
+      {
+        "sentence": "Aanvraag ontheffing in combinatie met een terrasvergunning: €83,50",
+        "status": "false",
+        "note": "Het actuele tarief voor een ontheffing in combinatie met een terrasvergunning in Houten is €86,00 volgens de gemeentelijke legesverordening 2024"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.houten.nl/ondernemen/regelen/horecabedrijf-exploiteren",
+      "https://www.houten.nl/wonen-en-leefomgeving/bouw-en-verbouw/omgevingsvergunning/aanvraagprocedure-omgevingsvergunning",
+      "https://www.houten.nl/ondernemen/regelen/alcoholwetvergunning",
+      "https://www.houten.nl/ondernemen/regelen/standplaatsvergunning",
+      "https://www.houten.nl/ondernemen/starten-als-ondernemer"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U doet de aanvraag ontheffing van vergunningplicht U vraagt de ontheffing uiterlijk 4 weken voor de gewenste openingsdatum aan.",
+          "original_reference": "Voor een ontheffing van de vergunningplicht moet de aanvraag uiterlijk 4 weken voor de gewenste openingsdatum worden gedaan.",
+          "note": "De formulering is anders maar de inhoud is hetzelfde - dit is eigenlijk consistent",
+          "source_urls": [
+            "https://www.houten.nl/ondernemen/regelen/horecabedrijf-exploiteren"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Dan ontvangt u binnen 15 werkdagen schriftelijk bericht hierover. De 15 dagen tellen vanaf de dag van ontv...",
+          "original_reference": "Dan ontvangt u binnen dezelfde termijn bericht hierover en moet u alsnog een exploitatievergunning openbare inrichting aanvragen.",
+          "note": "De originele tekst specificeert dat een exploitatievergunning moet worden aangevraagd bij afwijzing, wat niet expliciet vermeld staat in de brontekst",
+          "source_urls": [
+            "https://www.houten.nl/ondernemen/regelen/horecabedrijf-exploiteren"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "In sommige gevallen kan de burgemeester ontheffing geven van de vergunningplicht. Voor een terras bij uw bedrijf kan geen ontheffing verleend worden.",
+          "original_reference": "In sommige gevallen kan de burgemeester ontheffing geven van de vergunningplicht. Voor een terras bij uw bedrijf kan geen ontheffing verleend worden.",
+          "note": "De informatie over ontheffingsmogelijkheden is exact hetzelfde in beide bronnen",
+          "source_urls": [
+            "https://www.houten.nl/ondernemen/regelen/horecabedrijf-exploiteren"
+          ]
+        }
+      ]
+    },
+    "summary": "De meeste informatie in de originele tekst komt overeen met de bronnen. Er zijn twee kleine verschillen gevonden: (1) een verschil in de specificatie van vervolgstappen bij afwijzing van een ontheffingsaanvraag, en (2) enkele nuanceverschillen in de formulering van termijnen. De kern van de informatie blijft echter consistent tussen beide bronnen."
+  }
+}

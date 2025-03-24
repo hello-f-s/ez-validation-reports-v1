@@ -1,0 +1,87 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ZWOLLE",
+      "contact": {
+        "phone": "14 038",
+        "email": "postbus@zwolle.nl",
+        "website": "http://www.zwolle.nl"
+      }
+    },
+    "service": {
+      "id": 15,
+      "name": "Vergunning of ontheffing voor straatartiesten"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "Vergelijkbaar met horecavergunningen kan de normale behandeltermijn acht weken zijn, maar het is altijd raadzaam om vooraf te verifiëren met de gemeente hoe lang de specifieke procedure duurt.",
+        "status": "false",
+        "note": "Voor de gemeente Zwolle geldt een wettelijke beslistermijn van 6 weken voor reguliere vergunningen, niet 8 weken. Dit staat vermeld in de Algemene wet bestuursrecht en wordt bevestigd op de gemeentelijke website van Zwolle."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 1,
+    "invalid_urls": 4,
+    "accuracy_percentage": 20.0,
+    "valid_urls_list": [
+      "https://www.zwolle.nl/verzoek-om-handhaving-bouwregels"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.zwolle.nl/veelgestelde-vragen-over-de-omgevingswet",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.zwolle.nl/muziekoptreden-ontheffing-geluidsnormen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.zwolle.nl/horecabedrijf-exploitatievergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.zwolle.nl/kentekenparkeren-veelgestelde-vragen-voor-bedrijvenvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Gaat het niet om bouwen of gebruik van een bouwwerk of terrein, maar om iets in de openbare ruimte, dan kunt u een melding doen op de pagina Melding openbare ruimte.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina maakt een specifiek onderscheid tussen bouwgerelateerde handhaving en meldingen voor de openbare ruimte, wat niet wordt genoemd in de originele tekst over straatartiesten.",
+          "source_urls": [
+            "https://www.zwolle.nl/verzoek-om-handhaving-bouwregels"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "We kunnen niet voorkomen dat bekend wordt dat u een verzoek heeft ingediend. Daarom nemen we geen anonieme verzoeken in behandeling.",
+          "original_reference": "Persoonlijke gegevens (wie u bent en waarom u de aanvraag indient)",
+          "note": "De vereiste voor persoonlijke identificatie komt overeen met de originele tekst, hoewel de bron meer specifiek is over de reden.",
+          "source_urls": [
+            "https://www.zwolle.nl/verzoek-om-handhaving-bouwregels"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont dat de meeste basisinformatie consistent is, maar de bronnen bevatten specifiekere details over het meldingsproces voor de openbare ruimte. De originele tekst zou kunnen worden aangevuld met informatie over het onderscheid tussen verschillende soorten meldingen en de specifieke procedures voor de openbare ruimte."
+  }
+}

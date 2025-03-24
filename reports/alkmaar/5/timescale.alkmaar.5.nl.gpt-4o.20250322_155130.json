@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ALKMAAR",
+      "contact": {
+        "phone": "14 072",
+        "email": "post@alkmaar.nl",
+        "website": "http://www.alkmaar.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 20,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.2,
+    "false_statements": [
+      {
+        "sentence": "U moet 21 jaar of ouder zijn (voor alcoholvrije ondernemingen).",
+        "status": "false",
+        "note": "Voor alcoholvrije horecaondernemingen in Alkmaar geldt een minimumleeftijd van 18 jaar. De leeftijdseis van 21 jaar geldt alleen voor horecabedrijven waar alcohol wordt geschonken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/horeca/terrasvergunning/",
+      "https://www.alkmaar.nl/direct-regelen/ondernemen-in-alkmaar",
+      "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/horeca/drank-en-horecawet-vergunning",
+      "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/overig/exploitatievergunning-seksbedrijf",
+      "https://www.alkmaar.nl/direct-regelen/ondernemen/vergunningen-en-ontheffingen/exploitatievergunning/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://gemeente.alkmaar.nl",
+        "reason": "INVALID: Error scraping https://gemeente.alkmaar.nl: HTTPSConnectionPool(host='gemeente.alkmaar.nl', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x105fb6710>: Failed to resolve 'gemeente.alkmaar.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "€ 140,10 voor terrasvergunning",
+          "original_reference": "€ 422,05 voor exploitatievergunning",
+          "note": "De kosten verschillen per type vergunning. De originele tekst noemt alleen het bedrag voor de exploitatievergunning, maar niet de aparte kosten voor een terrasvergunning.",
+          "source_urls": [
+            "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/horeca/terrasvergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Precariobelasting: € 63,40 per m2 per jaar of € 6,35 per m2 per maand voor terrassen",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over precariobelasting voor terrassen, wat een belangrijke kostenpost is voor horecaondernemers met een terras.",
+          "source_urls": [
+            "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/horeca/terrasvergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor alcoholverkoop is een aparte alcoholvergunning nodig",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat voor het schenken van alcohol een aanvullende alcoholvergunning vereist is naast de exploitatievergunning.",
+          "source_urls": [
+            "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/horeca/drank-en-horecawet-vergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen aanvullende vergunningsvereisten en kosten die niet in de originele tekst worden genoemd. Met name de aparte alcoholvergunning, terrasvergunning en bijbehorende precariobelasting zijn belangrijke aanvullingen voor horecaondernemers. De kosten verschillen per type vergunning en worden niet volledig weergegeven in de originele tekst."
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "context": {
+    "municipality": {
+      "name": "GOES",
+      "contact": {
+        "phone": "14 0113",
+        "email": "stadskantoor@goes.nl",
+        "website": "http://www.goes.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 15,
+    "false_sentences": 2,
+    "accuracy_percentage": 88.2,
+    "false_statements": [
+      {
+        "sentence": "Voor één speelautomaat: € 57,80",
+        "status": "false",
+        "note": "Het correcte tarief voor één speelautomaat voor 12 maanden is € 58,95 volgens de actuele legesverordening van gemeente Goes"
+      },
+      {
+        "sentence": "Voor twee of meer speelautomaten: voor de eerste speelautomaat € 57,80 en voor iedere volgende speelautomaat € 34,80",
+        "status": "false",
+        "note": "De actuele tarieven zijn € 58,95 voor de eerste speelautomaat en € 35,50 voor iedere volgende speelautomaat volgens de legesverordening van gemeente Goes"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.goes.nl",
+      "https://www.goes.nl/alcoholvergunning",
+      "https://www.goes.nl/standplaats-aanvragen",
+      "https://www.goes.nl/exploitatievergunning-horeca",
+      "https://www.goes.nl/loterij-prijsvraag-bingo-organiseren"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.goes.nl/gokautomaat-plaatsen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor het organiseren van een loterij heeft u een vergunning nodig. Bij welke instantie u de vergunning aanvraagt, hangt af van de hoogte van de prijzen. Organiseert u een incidentele loterij met een prijzenpakket tot € 4.500? Vraag het dan digitaal aan.",
+          "original_reference": "No matching information",
+          "note": "De originele inhoud bevat geen informatie over loterijen en prijzenpakketten, terwijl dit wel een relevante gemeentelijke dienst is met specifieke voorwaarden.",
+          "source_urls": [
+            "https://www.goes.nl/loterij-prijsvraag-bingo-organiseren"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wilt u een horecabedrijf starten of overnemen? Dan heeft u in ieder geval een exploitatievergunning nodig. Wilt u alcohol verkopen in het horecabedrijf? Dan heeft u ook een Alcoholvergunning nodig.",
+          "original_reference": "No matching information",
+          "note": "De originele inhoud mist belangrijke informatie over de vereiste exploitatie- en alcoholvergunningen voor horecabedrijven.",
+          "source_urls": [
+            "https://www.goes.nl/alcoholvergunning",
+            "https://www.goes.nl/exploitatievergunning-horeca"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont dat de originele inhoud zich beperkt tot informatie over gokautomaten, terwijl er belangrijke aanvullende vergunningsinformatie beschikbaar is op de gemeentewebsite over loterijen en horecavergunningen. Deze ontbrekende informatie zou relevant kunnen zijn voor ondernemers die verschillende vergunningen nodig hebben voor hun bedrijfsvoering."
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ALKMAAR",
+      "contact": {
+        "phone": "14 072",
+        "email": "post@alkmaar.nl",
+        "website": "http://www.alkmaar.nl"
+      }
+    },
+    "service": {
+      "id": 16,
+      "name": "Registreren in het Landelijk Register Kinderopvang (LRK)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 17,
+    "false_sentences": 2,
+    "accuracy_percentage": 89.5,
+    "false_statements": [
+      {
+        "sentence": "Er is geen specifieke informatie over het registreren in het Landelijk Register Kinderopvang (LRK) beschikbaar op de website van de gemeente Alkmaar.",
+        "status": "false",
+        "note": "De gemeente Alkmaar heeft wel degelijk specifieke informatie over LRK-registratie beschikbaar op hun website onder 'Kinderopvang starten'"
+      },
+      {
+        "sentence": "De servicepunten van de gemeente Alkmaar en het subsidiebureau zijn op werkdagen bereikbaar van 8.30 uur tot 17.00 uur.",
+        "status": "false",
+        "note": "De openingstijden van de gemeente Alkmaar zijn van 9.00 tot 17.00 uur op werkdagen, niet vanaf 8.30 uur"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.alkmaar.nl/direct-regelen/onderwijs-scholing-en-kinderopvang/kinderopvang-2/toezicht-en-handhaving-kinderopvang-2",
+      "https://www.alkmaar.nl/direct-regelen/onderwijs-scholing-en-kinderopvang/kinderopvang-2/kinderopvang-vergoedingen",
+      "https://www.alkmaar.nl/direct-regelen/geboorte-trouwen-overlijden/geboorte/levenloos-geboren-kind-registreren",
+      "https://www.alkmaar.nl/gebieden/huiswaard-vroonermeer/waar-werken-we-aan-in-huiswaard-vroonermeer/",
+      "https://www.alkmaar.nl/direct-regelen/belastingen-en-subsidies/subsidies/subsidie-peuteropvang"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bij een kinderopvang worden kinderen opgevangen door opgeleide verzorgers. Deze worden meestal pedagogisch medewerker genoemd. Zij hebben een speciale, gekwalificeerde opleiding gevolgd. Daarnaast moeten zij een verklaring omtrent gedrag hebben.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke kwalificatie-eisen voor medewerkers in de kinderopvang, namelijk de vereiste opleiding en de verplichte VOG.",
+          "source_urls": [
+            "https://www.alkmaar.nl/direct-regelen/onderwijs-scholing-en-kinderopvang/kinderopvang-2/kinderopvang-vergoedingen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De GGD bekijkt of de kinderopvang aan de eisen voldoet. En stelt een inspectierapport op. Deze rapporten zijn terug te vinden via het Landelijk Register Kinderopvang (LRK).",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist informatie over de rol van de GGD bij inspecties en de beschikbaarheid van inspectierapporten in het LRK.",
+          "source_urls": [
+            "https://www.alkmaar.nl/direct-regelen/onderwijs-scholing-en-kinderopvang/kinderopvang-2/toezicht-en-handhaving-kinderopvang-2"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U vraagt subsidie aan voor peuteropvang/vve vóór 1 oktober van het jaar voordat de subsidie ingaat.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist de belangrijke deadline voor subsidieaanvragen voor peuteropvang/VVE.",
+          "source_urls": [
+            "https://www.alkmaar.nl/direct-regelen/belastingen-en-subsidies/subsidies/subsidie-peuteropvang"
+          ]
+        }
+      ]
+    },
+    "summary": "De originele tekst mist enkele essentiële elementen die wel in de bronnen staan: de kwalificatie-eisen voor pedagogisch medewerkers (opleiding en VOG), informatie over GGD-inspecties en rapportages, en de specifieke deadline voor subsidieaanvragen. Deze informatie is belangrijk voor zowel ouders als kinderopvangorganisaties."
+  }
+}

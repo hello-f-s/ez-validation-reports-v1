@@ -1,0 +1,89 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HOUTEN",
+      "contact": {
+        "phone": "(030) 639 26 11",
+        "email": "gemeentehuis@houten.nl",
+        "website": "http://www.houten.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "Betrokken personen hebben een periode van maximaal zes weken om bezwaar in te dienen na de publicatie van het besluit over de omgevingsvergunning in Houten Actueel en op www.houten.nl.",
+        "status": "false",
+        "note": "De publicatie van omgevingsvergunningen gebeurt niet in 'Houten Actueel' maar via de officiële bekendmakingen op overheid.nl en via www.houten.nl. De bezwaartermijn van 6 weken klopt wel."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 6,
+    "invalid_urls": 1,
+    "accuracy_percentage": 85.7,
+    "valid_urls_list": [
+      "https://www.houten.nl/wonen-en-leefomgeving/bouw-en-verbouw/omgevingsvergunning/aanvraagprocedure-omgevingsvergunning",
+      "https://www.houten.nl/wonen-en-leefomgeving/bouw-en-verbouw/omgevingsvergunning/omgevingsvergunning-reguliere-en-uitgebreide-procedure",
+      "https://www.houten.nl/wonen-en-leefomgeving/bouw-en-verbouw/omgevingsvergunning",
+      "https://www.houten.nl/wonen-en-leefomgeving/bouw-en-verbouw/omgevingsvergunning/principeverzoek/-ruimtelijk-initiatief",
+      "https://www.houten.nl/",
+      "https://www.houten.nl/wonen-en-leefomgeving/omgevingswet"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.omgevingsloket.nl/",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De gemeente behandelt uw aanvraag in één keer en neemt één besluit. Er is ook slechts één bezwaar- en beroepsprocedure.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist deze belangrijke informatie over de geïntegreerde behandeling en enkele bezwaarprocedure.",
+          "source_urls": [
+            "https://www.houten.nl/wonen-en-leefomgeving/bouw-en-verbouw/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Flitsprocedure (pilot) - Binnen de gemeente Houten streven wij er naar om zo snel mogelijk aanvragen voor omgevingsvergunningen af te handelen. Hiervoor hebben wij een pilot opgestart om bepaalde vergunningaanvragen binnen een aantal werkdagen af te handelen, de zogenoemde 'flitsprocedure'. De pilot is vooralsnog alleen bedoeld voor het plaatsen van dakkapellen bij woningen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de flitsprocedure pilot voor dakkapellen, wat een belangrijke aanvulling is op de beschikbare procedures.",
+          "source_urls": [
+            "https://www.houten.nl/wonen-en-leefomgeving/bouw-en-verbouw/omgevingsvergunning/omgevingsvergunning-reguliere-en-uitgebreide-procedure"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een aanvraag voor een omgevingsvergunning kan zowel op papier als digitaal worden ingediend.",
+          "original_reference": "U vraagt de omgevingsvergunning digitaal aan via het Omgevingsloket online.",
+          "note": "De originele tekst stelt dat aanvragen alleen digitaal kunnen worden gedaan, terwijl de bron aangeeft dat dit ook op papier mogelijk is.",
+          "source_urls": [
+            "https://www.houten.nl/wonen-en-leefomgeving/bouw-en-verbouw/omgevingsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten enkele belangrijke aanvullingen en verschillen ten opzichte van de originele tekst. Met name de mogelijkheid tot papieren aanvragen, de nieuwe flitsprocedure voor dakkapellen en de geïntegreerde behandeling met één bezwaarprocedure zijn significante toevoegingen die niet in de originele tekst worden genoemd. Deze informatie is relevant voor inwoners die een omgevingsvergunning willen aanvragen."
+  }
+}

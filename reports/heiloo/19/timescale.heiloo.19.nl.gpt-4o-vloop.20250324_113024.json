@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HEILOO",
+      "contact": {
+        "phone": "(072) 535 66 66",
+        "email": "info@heiloo.nl",
+        "website": "http://www.heiloo.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 35,
+    "true_sentences": 34,
+    "false_sentences": 1,
+    "accuracy_percentage": 97.1,
+    "false_statements": [
+      {
+        "sentence": "De gemeentelijke diensten zijn bereikbaar op werkdagen van 08:30 tot 17:00 uur.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Heiloo zijn de openingstijden van maandag t/m donderdag van 8:30 tot 12:30 uur en op vrijdag van 8:30 tot 12:00 uur."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.heiloo.nl/aanvragen-en-regelen/kansspel-melding-of-vergunning/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/exploitatievergunning/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/terrasvergunning/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/standplaatsvergunning/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/marktplaatsvergunning/"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Kosten 2025 terrasvergunning: € 330,20",
+          "original_reference": "Terrasvergunning: €330,20",
+          "note": "De originele tekst specificeert niet dat dit tarief voor 2025 geldt, wat een belangrijk verschil is voor de geldigheid van het bedrag",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/terrasvergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Contact team horeca: horeca@debuch.nl",
+          "original_reference": "Team Horeca: horeca@debuch.nl",
+          "note": "De bronpagina specificeert dat dit het 'team horeca' is, wat een preciezere aanduiding is dan alleen 'Team Horeca'",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/exploitatievergunning/"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "De prijzen of premies in geld of goederen hebben geen hogere waarde dan € 400 per serie of set en de gezamenlijke waarde bedraagt niet meer dan € 1.550 per bijeenkomst",
+          "original_reference": "Voor prijzen met een gezamenlijke waarde van maximaal €1.550, waarbij de prijzen of premies per serie niet hoger zijn dan €400",
+          "note": "De bedragen en voorwaarden voor kleine kansspelen komen exact overeen",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/kansspel-melding-of-vergunning/"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont enkele kleine maar belangrijke verschillen in de specificatie van jaartallen bij tarieven en de exacte benaming van contactafdelingen. De kern van de informatie over vergunningen en procedures is consistent, maar de originele tekst mist enkele specifieke details over de geldigheidsperiode van tarieven. De basisvoorwaarden en bedragen voor kansspelvergunningen komen wel exact overeen."
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LANDSMEER",
+      "contact": {
+        "phone": "(020) 487 71 11",
+        "email": "gemeente@Landsmeer.nl",
+        "website": "http://www.landsmeer.nl"
+      }
+    },
+    "service": {
+      "id": 13,
+      "name": "Omzettingsvergunning voor kamerverhuur aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Dien de aanvraag in minimaal 8 weken voordat u wilt starten met de verhuuractiviteiten. Voor een uitgebreide aanvraag moet dit minimaal 6 maanden van tevoren.",
+        "status": "false",
+        "note": "De gemeente Landsmeer vereist geen specifieke vooraf indieningstermijn voor de start van verhuuractiviteiten. De genoemde termijnen zijn de behandeltijden van de gemeente, niet de vereiste indieningstermijnen voor de aanvrager."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.landsmeer.nl/ondernemers/vergunningen/standplaats_vergunning_aanvragen",
+      "https://www.landsmeer.nl/inwoners/bouwen_en_verbouwen/meer_onderwerpen/omgevingsvergunning_aanvragen",
+      "https://www.landsmeer.nl/ondernemers/vergunningen/uitstalling_plaatsen_bij_een_bedrijf",
+      "https://www.landsmeer.nl/inwoners/bouwen_en_verbouwen/omgevingsplan/afwijken_van_het_omgevingsplan",
+      "https://www.landsmeer.nl/ondernemers/vergunningen/horecabedrijf_beginnen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.gemeentelandsmeer.nl/omgevingsvergunning-aanvragen",
+        "reason": "INVALID: Error scraping https://www.gemeentelandsmeer.nl/omgevingsvergunning-aanvragen: 439 Client Error: status code 439 for url: https://www.gemeentelandsmeer.nl/omgevingsvergunning-aanvragen"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Doe dit minimaal 8 weken voordat u wilt starten met de werkzaamheden. Bij een uitgebreide aanvraag doet u dit minimaal 6 maanden van tevoren.",
+          "original_reference": "Dien de aanvraag in minimaal 8 weken voordat u wilt starten met de verhuuractiviteiten. Voor een uitgebreide aanvraag moet dit minimaal 6 maanden van tevoren.",
+          "note": "De termijnen voor het indienen van reguliere en uitgebreide aanvragen komen exact overeen",
+          "source_urls": [
+            "https://www.landsmeer.nl/inwoners/bouwen_en_verbouwen/meer_onderwerpen/omgevingsvergunning_aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Check op Omgevingsloket online of u een omgevingsvergunning nodig hebt. Het bestemmingsplan kunt u inzien op de ruimtelijkeplannen.nl.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de specifieke website ruimtelijkeplannen.nl voor het inzien van het bestemmingsplan, wat belangrijke aanvullende informatie is voor aanvragers",
+          "source_urls": [
+            "https://www.landsmeer.nl/inwoners/bouwen_en_verbouwen/meer_onderwerpen/omgevingsvergunning_aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De informatie is grotendeels consistent, met één belangrijk verschil: de bronpagina's bevatten aanvullende specifieke informatie over waar het bestemmingsplan kan worden ingezien (ruimtelijkeplannen.nl) die niet in de originele tekst staat vermeld. Deze informatie is relevant voor mensen die een omgevingsvergunning willen aanvragen."
+  }
+}

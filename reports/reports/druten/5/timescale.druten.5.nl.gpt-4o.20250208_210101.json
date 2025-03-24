@@ -1,0 +1,80 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DRUTEN",
+      "contact": {
+        "phone": "(088) 432 70 00",
+        "email": "info@druten.nl",
+        "website": "http://www.druten.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "Voor het in behandeling nemen van uw aanvraag wordt € 173,25 in rekening gebracht.",
+        "status": "false",
+        "note": "Het exacte bedrag voor een exploitatievergunning in Druten is € 177,35 volgens de actuele legesverordening van de gemeente Druten."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 6,
+    "invalid_urls": 1,
+    "accuracy_percentage": 85.7,
+    "valid_urls_list": [
+      "https://www.druten.nl/exploitatievergunning-verblijfsrecreatie",
+      "https://www.druten.nl/openingstijden-horeca-eenmalig-aanpassen",
+      "https://druten.nl",
+      "https://www.druten.nl/alcoholwetvergunning",
+      "https://www.druten.nl/vergunningen-en-ontheffingen",
+      "https://www.druten.nl/exploitatievergunning-horecabedrijf"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://druten.nl\">https://druten.nl</a></p>",
+        "reason": "INVALID: Error scraping https://druten.nl\">https://druten.nl</a></p>: HTTPSConnectionPool(host='druten.nl%22%3ehttps', port=443): Max retries exceeded with url: /druten.nl%3C/a%3E%3C/p%3E (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1040a3d90>: Failed to resolve 'druten.nl%22%3ehttps' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "€ 177,25",
+          "original_reference": "€ 173,25",
+          "note": "Het bedrag voor de leges verschilt. In de bronpagina wordt € 177,25 genoemd, terwijl in de originele tekst € 173,25 staat.",
+          "source_urls": [
+            "https://www.druten.nl/exploitatievergunning-verblijfsrecreatie"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een exploitatievergunning is bijvoorbeeld nodig voor een horecabedrijf waarbij er geen alcoholische dranken wordt geschonken. Denk hierbij aan een snackbar of een ijssalon.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina specificeert expliciet dat de vergunning nodig is voor horecabedrijven zonder alcoholverkoop, met concrete voorbeelden. Deze specificatie ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.druten.nl/exploitatievergunning-horecabedrijf"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden: een afwijkend bedrag voor de legeskosten (verschil van €4) en aanvullende specificatie over het type horecabedrijven waarvoor de vergunning nodig is. De overige informatie komt overeen met de originele tekst of is niet expliciet anders vermeld in de bronnen."
+  }
+}

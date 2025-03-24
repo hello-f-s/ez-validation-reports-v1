@@ -1,0 +1,93 @@
+{
+  "context": {
+    "municipality": {
+      "name": "EDE",
+      "contact": {
+        "phone": "14 0318",
+        "email": "info@ede.nl",
+        "website": "http://www.ede.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 11,
+    "false_sentences": 2,
+    "accuracy_percentage": 84.6,
+    "false_statements": [
+      {
+        "sentence": "Er zijn geen specifieke documenten vermeld, maar het kan nuttig zijn om uw bedrijfsgegevens bij de hand te hebben.",
+        "status": "false",
+        "note": "Op de website van gemeente Ede worden wel specifieke documenten vermeld die nodig zijn voor de aanvraag, zoals een geldig legitimatiebewijs, kentekenbewijs en bij bedrijven een KvK-uittreksel."
+      },
+      {
+        "sentence": "De specifieke kosten voor de aanvraag van een parkeervergunning of ontheffing worden niet vermeld in de beschikbare informatie.",
+        "status": "false",
+        "note": "De gemeente Ede vermeldt wel degelijk de specifieke kosten voor verschillende soorten parkeervergunningen op hun website onder 'parkeerbelasting', inclusief tarieven voor bewoners-, bezoekers- en bedrijfsvergunningen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.ede.nl/aanvragen-en-regelen/bouw-en-verbouwvergunning-voor-bedrijven",
+      "https://www.ede.nl/aanvragen-en-regelen/ontheffing-aanvragen",
+      "https://www.ede.nl/aanvragen-en-regelen/parkeerbelasting",
+      "https://www.ede.nl",
+      "https://www.ede.nl/aanvragen-en-regelen/parkeervergunning-of-ontheffing"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.ede.nl/aanvragen-en-regelen/verleende-vergunningen-inzien-en-opvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De kosten van een parkeervergunning of -ontheffing zijn afhankelijk van het soort vergunning. U betaalt voor 2025 wel altijd leges van € 18,75 (of € 68,95 voor de Keetmolenwijk) per product.",
+          "original_reference": "De specifieke kosten voor de aanvraag van een parkeervergunning of ontheffing worden niet vermeld in de beschikbare informatie. Er kunnen leges van toepassing zijn op de behandeling van uw aanvraag.",
+          "note": "De originele tekst vermeldt geen specifieke kosten, terwijl de bron exacte legeskosten voor 2025 noemt: €18,75 standaard of €68,95 voor de Keetmolenwijk.",
+          "source_urls": [
+            "https://www.ede.nl/aanvragen-en-regelen/parkeervergunning-of-ontheffing"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Op deze kaart ziet u of uw wijk een parkeersector is.",
+          "original_reference": "No matching information",
+          "note": "De bron verwijst naar een specifieke kaart om parkeersectoren te controleren, wat ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.ede.nl/aanvragen-en-regelen/parkeervergunning-of-ontheffing"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Gedetailleerde tarieflijst voor verschillende soorten parkeervergunningen, variërend van €0 tot €123,87 inclusief leges",
+          "original_reference": "No matching information",
+          "note": "De bron bevat een uitgebreide tarieflijst voor verschillende type vergunningen voor 2025, terwijl deze informatie volledig ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.ede.nl/aanvragen-en-regelen/parkeervergunning-of-ontheffing"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de kosteninformatie: waar de originele tekst geen specifieke tarieven noemt, geeft de bron gedetailleerde prijzen voor 2025 inclusief legeskosten. Ook biedt de bron een kaart om parkeersectoren te controleren en een uitgebreide tarieflijst voor verschillende type vergunningen, elementen die in de originele tekst ontbreken."
+  }
+}

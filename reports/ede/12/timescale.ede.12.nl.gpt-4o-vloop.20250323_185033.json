@@ -1,0 +1,87 @@
+{
+  "context": {
+    "municipality": {
+      "name": "EDE",
+      "contact": {
+        "phone": "14 0318",
+        "email": "info@ede.nl",
+        "website": "http://www.ede.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 27,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.4,
+    "false_statements": [
+      {
+        "sentence": "Voor een conceptverzoek bedragen de kosten € 225,00, die in mindering worden gebracht bij de uiteindelijke vergunningaanvraag indien deze overeenkomt met het concept.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Ede bedragen de kosten voor een conceptaanvraag/principeverzoek € 250,00 (en niet € 225,00)."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.ede.nl/aanvragen-en-regelen/bouw-en-verbouwvergunning",
+      "https://www.ede.nl/aanvragen-en-regelen/bouw-en-verbouwvergunning-voor-bedrijven",
+      "https://www.ede.nl/aanvragen-en-regelen/omgevingsplan",
+      "https://www.ede.nl/aanvragen-en-regelen/schetsplan"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.ede.nl/aanvragen-en-regelen/verleende-vergunningen-inzien-en-opvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U heeft DigiD nodig",
+          "original_reference": "Een account met eHerkenning",
+          "note": "De originele tekst noemt alleen eHerkenning als vereiste, terwijl de bronpagina aangeeft dat particulieren DigiD nodig hebben en bedrijven eHerkenning",
+          "source_urls": [
+            "https://www.ede.nl/aanvragen-en-regelen/bouw-en-verbouwvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een melding doen is gratis",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat meldingen gratis zijn, wat belangrijke informatie is voor aanvragers",
+          "source_urls": [
+            "https://www.ede.nl/aanvragen-en-regelen/bouw-en-verbouwvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een situatietekening op schaal, geveltekeningen, beschrijving gebruikte materialen, beschrijving kleurgebruik, optioneel: goede foto van de huidige situatie",
+          "original_reference": "Digitale bijlagen als aangegeven in de aanvraag",
+          "note": "De bronpagina specificeert exact welke documenten nodig zijn voor een conceptverzoek, terwijl de originele tekst alleen algemeen spreekt over 'digitale bijlagen'",
+          "source_urls": [
+            "https://www.ede.nl/aanvragen-en-regelen/schetsplan"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de identificatievereisten (DigiD naast eHerkenning), kosteninformatie (gratis meldingen) en specifieke documentvereisten voor conceptverzoeken. De originele tekst mist enkele belangrijke details die wel in de bronpagina's staan vermeld. Deze informatie is essentieel voor een correcte aanvraagprocedure."
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ETTEN-LEUR",
+      "contact": {
+        "phone": "14 076",
+        "email": "info@etten-leur.nl",
+        "website": "http://www.etten-leur.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "De reguliere procedure heeft een beslistermijn van acht weken die één keer met zes weken verlengd kan worden.",
+        "status": "false",
+        "note": "Volgens de gemeente Etten-Leur kan de reguliere procedure van 8 weken met maximaal 6 weken verlengd worden, maar dit is niet beperkt tot 'één keer'. De gemeente kan binnen de eerste 8 weken besluiten de termijn te verlengen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 8,
+    "valid_urls": 6,
+    "invalid_urls": 2,
+    "accuracy_percentage": 75.0,
+    "valid_urls_list": [
+      "https://www.etten-leur.nl/product/orienteren-bij-verbouwplannen/",
+      "https://www.etten-leur.nl/omgevingsvergunning",
+      "https://www.etten-leur.nl/product/start-en-gereedmelding-bouwwerkzaamheden/",
+      "https://www.etten-leur.nl/product/omgevingsvergunning-aanvragen/",
+      "https://www.etten-leur.nl/product/bouwtekeningen-en-omgevingsvergunningen-opvragen/",
+      "https://www.etten-leur.nl/product/omgevingswet-in-het-kort/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.omgevingsloket.nl/",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.overheid.nl/",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor het behandelen van uw bouwinformatieverzoek worden legeskosten in rekening gebracht. De legeskosten zijn € 52,-.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt geen specifieke kosten voor een bouwinformatieverzoek, terwijl de bron dit wel specificeert.",
+          "source_urls": [
+            "https://www.etten-leur.nl/product/orienteren-bij-verbouwplannen/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De beslissing op uw aanvraag wordt bekend gemaakt op Officiële bekendmakingen. U ontvangt de omgevingsvergunning per e-mail.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat de beslissing op Officiële bekendmakingen wordt gepubliceerd en per e-mail wordt verstuurd.",
+          "source_urls": [
+            "https://www.etten-leur.nl/product/omgevingsvergunning-aanvragen/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De toezichthouder van de gemeente spreekt met u af wanneer de bouw het best gecontroleerd kan worden.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over controles door een toezichthouder tijdens de bouw.",
+          "source_urls": [
+            "https://www.etten-leur.nl/product/start-en-gereedmelding-bouwwerkzaamheden/"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten enkele belangrijke aanvullende details die niet in de originele tekst staan: specifieke legeskosten voor bouwinformatieverzoeken (€52), de publicatie van besluiten via Officiële bekendmakingen met e-mailnotificatie, en informatie over bouwcontroles door een gemeentelijke toezichthouder. Deze informatie is relevant voor een complete dienstverlening maar ontbreekt in de originele tekst."
+  }
+}

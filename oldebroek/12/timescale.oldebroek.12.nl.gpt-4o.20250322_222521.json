@@ -1,0 +1,81 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OLDEBROEK",
+      "contact": {
+        "phone": "(0525) 63 82 00",
+        "email": "gemeente@oldebroek.nl",
+        "website": "http://www.oldebroek.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 19,
+    "false_sentences": 2,
+    "accuracy_percentage": 90.5,
+    "false_statements": [
+      {
+        "sentence": "Conceptverzoek: Basisbedrag van € 135,- plus 9% van de omgevingsvergunningkosten",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Oldebroek is het tarief voor een conceptverzoek 25% van de leges die voor de activiteit verschuldigd zou zijn bij een formele aanvraag, met een minimum van € 250,-"
+      },
+      {
+        "sentence": "Voor de afhandeling van een conceptverzoek is de termijn gemiddeld 6 maanden, mede door de inwerkingtreding van de Omgevingswet.",
+        "status": "false",
+        "note": "De gemeente Oldebroek hanteert voor conceptverzoeken een behandeltermijn van 8 weken, niet 6 maanden"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 3,
+    "invalid_urls": 3,
+    "accuracy_percentage": 50.0,
+    "valid_urls_list": [
+      "https://www.oldebroek.nl/Inwoners/Bouwen_en_verbouwen",
+      "https://www.oldebroek.nl/Inwoners/Bouwen_en_verbouwen/Omgevingsvergunning",
+      "https://www.oldebroek.nl/Inwoners/Bouwen_en_verbouwen/Boom_kappen/Wel_of_geen_vergunning_voor_bomenkap"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.oldebroek.nl/Inwoners/Bouwen_en_verbouwen/Omgevingsvergunning/Conceptverzoek_omgevingsvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.oldebroek.nl/Inwoners/Vergunningen/Milieu_melding_of_vergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.gemeente-oldebroek.nl",
+        "reason": "INVALID: Error scraping https://www.gemeente-oldebroek.nl: HTTPSConnectionPool(host='www.gemeente-oldebroek.nl', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10547bed0>: Failed to resolve 'www.gemeente-oldebroek.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Controleer in het Omgevingsloket of u een vergunning nodig heeft voor uw activiteit. Is dit niet het geval, dan hoeft u geen contact op te nemen met de gemeente en kunt u aan de slag.",
+          "original_reference": "Controleer via het Omgevingsloket of u een vergunning nodig heeft voor uw activiteit. Als een vergunning vereist is, heeft u de mogelijkheid om een conceptverzoek in te dienen voor een voorlopig oordeel.",
+          "note": "De originele tekst legt de nadruk op wat te doen als een vergunning WEL nodig is, terwijl de brontekst juist benadrukt wat te doen als een vergunning NIET nodig is. Dit geeft een andere focus aan de informatie.",
+          "source_urls": [
+            "https://www.oldebroek.nl/Inwoners/Bouwen_en_verbouwen/Omgevingsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "Bij vergelijking van de originele tekst met de bronnen is er één belangrijk verschil gevonden in de manier waarop de vergunningcheck wordt gepresenteerd. De meeste andere informatie uit de originele tekst kon niet direct geverifieerd worden in de beschikbare broninhoud, omdat veel pagina's onvolledig of niet volledig zichtbaar zijn in de gegeven bronnen. Voor een complete analyse zou toegang tot de volledige bronpagina's nodig zijn."
+  }
+}

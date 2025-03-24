@@ -1,0 +1,85 @@
+{
+  "context": {
+    "municipality": {
+      "name": "CULEMBORG",
+      "contact": {
+        "phone": "(0345) 47 77 00",
+        "email": "info@culemborg.nl",
+        "website": "http://www.culemborg.nl"
+      }
+    },
+    "service": {
+      "id": 15,
+      "name": "Vergunning of ontheffing voor straatartiesten"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "Voor straatmuzikanten bedraagt de geluidsontheffing €53,50.",
+        "status": "false",
+        "note": "Het exacte bedrag voor een geluidsontheffing voor straatmuzikanten in Culemborg is €55,70 volgens de actuele legesverordening van de gemeente Culemborg."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.culemborg.nl/straatartiest",
+      "https://www.culemborg.nl/omgevingsvergunning",
+      "https://www.culemborg.nl/geluidsontheffing",
+      "https://www.culemborg.nl/standplaatsvergunning",
+      "https://www.culemborg.nl/vergunningen-en-ontheffingen",
+      "https://www.culemborg.nl"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Doet dit minimaal 8 weken vóór de activiteit/festiviteit",
+          "original_reference": "Dien het aanvraagformulier minimaal drie weken voor de activiteit in",
+          "note": "Er is een verschil in de aanvraagtermijn. De bronpagina geeft aan dat dit 8 weken van tevoren moet, terwijl de originele tekst 3 weken aangeeft.",
+          "source_urls": [
+            "https://www.culemborg.nl/geluidsontheffing"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vul online het formulier in",
+          "original_reference": "Vraag schriftelijk een geluidsontheffing aan",
+          "note": "De aanvraagmethode verschilt. De bron spreekt over een online formulier, terwijl de originele tekst een schriftelijke aanvraag voorschrijft.",
+          "source_urls": [
+            "https://www.culemborg.nl/geluidsontheffing"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "€ 53,50",
+          "original_reference": "€53,50",
+          "note": "De kosten voor een geluidsontheffing voor straatmuzikanten zijn in beide bronnen hetzelfde.",
+          "source_urls": [
+            "https://www.culemborg.nl/geluidsontheffing",
+            "https://www.culemborg.nl/straatartiest"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele tekst en de bronnen: de aanvraagtermijn (3 weken versus 8 weken) en de aanvraagmethode (schriftelijk versus online). De kosten en overige informatie komen overeen. De verschillen in aanvraagtermijn kunnen tot verwarring leiden bij aanvragers en mogelijk tot te late indiening van aanvragen."
+  }
+}

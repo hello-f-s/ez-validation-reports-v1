@@ -1,0 +1,90 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ARNHEM",
+      "contact": {
+        "phone": "null",
+        "email": "null",
+        "website": "http://www.arnhem.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 20,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.2,
+    "false_statements": [
+      {
+        "sentence": "Vestiging nieuwe onderneming: € 1.363,45",
+        "status": "false",
+        "note": "Het actuele tarief voor een nieuwe vestiging volgens de officiële website van gemeente Arnhem is € 1.397,55 voor 2024. Het genoemde bedrag is verouderd."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.arnhem.nl/Ondernemers/horeca/horeca_en_vergunningen",
+      "https://www.arnhem.nl/Ondernemers/horeca/exploitatievergunning",
+      "https://www.arnhem.nl/Ondernemers/horeca/drank_en_Horecawet_tijdelijke_ontheffing_ex_artikel_35",
+      "https://www.arnhem.nl/Ondernemers/horeca/horecaspreekuur",
+      "https://www.arnhem.nl/Ondernemers/horeca/drank_en_Horecawetvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://example.com",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Drank- en Horecawetvergunning",
+          "original_reference": "Alcoholwetvergunning",
+          "note": "De bronnen gebruiken nog deels de oude term 'Drank- en Horecawetvergunning', terwijl de originele tekst consequent de nieuwe term 'Alcoholwetvergunning' gebruikt. Dit kan verwarrend zijn voor aanvragers.",
+          "source_urls": [
+            "https://www.arnhem.nl/Ondernemers/horeca/drank_en_Horecawet_tijdelijke_ontheffing_ex_artikel_35",
+            "https://www.arnhem.nl/Ondernemers/horeca/drank_en_Horecawetvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "€ 40,35 voor een ontheffing artikel 35 Drank- en Horecawet",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de kosten voor een tijdelijke ontheffing artikel 35, wat een relevante aanvulling zou zijn op de kostenoverzicht.",
+          "source_urls": [
+            "https://www.arnhem.nl/Ondernemers/horeca/drank_en_Horecawet_tijdelijke_ontheffing_ex_artikel_35"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wet bevordering integriteitsbeoordelingen door het openbaar bestuur (BIBOB) [...] ingesteld om overheden de mogelijkheid te bieden om bepaalde subsidies of vergunningen te weigeren of in te trekken als er sprake is van gevaar dat strafbare feiten zullen worden gepleegd",
+          "original_reference": "Ingevulde BIBOB-vragenlijst met betrekking tot financiën en bedrijfsorganisatie",
+          "note": "De bronnen geven een uitgebreidere toelichting over de BIBOB-procedure en het doel ervan, terwijl de originele tekst alleen de vragenlijst noemt zonder verdere context.",
+          "source_urls": [
+            "https://www.arnhem.nl/Ondernemers/horeca/exploitatievergunning",
+            "https://www.arnhem.nl/Ondernemers/horeca/drank_en_Horecawetvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de inconsistente naamgeving van de vergunning (oude vs. nieuwe term), het ontbreken van informatie over kosten voor tijdelijke ontheffingen, en een beperktere uitleg van de BIBOB-procedure in de originele tekst. Deze verschillen kunnen leiden tot onduidelijkheid bij aanvragers over de juiste terminologie en beschikbare opties."
+  }
+}

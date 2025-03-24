@@ -1,0 +1,101 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HAARLEM",
+      "contact": {
+        "phone": "14 023",
+        "email": "antwoord@haarlem.nl",
+        "website": "http://www.haarlem.nl"
+      }
+    },
+    "service": {
+      "id": 16,
+      "name": "Registreren in het Landelijk Register Kinderopvang (LRK)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 10,
+    "false_sentences": 3,
+    "accuracy_percentage": 76.9,
+    "false_statements": [
+      {
+        "sentence": "Registratie als kinderopvang: € 795,54",
+        "status": "false",
+        "note": "Dit bedrag komt niet overeen met de actuele tarieven op de website van gemeente Haarlem. De gemeente verwijst voor tarieven naar het Landelijk Register Kinderopvang (LRK)."
+      },
+      {
+        "sentence": "Bij aanvullende gegevens aanvragen: extra kosten € 52,92",
+        "status": "false",
+        "note": "Dit specifieke bedrag voor aanvullende gegevens wordt niet vermeld op de website van gemeente Haarlem."
+      },
+      {
+        "sentence": "Inschrijving als gastouder: € 199",
+        "status": "false",
+        "note": "Dit tarief wordt niet genoemd op de website van gemeente Haarlem. Tarieven voor gastouders worden bepaald door het Landelijk Register Kinderopvang (LRK)."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 1,
+    "invalid_urls": 5,
+    "accuracy_percentage": 16.7,
+    "valid_urls_list": [
+      "https://www.haarlem.nl/ufs/formulieren.eb?id=aanvraag_exploitatievergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://haarlem.nl/tegemoetkoming-kosten-kinderopvang",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://haarlem.nl/levenloos-geboren-kind-registreren",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://gemeente-haarlem.nl",
+        "reason": "INVALID: Error scraping https://gemeente-haarlem.nl: 439 Client Error: status code 439 for url: https://gemeente-haarlem.nl/"
+      },
+      {
+        "url": "https://haarlem.nl/kinderopvang-inschrijven",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.haarlem.nl/ufs/formulieren.eb?id=vaste_standplaatsvergunning&gemeentecode=0392",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "uittreksel uit de Kamer van Koophandel (niet ouder dan 3 maanden), scan van het koop- of huurcontract, het volledig ingevulde Bibob-vragenformulier met alle daarbij behorende stukken, een tekening met duidelijke maatvoering van de inrichting met de lokaliteit(en) en eventuele terras(sen), schaal minimaal 1 : 1000, Toestemming voor screening door leidinggevende(n), Toestemming voor screening door ondernemer(s) / bestuurder(s), Als er meer dan 4 ondernemers, 2 bestuurders of 4 leidinggevenden zijn, bijlagen met de persoonsgegevens van de overige personen",
+          "original_reference": "Alle genoemde documenten in de benodigdheden-lijst",
+          "note": "De vereiste documenten komen exact overeen met de originele inhoud",
+          "source_urls": [
+            "https://www.haarlem.nl/ufs/formulieren.eb?id=aanvraag_exploitatievergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Er zijn kosten verbonden aan deze aanvraag.",
+          "original_reference": "Registratie als kinderopvang: € 795,54, Bij aanvullende gegevens aanvragen: extra kosten € 52,92, Inschrijving als gastouder: € 199",
+          "note": "De bronpagina vermeldt alleen dat er kosten zijn zonder specifieke bedragen, terwijl de originele inhoud specifieke tarieven noemt voor kinderopvang die niet relevant zijn voor deze vergunning",
+          "source_urls": [
+            "https://www.haarlem.nl/ufs/formulieren.eb?id=aanvraag_exploitatievergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De meeste informatie over de benodigde documenten en aanvraagprocedure komt overeen, maar er is een belangrijk verschil in de kostensectie. De originele inhoud bevat tarieven voor kinderopvang, terwijl de bron alleen vermeldt dat er kosten zijn zonder specifieke bedragen te noemen. Dit suggereert dat de kostensectie in de originele inhoud niet correct is voor deze specifieke vergunning."
+  }
+}

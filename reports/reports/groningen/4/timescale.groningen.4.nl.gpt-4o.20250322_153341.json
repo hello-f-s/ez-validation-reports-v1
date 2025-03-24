@@ -1,0 +1,109 @@
+{
+  "context": {
+    "municipality": {
+      "name": "GRONINGEN",
+      "contact": {
+        "phone": "14 050",
+        "email": "info@groningen.nl",
+        "website": "http://gemeente.groningen.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 15,
+    "false_sentences": 2,
+    "accuracy_percentage": 88.2,
+    "false_statements": [
+      {
+        "sentence": "U kunt een evenementenvergunning aanvragen via het contactformulier op de website van de gemeente Groningen.",
+        "status": "false",
+        "note": "Een evenementenvergunning moet worden aangevraagd via het digitale aanvraagformulier op de website, niet via een algemeen contactformulier."
+      },
+      {
+        "sentence": "De gemeente streeft ernaar om binnen 8 weken te reageren op uw aanvraag.",
+        "status": "false",
+        "note": "De gemeente hanteert geen specifieke streeftermijn van 8 weken voor reactie. De behandeltermijn is gekoppeld aan de aanvraagtermijn van 8 of 14 weken, afhankelijk van het type evenement."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 10,
+    "valid_urls": 5,
+    "invalid_urls": 5,
+    "accuracy_percentage": 50.0,
+    "valid_urls_list": [
+      "https://gemeente.groningen.nl/evenement-organiseren",
+      "https://gemeente.groningen.nl/alcoholvergunning-aanvragen",
+      "https://gemeente.groningen.nl/evenementenvergunning-aanvragen",
+      "https://gemeente.groningen.nl/exploitatievergunning-horeca-aanvragen",
+      "https://gemeente.groningen.nl/straatfeest-of-ander-klein-evenement-melden"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://gemeente.groningen.nl/aanvragen-evenementenvergunning",
+        "reason": "INVALID: Error scraping https://gemeente.groningen.nl/aanvragen-evenementenvergunning: 404 Client Error: Not Found for url: https://gemeente.groningen.nl/aanvragen-evenementenvergunning"
+      },
+      {
+        "url": "https://gemeente.groningen.nl/aanvragen-exploitatievergunning-horeca",
+        "reason": "INVALID: Error scraping https://gemeente.groningen.nl/aanvragen-exploitatievergunning-horeca: 404 Client Error: Not Found for url: https://gemeente.groningen.nl/aanvragen-exploitatievergunning-horeca"
+      },
+      {
+        "url": "https://gemeente.groningen.nl/aanvragen-alcoholvergunning",
+        "reason": "INVALID: Error scraping https://gemeente.groningen.nl/aanvragen-alcoholvergunning: 404 Client Error: Not Found for url: https://gemeente.groningen.nl/aanvragen-alcoholvergunning"
+      },
+      {
+        "url": "https://gemeente.groningen.nl/organiseren-evenement",
+        "reason": "INVALID: Error scraping https://gemeente.groningen.nl/organiseren-evenement: 404 Client Error: Not Found for url: https://gemeente.groningen.nl/organiseren-evenement"
+      },
+      {
+        "url": "https://gemeente.groningen.nl/melden-straatfeest-klein-evenement",
+        "reason": "INVALID: Error scraping https://gemeente.groningen.nl/melden-straatfeest-klein-evenement: 404 Client Error: Not Found for url: https://gemeente.groningen.nl/melden-straatfeest-klein-evenement"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Van 14 t/m 29 juni 2025 is er minder politie inzet beschikbaar vanwege de NAVO-top in Den Haag. Aanvragen voor evenementen in deze periode kunnen om deze reden geweigerd worden en/of er kunnen aanvullende eisen gesteld worden.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat een belangrijke waarschuwing over beperkte beschikbaarheid tijdens de NAVO-top in 2025 die niet in de originele tekst staat vermeld.",
+          "source_urls": [
+            "https://gemeente.groningen.nl/evenement-organiseren"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u een straatfeest of klein evenement in de binnenstad organiseert: er komen niet meer dan 100 bezoeker of deelnemers.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina specificeert een lagere bezoekerslimiet (100) voor evenementen in de binnenstad, wat niet vermeld wordt in de originele tekst.",
+          "source_urls": [
+            "https://gemeente.groningen.nl/straatfeest-of-ander-klein-evenement-melden"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het evenement wordt gehouden tussen 09:00 en 24:00",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt specifieke tijdslimieten voor kleine evenementen die niet in de originele tekst staan.",
+          "source_urls": [
+            "https://gemeente.groningen.nl/straatfeest-of-ander-klein-evenement-melden"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten enkele belangrijke aanvullende details die niet in de originele tekst staan: een waarschuwing over beperkte beschikbaarheid tijdens de NAVO-top in 2025, specifieke bezoekerslimiet voor evenementen in de binnenstad (100 personen), en tijdsrestricties voor kleine evenementen. Deze informatie is relevant voor evenementorganisatoren maar ontbreekt in de originele tekst."
+  }
+}

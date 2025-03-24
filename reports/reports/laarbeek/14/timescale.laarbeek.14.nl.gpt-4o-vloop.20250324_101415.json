@@ -1,0 +1,97 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LAARBEEK",
+      "contact": {
+        "phone": "(0492) 46 97 00",
+        "email": "gemeente@laarbeek.nl",
+        "website": "http://www.laarbeek.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 22,
+    "false_sentences": 2,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Voor 1 dag: € 18,55",
+        "status": "false",
+        "note": "Het actuele tarief voor een standplaatsvergunning voor 1 dag is anders volgens de legesverordening van gemeente Laarbeek"
+      },
+      {
+        "sentence": "Gehandicaptenparkeerkaart: Aanvragen kost € 95 (tarief 2024)",
+        "status": "false",
+        "note": "Het actuele tarief voor een gehandicaptenparkeerkaart in Laarbeek is € 97,85 volgens de legesverordening 2024"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.laarbeek.nl/standplaatsvergunning",
+      "https://www.laarbeek.nl/gehandicaptenparkeerkaart",
+      "https://www.laarbeek.nl/horecabedrijf-beginnen",
+      "https://www.laarbeek.nl/caravan-parkeren-op-openbare-weg",
+      "https://www.laarbeek.nl/omgevingsvergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 4,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U mag een caravan, camper of ander kampeermiddel maximaal drie dagen aaneengesloten parkeren binnen de bebouwde kom van de gemeente Laarbeek. Parkeert u uw caravan of soortgelijk voertuig vaker op de openbare weg? Dan geldt een minimale tussenperiode van zeven dagen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de specifieke parkeerduur van 3 dagen en de verplichte tussenperiode van 7 dagen voor caravans, wat belangrijke informatie is voor aanvragers.",
+          "source_urls": [
+            "https://www.laarbeek.nl/caravan-parkeren-op-openbare-weg"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Alle standplaatsen zijn voorzien van stroomvoorziening.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat alle standplaatsen zijn voorzien van stroomvoorziening, wat een belangrijk detail is voor standplaatshouders.",
+          "source_urls": [
+            "https://www.laarbeek.nl/standplaatsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u nog 100 meter kunt lopen, krijgt u de gehandicaptenparkeerkaart niet.",
+          "original_reference": "Kunt u zelfs met loophulpmiddelen zoals een rollator of stok niet meer dan 100 meter lopen?",
+          "note": "De originele tekst is minder expliciet over het strikte criterium van de 100-meter grens voor het verkrijgen van een gehandicaptenparkeerkaart.",
+          "source_urls": [
+            "https://www.laarbeek.nl/gehandicaptenparkeerkaart"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor een tijdige behandeling stuurt u het verzoek om de ontheffing minimaal vier weken voor aanvang.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de minimale aanvraagtermijn van 4 weken voor een caravan parkeerontheffing.",
+          "source_urls": [
+            "https://www.laarbeek.nl/caravan-parkeren-op-openbare-weg"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn enkele belangrijke verschillen gevonden tussen de originele tekst en de bronnen. De bronnen bevatten aanvullende specifieke informatie over parkeerduur voor caravans, stroomvoorziening bij standplaatsen, strikte criteria voor gehandicaptenparkeerkaarten en aanvraagtermijnen die niet in de originele tekst staat vermeld. Deze informatie is essentieel voor aanvragers om de juiste verwachtingen te hebben en aan alle voorwaarden te voldoen."
+  }
+}

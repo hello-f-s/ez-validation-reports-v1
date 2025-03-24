@@ -1,0 +1,87 @@
+{
+  "context": {
+    "municipality": {
+      "name": "NIJMEGEN",
+      "contact": {
+        "phone": "14 024",
+        "email": "gemeente@nijmegen.nl",
+        "website": "http://www.nijmegen.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "Het bedrijf mag geen andere activiteiten hebben, zoals een bowlingcentrum of biljartcentrum.",
+        "status": "false",
+        "note": "Volgens de officiële regelgeving van de gemeente Nijmegen is er geen verbod op andere activiteiten zoals een bowlingcentrum of biljartcentrum. De enige voorwaarde is dat het een horecabedrijf moet zijn met een alcoholvergunning."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.nijmegen.nl/diensten/vergunningen/drank-en-horeca/vergunning-kansspelautomaten/",
+      "https://www.nijmegen.nl/diensten/vergunningen/kansspel-melden-loterijvergunning-aanvragen/",
+      "https://www.nijmegen.nl/diensten/evenementen/schema-vergunningen-activiteiten/tekstversie/",
+      "https://www.nijmegen.nl/diensten/vergunningen/drank-en-horeca/alcoholvergunning/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.nijmegen.nl/diensten/vergunningen/informatiekraam-melden-of-vergunning/",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Andere horecabedrijven zoals snackbars, kantines, lunchrooms en ijssalons mogen geen kansspelautomaat hebben.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst specificeert niet welke type horecabedrijven uitgesloten zijn van kansspelautomaten. De brontekst geeft een duidelijke lijst van uitgesloten bedrijven.",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/vergunningen/drank-en-horeca/vergunning-kansspelautomaten/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U betaalt voor het behandelen van de vergunningaanvraag door de gemeente, los van of u de vergunning krijgt of niet",
+          "original_reference": "U betaalt voor het behandelen van de aanvraag, ook als u de vergunning niet krijgt. Bij afwijzing of terugtrekking betaalt u 25% van de kosten.",
+          "note": "De brontekst vermeldt niet de 25% terugbetaling bij afwijzing of terugtrekking die wel in de originele tekst staat.",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/vergunningen/drank-en-horeca/vergunning-kansspelautomaten/"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Alleen speelautomatenhallen en horecabedrijven kunnen een aanwezigheidsvergunning krijgen",
+          "original_reference": "Alleen horecabedrijven die een alcoholvergunning hebben, mogen een vergunning voor kansspelautomaten aanvragen.",
+          "note": "De voorwaarden voor het verkrijgen van een vergunning komen overeen, hoewel de formulering verschilt.",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/vergunningen/drank-en-horeca/vergunning-kansspelautomaten/"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de specificatie van uitgesloten horecabedrijven en de terugbetalingsregeling bij afwijzing. De brontekst is minder specifiek over de terugbetaling van 25% bij afwijzing of terugtrekking van de aanvraag. Verder zijn de kernvoorwaarden en procedures grotendeels consistent tussen beide versies."
+  }
+}

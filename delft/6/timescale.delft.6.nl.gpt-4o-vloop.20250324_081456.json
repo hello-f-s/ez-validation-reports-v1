@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DELFT",
+      "contact": {
+        "phone": "14 015",
+        "email": "null",
+        "website": "http://www.delft.nl"
+      }
+    },
+    "service": {
+      "id": 6,
+      "name": "Integriteitsonderzoek (Wet Bibob)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "U kunt gebruikmaken van het contactformulier op de website, bellen naar 14015 of, vanuit het buitenland, naar 0031 15 260 22 22.",
+        "status": "false",
+        "note": "Het telefoonnummer vanuit het buitenland is niet correct. Het juiste nummer voor de gemeente Delft vanuit het buitenland is +31 15 260 26 13."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.delft.nl/bibob-onderzoek",
+      "https://www.delft.nl/bibob-onderzoek-subsidie",
+      "https://www.delft.nl/bibob-onderzoek-omgevingsvergunning",
+      "https://www.delft.nl/woo-verzoek-doen",
+      "https://www.delft.nl/omnibusenquete"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een Bibob-onderzoek is nodig als uw aanvraag betrekking heeft op een bouwwerk en de bouwsom meer dan € 50.000 is.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst noemt geen specifiek drempelbedrag voor bouwwerken, terwijl de bron een duidelijke grens van €50.000 aangeeft voor omgevingsvergunningen.",
+          "source_urls": [
+            "https://www.delft.nl/bibob-onderzoek-omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Aanbestedingen (opdracht in de branche zorg, taxivervoer in het kader van de Wmo en (speciaal) kinder- en leerlingenvervoer en milieu)",
+          "original_reference": "No matching information",
+          "note": "De originele tekst noemt wel aanbestedingen maar specificeert niet de specifieke branches waarvoor een Bibob-onderzoek nodig is.",
+          "source_urls": [
+            "https://www.delft.nl/bibob-onderzoek"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "verlof alcoholvrij",
+          "original_reference": "horeca (zoals exploitatievergunning, alcoholwetvergunning)",
+          "note": "De bronpagina noemt specifiek 'verlof alcoholvrij' als extra categorie bij horecavergunningen, wat niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.delft.nl/bibob-onderzoek"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten enkele belangrijke specificaties die niet in de originele tekst staan, waaronder het drempelbedrag van €50.000 voor bouwwerken bij omgevingsvergunningen, specifieke branches voor aanbestedingen, en de categorie 'verlof alcoholvrij' bij horecavergunningen. Deze details zijn belangrijk voor ondernemers om te bepalen of een Bibob-onderzoek voor hun situatie nodig is."
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LEEUWARDEN",
+      "contact": {
+        "phone": "14 058",
+        "email": "gemeente@leeuwarden.nl",
+        "website": "http://www.leeuwarden.nl"
+      }
+    },
+    "service": {
+      "id": 3,
+      "name": "Certificaat voor opgraving aanvragen en vondst melden"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 9,
+    "true_sentences": 8,
+    "false_sentences": 1,
+    "accuracy_percentage": 88.9,
+    "false_statements": [
+      {
+        "sentence": "Een omgevingsvergunning kost minimaal € 622,93.",
+        "status": "false",
+        "note": "Het exacte minimumbedrag voor een omgevingsvergunning in Leeuwarden is niet vast te stellen op € 622,93. De kosten zijn afhankelijk van het type werk en worden berekend aan de hand van de gemeentelijke legesverordening. Dit bedrag komt niet overeen met de actuele tarieven op de website van de gemeente Leeuwarden."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.leeuwarden.nl/archeologie",
+      "https://www.leeuwarden.nl/melden-bij-de-gemeente/melding-woon-werk-en-leefomgeving/",
+      "https://www.leeuwarden.nl/melden-bij-de-gemeente/verzoek-hergebruik-van-overheidsinformatie/",
+      "https://www.leeuwarden.nl/monumenten-en-archeologie/monumentenzorg/",
+      "https://www.leeuwarden.nl/monumenten-en-archeologie/archeologie/",
+      "https://www.leeuwarden.nl/andere-vergunningen-en-ontheffingen/bodeminformatie/"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor graafwerkzaamheden in gebieden met een Waarde Archeologie moet u in bepaalde gevallen een 'omgevingsvergunning' aanvragen. [...] Een terrein Waarde-Archeologisch beschermd rijksmonument is en de voorgenomen bodemverstoring dieper dan 0,30m beneden maaiveld is.",
+          "original_reference": "Controleer of u een 'omgevingsvergunning uitvoeren van een werk' nodig heeft, afhankelijk van het gebied en de bodemverstoring.",
+          "note": "De bronpagina specificeert concrete diepte- en oppervlaktecriteria voor verschillende archeologische waardegebieden, terwijl de originele tekst alleen algemeen verwijst naar 'afhankelijk van gebied en bodemverstoring'.",
+          "source_urls": [
+            "https://www.leeuwarden.nl/monumenten-en-archeologie/archeologie/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voorbeelden van graafwerkzaamheden: Bouwen van een huis of schuur, Het aanleggen van een rijpad, een weg, of een terreinverharding, Het graven of dempen van sloten...",
+          "original_reference": "No matching information",
+          "note": "De bronpagina geeft specifieke voorbeelden van graafwerkzaamheden waarvoor een vergunning nodig kan zijn, terwijl deze informatie volledig ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.leeuwarden.nl/monumenten-en-archeologie/archeologie/"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten aanzienlijk meer gedetailleerde informatie over de specifieke criteria voor vergunningplicht bij archeologische werkzaamheden en concrete voorbeelden van vergunningplichtige graafwerkzaamheden. Deze belangrijke details ontbreken in de originele tekst, wat de informatie minder specifiek en praktisch bruikbaar maakt voor gebruikers."
+  }
+}

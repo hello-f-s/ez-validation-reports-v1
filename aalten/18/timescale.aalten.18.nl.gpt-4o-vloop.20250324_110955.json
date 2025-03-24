@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AALTEN",
+      "contact": {
+        "phone": "(0543) 49 33 33",
+        "email": "gemeente@aalten.nl",
+        "website": "http://www.aalten.nl"
+      }
+    },
+    "service": {
+      "id": 18,
+      "name": "Ventvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 27,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.4,
+    "false_statements": [
+      {
+        "sentence": "Hofstraat 8, 7121 DM Aalten",
+        "status": "false",
+        "note": "Het huidige bezoekadres van de gemeente Aalten is Markt 7, 7121 CS Aalten, niet Hofstraat 8"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.aalten.nl/omgevingsvergunning",
+      "https://www.aalten.nl/exploitatievergunning-horecabedrijf",
+      "https://www.aalten.nl/woning-uit-de-woonruimtevoorraad-halen",
+      "https://www.aalten.nl/bedrijfsactiviteiten-wijzigen",
+      "https://www.aalten.nl/alcoholvergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vraagt u een omgevingsvergunning aan met een bouwsom van € 500.000,- of meer dan dient u ook een formulier Wet Bibob in te vullen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de Bibob-verplichting voor aanvragen boven €500.000, wat een belangrijke aanvullende voorwaarde is.",
+          "source_urls": [
+            "https://www.aalten.nl/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Namens de gemeente bepaalt de Omgevingsdienst Achterhoek (ODA) of u voor de verandering in uw bedrijf een (hernieuwde) aanvraag voor een omgevingsvergunning moet doen of dat een melding voldoende is.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat de Omgevingsdienst Achterhoek (ODA) bepaalt of een vergunning of melding nodig is bij bedrijfswijzigingen.",
+          "source_urls": [
+            "https://www.aalten.nl/bedrijfsactiviteiten-wijzigen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten twee belangrijke aanvullende vereisten die niet in de originele tekst staan: de Bibob-verplichting voor grote bouwprojecten (>€500.000) en de rol van de Omgevingsdienst Achterhoek bij bedrijfswijzigingen. Deze informatie is essentieel voor aanvragers van bepaalde vergunningen. Verder is de inhoud grotendeels consistent met de originele tekst."
+  }
+}

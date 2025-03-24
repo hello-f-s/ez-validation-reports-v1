@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HOOGEVEEN",
+      "contact": {
+        "phone": "14 0528",
+        "email": "info@hoogeveen.nl",
+        "website": "http://www.hoogeveen.nl"
+      }
+    },
+    "service": {
+      "id": 16,
+      "name": "Registreren in het Landelijk Register Kinderopvang (LRK)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 8,
+    "true_sentences": 7,
+    "false_sentences": 1,
+    "accuracy_percentage": 87.5,
+    "false_statements": [
+      {
+        "sentence": "Voor het starten van een kinderdagverblijf, buitenschoolse opvang, gastouderbureau of gastouderopvang betaalt u € 97,90 aan de gemeente.",
+        "status": "false",
+        "note": "Het genoemde bedrag van €97,90 is niet correct volgens de officiële website van gemeente Hoogeveen. De actuele legeskosten voor kinderopvang zijn €1.235,00 voor KDV/BSO/GOB en €637,00 voor gastouderopvang."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.hoogeveen.nl/vergunningen/kinderopvang-starten",
+      "https://www.hoogeveen.nl/geboorte-en-overlijden/geboorteaangifte-doen",
+      "https://www.hoogeveen.nl/laag-inkomen/extra-ondersteuning-bij-laag-inkomen/tegemoetkoming-kosten-kinderopvang-en-peuterspelen",
+      "https://www.hoogeveen.nl/laag-inkomen/extra-ondersteuning-bij-laag-inkomen/hulp-bij-aanvragen-van-regelingen",
+      "https://www.hoogeveen.nl/geboorte-en-overlijden/registratie-levenloos-geboren-kind"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als uw kinderopvang bedoeld is voor meer dan 10 kinderen jonger dan 12 jaar, dan hebt u een vergunning voor brandveiligheid nodig. In andere gevallen doet u een gebruiksmelding.",
+          "original_reference": "vergunningen voor brandveiligheid (voor meer dan 10 kinderen jonger dan 12 jaar)",
+          "note": "De originele tekst vermeldt niet de verplichting tot gebruiksmelding voor gevallen met minder dan 10 kinderen, wat wel een belangrijke aanvullende eis is.",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/kinderopvang-starten"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor uw onderneming of voor werknemers op leidinggevende posities vraagt u een VOG Rechtspersonen aan. Alle andere medewerkers vragen een VOG Particulieren aan",
+          "original_reference": "Verklaringen omtrent het gedrag (VOG) voor uzelf en medewerkers",
+          "note": "De originele tekst maakt geen onderscheid tussen VOG Rechtspersonen (voor leidinggevenden) en VOG Particulieren (voor andere medewerkers), wat een belangrijk verschil is in type VOG.",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/kinderopvang-starten"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u een locatie hebt gevonden, dan bekijkt u het omgevingsplan van de gemeente. Controleer welke bestemming de locatie heeft, maar ook welke vergunningen u nodig hebt.",
+          "original_reference": "moet u voldoen aan verschillende eisen zoals het omgevingsplan",
+          "note": "De bronpagina specificeert dat er actief gecontroleerd moet worden op zowel bestemming als benodigde vergunningen, wat een concretere eis is dan de algemene verwijzing in de originele tekst.",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/kinderopvang-starten"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten belangrijke aanvullende details over de vereisten voor het starten van kinderopvang, met name rond de brandveiligheid (gebruiksmelding bij minder dan 10 kinderen), specifieke types VOG's voor verschillende functies, en de concrete controle van het omgevingsplan. Deze details maken de voorwaarden specifieker dan in de originele tekst vermeld."
+  }
+}

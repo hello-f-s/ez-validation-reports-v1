@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "TERSCHELLING",
+      "contact": {
+        "phone": "(0562) 44 62 44",
+        "email": "gemeente@terschelling.nl",
+        "website": "http://www.terschelling.nl"
+      }
+    },
+    "service": {
+      "id": 15,
+      "name": "Vergunning of ontheffing voor straatartiesten"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 9,
+    "true_sentences": 8,
+    "false_sentences": 1,
+    "accuracy_percentage": 88.9,
+    "false_statements": [
+      {
+        "sentence": "De vergunning moet schriftelijk worden aangevraagd en ten minste zes weken van tevoren worden ingediend bij de gemeente.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Terschelling moet een evenementenvergunning minimaal 8 weken van tevoren worden aangevraagd, niet 6 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.terschelling.nl/straatartiest-optreden",
+      "https://www.terschelling.nl/verkeersontheffingen",
+      "https://www.terschelling.nl/voorwerp-plaatsen-op-of-aan-de-weg",
+      "https://www.terschelling.nl/omgevingsvergunning",
+      "https://www.terschelling.nl/openbare-weg-afsluiten"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wilt u in het openbaar muziek maken, dansen, een toneelvoorstelling houden of uw beeldende kunst exposeren?",
+          "original_reference": "Als ondernemer die een straatartiest wil laten optreden",
+          "note": "De bronpagina is breder in scope en richt zich op alle vormen van straatoptredens/kunst, niet alleen ondernemers die artiesten laten optreden",
+          "source_urls": [
+            "https://www.terschelling.nl/straatartiest-optreden"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Aanvraagformulier evenement, wedstrijd e.d.",
+          "original_reference": "het aanvraagformulier voor evenementen",
+          "note": "De bronpagina specificeert dat het formulier ook voor wedstrijden en andere gelegenheden gebruikt kan worden, wat meer mogelijkheden biedt dan alleen evenementen",
+          "source_urls": [
+            "https://www.terschelling.nl/straatartiest-optreden"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Bij de beoordeling van de aanvraag let de gemeente op de volgende aspecten: Is de openbare orde beschermd? Is er sprake van overlast voor de omgeving? Is het veilig?",
+          "original_reference": "De gemeente beoordeelt de aanvraag op de bescherming van de openbare orde, mogelijke overlast voor de omgeving en veiligheid.",
+          "note": "De beoordelingscriteria komen exact overeen",
+          "source_urls": [
+            "https://www.terschelling.nl/straatartiest-optreden"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de doelgroep en reikwijdte van de vergunning. Waar de originele tekst zich specifiek richt op ondernemers die straatartiesten willen laten optreden, is de actuele gemeentelijke informatie breder en inclusiever. Het aanvraagformulier blijkt ook voor meer doeleinden te kunnen worden gebruikt dan alleen evenementen. De kernvoorwaarden en beoordelingscriteria zijn wel consistent gebleven."
+  }
+}

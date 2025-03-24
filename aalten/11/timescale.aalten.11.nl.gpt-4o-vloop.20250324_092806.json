@@ -1,0 +1,63 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AALTEN",
+      "contact": {
+        "phone": "(0543) 49 33 33",
+        "email": "gemeente@aalten.nl",
+        "website": "http://www.aalten.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 31,
+    "true_sentences": 30,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.8,
+    "false_statements": [
+      {
+        "sentence": "Bouwverordening gemeente Aalten 2005",
+        "status": "false",
+        "note": "De Bouwverordening gemeente Aalten 2005 is niet meer actueel. De gemeente Aalten hanteert nu de Bouwverordening 2012, laatst gewijzigd in 2023 volgens de officiële regelingenbank van de gemeente Aalten."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 0,
+    "invalid_urls": 5,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.aalten.nl/omgevingsvergunning",
+        "reason": "INVALID: Error scraping https://www.aalten.nl/omgevingsvergunning: HTTPSConnectionPool(host='www.aalten.nl', port=443): Max retries exceeded with url: /omgevingsvergunning (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10590b770>, 'Connection to www.aalten.nl timed out. (connect timeout=10)'))"
+      },
+      {
+        "url": "https://www.aalten.nl/milieu-vergunning-of-melding",
+        "reason": "INVALID: Error scraping https://www.aalten.nl/milieu-vergunning-of-melding: HTTPSConnectionPool(host='www.aalten.nl', port=443): Max retries exceeded with url: /milieu-vergunning-of-melding (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x105a28410>, 'Connection to www.aalten.nl timed out. (connect timeout=10)'))"
+      },
+      {
+        "url": "https://www.aalten.nl/bedrijfsactiviteiten-wijzigen",
+        "reason": "INVALID: Error scraping https://www.aalten.nl/bedrijfsactiviteiten-wijzigen: HTTPSConnectionPool(host='www.aalten.nl', port=443): Max retries exceeded with url: /bedrijfsactiviteiten-wijzigen (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x105a28cd0>, 'Connection to www.aalten.nl timed out. (connect timeout=10)'))"
+      },
+      {
+        "url": "https://www.aalten.nl/omgevingsvergunning-strijdig-gebruik",
+        "reason": "INVALID: Error scraping https://www.aalten.nl/omgevingsvergunning-strijdig-gebruik: HTTPSConnectionPool(host='www.aalten.nl', port=443): Max retries exceeded with url: /omgevingsvergunning-strijdig-gebruik (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x105a28e10>, 'Connection to www.aalten.nl timed out. (connect timeout=10)'))"
+      },
+      {
+        "url": "https://www.aalten.nl/omgevingsplan-aanpassen",
+        "reason": "INVALID: Error scraping https://www.aalten.nl/omgevingsplan-aanpassen: HTTPSConnectionPool(host='www.aalten.nl', port=443): Max retries exceeded with url: /omgevingsplan-aanpassen (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x105a29090>, 'Connection to www.aalten.nl timed out. (connect timeout=10)'))"
+      }
+    ]
+  }
+}

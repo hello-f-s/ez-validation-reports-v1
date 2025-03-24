@@ -1,0 +1,69 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MAASDRIEL",
+      "contact": {
+        "phone": "14 0418",
+        "email": "info@maasdriel.nl",
+        "website": "http://www.maasdriel.nl"
+      }
+    },
+    "service": {
+      "id": 18,
+      "name": "Ventvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 16,
+    "false_sentences": 3,
+    "accuracy_percentage": 84.2,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor een vooroverleg bedragen €561,00.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Maasdriel zijn de kosten voor een vooroverleg anders. Dit bedrag is niet correct."
+      },
+      {
+        "sentence": "Het gemeentehuis is op maandag geopend van 9.00 tot 16.30 uur.",
+        "status": "false",
+        "note": "Het gemeentehuis van Maasdriel is op maandag geopend van 9.00 tot 17.00 uur volgens de officiële website."
+      },
+      {
+        "sentence": "Telefonisch zijn zij ook op maandag bereikbaar binnen deze tijden.",
+        "status": "false",
+        "note": "De gemeente is telefonisch bereikbaar op maandag tot en met donderdag van 8.30 tot 17.00 uur en op vrijdag van 8.30 tot 16.00 uur."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 4,
+    "valid_urls": 0,
+    "invalid_urls": 4,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.maasdriel.nl/inwoner-en-ondernemer/bouwen-en-verbouwen/aanvragen-vergunningen-en-vooroverleg",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.maasdriel.nl/inwoner-en-ondernemer/bouwen-en-verbouwen/wegwijzer-omgevingsloket/vergunning-bedrijf-aan-huis",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.maasdriel.nl/inwoner-en-ondernemer/bouwen-en-verbouwen/wegwijzer-omgevingsloket/vergunning-voor-woning-bouwen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.maasdriel.nl/inwoner-en-ondernemer/bouwen-en-verbouwen/wegwijzer-omgevingsloket/vergunning-uitbreiden-bedrijf",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  }
+}

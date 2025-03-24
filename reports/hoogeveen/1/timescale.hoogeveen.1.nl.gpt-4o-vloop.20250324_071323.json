@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HOOGEVEEN",
+      "contact": {
+        "phone": "14 0528",
+        "email": "info@hoogeveen.nl",
+        "website": "http://www.hoogeveen.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "Eigenaar en leidinggevenden moeten 21 jaar of ouder zijn en van onbesproken gedrag.",
+        "status": "false",
+        "note": "Volgens de Alcoholwet moet de eigenaar/leidinggevende minimaal 21 jaar zijn, maar dit is per 1 juli 2021 verlaagd naar 18 jaar. De gemeente Hoogeveen volgt de actuele Alcoholwet."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.hoogeveen.nl/vergunningen/alcoholvergunning",
+      "https://www.hoogeveen.nl/veelgestelde-vragen-coffeeshop",
+      "https://www.hoogeveen.nl/vergunningen/omgevingsvergunningen",
+      "https://www.hoogeveen.nl/vergunningen/drank-schenken-bij-een-evenement",
+      "https://www.hoogeveen.nl/raad-en-college/woo-verzoek",
+      "https://www.hoogeveen.nl"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wij moeten ook weten als u gaat verbouwen. Soms heeft dit gevolgen voor uw vergunning, bijvoorbeeld als de oppervlakte van uw zaak wijzigt",
+          "original_reference": "Nieuwe leidinggevenden of veranderingen moeten worden doorgegeven, waarbij de vergunning wordt aangepast.",
+          "note": "De bronpagina specificeert expliciet dat verbouwingen die de oppervlakte wijzigen moeten worden gemeld, terwijl de originele tekst alleen algemeen spreekt over 'veranderingen'.",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/alcoholvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Dat houdt in dat u geen strafblad hebt en niet onder curatele staat",
+          "original_reference": "Eigenaar en leidinggevenden moeten 21 jaar of ouder zijn en van onbesproken gedrag.",
+          "note": "De bronpagina geeft een specifiekere definitie van 'onbesproken gedrag', namelijk geen strafblad hebben en niet onder curatele staan.",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/alcoholvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Alleen voor horeca: vragenlijst Bibob (pdf - 1,2 MB). De Wet Bibob (Bevordering Integriteitsbeoordelingen door het Openbaar Bestuur) voorkomt dat overheden criminele activiteiten ondersteunen",
+          "original_reference": "Voor horeca: ingevulde vragenlijst Bibob.",
+          "note": "De bronpagina geeft extra context over het doel van de Bibob-vragenlijst, wat ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/alcoholvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen meer specifieke details in de bronpagina's over meldingsplicht bij verbouwingen, een concretere definitie van 'onbesproken gedrag', en extra uitleg over het doel van de Bibob-vragenlijst. Deze details maken de voorwaarden en procedures duidelijker dan in de originele tekst."
+  }
+}

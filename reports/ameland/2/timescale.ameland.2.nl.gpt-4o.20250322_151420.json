@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AMELAND",
+      "contact": {
+        "phone": "(0519) 55 55 55",
+        "email": "info@ameland.nl",
+        "website": "http://www.ameland.nl"
+      }
+    },
+    "service": {
+      "id": 2,
+      "name": "Bord of spandoek plaatsen aan de openbare weg"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 10,
+    "false_sentences": 1,
+    "accuracy_percentage": 90.9,
+    "false_statements": [
+      {
+        "sentence": "Een toestemmingsaanvraag voor het plaatsen van een aankondigingsbord kost € 105,55.",
+        "status": "false",
+        "note": "Het exacte bedrag voor een aanvraag voor een aankondigingsbord is € 108,20 volgens de actuele legesverordening van gemeente Ameland."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.ameland.nl/omgevingsvergunning",
+      "https://www.ameland.nl/alcoholvergunning",
+      "https://www.ameland.nl/aankondigingsbord-plaatsen",
+      "https://www.ameland.nl/standplaatsvergunning",
+      "https://www.ameland.nl/uitrit-of-inrit-aanleggen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.gemeenteameland.nl/aankondigingsbord-plaatsen",
+        "reason": "INVALID: Error scraping https://www.gemeenteameland.nl/aankondigingsbord-plaatsen: 432 Client Error: status code 432 for url: https://www.gemeenteameland.nl/aankondigingsbord-plaatsen"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De gemeente kan eisen dat uw aankondigingsbord wind en/of lucht doorlaat. Let verder op het volgende: Zorg ervoor dat u het aankondigingsbord goed vastmaakt. Zorg ervoor dat u geen schade veroorzaakt aan bomen, muren of lantaarnpalen. Zorg ervoor dat het aankondigingsbord tegen het weer kan.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over specifieke technische vereisten voor het aankondigingsbord, terwijl de bron belangrijke voorwaarden noemt over windbestendigheid en bevestiging.",
+          "source_urls": [
+            "https://www.ameland.nl/aankondigingsbord-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Organiseert u een evenement? Bij de aanvraag evenementenvergunning kunt u aangeven of publicatieborden worden geplaatst.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat bij een evenementenvergunning de aankondigingsborden direct meegenomen kunnen worden in de aanvraag.",
+          "source_urls": [
+            "https://www.ameland.nl/aankondigingsbord-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Contact Tel: (0519) 555 555 WhatsApp: 06-144 58 728 E-mail: info@ameland.nl",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen contactgegevens, terwijl de bron wel specifieke contactinformatie vermeldt inclusief telefoonnummer, WhatsApp en e-mailadres.",
+          "source_urls": [
+            "https://www.ameland.nl/aankondigingsbord-plaatsen"
+          ]
+        }
+      ]
+    },
+    "summary": "De broninhoud bevat belangrijke aanvullende informatie die ontbreekt in de originele tekst, waaronder technische vereisten voor aankondigingsborden, de mogelijkheid om aankondigingsborden direct mee te nemen in een evenementenvergunning, en specifieke contactgegevens. Deze informatie is essentieel voor een complete dienstverlening aan de burger."
+  }
+}

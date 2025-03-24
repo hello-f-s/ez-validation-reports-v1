@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "EEMNES",
+      "contact": {
+        "phone": "14 035",
+        "email": "info@eemnes.nl",
+        "website": "http://www.eemnes.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 20,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.2,
+    "false_statements": [
+      {
+        "sentence": "BEL Combinatie, Zuidersingel 5, 3755 AZ Eemnes",
+        "status": "false",
+        "note": "Het adres van de BEL Combinatie is Zuidersingel 1 (niet 5) in Eemnes. Dit is hetzelfde adres als het gemeentehuis."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.eemnes.nl/Bouwen_verbouwen_en_wonen/Bouwen_en_verbouwen/Omgevingsvergunning",
+      "https://www.eemnes.nl/Vergunningen/Horeca_en_evenementen/Exploitatievergunning_horeca",
+      "https://www.eemnes.nl/Vergunningen",
+      "https://www.eemnes.nl/Vergunningen/Reclame_standplaats_en_collectevergunning",
+      "https://www.eemnes.nl/Bouwen_verbouwen_en_wonen/Bouwen_en_verbouwen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Doe via het omgevingsloket.nl op omgevingswet.overheid.nl een vergunningscheck",
+          "original_reference": "Gebruik de website omgevingsloket.nl",
+          "note": "De originele tekst verwijst alleen naar omgevingsloket.nl, terwijl de bron specificeert dat dit via omgevingswet.overheid.nl moet gebeuren",
+          "source_urls": [
+            "https://www.eemnes.nl/Bouwen_verbouwen_en_wonen/Bouwen_en_verbouwen/Omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor het aanvragen van een exploitatievergunning neemt u contact op met de gemeente via telefoonnummer 14 035 of via apv@belcombinatie.nl",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist het specifieke e-mailadres (apv@belcombinatie.nl) voor het aanvragen van een exploitatievergunning",
+          "source_urls": [
+            "https://www.eemnes.nl/Vergunningen/Horeca_en_evenementen/Exploitatievergunning_horeca"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wij toetsen uw aanvraag ook aan de Wet Bibob (Bevordering Integriteitsbeoordelingen door het Openbaar Bestuur)",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist de belangrijke informatie over de Bibob-toetsing bij horecavergunningen",
+          "source_urls": [
+            "https://www.eemnes.nl/Vergunningen/Horeca_en_evenementen/Exploitatievergunning_horeca"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen het correcte online loket (omgevingswet.overheid.nl), aanvullende contactmogelijkheden via e-mail, en ontbrekende informatie over de Bibob-toetsing bij horecavergunningen. Deze informatie is essentieel voor een complete en accurate dienstverlening."
+  }
+}

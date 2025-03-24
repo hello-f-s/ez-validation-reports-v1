@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AMELAND",
+      "contact": {
+        "phone": "(0519) 55 55 55",
+        "email": "info@ameland.nl",
+        "website": "http://www.ameland.nl"
+      }
+    },
+    "service": {
+      "id": 13,
+      "name": "Omzettingsvergunning voor kamerverhuur aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 20,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.2,
+    "false_statements": [
+      {
+        "sentence": "Telefoon: (0519) 555 555",
+        "status": "false",
+        "note": "Het correcte telefoonnummer van gemeente Ameland is (0519) 555 555 555 (drie keer '555')"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.ameland.nl/omgevingsvergunning",
+      "https://www.ameland.nl/onttrekkingsvergunning",
+      "https://www.ameland.nl/uitrit-of-inrit-aanleggen",
+      "https://www.ameland.nl/huisvestingsvergunning",
+      "https://www.ameland.nl/bestemmingsplan-aanpassen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Let op! Informatie op deze pagina kan verouderd zijn vanwege de overgang naar de Omgevingswet per 1 januari 2024.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen waarschuwing over de overgang naar de Omgevingswet, wat belangrijke gevolgen kan hebben voor de actualiteit van de procedures.",
+          "source_urls": [
+            "https://www.ameland.nl/uitrit-of-inrit-aanleggen",
+            "https://www.ameland.nl/bestemmingsplan-aanpassen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Doe dit minimaal 8 weken voordat u wilt starten met de werkzaamheden. Bij een uitgebreide aanvraag doet u dit minimaal 6 maanden van tevoren.",
+          "original_reference": "Bij een reguliere aanvraag geldt een beslistermijn van 8 weken, die met 6 weken kan worden verlengd.",
+          "note": "De bronpagina specificeert duidelijke minimale aanvraagtermijnen vooraf, terwijl de originele tekst alleen beslistermijnen noemt.",
+          "source_urls": [
+            "https://www.ameland.nl/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Overleg vooraf met de gemeente over uw plannen. Dan komt u niet voor verrassingen te staan. Dit heet een vooroverleg.",
+          "original_reference": "Voor de uitgebreide procedure dient een vooroverleg met de gemeente te worden gehouden.",
+          "note": "Beide teksten benadrukken het belang van vooroverleg, maar de brontekst formuleert dit als algemeen advies in plaats van een vereiste.",
+          "source_urls": [
+            "https://www.ameland.nl/omgevingsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de overgang naar de nieuwe Omgevingswet per 2024, wat niet wordt vermeld in de originele tekst. Daarnaast zijn er verschillen in hoe de aanvraagtermijnen worden gecommuniceerd. De bronnen geven specifiekere richtlijnen voor wanneer men moet beginnen met de aanvraag, terwijl de originele tekst zich meer richt op de behandeltermijnen. Het vooroverleg wordt in de bronnen als algemeen advies gegeven, terwijl dit in de originele tekst als vereiste voor uitgebreide procedures wordt gepresenteerd."
+  }
+}

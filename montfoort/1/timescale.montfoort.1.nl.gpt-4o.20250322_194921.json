@@ -1,0 +1,79 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MONTFOORT",
+      "contact": {
+        "phone": "(0348) 47 64 00",
+        "email": "info@montfoort.nl",
+        "website": "http://www.montfoort.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 10,
+    "false_sentences": 1,
+    "accuracy_percentage": 90.9,
+    "false_statements": [
+      {
+        "sentence": "U ontvangt binnen 8 weken bericht of u de alcoholvergunning krijgt.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Montfoort bedraagt de beslistermijn voor een alcoholvergunning 12 weken, niet 8 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.montfoort.nl/Alle_onderwerpen/Vergunningen_en_ontheffingen/Horeca_en_MKB",
+      "https://www.montfoort.nl/Alle_onderwerpen/Vergunningen_en_ontheffingen/Horeca_en_MKB/Alcoholvergunning",
+      "https://www.montfoort.nl/Alle_onderwerpen/Vergunningen_en_ontheffingen/Horeca_en_MKB/Exploitatievergunning",
+      "https://www.montfoort.nl/Alle_onderwerpen/Ondernemen/Horeca_en_MKB",
+      "https://www.montfoort.nl/Alle_onderwerpen/Vergunningen_en_ontheffingen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.montfoort.nl/dienstverlening/vergunningen-en-ontheffingen/alcoholvergunning/",
+        "reason": "INVALID: Error scraping https://www.montfoort.nl/dienstverlening/vergunningen-en-ontheffingen/alcoholvergunning/: 404 Client Error:  for url: https://www.montfoort.nl/dienstverlening/vergunningen-en-ontheffingen/alcoholvergunning/"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wilt u alcohol schenken tijdens een evenement? Dan vraagt u hiervoor een ontheffing aan bij de gemeente.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de mogelijkheid voor een ontheffing bij evenementen, wat een belangrijke aanvullende optie is voor alcoholverstrekking.",
+          "source_urls": [
+            "https://www.montfoort.nl/Alle_onderwerpen/Vergunningen_en_ontheffingen/Horeca_en_MKB/Alcoholvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U vraagt de alcoholvergunning online aan bij de gemeente. Voeg bij de vergunningaanvraag de volgende documenten bij: Uittreksel van de inschrijving van de Kamer van Koophandel, Een plattegrond van uw inrichting (inclusief terras op eigen grond), De verklaring van sociale hygiëne van elke leidinggevende, Een legitimatiebewijs van elke leidinggevende",
+          "original_reference": "No matching information",
+          "note": "De originele tekst specificeert niet de vereiste documenten voor de aanvraag, terwijl de bronpagina een duidelijke lijst van benodigde documenten vermeldt.",
+          "source_urls": [
+            "https://www.montfoort.nl/Alle_onderwerpen/Vergunningen_en_ontheffingen/Horeca_en_MKB/Alcoholvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten twee belangrijke aanvullingen die niet in de originele tekst staan: de mogelijkheid voor een alcoholontheffing bij evenementen en een specifieke lijst van vereiste documenten voor de vergunningaanvraag. Deze informatie is essentieel voor een complete dienstverlening."
+  }
+}

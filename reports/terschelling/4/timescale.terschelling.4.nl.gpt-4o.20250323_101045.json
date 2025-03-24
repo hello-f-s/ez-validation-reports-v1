@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "TERSCHELLING",
+      "contact": {
+        "phone": "(0562) 44 62 44",
+        "email": "gemeente@terschelling.nl",
+        "website": "http://www.terschelling.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "De leges voor het in behandeling nemen van een evenementenvergunning bedragen €18,16.",
+        "status": "false",
+        "note": "Het genoemde bedrag van €18,16 is onjuist. Volgens de officiële website van de gemeente Terschelling varieert het legesbedrag voor een evenementenvergunning afhankelijk van het type en de grootte van het evenement."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.terschelling.nl/evenement-organiseren-vergunning-of-melding",
+      "https://www.terschelling.nl/alle-producten-en-diensten/21",
+      "https://www.terschelling.nl/omgevingsvergunning",
+      "https://www.terschelling.nl/straatartiest-optreden",
+      "https://www.terschelling.nl/exploitatievergunning-horecabedrijf"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.gemeenteterschelling.nl/evenement-organiseren-vergunning-of-melding",
+        "reason": "INVALID: Error scraping https://www.gemeenteterschelling.nl/evenement-organiseren-vergunning-of-melding: 439 Client Error: status code 439 for url: https://www.gemeenteterschelling.nl/evenement-organiseren-vergunning-of-melding"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "het aantal toeschouwers en deelnemers bedraagt niet meer dan 500 personen [...] er wordt geen versterkte muziek ten gehore gebracht [...] u doet uiterlijk vier weken voor het evenement een melding",
+          "original_reference": "Als er meer dan 500 personen worden verwacht, of bij gebruik van versterkte muziek, is een vergunning noodzakelijk in plaats van een melding.",
+          "note": "De originele tekst noemt alleen de grens van 500 personen en versterkte muziek, terwijl de bron aanvullende criteria heeft zoals tijdstip (09:00-23:00), geen belemmering voor verkeer, kleine objecten <10m², en een meldingstermijn van 4 weken.",
+          "source_urls": [
+            "https://www.terschelling.nl/evenement-organiseren-vergunning-of-melding"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "€40,78",
+          "original_reference": "€18,16",
+          "note": "De legeskosten in de originele tekst (€18,16) verschillen van het bedrag genoemd in de bronnen (€40,78)",
+          "source_urls": [
+            "https://www.terschelling.nl/exploitatievergunning-horecabedrijf"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "tenminste zes weken van te voren",
+          "original_reference": "minstens 3 maanden van tevoren worden ingediend",
+          "note": "Er is een discrepantie in de aanvraagtermijnen: de bron voor straatartiesten noemt 6 weken, terwijl de originele tekst 3 maanden aangeeft voor kleine evenementen",
+          "source_urls": [
+            "https://www.terschelling.nl/straatartiest-optreden"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont drie belangrijke verschillen tussen de originele tekst en de bronnen: (1) er zijn aanvullende specifieke criteria voor kleine evenementen die niet in de originele tekst staan, (2) er is een verschil in de vermelde legeskosten, en (3) er zijn tegenstrijdige aanvraagtermijnen. De bronnen bevatten meer gedetailleerde voorwaarden voor kleine evenementen die nuttig kunnen zijn voor de originele tekst."
+  }
+}

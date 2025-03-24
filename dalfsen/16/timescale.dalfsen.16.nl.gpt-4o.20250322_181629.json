@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DALFSEN",
+      "contact": {
+        "phone": "14 0529",
+        "email": "gemeente@dalfsen.nl",
+        "website": "http://www.dalfsen.nl"
+      }
+    },
+    "service": {
+      "id": 16,
+      "name": "Registreren in het Landelijk Register Kinderopvang (LRK)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "Als u kinderopvang biedt voor meer dan 10 kinderen jonger dan 12 jaar, is een brandveiligheidsvergunning van de gemeente vereist.",
+        "status": "false",
+        "note": "Volgens de gemeente Dalfsen is een gebruiksmelding brandveilig gebruik verplicht bij opvang van meer dan 10 personen, er bestaat geen aparte 'brandveiligheidsvergunning'. De gebruiksmelding is de juiste term voor deze vereiste."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.dalfsen.nl/kinderopvang-controle",
+      "https://www.dalfsen.nl/levenloos-geboren-kind-registreren",
+      "https://www.dalfsen.nl/kinderopvang-starten",
+      "https://www.dalfsen.nl/regelingen-voor-mensen-met-een-laag-inkomen",
+      "https://www.dalfsen.nl/kinderopvangtoeslag"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.dalfsen.nl/lokale-regelingen/kinderopvang-starten",
+        "reason": "INVALID: Error scraping https://www.dalfsen.nl/lokale-regelingen/kinderopvang-starten: 404 Client Error: Not Found for url: https://www.dalfsen.nl/lokale-regelingen/kinderopvang-starten"
+      },
+      {
+        "url": "https://www.dalfsen.nl/landelijk-register-kinderopvang",
+        "reason": "INVALID: Error scraping https://www.dalfsen.nl/landelijk-register-kinderopvang: 404 Client Error: Not Found for url: https://www.dalfsen.nl/landelijk-register-kinderopvang"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vraag een VOG Rechtspersonen aan. Hiermee kunt u bewijzen dat uw onderneming of werknemers op leidinggevende posities, geen strafbare feiten hebben gepleegd.",
+          "original_reference": "Elke medewerker moet een Verklaring Omtrent het Gedrag (VOG) hebben voor de kinderopvang.",
+          "note": "De bronpagina specificeert dat er twee verschillende types VOG nodig zijn: een VOG Rechtspersonen voor de onderneming/leidinggevenden én een VOG Particulieren (profiel 84 of 86) voor alle medewerkers. Dit is specifieker dan de originele tekst.",
+          "source_urls": [
+            "https://www.dalfsen.nl/kinderopvang-starten"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De GGD-inspecteur komt onaangekondigd langs en controleert of: uw pedagogische beleidsplan in de praktijk wordt nageleefd, er genoeg medewerkers aanwezig zijn, het aantal kinderen in de opvang, de groepen niet te groot zijn, elke medewerker een verklaring omtrent gedrag (VOG) heeft, elke medewerker de juiste diploma's heeft, er sprake is van een veilige en gezonde opvanglocatie",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat belangrijke aanvullende informatie over de GGD-inspectie en specifieke controlepunten die niet genoemd worden in de originele tekst.",
+          "source_urls": [
+            "https://www.dalfsen.nl/kinderopvang-controle"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten twee belangrijke verschillen met de originele tekst: (1) een meer gedetailleerde beschrijving van de VOG-vereisten, waarbij onderscheid wordt gemaakt tussen VOG Rechtspersonen en VOG Particulieren, en (2) aanvullende informatie over de GGD-inspectie en controlepunten die volledig ontbreekt in de originele tekst. Deze informatie is relevant voor het volledig begrip van de vereisten en controles bij het starten van kinderopvang."
+  }
+}

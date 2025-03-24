@@ -1,0 +1,79 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ALKMAAR",
+      "contact": {
+        "phone": "14 072",
+        "email": "post@alkmaar.nl",
+        "website": "http://www.alkmaar.nl"
+      }
+    },
+    "service": {
+      "id": 20,
+      "name": "Vergunning voor seksbedrijf"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 25,
+    "true_sentences": 24,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.0,
+    "false_statements": [
+      {
+        "sentence": "Voor een vergunning raamprostitutie betaalt u € 518,67 + € 74,11 per werkplek.",
+        "status": "false",
+        "note": "De exacte bedragen voor vergunningen worden jaarlijks vastgesteld door de gemeente Alkmaar. De genoemde specifieke bedragen zijn niet meer actueel volgens de huidige legesverordening van de gemeente Alkmaar."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/overig/exploitatievergunning-seksbedrijf",
+      "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/horeca/drank-en-horecawet-vergunning",
+      "https://www.alkmaar.nl/direct-regelen/wonen-verhuizen-en-verbouwen/vergunningen/omgevingsvergunning",
+      "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/horeca/terrasvergunning/",
+      "https://www.alkmaar.nl/direct-regelen/ondernemen/vergunningen-en-ontheffingen/exploitatievergunning/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://gemeente.alkmaar.nl",
+        "reason": "INVALID: Error scraping https://gemeente.alkmaar.nl: HTTPSConnectionPool(host='gemeente.alkmaar.nl', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x106026850>: Failed to resolve 'gemeente.alkmaar.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U vraagt uw vergunning aan via E-herkenning",
+          "original_reference": "U kunt de aanvraag online indienen met behulp van DigiD of eHerkenning",
+          "note": "De bronpagina specificeert alleen eHerkenning als aanvraagmethode, terwijl de originele tekst zowel DigiD als eHerkenning noemt",
+          "source_urls": [
+            "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/overig/exploitatievergunning-seksbedrijf"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een kopie van een geldig legitimatiebewijs van alle leidinggevenden / beheerders die in loondienst zijn",
+          "original_reference": "Een kopie van een geldig legitimatiebewijs van de ondernemer(s) en beheerder(s)",
+          "note": "De bronpagina specificeert dat het gaat om leidinggevenden/beheerders in loondienst, terwijl de originele tekst deze beperking niet noemt",
+          "source_urls": [
+            "https://www.alkmaar.nl/direct-regelen/ondernemen/vergunningen-en-ontheffingen/exploitatievergunning/"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden in de aanvraagprocedure: de aanvraagmethode (alleen eHerkenning vs. DigiD én eHerkenning) en de specificatie van legitimatiebewijzen voor beheerders (alleen in loondienst vs. alle beheerders). De overige informatie komt overeen met de originele tekst of is niet volledig te verifiëren in de beschikbare bronnen."
+  }
+}

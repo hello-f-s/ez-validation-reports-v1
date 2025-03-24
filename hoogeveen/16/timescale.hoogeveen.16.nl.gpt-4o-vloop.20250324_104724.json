@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HOOGEVEEN",
+      "contact": {
+        "phone": "14 0528",
+        "email": "info@hoogeveen.nl",
+        "website": "http://www.hoogeveen.nl"
+      }
+    },
+    "service": {
+      "id": 16,
+      "name": "Registreren in het Landelijk Register Kinderopvang (LRK)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor het starten van een kinderdagverblijf, buitenschoolse opvang, gastouderbureau of gastouderopvang bedragen € 100,75.",
+        "status": "false",
+        "note": "De genoemde kosten zijn niet actueel. Volgens de legesverordening van gemeente Hoogeveen bedragen de kosten voor het in behandeling nemen van een aanvraag tot opname in het Landelijk Register Kinderopvang € 1.030,00 voor kinderdagverblijf/BSO/GOB en € 515,00 voor gastouderopvang."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.hoogeveen.nl/vergunningen/kinderopvang-starten",
+      "https://www.hoogeveen.nl/laag-inkomen/extra-ondersteuning-bij-laag-inkomen/tegemoetkoming-kosten-kinderopvang-en-peuterspelen",
+      "https://www.hoogeveen.nl/geboorte-en-overlijden/registratie-levenloos-geboren-kind",
+      "https://www.hoogeveen.nl/geboorte-en-overlijden/geboorteaangifte-doen",
+      "https://www.hoogeveen.nl/laag-inkomen/extra-ondersteuning-bij-laag-inkomen/hulp-bij-aanvragen-van-regelingen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als uw kinderopvang bedoeld is voor meer dan 10 kinderen jonger dan 12 jaar, dan hebt u een vergunning voor brandveiligheid nodig. In andere gevallen doet u een gebruiksmelding.",
+          "original_reference": "U moet voldoen aan alle eisen die gesteld worden aan de kinderopvang, zoals een vergunning voor brandveiligheid bij meer dan 10 kinderen onder de 12 jaar.",
+          "note": "De originele tekst vermeldt niet de verplichting tot gebruiksmelding voor gevallen met minder dan 10 kinderen, wat wel een belangrijk vereiste is volgens de bron.",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/kinderopvang-starten"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U vraagt minimaal 10 weken voordat u opengaat een registratie aan in het LRK. Vergeet bij uw aanvraag ook de mee te sturen documenten niet.",
+          "original_reference": "Een aanvraagformulier voor registratie in het LRK is minimaal 10 weken voor opening nodig.",
+          "note": "De brontekst benadrukt expliciet het belang van het meesturen van documenten, wat in de originele tekst minder duidelijk wordt vermeld.",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/kinderopvang-starten"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Maak online een afspraak voordat u langskomt op het gemeentehuis, of bel met de gemeente op 14 0528.",
+          "original_reference": "Maak online een afspraak voordat u langskomt op het gemeentehuis, of bel met de gemeente op 14 0528.",
+          "note": "De contactgegevens en procedure voor afspraken komen exact overeen.",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/kinderopvang-starten"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont enkele belangrijke verschillen in de informatievoorziening. Met name de verplichting tot gebruiksmelding bij minder dan 10 kinderen ontbreekt in de originele tekst, wat een belangrijk detail is voor startende kinderopvangondernemers. Ook wordt in de brontekst meer nadruk gelegd op het belang van het meesturen van documenten bij de LRK-registratie. De contactgegevens en basisprocedures zijn wel consistent tussen beide bronnen."
+  }
+}

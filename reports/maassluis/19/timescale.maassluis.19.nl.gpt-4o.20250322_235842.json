@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MAASSLUIS",
+      "contact": {
+        "phone": "14 010",
+        "email": "gemeente@maassluis.nl",
+        "website": "http://www.maassluis.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor een aanwezigheidsvergunning voor het plaatsen van twee kansspelautomaten zijn € 271,50 voor een periode van 3 jaar.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Maassluis bedragen de kosten voor een aanwezigheidsvergunning voor kansspelautomaten € 226,25 per jaar voor maximaal twee automaten."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.maassluis.nl/kansspelautomaat-plaatsen",
+      "https://www.maassluis.nl/exploitatievergunning-horecabedrijf",
+      "https://www.maassluis.nl/loterij-prijsvraag-bingo-organiseren",
+      "https://www.maassluis.nl/standplaats-aanvragen",
+      "https://www.maassluis.nl/geluidsoverlast-veroorzaken"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://gemeentemaassluis.nl",
+        "reason": "INVALID: Error scraping https://gemeentemaassluis.nl: 439 Client Error: status code 439 for url: https://gemeentemaassluis.nl/"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "De kosten van een aanwezigheidsvergunning voor het plaatsen van twee kansspelautomaten zijn € 271,50 voor een periode van 3 jaar.",
+          "original_reference": "De kosten voor een aanwezigheidsvergunning voor het plaatsen van twee kansspelautomaten zijn € 271,50 voor een periode van 3 jaar.",
+          "note": "De kosten en geldigheidsduur zijn exact hetzelfde in beide bronnen",
+          "source_urls": [
+            "https://www.maassluis.nl/kansspelautomaat-plaatsen"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Het verwerken van een aanvraag voor een aanwezigheidsvergunning duurt ongeveer 8 weken.",
+          "original_reference": "Het verwerken van een aanvraag voor een aanwezigheidsvergunning duurt ongeveer 8 weken.",
+          "note": "De verwerkingstijd is identiek in beide bronnen",
+          "source_urls": [
+            "https://www.maassluis.nl/kansspelautomaat-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De aanwezigheidsvergunning geldt voor drie kalenderjaren.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet expliciet dat de vergunning voor drie kalenderjaren geldt, terwijl dit wel duidelijk staat aangegeven in de bron",
+          "source_urls": [
+            "https://www.maassluis.nl/kansspelautomaat-plaatsen"
+          ]
+        }
+      ]
+    },
+    "summary": "De informatie komt grotendeels overeen, maar er is één belangrijk verschil gevonden: de bronpagina specificeert expliciet dat de vergunning geldt voor drie kalenderjaren, wat niet vermeld wordt in de originele tekst. Alle andere aspecten zoals kosten, voorwaarden en verwerkingstijd zijn consistent tussen beide bronnen."
+  }
+}

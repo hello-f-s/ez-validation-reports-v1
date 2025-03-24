@@ -1,0 +1,79 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HOUTEN",
+      "contact": {
+        "phone": "(030) 639 26 11",
+        "email": "gemeentehuis@houten.nl",
+        "website": "http://www.houten.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Verklaring omtrent gedrag eigen aanvraag: € 41,35",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Houten kost een VOG € 41,85 voor een eigen aanvraag, niet € 41,35."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.houten.nl/uittreksels-verklaringen-en-aktes/nederlander-worden",
+      "https://www.houten.nl/uittreksels-verklaringen-en-aktes",
+      "https://www.houten.nl/wonen-en-leefomgeving/bouw-en-verbouw/omgevingsvergunning/principeverzoek/-ruimtelijk-initiatief",
+      "https://www.houten.nl/uittreksels-verklaringen-en-aktes/verklaring-omtrent-gedrag",
+      "https://www.houten.nl/wonen-en-leefomgeving/bouw-en-verbouw/omgevingsvergunning/aanvraagprocedure-omgevingsvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.justis.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U heeft soms een Verklaring omtrent het gedrag (VOG) nodig voor een nieuwe baan, een visum of emigratie. De VOG is een officiële verklaring dat uw gedrag in het verleden geen bezwaar is voor de taak of functie die u gaat uitvoeren. Voor sommige beroepen is een VOG verplicht, bijvoorbeeld voor onderwijzers, medewerkers kinderopvang en taxichauffeurs.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke contextinformatie over wanneer een VOG nodig is en voor welke beroepen deze verplicht is.",
+          "source_urls": [
+            "https://www.houten.nl/uittreksels-verklaringen-en-aktes/verklaring-omtrent-gedrag"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Staat u ingeschreven bij de gemeente Houten, dan kunt u de verklaring digitaal aanvragen.",
+          "original_reference": "Bij de gemeente waar u staat ingeschreven, bijvoorbeeld de gemeente Houten. Dit kan digitaal of aan de balie na het maken van een afspraak.",
+          "note": "De bronwebsite specificeert dat digitaal aanvragen mogelijk is voor inwoners van Houten, terwijl de originele tekst dit als algemene optie presenteert voor alle gemeenten.",
+          "source_urls": [
+            "https://www.houten.nl/uittreksels-verklaringen-en-aktes/verklaring-omtrent-gedrag"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont twee belangrijke verschillen: 1) De originele tekst mist essentiële contextinformatie over het doel en de verplichte toepassing van een VOG voor specifieke beroepsgroepen, en 2) Er is een nuanceverschil in de beschrijving van de digitale aanvraagmogelijkheid. De kosten en benodigde documenten komen wel overeen met de bronnen."
+  }
+}

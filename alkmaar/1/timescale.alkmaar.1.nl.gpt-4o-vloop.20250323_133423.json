@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ALKMAAR",
+      "contact": {
+        "phone": "14 072",
+        "email": "post@alkmaar.nl",
+        "website": "http://www.alkmaar.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 27,
+    "true_sentences": 26,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.3,
+    "false_statements": [
+      {
+        "sentence": "Na een wettelijk verplichte inzageperiode van 6 weken kan de gemeente de vergunning aan u geven of weigeren, waarbij eventuele zienswijzen in overweging worden genomen.",
+        "status": "false",
+        "note": "Er is geen wettelijk verplichte inzageperiode van 6 weken voor een alcoholvergunning (Drank- en Horecavergunning) in Alkmaar. De gemeente beslist binnen 8 weken over de aanvraag, maar er is geen verplichte inzageperiode vooraf."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/horeca/drank-en-horecawet-vergunning",
+      "https://www.alkmaar.nl/direct-regelen/ondernemen/vergunningen-en-ontheffingen/exploitatievergunning/",
+      "https://www.alkmaar.nl/direct-regelen/ondernemen/vergunningen-en-ontheffingen/alcohol-schenken-tijdelijke-ontheffing",
+      "https://www.alkmaar.nl/direct-regelen/afval/het-ergens-niet-mee-eens-zijn/woo-verzoek",
+      "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/horeca/terrasvergunning/",
+      "https://alkmaar.nl"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "€ 27,08 voor tijdelijke ontheffing alcohol schenken",
+          "original_reference": "€ 315,99 voor het in behandeling nemen van uw aanvraag",
+          "note": "Er is een significant verschil in de kosten. De originele tekst noemt alleen het hogere bedrag voor de reguliere vergunning, maar niet het lagere tarief voor een tijdelijke ontheffing.",
+          "source_urls": [
+            "https://www.alkmaar.nl/direct-regelen/ondernemen/vergunningen-en-ontheffingen/alcohol-schenken-tijdelijke-ontheffing"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De gemeente kan deze termijn verlengen, met nog eens 8 weken",
+          "original_reference": "Deze termijn kan worden verlengd",
+          "note": "De bronpagina specificeert de exacte verlengingstermijn (8 weken), terwijl de originele tekst alleen vermeldt dat verlenging mogelijk is zonder de duur te noemen.",
+          "source_urls": [
+            "https://www.alkmaar.nl/direct-regelen/ondernemen/vergunningen-en-ontheffingen/exploitatievergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "€ 140,10 voor terrasvergunning en € 63,40 per m2 per jaar precariobelasting",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de kosten van een terrasvergunning en bijbehorende precariobelasting, terwijl dit wel relevant is voor horecaondernemers.",
+          "source_urls": [
+            "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/horeca/terrasvergunning/"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen vooral de kosten en termijnen. De originele tekst mist belangrijke informatie over tarieven voor tijdelijke ontheffingen en terrasvergunningen. Ook is de verlengingstermijn van 8 weken specifieker genoemd in de bronpagina's. Deze informatie is essentieel voor ondernemers om een volledig beeld te krijgen van de kosten en procedures."
+  }
+}

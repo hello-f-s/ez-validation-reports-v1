@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HOUTEN",
+      "contact": {
+        "phone": "(030) 639 26 11",
+        "email": "gemeentehuis@houten.nl",
+        "website": "http://www.houten.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "U kunt de exploitatievergunning bij de gemeente Houten aanvragen. Het formulier hiervoor kan in PDF-formaat gedownload worden van de gemeentelijke website: Gemeente Houten.",
+        "status": "false",
+        "note": "Het exploitatievergunning formulier is niet direct als PDF te downloaden van de gemeentelijke website. De aanvraag moet via het digitale ondernemersloket worden gedaan."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.houten.nl/ondernemen/regelen/horecabedrijf-exploiteren",
+      "https://www.houten.nl/ondernemen/regelen/standplaatsvergunning",
+      "https://www.houten.nl/ondernemen/regelen/alcoholwetvergunning",
+      "https://www.houten.nl/ondernemen/starten-als-ondernemer",
+      "https://www.houten.nl/wonen-en-leefomgeving/bouw-en-verbouw/omgevingsvergunning/aanvraagprocedure-omgevingsvergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U doet de aanvraag ontheffing van vergunningplicht U vraagt de ontheffing uiterlijk 4 weken voor de gewenste openingsdatum aan.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de specifieke aanvraagtermijn van 4 weken voor een ontheffing, wat belangrijke informatie is voor ondernemers.",
+          "source_urls": [
+            "https://www.houten.nl/ondernemen/regelen/horecabedrijf-exploiteren"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U kunt het formulier digitaal versturen naar gemeentehuis@houten.nl",
+          "original_reference": "U kunt de exploitatievergunning bij de gemeente Houten aanvragen. Het formulier hiervoor kan in PDF-formaat gedownload worden van de gemeentelijke website",
+          "note": "De originele tekst vermeldt niet het specifieke e-mailadres voor het indienen van de aanvraag, wat essentiële contactinformatie is.",
+          "source_urls": [
+            "https://www.houten.nl/ondernemen/regelen/horecabedrijf-exploiteren"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voldoet u niet aan de voorwaarden? Dan ontvangt u binnen 15 werkdagen schriftelijk bericht hierover.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de reactietermijn van 15 werkdagen bij het niet voldoen aan de voorwaarden.",
+          "source_urls": [
+            "https://www.houten.nl/ondernemen/regelen/horecabedrijf-exploiteren"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie die niet in de originele tekst staat, waaronder specifieke aanvraagtermijnen (4 weken voor ontheffing), het e-mailadres voor aanvragen (gemeentehuis@houten.nl) en de reactietermijn van 15 werkdagen bij afwijzing. Deze informatie is essentieel voor ondernemers die een horecabedrijf willen starten of exploiteren in Houten."
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OLDEBROEK",
+      "contact": {
+        "phone": "(0525) 63 82 00",
+        "email": "gemeente@oldebroek.nl",
+        "website": "http://www.oldebroek.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "Voor een aanwezigheidsvergunning kunt u schriftelijk een aanvraag indienen. Het specifieke formulier kan als pdf worden ingediend.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Oldebroek moet de aanvraag digitaal worden ingediend via het e-formulier op de gemeentelijke website. Er is geen mogelijkheid om een PDF-formulier in te dienen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 4,
+    "invalid_urls": 3,
+    "accuracy_percentage": 57.1,
+    "valid_urls_list": [
+      "https://www.oldebroek.nl/Contact/Direct_regelen/Digitale_formulieren/Aanwezigheidsvergunning_gok_en_spelautomaten_aanvragen_digitaal",
+      "https://www.oldebroek.nl/Inwoners/Vergunningen/Loterij_organiseren",
+      "https://www.oldebroek.nl/Inwoners/Bouwen_en_verbouwen/Omgevingsvergunning",
+      "https://www.oldebroek.nl/Inwoners/Vergunningen/Gok_en_spelautomaten_plaatsen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.oldebroek.nl/Inwoners/Vergunningen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.oldebroek.nl/aanwezigheidsvergunning-gok-en-spelautomaten-aanvragen-digitaal-oldebroek",
+        "reason": "INVALID: Error scraping https://www.oldebroek.nl/aanwezigheidsvergunning-gok-en-spelautomaten-aanvragen-digitaal-oldebroek: 404 Client Error:  for url: https://www.oldebroek.nl/aanwezigheidsvergunning-gok-en-spelautomaten-aanvragen-digitaal-oldebroek"
+      },
+      {
+        "url": "https://www.oldebroek.nl/gok-en-spelautomaten-plaatsen",
+        "reason": "INVALID: Error scraping https://www.oldebroek.nl/gok-en-spelautomaten-plaatsen: 404 Client Error:  for url: https://www.oldebroek.nl/gok-en-spelautomaten-plaatsen"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U moet bij deze aanvraag een 'Verklaring exploitatievergunninghouder' (pdf, 219 kB) meesturen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de vereiste 'Verklaring exploitatievergunninghouder' die moet worden meegestuurd bij de aanvraag.",
+          "source_urls": [
+            "https://www.oldebroek.nl/Contact/Direct_regelen/Digitale_formulieren/Aanwezigheidsvergunning_gok_en_spelautomaten_aanvragen_digitaal"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "WhatsApp 06 25 39 54 58",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt geen WhatsApp contactmogelijkheid, terwijl dit wel een beschikbaar communicatiekanaal is.",
+          "source_urls": [
+            "https://www.oldebroek.nl/Contact/Direct_regelen/Digitale_formulieren/Aanwezigheidsvergunning_gok_en_spelautomaten_aanvragen_digitaal"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele tekst en de bronnen. Ten eerste ontbreekt in de originele tekst de verplichte 'Verklaring exploitatievergunninghouder' die bij de aanvraag moet worden ingediend. Ten tweede wordt er een extra communicatiekanaal (WhatsApp) aangeboden dat niet in de originele tekst wordt vermeld. Deze informatie zou moeten worden toegevoegd om de dienstverlening volledig te beschrijven."
+  }
+}

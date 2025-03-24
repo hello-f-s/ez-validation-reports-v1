@@ -1,0 +1,86 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ERMELO",
+      "contact": {
+        "phone": "(0341) 56 73 21",
+        "email": "gemeente@ermelo.nl",
+        "website": "http://www.ermelo.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 27,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.4,
+    "false_statements": [
+      {
+        "sentence": "Bij een regulier conceptverzoek ontvangt u binnen 8 weken een uitslag.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Ermelo ontvangt u bij een regulier conceptverzoek binnen 6 weken (niet 8 weken) een uitslag."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 4,
+    "valid_urls": 3,
+    "invalid_urls": 1,
+    "accuracy_percentage": 75.0,
+    "valid_urls_list": [
+      "https://www.ermelo.nl/omgevingsplein/omgevingsloket",
+      "https://www.ermelo.nl/omgevingsplein/omgevingsloket/conceptverzoek-aanvragen",
+      "https://www.ermelo.nl/omgevingsplein/bouwen-en-verbouwen/start-controle-en-gereedmelding-bouw"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.ermelo.nl/omgevingsplein/omgevingsloket/omgevingsvergunning-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De start van de bouw meldt u op zijn laatst 2 werkdagen van tevoren. Bent u klaar met bouwen? Dan doet u een gereedmelding. Dat doet u op zijn laatst op de 1e werkdag nadat u klaar bent.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over verplichte start- en gereedmeldingen van bouwwerkzaamheden, wat een belangrijke procedurestap is.",
+          "source_urls": [
+            "https://www.ermelo.nl/omgevingsplein/bouwen-en-verbouwen/start-controle-en-gereedmelding-bouw"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een controleur kijkt of u zich houdt aan de voorschriften uit de vergunning. Dit is vanaf de vergunningaanvraag tot de oplevering van het bouwwerk. Controles op het gebied van milieu, asbest worden gecontroleerd door de Omgevingsdienst Veluwe.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de controles tijdens de bouw en de rol van de Omgevingsdienst Veluwe bij milieu- en asbestcontroles.",
+          "source_urls": [
+            "https://www.ermelo.nl/omgevingsplein/bouwen-en-verbouwen/start-controle-en-gereedmelding-bouw"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een kopie van de vergunning en de tekeningen moeten op de plek waar u (ver)bouwt aanwezig zijn.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de verplichting om een kopie van de vergunning en tekeningen op de bouwlocatie aanwezig te hebben.",
+          "source_urls": [
+            "https://www.ermelo.nl/omgevingsplein/bouwen-en-verbouwen/start-controle-en-gereedmelding-bouw"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie over verplichte meldingen, controles tijdens de bouw en documentatieverplichtingen die niet in de originele tekst zijn opgenomen. Deze informatie is essentieel voor het correct uitvoeren van bouwwerkzaamheden na het verkrijgen van een vergunning. Met name de rol van de Omgevingsdienst Veluwe en de specifieke termijnen voor start- en gereedmeldingen zijn belangrijke toevoegingen."
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "context": {
+    "municipality": {
+      "name": "BARNEVELD",
+      "contact": {
+        "phone": "14 0342",
+        "email": "info@barneveld.nl",
+        "website": "http://www.barneveld.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 9,
+    "true_sentences": 7,
+    "false_sentences": 2,
+    "accuracy_percentage": 77.8,
+    "false_statements": [
+      {
+        "sentence": "Om een terrasvergunning aan te vragen, moet u al een ontheffing hebben om tot 01.00 uur met uw horecabedrijf open te zijn.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Barneveld is een bestaande ontheffing voor openingstijden niet vereist voor het aanvragen van een terrasvergunning. Deze kunnen gelijktijdig worden aangevraagd."
+      },
+      {
+        "sentence": "Als de ontheffing voor het eerst wordt verleend, is deze 1 jaar geldig. Wordt de ontheffing voor de tweede keer verleend, dan is deze doorlopend geldig.",
+        "status": "false",
+        "note": "Volgens de gemeente Barneveld website wordt een terrasvergunning direct voor onbepaalde tijd verleend. Er is geen sprake van een eerste jaar proefperiode."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.barneveld.nl/vergunningen-en-ontheffingen/horeca/exploitatievergunning-aanvragen",
+      "https://www.barneveld.nl/vergunningen-en-ontheffingen/horeca/ontheffing-voor-gevelzitplaatsen-aanvragen",
+      "https://www.barneveld.nl/ondernemen/standplaatsvergunning-aanvragen",
+      "https://www.barneveld.nl/vergunningen-en-ontheffingen/horeca/verruiming-sluitingstijd-terras-aanvragen",
+      "https://www.barneveld.nl/vergunningen-en-ontheffingen/evenementen/evenementenvergunning-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.barneveld.nl/verruiming-sluitingstijd-terras-aanvragen",
+        "reason": "INVALID: Error scraping https://www.barneveld.nl/verruiming-sluitingstijd-terras-aanvragen: 404 Client Error: Not Found for url: https://www.barneveld.nl/verruiming-sluitingstijd-terras-aanvragen"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u voor de eerste keer deze ontheffing aanvraagt, is eerst overleg met de omwonenden nodig. Dit wordt door de gemeente in gang gezet. Het overleg is bij het horecabedrijf dat de ontheffing aanvraagt.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over het verplichte overleg met omwonenden bij eerste aanvraag.",
+          "source_urls": [
+            "https://www.barneveld.nl/vergunningen-en-ontheffingen/horeca/verruiming-sluitingstijd-terras-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De sluitingstijden worden met de ontheffing verruimd van 00.00 uur tot 01.00 uur: in mei, juni en september van vrijdag op zaterdag en van zaterdag op zondag. in juli en augustus alle dagen van de week.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst specificeert niet in welke maanden en op welke dagen de verruimde sluitingstijden gelden.",
+          "source_urls": [
+            "https://www.barneveld.nl/vergunningen-en-ontheffingen/horeca/verruiming-sluitingstijd-terras-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bij een verleende ontheffing horen voorwaarden, zoals: Om 0.30 uur laatste ronde, vanaf 0.45 uur geen nieuwe gasten. Om 01.00 uur terras leeg en geen afruimwerkzaamheden meer.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist specifieke voorwaarden over laatste ronde en afruimtijden die wel in de bron worden genoemd.",
+          "source_urls": [
+            "https://www.barneveld.nl/vergunningen-en-ontheffingen/horeca/verruiming-sluitingstijd-terras-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De originele tekst mist verschillende belangrijke details die wel in de bronnen staan: het verplichte overleg met omwonenden bij eerste aanvraag, specifieke tijdsperioden wanneer verruimde openingstijden gelden, en concrete voorwaarden rond laatste ronde en sluitingstijden. Deze informatie is essentieel voor horecaondernemers die een terrasvergunning willen aanvragen."
+  }
+}

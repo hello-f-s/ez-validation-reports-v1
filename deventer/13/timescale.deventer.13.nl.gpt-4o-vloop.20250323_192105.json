@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DEVENTER",
+      "contact": {
+        "phone": "14 0570",
+        "email": "gemeente@deventer.nl",
+        "website": "http://www.deventer.nl"
+      }
+    },
+    "service": {
+      "id": 13,
+      "name": "Omzettingsvergunning voor kamerverhuur aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 27,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.4,
+    "false_statements": [
+      {
+        "sentence": "Het vooroverleg kost €626, maar bij een omgevingsvergunningaanvraag binnen zes maanden wordt dit bedrag verrekend.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Deventer kost een vooroverleg €650 (2024 tarief), niet €626."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.deventer.nl/vooroverleg",
+      "https://www.deventer.nl/omgevingsvergunning",
+      "https://www.deventer.nl/omgevingsvergunning-aanvragen",
+      "https://www.deventer.nl/bouwen-en-verbouwen/bouw-en-verbouw-vergunning",
+      "http://www.deventer.nl/loketten/digitaal-loket/bouw-en-verbouw-vergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Gaat u nieuwbouwwoningen bouwen? Of kantoren van 100m2 of groter? Dan moet u een milieuprestatieberekening en een energieprestatieberekening toevoegen bij de aanvraag van een omgevingsvergunning.",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden aanvullende vereisten voor nieuwbouwwoningen en grote kantoren (milieuprestatieberekening en energieprestatieberekening) die niet genoemd worden in de originele tekst.",
+          "source_urls": [
+            "https://www.deventer.nl/bouwen-en-verbouwen/bouw-en-verbouw-vergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "een tekening van hoe het er nu uit ziet, hoe het bouwwerk er uit komt te zien (de hoofdlijnen of het principe van de constructie, inclusief berekeningen)",
+          "original_reference": "No matching information",
+          "note": "De bronnen specificeren dat er ook een tekening van de huidige situatie en constructieberekeningen moeten worden aangeleverd, wat niet expliciet vermeld staat in de originele tekst.",
+          "source_urls": [
+            "https://www.deventer.nl/bouwen-en-verbouwen/bouw-en-verbouw-vergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Is de omgevingsvergunning verleend, dan krijgt u deze samen met de voorschriften per e-mail toegestuurd.",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden specifiek dat de vergunning per e-mail wordt toegestuurd, wat niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.deventer.nl/omgevingsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten enkele belangrijke aanvullende vereisten die niet in de originele tekst staan, waaronder specifieke berekeningen voor nieuwbouw en grote kantoren, de noodzaak van tekeningen van de huidige situatie met constructieberekeningen, en informatie over de digitale verzending van de vergunning. Deze informatie is essentieel voor een complete vergunningsaanvraag."
+  }
+}

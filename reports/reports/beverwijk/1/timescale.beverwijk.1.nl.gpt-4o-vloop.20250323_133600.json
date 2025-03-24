@@ -1,0 +1,81 @@
+{
+  "context": {
+    "municipality": {
+      "name": "BEVERWIJK",
+      "contact": {
+        "phone": "(0251) 25 62 56",
+        "email": "info@beverwijk.nl",
+        "website": "http://www.beverwijk.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 27,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.4,
+    "false_statements": [
+      {
+        "sentence": "De aanvraag wordt binnen acht weken behandeld.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Beverwijk moet een aanvraag voor een tijdelijke alcoholontheffing minimaal 3 weken voor het evenement worden ingediend. De genoemde behandeltermijn van 8 weken is onjuist."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 3,
+    "valid_urls": 3,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.beverwijk.nl/alcoholvergunning",
+      "https://www.beverwijk.nl/regels-omtrent-horeca",
+      "https://www.beverwijk.nl/tijdelijk-alcohol-schenken"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor het in behandeling nemen van een aanvraag betaalt u € 182,16",
+          "original_reference": "€ 171,05",
+          "note": "Het tarief voor een tijdelijke alcoholontheffing verschilt: in de originele tekst staat € 171,05, terwijl de brontekst € 182,16 vermeldt",
+          "source_urls": [
+            "https://www.beverwijk.nl/tijdelijk-alcohol-schenken"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Deze termijn kan met ten hoogste acht weken worden verlengd",
+          "original_reference": "De aanvraag wordt binnen acht weken behandeld",
+          "note": "De brontekst vermeldt expliciet dat de behandeltermijn met 8 weken verlengd kan worden, deze informatie ontbreekt in de originele tekst",
+          "source_urls": [
+            "https://www.beverwijk.nl/tijdelijk-alcohol-schenken"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "geen strafverleden hebben",
+          "original_reference": "een goed gedrag hebben",
+          "note": "De formulering over het gedrag van leidinggevenden verschilt: de brontekst spreekt specifiek over 'geen strafverleden' terwijl de originele tekst algemener spreekt over 'goed gedrag'",
+          "source_urls": [
+            "https://www.beverwijk.nl/alcoholvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn drie belangrijke verschillen gevonden tussen de originele tekst en de bronnen. Het belangrijkste verschil betreft het tarief voor de tijdelijke alcoholontheffing. Daarnaast is er aanvullende informatie over de mogelijke verlenging van de behandeltermijn die niet in de originele tekst staat. Tot slot is er een nuanceverschil in de formulering van de gedragseis voor leidinggevenden. De overige informatie komt overeen met de bronnen."
+  }
+}

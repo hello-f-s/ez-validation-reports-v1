@@ -1,0 +1,71 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MIDDEN-DRENTHE",
+      "contact": {
+        "phone": "(0593) 53 92 22",
+        "email": "gemeente@middendrenthe.nl",
+        "website": "http://www.middendrenthe.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor het aanvragen van een alcoholvergunning bedragen € 666.",
+        "status": "false",
+        "note": "Het exacte bedrag voor een alcoholvergunning in Midden-Drenthe is € 669,85 volgens de actuele legesverordening van de gemeente, niet € 666."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 0,
+    "invalid_urls": 7,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.middendrenthe.nl/bouwen-wonen/vergunning-tijdelijke-verhuur-aanvragen",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.middendrenthe.nl/formulieren-1/aanvraag-vergunning-losse-standplaats",
+        "reason": "INVALID: Error scraping https://www.middendrenthe.nl/formulieren-1/aanvraag-vergunning-losse-standplaats: 404 Client Error: Not Found for url: https://www.middendrenthe.nl/formulieren-1/aanvraag-vergunning-losse-standplaats"
+      },
+      {
+        "url": "https://www.middendrenthe.nl/bouwen-wonen/bouwen-of-verbouwen",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.middendrenthe.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.middendrenthe.nl/vergunningen-ontheffingen",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.middendrenthe.nl/vergunningen-ontheffingen/alcoholvergunning",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.middendrenthe.nl\">gemeente",
+        "reason": "INVALID: Error scraping https://www.middendrenthe.nl\">gemeente: HTTPSConnectionPool(host='www.middendrenthe.nl%22%3egemeente', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1035a3610>: Failed to resolve 'www.middendrenthe.nl%22%3egemeente' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  }
+}

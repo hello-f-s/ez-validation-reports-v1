@@ -1,0 +1,63 @@
+{
+  "context": {
+    "municipality": {
+      "name": "BERGEN (L)",
+      "contact": {
+        "phone": "(0485) 34 83 83",
+        "email": "info@bergen.nl",
+        "website": "http://www.bergen.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "Als de gemeente niet binnen de gestelde termijn beslist, wordt de vergunning automatisch verleend.",
+        "status": "false",
+        "note": "Dit is onjuist. Volgens de Wet dwangsom en beroep bij niet tijdig beslissen wordt een vergunning niet automatisch verleend bij termijnoverschrijding. De aanvrager kan wel in beroep gaan of een dwangsom eisen, maar krijgt niet automatisch de vergunning."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 0,
+    "invalid_urls": 5,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.bergen.nl/omgevingsvergunning",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.bergen.nl/milieu-vergunning-of-melding",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.bergen.nl/vergunningen",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.bergen.nl/vergunningen-en-ontheffingen",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.bergen.nl/omgevingsvergunning-strijdig-gebruik",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  }
+}

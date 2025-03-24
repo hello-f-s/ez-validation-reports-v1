@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LANDSMEER",
+      "contact": {
+        "phone": "(020) 487 71 11",
+        "email": "gemeente@Landsmeer.nl",
+        "website": "http://www.landsmeer.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "Telefonisch zijn we bereikbaar via 020 - 48 77 111 of 020 - 48 26 091.",
+        "status": "false",
+        "note": "Het telefoonnummer van gemeente Landsmeer is 020 487 7111. Het tweede genoemde nummer (020 - 48 26 091) is onjuist en komt niet voor in de officiële communicatie van de gemeente."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.landsmeer.nl/inwoners/parkeren,_verkeer_en_vervoer/verkeer/ontheffing_van_verkeersregels_aanvragen",
+      "https://www.landsmeer.nl/ondernemers/vergunningen/standplaats_vergunning_aanvragen",
+      "https://www.landsmeer.nl/inwoners/parkeren,_verkeer_en_vervoer/parkeren/parkeren_in_een_blauwe_zone",
+      "https://www.landsmeer.nl/inwoners/bouwen_en_verbouwen/meer_onderwerpen/omgevingsvergunning_aanvragen",
+      "https://www.landsmeer.nl/ondernemers/evenementen/optreden_op_straat",
+      "https://www.landsmeer.nl"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Raadhuisstraat 1",
+          "original_reference": "Raadhuisstraat 1, 1121 XC Landsmeer",
+          "note": "Het adres in de bronpagina wordt vermeld als alleen 'Raadhuisstraat 1', terwijl in de originele tekst het volledige adres inclusief postcode wordt genoemd.",
+          "source_urls": [
+            "https://www.landsmeer.nl"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Aanvragen ontheffing Blauw Zone met DigiD",
+          "original_reference": "Voor het aanvragen van een ontheffing in de blauwe zone kunt u gebruikmaken van DigiD",
+          "note": "De bronpagina specificeert dat het een online aanvraagproces betreft via DigiD specifiek voor de blauwe zone, terwijl de originele tekst dit minder expliciet vermeldt.",
+          "source_urls": [
+            "https://www.landsmeer.nl/inwoners/parkeren,_verkeer_en_vervoer/parkeren/parkeren_in_een_blauwe_zone"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U vraagt de ontheffing bij de gemeente aan voor een motorvoertuig met meer dan twee wielen.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina specificeert dat de ontheffing alleen geldt voor motorvoertuigen met meer dan twee wielen. Deze beperking wordt niet genoemd in de originele tekst.",
+          "source_urls": [
+            "https://www.landsmeer.nl/inwoners/parkeren,_verkeer_en_vervoer/parkeren/parkeren_in_een_blauwe_zone"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen het adres van het gemeentehuis, de specificatie van het online DigiD-aanvraagproces voor de blauwe zone, en een aanvullende voorwaarde over motorvoertuigen met meer dan twee wielen die niet in de originele tekst staat vermeld. De overige informatie komt grotendeels overeen met de originele tekst."
+  }
+}

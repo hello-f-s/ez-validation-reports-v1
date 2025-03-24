@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MAASSLUIS",
+      "contact": {
+        "phone": "14 010",
+        "email": "gemeente@maassluis.nl",
+        "website": "http://www.maassluis.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 22,
+    "false_sentences": 2,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Voor een vergunning voor onbepaalde tijd inclusief terras zijn de legeskosten € 1.034,60.",
+        "status": "false",
+        "note": "De exacte legeskosten kunnen niet geverifieerd worden tegen de huidige tarieven op de website van gemeente Maassluis. Bedragen in de tekst zijn mogelijk verouderd."
+      },
+      {
+        "sentence": "U kunt ook de gemeente bezoeken op het adres Koningshoek 93.05, 3144 BA Maassluis.",
+        "status": "false",
+        "note": "Het juiste bezoekadres van de gemeente Maassluis is Koningshoek 93.050 (niet 93.05), 3144 BA Maassluis."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.maassluis.nl/uitrit-of-inrit-aanleggen",
+      "https://www.maassluis.nl/antenne-of-schotelantenne-plaatsen",
+      "https://www.maassluis.nl/exploitatievergunning-horecabedrijf",
+      "https://www.maassluis.nl/standplaats-aanvragen",
+      "https://www.maassluis.nl/tap-of-buitenbar-plaatsen-op-terras"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U kunt een exploitatievergunning krijgen als u voldoet aan de volgende voorwaarden: [...] In het gebied mogen horecabedrijven zijn gevestigd.",
+          "original_reference": "Om een exploitatievergunning met een terras aan te vragen, moet u voldoen aan enkele voorwaarden",
+          "note": "De bronpagina noemt expliciet een extra voorwaarde die niet in de originele tekst staat: dat in het gebied horecabedrijven gevestigd mogen zijn.",
+          "source_urls": [
+            "https://www.maassluis.nl/exploitatievergunning-horecabedrijf"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als nieuwe exploitant bent u verplicht het Bibob-formulier in te vullen.",
+          "original_reference": "Een Bibob-vragenlijst, indien van toepassing",
+          "note": "De bronpagina stelt dat het Bibob-formulier verplicht is voor nieuwe exploitanten, terwijl de originele tekst dit als optioneel ('indien van toepassing') presenteert.",
+          "source_urls": [
+            "https://www.maassluis.nl/exploitatievergunning-horecabedrijf"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "indien van toepassing: arbeidscontracten",
+          "original_reference": "No matching information",
+          "note": "De bronpagina noemt arbeidscontracten als mogelijk benodigde documenten, dit ontbreekt volledig in de originele tekst.",
+          "source_urls": [
+            "https://www.maassluis.nl/exploitatievergunning-horecabedrijf"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen aanvullende voorwaarden en vereisten die niet in de originele tekst zijn opgenomen. Met name de verplichte aard van het Bibob-formulier voor nieuwe exploitanten, de voorwaarde dat horecabedrijven in het gebied gevestigd mogen zijn, en de mogelijke vereiste van arbeidscontracten zijn significante toevoegingen die in de originele tekst ontbreken of anders worden gepresenteerd."
+  }
+}

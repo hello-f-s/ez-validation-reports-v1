@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "BLARICUM",
+      "contact": {
+        "phone": "(035) 751 32 22",
+        "email": "info@blaricum.nl",
+        "website": "http://www.blaricum.nl"
+      }
+    },
+    "service": {
+      "id": 8,
+      "name": "Marktvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 17,
+    "false_sentences": 2,
+    "accuracy_percentage": 89.5,
+    "false_statements": [
+      {
+        "sentence": "Zuidersingel 5, 3755 AZ Eemnes",
+        "status": "false",
+        "note": "Het BEL-kantoor is gevestigd aan de Zuidersingel 1 (niet 5) in Eemnes"
+      },
+      {
+        "sentence": "Kerklaan 16, 1261 JB Blaricum",
+        "status": "false",
+        "note": "Het gemeentehuis van Blaricum is gevestigd aan de Kerklaan 16 1261 JA Blaricum (niet JB)"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.blaricum.nl/Bouwen_verbouwen_en_wonen/Bouwen_en_verbouwen/Omgevingsvergunning",
+      "https://www.blaricum.nl/Vergunningen/Reclame_standplaats_en_collectevergunning",
+      "https://www.blaricum.nl/Vergunningen",
+      "https://www.blaricum.nl/Vergunningen/Horeca_en_evenementen/Exploitatievergunning_horeca",
+      "https://www.blaricum.nl/Bouwen_verbouwen_en_wonen/Bouwen_en_verbouwen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor het aanvragen van een exploitatievergunning neemt u contact op met de gemeente via telefoonnummer 14 035 of via apv@belcombinatie.nl",
+          "original_reference": "No matching information",
+          "note": "Het e-mailadres apv@belcombinatie.nl wordt niet genoemd in de originele tekst, terwijl dit een belangrijk contactkanaal is voor vergunningsaanvragen.",
+          "source_urls": [
+            "https://www.blaricum.nl/Vergunningen/Horeca_en_evenementen/Exploitatievergunning_horeca"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Op 1 januari 2024 is in heel Nederland de Omgevingswet ingevoerd. De regels voor het aanvragen van een vergunning worden helder en inwoners kunnen makkelijk zien hoe hun aanvraag verloopt.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over de nieuwe Omgevingswet die per 1 januari 2024 is ingevoerd en de impact daarvan op vergunningsaanvragen.",
+          "source_urls": [
+            "https://www.blaricum.nl/Bouwen_verbouwen_en_wonen/Bouwen_en_verbouwen/Omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Heeft u vragen over de vergunningscheck of over de regels die gelden, dan kunt u terecht bij het helpcentrum van het omgevingsloket.nl",
+          "original_reference": "No matching information",
+          "note": "De originele tekst verwijst niet naar het helpcentrum van het omgevingsloket als hulpbron voor vragen, wat een belangrijke ondersteunende dienst is.",
+          "source_urls": [
+            "https://www.blaricum.nl/Bouwen_verbouwen_en_wonen/Bouwen_en_verbouwen/Omgevingsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten enkele belangrijke aanvullingen die niet in de originele tekst staan, waaronder het specifieke e-mailadres voor vergunningsaanvragen, informatie over de nieuwe Omgevingswet van 2024 en het bestaan van een helpcentrum bij het omgevingsloket. Deze informatie is essentieel voor een complete en actuele dienstverlening aan inwoners die een vergunning willen aanvragen."
+  }
+}

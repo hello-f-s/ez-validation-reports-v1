@@ -1,0 +1,67 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HARDENBERG",
+      "contact": {
+        "phone": "14 0523",
+        "email": "gemeente@hardenberg.nl",
+        "website": "http://www.hardenberg.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "Meer informatie over aanvragen en regels vindt u op de website van de Gemeente Hardenberg: www.overijssel.nl",
+        "status": "false",
+        "note": "De link verwijst naar de website van de provincie Overijssel (www.overijssel.nl) in plaats van naar de officiële website van de gemeente Hardenberg (www.hardenberg.nl) waar de juiste informatie over evenementenvergunningen te vinden is."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 0,
+    "invalid_urls": 6,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.hardenberg.nl/evenementen/vergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.hardenberg.nl/evenementen/subsidie",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.overijssel.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.hardenberg.nl/evenementen/vergunning/voorbereiding-aanvraag",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.hardenberg.nl/evenementen/vergunning/organisator",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.hardenberg.nl/evenementen/vergunning/klein-en-groot",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  }
+}

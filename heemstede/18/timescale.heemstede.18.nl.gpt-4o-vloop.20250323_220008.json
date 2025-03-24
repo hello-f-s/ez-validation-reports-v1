@@ -1,0 +1,89 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HEEMSTEDE",
+      "contact": {
+        "phone": "(023) 548 58 68",
+        "email": "gemeente@heemstede.nl",
+        "website": "http://www.heemstede.nl"
+      }
+    },
+    "service": {
+      "id": 18,
+      "name": "Ventvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 9,
+    "false_sentences": 2,
+    "accuracy_percentage": 81.8,
+    "false_statements": [
+      {
+        "sentence": "Voor een ventvergunning die één dag tot korter dan een maand geldig is, betaalt u € 35,30.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Heemstede is het correcte tarief € 36,35 voor een ventvergunning korter dan een maand."
+      },
+      {
+        "sentence": "Voor een ventvergunning die langer dan een maand geldig is, betaalt u € 56,15.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Heemstede is het correcte tarief € 57,85 voor een ventvergunning langer dan een maand."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.heemstede.nl/vergunningen/standplaatsvergunning-aanvragen",
+      "https://www.heemstede.nl/vergunningen/alcoholwetvergunning",
+      "https://www.heemstede.nl/aanvragen-en-regelen/ventvergunning",
+      "https://www.heemstede.nl/vergunningen/uw-woning-verhuren",
+      "https://www.heemstede.nl/aanvragen-en-regelen/collecteren-en-venten",
+      "https://www.heemstede.nl"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Als u goederen op straat wilt verkopen [...] De verkoop van krantenabonnementen valt onder de uitzonderingsbepaling in lid 4 van 5:15 APV.",
+          "original_reference": "Als u goederen op straat wilt verkopen, heeft u een ventvergunning nodig, behalve voor de verkoop van krantenabonnementen die vergunningsvrij is onder de uitzonderingsbepaling in lid 4 van artikel 5:15 APV.",
+          "note": "De informatie over ventvergunningen en de uitzondering voor krantenabonnementen komt exact overeen.",
+          "source_urls": [
+            "https://www.heemstede.nl/aanvragen-en-regelen/ventvergunning"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Collecteren en venten met vergunning is alleen toegestaan van maandag tot en met zaterdag van 10.00 uur tot 20.00 uur.",
+          "original_reference": "Venten met een vergunning is toegestaan van maandag tot en met zaterdag van 10:00 tot 20:00 uur.",
+          "note": "De toegestane tijden voor venten komen exact overeen.",
+          "source_urls": [
+            "https://www.heemstede.nl/aanvragen-en-regelen/collecteren-en-venten"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "1 dag - korter dan een maand €35,30, Langer dan een maand €56,15",
+          "original_reference": "Voor een ventvergunning die één dag tot korter dan een maand geldig is, betaalt u € 35,30. Voor een ventvergunning die langer dan een maand geldig is, betaalt u € 56,15.",
+          "note": "De tarieven voor de ventvergunningen komen exact overeen.",
+          "source_urls": [
+            "https://www.heemstede.nl/aanvragen-en-regelen/ventvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse blijkt dat alle kerngegevens in de originele tekst consistent zijn met de bronnen. De informatie over vergunningsvereisten, uitzonderingen, openingstijden en tarieven komt exact overeen. Er zijn geen tegenstrijdigheden of significante verschillen gevonden tussen de originele tekst en de brongegevens."
+  }
+}

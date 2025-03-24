@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HAAKSBERGEN",
+      "contact": {
+        "phone": "(053) 573 45 67",
+        "email": "gemeente@haaksbergen.nl",
+        "website": "http://www.haaksbergen.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 11,
+    "false_sentences": 2,
+    "accuracy_percentage": 84.6,
+    "false_statements": [
+      {
+        "sentence": "Voor het exploiteren van een terras heeft u deze vergunning nodig, mits het terras binnen een horecagelegenheid valt.",
+        "status": "false",
+        "note": "Dit is onjuist geformuleerd. Een exploitatievergunning is juist nodig voor terrassen die BUITEN de horecagelegenheid vallen (op openbaar terrein). Het woordje 'mits' impliceert het tegenovergestelde."
+      },
+      {
+        "sentence": "Een aanvraag voor een terrasvergunning kan gedaan worden via het e-mail adres van de gemeente om voorafgaand een gesprek in te plannen.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Haaksbergen dient een exploitatievergunning aangevraagd te worden via het officiële aanvraagformulier, niet via een voorafgaand gesprek per e-mail."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.haaksbergen.nl/ondernemers/Bedrijfstarten.html",
+      "https://www.haaksbergen.nl/Vergunningen/101107-Omgevingsvergunning.html",
+      "https://www.haaksbergen.nl/Vergunningen/Evenementenvergunning.html",
+      "https://www.haaksbergen.nl/ondernemers/Ondernemend-Haaksbergen/Ondernemersplein.html",
+      "https://www.haaksbergen.nl/Vergunningen/Exploitatievergunning.html"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor de volgende openbare inrichtingen moet u een exploitatievergunning aanvragen: Hotel, Restaurant of eetcafé, Pension, (Internet)Café, Waterpijpcafé, Cafetaria, Snackbar, Discotheek, Buurthuis, Afhaalzaak, Clubhuis/Kantine, Terras",
+          "original_reference": "U moet een exploitatievergunning aanvragen voor openbare inrichtingen zoals een terras in de gemeente Haaksbergen.",
+          "note": "De bronpagina geeft een veel uitgebreidere lijst van inrichtingen waarvoor een exploitatievergunning nodig is dan de originele tekst die alleen terrassen noemt.",
+          "source_urls": [
+            "https://www.haaksbergen.nl/Vergunningen/Exploitatievergunning.html"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "als u ook een alcoholvergunning aanvraagt kan u in aanmerking komen voor een vrijstelling.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de mogelijkheid tot vrijstelling bij een gecombineerde aanvraag met alcoholvergunning.",
+          "source_urls": [
+            "https://www.haaksbergen.nl/Vergunningen/Exploitatievergunning.html"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Uitzonderingen: Een restauratie in een winkelbedrijf als het een nevenactiviteit betreft, een restauratie van een zorginstelling of museum, een bedrijfskantine/restaurant (voor eigen personeel)",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt geen uitzonderingen op de vergunningplicht, terwijl de bronpagina specifieke uitzonderingen noemt.",
+          "source_urls": [
+            "https://www.haaksbergen.nl/Vergunningen/Exploitatievergunning.html"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten aanzienlijk meer detail over de reikwijdte van de exploitatievergunning, waaronder een uitgebreide lijst van type inrichtingen, specifieke uitzonderingen en vrijstellingsmogelijkheden die niet in de originele tekst worden genoemd. Deze aanvullende informatie is essentieel voor ondernemers om te bepalen of zij vergunningplichtig zijn."
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DRONTEN",
+      "contact": {
+        "phone": "14 0321",
+        "email": "gemeente@dronten.nl",
+        "website": "http://www.dronten.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Na het indienen van een aanvraag ontvangt u binnen tien werkdagen de stukken of wordt een afspraak ingepland voor inzage.",
+        "status": "false",
+        "note": "De gemeente Dronten hanteert verschillende behandeltermijnen afhankelijk van het type aanvraag. Voor reguliere aanvragen geldt een wettelijke beslistermijn van 8 weken (met mogelijke verlenging van 6 weken) en voor uitgebreide procedures geldt een termijn van 26 weken. Er is geen algemene regel van 10 werkdagen voor alle aanvragen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.dronten.nl/direct-regelen/ondernemen/vergunningen-ondernemers/kabels-en-leidingen-leggen-in-openbare-grond",
+      "https://www.dronten.nl/direct-regelen/leefomgeving/vergunningen-en-ontheffingen/aanvraag-watervergunning",
+      "https://www.dronten.nl/direct-regelen/leefomgeving/verbouwen-plaatsen-of-veranderen/verbouwen-2",
+      "https://www.dronten.nl/direct-regelen/leefomgeving/verbouwen-plaatsen-of-veranderen/bouwtekeningen-opvragen",
+      "https://www.dronten.nl/direct-regelen/ondernemen/bedrijven/industrie-of-bedrijfsterrein-huren-of-kopen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U ontvangt binnen maximaal acht weken beslissing op uw aanvraag.",
+          "original_reference": "Na het indienen van een aanvraag ontvangt u binnen tien werkdagen de stukken of wordt een afspraak ingepland voor inzage.",
+          "note": "Er is een verschil in de behandeltermijn. De bron vermeldt een termijn van 8 weken voor een beslissing, terwijl de originele tekst spreekt over 10 werkdagen voor het ontvangen van stukken.",
+          "source_urls": [
+            "https://www.dronten.nl/direct-regelen/ondernemen/vergunningen-ondernemers/kabels-en-leidingen-leggen-in-openbare-grond"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De kosten voor het opvragen van een gearchiveerd bouwdossier, betaalt u kosten. De kosten hiervoor zijn € 30.",
+          "original_reference": "Hier kan geen specifieke informatie over gevonden worden op de website van deze gemeente.",
+          "note": "De bronnen vermelden specifieke kosten (€30) voor het opvragen van een gearchiveerd bouwdossier, terwijl de originele tekst aangeeft dat er geen specifieke kosteninformatie beschikbaar is.",
+          "source_urls": [
+            "https://www.dronten.nl/direct-regelen/leefomgeving/verbouwen-plaatsen-of-veranderen/bouwtekeningen-opvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De kosten voor het aanvragen van een vergunning zijn terug te vinden in de Legesverordening.",
+          "original_reference": "Hier kan geen specifieke informatie over gevonden worden op de website van deze gemeente.",
+          "note": "De bron verwijst naar de Legesverordening voor vergunningskosten, terwijl de originele tekst aangeeft dat er geen specifieke kosteninformatie beschikbaar is.",
+          "source_urls": [
+            "https://www.dronten.nl/direct-regelen/ondernemen/vergunningen-ondernemers/kabels-en-leidingen-leggen-in-openbare-grond"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de behandeltermijnen (8 weken vs 10 werkdagen) en de beschikbaarheid van kosteninformatie. Waar de originele tekst aangeeft dat er geen kosteninformatie beschikbaar is, vermelden de bronnen wel specifieke kosten voor bouwdossiers (€30) en verwijzen ze naar de Legesverordening voor vergunningskosten."
+  }
+}

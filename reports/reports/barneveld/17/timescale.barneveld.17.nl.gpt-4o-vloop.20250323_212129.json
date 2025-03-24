@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "BARNEVELD",
+      "contact": {
+        "phone": "14 0342",
+        "email": "info@barneveld.nl",
+        "website": "http://www.barneveld.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 15,
+    "false_sentences": 2,
+    "accuracy_percentage": 88.2,
+    "false_statements": [
+      {
+        "sentence": "Het aanvragen van een ontheffing om uw terras tot 01.00 uur open te houden, is gratis.",
+        "status": "false",
+        "note": "Volgens de legesverordening van gemeente Barneveld is het aanvragen van een terrasvergunning niet gratis. Er zijn legeskosten aan verbonden."
+      },
+      {
+        "sentence": "Voor een horeca-exploitatievergunning zonder alcoholvergunning bedragen de kosten €235,00, en met alcoholvergunning €66,00.",
+        "status": "false",
+        "note": "De bedragen zijn onjuist volgens de actuele legesverordening van gemeente Barneveld. De kosten voor een horeca-exploitatievergunning met alcoholvergunning zijn hoger dan zonder alcoholvergunning."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.barneveld.nl/vergunningen-en-ontheffingen/horeca/exploitatievergunning-aanvragen",
+      "https://www.barneveld.nl/vergunningen-en-ontheffingen/horeca/verruiming-sluitingstijd-terras-aanvragen",
+      "https://www.barneveld.nl/vergunningen-en-ontheffingen/evenementen/evenementenvergunning-aanvragen",
+      "https://www.barneveld.nl/vergunningen-en-ontheffingen/horeca/ontheffing-voor-gevelzitplaatsen-aanvragen",
+      "https://www.barneveld.nl/ondernemen/standplaatsvergunning-aanvragen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "in mei, juni en september van vrijdag op zaterdag en van zaterdag op zondag. in juli en augustus alle dagen van de week.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst specificeert niet wanneer de verruimde openingstijden voor terrassen gelden. De brontekst geeft specifieke maanden en dagen aan.",
+          "source_urls": [
+            "https://www.barneveld.nl/vergunningen-en-ontheffingen/horeca/verruiming-sluitingstijd-terras-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Om 0.30 uur laatste ronde, vanaf 0.45 uur geen nieuwe gasten. Om 01.00 uur terras leeg en geen afruimwerkzaamheden meer.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de specifieke voorwaarden rond sluitingstijd zoals laatste ronde en tijdstip waarop geen nieuwe gasten meer worden toegelaten.",
+          "source_urls": [
+            "https://www.barneveld.nl/vergunningen-en-ontheffingen/horeca/verruiming-sluitingstijd-terras-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het overleg is bij het horecabedrijf dat de ontheffing aanvraagt.",
+          "original_reference": "Voor de eerste aanvraag van een terrasvergunning is een gesprek met de buren vereist, geïnitieerd door de gemeente.",
+          "note": "De brontekst specificeert dat het gesprek bij het horecabedrijf plaatsvindt, wat niet vermeld wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.barneveld.nl/vergunningen-en-ontheffingen/horeca/verruiming-sluitingstijd-terras-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de specifieke details over openingstijden en sluitingsprocedures die niet in de originele tekst staan. De brontekst is specifieker over wanneer verruimde openingstijden gelden en bevat aanvullende voorwaarden rond sluitingstijd. Ook wordt de locatie van het verplichte buurtgesprek duidelijker gespecificeerd in de brontekst."
+  }
+}

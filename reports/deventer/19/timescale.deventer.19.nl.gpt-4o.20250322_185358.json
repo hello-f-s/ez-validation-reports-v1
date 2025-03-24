@@ -1,0 +1,80 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DEVENTER",
+      "contact": {
+        "phone": "14 0570",
+        "email": "gemeente@deventer.nl",
+        "website": "http://www.deventer.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 11,
+    "false_sentences": 2,
+    "accuracy_percentage": 84.6,
+    "false_statements": [
+      {
+        "sentence": "Per zaak zijn maximaal twee automaten toegestaan, en kansspelautomaten mogen alleen in hoogdrempelige inrichtingen geplaatst worden.",
+        "status": "false",
+        "note": "Volgens de gemeente Deventer zijn maximaal 2 kansspelautomaten per hoogdrempelige inrichting toegestaan. Voor behendigheidsautomaten geldt geen maximum."
+      },
+      {
+        "sentence": "Meestal beslist de gemeente binnen 8 weken op uw aanvraag, gerekend vanaf het moment dat de aanvraag ontvangen is.",
+        "status": "false",
+        "note": "De gemeente Deventer hanteert een wettelijke beslistermijn van 12 weken voor aanvragen van speelautomatenvergunningen, niet 8 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.deventer.nl/terrasvergunning",
+      "https://www.deventer.nl/loketten/digitaal-loket/loterij-organiseren",
+      "https://www.deventer.nl/speelautomaat",
+      "https://www.deventer.nl/exploitatievergunning",
+      "https://www.deventer.nl/loterijorganiseren",
+      "https://www.deventer.nl"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De vergunning geldt voor 1 jaar (ingaand op 1 april). U kunt echter ook een vergunning voor een langere periode aanvragen. De legeskosten zijn:",
+          "original_reference": "De website biedt geen specifieke informatie over de kosten voor het aanvragen van een vergunning voor speelautomaten.",
+          "note": "De bronpagina vermeldt specifieke informatie over de geldigheidsduur (1 jaar vanaf 1 april) en de mogelijkheid voor een langere periode, terwijl de originele tekst aangeeft dat er geen informatie over kosten beschikbaar is.",
+          "source_urls": [
+            "https://www.deventer.nl/speelautomaat"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Er zijn 2 soorten speelautomaten. Als u een kansspelautomaat wilt plaatsen, zoals een fruitautomaat, vraagt u een vergunning aan (aanwezigheidsvergunning). Als u een behendigheidsautomaat wilt plaatsen, zoals een flipperkast, heeft u geen vergunning nodig. Per zaak mogen maximaal 2 automaten aanwezig zijn.",
+          "original_reference": "Er zijn twee soorten speelautomaten: kansspelautomaten en behendigheidsautomaten. Voor het plaatsen van een kansspelautomaat, zoals een fruitautomaat, heeft u een vergunning nodig. Per zaak zijn maximaal twee automaten toegestaan",
+          "note": "De informatie over de types automaten, vergunningplicht en maximum aantal is volledig consistent tussen beide bronnen",
+          "source_urls": [
+            "https://www.deventer.nl/speelautomaat"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de informatie over kosten en geldigheidsduur van de vergunning. Waar de originele tekst aangeeft geen informatie over kosten te hebben, biedt de bronpagina wel degelijk specifieke details over de geldigheidsduur en mogelijkheden voor verlenging. De overige informatie, zoals types automaten en maximaal toegestane aantallen, komt overeen."
+  }
+}

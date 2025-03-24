@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HAARLEM",
+      "contact": {
+        "phone": "14 023",
+        "email": "antwoord@haarlem.nl",
+        "website": "http://www.haarlem.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 27,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.4,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor het aanvragen van een alcoholvergunning bedragen € 1.000.",
+        "status": "false",
+        "note": "Volgens de officiële legesverordening van de gemeente Haarlem bedragen de kosten voor een alcoholvergunning (Drank- en Horecawetvergunning) € 1.047,45 voor 2024."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://haarlem.nl/alcoholvergunning",
+      "https://haarlem.nl/exploitatievergunning",
+      "https://www.haarlem.nl/ufs/formulieren.eb?id=aanvraag_alcoholvergunning_model_a_hlm",
+      "https://www.haarlem.nl/ufs/formulieren.eb?id=aanvraag_alcoholvergunning_model_b_hlm",
+      "https://haarlem.nl/bouwvergunning",
+      "https://www.haarlem.nl/"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor het schenken of verkopen van alcohol in uw horecabedrijf, slijterij of verenigingsgebouw hebt u een alcoholvergunning nodig. Voor een horecabedrijf of slijterij gebruikt u aanvraagformulier A, voor een stichting of vereniging formulier B.",
+          "original_reference": "Er zijn verschillende aanvraagformulieren afhankelijk van het type instelling: voor een horecabedrijf of slijterij gebruikt u formulier A, en voor een stichting of vereniging formulier B.",
+          "note": "De bronversie is directer en duidelijker over de verplichting van de alcoholvergunning voor alle type instellingen.",
+          "source_urls": [
+            "https://haarlem.nl/alcoholvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Recent uittreksel uit het Verenigingsregister dan wel Stichtingenregister van de Kamer van Koophandel (niet ouder dan 3 maanden), Gewaarmerkt bestuursreglement, Lijst van vrijwilligers die een tapinstructie hebben ontvangen, Koopakte of huurcontract, Oprichtingsakte vereniging of stichting",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist specifieke documentvereisten voor verenigingen en stichtingen die wel in de bronnen worden genoemd.",
+          "source_urls": [
+            "https://www.haarlem.nl/ufs/formulieren.eb?id=aanvraag_alcoholvergunning_model_b_hlm"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Telefoon 14 023, Elke werkdag: 8.30 tot 16.30 uur",
+          "original_reference": "Voor telefonische vragen kunt u contact opnemen via telefoonnummer 14 023, elke werkdag bereikbaar van 8.30 tot 16.30 uur.",
+          "note": "De informatie is inhoudelijk hetzelfde maar wordt in de bronnen beknopter weergegeven.",
+          "source_urls": [
+            "https://www.haarlem.nl/ufs/formulieren.eb?id=aanvraag_alcoholvergunning_model_b_hlm"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen vooral aanvullende documentvereisten voor verenigingen en stichtingen die niet in de originele tekst worden genoemd. De bronteksten zijn over het algemeen beknopter maar bevatten wel meer specifieke details over benodigde documenten. De kernvoorwaarden en procedures komen grotendeels overeen."
+  }
+}

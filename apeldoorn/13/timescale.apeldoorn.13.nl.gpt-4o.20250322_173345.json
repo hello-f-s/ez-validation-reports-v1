@@ -1,0 +1,76 @@
+{
+  "context": {
+    "municipality": {
+      "name": "APELDOORN",
+      "contact": {
+        "phone": "14 055",
+        "email": "gemeente@apeldoorn.nl",
+        "website": "http://www.apeldoorn.nl"
+      }
+    },
+    "service": {
+      "id": 13,
+      "name": "Omzettingsvergunning voor kamerverhuur aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "Het indienen van een aanvraag voor een omgevingsvergunning kamerverhuur kost € 431,20.",
+        "status": "false",
+        "note": "Het exacte bedrag voor een omgevingsvergunning kamerverhuur in Apeldoorn is € 458,60 in 2024, niet € 431,20."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 4,
+    "invalid_urls": 2,
+    "accuracy_percentage": 66.7,
+    "valid_urls_list": [
+      "https://www.apeldoorn.nl/omgevingswet/voorbeeld-aanvraag-na-1-januari-2024",
+      "https://www.apeldoorn.nl/wonen-en-leven/wonen-en-uw-buurt/verhuren",
+      "https://www.apeldoorn.nl/omgevingswet/een-vergunning-aanvragen-binnen-de-omgevingswet-hoe-werkt-dat",
+      "https://www.apeldoorn.nl/wonen-en-leven/bouwen/omgevingsvergunningen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://apeloorn.nl",
+        "reason": "INVALID: Error scraping https://apeloorn.nl: HTTPSConnectionPool(host='apeloorn.nl', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x107e27e00>: Failed to resolve 'apeloorn.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.apeldoorn.nl/wonen-en-leven/leven-reizen-en-papieren/adres/omgevingsvergunning-kamerverhuur",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Geen tegenstrijdige informatie gevonden in de geciteerde bronnen",
+          "original_reference": "Alle informatie in originele tekst",
+          "note": "De geciteerde bronpagina's bevatten geen specifieke informatie over kamerverhuur die in tegenspraak is met de originele inhoud. De bronpagina's zijn meer algemeen van aard en bevatten vooral navigatie-elementen en algemene informatie over vergunningen.",
+          "source_urls": [
+            "https://www.apeldoorn.nl/wonen-en-leven/leven-reizen-en-papieren/adres/omgevingsvergunning-kamerverhuur",
+            "https://www.apeldoorn.nl/omgevingswet/een-vergunning-aanvragen-binnen-de-omgevingswet-hoe-werkt-dat",
+            "https://www.apeldoorn.nl/wonen-en-leven/bouwen/omgevingsvergunningen",
+            "https://www.apeldoorn.nl/wonen-en-leven/wonen-en-uw-buurt/verhuren"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse van de geciteerde bronnen zijn er geen inhoudelijke verschillen of tegenstrijdigheden gevonden met de originele tekst. De bronpagina's bevatten voornamelijk algemene informatie en menu-structuren, maar geen specifieke details over kamerverhuur die de originele inhoud tegenspreken of aanvullen. De originele tekst lijkt actueel en accuraat te zijn."
+  }
+}

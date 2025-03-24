@@ -1,0 +1,98 @@
+{
+  "context": {
+    "municipality": {
+      "name": "EDE",
+      "contact": {
+        "phone": "14 0318",
+        "email": "info@ede.nl",
+        "website": "http://www.ede.nl"
+      }
+    },
+    "service": {
+      "id": 8,
+      "name": "Marktvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 8,
+    "false_sentences": 3,
+    "accuracy_percentage": 72.7,
+    "false_statements": [
+      {
+        "sentence": "Als u een eenmalige of vaste standplaats op de weekmarkt wilt, moet u zich melden bij de marktvereniging via de website www.marktede.nl.",
+        "status": "false",
+        "note": "Voor een marktplaatsvergunning moet men zich melden bij de gemeente Ede, niet bij een marktvereniging. De genoemde website bestaat niet."
+      },
+      {
+        "sentence": "De marktvereniging controleert of er plaats beschikbaar is en of u in aanmerking komt voor een plaats.",
+        "status": "false",
+        "note": "De gemeente Ede, niet een marktvereniging, beoordeelt aanvragen voor marktplaatsen en controleert beschikbaarheid."
+      },
+      {
+        "sentence": "U kunt zich melden bij de marktvereniging Ede via de website Marktede.nl",
+        "status": "false",
+        "note": "Aanvragen moeten worden ingediend bij de gemeente Ede, niet bij een marktvereniging. De genoemde website bestaat niet."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.ede.nl/aanvragen-en-regelen/standplaatsvergunning",
+      "https://www.ede.nl/aanvragen-en-regelen/bouw-en-verbouwvergunning-voor-bedrijven",
+      "http://www.marktede.nl",
+      "https://www.ede.nl/aanvragen-en-regelen/bouw-en-verbouwvergunning",
+      "https://www.ede.nl/aanvragen-en-regelen/marktplaatsvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.ede.nl/aanvragen-en-regelen/verleende-vergunningen-inzien-en-opvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U heeft voor de aanvraag nodig: een geldig identiteitsbewijs; een inschrijving van het Hoofdbedrijfschap Detailhandel; een recent uittreksel van uw inschrijving bij de Kamer van Koophandel; voor bedrijven geldt bovendien dat een WA-verzekering vereist is.",
+          "original_reference": "Er zijn geen specifieke documenten genoemd die u nodig heeft om een marktvergunning aan te vragen.",
+          "note": "De originele tekst vermeldt geen benodigde documenten, terwijl de bronpagina specifieke documentvereisten noemt zoals ID-bewijs, KvK-inschrijving en WA-verzekering.",
+          "source_urls": [
+            "https://www.ede.nl/aanvragen-en-regelen/marktplaatsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Maandagmarkt Ede Centrum: Iedere maandag van 8.00 uur tot 13.00 uur, Zaterdagmarkt Ede Centrum: Iedere Zaterdag van 8.00 uur tot 17.00 uur, Donderdagmarkt Ede Stadspoort, Vrijdagmarkt Bennekom",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de verschillende markttijden en locaties, terwijl de bronwebsite deze wel specificeert.",
+          "source_urls": [
+            "http://www.marktede.nl"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "DE MARKTMEESTER. Piet van Droffelaar; het aanspreekpunt voor de marktondernemers en de marktbezoekers. Telefonisch bereikbaar op 0653937124 of mail naar pvandroffelaar@marktede.nl",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen contactgegevens van de marktmeester, terwijl deze wel beschikbaar zijn op de marktwebsite.",
+          "source_urls": [
+            "http://www.marktede.nl"
+          ]
+        }
+      ]
+    },
+    "summary": "De originele tekst mist belangrijke informatie die wel beschikbaar is in de bronnen. Het gaat vooral om specifieke documentvereisten voor de aanvraag, gedetailleerde informatie over markttijden en -locaties, en contactgegevens van de marktmeester. Deze informatie is essentieel voor mensen die een marktplaats willen aanvragen."
+  }
+}

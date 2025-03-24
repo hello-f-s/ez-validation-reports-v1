@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DEVENTER",
+      "contact": {
+        "phone": "14 0570",
+        "email": "gemeente@deventer.nl",
+        "website": "http://www.deventer.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "De reguliere aanvraagprocedure duurt in principe 8 weken, terwijl de uitgebreide procedure tot 6 maanden in beslag kan nemen.",
+        "status": "false",
+        "note": "De uitgebreide procedure duurt volgens de gemeente Deventer 26 weken (ongeveer 6,5 maanden), niet 6 maanden. Dit is een belangrijk verschil van 2 weken in de maximale behandeltermijn."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.deventer.nl/milieu-1/omgevingsvergunning-voor-het-milieu-aanvragen",
+      "https://www.deventer.nl/omgevingsvergunning",
+      "https://www.deventer.nl/leges",
+      "https://www.deventer.nl/omgevingsvergunning-aanvragen",
+      "https://www.deventer.nl/vooroverleg",
+      "https://www.deventer.nl/"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Let op: per 1 januari 2024 geldt de Omgevingswet. Dit is van invloed op omgevingsvergunningen die u na 1 januari aanvraagt.",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden een belangrijke wijziging per 1 januari 2024 (Omgevingswet) die niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.deventer.nl/milieu-1/omgevingsvergunning-voor-het-milieu-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Is de omgevingsvergunning verleend, dan krijgt u deze samen met de voorschriften per e-mail toegestuurd.",
+          "original_reference": "Is de omgevingsvergunning toegekend, dan krijgt u deze samen met de voorschriften thuisgestuurd.",
+          "note": "De bronnen specificeren dat de vergunning per e-mail wordt verstuurd, terwijl de originele tekst alleen spreekt over 'thuisgestuurd'.",
+          "source_urls": [
+            "https://www.deventer.nl/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U ontvangt daarvoor een acceptgiro.",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden specifiek dat de leges via acceptgiro worden gefactureerd, wat niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.deventer.nl/omgevingsvergunning-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de aanstaande invoering van de Omgevingswet per 1 januari 2024, de specifieke vermelding van e-mail als verzendmethode voor vergunningen, en details over de betalingsmethode via acceptgiro. Deze informatie ontbreekt in de originele tekst maar is wel relevant voor aanvragers."
+  }
+}

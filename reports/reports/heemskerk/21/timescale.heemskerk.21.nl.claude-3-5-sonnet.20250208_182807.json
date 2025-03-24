@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HEEMSKERK",
+      "contact": {
+        "phone": "14 0251",
+        "email": "post@heemskerk.nl",
+        "website": "http://www.heemskerk.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 5,
+    "true_sentences": 4,
+    "false_sentences": 1,
+    "accuracy_percentage": 80.0,
+    "false_statements": [
+      {
+        "sentence": "U vraagt een VOG aan in de gemeente waar u staat ingeschreven in de basisregistratie personen.",
+        "status": "false",
+        "note": "Deze informatie is verouderd. Een VOG kan tegenwoordig niet meer bij de gemeente worden aangevraagd, maar moet online via Dienst Justis of via een papieren aanvraag rechtstreeks bij Justis worden gedaan."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.heemskerk.nl/aanvragen-en-regelen/nederlander-worden",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/vergunning-gebruik-openbare-weg",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/omgevingsvergunning",
+      "https://www.heemskerk.nl/aanvragen-en-regelen/verklaring-omtrent-gedrag-vog",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/veelgestelde-vragen-omgevingsvergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Kosten 2025\nVOG € 41,35",
+          "original_reference": "Hier kan geen specifieke informatie over gevonden worden op de website van deze gemeente.",
+          "note": "De originele inhoud bevat geen informatie over kosten, terwijl de bron specifiek vermeldt dat een VOG € 41,35 kost in 2025.",
+          "source_urls": [
+            "https://www.heemskerk.nl/aanvragen-en-regelen/verklaring-omtrent-gedrag-vog"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U kunt ook iemand machtigen om de verklaring voor u aan te vragen. Vul hiervoor het machtigingsformulier (pdf, 143 KB) in en neem deze mee naar de aanvraag.",
+          "original_reference": "No matching information",
+          "note": "De mogelijkheid tot machtiging wordt niet genoemd in de originele inhoud, maar is wel een belangrijke aanvullende optie volgens de bron.",
+          "source_urls": [
+            "https://www.heemskerk.nl/aanvragen-en-regelen/verklaring-omtrent-gedrag-vog"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Jongeren tussen de 16 en 18 jaar hebben geen toestemming nodig van hun ouder, voogd of gezaghebber. Zij kunnen zelf een VOG-aanvraag indienen. Kinderen jonger dan 16 jaar moeten toestemming van ouder, voogd of gezaghebber meenemen.",
+          "original_reference": "No matching information",
+          "note": "De originele inhoud bevat geen informatie over specifieke regels voor minderjarigen bij het aanvragen van een VOG.",
+          "source_urls": [
+            "https://www.heemskerk.nl/aanvragen-en-regelen/verklaring-omtrent-gedrag-vog"
+          ]
+        }
+      ]
+    },
+    "summary": "De broninhoud bevat belangrijke aanvullende informatie die ontbreekt in de originele tekst, waaronder de exacte kosten voor een VOG (€ 41,35), de mogelijkheid tot machtiging bij aanvraag, en specifieke regels voor minderjarige aanvragers. Deze informatie is essentieel voor een volledig begrip van de VOG-aanvraagprocedure."
+  }
+}

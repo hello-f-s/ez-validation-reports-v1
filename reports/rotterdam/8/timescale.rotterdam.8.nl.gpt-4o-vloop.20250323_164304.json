@@ -1,0 +1,79 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ROTTERDAM",
+      "contact": {
+        "phone": "14 010",
+        "email": "null",
+        "website": "http://www.rotterdam.nl"
+      }
+    },
+    "service": {
+      "id": 8,
+      "name": "Marktvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Na het indienen van de aanvraag wordt u binnen 10 werkdagen gebeld voor het maken van een afspraak om uw marktvergunning-pas te laten maken.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Rotterdam wordt er binnen 8 weken na ontvangst van een complete aanvraag een besluit genomen over de marktvergunning, niet binnen 10 werkdagen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 2,
+    "invalid_urls": 4,
+    "accuracy_percentage": 33.3,
+    "valid_urls_list": [
+      "https://www.rotterdam.nl/vergunningen-ondernemen",
+      "https://www.rotterdam.nl/exploitatievergunning-aanvragen/start-exploitatievergunning-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.rotterdam.nl/marktvergunning-aanvragen/start-marktvergunning-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.rotterdam.nl/omgevingsvergunning-bouwen-aanvragen/start-omgevingsvergunning-bouwen-per-post-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.rotterdam.nl/vergunning-of-toestemming-opkoopbescherming-aanvragen/start-vergunning-of-toestemming-opkoopbescherming-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.rotterdam.nl",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vraag online de vergunning aan via de knop 'Vergunning aanvragen'. Log in met eHerkenning.",
+          "original_reference": "Log met uw DigiD in via de knop 'Vergunning aanvragen'.",
+          "note": "Er is een verschil in het vereiste inlogmiddel. De bron vermeldt eHerkenning terwijl de originele tekst DigiD noemt. Dit is een belangrijk verschil omdat dit verschillende authenticatiemethoden zijn.",
+          "source_urls": [
+            "https://www.rotterdam.nl/exploitatievergunning-aanvragen/start-exploitatievergunning-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "Bij analyse van de bronnen is één significant verschil gevonden met betrekking tot de authenticatiemethode voor het aanvragen van vergunningen. De overige informatie uit de originele tekst kan niet worden geverifieerd omdat de specifieke informatie over marktvergunningen niet in de aangeleverde bronpagina's voorkomt. De bronnen bevatten vooral algemene informatie over andere typen vergunningen en ondernemerszaken."
+  }
+}

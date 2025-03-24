@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DALFSEN",
+      "contact": {
+        "phone": "14 0529",
+        "email": "gemeente@dalfsen.nl",
+        "website": "http://www.dalfsen.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 31,
+    "true_sentences": 29,
+    "false_sentences": 2,
+    "accuracy_percentage": 93.5,
+    "false_statements": [
+      {
+        "sentence": "Evenementen die onder artikel 4, lid 4 van de beleidsregels evenementen gemeente Dalfsen 2025 vallen, kunnen andere voorwaarden hebben.",
+        "status": "false",
+        "note": "Er wordt verwezen naar beleidsregels uit 2025 die nog niet bestaan. De huidige geldende beleidsregels zijn de 'Beleidsregels evenementen gemeente Dalfsen 2016'."
+      },
+      {
+        "sentence": "Omgevingsvergunning evenementen: € 841,30.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Dalfsen is het tarief voor een omgevingsvergunning voor evenementen € 859,15."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.dalfsen.nl/evenementorganiseren",
+      "https://www.dalfsen.nl/evenement-organiseren",
+      "https://www.dalfsen.nl/exploitatievergunning-horecabedrijf",
+      "https://www.dalfsen.nl/geluidsoverlast-veroorzaken",
+      "https://www.dalfsen.nl"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u in een tijdelijke ruimte bedrijfsmatig overnachting biedt aan meer dan 10 personen, of zorgt voor meer dan 10 kinderen onder de 12 jaar of meer dan 10 personen met een lichamelijke of verstandelijke handicap, moet u een gebruiksmelding doen.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat aanvullende specifieke voorwaarden voor gebruiksmeldingen die niet in de originele tekst staan vermeld.",
+          "source_urls": [
+            "https://www.dalfsen.nl/evenementorganiseren"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u in een tijdelijke ruimte wilt gebruiken die bedoeld is voor meer dan 150 personen moet u een gebruiksmelding doen. De melding moet minstens 4 weken voor het evenement worden ingediend.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist deze specifieke termijn voor gebruiksmeldingen en de 150-personen grens voor tijdelijke ruimtes.",
+          "source_urls": [
+            "https://www.dalfsen.nl/evenementorganiseren"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor het produceren van geluid buiten een inrichting en wat voor de omgeving hinder kan veroorzaken heeft u een ontheffing geluidhinder nodig.",
+          "original_reference": "Geluidsontheffing: € 68,90",
+          "note": "De originele tekst noemt alleen het tarief maar niet de specifieke voorwaarden wanneer een geluidsontheffing nodig is.",
+          "source_urls": [
+            "https://www.dalfsen.nl/geluidsoverlast-veroorzaken"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten belangrijke aanvullende informatie over gebruiksmeldingen voor tijdelijke ruimtes en specifieke voorwaarden voor geluidsontheffingen die niet in de originele tekst zijn opgenomen. Deze informatie is essentieel voor organisatoren van evenementen en zou toegevoegd moeten worden aan de originele tekst voor volledigheid."
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MAASDRIEL",
+      "contact": {
+        "phone": "14 0418",
+        "email": "info@maasdriel.nl",
+        "website": "http://www.maasdriel.nl"
+      }
+    },
+    "service": {
+      "id": 2,
+      "name": "Bord of spandoek plaatsen aan de openbare weg"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "Openingstijden Gemeentehuis: Maandag van 9.00 - 16.30 uur",
+        "status": "false",
+        "note": "De openingstijden van het gemeentehuis van Maasdriel zijn op maandag van 9.00 tot 17.00 uur, niet tot 16.30 uur zoals vermeld."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 1,
+    "invalid_urls": 4,
+    "accuracy_percentage": 20.0,
+    "valid_urls_list": [
+      "https://www.maasdriel.nl/inwoner-en-ondernemer/ondernemen/reclame/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.maasdriel.nl/inwoner-en-ondernemer/ondernemen/reclame/reclameborden-op-eigen-terrein",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.maasdriel.nl/inwoner-en-ondernemer/bouwen-en-verbouwen/wegwijzer-omgevingsloket/vergunning-reclame-plaatsen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.maasdriel.nl/inwoner-en-ondernemer/ondernemen/reclame/reclameborden-op-de-openbare-weg",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.maasdriel.nl/inwoner-en-ondernemer/bouwen-en-verbouwen/aanvragen-vergunningen-en-vooroverleg",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vandaag: 9.00 - 16.30 uur\nMorgen: 9.00 - 16.30 uur",
+          "original_reference": "Maandag van 9.00 - 16.30 uur",
+          "note": "De originele tekst vermeldt alleen maandag als openingsdag, terwijl de bron aangeeft dat de gemeente op meerdere dagen geopend is van 9:00-16:30.",
+          "source_urls": [
+            "https://www.maasdriel.nl/inwoner-en-ondernemer/ondernemen/reclame/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Reclameborden op eigen terrein\nSoms is hiervoor een vergunning nodig. Bekijk hier wat je moet doen.\nReclameborden op de openbare weg\nIn de gemeente is het mogelijk om reclame te maken in de buitenruimte.",
+          "original_reference": "Reclameborden mogen alleen geplaatst worden door samen te werken met Driehoek Buitenreclame Benelux bv.",
+          "note": "De bronpagina maakt geen melding van exclusieve samenwerking met Driehoek Buitenreclame Benelux bv, wat een belangrijk verschil is in de voorwaarden.",
+          "source_urls": [
+            "https://www.maasdriel.nl/inwoner-en-ondernemer/ondernemen/reclame/"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele tekst en de bronpagina. Ten eerste zijn de openingstijden in de originele tekst beperkter weergegeven dan in werkelijkheid. Ten tweede ontbreekt in de bronpagina de exclusieve samenwerking met Driehoek Buitenreclame Benelux bv. Daarnaast bevat de originele tekst veel specifieke informatie over tarieven en voorwaarden die niet direct verifieerbaar is op de geciteerde bronpagina."
+  }
+}

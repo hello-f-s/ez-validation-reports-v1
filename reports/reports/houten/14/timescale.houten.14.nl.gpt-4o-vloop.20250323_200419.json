@@ -1,0 +1,80 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HOUTEN",
+      "contact": {
+        "phone": "(030) 639 26 11",
+        "email": "gemeentehuis@houten.nl",
+        "website": "http://www.houten.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 22,
+    "false_sentences": 2,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Voor een ontheffing tot één dag betaalt u € 19,10, tot één maand € 38,20 en tot één jaar € 76,55.",
+        "status": "false",
+        "note": "De actuele tarieven volgens de gemeente Houten zijn anders: voor één dag € 19,45, voor één maand € 38,90 en voor één jaar € 77,95"
+      },
+      {
+        "sentence": "Bij verlies of beschadiging van de pas bedragen de kosten € 15,85, en voor een administratieve wijziging van de ontheffing € 16,90.",
+        "status": "false",
+        "note": "De actuele tarieven volgens de gemeente Houten zijn: € 16,15 voor verlies/beschadiging en € 17,20 voor een administratieve wijziging"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.houten.nl/verkeer-en-parkeren/blauwe-zone-ontheffing-aanvragen",
+      "https://www.houten.nl/wonen-en-leefomgeving/bouw-en-verbouw/omgevingsvergunning/aanvraagprocedure-omgevingsvergunning",
+      "https://www.houten.nl/ondernemen/regelen/horecabedrijf-exploiteren",
+      "https://www.houten.nl/ondernemen/regelen/standplaatsvergunning",
+      "https://www.houten.nl/verkeer-en-parkeren/ontheffing-voetgangersgebied-centrum-houten",
+      "https://www.houten.nl"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bedrijven aan de Fossa Italica, Fossa Iberica, Cardio en Piazza in winkelcentrum Castellum komen in aanmerking voor een ontheffing, geldig voor de parkeerterreinen Cella Asia, Porta Tegula en Via Arena.",
+          "original_reference": "Bedrijven op de Fossa Italica, Fossa Iberica, Cardio en Piazza in winkelcentrum Castellum komen in aanmerking voor een ontheffing, geldig voor de parkeerterreinen Cella Asia, Porta Tegula en Via Arena.",
+          "note": "Het voorzetsel verschilt ('aan' vs 'op'), wat mogelijk tot verwarring kan leiden bij het bepalen van de exacte locatie-eisen.",
+          "source_urls": [
+            "https://www.houten.nl/verkeer-en-parkeren/blauwe-zone-ontheffing-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Per ontheffing kunnen maximaal twee kentekens worden opgenomen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat er maximaal twee kentekens per ontheffing kunnen worden opgenomen. Dit is een belangrijke beperking die ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.houten.nl/verkeer-en-parkeren/blauwe-zone-ontheffing-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele tekst en de bronnen. Ten eerste is er een verschil in de formulering van de locatie-aanduiding voor bedrijven in Castellum. Ten tweede ontbreekt in de originele tekst de belangrijke informatie dat er maximaal twee kentekens per ontheffing kunnen worden geregistreerd. De overige informatie komt overeen met de bronnen of kan niet geverifieerd worden door ontbrekende informatie in de beschikbare bronnen."
+  }
+}

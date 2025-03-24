@@ -1,0 +1,73 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ROTTERDAM",
+      "contact": {
+        "phone": "14 010",
+        "email": "null",
+        "website": "http://www.rotterdam.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 32,
+    "true_sentences": 31,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.9,
+    "false_statements": [
+      {
+        "sentence": "De aanvraag voor een nieuwe of overgenomen speelautomatenhal kost € 1.313,70. Bij wijzigingen of vernieuwingen kost het € 803,30.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening Rotterdam 2024 zijn de kosten voor een aanvraag van een nieuwe of overgenomen speelautomatenhal € 1.346,50 en voor wijzigingen of vernieuwingen € 823,40."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 4,
+    "invalid_urls": 2,
+    "accuracy_percentage": 66.7,
+    "valid_urls_list": [
+      "https://www.rotterdam.nl/exploitatievergunning-speelautomatenhal-aanvragen/start-exploitatievergunning-speelautomatenhal-aanvragen",
+      "https://www.rotterdam.nl/vergunning-kansspelautomaten-aanvragen",
+      "https://www.rotterdam.nl/exploitatievergunning-speelautomatenhal-aanvragen",
+      "https://www.rotterdam.nl/vergunning-kansspelautomaten-aanvragen/start-vergunning-kansspelautomaten-online-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.rotterdam.nl/vergunning-kansspelautomaten-aanvragen/start-vergunning-kansspelautomaten-per-post-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.rotterdam.nl",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De vergunning is 5 jaar geldig.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de geldigheidsduur van de vergunning voor kansspelautomaten, terwijl de bron specifiek aangeeft dat deze 5 jaar geldig is.",
+          "source_urls": [
+            "https://www.rotterdam.nl/vergunning-kansspelautomaten-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "Bij vergelijking van de originele inhoud met de bronnen is één significant verschil gevonden: de geldigheidsduur van de vergunning (5 jaar) wordt wel in de bronpagina vermeld maar ontbreekt in de originele tekst. Verder zijn de beschreven procedures, kosten, voorwaarden en vereisten consistent tussen de originele tekst en de beschikbare bronnen. De meeste informatie uit de originele tekst wordt bevestigd door de bronnen, hoewel de bronnen minder gedetailleerd zijn op bepaalde punten."
+  }
+}

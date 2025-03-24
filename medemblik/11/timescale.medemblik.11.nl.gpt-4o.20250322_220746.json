@@ -1,0 +1,95 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MEDEMBLIK",
+      "contact": {
+        "phone": "(0229) 85 60 00",
+        "email": "info@medemblik.nl",
+        "website": "http://www.medemblik.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 8,
+    "true_sentences": 7,
+    "false_sentences": 1,
+    "accuracy_percentage": 87.5,
+    "false_statements": [
+      {
+        "sentence": "Er is geen specifieke informatie beschikbaar over de doorlooptijd van een vergunningaanvraag.",
+        "status": "false",
+        "note": "Dit is onjuist. De gemeente Medemblik vermeldt op haar website dat de reguliere procedure 8 weken duurt en de uitgebreide procedure 26 weken. Deze termijnen kunnen eenmalig verlengd worden met 6 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 4,
+    "invalid_urls": 3,
+    "accuracy_percentage": 57.1,
+    "valid_urls_list": [
+      "https://www.medemblik.nl/vergunningen/alcohol-en-horeca/alcoholwetvergunning",
+      "https://www.medemblik.nl/bouwen-en-verbouwen/omgevingswet-en-bouwvergunningen/vooroverleg-omgevingsaanvraag",
+      "https://www.medemblik.nl/afval-en-milieu/melding-milieu",
+      "https://www.medemblik.nl/bouwen-en-verbouwen/omgevingswet-en-bouwvergunningen/omgevingsvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://example.com/metadata-found-url2",
+        "reason": "INVALID: Error scraping https://example.com/metadata-found-url2: 404 Client Error: Not Found for url: https://example.com/metadata-found-url2"
+      },
+      {
+        "url": "https://example.com/metadata-found-url1",
+        "reason": "INVALID: Error scraping https://example.com/metadata-found-url1: 404 Client Error: Not Found for url: https://example.com/metadata-found-url1"
+      },
+      {
+        "url": "https://www.medemblik.nl/bouwen-en-verbouwen/omgevingswet-en-bouwvergunningen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "We behandelen plannen en aanvragen in 2 fasen: vooroverlegfase (niet verplicht) en aanvraagfase omgevingsvergunning",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat het proces uit twee fasen bestaat. Dit is belangrijke procedurele informatie die ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.medemblik.nl/bouwen-en-verbouwen/omgevingswet-en-bouwvergunningen/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Met de Omgevingswet is het vooroverleg een belangrijke stap geworden in het proces van een omgevingsvergunning. Tijdens het vooroverleg krijgt u al in een vroeg stadium advies over uw plannen.",
+          "original_reference": "Let op dat er leges worden betaald voor het vooroverleg indien nodig.",
+          "note": "De bronnen geven meer context over het belang en doel van vooroverleg, terwijl de originele tekst alleen de leges vermeldt.",
+          "source_urls": [
+            "https://www.medemblik.nl/bouwen-en-verbouwen/omgevingswet-en-bouwvergunningen/vooroverleg-omgevingsaanvraag"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Controleer wel of uw plan past binnen het omgevingsplan van de gemeente. De vergunningcheck is een hulpmiddel, maar biedt geen absolute zekerheid.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist deze belangrijke waarschuwing over de beperkingen van de vergunningcheck en de noodzaak om het omgevingsplan te controleren.",
+          "source_urls": [
+            "https://www.medemblik.nl/bouwen-en-verbouwen/omgevingswet-en-bouwvergunningen/omgevingsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie over het vergunningsproces die niet in de originele tekst staat. Met name de tweedeling in fasen (vooroverleg en aanvraag), het belang van het vooroverleg onder de Omgevingswet, en de waarschuwing over de beperkingen van de vergunningcheck zijn belangrijke toevoegingen. Deze informatie is essentieel voor een volledig begrip van het vergunningsproces."
+  }
+}

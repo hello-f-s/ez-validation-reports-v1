@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DELFT",
+      "contact": {
+        "phone": "14 015",
+        "email": "null",
+        "website": "http://www.delft.nl"
+      }
+    },
+    "service": {
+      "id": 22,
+      "name": "Woonruimte splitsen of samenvoegen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "De koopprijs lager is dan € 177.975.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Delft geldt de splitsingsvergunning voor woningen met een WOZ-waarde lager dan € 215.000, niet € 177.975."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.delft.nl/splitsingsvergunning",
+      "https://www.delft.nl/zzper-worden",
+      "https://www.delft.nl/voorwaarden-voor-verhuur",
+      "https://www.delft.nl/stappen-voor-uw-plan",
+      "https://www.delft.nl/vergunning-voor-woningvorming"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.delft.nl/splitsingsvergunning\">Gemeente",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U kunt alleen een vergunning krijgen als uw woning groter is dan 180 m2",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de minimale woninggrootte van 180 m2 die vereist is voor woningvorming",
+          "source_urls": [
+            "https://www.delft.nl/vergunning-voor-woningvorming"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De woonoppervlakte van elk appartement is minimaal 40 m2. De appartementen hebben minimaal 1 aparte slaapkamer",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de minimale oppervlakte-eisen per appartement en de vereiste van een aparte slaapkamer",
+          "source_urls": [
+            "https://www.delft.nl/vergunning-voor-woningvorming"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Deze hoeven niet aan de straat te liggen",
+          "original_reference": "Alle woningen moeten een eigen voordeur hebben",
+          "note": "De originele tekst specificeert niet dat de voordeur niet aan de straat hoeft te liggen, wat een belangrijke nuancering is",
+          "source_urls": [
+            "https://www.delft.nl/splitsingsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn enkele belangrijke verschillen gevonden tussen de originele tekst en de bronnen. De bronnen bevatten aanvullende specifieke eisen die niet in de originele tekst staan, zoals de minimale woninggrootte van 180 m2, minimale appartementgrootte van 40 m2, en de vereiste van een aparte slaapkamer. Ook wordt in de bronnen verduidelijkt dat voordeuren niet aan de straat hoeven te liggen, wat een belangrijke nuancering is van de oorspronkelijke tekst."
+  }
+}

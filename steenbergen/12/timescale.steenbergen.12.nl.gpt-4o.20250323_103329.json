@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "STEENBERGEN",
+      "contact": {
+        "phone": "14 0167",
+        "email": "info@gemeente-steenbergen.nl",
+        "website": "http://www.gemeente-steenbergen.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Meer informatie kan op de officiële website van de gemeente worden gevonden via: gemeente.steenbergen.nl",
+        "status": "false",
+        "note": "De correcte URL van de gemeente Steenbergen is www.gemeente-steenbergen.nl (met streepje). De URL gemeente.steenbergen.nl is onjuist en werkt niet."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.gemeente-steenbergen.nl/inwoners_overzicht/bouwen_en_verbouwen/digitaal_aanvragen_van_een_omgevingsvergunning/digitaal_aanvragen_van_een_omgevingsvergunning_",
+      "https://www.gemeente-steenbergen.nl/inwoners_overzicht/bouwen_en_verbouwen/aanvraagmogelijkheden_en_termijnen/",
+      "https://www.gemeente-steenbergen.nl/inwoners_overzicht/bouwen_en_verbouwen/aanvraagmogelijkheden_en_termijnen/aanvraagmogelijkheden_en_termijnen",
+      "https://www.gemeente-steenbergen.nl/omgevingswet/wat_betekent_de_omgevingswet_voor_mij_",
+      "https://www.gemeente-steenbergen.nl/inwoners_overzicht/bouwen_en_verbouwen/digitaal_aanvragen_van_een_omgevingsvergunning/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.gemeente.steenbergen.nl",
+        "reason": "INVALID: Error scraping https://www.gemeente.steenbergen.nl: HTTPSConnectionPool(host='www.gemeente.steenbergen.nl', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x105b887d0>: Failed to resolve 'www.gemeente.steenbergen.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U kunt alle nodige vergunningen in 1 keer aanvragen. Dat is makkelijk. Maar het is niet verplicht. U mag de nodige vergunningen ook apart aanvragen. Het nadeel is dan wel dat er voor alle losse onderdelen een vergunningprocedure moet worden doorlopen.",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden expliciet de mogelijkheid om vergunningen gebundeld of apart aan te vragen, inclusief voor- en nadelen. Deze belangrijke informatie ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.gemeente-steenbergen.nl/inwoners_overzicht/bouwen_en_verbouwen/aanvraagmogelijkheden_en_termijnen/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Lukt het ons niet om binnen deze termijn (14 weken) een beslissing te nemen? Dan krijgt u automatisch de vergunning.",
+          "original_reference": "Normale procedure: 8 weken (kan verlengd worden met 6 weken)",
+          "note": "De bronnen vermelden een belangrijke aanvullende bepaling over automatische vergunningverlening bij termijnoverschrijding die niet in de originele tekst staat.",
+          "source_urls": [
+            "https://www.gemeente-steenbergen.nl/inwoners_overzicht/bouwen_en_verbouwen/aanvraagmogelijkheden_en_termijnen/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De vergunningscheck bestaat uit een aantal vragen per activiteit. De vragen worden bedacht met hulp van algemene wetten én lokale regels.",
+          "original_reference": "No matching information",
+          "note": "De bronnen beschrijven een verplichte vergunningscheck als onderdeel van de procedure, die niet wordt genoemd in de originele tekst.",
+          "source_urls": [
+            "https://www.gemeente-steenbergen.nl/inwoners_overzicht/bouwen_en_verbouwen/digitaal_aanvragen_van_een_omgevingsvergunning/"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie die ontbreekt in de originele tekst, waaronder de mogelijkheid tot gebundelde vergunningaanvragen, automatische vergunningverlening bij termijnoverschrijding en een verplichte vergunningscheck. Deze informatie is essentieel voor een volledig begrip van de aanvraagprocedure."
+  }
+}

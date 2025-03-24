@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AALTEN",
+      "contact": {
+        "phone": "(0543) 49 33 33",
+        "email": "gemeente@aalten.nl",
+        "website": "http://www.aalten.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "Voor blinden en slechtzienden wordt deze strook volgens een logische loopstrook gepland.",
+        "status": "false",
+        "note": "Deze specifieke bepaling over een logische loopstrook voor blinden en slechtzienden staat niet vermeld in de APV van gemeente Aalten of in het lokale terrassenbeleid. Dit is een onjuiste toevoeging aan de regelgeving."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.aalten.nl/terras-plaatsen",
+      "https://www.aalten.nl/standplaats-aanvragen",
+      "https://www.aalten.nl/omgevingsvergunning",
+      "https://www.aalten.nl/exploitatievergunning-horecabedrijf",
+      "https://www.aalten.nl/bedrijfspandbedrijventerrein-huren-of-kopen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor het houden van een terras of uitstalling is in beginsel geen ontheffing nodig",
+          "original_reference": "Voor het houden van een terras is in beginsel geen ontheffing nodig",
+          "note": "De bronpagina noemt expliciet ook 'uitstalling' in dezelfde regel, terwijl de originele tekst alleen over terrassen spreekt",
+          "source_urls": [
+            "https://www.aalten.nl/terras-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor uitstallingen geldt dat een strook van 1,2 m in principe vrij moet blijven voor voetgangers",
+          "original_reference": "Er moet een vrije en onbelemmerde doorgang van ten minste 1,5 meter op trottoirs aanwezig blijven voor voetgangers",
+          "note": "Er is een verschil in de vereiste vrije doorgang: 1,2m voor uitstallingen versus 1,5m voor terrassen",
+          "source_urls": [
+            "https://www.aalten.nl/terras-plaatsen"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "U ontvangt binnen 8 weken bericht of u de vergunning krijgt",
+          "original_reference": "U ontvangt binnen 8 weken bericht of u de vergunning krijgt",
+          "note": "De behandeltermijn van 8 weken komt exact overeen",
+          "source_urls": [
+            "https://www.aalten.nl/terras-plaatsen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de regelgeving rond vrije doorgangsruimte (1,2m vs 1,5m) en de scope van de vergunningsvrijstelling die in de bron ook expliciet uitstallingen omvat. De overige kernvoorwaarden en procedures komen grotendeels overeen met de originele tekst."
+  }
+}

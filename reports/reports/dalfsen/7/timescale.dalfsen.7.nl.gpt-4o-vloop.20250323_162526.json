@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DALFSEN",
+      "contact": {
+        "phone": "14 0529",
+        "email": "gemeente@dalfsen.nl",
+        "website": "http://www.dalfsen.nl"
+      }
+    },
+    "service": {
+      "id": 7,
+      "name": "Kabels en leidingen aanleggen en beheren"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 27,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.4,
+    "false_statements": [
+      {
+        "sentence": "Voor spoed of calamiteiten buiten kantooruren kunt u bellen naar (06) 24 73 34 11.",
+        "status": "false",
+        "note": "Dit telefoonnummer is niet correct volgens de officiële website van de gemeente Dalfsen. Het juiste storingsnummer voor spoed buiten kantooruren is (0529) 48 83 88."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.dalfsen.nl/avoi",
+      "https://www.dalfsen.nl/exploitatieovereenkomst",
+      "https://www.dalfsen.nl/omgevingsvergunning",
+      "https://www.dalfsen.nl/uitrit-of-inrit-aanleggen",
+      "https://www.dalfsen.nl/graafmelding",
+      "https://www.dalfsen.nl/kabels-en-leidingen-leggen-in-openbare-grond"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor het maken van een inrit of uitrit geldt meestal een meldingsplicht en in enkele gevallen geldt een vergunningsplicht.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst maakt geen onderscheid tussen meldingsplicht en vergunningsplicht voor inritten, wat een belangrijk procedureel verschil is.",
+          "source_urls": [
+            "https://www.dalfsen.nl/uitrit-of-inrit-aanleggen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor een gebied van 500 x 500 meter of kleiner is één Graafmelding voldoende. Voor grotere gebieden doet u meerdere meldingen of kiest u voor een tracémelding.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst specificeert niet de maximale gebiedsgrootte voor één graafmelding en de mogelijkheid voor tracémelding bij grotere gebieden.",
+          "source_urls": [
+            "https://www.dalfsen.nl/graafmelding"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "U ontvangt vanzelf bericht of u de vergunning krijgt.",
+          "original_reference": "Voor een omgevingsvergunning ontvangt u binnen 8 weken bericht, met mogelijke verlenging van 6 weken.",
+          "note": "De informatie over de vergunningsprocedure komt overeen, waarbij de originele tekst specifieker is over de termijnen.",
+          "source_urls": [
+            "https://www.dalfsen.nl/omgevingsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont enkele belangrijke verschillen tussen de originele tekst en de broninhoud. Met name ontbreken er details over de specifieke voorwaarden voor inrit/uitrit aanvragen en graafmeldingen voor grotere gebieden. De basisinformatie over vergunningsprocedures komt wel overeen. De originele tekst zou kunnen worden aangevuld met deze specifieke details om volledigere informatie te bieden."
+  }
+}

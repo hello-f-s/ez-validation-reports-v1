@@ -1,0 +1,91 @@
+{
+  "context": {
+    "municipality": {
+      "name": "TUBBERGEN",
+      "contact": {
+        "phone": "(0546) 62 80 00",
+        "email": "gemeente@tubbergen.nl",
+        "website": "http://www.tubbergen.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "Er zijn geen specifieke kosten vermeld voor het aanvragen van een speelautomatenvergunning in de beschikbare informatie.",
+        "status": "false",
+        "note": "De gemeente Tubbergen vermeldt wel degelijk specifieke legeskosten voor het aanvragen van een aanwezigheidsvergunning voor speelautomaten in haar legesverordening. Deze informatie is beschikbaar via de gemeentelijke website."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 4,
+    "invalid_urls": 2,
+    "accuracy_percentage": 66.7,
+    "valid_urls_list": [
+      "https://www.tubbergen.nl/omgevingsvergunning-bouwen",
+      "https://www.tubbergen.nl/loterij",
+      "https://www.tubbergen.nl/alcoholvergunning",
+      "https://www.tubbergen.nl/gokautomaten"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.tubbergen.nl/kleine-kansspelen-bingo",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://wetten.overheid.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U kunt voor maximaal twee kansspelautomaten een vergunning aanvragen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst specificeert geen maximum aantal automaten, terwijl de bron expliciet een maximum van twee kansspelautomaten vermeldt.",
+          "source_urls": [
+            "https://www.tubbergen.nl/gokautomaten"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Behendigheidsautomaten zoals flipperkasten zijn vergunningvrij.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst maakt geen onderscheid tussen kansspelautomaten en behendigheidsautomaten, terwijl de bron specifiek vermeldt dat behendigheidsautomaten vergunningvrij zijn.",
+          "source_urls": [
+            "https://www.tubbergen.nl/gokautomaten"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "plattegrond van uw inrichting, onder vermelding van de verschillende lokaliteiten (genoemd in uw drank- en horecavergunning)",
+          "original_reference": "No matching information",
+          "note": "De bron vereist een plattegrond als bijlage bij de aanvraag, wat niet wordt vermeld in de originele tekst.",
+          "source_urls": [
+            "https://www.tubbergen.nl/gokautomaten"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten enkele belangrijke aanvullende details die niet in de originele tekst staan: een maximum van twee kansspelautomaten per vergunning, de vergunningvrije status van behendigheidsautomaten, en de vereiste van een plattegrond bij de aanvraag. Deze informatie is essentieel voor een complete en accurate beschrijving van de vergunningsprocedure."
+  }
+}

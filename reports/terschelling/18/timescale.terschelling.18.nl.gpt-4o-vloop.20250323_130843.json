@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "TERSCHELLING",
+      "contact": {
+        "phone": "(0562) 44 62 44",
+        "email": "gemeente@terschelling.nl",
+        "website": "http://www.terschelling.nl"
+      }
+    },
+    "service": {
+      "id": 18,
+      "name": "Ventvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 31,
+    "true_sentences": 30,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.8,
+    "false_statements": [
+      {
+        "sentence": "De leges voor het behandelen van een aanvraag voor een exploitatievergunning bedragen €40,78.",
+        "status": "false",
+        "note": "Dit bedrag is onjuist. Volgens de actuele legesverordening van gemeente Terschelling zijn de kosten voor een exploitatievergunning hoger. Het exacte bedrag is afhankelijk van het type horeca en wordt jaarlijks vastgesteld in de legesverordening."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.terschelling.nl/exploitatievergunning-horecabedrijf",
+      "https://www.terschelling.nl/omgevingsvergunning",
+      "https://www.terschelling.nl/wonen",
+      "https://www.terschelling.nl/alle-producten-en-diensten/21",
+      "https://www.terschelling.nl/terras-plaatsen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "u met uw horecabedrijf nieuwe activiteiten gaat uitvoeren, u een terras wilt starten of uw terras wilt uitbreiden",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat een exploitatievergunning ook nodig is bij nieuwe activiteiten of terrasuitbreiding, wat wel een belangrijke aanvullende voorwaarde is.",
+          "source_urls": [
+            "https://www.terschelling.nl/exploitatievergunning-horecabedrijf"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Zelfs als u het terras op eigen terrein plaatst.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet specifiek dat een terrasvergunning ook nodig is als het terras op eigen terrein wordt geplaatst.",
+          "source_urls": [
+            "https://www.terschelling.nl/terras-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u schermen, daken of vlonders wilt plaatsen op uw terras dan kan het zijn dat u hiervoor een aparte omgevingsvergunning moet aanvragen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist de belangrijke informatie dat voor bepaalde terrasconstructies een extra omgevingsvergunning nodig kan zijn.",
+          "source_urls": [
+            "https://www.terschelling.nl/terras-plaatsen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie over wanneer een exploitatievergunning nodig is, met name bij terrasuitbreiding en nieuwe activiteiten. Ook wordt verduidelijkt dat een terrasvergunning altijd nodig is, zelfs op eigen terrein, en dat bepaalde terrasconstructies een extra omgevingsvergunning kunnen vereisen. Deze specifieke details ontbreken in de originele tekst."
+  }
+}

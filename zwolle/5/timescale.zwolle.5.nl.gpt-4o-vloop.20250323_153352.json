@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ZWOLLE",
+      "contact": {
+        "phone": "14 038",
+        "email": "postbus@zwolle.nl",
+        "website": "http://www.zwolle.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 27,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.4,
+    "false_statements": [
+      {
+        "sentence": "Voor bedrijven met horeca als nevenactiviteit, mag de horeca maximaal 20% van het totale winkeloppervlak beslaan, met een maximum van 75 m².",
+        "status": "false",
+        "note": "Volgens het huidige horecabeleid van de gemeente Zwolle mag horeca als nevenactiviteit maximaal 30% van het totale winkeloppervlak beslaan, met een maximum van 100 m²."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 2,
+    "invalid_urls": 3,
+    "accuracy_percentage": 40.0,
+    "valid_urls_list": [
+      "https://www.zwolle.nl/speelgelegenhedenvergunning",
+      "https://www.zwolle.nl/terrasvergunning-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.zwolle.nl/horecabedrijf-exploitatievergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.zwolle.nl/bedrijfsvergunningen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.zwolle.nl/kentekenparkeren-veelgestelde-vragen-voor-bedrijvenvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Aan dit product zijn geen kosten verbonden.",
+          "original_reference": "De kosten voor het in behandeling nemen van een aanvraag zijn te vinden in de legestabel.",
+          "note": "De originele tekst verwijst naar kosten in een legestabel, terwijl de bron (speelgelegenhedenvergunning) expliciet vermeldt dat er geen kosten zijn verbonden aan dat specifieke product. Dit betreft echter verschillende vergunningen dus is niet direct tegenstrijdig.",
+          "source_urls": [
+            "https://www.zwolle.nl/speelgelegenhedenvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "een terras mag geopend zijn gedurende de openingstijden van het horecabedrijf, maar moet in ieder geval gesloten zijn tussen 01.00 uur 09.00 uur. In juli en augustus mag het terras op vrijdag en zaterdag tot 01.30 uur geopend zijn.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen specifieke informatie over terrastijden, terwijl de bron over terrasvergunningen wel specifieke openingstijden vermeldt. Dit is aanvullende informatie die relevant kan zijn voor horecaondernemers.",
+          "source_urls": [
+            "https://www.zwolle.nl/terrasvergunning-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De geanalyseerde bronnen tonen enkele aanvullende details die niet in de originele tekst staan, met name specifieke informatie over terrastijden en kosten voor bepaalde vergunningen. De kern van de informatie blijft echter consistent. De verschillen zijn voornamelijk aanvullend van aard en niet tegenstrijdig met de originele inhoud."
+  }
+}

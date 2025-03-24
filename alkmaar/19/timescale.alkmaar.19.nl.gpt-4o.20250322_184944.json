@@ -1,0 +1,92 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ALKMAAR",
+      "contact": {
+        "phone": "14 072",
+        "email": "post@alkmaar.nl",
+        "website": "http://www.alkmaar.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor de vergunning bedragen € 34,00 per automaat per jaar, plus een vast bedrag van € 22,50.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Alkmaar bedragen de kosten voor een speelautomatenvergunning € 34,80 per automaat per jaar, plus een vast bedrag van € 23,00."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/bouwen-en-verbouwen/boom-kappen-vergunning",
+      "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/horeca/terrasvergunning/",
+      "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/horeca/drank-en-horecawet-vergunning",
+      "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/horeca/speelautomatenvergunning",
+      "https://www.alkmaar.nl/direct-regelen/ondernemen/vergunningen-en-ontheffingen/exploitatievergunning/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.alkmaar.nl/ondernemers/vergunningen/loket-vergunningen/product.html?tx_windproductlist_products%5Bstate%5D=1&tx_windproductlist_products%5Baction%5D=show&tx_windproductlist_products%5Bcontroller%5D=Products&tx_windproductlist_products%5Bproduct%5D=7&cHash=d5beb9c5b7e7baf0f3fd78d54ad73468",
+        "reason": "INVALID: Error scraping https://www.alkmaar.nl/ondernemers/vergunningen/loket-vergunningen/product.html?tx_windproductlist_products%5Bstate%5D=1&tx_windproductlist_products%5Baction%5D=show&tx_windproductlist_products%5Bcontroller%5D=Products&tx_windproductlist_products%5Bproduct%5D=7&cHash=d5beb9c5b7e7baf0f3fd78d54ad73468: 404 Client Error: Not Found for url: https://www.alkmaar.nl/ondernemers/vergunningen/loket-vergunningen/product.html?tx_windproductlist_products%5Bstate%5D=1&tx_windproductlist_products%5Baction%5D=show&tx_windproductlist_products%5Bcontroller%5D=Products&tx_windproductlist_products%5Bproduct%5D=7&cHash=d5beb9c5b7e7baf0f3fd78d54ad73468"
+      },
+      {
+        "url": "https://www.alkmaar.nl/ondernemers/vergunningen/loket-vergunningen/product.html?tx_windproductlist_products%5Bstate%5D=1&tx_windproductlist_products%5Baction%5D=show&tx_windproductlist_products%5Bcontroller%5D=Products&tx_windproductlist_products%5Bproduct%5D=88&cHash=b3d3778c4e5a219cd4fe50edec5f9da1",
+        "reason": "INVALID: Error scraping https://www.alkmaar.nl/ondernemers/vergunningen/loket-vergunningen/product.html?tx_windproductlist_products%5Bstate%5D=1&tx_windproductlist_products%5Baction%5D=show&tx_windproductlist_products%5Bcontroller%5D=Products&tx_windproductlist_products%5Bproduct%5D=88&cHash=b3d3778c4e5a219cd4fe50edec5f9da1: 404 Client Error: Not Found for url: https://www.alkmaar.nl/ondernemers/vergunningen/loket-vergunningen/product.html?tx_windproductlist_products%5Bstate%5D=1&tx_windproductlist_products%5Baction%5D=show&tx_windproductlist_products%5Bcontroller%5D=Products&tx_windproductlist_products%5Bproduct%5D=88&cHash=b3d3778c4e5a219cd4fe50edec5f9da1"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "€ 34,00 per automaat en een vast bedrag van € 22,50",
+          "original_reference": "De kosten voor de vergunning bedragen € 34,00 per automaat per jaar, plus een vast bedrag van € 22,50.",
+          "note": "De kosten voor speelautomatenvergunningen zijn identiek in beide bronnen",
+          "source_urls": [
+            "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/horeca/speelautomatenvergunning"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "maximaal 2 kansspelautomaten voor cafés, bars en restaurants; maximaal 2 behendigheidsautomaten (géén kansspelautomaten) voor snackbars, kantines en buurthuizen",
+          "original_reference": "Voor een speelautomaat in een hoogdrempelige onderneming (cafés en restaurants) zijn maximaal twee kansspelautomaten toegestaan. Voor een laagdrempelige onderneming (snackbars, kantines en buurthuizen) zijn maximaal twee behendigheidsautomaten toegestaan en geen kansspelautomaten.",
+          "note": "De regels voor het maximaal aantal toegestane automaten per type onderneming komen overeen",
+          "source_urls": [
+            "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/horeca/speelautomatenvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vraag de vergunning aan met het aanvraagformulier voor bedrijven.",
+          "original_reference": "U vraagt uw speelautomaatvergunning aan via het online portaal met uw eHerkenning.",
+          "note": "De bronpagina verwijst naar een specifiek aanvraagformulier voor bedrijven, terwijl de originele tekst alleen spreekt over een online portaal",
+          "source_urls": [
+            "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/horeca/speelautomatenvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De meeste informatie komt overeen tussen de originele tekst en de bronnen, zoals de kosten en het maximaal aantal toegestane automaten per type onderneming. Het enige significante verschil betreft de aanvraagmethode, waarbij de bron specifieker is over het gebruik van een bedrijvenformulier in plaats van alleen een algemene verwijzing naar het online portaal. De exploitatievergunningskosten voor een speelhal (€590,94) konden niet worden geverifieerd in de beschikbare bronnen."
+  }
+}

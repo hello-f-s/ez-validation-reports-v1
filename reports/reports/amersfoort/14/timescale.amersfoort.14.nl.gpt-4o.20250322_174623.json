@@ -1,0 +1,97 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AMERSFOORT",
+      "contact": {
+        "phone": "14 033",
+        "email": "info@amersfoort.nl",
+        "website": "http://www.amersfoort.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 11,
+    "false_sentences": 2,
+    "accuracy_percentage": 84.6,
+    "false_statements": [
+      {
+        "sentence": "Parkeervergunningen en ontheffingen kunnen worden aangevraagd via de website van ParkeerService.",
+        "status": "false",
+        "note": "Parkeervergunningen en ontheffingen voor Amersfoort worden aangevraagd via het digitale loket van de gemeente Amersfoort zelf, niet via ParkeerService."
+      },
+      {
+        "sentence": "Exacte tarieven staan vermeld op de website van ParkeerService Amersfoort.",
+        "status": "false",
+        "note": "De tarieven staan vermeld op de website van de gemeente Amersfoort zelf onder 'betaald parkeren en parkeervergunningen', niet op de website van ParkeerService."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 2,
+    "invalid_urls": 5,
+    "accuracy_percentage": 28.6,
+    "valid_urls_list": [
+      "https://www.amersfoort.nl/wonen-en-parkeren",
+      "https://www.amersfoort.nl/vergunningparkeren"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.amersfoort.nl/werken-en-parkeren",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.amersfoort.nl/vergunningen-inzien-en-bezwaar-maken",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.overheid.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.parkeerservice.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.amersfoort.nl/betaald-parkeren-en-parkeervergunningen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "In de wijken rondom de binnenstad van Amersfoort (B-vergunninggebieden) kan van maandag tot en met zaterdag tussen 9.00 en 20.30 uur alleen geparkeerd worden met een parkeervergunning. Buiten deze tijden kunnen ook mensen zonder vergunning in het gebied parkeren.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt geen specifieke parkeertijden voor vergunninggebieden, terwijl de bron concrete tijden noemt (ma-za 9:00-20:30)",
+          "source_urls": [
+            "https://www.amersfoort.nl/vergunningparkeren"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De parkeervergunning geldt voor één specifiek vergunninggebied. Met de vergunning mag alleen in dat vergunninggebied geparkeerd worden. Bedrijven kunnen onder voorwaarden een parkeervergunning kopen voor alle vergunninggebieden in en rond het centrum.",
+          "original_reference": "Ondernemers kunnen maximaal één bedrijfsparkeervergunning aanschaffen.",
+          "note": "De bron specificeert dat bedrijven onder voorwaarden een vergunning kunnen krijgen voor alle vergunninggebieden, terwijl de originele tekst alleen spreekt over één bedrijfsparkeervergunning zonder deze extra mogelijkheid te vermelden",
+          "source_urls": [
+            "https://www.amersfoort.nl/vergunningparkeren"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie over parkeertijden en mogelijkheden voor bedrijfsvergunningen die niet in de originele tekst staat. Met name de specifieke tijden voor vergunningparkeren (9:00-20:30) en de mogelijkheid voor bedrijven om onder voorwaarden een vergunning voor alle vergunninggebieden te krijgen zijn belangrijke toevoegingen die meer duidelijkheid verschaffen over de parkeerregels."
+  }
+}

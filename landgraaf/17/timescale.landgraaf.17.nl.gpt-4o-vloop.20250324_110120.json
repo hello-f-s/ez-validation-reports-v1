@@ -1,0 +1,82 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LANDGRAAF",
+      "contact": {
+        "phone": "14 045",
+        "email": "gemeente@landgraaf.nl",
+        "website": "http://www.landgraaf.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "Aanleggen of wijzigen van een terras kost € 26,70.",
+        "status": "false",
+        "note": "Dit bedrag is niet actueel volgens de legesverordening van gemeente Landgraaf. De actuele tarieven zijn te vinden in de meest recente legesverordening op de website van de gemeente Landgraaf."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 4,
+    "valid_urls": 4,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.landgraaf.nl/exploitatievergunning-horecabedrijf",
+      "https://www.landgraaf.nl/aanvragen-en-regelen-ondernemers",
+      "https://www.landgraaf.nl/voorwerp-plaatsen-op-of-aan-de-weg",
+      "https://www.landgraaf.nl/marktplaats-aanvragen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "u een horecabedrijf wilt starten of overnemen; u de rechtsvorm van uw horecabedrijf verandert; u een terras wilt starten; u met uw horecabedrijf nieuwe activiteiten gaat uitvoeren",
+          "original_reference": "No matching information",
+          "note": "De bronpagina specificeert extra situaties waarin een terrasvergunning nodig is, zoals bij overname of verandering van rechtsvorm. Deze details ontbreken in de originele tekst.",
+          "source_urls": [
+            "https://www.landgraaf.nl/exploitatievergunning-horecabedrijf"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "u doet een melding wijziging horeca-exploitatie bij de gemeente als: u uw horecabedrijf wilt uitbreiden door een verbouwing; uw horecabedrijf een andere leidinggevende krijgt; u een terras wilt uitbreiden",
+          "original_reference": "Voor wijzigingen in de drank- en horeca-exploitatievergunning kunt u gebruikmaken van het formulier",
+          "note": "De bronpagina geeft specifiekere informatie over wanneer een wijzigingsmelding nodig is, terwijl de originele tekst alleen algemeen verwijst naar wijzigingen.",
+          "source_urls": [
+            "https://www.landgraaf.nl/exploitatievergunning-horecabedrijf"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Exploitatievergunning: € 287,80. Wijziging leidinggevende: € 95,80. Aanleggen/wijzigen terras: € 26,70.",
+          "original_reference": "Aanleggen of wijzigen van een terras kost € 26,70. Een exploitatievergunning kost € 287,80. Wijziging leidinggevende kost € 95,80.",
+          "note": "De kosten zijn exact hetzelfde in beide bronnen.",
+          "source_urls": [
+            "https://www.landgraaf.nl/exploitatievergunning-horecabedrijf"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de mate van detail in de voorwaarden en procedures. De bronpagina's bevatten meer specifieke informatie over wanneer een terrasvergunning of wijzigingsmelding nodig is. De tarieven zijn consistent tussen beide bronnen. De originele tekst mist enkele belangrijke details over specifieke situaties waarin een vergunning of melding vereist is."
+  }
+}

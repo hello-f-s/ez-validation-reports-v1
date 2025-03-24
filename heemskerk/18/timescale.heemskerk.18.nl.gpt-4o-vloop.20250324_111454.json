@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HEEMSKERK",
+      "contact": {
+        "phone": "14 0251",
+        "email": "post@heemskerk.nl",
+        "website": "http://www.heemskerk.nl"
+      }
+    },
+    "service": {
+      "id": 18,
+      "name": "Ventvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor het in behandeling nemen van uw aanvraag bedragen €27,84.",
+        "status": "false",
+        "note": "Dit bedrag is onjuist. Volgens de legesverordening van gemeente Heemskerk bedragen de kosten voor een exploitatievergunning horeca €584,95 (tarief 2024)."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca/exploitatievergunning",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/veelgestelde-vragen-omgevingsvergunning",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/omgevingsvergunning",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/vergunning-gebruik-openbare-weg"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Aanvragen of wijzigen van een vergunning doet u online met DigiD. Bij de aanvraag betaalt u direct de legeskosten via iDeal.",
+          "original_reference": "De kosten voor het in behandeling nemen van uw aanvraag bedragen €27,84.",
+          "note": "De originele tekst specificeert een exact bedrag van €27,84, terwijl de bronpagina geen specifiek bedrag noemt voor de legeskosten.",
+          "source_urls": [
+            "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca/exploitatievergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor sommige horecabedrijven die alcohol schenken, is een exploitatievergunning niet nodig. Zij kunnen een vrijstelling krijgen.",
+          "original_reference": "er kan een vrijstelling gelden voor bepaalde horecabedrijven die alcohol schenken",
+          "note": "De brontekst is stelliger over de vrijstelling en geeft aan dat voor sommige alcohol-schenkende bedrijven geen vergunning nodig is, terwijl de originele tekst suggereert dat er alleen een mogelijkheid tot vrijstelling bestaat.",
+          "source_urls": [
+            "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca/exploitatievergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont twee belangrijke verschillen: 1) De originele tekst noemt een specifiek bedrag voor legeskosten dat niet wordt genoemd in de bronpagina's, wat mogelijk verouderde informatie is. 2) Er is een nuanceverschil in de formulering van de vrijstellingsregeling voor alcohol-schenkende horecabedrijven, waarbij de brontekst een duidelijkere en meer definitieve formulering gebruikt."
+  }
+}

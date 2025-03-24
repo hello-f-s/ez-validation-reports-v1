@@ -1,0 +1,79 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ARNHEM",
+      "contact": {
+        "phone": "null",
+        "email": "null",
+        "website": "http://www.arnhem.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 12,
+    "false_sentences": 2,
+    "accuracy_percentage": 85.7,
+    "false_statements": [
+      {
+        "sentence": "Bij 1 speelautomaat betaalt u €226,50.",
+        "status": "false",
+        "note": "Dit bedrag is niet correct volgens de actuele tarieven van gemeente Arnhem. De exacte tarieven worden jaarlijks vastgesteld en zijn anders dan het genoemde bedrag."
+      },
+      {
+        "sentence": "Bij 2 speelautomaten betaalt u €317,00.",
+        "status": "false",
+        "note": "Dit bedrag is niet correct volgens de actuele tarieven van gemeente Arnhem. De exacte tarieven worden jaarlijks vastgesteld en zijn anders dan het genoemde bedrag."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.arnhem.nl/Ondernemers/horeca/horecaspreekuur",
+      "https://www.arnhem.nl/Ondernemers/horeca/horeca_en_vergunningen",
+      "https://www.arnhem.nl/Ondernemers/horeca/horeca_en_vergunningen/Terrasvergunning",
+      "https://www.arnhem.nl/Ondernemers/vergunningen_ondernemers/bingo_en_loterij",
+      "https://www.arnhem.nl/Ondernemers/horeca/horeca_en_vergunningen/kansspelautomaten_aanwezigheidsvergunning_voor_gokken_gokautomaat"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De aanwezigheidsvergunning is 5 jaar geldig en moet daarna opnieuw worden aangevraagd.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de geldigheidsduur van de vergunning, terwijl de bron specificeert dat deze 5 jaar geldig is.",
+          "source_urls": [
+            "https://www.arnhem.nl/Ondernemers/horeca/horeca_en_vergunningen/kansspelautomaten_aanwezigheidsvergunning_voor_gokken_gokautomaat"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Laagdrempelig zijn bijvoorbeeld snackbars, kantines, afhaalrestaurants en wijk- of jongerencentra. Hoogdrempelig zijn bijvoorbeeld cafés en restaurants. Een laagdrempelige horecaonderneming mag geen kansspelautomaat plaatsen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst maakt geen onderscheid tussen laag- en hoogdrempelige horecaondernemingen en de bijbehorende beperkingen voor het plaatsen van kansspelautomaten.",
+          "source_urls": [
+            "https://www.arnhem.nl/Ondernemers/horeca/horeca_en_vergunningen/kansspelautomaten_aanwezigheidsvergunning_voor_gokken_gokautomaat"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie die niet in de originele tekst staat, met name over de geldigheidsduur van de vergunning (5 jaar) en het onderscheid tussen laag- en hoogdrempelige horecaondernemingen met bijbehorende beperkingen voor het plaatsen van kansspelautomaten. Deze informatie is essentieel voor ondernemers die een aanwezigheidsvergunning willen aanvragen."
+  }
+}

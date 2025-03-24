@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OLDENZAAL",
+      "contact": {
+        "phone": "(0541) 58 81 11",
+        "email": "info@oldenzaal.nl",
+        "website": "http://www.oldenzaal.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 20,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.2,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor het in behandeling nemen van een exploitatievergunning bedragen € 450,00. Voor wijzigingen van de vergunning zijn de kosten € 75,00.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van de gemeente Oldenzaal zijn de kosten voor een exploitatievergunning € 500,00 en voor wijzigingen € 100,00."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.oldenzaal.nl/vergunningen-ondernemers",
+      "https://www.oldenzaal.nl/standplaatsvergunning",
+      "https://www.oldenzaal.nl/exploitatievergunning",
+      "https://www.oldenzaal.nl/omgevingsvergunning",
+      "https://www.oldenzaal.nl/terrasvergunning",
+      "https://oldenzaal.nl"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een terras wordt toegestaan op eigen grond of op gemeentegrond die in de nabijheid van de horeca-inrichting is gelegen. Er wordt getoetst aan: bestemmingsplan, woon- en leefklimaat omwonenden, bereikbaarheid voor voetgangers- en overige verkeer, brandveilig gebruik en basis hulpverlening overige plaatsen (BGBOP)",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist specifieke criteria voor terrasvergunningen die wel in de bronnen worden genoemd. Dit zijn belangrijke voorwaarden voor ondernemers.",
+          "source_urls": [
+            "https://www.oldenzaal.nl/terrasvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een exploitatievergunning is niet nodig voor het exploiteren van een: winkel, zorginstelling, uitvaartcentrum, museum of bedrijfskantine of restaurant.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de uitzonderingen waarbij geen exploitatievergunning nodig is, terwijl dit belangrijke informatie is voor ondernemers.",
+          "source_urls": [
+            "https://www.oldenzaal.nl/terrasvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wilt u een exploitatievergunning aanvragen? Neem dan contact met ons op, zodat we met u een afspraak kunnen maken voor een vooroverleg.",
+          "original_reference": "Voorafgaand aan de aanvraag kunt u een vooroverleg plannen met de gemeente.",
+          "note": "De brontekst stelt het vooroverleg als verplichte stap voor, terwijl dit in de originele tekst als optioneel wordt gepresenteerd.",
+          "source_urls": [
+            "https://www.oldenzaal.nl/exploitatievergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de specifieke criteria voor terrasvergunningen en uitzonderingen op de exploitatievergunningplicht die in de originele tekst ontbreken. Daarnaast is er een verschil in de presentatie van het vooroverleg, dat in de bronnen als verplicht wordt gesteld maar in de originele tekst als optioneel wordt beschreven. Deze informatie is essentieel voor ondernemers die een vergunning willen aanvragen."
+  }
+}

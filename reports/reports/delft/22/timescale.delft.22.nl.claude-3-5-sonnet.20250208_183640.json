@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DELFT",
+      "contact": {
+        "phone": "14 015",
+        "email": "null",
+        "website": "http://www.delft.nl"
+      }
+    },
+    "service": {
+      "id": 22,
+      "name": "Woonruimte splitsen of samenvoegen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 11,
+    "false_sentences": 2,
+    "accuracy_percentage": 84.6,
+    "false_statements": [
+      {
+        "sentence": "De gemeente beslist binnen 8 weken op uw aanvraag, met een mogelijke verlenging van 6 weken",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Delft beslist de gemeente binnen 12 weken op een aanvraag voor een splitsingsvergunning, met een mogelijke verlenging van 6 weken"
+      },
+      {
+        "sentence": "1 - 5 woningen: €545 + €26,60 per woning",
+        "status": "false",
+        "note": "De actuele tarieven volgens de gemeente Delft website zijn anders. Het basistarief voor 1-5 woningen is €565,30 plus €27,60 per woning"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.delft.nl/splitsingsvergunning",
+      "https://www.delft.nl/stappen-voor-uw-plan",
+      "https://www.delft.nl/voorwaarden-voor-verhuur",
+      "https://www.delft.nl/zzper-worden",
+      "https://www.delft.nl/vergunning-voor-woningvorming"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U kunt alleen een vergunning krijgen als uw woning groter is dan 180 m2",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de minimale woninggrootte van 180m2 die vereist is voor woningvorming",
+          "source_urls": [
+            "https://www.delft.nl/vergunning-voor-woningvorming"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De woonoppervlakte van elk appartement is minimaal 40 m2. De appartementen hebben minimaal 1 aparte slaapkamer",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de minimale oppervlakte-eis van 40m2 en de vereiste van een aparte slaapkamer per appartement",
+          "source_urls": [
+            "https://www.delft.nl/vergunning-voor-woningvorming"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "huurwoningen waarvan de huur lager is dan € 879,66 of koopwoningen met een koopprijs lager dan € 177.975",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de specifieke huur- en koopprijsgrenzen waarbij een splitsingsvergunning nodig is",
+          "source_urls": [
+            "https://www.delft.nl/splitsingsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende voorwaarden die niet in de originele tekst staan, waaronder specifieke oppervlakte-eisen (minimaal 180m2 voor de oorspronkelijke woning en 40m2 per nieuw appartement), de vereiste van een aparte slaapkamer, en specifieke prijsgrenzen voor huur- en koopwoningen waarbij een splitsingsvergunning nodig is. Deze voorwaarden zijn essentieel voor het aanvraagproces maar ontbreken in de originele tekst."
+  }
+}

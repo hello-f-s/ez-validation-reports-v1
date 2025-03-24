@@ -1,0 +1,89 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LANDGRAAF",
+      "contact": {
+        "phone": "14 045",
+        "email": "gemeente@landgraaf.nl",
+        "website": "http://www.landgraaf.nl"
+      }
+    },
+    "service": {
+      "id": 2,
+      "name": "Bord of spandoek plaatsen aan de openbare weg"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Een vergunning kost € 42,11.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Landgraaf kost een vergunning voor het plaatsen van een spandoek € 43,37 (tarief 2024)."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.landgraaf.nl/aanvragen-en-regelen-ondernemers",
+      "https://www.landgraaf.nl/form/informatieverzoek-indienen",
+      "https://www.landgraaf.nl/spandoek-ophangen",
+      "https://www.landgraaf.nl/reclame-uitingen-in-de-openbare-ruimte",
+      "https://www.landgraaf.nl/voorwerp-plaatsen-op-of-aan-de-weg"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.landgraaf.nl/reclame-uitingen-openbare-ruimte",
+        "reason": "INVALID: Error scraping https://www.landgraaf.nl/reclame-uitingen-openbare-ruimte: 404 Client Error: Not Found for url: https://www.landgraaf.nl/reclame-uitingen-openbare-ruimte"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een ontheffing kost € 43,05",
+          "original_reference": "Een vergunning kost € 42,11",
+          "note": "Er is een prijsverschil van €0,94. De bronnen vermelden €43,05 terwijl de originele tekst €42,11 vermeldt.",
+          "source_urls": [
+            "https://www.landgraaf.nl/spandoek-ophangen",
+            "https://www.landgraaf.nl/voorwerp-plaatsen-op-of-aan-de-weg"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "ontheffing van de gemeente nodig",
+          "original_reference": "vergunning van de gemeente",
+          "note": "De bronnen spreken over een 'ontheffing' terwijl de originele tekst spreekt over een 'vergunning'. Dit is een juridisch verschil in terminologie.",
+          "source_urls": [
+            "https://www.landgraaf.nl/spandoek-ophangen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De gemeente kan eisen dat uw spandoek wind en/of lucht doorlaat",
+          "original_reference": "No matching information",
+          "note": "Deze specifieke technische eis ontbreekt in de originele tekst maar wordt wel vermeld in de bronnen.",
+          "source_urls": [
+            "https://www.landgraaf.nl/spandoek-ophangen"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn drie belangrijke verschillen gevonden tussen de originele tekst en de bronnen: een prijsverschil (€42,11 vs €43,05), een verschil in juridische terminologie (vergunning vs ontheffing) en een ontbrekende technische eis over winddoorlatendheid van spandoeken. Deze verschillen kunnen van belang zijn voor aanvragers."
+  }
+}

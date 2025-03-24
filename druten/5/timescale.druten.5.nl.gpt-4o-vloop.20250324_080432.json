@@ -1,0 +1,95 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DRUTEN",
+      "contact": {
+        "phone": "(088) 432 70 00",
+        "email": "info@druten.nl",
+        "website": "http://www.druten.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "Voor de behandeling van de aanvraag worden leges van € 177,25 in rekening gebracht.",
+        "status": "false",
+        "note": "Het exacte legesbedrag voor een exploitatievergunning in gemeente Druten is € 182,70 volgens de actuele legesverordening van de gemeente Druten."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 3,
+    "invalid_urls": 3,
+    "accuracy_percentage": 50.0,
+    "valid_urls_list": [
+      "https://www.druten.nl/alcoholwetvergunning",
+      "https://www.druten.nl/openingstijden-horeca-eenmalig-aanpassen",
+      "https://druten.nl"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.druten.nl/exploitatievergunning-horecabedrijf",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.druten.nl/vergunningen-en-ontheffingen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.druten.nl/exploitatievergunning-verblijfsrecreatie",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het in behandeling nemen van uw aanvraag kost € 81,45",
+          "original_reference": "Voor de behandeling van de aanvraag worden leges van € 177,25 in rekening gebracht",
+          "note": "Er is een verschil in de vermelde kosten voor de aanvraag. De originele tekst vermeldt €177,25, terwijl de bron €81,45 vermeldt voor een ontheffing van openingstijden.",
+          "source_urls": [
+            "https://www.druten.nl/openingstijden-horeca-eenmalig-aanpassen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Whatsapp: 06 256 899 28",
+          "original_reference": "WhatsApp-bericht sturen naar +316 256 899 28",
+          "note": "Het WhatsApp nummer wordt in verschillende formaten weergegeven, hoewel het om hetzelfde nummer gaat. De originele tekst gebruikt een internationale notatie, de bronnen een nationale notatie.",
+          "source_urls": [
+            "https://druten.nl",
+            "https://www.druten.nl/openingstijden-horeca-eenmalig-aanpassen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Team APV via telefoonnummer 088 432 70 00",
+          "original_reference": "Team APV via 088 432 79 88",
+          "note": "Er wordt een ander telefoonnummer vermeld voor het Team APV in de originele tekst dan in de bronnen.",
+          "source_urls": [
+            "https://www.druten.nl/alcoholwetvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont drie belangrijke verschillen tussen de originele tekst en de bronnen: verschillende bedragen voor leges (€177,25 vs €81,45), verschillende notatiewijzen voor het WhatsApp-nummer, en verschillende telefoonnummers voor het Team APV. Deze inconsistenties kunnen verwarrend zijn voor burgers en dienen te worden geharmoniseerd."
+  }
+}

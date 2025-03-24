@@ -1,0 +1,81 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HAARLEM",
+      "contact": {
+        "phone": "14 023",
+        "email": "antwoord@haarlem.nl",
+        "website": "http://www.haarlem.nl"
+      }
+    },
+    "service": {
+      "id": 18,
+      "name": "Ventvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 1,
+    "true_sentences": 1,
+    "false_sentences": 0,
+    "accuracy_percentage": 100.0,
+    "false_statements": []
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://haarlem.nl/aanlegvergunning",
+      "https://haarlem.nl/uitweg-inritvergunning",
+      "https://haarlem.nl/bouwvergunning",
+      "https://haarlem.nl/exploitatievergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.haarlem.nl/ufs/formulieren.eb?id=aanvraag_exploitatievergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u een uitweg of inrit wilt aanleggen heeft u daarvoor een vergunning nodig. Dit geldt zowel voor particulieren als bedrijven. U kunt een uitweg- of inritvergunning aanvragen bij het Omgevingsloket. Nadat u een aanvraag hebt ingediend krijgt u meestal binnen 8 weken bericht over de uitkomst.",
+          "original_reference": "No matching information",
+          "note": "Nieuwe informatie over uitweg/inritvergunning met specifieke behandeltermijn van 8 weken die niet in de originele tekst staat",
+          "source_urls": [
+            "https://haarlem.nl/uitweg-inritvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor het serveren van eten en non-alcoholische drank in uw onderneming, hebt u een exploitatievergunning nodig. Bijvoorbeeld als u een cafetaria, coffeeshop of ijssalon hebt. Als u alcohol serveert, hebt u een alcoholvergunning nodig en hoeft u geen exploitatievergunning aan te vragen.",
+          "original_reference": "No matching information",
+          "note": "Nieuwe informatie over exploitatievergunning met specifieke voorwaarden en uitzonderingen voor alcoholvergunning die niet in de originele tekst staat",
+          "source_urls": [
+            "https://haarlem.nl/exploitatievergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u werkzaamheden gaat verrichten zoals het aanleggen van een weg of pad, het graven van een sloot of het planten van een boom, hebt u mogelijk een aanlegvergunning nodig.",
+          "original_reference": "No matching information",
+          "note": "Nieuwe informatie over aanlegvergunning met specifieke voorbeelden van werkzaamheden die niet in de originele tekst staat",
+          "source_urls": [
+            "https://haarlem.nl/aanlegvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten uitgebreide informatie over verschillende vergunningen (uitweg/inrit, exploitatie, aanleg en bouw) die niet in de originele tekst aanwezig was. Elke vergunning heeft specifieke voorwaarden, aanvraagprocedures en vereisten. Dit vormt een substantiële aanvulling op de oorspronkelijke lege referentie."
+  }
+}

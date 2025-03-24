@@ -1,0 +1,85 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OLDEBROEK",
+      "contact": {
+        "phone": "(0525) 63 82 00",
+        "email": "gemeente@oldebroek.nl",
+        "website": "http://www.oldebroek.nl"
+      }
+    },
+    "service": {
+      "id": 2,
+      "name": "Bord of spandoek plaatsen aan de openbare weg"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 11,
+    "false_sentences": 2,
+    "accuracy_percentage": 84.6,
+    "false_statements": [
+      {
+        "sentence": "U kunt de melding voor het plaatsen van een reclamebord doorgeven door te mailen naar gemeente@oldebroek.nl.",
+        "status": "false",
+        "note": "Het correcte e-mailadres voor de gemeente Oldebroek is info@oldebroek.nl, niet gemeente@oldebroek.nl"
+      },
+      {
+        "sentence": "Bron: https://www.moorwerkt.nl",
+        "status": "false",
+        "note": "Deze informatie komt van de officiële website van de gemeente Oldebroek (www.oldebroek.nl) en niet van moorwerkt.nl"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 2,
+    "invalid_urls": 4,
+    "accuracy_percentage": 33.3,
+    "valid_urls_list": [
+      "https://www.oldebroek.nl/Inwoners/Bouwen_en_verbouwen/Boom_kappen/Wel_of_geen_vergunning_voor_bomenkap",
+      "https://www.oldebroek.nl/Inwoners/Bouwen_en_verbouwen/Omgevingsvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.oldebroek.nl/Inwoners/Vergunningen/Evenement_organiseren/Toelichting_bij_vergunningsplichtige_evenementen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.oldebroek.nl/Inwoners/Vergunningen/Kabels_en_leidingen_plaatsen_in_openbare_grond",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.oldebroek.nl/Inwoners/Vergunningen/Tijdelijke_reclame_plaatsen_voor_een_evenement",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.moorwerkt.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Geen specifieke informatie over tijdelijke reclame gevonden in de geciteerde bronnen",
+          "original_reference": "Reclame mag maximaal 14 dagen aaneengesloten aanwezig zijn en niet periodiek herhaald worden.",
+          "note": "De geciteerde bronnen bevatten geen informatie over tijdelijke reclameborden of de genoemde 14-dagen regel. Dit kan niet geverifieerd worden met de beschikbare bronnen.",
+          "source_urls": [
+            "https://www.oldebroek.nl/Inwoners/Vergunningen/Tijdelijke_reclame_plaatsen_voor_een_evenement",
+            "https://www.oldebroek.nl/Inwoners/Vergunningen/Evenement_organiseren/Toelichting_bij_vergunningsplichtige_evenementen"
+          ]
+        }
+      ]
+    },
+    "summary": "De beschikbare bronnen bevatten niet voldoende informatie om de meeste claims uit de originele tekst te verifiëren. De belangrijkste pagina over tijdelijke reclame lijkt niet volledig toegankelijk in de geciteerde bronnen. Voor een complete verificatie zou toegang tot de specifieke pagina over tijdelijke reclame nodig zijn."
+  }
+}

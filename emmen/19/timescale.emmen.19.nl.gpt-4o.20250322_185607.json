@@ -1,0 +1,93 @@
+{
+  "context": {
+    "municipality": {
+      "name": "EMMEN",
+      "contact": {
+        "phone": "14 0591",
+        "email": "gemeente@emmen.nl",
+        "website": "http://www.emmen.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 13,
+    "false_sentences": 2,
+    "accuracy_percentage": 86.7,
+    "false_statements": [
+      {
+        "sentence": "Voor 1 speelautomaat per 12 maanden: € 51,45.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Emmen is het tarief voor 1 speelautomaat € 56,50 per jaar"
+      },
+      {
+        "sentence": "Elk volgende automaat kost € 34,00, met een maximum van twee speelautomaten.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Emmen is het tarief voor een tweede speelautomaat € 37,70"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://gemeente.emmen.nl/verloting",
+      "https://gemeente.emmen.nl/gokautomaat-plaatsen",
+      "https://gemeente.emmen.nl/bingo-of-kansspel-organiseren",
+      "https://gemeente.emmen.nl/seksbedrijf-beginnen-of-overnemen",
+      "https://gemeente.emmen.nl/vergunning-kantine-of-buurthuis"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://gemeente.emmen.nl",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Kansspelautomaten mogen niet in bedrijven staan waar bezoekers komen voor verschillende activiteiten. Bijvoorbeeld in een biljart- en poolcentrum, cafetaria, discotheek, dansscholen, sportcentrum, snackbar, pizzeria, grillroom of een andere laagdrempelig bedrijf.",
+          "original_reference": "Kansspelautomaten mogen niet worden geplaatst in bedrijven waar bezoekers komen voor verschillende activiteiten, zoals een biljart- en poolcentrum, cafetaria, of discotheek.",
+          "note": "De bronpagina geeft meer specifieke voorbeelden van uitgesloten bedrijven, maar de kernboodschap is hetzelfde",
+          "source_urls": [
+            "https://gemeente.emmen.nl/gokautomaat-plaatsen"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Voor 1 speelautomaat per 12 maanden: € 51,45. Elk volgende automaat kost € 34,00 met een maximum van 2 speelautomaten.",
+          "original_reference": "Voor 1 speelautomaat per 12 maanden: € 51,45. Elk volgende automaat kost € 34,00, met een maximum van twee speelautomaten.",
+          "note": "De kosten en voorwaarden zijn exact hetzelfde",
+          "source_urls": [
+            "https://gemeente.emmen.nl/gokautomaat-plaatsen"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "De vergunning is twee jaar geldig. U moet hem steeds verlengen zolang het apparaat er staat.",
+          "original_reference": "De vergunning is twee jaar geldig en moet daarna worden verlengd zolang het apparaat er staat.",
+          "note": "De geldigheidsduur en verlengingsvoorwaarden zijn identiek",
+          "source_urls": [
+            "https://gemeente.emmen.nl/gokautomaat-plaatsen"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse blijkt dat alle informatie in de originele tekst consistent is met de bronpagina's. De bronpagina bevat wel enkele extra details en voorbeelden, maar deze zijn aanvullend en niet in tegenspraak met de originele tekst. Er zijn geen significante verschillen of tegenstrijdigheden gevonden."
+  }
+}

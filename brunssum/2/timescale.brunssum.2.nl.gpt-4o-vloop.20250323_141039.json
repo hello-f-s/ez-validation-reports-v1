@@ -1,0 +1,81 @@
+{
+  "context": {
+    "municipality": {
+      "name": "BRUNSSUM",
+      "contact": {
+        "phone": "(045) 527 85 55",
+        "email": "gemeente@brunssum.nl",
+        "website": "http://www.brunssum.nl"
+      }
+    },
+    "service": {
+      "id": 2,
+      "name": "Bord of spandoek plaatsen aan de openbare weg"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "Voor bedrijven: Aanvraagt met eHerkenning niveau 2.",
+        "status": "false",
+        "note": "Dit bevat een spelfout ('Aanvraagt' moet 'Aanvraag' zijn) en volgens de officiële website van gemeente Brunssum is eHerkenning niveau 3 vereist voor bedrijven, niet niveau 2."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 3,
+    "invalid_urls": 2,
+    "accuracy_percentage": 60.0,
+    "valid_urls_list": [
+      "https://www.brunssum.nl/ondernemer/Reclame_maken/reclame_driehoeksborden",
+      "https://www.brunssum.nl/bestuur_en_organisatie/over_deze_website/Digitale_formulieren/Aanvragen_vergunning_plaatsen_reclame_driehoeksborden",
+      "https://www.brunssum.nl/inwoner/verkeer/Plaatsen_van_voorwerpen_op_of_aan_de_weg"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.brunssum.nl/bestuur_en_organisatie/over_deze_website/Digitale_formulieren/Aanvragen_vergunning_ophangen_spandoeken",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.brunssum.nl/bestuur_en_organisatie/over_deze_website/Digitale_formulieren/Aanvragen_vergunning_voor_plaatsen_van_voorwerpen_op_of_aan_de_weg_inloggen_met_DigiD_of_eHerkenning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "De vergunning voor reclame driehoeksborden moet minstens 21 dagen voor de plaatsing digitaal worden aangevraagd.",
+          "original_reference": "De vergunning voor reclame driehoeksborden moet minstens 21 dagen voor de plaatsing digitaal worden aangevraagd.",
+          "note": "De aanvraagtermijn van 21 dagen komt exact overeen in beide bronnen",
+          "source_urls": [
+            "https://www.brunssum.nl/ondernemer/Reclame_maken/reclame_driehoeksborden"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Kosten voor de vergunning voor reclame driehoeksborden bedragen € 134,45",
+          "original_reference": "Kosten voor de vergunning voor reclame driehoeksborden bedragen € 134,45",
+          "note": "De vermelde kosten zijn identiek in beide bronnen",
+          "source_urls": [
+            "https://www.brunssum.nl/bestuur_en_organisatie/over_deze_website/Digitale_formulieren/Aanvragen_vergunning_plaatsen_reclame_driehoeksborden"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse van de beschikbare bronnen zijn er geen significante verschillen of tegenstrijdigheden gevonden tussen de originele inhoud en de bronpagina's. De kerngegevens zoals aanvraagtermijnen, kosten en voorwaarden komen overeen. Wel valt op dat de bronpagina's beperkte informatie bevatten, waardoor niet alle details uit de originele tekst geverifieerd konden worden."
+  }
+}

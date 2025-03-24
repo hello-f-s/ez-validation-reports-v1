@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ROERMOND",
+      "contact": {
+        "phone": "14 0475",
+        "email": "mail@roermond.nl",
+        "website": "http://www.roermond.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Meer informatie over de digitale ontvangst in de Berichtenbox is beschikbaar vanaf 22 mei 2024.",
+        "status": "false",
+        "note": "Deze specifieke datum wordt niet vermeld op de officiële website van gemeente Roermond en er is geen bevestiging van deze toekomstige implementatiedatum voor digitale ontvangst in de Berichtenbox."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.roermond.nl/aanvraag-bouwtekening-bouwdossier-of-dossier-omgevingsvergunning",
+      "https://www.roermond.nl/omgevingsvergunning",
+      "https://www.roermond.nl/verklaring-omtrent-het-gedrag-vog",
+      "https://www.roermond.nl/alcoholwetvergunning",
+      "https://www.roermond.nl/parkeervergunning-voor-bedrijven-zorginstellingen-en-non-profit-instellingen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://metadata-url",
+        "reason": "INVALID: Error scraping https://metadata-url: HTTPSConnectionPool(host='metadata-url', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x103e0f250>: Failed to resolve 'metadata-url' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Twee tot vier weken na de aanvraag krijgt u de VOG per post thuisgestuurd van Dienst Justis",
+          "original_reference": "Twee tot vier weken na de aanvraag ontvangt u de VOG per post van Dienst Justis",
+          "note": "De verwerkingstijd van 2-4 weken komt exact overeen",
+          "source_urls": [
+            "https://www.roermond.nl/verklaring-omtrent-het-gedrag-vog"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het standaard online formulier VOG NP blijft leidend en beschikbaar. Nu komen daar de volgende formulieren bij: Online formulier VOG NP Kinderopvang; Online formulier VOG NP Onderwijs; Online formulier VOG NP Taxi; Online formulier VOG NP Visum",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over de verschillende specifieke VOG-formulieren die beschikbaar zijn voor verschillende sectoren",
+          "source_urls": [
+            "https://www.roermond.nl/verklaring-omtrent-het-gedrag-vog"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vraagt u voor een bedrijf of instelling een VOG aan? Gebruik dan het aanvraagformulier VOG Rechtspersonen van Dienst Justis",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist informatie over de specifieke procedure voor het aanvragen van een VOG voor rechtspersonen",
+          "source_urls": [
+            "https://www.roermond.nl/verklaring-omtrent-het-gedrag-vog"
+          ]
+        }
+      ]
+    },
+    "summary": "De broninhoud komt grotendeels overeen met de originele tekst, maar bevat belangrijke aanvullende informatie over specifieke VOG-formulieren voor verschillende sectoren (kinderopvang, onderwijs, taxi, visum) en de procedure voor rechtspersonen die in de originele tekst ontbreekt. De verwerkingstijden en algemene procedures zijn consistent tussen beide versies."
+  }
+}

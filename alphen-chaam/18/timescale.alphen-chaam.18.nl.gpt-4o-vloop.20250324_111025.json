@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ALPHEN-CHAAM",
+      "contact": {
+        "phone": "14013",
+        "email": "info@alphen-chaam.nl",
+        "website": "http://www.alphen-chaam.nl"
+      }
+    },
+    "service": {
+      "id": 18,
+      "name": "Ventvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor het verkrijgen van een horecavergunning bedragen €178,95.",
+        "status": "false",
+        "note": "Dit bedrag is onjuist. Volgens de legesverordening van gemeente Alphen-Chaam voor 2024 bedragen de kosten voor een horecavergunning €1.030,00."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.alphen-chaam.nl/vergunningen-en-ontheffingen/vergunningen-en-ontheffingen-voor-ondernemers",
+      "https://www.alphen-chaam.nl/ondernemen/vergunningen-en-ontheffingen-voor-ondernemers",
+      "https://www.alphen-chaam.nl/horecavergunning",
+      "https://www.alphen-chaam.nl/omgevingsvergunning",
+      "https://www.alphen-chaam.nl/woo"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Slijterijen",
+          "original_reference": "Het Bibob-onderzoek wordt niet uitgevoerd voor aanvragen van slijterijen of paracommerciële instellingen.",
+          "note": "De originele tekst stelt dat slijterijen zijn uitgezonderd van Bibob-onderzoek, maar in de bronpagina worden slijterijen expliciet genoemd als vergunningplichtig zonder uitzondering voor Bibob-onderzoek.",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/horecavergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De vergunning geldt voor het adres waarvoor u deze aanvraagt. De vergunning geldt voor de ondernemer op wie zijn naam u deze aanvraagt.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat belangrijke aanvullende informatie over de geldigheid van de vergunning die niet in de originele tekst staat vermeld.",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/horecavergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Verbouwt u een horecabedrijf en deze voldoet niet meer aan de vergunning die u heeft. Of u wilt een andere persoon toevoegen aan de vergunning dan vraagt u een nieuwe horecavergunning aan",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt specifieke situaties waarin een nieuwe vergunning moet worden aangevraagd, wat ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/horecavergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont enkele belangrijke verschillen tussen de originele tekst en de bronpagina's. De belangrijkste verschillen betreffen de behandeling van slijterijen in relatie tot Bibob-onderzoek, en het ontbreken van essentiële informatie over de geldigheid van vergunningen en situaties waarin een nieuwe vergunning moet worden aangevraagd. Deze informatie is wel beschikbaar op de officiële gemeentewebsite maar ontbreekt in de originele tekst."
+  }
+}

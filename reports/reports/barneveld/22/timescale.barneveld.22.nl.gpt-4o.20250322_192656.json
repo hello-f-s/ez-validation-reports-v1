@@ -1,0 +1,96 @@
+{
+  "context": {
+    "municipality": {
+      "name": "BARNEVELD",
+      "contact": {
+        "phone": "14 0342",
+        "email": "info@barneveld.nl",
+        "website": "http://www.barneveld.nl"
+      }
+    },
+    "service": {
+      "id": 22,
+      "name": "Woonruimte splitsen of samenvoegen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 9,
+    "true_sentences": 7,
+    "false_sentences": 2,
+    "accuracy_percentage": 77.8,
+    "false_statements": [
+      {
+        "sentence": "Kosten zijn afhankelijk van de specifieke aanvraag en er is geen specifieke informatie over te vinden.",
+        "status": "false",
+        "note": "De gemeente Barneveld publiceert wel degelijk specifieke legeskosten voor omgevingsvergunningen in hun legesverordening. Deze zijn te vinden op de gemeentelijke website."
+      },
+      {
+        "sentence": "Er is geen specifiek proces voor bezwaren vermeld op deze aanvraag in de beschikbare informatie.",
+        "status": "false",
+        "note": "De gemeente Barneveld heeft wel een duidelijk bezwaarprocedure. Binnen 6 weken na het besluit kan bezwaar worden ingediend. Deze informatie staat op de gemeentelijke website bij vergunningen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 4,
+    "invalid_urls": 2,
+    "accuracy_percentage": 66.7,
+    "valid_urls_list": [
+      "https://www.barneveld.nl/bouwen-wonen-en-verhuizen/omgevingsvergunning/omgevingsvergunning-aanvragen",
+      "https://www.barneveld.nl/vergunningen-en-ontheffingen/horeca/exploitatievergunning-aanvragen",
+      "https://www.barneveld.nl/ondernemen/aanbestedingen",
+      "https://www.barneveld.nl/bouwen-wonen-en-verhuizen/wonen/het-gebruik-van-een-woning-veranderen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.barneveld.nl/bouwen-wonen-en-verhuizen/omgevingsvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.example.com",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bij een eenvoudige aanvraag ontvangt u meestal binnen 8 weken een besluit. Bij een uitgebreide aanvraag ontvangt u meestal binnen 6 maanden een besluit. Een verlenging van 6 weken is mogelijk.",
+          "original_reference": "Er is geen specifieke informatie over de verwerkingsduur van deze aanvragen beschikbaar.",
+          "note": "De bron specificeert concrete verwerkingstijden (8 weken voor eenvoudige aanvragen, 6 maanden voor uitgebreide aanvragen, met mogelijke verlenging van 6 weken) terwijl dit in de originele tekst ontbreekt.",
+          "source_urls": [
+            "https://www.barneveld.nl/bouwen-wonen-en-verhuizen/omgevingsvergunning/omgevingsvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Er gelden regels voor de grootte van een kamer: De minimale grootte voor de te verhuren woonruimte is 18 m² gebruiksoppervlakte (GBO). Voor de huisvesting van een arbeidsmigrant is de minimale gebruiksoppervlakte 12 m².",
+          "original_reference": "No matching information",
+          "note": "De bron vermeldt specifieke minimale oppervlakte-eisen voor kamerverhuur die niet in de originele tekst staan.",
+          "source_urls": [
+            "https://www.barneveld.nl/bouwen-wonen-en-verhuizen/wonen/het-gebruik-van-een-woning-veranderen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor een vergunningsaanvraag betaalt u kosten. Deze kosten verschillen per aanvraag.",
+          "original_reference": "Kosten zijn afhankelijk van de specifieke aanvraag en er is geen specifieke informatie over te vinden.",
+          "note": "De bron bevestigt dat er kosten zijn voor de aanvraag, maar is specifieker in de formulering dan de originele tekst.",
+          "source_urls": [
+            "https://www.barneveld.nl/bouwen-wonen-en-verhuizen/omgevingsvergunning/omgevingsvergunning-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie die ontbreekt in de originele tekst, met name over concrete verwerkingstijden voor aanvragen, specifieke oppervlakte-eisen voor kamerverhuur en een duidelijkere formulering over de kosten. Deze informatie maakt de voorwaarden en procedures concreter dan in de originele tekst."
+  }
+}

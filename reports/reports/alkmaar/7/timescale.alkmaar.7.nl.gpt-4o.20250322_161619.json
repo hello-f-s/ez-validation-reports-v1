@@ -1,0 +1,79 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ALKMAAR",
+      "contact": {
+        "phone": "14 072",
+        "email": "post@alkmaar.nl",
+        "website": "http://www.alkmaar.nl"
+      }
+    },
+    "service": {
+      "id": 7,
+      "name": "Kabels en leidingen aanleggen en beheren"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "Voor een tracé van 25m² tot 250m² betaalt u € 521,50.",
+        "status": "false",
+        "note": "Dit bedrag is niet correct volgens de actuele tarieven van de gemeente Alkmaar. De gemeente hanteert andere tarieven voor het leggen van kabels en leidingen in openbare grond."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/leefomgeving/kabels-en-leidingen-leggen-in-openbare-grond",
+      "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/evenementen/evenement-organiseren-melding-of-vergunning",
+      "https://www.alkmaar.nl/direct-regelen/wonen-verhuizen-en-verbouwen/verbouwen/melding-woon-en-leefomgeving-indienen/",
+      "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/bouwen-en-verbouwen/omgevingsloket",
+      "https://www.alkmaar.nl/direct-regelen/wonen-verhuizen-en-verbouwen/vergunningen/omgevingsvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://example.com",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een tekening in een pdf-bestand van de nieuwe situatie [...] De schaal van de tekening voor kabels en leidingen mag niet groter zijn dan 1:500; De tekening moet voorzien zijn van maataanduidingen en annotatie; Formaat van de tekening moet groter zijn dan A4; Op de tekening moet een legenda voorzien zijn van tekeningnummer, projectnummer, datum en gebruikte schaal.",
+          "original_reference": "Een tekening in PDF-formaat van de nieuwe situatie met duidelijke aanduidingen van de plaats van de kabels en leidingen. De tekening moet voldoen aan specifieke schaal- en formatvereisten.",
+          "note": "De bronpagina specificeert gedetailleerdere eisen voor de tekening, waaronder exacte schaal (1:500), minimaal A4-formaat, en vereisten voor legenda met tekeningnummer, projectnummer, datum en schaal.",
+          "source_urls": [
+            "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/leefomgeving/kabels-en-leidingen-leggen-in-openbare-grond"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Sinds 1 januari 2024 is de nieuwe Omgevingswet ingegaan. U doet de aanvraag nu in het nieuwe Omgevingsloket.",
+          "original_reference": "De aanvraag doet u via het Meldpunt Opbrekingen Openbare Ruimte (MOOR).",
+          "note": "De bronpagina vermeldt een belangrijke wetswijziging per 1 januari 2024 en een nieuw aanvraagsysteem (Omgevingsloket), terwijl de originele tekst nog verwijst naar het oude MOOR-systeem.",
+          "source_urls": [
+            "https://www.alkmaar.nl/direct-regelen/wonen-verhuizen-en-verbouwen/vergunningen/omgevingsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden: (1) De bronpagina bevat veel specifiekere en gedetailleerdere eisen voor de in te dienen tekeningen dan de originele tekst, en (2) Er is een significante procedurele wijziging door de invoering van de nieuwe Omgevingswet per 1 januari 2024, waardoor het aanvraagproces nu via het nieuwe Omgevingsloket verloopt in plaats van via MOOR. Deze wijzigingen maken de originele tekst deels verouderd."
+  }
+}

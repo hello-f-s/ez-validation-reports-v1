@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ALKMAAR",
+      "contact": {
+        "phone": "14 072",
+        "email": "post@alkmaar.nl",
+        "website": "http://www.alkmaar.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 25,
+    "false_sentences": 3,
+    "accuracy_percentage": 89.3,
+    "false_statements": [
+      {
+        "sentence": "Een evenement tot 500 bezoekers kost € 27,08.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Alkmaar bedragen de legeskosten voor een evenement tot 500 bezoekers € 28,20 in 2024."
+      },
+      {
+        "sentence": "Een evenement met meer dan 500 bezoekers kost € 191,80.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Alkmaar bedragen de legeskosten voor een evenement met meer dan 500 bezoekers € 199,45 in 2024."
+      },
+      {
+        "sentence": "Er zijn geen specifieke procedures voor het indienen van bezwaren vermeld in de beschikbare informatie.",
+        "status": "false",
+        "note": "Op de website van gemeente Alkmaar staat wel degelijk informatie over bezwaarprocedures. Men kan binnen 6 weken na het besluit bezwaar maken via de officiële bezwaarprocedure."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/evenementen/evenement-organiseren-melding-of-vergunning",
+      "https://www.alkmaar.nl/direct-regelen/ondernemen/vergunningen-en-ontheffingen/exploitatievergunning/",
+      "https://www.alkmaar.nl/direct-regelen/wonen-verhuizen-en-verbouwen/vergunningen/omgevingsvergunning",
+      "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/horeca/drank-en-horecawet-vergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/reclame-maken/buurtfeest-of-buurtbarbecue-melding-en-vergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Evenementenkalender 2025 is een pdf-bestand met alle geplande evenementen in de gemeente",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over een evenementenkalender 2025, wat een belangrijk hulpmiddel is voor evenementplanners",
+          "source_urls": [
+            "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/evenementen/evenement-organiseren-melding-of-vergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "uitvoeringsregels evenementen (pdf, 2MB), informatie gebruik statiegeldbekers (pdf, 57kB)",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt specifieke documentatie over uitvoeringsregels en statiegeldbekers die niet genoemd worden in de originele tekst",
+          "source_urls": [
+            "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/evenementen/evenement-organiseren-melding-of-vergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De broninhoud bevat enkele aanvullende elementen die niet in de originele tekst voorkomen, met name de beschikbaarheid van een evenementenkalender 2025 en specifieke documentatie over uitvoeringsregels en statiegeldbekers. Deze informatie kan waardevol zijn voor evenementorganisatoren maar verandert de kernprocedures en vereisten niet wezenlijk."
+  }
+}

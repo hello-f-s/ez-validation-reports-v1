@@ -1,0 +1,76 @@
+{
+  "context": {
+    "municipality": {
+      "name": "EDE",
+      "contact": {
+        "phone": "14 0318",
+        "email": "info@ede.nl",
+        "website": "http://www.ede.nl"
+      }
+    },
+    "service": {
+      "id": 16,
+      "name": "Registreren in het Landelijk Register Kinderopvang (LRK)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 9,
+    "false_sentences": 2,
+    "accuracy_percentage": 81.8,
+    "false_statements": [
+      {
+        "sentence": "Het aanvragen van de benodigde vergunningen kan 26 weken in beslag nemen.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Ede duurt de behandeling van een aanvraag voor registratie in het LRK maximaal 10 weken, niet 26 weken."
+      },
+      {
+        "sentence": "Zodra u de vergunningen heeft, vraagt u toestemming aan bij de gemeente Ede door het digitale formulier in te dienen.",
+        "status": "false",
+        "note": "De aanvraag moet worden ingediend via het landelijke portaal DUO, niet via een digitaal formulier van de gemeente Ede zelf."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.ede.nl/aanvragen-en-regelen/bouw-en-verbouwvergunning-voor-bedrijven",
+      "https://www.ede.nl/aanvragen-en-regelen/registratie-levenloos-geboren-kind-in-brp",
+      "https://www.ede.nl",
+      "https://www.ede.nl/aanvragen-en-regelen/kind-erkennen",
+      "https://www.ede.nl/ondersteuning-werk-inkomen/inkomensregelingen-kinderen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.ede.nl/aanvragen-en-regelen/kinderopvang-starten",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Er is geen directe informatie over LRK-registratie voor kindcentra op de geciteerde bronpagina's",
+          "original_reference": "Om uw kindcentrum in de gemeente Ede te registreren in het Landelijk Register Kinderopvang (LRK), moet u aan verschillende voorwaarden voldoen",
+          "note": "De originele tekst beschrijft een LRK-registratieproces, maar dit proces wordt niet teruggevonden in de geciteerde bronpagina's. Dit suggereert dat de informatie mogelijk op een andere, niet-geciteerde pagina staat of verouderd is.",
+          "source_urls": [
+            "https://www.ede.nl/aanvragen-en-regelen/kinderopvang-starten",
+            "https://www.ede.nl/ondersteuning-werk-inkomen/inkomensregelingen-kinderen"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont aan dat er een significant verschil is tussen de originele inhoud en de beschikbare bronnen. De originele tekst beschrijft een specifiek proces voor LRK-registratie van kindcentra, maar deze informatie is niet terug te vinden in de geciteerde bronpagina's. Dit kan betekenen dat de informatie mogelijk op andere pagina's staat of dat de originele content verouderd is. Voor een accurate vergelijking zou toegang tot de specifieke pagina over kinderopvang starten nodig zijn."
+  }
+}

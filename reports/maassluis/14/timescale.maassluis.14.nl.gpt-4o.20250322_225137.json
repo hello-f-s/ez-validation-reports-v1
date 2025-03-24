@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MAASSLUIS",
+      "contact": {
+        "phone": "14 010",
+        "email": "gemeente@maassluis.nl",
+        "website": "http://www.maassluis.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 10,
+    "false_sentences": 1,
+    "accuracy_percentage": 90.9,
+    "false_statements": [
+      {
+        "sentence": "Een kopie van deel Ia en Ib van het kentekenbewijs.",
+        "status": "false",
+        "note": "Deze informatie is verouderd. Sinds 2014 is het kentekenbewijs vervangen door de kentekencard. Er moet nu een kopie van de kentekencard worden aangeleverd in plaats van deel Ia en Ib van het kentekenbewijs."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.maassluis.nl/voorwerp-plaatsen-op-of-aan-de-weg",
+      "https://www.maassluis.nl/standplaats-aanvragen",
+      "https://www.maassluis.nl/parkeren-van-grote-voertuigen",
+      "https://www.maassluis.nl/uitrit-of-inrit-aanleggen",
+      "https://www.maassluis.nl/ontheffing-parkeren-parkeerschijf-zone"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://gemeente.maassluis.nl",
+        "reason": "INVALID: Error scraping https://gemeente.maassluis.nl: HTTPSConnectionPool(host='gemeente.maassluis.nl', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x103b3b110>: Failed to resolve 'gemeente.maassluis.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "In 2025 zal het beleid van parkeerontheffingen opnieuw bekeken worden. Dit kan leiden tot wijzigingen. Daarom kan het gebeuren dat in 2026 geen parkeerontheffing voor een parkeerplaats wordt verleend, terwijl dat eerder wel het geval was.",
+          "original_reference": "No matching information",
+          "note": "De bron bevat belangrijke informatie over toekomstige beleidswijzigingen in 2025/2026 die niet in de originele tekst staat vermeld. Dit is essentiële informatie voor aanvragers.",
+          "source_urls": [
+            "https://www.maassluis.nl/ontheffing-parkeren-parkeerschijf-zone"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "In deze parkeerschijfzones mag men op donderdag en zaterdag van 9.00 tot en met 17.00 uur en vrijdag van 9.00 tot en met 21.00 uur niet langer dan tweeënhalf uur achter elkaar geparkeerd staan.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de specifieke tijden en dagen waarop de parkeerschijfzone van kracht is. Dit zijn belangrijke details voor gebruikers.",
+          "source_urls": [
+            "https://www.maassluis.nl/ontheffing-parkeren-parkeerschijf-zone"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "€ 31,10",
+          "original_reference": "€ 31,05",
+          "note": "Er is een klein verschil in de vermelde legeskosten tussen de bronnen (€ 31,10) en de originele tekst (€ 31,05).",
+          "source_urls": [
+            "https://www.maassluis.nl/standplaats-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen aanvullende informatie over aanstaande beleidswijzigingen in 2025/2026, specifieke tijden voor de parkeerschijfzone die ontbreken in de originele tekst, en een klein verschil in de vermelde legeskosten. Met name de informatie over toekomstige beleidswijzigingen is essentieel voor aanvragers om een weloverwogen beslissing te kunnen nemen."
+  }
+}

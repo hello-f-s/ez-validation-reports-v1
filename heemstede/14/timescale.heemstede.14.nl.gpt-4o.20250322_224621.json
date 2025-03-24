@@ -1,0 +1,93 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HEEMSTEDE",
+      "contact": {
+        "phone": "(023) 548 58 68",
+        "email": "gemeente@heemstede.nl",
+        "website": "http://www.heemstede.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 10,
+    "false_sentences": 2,
+    "accuracy_percentage": 83.3,
+    "false_statements": [
+      {
+        "sentence": "De regels voor recreatievoertuigen zijn dat deze maximaal 3 dagen achtereen in de gemeente mogen staan.",
+        "status": "false",
+        "note": "Volgens de gemeente Heemstede mogen recreatievoertuigen maximaal 5 dagen achtereen op de openbare weg staan, niet 3 dagen."
+      },
+      {
+        "sentence": "Werk/bezoek (ondernemers, werkgevers, per kalenderjaar): € 64,75",
+        "status": "false",
+        "note": "Het actuele tarief voor een werk/bezoekersvergunning in Heemstede is € 67,35 per kalenderjaar (2024), niet € 64,75."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.heemstede.nl/aanvragen-en-regelen/parkeervergunning",
+      "https://www.heemstede.nl/vergunningen/standplaatsvergunning-aanvragen",
+      "https://www.heemstede.nl/vergunningen/evenementenvergunning",
+      "https://www.heemstede.nl/vergunningen/in-of-uitrit-aanleggen-omgevingsvergunning",
+      "https://www.heemstede.nl/zorg-werk-en-jeugd/gehandicaptenparkeerplaats"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://gemeenteheemstede.nl",
+        "reason": "INVALID: Error scraping https://gemeenteheemstede.nl: 439 Client Error: status code 439 for url: https://gemeenteheemstede.nl/"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Maximaal 5 werk/bezoek-vergunningen met digitaal aanmelden kenteken",
+          "original_reference": "Geen specificatie van maximum aantal vergunningen",
+          "note": "De originele tekst vermeldt geen maximum aantal vergunningen voor ondernemers, terwijl de bron specificeert dat er maximaal 5 werk/bezoek-vergunningen mogelijk zijn",
+          "source_urls": [
+            "https://www.heemstede.nl/aanvragen-en-regelen/parkeervergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bewoners (per kalenderjaar): € 32,40",
+          "original_reference": "Tijdelijke parkeervergunning (3 maanden geldig): € 32,40",
+          "note": "Er is een prijsverschil in de weergave: wat in de originele tekst als prijs voor een tijdelijke vergunning staat, wordt in de bron genoemd als jaartarief voor bewoners",
+          "source_urls": [
+            "https://www.heemstede.nl/aanvragen-en-regelen/parkeervergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bij parkeermeters (per uur): € 2,10",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt geen uurtarief voor parkeermeters, terwijl dit wel in de bron staat",
+          "source_urls": [
+            "https://www.heemstede.nl/aanvragen-en-regelen/parkeervergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen het maximum aantal vergunningen voor ondernemers (5) dat niet in de originele tekst staat vermeld, een verschil in de interpretatie van het tarief van €32,40 (tijdelijk vs. bewoners), en het ontbreken van het parkeermeter uurtarief in de originele tekst. Deze verschillen kunnen leiden tot verwarring bij aanvragers over de kosten en mogelijkheden van parkeervergunningen."
+  }
+}

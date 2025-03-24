@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "UTRECHT",
+      "contact": {
+        "phone": "(014) 030",
+        "email": "Gemeente@utrecht.nl",
+        "website": "http://www.utrecht.nl"
+      }
+    },
+    "service": {
+      "id": 8,
+      "name": "Marktvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 26,
+    "false_sentences": 2,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor het aanvragen van een marktvergunning bestaan uit een percentage van de totale kosten van uw bouw- of verbouwproject.",
+        "status": "false",
+        "note": "De kosten voor een marktvergunning in Utrecht zijn vaste tarieven en worden niet berekend als percentage van bouw- of verbouwkosten. De tarieven zijn vastgesteld in de legesverordening van de gemeente Utrecht."
+      },
+      {
+        "sentence": "Houd rekening met lokale regelgeving zoals de 25-graden-plusregeling voor terrassen, die bepaalt dat terrassen langer open mogen blijven bij temperaturen van 25 graden of hoger tussen 1 mei en 30 september.",
+        "status": "false",
+        "note": "De gemeente Utrecht heeft geen '25-graden-plusregeling' voor terrassen. De openingstijden van terrassen zijn vastgelegd in de APV en worden niet bepaald door de temperatuur."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.utrecht.nl/ondernemen/vergunningen-en-regels",
+      "https://www.utrecht.nl/ondernemen/vergunningen-en-regels/horecaloket",
+      "https://www.utrecht.nl/wonen-en-leven/bouwen-en-verbouwen/hebt-u-een-vraag-over-bouwplan-of-bedrijfsplan",
+      "https://www.utrecht.nl/ondernemen/vergunningen-en-regels/werkzaamheden-vergunning-aanvragen",
+      "https://www.utrecht.nl/wonen-en-leven/bouwen-en-verbouwen/u-wilt-bouwen-of-verbouwen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Doe de vergunningcheck op het omgevingsloket om te bepalen of u een vergunning nodig heeft",
+          "original_reference": "De aanvraag voor een marktvergunning kunt u indienen via het online loket van de gemeente Utrecht",
+          "note": "De originele tekst verwijst direct naar het online loket, terwijl de bronnen aangeven dat eerst een vergunningcheck moet worden gedaan via het omgevingsloket",
+          "source_urls": [
+            "https://www.utrecht.nl/wonen-en-leven/bouwen-en-verbouwen/u-wilt-bouwen-of-verbouwen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De gemeente neemt binnen 8 weken een beslissing over uw aanvraag",
+          "original_reference": "De gemeente Utrecht streeft ernaar om binnen 8 weken een beslissing te nemen",
+          "note": "De originele tekst spreekt over een streven, terwijl de bronnen een concrete termijn van 8 weken noemen",
+          "source_urls": [
+            "https://www.utrecht.nl/ondernemen/vergunningen-en-regels/werkzaamheden-vergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Stuur bijlagen mee, zodat wij u beter kunnen helpen. Denk aan foto's of schetsen van uw gewenste verbouwing",
+          "original_reference": "Bij uw aanvraag moet u specifieke documenten indienen, waaronder een gedetailleerde plattegrond, omgevingsschetsen en een beschrijving van uw werkzaamheden",
+          "note": "De bronnen zijn specifieker over het type bijlagen en noemen ook foto's als mogelijke documentatie",
+          "source_urls": [
+            "https://www.utrecht.nl/wonen-en-leven/bouwen-en-verbouwen/hebt-u-een-vraag-over-bouwplan-of-bedrijfsplan"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen het aanvraagproces (verplichte vergunningcheck vooraf), de beslissingstermijn (concrete termijn vs. streven) en de vereiste documentatie (meer specifieke details in de bronnen). De originele tekst lijkt op sommige punten minder precies of volledig te zijn dan de actuele informatie op de gemeentewebsite."
+  }
+}

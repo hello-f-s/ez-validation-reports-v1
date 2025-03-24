@@ -1,0 +1,103 @@
+{
+  "context": {
+    "municipality": {
+      "name": "S-HERTOGENBOSCH",
+      "contact": {
+        "phone": "(073) 615 51 55",
+        "email": "gemeente@s-hertogenbosch.nl",
+        "website": "http://www.s-hertogenbosch.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 9,
+    "false_sentences": 4,
+    "accuracy_percentage": 69.2,
+    "false_statements": [
+      {
+        "sentence": "Voor de aanvraag heeft u niets specifiek nodig gevraagd in de beschikbare documenten, maar het is gebruikelijk adresgegevens en informatie over het pand en de soort activiteiten te verzamelen.",
+        "status": "false",
+        "note": "Voor de aanvraag zijn specifieke documenten nodig, waaronder een geldig legitimatiebewijs, Verklaring Omtrent Gedrag (VOG), plattegrond van het pand en indien van toepassing een leidinggevende bijlage."
+      },
+      {
+        "sentence": "Voor het aanvragen van een exploitatievergunning moet u een afspraak maken met de gemeente 's-Hertogenbosch.",
+        "status": "false",
+        "note": "Een exploitatievergunning kan online worden aangevraagd via het digitale loket van de gemeente, een afspraak is niet verplicht."
+      },
+      {
+        "sentence": "De kosten voor de aanvraag van een exploitatievergunning kunt u vinden in de Legesverordening 's-Hertogenbosch 2025.",
+        "status": "false",
+        "note": "Er wordt verwezen naar een niet-bestaand jaartal (2025) voor de legesverordening."
+      },
+      {
+        "sentence": "Er zijn geen specifieke tijdslijnen voor het verwerken van een exploitatievergunning genoemd, maar gerelateerde vergunningen zoals terrasvergunningen kunnen bijvoorbeeld 12 weken duren wegens een verhoogd aantal aanvragen.",
+        "status": "false",
+        "note": "De gemeente hanteert een specifieke behandeltermijn van 8 weken voor een exploitatievergunning, met mogelijke verlenging van 8 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.s-hertogenbosch.nl/product/horecabedrijf/",
+      "https://www.s-hertogenbosch.nl/product/taxivergunning/",
+      "https://www.s-hertogenbosch.nl/product/omgevingsvergunning-wabo/",
+      "https://www.s-hertogenbosch.nl/ondernemer/",
+      "https://www.s-hertogenbosch.nl/product/loterij-en-bingo/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://s-hertogenbosch.nl",
+        "reason": "INVALID: Error scraping https://s-hertogenbosch.nl: HTTPSConnectionPool(host='s-hertogenbosch.nl', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1061df610>, 'Connection to s-hertogenbosch.nl timed out. (connect timeout=10)'))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een exploitatievergunning is in principe geldig voor onbepaalde tijd. Wijzigt de exploitatievorm, rechtsvorm of inrichting, dan moet u een nieuwe exploitatievergunning of een wijziging ervan aanvragen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de geldigheidsduur van de exploitatievergunning en de verplichting om bij wijzigingen een nieuwe vergunning aan te vragen.",
+          "source_urls": [
+            "https://www.s-hertogenbosch.nl/product/horecabedrijf/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Zonder een exploitatievergunning mag u uw horeca-inrichting niet openen en exploiteren.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet expliciet dat het verboden is om zonder exploitatievergunning een horeca-inrichting te openen en exploiteren.",
+          "source_urls": [
+            "https://www.s-hertogenbosch.nl/product/horecabedrijf/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U hebt in 's-Hertogenbosch naast een Alcoholwetvergunning ook een exploitatievergunning nodig.",
+          "original_reference": "als uw horecabedrijf geen alcohol schenkt, kunt u volstaan met alleen een exploitatievergunning.",
+          "note": "De bronpagina verduidelijkt dat bij alcoholverkoop beide vergunningen nodig zijn (Alcoholwet- én exploitatievergunning), terwijl de originele tekst alleen de situatie zonder alcohol beschrijft.",
+          "source_urls": [
+            "https://www.s-hertogenbosch.nl/product/horecabedrijf/"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten belangrijke aanvullende informatie over de geldigheidsduur van de exploitatievergunning, de verplichting bij wijzigingen, en het expliciete verbod op exploitatie zonder vergunning. Ook wordt duidelijker uitgelegd wanneer beide vergunningen (Alcoholwet- en exploitatievergunning) nodig zijn. Deze details ontbreken in de originele tekst."
+  }
+}

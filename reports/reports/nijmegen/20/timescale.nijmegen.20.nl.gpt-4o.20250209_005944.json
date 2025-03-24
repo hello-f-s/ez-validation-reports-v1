@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "NIJMEGEN",
+      "contact": {
+        "phone": "14 024",
+        "email": "gemeente@nijmegen.nl",
+        "website": "http://www.nijmegen.nl"
+      }
+    },
+    "service": {
+      "id": 20,
+      "name": "Vergunning voor seksbedrijf"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "Bij weigering of intrekking van de vergunning betaald u 25% van de kosten.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Nijmegen betaalt men bij weigering of intrekking van de vergunning 50% van de legeskosten, niet 25%."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.nijmegen.nl",
+      "https://www.nijmegen.nl/diensten/vergunningen/drank-en-horeca/alcoholvergunning/",
+      "https://www.nijmegen.nl/diensten/evenementen/schema-vergunningen-activiteiten/tekstversie/",
+      "https://www.nijmegen.nl/diensten/vergunningen/drank-en-horeca/vergunning-seksbedrijf/",
+      "https://www.nijmegen.nl/diensten/vergunningen/drank-en-horeca/beheer-exploitatievergunning/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.nijmegen.nl/diensten/vergunningen/informatiekraam-melden-of-vergunning/",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.nijmegen.nl\">Gemeente",
+        "reason": "INVALID: Error scraping https://www.nijmegen.nl\">Gemeente: HTTPSConnectionPool(host='www.nijmegen.nl%22%3egemeente', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1073ef250>: Failed to resolve 'www.nijmegen.nl%22%3egemeente' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Escortbedrijf: € 682,15\nSeksbedrijf met 1 werkruimte: € 1.423,70\nSeksbedrijf met meerdere werkruimtes: € 1.697,45\nAanpassing in de vergunning: € 273,75",
+          "original_reference": "Escortbedrijf: € 652,35\nSeksbedrijf met 1 werkruimte: € 1.361,50\nSeksbedrijf met meerdere werkruimtes: € 1.623,25\nAanpassing in de vergunning: € 261,80",
+          "note": "De tarieven in de bronpagina zijn hoger dan in de originele tekst. Dit wijst op een tariefwijziging.",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/vergunningen/drank-en-horeca/vergunning-seksbedrijf/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een vergunning is 5 jaar geldig",
+          "original_reference": "No matching information",
+          "note": "De geldigheidsduur van de vergunning (5 jaar) ontbreekt in de originele tekst maar staat wel in de bronpagina.",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/vergunningen/drank-en-horeca/vergunning-seksbedrijf/"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden: de tarieven zijn in de bronpagina hoger dan in de originele tekst, wat duidt op een tariefwijziging. Daarnaast ontbreekt in de originele tekst de belangrijke informatie dat de vergunning 5 jaar geldig is. De overige voorwaarden en procedures komen overeen met de originele tekst."
+  }
+}

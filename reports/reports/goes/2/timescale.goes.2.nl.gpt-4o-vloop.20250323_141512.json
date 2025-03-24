@@ -1,0 +1,78 @@
+{
+  "context": {
+    "municipality": {
+      "name": "GOES",
+      "contact": {
+        "phone": "14 0113",
+        "email": "stadskantoor@goes.nl",
+        "website": "http://www.goes.nl"
+      }
+    },
+    "service": {
+      "id": 2,
+      "name": "Bord of spandoek plaatsen aan de openbare weg"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor 2025 bedragen €341,00.",
+        "status": "false",
+        "note": "De genoemde kosten voor 2025 kunnen niet geverifieerd worden aangezien tarieven voor 2025 nog niet officieel zijn vastgesteld door de gemeente Goes."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.goes.nl/vergunning-spandoeken",
+      "https://www.goes.nl/standplaats-aanvragen",
+      "https://www.goes.nl/terras-plaatsen",
+      "https://www.goes.nl/milieu-omgevingsvergunning-melding"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.goes.nl/reclame-plaatsen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "U heeft een vergunning nodig wanneer u (tijdelijke) spandoeken en/of vlaggenmasten wilt plaatsen bij een evenement of een activiteit. De vlaggenmasten dienen verrijdbaar te zijn. Maximaal dertig spandoeken bij een wielerwedstrijd en twintig bij overige evenementen en activiteiten. Vlaggenmasten maximaal tien stuks.",
+          "original_reference": "Een vergunning is nodig voor tijdelijke spandoeken en/of vlaggenmasten bij evenementen of activiteiten. Hiervoor gelden specifieke limieten: maximaal dertig spandoeken bij een wielerwedstrijd en twintig bij andere evenementen; maximaal tien verrijdbare vlaggenmasten zijn toegestaan.",
+          "note": "De informatie over aantallen toegestane spandoeken en vlaggenmasten komt exact overeen met de originele tekst.",
+          "source_urls": [
+            "https://www.goes.nl/vergunning-spandoeken"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Selecteer \"Vergunning ophangen spandoek\" in de Snelbalie Vergunningen.",
+          "original_reference": "Voor de aanvraag van een vergunning selecteert u \"Vergunning ophangen spandoek\" in de Snelbalie Vergunningen.",
+          "note": "De originele tekst bevat dubbele vermelding van deze informatie (onder 'Nodig voor aanvragen' en 'Aanvragen'), terwijl de bron dit slechts eenmaal vermeldt onder 'Start aanvraag'.",
+          "source_urls": [
+            "https://www.goes.nl/vergunning-spandoeken"
+          ]
+        }
+      ]
+    },
+    "summary": "De inhoud is grotendeels consistent met de bronnen. Het enige noemenswaardige verschil is dat de originele tekst dezelfde informatie over de Snelbalie Vergunningen onnodig herhaalt. De kernvoorwaarden, limieten en procedures komen overeen met de officiële bronpagina's."
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "context": {
+    "municipality": {
+      "name": "GRONINGEN",
+      "contact": {
+        "phone": "14 050",
+        "email": "info@groningen.nl",
+        "website": "http://gemeente.groningen.nl"
+      }
+    },
+    "service": {
+      "id": 15,
+      "name": "Vergunning of ontheffing voor straatartiesten"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 22,
+    "false_sentences": 2,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor een straatmuziekvergunning bedragen €56,48.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Groningen bedragen de legeskosten voor een straatmuziekvergunning €58,15 in 2024."
+      },
+      {
+        "sentence": "U kunt ook gebruikmaken van WhatsApp via 06 12 82 39 73.",
+        "status": "false",
+        "note": "Het correcte WhatsApp nummer van de gemeente Groningen is 06 12 82 39 76."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 4,
+    "invalid_urls": 2,
+    "accuracy_percentage": 66.7,
+    "valid_urls_list": [
+      "https://gemeente.groningen.nl/muziekvergunning-aanvragen",
+      "https://gemeente.groningen.nl/ontheffing-voor-3-of-meer-bedrijfsvoertuigen-op-de-stoep",
+      "https://gemeente.groningen.nl/omgevingsvergunning-aanvragen",
+      "https://gemeente.groningen.nl/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://gemeente.groningen.nl/gemeentegrond-tijdelijk-gebruiken",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://gemeente.groningen.nl/onttrekkingsvergunning-voor-bedrijfsdoeleinden-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Geef het minstens 2 weken van tevoren door.",
+          "original_reference": "De specifieke duur voor het verwerken van een vergunningaanvraag voor straatmuzikanten is niet vermeld",
+          "note": "De bron specificeert een minimale aanvraagtermijn van 2 weken, terwijl dit in de originele tekst niet wordt vermeld",
+          "source_urls": [
+            "https://gemeente.groningen.nl/muziekvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "pdf bestandAanvraagformulier straatmuziek26.87 kB",
+          "original_reference": "U heeft een ingevuld aanvraagformulier nodig voor straatmuziek",
+          "note": "De bron vermeldt specifiek een PDF-formulier met bestandsgrootte, wat extra detail geeft over het type aanvraagformulier",
+          "source_urls": [
+            "https://gemeente.groningen.nl/muziekvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Deze vergunning mag u slechts gebruiken van 09:00 uur (op zondagen vanaf 13:00 uur) tot 21:00 uur buiten de zomertijd. Tijdens de zomertijd tot 22:00 uur.",
+          "original_reference": "Als ondernemer kunt u straatmuziek laten horen van 09:00 uur (op zondagen vanaf 13:00 uur) tot 21:00 uur buiten de zomertijd. Tijdens de zomertijd tot 22:00 uur.",
+          "note": "De tijden voor straatmuziek komen exact overeen in beide bronnen",
+          "source_urls": [
+            "https://gemeente.groningen.nl/muziekvergunning-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de aanvraagtermijn (minimaal 2 weken vooraf) die niet in de originele tekst staat vermeld, en extra details over het aanvraagformulier (PDF-formaat). De overige voorwaarden en tijden komen grotendeels overeen. Er zijn geen significante tegenstrijdigheden gevonden in de kernvoorwaarden."
+  }
+}

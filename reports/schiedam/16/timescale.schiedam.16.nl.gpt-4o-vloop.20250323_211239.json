@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "SCHIEDAM",
+      "contact": {
+        "phone": "14 010",
+        "email": "contact@schiedam.nl",
+        "website": "http://www.schiedam.nl"
+      }
+    },
+    "service": {
+      "id": 16,
+      "name": "Registreren in het Landelijk Register Kinderopvang (LRK)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "Telefoonnummer: 14 010 (bereikbaar tussen 8.30 en 17.00)",
+        "status": "false",
+        "note": "Het telefoonnummer 14 010 van de gemeente Schiedam is bereikbaar van 8:00 tot 17:00 uur, niet vanaf 8:30 zoals vermeld."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.schiedam.nl/a-tot-z/kinderopvang",
+      "https://schiedam.nl/a-tot-z/kinderopvang",
+      "https://schiedam.nl/a-tot-z/levenloos-geboren-kind",
+      "https://www.schiedam.nl/a-tot-z/levenloos-geboren-kind",
+      "https://schiedam.nl/a-tot-z/kwijtschelding-kleine-ondernemers"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "In Schiedam zijn er verschillende mogelijkheden voor kinderopvang. Voor allerlei leeftijdsgroepen, maar ook voor verschillende momenten van de dag.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat specifieke informatie over de verschillende opvangmogelijkheden in Schiedam die niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.schiedam.nl/a-tot-z/kinderopvang"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Informeer altijd of u recht heeft op kinderopvangtoeslag. Ook als u geen werkgever heeft.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt expliciet dat men ook zonder werkgever mogelijk recht heeft op kinderopvangtoeslag, wat niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.schiedam.nl/a-tot-z/kinderopvang"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina bevat enkele aanvullende details die niet in de originele tekst staan, met name over de verschillende opvangmogelijkheden in Schiedam en de mogelijkheid van kinderopvangtoeslag voor mensen zonder werkgever. De kerninhoud en procedures komen verder overeen met de originele tekst."
+  }
+}

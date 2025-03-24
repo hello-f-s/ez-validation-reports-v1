@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ENSCHEDE",
+      "contact": {
+        "phone": "14 053",
+        "email": "postbus20@enschede.nl",
+        "website": "http://www.enschede.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "De gemeente Enschede heeft een standaardtermijn van 8 weken om een beslissing over uw aanvraag te nemen.",
+        "status": "false",
+        "note": "De standaardtermijn voor reguliere aanvragen is volgens de gemeente Enschede website inderdaad 8 weken, maar voor eenvoudige aanvragen geldt een kortere termijn van 2-3 weken. De zin is dus niet volledig accuraat omdat niet alle termijnen worden genoemd."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.enschede.nl/omgevingsplan",
+      "https://www.enschede.nl/milieuregels",
+      "https://www.enschede.nl/vergunning-voor-kamerverhuur",
+      "https://www.enschede.nl/omgevingsvergunning",
+      "https://www.enschede.nl/omgevingswet"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://enschede.nl",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Sinds 1 januari 2024 is er een nieuw landelijk online Omgevingsloket. Via het Omgevingsloket kunt u een vergunning aanvragen of een melding doen.",
+          "original_reference": "U kunt een aanvraag voor een omgevingsvergunning indienen via het online Omgevingsloket.",
+          "note": "De originele tekst vermeldt niet de belangrijke wijziging per 1 januari 2024 naar een nieuw landelijk Omgevingsloket systeem.",
+          "source_urls": [
+            "https://www.enschede.nl/omgevingswet"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Conceptverzoek: € 304,80",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de specifieke kosten voor een conceptverzoek van €304,80.",
+          "source_urls": [
+            "https://www.enschede.nl/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bij de aanvraag van een verhuurvergunning wordt een Bibob-onderzoek gedaan. Voeg een ingevuld formulier toe bij uw aanvraag van een verhuurvergunning.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist de belangrijke informatie over het verplichte Bibob-onderzoek bij bepaalde vergunningaanvragen.",
+          "source_urls": [
+            "https://www.enschede.nl/vergunning-voor-kamerverhuur"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten enkele belangrijke aanvullingen die niet in de originele tekst staan, waaronder de invoering van het nieuwe landelijke Omgevingsloket per 2024, specifieke kosten voor conceptverzoeken en de verplichting van een Bibob-onderzoek bij bepaalde vergunningen. Deze informatie is essentieel voor een complete en actuele beschrijving van de vergunningsprocedures."
+  }
+}

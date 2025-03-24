@@ -1,0 +1,100 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ERMELO",
+      "contact": {
+        "phone": "(0341) 56 73 21",
+        "email": "gemeente@ermelo.nl",
+        "website": "http://www.ermelo.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Vraag de ontheffing direct online aan door in te loggen met DigiD.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Ermelo kan een terrasvergunning niet direct online worden aangevraagd met DigiD. De aanvraag moet worden ingediend via een formulier dat kan worden gedownload van de gemeentelijke website of kan worden opgevraagd bij de gemeente."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 9,
+    "valid_urls": 5,
+    "invalid_urls": 4,
+    "accuracy_percentage": 55.6,
+    "valid_urls_list": [
+      "https://www.ermelo.nl/evenementen-en-horeca/horeca-en-alcohol",
+      "https://www.ermelo.nl/evenementen-en-horeca",
+      "https://www.ermelo.nl/evenementen-en-horeca/horeca-en-alcohol/terras-plaatsen",
+      "https://www.ermelo.nl/omgevingsplein/omgevingsloket/conceptverzoek-aanvragen",
+      "https://www.ermelo.nl/omgevingsplein/bouwen-en-verbouwen/dakopbouw"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.ermelo.nl/alcohol-en-horeca",
+        "reason": "INVALID: Error scraping https://www.ermelo.nl/alcohol-en-horeca: 404 Client Error: Not Found for url: https://www.ermelo.nl/alcohol-en-horeca"
+      },
+      {
+        "url": "https://www.ermelo.nl/terras-plaatsen\">Terras",
+        "reason": "INVALID: Error scraping https://www.ermelo.nl/terras-plaatsen\">Terras: 404 Client Error: Not Found for url: https://www.ermelo.nl/terras-plaatsen%22%3ETerras"
+      },
+      {
+        "url": "https://www.ermelo.nl/alcohol-en-horeca\">Alcohol",
+        "reason": "INVALID: Error scraping https://www.ermelo.nl/alcohol-en-horeca\">Alcohol: 404 Client Error: Not Found for url: https://www.ermelo.nl/alcohol-en-horeca%22%3EAlcohol"
+      },
+      {
+        "url": "https://www.ermelo.nl/terras-plaatsen",
+        "reason": "INVALID: Error scraping https://www.ermelo.nl/terras-plaatsen: 404 Client Error: Not Found for url: https://www.ermelo.nl/terras-plaatsen"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De kosten van uw aanvraag zijn € 63,70.",
+          "original_reference": "De kosten voor het aanvragen van een terrasvergunning zijn niet specifiek vermeld op de website van de gemeente Ermelo.",
+          "note": "De originele tekst vermeldt dat kosten niet specifiek vermeld zijn, terwijl de bron wel degelijk een specifiek bedrag van €63,70 noemt voor de aanvraag.",
+          "source_urls": [
+            "https://www.ermelo.nl/evenementen-en-horeca/horeca-en-alcohol/terras-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor het plaatsen van schermen, daken of vlonders, moet u misschien een aparte omgevingsvergunning aanvragen.",
+          "original_reference": "No matching information",
+          "note": "De bron vermeldt een belangrijke aanvullende voorwaarde over een mogelijke extra omgevingsvergunning voor specifieke terrasonderdelen die niet in de originele tekst staat.",
+          "source_urls": [
+            "https://www.ermelo.nl/evenementen-en-horeca/horeca-en-alcohol/terras-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Plaatst u (een gedeelte van) het terras op gemeentegrond? Neem dan contact op via 0341 56 73 21. Zij kunnen u informeren over de huur van de grond.",
+          "original_reference": "No matching information",
+          "note": "De bron bevat belangrijke aanvullende informatie over huur van gemeentegrond en bijbehorend contactnummer die niet in de originele tekst staat.",
+          "source_urls": [
+            "https://www.ermelo.nl/evenementen-en-horeca/horeca-en-alcohol/terras-plaatsen"
+          ]
+        }
+      ]
+    },
+    "summary": "De originele tekst mist enkele belangrijke details die wel in de bronnen staan: de specifieke kosten (€63,70), de mogelijke noodzaak van een extra omgevingsvergunning voor bepaalde terrasonderdelen, en informatie over de huur van gemeentegrond inclusief contactgegevens. Deze informatie is essentieel voor ondernemers die een terras willen plaatsen."
+  }
+}

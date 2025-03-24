@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AMERSFOORT",
+      "contact": {
+        "phone": "14 033",
+        "email": "info@amersfoort.nl",
+        "website": "http://www.amersfoort.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Na het indienen van een volledige aanvraag ontvang je binnen 8 weken een besluit over je aanvraag.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Amersfoort is de behandeltermijn voor een terrasvergunning maximaal 12 weken na ontvangst van een complete aanvraag, niet 8 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.amersfoort.nl/een-vergunning-aangevraagd-en-nu",
+      "https://www.amersfoort.nl/reclame",
+      "https://www.amersfoort.nl/terrasvergunning",
+      "https://www.amersfoort.nl/aanleggen",
+      "https://www.amersfoort.nl/exploitatie-horeca-inrichting"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://gemeente.amersfoort.nl",
+        "reason": "INVALID: Error scraping https://gemeente.amersfoort.nl: HTTPSConnectionPool(host='gemeente.amersfoort.nl', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x103e2b110>: Failed to resolve 'gemeente.amersfoort.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Is de vergunning verleend? Dan volgt een bezwaartermijn van 6 weken. Je mag wel meteen beginnen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de bezwaartermijn van 6 weken en de mogelijkheid om direct te starten na vergunningverlening. Dit is belangrijke aanvullende informatie voor aanvragers.",
+          "source_urls": [
+            "https://www.amersfoort.nl/reclame"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "nadere informatie over de wijze van opslag van het terrasmeubilair regulier, én bij vakantie, marktdagen, grootschalige evenementen etc.",
+          "original_reference": "Informatie over de wijze van opslag van het terrasmeubilair, inclusief bij vakantie of evenementen.",
+          "note": "De brontext specificeert expliciet dat ook informatie over opslag tijdens marktdagen moet worden aangeleverd, wat niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.amersfoort.nl/terrasvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "inclusief bestaande objecten in de openbare ruimte, denk aan bomen, lichtmasten, afvalbakken ect.",
+          "original_reference": "aanwezige objecten in de openbare ruimte",
+          "note": "De brontekst geeft specifieke voorbeelden van objecten die op de situatietekening moeten worden aangegeven (bomen, lichtmasten, afvalbakken), wat meer duidelijkheid biedt dan de algemene omschrijving in de originele tekst.",
+          "source_urls": [
+            "https://www.amersfoort.nl/terrasvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten enkele belangrijke aanvullende details die niet in de originele tekst staan, waaronder de bezwaartermijn van 6 weken, specifieke vereisten voor de situatietekening en extra details over de opslag van terrasmeubilair tijdens marktdagen. Deze informatie maakt de voorwaarden en vereisten duidelijker voor aanvragers."
+  }
+}

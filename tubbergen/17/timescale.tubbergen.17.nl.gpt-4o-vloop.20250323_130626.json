@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "TUBBERGEN",
+      "contact": {
+        "phone": "(0546) 62 80 00",
+        "email": "gemeente@tubbergen.nl",
+        "website": "http://www.tubbergen.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "In de gemeente Tubbergen hoeven horecaondernemers voor het plaatsen van een terras in de openbare ruimte geen specifieke ontheffing aan te vragen.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Tubbergen is wel degelijk een terrasvergunning nodig voor het plaatsen van een terras in de openbare ruimte. Deze vergunning moet worden aangevraagd bij de gemeente."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.tubbergen.nl/omgevingsvergunning-bouwen",
+      "https://www.tubbergen.nl/terrassenbeleid",
+      "https://www.tubbergen.nl/loterij",
+      "https://www.tubbergen.nl/alcoholvergunning",
+      "https://www.tubbergen.nl/aanvraag-evenementenvergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Hiervoor hoeft de ondernemer niet langer een ontheffing aan te vragen. [...] Daarnaast geeft de regeling de gemeente de mogelijkheid om in geval van ongewenste situaties handhavend op te treden.",
+          "original_reference": "In de gemeente Tubbergen hoeven horecaondernemers voor het plaatsen van een terras in de openbare ruimte geen specifieke ontheffing aan te vragen [...] Er kunnen door de gemeente handhavingsmaatregelen worden genomen in geval van ongewenste situaties",
+          "note": "De informatie over het niet nodig hebben van een ontheffing en de mogelijkheid tot handhaving komt overeen",
+          "source_urls": [
+            "https://www.tubbergen.nl/terrassenbeleid"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Maximaal 6 keer per jaar mag er muziekgeluid ten gehore worden gebracht op het terras. Hiervoor moet minimaal 2 weken van tevoren een melding incidentele festiviteiten worden gedaan.",
+          "original_reference": "ook (live) muziek te spelen, mits dit niet ten koste gaat van de veiligheid en bereikbaarheid",
+          "note": "De originele tekst vermeldt niet de specifieke beperking van maximaal 6 keer per jaar en de vereiste melding 2 weken vooraf voor muziek op het terras",
+          "source_urls": [
+            "https://www.tubbergen.nl/terrassenbeleid"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevestigen grotendeels de originele informatie, maar er is één belangrijk verschil gevonden met betrekking tot muziek op terrassen. Waar de originele tekst alleen algemeen vermeldt dat muziek is toegestaan, specificeren de bronnen dat dit maximaal 6 keer per jaar mag en dat hiervoor 2 weken van tevoren een melding moet worden gedaan. Dit is een belangrijke beperking die niet in de originele tekst wordt genoemd."
+  }
+}

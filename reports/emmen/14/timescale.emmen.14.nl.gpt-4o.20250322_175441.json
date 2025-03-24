@@ -1,0 +1,94 @@
+{
+  "context": {
+    "municipality": {
+      "name": "EMMEN",
+      "contact": {
+        "phone": "14 0591",
+        "email": "gemeente@emmen.nl",
+        "website": "http://www.emmen.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 19,
+    "false_sentences": 2,
+    "accuracy_percentage": 90.5,
+    "false_statements": [
+      {
+        "sentence": "Er zijn legeskosten van €37,25 voor de behandeling van de vergunningsaanvraag voor parkeervergunningen.",
+        "status": "false",
+        "note": "Het genoemde bedrag van €37,25 voor legeskosten is onjuist volgens de actuele tarieven van gemeente Emmen. Dit bedrag wordt niet vermeld op de officiële website."
+      },
+      {
+        "sentence": "De kosten voor parkeervergunningen variëren, zoals €318,00 voor een werkendenvergunning (P-Noord) en €477,80 voor een werkendenvergunning (Willinkplein).",
+        "status": "false",
+        "note": "De genoemde bedragen voor werkendenvergunningen (€318,00 en €477,80) komen niet overeen met de actuele tarieven op de website van gemeente Emmen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://gemeente.emmen.nl/parkeervergunning",
+      "https://gemeente.emmen.nl/woo-verzoek",
+      "https://gemeente.emmen.nl/parkeren-voor-bedrijven",
+      "https://gemeente.emmen.nl/verkeersontheffing-rvv",
+      "https://gemeente.emmen.nl/parkeren-voor-bewoners"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://gemeente.emmen.nl/",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Er kan maximaal 1 vergunning per adres worden aangevraagd [voor bewoners centrum]",
+          "original_reference": "U kunt maximaal 2 vergunningen per adres aanvragen",
+          "note": "De originele tekst vermeldt 2 vergunningen per adres, terwijl de bron specificeert dat centrumbewoners maximaal 1 vergunning per adres kunnen aanvragen. Voor het schilgebied geldt wel maximaal 2 vergunningen.",
+          "source_urls": [
+            "https://gemeente.emmen.nl/parkeren-voor-bewoners"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U heeft keuze uit een jaar- of kwartaalabonnement, met restitutie van niet gebruikte maanden bij beëindiging",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de mogelijkheid van jaar- of kwartaalabonnementen en de restitutieregeling bij beëindiging",
+          "source_urls": [
+            "https://gemeente.emmen.nl/parkeren-voor-bedrijven",
+            "https://gemeente.emmen.nl/parkeren-voor-bewoners"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De toezichthouder scant het kenteken en ziet of er een geldige vergunning is",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over het digitale controlesysteem middels kentekenscanning",
+          "source_urls": [
+            "https://gemeente.emmen.nl/parkeervergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen het maximum aantal vergunningen per adres (1 voor centrum, 2 voor schilgebied), de niet vermelde abonnementsvormen en restitutieregeling, en het ontbreken van informatie over het digitale controlesysteem in de originele tekst. Deze verschillen zijn significant voor de dienstverlening en gebruikersinformatie."
+  }
+}

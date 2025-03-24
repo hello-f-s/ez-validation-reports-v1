@@ -1,0 +1,91 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HAAKSBERGEN",
+      "contact": {
+        "phone": "(053) 573 45 67",
+        "email": "gemeente@haaksbergen.nl",
+        "website": "http://www.haaksbergen.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 9,
+    "true_sentences": 8,
+    "false_sentences": 1,
+    "accuracy_percentage": 88.9,
+    "false_statements": [
+      {
+        "sentence": "Voor de aanvraag van een alcoholvergunning kan gebruik worden gemaakt van specifieke aanvraagformulieren die beschikbaar zijn op de website van de Gemeente Haaksbergen.",
+        "status": "false",
+        "note": "De aanvraagformulieren voor een alcoholvergunning zijn niet direct beschikbaar op de website van de gemeente Haaksbergen. De aanvraag moet worden gedaan via het algemene digitale loket met DigiD of eHerkenning."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 4,
+    "invalid_urls": 2,
+    "accuracy_percentage": 66.7,
+    "valid_urls_list": [
+      "https://www.haaksbergen.nl/Vergunningen/Evenementenvergunning.html",
+      "https://www.haaksbergen.nl/ondernemers/Bedrijf-voeren/Horeca.html",
+      "https://www.haaksbergen.nl/Vergunningen/alcoholvergunning.html",
+      "https://www.haaksbergen.nl/Vergunningen/101107-Omgevingsvergunning.html"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.haaksbergen.nl/ondernemers/Ondernemend-Haaksbergen/Ondernemersplein.html",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://gemeentehaaksbergen.nl",
+        "reason": "INVALID: Error scraping https://gemeentehaaksbergen.nl: 439 Client Error: status code 439 for url: https://gemeentehaaksbergen.nl/"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Alcoholwet (voorheen Drank- en Horecawet)",
+          "original_reference": "Alcoholwet",
+          "note": "De originele tekst noemt alleen 'Alcoholwet' zonder de historische context dat dit voorheen de Drank- en Horecawet was, wat relevant kan zijn voor ondernemers die bekend zijn met de oude benaming.",
+          "source_urls": [
+            "https://www.haaksbergen.nl/Vergunningen/alcoholvergunning.html"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bibob-formulier (alleen voor commerciële horeca) met bijlagen",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat er een specifiek Bibob-formulier nodig is voor commerciële horeca, wat een belangrijk aanvullend vereiste is.",
+          "source_urls": [
+            "https://www.haaksbergen.nl/Vergunningen/alcoholvergunning.html"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wilt u weten of het pand waar u zich wil vestigen een horecabestemming heeft in het bestemmingsplan kijk dan op www.ruimtelijkeplannen.nl",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist de belangrijke voorwaarde dat het pand een horecabestemming moet hebben en waar dit gecontroleerd kan worden.",
+          "source_urls": [
+            "https://www.haaksbergen.nl/Vergunningen/alcoholvergunning.html"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten enkele belangrijke aanvullende vereisten die niet in de originele tekst staan, waaronder de verplichting van een Bibob-formulier voor commerciële horeca en de noodzaak om de horecabestemming van een pand te controleren. Ook wordt in de bronnen duidelijker context gegeven over de naamswijziging van de wet. Deze informatie is essentieel voor ondernemers die een alcoholvergunning willen aanvragen."
+  }
+}

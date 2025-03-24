@@ -1,0 +1,89 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MAASSLUIS",
+      "contact": {
+        "phone": "14 010",
+        "email": "gemeente@maassluis.nl",
+        "website": "http://www.maassluis.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 17,
+    "false_sentences": 2,
+    "accuracy_percentage": 89.5,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor een alcoholwetvergunning zijn € 28,90.",
+        "status": "false",
+        "note": "De actuele kosten voor een alcoholwetvergunning in Maassluis bedragen € 634,95 volgens de gemeentelijke legesverordening."
+      },
+      {
+        "sentence": "Voor wijzigingen in leidinggevenden bedragen de kosten € 32,25.",
+        "status": "false",
+        "note": "De actuele kosten voor het wijzigen van leidinggevenden op een alcoholwetvergunning in Maassluis bedragen € 158,75 volgens de gemeentelijke legesverordening."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.maassluis.nl",
+      "https://www.maassluis.nl/watervergunning",
+      "https://www.maassluis.nl/alcohol-schenken-tijdens-evenement",
+      "https://www.maassluis.nl/exploitatievergunning-horecabedrijf",
+      "https://www.maassluis.nl/alcoholwetvergunning",
+      "https://www.maassluis.nl/verklaring-omtrent-het-gedrag-vog"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De kosten voor een ontheffing artikel 35 Alcoholwet kost € 50,00",
+          "original_reference": "De kosten voor een alcoholwetvergunning zijn € 28,90. Voor wijzigingen in leidinggevenden bedragen de kosten € 32,25",
+          "note": "De kosten verschillen aanzienlijk tussen de originele tekst en de bronpagina. De bronpagina vermeldt andere bedragen voor de vergunning.",
+          "source_urls": [
+            "https://www.maassluis.nl/alcohol-schenken-tijdens-evenement"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U moet de ontheffing uiterlijk 2 weken voor het evenement bij de gemeente aan te vragen",
+          "original_reference": "De website van de gemeente geeft geen specifieke termijn voor de verwerking van de aanvraag van een alcoholwetvergunning",
+          "note": "De bronpagina specificeert wel een concrete aanvraagtermijn voor evenementen, terwijl de originele tekst aangeeft dat er geen termijn bekend is",
+          "source_urls": [
+            "https://www.maassluis.nl/alcohol-schenken-tijdens-evenement"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Sinds de laatste wijziging van de Alcoholwet moet een leidinggevende zich laten registreren in het Landelijke register sociale hygiëne (Lcsh)",
+          "original_reference": "Een leidinggevende moet geregistreerd zijn in het Landelijke register sociale hygiëne (Lsch) via het Register Sociale Hygiëne",
+          "note": "De bronpagina vermeldt expliciet dat dit een recente wijziging is in de Alcoholwet, wat extra context geeft die ontbreekt in de originele tekst",
+          "source_urls": [
+            "https://www.maassluis.nl/alcoholwetvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn drie belangrijke verschillen gevonden tussen de originele tekst en de bronpagina's: 1) De kosten voor vergunningen verschillen significant, 2) Er wordt wel een specifieke aanvraagtermijn genoemd voor evenementen die niet in de originele tekst staat, en 3) Er is extra context over een recente wetswijziging die ontbreekt in de originele tekst. Deze verschillen hebben impact op de accuraatheid van de informatievoorziening aan ondernemers."
+  }
+}

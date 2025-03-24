@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "GEMERT-BAKEL",
+      "contact": {
+        "phone": "(0492) 37 85 00",
+        "email": "gemeente@gemert-bakel.nl",
+        "website": "http://www.gemert-bakel.nl"
+      }
+    },
+    "service": {
+      "id": 10,
+      "name": "Nachtregister bijhouden"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 10,
+    "false_sentences": 1,
+    "accuracy_percentage": 90.9,
+    "false_statements": [
+      {
+        "sentence": "Voor vragen of bezwaren met betrekking tot de controle op het nachtregister kunt u contact opnemen met Adviesgroep Nederlandse Gemeenten (ANG) via telefoonnummer: 085 – 070 1484 of via toeristenbelasting@ang.nl.",
+        "status": "false",
+        "note": "Deze contactgegevens zijn onjuist. Voor vragen over toeristenbelasting en het nachtregister in Gemert-Bakel moet men contact opnemen met Belastingsamenwerking Oost-Brabant (BSOB), niet met ANG."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.gemert-bakel.nl/evenementen-vergunning",
+      "https://www.gemert-bakel.nl/toeristenbelasting",
+      "https://www.gemert-bakel.nl/alcohol-schenken-in-horecabedrijven",
+      "https://www.gemert-bakel.nl/verklaring-omtrent-het-gedrag-vog",
+      "https://www.gemert-bakel.nl",
+      "https://www.gemert-bakel.nl/verzoek-op-basis-van-de-wet-open-overheid-woo"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het tarief bedraagt per persoon per overnachting € 1,60.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt geen specifiek tarief voor toeristenbelasting, terwijl de brontekst een concreet bedrag van €1,60 per persoon per overnachting noemt.",
+          "source_urls": [
+            "https://www.gemert-bakel.nl/toeristenbelasting"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De gemeentelijke BOA's en een extern bedrijf controleren voor de gemeente",
+          "original_reference": "No matching information",
+          "note": "De originele tekst specificeert niet wie de controles uitvoert, terwijl de brontekst aangeeft dat dit door gemeentelijke BOA's en een extern bedrijf wordt gedaan.",
+          "source_urls": [
+            "https://www.gemert-bakel.nl/toeristenbelasting"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U houdt de overnachtingen bij op het formulier nachtregister",
+          "original_reference": "De registratie door gasten kan digitaal plaatsvinden via een QR-code of email",
+          "note": "Er is een verschil in de beschreven registratiemethode. De originele tekst noemt QR-code en email, terwijl de bron spreekt over een formulier nachtregister.",
+          "source_urls": [
+            "https://www.gemert-bakel.nl/toeristenbelasting"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen het ontbreken van het specifieke tarief (€1,60) in de originele tekst, verschillende beschrijvingen van de registratiemethode, en aanvullende informatie over wie de controles uitvoert. Ook is de contactinformatie in de originele tekst (ANG) niet terug te vinden in de bronpagina's."
+  }
+}

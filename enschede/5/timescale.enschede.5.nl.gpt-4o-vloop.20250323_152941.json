@@ -1,0 +1,102 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ENSCHEDE",
+      "contact": {
+        "phone": "14 053",
+        "email": "postbus20@enschede.nl",
+        "website": "http://www.enschede.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 31,
+    "true_sentences": 29,
+    "false_sentences": 2,
+    "accuracy_percentage": 93.5,
+    "false_statements": [
+      {
+        "sentence": "Als u bij uw horecabedrijf een terras wilt plaatsen, moet dit voldoen aan lokale regels. U heeft geen vergunning nodig, maar u moet zich houden aan de regels die gelden voor terrassen.",
+        "status": "false",
+        "note": "Voor het plaatsen van een terras in Enschede is wel degelijk een terrasvergunning nodig volgens de APV van de gemeente Enschede."
+      },
+      {
+        "sentence": "De ondernemer en leidinggevenden moeten minimaal 21 jaar zijn en een verklaring sociale hygiëne bezitten (bij alcoholvrije horeca is 18 jaar en geen verklaring nodig).",
+        "status": "false",
+        "note": "Volgens de Alcoholwet moet men minimaal 21 jaar zijn voor een leidinggevende functie waar alcohol wordt geschonken, maar voor een horecavergunning in Enschede geldt een minimumleeftijd van 18 jaar voor de ondernemer/eigenaar."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.enschede.nl/vergunning-voor-kamerverhuur",
+      "https://www.enschede.nl/alcoholvergunning-aanvragen",
+      "https://www.enschede.nl/ondernemersloket-contact-voor-ondernemers",
+      "https://www.enschede.nl/regels-voor-terrassen",
+      "https://www.enschede.nl/vergunning-voor-gokautomaten"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.enschede.nl",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 4,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor horecabedrijven die alleen alcoholvrije dranken schenken, is er een aparte vergunning.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst specificeert niet expliciet dat er een aparte vergunning is voor alcoholvrije horeca, alleen de kosten worden genoemd.",
+          "source_urls": [
+            "https://www.enschede.nl/alcoholvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "van onbesproken levensgedrag",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt een extra voorwaarde dat leidinggevenden van onbesproken levensgedrag moeten zijn, wat niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.enschede.nl/alcoholvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Na een ontvangstbevestiging van de gemeente mag de nieuwe leidinggevende meteen actief zijn in uw horecazaak. De ontvangstbevestiging bewaart u bij uw alcoholvergunning.",
+          "original_reference": "Als er nieuwe leidinggevenden door personeelswisselingen zijn, moeten deze binnen 1 maand worden aangemeld via een meldingsformulier met bijlagen.",
+          "note": "De brontekst geeft aanvullende informatie over de ontvangstbevestiging en het bewaren daarvan, wat niet vermeld wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.enschede.nl/alcoholvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Chantal Os-Joldersma, Voor vragen over: Winkelcentra en Horeca, Telefoonnummer: 06 - 28 83 79 66",
+          "original_reference": "Bel op werkdagen van 9.00 - 17.00 uur naar telefoonnummer 14 053",
+          "note": "De bronpagina vermeldt een specifieke contactpersoon met direct telefoonnummer voor horecazaken, wat niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.enschede.nl/ondernemersloket-contact-voor-ondernemers"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn enkele belangrijke verschillen gevonden tussen de originele tekst en de bronnen. De bronnen bevatten aanvullende informatie over een aparte vergunning voor alcoholvrije horeca, extra voorwaarden voor leidinggevenden, specifieke procedures rond ontvangstbevestigingen voor nieuwe leidinggevenden, en bieden meer gedetailleerde contactinformatie met een specifieke contactpersoon voor horecazaken. Deze informatie maakt de procedures en vereisten duidelijker dan in de originele tekst."
+  }
+}

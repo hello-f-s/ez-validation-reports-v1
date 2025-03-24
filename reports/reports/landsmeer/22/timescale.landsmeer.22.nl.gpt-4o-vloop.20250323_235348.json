@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LANDSMEER",
+      "contact": {
+        "phone": "(020) 487 71 11",
+        "email": "gemeente@Landsmeer.nl",
+        "website": "http://www.landsmeer.nl"
+      }
+    },
+    "service": {
+      "id": 22,
+      "name": "Woonruimte splitsen of samenvoegen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 31,
+    "true_sentences": 30,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.8,
+    "false_statements": [
+      {
+        "sentence": "Dien de aanvraag minimaal 8 weken voor de start van de werkzaamheden in bij de reguliere procedure en minimaal 6 maanden van tevoren bij een uitgebreide procedure.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Landsmeer is er geen vereiste om de aanvraag minimaal 8 weken of 6 maanden van tevoren in te dienen. De genoemde termijnen zijn de behandeltijden van de aanvraag, niet de vereiste indieningstermijnen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.landsmeer.nl/inwoners/bouwen_en_verbouwen/meer_onderwerpen/omgevingsvergunning_aanvragen",
+      "https://www.landsmeer.nl/ondernemers/vergunningen/horecabedrijf_beginnen",
+      "https://www.landsmeer.nl/inwoners/bouwen_en_verbouwen/producten_en_diensten/gebouw_of_woning_slopen",
+      "https://www.landsmeer.nl/inwoners/bouwen_en_verbouwen/omgevingsplan/afwijken_van_het_omgevingsplan",
+      "https://www.landsmeer.nl/ondernemers/evenementen/optreden_op_straat"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u een omgevingsvergunning aanvraagt, dan betaalt u meestal niet alleen de kosten voor de omgevingsvergunning. Vaak brengt de gemeente ook plankosten in rekening. Dit zijn kosten voor voorbereiding van en toezicht op de aanleg van voorzieningen.",
+          "original_reference": "De kosten (leges) voor de aanvraag van een omgevingsvergunning worden bepaald als een percentage van de bouwsom inclusief BTW en worden jaarlijks vastgesteld.",
+          "note": "De bronpagina vermeldt aanvullende plankosten naast de reguliere leges, terwijl de originele tekst alleen spreekt over leges als percentage van de bouwsom.",
+          "source_urls": [
+            "https://www.landsmeer.nl/inwoners/bouwen_en_verbouwen/producten_en_diensten/gebouw_of_woning_slopen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De gemeente beslist binnen 6 maanden over uw vergunningaanvraag. Deze termijn kan de gemeente eenmaal verlengen met 6 weken.",
+          "original_reference": "Bij een reguliere procedure ontvangt u binnen 8 weken een beslissing, met een mogelijke verlenging van 6 weken.",
+          "note": "Er is een discrepantie in de beslissingstermijnen tussen de bronpagina (6 maanden) en de originele tekst (8 weken) voor reguliere procedures.",
+          "source_urls": [
+            "https://www.landsmeer.nl/inwoners/bouwen_en_verbouwen/producten_en_diensten/gebouw_of_woning_slopen"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Check op Omgevingsloket online of u een omgevingsvergunning nodig hebt. Het bestemmingsplan kunt u inzien op de ruimtelijkeplannen.nl.",
+          "original_reference": "Dit kunt u controleren op ruimtelijkeplannen.nl.",
+          "note": "De verwijzing naar ruimtelijkeplannen.nl is consistent in beide bronnen.",
+          "source_urls": [
+            "https://www.landsmeer.nl/inwoners/bouwen_en_verbouwen/meer_onderwerpen/omgevingsvergunning_aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont enkele belangrijke verschillen tussen de originele tekst en de bronpagina's, met name wat betreft de kostenstructuur en beslissingstermijnen. De bronpagina's vermelden extra plankosten naast de reguliere leges en geven afwijkende termijnen voor vergunningsbeslissingen. De basisinformatie over het raadplegen van bestemmingsplannen is wel consistent."
+  }
+}

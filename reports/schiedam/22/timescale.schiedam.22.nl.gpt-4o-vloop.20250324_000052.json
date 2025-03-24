@@ -1,0 +1,81 @@
+{
+  "context": {
+    "municipality": {
+      "name": "SCHIEDAM",
+      "contact": {
+        "phone": "14 010",
+        "email": "contact@schiedam.nl",
+        "website": "http://www.schiedam.nl"
+      }
+    },
+    "service": {
+      "id": 22,
+      "name": "Woonruimte splitsen of samenvoegen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Bouwkundig Splitsen: € 1038,10 voor de vergunning.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening 2024 van de gemeente Schiedam bedragen de kosten voor een vergunning voor woningvorming/bouwkundig splitsen € 1069,25."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 3,
+    "invalid_urls": 2,
+    "accuracy_percentage": 60.0,
+    "valid_urls_list": [
+      "https://schiedam.nl/a-tot-z/splitsingsvergunning-kadastraal-splitsen",
+      "https://www.schiedam.nl/a-tot-z/splitsingsvergunning-kadastraal-splitsen",
+      "https://www.schiedam.nl/a-tot-z/ik-ben-verhuurder-en-wil-meer-informatie"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://schiedam.nl/a-tot-z/vergunning-woningvorming-bouwkundig-splitsen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.schiedam.nl/a-tot-z/vergunning-woningvorming-bouwkundig-splitsen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Ook is een omgevingsvergunning nodig, omdat de brandcompartimentering wordt gewijzigd.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt expliciet dat er een omgevingsvergunning nodig is bij bouwkundig splitsen vanwege wijziging in brandcompartimentering. Deze belangrijke informatie ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.schiedam.nl/a-tot-z/splitsingsvergunning-kadastraal-splitsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wilt u een gebouw splitsen dat uitsluitend uit bedrijfsruimten bestaat? Dan is er géén splitsingsvergunning nodig.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina specificeert een belangrijke uitzondering voor bedrijfsruimten die niet vermeld wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.schiedam.nl/a-tot-z/splitsingsvergunning-kadastraal-splitsen"
+          ]
+        }
+      ]
+    },
+    "summary": "De originele tekst mist twee belangrijke details die wel in de bronpagina's staan: de vereiste omgevingsvergunning bij bouwkundig splitsen vanwege brandcompartimentering en de uitzondering voor het splitsen van gebouwen die uitsluitend uit bedrijfsruimten bestaan. Deze informatie is relevant voor aanvragers om een volledig beeld te krijgen van de vergunningsvereisten."
+  }
+}

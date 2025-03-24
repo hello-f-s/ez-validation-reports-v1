@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "GEMERT-BAKEL",
+      "contact": {
+        "phone": "(0492) 37 85 00",
+        "email": "gemeente@gemert-bakel.nl",
+        "website": "http://www.gemert-bakel.nl"
+      }
+    },
+    "service": {
+      "id": 22,
+      "name": "Woonruimte splitsen of samenvoegen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "Maandag: 09.00 - 19.00 uur",
+        "status": "false",
+        "note": "De openingstijden op maandag zijn volgens de officiële website van gemeente Gemert-Bakel van 09.00 - 20.00 uur, niet tot 19.00 uur"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.gemert-bakel.nl/omgevingsvergunning-activiteit-slopen-van-een-bouwwerk",
+      "https://www.gemert-bakel.nl/evenementen-vergunning",
+      "https://www.gemert-bakel.nl/oprichten-of-veranderen-bedrijf",
+      "https://www.gemert-bakel.nl/omgevingsvergunning",
+      "https://www.gemert-bakel.nl/vooroverleg"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het is bedoeld voor plannen waarvan al een bepaalde richting bekend is en waarbij er al sprake is van stukken die wij kunnen beoordelen. Mocht u alleen een oriënterende vraag willen stellen, stel deze dan eerst in de vorm van een informatieverzoek.",
+          "original_reference": "Naast het reguliere aanvraagproces kun je een vooroverleg aanvragen om de haalbaarheid van het plan te beoordelen voordat je een officiële aanvraag indient.",
+          "note": "De bronpagina geeft specifiekere voorwaarden voor het aanvragen van vooroverleg en adviseert eerst een informatieverzoek te doen bij oriënterende vragen. Deze nuance ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.gemert-bakel.nl/vooroverleg"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Telefoon en Fax\nTelefoon: 0492-378500\nFax: 0492-366325",
+          "original_reference": "Telefoon: 0492-378500",
+          "note": "De bronpagina's vermelden ook een faxnummer, wat ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.gemert-bakel.nl/omgevingsvergunning-activiteit-slopen-van-een-bouwwerk",
+            "https://www.gemert-bakel.nl/oprichten-of-veranderen-bedrijf"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Op 1 juli 2024 stopt het omgevingsloket online (OLO). Het indienen van aanvullingen via OLO is dan niet meer mogelijk. Zijn er initiatiefnemers die ook na 1 juli 2024 aanvulingen willen indienen? Dat kan via de mail naar gemeente@gemert-bakel.nl.",
+          "original_reference": "Let op: het Omgevingsloket online (OLO) sluit op 1 juli 2024. Na deze datum kunnen aanvullingen niet meer via OLO worden ingediend, maar wel via e-mail naar gemeente@gemert-bakel.nl.",
+          "note": "De informatie over de sluiting van het OLO en de alternatieve procedure via e-mail komt overeen.",
+          "source_urls": [
+            "https://www.gemert-bakel.nl/omgevingsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen aanvullende details over het vooroverlegproces en extra contactgegevens (faxnummer). De informatie over de sluiting van het Omgevingsloket Online (OLO) en de alternatieve procedure is consistent tussen de bronnen. De originele tekst mist enkele specifieke details maar bevat geen feitelijke onjuistheden."
+  }
+}

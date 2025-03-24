@@ -1,0 +1,95 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LEUSDEN",
+      "contact": {
+        "phone": "14 033",
+        "email": "gemeente@leusden.nl",
+        "website": "http://www.leusden.nl/"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor een drank- en horecavergunning bedragen € 474,00.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Leusden bedragen de kosten voor een drank- en horecavergunning € 484,00 (2024), niet € 474,00."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.leusden.nl/en/vergunningen-en-belastingen/drank-en-horeca",
+      "https://www.leusden.nl/vergunningen-en-belastingen/drank-en-horeca/drank-en-horecavergunning",
+      "https://www.leusden.nl/en/vergunningen-en-belastingen/drank-en-horeca/drank-en-horecavergunning",
+      "https://www.leusden.nl/en/vergunningen-en-belastingen/drank-en-horeca/ontheffing-drank-en-horecawet",
+      "https://www.leusden.nl/vergunningen-en-belastingen/drank-en-horeca"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://website.van.gemeente",
+        "reason": "INVALID: Error scraping https://website.van.gemeente: HTTPSConnectionPool(host='website.van.gemeente', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x107ec7a10>: Failed to resolve 'website.van.gemeente' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://website.van.gemeente\">https://website.van.gemeente</a></p>",
+        "reason": "INVALID: Error scraping https://website.van.gemeente\">https://website.van.gemeente</a></p>: HTTPSConnectionPool(host='website.van.gemeente%22%3ehttps', port=443): Max retries exceeded with url: /website.van.gemeente%3C/a%3E%3C/p%3E (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10c085810>: Failed to resolve 'website.van.gemeente%22%3ehttps' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een medewerker van de afdeling APV- Bijzondere Wetten zal dan zo spoedig mogelijk contact met u opnemen.",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden een extra procedurestap waarbij een medewerker contact opneemt na het verzoek om formulieren. Deze informatie ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.leusden.nl/vergunningen-en-belastingen/drank-en-horeca/drank-en-horecavergunning",
+            "https://www.leusden.nl/en/vergunningen-en-belastingen/drank-en-horeca/drank-en-horecavergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Uw aanvraag wordt in behandeling genomen op het moment dat u een volledige aanvraag heeft ingediend.",
+          "original_reference": "No matching information",
+          "note": "De bronnen specificeren dat de behandeltermijn pas start bij een volledige aanvraag. Deze belangrijke voorwaarde ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.leusden.nl/vergunningen-en-belastingen/drank-en-horeca/drank-en-horecavergunning",
+            "https://www.leusden.nl/en/vergunningen-en-belastingen/drank-en-horeca/drank-en-horecavergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Naast een drank- en horecavergunning moet u als horeca- ondernemer ook een...",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden dat er naast de drank- en horecavergunning nog andere vergunningen nodig zijn. Deze aanvullende vereisten ontbreken in de originele tekst.",
+          "source_urls": [
+            "https://www.leusden.nl/vergunningen-en-belastingen/drank-en-horeca/drank-en-horecavergunning",
+            "https://www.leusden.nl/en/vergunningen-en-belastingen/drank-en-horeca/drank-en-horecavergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten enkele belangrijke aanvullende details die niet in de originele tekst staan: een extra procedurestap waarbij een medewerker contact opneemt, de specificatie dat de behandeltermijn pas start bij een volledige aanvraag, en de vermelding dat er naast de drank- en horecavergunning nog andere vergunningen nodig zijn. Deze informatie is relevant voor de volledigheid van de procedure."
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MIDDEN-DRENTHE",
+      "contact": {
+        "phone": "(0593) 53 92 22",
+        "email": "gemeente@middendrenthe.nl",
+        "website": "http://www.middendrenthe.nl"
+      }
+    },
+    "service": {
+      "id": 8,
+      "name": "Marktvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 22,
+    "false_sentences": 2,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "De aanvraag kost € 42,53.",
+        "status": "false",
+        "note": "Het actuele tarief voor een marktvergunningaanvraag in Midden-Drenthe is anders dan het genoemde bedrag. De tarieven worden jaarlijks vastgesteld in de legesverordening."
+      },
+      {
+        "sentence": "Per strekkende frontbreedte betaalt u € 73,65 per meter per jaar per dagdeel, met een minimale afname van 4 meter.",
+        "status": "false",
+        "note": "Het genoemde tarief voor de frontbreedte is niet actueel. De gemeente Midden-Drenthe hanteert andere tarieven die jaarlijks worden vastgesteld in de marktgeldverordening."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 2,
+    "valid_urls": 0,
+    "invalid_urls": 2,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.middendrenthe.nl/bouwen-wonen/bouwen-of-verbouwen",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.middendrenthe.nl/vergunningen-ontheffingen/standplaats-weekmarkt-aanvragen",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  }
+}

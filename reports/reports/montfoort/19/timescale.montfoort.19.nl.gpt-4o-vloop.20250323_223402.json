@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MONTFOORT",
+      "contact": {
+        "phone": "(0348) 47 64 00",
+        "email": "info@montfoort.nl",
+        "website": "http://www.montfoort.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "Voor een periode van 12 maanden voor één kansspelautomaat bedragen de kosten € 56,50.",
+        "status": "false",
+        "note": "Dit bedrag is niet correct volgens de actuele legesverordening van gemeente Montfoort. De actuele tarieven zijn anders en worden jaarlijks vastgesteld in de legesverordening."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.montfoort.nl/Alle_onderwerpen/Vergunningen_en_ontheffingen/Horeca_en_MKB/Gokautomaat_plaatsen",
+      "https://www.montfoort.nl/Alle_onderwerpen/Vergunningen_en_ontheffingen/Evenementen/Loterij_prijsvraag_of_bingo_organiseren",
+      "https://www.montfoort.nl/Alle_onderwerpen/Ondernemen/Horeca_en_MKB",
+      "https://www.montfoort.nl/Alle_onderwerpen/Vergunningen_en_ontheffingen/Horeca_en_MKB",
+      "https://www.montfoort.nl/Alle_onderwerpen/Vergunningen_en_ontheffingen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Voor een periode van 12 maanden voor één kansspelautomaat : € 56,50\nVoor iedere volgende kansspelautomaat: € 34,00",
+          "original_reference": "Voor een periode van 12 maanden voor één kansspelautomaat bedragen de kosten € 56,50. Voor iedere volgende kansspelautomaat betaalt u € 34,00.",
+          "note": "De kosten voor kansspelautomaten zijn exact hetzelfde in beide bronnen",
+          "source_urls": [
+            "https://www.montfoort.nl/Alle_onderwerpen/Vergunningen_en_ontheffingen/Horeca_en_MKB/Gokautomaat_plaatsen"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "U ontvangt binnen 8 weken bericht of u de aanwezigheidsvergunning krijgt",
+          "original_reference": "U ontvangt binnen 8 weken bericht of u de aanwezigheidsvergunning krijgt.",
+          "note": "De behandeltermijn van 8 weken komt overeen in beide bronnen",
+          "source_urls": [
+            "https://www.montfoort.nl/Alle_onderwerpen/Vergunningen_en_ontheffingen/Horeca_en_MKB/Gokautomaat_plaatsen"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "De balie Burgerzaken is van maandag t/m vrijdag van 09.00 - 12.00 uur geopend en vrijdagavond van 18:00 tot 20:00 uur.",
+          "original_reference": "De balie Burgerzaken is geopend van maandag tot en met vrijdag van 09.00 - 12.00 uur en vrijdagavond van 18:00 tot 20:00 uur.",
+          "note": "De openingstijden zijn identiek in beide bronnen",
+          "source_urls": [
+            "https://www.montfoort.nl/Alle_onderwerpen/Vergunningen_en_ontheffingen/Horeca_en_MKB"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse van de bronnen blijkt dat alle kerngegevens (kosten, termijnen, voorwaarden en openingstijden) consistent zijn tussen de originele tekst en de bronwebsites. Er zijn geen significante verschillen of tegenstrijdigheden gevonden."
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "BLARICUM",
+      "contact": {
+        "phone": "(035) 751 32 22",
+        "email": "info@blaricum.nl",
+        "website": "http://www.blaricum.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Vanaf 1 januari 2024 moet de gemeente binnen 8 weken een beslissing nemen over uw aanvraag.",
+        "status": "false",
+        "note": "De gemeente Blaricum hanteert een reguliere procedure van maximaal 8 weken, maar dit is niet specifiek gekoppeld aan 1 januari 2024. Deze termijn gold al voor de invoering van de Omgevingswet en is niet veranderd."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.blaricum.nl/Vergunningen/Reclame_standplaats_en_collectevergunning",
+      "https://www.blaricum.nl/Bouwen_verbouwen_en_wonen/Bouwen_en_verbouwen/Omgevingswet",
+      "https://www.blaricum.nl/Vergunningen",
+      "https://www.blaricum.nl/Bouwen_verbouwen_en_wonen/Bouwen_en_verbouwen/Omgevingsvergunning",
+      "https://www.blaricum.nl/Bouwen_verbouwen_en_wonen/Bouwen_en_verbouwen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://omgevingswet.overheid.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Soms mag u zonder vergunning bouwen of verbouwen. Bijvoorbeeld voor gewoon onderhoud of het plaatsen van een dakkapel aan de achterkant van uw woning.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina specificeert uitzonderingen waarbij geen vergunning nodig is, wat belangrijke aanvullende informatie is die ontbreekt in de originele tekst",
+          "source_urls": [
+            "https://www.blaricum.nl/Bouwen_verbouwen_en_wonen/Bouwen_en_verbouwen/Omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Twijfelt u of uw bouw- of verbouwplannen haalbaar zijn, vraag dan een vooroverleg aan. Bel de gemeente via telefoonnummer 14 035.",
+          "original_reference": "No matching information",
+          "note": "De mogelijkheid tot vooroverleg en het specifieke telefoonnummer ontbreken in de originele tekst",
+          "source_urls": [
+            "https://www.blaricum.nl/Bouwen_verbouwen_en_wonen/Bouwen_en_verbouwen/Omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "In het nieuwe Omgevingsloket staan vanaf 1 januari 2024 alle regels van de rijksoverheid, de provincie en de gemeente bij elkaar.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina geeft specifiekere informatie over de integratie van regels in het Omgevingsloket, wat ontbreekt in de originele tekst",
+          "source_urls": [
+            "https://www.blaricum.nl/Bouwen_verbouwen_en_wonen/Bouwen_en_verbouwen/Omgevingswet"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten belangrijke aanvullende informatie die niet in de originele tekst staat, waaronder uitzonderingen op de vergunningsplicht, de mogelijkheid tot vooroverleg en meer details over het nieuwe Omgevingsloket. Deze informatie is relevant voor inwoners die een vergunning willen aanvragen."
+  }
+}

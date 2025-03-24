@@ -1,0 +1,82 @@
+{
+  "context": {
+    "municipality": {
+      "name": "GRONINGEN",
+      "contact": {
+        "phone": "14 050",
+        "email": "info@groningen.nl",
+        "website": "http://gemeente.groningen.nl"
+      }
+    },
+    "service": {
+      "id": 8,
+      "name": "Marktvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Voor een voorbeeld: een standplaats van 4 x 3 m, inclusief een 16 Ampère 230 Volt-aansluiting, kost € 18,51 per dag.",
+        "status": "false",
+        "note": "Dit specifieke bedrag van €18,51 komt niet overeen met de actuele tarieven op de website van de gemeente Groningen. De gemeente hanteert verschillende tarieven afhankelijk van de markt en locatie, maar dit exacte bedrag wordt niet genoemd in de officiële bronnen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 4,
+    "invalid_urls": 2,
+    "accuracy_percentage": 66.7,
+    "valid_urls_list": [
+      "https://gemeente.groningen.nl/parkeervergunning-voor-bedrijven",
+      "https://gemeente.groningen.nl/bedrijf-starten",
+      "https://gemeente.groningen.nl/parkeervergunning-voor-markthandelaar-aanvragen",
+      "https://gemeente.groningen.nl/marktstandplaatsvergunning-aanvragen-wijzigen-of-opzeggen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.gemeente.groningen.nl/marktstandplaatsvergunning-aanvragen-wijzigen-opzeggen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://gemeente.groningen.nl/onttrekkingsvergunning-voor-bedrijfsdoeleinden-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Aanvraag marktstandplaats, wijziging van uw vergunning, bijschrijving van een vaste vervanger of opzegging marktstandplaats.",
+          "original_reference": "De vergunning moet worden aangevraagd bij de gemeente Groningen. Dit kan persoonlijk of via een formulier.",
+          "note": "De bronpagina specificeert extra opties zoals het bijschrijven van een vaste vervanger en het wijzigen/opzeggen van de vergunning, wat niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://gemeente.groningen.nl/marktstandplaatsvergunning-aanvragen-wijzigen-of-opzeggen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Let op: u betaalt altijd de kosten per dag, ook al gebruikt u de standplaats maar voor een deel van de dag.",
+          "original_reference": "U betaalt marktgeld per vierkante meter, evenals de kosten voor stroom en reclame.",
+          "note": "De bronpagina bevat een belangrijke aanvullende voorwaarde over betaling voor een volledige dag, ook bij gedeeltelijk gebruik. Deze informatie ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://gemeente.groningen.nl/marktstandplaatsvergunning-aanvragen-wijzigen-of-opzeggen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten enkele belangrijke aanvullende details die niet in de originele tekst staan, met name over de mogelijkheid tot het bijschrijven van een vaste vervanger en specifieke betalingsvoorwaarden. De kernvoorwaarden en kosteninformatie zijn verder consistent met de originele tekst."
+  }
+}

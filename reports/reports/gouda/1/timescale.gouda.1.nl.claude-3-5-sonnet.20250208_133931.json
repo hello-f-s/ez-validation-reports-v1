@@ -1,0 +1,72 @@
+{
+  "context": {
+    "municipality": {
+      "name": "GOUDA",
+      "contact": {
+        "phone": "14 0182",
+        "email": "gemeente@gouda.nl",
+        "website": "http://www.gouda.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 6,
+    "true_sentences": 6,
+    "false_sentences": 0,
+    "accuracy_percentage": 100.0,
+    "false_statements": []
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.gouda.nl/servicecode/",
+      "https://www.gouda.nl/slim-met-geld/geldzaken-en-schulden/",
+      "https://www.gouda.nl/gouda-werkt-aan-de-stad/wijkmobiliteitsplannen/wijkmobiliteitsplan-korte-akkeren/veelgestelde-vragen-parkeren-korte-akkeren/",
+      "https://www.gouda.nl/gouda-werkt-aan-de-stad/wijkmobiliteitsplannen/wijkmobiliteitsplan-kort-haarlem/veelgestelde-vragen-parkeren-kadenbuurt-en-kort-haarlem/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.gouda.nl/gouda-werkt-aan-de-stad/omgekeerd-inzamelen/veelgestelde-vragen-en-antwoorden-omgekeerd-inzamelen/",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U ontvangt de aangevraagde producten binnen 3 werkdagen, nadat wij uw aanvraag ontvangen hebben. Bij sommige aanvragen duurt dit langer. Dit geven wij duidelijk aan.",
+          "original_reference": "Hier kan geen specifieke informatie over gevonden worden op de website van deze gemeente.",
+          "note": "De bron specificeert een concrete verwerkingstijd van 3 werkdagen voor digitale aanvragen, terwijl dit in de originele tekst ontbreekt.",
+          "source_urls": [
+            "https://www.gouda.nl/servicecode/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als wij uw brief of e-mail ontvangen, krijgt u binnen 3 werkdagen een bericht van ontvangst. Dit is alleen als voor de behandeling van uw (aan)vraag een wettelijke reactietijd geldt.",
+          "original_reference": "Hier kan geen specifieke informatie over gevonden worden op de website van deze gemeente.",
+          "note": "De bron vermeldt een specifieke ontvangstbevestigingstermijn van 3 werkdagen voor bepaalde aanvragen, wat niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.gouda.nl/servicecode/"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten specifieke informatie over verwerkings- en reactietijden die niet in de originele tekst staat. Met name gaat het om een verwerkingstijd van 3 werkdagen voor digitale aanvragen en een ontvangstbevestiging binnen 3 werkdagen voor bepaalde brieven en e-mails. Deze concrete termijnen maken de dienstverlening duidelijker voor inwoners."
+  }
+}

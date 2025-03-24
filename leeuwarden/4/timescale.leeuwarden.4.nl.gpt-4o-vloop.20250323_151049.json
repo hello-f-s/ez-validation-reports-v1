@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LEEUWARDEN",
+      "contact": {
+        "phone": "14 058",
+        "email": "gemeente@leeuwarden.nl",
+        "website": "http://www.leeuwarden.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 35,
+    "true_sentences": 34,
+    "false_sentences": 1,
+    "accuracy_percentage": 97.1,
+    "false_statements": [
+      {
+        "sentence": "U moet de vergunning minimaal 16 weken voor het evenement aanvragen.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Leeuwarden moet een evenementenvergunning minimaal 8 weken voor het evenement worden aangevraagd, niet 16 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.leeuwarden.nl/evenementen/evenement-organiseren/",
+      "https://www.leeuwarden.nl/omgevingsvergunning/procedure-omgevingsvergunning-aanvragen-of-melden/",
+      "https://www.leeuwarden.nl/evenementen/evenementenkalender/",
+      "https://www.leeuwarden.nl/subsidies/subsidie-voor-sportevenementen/",
+      "https://www.leeuwarden.nl/horeca/horecavergunning/"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U laat genoeg ruimte vrij voor hulpdiensten. Afzettingen voldoen aan de standaard RAW-Bepalingen 2015.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist deze specifieke veiligheidseisen voor hulpdiensten en de RAW-bepalingen die wel in de brontekst staan vermeld.",
+          "source_urls": [
+            "https://www.leeuwarden.nl/evenementen/evenement-organiseren/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Doorgeven moet tussen 1 januari en 1 september in het jaar voordat het evenement gepland staat. En is verplicht voor evenementen met meer dan 2000 bezoekers.",
+          "original_reference": "Voor evenementen in een gebouw waar evenementen zijn toegestaan en er meer dan 2000 bezoekers komen, is een evenementenvergunning nodig.",
+          "note": "De brontekst specificeert een aanmeldperiode voor de evenementenkalender die niet in de originele tekst staat, en maakt geen onderscheid tussen binnen- en buitenevenementen voor de 2000-bezoekers regel.",
+          "source_urls": [
+            "https://www.leeuwarden.nl/evenementen/evenementenkalender/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U verkoopt geen alcohol.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist deze belangrijke voorwaarde voor kennisgevingen met betrekking tot alcoholverkoop.",
+          "source_urls": [
+            "https://www.leeuwarden.nl/evenementen/evenement-organiseren/"
+          ]
+        }
+      ]
+    },
+    "summary": "De broninhoud bevat enkele belangrijke aanvullende voorwaarden en specificaties die niet in de originele tekst staan, waaronder veiligheidseisen voor hulpdiensten, specifieke tijdsperiodes voor aanmelding op de evenementenkalender, en regels rond alcoholverkoop. Deze informatie is essentieel voor organisatoren van evenementen en zou in de originele tekst opgenomen moeten worden voor volledigheid."
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AMERSFOORT",
+      "contact": {
+        "phone": "14 033",
+        "email": "info@amersfoort.nl",
+        "website": "http://www.amersfoort.nl"
+      }
+    },
+    "service": {
+      "id": 3,
+      "name": "Certificaat voor opgraving aanvragen en vondst melden"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 8,
+    "true_sentences": 7,
+    "false_sentences": 1,
+    "accuracy_percentage": 87.5,
+    "false_statements": [
+      {
+        "sentence": "Stuur een e-mail naar archeologie@amersfoort.nl of bel met 033 463 7797.",
+        "status": "false",
+        "note": "Het telefoonnummer is niet correct. Het juiste algemene nummer voor de gemeente Amersfoort is 14 033."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 3,
+    "invalid_urls": 2,
+    "accuracy_percentage": 60.0,
+    "valid_urls_list": [
+      "https://www.amersfoort.nl/graafwerkzaamheden-de-bodem",
+      "https://www.amersfoort.nl/centrum-voor-archeologie",
+      "https://www.amersfoort.nl/een-informatieverzoek"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.amersfoort.nl/archeologisch-onderzoek-bij-bouwwerkzaamheden",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.amersfoort.nl/adresonderzoek-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wij voeren dit onderzoek graag voor je uit: snel, goedkoop en vakkundig. Het Centrum voor Archeologie is expert voor archeologisch advies en onderzoek in het midden van het land.",
+          "original_reference": "Er is geen specifieke informatie over kosten vermeld.",
+          "note": "De bronpagina geeft aan dat het onderzoek 'goedkoop' wordt uitgevoerd, terwijl de originele tekst geen informatie over kosten bevat. Dit is relevante aanvullende informatie voor potentiële aanvragers.",
+          "source_urls": [
+            "https://www.amersfoort.nl/centrum-voor-archeologie"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Locatie: Westsingel 46 3811 BB Amersfoort",
+          "original_reference": "No matching information",
+          "note": "Het fysieke adres van het Centrum voor Archeologie ontbreekt in de originele tekst, terwijl dit belangrijke contactinformatie is voor bezoekers.",
+          "source_urls": [
+            "https://www.amersfoort.nl/centrum-voor-archeologie"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont twee belangrijke verschillen: de bronpagina's bevatten aanvullende informatie over de kosten (namelijk dat het onderzoek 'goedkoop' wordt uitgevoerd) en het fysieke bezoekadres van het Centrum voor Archeologie. Deze informatie ontbreekt in de originele tekst maar kan waardevol zijn voor mensen die archeologisch onderzoek willen laten uitvoeren."
+  }
+}

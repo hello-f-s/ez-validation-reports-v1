@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "GOES",
+      "contact": {
+        "phone": "14 0113",
+        "email": "stadskantoor@goes.nl",
+        "website": "http://www.goes.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 15,
+    "false_sentences": 2,
+    "accuracy_percentage": 88.2,
+    "false_statements": [
+      {
+        "sentence": "Eerste parkeervergunning: €320,00.",
+        "status": "false",
+        "note": "De kosten voor een eerste bedrijfsparkeervergunning in Goes bedragen €330,00 per jaar volgens de officiële website van de gemeente Goes"
+      },
+      {
+        "sentence": "Tweede parkeervergunning: €640,00.",
+        "status": "false",
+        "note": "De kosten voor een tweede bedrijfsparkeervergunning in Goes bedragen €660,00 per jaar volgens de officiële website van de gemeente Goes"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.goes.nl/parkeervergunning-verbouwing-eigen-woning",
+      "https://www.goes.nl/parkeervergunning-voor-bedrijven",
+      "https://www.goes.nl/parkeervergunning-voor-bewoners",
+      "https://www.goes.nl/ontheffing-verkeersmaatregel",
+      "https://www.goes.nl/werknemersvergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "maximaal 2 parkeervergunningen per adres, heeft een bedrijf twee of meer eigen parkeerplaatsen, dan verstrekt de gemeente geen parkeervergunning",
+          "original_reference": "Geen specifieke limiet genoemd in originele tekst",
+          "note": "De originele tekst vermeldt geen maximum aantal vergunningen per bedrijf, terwijl de bron een duidelijke limiet van 2 vergunningen stelt en aanvullende beperking bij eigen parkeerplaatsen",
+          "source_urls": [
+            "https://www.goes.nl/parkeervergunning-voor-bedrijven"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor het verkrijgen van een ontheffing kunt u het online formulier invullen. Wij streven ernaar om de aanvraag van de ontheffing binnen 8 weken af te handelen.",
+          "original_reference": "De gemeente streeft ernaar om de aanvraag voor een ontheffing binnen 8 weken af te handelen. Parkeervergunningen kunnen online aangevraagd worden",
+          "note": "De originele tekst combineert ontheffingen en vergunningen in één verwerkingstijd, terwijl de bron specifiek de 8 weken alleen voor ontheffingen noemt",
+          "source_urls": [
+            "https://www.goes.nl/ontheffing-verkeersmaatregel"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het berijden van de straten of gedeelten van straten in het voetgangersgebied, Het inrijden van een straat of een gedeelte van een straat waarvoor een geslotenverklaring of inrijverbod geldt, Het parkeren op plaatsen waar een parkeerverbod van kracht is",
+          "original_reference": "Voor een ontheffing moet er sprake zijn van specifieke verkeersmaatregelen, zoals toegang tot voetgangersgebieden of gebieden met een parkeerverbod",
+          "note": "De bron geeft een uitgebreidere en specifiekere lijst van situaties waarvoor een ontheffing kan worden verleend",
+          "source_urls": [
+            "https://www.goes.nl/ontheffing-verkeersmaatregel"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen het maximum aantal parkeervergunningen per bedrijf (2), de specifiekere beschrijving van ontheffingsmogelijkheden, en de verduidelijking dat de 8-weken verwerkingstijd alleen voor ontheffingen geldt. De bronnen bevatten meer gedetailleerde informatie over specifieke voorwaarden en beperkingen die niet in de originele tekst zijn opgenomen."
+  }
+}

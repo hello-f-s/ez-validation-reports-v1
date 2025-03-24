@@ -1,0 +1,96 @@
+{
+  "context": {
+    "municipality": {
+      "name": "KAPELLE",
+      "contact": {
+        "phone": "(0113) 33 31 10",
+        "email": "gemeente@kapelle.nl",
+        "website": "http://www.kapelle.nl"
+      }
+    },
+    "service": {
+      "id": 7,
+      "name": "Kabels en leidingen aanleggen en beheren"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor een instemmingsbesluit of vergunning bedragen €418,30 in 2024.",
+        "status": "false",
+        "note": "Het exacte bedrag van €418,30 komt niet overeen met de actuele legestarieven van gemeente Kapelle. De gemeente hanteert andere tarieven voor instemmingsbesluiten en vergunningen voor kabels en leidingen volgens hun eigen legesverordening."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 8,
+    "valid_urls": 5,
+    "invalid_urls": 3,
+    "accuracy_percentage": 62.5,
+    "valid_urls_list": [
+      "https://kapelle.nl/kabels-en-leidingen-leggen-openbare-grond",
+      "https://kapelle.nl/ondernemersplein",
+      "https://kapelle.nl/kabelgoot-aanvragen",
+      "https://kapelle.nl/evenement-organiseren",
+      "https://kapelle.nl/omgevingsvergunning-0"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.ondernemersplein.nl/initiatieven/kabels-leidingen\">ondernemersplein.nl</a>",
+        "reason": "INVALID: Error scraping https://www.ondernemersplein.nl/initiatieven/kabels-leidingen\">ondernemersplein.nl</a>: 404 Client Error: Not Found for url: https://ondernemersplein.kvk.nl/initiatieven/kabels-leidingen%22%3Eondernemersplein.nl%3C/a%3E/"
+      },
+      {
+        "url": "https://www.ondernemersplein.nl/initiatieven/kabels-leidingen",
+        "reason": "INVALID: Error scraping https://www.ondernemersplein.nl/initiatieven/kabels-leidingen: 404 Client Error: Not Found for url: https://ondernemersplein.kvk.nl/initiatieven/kabels-leidingen/"
+      },
+      {
+        "url": "https://www.overheid.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een eigen kabelgoot aanvragen kost € 385,- inclusief BTW",
+          "original_reference": "De kosten voor een instemmingsbesluit of vergunning bedragen €418,30 in 2024",
+          "note": "Er is een verschil in de vermelde kosten. De bron vermeldt €385,- voor een kabelgoot, terwijl de originele tekst €418,30 noemt voor een instemmingsbesluit/vergunning. Dit zijn echter verschillende diensten.",
+          "source_urls": [
+            "https://kapelle.nl/kabelgoot-aanvragen"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Voor het leggen van openbare telecomkabels in gemeentegrond geldt een gedoogplicht, maar voor het leggen van deze kabels dient wel een instemmingsbesluit te worden aangevraagd bij de gemeente conform de AVOI",
+          "original_reference": "Voor het leggen van openbare telecomkabels is er een gedoogplicht, maar een instemmingsbesluit van de gemeente is vereist",
+          "note": "De informatie over gedoogplicht en instemmingsbesluit voor telecomkabels komt exact overeen",
+          "source_urls": [
+            "https://kapelle.nl/kabels-en-leidingen-leggen-openbare-grond"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Kabels en leidingen in de grond mag u alleen leggen in openbaar gebied",
+          "original_reference": "Kabels en leidingen mogen alleen in openbaar gebied worden gelegd",
+          "note": "De vereiste over plaatsing in openbaar gebied komt overeen",
+          "source_urls": [
+            "https://kapelle.nl/kabels-en-leidingen-leggen-openbare-grond"
+          ]
+        }
+      ]
+    },
+    "summary": "De meeste informatie in de originele tekst komt overeen met de bronnen. Het belangrijkste verschil betreft de kosten, maar dit lijkt te komen doordat er verschillende type diensten worden beschreven (kabelgoot versus instemmingsbesluit). De kernvoorwaarden en procedures zijn consistent tussen de bronnen en de originele tekst."
+  }
+}

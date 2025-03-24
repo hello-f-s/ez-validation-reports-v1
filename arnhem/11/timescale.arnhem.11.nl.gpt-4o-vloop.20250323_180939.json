@@ -1,0 +1,93 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ARNHEM",
+      "contact": {
+        "phone": "null",
+        "email": "null",
+        "website": "http://www.arnhem.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 25,
+    "false_sentences": 3,
+    "accuracy_percentage": 89.3,
+    "false_statements": [
+      {
+        "sentence": "Voor een conceptverzoek zijn de kosten € 561.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Arnhem zijn de kosten voor een conceptverzoek/principeverzoek € 575,50 (2024)."
+      },
+      {
+        "sentence": "Voor de terrasvergunning betaalt u € 195,50.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Arnhem bedragen de kosten voor een terrasvergunning € 201,20 (2024)."
+      },
+      {
+        "sentence": "Voor het aanvragen van een omgevingsvergunning voor reclame bedragen de kosten € 189.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Arnhem bedragen de kosten voor een reclame-vergunning € 194,70 (2024)."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.arnhem.nl/Inwoners/bouwen_en_verbouwen/U_wilt_bouwen_of_verbouwen/omgevingsvergunning",
+      "https://www.arnhem.nl/Inwoners/bouwen_en_verbouwen/U_wilt_bouwen_of_verbouwen/omgevingsvergunning/Milieubelastende_werkzaamheden",
+      "https://www.arnhem.nl/Inwoners/bouwen_en_verbouwen/U_wilt_bouwen_of_verbouwen/omgevingsvergunning/Reclame_uitingen_plaatsen",
+      "https://www.arnhem.nl/Inwoners/bouwen_en_verbouwen/U_wilt_bouwen_of_verbouwen/Conceptverzoek",
+      "https://www.arnhem.nl/Ondernemers/horeca/horeca_en_vergunningen/Terrasvergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het conceptverzoek is vooral bedoeld voor kleine wijzigingen op, bij of aan uw woning, monument of bedrijfspand. Denk hierbij aan een aanbouw, dakkapel of schuur of de (her)bouw van een woning.",
+          "original_reference": "Een conceptverzoek voor kleine wijzigingen, zoals een aanbouw of dakkapel, kan digitaal worden ingediend via het Omgevingsloket.",
+          "note": "De bronpagina specificeert dat het conceptverzoek ook bedoeld is voor monumenten, bedrijfspanden en (her)bouw van woningen, wat uitgebreider is dan de originele tekst aangeeft.",
+          "source_urls": [
+            "https://www.arnhem.nl/Inwoners/bouwen_en_verbouwen/U_wilt_bouwen_of_verbouwen/Conceptverzoek"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u een groter en ingewikkelder bouwplan heeft, of als u een nieuw plan wilt ontwikkelen dat niet in het omgevingsplan past, dan is het aanvragen van een Nieuw Ruimtelijk Initiatief mogelijk beter.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over de mogelijkheid van een Nieuw Ruimtelijk Initiatief voor complexere bouwplannen.",
+          "source_urls": [
+            "https://www.arnhem.nl/Inwoners/bouwen_en_verbouwen/U_wilt_bouwen_of_verbouwen/Conceptverzoek"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor een omgevingsvergunning voor het overkappen van een terras hoeft u niet te betalen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over kosteloze vergunningen voor terrasoverkappingen.",
+          "source_urls": [
+            "https://www.arnhem.nl/Ondernemers/horeca/horeca_en_vergunningen/Terrasvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten enkele belangrijke aanvullingen die niet in de originele tekst staan, waaronder specifieke informatie over conceptverzoeken voor monumenten en bedrijfspanden, de mogelijkheid van een Nieuw Ruimtelijk Initiatief voor complexe bouwplannen, en details over kosteloze vergunningen voor terrasoverkappingen. Deze informatie zou nuttig kunnen zijn voor bezoekers die specifieke bouwplannen hebben."
+  }
+}

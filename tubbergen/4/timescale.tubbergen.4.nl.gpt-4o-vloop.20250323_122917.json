@@ -1,0 +1,78 @@
+{
+  "context": {
+    "municipality": {
+      "name": "TUBBERGEN",
+      "contact": {
+        "phone": "(0546) 62 80 00",
+        "email": "gemeente@tubbergen.nl",
+        "website": "http://www.tubbergen.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 31,
+    "true_sentences": 30,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.8,
+    "false_statements": [
+      {
+        "sentence": "De aanvraag wordt beoordeeld door verschillende adviseurs (zoals politie, brandweer, technische experts) en de duur is minimaal 8 weken vanaf het moment van een complete aanvraag.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Tubbergen moet een evenementenvergunning minimaal 12 weken (niet 8 weken) voor aanvang van het evenement worden aangevraagd."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.tubbergen.nl/aanvraag-evenementenvergunning",
+      "https://www.tubbergen.nl/loterij",
+      "https://www.tubbergen.nl/omgevingsvergunning-bouwen",
+      "https://www.tubbergen.nl/alcoholvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.tubbergen.nl/evenementenvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bijlagen uploaden: Een veiligheidsplan van het evenement (meestal verplicht), Overzichtstekening op schaal (verplicht), Constructiegegevens van bouwsels (optioneel), Verkeersplan (optioneel), Overige plannen (optioneel)",
+          "original_reference": "Een volledig ingevuld en ondertekend aanvraagformulier, Een veiligheidsplan van het evenement (meestal verplicht), Overzicht en plattegronden op schaal, Constructiegegevens van bouwsels (optioneel), Verkeersplan (optioneel)",
+          "note": "De bronpagina specificeert dat de overzichtstekening op schaal verplicht is, terwijl dit in de originele tekst niet expliciet als verplicht wordt genoemd. Ook wordt in de bron gesproken over 'Overige plannen' als optionele categorie, wat niet in de originele tekst staat.",
+          "source_urls": [
+            "https://www.tubbergen.nl/aanvraag-evenementenvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Hebt u deze gegevens en documenten niet digitaal beschikbaar? Dan duurt het langer om het formulier in te vullen en kan het gebeuren dat uw toegang via DigiD om veiligheidsredenen wordt verbroken.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat een belangrijke waarschuwing over het tijdig beschikbaar hebben van digitale documenten en mogelijke DigiD-timeout die niet in de originele tekst staat vermeld.",
+          "source_urls": [
+            "https://www.tubbergen.nl/aanvraag-evenementenvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele tekst en de bronpagina. Ten eerste is er een verschil in de specificatie van verplichte documenten, waarbij de bronpagina expliciet aangeeft dat de overzichtstekening verplicht is. Ten tweede bevat de bronpagina aanvullende belangrijke informatie over het digitaal beschikbaar hebben van documenten en mogelijke DigiD-timeout die niet in de originele tekst staat vermeld. Deze informatie is relevant voor aanvragers die de vergunning digitaal willen aanvragen."
+  }
+}

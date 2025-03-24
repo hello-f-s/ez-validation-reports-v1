@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "GOES",
+      "contact": {
+        "phone": "14 0113",
+        "email": "stadskantoor@goes.nl",
+        "website": "http://www.goes.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 8,
+    "true_sentences": 6,
+    "false_sentences": 2,
+    "accuracy_percentage": 75.0,
+    "false_statements": [
+      {
+        "sentence": "De verklaring moet alleen aangevraagd worden bij Dienst Justis.",
+        "status": "false",
+        "note": "Een VOG kan zowel bij de gemeente Goes als bij Dienst Justis worden aangevraagd. Het is niet exclusief via Dienst Justis."
+      },
+      {
+        "sentence": "Aanvragen bij gemeente, online met DigiD: € 41,35",
+        "status": "false",
+        "note": "Het actuele tarief voor een VOG-aanvraag bij de gemeente Goes is € 41,85, niet € 41,35."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.goes.nl/nederlandse-nationaliteit-aanvragen",
+      "https://www.goes.nl/exploitatievergunning-horeca",
+      "https://www.goes.nl/verklaring-omtrent-het-gedrag-vog",
+      "https://www.goes.nl/milieu-omgevingsvergunning-melding",
+      "https://www.goes.nl/conceptverzoek-omgevingsvergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vrijwilligers die met kinderen of kwetsbare personen werken, mogen gratis een VOG aanvragen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over gratis VOG-aanvragen voor vrijwilligers die met kinderen of kwetsbare personen werken",
+          "source_urls": [
+            "https://www.goes.nl/verklaring-omtrent-het-gedrag-vog"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Let op: vraag de verklaring alleen aan bij Dienst Justis. Er zijn bedrijven die aanbieden om een verklaring voor u aan te vragen. Hiervoor betaalt u extra geld. Maak hier geen gebruik van. Dienst Justis werkt niet samen met deze bedrijven.",
+          "original_reference": "De verklaring moet alleen aangevraagd worden bij Dienst Justis.",
+          "note": "De bronpagina bevat een uitgebreidere waarschuwing over bedrijven die VOG-aanvragen aanbieden en extra kosten rekenen",
+          "source_urls": [
+            "https://www.goes.nl/verklaring-omtrent-het-gedrag-vog"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Let op: maak gebruik van de nieuwste versie 'augustus 2023'. Deze datum staat onderaan het formulier.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist specifieke informatie over de vereiste versie van het aanvraagformulier",
+          "source_urls": [
+            "https://www.goes.nl/verklaring-omtrent-het-gedrag-vog"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten belangrijke aanvullende informatie die ontbreekt in de originele tekst, waaronder de mogelijkheid voor gratis VOG-aanvragen voor vrijwilligers, een uitgebreidere waarschuwing over externe bedrijven die VOG-aanvragen aanbieden, en specifieke vereisten over de versie van het aanvraagformulier. Deze informatie is relevant voor een complete en accurate beschrijving van de VOG-aanvraagprocedure."
+  }
+}

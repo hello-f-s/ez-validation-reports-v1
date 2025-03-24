@@ -1,0 +1,97 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DRUTEN",
+      "contact": {
+        "phone": "(088) 432 70 00",
+        "email": "info@druten.nl",
+        "website": "http://www.druten.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 14,
+    "false_sentences": 3,
+    "accuracy_percentage": 82.4,
+    "false_statements": [
+      {
+        "sentence": "Daarnaast kunt u de VOG persoonlijk aanvragen zonder afspraak op maandagmiddag van 13.00-16.30 uur en donderdagochtend van 08.30-12.00 uur.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Druten is een afspraak altijd nodig voor het aanvragen van een VOG. Er zijn geen vrije inloopmomenten."
+      },
+      {
+        "sentence": "Openingstijden gemeentehuis Druten: Maandag: 8.30 - 19.00 uur",
+        "status": "false",
+        "note": "Het gemeentehuis van Druten is op maandag geopend van 8.30 - 17.00 uur, met een avondopenstelling op afspraak tot 19.00 uur."
+      },
+      {
+        "sentence": "Donderdag: 8.30 - 16.30 uur (telefonische bereikbaarheid)",
+        "status": "false",
+        "note": "De gemeente Druten is op donderdag geopend van 8.30 - 17.00 uur. De telefonische bereikbaarheid geldt voor alle werkdagen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 1,
+    "invalid_urls": 4,
+    "accuracy_percentage": 20.0,
+    "valid_urls_list": [
+      "https://www.druten.nl/uittreksels"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.druten.nl/verklaring-omtrent-het-gedrag-vog",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.druten.nl/informatie-opvragen-woo-verzoek",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.druten.nl/exploitatievergunning-horecabedrijf",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.druten.nl/omgevingsvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Telefonische bereikbaarheid: Vandaag bereikbaar tot 16.30 uur, Morgen: 8.30 - 16.30 uur",
+          "original_reference": "Donderdag: 8.30 - 16.30 uur (telefonische bereikbaarheid)",
+          "note": "De originele tekst vermeldt alleen donderdag als telefonische bereikbaarheid, terwijl de bron aangeeft dat er dagelijkse telefonische bereikbaarheid is van 8.30 - 16.30 uur",
+          "source_urls": [
+            "https://www.druten.nl/uittreksels"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Gemeentehuis Druten: Vandaag open tot 19.00 uur, Morgen: 8.30 - 16.30 uur",
+          "original_reference": "Maandag: 8.30 - 19.00 uur",
+          "note": "De originele tekst vermeldt alleen maandag als openingsdag, terwijl de bron aangeeft dat het gemeentehuis ook op andere dagen geopend is",
+          "source_urls": [
+            "https://www.druten.nl/uittreksels"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de openingstijden en bereikbaarheid van de gemeente. De originele tekst is onvolledig wat betreft de openingstijden en telefonische bereikbaarheid. De bron toont aan dat het gemeentehuis op meerdere dagen geopend is en dagelijks telefonisch bereikbaar is, niet alleen op de in de originele tekst genoemde dagen."
+  }
+}

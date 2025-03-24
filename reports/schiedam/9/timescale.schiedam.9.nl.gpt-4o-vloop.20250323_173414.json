@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "SCHIEDAM",
+      "contact": {
+        "phone": "14 010",
+        "email": "contact@schiedam.nl",
+        "website": "http://www.schiedam.nl"
+      }
+    },
+    "service": {
+      "id": 9,
+      "name": "Mobiele puinbreker gebruiken"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "In 2025 bedragen de legeskosten voor een aanvraag ontheffing €19,30.",
+        "status": "false",
+        "note": "Dit bedrag kan niet met zekerheid worden vastgesteld voor 2025 aangezien de legeskosten jaarlijks worden vastgesteld door de gemeenteraad en de tarieven voor 2025 nog niet zijn gepubliceerd."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.schiedam.nl/a-tot-z/voorwerpen-op-aan-de-weg-plaatsen",
+      "https://schiedam.nl/a-tot-z/voorwerpen-op-aan-de-weg-plaatsen",
+      "https://www.schiedam.nl/a-tot-z/melding-buitenruimte",
+      "https://schiedam.nl/a-tot-z/melding-buitenruimte",
+      "https://www.schiedam.nl/a-tot-z/kabels-en-leidingen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Maak dan een melding bij de gemeente.",
+          "original_reference": "dan heeft u hiervoor eerst toestemming nodig van de gemeente Schiedam",
+          "note": "De brontekst spreekt over het maken van een 'melding', terwijl de originele tekst spreekt over 'toestemming nodig hebben'. Dit suggereert een verschillend proces.",
+          "source_urls": [
+            "https://www.schiedam.nl/a-tot-z/voorwerpen-op-aan-de-weg-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U ontvangt de rekening van de aanvraag en de rekening van de precariobelasting van de Regionale Belasting Groep los van elkaar.",
+          "original_reference": "No matching information",
+          "note": "Deze specifieke informatie over gescheiden rekeningen van de Regionale Belasting Groep komt niet voor in de bronpagina's.",
+          "source_urls": [
+            "https://www.schiedam.nl/a-tot-z/voorwerpen-op-aan-de-weg-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De hoogte is afhankelijk van ...",
+          "original_reference": "de hoogte is afhankelijk van het aantal vierkante meters dat u gebruikt",
+          "note": "De brontekst breekt af bij de uitleg over precariobelasting, terwijl de originele tekst specifiek vermeldt dat het bedrag afhangt van het aantal vierkante meters.",
+          "source_urls": [
+            "https://www.schiedam.nl/a-tot-z/voorwerpen-op-aan-de-weg-plaatsen"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn enkele belangrijke verschillen gevonden tussen de originele tekst en de bronnen. De procedure wordt anders omschreven (melding vs. toestemming), er staat aanvullende informatie in de originele tekst over de Regionale Belasting Groep die niet in de bronnen voorkomt, en de uitleg over precariobelasting is in de bronnen onvolledig ten opzichte van de originele tekst. Deze verschillen kunnen tot verwarring leiden bij gebruikers van de dienst."
+  }
+}

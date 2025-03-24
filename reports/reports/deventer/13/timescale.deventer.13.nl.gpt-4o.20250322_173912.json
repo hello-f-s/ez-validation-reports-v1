@@ -1,0 +1,89 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DEVENTER",
+      "contact": {
+        "phone": "14 0570",
+        "email": "gemeente@deventer.nl",
+        "website": "http://www.deventer.nl"
+      }
+    },
+    "service": {
+      "id": 13,
+      "name": "Omzettingsvergunning voor kamerverhuur aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "De acceptgiro voor deze kosten wordt toegestuurd.",
+        "status": "false",
+        "note": "De gemeente Deventer stuurt geen acceptgiro's meer. Betalingen voor leges verlopen via een digitale factuur die per e-mail wordt verstuurd of via iDEAL bij het indienen van de aanvraag."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.deventer.nl/omgevingsvergunning",
+      "https://www.deventer.nl/omgevingsvergunning-aanvragen",
+      "https://www.deventer.nl/vooroverleg",
+      "https://www.deventer.nl/bouwen-en-verbouwen/bouw-en-verbouw-vergunning",
+      "http://www.deventer.nl/loketten/digitaal-loket/bouw-en-verbouw-vergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.deventer.nl/verblijven-lijst/vooroverleg-voor-een-omgevingsvergunning-aanvragen",
+        "reason": "INVALID: Error scraping https://www.deventer.nl/verblijven-lijst/vooroverleg-voor-een-omgevingsvergunning-aanvragen: 404 Client Error: Not Found for url: https://www.deventer.nl/verblijven-lijst/vooroverleg-voor-een-omgevingsvergunning-aanvragen"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Gaat u nieuwbouwwoningen bouwen? Of kantoren van 100m2 of groter? Dan moet u een milieuprestatieberekening en een energieprestatieberekening toevoegen bij de aanvraag van een omgevingsvergunning.",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden aanvullende vereisten voor specifieke bouwprojecten (milieuprestatieberekening en energieprestatieberekening) die niet in de originele tekst staan genoemd.",
+          "source_urls": [
+            "https://www.deventer.nl/bouwen-en-verbouwen/bouw-en-verbouw-vergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "een tekening van hoe het er nu uit ziet, hoe het bouwwerk er uit komt te zien (de hoofdlijnen of het principe van de constructie, inclusief berekeningen)",
+          "original_reference": "No matching information",
+          "note": "De bronnen vereisen extra tekeningen van de huidige situatie en constructieberekeningen die niet in de originele tekst worden genoemd.",
+          "source_urls": [
+            "https://www.deventer.nl/bouwen-en-verbouwen/bouw-en-verbouw-vergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Sinds 1 juli 2023 zijn wij verplicht bepaalde aanvragen en besluiten digitaal ter inzage te leggen. Op deze stukken kunnen persoonsgegevens staan, zoals een naam op een bouwtekening. Die moeten eerst anoniem gemaakt worden.",
+          "original_reference": "No matching information",
+          "note": "De bronnen bevatten nieuwe informatie over digitale ter inzage legging en anonimisering van persoonsgegevens sinds 1 juli 2023, wat niet in de originele tekst staat.",
+          "source_urls": [
+            "https://www.deventer.nl/omgevingsvergunning",
+            "https://www.deventer.nl/vooroverleg"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie die niet in de originele tekst staat, waaronder specifieke vereisten voor nieuwbouwprojecten (energie- en milieuprestatieberekeningen), extra benodigde tekeningen en berekeningen, en nieuwe regelgeving rond digitale ter inzage legging en privacy vanaf juli 2023. Deze informatie is essentieel voor een complete en actuele beschrijving van het aanvraagproces."
+  }
+}

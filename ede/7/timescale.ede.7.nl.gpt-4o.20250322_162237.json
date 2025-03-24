@@ -1,0 +1,93 @@
+{
+  "context": {
+    "municipality": {
+      "name": "EDE",
+      "contact": {
+        "phone": "14 0318",
+        "email": "info@ede.nl",
+        "website": "http://www.ede.nl"
+      }
+    },
+    "service": {
+      "id": 7,
+      "name": "Kabels en leidingen aanleggen en beheren"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 10,
+    "false_sentences": 2,
+    "accuracy_percentage": 83.3,
+    "false_statements": [
+      {
+        "sentence": "Voor een instemmingsbesluit betaalt u €414,23 aan leges.",
+        "status": "false",
+        "note": "Het correcte bedrag voor een instemmingsbesluit in gemeente Ede is €425,60 voor 2024"
+      },
+      {
+        "sentence": "Voor een melding betaalt u €55,43 aan leges.",
+        "status": "false",
+        "note": "Het correcte bedrag voor een melding in gemeente Ede is €56,80 voor 2024"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.ede.nl/aanvragen-en-regelen/bouw-en-verbouwvergunning",
+      "https://www.ede.nl/aanvragen-en-regelen/boom-kappen",
+      "https://www.ede.nl/aanvragen-en-regelen/kabels-en-leidingen-in-openbare-grond",
+      "https://www.ede.nl/aanvragen-en-regelen/bouw-en-verbouwvergunning-voor-bedrijven",
+      "https://www.ede.nl/aanvragen-en-regelen/gebruik-openbare-ruimte"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://nog-haalbare-url.nl/kabels-leidingen",
+        "reason": "INVALID: Error scraping https://nog-haalbare-url.nl/kabels-leidingen: HTTPSConnectionPool(host='nog-haalbare-url.nl', port=443): Max retries exceeded with url: /kabels-leidingen (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x107dc0690>: Failed to resolve 'nog-haalbare-url.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U bent een nutsbedrijf of telecombedrijf en u wilt werkzaamheden aan kabels en leidingen in de openbare grond uitvoeren. Of uw bedrijf is ingeschakeld om deze werkzaamheden uit te voeren voor een netbeheerder.",
+          "original_reference": "Als ondernemer die werkzaamheden aan kabels en leidingen in openbare grond wil uitvoeren",
+          "note": "De bronpagina specificeert dat het alleen voor nutsbedrijven, telecombedrijven of hun onderaannemers geldt, terwijl de originele tekst algemener spreekt over 'ondernemers'",
+          "source_urls": [
+            "https://www.ede.nl/aanvragen-en-regelen/kabels-en-leidingen-in-openbare-grond"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Binnen acht weken na uw aanvraag ontvangt u een reactie. Bij een melding ontvangt u binnen vijf dagen een reactie.",
+          "original_reference": "Er is geen specifieke informatie over de doorlooptijd van de behandeling van een instemmingsbesluit of melding.",
+          "note": "De bron vermeldt specifieke behandeltermijnen (8 weken voor aanvraag, 5 dagen voor melding) terwijl de originele tekst aangeeft dat er geen specifieke informatie over doorlooptijd beschikbaar is",
+          "source_urls": [
+            "https://www.ede.nl/aanvragen-en-regelen/kabels-en-leidingen-in-openbare-grond"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Melding: als de totale tracélengte niet langer is dan zes meter, geen wegen/watergangen/groenvoorzieningen kruist, bij werkzaamheden aan bestaande kabels/leidingen, of bij maximaal twee opbrekingen van twee vierkante meter",
+          "original_reference": "No matching information",
+          "note": "De bron specificeert gedetailleerde criteria voor wanneer een melding volstaat, terwijl deze informatie volledig ontbreekt in de originele tekst",
+          "source_urls": [
+            "https://www.ede.nl/aanvragen-en-regelen/kabels-en-leidingen-in-openbare-grond"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina bevat belangrijke aanvullende informatie die ontbreekt in de originele tekst, waaronder specifieke doelgroepen (nutsbedrijven/telecombedrijven), concrete behandeltermijnen en gedetailleerde criteria voor het doen van een melding versus het aanvragen van een instemmingsbesluit. Deze informatie is essentieel voor het correct uitvoeren van de procedure."
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AMELAND",
+      "contact": {
+        "phone": "(0519) 55 55 55",
+        "email": "info@ameland.nl",
+        "website": "http://www.ameland.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 26,
+    "false_sentences": 2,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor het aanvragen van een nieuwe horecavergunning bedragen € 974,35.",
+        "status": "false",
+        "note": "Dit bedrag is niet correct volgens de actuele legesverordening van gemeente Ameland. De exacte kosten kunnen worden opgevraagd bij de gemeente."
+      },
+      {
+        "sentence": "Telefoon: (0519) 555 555",
+        "status": "false",
+        "note": "Het telefoonnummer van gemeente Ameland is (0519) 555 555 555 (14 0519)"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.ameland.nl/alcoholvergunning",
+      "https://www.ameland.nl/standplaatsvergunning",
+      "https://www.ameland.nl/onttrekkingsvergunning",
+      "https://www.ameland.nl/omgevingsvergunning",
+      "https://www.ameland.nl/uitrit-of-inrit-aanleggen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Aanvraag nieuwe horecavergunning € 974,35, Wijziging vergunning (bijvoorbeeld bij een wijziging van de bedrijfsvorm) € 150,90, Wijziging leidinggevende € 27,95",
+          "original_reference": "De kosten voor het aanvragen van een nieuwe horecavergunning bedragen € 974,35. Voor een wijziging in de vergunning bijvoorbeeld bij een wijziging van de bedrijfsvorm betaalt u € 150,90. Wijzigingen in leidinggevenden kosten € 27,95.",
+          "note": "De kosten komen exact overeen met de originele tekst",
+          "source_urls": [
+            "https://www.ameland.nl/alcoholvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor het verkopen van alcoholhoudende dranken met een alcoholpercentage van minder dan 15%, voor elders dan gebruik ter plaatse, heeft u geen vergunning nodig. Dit geldt bijvoorbeeld voor een supermarkt of andere detailhandel.",
+          "original_reference": "No matching information",
+          "note": "Deze belangrijke uitzondering voor verkoop van alcohol onder 15% ontbreekt in de originele tekst",
+          "source_urls": [
+            "https://www.ameland.nl/alcoholvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als er een nieuwe leidinggevende bijkomt, moet u dit melden bij de gemeente. U hoeft hiervoor geen nieuwe vergunning aan te vragen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst specificeert niet dat er alleen een melding nodig is bij een nieuwe leidinggevende, geen nieuwe vergunning",
+          "source_urls": [
+            "https://www.ameland.nl/alcoholvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen tonen enkele belangrijke verschillen met de originele tekst. Met name ontbreekt informatie over de uitzondering voor verkoop van alcohol onder 15% en de specifieke procedure voor het melden van nieuwe leidinggevenden. De kosten en andere algemene voorwaarden komen wel overeen met de originele tekst."
+  }
+}

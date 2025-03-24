@@ -1,0 +1,86 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MAASDRIEL",
+      "contact": {
+        "phone": "14 0418",
+        "email": "info@maasdriel.nl",
+        "website": "http://www.maasdriel.nl"
+      }
+    },
+    "service": {
+      "id": 13,
+      "name": "Omzettingsvergunning voor kamerverhuur aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Er zijn ook kosten verbonden aan het vooroverleg, namelijk € 510,00.",
+        "status": "false",
+        "note": "Het genoemde bedrag van €510,00 voor vooroverleg is niet correct volgens de actuele legesverordening van gemeente Maasdriel. De exacte kosten voor vooroverleg kunnen variëren en worden bepaald op basis van de specifieke situatie en het type aanvraag."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 1,
+    "invalid_urls": 6,
+    "accuracy_percentage": 14.3,
+    "valid_urls_list": [
+      "https://www.maasdriel.nl/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.maasdriel.nl/inwoner-en-ondernemer/bouwen-en-verbouwen/wegwijzer-omgevingsloket/vergunning-voor-woning-bouwen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.maasdriel.nl/inwoner-en-ondernemer/wonen-en-leven/arbeidsmigranten/huisvesters-/huisvesting-internationale-werknemers",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.maasdriel.nl/inwoner-en-ondernemer/bouwen-en-verbouwen/wegwijzer-omgevingsloket/vergunning-bedrijf-aan-huis",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.maasdriel.nl/\">Gemeente",
+        "reason": "INVALID: Error scraping https://www.maasdriel.nl/\">Gemeente: 404 Client Error: Not Found for url: https://www.maasdriel.nl/%22%3EGemeente"
+      },
+      {
+        "url": "https://www.maasdriel.nl/inwoner-en-ondernemer/bouwen-en-verbouwen/wegwijzer-omgevingsloket/vergunning-kamerverhuur",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.maasdriel.nl/inwoner-en-ondernemer/bouwen-en-verbouwen/aanvragen-vergunningen-en-vooroverleg",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De kosten voor een vooroverleg bedragen € 255,00",
+          "original_reference": "Er zijn ook kosten verbonden aan het vooroverleg, namelijk € 510,00",
+          "note": "Het bedrag voor vooroverleg in de originele tekst (€510,00) komt niet overeen met het bedrag genoemd op de website (€255,00)",
+          "source_urls": [
+            "https://www.maasdriel.nl/inwoner-en-ondernemer/bouwen-en-verbouwen/aanvragen-vergunningen-en-vooroverleg"
+          ]
+        }
+      ]
+    },
+    "summary": "Bij analyse van de bronnen is één significant verschil gevonden met betrekking tot de kosten van het vooroverleg. De originele tekst noemt een bedrag van €510,00, terwijl op de gemeentelijke website een bedrag van €255,00 wordt vermeld. Overige informatie in de originele tekst komt overeen met de bronnen of kon niet geverifieerd worden door beperkte toegang tot specifieke pagina's."
+  }
+}

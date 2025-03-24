@@ -1,0 +1,95 @@
+{
+  "context": {
+    "municipality": {
+      "name": "EDE",
+      "contact": {
+        "phone": "14 0318",
+        "email": "info@ede.nl",
+        "website": "http://www.ede.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Er is geen specifieke tijdsindicatie gegeven voor het behandelen van vergunningaanvragen.",
+        "status": "false",
+        "note": "De gemeente Ede hanteert wel degelijk specifieke behandeltermijnen: 8 weken voor reguliere procedures en 26 weken voor uitgebreide procedures. Deze termijnen kunnen eenmalig verlengd worden met 6 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 4,
+    "invalid_urls": 3,
+    "accuracy_percentage": 57.1,
+    "valid_urls_list": [
+      "https://www.ede.nl/aanvragen-en-regelen/bouw-en-verbouwvergunning",
+      "https://www.ede.nl/aanvragen-en-regelen/schetsplan",
+      "https://www.ede.nl/aanvragen-en-regelen/bouw-en-verbouwvergunning-voor-bedrijven",
+      "https://www.ede.nl/aanvragen-en-regelen/omgevingsplan"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.ede.nl/aanvragen-en-regelen/verleende-vergunningen-inzien-en-opvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://gemeente-website-url",
+        "reason": "INVALID: Error scraping https://gemeente-website-url: HTTPSConnectionPool(host='gemeente-website-url', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1062f39d0>: Failed to resolve 'gemeente-website-url' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://omgevingsloket-url",
+        "reason": "INVALID: Error scraping https://omgevingsloket-url: HTTPSConnectionPool(host='omgevingsloket-url', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1062f3d90>: Failed to resolve 'omgevingsloket-url' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U betaalt voor het beoordelen van uw conceptverzoek. Deze kosten worden in mindering gebracht bij de aanvraag van een omgevingsvergunning. De kosten voor het beoordelen van een conceptverzoek bedragen € 225,00.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de mogelijkheid en kosten van een conceptverzoek (voorheen schetsplan), wat een belangrijke voorbereidende stap kan zijn.",
+          "source_urls": [
+            "https://www.ede.nl/aanvragen-en-regelen/schetsplan"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U betaalt dus ook leges als uw aanvraag geweigerd of buiten behandeling wordt gesteld.",
+          "original_reference": "Let op, er zijn kosten zelfs als uw aanvraag wordt geweigerd of buiten behandeling wordt gesteld.",
+          "note": "De brontext is specifieker door te vermelden dat het om leges gaat, maar de strekking is hetzelfde.",
+          "source_urls": [
+            "https://www.ede.nl/aanvragen-en-regelen/bouw-en-verbouwvergunning-voor-bedrijven"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Uw vergunningaanvraag wordt behandeld door Omgevingsdienst De Vallei.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet wie de vergunningaanvraag behandelt, terwijl dit wel belangrijke informatie is.",
+          "source_urls": [
+            "https://www.ede.nl/aanvragen-en-regelen/bouw-en-verbouwvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie die ontbreekt in de originele tekst, waaronder de mogelijkheid tot het indienen van een conceptverzoek (€225), de specifieke vermelding van Omgevingsdienst De Vallei als behandelende instantie, en meer gedetailleerde informatie over de leges. Deze informatie is essentieel voor een volledig begrip van het vergunningsproces."
+  }
+}

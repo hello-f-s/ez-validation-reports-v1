@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LOPIK",
+      "contact": {
+        "phone": "(0348) 55 99 55",
+        "email": "gemeente@lopik.nl",
+        "website": "http://www.lopik.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 19,
+    "false_sentences": 2,
+    "accuracy_percentage": 90.5,
+    "false_statements": [
+      {
+        "sentence": "Voor een meldingsplichtig evenement: Formulier drie weken van tevoren indienen.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Lopik moet een melding minimaal 4 weken van tevoren worden ingediend, niet 3 weken."
+      },
+      {
+        "sentence": "Voor een vergunningsplichtig evenement: Formulier twaalf weken van tevoren indienen.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Lopik moet een vergunningaanvraag minimaal 8 weken van tevoren worden ingediend, niet 12 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.lopik.nl/evenement-organiseren",
+      "https://www.lopik.nl/festiviteit-bedrijf-vereniging-of-school",
+      "https://www.lopik.nl/exploitatievergunning-horecabedrijf",
+      "https://www.lopik.nl/kermis-organiseren",
+      "https://www.lopik.nl/milieu-vergunning-of-melding"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Weet u niet zeker of u wel of niet aan alle voorwaarden voldoet? Stuur dan voor de zekerheid uiterlijk twaalf weken van tevoren uw aanvraag",
+          "original_reference": "Voor een meldingsplichtig evenement: Formulier drie weken van tevoren indienen.",
+          "note": "De brontekst adviseert bij twijfel 12 weken van tevoren in te dienen, terwijl de originele tekst 3 weken aangeeft voor meldingsplichtige evenementen. Dit is een significant verschil in aanvraagtermijn.",
+          "source_urls": [
+            "https://www.lopik.nl/evenement-organiseren"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "geen muziek ten gehore wordt gebracht voor 07.00 uur of na 23.00 uur",
+          "original_reference": "geen muziek buiten tijdlimiet",
+          "note": "De brontekst specificeert concrete tijden voor muziek (niet voor 7:00 en na 23:00), terwijl de originele tekst alleen vaag spreekt over 'buiten tijdlimiet'.",
+          "source_urls": [
+            "https://www.lopik.nl/evenement-organiseren"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "de activiteiten niet plaatsvinden op de rijbaan, (brom)fietspad of parkeerplaats of anderszins een belemmering vormen voor het verkeer en de hulpdiensten",
+          "original_reference": "geen verkeersbelemmering",
+          "note": "De brontekst is specifieker over waar activiteiten niet mogen plaatsvinden en noemt expliciet hulpdiensten, terwijl de originele tekst alleen algemeen 'geen verkeersbelemmering' vermeldt.",
+          "source_urls": [
+            "https://www.lopik.nl/evenement-organiseren"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de aanvraagtermijnen en specificaties rond vergunningsvrije evenementen. De bronwebsite is specifieker in de beschrijving van voorwaarden, vooral wat betreft muziektijden en verkeersbelemmeringen. De termijn voor meldingsplichtige evenementen verschilt significant (12 weken versus 3 weken bij twijfel)."
+  }
+}

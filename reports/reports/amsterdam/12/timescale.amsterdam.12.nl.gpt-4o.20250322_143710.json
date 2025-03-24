@@ -1,0 +1,96 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AMSTERDAM",
+      "contact": {
+        "phone": "14 020",
+        "email": "null",
+        "website": "http://www.amsterdam.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "De beoordelingsduur voor een reguliere omgevingsvergunningaanvraag is maximaal 8 weken.",
+        "status": "false",
+        "note": "Volgens de gemeente Amsterdam is de standaard behandeltermijn voor een reguliere omgevingsvergunning maximaal 8 weken, maar deze termijn kan eenmalig met 6 weken worden verlengd. De maximale termijn is dus 14 weken, niet 8 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 1,
+    "invalid_urls": 4,
+    "accuracy_percentage": 20.0,
+    "valid_urls_list": [
+      "https://www.amsterdam.nl/wonen-leefomgeving/omgevingsvergunning/boom-kappen-of-snoeien/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.amsterdam.nl/ondernemen/vergunningen/",
+        "reason": "INVALID: Error scraping https://www.amsterdam.nl/ondernemen/vergunningen/: 403 Client Error: Forbidden for url: https://www.amsterdam.nl/ondernemen/vergunningen/"
+      },
+      {
+        "url": "https://www.amsterdam.nl/wonen-leefomgeving/omgevingsvergunning/conceptaanvraag-omgevingsvergunning/",
+        "reason": "INVALID: Error scraping https://www.amsterdam.nl/wonen-leefomgeving/omgevingsvergunning/conceptaanvraag-omgevingsvergunning/: 403 Client Error: Forbidden for url: https://www.amsterdam.nl/wonen-leefomgeving/omgevingsvergunning/conceptaanvraag-omgevingsvergunning/"
+      },
+      {
+        "url": "https://www.amsterdam.nl/wonen-leefomgeving/omgevingsvergunning/omgevingswet/",
+        "reason": "INVALID: Error scraping https://www.amsterdam.nl/wonen-leefomgeving/omgevingsvergunning/omgevingswet/: 403 Client Error: Forbidden for url: https://www.amsterdam.nl/wonen-leefomgeving/omgevingsvergunning/omgevingswet/"
+      },
+      {
+        "url": "https://www.amsterdam.nl/veelgevraagd/bekendmakingen-zoeken-cc13d",
+        "reason": "INVALID: Error scraping https://www.amsterdam.nl/veelgevraagd/bekendmakingen-zoeken-cc13d: 403 Client Error: Forbidden for url: https://www.amsterdam.nl/veelgevraagd/bekendmakingen-zoeken-cc13d"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U heeft altijd een omgevingsvergunning nodig voor het kappen of sterk terugsnoeien van een boom, struik of klimplant met een stam van 31 centimeter of meer (omtrek) en een hoogte van 130 centimeter of meer.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen specifieke maatcriteria voor wanneer een kapvergunning nodig is, terwijl de bron concrete afmetingen specificeert.",
+          "source_urls": [
+            "https://www.amsterdam.nl/wonen-leefomgeving/omgevingsvergunning/boom-kappen-of-snoeien/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Participatie: In de omgevingswet staat dat het belangrijk is om omwonenden te betrekken bij uw plan. Dat noemen we participatie. Soms is het zelfs verplicht.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst maakt geen melding van participatievereisten onder de Omgevingswet, terwijl dit volgens de bron een belangrijke en soms verplichte stap is.",
+          "source_urls": [
+            "https://www.amsterdam.nl/wonen-leefomgeving/omgevingsvergunning/boom-kappen-of-snoeien/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Kosten 2024: Kappen van 1 tot en met 5 bomen: € 141,90, Kappen van 6 tot en met 10 bomen: € 231,10",
+          "original_reference": "Voor specifieke tarieven en vergoedingen per type vergunning of activiteit wordt vaak verwezen naar gemeentelijke kostenoverzichten.",
+          "note": "De bron geeft specifieke, actuele tarieven voor 2024, terwijl de originele tekst alleen algemeen verwijst naar kostenoverzichten.",
+          "source_urls": [
+            "https://www.amsterdam.nl/wonen-leefomgeving/omgevingsvergunning/boom-kappen-of-snoeien/"
+          ]
+        }
+      ]
+    },
+    "summary": "De broninhoud bevat belangrijke aanvullende informatie die ontbreekt in de originele tekst, waaronder specifieke maatcriteria voor kapvergunningen, participatievereisten onder de Omgevingswet, en concrete tarieven voor 2024. Deze details maken de voorwaarden en kosten veel concreter dan de algemene beschrijving in de originele tekst."
+  }
+}

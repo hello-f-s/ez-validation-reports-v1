@@ -1,0 +1,85 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LEUSDEN",
+      "contact": {
+        "phone": "14 033",
+        "email": "gemeente@leusden.nl",
+        "website": "http://www.leusden.nl/"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 7,
+    "true_sentences": 6,
+    "false_sentences": 1,
+    "accuracy_percentage": 85.7,
+    "false_statements": [
+      {
+        "sentence": "Voor het organiseren van een evenement zoals een kermis of braderie heeft u een vergunning nodig van de gemeente Leusden.",
+        "status": "false",
+        "note": "Dit is onvolledig. Volgens de website van gemeente Leusden is niet voor elk evenement een vergunning nodig. Voor kleine evenementen volstaat een melding. Alleen voor grotere evenementen of evenementen met verhoogd risico is een vergunning vereist."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.leusden.nl/vergunningen-en-belastingen",
+      "https://www.leusden.nl/en/vergunningen-en-belastingen/drank-en-horeca/drank-en-horecavergunning",
+      "https://www.leusden.nl/en/vergunningen-en-belastingen",
+      "https://www.leusden.nl/vergunningen-en-belastingen/activiteit-organiseren",
+      "https://www.leusden.nl/en/vergunningen-en-belastingen/activiteit-organiseren"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://gemeenteleusden.nl",
+        "reason": "INVALID: Error scraping https://gemeenteleusden.nl: 439 Client Error: status code 439 for url: https://gemeenteleusden.nl/"
+      },
+      {
+        "url": "https://gemeenteleusden.nl\">Gemeente",
+        "reason": "INVALID: Error scraping https://gemeenteleusden.nl\">Gemeente: HTTPSConnectionPool(host='gemeenteleusden.nl%22%3egemeente', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10789bb10>: Failed to resolve 'gemeenteleusden.nl%22%3egemeente' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Melding klein evenement: Wilt u een klein evenement zoals een buurtbarbecue of straatfeest organiseren? Dan moet u dit melden bij de gemeente.",
+          "original_reference": "No matching information",
+          "note": "De bronnen maken onderscheid tussen grote evenementen (vergunningplichtig) en kleine evenementen (meldingsplichtig). Deze nuance ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.leusden.nl/vergunningen-en-belastingen/activiteit-organiseren",
+            "https://www.leusden.nl/en/vergunningen-en-belastingen/activiteit-organiseren"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Gebruiksmelding brandveiligheid: Voor de brandveiligheid is een gebruiksmelding soms verplicht bij het organiseren van activiteiten",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat er voor bepaalde evenementen ook een gebruiksmelding brandveiligheid nodig kan zijn.",
+          "source_urls": [
+            "https://www.leusden.nl/vergunningen-en-belastingen/activiteit-organiseren",
+            "https://www.leusden.nl/en/vergunningen-en-belastingen/activiteit-organiseren"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie over verschillende soorten evenementen en bijbehorende verplichtingen die niet in de originele tekst staat. Met name het onderscheid tussen vergunningplichtige evenementen en meldingsplichtige kleine evenementen, en de mogelijke verplichting voor een brandveiligheidsmelding zijn relevante toevoegingen."
+  }
+}

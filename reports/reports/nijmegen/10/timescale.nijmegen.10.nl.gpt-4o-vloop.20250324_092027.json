@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "NIJMEGEN",
+      "contact": {
+        "phone": "14 024",
+        "email": "gemeente@nijmegen.nl",
+        "website": "http://www.nijmegen.nl"
+      }
+    },
+    "service": {
+      "id": 10,
+      "name": "Nachtregister bijhouden"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 22,
+    "false_sentences": 2,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Dit kunt u regelen via de website www.ikbenhandelaar.nl.",
+        "status": "false",
+        "note": "De website www.ikbenhandelaar.nl bestaat niet. Handelaren moeten zich melden bij de gemeente Nijmegen via het Digitaal Handelaarsregister (DHR)."
+      },
+      {
+        "sentence": "U kunt het opkopersregister online beheren en controleren op gestolen goederen via de website www.ikbenhandelaar.nl.",
+        "status": "false",
+        "note": "De genoemde website www.ikbenhandelaar.nl is onjuist. Het Digitaal Handelaarsregister (DHR) is het correcte systeem dat gebruikt moet worden voor het beheren van het opkopersregister."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.nijmegen.nl/diensten/vergunningen/opkopersregister-bijhouden/",
+      "https://www.nijmegen.nl/diensten/belastingen/toeristenbelasting/",
+      "https://www.nijmegen.nl/diensten/wet-open-overheid/",
+      "https://www.nijmegen.nl/diensten/evenementen/schema-vergunningen-activiteiten/tekstversie/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.nijmegen.nl/diensten/vergunningen/informatiekraam-melden-of-vergunning/",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U bent verplicht zich te melden bij de burgemeester. Via de knop regelen kunt u zich aanmelden. Met deze melding voldoet u aan de wettelijke plicht. U ontvangt hiervan alleen een ontvangstbevestiging.",
+          "original_reference": "Om te voldoen aan de wettelijke verplichtingen, moet u zich melden bij de burgemeester. Dit kunt u regelen via de website www.ikbenhandelaar.nl.",
+          "note": "De originele tekst verwijst naar www.ikbenhandelaar.nl voor aanmelding, terwijl de bronpagina aangeeft dat dit via een 'knop regelen' op de gemeentewebsite gebeurt. Ook wordt specifiek vermeld dat men een ontvangstbevestiging krijgt, wat niet in de originele tekst staat.",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/vergunningen/opkopersregister-bijhouden/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "www.stopheling.nl wordt niet genoemd in de bronpagina",
+          "original_reference": "U kunt controleren of een goed gestolen is via www.stopheling.nl, waar een melding direct naar de politie gaat indien een gestolen goed geregistreerd wordt.",
+          "note": "De originele tekst verwijst naar www.stopheling.nl en beschrijft functionaliteit hiervan, maar deze website en functionaliteit worden niet genoemd in de bronpagina.",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/vergunningen/opkopersregister-bijhouden/"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele tekst en de bronnen. Het eerste verschil betreft de aanmeldprocedure, waarbij de originele tekst verwijst naar een externe website die niet wordt genoemd in de bronpagina. Het tweede verschil betreft de verwijzing naar www.stopheling.nl en bijbehorende functionaliteit die wel in de originele tekst staat maar niet terug te vinden is in de bronpagina. De overige informatie komt inhoudelijk overeen."
+  }
+}

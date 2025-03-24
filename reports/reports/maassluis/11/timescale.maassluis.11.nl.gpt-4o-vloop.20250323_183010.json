@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MAASSLUIS",
+      "contact": {
+        "phone": "14 010",
+        "email": "gemeente@maassluis.nl",
+        "website": "http://www.maassluis.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "Bezoekadres: Koningshoek 93.05, 3144 BA Maassluis.",
+        "status": "false",
+        "note": "Het correcte bezoekadres van de gemeente Maassluis is Koningshoek 93.050 (niet 93.05), 3144 BA Maassluis."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.maassluis.nl/omgevingsvergunning",
+      "https://www.maassluis.nl/uitrit-of-inrit-aanleggen",
+      "https://www.maassluis.nl/boom-kappen",
+      "https://www.maassluis.nl/milieu-vergunning-of-melding",
+      "https://www.maassluis.nl/omgevingsplan-wijzigen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor alle bomen met een minimale stamdoorsnede van 10 cm of groter, gemeten op 1,30 meter hoogte boven het maaiveld, is een omgevingsvergunning nodig.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen specifieke criteria voor wanneer een kapvergunning nodig is, terwijl de brontekst duidelijke maatvoering aangeeft.",
+          "source_urls": [
+            "https://www.maassluis.nl/boom-kappen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Type A: geen melding en geen vergunning, Type B: melding, Type C: vergunning",
+          "original_reference": "No matching information",
+          "note": "De originele tekst noemt niet de verschillende types bedrijven en bijbehorende milieuvergunningsvereisten die in de brontekst worden beschreven.",
+          "source_urls": [
+            "https://www.maassluis.nl/milieu-vergunning-of-melding"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Een omgevingsplan geeft aan waar woningen, industrie, winkels, recreatie of kantoren mogen komen. Het plan bevat ook regels voor bouwen, bouwhoogtes, afmetingen en het gebruik.",
+          "original_reference": "Een omgevingsplan geeft aan waar woningen, industrie, winkels, recreatie of kantoren mogen komen. Het bevat ook regels voor bouwen, bouwhoogtes, afmetingen en het gebruik.",
+          "note": "De beschrijving van het omgevingsplan komt exact overeen in beide teksten.",
+          "source_urls": [
+            "https://www.maassluis.nl/omgevingsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen het ontbreken van specifieke criteria voor kapvergunningen en de afwezigheid van informatie over verschillende types milieuvergunningen in de originele tekst. De kerninhoud over het omgevingsplan en de algemene procedures komt wel overeen. De originele tekst zou baat hebben bij het toevoegen van deze specifieke details om completer te zijn."
+  }
+}

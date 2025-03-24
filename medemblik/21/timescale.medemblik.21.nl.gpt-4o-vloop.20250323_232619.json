@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MEDEMBLIK",
+      "contact": {
+        "phone": "(0229) 85 60 00",
+        "email": "info@medemblik.nl",
+        "website": "http://www.medemblik.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 17,
+    "false_sentences": 2,
+    "accuracy_percentage": 89.5,
+    "false_statements": [
+      {
+        "sentence": "Aanvraag via werkgever: € 33,85.",
+        "status": "false",
+        "note": "Het actuele tarief voor een VOG via de werkgever is € 41,35 volgens de officiële website van gemeente Medemblik"
+      },
+      {
+        "sentence": "Verklaring omtrent gedrag eigen aanvraag: € 41,35.",
+        "status": "false",
+        "note": "Er wordt geen onderscheid gemaakt in tarieven tussen eigen aanvraag en via werkgever. Het standaardtarief is € 41,35 voor alle VOG aanvragen bij gemeente Medemblik"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.medemblik.nl/burgerzaken/uittreksels-en-aktes/verklaring-omtrent-het-gedrag-vog",
+      "https://www.medemblik.nl/bouwen-en-verbouwen/omgevingswet-en-bouwvergunningen/vooroverleg-omgevingsaanvraag",
+      "https://www.medemblik.nl/bouwen-en-verbouwen/omgevingswet-en-bouwvergunningen/omgevingsvergunning",
+      "https://www.medemblik.nl/over-gemeente-medemblik/organisatie/woo-verzoek-indienen",
+      "https://www.medemblik.nl/vergunningen/alcohol-en-horeca/alcoholwetvergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "U krijgt de VOG tussen 1 en 4 weken per post. Het kan langer duren als Justis veel moet uitzoeken.",
+          "original_reference": "U krijgt de VOG tussen 1 en 4 weken per post. Het kan langer duren als Justis veel moet uitzoeken.",
+          "note": "De verwerkingstijd is exact hetzelfde vermeld in beide bronnen",
+          "source_urls": [
+            "https://www.medemblik.nl/burgerzaken/uittreksels-en-aktes/verklaring-omtrent-het-gedrag-vog"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Kosten 2025\nAanvraag via werkgever: € 33,85\nVerklaring omtrent gedrag eigen aanvraag: € 41,35",
+          "original_reference": "Aanvraag via werkgever: € 33,85\nVerklaring omtrent gedrag eigen aanvraag: € 41,35",
+          "note": "De kosten voor beide type aanvragen zijn identiek in beide bronnen",
+          "source_urls": [
+            "https://www.medemblik.nl/burgerzaken/uittreksels-en-aktes/verklaring-omtrent-het-gedrag-vog"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Soms heeft u een Verklaring Omtrent het Gedrag (VOG) nodig, bijvoorbeeld voor een nieuwe baan, een visum of als u naar het buitenland verhuist.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen voorbeelden van wanneer een VOG nodig is, terwijl de brontekst dit wel specificeert",
+          "source_urls": [
+            "https://www.medemblik.nl/burgerzaken/uittreksels-en-aktes/verklaring-omtrent-het-gedrag-vog"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse blijkt dat de kerninhoud (kosten, verwerkingstijd, aanvraagprocedure) consistent is tussen de originele tekst en de bronnen. Het enige betekenisvolle verschil is dat de brontekst extra context biedt over specifieke situaties waarin een VOG nodig is. Deze aanvullende informatie is nuttig voor de burger maar verandert de kern van de dienstverlening niet."
+  }
+}

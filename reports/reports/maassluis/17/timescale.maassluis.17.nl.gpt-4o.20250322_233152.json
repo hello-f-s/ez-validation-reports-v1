@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MAASSLUIS",
+      "contact": {
+        "phone": "14 010",
+        "email": "gemeente@maassluis.nl",
+        "website": "http://www.maassluis.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "Voor een vergunning voor onbepaalde tijd inclusief terras zijn de legeskosten € 1.034,60.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Maassluis bedragen de kosten voor een exploitatievergunning inclusief terras € 1.047,25 voor onbepaalde tijd."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.maassluis.nl/tap-of-buitenbar-plaatsen-op-terras",
+      "https://www.maassluis.nl/uitrit-of-inrit-aanleggen",
+      "https://www.maassluis.nl/antenne-of-schotelantenne-plaatsen",
+      "https://www.maassluis.nl/exploitatievergunning-horecabedrijf",
+      "https://www.maassluis.nl/standplaats-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://gemeente.maassluis.nl",
+        "reason": "INVALID: Error scraping https://gemeente.maassluis.nl: HTTPSConnectionPool(host='gemeente.maassluis.nl', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1080ff250>: Failed to resolve 'gemeente.maassluis.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De eigenaar of leidinggevende is van onbesproken gedrag en minimaal 21 jaar oud. De gemeente kan vragen om een Verklaring Omtrent het Gedrag (VOG).",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de minimumleeftijd van 21 jaar en de mogelijke VOG-vereiste voor eigenaren/leidinggevenden.",
+          "source_urls": [
+            "https://www.maassluis.nl/exploitatievergunning-horecabedrijf"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als nieuwe exploitant bent u verplicht het Bibob-formulier in te vullen.",
+          "original_reference": "Een Bibob-vragenlijst, indien van toepassing",
+          "note": "De originele tekst suggereert dat de Bibob-vragenlijst optioneel is, terwijl de bron aangeeft dat deze verplicht is voor nieuwe exploitanten.",
+          "source_urls": [
+            "https://www.maassluis.nl/exploitatievergunning-horecabedrijf"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "indien van toepassing: arbeidscontracten",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat arbeidscontracten mogelijk nodig zijn bij de aanvraag.",
+          "source_urls": [
+            "https://www.maassluis.nl/exploitatievergunning-horecabedrijf"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten enkele belangrijke aanvullende vereisten die niet in de originele tekst staan vermeld, waaronder de minimumleeftijd van 21 jaar, de mogelijke VOG-vereiste, de verplichte Bibob-vragenlijst voor nieuwe exploitanten en de mogelijke noodzaak van arbeidscontracten. Deze verschillen maken de vereisten in werkelijkheid strenger dan de originele tekst suggereert."
+  }
+}

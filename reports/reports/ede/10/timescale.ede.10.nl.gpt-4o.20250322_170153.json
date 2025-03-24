@@ -1,0 +1,81 @@
+{
+  "context": {
+    "municipality": {
+      "name": "EDE",
+      "contact": {
+        "phone": "14 0318",
+        "email": "info@ede.nl",
+        "website": "http://www.ede.nl"
+      }
+    },
+    "service": {
+      "id": 10,
+      "name": "Nachtregister bijhouden"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 1,
+    "true_sentences": 1,
+    "false_sentences": 0,
+    "accuracy_percentage": 100.0,
+    "false_statements": []
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.ede.nl/aanvragen-en-regelen/gebruik-openbare-ruimte",
+      "https://www.ede.nl/bestuur-en-organisatie/woo-verzoek-en-informatieaanvraag",
+      "https://www.ede.nl/aanvragen-en-regelen/ontheffing-aanvragen",
+      "https://www.ede.nl/aanvragen-en-regelen/toeristenbelasting"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.ede.nl/aanvragen-en-regelen/verleende-vergunningen-inzien-en-opvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Gebruik openbare ruimte: Wilt u een bouwcontainer, bouwmateriaal, steiger, mobiele kraan, hoogwerker neerzetten op grond die van de gemeente is? Dan meldt u dat bij ons via de onderstaande knop. Dit doet u minimaal twee weken van tevoren.",
+          "original_reference": "No matching information",
+          "note": "De bron bevat specifieke informatie over het gebruik van openbare ruimte en de aanvraagprocedure, terwijl deze informatie volledig ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.ede.nl/aanvragen-en-regelen/gebruik-openbare-ruimte"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Tarieven toeristenbelasting 2024: Hotelgasten € 1,70 per persoon per overnachting, Gasten van een camping, B&B of recreatiewoning € 1,28 per persoon per overnachting",
+          "original_reference": "No matching information",
+          "note": "De bron bevat specifieke tarieven voor toeristenbelasting voor 2024 en 2025, terwijl deze informatie ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.ede.nl/aanvragen-en-regelen/toeristenbelasting"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Woo-verzoek en informatieverzoek procedures via formulier, email naar Woo@ede.nl of brief naar Postbus 9022 6710 HK Ede",
+          "original_reference": "No matching information",
+          "note": "De bron bevat gedetailleerde informatie over het indienen van Woo-verzoeken en informatieverzoeken, inclusief contactgegevens, terwijl deze informatie ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.ede.nl/bestuur-en-organisatie/woo-verzoek-en-informatieaanvraag"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten uitgebreide informatie over gemeentelijke diensten en procedures die volledig ontbreekt in de originele tekst. Dit omvat specifieke details over het gebruik van openbare ruimte, toeristenbelasting tarieven en Woo-verzoeken. De originele tekst bevatte geen informatie, terwijl de bronnen gedetailleerde procedures, tarieven en contactgegevens verstrekken."
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "context": {
+    "municipality": {
+      "name": "BARNEVELD",
+      "contact": {
+        "phone": "14 0342",
+        "email": "info@barneveld.nl",
+        "website": "http://www.barneveld.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 9,
+    "false_sentences": 3,
+    "accuracy_percentage": 75.0,
+    "false_statements": [
+      {
+        "sentence": "Bij monumenten eventuele goedkeuring van monumenten@barneveld.nl",
+        "status": "false",
+        "note": "Dit e-mailadres bestaat niet. Voor monumenten moet men contact opnemen via het algemene contactformulier op de website van de gemeente Barneveld."
+      },
+      {
+        "sentence": "Voor kopieën van vergunningen duurt het ontvangen tot 7 werkdagen.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Barneveld duurt het maximaal 2 weken om een kopie van een vergunning te ontvangen."
+      },
+      {
+        "sentence": "Er is geen specifieke informatie aanwezig over het maken van bezwaren tegen beslissingen met betrekking tot de omgevingsvergunning op de website.",
+        "status": "false",
+        "note": "Er is wel degelijk informatie beschikbaar over bezwaar maken op de website van de gemeente Barneveld, inclusief een specifieke pagina over bezwaar maken tegen een omgevingsvergunning."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 2,
+    "invalid_urls": 3,
+    "accuracy_percentage": 40.0,
+    "valid_urls_list": [
+      "https://www.barneveld.nl/bouwen-wonen-en-verhuizen/omgevingsvergunning/omgevingsvergunning-aanvragen",
+      "https://www.barneveld.nl/bouwen-wonen-en-verhuizen/omgevingsvergunning/monument-vergunning-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.barneveld.nl/bouwen-wonen-en-verhuizen/bouwen-slopen-verbouwen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.barneveld.nl/bouwen-wonen-en-verhuizen/omgevingsvergunning/kopie-vergunning-of-tekening-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.barneveld.nl/bouwen-wonen-en-verhuizen/omgevingsvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bij een eenvoudige aanvraag ontvangt u meestal binnen 8 weken een besluit. Bij een uitgebreide aanvraag ontvangt u meestal binnen 6 maanden een besluit. Een verlenging van 6 weken is mogelijk.",
+          "original_reference": "Er is geen specifieke informatie over de verwerkingstijd van nieuwe vergunningaanvragen.",
+          "note": "De originele tekst mist belangrijke informatie over de verwerkingstijden: 8 weken voor eenvoudige aanvragen en 6 maanden voor uitgebreide aanvragen, met mogelijke verlenging van 6 weken.",
+          "source_urls": [
+            "https://www.barneveld.nl/bouwen-wonen-en-verhuizen/omgevingsvergunning/omgevingsvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor een vergunningsaanvraag betaalt u kosten. Deze kosten verschillen per aanvraag.",
+          "original_reference": "Er is geen specifieke informatie aanwezig over de kosten en betalingsmethoden voor de aanvraag van een omgevingsvergunning op de website.",
+          "note": "De bronpagina vermeldt wel dat er kosten verbonden zijn aan de aanvraag en dat deze per aanvraag verschillen, terwijl de originele tekst aangeeft dat er geen informatie over kosten beschikbaar is.",
+          "source_urls": [
+            "https://www.barneveld.nl/bouwen-wonen-en-verhuizen/omgevingsvergunning/omgevingsvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U heeft geen vergunning nodig als de monumentale waarde niet lager wordt door de werkzaamheden. Bijvoorbeeld bij het: opschuren en schilderen in dezelfde kleur vervangen van kapotte ruiten opstoppen van rieten daken",
+          "original_reference": "Voor monumenten gelden extra regels waarbij het behoud van monumentale waarde van belang is.",
+          "note": "De bronpagina geeft specifieke voorbeelden van vergunningvrije werkzaamheden voor monumenten, terwijl de originele tekst alleen algemene informatie bevat.",
+          "source_urls": [
+            "https://www.barneveld.nl/bouwen-wonen-en-verhuizen/omgevingsvergunning/monument-vergunning-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De originele tekst mist belangrijke details over verwerkingstijden van vergunningaanvragen, vermeldt onjuist dat er geen informatie over kosten beschikbaar is, en geeft minder specifieke informatie over monumentenwerkzaamheden. De bronpagina's bevatten meer gedetailleerde informatie over deze onderwerpen, waaronder concrete termijnen, kostenvermelding en specifieke voorbeelden van vergunningvrije werkzaamheden aan monumenten."
+  }
+}

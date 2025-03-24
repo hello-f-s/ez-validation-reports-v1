@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DALFSEN",
+      "contact": {
+        "phone": "14 0529",
+        "email": "gemeente@dalfsen.nl",
+        "website": "http://www.dalfsen.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 27,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.4,
+    "false_statements": [
+      {
+        "sentence": "Type B bedrijven (veel gevolgen voor milieu) moeten een melding Activiteitenbesluit doen, vooral bij het starten, wijzigen of uitbreiden van het bedrijf.",
+        "status": "false",
+        "note": "Deze beschrijving is onjuist. Type B bedrijven hebben juist beperkte milieueffecten, niet 'veel gevolgen'. Type C bedrijven zijn degene met grotere milieueffecten. Dit blijkt uit de officiële indeling van het Activiteitenbesluit zoals gehanteerd door de gemeente Dalfsen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.dalfsen.nl/milieu-vergunning-of-melding",
+      "https://www.dalfsen.nl/omgevingsvergunning",
+      "https://www.dalfsen.nl/bedrijfsactiviteiten-wijzigen",
+      "https://www.dalfsen.nl/milieuvervuiling-melden",
+      "https://www.dalfsen.nl/omgevingsplan-aanpassen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor het starten, wijzigen of uitbreiden van bedrijfsactiviteiten moet u een melding doen of een vergunning aanvragen. Naast het milieu speelt ook de brandveiligheid een rol. Dit betekent dat ook de brandweer zal controleren of de gebruiksvergunning nodig is.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over brandveiligheid en de rol van de brandweer bij bedrijfsactiviteiten. Dit is een essentiële aanvullende vereiste die niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.dalfsen.nl/bedrijfsactiviteiten-wijzigen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bij een uitgebreide aanvraag doet u dit minimaal 6 maanden van tevoren.",
+          "original_reference": "Verlening vergunning (ingewikkelde aanvraag): binnen 26 weken, verlenging mogelijk met 6 weken.",
+          "note": "De brontekst geeft aan dat een uitgebreide aanvraag 6 maanden van tevoren moet worden ingediend, terwijl de originele tekst alleen de behandeltermijn van 26 weken noemt. Dit is een belangrijk verschil in planning voor de aanvrager.",
+          "source_urls": [
+            "https://www.dalfsen.nl/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor kleinere plannen vraagt u een omgevingsvergunning strijdig gebruik aan.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist de specifieke informatie over de mogelijkheid van een 'omgevingsvergunning strijdig gebruik' voor kleinere plannen, wat een belangrijk alternatief is voor een volledige omgevingsplanaanpassing.",
+          "source_urls": [
+            "https://www.dalfsen.nl/omgevingsplan-aanpassen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten enkele belangrijke aanvullende vereisten en procedures die niet in de originele tekst staan, met name rond brandveiligheid, aanvraagtermijnen en alternatieve vergunningsopties. Deze informatie is essentieel voor een complete dienstverlening en correcte procedurebeschrijving."
+  }
+}

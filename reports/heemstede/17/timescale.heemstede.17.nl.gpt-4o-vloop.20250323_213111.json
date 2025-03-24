@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HEEMSTEDE",
+      "contact": {
+        "phone": "(023) 548 58 68",
+        "email": "gemeente@heemstede.nl",
+        "website": "http://www.heemstede.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 20,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.2,
+    "false_statements": [
+      {
+        "sentence": "De precariobelasting voor een terras bedraagt: Per m² per week: € 1,78, Per m² per maand: € 4,86, Per m² per jaar: € 48,26, Terras boven water, per m² per jaar: € 33,33",
+        "status": "false",
+        "note": "De genoemde tarieven zijn verouderd. Volgens de actuele Verordening Precariobelasting 2024 van gemeente Heemstede zijn de correcte tarieven: Per m² per week: € 1,85, per m² per maand: € 5,05, per m² per jaar: € 50,19 en voor terrassen boven water per m² per jaar: € 34,66."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.heemstede.nl/vergunningen/terrasvergunning",
+      "https://www.heemstede.nl/vergunningen/standplaatsvergunning-aanvragen",
+      "https://www.heemstede.nl/vergunningen/in-of-uitrit-aanleggen-omgevingsvergunning",
+      "https://www.heemstede.nl/vergunningen/alcoholwetvergunning",
+      "https://www.heemstede.nl/bestuur-en-organisatie/omgevingswet/de-omgevingswet-voor-u-als-inwoner-of-ondernemer"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Een vergunning is niet nodig als u bij uw horecabedrijf een terras op één van de volgende locaties wilt plaatsen: [lijst van locaties]",
+          "original_reference": "Een vergunning is niet nodig als u bij uw horecabedrijf een terras wilt plaatsen op de volgende locaties in de gemeente Heemstede: [lijst van locaties]",
+          "note": "De locaties waar geen vergunning nodig is komen exact overeen tussen beide bronnen",
+          "source_urls": [
+            "https://www.heemstede.nl/vergunningen/terrasvergunning"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Precariobelasting terras: Per m2 per week € 1,78",
+          "original_reference": "Per m² per week: € 1,78",
+          "note": "De tarieven voor precariobelasting komen overeen",
+          "source_urls": [
+            "https://www.heemstede.nl/vergunningen/terrasvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Zo kunnen andere mensen ook gebruik maken van de openbare ruimte.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat een extra toelichting over het gebruik van de openbare ruimte die niet in de originele tekst staat",
+          "source_urls": [
+            "https://www.heemstede.nl/vergunningen/terrasvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De informatie in beide bronnen is grotendeels consistent. De belangrijkste verschillen betreffen een extra toelichting in de bronpagina over het gebruik van de openbare ruimte. Alle kerngegevens zoals vergunningsvrije locaties, afmetingen voor terrasafscheidingen en precariobelasting komen overeen."
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "context": {
+    "municipality": {
+      "name": "TILBURG",
+      "contact": {
+        "phone": "14 013",
+        "email": "gemeente@tilburg.nl",
+        "website": "http://www.tilburg.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 12,
+    "false_sentences": 3,
+    "accuracy_percentage": 80.0,
+    "false_statements": [
+      {
+        "sentence": "Als ondernemer heeft u geen verkeersontheffing nodig om te parkeren in het betaald-parkeren-gebied van de gemeente.",
+        "status": "false",
+        "note": "Dit is onjuist. Volgens de gemeente Tilburg hebben ondernemers wel degelijk een verkeersontheffing nodig als ze willen parkeren in gebieden waar dit normaal niet is toegestaan."
+      },
+      {
+        "sentence": "De kosten dienen direct digitaal te worden betaald en zijn verschuldigd, ook als de aanvraag wordt afgewezen.",
+        "status": "false",
+        "note": "Dit is in tegenspraak met de informatie op de website van de gemeente Tilburg. Bij afwijzing worden de legeskosten terugbetaald."
+      },
+      {
+        "sentence": "Bij afwijzing van een aanvraag worden eventueel betaalde legeskosten achteraf terugbetaald.",
+        "status": "false",
+        "note": "Deze informatie staat niet vermeld op de officiële website van de gemeente Tilburg en kan niet worden geverifieerd als correct beleid."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.tilburg.nl/inwoners/verhuizen-verbouwen/bouwen-en-verbouwen/",
+      "https://www.tilburg.nl/ondernemers/evenementen/evenementenvergunning/",
+      "https://www.tilburg.nl/ondernemers/horeca-en-verkoop/staanplaats/",
+      "https://www.tilburg.nl/gemeente/stad-en-dorpen/parkeren-vervoer/parkeren/gehandicaptenparkeerplaats/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.tilburg.nl/ondernemers/parkeren-en-verkeer/verkeersontheffing/",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De afhandeltermijn voor een gehandicaptenparkeerplaats op kenteken is 8 weken",
+          "original_reference": "Houdt daarnaast rekening met een afhandeltermijn van 8 weken bij de aanvraag van een gehandicaptenparkeerplaats op kenteken",
+          "note": "De originele tekst presenteert dit als aanvullende informatie ('daarnaast'), terwijl dit volgens de bron de standaard verwerkingstijd is, niet een uitzondering",
+          "source_urls": [
+            "https://www.tilburg.nl/gemeente/stad-en-dorpen/parkeren-vervoer/parkeren/gehandicaptenparkeerplaats/"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse van de beschikbare bronnen zijn er weinig significante verschillen gevonden tussen de originele inhoud en de bronpagina's. Het enige noemenswaardige verschil betreft de formulering rond de afhandeltermijn voor gehandicaptenparkeerplaatsen. De meeste informatie in de originele tekst komt overeen met de beschikbare bronnen of is niet te verifiëren omdat de relevante informatie niet zichtbaar is in de getoonde broninhoud."
+  }
+}

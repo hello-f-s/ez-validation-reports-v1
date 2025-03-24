@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HEEMSKERK",
+      "contact": {
+        "phone": "14 0251",
+        "email": "post@heemskerk.nl",
+        "website": "http://www.heemskerk.nl"
+      }
+    },
+    "service": {
+      "id": 16,
+      "name": "Registreren in het Landelijk Register Kinderopvang (LRK)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 10,
+    "true_sentences": 9,
+    "false_sentences": 1,
+    "accuracy_percentage": 90.0,
+    "false_statements": [
+      {
+        "sentence": "De beoordeling van de aanvraag vindt plaats binnen 10 weken na ontvangst.",
+        "status": "false",
+        "note": "Volgens de Algemene wet bestuursrecht heeft de gemeente maximaal 14 weken de tijd om een besluit te nemen op een aanvraag voor registratie in het Landelijk Register Kinderopvang, niet 10 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.heemskerk.nl/over-heemskerk/kinderopvang-ondernemers",
+      "https://www.heemskerk.nl/werk-inkomen-zorg-en-welzijn/kindpakket",
+      "https://www.heemskerk.nl/aanvragen-en-regelen/aangifte-levenloos-geboren-kind",
+      "https://www.heemskerk.nl/aanvragen-en-regelen/ondernemersloket",
+      "https://www.heemskerk.nl/aanvragen-en-regelen/verklaring-omtrent-gedrag-vog"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "GGD maakt gebruik van Streng aan de Poort.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt specifiek dat de GGD gebruik maakt van 'Streng aan de Poort' bij inspecties, wat niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.heemskerk.nl/over-heemskerk/kinderopvang-ondernemers"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U kunt de beleidsregel handhaving Wet kinderopvang online lezen.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina verwijst naar een online beschikbare beleidsregel handhaving Wet kinderopvang, wat niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.heemskerk.nl/over-heemskerk/kinderopvang-ondernemers"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Voor de registratie betaalt u legeskosten.",
+          "original_reference": "Voor de registratie moet u legeskosten betalen.",
+          "note": "De informatie over legeskosten komt overeen met de originele tekst.",
+          "source_urls": [
+            "https://www.heemskerk.nl/over-heemskerk/kinderopvang-ondernemers"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina bevat twee belangrijke aanvullende elementen die niet in de originele tekst staan: het gebruik van 'Streng aan de Poort' door de GGD en de verwijzing naar de online beleidsregel handhaving Wet kinderopvang. Deze informatie kan relevant zijn voor aanvragers. De overige informatie, waaronder de procedures, termijnen en kosten, komt overeen met de originele tekst."
+  }
+}

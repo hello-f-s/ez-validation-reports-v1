@@ -1,0 +1,108 @@
+{
+  "context": {
+    "municipality": {
+      "name": "TILBURG",
+      "contact": {
+        "phone": "14 013",
+        "email": "gemeente@tilburg.nl",
+        "website": "http://www.tilburg.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "Alle evenementen zijn verplicht dit op te stellen, met onder andere gebruik van duurzame bekers.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Tilburg is een duurzaamheidsplan niet voor alle evenementen verplicht. Alleen voor evenementen met meer dan 2000 bezoekers per dag is een duurzaamheidsplan verplicht, inclusief het gebruik van herbruikbare bekers."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 11,
+    "valid_urls": 5,
+    "invalid_urls": 6,
+    "accuracy_percentage": 45.5,
+    "valid_urls_list": [
+      "https://www.tilburg.nl/ondernemers/evenementen/meldings-of-vergunningsplicht/",
+      "https://www.tilburg.nl/ondernemers/evenementen/evenementenvergunning/",
+      "https://www.tilburg.nl/ondernemers/evenementen/toolbox-evenementenvergunning/",
+      "https://www.tilburg.nl/ondernemers/evenementen/evenement-melden/",
+      "https://www.tilburg.nl/ondernemers/evenementen/evenement-organiseren/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://gemeente-tilburg.nl/events-aanvragen",
+        "reason": "INVALID: Error scraping https://gemeente-tilburg.nl/events-aanvragen: 439 Client Error: status code 439 for url: https://gemeente-tilburg.nl/events-aanvragen"
+      },
+      {
+        "url": "https://gemeente-tilburg.nl/alcoholwet-ontheffing",
+        "reason": "INVALID: Error scraping https://gemeente-tilburg.nl/alcoholwet-ontheffing: 439 Client Error: status code 439 for url: https://gemeente-tilburg.nl/alcoholwet-ontheffing"
+      },
+      {
+        "url": "https://gemeente-tilburg.nl/afhandeling-aanvraag",
+        "reason": "INVALID: Error scraping https://gemeente-tilburg.nl/afhandeling-aanvraag: 439 Client Error: status code 439 for url: https://gemeente-tilburg.nl/afhandeling-aanvraag"
+      },
+      {
+        "url": "https://gemeente-tilburg.nl/evenement-verordeningen",
+        "reason": "INVALID: Error scraping https://gemeente-tilburg.nl/evenement-verordeningen: 439 Client Error: status code 439 for url: https://gemeente-tilburg.nl/evenement-verordeningen"
+      },
+      {
+        "url": "https://gemeente-tilburg.nl/contactformulier",
+        "reason": "INVALID: Error scraping https://gemeente-tilburg.nl/contactformulier: 439 Client Error: status code 439 for url: https://gemeente-tilburg.nl/contactformulier"
+      },
+      {
+        "url": "https://gemeente-tilburg.nl/events-toolbox",
+        "reason": "INVALID: Error scraping https://gemeente-tilburg.nl/events-toolbox: 439 Client Error: status code 439 for url: https://gemeente-tilburg.nl/events-toolbox"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor 0-evenementen is alleen een melding nodig, geen vergunning",
+          "original_reference": "Voor de meeste evenementen is een evenementenvergunning nodig",
+          "note": "De originele tekst stelt dat voor de meeste evenementen een vergunning nodig is, maar specificeert niet dat 0-evenementen alleen een melding vereisen. Dit is een belangrijk onderscheid in de procedure.",
+          "source_urls": [
+            "https://www.tilburg.nl/ondernemers/evenementen/meldings-of-vergunningsplicht/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor A-evenementen geldt een aanvraagtermijn van 8 weken, voor B- en C-evenementen 12 weken",
+          "original_reference": "U dient de vergunning uiterlijk 12 weken voor de opbouw van uw evenement aan te vragen",
+          "note": "De originele tekst noemt alleen de 12-weken termijn, terwijl er voor A-evenementen een kortere aanvraagtermijn van 8 weken geldt.",
+          "source_urls": [
+            "https://www.tilburg.nl/ondernemers/evenementen/evenementenvergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het duurzaamheidsplan is alleen verplicht voor evenementen met meer dan 2000 bezoekers",
+          "original_reference": "Alle evenementen zijn verplicht dit op te stellen",
+          "note": "De originele tekst stelt dat alle evenementen een duurzaamheidsplan moeten opstellen, terwijl dit alleen geldt voor grotere evenementen met meer dan 2000 bezoekers.",
+          "source_urls": [
+            "https://www.tilburg.nl/ondernemers/evenementen/toolbox-evenementenvergunning/"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn drie belangrijke verschillen gevonden tussen de originele tekst en de bronnen: (1) de vergunningplicht voor 0-evenementen, (2) verschillende aanvraagtermijnen voor verschillende types evenementen, en (3) de verplichting voor het duurzaamheidsplan. Deze verschillen hebben significante impact op de procedure en vereisten voor evenementenorganisatoren."
+  }
+}

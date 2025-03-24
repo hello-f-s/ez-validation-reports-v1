@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LAARBEEK",
+      "contact": {
+        "phone": "(0492) 46 97 00",
+        "email": "gemeente@laarbeek.nl",
+        "website": "http://www.laarbeek.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "Het aanvragen van een VOG kost via de gemeente voor natuurlijke personen € 41,35 en online rechtstreeks via Justis € 33,85 (tarieven 2022).",
+        "status": "false",
+        "note": "De genoemde tarieven zijn verouderd. In 2024 kost een VOG via de gemeente € 46,25 en online via Justis € 39,95."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.laarbeek.nl/verklaring-omtrent-het-gedrag",
+      "https://www.laarbeek.nl/verzoek-op-basis-van-de-wet-open-overheid-woo",
+      "https://www.laarbeek.nl/reclame-uitingen-plaatsen-omgevingsvergunning",
+      "https://www.laarbeek.nl/omgevingsvergunning",
+      "https://www.laarbeek.nl/milieu-vergunning-of-melding"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U regelt een VOG rechtstreeks via Justis: Aanvraagformulier Verklaring Omtrent het Gedrag Natuurlijke Personen (VOG NP)",
+          "original_reference": "U kunt de VOG digitaal aanvragen via Justis met uw DigiD",
+          "note": "De bronpagina specificeert dat het gaat om een 'Aanvraagformulier VOG NP', wat een belangrijk detail is dat ontbreekt in de originele tekst",
+          "source_urls": [
+            "https://www.laarbeek.nl/verklaring-omtrent-het-gedrag"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het is belangrijk dat u het hele aanvraagformulier kunt scannen en uploaden",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt een belangrijke voorwaarde voor digitale aanvraag (scannen en uploaden) die niet genoemd wordt in de originele tekst",
+          "source_urls": [
+            "https://www.laarbeek.nl/verklaring-omtrent-het-gedrag"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U krijgt het aanvraagformulier van degene die de VOG van u wil hebben. Dat formulier moet dan al helemaal ingevuld en ondertekend zijn",
+          "original_reference": "Ingevuld en ondertekend aanvraagformulier",
+          "note": "De bronpagina specificeert dat het formulier van de aanvrager komt en vooraf ingevuld moet zijn, wat een belangrijke toevoeging is t.o.v. de originele tekst",
+          "source_urls": [
+            "https://www.laarbeek.nl/verklaring-omtrent-het-gedrag"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina bevat enkele belangrijke specifieke details over de VOG-aanvraag die niet vermeld worden in de originele tekst. Dit betreft vooral het type aanvraagformulier (VOG NP), de vereiste om het formulier te kunnen scannen bij digitale aanvraag, en de verduidelijking dat het aanvraagformulier van de aanvrager komt en vooraf ingevuld moet zijn. Deze details zijn relevant voor een correcte aanvraagprocedure."
+  }
+}

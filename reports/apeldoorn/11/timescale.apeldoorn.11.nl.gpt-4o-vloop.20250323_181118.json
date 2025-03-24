@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "APELDOORN",
+      "contact": {
+        "phone": "14 055",
+        "email": "gemeente@apeldoorn.nl",
+        "website": "http://www.apeldoorn.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 31,
+    "true_sentences": 29,
+    "false_sentences": 2,
+    "accuracy_percentage": 93.5,
+    "false_statements": [
+      {
+        "sentence": "Specifieke kosten: € 113,50 voor een uitritaanleg en € 307,05 voor een sloopvergunning.",
+        "status": "false",
+        "note": "Deze bedragen zijn niet correct volgens de actuele legesverordening van gemeente Apeldoorn. De exacte bedragen verschillen en zijn afhankelijk van specifieke situaties."
+      },
+      {
+        "sentence": "Kosten voor nieuwe bouw: € 431,20 plus een bedrag per vierkante meter.",
+        "status": "false",
+        "note": "Dit specifieke basisbedrag van € 431,20 komt niet overeen met de actuele legestarieven van gemeente Apeldoorn. De werkelijke kosten worden berekend op basis van de bouwsom en verschillende tariefschalen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.apeldoorn.nl/omgevingswet/een-vergunning-aanvragen-binnen-de-omgevingswet-hoe-werkt-dat",
+      "https://www.apeldoorn.nl/omgevingswet/voorbeeld-aanvraag-na-1-januari-2024",
+      "https://www.apeldoorn.nl/wonen-en-leven/bouwen/omgevingsvergunningen",
+      "https://www.apeldoorn.nl/wonen-en-leven/bouwen/omgevingsvergunningen/4210931-procedure-behandeling-van-een-aanvraag",
+      "https://www.apeldoorn.nl"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.apeldoorn.nl/college-van-b-en-w/ter-inzage/omgevingsvergunningen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U dient de aanvraag online in (via het Omgevingsloket). Als u met DigiD bent ingelogd, krijgt u in uw berichtenbox een verzendbevestiging.",
+          "original_reference": "Je dient de aanvraag online in via het Omgevingsloket. Werk samen met een gemachtigde, zoals een architect, voor indiening en communiceer via e-mailadres voor updates.",
+          "note": "De bronpagina specificeert dat bevestigingen via de berichtenbox komen na DigiD-login, terwijl de originele tekst alleen e-mail communicatie noemt.",
+          "source_urls": [
+            "https://www.apeldoorn.nl/wonen-en-leven/bouwen/omgevingsvergunningen/4210931-procedure-behandeling-van-een-aanvraag"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een verandering aan uw huis, uw erf of uw bedrijf is soms aan regels gebonden. Vraagt uw verandering om een vergunning of een melding? Of moet u uw gemeente informeren over uw project?",
+          "original_reference": "Als ondernemer dien je na te gaan of een omgevingsvergunning vereist is voor jouw bouwproject.",
+          "note": "De bronpagina is inclusiever en noemt ook particuliere huiseigenaren, terwijl de originele tekst alleen over ondernemers spreekt.",
+          "source_urls": [
+            "https://www.apeldoorn.nl/omgevingswet/een-vergunning-aanvragen-binnen-de-omgevingswet-hoe-werkt-dat"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele tekst en de bronpagina's. Ten eerste verschilt de communicatiemethode: de bronpagina specificeert het gebruik van de berichtenbox na DigiD-login, terwijl de originele tekst alleen e-mailcommunicatie noemt. Ten tweede is de doelgroepbeschrijving in de bronpagina breder en inclusiever dan in de originele tekst, die zich alleen op ondernemers richt. De overige informatie komt grotendeels overeen of is niet direct vergelijkbaar door beperkte inhoud in de bronpagina's."
+  }
+}

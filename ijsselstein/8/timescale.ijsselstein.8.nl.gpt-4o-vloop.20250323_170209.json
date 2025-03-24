@@ -1,0 +1,81 @@
+{
+  "context": {
+    "municipality": {
+      "name": "IJSSELSTEIN",
+      "contact": {
+        "phone": "14 030",
+        "email": "info@ijsselstein.nl",
+        "website": "http://www.ijsselstein.nl"
+      }
+    },
+    "service": {
+      "id": 8,
+      "name": "Marktvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 20,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.2,
+    "false_statements": [
+      {
+        "sentence": "U kunt ook bellen naar 14 030 of een e-mail sturen naar info@ijsselstein.nl.",
+        "status": "false",
+        "note": "Het telefoonnummer voor de gemeente IJsselstein is 14 030, maar het juiste e-mailadres is info@ijsselstein.nl. Het e-mailadres is inmiddels veranderd naar gemeente@ijsselstein.nl volgens de officiële website van de gemeente IJsselstein."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 3,
+    "invalid_urls": 2,
+    "accuracy_percentage": 60.0,
+    "valid_urls_list": [
+      "https://www.ijsselstein.nl/Inwoners/Bouwen_verbouwen_en_slopen/Omgevingsvergunning",
+      "https://www.ijsselstein.nl/Inwoners/Iets_melden_klacht_indienen_of_bezwaar_maken/Informatieverzoek_indienen",
+      "https://www.ijsselstein.nl/Ondernemers/Vergunningen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.ijsselstein.nl/Ondernemers/Vergunningen/Exploitatievergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.ijsselstein.nl/Ondernemers/Vergunningen/Standplaatsvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Elke vrijdag van 11.00 uur tot 19.00 uur vindt de weekmarkt plaats. Er staan ongeveer 25 marktkramen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen specifieke informatie over de markttijden en het aantal kramen, terwijl de bron vermeldt dat de weekmarkt op vrijdag van 11:00 tot 19:00 plaatsvindt met ongeveer 25 kramen.",
+          "source_urls": [
+            "https://www.ijsselstein.nl/Ondernemers/Vergunningen"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Overtoom 1, 3401 BK IJsselstein, 14 030",
+          "original_reference": "Overtoom 1, 3401 BK IJsselstein. U kunt ook bellen naar 14 030",
+          "note": "De contactgegevens in beide bronnen komen overeen.",
+          "source_urls": [
+            "https://www.ijsselstein.nl/Ondernemers/Vergunningen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste aanvulling uit de bronnen betreft specifieke informatie over de weekmarkt die niet in de originele tekst staat vermeld, namelijk de exacte tijden (vrijdag 11:00-19:00) en omvang (ongeveer 25 kramen). Voor het overige zijn er geen significante verschillen gevonden tussen de originele tekst en de bronnen. De contactgegevens komen overeen en veel van de algemene informatie uit de originele tekst kan niet worden geverifieerd omdat specifieke details over marktvergunningen ontbreken in de bronnen."
+  }
+}

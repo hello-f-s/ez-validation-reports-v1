@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AMELAND",
+      "contact": {
+        "phone": "(0519) 55 55 55",
+        "email": "info@ameland.nl",
+        "website": "http://www.ameland.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "Telefoon: (0519) 555 555",
+        "status": "false",
+        "note": "Het correcte telefoonnummer van de gemeente Ameland is (0519) 555 555 5"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.ameland.nl/inrij-parkeerverbod",
+      "https://www.ameland.nl/uitrit-of-inrit-aanleggen",
+      "https://www.ameland.nl/omgevingsvergunning",
+      "https://www.ameland.nl/onttrekkingsvergunning",
+      "https://www.ameland.nl/alcoholvergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "voor diens werkzaamheden zwaar materaiaal of materieel over een grote afstand moet verplaatsen",
+          "original_reference": "indien u voor werkzaamheden zwaar materiaal of materieel moet verplaatsen",
+          "note": "De brontekst specificeert dat het over 'grote afstand' moet gaan, terwijl dit in de originele tekst niet wordt vermeld als voorwaarde",
+          "source_urls": [
+            "https://www.ameland.nl/inrij-parkeerverbod"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "grond in eigendom heeft aan een weg (gedeelte) waar een parkeerverbod geldt en de aanvrager niet op die eigen grond kan parkeren",
+          "original_reference": "Een parkeerontheffing kan worden verleend als de aanvrager niet op eigen terrein kan parkeren vanwege een parkeerverbod op de weg of het weggedeelte waar de woning of grond zich bevindt",
+          "note": "De brontekst specificeert expliciet dat het om 'grond in eigendom' moet gaan, terwijl de originele tekst alleen spreekt over 'grond'",
+          "source_urls": [
+            "https://www.ameland.nl/inrij-parkeerverbod"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "€ 27,95",
+          "original_reference": "€ 27,95",
+          "note": "De kosten voor de aanvraag zijn in beide teksten hetzelfde",
+          "source_urls": [
+            "https://www.ameland.nl/inrij-parkeerverbod"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn enkele kleine maar belangrijke nuanceverschillen gevonden tussen de originele tekst en de broninhoud. De belangrijkste verschillen betreffen de specificatie van 'grote afstand' bij het verplaatsen van materiaal en de expliciete vermelding van 'grond in eigendom' in de brontekst. De kosten en overige voorwaarden zijn grotendeels consistent."
+  }
+}

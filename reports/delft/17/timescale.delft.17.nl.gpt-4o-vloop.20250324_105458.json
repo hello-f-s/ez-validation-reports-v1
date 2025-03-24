@@ -1,0 +1,97 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DELFT",
+      "contact": {
+        "phone": "14 015",
+        "email": "null",
+        "website": "http://www.delft.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 26,
+    "false_sentences": 2,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "Een terrasvergunning is 5 jaar geldig.",
+        "status": "false",
+        "note": "Volgens de actuele Beleidsnota Terrassen Delft is een terrasvergunning 3 jaar geldig, niet 5 jaar."
+      },
+      {
+        "sentence": "Voor terrasboten gelden er sinds 26 juni 2024 nieuwe regels die zijn afgestemd op Europese wetten.",
+        "status": "false",
+        "note": "Deze datum ligt in de toekomst en kan dus niet correct zijn, aangezien we nog in 2024 zitten en deze datum nog niet is bereikt."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.delft.nl/terras-plaatsen",
+      "https://www.delft.nl/uw-plan-voorleggen-aan-de-gemeente",
+      "https://www.delft.nl/ontheffing-terrasboot",
+      "https://www.delft.nl/stappen-voor-uw-plan",
+      "https://www.delft.nl/omgevingsvergunning-milieu"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 4,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wilt u bij uw horecabedrijf een terras plaatsen? Is de plek beschikbaar en is er ook geen andere ondernemer die aanspraak kan maken op de locatie? Dan heeft u geen vergunning nodig. U moet het terras wel melden bij de gemeente.",
+          "original_reference": "Om een terrasvergunning aan te vragen, moet u een locatie kiezen waar meerdere partijen in aanmerking kunnen komen.",
+          "note": "De originele tekst suggereert dat een vergunning altijd nodig is bij meerdere gegadigden, terwijl de brontekst aangeeft dat geen vergunning nodig is als de locatie beschikbaar is en er geen andere aanspraakmakers zijn.",
+          "source_urls": [
+            "https://www.delft.nl/terras-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een terrasuitstalling mag na sluiting op de openbare weg blijven staan als uw horecabedrijf binnen 24 uur weer open is",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over het laten staan van terrasuitstallingen buiten openingstijden.",
+          "source_urls": [
+            "https://www.delft.nl/terras-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een seizoensontheffing is maximaal 5 jaar geldig",
+          "original_reference": "No matching information",
+          "note": "De originele tekst specificeert niet de maximale geldigheidsduur van een seizoensontheffing voor terrasboten.",
+          "source_urls": [
+            "https://www.delft.nl/ontheffing-terrasboot"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "In het water van de binnenstad mogen maximaal 20 terrasboten met een ontheffing liggen",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist de belangrijke beperking van het maximaal aantal toegestane terrasboten in de binnenstad.",
+          "source_urls": [
+            "https://www.delft.nl/ontheffing-terrasboot"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen tonen enkele belangrijke verschillen met de originele tekst, vooral wat betreft de vergunningsvereisten voor terrassen en aanvullende regels voor terrasuitstallingen en -boten. De originele tekst mist enkele essentiële details zoals het maximaal aantal toegestane terrasboten en de mogelijkheid om terrasuitstallingen 's nachts te laten staan. Ook is er een fundamenteel verschil in wanneer een vergunning wel of niet nodig is, afhankelijk van de beschikbaarheid van de locatie en mogelijke andere gegadigden."
+  }
+}

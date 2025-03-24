@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "GRONINGEN",
+      "contact": {
+        "phone": "14 050",
+        "email": "info@groningen.nl",
+        "website": "http://gemeente.groningen.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 31,
+    "true_sentences": 30,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.8,
+    "false_statements": [
+      {
+        "sentence": "Voor het in behandeling nemen van een omgevingsvergunning betaalt u een percentage van de bouwsom als legeskosten aan de gemeente.",
+        "status": "false",
+        "note": "Dit is niet volledig correct. Volgens de legesverordening 2024 van de gemeente Groningen worden de legeskosten berekend op basis van verschillende tarieven en categorieën, niet alleen als percentage van de bouwsom. Er zijn vaste tarieven voor bepaalde vergunningen en verschillende berekeningswijzen afhankelijk van het type aanvraag."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://gemeente.groningen.nl/milieuvergunning-aanvragen-of-melden",
+      "https://gemeente.groningen.nl/omgevingsvergunning-aanvragen",
+      "https://gemeente.groningen.nl/bekendmakingen-en-regelingen",
+      "https://gemeente.groningen.nl/melding-en-verzoek-om-handhaving",
+      "https://gemeente.groningen.nl/kapvergunning-aanvragen",
+      "https://www.gemeente.groningen.nl/omgevingsvergunning-aanvragen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Minstens 4 weken voor oprichten of verandering van uw bedrijf moet u de milieuvergunning aanvragen of de melding doen.",
+          "original_reference": "Voor milieubeheer moet u minstens 4 weken voor het oprichten of veranderen van uw bedrijf een milieuvergunning aanvragen of een melding doen",
+          "note": "De termijn voor het aanvragen van een milieuvergunning komt exact overeen",
+          "source_urls": [
+            "https://gemeente.groningen.nl/milieuvergunning-aanvragen-of-melden"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Ook als u een vergunning krijgt, mag u nog niet direct kappen. U moet 6 weken wachten. Dat is de periode waarin andere mensen bezwaar kunnen indienen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over de wachttijd van 6 weken na het verkrijgen van een kapvergunning vanwege de bezwaartermijn",
+          "source_urls": [
+            "https://gemeente.groningen.nl/kapvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vanaf 1 januari 2024 treedt de Omgevingswet in werking. Vanaf dan gelden de gemeentelijke regels uit het omgevingsplan als uw activiteit plaatsvindt binnen de bebouwingscontour houtkap",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist specifieke informatie over de bebouwingscontour houtkap in relatie tot de Omgevingswet vanaf 2024",
+          "source_urls": [
+            "https://gemeente.groningen.nl/kapvergunning-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont dat de originele tekst grotendeels consistent is met de bronnen, maar enkele belangrijke details mist. Met name ontbreekt informatie over de verplichte wachttijd van 6 weken na het verkrijgen van een kapvergunning en specifieke details over de bebouwingscontour houtkap in relatie tot de Omgevingswet 2024. De kernprocedures en termijnen voor milieuvergunningen zijn wel correct weergegeven."
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ENSCHEDE",
+      "contact": {
+        "phone": "14 053",
+        "email": "postbus20@enschede.nl",
+        "website": "http://www.enschede.nl"
+      }
+    },
+    "service": {
+      "id": 10,
+      "name": "Nachtregister bijhouden"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 20,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.2,
+    "false_statements": [
+      {
+        "sentence": "Openingstijden voor telefonische bereikbaarheid zijn op werkdagen van 9.00 - 17.00 uur.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Enschede is de telefonische bereikbaarheid op werkdagen van 8.30 tot 17.00 uur."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.enschede.nl/vergunning-voor-kamerverhuur",
+      "https://www.enschede.nl/kinderopvang-starten-of-wijzigen",
+      "https://www.enschede.nl/geheimhouding-persoonsgegevens",
+      "https://www.enschede.nl/milieuregels",
+      "https://www.enschede.nl/bibob-onderzoek"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Als u in een pand kamers wil verhuren, dan heeft u een omgevingsvergunning nodig. Deze vergunning kunt u aanvragen bij de gemeente Enschede.",
+          "original_reference": "Als u kamers in een pand wilt verhuren, heeft u een omgevingsvergunning nodig. Deze vergunning kunt u aanvragen bij de gemeente Enschede.",
+          "note": "De kernboodschap over de vergunningplicht voor kamerverhuur is consistent tussen beide bronnen",
+          "source_urls": [
+            "https://www.enschede.nl/vergunning-voor-kamerverhuur"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Bij de aanvraag van een verhuurvergunning wordt een Bibob-onderzoek gedaan. Voeg een ingevuld formulier toe bij uw aanvraag van een verhuurvergunning.",
+          "original_reference": "Daarnaast wordt bij de aanvraag een Bibob-onderzoek uitgevoerd om de integriteit van de aanvrager te beoordelen.",
+          "note": "De vereiste van een Bibob-onderzoek wordt in beide teksten genoemd",
+          "source_urls": [
+            "https://www.enschede.nl/vergunning-voor-kamerverhuur",
+            "https://www.enschede.nl/bibob-onderzoek"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bel telefoonnummer 14 053 (5 cijfers) Vanuit het buitenland +31 53 481 81 81",
+          "original_reference": "Telefoon: 14 053 (binnen Nederland) of +31 53 481 81 81 (buitenland)",
+          "note": "De telefoonnummers zijn identiek, maar de originele tekst specificeert expliciet '(binnen Nederland)' wat een nuttige verduidelijking is die niet in de bronpagina staat",
+          "source_urls": [
+            "https://www.enschede.nl/milieuregels"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse blijkt dat de meeste informatie in de originele tekst consistent is met de bronnen. De informatie over vergunningen, Bibob-onderzoek en contactgegevens komt overeen. Er zijn geen significante inhoudelijke verschillen gevonden. De originele tekst biedt op sommige punten zelfs meer verduidelijking dan de bronpagina's, zoals bij de specificatie van de telefoonnummers."
+  }
+}

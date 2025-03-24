@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AMELAND",
+      "contact": {
+        "phone": "(0519) 55 55 55",
+        "email": "info@ameland.nl",
+        "website": "http://www.ameland.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 9,
+    "true_sentences": 8,
+    "false_sentences": 1,
+    "accuracy_percentage": 88.9,
+    "false_statements": [
+      {
+        "sentence": "U kunt een ontheffing online aanvragen via de website van de gemeente Ameland.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Ameland kan een inrij- of parkeerontheffing niet online worden aangevraagd. De aanvraag moet schriftelijk worden ingediend bij de gemeente."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.ameland.nl/uitrit-of-inrit-aanleggen",
+      "https://www.ameland.nl/alcoholvergunning",
+      "https://www.ameland.nl/inrij-parkeerverbod",
+      "https://www.ameland.nl/omgevingsvergunning",
+      "https://www.ameland.nl/onttrekkingsvergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een algemene inrij- en/of parkeerontheffing kan worden verleend als de aanvrager : voor diens werkzaamheden zwaar materaiaal of materieel over een grote afstand moet verplaatsen.",
+          "original_reference": "Als ondernemer kunt u een inrij- of parkeerontheffing aanvragen indien u voor werkzaamheden zwaar materiaal of materieel moet verplaatsen",
+          "note": "De brontekst specificeert dat het materiaal/materieel over een 'grote afstand' moet worden verplaatst, wat een extra voorwaarde is die niet in de originele tekst staat.",
+          "source_urls": [
+            "https://www.ameland.nl/inrij-parkeerverbod"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Op een aantal locaties op Ameland waaronder het centrum van Nes, de strandovergangen, kop veerdam, het strand, fietspaden en onder de dijken, gelden inrij- of parkeerverboden.",
+          "original_reference": "No matching information",
+          "note": "De brontekst specificeert concrete locaties waar de verboden gelden, terwijl deze informatie volledig ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.ameland.nl/inrij-parkeerverbod"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een parkeerontheffing voor uitsluitend een bepaald(e) weg(gedeelte) kan worden verleend als de aanvrager woont aan een weg(gedeelte) waar een parkeerverbod geldt en de aanvrager niet op eigen terrein kan parkeren.",
+          "original_reference": "No matching information",
+          "note": "De brontekst bevat specifieke voorwaarden voor een parkeerontheffing die niet genoemd worden in de originele tekst.",
+          "source_urls": [
+            "https://www.ameland.nl/inrij-parkeerverbod"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina bevat belangrijke aanvullende informatie over specifieke locaties waar de verboden gelden, extra voorwaarden voor het verkrijgen van ontheffingen, en meer gedetailleerde criteria voor parkeerontheffingen. Deze informatie ontbreekt in de originele tekst, wat de originele tekst minder volledig maakt voor potentiële aanvragers."
+  }
+}

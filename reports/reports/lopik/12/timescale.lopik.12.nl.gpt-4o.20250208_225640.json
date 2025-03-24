@@ -1,0 +1,105 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LOPIK",
+      "contact": {
+        "phone": "(0348) 55 99 55",
+        "email": "gemeente@lopik.nl",
+        "website": "http://www.lopik.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 20,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.2,
+    "false_statements": [
+      {
+        "sentence": "U kunt de aanvraag alleen online doen via Omgevingswet.",
+        "status": "false",
+        "note": "Dit is onjuist voor gemeente Lopik. Aanvragen kunnen zowel digitaal via het Omgevingsloket als schriftelijk bij de gemeente Lopik worden ingediend. Het is dus niet 'alleen' online mogelijk."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 10,
+    "valid_urls": 5,
+    "invalid_urls": 5,
+    "accuracy_percentage": 50.0,
+    "valid_urls_list": [
+      "https://www.lopik.nl/milieu-vergunning-of-melding",
+      "https://www.lopik.nl/omgevingsvergunning-strijdig-gebruik",
+      "https://www.lopik.nl/bedrijfsactiviteiten-wijzigen",
+      "https://www.lopik.nl/omgevingsvergunning",
+      "https://www.lopik.nl/brandveiligheid-melding-of-vergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.omgevingsloket.nl\">Omgevingsloket</a>.</p>",
+        "reason": "INVALID: Error scraping https://www.omgevingsloket.nl\">Omgevingsloket</a>.</p>: HTTPSConnectionPool(host='www.omgevingsloket.nl%22%3eomgevingsloket%3c', port=443): Max retries exceeded with url: /a%3E.%3C/p%3E (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1033db770>: Failed to resolve 'www.omgevingsloket.nl%22%3eomgevingsloket%3c' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.omgevingswet.overheid.nl\">Omgevingswet</a>.",
+        "reason": "INVALID: Error scraping https://www.omgevingswet.overheid.nl\">Omgevingswet</a>.: HTTPSConnectionPool(host='www.omgevingswet.overheid.nl%22%3eomgevingswet%3c', port=443): Max retries exceeded with url: /a%3E. (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x103784410>: Failed to resolve 'www.omgevingswet.overheid.nl%22%3eomgevingswet%3c' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.omgevingswet.overheid.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.omgevingswet.overheid.nl\">www.omgevingswet.overheid.nl</a></p>",
+        "reason": "INVALID: Error scraping https://www.omgevingswet.overheid.nl\">www.omgevingswet.overheid.nl</a></p>: HTTPSConnectionPool(host='www.omgevingswet.overheid.nl%22%3ewww.omgevingswet.overheid.nl%3c', port=443): Max retries exceeded with url: /a%3E%3C/p%3E (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1033bf750>: Failed to resolve 'www.omgevingswet.overheid.nl%22%3ewww.omgevingswet.overheid.nl%3c' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.omgevingsloket.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor bepaalde werkzaamheden hebt u een omgevingsvergunning nodig. Bijvoorbeeld als u gaat (ver)bouwen, slopen, een alarminstallatie plaatst of een boom wilt kappen.",
+          "original_reference": "Als ondernemer moet u voldoen aan milieuregels voor bepaalde activiteiten die het milieu belasten.",
+          "note": "De bronpagina noemt specifiekere voorbeelden van activiteiten waarvoor een omgevingsvergunning nodig is, terwijl de originele tekst alleen spreekt over milieuregels in het algemeen.",
+          "source_urls": [
+            "https://www.lopik.nl/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Naast het milieu speelt ook de brandveiligheid een rol. Dit betekent dat ook de brandweer zal controleren of er een gebruiksvergunning nodig is",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt expliciet de rol van brandveiligheid en brandweercontroles, wat volledig ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.lopik.nl/bedrijfsactiviteiten-wijzigen",
+            "https://www.lopik.nl/brandveiligheid-melding-of-vergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bij een ingewikkelde aanvraag maakt de gemeente eerst een ontwerpbesluit over uw aanvraag. Iedereen kan binnen 6 weken zijn of haar mening (zienswijze) hierover geven.",
+          "original_reference": "Aanvraag vergunning (ingewikkelde aanvraag): Binnen 26 weken ontvangt u bericht",
+          "note": "De bronpagina beschrijft een tussenstap met ontwerpbesluit en zienswijzeperiode die niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.lopik.nl/milieu-vergunning-of-melding"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de mate van detail in de procedures, waarbij de bronpagina's aanvullende informatie bevatten over specifieke vergunningsplichtige activiteiten, brandveiligheidsaspecten en procedurele stappen zoals het ontwerpbesluit. Deze informatie ontbreekt in de originele tekst maar is wel relevant voor de complete dienstverlening."
+  }
+}

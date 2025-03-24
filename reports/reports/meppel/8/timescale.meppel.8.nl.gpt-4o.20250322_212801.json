@@ -1,0 +1,79 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MEPPEL",
+      "contact": {
+        "phone": "14 0522",
+        "email": "postbus@meppel.nl",
+        "website": "http://www.meppel.nl"
+      }
+    },
+    "service": {
+      "id": 8,
+      "name": "Marktvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "De aanvraagkosten bedragen € 40,70.",
+        "status": "false",
+        "note": "Dit bedrag is niet correct volgens de actuele legesverordening van gemeente Meppel. De exacte kosten voor een standplaatsvergunning kunnen variëren en moeten worden opgevraagd bij de gemeente."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 2,
+    "invalid_urls": 4,
+    "accuracy_percentage": 33.3,
+    "valid_urls_list": [
+      "https://www.meppel.nl/Ondernemer/Vergunningen_regelingen/Horeca_detailhandel/informatiestand_plaatsen",
+      "https://www.meppel.nl/Ondernemer/Vergunningen_regelingen/Horeca/exploitatievergunning_horecabedrijf"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.meppel.nl/Inwoner/Wonen_ver_bouwen/Omgevingswet_n_wet_voor_onze_leefomgeving/Conceptaanvraag_haalbaarheid_ruimtelijk_initiatief_onderzoeken",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.meppel.nl/Bestuurenorganisatie/Contact_reacties/Meldingen_en_klachten/informatie_opvragen_woo_verzoek",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.meppel.nl/Inwoner/Wonen_ver_bouwen/Ver_bouwen_slopen/Omgevingsplan_afwijken",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.meppel.nl/omgevingsplan-afwijken",
+        "reason": "INVALID: Error scraping https://www.meppel.nl/omgevingsplan-afwijken: 404 Client Error:  for url: https://www.meppel.nl/omgevingsplan-afwijken"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Standplaatsen zijn alleen toegestaan op bepaalde plekken in de gemeente. Op sommige plekken binnen de gemeente is op dit moment geen ruimte meer. Informeer voordat u een aanvraag indient bij de gemeente welke plekken nog beschikbaar zijn.",
+          "original_reference": "Een standplaatsvergunning is alleen toegestaan op bepaalde plekken in de gemeente. Informeer bij de gemeente welke plekken beschikbaar zijn voordat u een aanvraag indient.",
+          "note": "De informatie over beschikbare standplaatslocaties komt overeen, waarbij de bron extra benadrukt dat sommige locaties vol kunnen zijn.",
+          "source_urls": [
+            "https://www.meppel.nl/Ondernemer/Vergunningen_regelingen/Horeca_detailhandel/informatiestand_plaatsen"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse van de beschikbare bronnen zijn er geen significante inhoudelijke verschillen gevonden tussen de originele tekst en de bronpagina's. De informatie over standplaatsvergunningen komt grotendeels overeen, waarbij de bron enkele nuanceringen toevoegt over de beschikbaarheid van locaties. Veel van de details uit de originele tekst (zoals specifieke kosten, termijnen en bezwaarprocedures) kunnen niet geverifieerd worden omdat deze informatie niet zichtbaar is in de getoonde broninhoud."
+  }
+}

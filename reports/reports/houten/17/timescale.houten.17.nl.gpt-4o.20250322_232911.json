@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HOUTEN",
+      "contact": {
+        "phone": "(030) 639 26 11",
+        "email": "gemeentehuis@houten.nl",
+        "website": "http://www.houten.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 7,
+    "true_sentences": 6,
+    "false_sentences": 1,
+    "accuracy_percentage": 85.7,
+    "false_statements": [
+      {
+        "sentence": "Als u een terras wilt exploiteren in de gemeente Houten, heeft u een exploitatievergunning voor het terras nodig, zoals vermeld bij de \"Horecabedrijf exploiteren\" informatie.",
+        "status": "false",
+        "note": "Voor een terras in Houten is een omgevingsvergunning nodig, geen aparte exploitatievergunning. Dit valt onder de reguliere omgevingsvergunning voor gebruik openbare ruimte."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.houten.nl/ondernemen/regelen/horecabedrijf-exploiteren",
+      "https://www.houten.nl/ondernemen/regelen/alcoholwetvergunning",
+      "https://www.houten.nl/ondernemen/regelen/standplaatsvergunning",
+      "https://www.houten.nl",
+      "https://www.houten.nl/wonen-en-leefomgeving/bouw-en-verbouw/omgevingsvergunning/aanvraagprocedure-omgevingsvergunning",
+      "https://www.houten.nl/sport-cultuur-en-recreatie/evenement-organiseren"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u een terras heeft, heeft u een exploitatievergunning voor het terras nodig. Voor een terras bij uw bedrijf kan geen ontheffing verleend worden.",
+          "original_reference": "Als u een terras wilt exploiteren in de gemeente Houten, heeft u een exploitatievergunning voor het terras nodig",
+          "note": "De broninhoud specificeert expliciet dat er geen ontheffing mogelijk is voor terrassen, wat belangrijke aanvullende informatie is die niet in de originele tekst staat.",
+          "source_urls": [
+            "https://www.houten.nl/ondernemen/regelen/horecabedrijf-exploiteren"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "als u een terras hebt: een plattegrond met de afmetingen van het terras",
+          "original_reference": "Specifieke documenten of informatie die benodigd zijn voor het aanvragen van een terrasvergunning in de gemeente Houten zijn niet vermeld in de beschikbare informatie.",
+          "note": "De bronnen vermelden dat een plattegrond met terrasafmetingen vereist is bij de aanvraag, terwijl de originele tekst stelt dat er geen specifieke documentvereisten bekend zijn.",
+          "source_urls": [
+            "https://www.houten.nl/ondernemen/regelen/alcoholwetvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "zie ook beleidsregels sluitingstijden en terrassen (pdf, 226 KB)",
+          "original_reference": "No matching information",
+          "note": "Er wordt verwezen naar specifieke beleidsregels voor terrassen, wat aangeeft dat er wel degelijk gedetailleerde regelgeving bestaat, in tegenstelling tot wat de originele tekst suggereert.",
+          "source_urls": [
+            "https://www.houten.nl/ondernemen/regelen/alcoholwetvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie over terrasvergunningen die niet in de originele tekst staat, waaronder: het expliciet uitsluiten van ontheffingsmogelijkheden voor terrassen, de vereiste van een plattegrond met terrasafmetingen, en het bestaan van specifieke beleidsregels voor terrassen. Deze informatie maakt de voorwaarden en procedures concreter dan in de originele tekst wordt gesuggereerd."
+  }
+}

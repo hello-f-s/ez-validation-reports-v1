@@ -1,0 +1,80 @@
+{
+  "context": {
+    "municipality": {
+      "name": "NIJMEGEN",
+      "contact": {
+        "phone": "14 024",
+        "email": "gemeente@nijmegen.nl",
+        "website": "http://www.nijmegen.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 22,
+    "false_sentences": 2,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Voor het vooroverleg moet u ook uw buren informeren en hun feedback verzamelen.",
+        "status": "false",
+        "note": "Het informeren van buren is niet verplicht voor het vooroverleg volgens de officiële ODRN-richtlijnen. Dit is een aanbeveling maar geen vereiste."
+      },
+      {
+        "sentence": "Voor het vooroverleg betaalt u € 100,-.",
+        "status": "false",
+        "note": "Volgens de actuele tarieven van de ODRN/gemeente Nijmegen bedraagt het tarief voor vooroverleg € 104,55, niet € 100,-."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.nijmegen.nl/diensten/bouwen-en-wonen/vergunning-of-melding-voor-bedrijven/",
+      "https://www.nijmegen.nl/diensten/bouwen-en-wonen/inzien-van-bouw-en-sloopplannen/",
+      "https://www.nijmegen.nl/diensten/vergunningen/bekendmakingen/",
+      "https://www.nijmegen.nl/diensten/bouwen-en-wonen/vooroverleg-omgevingsvergunning/",
+      "https://www.nijmegen.nl/formulieren/conceptaanvraag-omgevingsvergunning-aanvullen-of-wijzigen/",
+      "https://www.nijmegen.nl"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Elke week publiceert de gemeente aangevraagde, verleende of geweigerde omgevingsvergunningen. Alle omgevingsvergunningen kunt u inzien via het Gemeenteblad op overheid.nl.",
+          "original_reference": "U kunt bezwaar maken tegen besluiten over verleende of geweigerde vergunningen. De specificaties van het bezwaarproces kunt u inzien op overheid.nl, onder de sectie voor omgevingsvergunningen.",
+          "note": "De bronpagina geeft specifiekere informatie over de wekelijkse publicatie van vergunningen, terwijl de originele tekst alleen het bezwaarproces noemt.",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/bouwen-en-wonen/inzien-van-bouw-en-sloopplannen/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Let op bij stap 7 op het derde scherm. Nadat u de activiteiten en het bevoegd gezag heeft bevestigd, kunt u kiezen voor het indienen van een conceptverzoek of een definitieve aanvraag.",
+          "original_reference": "Bezoek de website van ODRN om uw specifieke aanvraagprocedure te starten.",
+          "note": "De bronpagina geeft gedetailleerdere instructies over het aanvraagproces met specifieke stappen, terwijl de originele tekst alleen een algemene verwijzing naar de ODRN-website bevat.",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/bouwen-en-wonen/vooroverleg-omgevingsvergunning/"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen het detailniveau van de informatie. De bronpagina's bevatten specifiekere details over de publicatie van vergunningen en het aanvraagproces, terwijl de originele tekst meer algemeen van aard is. De kern van de informatie blijft echter consistent, maar de bronpagina's bieden meer praktische details voor de uitvoering van de procedures."
+  }
+}

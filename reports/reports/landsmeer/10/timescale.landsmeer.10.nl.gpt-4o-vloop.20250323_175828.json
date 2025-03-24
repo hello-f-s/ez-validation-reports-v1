@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LANDSMEER",
+      "contact": {
+        "phone": "(020) 487 71 11",
+        "email": "gemeente@Landsmeer.nl",
+        "website": "http://www.landsmeer.nl"
+      }
+    },
+    "service": {
+      "id": 10,
+      "name": "Nachtregister bijhouden"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 16,
+    "true_sentences": 15,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.8,
+    "false_statements": [
+      {
+        "sentence": "Tot en met 2024 blijven deze bij de gemeente Amsterdam.",
+        "status": "false",
+        "note": "De belastingtaken van Landsmeer worden momenteel uitgevoerd door de gemeente Landsmeer zelf, niet door de gemeente Amsterdam. Vanaf 2025 gaan deze taken over naar Cocensus."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.landsmeer.nl/ondernemers/belastingen/toeristen_belasting_betalen_(ondernemers)",
+      "https://www.landsmeer.nl/inwoners/parkeren,_verkeer_en_vervoer/verkeer/ontheffing_van_verkeersregels_aanvragen",
+      "https://www.landsmeer.nl/ondernemers/vergunningen/horecabedrijf_beginnen",
+      "https://www.landsmeer.nl/ondernemers/evenementen/optreden_op_straat",
+      "https://www.landsmeer.nl/ondernemers/vergunningen/op_straat_of_aan_de_deur_verkopen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "De belasting wordt berekend over de vergoeding die ter zake van het verblijf met overnachten in rekening wordt gebracht, de omzet- en toeristenbelasting daaronder niet inbegrepen.",
+          "original_reference": "De belasting wordt berekend over de vergoeding exclusief omzet- en toeristenbelasting.",
+          "note": "De informatie over de berekening van de toeristenbelasting komt overeen met de originele tekst.",
+          "source_urls": [
+            "https://www.landsmeer.nl/ondernemers/belastingen/toeristen_belasting_betalen_(ondernemers)"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Met ingang van 2025 werken wij samen met Cocensus voor de gemeentelijke belastingen.",
+          "original_reference": "Vanaf 2025 wordt de verantwoordelijkheid voor gemeentelijke belastingen overgedragen aan Cocensus.",
+          "note": "De informatie over de overdracht naar Cocensus in 2025 komt overeen.",
+          "source_urls": [
+            "https://www.landsmeer.nl/ondernemers/belastingen/toeristen_belasting_betalen_(ondernemers)"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De gasten betalen voor de overnachting.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt een extra voorwaarde dat gasten moeten betalen voor de overnachting, wat niet expliciet vermeld staat in de originele tekst.",
+          "source_urls": [
+            "https://www.landsmeer.nl/ondernemers/belastingen/toeristen_belasting_betalen_(ondernemers)"
+          ]
+        }
+      ]
+    },
+    "summary": "De meeste informatie in de originele tekst komt overeen met de bronnen. Er is één belangrijk verschil gevonden: een extra voorwaarde in de bronpagina die specificeert dat gasten moeten betalen voor de overnachting. De overige informatie over de berekening van de toeristenbelasting en de overdracht naar Cocensus in 2025 is consistent."
+  }
+}

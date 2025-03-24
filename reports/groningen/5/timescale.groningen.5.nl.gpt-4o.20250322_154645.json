@@ -1,0 +1,79 @@
+{
+  "context": {
+    "municipality": {
+      "name": "GRONINGEN",
+      "contact": {
+        "phone": "14 050",
+        "email": "info@groningen.nl",
+        "website": "http://gemeente.groningen.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Vanaf 1 januari 2025 kunt u de exploitatievergunning digitaal aanvragen.",
+        "status": "false",
+        "note": "Deze datum is onjuist. Volgens de officiële website van de gemeente Groningen is er momenteel geen specifieke datum genoemd waarop digitaal aanvragen mogelijk wordt. De huidige aanvraagprocedure verloopt via e-mail of persoonlijke afspraak."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://gemeente.groningen.nl/bedrijf-starten",
+      "https://gemeente.groningen.nl/vergunning-voor-seksbedrijf-aanvragen",
+      "https://www.groningen.nl",
+      "https://gemeente.groningen.nl/exploitatievergunning-horeca-aanvragen",
+      "https://gemeente.groningen.nl/alcoholvergunning-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://gemeente.groningen.nl/onttrekkingsvergunning-voor-bedrijfsdoeleinden-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bedrijven die al voor 1 januari 2025 bestaan, moeten in sommige gevallen van de burgemeester een vergunning aanvragen.",
+          "original_reference": "Vanaf 1 januari 2025 kunt u de exploitatievergunning digitaal aanvragen.",
+          "note": "De brontext suggereert een verplichting voor bestaande bedrijven om vóór 2025 een vergunning aan te vragen, terwijl de originele tekst alleen spreekt over digitaal aanvragen vanaf 2025. Dit is een belangrijk inhoudelijk verschil.",
+          "source_urls": [
+            "https://gemeente.groningen.nl/exploitatievergunning-horeca-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een exploitatievergunning is verplicht als klanten direct bij u eten en drinken kunnen consumeren. Dit geldt ook voor een terras, gokkasten of speelautomaten. Ook voor het toevoegen of het wijzigen van een terras hebt u een exploitatievergunning of wijziging daarvan nodig. De vergunning is voor onbepaalde tijd geldig.",
+          "original_reference": "Een exploitatievergunning is vereist wanneer klanten direct bij u kunnen eten en drinken, inclusief terras, gokkasten of speelautomaten.",
+          "note": "De brontekst bevat aanvullende belangrijke informatie over de geldigheid (onbepaalde tijd) en de noodzaak van een nieuwe vergunning bij wijzigingen van het terras, wat niet vermeld staat in de originele tekst.",
+          "source_urls": [
+            "https://gemeente.groningen.nl/exploitatievergunning-horeca-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele tekst en de bronnen. Ten eerste is er een discrepantie in de informatie over de datum 1 januari 2025, waarbij de bron spreekt over een verplichting voor bestaande bedrijven en de originele tekst alleen over digitale aanvragen. Ten tweede bevat de bron aanvullende belangrijke informatie over de geldigheid van de vergunning en de vereisten bij wijzigingen die niet in de originele tekst staat vermeld."
+  }
+}

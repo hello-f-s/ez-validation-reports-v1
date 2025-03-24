@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "CULEMBORG",
+      "contact": {
+        "phone": "(0345) 47 77 00",
+        "email": "info@culemborg.nl",
+        "website": "http://www.culemborg.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 27,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.4,
+    "false_statements": [
+      {
+        "sentence": "Voor een behandeling van een initiatief op de intaketafel brengen we €1.080 aan leges in rekening.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Culemborg is het bedrag voor behandeling van een initiatief op de intaketafel €1.100 en niet €1.080."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.culemborg.nl/omgevingsvergunning",
+      "https://www.culemborg.nl/informatieverzoek",
+      "https://www.culemborg.nl/informatieverzoek-en-woo-verzoek",
+      "https://www.culemborg.nl/bezwaar-maken",
+      "https://www.culemborg.nl/straatartiest"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "U bent het niet eens met een besluit of verleende vergunning. U kunt dan binnen zes weken bezwaar maken.",
+          "original_reference": "Indien u het niet eens bent met een besluit met betrekking tot uw omgevingsvergunning, kunt u binnen zes weken bezwaar maken.",
+          "note": "De bezwaartermijn van zes weken wordt consistent vermeld in beide bronnen.",
+          "source_urls": [
+            "https://www.culemborg.nl/bezwaar-maken"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u uw bezwaar op tijd heeft ingediend, nemen wij die in behandeling. U krijgt binnen 6 of 12 weken antwoord. Als de gemeente niet binnen de beslistermijn besluit op uw aanvraag of bezwaarschrift, dan kunt u de gemeente schriftelijk in gebreke stellen. Vanaf dat moment heeft de gemeente nog 2 weken om alsnog tot een besluit te komen.",
+          "original_reference": "Na het indienen van het bezwaar ontvangt u binnen 6 of 12 weken een antwoord.",
+          "note": "De originele tekst mist de belangrijke informatie over de mogelijkheid tot ingebrekestelling en de extra termijn van 2 weken die de gemeente dan nog heeft.",
+          "source_urls": [
+            "https://www.culemborg.nl/bezwaar-maken"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "In het omgevingsloket kunt u controleren of u een vergunning nodig heeft. Voor eenvoudige zaken kunt u de vergunning ook direct aanvragen.",
+          "original_reference": "U vraagt de vergunning aan via het omgevingsloket van de ODR",
+          "note": "De bronpagina specificeert dat directe aanvraag mogelijk is voor eenvoudige zaken, wat een belangrijke nuance is die ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.culemborg.nl/omgevingsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont enkele belangrijke verschillen in de informatievoorziening. De originele tekst mist cruciale details over de ingebrekestellingsprocedure bij bezwaren en de mogelijkheid tot directe aanvraag voor eenvoudige zaken via het omgevingsloket. De kernprocessen en termijnen zijn verder grotendeels consistent tussen de bronnen."
+  }
+}

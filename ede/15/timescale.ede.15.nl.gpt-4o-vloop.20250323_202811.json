@@ -1,0 +1,92 @@
+{
+  "context": {
+    "municipality": {
+      "name": "EDE",
+      "contact": {
+        "phone": "14 0318",
+        "email": "info@ede.nl",
+        "website": "http://www.ede.nl"
+      }
+    },
+    "service": {
+      "id": 15,
+      "name": "Vergunning of ontheffing voor straatartiesten"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 11,
+    "false_sentences": 2,
+    "accuracy_percentage": 84.6,
+    "false_statements": [
+      {
+        "sentence": "De standaard kosten voor diverse ontheffingen, waaronder die voor straatartiesten, bedragen €38,50.",
+        "status": "false",
+        "note": "De gemeente Ede hanteert geen vast tarief van €38,50 voor straatartiesten. De exacte kosten voor een straatartiestenvergunning zijn niet specifiek vermeld op de gemeentelijke website."
+      },
+      {
+        "sentence": "Het kan ook nuttig zijn om een afspraak te maken voor persoonlijke begeleiding bij de balie Bouwen, Wonen en Milieu.",
+        "status": "false",
+        "note": "De gemeente Ede heeft geen specifieke 'balie Bouwen, Wonen en Milieu' waar men terecht kan voor straatartiestenvergunningen. Dergelijke zaken worden via het algemene klantcontactcentrum afgehandeld."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.ede.nl/aanvragen-en-regelen/ontheffing-aanvragen",
+      "https://www.ede.nl/aanvragen-en-regelen/bouw-en-verbouwvergunning-voor-bedrijven",
+      "https://www.ede.nl/aanvragen-en-regelen/evenementen-melden-ontheffing-vergunning",
+      "https://www.ede.nl/aanvragen-en-regelen/evenementenvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.ede.nl/aanvragen-en-regelen/verleende-vergunningen-inzien-en-opvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor evenementen op zondag voor 13:00 uur moet u een ontheffing van de Zondagswet aanvragen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over specifieke vereisten voor zondagsoptredens, terwijl dit wel een belangrijke voorwaarde kan zijn voor straatartiesten.",
+          "source_urls": [
+            "https://www.ede.nl/aanvragen-en-regelen/evenementenvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U heeft toestemming nodig van alle grondeigenaren",
+          "original_reference": "schriftelijke toestemming van de grondeigenaar",
+          "note": "De originele tekst noemt dit als mogelijke vereiste, terwijl de brontekst dit als absolute voorwaarde stelt.",
+          "source_urls": [
+            "https://www.ede.nl/aanvragen-en-regelen/evenementenvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wilt u een evenement organiseren en heeft u een vergunning nodig? Dan vraagt u die uiterlijk 6 tot 16 weken van te voren aan",
+          "original_reference": "minimaal tien werkdagen van tevoren",
+          "note": "Er is een discrepantie in de aanvraagtermijnen tussen de algemene ontheffing (10 werkdagen) en evenementenvergunningen (6-16 weken).",
+          "source_urls": [
+            "https://www.ede.nl/aanvragen-en-regelen/evenementen-melden-ontheffing-vergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de aanvraagtermijnen (10 werkdagen vs. 6-16 weken), aanvullende vereisten voor zondagsoptredens, en de status van grondeigenaartoestemming. De originele tekst mist enkele belangrijke specifieke voorwaarden die wel in de bronnen worden genoemd. Dit kan relevant zijn voor straatartiesten die willen optreden in de gemeente Ede."
+  }
+}

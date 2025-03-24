@@ -1,0 +1,89 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LANDGRAAF",
+      "contact": {
+        "phone": "14 045",
+        "email": "gemeente@landgraaf.nl",
+        "website": "http://www.landgraaf.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 10,
+    "false_sentences": 2,
+    "accuracy_percentage": 83.3,
+    "false_statements": [
+      {
+        "sentence": "De bar medewerker mag onder de 18 jaar alcohol verkopen, maar niet consumeren.",
+        "status": "false",
+        "note": "Volgens de Nederlandse Drank- en Horecawet en de gemeente Landgraaf mag een barmedewerker onder de 18 jaar geen alcohol verkopen. Alleen personen van 18 jaar en ouder mogen alcohol verstrekken."
+      },
+      {
+        "sentence": "Drank- en Horecavergunning: € 281,35",
+        "status": "false",
+        "note": "Het exacte bedrag van € 281,35 kan niet geverifieerd worden op de officiële bronnen van de gemeente Landgraaf. De tarieven worden jaarlijks vastgesteld en zijn niet publiekelijk zichtbaar op de gemeentelijke website."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.landgraaf.nl/aanvragen-en-regelen-ondernemers",
+      "https://www.landgraaf.nl/form/informatieverzoek-indienen",
+      "https://www.landgraaf.nl/alcohol-schenken-tijdens-evenement",
+      "https://www.landgraaf.nl/alcoholvergunning",
+      "https://www.landgraaf.nl/exploitatievergunning-horecabedrijf"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Drank- en Horecawet (DHW): € 287,80",
+          "original_reference": "Drank- en Horecavergunning: € 281,35",
+          "note": "Het bedrag voor de Drank- en Horecavergunning verschilt. In de bronnen wordt € 287,80 genoemd, terwijl in de originele tekst € 281,35 staat.",
+          "source_urls": [
+            "https://www.landgraaf.nl/alcoholvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u alcohol wilt schenken tijdens een evenement, moet u een ontheffing bij de gemeente aanvragen. [...] Artikel 35 DHW ontheffing: € 62,45",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over de mogelijkheid en kosten van een tijdelijke ontheffing voor het schenken van alcohol tijdens evenementen.",
+          "source_urls": [
+            "https://www.landgraaf.nl/alcoholvergunning",
+            "https://www.landgraaf.nl/alcohol-schenken-tijdens-evenement"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Is niet van slecht levensgedrag (geen strafblad)",
+          "original_reference": "Geen van de leidinggevenden mag een strafblad hebben.",
+          "note": "De formulering in de bronnen is specifieker en gebruikt de term 'slecht levensgedrag' in combinatie met het strafblad vereiste.",
+          "source_urls": [
+            "https://www.landgraaf.nl/alcohol-schenken-tijdens-evenement"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de kosten van de Drank- en Horecavergunning (€ 287,80 vs € 281,35), het ontbreken van informatie over tijdelijke ontheffingen voor evenementen in de originele tekst, en een verschil in formulering rond de strafbladvereisten. De bronnen bevatten meer gedetailleerde informatie over verschillende soorten vergunningen en ontheffingen."
+  }
+}

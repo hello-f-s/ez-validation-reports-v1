@@ -1,0 +1,70 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MEPPEL",
+      "contact": {
+        "phone": "14 0522",
+        "email": "postbus@meppel.nl",
+        "website": "http://www.meppel.nl"
+      }
+    },
+    "service": {
+      "id": 9,
+      "name": "Mobiele puinbreker gebruiken"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "U kunt een afspraak maken online of telefonisch via 14 0522. De openingstijden zijn op werkdagen van 08:30 tot 17:00 uur.",
+        "status": "false",
+        "note": "De openingstijden van de gemeente Meppel zijn maandag t/m donderdag van 8:30 tot 17:00 uur en op vrijdag van 8:30 tot 16:00 uur. De vrijdagmiddag sluit het gemeentehuis eerder dan vermeld."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.meppel.nl/Ondernemer/Vergunningen_regelingen/Afval_milieu/mobiel_puinbreken",
+      "https://www.meppel.nl/Ondernemer/Vergunningen_regelingen/Afval_milieu",
+      "https://www.meppel.nl/Ondernemer/Vergunningen_regelingen/Bouw_verbouw/Ingebruikname_gemeentegrond",
+      "https://www.meppel.nl/Ondernemer/Vergunningen_regelingen/Reclame_aankondigingen/ingebruikname_gemeentegrond",
+      "https://www.meppel.nl/afval-en-milieu"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.meppel.nl/Inwoner/Wonen_ver_bouwen/Ver_bouwen_slopen/Gebruiken_gemeentegrond",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Met de berichtenbox kunt u de melding mobiele puinbreker digitaal doen bij de gemeente.",
+          "original_reference": "Een digitale melding via de berichtenbox aan de gemeente.",
+          "note": "De originele tekst bevat meer gedetailleerde voorwaarden en regels die niet terug te vinden zijn in de bronpagina's, zoals de drie maanden termijn en specifieke milieuregels. De bronpagina is minder volledig.",
+          "source_urls": [
+            "https://www.meppel.nl/Ondernemer/Vergunningen_regelingen/Afval_milieu/mobiel_puinbreken"
+          ]
+        }
+      ]
+    },
+    "summary": "De originele inhoud is aanzienlijk uitgebreider en gedetailleerder dan de informatie op de bronwebsites. Belangrijke voorwaarden zoals de maximale periode van drie maanden en specifieke milieuregels zijn niet terug te vinden op de geciteerde bronpagina's. De basisinformatie over de meldingsplicht van 15 dagen vooraf komt wel overeen, maar de bronnen missen veel van de aanvullende details en voorwaarden die in de originele tekst staan vermeld."
+  }
+}

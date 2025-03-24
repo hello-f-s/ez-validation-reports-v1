@@ -1,0 +1,81 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ERMELO",
+      "contact": {
+        "phone": "(0341) 56 73 21",
+        "email": "gemeente@ermelo.nl",
+        "website": "http://www.ermelo.nl"
+      }
+    },
+    "service": {
+      "id": 7,
+      "name": "Kabels en leidingen aanleggen en beheren"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "Telefoon: 0341 56 73 21",
+        "status": "false",
+        "note": "Het correcte telefoonnummer van gemeente Ermelo is 0341 56 73 20"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 3,
+    "valid_urls": 3,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.ermelo.nl/kabels-en-leidingen-leggen-in-openbare-grond",
+      "https://www.ermelo.nl/graafmelding",
+      "https://www.ermelo.nl/omgevingsplein/bouwen-en-verbouwen/start-controle-en-gereedmelding-bouw"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Leggen van kabels en leidingen in de openbare grond meldt u of vraagt u aan bij de gemeente. Alleen nutsbedrijven kunnen deze aanvragen doen.",
+          "original_reference": "Kabels en leidingen mogen alleen door nutsbedrijven aangevraagd worden.",
+          "note": "De informatie over wie kabels en leidingen mag aanvragen komt exact overeen",
+          "source_urls": [
+            "https://www.ermelo.nl/kabels-en-leidingen-leggen-in-openbare-grond"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U kunt machinale graafwerkzaamheden op zijn vroegst 20 en op zijn laatst 2 werkdagen voor de start melden.",
+          "original_reference": "Meldingen voor machinale graafwerkzaamheden moeten tussen 20 en 2 werkdagen van tevoren gedaan worden.",
+          "note": "De originele tekst presenteert dit als een verplichting ('moeten'), terwijl de brontekst het als een mogelijkheid ('kunt') formuleert",
+          "source_urls": [
+            "https://www.ermelo.nl/graafmelding"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u regelmatig een melding doet, kunt u zich beter registreren als klant van Kadaster-KLIC. Daar kunt u gebruik maken van Mijn Kadaster",
+          "original_reference": "Als u regelmatig meldingen doet, kunt u zich registreren als klant bij Kadaster-KLIC. Gebruik hiervoor de \"Mijn Kadaster\" portal.",
+          "note": "De brontekst geeft een duidelijkere aanbeveling ('beter registreren') dan de originele tekst die neutraler is geformuleerd",
+          "source_urls": [
+            "https://www.ermelo.nl/graafmelding"
+          ]
+        }
+      ]
+    },
+    "summary": "De gevonden verschillen zijn voornamelijk nuanceverschillen in de formulering, waarbij de brontekst soms iets stelliger of juist vrijblijvender is dan de originele tekst. De kern van de informatie blijft echter grotendeels consistent. Er zijn geen significante inhoudelijke tegenstrijdigheden gevonden in procedures, kosten of vereisten."
+  }
+}

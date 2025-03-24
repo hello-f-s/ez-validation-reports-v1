@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "GEMERT-BAKEL",
+      "contact": {
+        "phone": "(0492) 37 85 00",
+        "email": "gemeente@gemert-bakel.nl",
+        "website": "http://www.gemert-bakel.nl"
+      }
+    },
+    "service": {
+      "id": 15,
+      "name": "Vergunning of ontheffing voor straatartiesten"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "Het gemeentehuis is geopend op maandag van 09.00 - 19.00 uur, dinsdag en woensdag van 09.00 - 17.00 uur, donderdag van 09.00 - 19.00 uur, en vrijdag van 09.00 - 12.30 uur.",
+        "status": "false",
+        "note": "De openingstijden zijn niet correct. Volgens de officiële website van gemeente Gemert-Bakel is het gemeentehuis geopend op maandag t/m donderdag van 09.00 - 17.00 uur en op vrijdag van 09.00 - 12.30 uur. Op maandag- en donderdagavond is er een avondopenstelling van 17.00 - 19.00 uur alleen op afspraak."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.gemert-bakel.nl/evenementen-vergunning",
+      "https://www.gemert-bakel.nl/omgevingsvergunning-activiteit-slopen-van-een-bouwwerk",
+      "https://www.gemert-bakel.nl/omgevingsvergunning",
+      "https://www.gemert-bakel.nl/omgevingsvergunning-activiteit-uitvoeren-van-een-werk",
+      "https://www.gemert-bakel.nl/vergunningen-ondernemers"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Op 1 juli 2024 stopt het omgevingsloket online (OLO). Het indienen van aanvullingen via OLO is dan niet meer mogelijk. Zijn er initiatiefnemers die ook na 1 juli 2024 aanvulingen willen indienen? Dat kan via de mail naar gemeente@gemert-bakel.nl.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de aanstaande stopzetting van het Omgevingsloket Online per 1 juli 2024. Dit is belangrijke informatie voor aanvragers die na deze datum aanvullingen willen indienen.",
+          "source_urls": [
+            "https://www.gemert-bakel.nl/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bedrijven kunnen dit niet. Zij zijn wettelijk verplicht om aanvragen digitaal in te dienen.",
+          "original_reference": "Particulieren kunnen hun aanvraag ook op papier indienen bij de balie in het gemeentehuis of per post.",
+          "note": "De originele tekst vermeldt alleen dat particulieren op papier kunnen indienen, maar specificeert niet dat bedrijven wettelijk verplicht zijn om digitaal in te dienen.",
+          "source_urls": [
+            "https://www.gemert-bakel.nl/omgevingsvergunning-activiteit-uitvoeren-van-een-werk"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Horeca, tijdelijke drank- en horecavergunning [...] Deze wordt verleend in combinatie met een evenementenvergunning. De tijdelijke drank- en horecavergunning kan voor maximaal twaalf dagen worden verleend.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de tijdelijke drank- en horecavergunning en de maximale duur van 12 dagen, wat relevant is voor evenementenorganisatoren.",
+          "source_urls": [
+            "https://www.gemert-bakel.nl/vergunningen-ondernemers"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn drie belangrijke verschillen gevonden tussen de originele tekst en de bronnen. Het meest kritieke verschil is de aanstaande stopzetting van het Omgevingsloket Online per 1 juli 2024. Daarnaast ontbreekt in de originele tekst belangrijke informatie over de verplichte digitale indiening voor bedrijven en details over tijdelijke drank- en horecavergunningen bij evenementen. Deze informatie is essentieel voor correcte vergunningaanvragen."
+  }
+}

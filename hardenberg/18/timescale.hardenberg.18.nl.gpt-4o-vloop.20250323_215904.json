@@ -1,0 +1,68 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HARDENBERG",
+      "contact": {
+        "phone": "14 0523",
+        "email": "gemeente@hardenberg.nl",
+        "website": "http://www.hardenberg.nl"
+      }
+    },
+    "service": {
+      "id": 18,
+      "name": "Ventvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 22,
+    "false_sentences": 2,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "In artikel 3 van de APV leest u wat wel en niet is toegestaan bij het venten.",
+        "status": "false",
+        "note": "De regels over venten staan niet in artikel 3 maar in artikel 5:14 en 5:15 van de APV Hardenberg"
+      },
+      {
+        "sentence": "Dan moet u een terrasvergunning aanvragen, zelfs als het terras op uw eigen terrein ligt.",
+        "status": "false",
+        "note": "Volgens de gemeente Hardenberg is voor een terras op eigen terrein geen terrasvergunning nodig, alleen voor terrassen op gemeentegrond"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 0,
+    "invalid_urls": 5,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.hardenberg.nl/bouwen-en-verbouwen/omgevingsvergunning/wat-is-een-omgevingsvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.hardenberg.nl/ondernemers/markten-winkels-en-horeca/ventvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.hardenberg.nl/bouwen-en-verbouwen/omgevingsvergunning/overleggen-met-de-gemeente",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.hardenberg.nl/ondernemers/markten-winkels-en-horeca/terrasvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.hardenberg.nl/evenementen/vergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  }
+}

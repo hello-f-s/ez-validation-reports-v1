@@ -1,0 +1,78 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OLDENZAAL",
+      "contact": {
+        "phone": "(0541) 58 81 11",
+        "email": "info@oldenzaal.nl",
+        "website": "http://www.oldenzaal.nl"
+      }
+    },
+    "service": {
+      "id": 2,
+      "name": "Bord of spandoek plaatsen aan de openbare weg"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 27,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.4,
+    "false_statements": [
+      {
+        "sentence": "Er zijn geen voorwaarden voor het gebruik van plakzuilen.",
+        "status": "false",
+        "note": "Er gelden wel degelijk voorwaarden voor het gebruik van plakzuilen in Oldenzaal. Volgens de APV van de gemeente Oldenzaal zijn er specifieke regels voor het gebruik van aanplakborden en plakzuilen, waaronder waar en wat er mag worden aangeplakt."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.oldenzaal.nl/reclame",
+      "https://www.oldenzaal.nl/omgevingsvergunning",
+      "https://www.oldenzaal.nl/plaatsen-objecten-of-voorwerpen-op-aan-of-boven-de-openbare-weg",
+      "https://www.oldenzaal.nl/standplaatsvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.oldenzaal.nl/spandoeken-aankondigingsborden",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wilt u spandoeken plaatsen voor een evenement of collecte kunt u meer informatie vinden bij Spandoeken, aankondigingsborden.",
+          "original_reference": "Voor het plaatsen van sandwichborden en aankondigingsborden kunt u contact opnemen met Stichting Oldenzaal Promotie via telefoonnummer (0541) 51 40 23.",
+          "note": "De brontekst verwijst naar een aparte informatiepagina voor spandoeken en borden, terwijl de originele tekst direct verwijst naar Stichting Oldenzaal Promotie.",
+          "source_urls": [
+            "https://www.oldenzaal.nl/reclame"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wilt u een container, steiger, bouwkeet, straatversiering of een ander voorwerp op of aan de weg of een weggedeelte plaatsen? Kijk dan of u hiervoor een tijdelijke verkeersmaatregel of omgevingsvergunning moet aanvragen.",
+          "original_reference": "Als u objecten zoals een container of steiger op de openbare weg wilt plaatsen, kan het nodig zijn een tijdelijke verkeersmaatregel of een omgevingsvergunning aan te vragen, vooral als het object langer dan 30 dagen blijft staan.",
+          "note": "De brontekst noemt specifiek meer voorbeelden van objecten (bouwkeet, straatversiering) en is stelliger over de vergunningplicht.",
+          "source_urls": [
+            "https://www.oldenzaal.nl/plaatsen-objecten-of-voorwerpen-op-aan-of-boven-de-openbare-weg"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele tekst en de bronnen. Het eerste verschil betreft de procedure voor het plaatsen van spandoeken en borden, waarbij de bronnen verwijzen naar een aparte informatiepagina in plaats van direct contact met Stichting Oldenzaal Promotie. Het tweede verschil betreft de specificatie van objecten op de openbare weg en de formulering van de vergunningplicht, waarbij de brontekst uitgebreider en stelliger is. De overige informatie, zoals openingstijden en contactgegevens, komt overeen."
+  }
+}

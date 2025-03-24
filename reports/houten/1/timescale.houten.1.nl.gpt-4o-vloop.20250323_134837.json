@@ -1,0 +1,89 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HOUTEN",
+      "contact": {
+        "phone": "(030) 639 26 11",
+        "email": "gemeentehuis@houten.nl",
+        "website": "http://www.houten.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 17,
+    "false_sentences": 2,
+    "accuracy_percentage": 89.5,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor het aanvragen van een alcoholwetvergunning bedragen €535,50.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Houten bedragen de kosten voor een alcoholwetvergunning €545,50"
+      },
+      {
+        "sentence": "Voor paracommerciële rechtspersonen (Model B) is de doorlooptijd zes maanden.",
+        "status": "false",
+        "note": "De doorlooptijd voor Model B aanvragen is volgens de gemeente Houten 8 weken, met mogelijke verlenging van 8 weken, niet zes maanden"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.houten.nl/ondernemen/regelen/alcoholwetvergunning",
+      "https://www.houten.nl/ondernemen/regelen/horecabedrijf-exploiteren",
+      "https://www.houten.nl/wonen-en-leefomgeving/bouw-en-verbouw/omgevingsvergunning/aanvraagprocedure-omgevingsvergunning",
+      "https://www.houten.nl/wonen-en-leefomgeving/riool-en-water/vergunningen-aanvragen",
+      "https://www.houten.nl/sport-cultuur-en-recreatie/evenement-organiseren",
+      "https://www.houten.nl"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "een door het bestuur vastgesteld en ondertekend (minimaal door voorzitter, secretaris en penningmeester) bestuursreglement",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist een belangrijke vereiste voor verenigingen en stichtingen: zij moeten een door het bestuur vastgesteld en ondertekend bestuursreglement aanleveren",
+          "source_urls": [
+            "https://www.houten.nl/ondernemen/regelen/alcoholwetvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Melding wijziging leidinggevende",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de procedure voor het bijschrijven van een nieuwe leidinggevende, terwijl dit wel een belangrijke wijzigingsmogelijkheid is die wordt genoemd in de bronpagina",
+          "source_urls": [
+            "https://www.houten.nl/ondernemen/regelen/alcoholwetvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "zie ook beleidsregels sluitingstijden en terrassen (pdf, 226 KB)",
+          "original_reference": "Let op de beleidsregels met betrekking tot sluitingstijden en terrassen",
+          "note": "De originele tekst verwijst alleen algemeen naar beleidsregels, terwijl de bron een specifiek document noemt dat geraadpleegd kan worden",
+          "source_urls": [
+            "https://www.houten.nl/ondernemen/regelen/alcoholwetvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten enkele belangrijke aanvullende vereisten en procedures die niet in de originele tekst worden genoemd, met name het verplichte bestuursreglement voor verenigingen en stichtingen en de procedure voor het bijschrijven van nieuwe leidinggevenden. Ook is er een specifieke verwijzing naar het document met beleidsregels voor sluitingstijden en terrassen die in de originele tekst ontbreekt. De kerninformatie over de aanvraagprocedure en vereiste documenten komt verder grotendeels overeen."
+  }
+}

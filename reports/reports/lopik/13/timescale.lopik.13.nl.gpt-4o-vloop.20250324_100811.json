@@ -1,0 +1,82 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LOPIK",
+      "contact": {
+        "phone": "(0348) 55 99 55",
+        "email": "gemeente@lopik.nl",
+        "website": "http://www.lopik.nl"
+      }
+    },
+    "service": {
+      "id": 13,
+      "name": "Omzettingsvergunning voor kamerverhuur aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor het aanvragen van een huisvestingsvergunning bedragen € 20,-.",
+        "status": "false",
+        "note": "Dit bedrag is niet correct volgens de actuele legesverordening van de gemeente Lopik. De exacte kosten voor een huisvestingsvergunning worden jaarlijks vastgesteld in de legesverordening en zijn niet een vast bedrag van €20."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 4,
+    "valid_urls": 4,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.lopik.nl/milieu-vergunning-of-melding",
+      "https://www.lopik.nl/huisvestingsvergunning",
+      "https://www.lopik.nl/omgevingsvergunning-strijdig-gebruik",
+      "https://www.lopik.nl/terras-plaatsen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De kosten voor het aanvragen van een huisvestingsvergunning bedragen € 20,-",
+          "original_reference": "De kosten voor het aanvragen van een huisvestingsvergunning bedragen € 20,-. Voor andere vergunningen variëren de kosten jaarlijks",
+          "note": "De originele tekst suggereert dat er naast de huisvestingsvergunning andere vergunningen zijn met variabele kosten, terwijl de brontekst alleen het vaste bedrag van €20,- voor de huisvestingsvergunning noemt zonder andere varianten te vermelden.",
+          "source_urls": [
+            "https://www.lopik.nl/huisvestingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Dit geldt voor woningen met een huurprijs tot € 710,-",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de specifieke huurprijsgrens van €710,- voor wanneer een huisvestingsvergunning nodig is, wat een belangrijke voorwaarde is.",
+          "source_urls": [
+            "https://www.lopik.nl/huisvestingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Gaat u een woning van de woningbouwvereniging huren, dan vraagt u de vergunning aan bij de woningbouwvereniging.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst maakt geen onderscheid tussen aanvragen via woningbouwvereniging of gemeente, terwijl dit wel een belangrijk procedureel verschil is.",
+          "source_urls": [
+            "https://www.lopik.nl/huisvestingsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de specifieke voorwaarden voor huisvestingsvergunningen die niet in de originele tekst staan vermeld, zoals de huurprijsgrens van €710,- en het verschil in aanvraagprocedure via woningbouwvereniging of gemeente. Ook is de informatie over variabele kosten voor andere vergunningen niet terug te vinden in de bronnen."
+  }
+}

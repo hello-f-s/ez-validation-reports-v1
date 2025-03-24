@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ALPHEN-CHAAM",
+      "contact": {
+        "phone": "14013",
+        "email": "info@alphen-chaam.nl",
+        "website": "http://www.alphen-chaam.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Bezoekadres: Willibrordplein 15, 5131 AV Alphen.",
+        "status": "false",
+        "note": "Het juiste bezoekadres van de gemeente Alphen-Chaam is Willibrordplein 1, 5131 AV Alphen. Het huisnummer 15 is onjuist."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.alphen-chaam.nl/vergunningplaatsengokautomaat",
+      "https://www.alphen-chaam.nl/horecavergunning",
+      "https://www.alphen-chaam.nl/vergunningen-en-ontheffingen/vergunningen-en-ontheffingen-voor-ondernemers",
+      "https://www.alphen-chaam.nl/ondernemen/vergunningen-en-ontheffingen-voor-ondernemers",
+      "https://www.alphen-chaam.nl/omgevingsvergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Willibrordplein 1",
+          "original_reference": "Willibrordplein 15",
+          "note": "Het bezoekadres in de originele tekst (Willibrordplein 15) verschilt van het adres in de bronnen (Willibrordplein 1)",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/vergunningplaatsengokautomaat",
+            "https://www.alphen-chaam.nl/horecavergunning"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Wij behandelen uw aanvraag binnen 8 weken. Deze periode kunnen we met 8 weken verlengen.",
+          "original_reference": "De aanvraag wordt binnen 8 weken behandeld. Deze periode kan met 8 weken worden verlengd indien nodig.",
+          "note": "De behandeltermijn en mogelijke verlenging komen overeen met de originele tekst",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/vergunningplaatsengokautomaat"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Vergunning voor 1 jaar voor 1 gokautomaat € 57,80, Voor elke volgende gokautomaat € 34,78",
+          "original_reference": "Voor de vergunning van 1 jaar voor 1 gokautomaat bedragen de kosten € 57,80. Voor elke volgende gokautomaat € 34,78",
+          "note": "De kosten voor de vergunningen komen exact overeen met de originele tekst",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/vergunningplaatsengokautomaat"
+          ]
+        }
+      ]
+    },
+    "summary": "Bij vergelijking van de originele tekst met de bronnen is er slechts één significant verschil gevonden: het huisnummer van het bezoekadres. Verder komen alle belangrijke informatie zoals kosten, behandeltermijnen en procedures overeen met de bronnen. De informatie over bezwaren ontbreekt in beide versies."
+  }
+}

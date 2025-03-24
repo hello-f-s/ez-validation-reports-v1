@@ -1,0 +1,89 @@
+{
+  "context": {
+    "municipality": {
+      "name": "BEVERWIJK",
+      "contact": {
+        "phone": "(0251) 25 62 56",
+        "email": "info@beverwijk.nl",
+        "website": "http://www.beverwijk.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 22,
+    "false_sentences": 2,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "U kunt het formulier na invulling e-mailen naar info@beverwijk.nl t.a.v. team Leefomgeving, bijzondere wetten en vergunningen.",
+        "status": "false",
+        "note": "Het e-mailadres info@beverwijk.nl is onjuist. Volgens de officiële website van de gemeente Beverwijk moet een evenementenvergunning worden aangevraagd via het digitale aanvraagformulier op de website."
+      },
+      {
+        "sentence": "Heeft u vragen over vergunningen? Stuur dan een e-mail naar omgevingsdesk@beverwijk.nl.",
+        "status": "false",
+        "note": "Het e-mailadres omgevingsdesk@beverwijk.nl is onjuist. Volgens de officiële website van de gemeente Beverwijk kunnen vragen over vergunningen gesteld worden via het algemene contactformulier of telefoonnummer."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.beverwijk.nl/evenementen-organiseren",
+      "https://www.beverwijk.nl/aanmelden-evenementenkalender-2024",
+      "https://www.beverwijk.nl/aanmelden-evenementenkalender-2025",
+      "https://www.beverwijk.nl/overzicht-vragen-voor-eenmalige-subsidie-aanvragen",
+      "https://www.beverwijk.nl/evenement"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "omgevingsdesk@beverwijk.nl",
+          "original_reference": "info@beverwijk.nl t.a.v. team Leefomgeving, bijzondere wetten en vergunningen",
+          "note": "Er is een verschil in het e-mailadres voor het indienen van meldingen voor kleine evenementen. De bronpagina verwijst naar omgevingsdesk@beverwijk.nl, terwijl de originele tekst info@beverwijk.nl noemt.",
+          "source_urls": [
+            "https://www.beverwijk.nl/evenementen-organiseren"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "26 oktober",
+          "original_reference": "25 oktober",
+          "note": "De deadline voor aanmelding op de regionale evenementenkalender verschilt. De meest recente bron noemt 26 oktober (voor 2025), terwijl de originele tekst 25 oktober vermeldt.",
+          "source_urls": [
+            "https://www.beverwijk.nl/aanmelden-evenementenkalender-2025"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Het melden van een evenement is niet hetzelfde als het aanvragen van een vergunning",
+          "original_reference": "Let op: Het melden van een evenement is niet hetzelfde als het aanvragen van een vergunning.",
+          "note": "Deze waarschuwing wordt consistent vermeld in beide bronnen",
+          "source_urls": [
+            "https://www.beverwijk.nl/aanmelden-evenementenkalender-2024",
+            "https://www.beverwijk.nl/aanmelden-evenementenkalender-2025"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen het e-mailadres voor meldingen van kleine evenementen en de deadline voor aanmelding op de regionale evenementenkalender. De bronnen tonen een update in de aanmelddeadline van 25 naar 26 oktober voor het jaar 2025. De kern van de procedures en waarschuwingen blijft verder consistent."
+  }
+}

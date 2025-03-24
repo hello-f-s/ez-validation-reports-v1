@@ -1,0 +1,89 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HEILOO",
+      "contact": {
+        "phone": "(072) 535 66 66",
+        "email": "info@heiloo.nl",
+        "website": "http://www.heiloo.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 42,
+    "true_sentences": 40,
+    "false_sentences": 2,
+    "accuracy_percentage": 95.2,
+    "false_statements": [
+      {
+        "sentence": "Klein evenement melden: € 13,20",
+        "status": "false",
+        "note": "Het actuele tarief voor het melden van een klein evenement in Heiloo is € 14,20 volgens de gemeentelijke legesverordening 2024"
+      },
+      {
+        "sentence": "Kleinschalig evenement (< 150 personen): € 24,30",
+        "status": "false",
+        "note": "Het actuele tarief voor een kleinschalig evenement in Heiloo is € 26,30 volgens de gemeentelijke legesverordening 2024"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.heiloo.nl/aanvragen-en-regelen/evenementenvergunning/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/standplaatsvergunning/",
+      "https://www.heiloo.nl/over-de-gemeente/evenementenkalender",
+      "https://www.heiloo.nl/aanvragen-en-regelen/exploitatievergunning/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/ondernemen/",
+      "https://heiloo.nl/evenementenvergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het kan langer duren voor u een reactie krijgt op uw aanvraag voor een vergunning. Door krapte op de arbeidsmarkt hebben wij helaas niet genoeg collega's om alle vergunningen op tijd af te handelen.",
+          "original_reference": "Houd er rekening mee dat het door krapte op de arbeidsmarkt langer kan duren voordat u een reactie krijgt op uw aanvraag.",
+          "note": "De bronnen communiceren deze waarschuwing prominenter aan het begin van de pagina, terwijl dit in de originele tekst pas aan het einde wordt vermeld.",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/evenementenvergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een klein evenement kan bijvoorbeeld een buurtfeest zijn.",
+          "original_reference": "No matching information",
+          "note": "De bron geeft een concreet voorbeeld van een klein evenement, wat ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/evenementenvergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Contact team horeca: horeca@debuch.nl",
+          "original_reference": "apv@debuch.nl",
+          "note": "Er worden verschillende e-mailadressen genoemd voor contact, wat verwarrend kan zijn voor de aanvrager.",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/exploitatievergunning/"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de plaatsing van de waarschuwing over vertragingen, aanvullende voorbeelden voor kleine evenementen, en verschillende contactgegevens in de bronnen. De kern van de informatie over vergunningstypen, kosten en aanvraagprocedures komt overeen, maar de presentatie en details verschillen op enkele punten. De bronnen bevatten ook specifiekere voorbeelden en context die in de originele tekst ontbreken."
+  }
+}

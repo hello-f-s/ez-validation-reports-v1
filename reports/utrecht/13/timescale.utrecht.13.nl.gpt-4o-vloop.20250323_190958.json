@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "UTRECHT",
+      "contact": {
+        "phone": "(014) 030",
+        "email": "Gemeente@utrecht.nl",
+        "website": "http://www.utrecht.nl"
+      }
+    },
+    "service": {
+      "id": 13,
+      "name": "Omzettingsvergunning voor kamerverhuur aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 16,
+    "true_sentences": 14,
+    "false_sentences": 2,
+    "accuracy_percentage": 87.5,
+    "false_statements": [
+      {
+        "sentence": "De gemeente Utrecht streeft ernaar binnen 8 weken een beslissing te nemen over uw vergunningaanvraag.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Utrecht is de wettelijke beslistermijn voor een omzettingsvergunning 12 weken, niet 8 weken."
+      },
+      {
+        "sentence": "Dit is een standaardtermijn voor de behandeling van vergunningen, waaronder mogelijk ook de omzettingsvergunning voor kamerverhuur valt.",
+        "status": "false",
+        "note": "Deze bewering is onjuist omdat de omzettingsvergunning specifiek een behandeltermijn van 12 weken heeft volgens de gemeente Utrecht, en dit is geen standaardtermijn die voor alle vergunningen geldt."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.utrecht.nl/ondernemen/vergunningen-en-regels",
+      "https://www.utrecht.nl/wonen-en-leven/bouwen-en-verbouwen/u-wilt-bouwen-of-verbouwen/woning-aan-de-binnenkant-verbouwen",
+      "https://www.utrecht.nl/ondernemen/vergunningen-en-regels/werkzaamheden-vergunning-aanvragen",
+      "https://www.utrecht.nl/ondernemen/vergunningen-en-regels/ondernemen-en-milieu/milieu-melding-doen-of-omgevingsvergunning-aanvragen",
+      "https://www.utrecht.nl/ondernemen/vergunningen-en-regels/horecaloket"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De vergunningcheck geeft aan voor welke activiteiten u een omgevingsvergunning nodig hebt of een melding moet doen. U kunt daarna meteen de vergunning aanvragen of de melding doen.",
+          "original_reference": "Het is raadzaam om de vergunningscheck te doen via het omgevingsloket om te bepalen welke extra vergunningen of meldingen vereist zijn voor uw situatie.",
+          "note": "De bronnen specificeren dat de vergunningcheck verplicht is als eerste stap en direct gekoppeld is aan de aanvraagmogelijkheid, terwijl de originele tekst dit meer als een vrijblijvend advies presenteert.",
+          "source_urls": [
+            "https://www.utrecht.nl/wonen-en-leven/bouwen-en-verbouwen/u-wilt-bouwen-of-verbouwen/woning-aan-de-binnenkant-verbouwen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bedrijven hebben hiervoor e-herkenning nodig.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat e-herkenning nodig is voor bedrijven om digitale aanvragen te doen, wat een essentiële voorwaarde is volgens de bronnen.",
+          "source_urls": [
+            "https://www.utrecht.nl/ondernemen/vergunningen-en-regels/ondernemen-en-milieu/milieu-melding-doen-of-omgevingsvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Dit moet in de meeste gevallen 4 weken van tevoren.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt geen voorbereidingstermijn van 4 weken die volgens de bronnen in de meeste gevallen vereist is.",
+          "source_urls": [
+            "https://www.utrecht.nl/ondernemen/vergunningen-en-regels/ondernemen-en-milieu/milieu-melding-doen-of-omgevingsvergunning-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De originele tekst mist enkele cruciale details die in de bronnen worden genoemd, waaronder de verplichting van e-herkenning voor bedrijven, de verplichte voorbereidingstermijn van 4 weken, en het feit dat de vergunningcheck niet vrijblijvend maar een verplichte eerste stap is. Deze verschillen kunnen belangrijk zijn voor een correcte aanvraagprocedure."
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MEDEMBLIK",
+      "contact": {
+        "phone": "(0229) 85 60 00",
+        "email": "info@medemblik.nl",
+        "website": "http://www.medemblik.nl"
+      }
+    },
+    "service": {
+      "id": 7,
+      "name": "Kabels en leidingen aanleggen en beheren"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "Let op dat er leges (kosten) zijn verbonden aan het vooroverleg als uw plan mogelijk niet in het omgevingsplan past.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Medemblik is vooroverleg gratis. Er worden alleen leges in rekening gebracht bij de daadwerkelijke vergunningaanvraag, niet bij het vooroverleg."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.medemblik.nl/bouwen-en-verbouwen/bodem-en-graafwerkzaamheden/graafwerkzaamheden-melden",
+      "https://www.medemblik.nl/projecten/projecten-in-uw-straat-of-wijk/lambertschaag-werkzaamheden-aan-kabels-en-leidingen-noordeinde",
+      "https://www.medemblik.nl/vergunningen/collecte-verkoop-en-reclame/standplaatsvergunning/melding-ideele-standplaats",
+      "https://www.medemblik.nl/bouwen-en-verbouwen/omgevingswet-en-bouwvergunningen/omgevingsvergunning",
+      "https://www.medemblik.nl/ondernemen/aanbestedingen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.medemblik.nl/graafwerkzaamheden-melden",
+        "reason": "INVALID: Error scraping https://www.medemblik.nl/graafwerkzaamheden-melden: 404 Client Error: Not Found for url: https://www.medemblik.nl/graafwerkzaamheden-melden"
+      },
+      {
+        "url": "https://www.medemblik.nl/omgevingsvergunning",
+        "reason": "INVALID: Error scraping https://www.medemblik.nl/omgevingsvergunning: 404 Client Error: Not Found for url: https://www.medemblik.nl/omgevingsvergunning"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "We behandelen plannen en aanvragen in 2 fasen: vooroverlegfase (niet verplicht) [...] aanvraagfase omgevingsvergunning",
+          "original_reference": "Als een omgevingsvergunning noodzakelijk is, moet u voorbereid zijn op een eventueel vooroverleg",
+          "note": "De originele tekst suggereert dat vooroverleg mogelijk verplicht is, terwijl de bron expliciet vermeldt dat de vooroverlegfase niet verplicht is",
+          "source_urls": [
+            "https://www.medemblik.nl/bouwen-en-verbouwen/omgevingswet-en-bouwvergunningen/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Na uw melding krijgt u informatie over de kabels en leidingen in de grond waar u wilt graven. Zo voorkomt u schade.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over wat er gebeurt na de graafmelding en het doel ervan (schadepreventie)",
+          "source_urls": [
+            "https://www.medemblik.nl/bouwen-en-verbouwen/bodem-en-graafwerkzaamheden/graafwerkzaamheden-melden"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor het plaatsen van kabels of leidingen boven de grond, heeft u een omgevingsvergunning nodig. Ook voor het plaatsen van nieuwe buisleidingen voor gevaarlijke stoffen op een bestaand traject, heeft u een omgevingsvergunning nodig.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist specifieke informatie over vergunningvereisten voor bovengrondse kabels/leidingen en gevaarlijke stoffen",
+          "source_urls": [
+            "https://www.medemblik.nl/bouwen-en-verbouwen/bodem-en-graafwerkzaamheden/graafwerkzaamheden-melden"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie die ontbreekt in de originele tekst, vooral met betrekking tot de vrijwillige aard van het vooroverleg, het proces na de graafmelding, en specifieke vergunningvereisten voor bepaalde types werkzaamheden. Deze informatie is essentieel voor een volledig begrip van de procedures en vereisten."
+  }
+}

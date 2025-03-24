@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ALPHEN-CHAAM",
+      "contact": {
+        "phone": "14013",
+        "email": "info@alphen-chaam.nl",
+        "website": "http://www.alphen-chaam.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 8,
+    "true_sentences": 7,
+    "false_sentences": 1,
+    "accuracy_percentage": 87.5,
+    "false_statements": [
+      {
+        "sentence": "Binnen 8 weken na de aanvraag hoort u of u de vergunning krijgt. Bij uitzonderingen kan dit langer duren, dit wordt u dan gemeld.",
+        "status": "false",
+        "note": "Volgens de website van gemeente Alphen-Chaam is de reguliere procedure maximaal 8 weken, maar kan deze termijn eenmalig met 6 weken worden verlengd. Voor uitgebreide procedures geldt een termijn van 26 weken die met 6 weken kan worden verlengd. Deze specifieke termijnen worden niet correct weergegeven in de oorspronkelijke zin."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.alphen-chaam.nl/conceptverzoek",
+      "https://www.alphen-chaam.nl/omgevingswet-voor-bedrijven",
+      "https://www.alphen-chaam.nl/vergunningen-en-ontheffingen/vergunningen-en-ontheffingen-voor-ondernemers",
+      "https://www.alphen-chaam.nl/omgevingsvergunning",
+      "https://www.alphen-chaam.nl/ondernemen/vergunningen-en-ontheffingen-voor-ondernemers"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Als u een dakkapel plaatst, een boom kapt of iets sloopt, heeft u misschien een omgevingsvergunning nodig. Met de vergunningcheck in het digitale Omgevingsloket ziet u snel of u voor uw (bouw)plannen een vergunning moet aanvragen, melding moet doen of uw (bouw)plan vergunningvrij is.",
+          "original_reference": "Als u een dakkapel plaatst, een boom kapt of iets sloopt, heeft u mogelijk een omgevingsvergunning nodig. U kunt via de vergunningcheck in het digitale Omgevingsloket zien of u voor uw (bouw)plannen een vergunning moet aanvragen of melding kunt doen.",
+          "note": "De informatie komt inhoudelijk overeen, met alleen kleine tekstuele verschillen die geen betekenisverschil maken.",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bij een conceptverzoek kijken we naar uw (bouw)plannen en geven we advies over wat er nodig is om hiermee aan de slag te gaan.",
+          "original_reference": "U kunt vooraf een conceptverzoek indienen om advies te krijgen over wat er nodig is om met uw (bouw)plannen aan de slag te gaan.",
+          "note": "De bronpagina geeft meer specifieke details over het conceptverzoek, inclusief waarom dit nuttig is en wat er precies wordt onderzocht (zoals toetsing aan omgevingsplan en advies van commissie Ruimtelijke Kwaliteit).",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/conceptverzoek",
+            "https://www.alphen-chaam.nl/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bij uitzonderingen, bijvoorbeeld wanneer uw aanvraag niet compleet is of het gaat om een groot project, kan dit langer duren. Dit laten wij u dan weten.",
+          "original_reference": "Bij uitzonderingen kan dit langer duren, dit wordt u dan gemeld.",
+          "note": "De bronpagina specificeert concrete voorbeelden van uitzonderingssituaties (incomplete aanvraag of groot project) die in de originele tekst niet worden genoemd.",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/omgevingsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont dat de meeste basisinformatie consistent is tussen de originele tekst en de bronnen. Er zijn enkele belangrijke aanvullingen gevonden, met name meer specifieke details over het conceptverzoek en concrete voorbeelden van situaties waarin de behandeltermijn langer kan duren. Deze verschillen zijn vooral aanvullend van aard en niet tegenstrijdig met de originele informatie."
+  }
+}

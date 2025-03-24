@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ALKMAAR",
+      "contact": {
+        "phone": "14 072",
+        "email": "post@alkmaar.nl",
+        "website": "http://www.alkmaar.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "Na aanvraag hoort u binnen 8 weken (gemeentelijk monument) of 26 weken (Rijksmonument) of er een vergunning verleend wordt.",
+        "status": "false",
+        "note": "Voor een gemeentelijk monument geldt een beslistermijn van maximaal 8 weken, maar voor een rijksmonument geldt een termijn van maximaal 6 maanden (24 weken), niet 26 weken zoals vermeld."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/bouwen-en-verbouwen/omgevingsloket",
+      "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/bouwen-en-verbouwen/boom-kappen-vergunning",
+      "https://www.alkmaar.nl/direct-regelen/wonen-verhuizen-en-verbouwen/vergunningen/omgevingsvergunning",
+      "https://www.alkmaar.nl/direct-regelen/wonen-verhuizen-en-verbouwen/verbouwen/melding-woon-en-leefomgeving-indienen/",
+      "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/bouwen-en-verbouwen/monumenten-omgevingsvergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Tot 1 januari 2024 deed u een aanvraag of een melding via het Omgevingsloket online (OLO). Op 1 januari 2024 is de nieuwe Omgevingswet ingegaan. U doet de aanvraag nu in het nieuwe Omgevingsloket.",
+          "original_reference": "U kunt de omgevingsvergunning digitaal aanvragen via het Omgevingsloket.",
+          "note": "De originele tekst vermeldt niet de recente overgang naar het nieuwe Omgevingsloket per 1 januari 2024, wat een belangrijke procedurele wijziging is.",
+          "source_urls": [
+            "https://www.alkmaar.nl/direct-regelen/wonen-verhuizen-en-verbouwen/vergunningen/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "'De knip' van de bouwactiviteit: Tot 1 januari 2024 keek de gemeente niet alleen naar wát u ging bouwen, maar ook wáár u ging bouwen. Vanaf 1 januari 2024 zijn dit twee aparte activiteiten.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over de nieuwe 'knip' in de beoordeling van bouwactiviteiten sinds 1 januari 2024, waarbij wat en waar bouwen nu apart worden beoordeeld.",
+          "source_urls": [
+            "https://www.alkmaar.nl/direct-regelen/wonen-verhuizen-en-verbouwen/vergunningen/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor vragen over milieubelastende activiteiten kunt u terecht bij de Omgevingsdienst Noord-Holland Noord.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist informatie over waar men terecht kan voor vragen over milieubelastende activiteiten.",
+          "source_urls": [
+            "https://www.alkmaar.nl/direct-regelen/wonen-verhuizen-en-verbouwen/vergunningen/omgevingsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de recente overgang naar het nieuwe Omgevingsloket per 1 januari 2024 en de invoering van 'de knip' in bouwactiviteiten. De originele tekst is verouderd en mist deze cruciale wijzigingen in de procedures. Ook ontbreekt informatie over de rol van de Omgevingsdienst Noord-Holland Noord bij milieubelastende activiteiten."
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "context": {
+    "municipality": {
+      "name": "GRONINGEN",
+      "contact": {
+        "phone": "14 050",
+        "email": "info@groningen.nl",
+        "website": "http://gemeente.groningen.nl"
+      }
+    },
+    "service": {
+      "id": 2,
+      "name": "Bord of spandoek plaatsen aan de openbare weg"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 13,
+    "false_sentences": 2,
+    "accuracy_percentage": 86.7,
+    "false_statements": [
+      {
+        "sentence": "Na aanvraag van een vergunning voor de tijdelijke gebruik van gemeentegrond, ontvangen aanvragers binnen 7 werkdagen bericht.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Groningen duurt de behandeling van een aanvraag voor tijdelijk gebruik van gemeentegrond maximaal 8 weken, niet 7 werkdagen."
+      },
+      {
+        "sentence": "Voor een spandoek zonder frame en korter dan 6 weken is geen vergunning nodig, maar wel een melding minstens 10 dagen van tevoren.",
+        "status": "false",
+        "note": "Volgens de gemeente Groningen website moet een melding voor een tijdelijk spandoek zonder frame minimaal 2 weken (14 dagen) van tevoren worden gedaan, niet 10 dagen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 4,
+    "invalid_urls": 2,
+    "accuracy_percentage": 66.7,
+    "valid_urls_list": [
+      "https://gemeente.groningen.nl/spandoek-aanvragen-of-melden",
+      "https://gemeente.groningen.nl/reclamevergunning-aanvragen",
+      "https://gemeente.groningen.nl/parkeervergunning-voor-bedrijven",
+      "https://gemeente.groningen.nl/spandoek-aanvragen-melden"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://gemeente.groningen.nl/marktstandplaatsvergunning-aanvragen-wijzigen-of-opzeggen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://gemeente.groningen.nl/gemeentegrond-tijdelijk-gebruiken",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor de gemeente hangt het bedrijf Vlaggenindustrie Groningen de spandoeken op in een frame. Als particulier of ondernemer mag u zelf geen spandoek ophangen boven de weg.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat spandoeken boven de weg alleen door Vlaggenindustrie Groningen mogen worden opgehangen en dat particulieren/ondernemers dit niet zelf mogen doen.",
+          "source_urls": [
+            "https://gemeente.groningen.nl/spandoek-aanvragen-of-melden"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Loket Bouwen en Wonen, Europapark, Harm Buiterplein 1",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de fysieke locatie waar men terecht kan voor aanvragen.",
+          "source_urls": [
+            "https://gemeente.groningen.nl/spandoek-aanvragen-of-melden"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vraag eerst welke plekken nog vrij zijn: bel 14 050 of via contactformulier",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat men eerst moet controleren welke locaties beschikbaar zijn voordat men een aanvraag doet.",
+          "source_urls": [
+            "https://gemeente.groningen.nl/spandoek-aanvragen-of-melden"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie die niet in de originele tekst staat, waaronder specifieke uitvoeringsregels (alleen Vlaggenindustrie Groningen mag spandoeken boven de weg ophangen), de locatie van het gemeenteloket, en de noodzaak om eerst beschikbare locaties te controleren. Deze informatie is essentieel voor een correcte aanvraagprocedure."
+  }
+}

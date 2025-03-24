@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "TUBBERGEN",
+      "contact": {
+        "phone": "(0546) 62 80 00",
+        "email": "gemeente@tubbergen.nl",
+        "website": "http://www.tubbergen.nl"
+      }
+    },
+    "service": {
+      "id": 13,
+      "name": "Omzettingsvergunning voor kamerverhuur aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 31,
+    "true_sentences": 29,
+    "false_sentences": 2,
+    "accuracy_percentage": 93.5,
+    "false_statements": [
+      {
+        "sentence": "Voor een conceptverzoek bedragen de kosten €210.",
+        "status": "false",
+        "note": "Dit bedrag is niet correct volgens de actuele legesverordening van gemeente Tubbergen. De exacte kosten voor een conceptverzoek zijn anders en worden per geval bepaald."
+      },
+      {
+        "sentence": "Indien u na het conceptverzoek overgaat tot een volledige aanvraag, wordt een korting van 25% toegepast op de legeskosten.",
+        "status": "false",
+        "note": "De gemeente Tubbergen hanteert geen vast kortingspercentage van 25% bij overgang van conceptverzoek naar volledige aanvraag. Dit kortingspercentage is niet terug te vinden in de officiële legesverordening."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.tubbergen.nl/omgevingsvergunning-bouwen",
+      "https://www.tubbergen.nl/omgevingsvergunning-milieubelastende-activiteit-aanvragen",
+      "https://www.tubbergen.nl/de-omgevingsvergunning-vanaf-1-januari-2024",
+      "https://www.tubbergen.nl/vooroverleg-bouwen",
+      "https://www.tubbergen.nl/verandering-procedure-omgevingsvergunningen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een conceptverzoek wordt gedaan via het DSO. De aanvraag vergunning wordt hierbij in concept klaargezet voor indiening. Bij de laatste stap (stap 7) in het DSO wordt dan gekozen voor de optie 'conceptverzoek'. Eventuele aanvullingen of aanpassingen dienen gestuurd te worden naar conceptverzoek@noaberkracht.nl",
+          "original_reference": "De aanvraag voor een omgevingsvergunning kan worden ingediend via het Omgevingsloket",
+          "note": "De originele tekst vermeldt niet de specifieke DSO-procedure voor conceptverzoeken en het e-mailadres voor aanvullingen",
+          "source_urls": [
+            "https://www.tubbergen.nl/vooroverleg-bouwen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor verbouwingen onder gevolgklasse 1 is er een uitstel van 1 jaar. Dit betekent dat pas vanaf 1 januari 2025 verbouwingen onder gevolgklasse 1 ook onder de Wet kwaliteitsborging vallen",
+          "original_reference": "Vanaf 1 januari 2024 treden de Omgevingswet en de Wet kwaliteitsborging voor het bouwen in werking",
+          "note": "De originele tekst mist de belangrijke nuance dat er voor bepaalde verbouwingen (gevolgklasse 1) een jaar uitstel geldt tot 2025",
+          "source_urls": [
+            "https://www.tubbergen.nl/verandering-procedure-omgevingsvergunningen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een omgevingsvergunning vraagt u hier aan: https://omgevingswet.overheid.nl",
+          "original_reference": "via het Omgevingsloket",
+          "note": "De originele tekst vermeldt niet de specifieke URL voor het aanvragen van de vergunning",
+          "source_urls": [
+            "https://www.tubbergen.nl/omgevingsvergunning-bouwen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de specifieke aanvraagprocedure via het DSO-systeem, het uitstel van de Wet kwaliteitsborging voor bepaalde verbouwingen tot 2025, en de concrete URL voor het aanvragen van vergunningen. Deze details maken de informatie in de bronnen preciezer en actueler dan de originele tekst."
+  }
+}

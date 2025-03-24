@@ -1,0 +1,75 @@
+{
+  "context": {
+    "municipality": {
+      "name": "S-HERTOGENBOSCH",
+      "contact": {
+        "phone": "(073) 615 51 55",
+        "email": "gemeente@s-hertogenbosch.nl",
+        "website": "http://www.s-hertogenbosch.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "De behandeling van de aanvraag duurt normaal gesproken vier weken.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente 's-Hertogenbosch duurt de behandeling van een VOG-aanvraag meestal 2 tot 4 werkdagen bij een digitale aanvraag, niet vier weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.s-hertogenbosch.nl/",
+      "https://www.s-hertogenbosch.nl/product/nederlander-worden/",
+      "https://www.s-hertogenbosch.nl/woo/",
+      "https://www.s-hertogenbosch.nl/product/verklaring-omtrent-gedrag/",
+      "https://www.s-hertogenbosch.nl/product/omgevingsvergunning/",
+      "https://www.s-hertogenbosch.nl/product/omgevingsvergunning-wabo/"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Onnodige kosten door bemiddeling: Op internet zijn meerdere bedrijven en instanties actief die tegen extra kosten voor u een digitale VOG-aanvraag kunnen klaarzetten. Deze extra kosten kunnen oplopen tot tientallen euro's.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat een belangrijke waarschuwing over onnodige bemiddelingskosten die niet in de originele tekst staat vermeld.",
+          "source_urls": [
+            "https://www.s-hertogenbosch.nl/product/verklaring-omtrent-gedrag/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "€ 41,35",
+          "original_reference": "€ 41,35",
+          "note": "In de brontekst wordt het bedrag voor balieaanvraag vermeld als € 41,3... (afgekapt), terwijl in de originele tekst het volledige bedrag van € 41,35 staat.",
+          "source_urls": [
+            "https://www.s-hertogenbosch.nl/product/verklaring-omtrent-gedrag/"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's komen grotendeels overeen met de originele inhoud, maar bevatten een belangrijke aanvullende waarschuwing over onnodige bemiddelingskosten door externe partijen die niet in de originele tekst staat. Daarnaast is er een klein verschil in de weergave van het tarief voor balieaanvragen, waarbij het bedrag in de bron afgekapt wordt weergegeven."
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "context": {
+    "municipality": {
+      "name": "UTRECHT",
+      "contact": {
+        "phone": "(014) 030",
+        "email": "Gemeente@utrecht.nl",
+        "website": "http://www.utrecht.nl"
+      }
+    },
+    "service": {
+      "id": 22,
+      "name": "Woonruimte splitsen of samenvoegen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "De duur van de verwerking van de aanvraag kan variëren.",
+        "status": "false",
+        "note": "De gemeente Utrecht hanteert vaste wettelijke termijnen voor de verwerking van omgevingsvergunningen: 8 weken voor reguliere procedures en 26 weken voor uitgebreide procedures. Deze termijn kan eenmalig met 6 weken worden verlengd."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 6,
+    "invalid_urls": 1,
+    "accuracy_percentage": 85.7,
+    "valid_urls_list": [
+      "https://www.utrecht.nl/wonen-en-leven/wonen/gebruik-woonruimte-veranderen",
+      "https://www.utrecht.nl/wonen-en-leven/bouwen-en-verbouwen/u-wilt-bouwen-of-verbouwen/aanbouw-of-uitbouw-maken",
+      "https://www.utrecht.nl/ondernemen/vergunningen-en-regels",
+      "https://www.utrecht.nl/wonen-en-leven/bouwen-en-verbouwen/u-wilt-bouwen-of-verbouwen/woning-aan-de-binnenkant-verbouwen",
+      "https://www.utrecht.nl/wonen-en-leven/bouwen-en-verbouwen/hebt-u-een-vraag-over-bouwplan-of-bedrijfsplan",
+      "https://www.utrecht.nl/ondernemen/vergunningen-en-regels/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.utrecht.nl/wonen-en-leven/bouwprojecten/bouwvoorschriften/",
+        "reason": "INVALID: Error scraping https://www.utrecht.nl/wonen-en-leven/bouwprojecten/bouwvoorschriften/: 404 Client Error: Not Found for url: https://www.utrecht.nl/wonen-en-leven/bouwprojecten/bouwvoorschriften/"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Uw bouwplan kan bestaan uit een technisch deel en een ruimtelijk deel. Het technische deel gaat bijvoorbeeld over of het stevig genoeg is. Het ruimtelijk deel gaat over of uw plan past in de omgeving.",
+          "original_reference": "Een bouwtechnisch en ruimtelijk plan waarin de wijzigingen zijn opgenomen.",
+          "note": "De bronnen geven een uitgebreidere toelichting over de twee verschillende aspecten (technisch en ruimtelijk) van het bouwplan, terwijl de originele tekst dit als één geheel presenteert.",
+          "source_urls": [
+            "https://www.utrecht.nl/wonen-en-leven/bouwen-en-verbouwen/u-wilt-bouwen-of-verbouwen/woning-aan-de-binnenkant-verbouwen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor allebei de delen geldt 1 van de 3 mogelijkheden: u hebt een omgevingsvergunning nodig voor uw bouwplan, u moet een melding doen of het is vergunningsvrij.",
+          "original_reference": "Voor het splitsen of samenvoegen van woonruimten is een omgevingsvergunning nodig.",
+          "note": "De bronnen vermelden drie mogelijke scenarios (vergunningplicht, meldingsplicht of vergunningsvrij), terwijl de originele tekst alleen spreekt over vergunningplicht.",
+          "source_urls": [
+            "https://www.utrecht.nl/wonen-en-leven/bouwen-en-verbouwen/u-wilt-bouwen-of-verbouwen/woning-aan-de-binnenkant-verbouwen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke nuanceringen die ontbreken in de originele tekst, met name over de verschillende aspecten van het bouwplan (technisch en ruimtelijk) en de drie mogelijke scenarios voor vergunningen (vergunningplicht, meldingsplicht of vergunningsvrij). Deze informatie is essentieel voor een correct begrip van de procedures."
+  }
+}

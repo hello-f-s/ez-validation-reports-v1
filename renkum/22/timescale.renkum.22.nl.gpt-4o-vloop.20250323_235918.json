@@ -1,0 +1,82 @@
+{
+  "context": {
+    "municipality": {
+      "name": "RENKUM",
+      "contact": {
+        "phone": "(026) 334 81 11",
+        "email": "info@renkum.nl",
+        "website": "http://www.renkum.nl"
+      }
+    },
+    "service": {
+      "id": 22,
+      "name": "Woonruimte splitsen of samenvoegen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 10,
+    "false_sentences": 1,
+    "accuracy_percentage": 90.9,
+    "false_statements": [
+      {
+        "sentence": "Dit doet u via het online Omgevingsloket met eHerkenning.",
+        "status": "false",
+        "note": "Voor het aanvragen van een huisnummer bij de gemeente Renkum is geen eHerkenning nodig. Dit kan via een formulier op de gemeentelijke website of per e-mail worden aangevraagd."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 1,
+    "invalid_urls": 5,
+    "accuracy_percentage": 16.7,
+    "valid_urls_list": [
+      "https://www.renkum.nl/Ondernemers/Bouwen_en_vestigen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.renkum.nl/Ondernemers/Bouwen_en_vestigen/Bedrijf_aan_huis",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.renkum.nl/Inwoners/Bouwen_en_verbouwen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.renkum.nl/Ondernemers/Bouwen_en_vestigen/Zaken_om_rekening_mee_te_houden",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.renkum.nl/Ondernemers/Bouwen_en_vestigen/Bedrijf_vestigen_verhuizen_of_uitbreiden",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.renkum.nl",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wij hebben geen vrij uitgeefbare gronden in eigendom. Op verschillende bedrijventerreinen staan gebouwen leeg of is er ruimte voor aanvullende bebouwing.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat specifieke informatie over beschikbare bedrijfsgronden die niet in de originele tekst staat. Dit is relevante aanvullende informatie voor bedrijfsvestiging.",
+          "source_urls": [
+            "https://www.renkum.nl/Ondernemers/Bouwen_en_vestigen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina bevat voornamelijk algemene informatie over bedrijfsvestiging en bedrijventerreinen, terwijl de originele tekst zich specifiek richt op het splitsen en samenvoegen van woonruimtes. Er is weinig directe overlap tussen beide teksten. De enige concrete aanvulling betreft informatie over beschikbare bedrijfsgronden. De overige informatie in de brontekst is niet direct gerelateerd aan het onderwerp van de originele tekst."
+  }
+}

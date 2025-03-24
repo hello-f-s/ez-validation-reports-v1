@@ -1,0 +1,96 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HAAKSBERGEN",
+      "contact": {
+        "phone": "(053) 573 45 67",
+        "email": "gemeente@haaksbergen.nl",
+        "website": "http://www.haaksbergen.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "Voor omgevingsvergunningen voor de activiteit milieu of meldingen worden er geen leges in rekening gebracht.",
+        "status": "false",
+        "note": "Volgens de legesverordening van gemeente Haaksbergen worden er wel degelijk leges in rekening gebracht voor omgevingsvergunningen, ook voor milieuactiviteiten. Alleen voor bepaalde meldingen worden geen leges gerekend."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 8,
+    "valid_urls": 5,
+    "invalid_urls": 3,
+    "accuracy_percentage": 62.5,
+    "valid_urls_list": [
+      "https://www.haaksbergen.nl/ondernemers/Bedrijfstarten.html",
+      "https://www.haaksbergen.nl/ondernemers/Bedrijfstarten/Vergunningen-voor-bedrijven/Milieuvergunning-of-melding-bedrijven.html",
+      "https://www.haaksbergen.nl/ondernemers/Bedrijf-voeren/Milieu.html",
+      "https://www.haaksbergen.nl/Vergunningen/101107-Omgevingsvergunning.html",
+      "https://www.haaksbergen.nl/ondernemers/Bedrijfstarten/Vergunningen-voor-bedrijven.html"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://example.com/your-specific-url-1",
+        "reason": "INVALID: Error scraping https://example.com/your-specific-url-1: 404 Client Error: Not Found for url: https://example.com/your-specific-url-1"
+      },
+      {
+        "url": "https://example.com/your-specific-url-2",
+        "reason": "INVALID: Error scraping https://example.com/your-specific-url-2: 404 Client Error: Not Found for url: https://example.com/your-specific-url-2"
+      },
+      {
+        "url": "https://example.com/your-specific-url-3",
+        "reason": "INVALID: Error scraping https://example.com/your-specific-url-3: 404 Client Error: Not Found for url: https://example.com/your-specific-url-3"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "In de Omgevingswet is participatie voor het eerst juridisch vastgelegd als vereiste voor Omgevingsvergunningen. Daarom is het belangrijk om bij het maken van plannen of beleid betrokkenen (zoals omwonenden, naastliggende bedrijven of maatschappelijke instellingen) in een vroeg stadium te betrekken.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over de participatievereiste bij omgevingsvergunningen, wat een essentieel onderdeel is van de procedure onder de Omgevingswet.",
+          "source_urls": [
+            "https://www.haaksbergen.nl/Vergunningen/101107-Omgevingsvergunning.html"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Heeft u hulp nodig met het invullen van de vergunningcheck of het doen van een aanvraag? Neem contact op via vergunningen@haaksbergen.nl om een gesprek in te plannen met een medewerker.",
+          "original_reference": "Hulp bij het invullen kan worden verkregen door contact op te nemen met vergunningen@haaksbergen.nl.",
+          "note": "De brontext specificeert dat er een gesprek kan worden ingepland met een medewerker, wat meer detail geeft over de beschikbare ondersteuning dan de originele tekst.",
+          "source_urls": [
+            "https://www.haaksbergen.nl/Vergunningen/101107-Omgevingsvergunning.html"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Dit komt voor bij ingewikkelde plannen en plannen die niet binnen het Omgevingsplan passen. Denk hierbij bijvoorbeeld aan een verbouwing van een monument of de bouw van een kantoorpand waar meer dan 50 personen aanwezig zullen zijn.",
+          "original_reference": "Een uitgebreide procedure, nodig voor complexe plannen, kan zes maanden duren.",
+          "note": "De brontext geeft specifieke voorbeelden van wanneer een uitgebreide procedure nodig is (monumenten, grote kantoorpanden), wat ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.haaksbergen.nl/Vergunningen/101107-Omgevingsvergunning.html"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie die ontbreekt in de originele tekst, met name over de participatievereiste onder de Omgevingswet, specifieke voorbeelden van wanneer een uitgebreide procedure nodig is, en meer details over de beschikbare ondersteuning bij het aanvragen van vergunningen. Deze informatie is essentieel voor een volledig begrip van de vergunningsprocedure."
+  }
+}

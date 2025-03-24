@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "UTRECHT",
+      "contact": {
+        "phone": "(014) 030",
+        "email": "Gemeente@utrecht.nl",
+        "website": "http://www.utrecht.nl"
+      }
+    },
+    "service": {
+      "id": 10,
+      "name": "Nachtregister bijhouden"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "Als u al voor 1 november 2019 geregistreerd bent, kunt u wijzigingen doorgeven via uw bestaande DOR-account.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Utrecht is de datum 1 januari 2019, niet 1 november 2019. Dit is een feitelijke onjuistheid in de vermelde datum."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.utrecht.nl/ondernemen/vergunningen-en-regels/aanmeld-en-registratieplicht-voor-handelaren-en-opkopers",
+      "https://www.utrecht.nl/ondernemen/vergunningen-en-regels/horecaloket",
+      "https://www.utrecht.nl/ondernemen/vergunningen-en-regels/aanmeld-en-registratieplicht-voor-handelarenopkopers/registreer-goederen",
+      "https://www.utrecht.nl/ondernemen/vergunningen-en-regels/horecaloket/regels-voor-geluid",
+      "https://www.utrecht.nl/vergunningcheckevenement/"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Bent u opkoper of handelaar in de gemeente Utrecht? En koopt u tweedehands goederen zakelijk op, ruilt u of neemt u goederen in? [...] Dan moet u zich bij de gemeente aanmelden en een inkoopregister bijhouden.",
+          "original_reference": "Als u handelaar of opkoper van tweedehands goederen bent [...] moet u zich bij de gemeente Utrecht aanmelden.",
+          "note": "De basisvereisten voor registratie komen overeen met de originele tekst",
+          "source_urls": [
+            "https://www.utrecht.nl/ondernemen/vergunningen-en-regels/aanmeld-en-registratieplicht-voor-handelaren-en-opkopers"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "gebruikte en ongeregelde goederen, metalen, edelstenen, uurwerken, kunstvoorwerpen, auto's, auto-onderdelen, motorfietsen, bromfietsen, fietsen, foto-, film-, radio-, audio- en videoapparatuur, computers en laptops, smartphones, tablets, apparatuur voor automatische registratie",
+          "original_reference": "metalen, uurwerken, kunstvoorwerpen, (brom)fietsen, elektronica, auto's of auto-onderdelen",
+          "note": "De bronpagina geeft een uitgebreidere en specifiekere lijst van goederen die geregistreerd moeten worden, waaronder edelstenen en specifieke elektronische apparatuur",
+          "source_urls": [
+            "https://www.utrecht.nl/ondernemen/vergunningen-en-regels/aanmeld-en-registratieplicht-voor-handelarenopkopers/registreer-goederen"
+          ]
+        }
+      ]
+    },
+    "summary": "De meeste informatie in de originele tekst komt overeen met de bronnen. Het belangrijkste verschil is dat de bronpagina een meer gedetailleerde en uitgebreidere lijst van registratieplichtige goederen bevat. Dit is belangrijke aanvullende informatie voor handelaren om te weten welke specifieke items ze moeten registreren."
+  }
+}

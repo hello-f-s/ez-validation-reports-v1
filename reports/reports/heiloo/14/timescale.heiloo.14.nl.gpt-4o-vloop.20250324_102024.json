@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HEILOO",
+      "contact": {
+        "phone": "(072) 535 66 66",
+        "email": "info@heiloo.nl",
+        "website": "http://www.heiloo.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 20,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.2,
+    "false_statements": [
+      {
+        "sentence": "De gemeente neemt binnen 8 weken na ontvangst van uw aanvraag een besluit.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Heiloo wordt er binnen 6 weken een besluit genomen op een aanvraag voor een gehandicaptenparkeerplaats, niet binnen 8 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.heiloo.nl/aanvragen-en-regelen/gehandicaptenparkeerplaats/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/standplaatsvergunning/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/marktplaatsvergunning/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/exploitatievergunning/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/ontheffing-sluitingstijd/",
+      "https://www.heiloo.nl"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Kosten 2025 ontheffing sluitingstijd: € 12,60",
+          "original_reference": "Kosten voor het in behandeling nemen van een aanvraag voor ontheffing sluitingstijd horeca: € 13,00",
+          "note": "Het bedrag voor de ontheffing sluitingstijd horeca verschilt: in de originele tekst staat € 13,00, terwijl de actuele kosten voor 2025 € 12,60 zijn",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/ontheffing-sluitingstijd/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U bent inwoner van de gemeente of werkt in de gemeente. U heeft een loopbeperking van 50 m.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke voorwaarden voor een gehandicaptenparkeerplaats, zoals het hebben van een loopbeperking van 50m en het zijn van inwoner/werknemer in de gemeente",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/gehandicaptenparkeerplaats/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Contact team horeca: horeca@debuch.nl",
+          "original_reference": "apv@debuch.nl",
+          "note": "Voor horeca-gerelateerde zaken wordt een ander e-mailadres vermeld (horeca@debuch.nl) dan in de originele tekst (apv@debuch.nl)",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/exploitatievergunning/"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn drie belangrijke verschillen gevonden tussen de originele tekst en de bronnen: 1) De kosten voor ontheffing sluitingstijd zijn geactualiseerd voor 2025, 2) Er ontbreken enkele essentiële voorwaarden voor gehandicaptenparkeerplaatsen in de originele tekst, en 3) Er wordt een verschillend contact e-mailadres vermeld voor horeca-gerelateerde zaken. De overige informatie komt grotendeels overeen met de bronnen."
+  }
+}

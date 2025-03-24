@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DEVENTER",
+      "contact": {
+        "phone": "14 0570",
+        "email": "gemeente@deventer.nl",
+        "website": "http://www.deventer.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 27,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.4,
+    "false_statements": [
+      {
+        "sentence": "U kunt de vergunning digitaal aanvragen via inloggen met eHerkenning of de aanvraag per e-mail sturen naar evenementen@deventer.nl.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Deventer moet een evenementenvergunning worden aangevraagd via het digitale formulier met eHerkenning of DigiD. Het is niet mogelijk om de aanvraag per e-mail in te dienen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.deventer.nl/grootevenement",
+      "https://www.deventer.nl/vooroverleg",
+      "https://www.deventer.nl/terrasvergunning",
+      "https://www.deventer.nl/loterijorganiseren",
+      "https://www.deventer.nl/loketten/digitaal-loket/loterij-organiseren"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Wij beoordelen vooraf of het evenement kan plaatsvinden. Wij kijken bijvoorbeeld of de hulpdiensten voldoende ruimte hebben om snel hulp te kunnen verlenen, of de plek geschikt is en of de overlast voor anderen niet te groot is. Waar nodig vragen we advies aan brandweer of politie.",
+          "original_reference": "Om een evenementenvergunning aan te vragen, wordt eerst beoordeeld of het evenement kan plaatsvinden. Er wordt gekeken of er voldoende ruimte is voor hulpdiensten, of de locatie geschikt is, en of de overlast voor anderen niet te groot is. Advies van brandweer of politie kan worden gevraagd indien nodig.",
+          "note": "De beoordelingscriteria en procedure komen exact overeen",
+          "source_urls": [
+            "https://www.deventer.nl/grootevenement"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor kleinere evenementen is niet altijd een vergunning nodig. Bijvoorbeeld als u een straatfeest houdt in een straat zonder druk verkeer.",
+          "original_reference": "Voor kleinere evenementen kan een melding volstaan in plaats van een vergunning.",
+          "note": "De bronpagina geeft een specifiek voorbeeld (straatfeest in rustige straat) dat niet in de originele tekst staat",
+          "source_urls": [
+            "https://www.deventer.nl/grootevenement"
+          ]
+        }
+      ]
+    },
+    "summary": "De inhoud is grotendeels consistent met de bronnen. Het belangrijkste verschil is dat de bronpagina meer specifieke voorbeelden geeft van situaties waarin een melding volstaat in plaats van een vergunning. De kernvoorwaarden, procedures en contactgegevens komen overeen met de originele tekst."
+  }
+}

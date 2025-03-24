@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ERMELO",
+      "contact": {
+        "phone": "(0341) 56 73 21",
+        "email": "gemeente@ermelo.nl",
+        "website": "http://www.ermelo.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 22,
+    "false_sentences": 2,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor het huren van de muziektent op 't Weitje bedragen € 500 per dag.",
+        "status": "false",
+        "note": "Dit bedrag is niet correct volgens de actuele legesverordening van de gemeente Ermelo. De exacte kosten voor het huren van de muziektent zijn anders vastgesteld."
+      },
+      {
+        "sentence": "Het aanvragen van een ontheffing voor straatartiesten kost € 62,30.",
+        "status": "false",
+        "note": "Dit specifieke bedrag komt niet overeen met de actuele legesverordening van de gemeente Ermelo. De werkelijke kosten voor een straatartiestenvergunning zijn anders vastgesteld."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.ermelo.nl/evenementen-en-horeca/evenement-of-activiteit-organiseren",
+      "https://www.ermelo.nl/evenementen-en-horeca/evenement-of-activiteit-organiseren/evenement-organiseren",
+      "https://www.ermelo.nl/evenementen-en-horeca",
+      "https://www.ermelo.nl/evenementen-en-horeca/horeca-en-alcohol",
+      "https://www.ermelo.nl/evenementen-en-horeca/evenement-of-activiteit-organiseren/optreden-als-straatartiest"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor het organiseren hebt u een vergunning nodig. Soms is een melding genoeg.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over bingo's, loterijen of prijsvragen, terwijl dit wel een relevante categorie evenementen is die specifieke vergunningseisen heeft.",
+          "source_urls": [
+            "https://www.ermelo.nl/evenementen-en-horeca/evenement-of-activiteit-organiseren"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De persoon die de alcohol schenkt: is minimaal 21 jaar, heeft een Verklaring Sociale Hygiëne, is van goed gedrag (geen strafblad)",
+          "original_reference": "Voldoen aan de voorwaarden voor het schenken van alcohol indien van toepassing (geen sterke drank, minimumleeftijd van de schenker, enzovoort)",
+          "note": "De bronpagina specificeert concrete eisen voor alcoholschenkers (21 jaar, VSH, VOG) terwijl de originele tekst deze details niet noemt.",
+          "source_urls": [
+            "https://www.ermelo.nl/evenementen-en-horeca/evenement-of-activiteit-organiseren/evenement-organiseren"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wilt u op een openbare plek demonstreren? Geef dit 1 week van tevoren aan ons door.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over demonstraties en de bijbehorende meldingstermijn van 1 week.",
+          "source_urls": [
+            "https://www.ermelo.nl/evenementen-en-horeca/evenement-of-activiteit-organiseren"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten enkele belangrijke aanvullende categorieën evenementen en specifiekere voorwaarden die niet in de originele tekst zijn opgenomen. Met name de voorwaarden voor het schenken van alcohol zijn in de bronnen gedetailleerder beschreven. Ook ontbreekt in de originele tekst informatie over demonstraties en bingo's/loterijen. Deze informatie zou nuttig zijn voor een volledig overzicht van evenementenregels."
+  }
+}

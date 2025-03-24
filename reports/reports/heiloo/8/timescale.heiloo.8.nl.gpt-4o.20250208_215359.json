@@ -1,0 +1,97 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HEILOO",
+      "contact": {
+        "phone": "(072) 535 66 66",
+        "email": "info@heiloo.nl",
+        "website": "http://www.heiloo.nl"
+      }
+    },
+    "service": {
+      "id": 8,
+      "name": "Marktvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 10,
+    "false_sentences": 2,
+    "accuracy_percentage": 83.3,
+    "false_statements": [
+      {
+        "sentence": "Marktplaatsvergunning per strekkende meter: € 2,70",
+        "status": "false",
+        "note": "Het huidige tarief volgens de officiële website van gemeente Heiloo is anders. Dit bedrag is verouderd."
+      },
+      {
+        "sentence": "Minimum tarief per dag of dagdeel: € 8,10",
+        "status": "false",
+        "note": "Het minimum tarief op de officiële website van gemeente Heiloo is anders. Dit bedrag is niet meer actueel."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.heiloo.nl/aanvragen-en-regelen/marktplaatsvergunning/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/omgevingsvergunning/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/standplaatsvergunning/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/exploitatievergunning/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/ondernemen/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.gemeenteheiloo.nl/product/marktplaatsvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.gemeenteheiloo.nl/product/marktplaatsvergunning\">gemeenteheiloo.nl</a></p>",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Aanvraag vergunning: € 186,20",
+          "original_reference": "Marktplaatsvergunning per strekkende meter: € 2,70, Minimum tarief per dag of dagdeel: € 8,10",
+          "note": "De kosten in de originele tekst zijn significant anders dan de werkelijke kosten voor 2025. De originele tekst noemt alleen kosten per meter en een minimumtarief, terwijl er een vast bedrag van €186,20 voor de aanvraag geldt.",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/marktplaatsvergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Heiloo, 't Loo: woensdag van 10.00 tot 16.00 uur",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de specifieke locatie en openingstijden van de weekmarkt, terwijl dit essentiële informatie is voor standhouders.",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/marktplaatsvergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Contact opnemen met de marktmeester via marktmeester@heiloo.nl",
+          "original_reference": "Contact opnemen met de marktmeester bij speciale gelegenheden zoals de jaarmarkt",
+          "note": "De originele tekst mist het specifieke e-mailadres voor contact met de marktmeester en beperkt het contact tot speciale gelegenheden, terwijl dit algemeen contactmiddel is.",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/marktplaatsvergunning/"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn drie belangrijke verschillen gevonden tussen de originele tekst en de bronnen. De kosten verschillen aanzienlijk, waarbij de actuele kosten voor 2025 een vast bedrag van €186,20 zijn in plaats van de genoemde metertarieven. Daarnaast ontbreekt in de originele tekst essentiële informatie over de locatie en openingstijden van de weekmarkt. Tot slot is de contactinformatie in de originele tekst onvolledig en beperkter beschreven dan in werkelijkheid het geval is."
+  }
+}

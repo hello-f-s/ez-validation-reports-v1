@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LEIDEN",
+      "contact": {
+        "phone": "14 071",
+        "email": "null",
+        "website": "http://www.leiden.nl/gemeente"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "Reguliere procedure: 8 weken (standaard) of 12 weken (indien specialistisch advies nodig)",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Leiden duurt de reguliere procedure standaard maximaal 8 weken. Er wordt geen onderscheid gemaakt voor 12 weken bij specialistisch advies. De procedure kan wel met 6 weken worden verlengd, maar dit is een algemene verlengingsmogelijkheid."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers/vergunningen-en-ontheffingen/zonnepanelen-plaatsen",
+      "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers/vergunningen-en-ontheffingen/omgevingsvergunning-voor-een-monument",
+      "https://gemeente.leiden.nl/inwoners-en-ondernemers/wonen-en-bouwen/omgevingsvergunningen/omgevingsvergunning-aanvragen",
+      "https://gemeente.leiden.nl/inwoners-en-ondernemers/wonen-en-bouwen/bouwen-en-verbouwen/bekendmakingen-vergunningen/",
+      "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers/vergunningen-en-ontheffingen/woning-splitsen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.leiden.nl/omgevingsvergunning",
+        "reason": "INVALID: Error scraping https://www.leiden.nl/omgevingsvergunning: 404 Client Error: Not Found for url: https://gemeente.leiden.nl/omgevingsvergunning"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Hiervoor moet u inloggen met DigiD (voor inwoners) of E-herkenning (voor bedrijven)",
+          "original_reference": "Inloggen met E-herkenning voor bedrijven",
+          "note": "De originele tekst vermeldt alleen E-herkenning voor bedrijven, terwijl de bron aangeeft dat particulieren DigiD moeten gebruiken",
+          "source_urls": [
+            "https://gemeente.leiden.nl/inwoners-en-ondernemers/wonen-en-bouwen/omgevingsvergunningen/omgevingsvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u een omgevingsvergunning nodig hebt, is dat een omgevingsvergunning voor een omgevingsplanactiviteit voor de activiteit bouwen",
+          "original_reference": "No matching information",
+          "note": "De bronnen specificeren het type omgevingsvergunning (omgevingsplanactiviteit) wat niet wordt vermeld in de originele tekst",
+          "source_urls": [
+            "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers/vergunningen-en-ontheffingen/zonnepanelen-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u de stukken bij een gepubliceerde omgevingsvergunning wilt inzien, kunt u deze opvragen via publicatiesomgevingsvergunningen@leiden.nl",
+          "original_reference": "U kunt documenten inzien of opvragen bij de gemeente voor meer duidelijkheid over uw vergunning",
+          "note": "De bron geeft een specifiek e-mailadres voor het opvragen van stukken, terwijl de originele tekst alleen algemeen verwijst naar de gemeente",
+          "source_urls": [
+            "https://gemeente.leiden.nl/inwoners-en-ondernemers/wonen-en-bouwen/bouwen-en-verbouwen/bekendmakingen-vergunningen/"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de inlogmethoden (DigiD voor particulieren wordt niet genoemd in origineel), specifieke types omgevingsvergunningen die worden genoemd in de bronnen maar niet in het origineel, en meer specifieke contactgegevens voor het opvragen van documenten. Deze informatie maakt de procedures en vereisten duidelijker voor verschillende doelgroepen."
+  }
+}

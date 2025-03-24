@@ -1,0 +1,94 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ZWOLLE",
+      "contact": {
+        "phone": "14 038",
+        "email": "postbus@zwolle.nl",
+        "website": "http://www.zwolle.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "Normaal gesproken duurt de behandeling van een compleet ingediende aanvraag 8 weken.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Zwolle duurt de behandeling van een alcoholvergunning maximaal 12 weken, niet 8 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 3,
+    "invalid_urls": 3,
+    "accuracy_percentage": 50.0,
+    "valid_urls_list": [
+      "https://www.zwolle.nl/vergunning-op-grond-van-de-alcoholwet",
+      "https://www.zwolle.nl/terrasvergunning-aanvragen",
+      "https://www.zwolle.nl"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.zwolle.nl/kentekenparkeren-veelgestelde-vragen-voor-bedrijvenvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.zwolle.nl/veelgestelde-vragen-over-de-omgevingswet",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.zwolle.nl/horecabedrijf-exploitatievergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een ondernemer en een leidinggevende moeten onder andere: een certificaat Sociale Hygiëne hebben gehaald, en voldoen aan een aantal 'zedelijkheids- en moraliteitseisen'.",
+          "original_reference": "Voldoen aan alle wet- en regelgeving omtrent het schenken van alcohol.",
+          "note": "De bronpagina specificeert concrete eisen zoals het certificaat Sociale Hygiëne en zedelijkheids- en moraliteitseisen, terwijl de originele tekst alleen algemeen spreekt over wet- en regelgeving.",
+          "source_urls": [
+            "https://www.zwolle.nl/vergunning-op-grond-van-de-alcoholwet"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een terras mag geopend zijn gedurende de openingstijden van het horecabedrijf, maar moet in ieder geval gesloten zijn tussen 01.00 uur 09.00 uur. In juli en augustus mag het terras op vrijdag en zaterdag tot 01.30 uur geopend zijn.",
+          "original_reference": "Eventueel een terrasvergunning aanvragen indien u ook een terras bij uw horecagelegenheid wilt.",
+          "note": "De bronpagina vermeldt specifieke openingstijden voor terrassen, terwijl de originele tekst alleen de vergunningplicht noemt zonder details over gebruiksvoorwaarden.",
+          "source_urls": [
+            "https://www.zwolle.nl/terrasvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bij een aanvraag voor een vergunning op grond van de Alcoholwet moet u een vragenformulier Bibob invullen.",
+          "original_reference": "In sommige gevallen kan een Bibob-onderzoek tijd toevoegen aan het proces.",
+          "note": "De bronpagina geeft aan dat een Bibob-vragenformulier verplicht is bij elke aanvraag, terwijl de originele tekst suggereert dat dit slechts in sommige gevallen nodig is.",
+          "source_urls": [
+            "https://www.zwolle.nl/vergunning-op-grond-van-de-alcoholwet"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten belangrijke aanvullende details die niet in de originele tekst staan, zoals specifieke eisen voor ondernemers (Sociale Hygiëne certificaat), concrete openingstijden voor terrassen, en de verplichting van een Bibob-vragenformulier bij alcoholvergunningen. Deze details maken de voorwaarden en procedures specifieker dan in de originele tekst wordt weergegeven."
+  }
+}

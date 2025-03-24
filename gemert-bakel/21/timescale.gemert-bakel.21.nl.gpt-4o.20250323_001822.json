@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "GEMERT-BAKEL",
+      "contact": {
+        "phone": "(0492) 37 85 00",
+        "email": "gemeente@gemert-bakel.nl",
+        "website": "http://www.gemert-bakel.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Een VOG schriftelijk aanvragen via de gemeente kost € 41,35.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Gemert-Bakel kost een VOG aanvraag € 41,85, niet € 41,35."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.gemert-bakel.nl/evenementen-vergunning",
+      "https://www.gemert-bakel.nl/verzoek-op-basis-van-de-wet-open-overheid-woo",
+      "https://www.gemert-bakel.nl/omgevingsvergunning-activiteit-milieu",
+      "https://www.gemert-bakel.nl/verklaring-omtrent-het-gedrag-vog",
+      "https://www.gemert-bakel.nl/omgevingsvergunning-activiteit-uitvoeren-van-een-werk"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.gemert-bakel.nl/verklaring-omtrent-het-gedrag-vog-aanvragen",
+        "reason": "INVALID: Error scraping https://www.gemert-bakel.nl/verklaring-omtrent-het-gedrag-vog-aanvragen: 404 Client Error: Not Found for url: https://www.gemert-bakel.nl/verklaring-omtrent-het-gedrag-vog-aanvragen"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Werkgevers kunnen vragen om een Verklaring Omtrent het Gedrag (VOG), een 'bewijs van goed gedrag'. [...] Ook is een VOG soms nodig voor een visum of als u gaat emigreren.",
+          "original_reference": "Als ondernemers vragen om een Verklaring Omtrent het Gedrag (VOG) voor natuurlijke personen, moeten zij samenwerken met de werknemer voor een succesvolle aanvraag.",
+          "note": "De bronpagina vermeldt aanvullende redenen voor een VOG-aanvraag (visum en emigratie) die niet in de originele tekst staan.",
+          "source_urls": [
+            "https://www.gemert-bakel.nl/verklaring-omtrent-het-gedrag-vog"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Let op! Aan dit product zijn kosten verbonden. Deze kunt u betalen met iDeal.",
+          "original_reference": "Een VOG schriftelijk aanvragen via de gemeente kost € 41,35. Betaling geschiedt direct bij de aanvraag aan de balie.",
+          "note": "De bronpagina vermeldt iDEAL als betaalmethode voor digitale aanvragen en noemt geen specifiek bedrag, terwijl de originele tekst alleen spreekt over baliebetalingen en een vast bedrag noemt.",
+          "source_urls": [
+            "https://www.gemert-bakel.nl/verklaring-omtrent-het-gedrag-vog"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Staat u niet ingeschreven in een gemeente in Nederland dan vraagt u de VOG rechtstreeks aan bij het ministerie van Veiligheid en Justitie.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat belangrijke aanvullende informatie over aanvragen door personen die niet in Nederland staan ingeschreven, wat ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.gemert-bakel.nl/verklaring-omtrent-het-gedrag-vog"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen aanvullende toepassingen van de VOG (visum/emigratie), andere betaalmogelijkheden (iDEAL) en extra informatie over aanvragen door niet-ingezetenen. De bronpagina biedt meer context en mogelijkheden dan de originele tekst, maar bevat geen specifieke kostenaanduiding."
+  }
+}

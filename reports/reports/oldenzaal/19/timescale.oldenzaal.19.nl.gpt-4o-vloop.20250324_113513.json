@@ -1,0 +1,78 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OLDENZAAL",
+      "contact": {
+        "phone": "(0541) 58 81 11",
+        "email": "info@oldenzaal.nl",
+        "website": "http://www.oldenzaal.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 35,
+    "true_sentences": 34,
+    "false_sentences": 1,
+    "accuracy_percentage": 97.1,
+    "false_statements": [
+      {
+        "sentence": "Telefoon: (0541) 58 81 11 of 14 0541",
+        "status": "false",
+        "note": "Het telefoonnummer (0541) 58 81 11 is niet meer in gebruik. Het juiste telefoonnummer voor de gemeente Oldenzaal is alleen 14 0541."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.oldenzaal.nl/kansspelautomatenvergunning",
+      "https://www.oldenzaal.nl/kansspelen",
+      "https://www.oldenzaal.nl/omgevingsvergunning",
+      "https://www.oldenzaal.nl/parkeervergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.oldenzaal.nl/standplaatsvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u één of meer kansspelautomaten wilt plaatsen in uw horecabedrijf dan heeft u een vergunning nodig: de zogeheten aanwezigheidsvergunning.",
+          "original_reference": "De vergunning geldt voor maximaal twee kansspelautomaten",
+          "note": "De brontekst specificeert geen maximum aantal automaten, terwijl de originele tekst een maximum van twee automaten vermeldt.",
+          "source_urls": [
+            "https://www.oldenzaal.nl/kansspelautomatenvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vergunning wijzigenHeeft u de Vergunningenchecker al gestart en ingevuld maar wilt u de aanvraag wijzigen of aanvullen? Dat kan via de knop Vergunningintaker",
+          "original_reference": "Als u de Vergunningenchecker al heeft gestart en wilt u de aanvraag wijzigen of aanvullen, dan kan dit via de knop 'Vergunningintaker'",
+          "note": "De brontekst specificeert dat de aanvraag eerst moet zijn ingevuld voordat deze gewijzigd kan worden, wat een extra voorwaarde is die niet in de originele tekst staat.",
+          "source_urls": [
+            "https://www.oldenzaal.nl/kansspelautomatenvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele tekst en de bronnen. Ten eerste is er een discrepantie in het maximum aantal toegestane kansspelautomaten. Daarnaast is er een verschil in de voorwaarden voor het wijzigen van een aanvraag. De meeste andere informatie, zoals de procedures voor DigiD/eHerkenning en de algemene aanvraagprocedure, komt overeen met de bronnen."
+  }
+}

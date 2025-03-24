@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "GRONINGEN",
+      "contact": {
+        "phone": "14 050",
+        "email": "info@groningen.nl",
+        "website": "http://gemeente.groningen.nl"
+      }
+    },
+    "service": {
+      "id": 8,
+      "name": "Marktvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "Het kantoor bevindt zich op A-kerkhof 10 en is geopend van dinsdag tot en met zaterdag van 08:00 tot 17:00 uur.",
+        "status": "false",
+        "note": "Het marktkantoor van de gemeente Groningen bevindt zich op Kreupelstraat 1 (Harm Buiterplein), niet op A-kerkhof 10. Dit is volgens de actuele informatie op de officiële website van de gemeente Groningen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://gemeente.groningen.nl/parkeervergunning-voor-markthandelaar-aanvragen",
+      "https://gemeente.groningen.nl/marktstandplaatsvergunning-aanvragen-wijzigen-of-opzeggen",
+      "https://gemeente.groningen.nl/bedrijf-starten",
+      "https://gemeente.groningen.nl/parkeervergunning-voor-bedrijven",
+      "https://www.gemeente.groningen.nl/marktstandplaatsvergunning-aanvragen-wijzigen-opzeggen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://gemeente.groningen.nl/onttrekkingsvergunning-voor-bedrijfsdoeleinden-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U hebt ook een jaarontheffing nodig om met uw bedrijfsauto op de Vismarkt of Grote Markt te komen.",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden een extra vereiste voor een jaarontheffing voor toegang tot de Vismarkt of Grote Markt met een bedrijfsauto, wat niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://gemeente.groningen.nl/parkeervergunning-voor-markthandelaar-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Kopie uittreksel handelsregister (KVK), Kopie kentekenbewijs, Kopie paspoort, ID-kaart of rijbewijs, Kopie van uw marktkaart",
+          "original_reference": "Er zijn geen specifieke documenten genoemd die nodig zijn voor de aanvraag van een marktvergunning, afgezien van de inschrijving bij de Kamer van Koophandel.",
+          "note": "De bronnen specificeren concrete documenten die nodig zijn voor de aanvraag, terwijl de originele tekst stelt dat er geen specifieke documenten nodig zijn.",
+          "source_urls": [
+            "https://gemeente.groningen.nl/parkeervergunning-voor-markthandelaar-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Parkeren aan de Hoendiepskade nadat u uw producten naar de markt hebt gebracht",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden specifieke parkeerlocatie (Hoendiepskade) en volgorde van handelen, wat niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://gemeente.groningen.nl/parkeervergunning-voor-markthandelaar-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen aanvullende vereisten en specificaties die niet in de originele tekst staan: de noodzaak van een jaarontheffing voor toegang tot markten, specifieke documentvereisten voor de aanvraag, en concrete parkeerregelingen. Deze informatie is essentieel voor markthandelaren maar ontbreekt in de originele tekst."
+  }
+}

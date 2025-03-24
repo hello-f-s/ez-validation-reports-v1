@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "CULEMBORG",
+      "contact": {
+        "phone": "(0345) 47 77 00",
+        "email": "info@culemborg.nl",
+        "website": "http://www.culemborg.nl"
+      }
+    },
+    "service": {
+      "id": 16,
+      "name": "Registreren in het Landelijk Register Kinderopvang (LRK)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 26,
+    "false_sentences": 2,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "Telefoon: 0345 477 700 (bereikbaar van maandag t/m donderdag van 9.00 - 16.00 uur en vrijdag van 9.00 - 12.00 uur)",
+        "status": "false",
+        "note": "Het telefoonnummer van gemeente Culemborg is 14 0345, niet 0345 477 700. De telefonische bereikbaarheid is van 9.00 tot 17.00 uur op maandag t/m donderdag en op vrijdag van 9.00 tot 12.30 uur."
+      },
+      {
+        "sentence": "Dinsdag: 9.00 - 19.00 uur",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Culemborg is de gemeente op dinsdag geopend van 9.00 tot 16.00 uur, niet tot 19.00 uur."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.culemborg.nl/kinderopvangtoeslag",
+      "https://www.culemborg.nl/vergoeding-kinderopvang-bij-ziekte-of-sociale-problemen",
+      "https://www.culemborg.nl/loket-geldzaken",
+      "https://www.culemborg.nl/digitaal-opkopers-loket",
+      "https://www.culemborg.nl/kindgebonden-budget"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Soorten kinderopvang: Dagopvang, Buitenschoolse opvang, Gastouderopvang, Ouderparticipatiecrèches, Eigen oppas, Peuteropvang",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen specificatie van de verschillende soorten kinderopvang, terwijl de bronpagina een uitgebreide lijst met zes verschillende opvangvormen vermeldt.",
+          "source_urls": [
+            "https://www.culemborg.nl/kinderopvangtoeslag"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Maximaal 6 kinderen in de leeftijd van 0 tot 13 jaar, inclusief eigen kinderen tot 10 jaar. Maximaal 5 kinderen wanneer deze allemaal jonger zijn dan 4 jaar, inclusief eigen kinderen tot 4 jaar. Maximaal 4 kinderen van 0 en 1 jaar oud, waarvan maximaal 2 van 0 jaar, inclusief eigen kinderen van deze leeftijd.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke specifieke informatie over de maximale aantallen kinderen bij gastouderopvang.",
+          "source_urls": [
+            "https://www.culemborg.nl/kinderopvangtoeslag"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "zonder de inzet van de kinderopvang de ontwikkeling van het kind in gevaar komt",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet deze belangrijke voorwaarde voor het verkrijgen van een tegemoetkoming op sociaal-medische gronden.",
+          "source_urls": [
+            "https://www.culemborg.nl/vergoeding-kinderopvang-bij-ziekte-of-sociale-problemen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten belangrijke aanvullende informatie die ontbreekt in de originele tekst, met name over de verschillende soorten kinderopvang, specifieke regels voor gastouderopvang en aanvullende voorwaarden voor tegemoetkoming op sociaal-medische gronden. De basisinformatie over procedures, contactgegevens en openingstijden komt wel overeen."
+  }
+}

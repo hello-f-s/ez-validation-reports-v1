@@ -1,0 +1,112 @@
+{
+  "context": {
+    "municipality": {
+      "name": "SCHIEDAM",
+      "contact": {
+        "phone": "14 010",
+        "email": "contact@schiedam.nl",
+        "website": "http://www.schiedam.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 11,
+    "false_sentences": 2,
+    "accuracy_percentage": 84.6,
+    "false_statements": [
+      {
+        "sentence": "De gemeente biedt de mogelijkheid om deze binnen 10 werkdagen in te dienen.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Schiedam is de termijn voor het indienen van zienswijzen 6 weken na publicatie van de aanvraag, niet 10 werkdagen."
+      },
+      {
+        "sentence": "Bij een complete en tijdige aanvraag ontvangt u zo snel mogelijk een reactie.",
+        "status": "false",
+        "note": "De gemeente Schiedam specificeert op haar website dat men binnen 8 weken na ontvangst van een complete aanvraag een besluit neemt, niet 'zo snel mogelijk'."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 8,
+    "valid_urls": 5,
+    "invalid_urls": 3,
+    "accuracy_percentage": 62.5,
+    "valid_urls_list": [
+      "https://www.schiedam.nl/a-tot-z/c-evenement",
+      "https://www.schiedam.nl/a-tot-z/b-evenement",
+      "https://www.schiedam.nl/a-tot-z/a-evenement",
+      "https://schiedam.nl/a-tot-z/c-evenement",
+      "https://schiedam.nl/a-tot-z/a-evenement"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "http://example.com/source2",
+        "reason": "INVALID: Error scraping http://example.com/source2: 404 Client Error: Not Found for url: http://example.com/source2"
+      },
+      {
+        "url": "http://example.com/source3",
+        "reason": "INVALID: Error scraping http://example.com/source3: 404 Client Error: Not Found for url: http://example.com/source3"
+      },
+      {
+        "url": "http://example.com/source1",
+        "reason": "INVALID: Error scraping http://example.com/source1: 404 Client Error: Not Found for url: http://example.com/source1"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 4,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bij het aanvragen van de vergunning stuurt u het volgende mee: Plattegrond, Programma, Draaiboek, Tentboek",
+          "original_reference": "Plattegrond, Draaiboek, Programma",
+          "note": "Voor C-evenementen is ook een tentboek vereist, wat niet vermeld staat in de originele tekst",
+          "source_urls": [
+            "https://www.schiedam.nl/a-tot-z/c-evenement"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Brief aan omwonenden",
+          "original_reference": "No matching information",
+          "note": "Voor B-evenementen is een brief aan omwonenden vereist, wat niet vermeld staat in de originele tekst",
+          "source_urls": [
+            "https://www.schiedam.nl/a-tot-z/b-evenement"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "We vragen bij A-evenementen advies aan de afzonderlijke hulpdiensten zoals de Veiligheidsregio Rotterdam Rijnmond (VRR), DCMR Milieudienst Rijnmond, Geneeskundige Hulpverleningsorganisatie in de Regio (GHOR) en politie",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat er advies wordt gevraagd aan hulpdiensten bij A-evenementen",
+          "source_urls": [
+            "https://www.schiedam.nl/a-tot-z/a-evenement"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "voor aanvang van (de opbouw van) het evenement",
+          "original_reference": "voor aanvang van het evenement",
+          "note": "De bronnen specificeren dat de termijn geldt vanaf de opbouw van het evenement, niet alleen de aanvang",
+          "source_urls": [
+            "https://www.schiedam.nl/a-tot-z/a-evenement",
+            "https://www.schiedam.nl/a-tot-z/b-evenement",
+            "https://www.schiedam.nl/a-tot-z/c-evenement"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn enkele belangrijke verschillen gevonden tussen de originele tekst en de bronnen. De bronnen vermelden aanvullende documentvereisten zoals een tentboek voor C-evenementen en een brief aan omwonenden voor B-evenementen. Ook wordt er specifiek vermeld dat er advies wordt ingewonnen bij verschillende hulpdiensten voor A-evenementen. Daarnaast specificeren de bronnen dat de aanvraagtermijnen gelden vanaf de opbouw van het evenement, niet alleen de aanvang."
+  }
+}

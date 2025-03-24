@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "VAALS",
+      "contact": {
+        "phone": "(043) 306 85 68",
+        "email": "info@vaals.nl",
+        "website": "http://www.vaals.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 31,
+    "true_sentences": 30,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.8,
+    "false_statements": [
+      {
+        "sentence": "De commissieleden zijn rasechte Vaalsenaren met kennis van locaties, subsidies, promotie en lokale ondernemers.",
+        "status": "false",
+        "note": "Niet alle genoemde commissieleden zijn rasechte Vaalsenaren. Bijvoorbeeld Sven Wiertz (MECC Maastricht) en Lusanne Simons (Theater aan het Vrijthof) zijn werkzaam in Maastricht, wat aangeeft dat de commissie bestaat uit mensen met diverse achtergronden en niet uitsluitend uit 'rasechte Vaalsenaren'."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.vaals.nl/inwoners/vergunningen/evenement-organiseren",
+      "https://www.vaals.nl/inwoners/vergunningen/omgevingsvergunning",
+      "https://www.vaals.nl/inwoners/vergunningen/omgevingswet/meest-aangevraagde-activiteiten",
+      "https://www.vaals.nl/inwoners/evenementen/een-evenement-organiseren",
+      "https://www.vaals.nl/inwoners/vergunningen/"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De gemeente Vaals beschikt sinds medio 2020 over een Evenementen Adviescommissie",
+          "original_reference": "De gemeente Vaals beschikt over een Evenementen Adviescommissie",
+          "note": "De originele tekst vermeldt niet sinds wanneer de commissie bestaat, terwijl de bron specifiek medio 2020 noemt",
+          "source_urls": [
+            "https://www.vaals.nl/inwoners/evenementen/een-evenement-organiseren"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "CV de Plintepuutsjere Vols",
+          "original_reference": "CV de Grensülle Vols",
+          "note": "Er is een verschil in de verenigingsnaam waarbij Dennis Ernes betrokken is. De bron noemt dat hij eerder bij CV de Plintepuutsjere Vols zat en nu bij CV de Grensülle Vols",
+          "source_urls": [
+            "https://www.vaals.nl/inwoners/evenementen/een-evenement-organiseren"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Jean-Paul Lintzen: [...] voorzitter ondernemers Vaals, stichting samenvaals",
+          "original_reference": "Jean-Paul Lintzen: [...] voorzitter ondernemers Vaals",
+          "note": "De bron vermeldt een extra functie (stichting samenvaals) die niet in de originele tekst staat",
+          "source_urls": [
+            "https://www.vaals.nl/inwoners/evenementen/een-evenement-organiseren"
+          ]
+        }
+      ]
+    },
+    "summary": "De verschillen tussen de originele tekst en de bronnen zijn voornamelijk gerelateerd aan de Evenementen Adviescommissie. Het gaat om de startdatum van de commissie, een verschil in verenigingsnaam bij één van de commissieleden, en een ontbrekende functie bij een ander commissielid. Deze verschillen zijn niet kritiek voor de hoofdprocedure van het aanvragen van evenementenvergunningen, maar geven wel meer detail over de adviescommissie."
+  }
+}

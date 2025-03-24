@@ -1,0 +1,78 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HAARLEM",
+      "contact": {
+        "phone": "14 023",
+        "email": "antwoord@haarlem.nl",
+        "website": "http://www.haarlem.nl"
+      }
+    },
+    "service": {
+      "id": 9,
+      "name": "Mobiele puinbreker gebruiken"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 1,
+    "true_sentences": 1,
+    "false_sentences": 0,
+    "accuracy_percentage": 100.0,
+    "false_statements": []
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 2,
+    "invalid_urls": 3,
+    "accuracy_percentage": 40.0,
+    "valid_urls_list": [
+      "https://haarlem.nl/bouwvergunning",
+      "https://haarlem.nl/afvalwijzer"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://haarlem.nl/sloopmelding-en-vergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://haarlem.nl/vergunning-openbreken-openbare-weg",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://haarlem.nl/grofvuil-en-afval-wegbrengen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Gaat u bouwen of verbouwen, dan hebt u meestal een omgevingsvergunning nodig. Die vraagt u online aan bij het Omgevingsloket.",
+          "original_reference": "No matching information",
+          "note": "De bron bevat specifieke informatie over de aanvraagprocedure voor bouwvergunningen, terwijl deze informatie volledig ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://haarlem.nl/bouwvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De afvalwijzer vindt u op de website van Spaarnelanden. Vul uw postcode en huisnummer in en u ziet wanneer welke afvalcontainer geleegd wordt.",
+          "original_reference": "No matching information",
+          "note": "De bron bevat concrete informatie over het gebruik van de afvalwijzer en de diensten van Spaarnelanden, wat niet aanwezig is in de originele tekst.",
+          "source_urls": [
+            "https://haarlem.nl/afvalwijzer"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten uitgebreide informatie over gemeentelijke diensten (zoals bouwvergunningen en afvalverwerking) die volledig ontbreekt in de originele tekst. De originele tekst bevat geen concrete informatie, terwijl de bronnen gedetailleerde procedures, vereisten en contactgegevens bevatten."
+  }
+}

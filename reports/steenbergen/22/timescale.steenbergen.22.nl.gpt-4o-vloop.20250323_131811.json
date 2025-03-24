@@ -1,0 +1,92 @@
+{
+  "context": {
+    "municipality": {
+      "name": "STEENBERGEN",
+      "contact": {
+        "phone": "14 0167",
+        "email": "info@gemeente-steenbergen.nl",
+        "website": "http://www.gemeente-steenbergen.nl"
+      }
+    },
+    "service": {
+      "id": 22,
+      "name": "Woonruimte splitsen of samenvoegen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 17,
+    "false_sentences": 2,
+    "accuracy_percentage": 89.5,
+    "false_statements": [
+      {
+        "sentence": "Als de gemeente binnen deze termijn geen beslissing neemt, krijgt u automatisch de vergunning.",
+        "status": "false",
+        "note": "Bij het uitblijven van een beslissing binnen de termijn is er geen sprake van automatische vergunningverlening, maar van een van rechtswege verleende vergunning (ook wel 'fictieve vergunning' genoemd). Hiertegen kunnen belanghebbenden nog steeds bezwaar maken."
+      },
+      {
+        "sentence": "De Wkb geldt vanaf 1 januari voor nieuwbouw en vanaf 1 juli 2024 ook voor verbouwingen.",
+        "status": "false",
+        "note": "De Wet kwaliteitsborging voor het bouwen (Wkb) is op 1 januari 2024 in werking getreden voor gevolgklasse 1 (eenvoudige bouwwerken). Er is geen aparte ingangsdatum voor verbouwingen in juli 2024."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.gemeente-steenbergen.nl/inwoners_overzicht/bouwen_en_verbouwen/aanvraagmogelijkheden_en_termijnen/",
+      "https://www.gemeente-steenbergen.nl/inwoners_overzicht/bouwen_en_verbouwen/aanvraagmogelijkheden_en_termijnen/aanvraagmogelijkheden_en_termijnen",
+      "https://www.gemeente-steenbergen.nl/inwoners_overzicht/bouwen_en_verbouwen/",
+      "https://www.gemeente-steenbergen.nl/omgevingswet/wat_betekent_de_omgevingswet_voor_mij_"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.gemeente-steenbergen.nl/inwoners_overzicht/bouwen_en_verbouwen/bouwen_en_verbouwen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Ook kan het dan voorkomen dat niet alle vergunningen worden goedgekeurd.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt een extra risico bij het apart aanvragen van vergunningen dat niet genoemd wordt in de originele tekst: de mogelijkheid dat niet alle vergunningen worden goedgekeurd.",
+          "source_urls": [
+            "https://www.gemeente-steenbergen.nl/inwoners_overzicht/bouwen_en_verbouwen/aanvraagmogelijkheden_en_termijnen/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het is mogelijk om met ons in een vooroverleg uw plannen te bespreken. Tijdens zo'n overleg kijken wij of u een vergunning nodig heeft. Let op; een vooroverleg is niet gratis.",
+          "original_reference": "No matching information",
+          "note": "De mogelijkheid van een vooroverleg en de bijbehorende kosten worden niet genoemd in de originele tekst, terwijl dit wel belangrijke informatie is voor aanvragers.",
+          "source_urls": [
+            "https://www.gemeente-steenbergen.nl/inwoners_overzicht/bouwen_en_verbouwen/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "06 12 69 23 99",
+          "original_reference": "14 0167",
+          "note": "Er wordt een extra telefoonnummer vermeld in de bronpagina dat niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.gemeente-steenbergen.nl/inwoners_overzicht/bouwen_en_verbouwen/"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten enkele belangrijke aanvullende details die niet in de originele tekst staan: het risico dat niet alle apart aangevraagde vergunningen worden goedgekeurd, de mogelijkheid tot betaald vooroverleg, en een extra contactnummer. Deze informatie kan belangrijk zijn voor inwoners die een vergunning willen aanvragen."
+  }
+}

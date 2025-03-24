@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "EMMEN",
+      "contact": {
+        "phone": "14 0591",
+        "email": "gemeente@emmen.nl",
+        "website": "http://www.emmen.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 35,
+    "true_sentences": 33,
+    "false_sentences": 2,
+    "accuracy_percentage": 94.3,
+    "false_statements": [
+      {
+        "sentence": "Zaterdag: 08.30 - 12.00 uur",
+        "status": "false",
+        "note": "Het gemeentehuis van Emmen is op zaterdag gesloten volgens de officiële website van de gemeente Emmen"
+      },
+      {
+        "sentence": "Voor een conceptverzoek over een of meer activiteiten die gevolgen kunnen hebben voor de fysieke leefomgeving, bedraagt het tarief: € 120,20",
+        "status": "false",
+        "note": "Volgens de legesverordening van de gemeente Emmen is dit bedrag niet correct. Het actuele tarief voor een verklaring vergunningsvrij bouwen is € 122,60"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.emmen.nl/omgevingsvergunning-milieu",
+      "https://www.emmen.nl/vergunning-beperkte-milieutoets",
+      "https://www.emmen.nl/omgevingsvergunning",
+      "https://www.emmen.nl/aanlegvergunning",
+      "https://www.emmen.nl/conceptverzoek-omgevingsvergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De gemeente toets uw bouwplannen vooraf aan verschillende belangrijke wettelijke – en beleidsregels, zoals: het omgevingsplan.",
+          "original_reference": "U doet de aanvraag via het Omgevingsloket op overheid.nl. U kunt eerst een conceptverzoek indienen om te laten toetsen of uw plan haalbaar is.",
+          "note": "De bronpagina geeft specifiekere informatie over wat er precies wordt getoetst bij een conceptverzoek, namelijk wettelijke- en beleidsregels in relatie tot het omgevingsplan. Deze detaillering ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.emmen.nl/conceptverzoek-omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vanaf 1 januari 2024 gelden de Omgevingswet en de Wet kwaliteitsborging voor het bouwen. Deze nieuwe wetgeving heeft misschien gevolgen voor u als u de aanvraag omgevingsvergunning indient na 1 januari 2024.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt belangrijke nieuwe wetgeving vanaf 2024 die impact heeft op vergunningsaanvragen. Deze essentiële informatie ontbreekt volledig in de originele tekst.",
+          "source_urls": [
+            "https://www.emmen.nl/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U kunt vooraf een afspraak maken voor een gesprek met een klantmanager bij de balie. Tijdens het gesprek kijkt de klantmanager of uw plan vergunningsvrij kan worden uitgevoerd",
+          "original_reference": "No matching information",
+          "note": "De mogelijkheid voor een persoonlijk gesprek met een klantmanager wordt genoemd in de bronpagina maar ontbreekt in de originele tekst. Dit is een belangrijke service-optie voor aanvragers.",
+          "source_urls": [
+            "https://www.emmen.nl/conceptverzoek-omgevingsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen het ontbreken van informatie over nieuwe wetgeving vanaf 2024, de mogelijkheid voor persoonlijke consultatie met een klantmanager, en meer gedetailleerde informatie over de toetsing van conceptverzoeken. Deze informatie is relevant voor een complete dienstverlening en zou in de originele tekst opgenomen moeten worden."
+  }
+}

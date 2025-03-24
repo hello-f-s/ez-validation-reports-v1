@@ -1,0 +1,75 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MAASSLUIS",
+      "contact": {
+        "phone": "14 010",
+        "email": "gemeente@maassluis.nl",
+        "website": "http://www.maassluis.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 27,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.4,
+    "false_statements": [
+      {
+        "sentence": "Exploitatievergunning voor onbepaalde tijd inclusief terras en vergunning ontheffing sluitingstijden: € 1.034,60",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Maassluis is dit bedrag niet correct. Het huidige tarief voor een exploitatievergunning inclusief terras en ontheffing sluitingstijden is € 1.065,65."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.maassluis.nl/exploitatievergunning-horecabedrijf",
+      "https://www.maassluis.nl/alcoholwetvergunning",
+      "https://www.maassluis.nl/bedrijfspandbedrijventerrein-huren-of-kopen",
+      "https://www.maassluis.nl/openingstijden-horeca-aanpassen",
+      "https://www.maassluis.nl/vergunningen-voor-horeca",
+      "https://www.maassluis.nl"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Met een ontheffing sluitingstijden kunt u 8 Verlaatjes per kalenderjaar melden.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet het maximum aantal 'Verlaatjes' (8) per kalenderjaar bij een ontheffing sluitingstijden.",
+          "source_urls": [
+            "https://www.maassluis.nl/openingstijden-horeca-aanpassen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Sinds de laatste wijziging van de Alcoholwet moet een leidinggevende zich laten registreren in het Landelijke register sociale hygiëne (Lcsh) via het Register Sociale Hygiëne.",
+          "original_reference": "Een kopie van het diploma Sociale Hygiëne van de ondernemer en leidinggevenden.",
+          "note": "De originele tekst vermeldt alleen het diploma Sociale Hygiëne, maar niet de verplichte registratie in het Landelijk register sociale hygiëne (Lcsh).",
+          "source_urls": [
+            "https://www.maassluis.nl/alcoholwetvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele tekst en de bronnen. Ten eerste ontbreekt in de originele tekst de informatie over het maximum aantal van 8 Verlaatjes per jaar bij een ontheffing sluitingstijden. Ten tweede mist de originele tekst de nieuwe vereiste dat leidinggevenden zich moeten registreren in het Landelijk register sociale hygiëne, waar alleen het diploma wordt genoemd. Deze informatie is relevant voor horecaondernemers en zou in de originele tekst opgenomen moeten worden."
+  }
+}

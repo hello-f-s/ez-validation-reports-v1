@@ -1,0 +1,97 @@
+{
+  "context": {
+    "municipality": {
+      "name": "KAPELLE",
+      "contact": {
+        "phone": "(0113) 33 31 10",
+        "email": "gemeente@kapelle.nl",
+        "website": "http://www.kapelle.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 13,
+    "false_sentences": 0,
+    "accuracy_percentage": 100.0,
+    "false_statements": []
+  },
+  "url_analysis": {
+    "total_urls": 9,
+    "valid_urls": 4,
+    "invalid_urls": 5,
+    "accuracy_percentage": 44.4,
+    "valid_urls_list": [
+      "https://kapelle.nl/standplaats-aanvragen",
+      "https://kapelle.nl/gokautomaat-plaatsen",
+      "https://kapelle.nl/loterij-prijsvraag-bingo-organiseren",
+      "https://kapelle.nl/kermis-organiseren"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://gemeente.kapelle.nl/gokautomaat-plaatsen",
+        "reason": "INVALID: Error scraping https://gemeente.kapelle.nl/gokautomaat-plaatsen: HTTPSConnectionPool(host='gemeente.kapelle.nl', port=443): Max retries exceeded with url: /gokautomaat-plaatsen (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x110874550>: Failed to resolve 'gemeente.kapelle.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://gemeente.kapelle.nl/aanwezigheidsvergunning-speelautomaten",
+        "reason": "INVALID: Error scraping https://gemeente.kapelle.nl/aanwezigheidsvergunning-speelautomaten: HTTPSConnectionPool(host='gemeente.kapelle.nl', port=443): Max retries exceeded with url: /aanwezigheidsvergunning-speelautomaten (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x103bbb610>: Failed to resolve 'gemeente.kapelle.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.kapelle.nl/aanwezigheidsvergunning-speelautomaten",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://gemeente.kapelle.nl/aanwezigheidsvergunning-speelautomaten\">gemeente.kapelle.nl/aanwezigheidsvergunning-speelautomaten</a>",
+        "reason": "INVALID: Error scraping https://gemeente.kapelle.nl/aanwezigheidsvergunning-speelautomaten\">gemeente.kapelle.nl/aanwezigheidsvergunning-speelautomaten</a>: HTTPSConnectionPool(host='gemeente.kapelle.nl', port=443): Max retries exceeded with url: /aanwezigheidsvergunning-speelautomaten%22%3Egemeente.kapelle.nl/aanwezigheidsvergunning-speelautomaten%3C/a%3E (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x103bba490>: Failed to resolve 'gemeente.kapelle.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://gemeente.kapelle.nl/gokautomaat-plaatsen\">gemeente.kapelle.nl/gokautomaat-plaatsen</a>,",
+        "reason": "INVALID: Error scraping https://gemeente.kapelle.nl/gokautomaat-plaatsen\">gemeente.kapelle.nl/gokautomaat-plaatsen</a>,: HTTPSConnectionPool(host='gemeente.kapelle.nl', port=443): Max retries exceeded with url: /gokautomaat-plaatsen%22%3Egemeente.kapelle.nl/gokautomaat-plaatsen%3C/a%3E, (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x103bbbed0>: Failed to resolve 'gemeente.kapelle.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u eigenaar bent van de gokautomaat moet u ook een exploitatievergunning aanvragen bij de gemeente.",
+          "original_reference": "De eigenaar van de gokautomaat moet een exploitatievergunning hebben van de Kansspelautoriteit.",
+          "note": "Er is een tegenstrijdigheid over waar de exploitatievergunning moet worden aangevraagd: bij de gemeente volgens de bronpagina versus bij de Kansspelautoriteit volgens de originele tekst.",
+          "source_urls": [
+            "https://kapelle.nl/gokautomaat-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Geef wijzigingen altijd door aan de gemeente. Bijvoorbeeld als de eigenaar van de gokautomaat wissel of als u het aantal automaten in uw zaak wilt wijzigen.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat aanvullende informatie over het doorgeven van wijzigingen die niet in de originele tekst staat.",
+          "source_urls": [
+            "https://kapelle.nl/gokautomaat-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor een behendigheidsautomaat heeft u geen aanwezigheidsvergunning nodig.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat een belangrijke uitzondering voor behendigheidsautomaten die niet in de originele tekst wordt genoemd.",
+          "source_urls": [
+            "https://kapelle.nl/gokautomaat-plaatsen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen waar de exploitatievergunning moet worden aangevraagd (gemeente vs. Kansspelautoriteit), aanvullende informatie over het melden van wijzigingen, en een uitzondering voor behendigheidsautomaten die niet in de originele tekst staat vermeld. Deze verschillen zijn belangrijk voor de correcte procedure en volledigheid van de informatie."
+  }
+}

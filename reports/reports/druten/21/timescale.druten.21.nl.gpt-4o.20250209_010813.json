@@ -1,0 +1,86 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DRUTEN",
+      "contact": {
+        "phone": "(088) 432 70 00",
+        "email": "info@druten.nl",
+        "website": "http://www.druten.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 9,
+    "false_sentences": 2,
+    "accuracy_percentage": 81.8,
+    "false_statements": [
+      {
+        "sentence": "Het aanvragen van een VOG kost € 43,90.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Druten kost een VOG € 41,35."
+      },
+      {
+        "sentence": "U betaalt het bedrag bij het inleveren van het aanvraagformulier.",
+        "status": "false",
+        "note": "Volgens de gemeente Druten website moet er online betaald worden bij de digitale aanvraag via DigiD, niet bij het inleveren van het formulier."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 4,
+    "invalid_urls": 3,
+    "accuracy_percentage": 57.1,
+    "valid_urls_list": [
+      "https://www.druten.nl/uittreksels",
+      "https://www.druten.nl/informatie-opvragen-woo-verzoek",
+      "https://www.druten.nl/omgevingsvergunning",
+      "https://www.druten.nl/exploitatievergunning-horecabedrijf"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.gemeentedruten.nl/verklaring-omtrent-het-gedrag-vog'>https://www.gemeentedruten.nl/verklaring-omtrent-het-gedrag-vog</a></p>",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.druten.nl/verklaring-omtrent-het-gedrag-vog",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.gemeentedruten.nl/verklaring-omtrent-het-gedrag-vog",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Geen specifieke VOG-informatie gevonden in de geciteerde bronpagina's",
+          "original_reference": "Volledige VOG-beschrijving met voorwaarden, kosten en procedures",
+          "note": "De originele VOG-informatie komt niet overeen met de huidige content op de website van gemeente Druten. De geciteerde bronnen bevatten geen specifieke informatie over VOG-aanvragen.",
+          "source_urls": [
+            "https://www.druten.nl/verklaring-omtrent-het-gedrag-vog",
+            "https://www.druten.nl/uittreksels",
+            "https://www.druten.nl/informatie-opvragen-woo-verzoek",
+            "https://www.druten.nl/exploitatievergunning-horecabedrijf",
+            "https://www.druten.nl/omgevingsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De originele inhoud over VOG-aanvragen is niet terug te vinden in de huidige bronpagina's van de gemeente Druten. Dit kan betekenen dat de informatie is verplaatst, verwijderd of geüpdatet. Een grondige verificatie van de actuele VOG-informatie op de gemeentelijke website is nodig."
+  }
+}

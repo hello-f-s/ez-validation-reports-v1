@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LEEUWARDEN",
+      "contact": {
+        "phone": "14 058",
+        "email": "gemeente@leeuwarden.nl",
+        "website": "http://www.leeuwarden.nl"
+      }
+    },
+    "service": {
+      "id": 10,
+      "name": "Nachtregister bijhouden"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 20,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.2,
+    "false_statements": [
+      {
+        "sentence": "Toeristenbelasting: € 1,65 per persoon per overnachting. Kinderen tot 5 jaar zijn vrijgesteld.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Leeuwarden is het tarief voor 2024 € 2,50 per persoon per overnachting en zijn kinderen tot 4 jaar (niet 5 jaar) vrijgesteld van toeristenbelasting."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.leeuwarden.nl/wonen/informatie-onroerend-goed/",
+      "https://www.leeuwarden.nl/melden-bij-de-gemeente/verzoek-hergebruik-van-overheidsinformatie/",
+      "https://www.leeuwarden.nl/ondernemen/dor/",
+      "https://www.leeuwarden.nl/belastingen/toeristenbelasting-aangifte-doen/",
+      "https://www.leeuwarden.nl/melden-bij-de-gemeente/woo-verzoek-indienen/"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U krijgt in december of januari bericht van ons om aangifte toeristenbelasting te doen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over wanneer men bericht krijgt voor het doen van aangifte toeristenbelasting. Dit is belangrijke aanvullende informatie voor accommodatiehouders.",
+          "source_urls": [
+            "https://www.leeuwarden.nl/belastingen/toeristenbelasting-aangifte-doen/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voorbeelden van accommodaties: Hotel, pension, Bed and Breakfast, Airbnb, plaats op een camping, appartement, studio, huisje, groepsverblijf",
+          "original_reference": "No matching information",
+          "note": "De originele tekst specificeert niet welke type accommodaties onder de toeristenbelasting vallen. Deze specificatie is nuttig voor duidelijkheid.",
+          "source_urls": [
+            "https://www.leeuwarden.nl/belastingen/toeristenbelasting-aangifte-doen/"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Kinderen jonger dan 5 jaar hoeven geen toeristenbelasting te betalen.",
+          "original_reference": "Kinderen tot 5 jaar zijn vrijgesteld.",
+          "note": "De informatie over vrijstelling voor jonge kinderen is consistent in beide bronnen.",
+          "source_urls": [
+            "https://www.leeuwarden.nl/belastingen/toeristenbelasting-aangifte-doen/"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten enkele belangrijke aanvullingen die niet in de originele tekst staan, met name over het tijdstip van aangifte doen en specifieke voorbeelden van accommodatietypes. De kerngegevens zoals tarieven en vrijstellingen zijn consistent. De aanvullende informatie maakt de voorwaarden en procedures duidelijker voor accommodatiehouders."
+  }
+}

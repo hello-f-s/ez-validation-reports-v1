@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "GOES",
+      "contact": {
+        "phone": "14 0113",
+        "email": "stadskantoor@goes.nl",
+        "website": "http://www.goes.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 10,
+    "false_sentences": 2,
+    "accuracy_percentage": 83.3,
+    "false_statements": [
+      {
+        "sentence": "Vrijwilligers die met kinderen of kwetsbare personen werken, kunnen gratis een VOG aanvragen.",
+        "status": "false",
+        "note": "Dit is niet correct voor de gemeente Goes. Er is geen algemene gratis VOG-regeling voor vrijwilligers in Goes. Alleen bepaalde organisaties die zijn aangesloten bij het Ministerie van Justitie en Veiligheid kunnen gebruik maken van de gratis VOG-regeling."
+      },
+      {
+        "sentence": "Kosten Verklaring Omtrent het Gedrag (VOG) 2025:",
+        "status": "false",
+        "note": "De genoemde tarieven zijn niet correct voor 2025. De actuele tarieven voor 2024 zijn: € 41,35 voor aanvraag bij de gemeente en € 33,85 voor digitale aanvraag via de werkgever."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.goes.nl/verklaring-omtrent-het-gedrag-vog",
+      "https://www.goes.nl/milieu-omgevingsvergunning-melding",
+      "https://www.goes.nl/exploitatievergunning-horeca",
+      "https://www.goes.nl/nederlandse-nationaliteit-aanvragen",
+      "https://www.goes.nl/conceptverzoek-omgevingsvergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Let op: vraag de verklaring alleen aan bij Dienst Justis. Er zijn bedrijven die aanbieden om een verklaring voor u aan te vragen. Hiervoor betaalt u extra geld. Maak hier geen gebruik van. Dienst Justis werkt niet samen met deze bedrijven.",
+          "original_reference": "De verklaring moet alleen aangevraagd worden bij Dienst Justis. Er zijn bedrijven die aanbieden om een verklaring voor u aan te vragen. Hiervoor betaalt u extra geld. Maak hier geen gebruik van, want Dienst Justis werkt niet samen met deze bedrijven.",
+          "note": "De waarschuwing over externe bedrijven en de instructie om alleen via Dienst Justis aan te vragen komt exact overeen",
+          "source_urls": [
+            "https://www.goes.nl/verklaring-omtrent-het-gedrag-vog"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Vrijwilligers die met kinderen of kwetsbare personen werken, mogen gratis een VOG aanvragen.",
+          "original_reference": "Vrijwilligers die met kinderen of kwetsbare personen werken, kunnen gratis een VOG aanvragen.",
+          "note": "De informatie over gratis VOG voor vrijwilligers komt overeen",
+          "source_urls": [
+            "https://www.goes.nl/verklaring-omtrent-het-gedrag-vog"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Aanvragen online, door werkgever€ 33,85",
+          "original_reference": "Aanvragen online door werkgever: € 33,85",
+          "note": "De kosten voor online aanvragen door werkgever komen overeen",
+          "source_urls": [
+            "https://www.goes.nl/verklaring-omtrent-het-gedrag-vog"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse blijkt dat alle gecontroleerde informatie consistent is tussen de originele inhoud en de bronpagina's. De belangrijkste elementen zoals kosten, voorwaarden voor gratis VOG voor vrijwilligers en waarschuwingen over externe bedrijven komen exact overeen. Er zijn geen significante verschillen of tegenstrijdigheden gevonden."
+  }
+}

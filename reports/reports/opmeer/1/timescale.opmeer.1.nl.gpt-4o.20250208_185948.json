@@ -1,0 +1,87 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OPMEER",
+      "contact": {
+        "phone": "(0226) 36 33 33",
+        "email": "gemeente@opmeer.nl",
+        "website": "http://www.opmeer.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "Voor verenigingen of stichtingen kan het tot 6 maanden duren.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Opmeer geldt voor alle aanvragen, inclusief die van verenigingen en stichtingen, een wettelijke beslistermijn van 8 weken. Er wordt geen uitzondering gemaakt voor een langere termijn van 6 maanden."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.opmeer.nl/omgevingsvergunning",
+      "https://www.opmeer.nl/exploitatievergunning-horecabedrijf",
+      "https://www.opmeer.nl/geluidsoverlast-veroorzaken",
+      "https://www.opmeer.nl/alcoholwetvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.opmeer.nl/voorwerp-plaatsen-op-of-aan-de-weg",
+        "reason": "INVALID: Error scraping https://www.opmeer.nl/voorwerp-plaatsen-op-of-aan-de-weg: 404 Client Error: Not Found for url: https://www.opmeer.nl/voorwerp-plaatsen-op-of-aan-de-weg"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Para-commerciële sportverenigingen (waarbij horeca niet de hoofdactiviteit is) zonder terras worden vrijgesteld van de exploitatievergunningsplicht volgens artikel 2:28 lid 3 van de APV",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet deze belangrijke vrijstelling voor para-commerciële sportverenigingen zonder terras",
+          "source_urls": [
+            "https://www.opmeer.nl/exploitatievergunning-horecabedrijf"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wet bevordering integriteitsbeoordelingen door het openbaar bestuur (Wet Bibob) is veelal van toepassing. Naast de Alcoholwetvergunning moet ook het vragenformulier Bibob worden ingediend",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de verplichting tot het indienen van Bibob-formulieren, wat een essentieel onderdeel is van de aanvraagprocedure",
+          "source_urls": [
+            "https://www.opmeer.nl/alcoholwetvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U hebt geen Alcoholwetvergunning nodig als u alleen licht alcoholische drank verkoopt die niet ter plaatse gedronken worden en bovendien in gesloten verpakkingen zit, bijvoorbeeld levensmiddelenbedrijven en supermarkten",
+          "original_reference": "U hebt een Alcoholwetvergunning nodig als u alcoholische drank verkoopt in bijvoorbeeld een slijterij, horecabedrijf, sportkantine, verenigingslokaal of supermarkt met aparte drankafdeling",
+          "note": "De bronpagina specificeert een belangrijke uitzondering voor verkoop van licht alcoholische drank in gesloten verpakkingen die niet ter plaatse wordt geconsumeerd",
+          "source_urls": [
+            "https://www.opmeer.nl/alcoholwetvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn drie belangrijke verschillen gevonden tussen de originele tekst en de bronnen. De bronnen bevatten aanvullende belangrijke informatie over vrijstellingen voor para-commerciële sportverenigingen, de verplichte Bibob-procedure, en een specifieke uitzondering voor de verkoop van licht alcoholische dranken. Deze informatie ontbreekt in de originele tekst maar is essentieel voor de volledigheid van de voorwaarden en procedures."
+  }
+}

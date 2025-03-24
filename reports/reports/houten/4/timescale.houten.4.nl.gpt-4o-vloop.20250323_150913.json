@@ -1,0 +1,97 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HOUTEN",
+      "contact": {
+        "phone": "(030) 639 26 11",
+        "email": "gemeentehuis@houten.nl",
+        "website": "http://www.houten.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 26,
+    "false_sentences": 2,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "Voor laag risico-evenementen moet uw aanvraag minimaal 8-10 weken van tevoren worden ingediend, terwijl voor gemiddeld tot hoog risico-evenementen de aanvraag minimaal 12-16 weken van tevoren binnen moet zijn.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Houten moet een aanvraag voor een A-evenement (laag risico) minimaal 8 weken van tevoren worden ingediend, voor een B-evenement (gemiddeld risico) 12 weken, en voor een C-evenement (hoog risico) 16 weken. Er is geen sprake van ranges zoals 8-10 of 12-16 weken."
+      },
+      {
+        "sentence": "Na 22:00 uur mag er geen harde muziek meer worden gedraaid.",
+        "status": "false",
+        "note": "Deze algemene regel is onjuist. De gemeente Houten hanteert geen algemene regel dat er na 22:00 uur geen harde muziek mag worden gedraaid. Geluidsvoorschriften worden per situatie bepaald en vastgelegd in de vergunning of ontheffing."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.houten.nl/sport-cultuur-en-recreatie/evenement-organiseren",
+      "https://www.houten.nl/sport-cultuur-en-recreatie/evenementenkalender",
+      "https://www.houten.nl/wonen-en-leefomgeving/bouw-en-verbouw/omgevingsvergunning/aanvraagprocedure-omgevingsvergunning",
+      "https://www.houten.nl/ondernemen/regelen/horecabedrijf-exploiteren",
+      "https://www.houten.nl/ondernemen/regelen/standplaatsvergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Minimaal 10 werkdagen voor de activiteit doet u de melding",
+          "original_reference": "het doen van een melding minimaal 10 werkdagen van tevoren",
+          "note": "De termijn voor het doen van een melding is consistent in beide bronnen",
+          "source_urls": [
+            "https://www.houten.nl/sport-cultuur-en-recreatie/evenement-organiseren"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Het doen van een melding is gratis",
+          "original_reference": "Het doen van een melding voor een kleinschalige activiteit is gratis",
+          "note": "De kosteloosheid van meldingen wordt in beide teksten bevestigd",
+          "source_urls": [
+            "https://www.houten.nl/sport-cultuur-en-recreatie/evenement-organiseren"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Na 22.00 uur geen harde muziek meer draaien",
+          "original_reference": "Na 22:00 uur mag er geen harde muziek meer worden gedraaid",
+          "note": "De tijdsbeperking voor geluid is in beide teksten hetzelfde",
+          "source_urls": [
+            "https://www.houten.nl/sport-cultuur-en-recreatie/evenement-organiseren"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De evenementenkalender wordt maar één keer per jaar vastgesteld. Een vermelding op de kalender is geen garantie voor een vergunning.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de jaarlijkse evenementenkalender en het feit dat een vermelding geen garantie is voor een vergunning",
+          "source_urls": [
+            "https://www.houten.nl/sport-cultuur-en-recreatie/evenementenkalender"
+          ]
+        }
+      ]
+    },
+    "summary": "De meeste kernpunten in de originele tekst komen overeen met de bronnen. Het belangrijkste verschil is dat de originele tekst geen informatie bevat over de jaarlijkse evenementenkalender en het vergunningsproces daaromheen. De termijnen, kosten en geluidsbeperkingen zijn consistent tussen beide bronnen."
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "GEMERT-BAKEL",
+      "contact": {
+        "phone": "(0492) 37 85 00",
+        "email": "gemeente@gemert-bakel.nl",
+        "website": "http://www.gemert-bakel.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "U ontvangt binnen 8 weken een schriftelijk besluit over uw aanvraag.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Gemert-Bakel wordt binnen 12 weken een besluit genomen over de aanvraag voor een kansspelautomatenvergunning, niet binnen 8 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.gemert-bakel.nl/horeca-gokautomaten-plaatsen",
+      "https://www.gemert-bakel.nl/alcohol-schenken-in-horecabedrijven",
+      "https://www.gemert-bakel.nl/omgevingsvergunning-activiteit-milieu",
+      "https://www.gemert-bakel.nl/omgevingsvergunning",
+      "https://www.gemert-bakel.nl/evenementen-vergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vergunning 1 gokautomaat plaatsen €226,50, Vergunning 2 gokautomaten plaatsen €362,50",
+          "original_reference": "De kosten voor het aanvragen van de vergunning worden bepaald door de gemeente. Voor specifieke kosteninformatie wordt verwezen naar de legesverordening",
+          "note": "De originele tekst verwijst alleen naar de legesverordening, terwijl de bron specifieke bedragen noemt: €226,50 voor 1 automaat en €362,50 voor 2 automaten",
+          "source_urls": [
+            "https://www.gemert-bakel.nl/horeca-gokautomaten-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Om een drank- en horecavergunning aan te vragen, maakt u een afspraak met de ambtenaar horecavergunningen",
+          "original_reference": "U kunt de aanvraag indienen via de website van de gemeente",
+          "note": "De originele tekst suggereert dat de aanvraag online kan worden ingediend, terwijl de bron aangeeft dat er een persoonlijke afspraak moet worden gemaakt met een ambtenaar",
+          "source_urls": [
+            "https://www.gemert-bakel.nl/alcohol-schenken-in-horecabedrijven"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele tekst en de bronnen. Ten eerste worden in de bron specifieke tarieven genoemd voor gokautomatenvergunningen, terwijl de originele tekst alleen verwijst naar de legesverordening. Ten tweede verschilt de aanvraagprocedure: waar de originele tekst suggereert dat aanvragen online kunnen worden ingediend, blijkt uit de bronnen dat er een persoonlijke afspraak nodig is met een ambtenaar."
+  }
+}

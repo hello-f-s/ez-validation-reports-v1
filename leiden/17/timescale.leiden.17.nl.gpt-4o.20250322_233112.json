@@ -1,0 +1,81 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LEIDEN",
+      "contact": {
+        "phone": "14 071",
+        "email": "null",
+        "website": "http://www.leiden.nl/gemeente"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "Voor de aanvraag van een nieuwe of gewijzigde terrasvergunning: € 404,80.",
+        "status": "false",
+        "note": "Het correcte bedrag voor een nieuwe of gewijzigde terrasvergunning in Leiden is € 412,90 volgens de actuele tarieven op de gemeentelijke website."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 3,
+    "invalid_urls": 2,
+    "accuracy_percentage": 60.0,
+    "valid_urls_list": [
+      "https://gemeente.leiden.nl/inwoners-en-ondernemers/wonen-en-bouwen/omgevingsvergunningen/omgevingsvergunning-aanvragen",
+      "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers/horeca/vergunning-terras-of-terrasboot",
+      "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers/winkels-en-markten/drank-schenken-en-eten-verkopen-op-straat"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers/vergunningen-en-ontheffingen/voorwerpen-plaatsen-op-openbare-grond",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers/horeca/ontheffing-nadere-regels-terrassen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Waar moet uw terras nog meer aan voldoen? Lees de Verordening op de fysieke leefomgeving Leiden 2020.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina verwijst naar aanvullende voorwaarden in de Verordening die niet genoemd worden in de originele tekst. Dit is belangrijke aanvullende informatie voor ondernemers.",
+          "source_urls": [
+            "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers/horeca/vergunning-terras-of-terrasboot"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Alcoholvergunning (voorheen drank- en horecavergunning (alcoholhoudende dranken) of drank- en horecaverlof (alleen alcoholvrije dranken).",
+          "original_reference": "Een alcoholvergunning (voorheen drank- en horecavergunning).",
+          "note": "De bronpagina maakt onderscheid tussen alcoholhoudende en alcoholvrije dranken met verschillende vergunningen, terwijl de originele tekst alleen de alcoholvergunning noemt.",
+          "source_urls": [
+            "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers/horeca/vergunning-terras-of-terrasboot"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen aanvullende regelgeving (Verordening op de fysieke leefomgeving) die niet genoemd wordt in de originele tekst en een meer gedetailleerde uitleg over de verschillende soorten vergunningen voor alcoholhoudende en alcoholvrije dranken. Deze informatie is essentieel voor ondernemers die een terrasvergunning willen aanvragen."
+  }
+}

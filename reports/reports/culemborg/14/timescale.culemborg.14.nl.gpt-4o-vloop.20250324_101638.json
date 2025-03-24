@@ -1,0 +1,89 @@
+{
+  "context": {
+    "municipality": {
+      "name": "CULEMBORG",
+      "contact": {
+        "phone": "(0345) 47 77 00",
+        "email": "info@culemborg.nl",
+        "website": "http://www.culemborg.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 26,
+    "false_sentences": 2,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "Bezoekadres: Ridderstraat 250 (ingang Oostersingel), 4101 BK Culemborg",
+        "status": "false",
+        "note": "Het correcte bezoekadres van het stadskantoor is Ridderstraat 250, 4101 BK Culemborg. De toevoeging '(ingang Oostersingel)' is onjuist."
+      },
+      {
+        "sentence": "Vanaf 2025 worden alle parkeervergunningen en inrijontheffingen per 1 januari van elk nieuw jaar verlengd.",
+        "status": "false",
+        "note": "Er is geen officiële bevestiging te vinden op de website van de gemeente Culemborg dat vanaf 2025 alle parkeervergunningen automatisch worden verlengd per 1 januari."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.culemborg.nl/parkeervergunning-voor-bedrijven",
+      "https://www.culemborg.nl/parkeervergunning-voor-bewoners",
+      "https://www.culemborg.nl/parkeervergunningen-en-ontheffingen",
+      "https://www.culemborg.nl/omgevingsvergunning",
+      "https://www.culemborg.nl/informatieverzoek-en-woo-verzoek",
+      "https://www.culemborg.nl/parkeertarieven"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "jaarvergunning parkeren bedrijf 1 kenteken€ 230,-",
+          "original_reference": "Bedrijfsvergunning jaar: € 450",
+          "note": "Er is een verschil in de tarieven voor bedrijfsvergunningen. De originele tekst noemt alleen één tarief van €450, terwijl de bron onderscheid maakt tussen een vergunning voor één kenteken (€230) en meerdere kentekens (€450).",
+          "source_urls": [
+            "https://www.culemborg.nl/parkeertarieven"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vanaf nu krijgen de inrijontheffingen dezelfde looptijd als de parkeervergunningen: van 1 januari tot en met 31 december",
+          "original_reference": "Vanaf 2025 worden alle parkeervergunningen en inrijontheffingen per 1 januari van elk nieuw jaar verlengd.",
+          "note": "De bron geeft meer context over de wijziging in de looptijd van vergunningen en verklaart dat dit een verandering is van het oude systeem waarbij ontheffingen het hele jaar door afliepen.",
+          "source_urls": [
+            "https://www.culemborg.nl/parkeertarieven"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een maandvergunning wordt op kentekennummer afgegeven en geldt niet voor het autoluwe gebied (Binnenstad).",
+          "original_reference": "Een maandvergunning kan worden aangevraagd voor incidentele werkzaamheden en is niet geldig in het autoluwe gebied (Binnenstad).",
+          "note": "De bron specificeert dat de maandvergunning op kentekennummer wordt afgegeven, wat niet vermeld staat in de originele tekst.",
+          "source_urls": [
+            "https://www.culemborg.nl/parkeervergunning-voor-bedrijven"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de tariefstructuur voor bedrijfsvergunningen, waarbij de bron een onderscheid maakt tussen vergunningen voor één en meerdere kentekens. Daarnaast geeft de bron meer details over de nieuwe systematiek van vergunningverlening vanaf 2025 en specificeert dat maandvergunningen op kentekennummer worden afgegeven. Deze informatie maakt de voorwaarden en mogelijkheden duidelijker voor aanvragers."
+  }
+}

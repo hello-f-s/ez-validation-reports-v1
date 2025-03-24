@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HEEMSKERK",
+      "contact": {
+        "phone": "14 0251",
+        "email": "post@heemskerk.nl",
+        "website": "http://www.heemskerk.nl"
+      }
+    },
+    "service": {
+      "id": 20,
+      "name": "Vergunning voor seksbedrijf"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 27,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.4,
+    "false_statements": [
+      {
+        "sentence": "Het in behandeling nemen van de aanvraag voor de vergunning kost €27,84.",
+        "status": "false",
+        "note": "Dit bedrag is onjuist. De gemeente Heemskerk hanteert andere tarieven voor seksbedrijfvergunningen volgens de actuele legesverordening. Het genoemde bedrag van €27,84 komt niet overeen met de officiële tarieven van de gemeente Heemskerk."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca/horecabedrijf",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca/exploitatievergunning",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca/slijtersbedrijf",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca/paracommercieel-bedrijf"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bij de aanvraag betaalt u direct de legeskosten via iDeal",
+          "original_reference": "Het in behandeling nemen van de aanvraag voor de vergunning kost €27,84",
+          "note": "De originele tekst noemt een specifiek bedrag van €27,84, terwijl de bronpagina's alleen vermelden dat er legeskosten zijn die direct via iDeal betaald moeten worden, zonder specifiek bedrag te noemen",
+          "source_urls": [
+            "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca/horecabedrijf",
+            "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca/exploitatievergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Er mag geen sprake zijn van strijd met een geldend bestemmingsplan, beheersverordening, exploitatieplan of voorbereidingsbesluit",
+          "original_reference": "No matching information",
+          "note": "De bronpagina's vermelden aanvullende voorwaarden met betrekking tot bestemmingsplannen die niet in de originele tekst staan",
+          "source_urls": [
+            "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca/exploitatievergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het horecabedrijf mag de omgeving en de openbare orde niet nadelig beïnvloeden",
+          "original_reference": "No matching information",
+          "note": "Deze belangrijke voorwaarde over de impact op de omgeving en openbare orde ontbreekt in de originele tekst",
+          "source_urls": [
+            "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca/exploitatievergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De originele tekst bevat een specifiek bedrag voor legeskosten dat niet wordt bevestigd in de bronpagina's. Daarnaast mist de originele tekst enkele belangrijke voorwaarden die wel in de gemeentelijke bronnen staan, zoals de eisen met betrekking tot het bestemmingsplan en de impact op de omgeving en openbare orde. De basisvereisten voor ondernemers en leidinggevenden komen wel overeen met de bronpagina's."
+  }
+}

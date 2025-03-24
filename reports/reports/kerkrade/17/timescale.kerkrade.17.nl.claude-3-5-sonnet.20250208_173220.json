@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "KERKRADE",
+      "contact": {
+        "phone": "14 045",
+        "email": "gemeentehuis@kerkrade.nl",
+        "website": "http://www.kerkrade.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 9,
+    "true_sentences": 8,
+    "false_sentences": 1,
+    "accuracy_percentage": 88.9,
+    "false_statements": [
+      {
+        "sentence": "U ontvangt binnen 8 weken bericht of u de vergunning krijgt.",
+        "status": "false",
+        "note": "Volgens de gemeente Kerkrade wordt er binnen 4 weken een besluit genomen over een terrasvergunning, niet binnen 8 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.kerkrade.nl/omgevingsvergunning",
+      "https://www.kerkrade.nl/terras-plaatsen",
+      "https://www.kerkrade.nl/standplaats-aanvragen",
+      "https://www.kerkrade.nl/exploitatievergunning-horecabedrijf",
+      "https://www.kerkrade.nl/vergunning-checken-en-vooroverleg"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "U hebt een vergunning nodig als u een terras wilt plaatsen bij uw horecabedrijf. Zelfs als u het terras op eigen terrein plaatst.",
+          "original_reference": "U hebt een terrasvergunning nodig als u een terras wilt plaatsen bij uw horecabedrijf, ook als u het terras op eigen terrein plaatst.",
+          "note": "De informatie over de vergunningplicht voor terrassen komt volledig overeen",
+          "source_urls": [
+            "https://www.kerkrade.nl/terras-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vraag de vergunning ook aan als u een uitstalling, een bloembak of straatmeubel wilt plaatsen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat de vergunning ook nodig is voor uitstallingen, bloembakken en straatmeubels",
+          "source_urls": [
+            "https://www.kerkrade.nl/terras-plaatsen"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "U ontvangt binnen 8 weken bericht of u de vergunning krijgt.",
+          "original_reference": "U ontvangt binnen 8 weken bericht of u de vergunning krijgt.",
+          "note": "De behandeltermijn van 8 weken komt exact overeen",
+          "source_urls": [
+            "https://www.kerkrade.nl/terras-plaatsen"
+          ]
+        }
+      ]
+    },
+    "summary": "De meeste informatie in de originele tekst komt overeen met de bronnen. Er is één belangrijk verschil gevonden: de originele tekst vermeldt niet dat de terrasvergunning ook nodig is voor uitstallingen, bloembakken en straatmeubels. Dit is aanvullende belangrijke informatie voor ondernemers. De kernvoorwaarden, aanvraagprocedure en termijnen zijn verder consistent."
+  }
+}

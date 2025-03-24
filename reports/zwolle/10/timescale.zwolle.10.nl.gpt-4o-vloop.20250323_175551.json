@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ZWOLLE",
+      "contact": {
+        "phone": "14 038",
+        "email": "postbus@zwolle.nl",
+        "website": "http://www.zwolle.nl"
+      }
+    },
+    "service": {
+      "id": 10,
+      "name": "Nachtregister bijhouden"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 1,
+    "true_sentences": 1,
+    "false_sentences": 0,
+    "accuracy_percentage": 100.0,
+    "false_statements": []
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 3,
+    "invalid_urls": 2,
+    "accuracy_percentage": 60.0,
+    "valid_urls_list": [
+      "https://www.zwolle.nl/toeristische-verhuur",
+      "https://www.zwolle.nl/verzoek-om-handhaving-bouwregels",
+      "https://www.zwolle.nl/aanvragen-en-regelen-voor-bedrijven"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.zwolle.nl/kentekenparkeren-veelgestelde-vragen-voor-bedrijvenvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.zwolle.nl/extras-voor-volwassenen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor het (gedeeltelijk) verhuren van uw woning(en) aan toeristen gaan nieuwe regels gelden. Deze regels worden gekoppeld aan de nieuwe huisvestingsverordening, die naar verwachting in 2025 ingaat.",
+          "original_reference": "No matching information",
+          "note": "De bron bevat specifieke informatie over nieuwe regelgeving voor toeristische verhuur die in 2025 ingaat, terwijl dit volledig ontbreekt in de originele inhoud.",
+          "source_urls": [
+            "https://www.zwolle.nl/toeristische-verhuur"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De gemeente biedt ondernemers verschillende producten en diensten aan, waaronder bedrijfsvergunningen, belastingen, bezwaar indienen, bouwen, energieloket, evenementen en horeca.",
+          "original_reference": "No matching information",
+          "note": "De bron bevat een uitgebreid overzicht van gemeentelijke diensten voor ondernemers, wat niet aanwezig is in de originele inhoud.",
+          "source_urls": [
+            "https://www.zwolle.nl/aanvragen-en-regelen-voor-bedrijven"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U kunt alleen een verzoek om handhaving indienen als u 'belanghebbende' bent. Dit moeten wij dus eerst beoordelen.",
+          "original_reference": "No matching information",
+          "note": "De bron specificeert de voorwaarden voor het indienen van een handhavingsverzoek, wat ontbreekt in de originele inhoud.",
+          "source_urls": [
+            "https://www.zwolle.nl/verzoek-om-handhaving-bouwregels"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten substantieel meer specifieke informatie over gemeentelijke diensten dan de originele inhoud, waaronder nieuwe regelgeving voor toeristische verhuur (2025), een uitgebreid dienstenaanbod voor ondernemers, en specifieke procedures voor handhavingsverzoeken. De originele inhoud bevatte geen van deze informatie."
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DELFT",
+      "contact": {
+        "phone": "14 015",
+        "email": "null",
+        "website": "http://www.delft.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 27,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.4,
+    "false_statements": [
+      {
+        "sentence": "Voor een vergunning voor onbepaalde tijd bij 1 automaat betaalt u € 226,50.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Delft is dit bedrag niet correct. De actuele tarieven zijn anders dan het genoemde bedrag van € 226,50."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.delft.nl/speelautomaten-plaatsen",
+      "https://www.delft.nl/alcoholwetvergunning",
+      "https://www.delft.nl/omgevingsvergunning-milieu",
+      "https://www.delft.nl/omgevingsvergunning-aanvragen",
+      "https://www.delft.nl/klein-kansspel-melden"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U mag maximaal 2 automaten plaatsen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet expliciet het maximum aantal toegestane automaten, terwijl de brontekst dit wel specificeert.",
+          "source_urls": [
+            "https://www.delft.nl/speelautomaten-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Om een vergunning aan te vragen, moet u: een alcoholwetvergunning hebben, een positief advies krijgen naar aanleiding van een (strafrechtelijk) antecedentenonderzoek, een hoogdrempelig horecabedrijf hebben, voldoende kennis en inzicht hebben van het gebruik van kansspelautomaten. En de risico's van gokverslaving.",
+          "original_reference": "U heeft een alcoholwetvergunning. Er is een positief advies na een (strafrechtelijk) antecedentenonderzoek. Uw bedrijf is een hoogdrempelig horecabedrijf. U beschikt over voldoende kennis en inzicht met betrekking tot het gebruik van kansspelautomaten en de risico's van gokverslaving.",
+          "note": "De brontekst formuleert de voorwaarden als actieve vereisten ('moet u'), terwijl de originele tekst deze als vaststaande feiten presenteert. Dit verschil in formulering kan van invloed zijn op de interpretatie van de voorwaarden.",
+          "source_urls": [
+            "https://www.delft.nl/speelautomaten-plaatsen"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont twee belangrijke verschillen tussen de originele tekst en de broninhoud. Ten eerste ontbreekt in de originele tekst de belangrijke informatie over het maximum aantal toegestane automaten (2). Ten tweede verschilt de formulering van de voorwaarden, waarbij de brontekst deze duidelijker als actieve vereisten presenteert. De overige informatie komt inhoudelijk overeen."
+  }
+}

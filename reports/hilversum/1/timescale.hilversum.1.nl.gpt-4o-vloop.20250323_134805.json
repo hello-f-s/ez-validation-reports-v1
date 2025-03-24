@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HILVERSUM",
+      "contact": {
+        "phone": "14 035",
+        "email": "gemeente@hilversum.nl",
+        "website": "http://www.hilversum.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "Het aanvragen van een alcoholwetvergunning kost € 549,90.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Hilversum kost een alcoholwetvergunning € 565,40 (tarief 2024)."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://hilversum.nl/vergunningen/vergunningen-voor-horeca/alcoholwetvergunning-voor-horeca-slijterijen",
+      "https://hilversum.nl/vergunningen/vergunningen-voor-horeca/alcoholwetvergunning-voor-verenigingen-stichtingen",
+      "https://hilversum.nl/vergunningen/vergunningen-voor-horeca/exploitatievergunning-horeca",
+      "https://hilversum.nl/vergunningen/vergunningen-voor-horeca",
+      "https://hilversum.nl/bouwen-verbouwen/omgevingswet/aanvraag-omgevingsvergunning-uitgelegd",
+      "https://hilversum.nl"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Para-commerciële rechtspersonen hoeven slechts 2 leidinggevenden bij de vergunning aan te melden. Alleen deze 2 leidinggevenden hebben de Verklaring Sociale Hygiëne (SVH) nodig.",
+          "original_reference": "De leidinggevende heeft een Verklaring Sociale Hygiëne nodig.",
+          "note": "De originele tekst maakt geen onderscheid tussen commerciële en para-commerciële vergunningen wat betreft het aantal vereiste leidinggevenden met SVH. De bronnen specificeren dat para-commerciële instellingen slechts 2 leidinggevenden met SVH nodig hebben.",
+          "source_urls": [
+            "https://hilversum.nl/vergunningen/vergunningen-voor-horeca/alcoholwetvergunning-voor-verenigingen-stichtingen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een vergunning is alleen nodig als bezoekers in uw zaak kunnen eten en drinken. Voor een afhaalzaak heeft u geen exploitatievergunning nodig. U mag dan geen tafels, bar of stoelen plaatsen en geen terras hebben!",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over uitzonderingen voor afhaalzaken, terwijl de bron specifiek vermeldt dat afhaalzaken zonder zitgelegenheid geen exploitatievergunning nodig hebben.",
+          "source_urls": [
+            "https://hilversum.nl/vergunningen/vergunningen-voor-horeca/exploitatievergunning-horeca"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor een horecabedrijf moet u ook een milieumelding doen. U heeft hiervoor uw DigiD of eHerkenning nodig",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de verplichting tot het doen van een milieumelding, terwijl dit volgens de bron wel een vereiste is.",
+          "source_urls": [
+            "https://hilversum.nl/vergunningen/vergunningen-voor-horeca/exploitatievergunning-horeca"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen specifieke details over para-commerciële vergunningen, uitzonderingen voor afhaalzaken en aanvullende verplichtingen zoals de milieumelding. De originele tekst mist enkele belangrijke nuances en aanvullende vereisten die wel in de bronnen worden genoemd."
+  }
+}

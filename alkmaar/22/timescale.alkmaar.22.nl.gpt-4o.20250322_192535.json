@@ -1,0 +1,79 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ALKMAAR",
+      "contact": {
+        "phone": "14 072",
+        "email": "post@alkmaar.nl",
+        "website": "http://www.alkmaar.nl"
+      }
+    },
+    "service": {
+      "id": 22,
+      "name": "Woonruimte splitsen of samenvoegen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "Voor hulp bij het digitaal aanvragen kunt u naar het digivangnet gaan.",
+        "status": "false",
+        "note": "Er bestaat geen 'digivangnet' dienst in Alkmaar. Voor hulp bij digitale aanvragen kunnen inwoners terecht bij de gemeente Alkmaar zelf of bij het Klant Contact Centrum (KCC)."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/huisvesting/woning-onttrekken-vergunning",
+      "https://www.alkmaar.nl/direct-regelen/wonen-verhuizen-en-verbouwen/vergunningen/omgevingsvergunning",
+      "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/huisvesting/kamerverhuur",
+      "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/huisvesting/woning-vormen-vergunning",
+      "https://www.alkmaar.nl/direct-regelen/wonen-verhuizen-en-verbouwen/wonen/nieuw-woningbouwinitiatief/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.overheid.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U heeft een vergunning nodig als u: een woning onttrekt door sloop; 2 woningen wilt samenvoegen; meerdere kamers wilt verhuren; een deel van uw woning bijvoorbeeld als bedrijfsruimte wilt gebruiken",
+          "original_reference": "Voor het samenvoegen van woningen of omzetten naar kamerverhuur heeft u een vergunning voor woningomzetting nodig",
+          "note": "De bronpagina geeft een uitgebreidere lijst van situaties waarin een vergunning nodig is, waaronder sloop en gebruik als bedrijfsruimte. Dit staat niet in de originele tekst.",
+          "source_urls": [
+            "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/huisvesting/woning-onttrekken-vergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Tot 1 januari 2024 deed u een aanvraag of een melding via het Omgevingsloket online (OLO). Op 1 januari 2024 is de nieuwe Omgevingswet ingegaan. U doet de aanvraag nu in het nieuwe Omgevingsloket.",
+          "original_reference": "Aanvragen kunnen bij het Omgevingsloket worden ingediend",
+          "note": "De originele tekst vermeldt niet de belangrijke wijziging per 1 januari 2024 met de nieuwe Omgevingswet en het nieuwe Omgevingsloket",
+          "source_urls": [
+            "https://www.alkmaar.nl/direct-regelen/wonen-verhuizen-en-verbouwen/vergunningen/omgevingsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden: 1) De bronpagina's geven een uitgebreidere lijst van situaties waarin een vergunning nodig is, inclusief sloop en bedrijfsruimte-gebruik. 2) Er is een belangrijke wijziging in het aanvraagproces sinds 1 januari 2024 met de nieuwe Omgevingswet die niet vermeld wordt in de originele tekst. Deze informatie is essentieel voor aanvragers om de juiste procedure te volgen."
+  }
+}

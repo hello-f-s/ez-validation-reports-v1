@@ -1,0 +1,89 @@
+{
+  "context": {
+    "municipality": {
+      "name": "BLARICUM",
+      "contact": {
+        "phone": "(035) 751 32 22",
+        "email": "info@blaricum.nl",
+        "website": "http://www.blaricum.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 10,
+    "false_sentences": 1,
+    "accuracy_percentage": 90.9,
+    "false_statements": [
+      {
+        "sentence": "U kunt een exploitatievergunning aanvragen door contact op te nemen met de Gemeente Blaricum via telefoonnummer 14 035 of via het e-mailadres apv@belcombinatie.nl.",
+        "status": "false",
+        "note": "Het e-mailadres apv@belcombinatie.nl is niet correct. Volgens de officiële website van de gemeente Blaricum moeten aanvragen voor een exploitatievergunning worden ingediend via het e-mailadres info@blaricum.nl."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.blaricum.nl/Vergunningen",
+      "https://www.blaricum.nl/Vergunningen/Horeca_en_evenementen/Exploitatievergunning_horeca",
+      "https://www.blaricum.nl/Vergunningen/Horeca_en_evenementen/Alcoholvergunning",
+      "https://www.blaricum.nl/Vergunningen/Horeca_en_evenementen/Ontheffing_openingstijden_horecabedrijf",
+      "https://www.blaricum.nl/Vergunningen/Horeca_en_evenementen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://metadata-url-for-vereniging-blaricum",
+        "reason": "INVALID: Error scraping https://metadata-url-for-vereniging-blaricum: HTTPSConnectionPool(host='metadata-url-for-vereniging-blaricum', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x103a23e00>: Failed to resolve 'metadata-url-for-vereniging-blaricum' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wilt u een horecabedrijf beginnen, zoals een café, hotel, snackbar of sportkantine, dan heeft u exploitatievergunning horeca nodig.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina specificeert concrete voorbeelden van horecabedrijven waarvoor een exploitatievergunning nodig is, terwijl dit in de originele tekst ontbreekt.",
+          "source_urls": [
+            "https://www.blaricum.nl/Vergunningen/Horeca_en_evenementen/Exploitatievergunning_horeca"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Sluitingstijden voor horeca: Maandag tot en met vrijdag tussen 0:00 en 7:00 uur, Zaterdag en zondag tussen 1:00 en 7:00 uur",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat specifieke informatie over verplichte sluitingstijden voor horecabedrijven, wat volledig ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.blaricum.nl/Vergunningen/Horeca_en_evenementen/Ontheffing_openingstijden_horecabedrijf"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bezoekadres BEL Combinatie: Zuidersingel 5, 3755 AZ Eemnes",
+          "original_reference": "No matching information",
+          "note": "De bronpagina's vermelden het fysieke bezoekadres van de BEL Combinatie, wat ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.blaricum.nl/Vergunningen/Horeca_en_evenementen/Exploitatievergunning_horeca",
+            "https://www.blaricum.nl/Vergunningen/Horeca_en_evenementen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten belangrijke aanvullende informatie die ontbreekt in de originele tekst, waaronder specifieke voorbeelden van horecabedrijven die een exploitatievergunning nodig hebben, concrete sluitingstijden voor horecagelegenheden en het fysieke bezoekadres van de BEL Combinatie. Deze informatie is essentieel voor ondernemers die een horecavergunning willen aanvragen."
+  }
+}

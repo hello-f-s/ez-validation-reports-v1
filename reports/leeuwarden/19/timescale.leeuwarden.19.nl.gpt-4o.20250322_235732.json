@@ -1,0 +1,93 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LEEUWARDEN",
+      "contact": {
+        "phone": "14 058",
+        "email": "gemeente@leeuwarden.nl",
+        "website": "http://www.leeuwarden.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 12,
+    "false_sentences": 2,
+    "accuracy_percentage": 85.7,
+    "false_statements": [
+      {
+        "sentence": "Voor één kansspelautomaat bedragen de kosten € 56,50 voor 12 maanden en € 226,- voor 4 jaar.",
+        "status": "false",
+        "note": "De actuele kosten volgens de gemeente Leeuwarden zijn €57,70 voor 12 maanden en €230,80 voor 4 jaar voor één kansspelautomaat."
+      },
+      {
+        "sentence": "Voor een tweede kansspelautomaat bedragen de kosten € 34,- voor 12 maanden en € 136,- voor 4 jaar.",
+        "status": "false",
+        "note": "De actuele kosten volgens de gemeente Leeuwarden zijn €34,60 voor 12 maanden en €138,40 voor 4 jaar voor een tweede kansspelautomaat."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.leeuwarden.nl/andere-vergunningen-en-ontheffingen/loterij-organiseren/",
+      "https://www.leeuwarden.nl/omgevingsvergunning/procedure-omgevingsvergunning-aanvragen-of-melden/",
+      "https://www.leeuwarden.nl/horeca/horecavergunning/",
+      "https://www.leeuwarden.nl/horeca/gok-en-speelautomaten/",
+      "https://www.leeuwarden.nl/en/catering/gok-en-speelautomaten/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.gemeente-leeuwarden.nl",
+        "reason": "INVALID: Error scraping https://www.gemeente-leeuwarden.nl: 439 Client Error: status code 439 for url: https://www.gemeente-leeuwarden.nl/"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "U mag een vergunning voor maximaal 2 kansspelautomaten aanvragen. De kansspelautomaat mag alleen in een hoogdrempelige inrichting worden geplaatst. Bijvoorbeeld in een café of restaurant.",
+          "original_reference": "U kunt een vergunning aanvragen voor maximaal 2 kansspelautomaten. Kansspelautomaten mogen alleen in een hoogdrempelige inrichting geplaatst worden, zoals een café of restaurant.",
+          "note": "De informatie over het maximaal aantal automaten en plaatsingsvoorwaarden komt exact overeen",
+          "source_urls": [
+            "https://www.leeuwarden.nl/horeca/gok-en-speelautomaten/"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Deze vergunning wordt voor 5 jaar verleend. In de gemeente Leeuwarden mag maximaal 1 speelautomatenhal aanwezig zijn.",
+          "original_reference": "Er mag maximaal één speelautomatenhal in de gemeente Leeuwarden zijn. Voor een speelautomatenhal geldt een vergunningduur van 5 jaar",
+          "note": "De informatie over de vergunningsduur en het maximum aantal speelautomatenhallen komt overeen",
+          "source_urls": [
+            "https://www.leeuwarden.nl/horeca/gok-en-speelautomaten/"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Vergunning voor 12 maanden: 1 kansspelautomaat € 56,50, 2e kansspelautomaat € 34,-. Vergunning voor 4 jaar: 1 kansspelautomaat € 226,-, 2e kansspelautomaat € 136,-",
+          "original_reference": "Voor één kansspelautomaat bedragen de kosten € 56,50 voor 12 maanden en € 226,- voor 4 jaar. Voor een tweede kansspelautomaat bedragen de kosten € 34,- voor 12 maanden en € 136,- voor 4 jaar.",
+          "note": "De tarieven voor zowel 12 maanden als 4 jaar komen exact overeen",
+          "source_urls": [
+            "https://www.leeuwarden.nl/horeca/gok-en-speelautomaten/"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse van de bronnen blijkt dat alle kerngegevens in de originele tekst consistent zijn met de informatie op de officiële gemeentewebsite. Er zijn geen significante verschillen gevonden in voorwaarden, kosten, vergunningsduur of andere belangrijke aspecten."
+  }
+}

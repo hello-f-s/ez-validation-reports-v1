@@ -1,0 +1,79 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HAAKSBERGEN",
+      "contact": {
+        "phone": "(053) 573 45 67",
+        "email": "gemeente@haaksbergen.nl",
+        "website": "http://www.haaksbergen.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "Het aanvragen van een vergunning voor een speelautomaat of speelautomatenhal kan alleen digitaal via het Omgevingsloket.",
+        "status": "false",
+        "note": "Volgens de gemeente Haaksbergen kunnen vergunningaanvragen zowel digitaal als schriftelijk worden ingediend. Het is niet exclusief beperkt tot het Omgevingsloket."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.haaksbergen.nl/Vergunningen/101107-Omgevingsvergunning.html",
+      "https://www.haaksbergen.nl/Vergunningen/Exploitatievergunning.html",
+      "https://www.haaksbergen.nl/Vergunningen/alcoholvergunning.html",
+      "https://www.haaksbergen.nl/Vergunningen/Evenementenvergunning.html"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.haaksbergen.nl/ondernemers/Ondernemend-Haaksbergen/Ondernemersplein.html",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor vragen of het plannen van een gesprek voorafgaand aan de aanvraag neem contact op via e-mail: gemeente@haaksbergen.nl",
+          "original_reference": "vergunningen@haaksbergen.nl",
+          "note": "Er wordt een ander e-mailadres genoemd in de bronnen (gemeente@haaksbergen.nl) dan in de originele tekst (vergunningen@haaksbergen.nl)",
+          "source_urls": [
+            "https://www.haaksbergen.nl/Vergunningen/Exploitatievergunning.html",
+            "https://www.haaksbergen.nl/Vergunningen/alcoholvergunning.html"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een uitgebreide procedure duurt zes maanden. Dit komt voor bij ingewikkelde plannen en plannen die niet binnen het Omgevingsplan passen. Denk hierbij bijvoorbeeld aan een verbouwing van een monument of de bouw van een kantoorpand waar meer dan 50 personen aanwezig zullen zijn.",
+          "original_reference": "Voor complexe plannen of plannen die niet binnen het Omgevingsplan passen, kan de procedure zes maanden duren.",
+          "note": "De brontekst geeft specifieke voorbeelden van wanneer een uitgebreide procedure van toepassing is (monumenten, kantoorpanden >50 personen), terwijl de originele tekst deze details niet vermeldt",
+          "source_urls": [
+            "https://www.haaksbergen.nl/Vergunningen/101107-Omgevingsvergunning.html"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele tekst en de bronnen. Ten eerste wordt er een ander algemeen contactadres gebruikt in de bronnen. Ten tweede geeft de brontekst meer specifieke details over wanneer een uitgebreide vergunningsprocedure van toepassing is. De overige informatie in de originele tekst komt overeen met de bronnen of kan niet geverifieerd worden omdat deze informatie niet in de gegeven bronnen staat."
+  }
+}

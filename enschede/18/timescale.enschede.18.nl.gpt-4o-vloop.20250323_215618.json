@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ENSCHEDE",
+      "contact": {
+        "phone": "14 053",
+        "email": "postbus20@enschede.nl",
+        "website": "http://www.enschede.nl"
+      }
+    },
+    "service": {
+      "id": 18,
+      "name": "Ventvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 22,
+    "false_sentences": 2,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Om kamers te verhuren in Enschede is een omgevingsvergunning vereist.",
+        "status": "false",
+        "note": "Voor kamerverhuur in Enschede is een onttrekkingsvergunning (ook wel kamerverhuurvergunning genoemd) vereist, geen omgevingsvergunning. Dit zijn twee verschillende vergunningen."
+      },
+      {
+        "sentence": "Dit document biedt een uitgebreid overzicht van de vereisten en procedures voor het aanvragen van een ventvergunning in Enschede, waardoor u goed voorbereid uw aanvraag kunt indienen.",
+        "status": "false",
+        "note": "Het document gaat over kamerverhuur en de benodigde vergunningen daarvoor, niet over een ventvergunning. Een ventvergunning is een vergunning voor straatverkoop/venten, wat een heel ander type vergunning is."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.enschede.nl/vergunning-voor-kamerverhuur",
+      "https://www.enschede.nl/wegomleiding-of-verkeersmaatregelen-aanvragen",
+      "https://www.enschede.nl/alcoholvergunning-aanvragen",
+      "https://www.enschede.nl/informatie-voor-kamerverhuurders",
+      "https://www.enschede.nl/kinderopvang-starten-of-wijzigen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bij voorkeur schaal 1:100",
+          "original_reference": "Plattegrondtekening op schaal 1:100",
+          "note": "De originele tekst stelt dat de schaal 1:100 verplicht is, terwijl de bron aangeeft dat dit een voorkeur is maar niet verplicht.",
+          "source_urls": [
+            "https://www.enschede.nl/vergunning-voor-kamerverhuur"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "waarin de gebruiksfunctie en gebruiksoppervlakte van alle ruimtes zijn aangegeven en waarop alle (privé)kamers zijn genummerd en de totale gebruiksoppervlakte per bouwlaag is aangegeven",
+          "original_reference": "Plattegrondtekening op schaal 1:100 van alle verdiepingen",
+          "note": "De bron specificeert aanvullende eisen voor de plattegrondtekening die niet genoemd worden in de originele tekst, zoals het nummeren van kamers en aangeven van gebruiksoppervlaktes.",
+          "source_urls": [
+            "https://www.enschede.nl/vergunning-voor-kamerverhuur"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Doen van een melding brandveilig gebruik gebouwen als u 5 kamers of meer verhuurt",
+          "original_reference": "No matching information",
+          "note": "De bron vermeldt een specifieke verplichting voor verhuurders met 5 of meer kamers die niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.enschede.nl/informatie-voor-kamerverhuurders"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten enkele belangrijke aanvullende specificaties die niet in de originele tekst staan. Met name de gedetailleerde eisen voor plattegrondtekeningen, de flexibiliteit in schaalkeuze, en de specifieke meldingsplicht voor brandveilig gebruik bij 5 of meer kamers zijn belangrijke verschillen. Deze informatie is essentieel voor verhuurders om aan alle vereisten te voldoen."
+  }
+}

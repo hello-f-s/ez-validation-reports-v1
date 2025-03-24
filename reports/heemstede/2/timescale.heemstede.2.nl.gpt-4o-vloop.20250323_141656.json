@@ -1,0 +1,87 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HEEMSTEDE",
+      "contact": {
+        "phone": "(023) 548 58 68",
+        "email": "gemeente@heemstede.nl",
+        "website": "http://www.heemstede.nl"
+      }
+    },
+    "service": {
+      "id": 2,
+      "name": "Bord of spandoek plaatsen aan de openbare weg"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "Omgevingsvergunning voor reclame plaatsen: € 207,20",
+        "status": "false",
+        "note": "Het exacte bedrag voor een omgevingsvergunning voor reclame plaatsen in Heemstede is € 211,35 volgens de actuele legesverordening 2024 van de gemeente Heemstede."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.heemstede.nl/vergunningen/standplaatsvergunning-aanvragen",
+      "https://www.heemstede.nl/vergunningen/in-of-uitrit-aanleggen-omgevingsvergunning",
+      "https://www.heemstede.nl/vergunningen/marktstandplaatsvergunning",
+      "https://www.heemstede.nl/bestuur-en-organisatie/omgevingswet/de-omgevingswet-voor-u-als-inwoner-of-ondernemer"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.heemstede.nl/vergunningen/reclame-plaatsen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Standplaatsvergunning kan alleen worden aangevraagd als dit op basis van het bestemmingsplan is toegestaan of hiervoor al een omgevingsvergunning is verleend",
+          "original_reference": "Standplaatsvergunning: Vereist voor verkoop van goederen of diensten vanaf een kraam of wagen",
+          "note": "De originele tekst mist de belangrijke voorwaarde dat een standplaatsvergunning alleen mogelijk is als het bestemmingsplan dit toestaat of er een omgevingsvergunning is",
+          "source_urls": [
+            "https://www.heemstede.nl/vergunningen/standplaatsvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vergunning aanvragen minimaal 4 weken voordat u de standplaats gaat gebruiken",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt geen aanvraagtermijn voor de standplaatsvergunning, terwijl dit wel een belangrijke voorwaarde is",
+          "source_urls": [
+            "https://www.heemstede.nl/vergunningen/standplaatsvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De Omgevingswet verplicht hen om u op tijd te informeren over hun plannen. we noemen dat participatie. Dat geldt ook als u zelf een vergunning aanvraagt.",
+          "original_reference": "Het participatieproces, zoals vermeld onder de Omgevingswet, kan echter onderdeel uitmaken van bezwaarprocedures",
+          "note": "De originele tekst beschrijft participatie incorrect als onderdeel van bezwaarprocedures, terwijl het een verplichte voorwaarde is bij de aanvraag zelf",
+          "source_urls": [
+            "https://www.heemstede.nl/bestuur-en-organisatie/omgevingswet/de-omgevingswet-voor-u-als-inwoner-of-ondernemer"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen ontbrekende of onjuiste informatie over vergunningsvoorwaarden. De originele tekst mist cruciale informatie over aanvraagtermijnen en bestemmingsplanvereisten voor standplaatsvergunningen. Ook wordt het participatieproces onder de Omgevingswet niet correct weergegeven. Deze informatie is essentieel voor een correcte dienstverlening aan inwoners."
+  }
+}

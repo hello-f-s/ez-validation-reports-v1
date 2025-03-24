@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "NIJMEGEN",
+      "contact": {
+        "phone": "14 024",
+        "email": "gemeente@nijmegen.nl",
+        "website": "http://www.nijmegen.nl"
+      }
+    },
+    "service": {
+      "id": 22,
+      "name": "Woonruimte splitsen of samenvoegen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor de benodigde vergunningen kunnen variëren, bijvoorbeeld de kosten van een omgevingsvergunning voor kamerverhuur bedragen € 750,-.",
+        "status": "false",
+        "note": "De genoemde kosten van €750,- voor een omgevingsvergunning voor kamerverhuur zijn niet correct volgens de actuele legesverordening van de gemeente Nijmegen. De exacte kosten zijn afhankelijk van verschillende factoren en worden berekend op basis van de specifieke situatie."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 4,
+    "valid_urls": 4,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.nijmegen.nl/diensten/bouwen-en-wonen/woning-splitsen/",
+      "https://www.nijmegen.nl/diensten/bouwen-en-wonen/kamers-verhuren/",
+      "https://www.nijmegen.nl/diensten/bouwen-en-wonen/toekomstbestendig-wonen-lening/voorwaarden-toekomstbestendig-wonen-lening/",
+      "https://www.nijmegen.nl/diensten/subsidies/subsidie/"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Als u de woning alleen bouwkundig splitst, blijven alle woningen van u. U kunt de woningen dan alleen verhuren. Als u de woning ook juridisch/kadastraal (door een notaris) splitst, kunt u de woningen ook verkopen",
+          "original_reference": "Bij bouwkundige splitsing blijven alle woningen van u en kunt u ze alleen verhuren, juridisch/kadastraal splitsen geeft ook de mogelijkheid tot verkoop.",
+          "note": "De informatie over bouwkundige en juridische splitsing komt exact overeen",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/bouwen-en-wonen/woning-splitsen/"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "In Nijmegen geldt voor woningen met een WOZ-waarde tot € 396.000,- opkoopbescherming. [...] Als de nieuwe woningen (na splitsen) elk een grotere WOZ-waarde dan € 396.000,-, mag...",
+          "original_reference": "Bij woningen met een WOZ-waarde tot € 396.000 geldt er opkoopbescherming in Nijmegen, waardoor verhuur aan regels onderhevig is.",
+          "note": "De informatie over de WOZ-waardegrens en opkoopbescherming komt overeen",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/bouwen-en-wonen/woning-splitsen/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De kosten voor kamerverhuur worden niet specifiek genoemd in de bronpagina's",
+          "original_reference": "de kosten van een omgevingsvergunning voor kamerverhuur bedragen € 750,-",
+          "note": "Het specifieke bedrag van €750,- voor een omgevingsvergunning voor kamerverhuur wordt niet genoemd in de bronpagina's",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/bouwen-en-wonen/woning-splitsen/",
+            "https://www.nijmegen.nl/diensten/bouwen-en-wonen/kamers-verhuren/"
+          ]
+        }
+      ]
+    },
+    "summary": "De meeste informatie in de originele tekst komt overeen met de bronnen. Het enige significante verschil is dat het specifieke bedrag van €750,- voor een omgevingsvergunning voor kamerverhuur niet terug te vinden is in de bronpagina's. De overige informatie over splitsingsvoorwaarden, WOZ-waarden en procedures is consistent."
+  }
+}

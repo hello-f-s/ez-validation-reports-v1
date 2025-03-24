@@ -1,0 +1,91 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LOPIK",
+      "contact": {
+        "phone": "(0348) 55 99 55",
+        "email": "gemeente@lopik.nl",
+        "website": "http://www.lopik.nl"
+      }
+    },
+    "service": {
+      "id": 18,
+      "name": "Ventvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "Om een exploitatievergunning voor een horecabedrijf in Lopik aan te vragen, moet de houder of leidinggevende minimaal 21 jaar oud zijn en van onbesproken gedrag.",
+        "status": "false",
+        "note": "Volgens de APV van gemeente Lopik moet de houder of leidinggevende minimaal 18 jaar oud zijn, niet 21 jaar."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 4,
+    "valid_urls": 4,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.lopik.nl/milieu-vergunning-of-melding",
+      "https://www.lopik.nl/exploitatievergunning-horecabedrijf",
+      "https://www.lopik.nl/terras-plaatsen",
+      "https://www.lopik.nl/huisvestingsvergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 4,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U ontvangt binnen 8 weken bericht of u de vergunning krijgt.",
+          "original_reference": "Voor een reguliere vergunningsaanvraag ontvangt u binnen acht weken bericht. Deze termijn kan met zes weken worden verlengd. Bij een ingewikkelde aanvraag bedraagt de termijn 26 weken.",
+          "note": "De bronpagina vermeldt alleen een termijn van 8 weken zonder de mogelijke verlengingen die in de originele tekst worden genoemd.",
+          "source_urls": [
+            "https://www.lopik.nl/terras-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De kosten voor het aanvragen van een huisvestingsvergunning bedragen € 20,-.",
+          "original_reference": "De kosten voor het behandelen van vergunningaanvragen variëren jaarlijks en zijn vastgelegd in de 'Verordening op de heffing en invordering van leges'.",
+          "note": "De bronpagina noemt een specifiek bedrag voor de huisvestingsvergunning, terwijl de originele tekst alleen spreekt over variabele kosten.",
+          "source_urls": [
+            "https://www.lopik.nl/huisvestingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor bepaalde woningen met een huurprijs tot € 710,-",
+          "original_reference": "Voor bepaalde huurwoningen met een huurprijs tot € 710,-",
+          "note": "De bronpagina specificeert dat het om 'goedkope huurwoningen' gaat, wat een belangrijke verduidelijking is van het type woning.",
+          "source_urls": [
+            "https://www.lopik.nl/huisvestingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Doe de melding minimaal 4 weken voordat u uw activiteiten begint.",
+          "original_reference": "No matching information",
+          "note": "Deze belangrijke termijn voor het doen van meldingen ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.lopik.nl/milieu-vergunning-of-melding"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont enkele belangrijke verschillen tussen de bronpagina's en de originele tekst. De belangrijkste verschillen betreffen de verwerkingstermijnen van vergunningen, specifieke kosten voor de huisvestingsvergunning, en aanvullende termijnen voor meldingen die niet in de originele tekst zijn opgenomen. Ook zijn er enkele verduidelijkingen gevonden met betrekking tot de type woningen waarvoor een huisvestingsvergunning nodig is."
+  }
+}

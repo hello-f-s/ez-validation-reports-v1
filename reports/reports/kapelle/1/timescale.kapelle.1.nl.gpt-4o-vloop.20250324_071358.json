@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "KAPELLE",
+      "contact": {
+        "phone": "(0113) 33 31 10",
+        "email": "gemeente@kapelle.nl",
+        "website": "http://www.kapelle.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "Voor vragen over de alcoholvergunning kunt u contact opnemen met de gemeente Kapelle via telefoonnummer 14 0113 of via email op gemeente@kapelle.nl.",
+        "status": "false",
+        "note": "Het juiste e-mailadres van de gemeente Kapelle is info@kapelle.nl, niet gemeente@kapelle.nl volgens de officiële website van de gemeente Kapelle."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 2,
+    "invalid_urls": 3,
+    "accuracy_percentage": 40.0,
+    "valid_urls_list": [
+      "https://kapelle.nl/alcoholwet-vergunning",
+      "https://kapelle.nl/alcohol-schenken-tijdens-evenement"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.kapelle.nl/node/224",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.kapelle.nl/node/225",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://kapelle.nl/exploitatievergunning-horecabedrijf",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Er zijn binnen de vereniging of stichting minstens twee leidinggevenden met een SVH Verklaring Sociale Hygiëne. Wanneer er alcohol wordt geschonken is een van deze leidinggevenden aanwezig of een barmedewerker die de instructie 'Verantwoord alcoholgebruik' heeft gevolgd.",
+          "original_reference": "Voor verenigingen en stichtingen: De uren waarop alcohol wordt geschonken en de leeftijdsgrens moeten zichtbaar worden opgehangen. De huisregels rondom alcoholgebruik dienen in het bestuursreglement te zijn opgenomen.",
+          "note": "De bronpagina vermeldt aanvullende specifieke eisen voor verenigingen en stichtingen die niet in de originele tekst staan, namelijk de vereiste van twee leidinggevenden met SVH Verklaring en de mogelijkheid van een geïnstrueerde barmedewerker.",
+          "source_urls": [
+            "https://kapelle.nl/alcoholwet-vergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Op het evenement mag u geen sterke drank (>15% alcohol) schenken en verkopen.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat een specifieke beperking voor evenementen die niet in de originele tekst wordt genoemd, namelijk het verbod op sterke drank boven 15% alcohol.",
+          "source_urls": [
+            "https://kapelle.nl/alcohol-schenken-tijdens-evenement"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont twee belangrijke verschillen: (1) aanvullende specifieke eisen voor verenigingen en stichtingen betreffende het aantal leidinggevenden en alternatieve aanwezigheid van geïnstrueerde barmedewerkers, en (2) een specifieke beperking voor evenementen aangaande sterke drank die niet in de originele tekst wordt genoemd. Deze informatie is relevant voor de volledigheid van de voorwaarden."
+  }
+}

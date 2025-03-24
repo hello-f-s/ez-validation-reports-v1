@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ERMELO",
+      "contact": {
+        "phone": "(0341) 56 73 21",
+        "email": "gemeente@ermelo.nl",
+        "website": "http://www.ermelo.nl"
+      }
+    },
+    "service": {
+      "id": 2,
+      "name": "Bord of spandoek plaatsen aan de openbare weg"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor een objectontheffing bedragen € 63,70.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Ermelo bedragen de kosten voor een objectontheffing € 65,20 voor 2024."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.ermelo.nl/evenementen-en-horeca/standplaats-aanvragen",
+      "https://www.ermelo.nl/evenementen-en-horeca/horeca-en-alcohol/terras-plaatsen",
+      "https://www.ermelo.nl/omgevingsplein/bouwen-en-verbouwen/dakopbouw",
+      "https://www.ermelo.nl/omgevingsplein/zie-ook/voorwerp-plaatsen-op-of-aan-de-weg",
+      "https://www.ermelo.nl/evenementen-en-horeca/evenement-of-activiteit-organiseren"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Wilt u voorwerpen plaatsen op gemeentegrond? [...] U heeft dan een objectontheffing nodig.",
+          "original_reference": "U heeft een objectontheffing nodig om voorwerpen zoals borden of spandoeken op gemeentegrond te plaatsen.",
+          "note": "De basisvereiste voor een objectontheffing komt overeen met de originele tekst",
+          "source_urls": [
+            "https://www.ermelo.nl/omgevingsplein/zie-ook/voorwerp-plaatsen-op-of-aan-de-weg"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voeg bij uw aanvraag een duidelijke locatietekening of schets toe met de plaats waar het voorwerp komt te staan en de afmetingen van het voorwerp.",
+          "original_reference": "Locatie waar het voorwerp geplaatst wordt. Afmetingen van het voorwerp.",
+          "note": "De bronpagina specificeert dat er een duidelijke locatietekening of schets moet worden toegevoegd, wat niet vermeld staat in de originele tekst",
+          "source_urls": [
+            "https://www.ermelo.nl/omgevingsplein/zie-ook/voorwerp-plaatsen-op-of-aan-de-weg"
+          ]
+        }
+      ]
+    },
+    "summary": "De meeste informatie komt overeen, maar er is één belangrijk verschil gevonden: de bronpagina vereist specifiek een locatietekening of schets bij de aanvraag, terwijl dit niet vermeld wordt in de originele tekst. Dit is een belangrijke aanvullende eis die aanvragers moeten weten."
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DEVENTER",
+      "contact": {
+        "phone": "14 0570",
+        "email": "gemeente@deventer.nl",
+        "website": "http://www.deventer.nl"
+      }
+    },
+    "service": {
+      "id": 8,
+      "name": "Marktvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "U kunt de marktstandplaatsvergunning online aanvragen met eHerkenning.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Deventer moet een marktstandplaatsvergunning worden aangevraagd via een formulier dat kan worden gedownload of opgehaald bij de gemeente. Er is geen mogelijkheid om dit online met eHerkenning aan te vragen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.deventer.nl/terrasvergunning",
+      "https://www.deventer.nl/marktstandplaats",
+      "https://www.deventer.nl/markten/marktstandplaats-aanvragen",
+      "https://www.deventer.nl/markten/standplaatsvergunning-aanvragen",
+      "https://www.deventer.nl/vooroverleg"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.deventer.nl/marktstandplaats-aanvragen",
+        "reason": "INVALID: Error scraping https://www.deventer.nl/marktstandplaats-aanvragen: 404 Client Error: Not Found for url: https://www.deventer.nl/marktstandplaats-aanvragen"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 4,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor de aanvraag van een vergunning betaalt u € 50,50 aan leges.",
+          "original_reference": "De kosten voor de vergunning staan vermeld op de site, maar specifieke bedragen worden niet genoemd in het beschikbare materiaal.",
+          "note": "De bronpagina noemt een specifiek bedrag voor leges (€50,50) terwijl de originele tekst geen concrete bedragen vermeldt.",
+          "source_urls": [
+            "https://www.deventer.nl/marktstandplaats"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Doe dit uiterlijk 3 weken voordat u de standplaats wilt innemen.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt een specifieke aanvraagtermijn van 3 weken vooraf, wat niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.deventer.nl/markten/standplaatsvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Dient u een aanvraag in? Houd er dan rekening mee dat wij verplicht zijn deze te publiceren. Dit is geregeld in artikel 12 van de Bekendmakingswet.",
+          "original_reference": "We publiceren uw aanvraag, wat nog niet betekent dat deze is goedgekeurd.",
+          "note": "De bronpagina geeft meer specifieke informatie over de wettelijke basis (artikel 12 Bekendmakingswet) voor publicatie van aanvragen.",
+          "source_urls": [
+            "https://www.deventer.nl/marktstandplaats",
+            "https://www.deventer.nl/markten/standplaatsvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Neem dan contact op met de marktmeesters via markt.havens@deventer.nl of bel 14 0570.",
+          "original_reference": "neem dan contact op met de marktmeesters",
+          "note": "De bronpagina vermeldt specifieke contactgegevens (e-mail en telefoonnummer) die ontbreken in de originele tekst.",
+          "source_urls": [
+            "https://www.deventer.nl/marktstandplaats"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten belangrijke aanvullende informatie die ontbreekt in de originele tekst, waaronder concrete legeskosten (€50,50), een specifieke aanvraagtermijn (3 weken vooraf), de wettelijke basis voor publicatie van aanvragen, en specifieke contactgegevens voor de marktmeesters. Deze details maken de informatie concreter en praktischer voor aanvragers."
+  }
+}

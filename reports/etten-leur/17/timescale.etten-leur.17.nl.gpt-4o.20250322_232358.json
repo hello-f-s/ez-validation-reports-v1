@@ -1,0 +1,102 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ETTEN-LEUR",
+      "contact": {
+        "phone": "14 076",
+        "email": "info@etten-leur.nl",
+        "website": "http://www.etten-leur.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 11,
+    "false_sentences": 3,
+    "accuracy_percentage": 78.6,
+    "false_statements": [
+      {
+        "sentence": "De aanvraag moet minstens 8 weken van tevoren ingediend worden.",
+        "status": "false",
+        "note": "Er is geen specifieke minimale termijn van 8 weken vooraf voor het indienen van de aanvraag volgens de officiële website van gemeente Etten-Leur."
+      },
+      {
+        "sentence": "In behandeling nemen van een Alcoholwetvergunning met Horeca-exploitatievergunning aanvraag: € 213,-",
+        "status": "false",
+        "note": "Dit bedrag komt niet overeen met de actuele tarieven op de website van gemeente Etten-Leur."
+      },
+      {
+        "sentence": "Wijziging inrichting voor Horeca-exploitatievergunning: € 47,-",
+        "status": "false",
+        "note": "Dit tarief komt niet overeen met de actuele tarieven op de website van gemeente Etten-Leur."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.etten-leur.nl/product/omgevingsvergunning-aanvragen/",
+      "https://www.etten-leur.nl/product/horeca-en-slijterijvergunning/",
+      "https://www.etten-leur.nl/product/ventvergunning/",
+      "https://www.etten-leur.nl/product/orienteren-bij-verbouwplannen/",
+      "https://www.etten-leur.nl/product/terrasvergunning/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://gemeente.etten-leur.nl/document/horeca-en-slijterijvergunning",
+        "reason": "INVALID: Error scraping https://gemeente.etten-leur.nl/document/horeca-en-slijterijvergunning: HTTPSConnectionPool(host='gemeente.etten-leur.nl', port=443): Max retries exceeded with url: /document/horeca-en-slijterijvergunning (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1080425d0>: Failed to resolve 'gemeente.etten-leur.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://gemeente.etten-leur.nl/document/terrasvergunning",
+        "reason": "INVALID: Error scraping https://gemeente.etten-leur.nl/document/terrasvergunning: HTTPSConnectionPool(host='gemeente.etten-leur.nl', port=443): Max retries exceeded with url: /document/terrasvergunning (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x108043610>: Failed to resolve 'gemeente.etten-leur.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "In behandeling nemen van een aanvraag Horeca-Exploitatievergunning: € 410,-",
+          "original_reference": "No matching information",
+          "note": "Dit bedrag staat niet vermeld in de originele tekst maar is wel een belangrijk kostenaspect voor horeca-exploitatie",
+          "source_urls": [
+            "https://www.etten-leur.nl/product/terrasvergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "In behandeling nemen van een aanvraag ontheffing Alcoholwet voor 1 editie € 68,- / voor 3 jaar € 76,-",
+          "original_reference": "No matching information",
+          "note": "Deze specifieke kosten voor ontheffingen staan niet in de originele tekst maar zijn wel relevant voor terrasgerelateerde vergunningen",
+          "source_urls": [
+            "https://www.etten-leur.nl/product/terrasvergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "ondergeschikte wijziging van een ontheffing Alcoholwet € 19,-",
+          "original_reference": "No matching information",
+          "note": "Dit tarief voor kleine wijzigingen ontbreekt in de originele tekst",
+          "source_urls": [
+            "https://www.etten-leur.nl/product/terrasvergunning/"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten aanvullende specifieke kostentarieven die niet in de originele tekst zijn opgenomen. Het gaat vooral om kosten voor de horeca-exploitatievergunning (€410,-), verschillende soorten ontheffingen van de Alcoholwet en ondergeschikte wijzigingen. Deze informatie is relevant voor ondernemers die een terras willen exploiteren."
+  }
+}

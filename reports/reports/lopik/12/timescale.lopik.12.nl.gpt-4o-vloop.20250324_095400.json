@@ -1,0 +1,86 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LOPIK",
+      "contact": {
+        "phone": "(0348) 55 99 55",
+        "email": "gemeente@lopik.nl",
+        "website": "http://www.lopik.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 42,
+    "true_sentences": 41,
+    "false_sentences": 1,
+    "accuracy_percentage": 97.6,
+    "false_statements": [
+      {
+        "sentence": "Als de gemeente niet binnen de termijn beslist, krijgt u de vergunning automatisch (van rechtswege).",
+        "status": "false",
+        "note": "Dit is niet in alle gevallen correct. Volgens de Wet algemene bepalingen omgevingsrecht (Wabo) geldt de van rechtswege vergunningverlening niet voor alle type aanvragen, bijvoorbeeld niet bij complexe milieuvergunningen of aanvragen die uitgebreide voorbereidingsprocedure vereisen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 4,
+    "valid_urls": 3,
+    "invalid_urls": 1,
+    "accuracy_percentage": 75.0,
+    "valid_urls_list": [
+      "https://www.lopik.nl/milieu-vergunning-of-melding",
+      "https://www.lopik.nl/omgevingsvergunning-strijdig-gebruik",
+      "https://www.lopik.nl/brandveiligheid-melding-of-vergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.lopik.nl/bedrijfsactiviteiten-wijzigen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Doe de melding minimaal 4 weken voordat u uw activiteiten begint.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt geen minimale termijn voor het doen van een melding, terwijl de bron specificeert dat dit minimaal 4 weken voor aanvang van activiteiten moet gebeuren.",
+          "source_urls": [
+            "https://www.lopik.nl/milieu-vergunning-of-melding"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Let op! Hebt u ook een omgevingsvergunning nodig voor bouwen? Dan hoeft u daar niet een aparte omgevingsvergunning voor aan te vragen. U doet 1 aanvraag voor het bouwen en het gebruik in strijd met het bestemmingsplan.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat bij combinatie van bouwen en strijdig gebruik één gecombineerde aanvraag volstaat, terwijl dit wel expliciet wordt vermeld in de bronpagina.",
+          "source_urls": [
+            "https://www.lopik.nl/omgevingsvergunning-strijdig-gebruik"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Let op! Vraagt u geen omgevingsvergunning aan voor brandveilig gebruik van het gebouw, terwijl dit wel had gemoeten, dan bent u strafbaar.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de strafbaarheid bij het niet aanvragen van een brandveiligheidsvergunning wanneer dit wel verplicht is.",
+          "source_urls": [
+            "https://www.lopik.nl/brandveiligheid-melding-of-vergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten enkele belangrijke aanvullende details die niet in de originele tekst staan: een verplichte 4-weken termijn voor meldingen, de mogelijkheid om bouwen en strijdig gebruik in één aanvraag te combineren, en de strafbaarheid bij het niet aanvragen van een verplichte brandveiligheidsvergunning. Deze informatie is relevant voor de volledigheid en correcte naleving van de procedures."
+  }
+}

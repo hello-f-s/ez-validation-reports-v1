@@ -1,0 +1,107 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HOOGEVEEN",
+      "contact": {
+        "phone": "14 0528",
+        "email": "info@hoogeveen.nl",
+        "website": "http://www.hoogeveen.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 27,
+    "true_sentences": 23,
+    "false_sentences": 4,
+    "accuracy_percentage": 85.2,
+    "false_statements": [
+      {
+        "sentence": "Voor vragen kunt u contact opnemen met ParkeerService Hoogeveen via telefoonnummer 033 - 24 73 00 0 of per e-mail op info@hoogeveen.nl.",
+        "status": "false",
+        "note": "Het telefoonnummer is onjuist. Het correcte algemene nummer voor de gemeente Hoogeveen is 14 0528."
+      },
+      {
+        "sentence": "Als bewoner van De Kaap kunt u het \"Abonnement bewoners\" aanvragen door te mailen naar info@hoogeveen.nl.",
+        "status": "false",
+        "note": "Parkeervergunningen worden niet via e-mail aangevraagd maar via het digitale loket van de gemeente Hoogeveen."
+      },
+      {
+        "sentence": "Maandonheffing: € 45,-",
+        "status": "false",
+        "note": "Dit tarief komt niet overeen met de actuele tarieven op de website van de gemeente Hoogeveen."
+      },
+      {
+        "sentence": "Er zijn online bronnen en links beschikbaar voor meer informatie over parkeerdiensten op hoogeveen.parkeerservice.nl.",
+        "status": "false",
+        "note": "Deze URL bestaat niet. Parkeerinformatie is te vinden op de officiële website van de gemeente Hoogeveen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.hoogeveen.nl/parkeren-verkeer-en-vervoer/parkeervergunning-aanvragen",
+      "https://www.hoogeveen.nl/vergunningen/omgevingsvergunningen",
+      "https://www.hoogeveen.nl/vergunningen/ontheffing-voor-rijden-in-voetgangersgebied",
+      "https://www.hoogeveen.nl/vergunningen/standplaatsvergunning",
+      "https://www.hoogeveen.nl/raad-en-college/woo-verzoek"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 4,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vanaf 4 maart 2024 is het centrum van Hoogeveen met paaltjes afgesloten voor auto's en vrachtauto's.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de specifieke datum van invoering van de afsluiting met paaltjes, wat een belangrijke wijziging in de toegangsregeling is.",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/ontheffing-voor-rijden-in-voetgangersgebied"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Marktkooplieden kunnen elke donderdag van 5.00 tot 8.30 uur en van 13.30 tot 15.00 uur, en elke zaterdag tussen 5.00 en 8.30 uur en van 16.30 tot 18.00 uur het voetgangersgebied inrijden",
+          "original_reference": "Marktkooplieden kunnen elke donderdag en zaterdag op bepaalde tijden het voetgangersgebied inrijden zonder ontheffing.",
+          "note": "De originele tekst specificeert niet de exacte tijdstippen waarop marktkooplieden toegang hebben tot het voetgangersgebied.",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/ontheffing-voor-rijden-in-voetgangersgebied"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De jaarlijkse ontheffing voor bewoners met een eigen parkeerplaats in dit gebied is gratis",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat de jaarlijkse ontheffing gratis is voor bewoners met een eigen parkeerplaats.",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/ontheffing-voor-rijden-in-voetgangersgebied"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "033 - 24 73 00 0",
+          "original_reference": "033 - 24 73 00 0",
+          "note": "Het telefoonnummer wordt in beide teksten genoemd, maar in de bronpagina wordt dit specifiek genoemd als het nummer van ParkeerService, wat duidelijker is dan in de originele tekst.",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/ontheffing-voor-rijden-in-voetgangersgebied"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de nieuwe informatie over de afsluiting van het centrum met paaltjes vanaf 4 maart 2024, specifiekere tijdstippen voor marktkooplieden, en de vermelding dat jaarlijkse ontheffingen gratis zijn voor bewoners met eigen parkeerplaats. Deze informatie maakt de voorwaarden en mogelijkheden duidelijker dan in de originele tekst."
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MAASSLUIS",
+      "contact": {
+        "phone": "14 010",
+        "email": "gemeente@maassluis.nl",
+        "website": "http://www.maassluis.nl"
+      }
+    },
+    "service": {
+      "id": 10,
+      "name": "Nachtregister bijhouden"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "Het gemeentehuis is te bezoeken op Koningshoek 93.05, 3144 BA Maassluis.",
+        "status": "false",
+        "note": "Het gemeentehuis van Maassluis is gevestigd op Koningshoek 93.015 (niet 93.05), 3144 BA Maassluis volgens de officiële website van de gemeente Maassluis."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.maassluis.nl/melden-verlaatje",
+      "https://www.maassluis.nl/meldpunt-overbodige-regelgeving",
+      "https://www.maassluis.nl/aanschrijving-door-de-gemeente",
+      "https://www.maassluis.nl/exploitatievergunning-horecabedrijf",
+      "https://www.maassluis.nl/belastingen-betalingsregeling"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "U mag maximaal 8 keer per jaar een Verlaatje melden. Een Verlaatje geldt tot 04.00 uur. Op oudejaarsnacht (nacht van 31 december op 1 januari) geldt een Verlaatje tot uiterlijk 05.00 uur.",
+          "original_reference": "Een 'Verlaatje' is een mogelijkheid voor horecabedrijven in Maassluis om acht keer per jaar hun sluitingstijd te verlengen... De verlenging is geldig tot 04.00 uur, behalve op oudejaarsnacht, wanneer de verlenging tot 05.00 uur geldt.",
+          "note": "De informatie over het aantal Verlaatjes en de sluitingstijden komt exact overeen",
+          "source_urls": [
+            "https://www.maassluis.nl/melden-verlaatje"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U stelt de burgemeester ten minste drie werkdagen vóór u uw Verlaatje wilt gebruiken hiervan in kennis.",
+          "original_reference": "De aanvraag voor een Verlaatje moet drie werkdagen van tevoren digitaal bij de burgemeester worden gemeld.",
+          "note": "De originele tekst specificeert dat de melding 'digitaal' moet gebeuren, terwijl de brontekst deze specificatie niet vermeldt",
+          "source_urls": [
+            "https://www.maassluis.nl/melden-verlaatje"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Horeca-inrichtingen, waartegen een bestuurlijke maatregel loopt, kunnen geen ontheffing sluitingstijden...",
+          "original_reference": "Een Verlaatje kan worden ingetrokken als er overtredingen van voorschriften zijn of bij lopende bestuurlijke maatregelen.",
+          "note": "De brontekst is strenger en stelt dat bij lopende bestuurlijke maatregelen geen ontheffing mogelijk is, terwijl de originele tekst alleen spreekt over mogelijke intrekking",
+          "source_urls": [
+            "https://www.maassluis.nl/melden-verlaatje"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont enkele belangrijke nuanceverschillen in de voorwaarden en procedures. De brontekst is op sommige punten strenger wat betreft bestuurlijke maatregelen en minder specifiek over de wijze van aanmelding. De kern van de regeling (aantal verlaatjes, tijden) komt wel overeen. De verschillen zitten vooral in de details van de uitvoering en voorwaarden."
+  }
+}

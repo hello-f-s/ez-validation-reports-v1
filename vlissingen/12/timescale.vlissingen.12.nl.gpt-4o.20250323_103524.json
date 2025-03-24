@@ -1,0 +1,71 @@
+{
+  "context": {
+    "municipality": {
+      "name": "VLISSINGEN",
+      "contact": {
+        "phone": "(0118) 48 70 00",
+        "email": "gemeente@vlissingen.nl",
+        "website": "http://www.vlissingen.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "Een aanvraag met de activiteit 'Bouwen' moet de gemeente binnen 8 weken afhandelen.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Vlissingen geldt voor reguliere aanvragen een beslistermijn van maximaal 8 weken, die eenmalig met 6 weken verlengd kan worden. De absolute termijn van 8 weken klopt dus niet."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 0,
+    "invalid_urls": 7,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.vlissingen.nl/omgevingsvergunning-vooroverleg",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://Omgevingsloket.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.vlissingen.nl/omgevingsvergunning-voor-milieu",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.vlissingen.nl/milieubelastende-activiteit-op-locatie",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://example.com/legesvlissingen2025",
+        "reason": "INVALID: Error scraping https://example.com/legesvlissingen2025: 404 Client Error: Not Found for url: https://example.com/legesvlissingen2025"
+      },
+      {
+        "url": "https://www.vlissingen.nl/bouw-en-verbouw-omgevingsvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.vlissingen.nl/omgevingsvergunning-voor-bouwen-of-verbouwen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  }
+}

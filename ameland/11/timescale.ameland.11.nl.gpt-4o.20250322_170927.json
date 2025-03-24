@@ -1,0 +1,86 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AMELAND",
+      "contact": {
+        "phone": "(0519) 55 55 55",
+        "email": "info@ameland.nl",
+        "website": "http://www.ameland.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Voor uitgebreide aanvragen is dit minimaal 6 maanden van tevoren.",
+        "status": "false",
+        "note": "De gemeente Ameland specificeert geen termijn van 6 maanden voor uitgebreide aanvragen. De standaard aanvraagtermijn van 8 weken vooraf geldt voor alle type aanvragen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.ameland.nl/onttrekkingsvergunning",
+      "https://www.Ameland.nl",
+      "https://www.ameland.nl/bestemmingsplan-aanpassen",
+      "https://www.ameland.nl/uitrit-of-inrit-aanleggen",
+      "https://www.ameland.nl/omgevingsvergunning",
+      "https://www.ameland.nl/boom-kappen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Let op! Informatie op deze pagina kan verouderd zijn vanwege de overgang naar de Omgevingswet per 1 januari 2024.",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden een belangrijke waarschuwing over de overgang naar de Omgevingswet die niet in de originele tekst staat. Dit is essentiële contextinformatie voor aanvragers.",
+          "source_urls": [
+            "https://www.ameland.nl/uitrit-of-inrit-aanleggen",
+            "https://www.ameland.nl/bestemmingsplan-aanpassen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bij een uitgebreide aanvraag maakt de gemeente eerst een ontwerpbesluit over uw aanvraag. Dit ontwerpbesluit is nog geen definitief besluit. Iedereen kan binnen 6 weken zijn of haar mening over dit ontwerpbesluit geven. Dit heet een zienswijze.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over het ontwerpbesluit en de mogelijkheid tot het indienen van zienswijzen bij uitgebreide aanvragen.",
+          "source_urls": [
+            "https://www.ameland.nl/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Binnen 8 weken ontvangt u bericht of u de vergunning krijgt. De gemeente kan deze termijn met 6 weken verlengen.",
+          "original_reference": "Gewone aanvraag: beslistermijn van 8 weken, verlengbaar met 6 weken.",
+          "note": "De behandeltermijnen voor reguliere aanvragen komen overeen in beide bronnen.",
+          "source_urls": [
+            "https://www.ameland.nl/uitrit-of-inrit-aanleggen",
+            "https://www.ameland.nl/omgevingsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen het ontbreken van informatie over de nieuwe Omgevingswet (per 1 januari 2024) en het proces rond ontwerpbesluiten en zienswijzen in de originele tekst. Deze informatie is essentieel voor aanvragers om de juiste procedures te volgen. De basistermijnen voor vergunningverlening zijn wel consistent tussen de bronnen."
+  }
+}

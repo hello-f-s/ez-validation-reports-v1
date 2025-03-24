@@ -1,0 +1,98 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AMELAND",
+      "contact": {
+        "phone": "(0519) 55 55 55",
+        "email": "info@ameland.nl",
+        "website": "http://www.ameland.nl"
+      }
+    },
+    "service": {
+      "id": 13,
+      "name": "Omzettingsvergunning voor kamerverhuur aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Er worden geen specifieke kosten vermeld voor het aanvragen van een omgevingsvergunning voor kamerverhuur op de website van Gemeente Ameland.",
+        "status": "false",
+        "note": "De gemeente Ameland vermeldt wel degelijk de legeskosten voor een omgevingsvergunning op hun website. Deze kosten zijn gebaseerd op de legesverordening en worden berekend als percentage van de bouwkosten."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.ameland.nl/huisvestingsvergunning",
+      "https://www.ameland.nl/uitrit-of-inrit-aanleggen",
+      "https://www.ameland.nl/bestemmingsplan-aanpassen",
+      "https://www.ameland.nl/omgevingsvergunning",
+      "https://www.ameland.nl/onttrekkingsvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://example.com",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 4,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Let op! Informatie op deze pagina kan verouderd zijn vanwege de overgang naar de Omgevingswet per 1 januari 2024.",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden een belangrijke waarschuwing over mogelijke veroudering van informatie door de nieuwe Omgevingswet, die niet in de originele tekst staat vermeld.",
+          "source_urls": [
+            "https://www.ameland.nl/uitrit-of-inrit-aanleggen",
+            "https://www.ameland.nl/bestemmingsplan-aanpassen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vragen? Maak een afspraak via tel. (0519) 555 555",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden specifieke contactgegevens voor vragen die niet in de originele tekst staan.",
+          "source_urls": [
+            "https://www.ameland.nl/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Overleg vooraf met de gemeente over uw plannen. Dan komt u niet voor verrassingen te staan. Dit heet een vooroverleg. Neem bij het maken van uw plannen zo vroeg mogelijk contact op met de gemeente.",
+          "original_reference": "Voor de uitgebreide procedure dient een vooroverleg met de gemeente te worden gehouden.",
+          "note": "De bronnen adviseren voor alle aanvragen vooroverleg, terwijl de originele tekst dit alleen voor uitgebreide procedures vermeldt.",
+          "source_urls": [
+            "https://www.ameland.nl/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Kosten: Afhankelijk van de bouwsom",
+          "original_reference": "Er worden geen specifieke kosten vermeld voor het aanvragen van een omgevingsvergunning voor kamerverhuur op de website van Gemeente Ameland.",
+          "note": "De bron vermeldt dat kosten afhankelijk zijn van de bouwsom, terwijl de originele tekst stelt dat er geen specifieke kosten worden vermeld.",
+          "source_urls": [
+            "https://www.ameland.nl/omgevingsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de waarschuwing over de nieuwe Omgevingswet per 2024, specifieke contactgegevens, een breder advies voor vooroverleg bij alle aanvragen, en duidelijkheid over kostenstructuur. Deze informatie maakt de procedures en voorwaarden concreter dan in de originele tekst."
+  }
+}

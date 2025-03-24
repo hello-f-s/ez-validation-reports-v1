@@ -1,0 +1,93 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ARNHEM",
+      "contact": {
+        "phone": "null",
+        "email": "null",
+        "website": "http://www.arnhem.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 22,
+    "false_sentences": 2,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Voor het vestigen van een nieuwe onderneming: € 1.363,45",
+        "status": "false",
+        "note": "Het actuele tarief voor een nieuwe horecaonderneming in Arnhem is € 1.397,55 volgens de gemeentelijke website"
+      },
+      {
+        "sentence": "Voor de overname van een bestaande onderneming: € 1.239,35",
+        "status": "false",
+        "note": "Het actuele tarief voor overname van een bestaande horecaonderneming in Arnhem is € 1.270,35 volgens de gemeentelijke website"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.arnhem.nl/Ondernemers/horeca/horeca_en_vergunningen",
+      "https://www.arnhem.nl/Ondernemers/horeca/horeca_en_vergunningen/Terrasvergunning",
+      "https://www.arnhem.nl/Ondernemers/horeca/exploitatievergunning",
+      "https://www.arnhem.nl/Ondernemers/horeca/drank_en_Horecawetvergunning",
+      "https://www.arnhem.nl/Ondernemers/horeca/horecaspreekuur"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.rechtspraak.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Dien dan een verzoek voor een telefonische afspraak in via het contactformulier",
+          "original_reference": "Maak een afspraak via de klantenservice of het contactformulier voor het horecaspreekuur",
+          "note": "De bron specificeert dat het om een telefonische afspraak gaat, terwijl de originele tekst algemener is over het type afspraak",
+          "source_urls": [
+            "https://www.arnhem.nl/Ondernemers/horeca/horecaspreekuur"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Zodra uw aanvraag compleet is, kunt u de aanvraag en bijbehorende stukken digitaal of per post indienen",
+          "original_reference": "Lever een complete aanvraag in, waarna deze op www.overheid.nl wordt gepubliceerd",
+          "note": "De bron vermeldt specifieke indienmethoden (digitaal/post) en noemt geen publicatie op overheid.nl",
+          "source_urls": [
+            "https://www.arnhem.nl/Ondernemers/horeca/horecaspreekuur"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Houd rekening met een behandeltermijn van minimaal een maand voor uw aanvraag",
+          "original_reference": "De beslistermijn bedraagt 12 weken",
+          "note": "Er is een discrepantie in de aangegeven behandeltermijn tussen de bron (1 maand) en de originele tekst (12 weken)",
+          "source_urls": [
+            "https://www.arnhem.nl/Ondernemers/horeca/horeca_en_vergunningen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de aanvraagprocedure en behandeltermijnen. De bronnen vermelden specifiekere details over de wijze van aanvragen (telefonisch/digitaal/post) en geven een kortere behandeltermijn aan dan de originele tekst. Ook ontbreekt in de bronnen de vermelding van publicatie op overheid.nl. De overige informatie komt grotendeels overeen met de originele tekst."
+  }
+}

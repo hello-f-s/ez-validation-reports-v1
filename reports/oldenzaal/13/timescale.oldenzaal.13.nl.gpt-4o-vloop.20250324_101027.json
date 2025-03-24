@@ -1,0 +1,89 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OLDENZAAL",
+      "contact": {
+        "phone": "(0541) 58 81 11",
+        "email": "info@oldenzaal.nl",
+        "website": "http://www.oldenzaal.nl"
+      }
+    },
+    "service": {
+      "id": 13,
+      "name": "Omzettingsvergunning voor kamerverhuur aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "Hulp bij digitale aanvragen is beschikbaar in de bibliotheek Oldenzaal op donderdagmiddag.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Oldenzaal wordt er geen specifieke hulp bij digitale aanvragen aangeboden in de bibliotheek op donderdagmiddag. Voor hulp bij aanvragen kan men terecht bij het stadhuis tijdens de reguliere openingstijden."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 4,
+    "valid_urls": 3,
+    "invalid_urls": 1,
+    "accuracy_percentage": 75.0,
+    "valid_urls_list": [
+      "https://www.oldenzaal.nl/omgevingsvergunning",
+      "https://www.oldenzaal.nl/aanleggen",
+      "https://www.oldenzaal.nl/reclame"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.oldenzaal.nl/bouwen-en-verbouwen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Telefoon (0541) 58 81 11 of 14 0541, WhatsApp 06 14 10 54 96",
+          "original_reference": "telefoonnummer 14 0541 of e-mail info@oldenzaal.nl",
+          "note": "De bronnen vermelden een extra telefoonnummer en WhatsApp-nummer die niet in de originele tekst staan. Ook ontbreekt het e-mailadres in de bronnen.",
+          "source_urls": [
+            "https://www.oldenzaal.nl/reclame",
+            "https://www.oldenzaal.nl/aanleggen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Adres: Ganzenmarkt 1, 7571 CD Oldenzaal, Postadres: Postbus 354, 7570 AJ Oldenzaal",
+          "original_reference": "No matching information",
+          "note": "Het fysieke adres en postadres van de gemeente ontbreken in de originele tekst maar worden wel vermeld in de bronnen.",
+          "source_urls": [
+            "https://www.oldenzaal.nl/reclame",
+            "https://www.oldenzaal.nl/aanleggen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wij werken alleen op afspraak. Maak zelf online uw afspraak of bel telefoonnummer 14 0541 tijdens kantooruren.",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden expliciet dat er alleen op afspraak wordt gewerkt, wat niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.oldenzaal.nl/reclame",
+            "https://www.oldenzaal.nl/aanleggen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de contactgegevens en dienstverlening. De bronnen bevatten aanvullende contactmogelijkheden (extra telefoonnummer en WhatsApp), het complete adres van de gemeente, en vermelden expliciet dat er alleen op afspraak wordt gewerkt. Deze informatie ontbreekt in de originele tekst. De kern van de informatie over de omgevingsvergunning komt wel overeen."
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ROERMOND",
+      "contact": {
+        "phone": "14 0475",
+        "email": "mail@roermond.nl",
+        "website": "http://www.roermond.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "U kunt 24 uur per dag online een afspraak maken of telefonisch tussen 8:30 en 17:00 uur.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Roermond is telefonisch een afspraak maken mogelijk tussen 9:00 en 17:00 uur, niet vanaf 8:30 uur."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.roermond.nl/verklaring-omtrent-het-gedrag-vog",
+      "https://www.roermond.nl/omgevingsvergunning",
+      "https://www.roermond.nl/alcoholwetvergunning",
+      "https://www.roermond.nl/parkeervergunning-voor-bedrijven-zorginstellingen-en-non-profit-instellingen",
+      "https://www.roermond.nl/aanvraag-bouwtekening-bouwdossier-of-dossier-omgevingsvergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Twee tot vier weken na de aanvraag krijgt u de VOG per post thuisgestuurd van Dienst Justis [...] De Verklaring Omtrent het Gedrag (VOG) kan met ingang van 22 mei 2024 ook digitaal in de persoonlijke Berichtenbox ontvangen worden.",
+          "original_reference": "Twee tot vier weken na de aanvraag ontvangt u de VOG per post van Dienst Justis [...] Vanaf 22 mei 2024 is het ook mogelijk om de VOG digitaal te ontvangen in uw persoonlijke Berichtenbox.",
+          "note": "De informatie over levertijd en digitale ontvangst via Berichtenbox komt exact overeen",
+          "source_urls": [
+            "https://www.roermond.nl/verklaring-omtrent-het-gedrag-vog"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Online formulier VOG NP Kinderopvang; Online formulier VOG NP Onderwijs; Online formulier VOG NP Taxi; Online formulier VOG NP Visum",
+          "original_reference": "Er zijn specifieke formulieren beschikbaar voor verschillende doeleinden, zoals Kinderopvang, Onderwijs, Taxi en Visum.",
+          "note": "De bronpagina specificeert dat dit nieuwe online formulieren zijn die bij het standaard formulier komen, terwijl de originele tekst dit niet vermeldt als nieuwe toevoeging",
+          "source_urls": [
+            "https://www.roermond.nl/verklaring-omtrent-het-gedrag-vog"
+          ]
+        }
+      ]
+    },
+    "summary": "De meeste informatie komt overeen tussen de originele tekst en de bronnen. Het enige noemenswaardige verschil is dat de bronpagina expliciet vermeldt dat de specifieke online formulieren voor Kinderopvang, Onderwijs, Taxi en Visum nieuwe toevoegingen zijn naast het standaard formulier, terwijl dit detail in de originele tekst niet wordt genoemd. De overige informatie, waaronder de levertijden, kosten en de aankomende digitale ontvangst via Berichtenbox, is consistent."
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OPMEER",
+      "contact": {
+        "phone": "(0226) 36 33 33",
+        "email": "gemeente@opmeer.nl",
+        "website": "http://www.opmeer.nl"
+      }
+    },
+    "service": {
+      "id": 2,
+      "name": "Bord of spandoek plaatsen aan de openbare weg"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Het tarief voor een reclameborden/spandoeken vergunning bedraagt: - € 52,65 voor een enkele aanvraag - + € 16,45 voor een meerjaren vergunning",
+        "status": "false",
+        "note": "De genoemde tarieven zijn niet correct volgens de actuele legesverordening van gemeente Opmeer. De gemeente hanteert andere tarieven voor reclame- en spandoekvergunningen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 3,
+    "invalid_urls": 2,
+    "accuracy_percentage": 60.0,
+    "valid_urls_list": [
+      "https://www.opmeer.nl/aankondigingsbord-plaatsen",
+      "https://www.opmeer.nl/reclame-plaatsen",
+      "https://www.opmeer.nl/spandoek-ophangen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.opmeer.nl/terras-plaatsen",
+        "reason": "INVALID: Error scraping https://www.opmeer.nl/terras-plaatsen: 404 Client Error: Not Found for url: https://www.opmeer.nl/terras-plaatsen"
+      },
+      {
+        "url": "https://www.opmeer.nl/voorwerp-plaatsen-op-of-aan-de-weg",
+        "reason": "INVALID: Error scraping https://www.opmeer.nl/voorwerp-plaatsen-op-of-aan-de-weg: 404 Client Error: Not Found for url: https://www.opmeer.nl/voorwerp-plaatsen-op-of-aan-de-weg"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De gemeente kan eisen dat uw spandoek wind en/of lucht doorlaat.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de specifieke eis dat spandoeken wind/lucht moeten doorlaten, wat een belangrijke technische voorwaarde is.",
+          "source_urls": [
+            "https://www.opmeer.nl/spandoek-ophangen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De gemeente mag commerciële reclameteksten op borden weigeren.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet expliciet dat commerciële reclameteksten geweigerd kunnen worden, wat een belangrijke beperking is voor aanvragers.",
+          "source_urls": [
+            "https://www.opmeer.nl/aankondigingsbord-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Zorg ervoor dat u geen schade veroorzaakt aan bomen, muren of lantaarnpalen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de verantwoordelijkheid om schade te voorkomen bij het bevestigen van reclame-uitingen.",
+          "source_urls": [
+            "https://www.opmeer.nl/spandoek-ophangen",
+            "https://www.opmeer.nl/aankondigingsbord-plaatsen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten enkele belangrijke aanvullende voorwaarden en beperkingen die niet in de originele tekst staan vermeld. Het gaat vooral om technische eisen (winddoorlatendheid), beperkingen voor commerciële uitingen en verantwoordelijkheden rond het voorkomen van schade. Deze informatie is relevant voor potentiële aanvragers van reclamevergunningen."
+  }
+}

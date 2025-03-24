@@ -1,0 +1,86 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OLDEBROEK",
+      "contact": {
+        "phone": "(0525) 63 82 00",
+        "email": "gemeente@oldebroek.nl",
+        "website": "http://www.oldebroek.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 22,
+    "false_sentences": 2,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Voor een alcoholvergunning bijvoorbeeld bedragen de kosten €1.031,15.",
+        "status": "false",
+        "note": "Volgens de legesverordening 2024 van gemeente Oldebroek bedragen de kosten voor een alcoholvergunning €1.052,80"
+      },
+      {
+        "sentence": "Het aanvragen van een ontheffing sluitingstijd horeca kost €286,00.",
+        "status": "false",
+        "note": "Volgens de legesverordening 2024 van gemeente Oldebroek kost een ontheffing sluitingstijd horeca €292,15"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 3,
+    "invalid_urls": 2,
+    "accuracy_percentage": 60.0,
+    "valid_urls_list": [
+      "https://www.oldebroek.nl/Inwoners/Bouwen_en_verbouwen/Omgevingsvergunning",
+      "https://www.oldebroek.nl/Inwoners/Vergunningen/Alcoholvergunning",
+      "https://www.oldebroek.nl/Inwoners/Bouwen_en_verbouwen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.oldebroek.nl/Inwoners/Vergunningen/Ontheffing_sluitingstijd_horeca",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.oldebroek.nl/Inwoners/Vergunningen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vraag de alcoholvergunning minimaal 8 weken van te voren aan.",
+          "original_reference": "Het besluit voor de alcoholvergunning wordt binnen 8 weken genomen",
+          "note": "De brontekst geeft aan dat de aanvraag minimaal 8 weken van tevoren moet worden ingediend, terwijl de originele tekst alleen spreekt over een beslissingstermijn van 8 weken. Dit is een belangrijk verschil in timing.",
+          "source_urls": [
+            "https://www.oldebroek.nl/Inwoners/Vergunningen/Alcoholvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U kunt een alcoholvergunning aanvragen als u: 21 jaar of ouder bent, van onbesproken gedrag bent, beschikt over een Verklaring Sociale Hygiëne",
+          "original_reference": "Ingevuld aanvraagformulier model A of B met diverse bijlagen zoals Verklaring Sociale Hygiëne en bouwkundige plattegrond.",
+          "note": "De bronpagina noemt specifieke persoonlijke voorwaarden (leeftijd, onbesproken gedrag) die niet vermeld staan in de originele tekst.",
+          "source_urls": [
+            "https://www.oldebroek.nl/Inwoners/Vergunningen/Alcoholvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele tekst en de bronnen. Ten eerste is er een verschil in de timing van de alcoholvergunning - de bron specificeert dat de aanvraag minimaal 8 weken van tevoren moet worden ingediend, terwijl de originele tekst alleen de beslissingstermijn noemt. Ten tweede noemt de bron aanvullende persoonlijke voorwaarden voor het verkrijgen van een alcoholvergunning die niet in de originele tekst staan vermeld. Deze verschillen zijn relevant voor de volledigheid en accuraatheid van de informatie voor aanvragers."
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "context": {
+    "municipality": {
+      "name": "GOES",
+      "contact": {
+        "phone": "14 0113",
+        "email": "stadskantoor@goes.nl",
+        "website": "http://www.goes.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 22,
+    "false_sentences": 2,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Dien uw aanvraag minimaal 12 weken voor aanvang van het evenement in.",
+        "status": "false",
+        "note": "Volgens de gemeente Goes moet een evenementenvergunning minimaal 8 weken voor aanvang worden ingediend, niet 12 weken."
+      },
+      {
+        "sentence": "De gemeente zal binnen 12 weken na het indienen van een volledige aanvraag met een beslissing komen.",
+        "status": "false",
+        "note": "Volgens de gemeente Goes is de beslistermijn 8 weken na ontvangst van een complete aanvraag, niet 12 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.goes.nl/evenement-organiseren-0",
+      "https://www.goes.nl/aanmelden-evenement-2025",
+      "https://www.goes.nl/indeling-categorieen-evenementen",
+      "https://www.goes.nl/milieu-omgevingsvergunning-melding",
+      "https://www.goes.nl/exploitatievergunning-horeca",
+      "https://www.goes.nl"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Organisatoren van evenementen moeten hun evenement(en) die zij in 2025 willen houden, aanmelden vóór 1 november 2024.",
+          "original_reference": "Voor B en C-evenementen moet de aanvraag vóór 1 november van het voorgaande jaar worden aangemeld.",
+          "note": "De originele tekst specificeert alleen B en C-evenementen, terwijl de brontekst aangeeft dat dit voor alle evenementen geldt.",
+          "source_urls": [
+            "https://www.goes.nl/aanmelden-evenement-2025"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Na de melding van een 0-evenement wordt altijd een beoordeling gedaan. Mogelijk is er tóch een evenementenvergunning nodig, bijvoorbeeld omdat de doelgroep of locatie meer risico met zich meebrengt.",
+          "original_reference": "Een 0-evenement heeft alleen een meldingsplicht en geen vergunning nodig zolang het voldoet aan specifieke voorwaarden zoals maximaal 150 personen.",
+          "note": "De originele tekst stelt dat een 0-evenement alleen meldingsplichtig is, terwijl de brontekst aangeeft dat na beoordeling alsnog een vergunning nodig kan zijn.",
+          "source_urls": [
+            "https://www.goes.nl/indeling-categorieen-evenementen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een 0-evenement voldoet aan de volgende voorwaarden: Maximaal 150 personen; Het evenement tussen 09.00 en 00.30 uur plaatsvindt; Geen muziek ten gehore wordt gebracht voor 07.00 uur of na 23.00 uur; Geen hinder op de openbare weg; Er mogen alleen kleine objecten worden geplaatst met een oppervlakte van minder dan 10 m2.",
+          "original_reference": "Een 0-evenement heeft alleen een meldingsplicht en geen vergunning nodig zolang het voldoet aan specifieke voorwaarden zoals maximaal 150 personen.",
+          "note": "De originele tekst noemt alleen het maximum aantal personen, terwijl de brontekst veel meer specifieke voorwaarden vermeldt voor een 0-evenement.",
+          "source_urls": [
+            "https://www.goes.nl/indeling-categorieen-evenementen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de voorwaarden en procedures rond evenementen. De brontekst is specifieker over de voorwaarden voor 0-evenementen en geeft aan dat deze alsnog vergunningplichtig kunnen worden na beoordeling. Ook blijkt de aanmeldtermijn vóór 1 november voor alle evenementen te gelden, niet alleen voor B en C-evenementen zoals in de originele tekst staat vermeld."
+  }
+}

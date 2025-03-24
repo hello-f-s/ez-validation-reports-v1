@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LEEUWARDEN",
+      "contact": {
+        "phone": "14 058",
+        "email": "gemeente@leeuwarden.nl",
+        "website": "http://www.leeuwarden.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "De beoordeling van uw aanvraag kan, afhankelijk van de situatie, tot 8 weken duren in een reguliere procedure, en zes maanden voor een uitgebreide procedure.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Leeuwarden duurt een reguliere procedure maximaal 12 weken (niet 8 weken). Een uitgebreide procedure duurt maximaal 26 weken (niet zes maanden)."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.leeuwarden.nl/evenementen/evenementenkalender/",
+      "https://www.leeuwarden.nl/subsidies/subsidie-voor-sportevenementen/",
+      "https://www.leeuwarden.nl/horeca/horecavergunning/",
+      "https://www.leeuwarden.nl/evenementen/evenement-organiseren/",
+      "https://www.leeuwarden.nl/omgevingsvergunning/procedure-omgevingsvergunning-aanvragen-of-melden/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://overheid.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een kennisgeving stuurt u minimaal 4 weken voor het evenement. [...] Er komen maximaal 300 bezoekers.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke voorwaarden voor kennisgevingen, zoals het maximale aantal bezoekers (300) en de minimale aanvraagtermijn (4 weken).",
+          "source_urls": [
+            "https://www.leeuwarden.nl/evenementen/evenement-organiseren/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Doorgeven moet tussen 1 januari en 1 september in het jaar voordat het evenement gepland staat. En is verplicht voor evenementen met meer dan 2000 bezoekers.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist de verplichting voor grote evenementen (>2000 bezoekers) om zich tussen 1 januari en 1 september in het voorafgaande jaar aan te melden voor de evenementenkalender.",
+          "source_urls": [
+            "https://www.leeuwarden.nl/evenementen/evenementenkalender/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het evenement is op werkdagen tussen 7:00 en 23:00 uur. Het evenement is op zaterdag, zondag of op een officiële feestdag tussen 7:00 en 24:00 uur.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst specificeert geen toegestane tijden voor evenementen, terwijl de bron hier duidelijke tijdslimieten voor verschillende dagen aangeeft.",
+          "source_urls": [
+            "https://www.leeuwarden.nl/evenementen/evenement-organiseren/"
+          ]
+        }
+      ]
+    },
+    "summary": "De originele tekst mist enkele essentiële details die wel in de bronnen staan, zoals specifieke tijdslimieten voor evenementen, voorwaarden voor kennisgevingen en verplichtingen voor grote evenementen. Deze informatie is belangrijk voor organisatoren om te weten wanneer ze welk type aanvraag moeten doen en aan welke voorwaarden ze moeten voldoen."
+  }
+}

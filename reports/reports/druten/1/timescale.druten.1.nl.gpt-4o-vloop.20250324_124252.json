@@ -1,0 +1,97 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DRUTEN",
+      "contact": {
+        "phone": "(088) 432 70 00",
+        "email": "info@druten.nl",
+        "website": "http://www.druten.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 27,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.4,
+    "false_statements": [
+      {
+        "sentence": "Vandaag open tot 19.00 uur",
+        "status": "false",
+        "note": "Dit is een dynamische openingstijd die niet accuraat geverifieerd kan worden zonder context van de huidige dag. De gemeente Druten is alleen op donderdag tot 19:00 uur open, andere werkdagen tot 16:30 uur."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 2,
+    "invalid_urls": 4,
+    "accuracy_percentage": 33.3,
+    "valid_urls_list": [
+      "https://www.druten.nl/exploitatievergunning-horecabedrijf",
+      "https://www.druten.nl"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.druten.nl/alcoholwetvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.druten.nl/exploitatievergunning-verblijfsrecreatie",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.druten.nl/informatie-opvragen-woo-verzoek",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.druten.nl/vergunningen-en-ontheffingen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Heuvel 1, 6651 DA Druten, Bel: 088 432 70 00, Whatsapp: +31625689928, info@druten.nl",
+          "original_reference": "Adres: Heuvel 1, 6651 DA Druten, Telefoon: 088 432 70 00, WhatsApp: +316 2568 9928, Email: info@druten.nl",
+          "note": "De contactgegevens komen overeen met de originele inhoud, met alleen een klein formatteringsverschil in het WhatsApp nummer",
+          "source_urls": [
+            "https://www.druten.nl"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Telefonische bereikbaarheid: Vandaag bereikbaar tot 16.30 uur",
+          "original_reference": "No matching information",
+          "note": "De originele inhoud vermeldt geen specifieke telefonische bereikbaarheidstijden, terwijl de bronpagina dit wel specificeert",
+          "source_urls": [
+            "https://www.druten.nl"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een bedrijfs- of ondernemingsplan. Met informatie over de werkzaamheden, de producten en de mensen voor wie uw horecabedrijf bedoeld is.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt een extra vereiste voor de exploitatievergunning (bedrijfsplan) die niet in de originele inhoud staat",
+          "source_urls": [
+            "https://www.druten.nl/exploitatievergunning-horecabedrijf"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont enkele belangrijke verschillen tussen de originele inhoud en de bronpagina's. De meest significante verschillen betreffen de telefonische bereikbaarheidstijden die niet in de originele tekst staan vermeld en extra documentatievereisten voor de exploitatievergunning. De basiscontactgegevens zijn consistent tussen beide bronnen."
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "context": {
+    "municipality": {
+      "name": "VAALS",
+      "contact": {
+        "phone": "(043) 306 85 68",
+        "email": "info@vaals.nl",
+        "website": "http://www.vaals.nl"
+      }
+    },
+    "service": {
+      "id": 10,
+      "name": "Nachtregister bijhouden"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 1,
+    "true_sentences": 1,
+    "false_sentences": 0,
+    "accuracy_percentage": 100.0,
+    "false_statements": []
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.vaals.nl/inwoners/vergunningen/omgevingswet/meest-aangevraagde-activiteiten",
+      "https://www.vaals.nl/bestuur-en-organisatie/bezwaar-en-beroep/klacht-indienen-tegen-medewerker-of-bestuurder",
+      "https://www.vaals.nl/inwoners/verhuizen/verhuizen-naar-het-buitenland-emigratie",
+      "https://www.vaals.nl/privacy/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.vaals.nl/inwoners/uittreksels/verklaring-omtrent-het-gedrag-vog",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het aanvragen van een vergunning is iets wat veel mensen niet jaarlijks doen. Om u hierin verder te begeleiden, hebben wij een overzicht voor u gemaakt met de meest aangevraagde activiteiten binnen het Omgevingsloket.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat specifieke informatie over vergunningsaanvragen en het Omgevingsloket, terwijl deze informatie volledig ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.vaals.nl/inwoners/vergunningen/omgevingswet/meest-aangevraagde-activiteiten"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bent u van mening dat u ongepast bent behandeld door een ambtenaar of bestuurder? Dan kunt u een klacht indienen bij de gemeente.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat gedetailleerde informatie over het indienen van klachten tegen medewerkers of bestuurders, wat niet aanwezig is in de originele tekst.",
+          "source_urls": [
+            "https://www.vaals.nl/bestuur-en-organisatie/bezwaar-en-beroep/klacht-indienen-tegen-medewerker-of-bestuurder"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Gaat u voor langer dan 8 maanden of misschien definitief naar het buitenland? Dan moet u bij de gemeente aangifte doen van uw vertrek.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat specifieke informatie over emigratie en verhuizing naar het buitenland, wat ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.vaals.nl/inwoners/verhuizen/verhuizen-naar-het-buitenland-emigratie"
+          ]
+        }
+      ]
+    },
+    "summary": "De originele tekst bevat geen specifieke informatie, terwijl de bronpagina's uitgebreide informatie bevatten over verschillende gemeentelijke diensten zoals vergunningsaanvragen, klachtenprocedures en emigratie. Dit duidt op significante ontbrekende informatie in de originele tekst vergeleken met de beschikbare informatie op de gemeentelijke website."
+  }
+}

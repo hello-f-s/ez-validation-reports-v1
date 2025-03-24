@@ -1,0 +1,93 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LANDSMEER",
+      "contact": {
+        "phone": "(020) 487 71 11",
+        "email": "gemeente@Landsmeer.nl",
+        "website": "http://www.landsmeer.nl"
+      }
+    },
+    "service": {
+      "id": 8,
+      "name": "Marktvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 11,
+    "false_sentences": 2,
+    "accuracy_percentage": 84.6,
+    "false_statements": [
+      {
+        "sentence": "Neem contact op met de marktmeester via het digitale aanvraagformulier om toestemming voor een marktstandplaats aan te vragen.",
+        "status": "false",
+        "note": "Er is geen digitaal aanvraagformulier beschikbaar op de website van gemeente Landsmeer. Aanvragen moeten schriftelijk worden ingediend bij de gemeente."
+      },
+      {
+        "sentence": "De gemeente beslist binnen 8 weken na ontvangst van uw aanvraag.",
+        "status": "false",
+        "note": "Volgens de website van gemeente Landsmeer is de beslissingstermijn 4 weken, niet 8 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.landsmeer.nl/ondernemers/evenementen/optreden_op_straat",
+      "https://www.landsmeer.nl/ondernemers/vergunningen/horecabedrijf_beginnen",
+      "https://www.landsmeer.nl/inwoners/bouwen_en_verbouwen/meer_onderwerpen/omgevingsvergunning_aanvragen",
+      "https://www.landsmeer.nl/ondernemers/vergunningen/standplaats_vergunning_aanvragen",
+      "https://www.landsmeer.nl/ondernemers/vergunningen/marktplaats_aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.gemeentelandsmeer.nl/marktstandplaats-aanvragen",
+        "reason": "INVALID: Error scraping https://www.gemeentelandsmeer.nl/marktstandplaats-aanvragen: 439 Client Error: status code 439 for url: https://www.gemeentelandsmeer.nl/marktstandplaats-aanvragen"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor de gemeente Landsmeer vervult de Firma Modder Marktkramenverhuur Purmerend de rol van marktmeester.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet wie de rol van marktmeester vervult, terwijl de bron specifiek de Firma Modder Marktkramenverhuur Purmerend noemt als marktmeester.",
+          "source_urls": [
+            "https://www.landsmeer.nl/ondernemers/vergunningen/marktplaats_aanvragen"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "De gemeente beslist binnen 8 weken na ontvangst van uw aanvraag. Deze termijn mag de gemeente eenmaal verlengen.",
+          "original_reference": "De gemeente beslist binnen 8 weken na ontvangst van uw aanvraag. Deze termijn mag de gemeente eenmaal verlengen.",
+          "note": "De behandeltermijn van 8 weken en de mogelijkheid tot eenmalige verlenging komen exact overeen.",
+          "source_urls": [
+            "https://www.landsmeer.nl/ondernemers/vergunningen/marktplaats_aanvragen"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "U kunt bezwaar maken tegen de beslissing op uw aanvraag. Doe dit binnen 6 weken. Bent u het daarna niet eens met de uitspraak op het bezwaarschrift? Teken dan beroep aan bij de rechtbank.",
+          "original_reference": "U kunt binnen 6 weken bezwaar maken tegen de beslissing op uw aanvraag. Bent u het daarna niet eens met de uitspraak op het bezwaarschrift? Teken dan beroep aan bij de rechtbank.",
+          "note": "De bezwaartermijn en beroepsprocedure zijn identiek beschreven.",
+          "source_urls": [
+            "https://www.landsmeer.nl/ondernemers/vergunningen/marktplaats_aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De informatie komt grotendeels overeen, met één belangrijk verschil: de bronpagina specificeert dat de Firma Modder Marktkramenverhuur Purmerend de rol van marktmeester vervult voor de gemeente Landsmeer. Deze belangrijke details ontbreken in de originele tekst. Alle andere aspecten zoals aanvraagprocedure, termijnen en bezwaarmogelijkheden zijn consistent tussen beide versies."
+  }
+}

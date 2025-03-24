@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LOPIK",
+      "contact": {
+        "phone": "(0348) 55 99 55",
+        "email": "gemeente@lopik.nl",
+        "website": "http://www.lopik.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 20,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.2,
+    "false_statements": [
+      {
+        "sentence": "U vraagt de exploitatievergunning aan bij de gemeente door het formulier 'Ontheffing Sluitingsuur' in te vullen en te mailen naar gemeente@lopik.nl of per post te versturen naar:",
+        "status": "false",
+        "note": "Dit is onjuist omdat het formulier 'Ontheffing Sluitingsuur' alleen bedoeld is voor het aanvragen van een ontheffing van de sluitingstijden, niet voor een exploitatievergunning. Voor een exploitatievergunning is een ander aanvraagformulier nodig."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.lopik.nl/exploitatievergunning-horecabedrijf",
+      "https://www.lopik.nl/openingstijden-horeca-eenmalig-aanpassen",
+      "https://www.lopik.nl/ontheffing-sluitingstijd",
+      "https://www.lopik.nl/openingstijden-winkels",
+      "https://www.lopik.nl/standplaats-aanvragen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een exploitatievergunning hoeft niet te worden aangevraagd indien u een horecabedrijf zoals een sportvereniging of buurthuis wilt exploiteren.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet deze belangrijke uitzondering voor sportverenigingen en buurthuizen.",
+          "source_urls": [
+            "https://www.lopik.nl/exploitatievergunning-horecabedrijf"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "zondag tot en met donderdag tussen 01:00 uur en 08:00 uur; vrijdag en zaterdag tussen 02:00 uur en 08:00 uur (dagen voorafgaand aan een nationale feestdag of zijnde een nationale feestdag)",
+          "original_reference": "Zondag tot en met donderdag tussen 01:00 uur en 08:00 uur. Vrijdag en zaterdag tussen 02:00 uur en 08:00 uur (voorafgaand aan of op een nationale feestdag).",
+          "note": "De sluitingstijden komen exact overeen met de originele tekst.",
+          "source_urls": [
+            "https://www.lopik.nl/ontheffing-sluitingstijd"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U vraagt de vergunning aan bij de gemeente. Dit doet u door een e-mail te schrijven naar gemeente@lopik.nl",
+          "original_reference": "U vraagt de exploitatievergunning aan bij de gemeente door het formulier 'Ontheffing Sluitingsuur' in te vullen",
+          "note": "De aanvraagprocedure verschilt: de bron vermeldt directe e-mail mogelijkheid zonder specifiek formulier, terwijl de originele tekst een specifiek formulier vereist.",
+          "source_urls": [
+            "https://www.lopik.nl/openingstijden-winkels"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn enkele belangrijke verschillen gevonden tussen de originele tekst en de bronnen. De meest significante zijn de uitzondering voor sportverenigingen en buurthuizen die niet vermeld staat in de originele tekst, en een verschil in de aanvraagprocedure. De sluitingstijden zijn wel consistent tussen beide bronnen. De verschillen hebben vooral betrekking op uitzonderingen en procedures, niet op de kernvoorwaarden."
+  }
+}

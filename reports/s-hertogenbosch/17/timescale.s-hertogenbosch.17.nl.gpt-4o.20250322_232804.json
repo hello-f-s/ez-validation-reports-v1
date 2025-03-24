@@ -1,0 +1,79 @@
+{
+  "context": {
+    "municipality": {
+      "name": "S-HERTOGENBOSCH",
+      "contact": {
+        "phone": "(073) 615 51 55",
+        "email": "gemeente@s-hertogenbosch.nl",
+        "website": "http://www.s-hertogenbosch.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 8,
+    "true_sentences": 7,
+    "false_sentences": 1,
+    "accuracy_percentage": 87.5,
+    "false_statements": [
+      {
+        "sentence": "Door de aangepaste terrasregels is de verwerkingstijd momenteel 12 weken.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente 's-Hertogenbosch is de standaard verwerkingstijd voor een terrasvergunning 8 weken. Er wordt geen melding gemaakt van aangepaste terrasregels die leiden tot een verwerkingstijd van 12 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.s-hertogenbosch.nl/product/horecabedrijf/",
+      "https://www.s-hertogenbosch.nl/product/parkeervergunning/",
+      "https://www.s-hertogenbosch.nl/product/omgevingsvergunning/",
+      "https://www.s-hertogenbosch.nl/product/taxivergunning/",
+      "https://www.s-hertogenbosch.nl/product/omgevingsvergunning-wabo/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.denbosch.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U hebt in 's-Hertogenbosch naast een Alcoholwetvergunning ook een exploitatievergunning nodig.",
+          "original_reference": "Om een terrasvergunning aan te vragen, moet u in het bezit zijn van een exploitatievergunning voor uw horecazaak.",
+          "note": "De bronpagina specificeert dat voor horecazaken met alcoholverkoop zowel een Alcoholwetvergunning als een exploitatievergunning nodig is, terwijl de originele tekst alleen een exploitatievergunning noemt als voorwaarde voor een terrasvergunning.",
+          "source_urls": [
+            "https://www.s-hertogenbosch.nl/product/horecabedrijf/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een exploitatievergunning is pand- en ondernemersgebonden. Een exploitatievergunning is in principe geldig voor onbepaalde tijd.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat belangrijke aanvullende informatie over de geldigheid en gebondenheid van de exploitatievergunning die niet in de originele tekst staat vermeld.",
+          "source_urls": [
+            "https://www.s-hertogenbosch.nl/product/horecabedrijf/"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten belangrijke aanvullende informatie over vergunningsvereisten die niet in de originele tekst staat. Met name de vereiste van een Alcoholwetvergunning naast de exploitatievergunning voor horecazaken die alcohol schenken, en details over de geldigheid en gebondenheid van de exploitatievergunning. Deze informatie is essentieel voor horecaondernemers maar ontbreekt in de originele tekst."
+  }
+}

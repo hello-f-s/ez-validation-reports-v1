@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LANDSMEER",
+      "contact": {
+        "phone": "(020) 487 71 11",
+        "email": "gemeente@Landsmeer.nl",
+        "website": "http://www.landsmeer.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 31,
+    "true_sentences": 30,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.8,
+    "false_statements": [
+      {
+        "sentence": "Tel: 020 - 48 77 111 / 020 - 48 26 091",
+        "status": "false",
+        "note": "Het telefoonnummer van de gemeente Landsmeer is 020 487 7111. Het tweede telefoonnummer (020 - 48 26 091) is niet correct volgens de officiële website van de gemeente Landsmeer."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.landsmeer.nl/inwoners/paspoort,_rijbewijs,_identiteitskaart_en_uittreksels/uittreksels/verklaring_omtrent_het_gedrag_aanvragen",
+      "https://www.landsmeer.nl/inwoners/bouwen_en_verbouwen/meer_onderwerpen/omgevingsvergunning_aanvragen",
+      "https://www.landsmeer.nl/inwoners/paspoort,_rijbewijs,_identiteitskaart_en_uittreksels/uittreksels/bewijs_van_nederlandse_nationaliteit_aanvragen",
+      "https://www.landsmeer.nl/inwoners/parkeren,_verkeer_en_vervoer/verkeer/ontheffing_van_verkeersregels_aanvragen",
+      "https://www.landsmeer.nl/ondernemers/evenementen/optreden_op_straat"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "De kosten voor een VOG voor natuurlijke personen zijn € 41,35",
+          "original_reference": "De kosten voor een VOG voor natuurlijke personen zijn € 41,35",
+          "note": "De kosten voor een VOG zijn identiek in beide bronnen",
+          "source_urls": [
+            "https://www.landsmeer.nl/inwoners/paspoort,_rijbewijs,_identiteitskaart_en_uittreksels/uittreksels/verklaring_omtrent_het_gedrag_aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Doe de VOG-check van Justis om te zien wat uw kans op een VOG is",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt een extra mogelijkheid om vooraf te controleren wat de kans is op het verkrijgen van een VOG via de VOG-check van Justis. Deze informatie ontbreekt in de originele tekst",
+          "source_urls": [
+            "https://www.landsmeer.nl/inwoners/paspoort,_rijbewijs,_identiteitskaart_en_uittreksels/uittreksels/verklaring_omtrent_het_gedrag_aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De inhoud is grotendeels consistent tussen de originele tekst en de bronnen. Het belangrijkste verschil is dat de bronpagina een extra service vermeldt (VOG-check van Justis) die niet in de originele tekst staat. Deze tool kan nuttig zijn voor aanvragers om vooraf hun kansen in te schatten. Voor het overige komen de kosten, voorwaarden en procedures overeen."
+  }
+}

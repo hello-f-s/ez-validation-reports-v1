@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ALPHEN-CHAAM",
+      "contact": {
+        "phone": "14013",
+        "email": "info@alphen-chaam.nl",
+        "website": "http://www.alphen-chaam.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 20,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.2,
+    "false_statements": [
+      {
+        "sentence": "Voor vragen of meer informatie kunt u terecht op het volgende adres: Willibrordplein 15, 5131 AV Alphen.",
+        "status": "false",
+        "note": "Het juiste adres van het gemeentehuis van Alphen-Chaam is Willibrordplein 1, 5131 AV Alphen. Het huisnummer 15 is onjuist."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.alphen-chaam.nl/vergunningen-en-ontheffingen/vergunningen-en-ontheffingen-voor-ondernemers",
+      "https://www.alphen-chaam.nl/ondernemen/vergunningen-en-ontheffingen-voor-ondernemers",
+      "https://www.alphen-chaam.nl/voorwaarden-parkeerontheffing",
+      "https://www.alphen-chaam.nl/woo",
+      "https://www.alphen-chaam.nl/omgevingsvergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U maakt als bedrijf vaak gebruik van het gebied.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt een extra voorwaarde voor bedrijven die niet in de originele tekst staat, namelijk dat het bedrijf vaak gebruik moet maken van het gebied.",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/voorwaarden-parkeerontheffing"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Uw parkeerontheffing staat op uw kenteken en naam.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina specificeert dat de parkeerontheffing op kenteken en naam staat, wat niet vermeld wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/voorwaarden-parkeerontheffing"
+          ]
+        }
+      ]
+    },
+    "summary": "Bij vergelijking van de originele tekst met de bronpagina's zijn er twee belangrijke verschillen gevonden. Ten eerste wordt in de bronpagina een extra voorwaarde gesteld aan bedrijven, namelijk dat ze frequent gebruik moeten maken van het gebied. Ten tweede wordt gespecificeerd dat de parkeerontheffing gekoppeld is aan kenteken en naam, wat niet in de originele tekst staat vermeld. Deze informatie is relevant voor aanvragers van een parkeerontheffing."
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AMELAND",
+      "contact": {
+        "phone": "(0519) 55 55 55",
+        "email": "info@ameland.nl",
+        "website": "http://www.ameland.nl"
+      }
+    },
+    "service": {
+      "id": 22,
+      "name": "Woonruimte splitsen of samenvoegen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Bij een juiste en volledig ingediende aanvraag van een omgevingsvergunning geldt een beslistermijn van 8 weken.",
+        "status": "false",
+        "note": "Voor een reguliere omgevingsvergunning op Ameland geldt een wettelijke beslistermijn van maximaal 8 weken na ontvangst van een complete aanvraag, maar de gemeente Ameland hanteert standaard een termijn van 12 weken voor de afhandeling van een omgevingsvergunning."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.ameland.nl/vooroverleg-welstand",
+      "https://www.ameland.nl/omgevingsvergunning",
+      "https://www.ameland.nl/huisvestingsvergunning",
+      "https://www.ameland.nl/onttrekkingsvergunning",
+      "https://www.ameland.nl/uitrit-of-inrit-aanleggen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.gemeenteameland.nl",
+        "reason": "INVALID: Error scraping https://www.gemeenteameland.nl: 439 Client Error: status code 439 for url: https://www.gemeenteameland.nl/"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als huiseigenaar kunt u uw woning uit de woonruimtevoorraad laten halen... u een woning als kantoor wilt gebruiken, u twee woningen wilt samenvoegen, u een woning wilt slopen, u een woning wilt gebruiken voor kamerverhuur",
+          "original_reference": "U heeft een onttrekkingsvergunning nodig als u van plan bent de woonruimte te splitsen of samen te voegen.",
+          "note": "De bronpagina noemt meer redenen voor een onttrekkingsvergunning dan alleen splitsen/samenvoegen, namelijk ook kantoorgebruik, sloop en kamerverhuur.",
+          "source_urls": [
+            "https://www.ameland.nl/onttrekkingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Tel: (0519) 555 555, WhatsApp: 06-144 58 728, E-mail: info@ameland.nl",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen contactgegevens, terwijl deze wel belangrijk zijn voor het aanvragen van de vergunning.",
+          "source_urls": [
+            "https://www.ameland.nl/onttrekkingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Let op! Vanaf 1 januari is de Omgevingswet in werking getreden. Dit heeft gevolgen voor het aanvragen van vergunningen en de vergunningprocedures.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst maakt geen melding van de nieuwe Omgevingswet die van kracht is geworden en impact heeft op de procedures.",
+          "source_urls": [
+            "https://www.ameland.nl/vooroverleg-welstand",
+            "https://www.ameland.nl/uitrit-of-inrit-aanleggen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen drie aspecten: 1) De bronpagina's vermelden meer mogelijke redenen voor het aanvragen van een onttrekkingsvergunning, 2) Er ontbreken belangrijke contactgegevens in de originele tekst, en 3) De originele tekst is niet geactualiseerd met informatie over de nieuwe Omgevingswet die per 1 januari 2024 van kracht is geworden en impact heeft op de vergunningsprocedures."
+  }
+}

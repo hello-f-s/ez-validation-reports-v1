@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MEDEMBLIK",
+      "contact": {
+        "phone": "(0229) 85 60 00",
+        "email": "info@medemblik.nl",
+        "website": "http://www.medemblik.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 9,
+    "true_sentences": 8,
+    "false_sentences": 1,
+    "accuracy_percentage": 88.9,
+    "false_statements": [
+      {
+        "sentence": "De kosten worden direct met de aanvraag betaald via iDeal.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Medemblik zijn er meerdere betaalmogelijkheden beschikbaar voor de VOG-aanvraag, niet alleen iDeal. Deze informatie is dus te beperkt en daardoor onjuist."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.medemblik.nl/over-gemeente-medemblik/organisatie/woo-verzoek-indienen",
+      "https://www.medemblik.nl/bouwen-en-verbouwen/omgevingswet-en-bouwvergunningen/vooroverleg-omgevingsaanvraag",
+      "https://www.medemblik.nl/burgerzaken/uittreksels-en-aktes/verklaring-omtrent-het-gedrag-vog",
+      "https://www.medemblik.nl/bouwen-en-verbouwen/omgevingswet-en-bouwvergunningen/omgevingsvergunning",
+      "https://www.medemblik.nl/vergunningen/alcohol-en-horeca/alcoholwetvergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U krijgt de VOG tussen 1 en 4 weken per post. Het kan langer duren als Justis veel moet uitzoeken.",
+          "original_reference": "Hier kan geen specifieke informatie over gevonden worden op de website van deze gemeente.",
+          "note": "De originele tekst vermeldt geen levertijd, terwijl de bron specifiek aangeeft dat het 1-4 weken duurt met mogelijke verlenging bij uitgebreid onderzoek.",
+          "source_urls": [
+            "https://www.medemblik.nl/burgerzaken/uittreksels-en-aktes/verklaring-omtrent-het-gedrag-vog"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Kosten 2025\nAanvraag via werkgever: € 33,85\nVerklaring omtrent gedrag eigen aanvraag: € 41,35",
+          "original_reference": "De kosten worden direct met de aanvraag betaald via iDeal.",
+          "note": "De originele tekst vermeldt alleen de betalingswijze, terwijl de bron specifieke bedragen noemt voor verschillende type aanvragen in 2025.",
+          "source_urls": [
+            "https://www.medemblik.nl/burgerzaken/uittreksels-en-aktes/verklaring-omtrent-het-gedrag-vog"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Werkt uw vrijwilligersorganisatie met jongeren en/of mensen met een verstandelijke beperking? Dan kunnen uw vrijwilligers in aanmerking komen voor een gratis VOG.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de mogelijkheid van een gratis VOG voor vrijwilligers, terwijl dit wel wordt vermeld in de bron.",
+          "source_urls": [
+            "https://www.medemblik.nl/burgerzaken/uittreksels-en-aktes/verklaring-omtrent-het-gedrag-vog"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen ontbrekende informatie in de originele tekst over de levertijd (1-4 weken), specifieke kostenbedragen voor 2025, en de mogelijkheid voor een gratis VOG voor vrijwilligers. Deze informatie is wel beschikbaar in de bronpagina's en is relevant voor aanvragers."
+  }
+}

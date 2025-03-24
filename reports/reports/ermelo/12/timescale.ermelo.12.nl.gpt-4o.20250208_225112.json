@@ -1,0 +1,119 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ERMELO",
+      "contact": {
+        "phone": "(0341) 56 73 21",
+        "email": "gemeente@ermelo.nl",
+        "website": "http://www.ermelo.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "Regulier conceptverzoek: € 150",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Ermelo kost een regulier conceptverzoek € 250, niet € 150"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 13,
+    "valid_urls": 4,
+    "invalid_urls": 9,
+    "accuracy_percentage": 30.8,
+    "valid_urls_list": [
+      "https://www.ermelo.nl/omgevingsplein/omgevingsloket/omgevingsvergunning-aanvragen",
+      "https://www.ermelo.nl/omgevingsplein/omgevingsloket/conceptverzoek-aanvragen",
+      "https://www.ermelo.nl/omgevingsplein/bouwen-en-verbouwen/start-controle-en-gereedmelding-bouw",
+      "https://www.ermelo.nl/omgevingsplein/omgevingsloket"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.ermelo.nl/omgevingsplein/omgevingsloket/contact-over-bouwen-en-verbouwen",
+        "reason": "INVALID: Error scraping https://www.ermelo.nl/omgevingsplein/omgevingsloket/contact-over-bouwen-en-verbouwen: 404 Client Error: Not Found for url: https://www.ermelo.nl/omgevingsplein/omgevingsloket/contact-over-bouwen-en-verbouwen"
+      },
+      {
+        "url": "https://www.ermelo.nl/omgevingsloket\">Omgevingsloket",
+        "reason": "INVALID: Error scraping https://www.ermelo.nl/omgevingsloket\">Omgevingsloket: 404 Client Error: Not Found for url: https://www.ermelo.nl/omgevingsloket%22%3EOmgevingsloket"
+      },
+      {
+        "url": "https://www.ermelo.nl/omgevingsvergunning-aanvragen",
+        "reason": "INVALID: Error scraping https://www.ermelo.nl/omgevingsvergunning-aanvragen: 404 Client Error: Not Found for url: https://www.ermelo.nl/omgevingsvergunning-aanvragen"
+      },
+      {
+        "url": "https://www.ermelo.nl/vooroverleg-aanvragen",
+        "reason": "INVALID: Error scraping https://www.ermelo.nl/vooroverleg-aanvragen: 404 Client Error: Not Found for url: https://www.ermelo.nl/vooroverleg-aanvragen"
+      },
+      {
+        "url": "https://www.ermelo.nl/start-controle-en-gereedmelding-bouw\">Start,",
+        "reason": "INVALID: Error scraping https://www.ermelo.nl/start-controle-en-gereedmelding-bouw\">Start,: 404 Client Error: Not Found for url: https://www.ermelo.nl/start-controle-en-gereedmelding-bouw%22%3EStart,"
+      },
+      {
+        "url": "https://www.ermelo.nl/omgevingsvergunning-aanvragen\">Omgevingsvergunning",
+        "reason": "INVALID: Error scraping https://www.ermelo.nl/omgevingsvergunning-aanvragen\">Omgevingsvergunning: 404 Client Error: Not Found for url: https://www.ermelo.nl/omgevingsvergunning-aanvragen%22%3EOmgevingsvergunning"
+      },
+      {
+        "url": "https://www.ermelo.nl/vooroverleg-aanvragen\">Vooroverleg",
+        "reason": "INVALID: Error scraping https://www.ermelo.nl/vooroverleg-aanvragen\">Vooroverleg: 404 Client Error: Not Found for url: https://www.ermelo.nl/vooroverleg-aanvragen%22%3EVooroverleg"
+      },
+      {
+        "url": "https://www.ermelo.nl/omgevingsloket",
+        "reason": "INVALID: Error scraping https://www.ermelo.nl/omgevingsloket: 404 Client Error: Not Found for url: https://www.ermelo.nl/omgevingsloket"
+      },
+      {
+        "url": "https://www.ermelo.nl/start-controle-en-gereedmelding-bouw",
+        "reason": "INVALID: Error scraping https://www.ermelo.nl/start-controle-en-gereedmelding-bouw: 404 Client Error: Not Found for url: https://www.ermelo.nl/start-controle-en-gereedmelding-bouw"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De start van de bouw meldt u op zijn laatst 2 werkdagen van tevoren. Bent u klaar met bouwen? Dan doet u een gereedmelding. Dat doet u op zijn laatst op de 1e werkdag nadat u klaar bent.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over verplichte start- en gereedmeldingen van de bouw, wat essentiële procedurestappen zijn.",
+          "source_urls": [
+            "https://www.ermelo.nl/omgevingsplein/bouwen-en-verbouwen/start-controle-en-gereedmelding-bouw"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Complex of niet complex verzoek - uw conceptverzoek wordt beoordeeld op complexiteit. Niet complexe verzoeken hebben een kortere behandeltijd dan complexe verzoeken.",
+          "original_reference": "Regulier conceptverzoek: binnen 8 weken, Uitgebreid conceptverzoek: kan tot maximaal 26 weken duren",
+          "note": "De bronnen gebruiken andere terminologie (complex/niet-complex vs regulier/uitgebreid) voor de verschillende types verzoeken.",
+          "source_urls": [
+            "https://www.ermelo.nl/omgevingsplein/omgevingsloket/conceptverzoek-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een kopie van de vergunning en de tekeningen moeten op de plek waar u (ver)bouwt aanwezig zijn.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat vergunning en tekeningen op de bouwlocatie aanwezig moeten zijn.",
+          "source_urls": [
+            "https://www.ermelo.nl/omgevingsplein/bouwen-en-verbouwen/start-controle-en-gereedmelding-bouw"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie die niet in de originele tekst staat, waaronder verplichte start- en gereedmeldingen van de bouw, verschillende terminologie voor conceptverzoeken, en de verplichting om vergunningsdocumenten op de bouwlocatie beschikbaar te hebben. Deze informatie is essentieel voor het correct doorlopen van het vergunningsproces."
+  }
+}

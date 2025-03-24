@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "EEMNES",
+      "contact": {
+        "phone": "14 035",
+        "email": "info@eemnes.nl",
+        "website": "http://www.eemnes.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "De gemeente verwerkt uw aanvraag binnen 5 dagen.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Eemnes wordt een aanvraag binnen 8 weken verwerkt, niet binnen 5 dagen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.eemnes.nl/Zoekresultaten?searchbase=0&searchrange=100&sp=H4sIAAAAAAAAAGXNQQuCQBAF4P8yZw9iRSnsKaXs4CGh00KM7lgb666sCxHif2+VCMHb43tvmAG0EaRMjU4avcyQwMDBcUg43FRUsjjurgz3Xbg9fDb55fxmjEPAodHzZnk7uxQrX2261m8aVD2NEEBPaOtnhT355+EfLOrHJNFuImOdsYKshzQrj1mR5sXpVzSSlPDFlO+melHtNLYE4xdgXAK95wAAAA==&f=nodelocation%3A77Eoj7xYQyiXXbaih4FVLQ%3D%3D",
+      "https://www.eemnes.nl/Zoekresultaten?searchbase=0&searchrange=50&sp=H4sIAAAAAAAAAGXNQQuCQBAF4P8yZw9iRSnsKaXs4CGh00KM7lgb666sCxHif2+VCMHb43tvmAG0EaRMjU4avcyQwMDBcUg43FRUsjjurgz3Xbg9fDb55fxmjEPAodHzZnk7uxQrX2261m8aVD2NEEBPaOtnhT355+EfLOrHJNFuImOdsYKshzQrj1mR5sXpVzSSlPDFlO+melHtNLYE4xdgXAK95wAAAA==&f=nodelocation%3A77Eoj7xYQyiXXbaih4FVLQ%3D%3D",
+      "https://www.eemnes.nl/Parkeren_en_verkeer/Parkeren/Toestemming_parkeren_vrachtauto",
+      "https://www.eemnes.nl/Zoekresultaten?sp=H4sIAAAAAAAAAKtWystPSc3JT04syczPQ2YrWSlVxyiVxChZxSiF5RgF21paFgTZJpoXGJhYVBp7enmU29rGKOnEKKXlgdUg6wWLZ6ZgiGOoKcgFqklLzClOrVXSUSpOTSxKzkhKLE4FWm4AFyhKzEsHiRgaKNUCAIhkniWwAAAA&searchbase=0&sortfield=sort_objectname&sortorder=descending&f=nodelocation%3AVl2S%3D99pR%3Da7p048y3IJHw%3D%3D&f=nodelocation%3A77Eoj7xYQyiXXbaih4FVLQ%3D%3D",
+      "https://www.eemnes.nl/Zoekresultaten?sp=H4sIAAAAAAAAAKtWystPSc3JT04syczPQ2YrWSlVxyiVxChZxSiF5RgF21paFgTZJpoXGJhYVBp7enmU29rGKOnEKKXlgdUg6wWLZ6ZgiGOoKcgFqklLzClOrVXSUSpOTSxKzkhKLE4FWm4AFyhKzEsHiRgaKNUCAIhkniWwAAAA&searchbase=0&sortfield=score&sortorder=descending&f=nodelocation%3AVl2S%3D99pR%3Da7p048y3IJHw%3D%3D&f=nodelocation%3A77Eoj7xYQyiXXbaih4FVLQ%3D%3D"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "€ 321,85 voor een nieuwe aanvraag, € 186,90 voor een verlenging",
+          "original_reference": "€ 293,50 voor een nieuwe aanvraag, € 171,00 voor een verlenging",
+          "note": "De tarieven in de bronnen zijn hoger dan in de originele tekst. Het verschil is €28,35 voor nieuwe aanvragen en €15,90 voor verlengingen.",
+          "source_urls": [
+            "https://www.eemnes.nl/Parkeren_en_verkeer/Parkeren/Toestemming_parkeren_vrachtauto"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "maximaal 3 ontheffing per bedrijf",
+          "original_reference": "maximaal 3 ontheffingen per bedrijf",
+          "note": "Er is een kleine tekstuele variatie (enkelvoud vs meervoud) maar de betekenis is hetzelfde",
+          "source_urls": [
+            "https://www.eemnes.nl/Parkeren_en_verkeer/Parkeren/Toestemming_parkeren_vrachtauto"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "We beoordelen of er niet teveel parkeerruimte wordt ingenomen en of het straatbeeld nadelig wordt beïnvloed.",
+          "original_reference": "No matching information",
+          "note": "De bron bevat aanvullende beoordelingscriteria die niet in de originele tekst staan vermeld.",
+          "source_urls": [
+            "https://www.eemnes.nl/Parkeren_en_verkeer/Parkeren/Toestemming_parkeren_vrachtauto"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de tarieven die in de bron hoger zijn dan in de originele tekst. Daarnaast bevat de bron aanvullende informatie over beoordelingscriteria die niet in de originele tekst staat vermeld. De overige voorwaarden en vereisten komen inhoudelijk overeen."
+  }
+}

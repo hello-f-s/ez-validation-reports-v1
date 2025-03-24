@@ -1,0 +1,95 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LEIDEN",
+      "contact": {
+        "phone": "14 071",
+        "email": "null",
+        "website": "http://www.leiden.nl/gemeente"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Reguliere procedure: 8 tot 12 weken, met mogelijke verlenging van 6 weken.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Leiden duurt de reguliere procedure 8 weken (niet 8 tot 12 weken) met een mogelijke verlenging van 6 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 4,
+    "invalid_urls": 3,
+    "accuracy_percentage": 57.1,
+    "valid_urls_list": [
+      "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers/vergunningen-en-ontheffingen/woning-splitsen",
+      "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers/vergunningen-en-ontheffingen/omgevingsvergunning-voor-een-monument",
+      "https://gemeente.leiden.nl/inwoners-en-ondernemers/wonen-en-bouwen/bouwen-en-verbouwen/bekendmakingen-vergunningen/",
+      "https://gemeente.leiden.nl/inwoners-en-ondernemers/wonen-en-bouwen/omgevingsvergunningen/omgevingsvergunning-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.erfgoedleiden.nl",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers/vergunningen-en-ontheffingen/wkb-melding-of-vergunning-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://officielebekendmakingen.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Flora en fauna: U krijgt in de vergunningcheck vragen over flora en fauna: de planten en dieren in de omgeving. De vergunningcheck geeft aan of u ook hiervoor een vergunning nodig hebt.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over flora- en faunacheck die wel vereist is tijdens de vergunningcheck procedure.",
+          "source_urls": [
+            "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers/vergunningen-en-ontheffingen/omgevingsvergunning-voor-een-monument"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U kunt via het contactformulier bouwtekeningen opvragen. Bouwdossiers van voor 1929 zijn niet meer beschikbaar door de brand van het Leidse stadhuis in 1929.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over het opvragen van bouwtekeningen en de beperking voor dossiers van voor 1929.",
+          "source_urls": [
+            "https://gemeente.leiden.nl/inwoners-en-ondernemers/wonen-en-bouwen/bouwen-en-verbouwen/bekendmakingen-vergunningen/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Twijfelt u of uw bouwplan haalbaar is? Vraag dan eerst een conceptverzoek aan.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist de mogelijkheid om een conceptverzoek in te dienen voor het toetsen van de haalbaarheid van bouwplannen.",
+          "source_urls": [
+            "https://gemeente.leiden.nl/inwoners-en-ondernemers/wonen-en-bouwen/omgevingsvergunningen/omgevingsvergunning-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie die ontbreekt in de originele tekst, waaronder de verplichte flora- en faunacheck, de mogelijkheid tot het opvragen van bouwtekeningen (met beperking voor dossiers van voor 1929), en de optie om een conceptverzoek in te dienen. Deze informatie is essentieel voor een complete dienstverlening en zou in de originele tekst opgenomen moeten worden."
+  }
+}

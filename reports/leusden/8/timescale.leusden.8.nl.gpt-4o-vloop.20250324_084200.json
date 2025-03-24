@@ -1,0 +1,81 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LEUSDEN",
+      "contact": {
+        "phone": "14 033",
+        "email": "gemeente@leusden.nl",
+        "website": "http://www.leusden.nl/"
+      }
+    },
+    "service": {
+      "id": 8,
+      "name": "Marktvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "De algemene openingstijden van het gemeentehuis zijn vandaag van 08:00 uur tot 12:30 uur en morgen van 08:00 uur tot 15:00 uur.",
+        "status": "false",
+        "note": "De openingstijden van het gemeentehuis Leusden zijn op maandag, dinsdag en vrijdag van 8.30 tot 17.00 uur, op woensdag van 8.30 tot 20.00 uur en op donderdag van 8.30 tot 17.00 uur. De genoemde tijden in de tekst zijn niet correct volgens de officiële website van de gemeente Leusden."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 3,
+    "valid_urls": 3,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.leusden.nl/en/vergunningen-en-belastingen",
+      "https://www.leusden.nl/vergunningen-en-belastingen",
+      "https://www.leusden.nl/bouwen-en-wonen/omgevingsvergunning-aanvragen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor het organiseren van een collecte moet u minimaal 8 weken voor de geplande datum een vergunning aanvragen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de aanvraagtermijn voor collectevergunningen, terwijl de brontekst een specifieke termijn van 8 weken vooraf vermeldt.",
+          "source_urls": [
+            "https://www.leusden.nl/vergunningen-en-belastingen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Today: closed\nTomorrow:...",
+          "original_reference": "De algemene openingstijden van het gemeentehuis zijn vandaag van 08:00 uur tot 12:30 uur en morgen van 08:00 uur tot 15:00 uur.",
+          "note": "Er is een tegenstrijdigheid in de openingstijden. De originele tekst vermeldt specifieke openingstijden terwijl de bron aangeeft dat de locatie vandaag gesloten is.",
+          "source_urls": [
+            "https://www.leusden.nl/en/vergunningen-en-belastingen"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Burgerzaken werkt alleen op afspraak op werkdagen tussen 9.00-16.30 uur. Langskomen zonder afspraak is niet mogelijk.",
+          "original_reference": "De afdeling Burgerzaken werkt alleen op afspraak, beschikbaar op werkdagen tussen 9.00-16.30 uur. Het is niet mogelijk om zonder afspraak langs te komen.",
+          "note": "De informatie over de werkwijze en openingstijden van Burgerzaken komt overeen.",
+          "source_urls": [
+            "https://www.leusden.nl/vergunningen-en-belastingen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de openingstijden van het gemeentehuis en ontbrekende informatie over aanvraagtermijnen in de originele tekst. De bronnen bevatten specifiekere informatie over vergunningsaanvragen, zoals de 8-weken termijn voor collectevergunningen. De contactgegevens en werkwijze van Burgerzaken zijn consistent tussen beide bronnen."
+  }
+}

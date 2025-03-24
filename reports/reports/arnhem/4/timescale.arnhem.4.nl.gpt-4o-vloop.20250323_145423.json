@@ -1,0 +1,80 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ARNHEM",
+      "contact": {
+        "phone": "null",
+        "email": "null",
+        "website": "http://www.arnhem.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 26,
+    "false_sentences": 2,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "Voor een commercieel evenement met minder dan 500 bezoekers bedragen de kosten € 266,90.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Arnhem bedragen de kosten voor een commercieel evenement met minder dan 500 bezoekers € 277,60"
+      },
+      {
+        "sentence": "Er is geen specifieke behandeltermijn voor evenementenvergunningen vermeld, maar voor andere vergunningen moet rekening gehouden worden met een behandeltermijn van minimaal een maand.",
+        "status": "false",
+        "note": "Er is wel een specifieke behandeltermijn vermeld: de aanvraag moet minimaal 8 weken voor het evenement worden ingediend, zoals eerder in de tekst correct staat aangegeven"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.arnhem.nl/Ondernemers/evenement_organiseren/evenementenvergunning",
+      "https://www.arnhem.nl/Ondernemers/evenement_organiseren",
+      "https://www.arnhem.nl/Ondernemers/vergunningen_ondernemers/Evenement_organiseren",
+      "https://www.arnhem.nl/Ondernemers/evenement_organiseren/evenement_organiseren",
+      "https://www.arnhem.nl/Ondernemers/horeca/horeca_en_vergunningen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Op 7 juli 2022 zijn er nieuwe regels vastgesteld. Deze regels staan in de 'Nota locatiegebonden evenementenbeleid Arnhem 2021'. Hierin staat informatie over onder andere de Evenementenkalender en het bijbehorende afwegingskader, de verschillende categorie-indelingen van evenementen, begin- en eindtijden en geluidsnormen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over de nieuwe regels uit 2022 en de 'Nota locatiegebonden evenementenbeleid Arnhem 2021' die specifieke details bevat over categorie-indelingen en geluidsnormen.",
+          "source_urls": [
+            "https://www.arnhem.nl/Ondernemers/vergunningen_ondernemers/Evenement_organiseren",
+            "https://www.arnhem.nl/Ondernemers/evenement_organiseren/evenement_organiseren"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het melden is gratis en doet u minimaal 8 werkdagen van tevoren.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de specifieke termijn van 8 werkdagen voor het doen van een melding klein evenement.",
+          "source_urls": [
+            "https://www.arnhem.nl/Ondernemers/evenement_organiseren"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten enkele belangrijke aanvullingen die niet in de originele tekst staan, met name over nieuwe regelgeving uit 2022 en specifieke termijnen voor meldingen. De kernvoorwaarden en kosten komen overeen, maar de originele tekst mist enkele recente beleidsupdates en specifieke termijnen die wel in de bronpagina's worden genoemd."
+  }
+}

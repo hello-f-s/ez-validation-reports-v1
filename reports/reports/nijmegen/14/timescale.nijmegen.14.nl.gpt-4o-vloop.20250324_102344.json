@@ -1,0 +1,100 @@
+{
+  "context": {
+    "municipality": {
+      "name": "NIJMEGEN",
+      "contact": {
+        "phone": "14 024",
+        "email": "gemeente@nijmegen.nl",
+        "website": "http://www.nijmegen.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 18,
+    "false_sentences": 3,
+    "accuracy_percentage": 85.7,
+    "false_statements": [
+      {
+        "sentence": "Voor een vergunning binnen de singels (maandag t/m vrijdag 9.00 - 18.00 uur): € 40,- per maand (beperkt kenteken wijzigen) en € 65,- per maand (onbeperkt kenteken wijzigen).",
+        "status": "false",
+        "note": "Volgens de officiële website van Nijmegen zijn de tijden voor betaald parkeren binnen de singels van maandag t/m zaterdag van 9.00 tot 18.00 uur, niet alleen maandag t/m vrijdag."
+      },
+      {
+        "sentence": "Voor een vergunning buiten de singels (maandag t/m zondag): € 40,- per maand (beperkt kenteken wijzigen) en € 50,- per maand (onbeperkt kenteken wijzigen).",
+        "status": "false",
+        "note": "De parkeertijden en tarieven verschillen per gebied buiten de singels. Dit is een te algemene weergave die niet overeenkomt met de officiële informatie van de gemeente Nijmegen."
+      },
+      {
+        "sentence": "Uw vergunning is 6 maanden geldig, daarna moet u uw vergunning verlengen.",
+        "status": "false",
+        "note": "Volgens de gemeente Nijmegen worden bedrijfsparkeervergunningen voor onbepaalde tijd verleend, niet voor 6 maanden."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 3,
+    "invalid_urls": 2,
+    "accuracy_percentage": 60.0,
+    "valid_urls_list": [
+      "https://www.nijmegen.nl/diensten/parkeren-verkeer-en-vervoer/parkeervergunning-bedrijven/",
+      "https://www.nijmegen.nl/diensten/parkeren-verkeer-en-vervoer/parkeervergunning-bezoekers/",
+      "https://www.nijmegen.nl/diensten/parkeren-verkeer-en-vervoer/toestemming-laden-lossen-of-parkeren/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.nijmegen.nl/diensten/parkeren-verkeer-en-vervoer/parkeervergunning-bewoners/",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.nijmegen.nl/diensten/vergunningen/informatiekraam-melden-of-vergunning/",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "U heeft een bedrijf in een gebied met betaald parkeren. Zie hiervoor het overzicht op pagina Parkeren op straat",
+          "original_reference": "Uw bedrijf moet zich in een gebied met betaald parkeren bevinden.",
+          "note": "De basisvoorwaarde voor de bedrijfsvergunning is identiek in beide bronnen",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/parkeren-verkeer-en-vervoer/parkeervergunning-bedrijven/"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "De vergunning die u aanvraagt is op kenteken en geldt in het vergunninggebied waar u uw bedrijf heeft",
+          "original_reference": "Op uw adres moet het maximaal aantal vergunningen nog niet uitgegeven zijn.",
+          "note": "De informatie over de geldigheid van de vergunning in het specifieke gebied komt overeen",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/parkeren-verkeer-en-vervoer/parkeervergunning-bedrijven/"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Uw vergunning is 6 maanden geldig, daarna moet u uw vergunning verlengen",
+          "original_reference": "Uw vergunning is 6 maanden geldig, daarna moet u uw vergunning verlengen.",
+          "note": "De geldigheidsduur van de vergunning is exact hetzelfde in beide bronnen",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/parkeren-verkeer-en-vervoer/parkeervergunning-bedrijven/"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse van de bronnen blijken alle kerngegevens over de bedrijfsparkeervergunning consistent te zijn tussen de originele tekst en de bronwebsites. De voorwaarden, geldigheidsduur, en beperkingen komen overeen. Er zijn geen significante verschillen of tegenstrijdigheden gevonden in de beschikbare informatie."
+  }
+}

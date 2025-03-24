@@ -1,0 +1,112 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HEEMSKERK",
+      "contact": {
+        "phone": "14 0251",
+        "email": "post@heemskerk.nl",
+        "website": "http://www.heemskerk.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 8,
+    "false_sentences": 5,
+    "accuracy_percentage": 61.5,
+    "false_statements": [
+      {
+        "sentence": "Als u een springkussen plaatst, moet u een certificaat van goedkeuring meeleveren.",
+        "status": "false",
+        "note": "Op de website van gemeente Heemskerk wordt niet specifiek vermeld dat een certificaat van goedkeuring voor springkussens vereist is"
+      },
+      {
+        "sentence": "Voor de aanvraag heeft u wellicht specifieke documentatie nodig, zoals een certificaat voor springkussens indien van toepassing.",
+        "status": "false",
+        "note": "Deze specifieke documentatie-eis staat niet vermeld op de website van gemeente Heemskerk"
+      },
+      {
+        "sentence": "U dient de evenementenvergunning online aan te vragen.",
+        "status": "false",
+        "note": "Volgens de website van Heemskerk kan een evenementenvergunning zowel digitaal als schriftelijk worden aangevraagd"
+      },
+      {
+        "sentence": "De kosten betaalt u achteraf.",
+        "status": "false",
+        "note": "Op de website van gemeente Heemskerk wordt niet vermeld dat de kosten achteraf betaald moeten worden"
+      },
+      {
+        "sentence": "Er kan geen specifieke informatie worden gevonden over bezwaarprocedures voor evenementenvergunningen op de website van de gemeente.",
+        "status": "false",
+        "note": "Op de website van gemeente Heemskerk staat wel informatie over bezwaarprocedures onder de algemene bezwaarprocedures voor vergunningen"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca/exploitatievergunning",
+      "https://www.heemskerk.nl/aanvragen-en-regelen/subsidie-aanvragen-/-vaststellen/subsidie-evenementen",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/vergunning-gebruik-openbare-weg",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/evenement-melden-of-vergunning-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.heemskerk.nl/evenement-melden-vergunning-aanvragen\">https://www.heemskerk.nl/evenement-melden-vergunning-aanvragen</a></p>",
+        "reason": "INVALID: Error scraping https://www.heemskerk.nl/evenement-melden-vergunning-aanvragen\">https://www.heemskerk.nl/evenement-melden-vergunning-aanvragen</a></p>: 404 Client Error: Not Found for url: https://www.heemskerk.nl/evenement-melden-vergunning-aanvragen%22%3Ehttps://www.heemskerk.nl/evenement-melden-vergunning-aanvragen%3C/a%3E%3C/p%3E"
+      },
+      {
+        "url": "https://www.heemskerk.nl/evenement-melden-vergunning-aanvragen",
+        "reason": "INVALID: Error scraping https://www.heemskerk.nl/evenement-melden-vergunning-aanvragen: 404 Client Error: Not Found for url: https://www.heemskerk.nl/evenement-melden-vergunning-aanvragen"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Doe dit minimaal 15 werkdagen voorafgaand aan het evenement",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt geen aanvraagtermijn, terwijl de bron specificeert dat meldingen minimaal 15 werkdagen van tevoren moeten worden gedaan",
+          "source_urls": [
+            "https://www.heemskerk.nl/belastingen-en-vergunningen/evenement-melden-of-vergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Maximaal 200 personen aanwezig. Het evenement vindt plaats tussen 07.00 en 23.00 uur. Geen muziek voor 07.00 uur of na 23.00 uur.",
+          "original_reference": "Bij kleine evenementen doet u een melding",
+          "note": "De originele tekst specificeert niet de exacte criteria voor kleine evenementen, terwijl de bron duidelijke voorwaarden stelt qua bezoekersaantal en tijden",
+          "source_urls": [
+            "https://www.heemskerk.nl/belastingen-en-vergunningen/evenement-melden-of-vergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een melding doen is gratis",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat een melding gratis is, wat belangrijke informatie is voor aanvragers",
+          "source_urls": [
+            "https://www.heemskerk.nl/belastingen-en-vergunningen/evenement-melden-of-vergunning-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie die niet in de originele tekst staat, waaronder specifieke termijnen voor aanvragen (15 werkdagen), duidelijke criteria voor kleine evenementen (maximaal 200 personen, tijden tussen 07:00-23:00) en het feit dat meldingen gratis zijn. Deze informatie is essentieel voor mensen die een evenement willen organiseren."
+  }
+}

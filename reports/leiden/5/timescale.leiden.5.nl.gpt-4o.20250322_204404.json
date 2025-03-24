@@ -1,0 +1,96 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LEIDEN",
+      "contact": {
+        "phone": "14 071",
+        "email": "null",
+        "website": "http://www.leiden.nl/gemeente"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 13,
+    "false_sentences": 2,
+    "accuracy_percentage": 86.7,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor een alcoholvergunning bedragen € 661,10.",
+        "status": "false",
+        "note": "De actuele kosten voor een alcoholvergunning (Drank- en Horecavergunning) in Leiden bedragen € 678,85 voor 2024."
+      },
+      {
+        "sentence": "Indien de gemeente uw aanvraag afwijst, kunt u 25% van de kosten terugkrijgen.",
+        "status": "false",
+        "note": "Op de officiële website van gemeente Leiden staat geen informatie over terugbetaling bij afwijzing van de aanvraag. Dit percentage wordt niet genoemd in de legesverordening."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 4,
+    "invalid_urls": 2,
+    "accuracy_percentage": 66.7,
+    "valid_urls_list": [
+      "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers/horeca/alcoholvergunning-voorheen-drank-en-horecavergunning",
+      "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers/horeca/vergunning-terras-of-terrasboot",
+      "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers",
+      "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers/horeca/drank-en-horecaverlof"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://gemeente.website",
+        "reason": "INVALID: Error scraping https://gemeente.website: HTTPSConnectionPool(host='gemeente.website', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'gemeente.website'. (_ssl.c:1018)\")))"
+      },
+      {
+        "url": "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers/vergunningen-en-ontheffingen/exploitatievergunning-seksbedrijf-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De aanvraag kost € 351,30",
+          "original_reference": "De kosten voor een alcoholvergunning bedragen € 661,10",
+          "note": "Er is een verschil in de vermelde kosten. De bron vermeldt €351,30 voor een drank- en horecaverlof, terwijl de originele tekst €661,10 noemt voor een alcoholvergunning. Dit zijn echter twee verschillende vergunningen (verlof is voor alcoholvrije drank, vergunning voor alcoholhoudende drank).",
+          "source_urls": [
+            "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers/horeca/drank-en-horecaverlof"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U bent minimaal 18 jaar oud",
+          "original_reference": "U moet minimaal 21 jaar oud zijn",
+          "note": "Er is een verschil in de minimumleeftijd. Dit komt omdat het drank- en horecaverlof (18 jaar) en de alcoholvergunning (21 jaar) verschillende vergunningen zijn met andere vereisten.",
+          "source_urls": [
+            "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers/horeca/drank-en-horecaverlof"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "U ontvangt het besluit van de gemeente binnen 8 weken via e-mail",
+          "original_reference": "U ontvangt het besluit van de gemeente binnen 8 weken via e-mail",
+          "note": "De behandeltermijn van 8 weken is consistent in beide bronnen",
+          "source_urls": [
+            "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers/horeca/drank-en-horecaverlof"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de kosten en leeftijdsvereisten, maar dit komt doordat er onderscheid is tussen een alcoholvergunning en een drank- en horecaverlof. De overige voorwaarden en procedures zijn grotendeels consistent tussen de bronnen en de originele tekst."
+  }
+}

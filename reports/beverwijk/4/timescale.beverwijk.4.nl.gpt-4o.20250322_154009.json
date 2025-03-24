@@ -1,0 +1,94 @@
+{
+  "context": {
+    "municipality": {
+      "name": "BEVERWIJK",
+      "contact": {
+        "phone": "(0251) 25 62 56",
+        "email": "info@beverwijk.nl",
+        "website": "http://www.beverwijk.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 10,
+    "false_sentences": 3,
+    "accuracy_percentage": 76.9,
+    "false_statements": [
+      {
+        "sentence": "U dient het aanvraagformulier volledig in te vullen. Dit is beschikbaar als pdf op de website van de gemeente.",
+        "status": "false",
+        "note": "Het aanvraagformulier is niet beschikbaar als PDF maar moet digitaal worden ingevuld via het e-formulier op de website van de gemeente Beverwijk"
+      },
+      {
+        "sentence": "Voor grote evenementen moet u ze uiterlijk voorafgaand aan 25 oktober aanmelden voor de regionale evenementenkalender.",
+        "status": "false",
+        "note": "De datum van 25 oktober is onjuist. Volgens de website van Beverwijk moeten grote evenementen voor 1 oktober van het jaar voorafgaand aan het evenement worden aangemeld"
+      },
+      {
+        "sentence": "Middelgroot evenement: € 362,04",
+        "status": "false",
+        "note": "Dit bedrag is niet correct volgens de actuele legesverordening van de gemeente Beverwijk. De exacte bedragen zijn te vinden in de legesverordening op de gemeentelijke website"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.beverwijk.nl/overzicht-vragen-voor-eenmalige-subsidie-aanvragen",
+      "https://www.beverwijk.nl/evenementen-organiseren",
+      "https://www.beverwijk.nl/aanmelden-evenementenkalender-2024",
+      "https://www.beverwijk.nl/aanmelden-evenementenkalender-2025",
+      "https://www.beverwijk.nl/evenement"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Stuur het volledig ingevulde formulier naar info@beverwijk.nl t.a.v. team Leefomgeving, bijzondere wetten en vergunningen",
+          "original_reference": "Ga naar de website van de gemeente Beverwijk en vul het aanvraagformulier in voor uw evenement",
+          "note": "De originele tekst vermeldt niet het specifieke e-mailadres en team waar het formulier naartoe moet worden gestuurd",
+          "source_urls": [
+            "https://www.beverwijk.nl/aanmelden-evenementenkalender-2024",
+            "https://www.beverwijk.nl/aanmelden-evenementenkalender-2025"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor kleine evenementen kunt u een melding doen via omgevingsdesk@beverwijk.nl",
+          "original_reference": "Voor bepaalde kleine evenementen is een melding voldoende",
+          "note": "De originele tekst vermeldt niet het specifieke e-mailadres voor het melden van kleine evenementen",
+          "source_urls": [
+            "https://www.beverwijk.nl/evenementen-organiseren"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u een evenement organiseert, mag u niet zomaar alcohol schenken. Daarvoor heeft u toestemming nodig, dit heet een alcoholontheffing",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over de vereiste alcoholontheffing bij evenementen",
+          "source_urls": [
+            "https://www.beverwijk.nl/evenementen-organiseren"
+          ]
+        }
+      ]
+    },
+    "summary": "De originele tekst mist enkele belangrijke details die wel in de bronnen staan, zoals specifieke contact-emailadressen voor aanvragen en meldingen, en de vereiste alcoholontheffing. De procedures zijn grotendeels consistent, maar de bronnen bieden meer gedetailleerde informatie over de uitvoering."
+  }
+}

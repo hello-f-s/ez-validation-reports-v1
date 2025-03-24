@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HILVERSUM",
+      "contact": {
+        "phone": "14 035",
+        "email": "gemeente@hilversum.nl",
+        "website": "http://www.hilversum.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 31,
+    "true_sentences": 30,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.8,
+    "false_statements": [
+      {
+        "sentence": "De gemeente heeft 8 weken de tijd om op uw aanvraag te beslissen en mag deze termijn met 8 weken verlengen.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Hilversum heeft de gemeente 12 weken de tijd om op een aanvraag voor een exploitatievergunning te beslissen, niet 8 weken. Deze termijn kan wel met 8 weken worden verlengd."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://hilversum.nl/vergunningen/vergunningen-voor-horeca/exploitatievergunning-horeca",
+      "https://hilversum.nl/vergunningen/vergunningen-voor-horeca",
+      "https://hilversum.nl/bouwen-verbouwen/omgevingswet/aanvraag-omgevingsvergunning-uitgelegd",
+      "https://hilversum.nl/vergunningen/vergunningen-voor-horeca/alcoholwetvergunning-voor-horeca-slijterijen",
+      "https://hilversum.nl/vergunningen/vergunningen-voor-bouwen-verbouwen/omgevingsvergunning-aanvragen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor een afhaalzaak heeft u geen exploitatievergunning nodig. U mag dan geen tafels, bar of stoelen plaatsen en geen terras hebben!",
+          "original_reference": "Voor afhaalzaken [...] is geen exploitatievergunning nodig.",
+          "note": "De bronpagina specificeert extra dat afhaalzaken geen tafels, bar, stoelen of terras mogen hebben. Deze belangrijke beperking ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://hilversum.nl/vergunningen/vergunningen-voor-horeca/exploitatievergunning-horeca"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U vraagt wel een exploitatievergunning aan als: U een horecabedrijf start of overneemt, De rechtsvorm van het horecabedrijf wijzigt (bijvoorbeeld van bv naar eenmanszaak), U het bedrijf uitbreidt of verbouwt, U een terras start of uitbreidt",
+          "original_reference": "No matching information",
+          "note": "De bronpagina noemt specifieke situaties waarin een exploitatievergunning moet worden aangevraagd. Deze belangrijke informatie ontbreekt volledig in de originele tekst.",
+          "source_urls": [
+            "https://hilversum.nl/vergunningen/vergunningen-voor-horeca/exploitatievergunning-horeca"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het kan zijn dat u een omgevingsvergunning brandveilig gebruik moet aanvragen",
+          "original_reference": "het kan zijn dat u ook een milieumelding of een omgevingsvergunning voor brandveilig gebruik moet aanvragen",
+          "note": "De originele tekst noemt dit als mogelijkheid samen met milieumelding, terwijl de bron dit als aparte vereiste vermeldt.",
+          "source_urls": [
+            "https://hilversum.nl/vergunningen/vergunningen-voor-horeca/exploitatievergunning-horeca"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten enkele belangrijke aanvullende details die niet in de originele tekst staan, met name specifieke beperkingen voor afhaalzaken en situaties waarin een exploitatievergunning verplicht is. Ook is er een klein verschil in hoe de brandveiligheidsvergunning wordt gepresenteerd. Deze informatie is essentieel voor ondernemers om correct te kunnen bepalen wat hun verplichtingen zijn."
+  }
+}

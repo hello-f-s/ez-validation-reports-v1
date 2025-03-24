@@ -1,0 +1,91 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MEPPEL",
+      "contact": {
+        "phone": "14 0522",
+        "email": "postbus@meppel.nl",
+        "website": "http://www.meppel.nl"
+      }
+    },
+    "service": {
+      "id": 22,
+      "name": "Woonruimte splitsen of samenvoegen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "U kunt een omgevingsvergunning persoonlijk bij de gemeente of via omgevingswet.overheid.nl aanvragen.",
+        "status": "false",
+        "note": "De juiste website voor het aanvragen van een omgevingsvergunning is omgevingsloket.nl, niet omgevingswet.overheid.nl. Dit is de officiële website die door de gemeente Meppel wordt gebruikt voor omgevingsvergunningen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 1,
+    "invalid_urls": 5,
+    "accuracy_percentage": 16.7,
+    "valid_urls_list": [
+      "https://www.meppel.nl/Ondernemer/Vergunningen_regelingen/Horeca/exploitatievergunning_horecabedrijf"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.meppel.nl/Inwoner/Wonen_ver_bouwen/Ver_bouwen_slopen/Omgevingsplan_afwijken",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.meppel.nl/Inwoner/Wonen_ver_bouwen/Ver_bouwen_slopen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.meppel.nl/Inwoner/Wonen_ver_bouwen/Omgevingswet_n_wet_voor_onze_leefomgeving/Conceptaanvraag_haalbaarheid_ruimtelijk_initiatief_onderzoeken",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://meppel.nl",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.meppel.nl/Inwoner/Wonen_ver_bouwen/Ver_bouwen_slopen/woning_splitsen_in_aparte_zelfstandige_woningen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor het splitsen van een woning moet u eerst een conceptaanvraag indienen om de haalbaarheid te onderzoeken",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat er eerst een conceptaanvraag moet worden ingediend voor een haalbaarheidsonderzoek, wat een belangrijke voorwaardelijke stap is",
+          "source_urls": [
+            "https://www.meppel.nl/Inwoner/Wonen_ver_bouwen/Omgevingswet_n_wet_voor_onze_leefomgeving/Conceptaanvraag_haalbaarheid_ruimtelijk_initiatief_onderzoeken"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De aanvraag moet voldoen aan de parkeernorm en er moet voldoende buitenruimte zijn",
+          "original_reference": "De nieuwe situatie moet in overeenstemming zijn met de bestemmingsplanvoorschriften en technische eisen",
+          "note": "De bronnen specificeren concrete eisen zoals parkeernorm en buitenruimte, terwijl de originele tekst alleen algemene technische eisen noemt",
+          "source_urls": [
+            "https://www.meppel.nl/Inwoner/Wonen_ver_bouwen/Ver_bouwen_slopen/woning_splitsen_in_aparte_zelfstandige_woningen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten twee belangrijke aanvullende vereisten die niet in de originele tekst staan: de noodzaak van een voorafgaande conceptaanvraag voor haalbaarheidsonderzoek en specifieke eisen rond parkeren en buitenruimte. Deze informatie is essentieel voor een complete en accurate beschrijving van het proces van woningsplitsing."
+  }
+}

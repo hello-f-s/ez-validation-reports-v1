@@ -1,0 +1,87 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DALFSEN",
+      "contact": {
+        "phone": "14 0529",
+        "email": "gemeente@dalfsen.nl",
+        "website": "http://www.dalfsen.nl"
+      }
+    },
+    "service": {
+      "id": 8,
+      "name": "Marktvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "De legeskosten voor een marktvergunning bedragen: € 135,20.",
+        "status": "false",
+        "note": "Het exacte bedrag van € 135,20 komt niet overeen met de actuele legeskosten volgens de officiële website van gemeente Dalfsen. De gemeente vermeldt geen vast bedrag op de website maar geeft aan dat de kosten variëren en jaarlijks worden vastgesteld."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.dalfsen.nl/omgevingsvergunning",
+      "https://www.dalfsen.nl/markt-of-standplaats",
+      "https://www.dalfsen.nl/milieu-vergunning-of-melding",
+      "https://www.dalfsen.nl/uitstallingen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.dalfsen.nl/exploitatievergunning-horecabedrijf",
+        "reason": "INVALID: Error scraping https://www.dalfsen.nl/exploitatievergunning-horecabedrijf: HTTPSConnectionPool(host='www.dalfsen.nl', port=443): Max retries exceeded with url: /exploitatievergunning-horecabedrijf (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1076f4550>, 'Connection to www.dalfsen.nl timed out. (connect timeout=10)'))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "In de gemeente Dalfsen kennen we 2 weekmarkten: Donderdagochtend Kerkplein Dalfsen; Zaterdagochtend Grote Markt Nieuwleusen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de specifieke locaties en tijden van de weekmarkten, terwijl dit essentiële informatie is voor aanvragers.",
+          "source_urls": [
+            "https://www.dalfsen.nl/markt-of-standplaats"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Aanvraagformulier dagplaats marktvergunning.docx, Aanvraagformulier vaste marktplaatsvergunning.docx",
+          "original_reference": "De aanvraag dient te worden ingediend via de gemeentelijke kanalen.",
+          "note": "De bronpagina specificeert concrete aanvraagformulieren, terwijl de originele tekst alleen algemeen verwijst naar gemeentelijke kanalen.",
+          "source_urls": [
+            "https://www.dalfsen.nl/markt-of-standplaats"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vaste standplaatsen aangewezen in Dalfsen, Lemelerveld, Nieuwleusen en Oudleusen met specifieke locaties",
+          "original_reference": "No matching information",
+          "note": "De originele tekst maakt geen onderscheid tussen marktplaats en standplaats en vermeldt niet de specifieke standplaatslocaties in de verschillende kernen.",
+          "source_urls": [
+            "https://www.dalfsen.nl/markt-of-standplaats"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten belangrijke aanvullende informatie die niet in de originele tekst staat, zoals specifieke marktlocaties en tijden, concrete aanvraagformulieren en het onderscheid tussen markt- en standplaatsvergunningen. Deze informatie is essentieel voor potentiële aanvragers. Ook worden de vaste standplaatslocaties in verschillende kernen gedetailleerd beschreven in de bronnen, wat ontbreekt in de originele tekst."
+  }
+}

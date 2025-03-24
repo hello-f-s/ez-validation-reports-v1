@@ -1,0 +1,94 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HEEMSTEDE",
+      "contact": {
+        "phone": "(023) 548 58 68",
+        "email": "gemeente@heemstede.nl",
+        "website": "http://www.heemstede.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 13,
+    "false_sentences": 2,
+    "accuracy_percentage": 86.7,
+    "false_statements": [
+      {
+        "sentence": "Klein evenement: € 26,05",
+        "status": "false",
+        "note": "Het actuele tarief voor een klein evenement in Heemstede is € 27,35 volgens de gemeentelijke legesverordening 2024"
+      },
+      {
+        "sentence": "Grote evenementen of evenementen met een verhoogd risico: € 532,70",
+        "status": "false",
+        "note": "Het actuele tarief voor grote evenementen of evenementen met verhoogd risico in Heemstede is € 559,35 volgens de gemeentelijke legesverordening 2024"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.heemstede.nl/vergunningen/evenementenvergunning",
+      "https://www.heemstede.nl/aanvragen-en-regelen",
+      "https://www.heemstede.nl/vergunningen/standplaatsvergunning-aanvragen",
+      "https://www.heemstede.nl/vergunningen/alcoholwetvergunning",
+      "https://www.heemstede.nl/vergunningen/uw-woning-verhuren"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.gemeenteheemstede.nl/evenementenvergunning",
+        "reason": "INVALID: Error scraping https://www.gemeenteheemstede.nl/evenementenvergunning: 439 Client Error: status code 439 for url: https://www.gemeenteheemstede.nl/evenementenvergunning"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vergunning aanvragen minimaal 4 weken voordat u de standplaats gaat gebruiken",
+          "original_reference": "Dien de aanvraag 8-12 weken voor het evenement in",
+          "note": "Er is een discrepantie in de aanvraagtermijn tussen verschillende vergunningen. Voor standplaatsvergunningen geldt 4 weken, voor evenementenvergunningen 8-12 weken.",
+          "source_urls": [
+            "https://www.heemstede.nl/vergunningen/standplaatsvergunning-aanvragen",
+            "https://www.heemstede.nl/vergunningen/evenementenvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Meesturen: De datum waarop u het evenement organiseert, Start, duur en locatie van het evenement, Aantal bezoekers of deelnemers dat u verwacht, Voorzieningen die u treft voor toiletten, afval, verkeer, EHBO en vluchtroutes voor de bezoekers",
+          "original_reference": "No matching information",
+          "note": "De originele tekst specificeert niet welke documenten precies meegestuurd moeten worden bij de aanvraag, terwijl de bronpagina hier wel gedetailleerde informatie over geeft.",
+          "source_urls": [
+            "https://www.heemstede.nl/vergunningen/evenementenvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Reclameborden plaatsen: Bekijk wat u moet doen als u reclameborden wilt plaatsen voor het evenement dat u organiseert.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de mogelijkheid en regels voor het plaatsen van reclameborden, terwijl dit wel wordt genoemd in de bronpagina.",
+          "source_urls": [
+            "https://www.heemstede.nl/vergunningen/evenementenvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen ontbrekende informatie in de originele tekst over specifieke vereisten voor de aanvraag, zoals benodigde documenten en voorzieningen. Ook wordt in de bronnen aanvullende informatie gegeven over reclameborden die niet in de originele tekst staat. Daarnaast is er een verschil in aanvraagtermijnen tussen verschillende type vergunningen wat verwarrend kan zijn voor aanvragers."
+  }
+}

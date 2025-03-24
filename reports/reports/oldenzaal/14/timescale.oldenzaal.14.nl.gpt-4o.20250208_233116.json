@@ -1,0 +1,114 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OLDENZAAL",
+      "contact": {
+        "phone": "(0541) 58 81 11",
+        "email": "info@oldenzaal.nl",
+        "website": "http://www.oldenzaal.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 12,
+    "false_sentences": 2,
+    "accuracy_percentage": 85.7,
+    "false_statements": [
+      {
+        "sentence": "Parkeervergunning bedrijf: € 190 per kalenderjaar",
+        "status": "false",
+        "note": "Het correcte tarief voor een bedrijfsparkeervergunning in Oldenzaal is € 195,60 per kalenderjaar (2024)"
+      },
+      {
+        "sentence": "Er is geen specifieke tijdsduur vermeld voor de verwerking van de inrijontheffing aanvraag.",
+        "status": "false",
+        "note": "Volgens de officiële website van Oldenzaal wordt een inrijontheffing binnen 5 werkdagen verwerkt"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 9,
+    "valid_urls": 5,
+    "invalid_urls": 4,
+    "accuracy_percentage": 55.6,
+    "valid_urls_list": [
+      "https://www.oldenzaal.nl/inrijontheffing",
+      "https://www.oldenzaal.nl/standplaatsvergunning",
+      "https://www.oldenzaal.nl/omgevingsvergunning",
+      "https://www.oldenzaal.nl/gehandicaptenparkeerkaart",
+      "https://www.oldenzaal.nl/parkeervergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://parkeren.oldenzaal.nl\">Parkeervergunning</a><br>",
+        "reason": "INVALID: Error scraping https://parkeren.oldenzaal.nl\">Parkeervergunning</a><br>: HTTPSConnectionPool(host='parkeren.oldenzaal.nl%22%3eparkeervergunning%3c', port=443): Max retries exceeded with url: /a%3E%3Cbr%3E (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x103fc3770>: Failed to resolve 'parkeren.oldenzaal.nl%22%3eparkeervergunning%3c' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://parkeren.oldenzaal.nl",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://parkeren.oldenzaal.nl/DVSPortal/",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://parkeren.oldenzaal.nl/DVSPortal/\">Inrijontheffing</a></p>",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 4,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Laden en lossen mag op de volgende dagen en tijden: Maandag tot en met vrijdag tussen 07.00 uur en 13.00 uur en tussen 18.00 en 20.00 uur. Zaterdag tussen 07.00 uur en 11.00 uur.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen specifieke tijden voor laden en lossen, terwijl de bronpagina deze wel duidelijk vermeldt.",
+          "source_urls": [
+            "https://www.oldenzaal.nl/inrijontheffing"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u eigen parkeerruimte heeft, komt u niet of maar beperkt in aanmerking voor een parkeervergunning.",
+          "original_reference": "No matching information",
+          "note": "Deze belangrijke beperking voor het verkrijgen van een parkeervergunning ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.oldenzaal.nl/parkeervergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Is uw voertuig langer dan 6 meter, hoger dan 2,4 meter of breder dan 2 meter? Grote voertuigen/werkbussen mogen niet geparkeerd worden in de bebouwde kom na 18.00 uur en in het weekend.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt geen beperkingen voor grote voertuigen, terwijl dit een belangrijke voorwaarde is.",
+          "source_urls": [
+            "https://www.oldenzaal.nl/parkeervergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bewonersvergunning betaald parkeren. Met deze vergunning kunnen alleen bewoners parkeren in de zone betaald parkeren. Het kost € 80 per kalenderjaar.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de bewonersvergunning en het bijbehorende tarief van €80.",
+          "source_urls": [
+            "https://www.oldenzaal.nl/parkeervergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten belangrijke aanvullende informatie die ontbreekt in de originele tekst, waaronder specifieke laad- en lostijden, beperkingen voor eigenaren van privé-parkeerruimte, regels voor grote voertuigen, en details over bewonersvergunningen. Deze informatie is essentieel voor een volledig begrip van de parkeerregels en vergunningmogelijkheden."
+  }
+}

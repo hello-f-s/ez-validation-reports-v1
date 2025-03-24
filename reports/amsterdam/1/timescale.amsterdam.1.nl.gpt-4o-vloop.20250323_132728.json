@@ -1,0 +1,66 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AMSTERDAM",
+      "contact": {
+        "phone": "14 020",
+        "email": "null",
+        "website": "http://www.amsterdam.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "Omwonenden en belanghebbenden kunnen binnen 2 weken na publicatie van de aanvraag een zienswijze indienen die in aanmerking wordt genomen bij de beslissing over de aanvraag.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Amsterdam hebben belanghebbenden 6 weken (niet 2 weken) de tijd om een zienswijze in te dienen na publicatie van de aanvraag."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 2,
+    "valid_urls": 1,
+    "invalid_urls": 1,
+    "accuracy_percentage": 50.0,
+    "valid_urls_list": [
+      "https://www.amsterdam.nl/parkeren/parkeervergunning/parkeervergunning-bedrijven/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.amsterdam.nl/subsidies/vragen-subsidies",
+        "reason": "INVALID: Error scraping https://www.amsterdam.nl/subsidies/vragen-subsidies: 403 Client Error: Forbidden for url: https://www.amsterdam.nl/subsidies/vragen-subsidies"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Deze pagina bevat informatie over parkeervergunningen voor bedrijven in Amsterdam",
+          "original_reference": "De tekst gaat over alcoholvergunningen voor horecabedrijven",
+          "note": "De geciteerde bron gaat over een volledig ander onderwerp (parkeervergunningen) dan de originele tekst (alcoholvergunningen). Er is geen inhoudelijke overlap om te vergelijken.",
+          "source_urls": [
+            "https://www.amsterdam.nl/parkeren/parkeervergunning/parkeervergunning-bedrijven/"
+          ]
+        }
+      ]
+    },
+    "summary": "De aangeleverde brontekst gaat over een volledig ander onderwerp (parkeervergunningen voor bedrijven) dan de originele tekst (alcoholvergunningen voor horecabedrijven). Hierdoor is een zinvolle inhoudelijke vergelijking niet mogelijk. Om een goede analyse te kunnen maken zou een relevante brontekst over alcoholvergunningen nodig zijn."
+  }
+}

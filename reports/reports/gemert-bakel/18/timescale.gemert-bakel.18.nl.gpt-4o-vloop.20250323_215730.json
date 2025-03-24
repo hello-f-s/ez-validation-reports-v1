@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "GEMERT-BAKEL",
+      "contact": {
+        "phone": "(0492) 37 85 00",
+        "email": "gemeente@gemert-bakel.nl",
+        "website": "http://www.gemert-bakel.nl"
+      }
+    },
+    "service": {
+      "id": 18,
+      "name": "Ventvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 15,
+    "false_sentences": 2,
+    "accuracy_percentage": 88.2,
+    "false_statements": [
+      {
+        "sentence": "Het gemeentehuis van Gemert-Bakel is als volgt geopend: - **Maandag**: 09.00 - 19.00 uur",
+        "status": "false",
+        "note": "Het gemeentehuis is op maandag geopend van 09.00 - 20.00 uur, niet tot 19.00 uur volgens de officiële website van gemeente Gemert-Bakel"
+      },
+      {
+        "sentence": "**Fax**: 0492-366325",
+        "status": "false",
+        "note": "Dit faxnummer wordt niet meer vermeld op de officiële communicatiekanalen van de gemeente Gemert-Bakel en is verouderd, aangezien de gemeente geen fax meer gebruikt voor communicatie"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.gemert-bakel.nl/omgevingsvergunning",
+      "https://www.gemert-bakel.nl/evenementen-vergunning",
+      "https://www.gemert-bakel.nl/omgevingsvergunning-activiteit-uitvoeren-van-een-werk",
+      "https://www.gemert-bakel.nl/oprichten-of-veranderen-bedrijf",
+      "https://www.gemert-bakel.nl/omgevingsvergunning-activiteit-milieu"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Op 1 juli 2024 stopt het omgevingsloket online (OLO). Het indienen van aanvullingen via OLO is dan niet meer mogelijk. Zijn er initiatiefnemers die ook na 1 juli 2024 aanvullingen willen indienen? Dat kan via de mail naar gemeente@gemert-bakel.nl.",
+          "original_reference": "Het digitale Omgevingsloket is een handige tool voor het indienen van uw aanvraag.",
+          "note": "De originele tekst vermeldt niet dat het Omgevingsloket per 1 juli 2024 stopt, wat een belangrijke wijziging is in de aanvraagprocedure.",
+          "source_urls": [
+            "https://www.gemert-bakel.nl/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als burger kunt u uw aanvraag ook op papier indienen (bij de balie in het gemeentehuis of per post).",
+          "original_reference": "Bedrijven zijn wettelijk verplicht om aanvragen digitaal in te dienen via het Omgevingsloket.",
+          "note": "De originele tekst vermeldt niet dat burgers de mogelijkheid hebben om aanvragen ook op papier in te dienen, wat een belangrijk onderscheid is tussen burgers en bedrijven.",
+          "source_urls": [
+            "https://www.gemert-bakel.nl/omgevingsvergunning-activiteit-uitvoeren-van-een-werk"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Indien je aanvraag onvoldoende stukken bevat om deze te behandelen, vragen wij je om aanvullende stukken in te dienen. Voldoet je aanvraag inhoudelijk niet, dan wordt de aanvraag geweigerd of krijg je het advies om de aanvraag in te trekken.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over het proces bij onvolledige aanvragen en de mogelijke gevolgen daarvan.",
+          "source_urls": [
+            "https://www.gemert-bakel.nl/oprichten-of-veranderen-bedrijf"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de aanstaande stopzetting van het Omgevingsloket (1 juli 2024), de mogelijkheid voor burgers om papieren aanvragen in te dienen, en ontbrekende informatie over de procedure bij onvolledige aanvragen. Deze informatie is essentieel voor een correcte dienstverlening en zou in de originele tekst opgenomen moeten worden."
+  }
+}

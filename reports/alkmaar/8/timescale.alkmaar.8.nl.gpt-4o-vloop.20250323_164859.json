@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ALKMAAR",
+      "contact": {
+        "phone": "14 072",
+        "email": "post@alkmaar.nl",
+        "website": "http://www.alkmaar.nl"
+      }
+    },
+    "service": {
+      "id": 8,
+      "name": "Marktvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "U kunt een standplaatsvergunning aanvragen via het Omgevingsloket.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Alkmaar moet een standplaatsvergunning worden aangevraagd via het digitale loket van de gemeente met eHerkenning, niet via het Omgevingsloket."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.alkmaar.nl/direct-regelen/ondernemen/vergunningen-en-ontheffingen/standplaats-vergunning",
+      "https://www.alkmaar.nl/direct-regelen/ondernemen/vergunningen-en-ontheffingen/exploitatievergunning/",
+      "https://www.alkmaar.nl/direct-regelen/afval/het-ergens-niet-mee-eens-zijn/woo-verzoek",
+      "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/bouwen-en-verbouwen/omgevingsloket",
+      "https://www.alkmaar.nl/direct-regelen/wonen-verhuizen-en-verbouwen/vergunningen/omgevingsvergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Tot 1 januari 2024 deed u een aanvraag of een melding via het Omgevingsloket online (OLO). Op 1 januari 2024 is de nieuwe Omgevingswet ingegaan. U doet de aanvraag nu in het nieuwe Omgevingsloket.",
+          "original_reference": "U kunt een standplaatsvergunning aanvragen via het Omgevingsloket.",
+          "note": "De originele tekst verwijst naar een verouderd aanvraagsysteem. Sinds 1 januari 2024 moet dit via het nieuwe Omgevingsloket gebeuren onder de nieuwe Omgevingswet.",
+          "source_urls": [
+            "https://www.alkmaar.nl/direct-regelen/wonen-verhuizen-en-verbouwen/vergunningen/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Europaplein: gehele week in de maanden november, december en januari (oliebollen), vrijdag en zaterdag (Syrische snacks), di, do, vr, za en zo (Vietnamese)",
+          "original_reference": "er zijn beperkingen op marktdagen op locaties zoals Europaplein",
+          "note": "De originele tekst is te algemeen. De bronpagina specificeert exacte dagen en type verkoop voor het Europaplein, inclusief seizoensgebonden beperkingen en verschillende type verkoopwaren.",
+          "source_urls": [
+            "https://www.alkmaar.nl/direct-regelen/ondernemen/vergunningen-en-ontheffingen/standplaats-vergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden: (1) een update in het aanvraagsysteem naar het nieuwe Omgevingsloket sinds 1 januari 2024, wat niet wordt vermeld in de originele tekst, en (2) meer gedetailleerde informatie over standplaatslocaties en toegestane verkoop op het Europaplein dan in de originele tekst wordt beschreven. Deze verschillen zijn significant voor de actualiteit en nauwkeurigheid van de informatie."
+  }
+}

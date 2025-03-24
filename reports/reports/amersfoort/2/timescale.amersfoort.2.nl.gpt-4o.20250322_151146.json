@@ -1,0 +1,92 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AMERSFOORT",
+      "contact": {
+        "phone": "14 033",
+        "email": "info@amersfoort.nl",
+        "website": "http://www.amersfoort.nl"
+      }
+    },
+    "service": {
+      "id": 2,
+      "name": "Bord of spandoek plaatsen aan de openbare weg"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Je ontvangt meestal binnen 8 weken een besluit.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Amersfoort duurt de reguliere procedure maximaal 8 weken. Dit is een wettelijke termijn, niet 'meestal binnen 8 weken'. De gemeente kan deze termijn eenmalig met 6 weken verlengen als dat nodig is."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 4,
+    "invalid_urls": 2,
+    "accuracy_percentage": 66.7,
+    "valid_urls_list": [
+      "https://www.amersfoort.nl/reclame-de-openbare-ruimte",
+      "https://www.amersfoort.nl/aanleggen",
+      "https://www.amersfoort.nl/openbare-weg-gebruiken",
+      "https://www.amersfoort.nl/reclame"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.amersfoort.nl/standplaatsen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.omgevingsloket.nl/",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wil je reclame maken in de openbare ruimte? Bijvoorbeeld op lichtmasten, bushokjes of europanels? Dan hoef je geen vergunning aan te vragen. De gemeente heeft dit namelijk uitbesteed aan verschillende bedrijven.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over reclame in de openbare ruimte via externe bedrijven. Dit is een significant verschil omdat het een alternatieve route voor reclameplaatsing betreft zonder vergunningsplicht.",
+          "source_urls": [
+            "https://www.amersfoort.nl/reclame",
+            "https://www.amersfoort.nl/reclame-de-openbare-ruimte"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Om flyers uit te delen, heb je geen vergunning nodig. Wel moet je eventuele rommel die je veroorzaakt zelf opruimen. Je mag niet zomaar een tafel neerzetten. Om ander reclamemateriaal uit te delen, moet je wel een vergunning aanvragen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over het uitdelen van flyers en ander reclamemateriaal, terwijl dit belangrijke aanvullende informatie is over wat wel en niet vergunningsplichtig is.",
+          "source_urls": [
+            "https://www.amersfoort.nl/reclame-de-openbare-ruimte"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Je mag wel meteen beginnen.",
+          "original_reference": "Je mag wel meteen beginnen, tenzij er bezwaren worden ingediend.",
+          "note": "De bronpagina stelt dat je direct mag beginnen zonder voorbehoud, terwijl de originele tekst aangeeft dat dit alleen kan zolang er geen bezwaren worden ingediend. Dit is een belangrijk inhoudelijk verschil.",
+          "source_urls": [
+            "https://www.amersfoort.nl/reclame"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn drie belangrijke verschillen gevonden tussen de originele tekst en de bronnen. De originele tekst mist essentiële informatie over reclame via externe bedrijven in de openbare ruimte en over het uitdelen van flyers. Daarnaast is er een tegenstrijdigheid in de voorwaarden wanneer men mag beginnen na vergunningverlening. De bronnen bevatten meer gedetailleerde informatie en specifieke uitzonderingen die relevant zijn voor gebruikers."
+  }
+}

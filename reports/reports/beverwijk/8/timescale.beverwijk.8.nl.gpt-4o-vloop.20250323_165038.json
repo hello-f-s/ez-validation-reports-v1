@@ -1,0 +1,73 @@
+{
+  "context": {
+    "municipality": {
+      "name": "BEVERWIJK",
+      "contact": {
+        "phone": "(0251) 25 62 56",
+        "email": "info@beverwijk.nl",
+        "website": "http://www.beverwijk.nl"
+      }
+    },
+    "service": {
+      "id": 8,
+      "name": "Marktvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "Voor een tijdelijke standplaats met gecoördineerde afhandeling vanwege samenloop met evenementen: €323,17",
+        "status": "false",
+        "note": "Het exacte bedrag voor een tijdelijke standplaats met gecoördineerde afhandeling is €323,16 volgens de legesverordening van gemeente Beverwijk, niet €323,17"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 4,
+    "valid_urls": 4,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.beverwijk.nl/e-loket-bedrijven",
+      "https://www.beverwijk.nl/standplaatsvergunning",
+      "https://www.beverwijk.nl/overzicht-vragen-voor-eenmalige-subsidie-aanvragen",
+      "https://www.beverwijk.nl/overzicht-vragen-voor-jaarlijkse-subsidie-aanvragen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "een tijdelijke vergunning is een standplaats voor een periode van maximaal 3 maanden",
+          "original_reference": "Voor een tijdelijke standplaats voor één dag of dagdeel: €35,84; Voor een tijdelijke standplaats voor meer dan één dag: €103,67",
+          "note": "De originele tekst specificeert alleen tarieven voor één dag/dagdeel en meerdere dagen, terwijl de brontekst aangeeft dat een tijdelijke vergunning tot 3 maanden kan duren. Dit is aanvullende belangrijke informatie over de duur.",
+          "source_urls": [
+            "https://www.beverwijk.nl/standplaatsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Doet u een aanvraag voor een bakkraam? Dan controleert de brandweer of de standplaats voldoet aan de brandveiligheidseisen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de specifieke brandweercontrole voor bakkramen, wat een belangrijke aanvullende voorwaarde is.",
+          "source_urls": [
+            "https://www.beverwijk.nl/standplaatsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden: (1) een verduidelijking over de maximale duur van tijdelijke vergunningen (3 maanden) die niet in de originele tekst staat, en (2) een aanvullende voorwaarde voor bakkramen betreffende brandweercontrole die ontbreekt in de originele tekst. Deze informatie is relevant voor aanvragers van standplaatsvergunningen."
+  }
+}

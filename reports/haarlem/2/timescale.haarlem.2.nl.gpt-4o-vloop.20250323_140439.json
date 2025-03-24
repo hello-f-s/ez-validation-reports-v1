@@ -1,0 +1,87 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HAARLEM",
+      "contact": {
+        "phone": "14 023",
+        "email": "antwoord@haarlem.nl",
+        "website": "http://www.haarlem.nl"
+      }
+    },
+    "service": {
+      "id": 2,
+      "name": "Bord of spandoek plaatsen aan de openbare weg"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "De openingstijden zijn elke werkdag van 9.00 tot 16.00 uur, met verlengde uren op donderdag tot 20.00 uur.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Haarlem is de publiekshal geopend van maandag t/m vrijdag van 9.00 tot 16.00 uur, en op donderdag van 9.00 tot 19.00 uur (niet tot 20.00 uur)."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://haarlem.nl/terrasvergunning",
+      "https://haarlem.nl/bouwvergunning",
+      "https://haarlem.nl/aanlegvergunning",
+      "https://haarlem.nl/regels-uitstallingen-en-reclame"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://haarlem.nl/vergunning-gevelreclame",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Gaat u bouwen of verbouwen, dan hebt u meestal een omgevingsvergunning nodig. Die vraagt u online aan bij het Omgevingsloket.",
+          "original_reference": "U kunt de vergunning aanvragen bij het Omgevingsloket.",
+          "note": "De brontext specificeert dat het specifiek om een 'omgevingsvergunning' gaat, wat preciezer is dan de algemene term 'vergunning' in de originele tekst.",
+          "source_urls": [
+            "https://haarlem.nl/bouwvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vraag de terrasvergunning minstens 8 weken van tevoren aan.",
+          "original_reference": "U hoort binnen 8 weken of u de vergunning krijgt.",
+          "note": "De brontekst geeft aan dat de aanvraag minimaal 8 weken van tevoren moet worden ingediend, terwijl de originele tekst spreekt over een beslissingstermijn van 8 weken. Dit zijn twee verschillende termijnen.",
+          "source_urls": [
+            "https://haarlem.nl/terrasvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bij de aanvraag moet u een aantal documenten uploaden. Zorg dat elk bestand een .pdf, .jpg, .jpeg, .doc of .docx is van maximaal 10 MB.",
+          "original_reference": "No matching information",
+          "note": "De brontekst specificeert technische vereisten voor documenten (bestandsformaten en maximale grootte) die niet worden genoemd in de originele tekst.",
+          "source_urls": [
+            "https://haarlem.nl/terrasvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont enkele belangrijke verschillen tussen de originele tekst en de bronnen. De bronnen zijn specifieker over het type vergunning (omgevingsvergunning), bevatten aanvullende technische vereisten voor documentupload, en geven andere timing-informatie voor de aanvraagprocedure. Deze details ontbreken in de originele tekst, wat zou kunnen leiden tot onduidelijkheid voor aanvragers."
+  }
+}

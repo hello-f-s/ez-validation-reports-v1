@@ -1,0 +1,89 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HAARLEM",
+      "contact": {
+        "phone": "14 023",
+        "email": "antwoord@haarlem.nl",
+        "website": "http://www.haarlem.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 31,
+    "true_sentences": 29,
+    "false_sentences": 2,
+    "accuracy_percentage": 93.5,
+    "false_statements": [
+      {
+        "sentence": "Tekening van de inrichting (minimaal schaal 1:1000) en plattegrond van eventuele terrassen.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Haarlem moet de tekening op schaal 1:100 zijn, niet 1:1000."
+      },
+      {
+        "sentence": "Kosten voor de aanvraag van een exploitatievergunning zijn € 605.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Haarlem bedragen de kosten voor een exploitatievergunning € 632,50 voor 2024."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://haarlem.nl/exploitatievergunning",
+      "https://haarlem.nl/alcoholvergunning",
+      "https://haarlem.nl/terrasvergunning",
+      "https://haarlem.nl/aanlegvergunning",
+      "https://haarlem.nl/milieuvergunning",
+      "https://www.haarlem.nl/exploitatievergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor het serveren van eten en non-alcoholische drank in uw onderneming, hebt u een exploitatievergunning nodig. Bijvoorbeeld als u een cafetaria, coffeeshop of ijssalon hebt.",
+          "original_reference": "U heeft een exploitatievergunning nodig als u eten en non-alcoholische drank serveert.",
+          "note": "De bronpagina geeft specifieke voorbeelden van bedrijfstypen (cafetaria, coffeeshop, ijssalon) die niet in de originele tekst staan, wat de informatie concreter maakt.",
+          "source_urls": [
+            "https://haarlem.nl/exploitatievergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "een tekening van de inrichting met de lokaliteit(en), schaal minimaal 1 : 1000",
+          "original_reference": "Tekening van de inrichting (minimaal schaal 1:1000) en plattegrond van eventuele terrassen.",
+          "note": "De originele tekst voegt specifiek toe dat er een plattegrond van eventuele terrassen nodig is, terwijl de bronpagina alleen spreekt over lokaliteit(en).",
+          "source_urls": [
+            "https://haarlem.nl/exploitatievergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "een bijlage met voornaam en achternaam, geboortedatum en geboorteplaats als er meer dan...",
+          "original_reference": "Begeleidende bijlage met persoonsinformatie als er meer dan 4 ondernemers, 2 bestuurders of 4 leidinggevenden zijn.",
+          "note": "De bronpagina specificeert welke persoonlijke gegevens (voornaam, achternaam, geboortedatum en geboorteplaats) moeten worden aangeleverd, wat niet in de originele tekst staat.",
+          "source_urls": [
+            "https://haarlem.nl/exploitatievergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De verschillen tussen de originele tekst en de bronpagina's zijn voornamelijk gerelateerd aan het detailniveau van de informatie. De bronpagina's bieden specifiekere voorbeelden en meer gedetailleerde vereisten voor bepaalde documenten. De kern van de informatie blijft echter consistent. De originele tekst is op sommige punten uitgebreider, zoals bij de vermelding van terrasplattegronden, terwijl de bronpagina's weer specifieker zijn in het beschrijven van persoonlijke gegevens die moeten worden aangeleverd."
+  }
+}

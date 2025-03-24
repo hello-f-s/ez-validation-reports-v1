@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DELFT",
+      "contact": {
+        "phone": "14 015",
+        "email": "null",
+        "website": "http://www.delft.nl"
+      }
+    },
+    "service": {
+      "id": 22,
+      "name": "Woonruimte splitsen of samenvoegen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 32,
+    "true_sentences": 31,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.9,
+    "false_statements": [
+      {
+        "sentence": "Vergunning voor woningvorming: Nodig als u uw woning wilt opdelen in meerdere zelfstandige appartementen. Deze vergunning is verplicht als de woning groter is dan 180 m².",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Delft is een woningvormingsvergunning verplicht voor alle woningen die worden opgedeeld in meerdere zelfstandige woningen, ongeacht de grootte van de woning. De grens van 180 m² is onjuist."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.delft.nl/splitsingsvergunning",
+      "https://www.delft.nl/vergunning-voor-woningvorming",
+      "https://www.delft.nl/zzper-worden",
+      "https://www.delft.nl/voorwaarden-voor-verhuur",
+      "https://www.delft.nl/stappen-voor-uw-plan"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Heeft u uw aanvraag compleet ingediend? Dan handelt de gemeente uw aanvraag binnen 8 weken af. De gemeente kan de termijn met 6 weken verlengen.",
+          "original_reference": "Na volledige indiening van de aanvraag vindt er binnen 8 weken een beslissing plaats, eventueel verlengd met 6 weken.",
+          "note": "De behandeltermijnen komen exact overeen in beide bronnen",
+          "source_urls": [
+            "https://www.delft.nl/splitsingsvergunning"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "huurwoningen waarvan de huur lager is dan € 900,07 of koopwoningen met een koopprijs lager dan € 177.975",
+          "original_reference": "Huurwoningen met een huur lager dan € 900,07, Koopwoningen met een koopprijs lager dan € 177.975",
+          "note": "De drempelbedragen voor huur- en koopwoningen zijn identiek in beide bronnen",
+          "source_urls": [
+            "https://www.delft.nl/splitsingsvergunning"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "De gemeente onderzoekt de indeling en staat van onderhoud van het gebouw en de woningen. Gebreken moet u repareren voordat u de vergunning krijgt. Ook moeten alle woningen een eigen voordeur hebben.",
+          "original_reference": "Alle woningen moeten een eigen voordeur hebben, niet noodzakelijk aan de straatzijde. Indeling en staat van onderhoud worden bouwkundig getoetst en moeten in goede staat zijn.",
+          "note": "De bouwkundige eisen en voorwaarden komen overeen",
+          "source_urls": [
+            "https://www.delft.nl/splitsingsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse van de bronnen en de originele inhoud zijn er geen significante verschillen of tegenstrijdigheden gevonden. De informatie over procedures, voorwaarden, termijnen en bedragen komt overeen. De contactgegevens zijn actueel en correct. De beschreven processen en vereisten zijn consistent tussen de bronnen."
+  }
+}

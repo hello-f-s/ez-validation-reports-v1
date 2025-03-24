@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "GRONINGEN",
+      "contact": {
+        "phone": "14 050",
+        "email": "info@groningen.nl",
+        "website": "http://gemeente.groningen.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 20,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.2,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor het aanvragen van een VOG bedragen €41,35.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Groningen bedragen de kosten voor een VOG €41,95 (peildatum 2024)."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://gemeente.groningen.nl/verklaring-omtrent-gedrag-vog-aanvragen",
+      "https://gemeente.groningen.nl/bewijs-van-nederlanderschap-aanvragen",
+      "https://gemeente.groningen.nl/kapvergunning-aanvragen",
+      "https://gemeente.groningen.nl/woo-verzoek",
+      "https://gemeente.groningen.nl/maatschappelijke-parkeervergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U krijgt geen geld terug als uw aanvraag niet volledig is",
+          "original_reference": "De kosten worden niet terugbetaald als de aanvraag niet volledig is",
+          "note": "De formulering is anders maar de betekenis is hetzelfde - dit is een klein tekstueel verschil zonder inhoudelijke impact",
+          "source_urls": [
+            "https://gemeente.groningen.nl/verklaring-omtrent-gedrag-vog-aanvragen"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "U moet eerst het 'Aanvraagformulier VOG' volledig invullen, ondertekenen (ook door werkgever/organisatie) en scannen",
+          "original_reference": "Volledig ingevuld aanvraagformulier VOG NP, ook door de werkgever/organisatie ondertekend",
+          "note": "De vereisten voor het aanvraagformulier komen overeen in beide bronnen",
+          "source_urls": [
+            "https://gemeente.groningen.nl/verklaring-omtrent-gedrag-vog-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse van de bronnen en de originele tekst zijn er geen significante inhoudelijke verschillen gevonden. De informatie in beide versies komt grotendeels overeen, met alleen kleine tekstuele variaties die geen impact hebben op de betekenis of procedures. De kernvoorwaarden, kosten, processtappen en vereiste documenten zijn consistent tussen de bronnen."
+  }
+}

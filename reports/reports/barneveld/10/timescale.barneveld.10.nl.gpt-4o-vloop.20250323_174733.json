@@ -1,0 +1,92 @@
+{
+  "context": {
+    "municipality": {
+      "name": "BARNEVELD",
+      "contact": {
+        "phone": "14 0342",
+        "email": "info@barneveld.nl",
+        "website": "http://www.barneveld.nl"
+      }
+    },
+    "service": {
+      "id": 10,
+      "name": "Nachtregister bijhouden"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "Er is geen vergunning nodig om uw ruimte aan te bieden via platforms zoals AirBnB of Wimdu, en er is ook geen melding aan de gemeente vereist voor het gebruik van deze platforms.",
+        "status": "false",
+        "note": "Volgens de gemeente Barneveld moet er wel een melding worden gedaan bij de gemeente als men een woning of kamer wil verhuren via platforms zoals Airbnb. Dit valt onder de meldingsplicht voor toeristische verhuur van woonruimte."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.barneveld.nl/ondernemen/overnachting-aanbieden-aan-gasten",
+      "https://www.barneveld.nl/vergunningen-en-ontheffingen/evenementen/evenementenvergunning-aanvragen",
+      "https://www.barneveld.nl/vergunningen-en-ontheffingen/horeca/exploitatievergunning-aanvragen/vragenlijst-bibob",
+      "https://www.barneveld.nl/paspoort-rijbewijs-documenten/persoonsgegevens/register-van-verwerkingen",
+      "https://www.barneveld.nl/ondernemen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 4,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U moet u daarvoor aanmelden bij de gemeente.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat men zich moet aanmelden bij de gemeente voor toeristenbelasting, alleen dat men een e-mail moet sturen.",
+          "source_urls": [
+            "https://www.barneveld.nl/ondernemen/overnachting-aanbieden-aan-gasten"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een Bed and Breakfast heeft geen keuken of keukenblok.",
+          "original_reference": "No matching information",
+          "note": "Deze specifieke beperking voor B&B's wordt niet genoemd in de originele tekst.",
+          "source_urls": [
+            "https://www.barneveld.nl/ondernemen/overnachting-aanbieden-aan-gasten"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U mag maximaal 2 bedden per kamer hebben (uitgezonderd kinderbedjes).",
+          "original_reference": "No matching information",
+          "note": "Deze specifieke beperking voor het aantal bedden wordt niet genoemd in de originele tekst.",
+          "source_urls": [
+            "https://www.barneveld.nl/ondernemen/overnachting-aanbieden-aan-gasten"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Elke verhuurde ruimte of kamer heeft een vloeroppervlakte van maximaal 30 m². U kunt dus maximaal 2 ruimtes van elk 30m2 verhuren.",
+          "original_reference": "een maximale netto vloeroppervlakte van 60 m²",
+          "note": "De originele tekst specificeert niet dat dit verdeeld moet worden over maximaal 2 ruimtes van 30m² elk.",
+          "source_urls": [
+            "https://www.barneveld.nl/ondernemen/overnachting-aanbieden-aan-gasten"
+          ]
+        }
+      ]
+    },
+    "summary": "De broninhoud bevat verschillende aanvullende specificaties en vereisten die niet in de originele tekst zijn opgenomen, met name rond de aanmelding voor toeristenbelasting en specifieke beperkingen voor B&B's zoals het verbod op keukens en het maximum aantal bedden per kamer. Ook wordt de verdeling van de maximale vloeroppervlakte gedetailleerder beschreven in de bronnen."
+  }
+}

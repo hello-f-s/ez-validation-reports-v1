@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ETTEN-LEUR",
+      "contact": {
+        "phone": "14 076",
+        "email": "info@etten-leur.nl",
+        "website": "http://www.etten-leur.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 11,
+    "false_sentences": 2,
+    "accuracy_percentage": 84.6,
+    "false_statements": [
+      {
+        "sentence": "Ondernemersparkeervergunning: € 400,- per jaar",
+        "status": "false",
+        "note": "De kosten voor een ondernemersparkeervergunning in Etten-Leur bedragen € 300,- per jaar, niet € 400,-"
+      },
+      {
+        "sentence": "Verkeersontheffing: € 42,-",
+        "status": "false",
+        "note": "De kosten voor een verkeersontheffing in Etten-Leur bedragen € 44,85, niet € 42,-"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.etten-leur.nl/product/verkeersontheffing/",
+      "https://etten-leur.nl",
+      "https://www.etten-leur.nl/product/parkeervergunning-voor-bezoekers/",
+      "https://www.etten-leur.nl/product/parkeervergunningen-voor-ondernemers/",
+      "https://www.etten-leur.nl/product/parkeren-voor-dienstverlener-centrum/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.etten-leur.nl/product/parkeervergunning-voor-inwoners/",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Na het afronden van de aanvraag krijgt u een e-mail. Open de link naar mijn.2park.nl in de e-mail. Hier kunt u de kentekens van uw bezoekers toevoegen, wijzigen of koppelen aan uw vergunning.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over het beheerplatform mijn.2park.nl waar kentekens kunnen worden beheerd na aanvraag.",
+          "source_urls": [
+            "https://www.etten-leur.nl/product/parkeervergunningen-voor-ondernemers/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Let op: Uw vergunning blijft geldig tot aan de opgegeven einddatum. Vóór het verstrijken van de einddatum kunt u één van de nieuwe vergunningen aanvragen. Let op! U krijgt geen bericht over het verlopen van de vergunning.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over de geldigheid van de vergunning en dat er geen herinnering wordt gestuurd voor verlenging.",
+          "source_urls": [
+            "https://www.etten-leur.nl/product/parkeervergunningen-voor-ondernemers/"
+          ]
+        }
+      ]
+    },
+    "summary": "De originele tekst mist enkele belangrijke praktische details over het beheer van de parkeervergunning, zoals het gebruik van het mijn.2park.nl platform voor kentekenbeheer en informatie over de geldigheid en verlenging van de vergunning. De kernvoorwaarden en kosten komen wel overeen met de bronnen."
+  }
+}

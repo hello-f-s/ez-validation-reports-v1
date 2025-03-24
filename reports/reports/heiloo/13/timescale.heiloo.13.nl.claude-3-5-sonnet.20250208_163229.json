@@ -1,0 +1,96 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HEILOO",
+      "contact": {
+        "phone": "(072) 535 66 66",
+        "email": "info@heiloo.nl",
+        "website": "http://www.heiloo.nl"
+      }
+    },
+    "service": {
+      "id": 13,
+      "name": "Omzettingsvergunning voor kamerverhuur aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 9,
+    "true_sentences": 8,
+    "false_sentences": 1,
+    "accuracy_percentage": 88.9,
+    "false_statements": [
+      {
+        "sentence": "De reguliere procedure duurt maximaal 8 weken, met eventueel een verlenging van 6 weken.",
+        "status": "false",
+        "note": "Volgens de website van gemeente Heiloo duurt de reguliere procedure maximaal 8 weken met een mogelijke verlenging van maximaal 6 weken, maar bij complexe aanvragen geldt de uitgebreide procedure van 26 weken met een mogelijke verlenging van 6 weken. De zin is onvolledig omdat deze de uitgebreide procedure niet vermeldt."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 8,
+    "valid_urls": 5,
+    "invalid_urls": 3,
+    "accuracy_percentage": 62.5,
+    "valid_urls_list": [
+      "https://www.heiloo.nl/aanvragen-en-regelen/terrasvergunning/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/exploitatievergunning/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/wonen-in-een-bedrijfswoning/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/omgevingsvergunning/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/standplaatsvergunning/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.omgevingsloket.nl/",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.heiloo.nl/omgevingsvergunning",
+        "reason": "INVALID: Error scraping https://www.heiloo.nl/omgevingsvergunning: 404 Client Error: Not Found for url: https://www.heiloo.nl/omgevingsvergunning"
+      },
+      {
+        "url": "https://www.omgevingsloket.nl/>",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vanaf 1 januari 2024 geldt de Omgevingswet. Alle vastgestelde bestemmingsplannen gaan op in een tijdelijk omgevingsplan.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de nieuwe Omgevingswet die vanaf 2024 geldt. Dit is belangrijke nieuwe informatie die impact heeft op de procedures.",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/omgevingsvergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U kunt bouwtekeningen vanaf 2007 opvragen uit het gemeentelijk archief. U ontvangt deze digitaal per e-mail (Cryptshare).",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over het opvragen van bouwtekeningen, wat relevant kan zijn voor de aanvraagprocedure.",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/omgevingsvergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Binnen 8 weken hoort u van de gemeente of u de vergunning krijgt. De gemeente kan deze termijn met maximaal 8 weken verlengen.",
+          "original_reference": "De reguliere procedure duurt maximaal 8 weken, met eventueel een verlenging van 6 weken.",
+          "note": "Er is een verschil in de maximale verlengingstermijn: 8 weken volgens de bron versus 6 weken in de originele tekst.",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/exploitatievergunning/"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de invoering van de nieuwe Omgevingswet vanaf 2024, de mogelijkheid tot het opvragen van bouwtekeningen, en een afwijkende verlengingstermijn voor de vergunningsprocedure. De bronnen bevatten aanvullende belangrijke informatie die niet in de originele tekst staat vermeld."
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "context": {
+    "municipality": {
+      "name": "EDE",
+      "contact": {
+        "phone": "14 0318",
+        "email": "info@ede.nl",
+        "website": "http://www.ede.nl"
+      }
+    },
+    "service": {
+      "id": 13,
+      "name": "Omzettingsvergunning voor kamerverhuur aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 8,
+    "true_sentences": 7,
+    "false_sentences": 1,
+    "accuracy_percentage": 87.5,
+    "false_statements": [
+      {
+        "sentence": "Gebruik eHerkenning om in te loggen en de aanvraag te doen.",
+        "status": "false",
+        "note": "Dit is niet volledig correct. Volgens de website van gemeente Ede kunnen particulieren inloggen met DigiD en alleen bedrijven hebben eHerkenning nodig voor het Omgevingsloket."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 4,
+    "invalid_urls": 2,
+    "accuracy_percentage": 66.7,
+    "valid_urls_list": [
+      "https://www.ede.nl/aanvragen-en-regelen/vergunningvrij-bouwen",
+      "https://www.ede.nl/aanvragen-en-regelen/bouw-en-verbouwvergunning-voor-bedrijven",
+      "https://www.ede.nl/aanvragen-en-regelen/bouw-en-verbouwvergunning",
+      "https://www.ede.nl/aanvragen-en-regelen/schetsplan"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://gemeente-website-link",
+        "reason": "INVALID: Error scraping https://gemeente-website-link: HTTPSConnectionPool(host='gemeente-website-link', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x108198410>: Failed to resolve 'gemeente-website-link' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.ede.nl/aanvragen-en-regelen/verleende-vergunningen-inzien-en-opvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U heeft DigiD nodig voor particuliere aanvragen. Voor bedrijven wordt gebruik gemaakt van eHerkenning.",
+          "original_reference": "Voor bedrijven is eHerkenning nodig voor het inloggen op het Omgevingsloket.",
+          "note": "De originele tekst vermeldt alleen eHerkenning voor bedrijven, maar niet dat particulieren DigiD nodig hebben.",
+          "source_urls": [
+            "https://www.ede.nl/aanvragen-en-regelen/bouw-en-verbouwvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De kosten voor het beoordelen van een conceptverzoek bedragen € 225,00. Deze kosten worden in mindering gebracht bij de aanvraag van een omgevingsvergunning.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de specifieke kosten van een conceptverzoek en de verrekening daarvan bij een definitieve aanvraag.",
+          "source_urls": [
+            "https://www.ede.nl/aanvragen-en-regelen/schetsplan"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Uw vergunningaanvraag wordt behandeld door Omgevingsdienst De Vallei.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat de Omgevingsdienst De Vallei de vergunningaanvragen behandelt.",
+          "source_urls": [
+            "https://www.ede.nl/aanvragen-en-regelen/bouw-en-verbouwvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie die niet in de originele tekst staat, waaronder het gebruik van DigiD voor particulieren, specifieke kosten voor conceptverzoeken (€225) en de rol van Omgevingsdienst De Vallei. Deze informatie is essentieel voor een volledig begrip van het aanvraagproces."
+  }
+}

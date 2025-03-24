@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "SCHIEDAM",
+      "contact": {
+        "phone": "14 010",
+        "email": "contact@schiedam.nl",
+        "website": "http://www.schiedam.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "De gemeente biedt de mogelijkheid om deze binnen 10 werkdagen in te dienen.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Schiedam hebben belanghebbenden 6 weken de tijd om bezwaar in te dienen na bekendmaking van een besluit, niet 10 werkdagen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.schiedam.nl/a-tot-z/a-evenement",
+      "https://schiedam.nl/a-tot-z/a-evenement",
+      "https://www.schiedam.nl/a-tot-z/c-evenement",
+      "https://schiedam.nl/a-tot-z/c-evenement",
+      "https://www.schiedam.nl/a-tot-z/b-evenement"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bij het aanvragen van de vergunning stuurt u het volgende mee: Plattegrond, Programma, Draaiboek, Tentboek",
+          "original_reference": "Plattegrond, Draaiboek, Programma",
+          "note": "Voor C-evenementen is ook een tentboek vereist, wat niet genoemd wordt in de originele tekst",
+          "source_urls": [
+            "https://www.schiedam.nl/a-tot-z/c-evenement"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Brief aan omwonenden",
+          "original_reference": "No matching information",
+          "note": "Voor B-evenementen is een brief aan omwonenden vereist, wat niet genoemd wordt in de originele tekst",
+          "source_urls": [
+            "https://www.schiedam.nl/a-tot-z/b-evenement"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "We vragen bij A-evenementen advies aan de afzonderlijke hulpdiensten zoals de Veiligheidsregio Rotterdam Rijnmond (VRR), DCMR Milieudienst Rijnmond, Geneeskundige Hulpverleningsorganisatie in de Regio (GHOR) en politie",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat er bij A-evenementen advies wordt gevraagd aan hulpdiensten",
+          "source_urls": [
+            "https://www.schiedam.nl/a-tot-z/a-evenement"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn enkele belangrijke verschillen gevonden tussen de originele tekst en de bronnen. Voor C-evenementen is een extra document (tentboek) vereist, voor B-evenementen moet een brief aan omwonenden worden toegevoegd, en bij A-evenementen wordt advies gevraagd aan verschillende hulpdiensten. Deze specifieke vereisten ontbreken in de originele tekst."
+  }
+}

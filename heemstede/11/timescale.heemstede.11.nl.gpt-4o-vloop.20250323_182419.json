@@ -1,0 +1,87 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HEEMSTEDE",
+      "contact": {
+        "phone": "(023) 548 58 68",
+        "email": "gemeente@heemstede.nl",
+        "website": "http://www.heemstede.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "De site van de gemeente geeft geen specifieke tarieven voor omgevingsvergunningen, maar een standplaatsvergunning is €26,05 voor maximaal 6 dagen en €90,05 voor langer dan 6 dagen.",
+        "status": "false",
+        "note": "De gemeente Heemstede hanteert andere tarieven voor standplaatsvergunningen. Volgens de actuele legesverordening van de gemeente Heemstede is het tarief voor een standplaatsvergunning €27,35 voor maximaal 6 dagen en €94,55 voor langer dan 6 dagen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.heemstede.nl/bestuur-en-organisatie/omgevingswet/de-omgevingswet-voor-u-als-inwoner-of-ondernemer",
+      "https://www.heemstede.nl/bestuur-en-organisatie/omgevingswet/het-nieuwe-omgevingsloket",
+      "https://www.heemstede.nl/vergunningen/in-of-uitrit-aanleggen-omgevingsvergunning",
+      "https://www.heemstede.nl/vergunningen/standplaatsvergunning-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.heemstede.nl/vergunningen/milieu-omgevingsvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u een inrit of uitrit wilt aanleggen vanaf uw woning of bedrijfspand, dan heeft u een omgevingsvergunning nodig [...] Voor een omgevingsvergunning betaalt u legeskosten. Ook de kosten van aanleg zijn voor de vergunninghouder.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat er legeskosten betaald moeten worden voor omgevingsvergunningen en dat aanlegkosten voor rekening van de vergunninghouder zijn.",
+          "source_urls": [
+            "https://www.heemstede.nl/vergunningen/in-of-uitrit-aanleggen-omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vergunning aanvragen minimaal 4 weken voordat u de standplaats gaat gebruiken",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt geen minimale aanvraagtermijn van 4 weken voor standplaatsvergunningen.",
+          "source_urls": [
+            "https://www.heemstede.nl/vergunningen/standplaatsvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Meenemen: Geldig legitimatiebewijs, Uittreksel van Kamer van Koophandel, Bewijs van een WA bedrijfsverzekering",
+          "original_reference": "Eventuele documenten of plannen die de bouw- of wijzigingsplannen beschrijven.",
+          "note": "De bronpagina specificeert aanvullende vereiste documenten die niet genoemd worden in de originele tekst.",
+          "source_urls": [
+            "https://www.heemstede.nl/vergunningen/standplaatsvergunning-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten belangrijke aanvullende informatie over kosten (legeskosten en aanlegkosten), specifieke aanvraagtermijnen (4 weken voor standplaatsvergunningen) en vereiste documenten die niet in de originele tekst worden genoemd. Deze informatie is essentieel voor het correct aanvragen van vergunningen."
+  }
+}

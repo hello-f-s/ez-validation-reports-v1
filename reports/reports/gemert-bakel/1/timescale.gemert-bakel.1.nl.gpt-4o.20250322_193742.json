@@ -1,0 +1,91 @@
+{
+  "context": {
+    "municipality": {
+      "name": "GEMERT-BAKEL",
+      "contact": {
+        "phone": "(0492) 37 85 00",
+        "email": "gemeente@gemert-bakel.nl",
+        "website": "http://www.gemert-bakel.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "U ontvangt binnen 8 weken een antwoord op uw tijdelijke drank- en horecavergunningaanvraag.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Gemert-Bakel duurt de behandeling van een tijdelijke drank- en horecavergunning maximaal 12 weken, niet 8 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 4,
+    "invalid_urls": 2,
+    "accuracy_percentage": 66.7,
+    "valid_urls_list": [
+      "https://www.gemert-bakel.nl/verzoek-op-basis-van-de-wet-open-overheid-woo",
+      "https://www.gemert-bakel.nl/alcohol-schenken-in-horecabedrijven",
+      "https://www.gemert-bakel.nl/omgevingsvergunning",
+      "https://www.gemert-bakel.nl/evenementen-vergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://example.com",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.gemert-bakel.nl/horeca-tijdelijke-drank-en-horecavergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U moet de drank- en horecavergunning laten wijzigen bij verandering van leidinggevende(n).",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat de vergunning moet worden gewijzigd bij verandering van leidinggevenden, wat een belangrijke verplichting is voor vergunninghouders.",
+          "source_urls": [
+            "https://www.gemert-bakel.nl/alcohol-schenken-in-horecabedrijven"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Maximaal geluidsniveau van 60 dB(A) en 80 dB(C) bij inpandig en 75 d(B) en 90 dB(C) bij open lucht / tent",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen specifieke geluidsnormen voor tijdelijke vergunningen, terwijl de bron wel concrete geluidslimieten noemt voor evenementen.",
+          "source_urls": [
+            "https://www.gemert-bakel.nl/evenementen-vergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Maximaal 150 bezoekers en/of deelnemers",
+          "original_reference": "No matching information",
+          "note": "De originele tekst specificeert geen maximaal aantal bezoekers voor evenementen, terwijl de bron een duidelijke limiet van 150 bezoekers aangeeft voor vergunningsvrije evenementen.",
+          "source_urls": [
+            "https://www.gemert-bakel.nl/evenementen-vergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie die niet in de originele tekst staat, waaronder de verplichting om wijzigingen in leidinggevenden door te geven en specifieke voorwaarden voor evenementen zoals bezoekersaantallen en geluidsnormen. Deze informatie is essentieel voor ondernemers die een drank- en horecavergunning aanvragen of beheren."
+  }
+}

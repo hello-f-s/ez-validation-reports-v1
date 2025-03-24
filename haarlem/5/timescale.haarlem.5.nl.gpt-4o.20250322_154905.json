@@ -1,0 +1,80 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HAARLEM",
+      "contact": {
+        "phone": "14 023",
+        "email": "antwoord@haarlem.nl",
+        "website": "http://www.haarlem.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 17,
+    "false_sentences": 2,
+    "accuracy_percentage": 89.5,
+    "false_statements": [
+      {
+        "sentence": "Kosten voor de aanvraag van een exploitatievergunning zijn € 605.",
+        "status": "false",
+        "note": "De actuele kosten voor een exploitatievergunning in Haarlem zijn € 625,70 volgens de officiële gemeentelijke website."
+      },
+      {
+        "sentence": "Een wijziging van een leidinggevende kost € 175, en € 45 voor elke extra leidinggevende.",
+        "status": "false",
+        "note": "De actuele kosten voor een wijziging van een leidinggevende in Haarlem zijn € 182,10, en € 46,85 voor elke extra leidinggevende volgens de officiële gemeentelijke website."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://haarlem.nl/exploitatievergunning",
+      "https://haarlem.nl/terrasvergunning",
+      "https://www.haarlem.nl/exploitatievergunning",
+      "https://haarlem.nl/alcoholvergunning",
+      "https://haarlem.nl/aanlegvergunning",
+      "https://haarlem.nl/milieuvergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u alcohol serveert, hebt u een alcoholvergunning nodig en hoeft u geen exploitatievergunning aan te vragen.",
+          "original_reference": "Een exploitatievergunning is niet nodig als u een alcoholvergunning heeft, of bij bepaalde inrichtingstypen zoals zorginstellingen of musea.",
+          "note": "De originele tekst noemt extra uitzonderingen (zorginstellingen, musea) die niet in de bronpagina worden genoemd. De bronpagina is specifieker en noemt alleen de alcoholvergunning als uitzondering.",
+          "source_urls": [
+            "https://haarlem.nl/exploitatievergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "een tekening van de inrichting met de lokaliteit(en), schaal minimaal 1 : 1000",
+          "original_reference": "Tekening van de inrichting (minimaal schaal 1:1000) en plattegrond van eventuele terrassen.",
+          "note": "De originele tekst voegt expliciet toe dat er een plattegrond van terrassen nodig is, wat niet direct genoemd wordt in de bronpagina bij de exploitatievergunning.",
+          "source_urls": [
+            "https://haarlem.nl/exploitatievergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele tekst en de bronnen. Ten eerste is de lijst van uitzonderingen voor de exploitatievergunning in de originele tekst uitgebreider dan in de bronpagina. Ten tweede vermeldt de originele tekst expliciet dat er een plattegrond van terrassen nodig is, terwijl dit niet direct genoemd wordt in de vereisten op de bronpagina voor de exploitatievergunning. Voor terrasplattegronden bestaat een aparte terrasvergunning procedure."
+  }
+}

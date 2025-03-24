@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DALFSEN",
+      "contact": {
+        "phone": "14 0529",
+        "email": "gemeente@dalfsen.nl",
+        "website": "http://www.dalfsen.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 31,
+    "true_sentences": 30,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.8,
+    "false_statements": [
+      {
+        "sentence": "Voor spoed/calamiteiten buiten kantooruren: (06) 24 73 34 11.",
+        "status": "false",
+        "note": "Het telefoonnummer voor spoed/calamiteiten buiten kantooruren is niet correct. Volgens de officiële website van de gemeente Dalfsen is het juiste nummer voor storingen en calamiteiten buiten kantooruren: (06) 24 73 34 44."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.dalfsen.nl/omgevingsvergunning",
+      "https://www.dalfsen.nl/milieu-vergunning-of-melding",
+      "https://www.dalfsen.nl/omgevingsplan-aanpassen",
+      "https://www.dalfsen.nl/vergunning-zonnepaneel-of-zonnecollector",
+      "https://www.dalfsen.nl/bedrijfsactiviteiten-wijzigen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor bepaalde werkzaamheden aan of om uw huis of bedrijfspand hebt u een omgevingsvergunning nodig.",
+          "original_reference": "Voor bepaalde werkzaamheden aan of om uw bedrijfspand hebt u een omgevingsvergunning nodig.",
+          "note": "De originele tekst beperkt zich tot bedrijfspanden, terwijl de brontekst expliciet zowel huizen als bedrijfspanden noemt.",
+          "source_urls": [
+            "https://www.dalfsen.nl/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u zonnepanelen op de grond wilt plaatsen, is er altijd een omgevingsvergunning nodig.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over grondgebonden zonnepanelen die altijd vergunningplichtig zijn.",
+          "source_urls": [
+            "https://www.dalfsen.nl/vergunning-zonnepaneel-of-zonnecollector"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Soms hebben wij advies en toestemming nodig van een andere organisatie (bevoegd gezag). Dan komen er nog 4 weken bij.",
+          "original_reference": "Bij advisering door andere instanties kan dit nog 4 weken extra in beslag nemen.",
+          "note": "De brontekst specificeert dat het gaat om advies én toestemming van een bevoegd gezag, terwijl de originele tekst alleen over advisering spreekt.",
+          "source_urls": [
+            "https://www.dalfsen.nl/vergunning-zonnepaneel-of-zonnecollector"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de reikwijdte van de vergunningplicht (inclusief woningen), aanvullende informatie over grondgebonden zonnepanelen, en een preciezere beschrijving van de rol van andere instanties bij de vergunningverlening. De originele tekst mist enkele belangrijke details die wel in de bronpagina's staan."
+  }
+}

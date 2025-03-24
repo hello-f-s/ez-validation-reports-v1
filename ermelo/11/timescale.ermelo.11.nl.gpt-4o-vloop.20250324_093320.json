@@ -1,0 +1,86 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ERMELO",
+      "contact": {
+        "phone": "(0341) 56 73 21",
+        "email": "gemeente@ermelo.nl",
+        "website": "http://www.ermelo.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "Voor een regulier conceptverzoek betaalt u €153, en voor een uitgebreid conceptverzoek betaalt u €2.557,50.",
+        "status": "false",
+        "note": "Deze bedragen zijn niet correct volgens de actuele legesverordening van de gemeente Ermelo. De exacte kosten voor conceptverzoeken zijn anders en kunnen variëren afhankelijk van het type aanvraag."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 4,
+    "valid_urls": 3,
+    "invalid_urls": 1,
+    "accuracy_percentage": 75.0,
+    "valid_urls_list": [
+      "https://www.ermelo.nl/omgevingsplein/omgevingsloket/conceptverzoek-aanvragen",
+      "https://www.ermelo.nl/omgevingsplein/omgevingsloket",
+      "https://www.ermelo.nl/omgevingsplein/bouwen-en-verbouwen/dakopbouw"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.ermelo.nl/omgevingsplein/omgevingsloket/omgevingsvergunning-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als het gaat om een regulier conceptverzoek krijgt u binnen 8 weken een brief",
+          "original_reference": "Voor een regulier conceptverzoek ontvangt u binnen 8 weken een uitslag, terwijl een uitgebreid conceptverzoek maximaal 26 weken kan duren.",
+          "note": "De bronpagina vermeldt alleen de 8 weken termijn voor reguliere conceptverzoeken, maar noemt niet de 26 weken termijn voor uitgebreide conceptverzoeken",
+          "source_urls": [
+            "https://www.ermelo.nl/omgevingsplein/omgevingsloket/conceptverzoek-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Regulier conceptverzoek kost € 153",
+          "original_reference": "Voor een regulier conceptverzoek betaalt u €153, en voor een uitgebreid conceptverzoek betaalt u €2.557,50",
+          "note": "De bronpagina vermeldt alleen de kosten voor een regulier conceptverzoek (€153), maar niet het bedrag voor een uitgebreid conceptverzoek",
+          "source_urls": [
+            "https://www.ermelo.nl/omgevingsplein/bouwen-en-verbouwen/dakopbouw"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "De aanvrager van een vergunning moet de participatie zelf organiseren",
+          "original_reference": "U wordt aangeraden om vroeg in het proces de omgeving te betrekken bij uw bouwplannen",
+          "note": "Beide teksten benadrukken het belang van participatie, maar de bron is specifieker over de verantwoordelijkheid van de aanvrager",
+          "source_urls": [
+            "https://www.ermelo.nl/omgevingsplein/bouwen-en-verbouwen/dakopbouw"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de informatieverstrekking over kosten en termijnen. De originele tekst bevat meer gedetailleerde informatie over de kosten en doorlooptijden van uitgebreide conceptverzoeken die niet in de bronpagina's wordt vermeld. De bronpagina's zijn specifieker over de verantwoordelijkheid van de aanvrager bij participatie. De overige informatie komt grotendeels overeen."
+  }
+}

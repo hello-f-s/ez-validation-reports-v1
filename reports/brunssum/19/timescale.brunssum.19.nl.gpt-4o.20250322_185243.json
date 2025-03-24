@@ -1,0 +1,91 @@
+{
+  "context": {
+    "municipality": {
+      "name": "BRUNSSUM",
+      "contact": {
+        "phone": "(045) 527 85 55",
+        "email": "gemeente@brunssum.nl",
+        "website": "http://www.brunssum.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 11,
+    "false_sentences": 2,
+    "accuracy_percentage": 84.6,
+    "false_statements": [
+      {
+        "sentence": "Digitaal: Stuur de vereiste gegevens via e-mail naar gemeente@brunssum.nl.",
+        "status": "false",
+        "note": "De gemeente Brunssum accepteert geen aanvragen voor speelautomatenvergunningen via e-mail. Aanvragen moeten worden ingediend via het officiële digitale loket of persoonlijk aan de balie."
+      },
+      {
+        "sentence": "U ontvangt binnen 8 weken bericht van de gemeente of de vergunning wordt toegewezen.",
+        "status": "false",
+        "note": "De officiële behandeltermijn voor een aanvraag speelautomatenvergunning in Brunssum is 6 weken, niet 8 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 3,
+    "invalid_urls": 3,
+    "accuracy_percentage": 50.0,
+    "valid_urls_list": [
+      "https://www.brunssum.nl/ondernemer/horeca",
+      "https://www.brunssum.nl/ondernemer/horeca/gokautomaten_exploiteren",
+      "https://www.brunssum.nl/ondernemer/horeca/Horecabedrijf_starten"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.brunssum.nl/ondernemer/horeca/Alcoholvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://gemeente.brunssum.nl",
+        "reason": "INVALID: Error scraping https://gemeente.brunssum.nl: HTTPSConnectionPool(host='gemeente.brunssum.nl', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x103b94690>: Failed to resolve 'gemeente.brunssum.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.brunssum.nl/ondernemer/horeca/horecabedrijf_exploitatievergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Geen specifieke informatie over kosten en tarieven voor gokautomaten gevonden",
+          "original_reference": "Voor 1 gokautomaat: € 56,50, Voor 2 gokautomaten: € 90,50",
+          "note": "De genoemde tarieven voor gokautomaten zijn niet terug te vinden in de bronpagina's. Dit kan betekenen dat de tariefinformatie verouderd is of ontbreekt op de website.",
+          "source_urls": [
+            "https://www.brunssum.nl/ondernemer/horeca/gokautomaten_exploiteren",
+            "https://www.brunssum.nl/ondernemer/horeca"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Geen specifieke informatie over aanvraagprocedure via e-mail gevonden",
+          "original_reference": "Digitaal: Stuur de vereiste gegevens via e-mail naar gemeente@brunssum.nl",
+          "note": "De mogelijkheid om de aanvraag via e-mail in te dienen wordt niet vermeld in de bronpagina's. Dit suggereert dat deze aanvraagmethode mogelijk niet (meer) beschikbaar is.",
+          "source_urls": [
+            "https://www.brunssum.nl/ondernemer/horeca/gokautomaten_exploiteren"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de kosten voor gokautomaten en de aanvraagprocedure. De tarieven die in de originele tekst worden genoemd zijn niet terug te vinden in de actuele bronnen. Ook wordt de mogelijkheid om een aanvraag via e-mail in te dienen niet vermeld in de bronpagina's. Dit suggereert dat zowel de tariefinformatie als de aanvraagprocedure mogelijk verouderd zijn."
+  }
+}

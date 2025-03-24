@@ -1,0 +1,79 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ROTTERDAM",
+      "contact": {
+        "phone": "14 010",
+        "email": "null",
+        "website": "http://www.rotterdam.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "Alcoholwetvergunning nieuw, overname of wijziging: € 686,60",
+        "status": "false",
+        "note": "Het actuele tarief voor een nieuwe alcoholwetvergunning, overname of wijziging in Rotterdam is € 696,90 volgens de officiële website van de gemeente Rotterdam."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.rotterdam.nl/toestemming-aanvragen-voor-schenken-van-alcohol-bij-evenementen",
+      "https://www.rotterdam.nl/exploitatievergunning-aanvragen/start-exploitatievergunning-aanvragen",
+      "https://www.rotterdam.nl/alcoholwetvergunning-aanvragen",
+      "https://www.rotterdam.nl/exploitatievergunning-speelautomatenhal-aanvragen/start-exploitatievergunning-speelautomatenhal-aanvragen",
+      "https://www.rotterdam.nl/alcoholwetvergunning-aanvragen/start-alcoholwetvergunning-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.rotterdam.nl",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Doe dit uiterlijk 4 weken voor het evenement",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden een specifieke aanvraagtermijn van 4 weken voor evenementen met alcoholschenking, terwijl dit niet genoemd wordt in de originele tekst",
+          "source_urls": [
+            "https://www.rotterdam.nl/toestemming-aanvragen-voor-schenken-van-alcohol-bij-evenementen"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "U hebt eHerkenning niveau 2 nodig én een machtiging 'Ondernemersloket EH 2'",
+          "original_reference": "U heeft eHerkenning niveau 2 nodig en een machtiging 'Ondernemersloket EH 2'",
+          "note": "De eHerkenning vereisten komen exact overeen",
+          "source_urls": [
+            "https://www.rotterdam.nl/exploitatievergunning-speelautomatenhal-aanvragen/start-exploitatievergunning-speelautomatenhal-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "Bij vergelijking van de originele tekst met de bronnen is er één belangrijk verschil gevonden: de specifieke aanvraagtermijn van 4 weken voor evenementen met alcoholschenking die niet in de originele tekst staat vermeld. De overige informatie, waaronder de eHerkenning vereisten, komt overeen. Veel details uit de originele tekst kunnen niet direct geverifieerd worden omdat ze niet expliciet in de geciteerde bronnen staan."
+  }
+}

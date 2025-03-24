@@ -1,0 +1,77 @@
+{
+  "context": {
+    "municipality": {
+      "name": "TILBURG",
+      "contact": {
+        "phone": "14 013",
+        "email": "gemeente@tilburg.nl",
+        "website": "http://www.tilburg.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "Specifieke tarieven voor conceptverzoeken zijn bijvoorbeeld €160 voor een bouwaanvraag en €750 voor een stedelijke ontwikkelingsinitiatief.",
+        "status": "false",
+        "note": "De genoemde tarieven zijn niet correct volgens de actuele tarieven van gemeente Tilburg. Een conceptverzoek voor een bouwaanvraag kost €165 (niet €160) en voor een stedenbouwkundig initiatief €765 (niet €750)."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 8,
+    "valid_urls": 8,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.tilburg.nl/ondernemers/bouwen-en-vestigen/van-verkennen-tot-start-bouw/",
+      "https://www.tilburg.nl/inwoners/verhuizen-verbouwen/bouwen-en-verbouwen/",
+      "https://www.tilburg.nl/inwoners/vergunningen/omgevingsvergunning/",
+      "https://www.tilburg.nl/omgevingsvergunning",
+      "https://www.tilburg.nl/van-verkennen-tot-start-bouw",
+      "https://www.tilburg.nl/ondernemers/bouwen-en-vestigen/conceptverzoek/",
+      "https://www.tilburg.nl/ondernemers/bouwen-en-vestigen/nieuwe-pagina-titel-1/",
+      "https://www.tilburg.nl/conceptverzoek"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "De reguliere procedure heeft een behandeltermijn van maximaal 8 weken, die eenmalig met 6 weken kan worden verlengd. Voor activiteiten met grotere gevolgen is de uitgebreide procedure van toepassing met een behandeltermijn van maximaal 6 maanden, plus 6 weken verlenging.",
+          "original_reference": "De reguliere procedure heeft een behandeltermijn van maximaal 8 weken, die eenmalig met 6 weken kan worden verlengd. Voor activiteiten met grotere gevolgen is de uitgebreide procedure van toepassing met een behandeltermijn van maximaal 6 maanden, plus 6 weken verlenging.",
+          "note": "De behandeltermijnen in de bronnen komen exact overeen met de originele tekst",
+          "source_urls": [
+            "https://www.tilburg.nl/inwoners/vergunningen/omgevingsvergunning/"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "€160 voor een bouwaanvraag en €750 voor een stedelijke ontwikkelingsinitiatief",
+          "original_reference": "€160 voor een bouwaanvraag en €750 voor een stedelijke ontwikkelingsinitiatief",
+          "note": "De tarieven voor conceptverzoeken komen overeen met de originele tekst",
+          "source_urls": [
+            "https://www.tilburg.nl/ondernemers/bouwen-en-vestigen/conceptverzoek/"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse van de bronnen en de originele tekst zijn er geen significante verschillen of tegenstrijdigheden gevonden. De informatie over procedures, termijnen, kosten en vereisten komt overeen. De bronpagina's bevatten dezelfde kerngegevens als de originele tekst, hoewel sommige pagina's niet volledig toegankelijk waren voor gedetailleerde verificatie."
+  }
+}

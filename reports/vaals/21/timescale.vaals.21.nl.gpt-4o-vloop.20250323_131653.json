@@ -1,0 +1,78 @@
+{
+  "context": {
+    "municipality": {
+      "name": "VAALS",
+      "contact": {
+        "phone": "(043) 306 85 68",
+        "email": "info@vaals.nl",
+        "website": "http://www.vaals.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor het aanvragen van een VOG bedragen €41,35.",
+        "status": "false",
+        "note": "De actuele kosten voor een VOG bedragen €41,95 volgens de officiële website van de gemeente Vaals."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.vaals.nl/inwoners/nederlander-worden-door-optie-of-naturalisatie",
+      "https://www.vaals.nl/inwoners/vergunningen/omgevingsvergunning",
+      "https://www.vaals.nl/inwoners/uittreksels/bewijs-van-nederlanderschap",
+      "https://www.vaals.nl/inwoners/vergunningen/omgevingswet/meest-aangevraagde-activiteiten"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.vaals.nl/inwoners/uittreksels/verklaring-omtrent-het-gedrag-vog",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Direct aanvragen (€ 9,35)",
+          "original_reference": "De kosten voor het aanvragen van een VOG bedragen €41,35.",
+          "note": "Er lijkt een verwarring te zijn - de €9,35 in de bron verwijst naar een Bewijs van Nederlanderschap, niet naar een VOG. Dit zijn twee verschillende documenten.",
+          "source_urls": [
+            "https://www.vaals.nl/inwoners/uittreksels/bewijs-van-nederlanderschap"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U kunt een verzoek voor optie of naturalisatie indienen bij de gemeente Vaals per e-mail via info@vaals.nl",
+          "original_reference": "U dient een volledig ingevuld aanvraagformulier in bij de afdeling Burgerzaken van de gemeente Vaals",
+          "note": "De originele tekst suggereert alleen fysieke indiening bij Burgerzaken, terwijl de bron aangeeft dat aanvragen ook per e-mail mogelijk zijn.",
+          "source_urls": [
+            "https://www.vaals.nl/inwoners/nederlander-worden-door-optie-of-naturalisatie"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont twee belangrijke verschillen: een mogelijk verwarrende vermelding van kosten (€9,35 voor een ander document) en een aanvullende aanvraagmogelijkheid via e-mail die niet in de originele tekst wordt genoemd. De overige informatie in de originele tekst komt overeen met de bronnen of kan niet geverifieerd worden met de gegeven bronpagina's."
+  }
+}

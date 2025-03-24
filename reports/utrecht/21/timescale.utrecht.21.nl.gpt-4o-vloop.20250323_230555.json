@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "UTRECHT",
+      "contact": {
+        "phone": "(014) 030",
+        "email": "Gemeente@utrecht.nl",
+        "website": "http://www.utrecht.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "Als je aanvraag incorrect is, wordt deze na één jaar verwijderd.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Utrecht worden incorrecte aanvragen na 4 weken verwijderd, niet na één jaar."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.utrecht.nl/bestuur-en-organisatie/privacy/privacyverklaring/privacyverklaring-u-vraagt-iets-aan-bij-burgerzaken",
+      "https://www.utrecht.nl/naturalisatie/",
+      "http://www.utrecht.nl/inzageverzoek",
+      "https://www.utrecht.nl/wonen-en-leven/bouwen-en-verbouwen/hebt-u-een-vraag-over-bouwplan-of-bedrijfsplan",
+      "https://www.utrecht.nl/ondernemen/vergunningen-en-regels/werkzaamheden-vergunning-aanvragen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wij controleren uw identiteit. Dat kan online met DigiD. Of aan de balie met uw identiteitsbewijs. U betaalt. Online betaalt u met iDeal. Aan de balie kunt u pinnen.",
+          "original_reference": "De aanvraag kan op de volgende manieren worden gedaan: Online met DigiD, Aan de balie met identiteitsbewijs, Per post",
+          "note": "De originele tekst vermeldt dat aanvragen ook per post mogelijk is, maar in de bronnen wordt deze optie niet genoemd. Alleen online (DigiD) en aan de balie worden als mogelijkheden vermeld.",
+          "source_urls": [
+            "https://www.utrecht.nl/bestuur-en-organisatie/privacy/privacyverklaring/privacyverklaring-u-vraagt-iets-aan-bij-burgerzaken"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Stadsplateau 1, 3521AZ Utrecht",
+          "original_reference": "Stadsplateau 1, 3521AZ Utrecht",
+          "note": "Het adres van het Stadskantoor komt exact overeen in beide bronnen.",
+          "source_urls": [
+            "https://www.utrecht.nl/vraag-over-uw-bouwplan-of-bedrijfsplan"
+          ]
+        }
+      ]
+    },
+    "summary": "Bij vergelijking van de originele tekst met de bronnen is één belangrijk verschil gevonden: de aanvraagmethode per post wordt wel genoemd in de originele tekst maar niet bevestigd in de bronnen. De overige informatie, waaronder het adres van het Stadskantoor, komt overeen. Merk op dat niet alle aspecten van de originele tekst konden worden geverifieerd omdat sommige specifieke informatie over VOG-aanvragen niet in de gegeven bronnen voorkomt."
+  }
+}

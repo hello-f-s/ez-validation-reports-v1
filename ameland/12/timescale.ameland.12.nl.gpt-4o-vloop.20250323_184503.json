@@ -1,0 +1,85 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AMELAND",
+      "contact": {
+        "phone": "(0519) 55 55 55",
+        "email": "info@ameland.nl",
+        "website": "http://www.ameland.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "Heeft u vragen? Maak een afspraak via tel. (0519) 555 555.",
+        "status": "false",
+        "note": "Het telefoonnummer is onjuist. Het correcte telefoonnummer van de gemeente Ameland is (0519) 555 555 555."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.ameland.nl/omgevingsvergunning",
+      "https://www.ameland.nl/uitrit-of-inrit-aanleggen",
+      "https://www.ameland.nl/bouwwerk-gereedmelding",
+      "https://www.ameland.nl/bestemmingsplan-aanpassen",
+      "https://www.ameland.nl/onttrekkingsvergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Let op! Informatie op deze pagina kan verouderd zijn vanwege de overgang naar de Omgevingswet per 1 januari 2024.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina's bevatten een belangrijke waarschuwing over de overgang naar de Omgevingswet die ontbreekt in de originele tekst. Dit is essentiële informatie voor aanvragers.",
+          "source_urls": [
+            "https://www.ameland.nl/uitrit-of-inrit-aanleggen",
+            "https://www.ameland.nl/bestemmingsplan-aanpassen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Doe dit uiterlijk op de eerste werkdag nadat u klaar bent met de werkzaamheden.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist informatie over de deadline voor gereedmelding van werkzaamheden, wat een belangrijke procedurestap is.",
+          "source_urls": [
+            "https://www.ameland.nl/bouwwerk-gereedmelding"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Tel: (0519) 555 555, WhatsApp: 06-144 58 728, E-mail: info@ameland.nl, Jelmeraweg 1 9162 EA Ballum, Postbus 22 9160 AA Hollum",
+          "original_reference": "tel. (0519) 555 555. U kunt ook contact opnemen via WhatsApp op 06-144 58 728 of e-mail: info@ameland.nl. Bezoekadres: Jelmeraweg 1, 9162 EA Ballum. Postadres: Postbus 22, 9160 AA Hollum",
+          "note": "De contactgegevens komen exact overeen in alle bronnen.",
+          "source_urls": [
+            "https://www.ameland.nl/bouwwerk-gereedmelding",
+            "https://www.ameland.nl/onttrekkingsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen het ontbreken van informatie over de overgang naar de Omgevingswet per 1 januari 2024 en specifieke deadlines voor gereedmelding in de originele tekst. De contactgegevens zijn consistent in alle bronnen. De gevonden verschillen zijn vooral aanvullende informatie die de originele tekst completer zou maken."
+  }
+}

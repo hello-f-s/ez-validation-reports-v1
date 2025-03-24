@@ -1,0 +1,81 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OLDEBROEK",
+      "contact": {
+        "phone": "(0525) 63 82 00",
+        "email": "gemeente@oldebroek.nl",
+        "website": "http://www.oldebroek.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Voor een alcoholvergunning bijvoorbeeld bedragen de kosten €1.031,15.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van de gemeente Oldebroek bedragen de kosten voor een alcoholvergunning €1.047,50 in 2024, niet €1.031,15."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 3,
+    "invalid_urls": 2,
+    "accuracy_percentage": 60.0,
+    "valid_urls_list": [
+      "https://www.oldebroek.nl/Inwoners/Bouwen_en_verbouwen/Omgevingsvergunning",
+      "https://www.oldebroek.nl/Inwoners/Bouwen_en_verbouwen",
+      "https://www.oldebroek.nl/Inwoners/Vergunningen/Alcoholvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.oldebroek.nl/Inwoners/Vergunningen/Ontheffing_sluitingstijd_horeca",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.oldebroek.nl/Inwoners/Vergunningen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wilt u in een horecabedrijf alcohol schenken of in een slijterij sterke drank verkopen? Dan heeft u een alcoholvergunning nodig. Dit geldt ook voor paracommerciële instellingen zoals sportkantines en buurt- en dorpshuizen die alcohol willen schenken.",
+          "original_reference": "Een exploitatievergunning voor een horecabedrijf in de gemeente Oldebroek vereist dat u over een geldige alcoholvergunning beschikt.",
+          "note": "De bronpagina geeft een bredere toelichting over wanneer een alcoholvergunning nodig is, inclusief specifieke voorbeelden zoals sportkantines en buurt- en dorpshuizen. Dit is aanvullende informatie die niet in de originele tekst staat.",
+          "source_urls": [
+            "https://www.oldebroek.nl/Inwoners/Vergunningen/Alcoholvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U kunt een alcoholvergunning aanvragen als u: 21 jaar of ouder bent, van onbesproken gedrag bent, beschikt over een Verklaring Sociale Hygiëne",
+          "original_reference": "Ingevuld aanvraagformulier model A of B met diverse bijlagen zoals Verklaring Sociale Hygiëne en bouwkundige plattegrond.",
+          "note": "De bronpagina noemt specifieke persoonlijke voorwaarden (leeftijd en gedrag) die niet in de originele tekst worden genoemd.",
+          "source_urls": [
+            "https://www.oldebroek.nl/Inwoners/Vergunningen/Alcoholvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten meer gedetailleerde informatie over de voorwaarden voor een alcoholvergunning, waaronder specifieke persoonlijke vereisten en een bredere toelichting over het toepassingsgebied. Veel informatie uit de originele tekst kon niet worden geverifieerd omdat deze niet in de beschikbare bronpagina's voorkomt, zoals de genoemde kosten van €1.031,15 en de specifieke bezwaarprocedure."
+  }
+}

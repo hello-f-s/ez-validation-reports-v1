@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OLDEBROEK",
+      "contact": {
+        "phone": "(0525) 63 82 00",
+        "email": "gemeente@oldebroek.nl",
+        "website": "http://www.oldebroek.nl"
+      }
+    },
+    "service": {
+      "id": 16,
+      "name": "Registreren in het Landelijk Register Kinderopvang (LRK)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 10,
+    "false_sentences": 1,
+    "accuracy_percentage": 90.9,
+    "false_statements": [
+      {
+        "sentence": "U moet een aanvraag indienen bij de gemeente Oldebroek.",
+        "status": "false",
+        "note": "De aanvraag moet niet direct bij de gemeente Oldebroek worden ingediend, maar via het Landelijk Register Kinderopvang (LRK) portaal. Dit is het officiële landelijke systeem voor registratie van kinderopvangvoorzieningen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 2,
+    "invalid_urls": 4,
+    "accuracy_percentage": 33.3,
+    "valid_urls_list": [
+      "https://www.oldebroek.nl/Inwoners/Jeugd_en_onderwijs/Kinderopvangtoeslag",
+      "https://www.oldebroek.nl/Inwoners/Jeugd_en_onderwijs/Jeugdhulp"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.oldebroek.nl/Inwoners/Jeugd_en_onderwijs/Kinderopvang_inspectie_en_register",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.rijksoverheid.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.oldebroek.nl/Inwoners/Jeugd_en_onderwijs/Peuteropvang_gemeentelijke_bijdrage",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.oldebroek.nl/Inwoners/Geboorte_trouwen_en_overlijden/Registratie_levenloos_geboren_kindje",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Jeugdhulp is meestal gratis. De gemeente is verantwoordelijk voor alle jeugdhulp tot 18 jaar en regelt de inkoop en betaling van deze hulp.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat specifieke informatie over kosten van jeugdhulp, terwijl dit volledig ontbreekt in de originele tekst. Dit is belangrijke aanvullende informatie voor ouders.",
+          "source_urls": [
+            "https://www.oldebroek.nl/Inwoners/Jeugd_en_onderwijs/Jeugdhulp"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een deel van de kosten van kinderopvang kunt u terugkrijgen van de Belastingdienst. De hoogte van deze tegemoetkoming is afhankelijk van uw inkomen.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat specifieke informatie over kinderopvangtoeslag en terugbetaling van kosten via de Belastingdienst, wat niet wordt genoemd in de originele tekst.",
+          "source_urls": [
+            "https://www.oldebroek.nl/Inwoners/Jeugd_en_onderwijs/Kinderopvangtoeslag"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten belangrijke aanvullende informatie over de kosten en financiële aspecten van kinderopvang en jeugdhulp die niet in de originele tekst staat vermeld. Met name de informatie over gratis jeugdhulp en de mogelijkheid tot kinderopvangtoeslag via de Belastingdienst zijn belangrijke toevoegingen voor ouders die niet in de originele tekst worden genoemd."
+  }
+}

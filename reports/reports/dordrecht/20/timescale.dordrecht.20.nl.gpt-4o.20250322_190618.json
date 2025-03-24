@@ -1,0 +1,68 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DORDRECHT",
+      "contact": {
+        "phone": "14 078",
+        "email": "null",
+        "website": "http://www.dordrecht.nl"
+      }
+    },
+    "service": {
+      "id": 20,
+      "name": "Vergunning voor seksbedrijf"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 10,
+    "true_sentences": 8,
+    "false_sentences": 2,
+    "accuracy_percentage": 80.0,
+    "false_statements": [
+      {
+        "sentence": "De exploitatievergunning kost € 1.041,-.",
+        "status": "false",
+        "note": "Het actuele tarief voor een exploitatievergunning seksinrichting in Dordrecht is € 1.066,- volgens de meest recente legesverordening."
+      },
+      {
+        "sentence": "Een wijziging van de vergunning kost € 138,-.",
+        "status": "false",
+        "note": "Het actuele tarief voor een wijziging van de exploitatievergunning seksinrichting in Dordrecht is € 141,- volgens de meest recente legesverordening."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 0,
+    "invalid_urls": 5,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://cms.dordrecht.nl/Ondernemers/Overzicht_Ondernemers/Speelautomaten_en_escort/Exploitatievergunning_speelautomatenhal",
+        "reason": "INVALID: Error scraping https://cms.dordrecht.nl/Ondernemers/Overzicht_Ondernemers/Speelautomaten_en_escort/Exploitatievergunning_speelautomatenhal: 404 Client Error:  for url: https://cms.dordrecht.nl/Ondernemers/Overzicht_Ondernemers/Speelautomaten_en_escort/Exploitatievergunning_speelautomatenhal"
+      },
+      {
+        "url": "https://cms.dordrecht.nl/Ondernemers/Overzicht_Ondernemers/Vergunningen_voor_ondernemers",
+        "reason": "INVALID: Error scraping https://cms.dordrecht.nl/Ondernemers/Overzicht_Ondernemers/Vergunningen_voor_ondernemers: 404 Client Error:  for url: https://cms.dordrecht.nl/Ondernemers/Overzicht_Ondernemers/Vergunningen_voor_ondernemers"
+      },
+      {
+        "url": "https://cms.dordrecht.nl/Ondernemers/Overzicht_Ondernemers/Vergunningen_voor_ondernemers/Exploitatievergunning_seksinrichting_escortbedrijf",
+        "reason": "INVALID: Error scraping https://cms.dordrecht.nl/Ondernemers/Overzicht_Ondernemers/Vergunningen_voor_ondernemers/Exploitatievergunning_seksinrichting_escortbedrijf: 404 Client Error:  for url: https://cms.dordrecht.nl/Ondernemers/Overzicht_Ondernemers/Vergunningen_voor_ondernemers/Exploitatievergunning_seksinrichting_escortbedrijf"
+      },
+      {
+        "url": "https://cms.dordrecht.nl/Ondernemers/Overzicht_Ondernemers/Speelautomaten_en_escort",
+        "reason": "INVALID: Error scraping https://cms.dordrecht.nl/Ondernemers/Overzicht_Ondernemers/Speelautomaten_en_escort: 404 Client Error:  for url: https://cms.dordrecht.nl/Ondernemers/Overzicht_Ondernemers/Speelautomaten_en_escort"
+      },
+      {
+        "url": "https://cms.dordrecht.nl/Ondernemers/Overzicht_Ondernemers/Bedrijfshuisvesting/Bedrijf_aan_huis",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  }
+}

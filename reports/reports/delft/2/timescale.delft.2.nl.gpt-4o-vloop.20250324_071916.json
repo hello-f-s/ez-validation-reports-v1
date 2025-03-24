@@ -1,0 +1,92 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DELFT",
+      "contact": {
+        "phone": "14 015",
+        "email": "null",
+        "website": "http://www.delft.nl"
+      }
+    },
+    "service": {
+      "id": 2,
+      "name": "Bord of spandoek plaatsen aan de openbare weg"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 16,
+    "true_sentences": 15,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.8,
+    "false_statements": [
+      {
+        "sentence": "WhatsApp: 06 527 39 476",
+        "status": "false",
+        "note": "Het correcte WhatsApp nummer van gemeente Delft is 06 5073 9476"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.delft.nl/vergunning-voor-promotieactie",
+      "https://www.delft.nl/spandoek-plaatsen",
+      "https://www.delft.nl/reclame-de-openbare-ruimte",
+      "https://www.delft.nl/stappen-voor-uw-plan",
+      "https://www.delft.nl/overkapping-plaatsen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 4,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "In deze periode mag u als organisatie maximaal 1 spandoek ophangen. Dus niet een aantal spandoeken tegelijk op meerdere locaties.",
+          "original_reference": "Op elke plek mag maximaal één spandoek hangen",
+          "note": "De originele tekst suggereert alleen een limiet per locatie, terwijl de brontekst specificeert dat een organisatie in totaal maar één spandoek tegelijk mag ophangen, niet op meerdere locaties tegelijk.",
+          "source_urls": [
+            "https://www.delft.nl/spandoek-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Noordeinde, ter hoogte van het Koningsplein; Lang Geer, op de hoek met de Breestraat; Buitenwatersloot, ter hoogte van de Kogelgieterij; Gasthuislaan, op de hoek met de Pynepoort",
+          "original_reference": "Noordeinde, Lang Geer, Buitenwatersloot en Gasthuislaan",
+          "note": "De brontekst geeft specifiekere locatieaanduidingen voor waar de spandoeken precies mogen hangen, terwijl de originele tekst alleen de straatnamen noemt.",
+          "source_urls": [
+            "https://www.delft.nl/spandoek-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het spandoek hangt minimaal 2 meter boven het water zodat het water bevaarbaar blijft.",
+          "original_reference": "Speciale regels gelden voor de bevestiging, zoals de hoogte boven het water",
+          "note": "De brontekst specificeert de exacte minimale hoogte van 2 meter boven het water, wat niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.delft.nl/spandoek-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Laat de plek schoon achter.",
+          "original_reference": "No matching information",
+          "note": "Deze voorwaarde over het schoon achterlaten van de locatie ontbreekt volledig in de originele tekst.",
+          "source_urls": [
+            "https://www.delft.nl/spandoek-plaatsen"
+          ]
+        }
+      ]
+    },
+    "summary": "De broninhoud bevat enkele belangrijke aanvullende specificaties die niet in de originele tekst staan, waaronder de beperking tot één spandoek per organisatie (niet alleen per locatie), exacte locatieaanduidingen, de specifieke minimumhoogte boven water van 2 meter, en de verplichting om de locatie schoon achter te laten. Deze details maken de voorwaarden concreter en strikter dan in de originele tekst wordt gesuggereerd."
+  }
+}

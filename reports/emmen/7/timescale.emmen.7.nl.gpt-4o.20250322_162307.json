@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "EMMEN",
+      "contact": {
+        "phone": "14 0591",
+        "email": "gemeente@emmen.nl",
+        "website": "http://www.emmen.nl"
+      }
+    },
+    "service": {
+      "id": 7,
+      "name": "Kabels en leidingen aanleggen en beheren"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Voor een gebied van maximaal 500 x 500 meter is één graafmelding voldoende; grotere gebieden vereisen meerdere meldingen.",
+        "status": "false",
+        "note": "Volgens de KLIC-richtlijnen geldt een maximale oppervlakte van 250.000 m² (500 x 500 meter) per graafmelding, maar dit is een landelijke richtlijn van het Kadaster en niet een specifieke regel van de gemeente Emmen. De gemeente Emmen verwijst hiervoor door naar het Kadaster en stelt zelf geen specifieke oppervlakte-eisen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://gemeente.emmen.nl/aanlegvergunning",
+      "https://gemeente.emmen.nl/kabels-en-leidingen-aanleggen",
+      "https://gemeente.emmen.nl/bouwen-in-veengebied",
+      "https://gemeente.emmen.nl/bouwtoezicht-op-illegale-bouwwerken",
+      "https://gemeente.emmen.nl/leges-en-tarieven"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wilt u melden dat u start met bouwen of verbouwen? Doe dit minimaal 2 werkdagen voordat u begint met de werkzaamheden.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over meldingstermijnen voor start werkzaamheden, terwijl dit wel een belangrijke voorwaarde is.",
+          "source_urls": [
+            "https://gemeente.emmen.nl/bouwtoezicht-op-illegale-bouwwerken"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De kwaliteitsborger betaalt u zelf. De inspecteur van de gemeente hoeft u niet te betalen.",
+          "original_reference": "Er is geen specifieke informatie over de kosten verbonden aan het aanvragen of melden van werkzaamheden",
+          "note": "De bronpagina specificeert concrete kosteninformatie over kwaliteitsborging, terwijl de originele tekst aangeeft dat er geen kosteninformatie beschikbaar is.",
+          "source_urls": [
+            "https://gemeente.emmen.nl/bouwtoezicht-op-illegale-bouwwerken"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U kunt bezwaar maken tegen de beslissing op uw aanvraag. Doe dit binnen 6 weken. Bent u het daarna niet eens? Dan kunt u in beroep gaan bij de rechtbank.",
+          "original_reference": "Hier kan geen specifieke informatie over gevonden worden op de website van deze gemeente.",
+          "note": "De bronpagina bevat wel degelijk specifieke informatie over bezwaarprocedures, terwijl de originele tekst stelt dat hierover geen informatie beschikbaar is.",
+          "source_urls": [
+            "https://gemeente.emmen.nl/aanlegvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten belangrijke aanvullende informatie die niet in de originele tekst staat, waaronder specifieke meldingstermijnen voor werkzaamheden, informatie over kosten voor kwaliteitsborging, en details over bezwaarprocedures. Deze informatie is essentieel voor een complete en accurate beschrijving van de dienstverlening."
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "context": {
+    "municipality": {
+      "name": "BLARICUM",
+      "contact": {
+        "phone": "(035) 751 32 22",
+        "email": "info@blaricum.nl",
+        "website": "http://www.blaricum.nl"
+      }
+    },
+    "service": {
+      "id": 16,
+      "name": "Registreren in het Landelijk Register Kinderopvang (LRK)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 11,
+    "false_sentences": 2,
+    "accuracy_percentage": 84.6,
+    "false_statements": [
+      {
+        "sentence": "€ 642,50 voor het starten als gastouder.",
+        "status": "false",
+        "note": "De gemeente Blaricum hanteert andere tarieven voor het starten als gastouder. De genoemde bedragen zijn niet correct volgens de actuele legesverordening van de gemeente Blaricum."
+      },
+      {
+        "sentence": "€ 2542,50 voor het starten van een kinderopvang.",
+        "status": "false",
+        "note": "De gemeente Blaricum hanteert andere tarieven voor het starten van een kinderopvang. De genoemde bedragen zijn niet correct volgens de actuele legesverordening van de gemeente Blaricum."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.blaricum.nl/Geboorte/Geboorte_doorgeven",
+      "https://www.blaricum.nl/Bouwen_verbouwen_en_wonen/Bouwen_en_verbouwen/Omgevingsvergunning",
+      "https://www.blaricum.nl/Scholen_en_kinderopvang/Kinderopvang_starten",
+      "https://www.blaricum.nl/Scholen_en_kinderopvang/Kinderopvang_zoeken",
+      "https://www.blaricum.nl/Ondernemen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.rijksoverheid.nl/onderwerpen/kinderopvang/registeren-en-toezicht",
+        "reason": "INVALID: Error scraping https://www.rijksoverheid.nl/onderwerpen/kinderopvang/registeren-en-toezicht: 404 Client Error: Not Found for url: https://www.rijksoverheid.nl/onderwerpen/kinderopvang/registeren-en-toezicht"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voordat u start met het opvangen van kinderen, voert de inspectie Kinderopvang een onderzoek uit. Daarna ontvangt u bericht of u mag starten met de kinderopvang.",
+          "original_reference": "Er moet een inspectie Kinderopvang worden uitgevoerd voordat u start met het opvangen van kinderen.",
+          "note": "De brontekst specificeert dat er na de inspectie eerst een expliciet bericht volgt over toestemming om te starten. Dit detail ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.blaricum.nl/Scholen_en_kinderopvang/Kinderopvang_starten"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u gastouder wilt worden moet u zich inschrijven bij een gastouderbureau. Een medewerker van het gastouderbureau meldt u dan aan bij de gemeente.",
+          "original_reference": "Uw kinderopvang moet bij de gemeente worden ingeschreven.",
+          "note": "De brontekst specificeert dat voor gastouders de aanmelding bij de gemeente via een gastouderbureau verloopt, terwijl de originele tekst dit als directe handeling beschrijft.",
+          "source_urls": [
+            "https://www.blaricum.nl/Scholen_en_kinderopvang/Kinderopvang_starten"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Deze organisaties komen pas in dit register na een inspectie door de GGD en een beschikking (besluit) van de gemeente.",
+          "original_reference": "No matching information",
+          "note": "De brontekst vermeldt specifiek dat er een formele beschikking (besluit) van de gemeente nodig is, wat niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.blaricum.nl/Scholen_en_kinderopvang/Kinderopvang_zoeken"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten enkele belangrijke aanvullende details over het proces van kinderopvang starten die niet in de originele tekst staan. Met name de rol van het gastouderbureau bij registratie, de vereiste formele beschikking van de gemeente, en de expliciete bevestiging na inspectie zijn belangrijke toevoegingen aan de procedure. Deze details maken het proces duidelijker en completer dan in de originele tekst."
+  }
+}

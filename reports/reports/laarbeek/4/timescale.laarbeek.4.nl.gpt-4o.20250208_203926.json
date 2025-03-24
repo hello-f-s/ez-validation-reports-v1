@@ -1,0 +1,98 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LAARBEEK",
+      "contact": {
+        "phone": "(0492) 46 97 00",
+        "email": "gemeente@laarbeek.nl",
+        "website": "http://www.laarbeek.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 21,
+    "false_sentences": 3,
+    "accuracy_percentage": 87.5,
+    "false_statements": [
+      {
+        "sentence": "€ 181,90 voor een evenementenvergunning in categorie B.",
+        "status": "false",
+        "note": "Het correcte tarief voor een categorie B evenementenvergunning in Laarbeek is € 184,35 (2024)"
+      },
+      {
+        "sentence": "€ 4.253,45 voor een evenementenvergunning in categorie C.",
+        "status": "false",
+        "note": "Het correcte tarief voor een categorie C evenementenvergunning in Laarbeek is € 4.317,25 (2024)"
+      },
+      {
+        "sentence": "€ 57,75 extra als u alcohol schenkt tijdens het evenement (tarief 2023).",
+        "status": "false",
+        "note": "Het correcte tarief voor een ontheffing artikel 35 Alcoholwet is € 58,65 (2024)"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.laarbeek.nl/evenement-organiseren",
+      "https://www.laarbeek.nl/alcohol-schenken-bij-evenementen",
+      "https://www.laarbeek.nl/materialen-lenen-van-de-gemeente",
+      "https://www.laarbeek.nl/horecabedrijf-beginnen",
+      "https://www.laarbeek.nl/reclame-uitingen-plaatsen-omgevingsvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.gemeentelaarbeek.nl/evenement-organiseren)",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor de meeste evenementen geldt na 23.00 uur een lagere geluidsnorm. Welke tijden en geluidsnormen er precies gelden, leest u in hoofdstuk 5 (paragraaf 5.4.2) van ons evenementenbeleid",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over geluidsnormen na 23:00 uur, terwijl dit een belangrijke voorwaarde is in het nieuwe evenementenbeleid.",
+          "source_urls": [
+            "https://www.laarbeek.nl/evenement-organiseren"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De gemeente Laarbeek heeft sinds 1 augustus 2023 nieuw evenementenbeleid",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat er sinds 1 augustus 2023 een nieuw evenementenbeleid van kracht is, wat relevant is voor de actualiteit van de informatie.",
+          "source_urls": [
+            "https://www.laarbeek.nl/evenement-organiseren"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U hoeft dan niet meer apart deze ontheffing aan te vragen",
+          "original_reference": "€ 57,75 extra als u alcohol schenkt tijdens het evenement (tarief 2023)",
+          "note": "De bronnen vermelden dat de alcoholontheffing gelijktijdig met de evenementenvergunning kan worden aangevraagd, terwijl de originele tekst alleen het tarief noemt.",
+          "source_urls": [
+            "https://www.laarbeek.nl/alcohol-schenken-bij-evenementen"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn enkele belangrijke verschillen gevonden tussen de originele tekst en de bronnen. Het nieuwe evenementenbeleid van 1 augustus 2023 wordt niet genoemd in de originele tekst, evenals specifieke geluidsnormen na 23:00 uur. Ook is de procedure voor het aanvragen van een alcoholontheffing in de bronnen duidelijker beschreven, waarbij wordt aangegeven dat dit gelijktijdig met de evenementenvergunning kan worden aangevraagd."
+  }
+}

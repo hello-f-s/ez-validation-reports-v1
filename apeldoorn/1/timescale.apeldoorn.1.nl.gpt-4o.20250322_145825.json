@@ -1,0 +1,99 @@
+{
+  "context": {
+    "municipality": {
+      "name": "APELDOORN",
+      "contact": {
+        "phone": "14 055",
+        "email": "gemeente@apeldoorn.nl",
+        "website": "http://www.apeldoorn.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 15,
+    "false_sentences": 2,
+    "accuracy_percentage": 88.2,
+    "false_statements": [
+      {
+        "sentence": "Leidinggevenden moeten ten minste 21 jaar zijn (Artikel 8 lid 1c).",
+        "status": "false",
+        "note": "Volgens de huidige Alcoholwet moeten leidinggevenden minimaal 18 jaar zijn, niet 21 jaar."
+      },
+      {
+        "sentence": "De behandelingsduur van de aanvraag kan maximaal 8 weken zijn.",
+        "status": "false",
+        "note": "De wettelijke behandeltermijn voor een alcoholvergunning in Apeldoorn is 12 weken, niet 8 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 3,
+    "invalid_urls": 3,
+    "accuracy_percentage": 50.0,
+    "valid_urls_list": [
+      "https://www.apeldoorn.nl/",
+      "https://www.apeldoorn.nl/werken-en-leren/ondernemen/ontheffingen-en-vergunningen/alcoholvergunning-1",
+      "https://www.apeldoorn.nl/werken-en-leren/ondernemen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.apeldoorn.nl/werken-en-leren/ondernemen/ontheffingen-en-vergunningen/vergunning-alcoholvrij-bedrijf",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.apeldoorn.nl/ondernemen/een-bedrijf-in-de-horeca",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.apeldoorn.nl/werken-en-leren/ondernemen/ontheffingen-en-vergunningen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "maximaal 2 maanden",
+          "original_reference": "De behandelingsduur van de aanvraag kan maximaal 8 weken zijn",
+          "note": "De originele tekst noemt 8 weken als maximale behandelduur, terwijl de bron 2 maanden aangeeft. Hoewel dit praktisch dezelfde periode is, gebruikt de bron een andere tijdsaanduiding.",
+          "source_urls": [
+            "https://www.apeldoorn.nl/werken-en-leren/ondernemen/ontheffingen-en-vergunningen/alcoholvergunning-1"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "€ 1.478,38 voor een alcoholvergunning, € 422,36 voor een wijziging alcoholvergunning, € 158,34 voor een melding wijziging leidinggevende",
+          "original_reference": "Specifieke kosten voor het aanvragen van een alcoholvergunning worden niet vermeld.",
+          "note": "De originele tekst vermeldt geen specifieke kosten, terwijl de bron wel concrete bedragen noemt voor verschillende type aanvragen en wijzigingen.",
+          "source_urls": [
+            "https://www.apeldoorn.nl/werken-en-leren/ondernemen/ontheffingen-en-vergunningen/alcoholvergunning-1"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Dit geldt voor bedrijven zoals een café, restaurant of slijterij en ook voor verenigingen en stichtingen met bijvoorbeeld een sportkantine of wijkgebouw.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst specificeert niet voor welke type ondernemingen/organisaties de alcoholvergunning verplicht is, terwijl de bron dit wel expliciet vermeldt.",
+          "source_urls": [
+            "https://www.apeldoorn.nl/werken-en-leren/ondernemen/ontheffingen-en-vergunningen/alcoholvergunning-1"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de kosten (die wel specifiek genoemd worden in de bron maar niet in de originele tekst), de doelgroep waarvoor de vergunning verplicht is (meer gedetailleerd in de bron), en een verschil in tijdsaanduiding (8 weken vs. 2 maanden). De brongegevens zijn specifieker en uitgebreider dan de originele tekst."
+  }
+}

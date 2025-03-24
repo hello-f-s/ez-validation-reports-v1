@@ -1,0 +1,93 @@
+{
+  "context": {
+    "municipality": {
+      "name": "APELDOORN",
+      "contact": {
+        "phone": "14 055",
+        "email": "gemeente@apeldoorn.nl",
+        "website": "http://www.apeldoorn.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 16,
+    "false_sentences": 3,
+    "accuracy_percentage": 84.2,
+    "false_statements": [
+      {
+        "sentence": "Voor kleine bouwwerken, zoals woonhuizen of bedrijfshallen, is soms alleen een bouwmelding nodig.",
+        "status": "false",
+        "note": "Voor woonhuizen en bedrijfshallen is altijd een omgevingsvergunning nodig, een bouwmelding alleen is niet voldoende volgens de gemeente Apeldoorn."
+      },
+      {
+        "sentence": "Specifieke kosten: € 113,50 voor een uitritaanleg en € 307,05 voor een sloopvergunning.",
+        "status": "false",
+        "note": "Deze specifieke bedragen komen niet overeen met de actuele legestarieven van de gemeente Apeldoorn."
+      },
+      {
+        "sentence": "Kosten voor nieuwe bouw: € 431,20 plus een bedrag per vierkante meter.",
+        "status": "false",
+        "note": "Dit specifieke basisbedrag komt niet overeen met de actuele legestarieven van de gemeente Apeldoorn voor nieuwbouw."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.apeldoorn.nl/omgevingswet/voorbeeld-aanvraag-na-1-januari-2024",
+      "https://www.apeldoorn.nl/wonen-en-leven/bouwen/omgevingsvergunningen/4210931-procedure-behandeling-van-een-aanvraag",
+      "https://www.apeldoorn.nl",
+      "https://www.apeldoorn.nl/omgevingswet/een-vergunning-aanvragen-binnen-de-omgevingswet-hoe-werkt-dat",
+      "https://www.apeldoorn.nl/wonen-en-leven/bouwen/omgevingsvergunningen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.officielebekendmakingen.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.apeldoorn.nl/college-van-b-en-w/ter-inzage/omgevingsvergunningen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een verandering aan uw huis, uw erf of uw bedrijf is soms aan regels gebonden. Vraagt uw verandering om een vergunning of een melding? Of moet u uw gemeente informeren over uw project? Dit kunt u zelf nagaan in het landelijke Omgevingsloket.",
+          "original_reference": "Als ondernemer dien je na te gaan of een omgevingsvergunning vereist is voor jouw bouwproject.",
+          "note": "De brontext is inclusiever en noemt expliciet verschillende soorten aanvragen (huis, erf, bedrijf) en verschillende types meldplicht, terwijl de originele tekst alleen over ondernemers en bouwprojecten spreekt.",
+          "source_urls": [
+            "https://www.apeldoorn.nl/omgevingswet/een-vergunning-aanvragen-binnen-de-omgevingswet-hoe-werkt-dat"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u met DigiD bent ingelogd, krijgt u in uw berichtenbox een verzendbevestiging.",
+          "original_reference": "No matching information",
+          "note": "De brontext specificeert dat er een verzendbevestiging in de berichtenbox komt na inloggen met DigiD, wat niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.apeldoorn.nl/wonen-en-leven/bouwen/omgevingsvergunningen/4210931-procedure-behandeling-van-een-aanvraag"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele tekst en de bronnen. De bronnen zijn inclusiever in hun beschrijving van wie een vergunning kan aanvragen en geven meer specifieke details over de bevestigingsprocedure. De overige informatie zoals kosten, termijnen en procedures komt overeen met de originele tekst of is niet volledig te verifiëren in de beschikbare bronnen."
+  }
+}

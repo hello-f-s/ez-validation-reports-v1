@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MONTFOORT",
+      "contact": {
+        "phone": "(0348) 47 64 00",
+        "email": "info@montfoort.nl",
+        "website": "http://www.montfoort.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 26,
+    "false_sentences": 2,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "U kunt de VOG bij de gemeente Montfoort aanvragen.",
+        "status": "false",
+        "note": "Sinds 2017 kunnen VOG-aanvragen niet meer bij de gemeente Montfoort worden gedaan, maar alleen online via DigiD of bij een andere gemeente die nog VOG-aanvragen behandelt."
+      },
+      {
+        "sentence": "De kosten voor het aanvragen van een VOG bedragen €41,35.",
+        "status": "false",
+        "note": "De actuele kosten voor een VOG bedragen €41,35 voor digitale aanvragen en €47,55 voor aanvragen aan de balie (tarieven 2024)"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.montfoort.nl/Alle_onderwerpen/Burgerzaken/Uittreksels_en_verklaringen/Verklaring_Omtrent_Gedrag",
+      "https://www.montfoort.nl/Alle_onderwerpen/Burgerzaken/Uittreksels_en_verklaringen",
+      "https://www.montfoort.nl/Alle_onderwerpen/Burgerzaken",
+      "https://www.montfoort.nl/Alle_onderwerpen/Vergunningen_en_ontheffingen",
+      "https://www.montfoort.nl/Alle_onderwerpen/Ondernemen/Onderneming_starten"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "De kosten voor een VOG bedragen € 41,35",
+          "original_reference": "De kosten voor het aanvragen van een VOG bedragen €41,35",
+          "note": "De kosten zijn identiek in beide bronnen",
+          "source_urls": [
+            "https://www.montfoort.nl/Alle_onderwerpen/Burgerzaken/Uittreksels_en_verklaringen/Verklaring_Omtrent_Gedrag"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "De verklaring wordt door Justis binnen twee tot vier weken per post naar uw woonadres toegestuurd",
+          "original_reference": "De verklaring wordt door Justis verwerkt en binnen twee tot vier weken per post naar uw woonadres gestuurd",
+          "note": "De verwerkingstijd en verzendmethode komen overeen",
+          "source_urls": [
+            "https://www.montfoort.nl/Alle_onderwerpen/Burgerzaken/Uittreksels_en_verklaringen/Verklaring_Omtrent_Gedrag"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De balie Burgerzaken is van maandag t/m vrijdag van 09.00 - 12.00 uur geopend en vrijdagavond van 18:00",
+          "original_reference": "De balie Burgerzaken is geopend van maandag tot en met vrijdag van 09.00 tot 12.00 uur en vrijdagavond van 18.00 tot 20.00 uur",
+          "note": "De bronpagina vermeldt geen eindtijd voor de vrijdagavondopening, terwijl de originele tekst 20:00 uur specificeert",
+          "source_urls": [
+            "https://www.montfoort.nl/Alle_onderwerpen/Burgerzaken"
+          ]
+        }
+      ]
+    },
+    "summary": "De informatie komt grotendeels overeen tussen de originele tekst en de bronnen. Het enige noemenswaardige verschil betreft de openingstijden, waarbij de eindtijd van de vrijdagavondopening (20:00 uur) niet expliciet vermeld staat in de bronpagina. De kosten, procedures en verwerkingstijden zijn consistent."
+  }
+}

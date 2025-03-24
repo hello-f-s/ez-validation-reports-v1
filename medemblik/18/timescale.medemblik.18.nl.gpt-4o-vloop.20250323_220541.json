@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MEDEMBLIK",
+      "contact": {
+        "phone": "(0229) 85 60 00",
+        "email": "info@medemblik.nl",
+        "website": "http://www.medemblik.nl"
+      }
+    },
+    "service": {
+      "id": 18,
+      "name": "Ventvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 31,
+    "true_sentences": 30,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.8,
+    "false_statements": [
+      {
+        "sentence": "Voor een alcoholvergunning bedragen de kosten voor een nieuwe ondernemer of bedrijf € 616,20, en voor wijzigingen € 134,40.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Medemblik bedragen de kosten voor een nieuwe alcoholvergunning (Drank- en Horecawet) € 632,60 en voor wijzigingen € 137,75."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.medemblik.nl/bouwen-en-verbouwen/omgevingswet-en-bouwvergunningen/omgevingsvergunning",
+      "https://www.medemblik.nl/vergunningen/alcohol-en-horeca/alcoholwetvergunning",
+      "https://www.medemblik.nl/burgerzaken/uittreksels-en-aktes/verklaring-omtrent-het-gedrag-vog",
+      "https://www.medemblik.nl/bouwen-en-verbouwen/omgevingswet-en-bouwvergunningen/vooroverleg-omgevingsaanvraag",
+      "https://www.medemblik.nl/vergunningen/evenementen-en-activiteiten/kansspel/loterij-organiseren"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Kosten model A (commercieel) 2025: Vestigen van een nieuwe ondernemer: € 616,20, Vestigen van een nieuw bedrijf: € 616,20",
+          "original_reference": "Voor een alcoholvergunning bedragen de kosten voor een nieuwe ondernemer of bedrijf € 616,20",
+          "note": "De originele tekst specificeert niet dat deze tarieven voor 2025 gelden, wat belangrijk is voor de actualiteit van de informatie",
+          "source_urls": [
+            "https://www.medemblik.nl/vergunningen/alcohol-en-horeca/alcoholwetvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Met de Omgevingswet is het vooroverleg een belangrijke stap geworden in het proces van een omgevingsvergunning",
+          "original_reference": "Bij het aanvragen van een omgevingsvergunning, zoals voor bouwen en verbouwen, is het verstandig om deel te nemen aan een vooroverlegfase. Hoewel dit niet verplicht is",
+          "note": "De brontext benadrukt sterker het belang van het vooroverleg onder de nieuwe Omgevingswet, terwijl de originele tekst dit als optioneel presenteert",
+          "source_urls": [
+            "https://www.medemblik.nl/bouwen-en-verbouwen/omgevingswet-en-bouwvergunningen/vooroverleg-omgevingsaanvraag"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Fase 1: Intaketafel en Fase 2: Omgevingstafel",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist de belangrijke informatie over het tweefasenproces met de intaketafel en omgevingstafel bij het vooroverleg",
+          "source_urls": [
+            "https://www.medemblik.nl/bouwen-en-verbouwen/omgevingswet-en-bouwvergunningen/vooroverleg-omgevingsaanvraag"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de specificatie van jaartallen bij tarieven (2025), een sterkere nadruk op het belang van vooroverleg in de nieuwe Omgevingswet, en het ontbreken van belangrijke procesinformatie over de intake- en omgevingstafel in de originele tekst. Deze verschillen zijn relevant voor de actualiteit en volledigheid van de informatie voor inwoners."
+  }
+}

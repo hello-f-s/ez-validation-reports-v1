@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MAASSLUIS",
+      "contact": {
+        "phone": "14 010",
+        "email": "gemeente@maassluis.nl",
+        "website": "http://www.maassluis.nl"
+      }
+    },
+    "service": {
+      "id": 22,
+      "name": "Woonruimte splitsen of samenvoegen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "Bezoekadres: Koningshoek 93.050, 3144 BA Maassluis",
+        "status": "false",
+        "note": "Het correcte bezoekadres van de gemeente Maassluis is Koningshoek 93.050, 3144 BA Maassluis. Het huisnummer wordt echter zonder punt geschreven: Koningshoek 93050."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.maassluis.nl/woning-splitsen",
+      "https://www.maassluis.nl/omgevingsvergunning",
+      "https://www.maassluis.nl/onroerend-goed-van-gemeente-kopen-huren-of-pachten",
+      "https://www.maassluis.nl/bouwen",
+      "https://www.maassluis.nl/bedrijfspandbedrijventerrein-huren-of-kopen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "De gemeente Maassluis kent geen splitsingsvergunning, maar in de meeste gevallen heeft u wel een omgevingsvergunning nodig.",
+          "original_reference": "Bij het splitsen van een woning in de gemeente Maassluis heeft u meestal een omgevingsvergunning nodig, aangezien er geen specifieke splitsingsvergunning bestaat.",
+          "note": "De informatie over het niet bestaan van een specifieke splitsingsvergunning en de noodzaak van een omgevingsvergunning komt overeen.",
+          "source_urls": [
+            "https://www.maassluis.nl/woning-splitsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bij uw aanvraag voor een omgevingsvergunning voor bouwen wordt onder andere getoetst aan de volgende eisen: Omgevingsplan, Participatie (als u afwijkt van het omgevingsplan), Welstand, Besluit bouwwerken leefomgeving",
+          "original_reference": "Voor een omgevingsvergunning worden aanvragen getoetst aan eisen zoals het omgevingsplan, welstand, en het Besluit bouwwerken leefomgeving.",
+          "note": "De bronpagina specificeert expliciet dat participatie alleen verplicht is bij afwijking van het omgevingsplan, terwijl dit in de originele tekst minder duidelijk is geformuleerd.",
+          "source_urls": [
+            "https://www.maassluis.nl/omgevingsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De informatie komt grotendeels overeen, met één belangrijk verschil in de specificatie van wanneer participatie verplicht is. De bronpagina's maken duidelijker dat participatie alleen verplicht is bij afwijking van het omgevingsplan. Voor het overige zijn er geen significante verschillen gevonden tussen de originele tekst en de bronpagina's."
+  }
+}

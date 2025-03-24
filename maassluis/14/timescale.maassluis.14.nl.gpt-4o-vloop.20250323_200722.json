@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MAASSLUIS",
+      "contact": {
+        "phone": "14 010",
+        "email": "gemeente@maassluis.nl",
+        "website": "http://www.maassluis.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "De verschuldigde leges bedragen € 31,05.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van de gemeente Maassluis bedragen de leges voor een parkeerontheffing € 32,40 (2024)."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.maassluis.nl/uitrit-of-inrit-aanleggen",
+      "https://www.maassluis.nl/ontheffing-parkeren-parkeerschijf-zone",
+      "https://www.maassluis.nl/parkeren-van-grote-voertuigen",
+      "https://www.maassluis.nl/standplaats-aanvragen",
+      "https://www.maassluis.nl/voorwerp-plaatsen-op-of-aan-de-weg"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De legeskosten bedragen € 31,10",
+          "original_reference": "De verschuldigde leges bedragen € 31,05",
+          "note": "Er is een klein verschil in de legeskosten. De bronpagina vermeldt € 31,10 terwijl de originele tekst € 31,05 aangeeft.",
+          "source_urls": [
+            "https://www.maassluis.nl/standplaats-aanvragen"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "In 2025 zal het beleid van parkeerontheffingen opnieuw bekeken worden. Dit kan leiden tot wijzigingen. Daarom kan het gebeuren dat in 2026 geen parkeerontheffing voor een parkeerplaats wordt verleend, terwijl dat eerder wel het geval was.",
+          "original_reference": "In 2025 zal het beleid van parkeerontheffingen opnieuw bekeken worden, wat kan leiden tot wijzigingen in 2026. Het is belangrijk om hiervan op de hoogte te zijn, aangezien dit kan betekenen dat er mogelijk geen parkeerontheffing wordt verleend waar dat eerder wel het geval was.",
+          "note": "De informatie over de beleidswijziging in 2025 en mogelijke gevolgen voor 2026 komt overeen met de originele tekst.",
+          "source_urls": [
+            "https://www.maassluis.nl/ontheffing-parkeren-parkeerschijf-zone"
+          ]
+        }
+      ]
+    },
+    "summary": "Bij vergelijking van de originele tekst met de bronpagina's is één klein verschil gevonden in de legeskosten (€ 31,05 vs € 31,10). De overige informatie, waaronder de belangrijke beleidswijziging in 2025, komt overeen met de bronnen. Er zijn geen andere significante verschillen of tegenstrijdigheden gevonden in de beschikbare bronpagina's."
+  }
+}

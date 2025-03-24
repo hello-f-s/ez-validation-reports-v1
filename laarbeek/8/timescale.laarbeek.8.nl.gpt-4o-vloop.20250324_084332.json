@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LAARBEEK",
+      "contact": {
+        "phone": "(0492) 46 97 00",
+        "email": "gemeente@laarbeek.nl",
+        "website": "http://www.laarbeek.nl"
+      }
+    },
+    "service": {
+      "id": 8,
+      "name": "Marktvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 26,
+    "false_sentences": 2,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "U moet ingeschreven staan bij het centraal registratiekantoor van het hoofdbedrijfschap detailhandel.",
+        "status": "false",
+        "note": "Het hoofdbedrijfschap detailhandel bestaat niet meer sinds 2014. Deze voorwaarde is dus niet meer van toepassing."
+      },
+      {
+        "sentence": "De gemeente informeert u hierover 14 dagen van tevoren.",
+        "status": "false",
+        "note": "Op de officiële website van gemeente Laarbeek wordt geen specifieke termijn van 14 dagen genoemd voor het informeren over niet-beschikbare standplaatsen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.laarbeek.nl/horecabedrijf-beginnen",
+      "https://www.laarbeek.nl/reclame-uitingen-plaatsen-omgevingsvergunning",
+      "https://www.laarbeek.nl/standplaatsvergunning",
+      "https://www.laarbeek.nl/marktstandplaats-aanvragen",
+      "https://www.laarbeek.nl/bouwplannen-ingediend-bij-de-gemeente-inzage"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Beek en Donk: € 8,25 per kwartaal, Aarle-Rixtel € 7,20 per kwartaal, Lieshout € 5,88 per kwartaal",
+          "original_reference": "Standplaats geldig voor 1 dag: € 18,55, Standplaats geldig voor 1 week: € 33,95, Standplaats geldig voor 1 jaar: € 139,35",
+          "note": "De tariefstructuur en bedragen in de bronnen zijn volledig anders dan in de originele tekst. De bron noemt kwartaaltarieven per locatie, terwijl het origineel dagelijkse, wekelijkse en jaarlijkse tarieven noemt.",
+          "source_urls": [
+            "https://www.laarbeek.nl/marktstandplaats-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Beek en Donk: 09.00-12.00 uur, Aarle-Rixtel en Lieshout: 08.30-12.30 uur",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de openingstijden van de weekmarkten, terwijl deze wel specifiek worden genoemd in de bron.",
+          "source_urls": [
+            "https://www.laarbeek.nl/marktstandplaats-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Alle standplaatsen zijn voorzien van stroomvoorziening.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat alle standplaatsen zijn voorzien van stroomvoorziening, wat wel wordt genoemd in de bron.",
+          "source_urls": [
+            "https://www.laarbeek.nl/standplaatsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn belangrijke verschillen gevonden in de tariefstructuur voor standplaatsen, waarbij de bron andere bedragen en betalingsperiodes hanteert dan de originele tekst. Daarnaast bevat de bron aanvullende informatie over markttijden en stroomvoorzieningen die niet in de originele tekst staat vermeld. Deze verschillen zijn significant voor marktondernemers die een standplaats willen aanvragen."
+  }
+}

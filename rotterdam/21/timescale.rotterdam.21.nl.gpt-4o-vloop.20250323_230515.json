@@ -1,0 +1,86 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ROTTERDAM",
+      "contact": {
+        "phone": "14 010",
+        "email": "null",
+        "website": "http://www.rotterdam.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 19,
+    "false_sentences": 2,
+    "accuracy_percentage": 90.5,
+    "false_statements": [
+      {
+        "sentence": "Download het aanvraagformulier en laat dit door de werkgever volledig invullen en ondertekenen.",
+        "status": "false",
+        "note": "Een VOG kan niet meer via een downloadbaar formulier worden aangevraagd. Volgens de gemeente Rotterdam moet dit digitaal via de website van Justis met DigiD of eHerkenning."
+      },
+      {
+        "sentence": "Tot slot, plan een afspraak om het ingevulde formulier bij de balie in te leveren.",
+        "status": "false",
+        "note": "Bij de gemeente Rotterdam hoeft geen formulier meer bij de balie te worden ingeleverd. De hele aanvraagprocedure verloopt digitaal via de website van Justis."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 3,
+    "invalid_urls": 2,
+    "accuracy_percentage": 60.0,
+    "valid_urls_list": [
+      "https://www.rotterdam.nl/verklaring-omtrent-gedrag-vog-aanvragen-rotterdam",
+      "https://www.rotterdam.nl/vog-verplicht",
+      "https://www.rotterdam.nl/subsidie-topsport-aanvragen/start-subsidie-topsport-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.rotterdam.nl/verklaring-omtrent-gedrag-vog-aanvragen-rotterdam/start-vog-aanvragen-als-werknemer",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.rotterdam.nl/verklaring-omtrent-gedrag-vog-aanvragen-rotterdam/start-vog-aanvragen-als-werkgever",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Ontvangt een instelling subsidie van de gemeente, dan gelden er regels over een Verklaring omtrent gedrag (VOG). Zij mogen alleen met mensen werken die een geldige VOG hebben.",
+          "original_reference": "Ontvangt een instelling subsidie van de gemeente, dan gelden er regels over een Verklaring omtrent gedrag (VOG). Zij mogen alleen met mensen werken die een geldige VOG hebben.",
+          "note": "De informatie over VOG-vereisten voor gesubsidieerde instellingen komt exact overeen",
+          "source_urls": [
+            "https://www.rotterdam.nl/vog-verplicht"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Uw werkgever vraagt de VOG online aan. Als u zelf uw VOG moet regelen, dan maakt u een afspraak bij de balie.",
+          "original_reference": "Werkgevers kunnen de VOG online aanvragen, terwijl werknemers een afspraak bij de balie moeten maken.",
+          "note": "De aanvraagprocedure voor werkgevers en werknemers komt overeen met de originele tekst",
+          "source_urls": [
+            "https://www.rotterdam.nl/verklaring-omtrent-gedrag-vog-aanvragen-rotterdam"
+          ]
+        }
+      ]
+    },
+    "summary": "Na analyse van de beschikbare bronnen zijn er geen significante verschillen gevonden tussen de originele inhoud en de bronpagina's van de gemeente Rotterdam. De kernpunten over de VOG-aanvraagprocedure, vereisten voor gesubsidieerde instellingen en de verschillende procedures voor werkgevers en werknemers komen overeen. Veel details uit de originele tekst (zoals specifieke kosten, exacte documentvereisten en bezwaarprocedures) zijn niet direct terug te vinden in de geciteerde bronnen, maar dit vormt geen tegenstrijdigheid."
+  }
+}

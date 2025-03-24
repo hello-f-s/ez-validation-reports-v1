@@ -1,0 +1,71 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DEN HAAG",
+      "contact": {
+        "phone": "14 070",
+        "email": "null",
+        "website": "http://www.denhaag.nl"
+      }
+    },
+    "service": {
+      "id": 2,
+      "name": "Bord of spandoek plaatsen aan de openbare weg"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 10,
+    "false_sentences": 1,
+    "accuracy_percentage": 90.9,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor de aanvraag bedragen € 220,60, ongeacht of de vergunning wordt verleend.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Den Haag bedragen de legeskosten voor een uitstallingsvergunning € 226,70 (tarief 2024), niet € 220,60."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 0,
+    "invalid_urls": 7,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://denhaag.nl/nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://denhaag.nl/nl\">Den",
+        "reason": "INVALID: Error scraping https://denhaag.nl/nl\">Den: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+      },
+      {
+        "url": "https://www.denhaag.nl/nl/vergunningen-en-ontheffingen/tijdelijk-standplaats-voor-straatverkoop-op-de-openbare-weg-aanvragen/",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.denhaag.nl/nl/vergunningen-en-ontheffingen/terras-op-de-openbare-weg-plaatsen/",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.denhaag.nl/nl/vergunningen-en-ontheffingen/uitstallingsvergunning-aanvragen/",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.denhaag.nl/nl/vergunningen-en-ontheffingen/vergunning-gebruik-openbare-weg-aanvragen/",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.denhaag.nl/nl/vergunningen-en-ontheffingen/omgevingsvergunning-aanvragen/%20",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  }
+}

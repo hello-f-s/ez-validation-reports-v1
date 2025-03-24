@@ -1,0 +1,92 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DRUTEN",
+      "contact": {
+        "phone": "(088) 432 70 00",
+        "email": "info@druten.nl",
+        "website": "http://www.druten.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "Maandag: 8.30 - 19.00 uur",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Druten is het gemeentehuis op maandag geopend van 08:30 tot 17:00 uur, met uitzondering van de avondopenstelling op afspraak op maandag van 17:00 tot 19:00 uur."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 3,
+    "invalid_urls": 2,
+    "accuracy_percentage": 60.0,
+    "valid_urls_list": [
+      "https://www.druten.nl/exploitatievergunning-horecabedrijf",
+      "https://www.druten.nl/voorwerp-plaatsen-op-of-aan-de-weg",
+      "https://www.druten.nl/vergunningen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.druten.nl/verkeersontheffing-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.druten.nl/standplaatsvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Morgen: 8.30 - 16.30 uur",
+          "original_reference": "Maandag: 8.30 - 19.00 uur",
+          "note": "De originele inhoud vermeldt alleen maandag als openingsdag, terwijl de bronnen aangeven dat het gemeentehuis ook op andere dagen geopend is van 8:30 tot 16:30.",
+          "source_urls": [
+            "https://www.druten.nl/exploitatievergunning-horecabedrijf",
+            "https://www.druten.nl/voorwerp-plaatsen-op-of-aan-de-weg",
+            "https://www.druten.nl/vergunningen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een vergunning kunt u online aanvragen met DigiD of eHerkenning.",
+          "original_reference": "U kunt echter bepaalde vergunningen online aanvragen met DigiD of eHerkenning.",
+          "note": "De bronpagina's zijn specifieker over welke vergunningen online aangevraagd kunnen worden, terwijl de originele tekst algemener is.",
+          "source_urls": [
+            "https://www.druten.nl/voorwerp-plaatsen-op-of-aan-de-weg"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Whatsapp: 06 256 899 28",
+          "original_reference": "WhatsApp: +31625689928",
+          "note": "Het WhatsApp nummer wordt in verschillende formaten weergegeven, hoewel het om hetzelfde nummer gaat.",
+          "source_urls": [
+            "https://www.druten.nl/vergunningen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de openingstijden (bronnen vermelden meer dagen), de specificiteit van online vergunningsaanvragen, en de notatie van het WhatsApp-nummer. De originele inhoud is minder volledig wat betreft de openingstijden van het gemeentehuis. De contactgegevens zijn grotendeels consistent, maar worden in verschillende formaten weergegeven."
+  }
+}

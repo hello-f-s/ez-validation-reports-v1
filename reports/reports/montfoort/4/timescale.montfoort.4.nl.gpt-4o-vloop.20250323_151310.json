@@ -1,0 +1,79 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MONTFOORT",
+      "contact": {
+        "phone": "(0348) 47 64 00",
+        "email": "info@montfoort.nl",
+        "website": "http://www.montfoort.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 22,
+    "false_sentences": 2,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Voor een aanvraag evenementenvergunning voor commerciële evenementen gelden de volgende legestarieven: €92,05 voor kleinschalige evenementen, €607,80 voor grootschalige eendaagse evenementen, en €767,60 voor grootschalige meerdaagse evenementen.",
+        "status": "false",
+        "note": "De genoemde legestarieven zijn verouderd. Volgens de actuele legesverordening van gemeente Montfoort gelden andere tarieven voor evenementenvergunningen."
+      },
+      {
+        "sentence": "De balie Burgerzaken is geopend van maandag t/m vrijdag van 09.00 - 12.00 uur en vrijdagavond van 18:00 tot 20:00 uur.",
+        "status": "false",
+        "note": "De openingstijden zijn niet correct. Volgens de officiële website van gemeente Montfoort is de balie Burgerzaken alleen op afspraak geopend van maandag t/m vrijdag van 09.00 - 12.30 uur en op maandagavond van 18.00 - 20.00 uur."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.montfoort.nl/Alle_onderwerpen/Vergunningen_en_ontheffingen/Evenementen/Evenement_organiseren",
+      "https://www.montfoort.nl/Alle_onderwerpen/Vergunningen_en_ontheffingen",
+      "https://www.montfoort.nl/Alle_onderwerpen/Ondernemen/Onderneming_starten",
+      "https://www.montfoort.nl/Alle_onderwerpen/Vergunningen_en_ontheffingen/Horeca_en_MKB",
+      "https://www.montfoort.nl/Alle_onderwerpen/Ondernemen/Horeca_en_MKB"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor het organiseren van een evenement heeft u een vergunning nodig. Soms volstaat een melding.",
+          "original_reference": "Voor het organiseren van een evenement heeft u een vergunning nodig, tenzij een melding volstaat. Evenementen moeten passen binnen de kaders van het \"Evenementenbeleid 2018-2024 Gemeente Montfoort.\"",
+          "note": "De originele tekst bevat een verwijzing naar het Evenementenbeleid 2018-2024 die niet terug te vinden is in de bronpagina's. Ook is de formulering in de bron directer.",
+          "source_urls": [
+            "https://www.montfoort.nl/Alle_onderwerpen/Vergunningen_en_ontheffingen/Evenementen/Evenement_organiseren"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Klein vergunningsvrij evenement, wel meldingsplicht (zie APV Montfoort artikel 2:25 en 2:24)",
+          "original_reference": "Klein vergunningsvrij evenement",
+          "note": "De bron specificeert dat een klein vergunningsvrij evenement wel meldingsplichtig is en verwijst naar specifieke APV-artikelen, wat niet vermeld staat in de originele tekst.",
+          "source_urls": [
+            "https://www.montfoort.nl/Alle_onderwerpen/Vergunningen_en_ontheffingen/Evenementen/Evenement_organiseren"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele tekst en de bronnen. Ten eerste ontbreekt in de bronnen de verwijzing naar het Evenementenbeleid 2018-2024. Ten tweede geeft de bron meer specifieke informatie over de meldingsplicht voor kleine vergunningsvrije evenementen, inclusief relevante APV-artikelen. De overige informatie komt overeen met de originele tekst of is niet volledig te verifiëren in de beschikbare bronpagina's."
+  }
+}

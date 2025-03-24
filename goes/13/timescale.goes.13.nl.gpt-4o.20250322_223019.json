@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "GOES",
+      "contact": {
+        "phone": "14 0113",
+        "email": "stadskantoor@goes.nl",
+        "website": "http://www.goes.nl"
+      }
+    },
+    "service": {
+      "id": 13,
+      "name": "Omzettingsvergunning voor kamerverhuur aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 20,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.2,
+    "false_statements": [
+      {
+        "sentence": "De aanvraag voor een omgevingsvergunning kan alleen online ingediend worden via het Omgevingsloket met behulp van eHerkenning.",
+        "status": "false",
+        "note": "Volgens de website van gemeente Goes kan een omgevingsvergunning ook schriftelijk worden aangevraagd, niet alleen online. Online aanvragen heeft wel de voorkeur maar is niet de enige mogelijkheid."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.goes.nl/participatie-en-omgevingswet",
+      "https://www.goes.nl/conceptverzoek-omgevingsvergunning",
+      "https://www.goes.nl/omgevingsvergunning",
+      "https://www.goes.nl/milieu-omgevingsvergunning-melding",
+      "https://www.goes.nl/exploitatievergunning-horeca"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "De houder/leidinggevende is minimaal 21 jaar en van onbesproken gedrag. De gemeente kan vragen om een Verklaring omtrent het gedrag (VOG).",
+          "original_reference": "De leidinggevende moet minimaal 21 jaar en van onbesproken gedrag zijn, mogelijk moet een Verklaring omtrent het gedrag (VOG) overlegd worden.",
+          "note": "De voorwaarden voor leeftijd en gedrag komen exact overeen",
+          "source_urls": [
+            "https://www.goes.nl/exploitatievergunning-horeca"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Sinds 1 januari 2024 geldt de Omgevingswet. Deze wet schrijft voor dat je een gesprek met de omgeving houdt als je een plan hebt om iets te bouwen of te ontwikkelen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de participatieverplichting onder de nieuwe Omgevingswet die sinds 2024 geldt",
+          "source_urls": [
+            "https://www.goes.nl/participatie-en-omgevingswet"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het conceptverzoek is gratis. Voordat u grote kosten maakt, weet u of uw plan kans van slagen heeft.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de mogelijkheid van een gratis conceptverzoek voorafgaand aan de definitieve aanvraag",
+          "source_urls": [
+            "https://www.goes.nl/conceptverzoek-omgevingsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen tonen enkele belangrijke aanvullingen op de originele tekst, met name rond de nieuwe Omgevingswet die sinds 1 januari 2024 van kracht is. Deze wet introduceert nieuwe verplichtingen rond participatie met de omgeving. Ook blijkt dat er een gratis conceptverzoek mogelijk is om de haalbaarheid van plannen te toetsen voordat kosten worden gemaakt. De kernvoorwaarden voor de exploitatievergunning zijn consistent tussen de bronnen."
+  }
+}

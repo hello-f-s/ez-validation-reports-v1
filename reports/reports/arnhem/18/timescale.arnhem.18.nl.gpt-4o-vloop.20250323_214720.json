@@ -1,0 +1,79 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ARNHEM",
+      "contact": {
+        "phone": "null",
+        "email": "null",
+        "website": "http://www.arnhem.nl"
+      }
+    },
+    "service": {
+      "id": 18,
+      "name": "Ventvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 35,
+    "true_sentences": 33,
+    "false_sentences": 2,
+    "accuracy_percentage": 94.3,
+    "false_statements": [
+      {
+        "sentence": "Op wegen die ook voor voertuigen bestemd zijn, moet er een doorgang van minimaal 1,5 meter voor voetgangers vrij blijven.",
+        "status": "false",
+        "note": "Volgens het Arnhemse terrassenbeleid moet er minimaal 1,8 meter vrije doorgang voor voetgangers overblijven, niet 1,5 meter."
+      },
+      {
+        "sentence": "Voor het in behandeling nemen van een aanvraag voor een terrasvergunning betaalt u €195,50.",
+        "status": "false",
+        "note": "Het actuele tarief voor een terrasvergunning in Arnhem is €200,70 volgens de gemeentelijke legesverordening 2024."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.arnhem.nl/Ondernemers/horeca/horeca_en_vergunningen/Terrasvergunning",
+      "https://www.arnhem.nl/Ondernemers/horeca/horeca_en_vergunningen",
+      "https://www.arnhem.nl/Inwoners/bouwen_en_verbouwen/U_wilt_bouwen_of_verbouwen/omgevingsvergunning",
+      "https://www.arnhem.nl/Ondernemers/horeca/horecaspreekuur",
+      "https://www.arnhem.nl/Ondernemers/parkeren_en_verkeer/parkeervergunning_bedrijven"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor een omgevingsvergunning voor het overkappen van een terras hoeft u niet te betalen.",
+          "original_reference": "Voor het in behandeling nemen van een aanvraag voor een terrasvergunning betaalt u €195,50.",
+          "note": "De originele tekst vermeldt kosten voor een terrasvergunning, terwijl de bron specifiek aangeeft dat er geen kosten zijn voor een omgevingsvergunning voor terrasoverkapping. Dit zijn twee verschillende vergunningen.",
+          "source_urls": [
+            "https://www.arnhem.nl/Ondernemers/horeca/horeca_en_vergunningen/Terrasvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Dien dan een verzoek voor een telefonische afspraak in via het contactformulier.",
+          "original_reference": "Voor vragen kunt u contact opnemen met de afdeling Vergunningen via het contactformulier of telefonisch op 0800-1809.",
+          "note": "De bron specificeert dat voor algemene horecavragen eerst een verzoek voor een telefonische afspraak moet worden ingediend via het contactformulier, terwijl de originele tekst direct telefonisch contact suggereert.",
+          "source_urls": [
+            "https://www.arnhem.nl/Ondernemers/horeca/horecaspreekuur"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele tekst en de bronnen. Ten eerste is er een verschil in de kostenstructuur voor verschillende soorten vergunningen. Ten tweede verschilt de procedure voor het maken van contact voor vragen. De meeste andere informatie komt overeen met de bronnen of is niet direct te verifiëren in de gegeven bronpagina's."
+  }
+}

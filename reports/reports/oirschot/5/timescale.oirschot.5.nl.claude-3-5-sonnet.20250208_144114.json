@@ -1,0 +1,75 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OIRSCHOT",
+      "contact": {
+        "phone": "(0499) 58 33 33",
+        "email": "info@oirschot.nl",
+        "website": "http://www.oirschot.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "Het tarief bedraagt voor het in behandeling nemen van een aanvraag om een exploitatievergunning € 233,30.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Oirschot bedraagt het tarief voor een exploitatievergunning € 236,80 (2024). Het genoemde bedrag van € 233,30 is verouderd."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 2,
+    "invalid_urls": 3,
+    "accuracy_percentage": 40.0,
+    "valid_urls_list": [
+      "https://www.oirschot.nl/alcoholvergunning",
+      "https://www.oirschot.nl/form/aanvraag-exploitatievergunning/informatie-vooraf-0-1"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.oirschot.nl/exploitatievergunning-horecabedrijf",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.oirschot.nl/terras-plaatsen",
+        "reason": "INVALID: Error scraping https://www.oirschot.nl/terras-plaatsen: 404 Client Error: Not Found for url: https://www.oirschot.nl/terras-plaatsen"
+      },
+      {
+        "url": "https://www.oirschot.nl/omgevingsvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Uw aanvraag moet minimaal 8 weken voor start exploitatie worden ingediend.",
+          "original_reference": "Binnen 8 weken hoort u van de gemeente of u de vergunning krijgt.",
+          "note": "Hoewel beide teksten over 8 weken gaan, beschrijven ze verschillende aspecten: de brontekst geeft aan wanneer je moet indienen, de originele tekst beschrijft de behandeltermijn. Dit is aanvullende informatie, geen tegenstrijdigheid.",
+          "source_urls": [
+            "https://www.oirschot.nl/form/aanvraag-exploitatievergunning/informatie-vooraf-0-1"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse van de beschikbare bronnen zijn er geen significante inhoudelijke verschillen gevonden tussen de originele tekst en de bronpagina's. De gevonden informatie is grotendeels complementair en biedt extra context zonder de oorspronkelijke informatie tegen te spreken. De enige opvallende aanvulling is de specificatie dat de aanvraag minimaal 8 weken voor de start van de exploitatie moet worden ingediend, wat een nuttige toevoeging is bij de reeds vermelde behandeltermijn van 8 weken."
+  }
+}

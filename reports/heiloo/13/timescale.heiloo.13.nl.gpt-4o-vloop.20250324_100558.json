@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HEILOO",
+      "contact": {
+        "phone": "(072) 535 66 66",
+        "email": "info@heiloo.nl",
+        "website": "http://www.heiloo.nl"
+      }
+    },
+    "service": {
+      "id": 13,
+      "name": "Omzettingsvergunning voor kamerverhuur aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 27,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.4,
+    "false_statements": [
+      {
+        "sentence": "U ontvangt binnen 2 weken een bericht over welke ambtenaar uw aanvraag behandelt.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Heiloo wordt er geen specifieke termijn genoemd waarbinnen men bericht krijgt over welke ambtenaar de aanvraag behandelt. Deze 2-weken termijn is niet vastgelegd in het officiële proces."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.heiloo.nl/aanvragen-en-regelen/omgevingsvergunning/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/exploitatievergunning/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/wonen-in-een-bedrijfswoning/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/standplaatsvergunning/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/terrasvergunning/"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U vraagt de vergunning aan bij de gemeente. Vul het aanvraagformulier in en stuur mee: Situatietekening. Kopie van uw uittreksel uit het handelsregister van de Kamer van Koophandel.",
+          "original_reference": "Schaaltekengingen van de huidige situatie (1:500/1.000) met de maatvoering.",
+          "note": "De bronnen specificeren andere schaaleisen voor tekeningen. De originele tekst vraagt om 1:500/1.000, terwijl andere vergunningen zoals terrasvergunningen 1:20 of 1:50 vereisen.",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/standplaatsvergunning/",
+            "https://www.heiloo.nl/aanvragen-en-regelen/terrasvergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Contact team horeca: horeca@debuch.nl",
+          "original_reference": "administratievth@debuch.nl",
+          "note": "Er worden verschillende e-mailadressen genoemd voor contact over vergunningen. De originele tekst verwijst naar administratievth@debuch.nl, terwijl de bronpagina's horeca@debuch.nl vermelden voor horecagerelateerde zaken.",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/exploitatievergunning/"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Door krapte op de arbeidsmarkt hebben wij helaas niet genoeg collega's om alle vergunningen op tijd af te handelen. We doen ons best om u zo snel mogelijk te helpen.",
+          "original_reference": "Let op: Door krapte op de arbeidsmarkt kunnen de verwerkingstijden langer zijn dan gebruikelijk. We doen ons best om u zo snel mogelijk te helpen.",
+          "note": "De informatie over vertragingen door personeelstekort komt overeen in beide bronnen.",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/omgevingsvergunning/"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de technische specificaties voor tekeningen en de contactgegevens voor vergunningsaanvragen. De bronnen tonen verschillende schaaleisen voor tekeningen en verschillende e-mailadressen voor contact. De informatie over vertragingen door personeelstekort is consistent tussen de bronnen."
+  }
+}

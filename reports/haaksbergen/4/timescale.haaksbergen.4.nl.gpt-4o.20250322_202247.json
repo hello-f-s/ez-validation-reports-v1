@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HAAKSBERGEN",
+      "contact": {
+        "phone": "(053) 573 45 67",
+        "email": "gemeente@haaksbergen.nl",
+        "website": "http://www.haaksbergen.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "Voor meer details ga naar de website van de Veiligheidsregio Twente waar u tips en trucs kunt vinden over de vergunningsaanvraag.",
+        "status": "false",
+        "note": "De gemeente Haaksbergen verwijst voor de evenementenvergunning naar haar eigen website en niet naar de Veiligheidsregio Twente voor tips en trucs over de vergunningsaanvraag. De primaire informatiebron is de gemeentelijke website zelf."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.haaksbergen.nl/ondernemers/Ondernemend-Haaksbergen/Ondernemersplein.html",
+      "https://www.haaksbergen.nl/Vergunningen/Evenementenvergunning.html",
+      "https://www.haaksbergen.nl/ondernemers/Bedrijfstarten.html",
+      "https://www.haaksbergen.nl/Vergunningen/101107-Omgevingsvergunning.html",
+      "https://www.haaksbergen.nl/Vergunningen/Exploitatievergunning.html"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Geen vergunning, wel een melding klein evenement als: het aantal gelijktijdig aanwezige deelnemers of toeschouwers niet meer bedraagt dan 250 bij fietstochten, 500 bij wandeltochten, 100 bij andersoortige evenementen met uitsluiting van aangewezen vechtsportwedstrijden of gala's.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over meldingen voor kleine evenementen en de specifieke deelnemersaantallen waarbij alleen een melding volstaat. Dit is belangrijke aanvullende informatie voor organisatoren.",
+          "source_urls": [
+            "https://www.haaksbergen.nl/Vergunningen/Evenementenvergunning.html"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "er tussen 8.00 uur en 19.00 uur alleen achtergrondmuziek hoorbaar is tot maximaal 55dB(A) of 65 dB(C), en tussen 19.00 uur tot 23.00 uur maximaal 50 dB(A) of 60 dB(C)",
+          "original_reference": "Er live muziek of een geluidsinstallatie wordt gebruikt",
+          "note": "De originele tekst noemt alleen dat een vergunning nodig is bij gebruik van live muziek of geluidsinstallatie, terwijl de bron specifieke decibel-limieten en tijdstippen vermeldt voor kleine evenementen.",
+          "source_urls": [
+            "https://www.haaksbergen.nl/Vergunningen/Evenementenvergunning.html"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie die niet in de originele tekst staat, met name over de mogelijkheid van een melding in plaats van vergunning voor kleine evenementen en specifieke geluidsnormen. Deze informatie is essentieel voor organisatoren om te bepalen of ze een volledige vergunning nodig hebben of kunnen volstaan met een melding."
+  }
+}

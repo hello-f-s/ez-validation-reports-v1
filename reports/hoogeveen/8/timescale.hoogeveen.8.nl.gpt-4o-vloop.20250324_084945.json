@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HOOGEVEEN",
+      "contact": {
+        "phone": "14 0528",
+        "email": "info@hoogeveen.nl",
+        "website": "http://www.hoogeveen.nl"
+      }
+    },
+    "service": {
+      "id": 8,
+      "name": "Marktvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "Gemeente Hoogeveen, Postbus 20.000, 7900 PA Hoogeveen",
+        "status": "false",
+        "note": "Het correcte postbusnummer van de gemeente Hoogeveen is 20000 (zonder punt), niet 20.000"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.hoogeveen.nl/vergunningen/omgevingsvergunningen",
+      "https://www.hoogeveen.nl/vergunningen/vergunning-marktstandplaats",
+      "https://www.hoogeveen.nl/raad-en-college/woo-verzoek",
+      "https://www.hoogeveen.nl/vergunningen/standplaatsvergunning",
+      "https://www.hoogeveen.nl/veelgestelde-vragen-coffeeshop",
+      "https://www.hoogeveen.nl"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Een vergunning voor een marktstandplaats kost € 37,60. Voor een plek op de wachtlijst betaalt u € 24,10.",
+          "original_reference": "Een vergunning voor een marktstandplaats kost € 37,60. Indien u op de wachtlijst wilt staan, kost dit € 24,10.",
+          "note": "De kosten voor de vergunning en wachtlijst zijn exact hetzelfde in beide bronnen.",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/vergunning-marktstandplaats"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Stuur het formulier naar Gemeente Hoogeveen, Postbus 20.000, 7900 PA Hoogeveen.",
+          "original_reference": "Gemeente Hoogeveen, Postbus 20.000, 7900 PA Hoogeveen",
+          "note": "Het postadres voor het indienen van de aanvraag is identiek.",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/vergunning-marktstandplaats"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "U hoort binnen 8 weken of u de vergunning krijgt.",
+          "original_reference": "Na het indienen van uw aanvraag hoort u binnen 8 weken of u de vergunning krijgt.",
+          "note": "De behandeltermijn van 8 weken wordt in beide bronnen genoemd.",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/vergunning-marktstandplaats"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse van de bronnen blijkt dat alle kerngegevens (kosten, procedures, termijnen en contactgegevens) in de originele tekst consistent zijn met de informatie op de gemeentelijke website. Er zijn geen significante verschillen of tegenstrijdigheden gevonden."
+  }
+}

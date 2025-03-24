@@ -1,0 +1,91 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AMERSFOORT",
+      "contact": {
+        "phone": "14 033",
+        "email": "info@amersfoort.nl",
+        "website": "http://www.amersfoort.nl"
+      }
+    },
+    "service": {
+      "id": 13,
+      "name": "Omzettingsvergunning voor kamerverhuur aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "In de binnenstad is kamerverhuur altijd toegestaan zonder vergunning, maar in andere delen van de stad kunnen er specifieke regels gelden.",
+        "status": "false",
+        "note": "Dit is onjuist volgens de huidige regelgeving van gemeente Amersfoort. Ook in de binnenstad is niet automatisch alle kamerverhuur toegestaan zonder vergunning. Voor kamerverhuur gelden in heel Amersfoort dezelfde basisregels en moet er altijd een vergunningcheck gedaan worden om te bepalen of een vergunning nodig is."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 4,
+    "invalid_urls": 2,
+    "accuracy_percentage": 66.7,
+    "valid_urls_list": [
+      "https://www.amersfoort.nl/kamers-verhuren",
+      "https://www.amersfoort.nl/reclame",
+      "https://www.amersfoort.nl/een-vergunning-aangevraagd-en-nu",
+      "https://www.amersfoort.nl/aanleggen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.amersfoort.nl/omgevingsvergunning-voor-bouwen-en-verbouwen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://metadata.url",
+        "reason": "INVALID: Error scraping https://metadata.url: HTTPSConnectionPool(host='metadata.url', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x107913110>: Failed to resolve 'metadata.url' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Je mag wel meteen beginnen.",
+          "original_reference": "Na het verlenen van de vergunning volgt een bezwaartermijn van 6 weken. Tijdens deze periode kunnen belanghebbenden bezwaar maken tegen het besluit.",
+          "note": "De bronpagina voor reclame geeft aan dat men direct mag beginnen na vergunningverlening, terwijl de originele tekst dit niet specifiek vermeldt. Dit is een belangrijk verschil in handelingsperspectief.",
+          "source_urls": [
+            "https://www.amersfoort.nl/reclame"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Binnen 2 weken neemt de casemanager contact met je op. Let op: door de drukte halen we deze termijn helaas niet altijd.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat aanvullende belangrijke informatie over de eerste contactopname na aanvraag, die niet in de originele tekst staat vermeld.",
+          "source_urls": [
+            "https://www.amersfoort.nl/een-vergunning-aangevraagd-en-nu"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Dat kan de procedure van 8 weken zijn, van 12 weken of de uitgebreide procedure van 26 weken.",
+          "original_reference": "Meestal ontvang je binnen 8 weken een besluit.",
+          "note": "De bronpagina noemt drie mogelijke proceduretijden (8, 12 of 26 weken), terwijl de originele tekst alleen 8 weken noemt.",
+          "source_urls": [
+            "https://www.amersfoort.nl/een-vergunning-aangevraagd-en-nu"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn drie belangrijke verschillen gevonden tussen de originele tekst en de bronpagina's. Het gaat om de mogelijkheid om direct te starten na vergunningverlening bij reclame, aanvullende informatie over de eerste contactopname met een casemanager, en verschillende mogelijke proceduretijden. Deze verschillen kunnen van invloed zijn op de verwachtingen en planning van aanvragers."
+  }
+}

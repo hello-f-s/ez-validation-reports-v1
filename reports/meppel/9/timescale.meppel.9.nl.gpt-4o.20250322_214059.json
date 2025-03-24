@@ -1,0 +1,92 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MEPPEL",
+      "contact": {
+        "phone": "14 0522",
+        "email": "postbus@meppel.nl",
+        "website": "http://www.meppel.nl"
+      }
+    },
+    "service": {
+      "id": 9,
+      "name": "Mobiele puinbreker gebruiken"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 10,
+    "false_sentences": 1,
+    "accuracy_percentage": 90.9,
+    "false_statements": [
+      {
+        "sentence": "Een digitale melding via de berichtenbox aan de gemeente.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Meppel moet de melding worden gedaan via het Omgevingsloket Online (OLO) en niet via de berichtenbox."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.meppel.nl/afval-en-milieu",
+      "https://www.meppel.nl/Ondernemer/Vergunningen_regelingen/Bouw_verbouw/Ingebruikname_gemeentegrond",
+      "https://www.meppel.nl/Ondernemer/Vergunningen_regelingen/Afval_milieu/mobiel_puinbreken",
+      "https://www.meppel.nl/Ondernemer/Vergunningen_regelingen/Reclame_aankondigingen/ingebruikname_gemeentegrond",
+      "https://www.meppel.nl/Ondernemer/Vergunningen_regelingen/Afval_milieu"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.meppel.nl/Inwoner/Wonen_ver_bouwen/Ver_bouwen_slopen/Gebruiken_gemeentegrond",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.meppel.nl/mobiel-puinbreken",
+        "reason": "INVALID: Error scraping https://www.meppel.nl/mobiel-puinbreken: 404 Client Error:  for url: https://www.meppel.nl/mobiel-puinbreken"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Met de berichtenbox kunt u de melding mobiele puinbreker digitaal doen bij de gemeente.",
+          "original_reference": "Een digitale melding via de berichtenbox aan de gemeente.",
+          "note": "De originele tekst specificeert dat het een 'melding' moet zijn, terwijl de brontekst specifieker aangeeft dat het om een 'melding mobiele puinbreker' gaat. Dit is een verduidelijking van het type melding.",
+          "source_urls": [
+            "https://www.meppel.nl/Ondernemer/Vergunningen_regelingen/Afval_milieu/mobiel_puinbreken"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De originele tekst bevat informatie over milieuregels (geluid, trillingen, stof, etc.) die niet in de bronpagina's wordt genoemd",
+          "original_reference": "Ze moeten voldoen aan milieuregels op het gebied van geluid, trillingen, vrijkomend stof, lucht en bodembescherming, zoals beschreven in het Besluit mobiel breken bouw en sloopafval.",
+          "note": "De bronpagina's bevatten niet de specifieke details over milieuregels die in de originele tekst worden genoemd. Dit is belangrijke informatie die ontbreekt in de bronnen.",
+          "source_urls": [
+            "https://www.meppel.nl/Ondernemer/Vergunningen_regelingen/Afval_milieu/mobiel_puinbreken"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De originele tekst vermeldt een maximum van drie aangesloten maanden activiteit op dezelfde plaats, wat niet in de bronpagina's wordt genoemd",
+          "original_reference": "Mobiele puinbrekers mogen niet langer dan drie aangesloten maanden op dezelfde plaats actief zijn.",
+          "note": "Deze tijdsbeperking wordt niet genoemd in de beschikbare bronpagina's, wat een belangrijk verschil is in de beschikbare informatie.",
+          "source_urls": [
+            "https://www.meppel.nl/Ondernemer/Vergunningen_regelingen/Afval_milieu/mobiel_puinbreken"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn enkele belangrijke verschillen gevonden tussen de originele tekst en de bronpagina's. De bronnen zijn minder gedetailleerd wat betreft specifieke milieuregels en tijdsbeperkingen. Ook is de beschrijving van de meldingsprocedure in de bronnen specifieker over het type melding. Deze verschillen kunnen impact hebben op de volledigheid van de informatie die beschikbaar is voor gebruikers."
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DELFT",
+      "contact": {
+        "phone": "14 015",
+        "email": "null",
+        "website": "http://www.delft.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 22,
+    "false_sentences": 2,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor een alcoholwetvergunning bedragen € 1.104,15.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Delft bedragen de kosten voor een alcoholwetvergunning € 1.137,30 voor 2024"
+      },
+      {
+        "sentence": "Als u de vergunning wilt wijzigen, zijn de kosten € 123,30.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Delft bedragen de kosten voor een wijziging van de alcoholwetvergunning € 126,95 voor 2024"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.delft.nl/alcoholwetvergunning",
+      "https://www.delft.nl/ontheffing-tijdelijk-alcohol-schenken",
+      "https://www.delft.nl/verlof-alcoholvrije-dranken-schenken",
+      "https://www.delft.nl/omgevingsvergunning-milieu",
+      "https://www.delft.nl/exploitatievergunning-coffeeshops",
+      "https://www.delft.nl"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 4,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het aantal coffeeshops in Delft mag op dit moment niet groter worden.",
+          "original_reference": "No matching information",
+          "note": "Deze belangrijke beperking voor coffeeshops staat niet vermeld in de originele tekst maar is wel relevant voor horecaondernemers.",
+          "source_urls": [
+            "https://www.delft.nl/exploitatievergunning-coffeeshops"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Dit kan tot uiterlijk 3 weken van tevoren.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt geen aanvraagtermijn voor de tijdelijke ontheffing alcoholschenken, terwijl dit wel een belangrijke voorwaarde is.",
+          "source_urls": [
+            "https://www.delft.nl/ontheffing-tijdelijk-alcohol-schenken"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U heeft geen verlof nodig voor dranken die u aanbiedt als bijkomende dienstverlening. Zoals een kopje koffie in de wachtruimte van een kantoor.",
+          "original_reference": "No matching information",
+          "note": "Deze belangrijke uitzondering voor het verlof alcoholvrije dranken ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.delft.nl/verlof-alcoholvrije-dranken-schenken"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U bent 18 jaar of ouder",
+          "original_reference": "U moet 21 jaar of ouder zijn.",
+          "note": "Er is een verschil in de minimumleeftijd voor het verlof alcoholvrije dranken (18 jaar) versus de alcoholwetvergunning (21 jaar).",
+          "source_urls": [
+            "https://www.delft.nl/verlof-alcoholvrije-dranken-schenken"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen aanvullende informatie over beperkingen voor coffeeshops, specifieke aanvraagtermijnen voor tijdelijke ontheffingen, uitzonderingen voor het verlof alcoholvrije dranken, en verschillende leeftijdseisen voor verschillende vergunningen. Deze informatie is relevant voor de volledigheid en correctheid van de dienstverlening maar ontbreekt in de originele tekst."
+  }
+}

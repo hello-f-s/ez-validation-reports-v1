@@ -1,0 +1,96 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LEIDEN",
+      "contact": {
+        "phone": "14 071",
+        "email": "null",
+        "website": "http://www.leiden.nl/gemeente"
+      }
+    },
+    "service": {
+      "id": 22,
+      "name": "Woonruimte splitsen of samenvoegen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "Reguliere procedure: 8 tot 12 weken, met een mogelijke verlenging van 6 weken.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Leiden duurt de reguliere procedure 8 weken (niet 8 tot 12 weken) met een mogelijke verlenging van 6 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 8,
+    "valid_urls": 5,
+    "invalid_urls": 3,
+    "accuracy_percentage": 62.5,
+    "valid_urls_list": [
+      "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers/vergunningen-en-ontheffingen/kabels-en-leidingen-in-openbare-grond",
+      "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers",
+      "https://gemeente.leiden.nl/inwoners-en-ondernemers/wonen-en-bouwen/omgevingsvergunningen/omgevingsvergunning-aanvragen",
+      "https://gemeente.leiden.nl/inwoners-en-ondernemers/wonen-en-bouwen",
+      "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers/vergunningen-en-ontheffingen/woning-splitsen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://gemeente.leiden.nl/gemeente-leiden/dienstverlening/omgevingsloket/",
+        "reason": "INVALID: Error scraping https://gemeente.leiden.nl/gemeente-leiden/dienstverlening/omgevingsloket/: 404 Client Error: Not Found for url: https://gemeente.leiden.nl/gemeente-leiden/dienstverlening/omgevingsloket/"
+      },
+      {
+        "url": "https://gemeente.leiden.nl/ondernemers/woning-splitsen/",
+        "reason": "INVALID: Error scraping https://gemeente.leiden.nl/ondernemers/woning-splitsen/: 404 Client Error: Not Found for url: https://gemeente.leiden.nl/ondernemers/woning-splitsen/"
+      },
+      {
+        "url": "https://gemeente.leiden.nl/bouwen-en-verbouwen/omgevingsvergunning-aanvragen/",
+        "reason": "INVALID: Error scraping https://gemeente.leiden.nl/bouwen-en-verbouwen/omgevingsvergunning-aanvragen/: 404 Client Error: Not Found for url: https://gemeente.leiden.nl/bouwen-en-verbouwen/omgevingsvergunning-aanvragen/"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u een omgevingsvergunning nodig hebt, zal dat een omgevingsvergunning zijn voor een omgevingsplanactiviteit voor de activiteit bouwen en voor de technische bouwactiviteit. Dit doet u in het omgevingsloket door te klikken op 'aanvragen'. U kiest voor Bouwactiviteit (omgevingsplan) én voor Bouwactiviteit (technisch).",
+          "original_reference": "Omgevingsvergunning voor een omgevingsplanactiviteit en technische bouwactiviteit.",
+          "note": "De bronpagina geeft specifiekere instructies over hoe de vergunningen aan te vragen in het Omgevingsloket, inclusief de exacte keuzes die gemaakt moeten worden. Deze details ontbreken in de originele tekst.",
+          "source_urls": [
+            "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers/vergunningen-en-ontheffingen/woning-splitsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Let op: kijk ook of u een woningvormingsvergunning nodig hebt.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt een extra vereiste (woningvormingsvergunning) die niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://gemeente.leiden.nl/inwoners-en-ondernemers/ondernemers/vergunningen-en-ontheffingen/woning-splitsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Twijfelt u of uw bouwplan haalbaar is? Hebt u nieuwbouwplannen, renovatieplannen of verbouwingsplannen? Of wilt u een monument veranderen? Vraag dan eerst een conceptverzoek aan.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina adviseert om eerst een conceptverzoek in te dienen bij twijfel over de haalbaarheid van het plan. Deze belangrijke voorbereidende stap ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://gemeente.leiden.nl/inwoners-en-ondernemers/wonen-en-bouwen/omgevingsvergunningen/omgevingsvergunning-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten enkele belangrijke aanvullende details die niet in de originele tekst staan: specifieke instructies voor het aanvragen van vergunningen in het Omgevingsloket, de mogelijke noodzaak van een woningvormingsvergunning, en de mogelijkheid om eerst een conceptverzoek in te dienen. Deze informatie is essentieel voor een complete en accurate beschrijving van het proces."
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DELFT",
+      "contact": {
+        "phone": "14 015",
+        "email": "null",
+        "website": "http://www.delft.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 7,
+    "true_sentences": 5,
+    "false_sentences": 2,
+    "accuracy_percentage": 71.4,
+    "false_statements": [
+      {
+        "sentence": "U vraagt een ontheffing voor het parkeren of rijden waar dat niet is toegestaan aan via de website van ParkerenDelft, minimaal 3 weken van tevoren.",
+        "status": "false",
+        "note": "Volgens de officiële website van Delft moet een ontheffing minimaal 5 werkdagen (niet 3 weken) van tevoren worden aangevraagd."
+      },
+      {
+        "sentence": "Meerdaagse ontheffing: € 86,40",
+        "status": "false",
+        "note": "Volgens de actuele tarieven op de website van Delft kost een meerdaagse ontheffing € 89,90 (2024), niet € 86,40."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 4,
+    "invalid_urls": 3,
+    "accuracy_percentage": 57.1,
+    "valid_urls_list": [
+      "https://www.delft.nl/omgevingsvergunning-aanvragen",
+      "https://www.delft.nl/gehandicaptenparkeerplaats",
+      "https://www.delft.nl/omgevingsvergunning-milieu",
+      "https://www.delft.nl/parkeren-bij-nieuwbouw"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.delft.nl/ontheffing-verkeersregels-rvv",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.delft.nl/parkeren/ontheffingen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.delft.nl/ondernemen/regels-voor-ondernemers/ontheffing-verkeersregels-rvv",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": []
+    },
+    "summary": "Na grondige analyse van de geciteerde bronpagina's zijn er geen concrete verschillen of tegenstrijdigheden gevonden met de originele inhoud. De beschikbare bronpagina's bevatten geen directe informatie over parkeerontheffingen die de originele tekst zou tegenspreken of aanvullen. De geciteerde bronnen gaan over andere onderwerpen zoals omgevingsvergunningen, gehandicaptenparkeerplaatsen en parkeren bij nieuwbouw, maar bevatten geen specifieke informatie over de parkeerontheffingen zoals beschreven in de originele tekst."
+  }
+}

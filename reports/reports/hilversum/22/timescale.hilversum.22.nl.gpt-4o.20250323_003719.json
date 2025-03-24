@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HILVERSUM",
+      "contact": {
+        "phone": "14 035",
+        "email": "gemeente@hilversum.nl",
+        "website": "http://www.hilversum.nl"
+      }
+    },
+    "service": {
+      "id": 22,
+      "name": "Woonruimte splitsen of samenvoegen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "De gemeente behandelt de aanvraag binnen 8 weken, met een mogelijke verlenging van maximaal 6 weken.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Hilversum is de reguliere procedure 8 weken met een mogelijke verlenging van maximaal 8 weken (niet 6 weken)."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://hilversum.nl/vergunningen/vergunningen-voor-bouwen-verbouwen/omgevingsvergunning-aanvragen",
+      "https://hilversum.nl/wonen/toeristische-woningverhuur",
+      "https://hilversum.nl/bouwen-verbouwen",
+      "https://hilversum.nl/bouwen-verbouwen/appartementen",
+      "https://hilversum.nl/wonen/splitsing-gebouw-woning-enof-verhuur-kamers"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://hilversummediastad.nl",
+        "reason": "INVALID: Error scraping https://hilversummediastad.nl: HTTPSConnectionPool(host='hilversummediastad.nl', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] ssl/tls alert handshake failure (_ssl.c:1018)')))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u als hoofdbewoner uw woning deelt met iemand die niet bij uw eigen huishouden hoort. Bijvoorbeeld een student die bij iemand woont (wonen bij een hospita). U heeft dan geen omgevingsvergunning nodig, tenzij u meer dan 25% van de woonruimte verhuurt. Mantelzorgers mogen wél meer dan 25% van de woonruimte huren zonder vergunning",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke uitzonderingen voor hospitaverhuur en mantelzorg. Dit is essentiële informatie voor woningdelers.",
+          "source_urls": [
+            "https://hilversum.nl/wonen/splitsing-gebouw-woning-enof-verhuur-kamers"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Rookmelders die voldoen aan het nieuwbouwniveau van het Bouwbesluit (NEN 2555, o.a. gekoppeld aan het lichtnet) zijn verplicht in Hilversum",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist de specifieke eis voor rookmelders volgens NEN 2555 standaard, wat een belangrijke technische vereiste is.",
+          "source_urls": [
+            "https://hilversum.nl/bouwen-verbouwen/appartementen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor de nieuwe woningen moeten parkeerplaatsen op eigen terrein worden aangelegd. Afhankelijk van de locatie en de waarde van de woningen moet er 1,3 tot 1,6 parkeerplaats per woning worden aangelegd",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist specifieke parkeereisen voor nieuwe woningen, inclusief het exacte aantal benodigde parkeerplaatsen per woning.",
+          "source_urls": [
+            "https://hilversum.nl/bouwen-verbouwen/appartementen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie die niet in de originele tekst staat, met name over uitzonderingen voor hospitaverhuur en mantelzorg, specifieke technische eisen voor rookmelders, en concrete parkeernormen. Deze informatie is essentieel voor mensen die woningsplitsing of verkamering overwegen."
+  }
+}

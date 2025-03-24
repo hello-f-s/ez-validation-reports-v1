@@ -1,0 +1,75 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MONTFOORT",
+      "contact": {
+        "phone": "(0348) 47 64 00",
+        "email": "info@montfoort.nl",
+        "website": "http://www.montfoort.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "De balie van Burgerzaken is geopend van maandag t/m vrijdag van 09.00 - 12.00 uur en vrijdagavond van 18:00 tot 20:00 uur, uitsluitend op afspraak.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Montfoort is de balie van Burgerzaken geopend van maandag t/m vrijdag van 09.00 - 12.30 uur en op maandagavond (niet vrijdagavond) van 18:00 tot 20:00 uur, uitsluitend op afspraak."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.montfoort.nl/Alle_onderwerpen/Bouwen_en_verbouwen/Omgevingsvergunning/Omgevingsvergunning",
+      "https://www.montfoort.nl/Alle_onderwerpen/Bouwen_en_verbouwen/Omgevingsvergunning",
+      "https://www.montfoort.nl/Alle_onderwerpen/Omgevingswet/Omgevingsvergunning",
+      "https://www.montfoort.nl/Alle_onderwerpen/Bouwen_en_verbouwen/Omgevingsvergunning/Meer_informatie/Een_plan_indienen_bij_de_gemeente",
+      "https://www.montfoort.nl/Alle_onderwerpen/Bouwen_en_verbouwen/Een_plan_indienen_bij_de_gemeente"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Per 1 januari 2024 is de Omgevingswet ingegaan. De Omgevingswet heeft als concreet gevolg dat er niet meer met bestemmingsplannen wordt gewerkt, maar met een omgevingsplan.",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden een belangrijke wijziging naar de Omgevingswet per 1-1-2024 die niet genoemd wordt in de originele tekst. Dit is een essentiële verandering in het vergunningsproces.",
+          "source_urls": [
+            "https://www.montfoort.nl/Alle_onderwerpen/Bouwen_en_verbouwen/Omgevingsvergunning/Meer_informatie/Een_plan_indienen_bij_de_gemeente",
+            "https://www.montfoort.nl/Alle_onderwerpen/Bouwen_en_verbouwen/Een_plan_indienen_bij_de_gemeente"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "veranderen van een gemeentelijk of provinciaal monument, of het verbouwen of slopen van een monument",
+          "original_reference": "veranderen van een gemeentelijk of provinciaal monument",
+          "note": "De bronpagina specificeert expliciet dat ook het verbouwen of slopen van een monument onder de vergunningplicht valt, wat uitgebreider is dan de originele tekst.",
+          "source_urls": [
+            "https://www.montfoort.nl/Alle_onderwerpen/Bouwen_en_verbouwen/Omgevingsvergunning/Omgevingsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele tekst en de bronnen. Ten eerste ontbreekt in de originele tekst de cruciale informatie over de invoering van de Omgevingswet per 1-1-2024 en de overgang van bestemmingsplannen naar omgevingsplannen. Ten tweede is de beschrijving van monumentgerelateerde vergunningen in de bronnen uitgebreider, met specifieke vermelding van verbouwen en slopen van monumenten."
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "KAPELLE",
+      "contact": {
+        "phone": "(0113) 33 31 10",
+        "email": "gemeente@kapelle.nl",
+        "website": "http://www.kapelle.nl"
+      }
+    },
+    "service": {
+      "id": 16,
+      "name": "Registreren in het Landelijk Register Kinderopvang (LRK)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "De gemeente Kapelle biedt assistentie op het gemeentehuis van maandag tot en met donderdag, tussen 10.00 en 12.00 uur.",
+        "status": "false",
+        "note": "De openingstijden van de gemeente Kapelle zijn maandag tot en met vrijdag van 08:30 tot 12:30 uur. Op donderdagavond is er een avondopenstelling van 17:00 tot 20:00 uur."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://kapelle.nl/elk-kind-doet-mee-voor-kinderen-uit-gezinnen-met-weinig-geld",
+      "https://kapelle.nl/kinderopvangtoeslag",
+      "https://kapelle.nl/peutergroep",
+      "https://kapelle.nl/elk-kind-doet-mee",
+      "https://kapelle.nl/leerplicht"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Neem contact op met LINK. Vrijwilligers en medewerkers van LINK kunnen u wegwijs maken en helpen bij uw aanvraag. [...] per mail via link@kapelle.nl",
+          "original_reference": "E-mailadres: gemeente@kapelle.nl",
+          "note": "Er wordt een ander e-mailadres genoemd voor hulp bij aanvragen (link@kapelle.nl vs gemeente@kapelle.nl)",
+          "source_urls": [
+            "https://kapelle.nl/elk-kind-doet-mee-voor-kinderen-uit-gezinnen-met-weinig-geld"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Neem dan contact op met het Buurtteam [...] of mailen buurtteam@kapelle.nl",
+          "original_reference": "E-mailadres: gemeente@kapelle.nl",
+          "note": "Een derde verschillend e-mailadres wordt genoemd voor het Buurtteam (buurtteam@kapelle.nl)",
+          "source_urls": [
+            "https://kapelle.nl/elk-kind-doet-mee"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "vanuit het buitenland:+31 113 333 110",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist het internationale telefoonnummer voor contact vanuit het buitenland",
+          "source_urls": [
+            "https://kapelle.nl/elk-kind-doet-mee"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de contactgegevens. Er worden verschillende e-mailadressen genoemd voor specifieke diensten (link@kapelle.nl en buurtteam@kapelle.nl) die niet in de originele tekst staan. Ook ontbreekt in de originele tekst het internationale telefoonnummer voor contact vanuit het buitenland. De overige informatie zoals bezoekadres, postadres en openingstijden komt overeen."
+  }
+}

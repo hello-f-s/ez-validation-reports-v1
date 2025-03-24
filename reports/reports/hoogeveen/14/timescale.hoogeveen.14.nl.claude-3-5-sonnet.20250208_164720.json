@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HOOGEVEEN",
+      "contact": {
+        "phone": "14 0528",
+        "email": "info@hoogeveen.nl",
+        "website": "http://www.hoogeveen.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 11,
+    "false_sentences": 2,
+    "accuracy_percentage": 84.6,
+    "false_statements": [
+      {
+        "sentence": "Voor een week: € 45,-",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Hoogeveen is er geen weekontheffing beschikbaar voor het voetgangersgebied"
+      },
+      {
+        "sentence": "U kunt een vergunning aanvragen met uw DigiD via het E-loket van Parkeerservice. Een ontheffing voor het voetgangersgebied vraagt u aan op de website van ParkeerService Hoogeveen.",
+        "status": "false",
+        "note": "Volgens de gemeente Hoogeveen website moet een ontheffing voor het voetgangersgebied worden aangevraagd via het algemene contactformulier van de gemeente, niet via ParkeerService Hoogeveen"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.hoogeveen.nl/vergunningen/omgevingsvergunningen",
+      "https://www.hoogeveen.nl/vergunningen/standplaatsvergunning",
+      "https://www.hoogeveen.nl/vergunningen/ontheffing-voor-rijden-in-voetgangersgebied",
+      "https://www.hoogeveen.nl/parkeren-verkeer-en-vervoer/parkeervergunning-aanvragen",
+      "https://www.hoogeveen.nl/raad-en-college/woo-verzoek"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vanaf 4 maart 2024 is het centrum van Hoogeveen met paaltjes afgesloten voor auto's en vrachtauto's.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de specifieke startdatum van de afsluiting van het centrum met paaltjes, wat een belangrijk detail is voor ondernemers.",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/ontheffing-voor-rijden-in-voetgangersgebied"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Marktkooplieden kunnen elke donderdag van 5.00 tot 8.30 uur en van 13.30 tot 15.00 uur, en elke zaterdag tussen 5.00 en 8.30 uur en van 16.30 tot 18.00 uur het voetgangersgebied inrijden voor het op- en afbouwen van de kraam. U hebt hier geen ontheffing voor nodig",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over specifieke tijdsvensters voor marktkooplieden waarbij geen ontheffing nodig is.",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/ontheffing-voor-rijden-in-voetgangersgebied"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u vragen hebt over de ontheffing, dan kunt u bellen met ParkeerService. Bel 033 - 24 73 00 0",
+          "original_reference": "No matching information",
+          "note": "Het telefoonnummer voor vragen over ontheffingen ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/ontheffing-voor-rijden-in-voetgangersgebied"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten enkele belangrijke aanvullende details die niet in de originele tekst staan, waaronder de startdatum van de centrumafsluitingen (4 maart 2024), specifieke tijdsvensters voor marktkooplieden zonder ontheffingsplicht, en contactgegevens voor vragen over ontheffingen. Deze informatie is essentieel voor ondernemers die in het centrum willen opereren."
+  }
+}

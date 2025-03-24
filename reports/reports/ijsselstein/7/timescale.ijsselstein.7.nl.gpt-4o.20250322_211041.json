@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "IJSSELSTEIN",
+      "contact": {
+        "phone": "14 030",
+        "email": "info@ijsselstein.nl",
+        "website": "http://www.ijsselstein.nl"
+      }
+    },
+    "service": {
+      "id": 7,
+      "name": "Kabels en leidingen aanleggen en beheren"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Wanneer een melding op tijd is ingediend, en er is overleg geweest met de beheerder kabels en leidingen, duurt het maximaal 8 weken om een instemmingsbesluit te verkrijgen.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente IJsselstein is de maximale behandeltermijn voor een instemmingsbesluit 6 weken, niet 8 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.ijsselstein.nl/Inwoners/Bouwen_verbouwen_en_slopen/Omgevingsvergunning",
+      "https://www.ijsselstein.nl/Inwoners/Bouwen_verbouwen_en_slopen",
+      "https://www.ijsselstein.nl/Inwoners/Iets_melden_klacht_indienen_of_bezwaar_maken",
+      "https://www.ijsselstein.nl/Ondernemers/Handig_om_te_weten/Bedrijf_beginnen",
+      "https://www.ijsselstein.nl"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.ijsselstein.nl/Inwoners/Bouwen_verbouwen_en_slopen/Kabels_en_leidingen_aanleggen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.ovdp.nl",
+        "reason": "INVALID: Error scraping https://www.ovdp.nl: HTTPSConnectionPool(host='www.ovdp.nl', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10627f610>: Failed to resolve 'www.ovdp.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Geen specifieke informatie over het LTC platform of LTC Meldingen & Vergunningen gevonden",
+          "original_reference": "Aanvragen voor instemmingsbesluiten of vergunningen kunnen digitaal worden ingediend via het LTC platform gebruikmakend van de applicatie LTC Meldingen & Vergunningen (LTC M&V)",
+          "note": "De bronpagina's bevatten geen informatie over het genoemde LTC platform of de applicatie. Dit lijkt verouderde of onjuiste informatie te zijn in de originele tekst.",
+          "source_urls": [
+            "https://www.ijsselstein.nl/Inwoners/Bouwen_verbouwen_en_slopen",
+            "https://www.ijsselstein.nl/Ondernemers/Handig_om_te_weten/Bedrijf_beginnen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor informatie over verplichtingen, vergunningen en vestigingseisen kunt u terecht bij de Kamer van Koophandel (KvK)",
+          "original_reference": "Melding bij de beheerder kabels en leidingen van de gemeente voor een instemmingsbesluit",
+          "note": "De bronnen verwijzen naar de KvK voor vergunningsinformatie, terwijl de originele tekst direct naar de gemeentelijke beheerder verwijst. Dit suggereert een verschil in procedure.",
+          "source_urls": [
+            "https://www.ijsselstein.nl/Ondernemers/Handig_om_te_weten/Bedrijf_beginnen"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele tekst en de bronnen. Ten eerste wordt het LTC platform genoemd in de originele tekst, maar dit wordt niet teruggevonden in de bronnen. Ten tweede verschillen de instructies over waar men terecht kan voor vergunningen en meldingen. De bronnen verwijzen naar de KvK, terwijl de originele tekst direct naar de gemeentelijke beheerder verwijst. Deze verschillen suggereren dat de originele tekst mogelijk verouderd is of niet volledig overeenkomt met de huidige procedures."
+  }
+}

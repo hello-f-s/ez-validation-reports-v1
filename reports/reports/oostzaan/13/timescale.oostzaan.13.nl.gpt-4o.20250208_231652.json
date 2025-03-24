@@ -1,0 +1,71 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OOSTZAAN",
+      "contact": {
+        "phone": "(075) 651 21 00",
+        "email": "antwoord@oostzaan.nl",
+        "website": "http://www.oostzaan.nl"
+      }
+    },
+    "service": {
+      "id": 13,
+      "name": "Omzettingsvergunning voor kamerverhuur aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Ga naar het Omgevingsloket via omgevingswet.overheid.nl en log in met eHerkenning.",
+        "status": "false",
+        "note": "Het correcte webadres voor het Omgevingsloket is omgevingsloket.nl, niet omgevingswet.overheid.nl. Ook kan er naast eHerkenning ook met DigiD worden ingelogd voor particulieren."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 0,
+    "invalid_urls": 7,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://oostzaan.nl/vergunningen/omgevingsvergunning-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://oostzaan.nl/vergunningen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://oostzaan.nl/omgevingswet/omgevingsloket",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://oostzaan.nl/bouwen-en-verbouwing/omgevingsvergunning-bouwen-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://omgevingswet.overheid.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://omgevingswet.overheid.nl\">omgevingswet.overheid.nl</a>",
+        "reason": "INVALID: Error scraping https://omgevingswet.overheid.nl\">omgevingswet.overheid.nl</a>: HTTPSConnectionPool(host='omgevingswet.overheid.nl%22%3eomgevingswet.overheid.nl%3c', port=443): Max retries exceeded with url: /a%3E (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x104263390>: Failed to resolve 'omgevingswet.overheid.nl%22%3eomgevingswet.overheid.nl%3c' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://oostzaan.nl/vergunningen/kamers-verhuren",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  }
+}

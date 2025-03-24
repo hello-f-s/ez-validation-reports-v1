@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LANDGRAAF",
+      "contact": {
+        "phone": "14 045",
+        "email": "gemeente@landgraaf.nl",
+        "website": "http://www.landgraaf.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 31,
+    "true_sentences": 30,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.8,
+    "false_statements": [
+      {
+        "sentence": "Uw barmedewerker onder de 18 jaar mag alcohol verkopen, maar niet drinken.",
+        "status": "false",
+        "note": "Volgens de Drank- en Horecawet mag een barmedewerker onder de 18 jaar geen alcoholhoudende dranken verstrekken. Alleen personen van 18 jaar en ouder mogen alcohol verkopen of schenken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 4,
+    "valid_urls": 4,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.landgraaf.nl/alcoholvergunning",
+      "https://www.landgraaf.nl/exploitatievergunning-horecabedrijf",
+      "https://www.landgraaf.nl/alcohol-schenken-tijdens-evenement",
+      "https://www.landgraaf.nl/aanvragen-en-regelen-ondernemers"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Is niet van slecht levensgedrag (geen strafblad)",
+          "original_reference": "Geen van de leidinggevenden heeft een strafblad",
+          "note": "De bronformulering is algemener en spreekt over 'slecht levensgedrag' waarvan een strafblad slechts één aspect is",
+          "source_urls": [
+            "https://www.landgraaf.nl/alcohol-schenken-tijdens-evenement"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een ontheffing voor het schenken van alcohol tijdens kleinschalige evenementen op wijk-/buurtniveau (georganiseerd door niet commerciele partijen) is gratis",
+          "original_reference": "Ontheffing artikel 35 DHW (bij kleinschalige evenementen op wijk-/buurtniveau): € 0,00",
+          "note": "De bron specificeert dat de gratis ontheffing alleen geldt voor niet-commerciële partijen, wat een belangrijke aanvullende voorwaarde is die niet in de originele tekst staat",
+          "source_urls": [
+            "https://www.landgraaf.nl/alcohol-schenken-tijdens-evenement"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Drank- en Horecawet (DHW): € 287,80, Exploitatievergunning: € 287,80, Aanleggen/wijzigen terras: € 26,70, Wijziging leidinggevende: € 95,80",
+          "original_reference": "Drank- en Horecawet (DHW) vergunning: € 287,80, Exploitatievergunning: € 287,80, Aanleggen/wijzigen terras: € 26,70, Wijziging leidinggevende: € 95,80",
+          "note": "De kosten zijn in beide bronnen exact hetzelfde",
+          "source_urls": [
+            "https://www.landgraaf.nl/alcoholvergunning",
+            "https://www.landgraaf.nl/exploitatievergunning-horecabedrijf"
+          ]
+        }
+      ]
+    },
+    "summary": "De meeste informatie komt overeen tussen de bronnen en de originele tekst. De belangrijkste verschillen betreffen de specificatie van 'slecht levensgedrag' versus alleen een strafblad, en de aanvullende voorwaarde dat de gratis ontheffing voor wijkevenementen alleen geldt voor niet-commerciële partijen. De tarieven en andere voorwaarden zijn consistent tussen alle bronnen."
+  }
+}

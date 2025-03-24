@@ -1,0 +1,92 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HEILOO",
+      "contact": {
+        "phone": "(072) 535 66 66",
+        "email": "info@heiloo.nl",
+        "website": "http://www.heiloo.nl"
+      }
+    },
+    "service": {
+      "id": 2,
+      "name": "Bord of spandoek plaatsen aan de openbare weg"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 8,
+    "true_sentences": 7,
+    "false_sentences": 1,
+    "accuracy_percentage": 87.5,
+    "false_statements": [
+      {
+        "sentence": "U stuurt het aanvraagformulier op naar APV@debuch.nl",
+        "status": "false",
+        "note": "Het correcte e-mailadres voor het indienen van de aanvraag is vergunningen@debuch.nl, niet APV@debuch.nl"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.heiloo.nl/aanvragen-en-regelen/marktplaatsvergunning/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/digitale-informatieborden/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/voorwerpen-op-openbare-weg-plaatsen/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/standplaatsvergunning/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/terrasvergunning/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.heiloo.nl/dgc?resourceId=1012",
+        "reason": "INVALID: Error scraping https://www.heiloo.nl/dgc?resourceId=1012: 404 Client Error: Not Found for url: https://www.heiloo.nl/dgc?resourceId=1012"
+      },
+      {
+        "url": "https://www.heiloo.nl/voorwerpen-op-de-openbare-weg",
+        "reason": "INVALID: Error scraping https://www.heiloo.nl/voorwerpen-op-de-openbare-weg: 404 Client Error: Not Found for url: https://www.heiloo.nl/voorwerpen-op-de-openbare-weg"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "€ 119,10",
+          "original_reference": "€ 38,80",
+          "note": "Het bedrag voor de vergunning verschilt significant. De originele tekst noemt €38,80, terwijl de actuele bron €119,10 vermeldt.",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/voorwerpen-op-openbare-weg-plaatsen/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een verkeersplan is nodig als voetgangers, (brom)fietsers, auto's of andere weggebruikers moeten uitwijken voor het object.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt een belangrijke aanvullende eis over een verkeersplan die niet in de originele tekst staat.",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/voorwerpen-op-openbare-weg-plaatsen/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voorwaarden voor het plaatsen van voorwerpen op de openbare weg vindt u in artikel 2.3 in de Verordening Fysieke Leefomgeving (VFL)",
+          "original_reference": "No matching information",
+          "note": "De bronpagina verwijst naar specifieke regelgeving (VFL) die niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/voorwerpen-op-openbare-weg-plaatsen/"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn drie belangrijke verschillen gevonden: het tarief is significant hoger (€119,10 i.p.v. €38,80), er is een aanvullende eis voor een verkeersplan bij bepaalde situaties, en er wordt verwezen naar specifieke regelgeving (VFL) die niet in de originele tekst staat. Deze verschillen zijn substantieel en relevant voor de aanvraagprocedure."
+  }
+}

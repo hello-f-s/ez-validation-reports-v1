@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HILVERSUM",
+      "contact": {
+        "phone": "14 035",
+        "email": "gemeente@hilversum.nl",
+        "website": "http://www.hilversum.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "Er is geen specifieke procedure vermeld voor bezwaar maken tegen de afwijzing van een parkeerontheffing.",
+        "status": "false",
+        "note": "Dit is onjuist. Volgens de Algemene wet bestuursrecht kan binnen 6 weken na een besluit bezwaar worden gemaakt tegen een afwijzing van een parkeerontheffing bij de gemeente Hilversum. Deze procedure staat vermeld op de website van de gemeente Hilversum."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://hilversum.nl/vergunningen/vergunningen-meldingen-openbare-ruimte",
+      "https://www.hilversum.nl",
+      "https://hilversum.nl/parkeren",
+      "https://hilversum.nl/bouwen-verbouwen/omgevingswet/aanvraag-omgevingsvergunning-uitgelegd",
+      "https://hilversum.nl/parkeren/parkeren-groot-voertuig-uitgezonderd-kernwinkelgebied",
+      "https://hilversum.nl/vergunningen/vergunningen-voor-bouwen-verbouwen/omgevingsvergunning-aanvragen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Parkeren bij parkeerverbod, Parkeren van grote voertuigen (langer dan 6 meter of hoger dan 2,40 meter, inclusief lading), Parkeren van een kampeermiddel, zoals bijvoorbeeld een caravan, camper, of aanhangwagen, als u langer dan 3 dagen wilt parkeren",
+          "original_reference": "Dit geldt bijvoorbeeld voor voertuigen langer dan 6 meter of hoger dan 2,40 meter",
+          "note": "De bronpagina specificeert drie aparte categorieën waarvoor een ontheffing nodig is, inclusief kampeermiddelen langer dan 3 dagen. Dit detail ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://hilversum.nl/parkeren/parkeren-groot-voertuig-uitgezonderd-kernwinkelgebied"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Binnen de bebouwde kom mogen grote voertuigen niet parkeren, behalve op de daarvoor aangewezen plekken: Nieuwe Havenweg, 1e Loswal, 2e Loswal, Zuiderloswal, Verlengde Zuiderloswal, Franciscusweg",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de specifieke locaties waar grote voertuigen wel mogen parkeren. Dit is belangrijke aanvullende informatie uit de bron.",
+          "source_urls": [
+            "https://hilversum.nl/parkeren/parkeren-groot-voertuig-uitgezonderd-kernwinkelgebied"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Op de bovenstaande plekken mag u maximaal 3 dagen achter elkaar parkeren",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de maximale parkeerduur van 3 dagen op de aangewezen parkeerplekken voor grote voertuigen.",
+          "source_urls": [
+            "https://hilversum.nl/parkeren/parkeren-groot-voertuig-uitgezonderd-kernwinkelgebied"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten belangrijke aanvullende informatie die ontbreekt in de originele tekst, met name over specifieke parkeerlocaties voor grote voertuigen, maximale parkeerduur van 3 dagen, en een duidelijkere categorisering van voertuigen waarvoor een ontheffing nodig is. Deze informatie is essentieel voor een volledig begrip van de parkeerregels voor grote voertuigen in Hilversum."
+  }
+}

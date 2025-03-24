@@ -1,0 +1,105 @@
+{
+  "context": {
+    "municipality": {
+      "name": "APELDOORN",
+      "contact": {
+        "phone": "14 055",
+        "email": "gemeente@apeldoorn.nl",
+        "website": "http://www.apeldoorn.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 22,
+    "false_sentences": 2,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Indien u alcoholvrije dranken wilt verstrekken, heeft u een vergunning als alcoholvrij bedrijf nodig.",
+        "status": "false",
+        "note": "Voor het verstrekken van alleen alcoholvrije dranken is geen specifieke 'alcoholvrij bedrijf' vergunning nodig in Apeldoorn. Wel is een exploitatievergunning vereist."
+      },
+      {
+        "sentence": "Een vergunning voor een alcoholvrij bedrijf €770,10 bedraagt.",
+        "status": "false",
+        "note": "Dit bedrag is onjuist omdat er geen specifieke 'alcoholvrij bedrijf' vergunning bestaat in Apeldoorn. De genoemde kosten komen niet overeen met de actuele legeskosten van de gemeente Apeldoorn."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 1,
+    "invalid_urls": 5,
+    "accuracy_percentage": 16.7,
+    "valid_urls_list": [
+      "https://www.apeldoorn.nl/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.apeldoorn.nl/werken-en-leren/ondernemen/ontheffingen-en-vergunningen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.apeldoorn.nl/vergunning-speelautomatenhal-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.apeldoorn.nl/ondernemen/een-bedrijf-in-de-horeca",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.apeldoorn.nl/werken-en-leren/ondernemen/ontheffingen-en-vergunningen/vergunning-alcoholvrij-bedrijf",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.apeldoorn.nl/werken-en-leren/ondernemen/ontheffingen-en-vergunningen/vergunning-uitstalling",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Geen specifieke informatie over horecavergunningen gevonden op de hoofdpagina",
+          "original_reference": "Gedetailleerde informatie over horecavergunningen, kosten en procedures",
+          "note": "De geciteerde bron bevat geen specifieke informatie over horecavergunningen of de genoemde bedragen. Dit kan erop wijzen dat deze informatie verouderd is of op een andere pagina staat die niet in de bronnen is opgenomen.",
+          "source_urls": [
+            "https://www.apeldoorn.nl/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Geen vermelding van telefoonnummer 088 310 4000 voor Brandweer VNOG",
+          "original_reference": "Voor specifieke vragen over brandveiligheid en bouwvergunningen kunt u ook contact opnemen met de Brandweer VNOG via 088 310 4000",
+          "note": "Het telefoonnummer voor de Brandweer VNOG kon niet worden geverifieerd in de bronpagina",
+          "source_urls": [
+            "https://www.apeldoorn.nl/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Geen vermelding van specifieke kosten zoals €1.894,60 voor speelautomatenhal of €770,10 voor alcoholvrij bedrijf",
+          "original_reference": "Een exploitatievergunning voor een speelautomatenhal kost bijvoorbeeld €1.894,60, terwijl een vergunning voor een alcoholvrij bedrijf €770,10 bedraagt",
+          "note": "De genoemde specifieke kostenbedragen kunnen niet worden geverifieerd in de bronpagina",
+          "source_urls": [
+            "https://www.apeldoorn.nl/"
+          ]
+        }
+      ]
+    },
+    "summary": "De hoofdpagina van de gemeente Apeldoorn bevat geen specifieke informatie over horecavergunningen, kosten of procedures die genoemd worden in de originele tekst. Belangrijke details zoals specifieke bedragen, contactgegevens van de Brandweer VNOG en procedures kunnen niet worden geverifieerd. Dit suggereert dat deze informatie mogelijk verouderd is of op andere, niet-geciteerde pagina's staat."
+  }
+}

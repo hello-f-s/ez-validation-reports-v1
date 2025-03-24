@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DELFT",
+      "contact": {
+        "phone": "14 015",
+        "email": "null",
+        "website": "http://www.delft.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 26,
+    "false_sentences": 2,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "Groot evenement: € 821,95",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Delft bedragen de kosten voor een groot evenement € 838,40"
+      },
+      {
+        "sentence": "Klein evenement: € 199,10",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Delft bedragen de kosten voor een klein evenement € 203,10"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.delft.nl/evenementenvergunning",
+      "https://www.delft.nl/vergunning-melden",
+      "https://www.delft.nl/klein-evenement-melden",
+      "https://www.delft.nl/omgevingsvergunning-aanvragen",
+      "https://www.delft.nl/vergunning-voor-promotieactie"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Doe dit uiterlijk 3 weken voor de start van uw evenement.",
+          "original_reference": "uiterlijk 8 weken van tevoren voor kleine evenementen",
+          "note": "Er is een tegenstrijdigheid in de aanvraagtermijn voor kleine evenementen. De originele tekst noemt 8 weken, terwijl de bron 3 weken aangeeft.",
+          "source_urls": [
+            "https://www.delft.nl/klein-evenement-melden"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U maakt geen reclame om bezoekers van buiten aan te trekken",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt een extra voorwaarde voor kleine evenementen die niet in de originele tekst staat: er mag geen reclame worden gemaakt om bezoekers van buiten aan te trekken.",
+          "source_urls": [
+            "https://www.delft.nl/klein-evenement-melden"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U belemmert niet de doorgang voor openbaar vervoer en hulpdiensten. Zoals politie, brandweer en ambulance.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina specificeert een belangrijke voorwaarde over doorgang voor hulpdiensten die niet in de originele tekst staat vermeld.",
+          "source_urls": [
+            "https://www.delft.nl/klein-evenement-melden"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de aanvraagtermijn voor kleine evenementen (3 vs 8 weken) en aanvullende voorwaarden die niet in de originele tekst staan vermeld, zoals het verbod op reclame maken voor externe bezoekers en de eis dat hulpdiensten niet belemmerd mogen worden. Deze verschillen zijn significant voor de correcte informatievoorziening aan evenementorganisatoren."
+  }
+}

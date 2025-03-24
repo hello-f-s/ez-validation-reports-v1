@@ -1,0 +1,99 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ZWOLLE",
+      "contact": {
+        "phone": "14 038",
+        "email": "postbus@zwolle.nl",
+        "website": "http://www.zwolle.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "De termijn voor een omgevingsvergunning is meestal 8 weken en kan worden verlengd tot 14 weken. Voor complexe aanvragen kan de procedure tot 26 weken duren.",
+        "status": "false",
+        "note": "Volgens de gemeente Zwolle is de reguliere procedure voor een omgevingsvergunning 8 weken met een mogelijke verlenging van 6 weken (dus maximaal 14 weken). Voor uitgebreide procedures geldt een termijn van 26 weken met een mogelijke verlenging van 6 weken (dus maximaal 32 weken). De genoemde termijnen in de tekst zijn dus niet volledig correct."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 8,
+    "valid_urls": 4,
+    "invalid_urls": 4,
+    "accuracy_percentage": 50.0,
+    "valid_urls_list": [
+      "https://www.zwolle.nl/omgevingsvergunning-en-melding",
+      "https://www.zwolle.nl/conceptverzoek-omgevingsvergunning",
+      "https://www.zwolle.nl/omgevingswet",
+      "https://www.zwolle.nl/omgevingsvergunning-milieu-en-melding-milieu"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.aimonline.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.infomil.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.zwolle.nl/veelgestelde-vragen-over-de-omgevingswet",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://omgevingsloket.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U kunt uw aanvraag voor een omgevingsvergunning vooraf door ons laten beoordelen. Wij beoordelen dan eerst uw conceptverzoek. Dus voordat u uw aanvraag voor een omgevingsvergunning indient.",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden een mogelijkheid voor een conceptverzoek (voorafgaande beoordeling) die niet genoemd wordt in de originele tekst. Dit is belangrijke aanvullende informatie voor aanvragers.",
+          "source_urls": [
+            "https://www.zwolle.nl/conceptverzoek-omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een conceptverzoek kost geld. De kosten vindt u op onze pagina Leges omgevingsvergunning.",
+          "original_reference": "De website bevat geen specifieke informatie over de kosten en betalingsprocedures",
+          "note": "In tegenstelling tot de originele tekst die stelt dat er geen informatie over kosten beschikbaar is, vermelden de bronnen wel dat er kosten verbonden zijn aan een conceptverzoek en verwijzen ze naar een pagina met legestarieven.",
+          "source_urls": [
+            "https://www.zwolle.nl/conceptverzoek-omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bevat de type B-inrichting ook een aspect waarvoor een omgevingsvergunning nodi...",
+          "original_reference": "Type B-inrichtingen: Meldingsplicht voor oprichting en verandering, en mogelijk ook omgevingsvergunning nodig.",
+          "note": "De brontekst breekt af bij een belangrijke toelichting over Type B-inrichtingen, waardoor mogelijk relevante informatie ontbreekt in vergelijking met de originele tekst.",
+          "source_urls": [
+            "https://www.zwolle.nl/omgevingsvergunning-milieu-en-melding-milieu"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de mogelijkheid tot het indienen van een conceptverzoek en de beschikbaarheid van kosteninformatie. De originele tekst mist deze belangrijke voorbereidende stap in het aanvraagproces. Daarnaast stelt de originele tekst onterecht dat er geen informatie over kosten beschikbaar is. Ook lijkt er mogelijk aanvullende informatie over Type B-inrichtingen te zijn die door een afgebroken tekst niet volledig te verifiëren is."
+  }
+}

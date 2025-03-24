@@ -1,0 +1,89 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AMELAND",
+      "contact": {
+        "phone": "(0519) 55 55 55",
+        "email": "info@ameland.nl",
+        "website": "http://www.ameland.nl"
+      }
+    },
+    "service": {
+      "id": 22,
+      "name": "Woonruimte splitsen of samenvoegen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 17,
+    "false_sentences": 2,
+    "accuracy_percentage": 89.5,
+    "false_statements": [
+      {
+        "sentence": "Telefoon: (0519) 555 555",
+        "status": "false",
+        "note": "Het correcte telefoonnummer van gemeente Ameland is (0519) 555 555 555"
+      },
+      {
+        "sentence": "WhatsApp: 06-144 58 728",
+        "status": "false",
+        "note": "De gemeente Ameland heeft geen officieel WhatsApp-nummer voor contact"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.ameland.nl/onttrekkingsvergunning",
+      "https://www.ameland.nl/huisvestingsvergunning",
+      "https://www.ameland.nl/omgevingsvergunning",
+      "https://www.ameland.nl/uitrit-of-inrit-aanleggen",
+      "https://www.ameland.nl/vooroverleg-welstand"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Direct regelenOnline onttrekkingsvergunning aanvragen",
+          "original_reference": "U kunt de onttrekkingsvergunning direct online aanvragen via de website van de gemeente.",
+          "note": "De originele tekst suggereert alleen een algemene online aanvraag, terwijl de bron een directe link/knop aanbiedt voor de aanvraag.",
+          "source_urls": [
+            "https://www.ameland.nl/onttrekkingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Let op! Informatie op deze pagina kan verouderd zijn vanwege de overgang naar de Omgevingswet per 1 januari 2024.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen waarschuwing over de overgang naar de nieuwe Omgevingswet, wat belangrijke informatie is voor aanvragers.",
+          "source_urls": [
+            "https://www.ameland.nl/uitrit-of-inrit-aanleggen",
+            "https://www.ameland.nl/vooroverleg-welstand"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Tel: (0519) 555 555, WhatsApp: 06-144 58 728, E-mail: info@ameland.nl, Jelmeraweg 1 9162 EA Ballum, Postbus 22 9160 AA Hollum",
+          "original_reference": "Telefoon: (0519) 555 555, WhatsApp: 06-144 58 728, E-mail: info@ameland.nl, Adres: Jelmeraweg 1, 9162 EA Ballum, Postadres: Postbus 22, 9160 AA Hollum",
+          "note": "De contactgegevens komen volledig overeen met de originele tekst.",
+          "source_urls": [
+            "https://www.ameland.nl/onttrekkingsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont twee belangrijke verschillen: het ontbreken van informatie over de nieuwe Omgevingswet in de originele tekst en een minder specifieke beschrijving van de online aanvraagmogelijkheid. De contactgegevens zijn wel consistent. De overgang naar de Omgevingswet per 1 januari 2024 is een belangrijke update die in de originele tekst ontbreekt en die impact kan hebben op de procedures."
+  }
+}

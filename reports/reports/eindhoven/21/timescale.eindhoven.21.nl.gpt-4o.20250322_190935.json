@@ -1,0 +1,60 @@
+{
+  "context": {
+    "municipality": {
+      "name": "EINDHOVEN",
+      "contact": {
+        "phone": "14 040",
+        "email": "gemeente@eindhoven.nl",
+        "website": "http://www.eindhoven.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "De VOG wordt binnen 4 weken na ontvangst van de aanvraag naar je thuis gestuurd.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Eindhoven duurt de afhandeling van een VOG-aanvraag gemiddeld 2 tot 4 weken. De exacte termijn van 4 weken is dus niet correct aangegeven, omdat het ook sneller kan."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.eindhoven.nl/formulier-huisvestingsverzoeken",
+      "https://www.eindhoven.nl/bouwen/vergunningen/omgevingsvergunning-buitenplanse-omgevingsplan-activiteit",
+      "https://www.eindhoven.nl/stad-en-wonen/uittreksels-en-documenten/verklaring-omtrent-het-gedrag-vog",
+      "https://www.eindhoven.nl/bouwen/vergunningen/omgevingsvergunning-voor-een-omgevingsplanactiviteit-aanleggen",
+      "https://www.eindhoven.nl/vergunning-deelvervoer-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.eindhoven.nl/product/verklaring-omtrent-het-gedrag-vog",
+        "reason": "INVALID: Error scraping https://www.eindhoven.nl/product/verklaring-omtrent-het-gedrag-vog: 404 Client Error: Not Found for url: https://www.eindhoven.nl/product/verklaring-omtrent-het-gedrag-vog"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": []
+    },
+    "summary": "Na grondige analyse van de geciteerde bronpagina's van de gemeente Eindhoven kan ik geen concrete verschillen of tegenstrijdigheden identificeren met de originele inhoud. De beschikbare bronpagina's bevatten voornamelijk navigatiemenu's en geen specifieke inhoudelijke informatie over de VOG-aanvraag die vergeleken kan worden met de originele tekst. De originele inhoud lijkt volledig en accuraat te zijn, maar kan niet direct geverifieerd worden met de beschikbare bronnen omdat de specifieke VOG-informatie niet zichtbaar is in de getoonde content van de gemeente Eindhoven website."
+  }
+}

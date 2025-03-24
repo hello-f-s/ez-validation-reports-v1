@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "KAPELLE",
+      "contact": {
+        "phone": "(0113) 33 31 10",
+        "email": "gemeente@kapelle.nl",
+        "website": "http://www.kapelle.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "Telefoon: 14 0113",
+        "status": "false",
+        "note": "Het telefoonnummer van gemeente Kapelle is 140113 (zonder spatie). Dit is het officiële nummer volgens de gemeentelijke website van Kapelle."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 3,
+    "invalid_urls": 2,
+    "accuracy_percentage": 60.0,
+    "valid_urls_list": [
+      "https://kapelle.nl/ondernemersplein",
+      "https://kapelle.nl/website-ondernemersplein",
+      "https://kapelle.nl/standplaats-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://kapelle.nl/exploitatievergunning-horecabedrijf",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.kapelle.nl/exploitatievergunning-horecabedrijf-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Kerkplein 1, 4421 AA Kapelle\nPostbus 79, 4420 AC Kapelle\ngemeente@kapelle.nl\n14 0113\nvanuit het buitenland:+31 113 333 110",
+          "original_reference": "Bezoekadres: Kerkplein 1, 4421 AA Kapelle\nPostadres: Postbus 79, 4420 AC Kapelle\nEmail: gemeente@kapelle.nl\nTelefoon: 14 0113\nVanuit het buitenland: +31 113 333 110",
+          "note": "De contactgegevens in de bronnen komen exact overeen met de originele inhoud",
+          "source_urls": [
+            "https://kapelle.nl/ondernemersplein",
+            "https://kapelle.nl/website-ondernemersplein"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "http://www.ondernemersplein.nl",
+          "original_reference": "http://www.ondernemersplein.nl",
+          "note": "De verwijzing naar het Ondernemersplein is in beide gevallen identiek",
+          "source_urls": [
+            "https://kapelle.nl/ondernemersplein",
+            "https://kapelle.nl/website-ondernemersplein"
+          ]
+        }
+      ]
+    },
+    "summary": "Na analyse van de beschikbare bronnen zijn er geen significante verschillen gevonden tussen de originele inhoud en de geciteerde bronnen. De contactgegevens en verwijzingen naar het Ondernemersplein zijn consistent. Het is wel opmerkelijk dat veel van de specifieke informatie over horecavergunningen (voorwaarden, aanvraagprocedure, etc.) niet terug te vinden is in de geciteerde bronpagina's. Dit suggereert dat deze informatie mogelijk op andere gemeentelijke pagina's staat die niet in de bronnen zijn opgenomen."
+  }
+}

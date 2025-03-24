@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "GOES",
+      "contact": {
+        "phone": "14 0113",
+        "email": "stadskantoor@goes.nl",
+        "website": "http://www.goes.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Tarief Grote Markt per maand per m2: €12,55",
+        "status": "false",
+        "note": "Het actuele tarief voor de Grote Markt in Goes is €13,05 per m2 per maand volgens de meest recente gemeentelijke tarieven."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.goes.nl/standplaats-aanvragen",
+      "https://www.goes.nl/terras-plaatsen",
+      "https://www.goes.nl/milieu-omgevingsvergunning-melding",
+      "https://www.goes.nl/exploitatievergunning-horeca",
+      "https://www.goes.nl/conceptverzoek-omgevingsvergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Let op: In verband met de hoeveelheid aanvragen kan de afhandeling van uw zaak langer duren dan u van ons gewend bent.",
+          "original_reference": "De afhandeling van de aanvraag kan langer duren door de hoeveelheid aanvragen.",
+          "note": "De bronformulering is specifieker en persoonlijker door de toevoeging 'dan u van ons gewend bent', terwijl de originele tekst algemener is geformuleerd.",
+          "source_urls": [
+            "https://www.goes.nl/conceptverzoek-omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een terras waar alcoholhoudende dranken verkrijgbaar zijn, dient vermeld te staan op de Drank- en Horecavergunning.",
+          "original_reference": "Het terrein moet geregistreerd zijn in de exploitatievergunning als er alcohol worden geserveerd.",
+          "note": "De bron verwijst specifiek naar de Drank- en Horecavergunning, terwijl de originele tekst spreekt over de exploitatievergunning. Dit is een belangrijk juridisch verschil.",
+          "source_urls": [
+            "https://www.goes.nl/terras-plaatsen"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele tekst en de bronnen. Het eerste verschil betreft de formulering van de verwerkingstijd, waarbij de bron specifieker is. Het tweede verschil betreft het type vergunning waarin het terras moet worden vermeld bij alcoholverkoop, waarbij de bron en originele tekst verschillende vergunningen noemen. De overige informatie komt overeen met de bronnen."
+  }
+}

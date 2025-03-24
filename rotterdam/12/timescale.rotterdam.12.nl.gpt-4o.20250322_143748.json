@@ -1,0 +1,99 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ROTTERDAM",
+      "contact": {
+        "phone": "14 010",
+        "email": "null",
+        "website": "http://www.rotterdam.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "U ontvangt binnen 8 weken bericht van de gemeente of u de vergunning heeft gekregen.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Rotterdam is de reguliere procedure 8 weken met mogelijkheid tot verlenging van 6 weken. De uitgebreide procedure duurt 26 weken met mogelijkheid tot verlenging van 6 weken. De genoemde termijn van 8 weken is dus niet volledig correct."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 3,
+    "invalid_urls": 4,
+    "accuracy_percentage": 42.9,
+    "valid_urls_list": [
+      "https://www.rotterdam.nl/omgevingsvergunning-milieu-aanvragen",
+      "https://rotterdam.nl/loket/omgevingsvergunning-milieu",
+      "https://www.rotterdam.nl/conceptverzoek-omgevingsvergunning-doen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.rotterdam.nl/omgevingsvergunning-bouwen-aanvragen/start-omgevingsvergunning-bouwen-per-post-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.rotterdam.nl/omgevingsvergunning-bouwen-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://rotterdam.nl/loket/omgevingsvergunning-bouwen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.rotterdam.nl/omgevingsvergunning-inrit-of-uitrit-aanvragen/start-omgevingsvergunning-inrit-of-uitrit-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vanaf 1 juli 2024 is het Omgevingsloket online (OLO) niet meer beschikbaar. Hebt u voor 1 januari 2024 een omgevingsvergunning aangevraagd via het Omgevingsloket online, dan is het belangrijk om de aanvullingen via het nieuwe Omgevingsloket in te dienen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de overgang naar een nieuw Omgevingsloket en de belangrijke deadlines van 1 januari en 1 juli 2024.",
+          "source_urls": [
+            "https://www.rotterdam.nl/omgevingsvergunning-milieu-aanvragen",
+            "https://www.rotterdam.nl/conceptverzoek-omgevingsvergunning-doen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een melding doet u uiterlijk 4 weken voordat de activiteiten beginnen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt geen specifieke termijn voor het doen van een milieumelding voorafgaand aan de start van activiteiten.",
+          "source_urls": [
+            "https://www.rotterdam.nl/omgevingsvergunning-milieu-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor al uw adviesvragen over een masterplan en milieu neemt u contact op met DCMR via de website www.dcmr.nl of stuur een e-mail naar info@dcmr.nl",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de mogelijkheid tot het stellen van adviesvragen aan DCMR en de bijbehorende contactgegevens.",
+          "source_urls": [
+            "https://rotterdam.nl/loket/omgevingsvergunning-milieu"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie die niet in de originele tekst staat, waaronder de aanstaande wijziging in het Omgevingsloket (juli 2024), specifieke termijnen voor milieumelding (4 weken vooraf) en contactgegevens voor adviesvragen (DCMR). Deze informatie is essentieel voor gebruikers van de dienst en zou in de originele tekst opgenomen moeten worden."
+  }
+}

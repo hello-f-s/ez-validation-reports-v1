@@ -1,0 +1,79 @@
+{
+  "context": {
+    "municipality": {
+      "name": "GRONINGEN",
+      "contact": {
+        "phone": "14 050",
+        "email": "info@groningen.nl",
+        "website": "http://gemeente.groningen.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "U ontvangt binnen 4 weken bericht over uw aanvraag van het ministerie van Justitie en Veiligheid (Justis).",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Groningen duurt de afhandeling van een VOG-aanvraag gemiddeld 2 tot 4 weken. De exacte termijn van 4 weken wordt niet gegarandeerd."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://gemeente.groningen.nl/kapvergunning-aanvragen",
+      "https://gemeente.groningen.nl/maatschappelijke-parkeervergunning",
+      "https://gemeente.groningen.nl/bewijs-van-nederlanderschap-aanvragen",
+      "https://gemeente.groningen.nl/verklaring-omtrent-gedrag-vog-aanvragen",
+      "https://gemeente.groningen.nl/woo-verzoek"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://groningen.nl/vog-aanvragen",
+        "reason": "INVALID: Error scraping https://groningen.nl/vog-aanvragen: 404 Client Error: Not Found for url: https://groningen.nl/vog-aanvragen"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U krijgt het bewijs van Nederlanderschap binnen 10 werkdagen per post.",
+          "original_reference": "U ontvangt binnen 4 weken bericht over uw aanvraag van het ministerie van Justitie en Veiligheid (Justis)",
+          "note": "Er is een verschil in de verwerkingstijd. De originele tekst noemt 4 weken, terwijl de brontekst voor een VOG geen specifieke verwerkingstijd noemt. De 10 werkdagen verwijst naar een ander document (Bewijs van Nederlanderschap).",
+          "source_urls": [
+            "https://gemeente.groningen.nl/bewijs-van-nederlanderschap-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U kunt uw aanvraag volgen via Mijn Groningen. Ook kunt u daar later nog documenten toevoegen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over het volgen van de aanvraag via Mijn Groningen of het later toevoegen van documenten.",
+          "source_urls": [
+            "https://gemeente.groningen.nl/verklaring-omtrent-gedrag-vog-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de verwerkingstijd van de aanvraag en de mogelijkheid om de aanvraag te volgen via Mijn Groningen. De bronwebsite biedt meer specifieke details over het aanvraagproces en de opvolgingsmogelijkheden die niet in de originele tekst worden genoemd. De overige informatie komt grotendeels overeen met de originele inhoud."
+  }
+}

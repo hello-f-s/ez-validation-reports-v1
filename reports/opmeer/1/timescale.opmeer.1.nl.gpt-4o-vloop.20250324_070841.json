@@ -1,0 +1,82 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OPMEER",
+      "contact": {
+        "phone": "(0226) 36 33 33",
+        "email": "gemeente@opmeer.nl",
+        "website": "http://www.opmeer.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 27,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.4,
+    "false_statements": [
+      {
+        "sentence": "Het tarief voor een aanvraag om een Alcoholwetvergunning bedraagt € 465,90.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Opmeer is dit bedrag niet correct. Het huidige tarief voor een Alcoholwetvergunning is anders vastgesteld in de gemeentelijke legesverordening."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 4,
+    "valid_urls": 4,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.opmeer.nl/alcoholwetvergunning",
+      "https://www.opmeer.nl/exploitatievergunning-horecabedrijf",
+      "https://www.opmeer.nl/omgevingsvergunning",
+      "https://www.opmeer.nl/geluidsoverlast-veroorzaken"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Op basis van artikel 2:28 lid 3 van de Algemeen Plaatselijke Verordening gemeente Opmeer worden para-commerciële sportverenigingen (waarbij horeca niet de hoofdactiviteit is) zonder terras vrijgesteld van de exploitatievergunningsplicht.",
+          "original_reference": "Een uitzondering geldt voor para-commerciële sportverenigingen zonder terras.",
+          "note": "De brontekst specificeert expliciet dat het gaat om sportverenigingen waarbij horeca niet de hoofdactiviteit is, wat een belangrijke nuancering is die ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.opmeer.nl/exploitatievergunning-horecabedrijf"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Ook wanneer er iets aan uw inrichting (bijv. door een verbouwing), dan moet u een wijziging van uw vergunning aanvragen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat bij wijzigingen aan de inrichting (zoals verbouwingen) een wijziging van de vergunning moet worden aangevraagd. Dit is belangrijke aanvullende informatie.",
+          "source_urls": [
+            "https://www.opmeer.nl/alcoholwetvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een horecabedrijf is bijvoorbeeld een hotel, restaurant, pension, café, waterpijpcafé, cafetaria, snackbar, discotheek, buurthuis of clubhuis of elke andere voor het publiek toegankelijke, besloten ruimte waarin bedrijfsmatig of in een omvang alsof zij bedrijfsmatig was logies wordt verstrekt of dranken worden geschonken",
+          "original_reference": "No matching information",
+          "note": "De originele tekst geeft geen definitie of voorbeelden van wat als horecabedrijf wordt beschouwd, terwijl de brontekst hier wel duidelijkheid over verschaft.",
+          "source_urls": [
+            "https://www.opmeer.nl/exploitatievergunning-horecabedrijf"
+          ]
+        }
+      ]
+    },
+    "summary": "De broninhoud bevat enkele belangrijke aanvullingen en specificaties die niet in de originele tekst staan. Met name de voorwaarden voor para-commerciële sportverenigingen worden beter gespecificeerd, er is aanvullende informatie over verplichte meldingen bij verbouwingen, en er wordt een duidelijke definitie gegeven van wat als horecabedrijf wordt beschouwd. Deze informatie is relevant voor de volledigheid en duidelijkheid van de dienstverlening."
+  }
+}

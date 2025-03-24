@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "BEVERWIJK",
+      "contact": {
+        "phone": "(0251) 25 62 56",
+        "email": "info@beverwijk.nl",
+        "website": "http://www.beverwijk.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 10,
+    "false_sentences": 1,
+    "accuracy_percentage": 90.9,
+    "false_statements": [
+      {
+        "sentence": "Het nieuwe parkeerbeleid, ingegaan per 1 januari 2024, biedt geen mogelijkheid aan bedrijven om een bezoekersregeling te gebruiken, tenzij de ondernemer woont op hetzelfde adres als waar het eigen bedrijf gevestigd is.",
+        "status": "false",
+        "note": "Het nieuwe parkeerbeleid in Beverwijk is niet ingegaan op 1 januari 2024. Volgens de officiële website van de gemeente Beverwijk is de invoering van het nieuwe parkeerbeleid uitgesteld en is er nog geen definitieve ingangsdatum bekendgemaakt."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.beverwijk.nl/zorgverlenersontheffing",
+      "https://www.beverwijk.nl/aanvraag-parkeerontheffingen-uitgesteld",
+      "https://www.beverwijk.nl/parkeerontheffing",
+      "https://www.beverwijk.nl/standplaatsvergunning",
+      "https://www.beverwijk.nl/parkeerboete"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://parkeervergunningen.beverwijk.nl",
+        "reason": "INVALID: Error scraping https://parkeervergunningen.beverwijk.nl: 500 Server Error: Internal Server Error for url: https://parkeervergunningen.beverwijk.nl/"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Eerste bedrijfsontheffing (Beverwijk Centrum of Theater): €222,89\nTweede bedrijfsontheffing (Beverwijk Centrum of Theater): €390,06",
+          "original_reference": "De specifieke kosten voor een parkeerontheffing voor ondernemers worden echter niet vermeld in de beschikbare informatie.",
+          "note": "De originele tekst vermeldt dat kosten niet bekend zijn, maar de bron geeft specifieke tarieven voor bedrijfsontheffingen",
+          "source_urls": [
+            "https://www.beverwijk.nl/parkeerontheffing"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Het aantal parkeerontheffingen voor bedrijven wordt ook maximaal twee per adres. Bedrijven kunnen geen gebruik maken van de bezoekersregeling, tenzij de ondernemer woont op het...",
+          "original_reference": "Ondernemers kunnen maximaal twee parkeerontheffingen aanvragen per BAG-adres. Het nieuwe parkeerbeleid, ingegaan per 1 januari 2024, biedt geen mogelijkheid aan bedrijven om een bezoekersregeling te gebruiken, tenzij de ondernemer woont op hetzelfde adres als waar het eigen bedrijf gevestigd is.",
+          "note": "De informatie over het maximum aantal ontheffingen en de bezoekersregeling komt overeen",
+          "source_urls": [
+            "https://www.beverwijk.nl/aanvraag-parkeerontheffingen-uitgesteld"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Neem dan contact met ons op via parkeren@beverwijk.nl of (0251) 256 256",
+          "original_reference": "Voor hulp kunt u contact opnemen via parkeren@beverwijk.nl of (0251) 256 256",
+          "note": "De contactgegevens zijn hetzelfde, maar worden in een andere context gepresenteerd - in de bron specifiek voor problemen bij aanvragen",
+          "source_urls": [
+            "https://www.beverwijk.nl/parkeerontheffing"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de kosten van parkeerontheffingen voor ondernemers, die wel degelijk bekend zijn maar niet in de originele tekst werden vermeld. De tarieven zijn €222,89 voor de eerste en €390,06 voor de tweede bedrijfsontheffing. De overige informatie komt grotendeels overeen, met enkele kleine contextuele verschillen in de presentatie van de contactgegevens."
+  }
+}

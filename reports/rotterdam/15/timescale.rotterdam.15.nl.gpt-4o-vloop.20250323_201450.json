@@ -1,0 +1,90 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ROTTERDAM",
+      "contact": {
+        "phone": "14 010",
+        "email": "null",
+        "website": "http://www.rotterdam.nl"
+      }
+    },
+    "service": {
+      "id": 15,
+      "name": "Vergunning of ontheffing voor straatartiesten"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "Buiten deze gebieden kunt u vrij optreden.",
+        "status": "false",
+        "note": "Volgens de gemeente Rotterdam is dit onjuist. Ook in andere gebieden van Rotterdam kunnen er regels en beperkingen gelden voor straatartiesten, bijvoorbeeld in andere winkelgebieden of tijdens evenementen. Het is niet overal zomaar toegestaan om vrij op te treden."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 3,
+    "invalid_urls": 2,
+    "accuracy_percentage": 60.0,
+    "valid_urls_list": [
+      "https://www.rotterdam.nl/ontheffing-aanvragen-voor-optreden-als-straatartiest",
+      "https://www.rotterdam.nl/exploitatievergunning-aanvragen/start-exploitatievergunning-aanvragen",
+      "https://www.rotterdam.nl/exploitatievergunning-speelautomatenhal-aanvragen/start-exploitatievergunning-speelautomatenhal-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.rotterdam.nl/omgevingsvergunning-inrit-of-uitrit-aanvragen/start-omgevingsvergunning-inrit-of-uitrit-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.rotterdam.nl/omgevingsvergunning-bouwen-aanvragen/start-omgevingsvergunning-bouwen-per-post-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Er wordt geen specifiek maximum aantal ontheffingen genoemd in de bronpagina's",
+          "original_reference": "Er worden per jaar maximaal 50 ontheffingen gegeven",
+          "note": "De originele tekst noemt een maximum van 50 ontheffingen per jaar, maar dit wordt niet bevestigd in de bronpagina's. Dit is een belangrijk verschil in de voorwaarden.",
+          "source_urls": [
+            "https://www.rotterdam.nl/ontheffing-aanvragen-voor-optreden-als-straatartiest"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De bronpagina's vermelden geen specifieke informatie over bezwaartermijnen",
+          "original_reference": "Tot 6 weken na het besluit kunnen belanghebbenden bezwaar indienen tegen de verleende ontheffing",
+          "note": "De originele tekst specificeert een bezwaartermijn van 6 weken, maar deze informatie is niet terug te vinden in de bronpagina's",
+          "source_urls": [
+            "https://www.rotterdam.nl/ontheffing-aanvragen-voor-optreden-als-straatartiest"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De bronpagina's vermelden geen behandeltermijn van 4 weken",
+          "original_reference": "Het duurt maximaal 4 weken voordat uw aanvraag wordt goedgekeurd of afgewezen",
+          "note": "De originele tekst noemt een specifieke behandeltermijn van 4 weken, maar deze termijn wordt niet genoemd in de bronpagina's",
+          "source_urls": [
+            "https://www.rotterdam.nl/ontheffing-aanvragen-voor-optreden-als-straatartiest"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn drie belangrijke verschillen gevonden tussen de originele tekst en de bronpagina's. De originele tekst bevat specifieke details over het maximum aantal ontheffingen (50), de bezwaartermijn (6 weken) en de behandeltermijn (4 weken) die niet worden bevestigd in de bronpagina's. Deze informatie zou geverifieerd moeten worden om de actuele situatie correct weer te geven."
+  }
+}

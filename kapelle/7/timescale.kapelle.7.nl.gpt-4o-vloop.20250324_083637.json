@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "KAPELLE",
+      "contact": {
+        "phone": "(0113) 33 31 10",
+        "email": "gemeente@kapelle.nl",
+        "website": "http://www.kapelle.nl"
+      }
+    },
+    "service": {
+      "id": 7,
+      "name": "Kabels en leidingen aanleggen en beheren"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 20,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.2,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor een instemmingsbesluit of vergunning bedragen in 2025 €434,60.",
+        "status": "false",
+        "note": "Dit bedrag kan niet geverifieerd worden voor het jaar 2025 aangezien de gemeente Kapelle nog geen tarieven heeft vastgesteld voor dat jaar. Huidige tarieven zijn alleen beschikbaar voor het lopende jaar."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://kapelle.nl/kabels-en-leidingen-leggen-openbare-grond",
+      "https://kapelle.nl/omgevingsvergunning-0",
+      "https://kapelle.nl/kabelgoot-aanvragen",
+      "https://kapelle.nl/evenement-organiseren",
+      "https://kapelle.nl/ondernemersplein"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Dit moet u eerst melden bij het Kadaster.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt een verplichte melding bij het Kadaster die niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://kapelle.nl/kabels-en-leidingen-leggen-openbare-grond"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een eigen kabelgoot aanvragen kost € 385,- inclusief BTW.",
+          "original_reference": "De kosten voor een instemmingsbesluit of vergunning bedragen in 2025 €434,60.",
+          "note": "Er is een verschil in de vermelde kosten tussen de bronpagina en de originele tekst. Ook betreft het verschillende diensten (kabelgoot vs. instemmingsbesluit).",
+          "source_urls": [
+            "https://kapelle.nl/kabelgoot-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "duurzaam@kapelle.nl",
+          "original_reference": "gemeente@kapelle.nl",
+          "note": "Er wordt een ander e-mailadres vermeld voor contact over kabelgoten dan het algemene e-mailadres in de originele tekst.",
+          "source_urls": [
+            "https://kapelle.nl/kabelgoot-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen een ontbrekende verplichte melding bij het Kadaster, verschillende kostenbedragen en contactgegevens. De bronpagina's bevatten specifiekere informatie over bepaalde onderdelen zoals kabelgoten, maar zijn grotendeels consistent met de originele tekst wat betreft de hoofdprocedures en voorwaarden."
+  }
+}

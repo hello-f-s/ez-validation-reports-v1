@@ -1,0 +1,90 @@
+{
+  "context": {
+    "municipality": {
+      "name": "KAPELLE",
+      "contact": {
+        "phone": "(0113) 33 31 10",
+        "email": "gemeente@kapelle.nl",
+        "website": "http://www.kapelle.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "In uw zaak moet altijd een leidinggevende aanwezig zijn",
+        "status": "false",
+        "note": "Volgens de Alcoholwet moet er een leidinggevende aanwezig zijn tijdens het verstrekken van alcohol, niet per definitie altijd. Dit is een te strenge interpretatie van de werkelijke vereiste."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 3,
+    "invalid_urls": 2,
+    "accuracy_percentage": 60.0,
+    "valid_urls_list": [
+      "https://kapelle.nl/alcoholwet-vergunning",
+      "https://kapelle.nl/exploitatievergunning-horecabedrijf",
+      "https://kapelle.nl/alcohol-schenken-tijdens-evenement"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.kapelle.nl/node/224",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.kapelle.nl/node/225",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De leidinggevende staat ook vermeld op uw vergunning.",
+          "original_reference": "In uw zaak moet altijd een leidinggevende aanwezig zijn",
+          "note": "De brontext specificeert dat de leidinggevende ook op de vergunning moet staan vermeld, wat een extra vereiste is dat niet in de originele tekst staat.",
+          "source_urls": [
+            "https://kapelle.nl/alcoholwet-vergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor verenigingen en stichtingen die alcohol schenken gelden extra voorwaarden: De uren waarop alcohol wordt geschonken en de leeftijdsgrens is op een goed zichtbare plek opgehangen. Er zijn binnen de vereniging of stichting minstens twee leidinggevenden met een SVH Verklaring Sociale Hygiëne. Wanneer er alcohol wordt geschonken is een van deze leidinggevenden aanwezig of een barmedewerker die de instructie 'Verantwoord alcoholgebruik' heeft gevolgd.",
+          "original_reference": "Gewaarmerkt bestuursreglement (geldt alleen voor verenigingen en stichtingen)",
+          "note": "De brontext bevat aanvullende specifieke voorwaarden voor verenigingen en stichtingen die niet in de originele tekst staan vermeld.",
+          "source_urls": [
+            "https://kapelle.nl/alcoholwet-vergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een bedrijfs- of ondernemingsplan, Een document (zoals huurcontract, eigendomsakte) waaruit blijkt dat de aanvrager over de ruimte beschikt waar het horecabedrijf gevestigd wordt, Een nauwkeurige plattegrond van het horecabedrijf (inclusief terras), Een ingevuld Bibob-formulier",
+          "original_reference": "No matching information",
+          "note": "De bron vermeldt aanvullende documenten die nodig zijn voor de aanvraag die niet in de originele tekst staan.",
+          "source_urls": [
+            "https://kapelle.nl/exploitatievergunning-horecabedrijf"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten verschillende belangrijke aanvullende vereisten die niet in de originele tekst staan vermeld. Dit betreft vooral extra documentatie-eisen, specifieke voorwaarden voor verenigingen en stichtingen, en de verplichting dat leidinggevenden op de vergunning vermeld moeten staan. Ook wordt in de bronnen de Wet Bibob-toetsing genoemd die in de originele tekst ontbreekt."
+  }
+}

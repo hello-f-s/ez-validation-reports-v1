@@ -1,0 +1,79 @@
+{
+  "context": {
+    "municipality": {
+      "name": "GRONINGEN",
+      "contact": {
+        "phone": "14 050",
+        "email": "info@groningen.nl",
+        "website": "http://gemeente.groningen.nl"
+      }
+    },
+    "service": {
+      "id": 20,
+      "name": "Vergunning voor seksbedrijf"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "Nadat u uw aanvraag heeft ingediend, krijgt u normaal gesproken binnen 8 weken een antwoord.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Groningen is de beslistermijn voor een vergunning voor een seksbedrijf 12 weken en niet 8 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://gemeente.groningen.nl/alcoholvergunning-aanvragen",
+      "https://gemeente.groningen.nl/bedrijf-starten",
+      "https://gemeente.groningen.nl/exploitatievergunning-horeca-aanvragen",
+      "https://www.groningen.nl",
+      "https://gemeente.groningen.nl/vergunning-voor-seksbedrijf-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://gemeente.groningen.nl/onttrekkingsvergunning-voor-bedrijfsdoeleinden-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wilt u een bordeel, escortbedrijf, seksclub, erotische massagesalon of raamprostitutiebedrijf beginnen?",
+          "original_reference": "No matching information",
+          "note": "De bronpagina specificeert expliciet de verschillende types seksbedrijven, terwijl de originele tekst deze details niet vermeldt. Dit is belangrijke verduidelijkende informatie voor aanvragers.",
+          "source_urls": [
+            "https://gemeente.groningen.nl/vergunning-voor-seksbedrijf-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "In die verordening kunt u ook lezen wat de regels zijn over prostitutiebedrijven en seksbedrijven en wat het verschil is tussen beide.",
+          "original_reference": "No matching information",
+          "note": "De bron verwijst naar een belangrijk onderscheid tussen prostitutiebedrijven en seksbedrijven in de APV, wat niet wordt genoemd in de originele tekst.",
+          "source_urls": [
+            "https://gemeente.groningen.nl/vergunning-voor-seksbedrijf-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten enkele belangrijke specificaties die ontbreken in de originele tekst, met name de expliciete types seksbedrijven en het onderscheid tussen prostitutie- en seksbedrijven. De kernvoorwaarden en procedures komen verder overeen met de originele tekst. De aanvullende details maken de informatie concreter voor potentiële aanvragers."
+  }
+}

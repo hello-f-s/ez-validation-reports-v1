@@ -1,0 +1,85 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ALPHEN-CHAAM",
+      "contact": {
+        "phone": "14013",
+        "email": "info@alphen-chaam.nl",
+        "website": "http://www.alphen-chaam.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Dit onderzoek wordt niet gedaan voor aanvragen van slijterijen of paracommerciële instellingen.",
+        "status": "false",
+        "note": "Volgens de Wet Bibob wordt het onderzoek uitgevoerd voor alle alcoholvergunningen, inclusief slijterijen en paracommerciële instellingen. Er wordt geen uitzondering gemaakt voor deze categorieën."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.alphen-chaam.nl/alcoholvergunning",
+      "https://www.alphen-chaam.nl/horecavergunning",
+      "https://www.alphen-chaam.nl/vergunningen-en-ontheffingen/vergunningen-en-ontheffingen-voor-ondernemers",
+      "https://www.alphen-chaam.nl/ondernemen/vergunningen-en-ontheffingen-voor-ondernemers",
+      "https://www.alphen-chaam.nl/woo",
+      "https://www.alphen-chaam.nl"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "€ 178,95",
+          "original_reference": "€328,20",
+          "note": "De kosten voor de vergunning verschillen significant. De originele tekst noemt €328,20, terwijl de bron een bedrag van €178,95 vermeldt.",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/horecavergunning"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Wij behandelen uw aanvraag binnen 8 weken. Deze periode kunnen we met 8 weken verlengen.",
+          "original_reference": "De behandeling van uw aanvraag duurt maximaal 8 weken. Deze periode kan met nog eens 8 weken worden verlengd.",
+          "note": "De behandeltermijn en mogelijke verlenging komen overeen in beide teksten.",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/alcoholvergunning",
+            "https://www.alphen-chaam.nl/horecavergunning"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "U kunt 2 alcoholvergunning aanvragen. Voor een horecabedrijf of slijterij, of een stichting of vereniging, zoals een sportkantine of cultureel centrum.",
+          "original_reference": "Er zijn verschillende soorten vergunningen afhankelijk van de instelling: een vergunning voor horecabedrijven of slijterijen, en een para-commerciële alcoholvergunning voor stichtingen of verenigingen, zoals sportkantines of culturele centra.",
+          "note": "De verschillende types vergunningen komen overeen in beide teksten.",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/alcoholvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "Het belangrijkste verschil tussen de originele tekst en de bronnen betreft de kosten van de vergunning. De originele tekst vermeldt een bedrag van €328,20, terwijl in de bronnen €178,95 wordt genoemd. Verder zijn de beschreven procedures, voorwaarden en termijnen consistent tussen de originele tekst en de bronnen."
+  }
+}

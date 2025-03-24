@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MONTFOORT",
+      "contact": {
+        "phone": "(0348) 47 64 00",
+        "email": "info@montfoort.nl",
+        "website": "http://www.montfoort.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor de eerste parkeervergunning of ontheffing zijn € 135,95 per kalenderjaar, en voor de tweede vergunning op hetzelfde adres betaalt u € 203,90 per jaar.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Montfoort zijn de actuele tarieven voor 2024: eerste vergunning € 139,35 en tweede vergunning € 209,00 per jaar."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.montfoort.nl/Alle_onderwerpen/Vergunningen_en_ontheffingen",
+      "https://www.montfoort.nl/Alle_onderwerpen/Verkeer_en_vervoer/Parkeren/Parkeren_met_parkeerschijf_blauwe_zone",
+      "https://www.montfoort.nl/Alle_onderwerpen/Vergunningen_en_ontheffingen/Horeca_en_MKB",
+      "https://www.montfoort.nl/Alle_onderwerpen/Ondernemen/Horeca_en_MKB",
+      "https://www.montfoort.nl/Alle_onderwerpen/Vergunningen_en_ontheffingen/Caravan_parkeren_op_openbare_weg"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wilt u in een blauwe zone parkeren? Leg altijd uw parkeerschijf op een zichtbare plek in uw auto. Geef hierop de aankomsttijd aan. Op het verkeersbord bij de zone staat de maximale parkeertijd.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist essentiële informatie over het gebruik van de parkeerschijf en hoe deze correct te gebruiken in de blauwe zone",
+          "source_urls": [
+            "https://www.montfoort.nl/Alle_onderwerpen/Verkeer_en_vervoer/Parkeren/Parkeren_met_parkeerschijf_blauwe_zone"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een ontheffing om lang te kunnen parkeren in het blauwe zone gebied kunt u alleen krijgen als u in het gebied woont of een bedrijf hebt.",
+          "original_reference": "Een ontheffing om langer te parkeren in het blauwe zone gebied kunt u alleen krijgen als u in het gebied woont of een bedrijf hebt.",
+          "note": "Kleine maar betekenisvolle formuleringswijziging in de brontext ('lang' vs 'langer') die de duur anders kan interpreteren",
+          "source_urls": [
+            "https://www.montfoort.nl/Alle_onderwerpen/Verkeer_en_vervoer/Parkeren/Parkeren_met_parkeerschijf_blauwe_zone"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen tonen enkele belangrijke verschillen met de originele tekst. Met name ontbreekt in de originele tekst cruciale informatie over het gebruik van de parkeerschijf in de blauwe zone. Daarnaast is er een subtiel maar mogelijk belangrijk verschil in de formulering van de parkeerduurbepaling. De overige informatie komt grotendeels overeen met de originele tekst."
+  }
+}

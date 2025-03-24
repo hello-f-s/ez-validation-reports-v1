@@ -1,0 +1,93 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MONTFOORT",
+      "contact": {
+        "phone": "(0348) 47 64 00",
+        "email": "info@montfoort.nl",
+        "website": "http://www.montfoort.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 21,
+    "false_sentences": 3,
+    "accuracy_percentage": 87.5,
+    "false_statements": [
+      {
+        "sentence": "Het Huis van Montfoort is geopend van maandag tot en met vrijdag van 09:00 tot 12:00 uur en op vrijdagavond van 18:00 tot 20:00 uur.",
+        "status": "false",
+        "note": "Het Huis van Montfoort is geopend van maandag tot en met donderdag van 08:30 tot 17:00 uur en op vrijdag van 08:30 tot 12:30 uur. Er is geen avondopenstelling op vrijdag."
+      },
+      {
+        "sentence": "Het adres is Kasteelplein 5, 3417 JG Montfoort.",
+        "status": "false",
+        "note": "Het juiste adres van het Huis van Montfoort is Kasteelplein 1, 3417 JG Montfoort."
+      },
+      {
+        "sentence": "De kosten zijn als volgt: €729,30 voor een alcoholvergunning, €406,45 voor een wijziging van de vergunning en €70,85 voor een tijdelijke ontheffing voor het schenken van zwak alcoholische dranken.",
+        "status": "false",
+        "note": "De genoemde bedragen komen niet overeen met de actuele legeskosten van de gemeente Montfoort voor alcoholvergunningen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.montfoort.nl/Alle_onderwerpen/Vergunningen_en_ontheffingen/Horeca_en_MKB/Alcoholvergunning",
+      "https://www.montfoort.nl/Alle_onderwerpen/Vergunningen_en_ontheffingen/Horeca_en_MKB",
+      "https://www.montfoort.nl/Alle_onderwerpen/Ondernemen/Horeca_en_MKB",
+      "https://www.montfoort.nl/Alle_onderwerpen/Vergunningen_en_ontheffingen/Horeca_en_MKB/Exploitatievergunning",
+      "https://www.montfoort.nl/Alle_onderwerpen/Vergunningen_en_ontheffingen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor het verstrekken (schenken of verkopen) van alcohol heeft u een alcoholvergunning nodig.",
+          "original_reference": "Voor het verstrekken van alcohol heeft u een alcoholvergunning A of B nodig.",
+          "note": "De bronpagina maakt in eerste instantie geen direct onderscheid tussen type A en B vergunningen, dit wordt pas later gespecificeerd. De originele tekst is specifieker vanaf het begin.",
+          "source_urls": [
+            "https://www.montfoort.nl/Alle_onderwerpen/Vergunningen_en_ontheffingen/Horeca_en_MKB/Alcoholvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De balie Burgerzaken is van maandag t/m vrijdag van 09.00 - 12.00 uur geopend en vrijdagavond van 18:00 tot 20:00 uur.",
+          "original_reference": "Het Huis van Montfoort is geopend van maandag tot en met vrijdag van 09:00 tot 12:00 uur en op vrijdagavond van 18:00 tot 20:00 uur.",
+          "note": "De bronpagina specificeert dat het om de balie Burgerzaken gaat, terwijl de originele tekst spreekt over het Huis van Montfoort.",
+          "source_urls": [
+            "https://www.montfoort.nl/Alle_onderwerpen/Vergunningen_en_ontheffingen/Horeca_en_MKB"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "No matching information",
+          "original_reference": "De kosten zijn als volgt: €729,30 voor een alcoholvergunning, €406,45 voor een wijziging van de vergunning en €70,85 voor een tijdelijke ontheffing voor het schenken van zwak alcoholische dranken.",
+          "note": "De kosten voor de vergunningen worden niet genoemd in de bronpagina's.",
+          "source_urls": [
+            "https://www.montfoort.nl/Alle_onderwerpen/Vergunningen_en_ontheffingen/Horeca_en_MKB/Alcoholvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn enkele belangrijke verschillen gevonden tussen de originele tekst en de bronpagina's. De bronpagina's zijn minder specifiek over de verschillende types alcoholvergunningen, gebruiken andere benamingen voor de gemeentelijke locatie, en bevatten geen informatie over de kosten van vergunningen. De meeste andere informatie, zoals openingstijden en vereiste documenten, komt wel overeen."
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HEILOO",
+      "contact": {
+        "phone": "(072) 535 66 66",
+        "email": "info@heiloo.nl",
+        "website": "http://www.heiloo.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 27,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.4,
+    "false_statements": [
+      {
+        "sentence": "U kunt inloggen met e-Herkenning voor het aanvragen van de benodigde vergunningen.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Heiloo is e-Herkenning niet de enige inlogmethode voor het aanvragen van vergunningen. Aanvragen kunnen ook via DigiD worden gedaan voor particulieren."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.heiloo.nl/aanvragen-en-regelen/exploitatievergunning/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/ontheffing-sluitingstijd/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/ondernemen/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/terrasvergunning/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/marktplaatsvergunning/"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor de aanvraag hebben wij de volgende gegevens nodig: [...] Uittreksel Kamer van Koophandel (maximaal 3 maanden oud)",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de vereiste van een KvK-uittreksel van maximaal 3 maanden oud, wat een belangrijke aanvullende voorwaarde is",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/terrasvergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vergunning aanvragen: doe dit minstens 12 weken van tevoren",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt geen minimale aanvraagtermijn van 12 weken vooraf, wat een belangrijke procedurele vereiste is",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/terrasvergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Na sluitingstijd moeten meubilair, schotten en parasols van de openbare weg worden verwijderd",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen specifieke voorwaarden over het verwijderen van terrasmeubilair na sluitingstijd",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/terrasvergunning/"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten enkele belangrijke aanvullende vereisten die niet in de originele tekst staan vermeld, met name rond de aanvraagprocedure voor terrassen. Het gaat om specifieke documentatie-eisen (recent KvK-uittreksel), aanvraagtermijnen (12 weken vooraf) en operationele voorwaarden (verwijderen meubilair). Deze informatie is essentieel voor ondernemers die een terrasvergunning willen aanvragen."
+  }
+}

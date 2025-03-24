@@ -1,0 +1,85 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ETTEN-LEUR",
+      "contact": {
+        "phone": "14 076",
+        "email": "info@etten-leur.nl",
+        "website": "http://www.etten-leur.nl"
+      }
+    },
+    "service": {
+      "id": 8,
+      "name": "Marktvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 8,
+    "false_sentences": 3,
+    "accuracy_percentage": 72.7,
+    "false_statements": [
+      {
+        "sentence": "U kunt de aanvraag voor een marktvergunning online indienen via het OmgevingsloketExterne link.",
+        "status": "false",
+        "note": "Marktvergunningen worden niet via het Omgevingsloket aangevraagd maar direct bij de gemeente Etten-Leur"
+      },
+      {
+        "sentence": "Voor een markt gelijkgesteld met een klein evenement: € 138,- voor 1 editie en € 153,- voor 3 jaar.",
+        "status": "false",
+        "note": "Deze specifieke bedragen komen niet overeen met de actuele legeskosten van de gemeente Etten-Leur"
+      },
+      {
+        "sentence": "Voor een markt gelijkgesteld met een groot evenement: € 191,65 voor 1 editie en € 212,95 voor 3 jaar.",
+        "status": "false",
+        "note": "Deze specifieke bedragen komen niet overeen met de actuele legeskosten van de gemeente Etten-Leur"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.etten-leur.nl/product/orienteren-bij-verbouwplannen/",
+      "https://www.etten-leur.nl/product/standplaatsvergunning/",
+      "https://www.etten-leur.nl/product/evenement/",
+      "https://www.etten-leur.nl/product/omgevingsvergunning-aanvragen/",
+      "https://www.etten-leur.nl/product/ventvergunning/",
+      "https://www.etten-leur.nl"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor een evenement kan gekozen worden om een eenmalige vergunning of een vergunning voor 3 jaar aan te vragen. Een meerjarenvergunning kan verkregen worden als het evenement een keer eerder in dezelfde vorm heeft plaatsgevonden, door dezelfde organisatie wordt georganiseerd en de gestelde voorschriften zijn nageleefd.",
+          "original_reference": "Voor een markt gelijkgesteld met een klein evenement: € 138,- voor 1 editie en € 153,- voor 3 jaar.",
+          "note": "De bronnen vermelden specifieke voorwaarden voor een meerjarenvergunning die niet in de originele tekst staan, zoals de eis dat het evenement eerder in dezelfde vorm moet hebben plaatsgevonden en positief geëvalueerd moet zijn.",
+          "source_urls": [
+            "https://www.etten-leur.nl/product/evenement/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De beslistermijn voor de reguliere procedure is acht weken. Deze termijn kan één keer met zes weken worden verlengd.",
+          "original_reference": "De behandelingstermijn voor een aanvraag bedraagt doorgaans 8 weken.",
+          "note": "De originele tekst vermeldt niet de mogelijkheid tot verlenging met 6 weken, wat wel wordt genoemd in de bronnen.",
+          "source_urls": [
+            "https://www.etten-leur.nl/product/omgevingsvergunning-aanvragen/"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele tekst en de bronnen. Ten eerste ontbreken in de originele tekst de specifieke voorwaarden voor het verkrijgen van een meerjarenvergunning. Ten tweede wordt de mogelijke verlenging van de behandelingstermijn met 6 weken niet vermeld in de originele tekst. Deze informatie is wel belangrijk voor aanvragers om een volledig beeld te krijgen van het proces."
+  }
+}

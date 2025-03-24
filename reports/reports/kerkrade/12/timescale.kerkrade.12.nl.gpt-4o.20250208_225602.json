@@ -1,0 +1,89 @@
+{
+  "context": {
+    "municipality": {
+      "name": "KERKRADE",
+      "contact": {
+        "phone": "14 045",
+        "email": "gemeentehuis@kerkrade.nl",
+        "website": "http://www.kerkrade.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "Bij uitblijven van een besluit binnen de termijn verkrijgt u de vergunning automatisch.",
+        "status": "false",
+        "note": "Bij het uitblijven van een besluit binnen de termijn wordt de vergunning niet automatisch verleend. De Wet dwangsom en beroep bij niet tijdig beslissen is van toepassing, waarbij u eerst een ingebrekestelling moet sturen aan de gemeente Kerkrade."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 6,
+    "invalid_urls": 1,
+    "accuracy_percentage": 85.7,
+    "valid_urls_list": [
+      "https://www.kerkrade.nl/omgevingsvergunning",
+      "https://www.kerkrade.nl/gemeente-kerkrade-helpt-u-bij-de-omgevingswet",
+      "https://www.kerkrade.nl/milieu-vergunning-of-melding",
+      "https://www.kerkrade.nl",
+      "https://www.kerkrade.nl/bodeminformatie-opvragen",
+      "https://www.kerkrade.nl/vergunning-checken-en-vooroverleg"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.kerkrade.nl\">Gemeente",
+        "reason": "INVALID: Error scraping https://www.kerkrade.nl\">Gemeente: HTTPSConnectionPool(host='www.kerkrade.nl%22%3egemeente', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1054e3770>: Failed to resolve 'www.kerkrade.nl%22%3egemeente' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De omgevingsbalie is vanaf januari elke donderdag van 09:00-12:00 en 16:00-18:00 geopend.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over een fysieke omgevingsbalie en openingstijden, terwijl dit een belangrijke service is voor burgers.",
+          "source_urls": [
+            "https://www.kerkrade.nl/gemeente-kerkrade-helpt-u-bij-de-omgevingswet"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor bepaalde werkzaamheden hebt u een omgevingsvergunning nodig. Bijvoorbeeld als u gaat (ver)bouwen, slopen, een alarminstallatie plaatst of een boom wilt kappen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst noemt niet specifiek deze voorbeelden van werkzaamheden waarvoor een omgevingsvergunning nodig is, wat belangrijke praktische informatie is voor aanvragers.",
+          "source_urls": [
+            "https://www.kerkrade.nl/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Door gebruik te maken van een vooroverleg voorkomt u dat u tijdens de vergunningsaanvraag voor verrassingen komt te staan. Ook krijgt u tips mee voor het aanvragen van de omgevingsvergunning.",
+          "original_reference": "Zorg ervoor dat u ook overlegt tijdens het vooroverleg om problemen te voorkomen.",
+          "note": "De bronnen geven een uitgebreidere en concretere toelichting over het nut van vooroverleg dan de originele tekst.",
+          "source_urls": [
+            "https://www.kerkrade.nl/vergunning-checken-en-vooroverleg"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie die niet in de originele tekst staat, waaronder concrete openingstijden van een fysieke omgevingsbalie, specifieke voorbeelden van vergunningplichtige werkzaamheden, en een uitgebreidere toelichting over het vooroverleg. Deze informatie maakt de dienstverlening concreter en praktischer voor burgers."
+  }
+}

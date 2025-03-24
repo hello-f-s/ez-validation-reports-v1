@@ -1,0 +1,86 @@
+{
+  "context": {
+    "municipality": {
+      "name": "VOORSCHOTEN",
+      "contact": {
+        "phone": "14 071",
+        "email": "gemeente@voorschoten.nl",
+        "website": "http://www.voorschoten.nl"
+      }
+    },
+    "service": {
+      "id": 13,
+      "name": "Omzettingsvergunning voor kamerverhuur aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "U ontvangt binnen 8 weken bericht of u de vergunning krijgt.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Voorschoten geldt voor omgevingsvergunningen een beslistermijn van maximaal 8 weken die eenmalig met 6 weken verlengd kan worden. De gemeente kan dus tot 14 weken nodig hebben voor een besluit."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 1,
+    "invalid_urls": 6,
+    "accuracy_percentage": 14.3,
+    "valid_urls_list": [
+      "https://www.voorschoten.nl/form/vs-1213-omgevingsvergunningen-inzien"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.voorschoten.nl/terras-plaatsen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.voorschoten.nl/woning-uit-de-woonruimtevoorraad-halen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.digid.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.eherkenning.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.voorschoten.nl/bouwloket-producten",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.voorschoten.nl/exploitatievergunning-horecabedrijf",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Er zijn geen kosten verbonden aan het digitaal toegestuurd krijgen van aangevraagde en verleende omgevingsvergunningen die ter inzage liggen.",
+          "original_reference": "Voor het aanvragen van vergunningsdiensten worden leges in rekening gebracht.",
+          "note": "De originele tekst geeft aan dat er leges worden gerekend, terwijl de bron specificeert dat er geen kosten zijn voor het inzien/toegestuurd krijgen van vergunningen. Dit is een belangrijk onderscheid in kosten tussen aanvragen en inzien.",
+          "source_urls": [
+            "https://www.voorschoten.nl/form/vs-1213-omgevingsvergunningen-inzien"
+          ]
+        }
+      ]
+    },
+    "summary": "Het belangrijkste verschil betreft de kosteninformatie. Waar de originele tekst algemeen stelt dat er leges worden gerekend voor vergunningsdiensten, specificeert de bronpagina dat het inzien en toegestuurd krijgen van vergunningen kosteloos is. De overige informatie uit de bronnen is ofwel consistent met de originele tekst of biedt geen directe vergelijkingsbasis."
+  }
+}

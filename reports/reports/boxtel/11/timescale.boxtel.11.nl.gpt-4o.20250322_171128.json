@@ -1,0 +1,82 @@
+{
+  "context": {
+    "municipality": {
+      "name": "BOXTEL",
+      "contact": {
+        "phone": "(0411) 65 59 11",
+        "email": "gemeente@boxtel.nl",
+        "website": "http://www.boxtel.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Bekijk de legesverordening van 2025 voor de specifieke kosten onder 'conceptverzoek' in de tarieventabel.",
+        "status": "false",
+        "note": "Er wordt verwezen naar een legesverordening van 2025 wat incorrect is aangezien deze nog niet bestaat. De actuele legesverordening van gemeente Boxtel is die van 2024."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.boxtel.nl/omgevingswet",
+      "https://www.boxtel.nl/informatieverzoek-omgevingsrecht",
+      "https://www.boxtel.nl/omgevingsvergunning",
+      "https://www.boxtel.nl/bestuur-en-organisatie/beleid/invoering-omgevingswet",
+      "https://www.boxtel.nl/aanvragen-regelen-en-melden/vergunningen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.boxtel.nl/invoering-omgevingswet",
+        "reason": "INVALID: Error scraping https://www.boxtel.nl/invoering-omgevingswet: 404 Client Error: Not Found for url: https://www.boxtel.nl/invoering-omgevingswet"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Geen specifieke informatie over de wettelijke termijn van 8 weken voor vergunningsaanvragen gevonden",
+          "original_reference": "Onder de Omgevingswet is de wettelijke termijn voor het afhandelen van vergunningsaanvragen verkort naar 8 weken.",
+          "note": "De genoemde termijn van 8 weken kan niet worden geverifieerd in de beschikbare bronnen. Dit is een belangrijk verschil omdat het gaat om een wettelijke termijn.",
+          "source_urls": [
+            "https://www.boxtel.nl/omgevingsvergunning",
+            "https://www.boxtel.nl/omgevingswet",
+            "https://www.boxtel.nl/bestuur-en-organisatie/beleid/invoering-omgevingswet"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Geen informatie over legesverordening 2025 of conceptverzoek tarieven aangetroffen",
+          "original_reference": "Bekijk de legesverordening van 2025 voor de specifieke kosten onder 'conceptverzoek' in de tarieventabel.",
+          "note": "De verwijzing naar de legesverordening 2025 en bijbehorende tarieven is niet terug te vinden in de bronnen.",
+          "source_urls": [
+            "https://www.boxtel.nl/omgevingsvergunning",
+            "https://www.boxtel.nl/aanvragen-regelen-en-melden/vergunningen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de wettelijke termijn van 8 weken en de legesverordening 2025, die beide niet kunnen worden geverifieerd in de beschikbare bronnen. De bronpagina's bevatten voornamelijk navigatiestructuren maar weinig concrete inhoudelijke informatie over de omgevingsvergunning. Veel details uit de originele tekst kunnen daarom niet worden gecontroleerd op juistheid."
+  }
+}

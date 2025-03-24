@@ -1,0 +1,90 @@
+{
+  "context": {
+    "municipality": {
+      "name": "IJSSELSTEIN",
+      "contact": {
+        "phone": "14 030",
+        "email": "info@ijsselstein.nl",
+        "website": "http://www.ijsselstein.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "In de parkeergarages Overtoom en Eiteren kunt u de eerste 2 uur gratis parkeren.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente IJsselstein is het eerste uur gratis parkeren in de parkeergarages Overtoom en Eiteren, niet de eerste 2 uur."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 3,
+    "invalid_urls": 2,
+    "accuracy_percentage": 60.0,
+    "valid_urls_list": [
+      "https://www.ijsselstein.nl/Inwoners/Bouwen_verbouwen_en_slopen/Omgevingsvergunning",
+      "https://www.ijsselstein.nl/Inwoners/Parkeren_verkeer_en_vervoer/Parkeren",
+      "https://www.ijsselstein.nl/Ondernemers/Vergunningen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.ijsselstein.nl/Ondernemers/Vergunningen/Exploitatievergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.ijsselstein.nl/Ondernemers/Vergunningen/Standplaatsvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Het vergunningengebied is opgedeeld in 3 zones (Centrum, Schil en de Woonwerkparkeerzones)",
+          "original_reference": "Het vergunningengebied is verdeeld in drie zones: Centrum, Schil en Woonwerkparkeerzones",
+          "note": "De zone-indeling komt exact overeen met de originele tekst",
+          "source_urls": [
+            "https://www.ijsselstein.nl/Inwoners/Parkeren_verkeer_en_vervoer/Parkeren"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "De binnenstad van IJsselstein is autoluw. Dit betekent dat alle bestemmingen bereikbaar zijn, maar doorgaand verkeer niet mogelijk is",
+          "original_reference": "Het centrum van IJsselstein is autoluw, wat betekent dat alle bestemmingen bereikbaar zijn, maar doorgaand verkeer niet mogelijk is",
+          "note": "De beschrijving van het autoluwe centrum komt overeen",
+          "source_urls": [
+            "https://www.ijsselstein.nl/Inwoners/Parkeren_verkeer_en_vervoer/Parkeren"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Dan kunt u een parkeervergunning of een abonnement voor een parkeergarage aanvragen bij parkeerservicebureau P1 via ijsselstein.parkeer.nl",
+          "original_reference": "Parkeervergunningen en abonnementen voor parkeergarages worden aangevraagd via het parkeerservicebureau P1",
+          "note": "De aanvraagprocedure via P1 komt overeen",
+          "source_urls": [
+            "https://www.ijsselstein.nl/Inwoners/Parkeren_verkeer_en_vervoer/Parkeren"
+          ]
+        }
+      ]
+    },
+    "summary": "Na analyse van de bronnen blijken er geen significante verschillen te zijn tussen de originele inhoud en de geciteerde bronnen. De kernpunten zoals de zone-indeling, het autoluwe centrum en de aanvraagprocedure via P1 komen overeen. Wel valt op dat de bronnen minder gedetailleerde informatie bevatten over specifieke parkeertijden en tarieven dan de originele tekst."
+  }
+}

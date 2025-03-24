@@ -1,0 +1,100 @@
+{
+  "context": {
+    "municipality": {
+      "name": "GRONINGEN",
+      "contact": {
+        "phone": "14 050",
+        "email": "info@groningen.nl",
+        "website": "http://gemeente.groningen.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "Bij aanvraag van een ontheffing voor bedrijfsvoertuigen bedragen de kosten €120",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Groningen bedragen de legeskosten voor een ontheffing voor bedrijfsvoertuigen €124,45 (2024), niet €120"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 9,
+    "valid_urls": 5,
+    "invalid_urls": 4,
+    "accuracy_percentage": 55.6,
+    "valid_urls_list": [
+      "https://gemeente.groningen.nl/parkeervergunning-voor-bewoners",
+      "https://gemeente.groningen.nl/parkeervergunning-voor-markthandelaar-aanvragen",
+      "https://gemeente.groningen.nl/ontheffing-voor-3-of-meer-bedrijfsvoertuigen-op-de-stoep",
+      "https://gemeente.groningen.nl/parkeervergunning-voor-bedrijven",
+      "https://gemeente.groningen.nl/maatschappelijke-parkeervergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.groningen.nl/parkeervergunning-markthandelaar",
+        "reason": "INVALID: Error scraping https://www.groningen.nl/parkeervergunning-markthandelaar: 404 Client Error: Not Found for url: https://groningen.nl/parkeervergunning-markthandelaar"
+      },
+      {
+        "url": "https://www.groningen.nl/maatschappelijke-parkeervergunning",
+        "reason": "INVALID: Error scraping https://www.groningen.nl/maatschappelijke-parkeervergunning: 404 Client Error: Not Found for url: https://groningen.nl/maatschappelijke-parkeervergunning"
+      },
+      {
+        "url": "https://www.groningen.nl/parkeervergunning-bedrijven",
+        "reason": "INVALID: Error scraping https://www.groningen.nl/parkeervergunning-bedrijven: 404 Client Error: Not Found for url: https://groningen.nl/parkeervergunning-bedrijven"
+      },
+      {
+        "url": "https://www.groningen.nl/ontheffing-bedrijfsvoertuigen",
+        "reason": "INVALID: Error scraping https://www.groningen.nl/ontheffing-bedrijfsvoertuigen: 404 Client Error: Not Found for url: https://groningen.nl/ontheffing-bedrijfsvoertuigen"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De vergunning moet wel op het kenteken staan van de auto die u parkeert.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist deze belangrijke voorwaarde over het kenteken voor bedrijfsvergunningen",
+          "source_urls": [
+            "https://gemeente.groningen.nl/parkeervergunning-voor-bedrijven"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U kunt meerdere kentekens in uw bedrijfsaccount opnemen. De kentekens hoeven niet op naam of bedrijfsnaam te staan.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de flexibiliteit rond kentekens in het bedrijfsaccount",
+          "source_urls": [
+            "https://gemeente.groningen.nl/parkeervergunning-voor-bedrijven"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U bent als bedrijf of organisatie gevestigd in betaald parkeergebied, 2e of 3e schil.",
+          "original_reference": "Uw bedrijf moet gevestigd zijn in een gebied met betaald parkeren, maar niet in de binnenstad",
+          "note": "De bronpagina specificeert dat het om de 2e of 3e schil moet gaan, wat specifieker is dan de originele tekst",
+          "source_urls": [
+            "https://gemeente.groningen.nl/maatschappelijke-parkeervergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen aanvullende specificaties over kentekeneisen en parkeergebieden die niet in de originele tekst staan vermeld. De bronnen geven meer gedetailleerde informatie over de flexibiliteit van kentekenbeheer in bedrijfsaccounts en specificeren nauwkeuriger in welke parkeerzones (2e en 3e schil) bepaalde vergunningen geldig zijn."
+  }
+}

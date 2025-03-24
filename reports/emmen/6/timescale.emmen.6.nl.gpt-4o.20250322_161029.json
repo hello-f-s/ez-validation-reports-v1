@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "EMMEN",
+      "contact": {
+        "phone": "14 0591",
+        "email": "gemeente@emmen.nl",
+        "website": "http://www.emmen.nl"
+      }
+    },
+    "service": {
+      "id": 6,
+      "name": "Integriteitsonderzoek (Wet Bibob)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 10,
+    "true_sentences": 9,
+    "false_sentences": 1,
+    "accuracy_percentage": 90.0,
+    "false_statements": [
+      {
+        "sentence": "Een negatief Bibob-advies blijft 5 jaar geldig, maar de exacte duur voor het uitvoeren van het Bibob-onderzoek zelf wordt niet gespecificeerd.",
+        "status": "false",
+        "note": "Een negatief Bibob-advies blijft 2 jaar (niet 5 jaar) geldig volgens de officiële richtlijnen van de gemeente Emmen en de Wet Bibob."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://gemeente.emmen.nl/bouwtoezicht-op-illegale-bouwwerken",
+      "https://gemeente.emmen.nl/bibob-onderzoek",
+      "https://gemeente.emmen.nl/woo-verzoek",
+      "https://gemeente.emmen.nl/verklaring-omtrent-het-gedrag",
+      "https://gemeente.emmen.nl/bodemonderzoek"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Zo werkt een Bibob-onderzoek: De gemeente stuurt u een Bibob-vragenformulier. U vult het formulier helemaal in en voegt de gevraagde informatie toe. Doet u dit niet? Dan krijgt u een negatief Bibob-advies.",
+          "original_reference": "Specificieke stappen voor het aanvragen van een Bibob-onderzoek zijn niet gedetailleerd beschreven.",
+          "note": "De bron beschrijft wel degelijk specifieke stappen voor het Bibob-onderzoek, terwijl de originele tekst stelt dat deze niet gedetailleerd beschreven zijn.",
+          "source_urls": [
+            "https://gemeente.emmen.nl/bibob-onderzoek"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Blijkt dat er zwart geld of crimineel verdiend geld in uw bedrijf omgaat? Dan kan de gemeente de vergunning, subsidie of opdracht weigeren of intrekken.",
+          "original_reference": "No matching information",
+          "note": "De bron specificeert een concrete reden voor weigering/intrekking die niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://gemeente.emmen.nl/bibob-onderzoek"
+          ]
+        }
+      ]
+    },
+    "summary": "De broninhoud bevat belangrijke aanvullende informatie over het Bibob-onderzoek die niet in de originele tekst staat. Met name de concrete procedurestappen en specifieke weigeringsgronden worden in de bron wel genoemd maar ontbreken in de originele tekst. Deze informatie is essentieel voor aanvragers om het proces goed te begrijpen."
+  }
+}

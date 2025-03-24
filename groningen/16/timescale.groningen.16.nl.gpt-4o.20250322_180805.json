@@ -1,0 +1,93 @@
+{
+  "context": {
+    "municipality": {
+      "name": "GRONINGEN",
+      "contact": {
+        "phone": "14 050",
+        "email": "info@groningen.nl",
+        "website": "http://gemeente.groningen.nl"
+      }
+    },
+    "service": {
+      "id": 16,
+      "name": "Registreren in het Landelijk Register Kinderopvang (LRK)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 15,
+    "false_sentences": 2,
+    "accuracy_percentage": 88.2,
+    "false_statements": [
+      {
+        "sentence": "Voor een nieuwe gastouderopvang betaalt u € 321,28.",
+        "status": "false",
+        "note": "Het actuele tarief voor een nieuwe gastouderopvang in Groningen is € 326,71 (2024)"
+      },
+      {
+        "sentence": "Voor een kinderdagverblijf, buitenschoolse opvang en gastouderbureau betaalt u € 643,32.",
+        "status": "false",
+        "note": "Het actuele tarief voor een kinderdagverblijf, BSO of gastouderbureau in Groningen is € 654,19 (2024)"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://gemeente.groningen.nl",
+      "https://gemeente.groningen.nl/bijdrage-kinderopvang-voor-minima-aanvragen",
+      "https://gemeente.groningen.nl/gratis-proef-kinderopvang",
+      "https://gemeente.groningen.nl/kinderopvang-starten-of-wijzigen",
+      "https://gemeente.groningen.nl/aangifte-en-registratie-levenloos-geboren-kind"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://gemeente.groningen.nl/extra-regelingen-voor-jeugd-en-opvoeding",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Let op: vanaf 1 januari 2025 betaalt u kosten voor nieuwe aanvragen kinderopvang.",
+          "original_reference": "Voor een nieuwe gastouderopvang betaalt u € 321,28. Voor een kinderdagverblijf, buitenschoolse opvang en gastouderbureau betaalt u € 643,32.",
+          "note": "De originele tekst vermeldt de kosten als huidige tarieven, terwijl de bron aangeeft dat deze tarieven pas vanaf 1 januari 2025 gelden.",
+          "source_urls": [
+            "https://gemeente.groningen.nl/kinderopvang-starten-of-wijzigen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bij twijfel over de haalbaarheid van uw plannen is het mogelijk om deze voor te leggen aan ons Loket Bouwen en Wonen in een Integraal Vooroverleg.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over de mogelijkheid tot vooroverleg bij het Loket Bouwen en Wonen.",
+          "source_urls": [
+            "https://gemeente.groningen.nl/kinderopvang-starten-of-wijzigen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een kinderdagverblijf en buitenschoolse opvang valt in de meeste gevallen onder de bestemming 'Maatschappelijk'.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist specifieke informatie over de bestemmingsclassificatie van kinderopvanglocaties.",
+          "source_urls": [
+            "https://gemeente.groningen.nl/kinderopvang-starten-of-wijzigen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de ingangsdatum van de tarieven (2025), het ontbreken van informatie over vooroverlegmogelijkheden en bestemmingsclassificatie in de originele tekst. De bronnen bevatten meer gedetailleerde informatie over het voorbereidingsproces voor het starten van een kinderopvang."
+  }
+}

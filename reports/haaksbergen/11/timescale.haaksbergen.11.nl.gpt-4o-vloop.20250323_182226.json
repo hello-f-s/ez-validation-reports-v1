@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HAAKSBERGEN",
+      "contact": {
+        "phone": "(053) 573 45 67",
+        "email": "gemeente@haaksbergen.nl",
+        "website": "http://www.haaksbergen.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "Voor omgevingsvergunningen voor de activiteit milieu of meldingen worden er geen leges in rekening gebracht.",
+        "status": "false",
+        "note": "Volgens de legesverordening van gemeente Haaksbergen worden er wel degelijk leges in rekening gebracht voor omgevingsvergunningen met milieuactiviteiten. De exacte kosten zijn afhankelijk van het type activiteit en de complexiteit van de aanvraag."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.haaksbergen.nl/Vergunningen/101107-Omgevingsvergunning.html",
+      "https://www.haaksbergen.nl/ondernemers/Bedrijfstarten/Vergunningen-voor-bedrijven.html",
+      "https://www.haaksbergen.nl/ondernemers/Bedrijfstarten/Vergunningen-voor-bedrijven/Milieuvergunning-of-melding-bedrijven.html",
+      "https://www.haaksbergen.nl/ondernemers/Bedrijf-voeren/Milieu.html",
+      "https://www.haaksbergen.nl/ondernemers/Bedrijfstarten.html"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Denk hierbij bijvoorbeeld aan een verbouwing van een monument of de bouw van een kantoorpand waar meer dan 50 personen aanwezig zullen zijn.",
+          "original_reference": "Bijvoorbeeld bij de verbouwing van een monument of de bouw van een groot kantoorpand.",
+          "note": "De bronpagina specificeert een concrete voorwaarde voor kantoorpanden (meer dan 50 personen), terwijl de originele tekst alleen spreekt over 'groot kantoorpand'.",
+          "source_urls": [
+            "https://www.haaksbergen.nl/Vergunningen/101107-Omgevingsvergunning.html"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Meestal is dan het Besluit algemene regels voor inrichtingen milieubeer (Activiteitenbesluit) van toepassing.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat specifieke informatie over het Activiteitenbesluit die ontbreekt in de originele tekst maar wel relevant is voor de context.",
+          "source_urls": [
+            "https://www.haaksbergen.nl/ondernemers/Bedrijfstarten/Vergunningen-voor-bedrijven/Milieuvergunning-of-melding-bedrijven.html"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De omgevingsvergunning vervangt onder andere de bouwvergunning, sloopvergunning, milieuvergunning en kapvergunning.",
+          "original_reference": "zoals bouwvergunningen, sloopvergunningen en milieuvergunningen.",
+          "note": "De bronpagina noemt expliciet ook de kapvergunning als onderdeel van de omgevingsvergunning, wat niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.haaksbergen.nl/ondernemers/Bedrijfstarten/Vergunningen-voor-bedrijven.html"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten enkele specifiekere details die niet of minder gedetailleerd in de originele tekst staan, zoals concrete criteria voor kantoorpanden, extra informatie over het Activiteitenbesluit en een uitgebreidere opsomming van vergunningtypen. Deze verschillen zijn vooral aanvullend van aard en niet tegenstrijdig met de kernboodschap van de originele tekst."
+  }
+}

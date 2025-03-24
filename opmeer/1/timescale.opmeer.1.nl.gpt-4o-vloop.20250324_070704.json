@@ -1,0 +1,73 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OPMEER",
+      "contact": {
+        "phone": "(0226) 36 33 33",
+        "email": "gemeente@opmeer.nl",
+        "website": "http://www.opmeer.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 27,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.4,
+    "false_statements": [
+      {
+        "sentence": "Het tarief voor een aanvraag om een Alcoholwetvergunning bedraagt € 465,90.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Opmeer is dit bedrag niet correct. Het huidige tarief voor een Alcoholwetvergunning is anders vastgesteld."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 4,
+    "valid_urls": 4,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.opmeer.nl/alcoholwetvergunning",
+      "https://www.opmeer.nl/exploitatievergunning-horecabedrijf",
+      "https://www.opmeer.nl/omgevingsvergunning",
+      "https://www.opmeer.nl/geluidsoverlast-veroorzaken"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Op basis van artikel 2:28 lid 3 van de Algemeen Plaatselijke Verordening gemeente Opmeer worden para-commerciële sportverenigingen (waarbij horeca niet de hoofdactiviteit is) zonder terras vrijgesteld van de exploitatievergunningsplicht.",
+          "original_reference": "Een uitzondering geldt voor para-commerciële sportverenigingen zonder terras.",
+          "note": "De brontekst specificeert expliciet dat het gaat om sportverenigingen waarbij horeca niet de hoofdactiviteit is, wat een belangrijke nuancering is die ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.opmeer.nl/exploitatievergunning-horecabedrijf"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Ook wanneer er iets aan uw inrichting (bijv. door een verbouwing), dan moet u een wijziging van uw vergunning aanvragen.",
+          "original_reference": "No matching information",
+          "note": "Deze belangrijke informatie over het melden van wijzigingen aan de inrichting ontbreekt volledig in de originele tekst.",
+          "source_urls": [
+            "https://www.opmeer.nl/alcoholwetvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont twee belangrijke verschillen: een ontbrekende specificatie over de voorwaarden voor vrijstelling van para-commerciële sportverenigingen en het ontbreken van informatie over de meldingsplicht bij wijzigingen aan de inrichting. Deze informatie is relevant voor de volledigheid en nauwkeurigheid van de dienstverlening."
+  }
+}

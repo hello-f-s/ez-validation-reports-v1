@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "NIJMEGEN",
+      "contact": {
+        "phone": "14 024",
+        "email": "gemeente@nijmegen.nl",
+        "website": "http://www.nijmegen.nl"
+      }
+    },
+    "service": {
+      "id": 3,
+      "name": "Certificaat voor opgraving aanvragen en vondst melden"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 31,
+    "true_sentences": 30,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.8,
+    "false_statements": [
+      {
+        "sentence": "Voor het aanvragen van een ontheffing voor het gebruik van metaaldetectoren, wat onder specifieke voorwaarden kan worden verleend, geldt een tarief van €10.",
+        "status": "false",
+        "note": "Op basis van de officiële legesverordening van de gemeente Nijmegen wordt er geen specifiek tarief van €10 genoemd voor een ontheffing voor metaaldetectoren. Dit tarief is niet terug te vinden in de officiële documentatie van de gemeente."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.nijmegen.nl/diensten/archeologie/melden-van-vondsten/",
+      "https://www.nijmegen.nl/diensten/archeologie/archeologisch-onderzoek/",
+      "https://www.nijmegen.nl/diensten/archeologie/",
+      "https://www.nijmegen.nl/diensten/vergunningen/metaaldetectoren/",
+      "https://www.nijmegen.nl/diensten/bouwen-en-wonen/bouwen-of-verbouwen/"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "In de gemeente Nijmegen mag u standaard geen metaaldetectoren gebruiken. Wij willen zorgen dat waardevol archeologisch materiaal niet wordt aangetast of verdwijnt.",
+          "original_reference": "Het gebruik van metaaldetectoren is in Nijmegen verboden om te voorkomen dat waardevol archeologisch materiaal wordt aangetast of verdwijnt.",
+          "note": "De informatie over het verbod op metaaldetectoren en de reden daarvoor komt overeen",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/vergunningen/metaaldetectoren/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Dit detectorverbod geldt niet voor de gemeentelijke archeologen, omdat zij een vergunning hebben om te mogen graven.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de uitzondering voor gemeentelijke archeologen met graafvergunning",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/vergunningen/metaaldetectoren/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bedrijven kunnen een ontheffing aanvragen als zij een metaaldetector nodig hebben voor het werk. Zet in uw mail: Om welk gebied het gaat, De datum, Tijdsduur, Reden voor het gebruik",
+          "original_reference": "Voor specifieke werkzaamheden kan een ontheffing worden aangevraagd.",
+          "note": "De originele tekst mist de specifieke vereisten voor het aanvragen van een ontheffing en vermeldt niet dat dit specifiek voor bedrijven is",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/vergunningen/metaaldetectoren/"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont enkele belangrijke verschillen in de informatie over metaaldetectoren. De originele tekst mist cruciale details over wie er uitgezonderd is van het verbod (gemeentelijke archeologen) en welke specifieke informatie bedrijven moeten aanleveren bij een ontheffingsaanvraag. De kern van het beleid en de kosten voor ontheffing (€10) zijn wel consistent tussen beide bronnen."
+  }
+}

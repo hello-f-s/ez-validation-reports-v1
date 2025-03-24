@@ -1,0 +1,47 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DEN HAAG",
+      "contact": {
+        "phone": "14 070",
+        "email": "null",
+        "website": "http://www.denhaag.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "Bedrijven gebruiken eHerkenning (EH2) voor de aanvraag.",
+        "status": "false",
+        "note": "Voor het aanvragen van een omgevingsvergunning in Den Haag is minimaal eHerkenning niveau 3 (EH3) vereist, niet EH2. Dit is een veiligheidsvereiste van de gemeente Den Haag voor digitale identificatie bij zakelijke dienstverlening."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 1,
+    "valid_urls": 0,
+    "invalid_urls": 1,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.denhaag.nl/",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  }
+}

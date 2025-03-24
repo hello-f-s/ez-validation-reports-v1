@@ -1,0 +1,79 @@
+{
+  "context": {
+    "municipality": {
+      "name": "BARNEVELD",
+      "contact": {
+        "phone": "14 0342",
+        "email": "info@barneveld.nl",
+        "website": "http://www.barneveld.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 10,
+    "false_sentences": 1,
+    "accuracy_percentage": 90.9,
+    "false_statements": [
+      {
+        "sentence": "Het aanvragen van een VOG bij de balie kost € 41,35.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Barneveld kost een VOG-aanvraag € 41,65. Het genoemde bedrag van € 41,35 is onjuist."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.barneveld.nl/vergunningen-en-ontheffingen/horeca/exploitatievergunning-aanvragen/vragenlijst-bibob",
+      "https://www.barneveld.nl/ondernemen/kinderopvang-starten-of-wijzigen",
+      "https://www.barneveld.nl/paspoort-rijbewijs-documenten/documenten-aanvragen/bewijs-van-nederlanderschap-aanvragen",
+      "https://www.barneveld.nl/paspoort-rijbewijs-documenten/documenten-aanvragen/verklaring-omtrent-gedrag-aanvragen",
+      "https://www.barneveld.nl/paspoort-rijbewijs-documenten/documenten-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://example.com",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vrijwilligers die voor een organisatie werken met kwetsbare mensen en/of kinderen, kunnen in aanmerking komen voor een gratis VOG. Hiervoor moet de vrijwilligersorganisatie zich aanmelden voor de regeling bij het ministerie van Veiligheid en Justitie via www.gratisvog.nl",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de gratis VOG-regeling voor vrijwilligers, wat een belangrijke uitzondering is op de standaard kosten.",
+          "source_urls": [
+            "https://www.barneveld.nl/paspoort-rijbewijs-documenten/documenten-aanvragen/verklaring-omtrent-gedrag-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een verklaring omtrent gedrag (VOG) is een bewijs van goed gedrag.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist de definitie van wat een VOG precies is, namelijk een bewijs van goed gedrag.",
+          "source_urls": [
+            "https://www.barneveld.nl/paspoort-rijbewijs-documenten/documenten-aanvragen/verklaring-omtrent-gedrag-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten twee belangrijke aanvullingen die niet in de originele tekst staan: de mogelijkheid voor vrijwilligers om een gratis VOG aan te vragen via www.gratisvog.nl en de definitie van een VOG als bewijs van goed gedrag. De overige informatie zoals kosten, aanvraagprocedure en vereiste documenten komt overeen met de originele tekst."
+  }
+}

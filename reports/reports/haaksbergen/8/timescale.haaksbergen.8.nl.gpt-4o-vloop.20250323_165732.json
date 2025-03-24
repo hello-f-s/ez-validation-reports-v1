@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HAAKSBERGEN",
+      "contact": {
+        "phone": "(053) 573 45 67",
+        "email": "gemeente@haaksbergen.nl",
+        "website": "http://www.haaksbergen.nl"
+      }
+    },
+    "service": {
+      "id": 8,
+      "name": "Marktvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 13,
+    "false_sentences": 2,
+    "accuracy_percentage": 86.7,
+    "false_statements": [
+      {
+        "sentence": "De aanvraag voor een omgevingsvergunning moet digitaal worden ingediend via het Omgevingsloket.",
+        "status": "false",
+        "note": "Een marktvergunning wordt niet via het Omgevingsloket aangevraagd maar via een specifiek aanvraagformulier voor standplaats/marktvergunning bij de gemeente Haaksbergen"
+      },
+      {
+        "sentence": "Alle aanvragen voor vergunningen moeten digitaal worden ingediend via het Omgevingsloket.",
+        "status": "false",
+        "note": "Niet alle vergunningen gaan via het Omgevingsloket. Marktvergunningen worden via een apart aanvraagformulier bij de gemeente aangevraagd"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.haaksbergen.nl/ondernemers/Bedrijfstarten.html",
+      "https://www.haaksbergen.nl/Vergunningen/101107-Omgevingsvergunning.html",
+      "https://www.haaksbergen.nl/ondernemers/Ondernemend-Haaksbergen/Ondernemersplein.html",
+      "https://www.haaksbergen.nl/Vergunningen/Exploitatievergunning.html",
+      "https://www.haaksbergen.nl/ondernemers/Bedrijfstarten/Vergunningen-voor-bedrijven.html"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor de volgende openbare inrichtingen moet u een exploitatievergunning aanvragen: Hotel, Restaurant of eetcafé, Pension, (Internet)Café, Waterpijpcafé, Cafetaria, Snackbar, Discotheek, Buurthuis, Afhaalzaak, Clubhuis/Kantine, Terras",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist een specifieke lijst van type ondernemingen waarvoor een exploitatievergunning vereist is. Deze belangrijke informatie staat wel in de bronnen.",
+          "source_urls": [
+            "https://www.haaksbergen.nl/Vergunningen/Exploitatievergunning.html"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Aanvraagformulier exploitatievergunning 2022 (pdf | 620 kB), Vragenformulier Bibob (pdf | 60 kB)",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de specifieke formulieren die nodig zijn voor de aanvraag, terwijl de bron wel concrete documenten met bestandsgroottes noemt.",
+          "source_urls": [
+            "https://www.haaksbergen.nl/Vergunningen/Exploitatievergunning.html"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Uitzonderingen: Een restauratie in een winkelbedrijf als het een nevenactiviteit betreft, een restauratie van een zorginstelling of museum, een bedrijfskantine/restaurant (voor eigen personeel)",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over uitzonderingen op de vergunningplicht die wel in de bronnen staat vermeld.",
+          "source_urls": [
+            "https://www.haaksbergen.nl/Vergunningen/Exploitatievergunning.html"
+          ]
+        }
+      ]
+    },
+    "summary": "De originele tekst mist enkele essentiële details die wel in de bronnen staan, waaronder een specifieke lijst van bedrijfstypen die een exploitatievergunning nodig hebben, concrete aanvraagformulieren, en belangrijke uitzonderingen op de vergunningplicht. De basisinformatie over procedures en contactgegevens komt wel overeen met de bronnen."
+  }
+}

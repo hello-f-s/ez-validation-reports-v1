@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "KERKRADE",
+      "contact": {
+        "phone": "14 045",
+        "email": "gemeentehuis@kerkrade.nl",
+        "website": "http://www.kerkrade.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "Er wordt geen informatie over kosten en betalen gegeven op de website.",
+        "status": "false",
+        "note": "Op de website van gemeente Kerkrade staat wel degelijk informatie over de legeskosten voor een exploitatievergunning horeca. Deze informatie is te vinden in de legesverordening van de gemeente Kerkrade."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.kerkrade.nl/standplaats-aanvragen",
+      "https://www.kerkrade.nl/openingstijden-horeca-eenmalig-aanpassen",
+      "https://www.kerkrade.nl/form/parkeervergunning/aanvraag-0",
+      "https://www.kerkrade.nl/alcoholvergunning",
+      "https://www.kerkrade.nl/exploitatievergunning-horecabedrijf"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "De eigenaar of leidinggevende is minimaal 21 jaar oud en van onbesproken gedrag. De gemeente kan vragen om een Verklaring omtrent het gedrag (VOG).",
+          "original_reference": "De eigenaar of leidinggevende is minimaal 21 jaar oud en van onbesproken gedrag. De gemeente kan vragen om een Verklaring omtrent het gedrag (VOG).",
+          "note": "De leeftijdseis en VOG-vereiste komen exact overeen met de originele tekst",
+          "source_urls": [
+            "https://www.kerkrade.nl/exploitatievergunning-horecabedrijf"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Dit geldt voor elk horecabedrijf, ook als u geen alcohol schenkt. Een horecabedrijf is bijvoorbeeld een: hotel; restaurant, café of snackbar; discotheek; buurthuis of clubhuis.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen specifieke voorbeelden van wat als horecabedrijf wordt beschouwd, terwijl de bronpagina dit wel duidelijk specificeert",
+          "source_urls": [
+            "https://www.kerkrade.nl/exploitatievergunning-horecabedrijf"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "u een horecabedrijf wilt starten of overnemen; u uw horecabedrijf wilt uitbreiden door een verbouwing; de rechtsvorm van uw horecabedrijf verandert; uw horecabedrijf een andere leidinggevende krijgt; u een terras wilt starten of uw terras wilt uitbreiden",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de specifieke situaties waarin een exploitatievergunning nodig is, terwijl de bronpagina deze wel uitgebreid beschrijft",
+          "source_urls": [
+            "https://www.kerkrade.nl/exploitatievergunning-horecabedrijf"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten belangrijke aanvullende informatie die niet in de originele tekst staat, met name over de specifieke types horecabedrijven en situaties waarin een exploitatievergunning vereist is. De kernvoorwaarden zoals leeftijdseisen en VOG-vereisten zijn consistent tussen beide bronnen. De aanvullende informatie maakt de vereisten en toepassingsgebied van de vergunning duidelijker voor aanvragers."
+  }
+}

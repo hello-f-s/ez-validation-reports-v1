@@ -1,0 +1,89 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ZWOLLE",
+      "contact": {
+        "phone": "14 038",
+        "email": "postbus@zwolle.nl",
+        "website": "http://www.zwolle.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 31,
+    "true_sentences": 30,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.8,
+    "false_statements": [
+      {
+        "sentence": "Het Stadskantoor is alleen op afspraak te bezoeken, tussen 08.30 en 17.00 uur.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Zwolle is het Stadskantoor geopend van 8:30 tot 17:00 uur op maandag, dinsdag, woensdag en vrijdag, en op donderdag van 8:30 tot 19:00 uur."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 3,
+    "invalid_urls": 4,
+    "accuracy_percentage": 42.9,
+    "valid_urls_list": [
+      "https://www.zwolle.nl/melding-klein-evenement-doorgeven",
+      "https://www.zwolle.nl/omgevingsvergunning-en-melding",
+      "https://www.zwolle.nl"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.zwolle.nl/veelgestelde-vragen-over-de-omgevingswet",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.zwolle.nl/vergunning-voor-evenement-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.zwolle.nl/melding-evenementenkalender-volgend-jaar",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.zwolle.nl/leges-evenementenvergunningen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u een klein evenement organiseert, moet u dat ten minste 10 werkdagen voorafgaand aan het evenement bij de gemeente melden.",
+          "original_reference": "De aanvraagtermijn voor een grootschalig evenement is minimaal 12 weken voor het plaatsvinden, terwijl overige evenementen ten minste 8 weken vooraf aangevraagd moeten worden.",
+          "note": "De bronpagina vermeldt een aanvraagtermijn van 10 werkdagen voor kleine evenementen, terwijl de originele tekst alleen termijnen voor grootschalige (12 weken) en overige evenementen (8 weken) noemt.",
+          "source_urls": [
+            "https://www.zwolle.nl/melding-klein-evenement-doorgeven"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u een besloten feest houdt, hoeft u dat niet door te geven. Dat wordt namelijk niet gezien als een klein evenement.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat aanvullende informatie over besloten feesten die niet vermeld staat in de originele tekst. Dit is belangrijke informatie voor potentiële aanvragers.",
+          "source_urls": [
+            "https://www.zwolle.nl/melding-klein-evenement-doorgeven"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de aanvraagtermijn voor kleine evenementen (10 werkdagen volgens de bron vs. niet vermeld in origineel) en de toevoeging dat besloten feesten niet als klein evenement worden gezien en daarom geen melding vereisen. De overige voorwaarden en bepalingen komen grotendeels overeen met de originele tekst."
+  }
+}

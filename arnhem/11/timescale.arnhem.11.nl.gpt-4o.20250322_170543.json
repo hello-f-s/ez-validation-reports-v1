@@ -1,0 +1,93 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ARNHEM",
+      "contact": {
+        "phone": "null",
+        "email": "null",
+        "website": "http://www.arnhem.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 12,
+    "false_sentences": 3,
+    "accuracy_percentage": 80.0,
+    "false_statements": [
+      {
+        "sentence": "Voor het aanvragen van een omgevingsvergunning voor reclame bedragen de kosten € 189.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Arnhem zijn de kosten voor een reclame-omgevingsvergunning € 195,50."
+      },
+      {
+        "sentence": "Voor een conceptverzoek zijn de kosten € 561.",
+        "status": "false",
+        "note": "De actuele kosten voor een conceptverzoek in Arnhem bedragen € 576,50."
+      },
+      {
+        "sentence": "Voor vragen kunt u contact opnemen met de afdeling Vergunningen via het contactformulier of telefoonnummer 0800-1809.",
+        "status": "false",
+        "note": "Het telefoonnummer 0800-1809 is onjuist. Het correcte algemene telefoonnummer van gemeente Arnhem is 0900-1809."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.arnhem.nl/Inwoners/bouwen_en_verbouwen/U_wilt_bouwen_of_verbouwen/Conceptverzoek",
+      "https://www.arnhem.nl/Inwoners/bouwen_en_verbouwen/U_wilt_bouwen_of_verbouwen/omgevingsvergunning",
+      "https://www.arnhem.nl/Inwoners/bouwen_en_verbouwen/U_wilt_bouwen_of_verbouwen/omgevingsvergunning/Milieubelastende_werkzaamheden",
+      "https://www.arnhem.nl/Inwoners/bouwen_en_verbouwen/U_wilt_bouwen_of_verbouwen/omgevingsvergunning/Reclame_uitingen_plaatsen",
+      "https://www.arnhem.nl/Ondernemers/horeca/horeca_en_vergunningen/Terrasvergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u een groter en ingewikkelder bouwplan heeft, of als u een nieuw plan wilt ontwikkelen dat niet in het omgevingsplan past, dan is het aanvragen van een Nieuw Ruimtelijk Initiatief mogelijk beter.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst maakt geen onderscheid tussen kleine en grote bouwplannen bij conceptverzoeken. De brontekst specificeert dat conceptverzoeken vooral voor kleine wijzigingen zijn bedoeld en dat grote projecten een andere procedure vereisen.",
+          "source_urls": [
+            "https://www.arnhem.nl/Inwoners/bouwen_en_verbouwen/U_wilt_bouwen_of_verbouwen/Conceptverzoek"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor een omgevingsvergunning voor het overkappen van een terras hoeft u niet te betalen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over kosteloze vergunningen voor terrasoverkappingen, terwijl dit wel expliciet wordt vermeld in de bronpagina.",
+          "source_urls": [
+            "https://www.arnhem.nl/Ondernemers/horeca/horeca_en_vergunningen/Terrasvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bij uw aanvraag voor de omgevingsvergunning moet u de volgende documenten aanleveren: Een situatietekening bestaande en nieuwe situatie, Foto's van het perceel, Gegevens van de overkapping...",
+          "original_reference": "Bij het aanvragen van een vergunning voor reclame, moet u gegevens aanleveren zoals een situatietekening, foto's, gegevens over constructie en brandveiligheid.",
+          "note": "De originele tekst noemt alleen documenten voor reclamevergunningen, terwijl de bron specifieke documentvereisten voor terrasoverkappingen beschrijft.",
+          "source_urls": [
+            "https://www.arnhem.nl/Ondernemers/horeca/horeca_en_vergunningen/Terrasvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de specificatie van conceptverzoeken (klein vs. groot), kosteloze vergunningen voor terrasoverkappingen, en specifieke documentvereisten voor verschillende type vergunningen. De originele tekst mist enkele belangrijke details en nuances die wel in de bronpagina's staan."
+  }
+}

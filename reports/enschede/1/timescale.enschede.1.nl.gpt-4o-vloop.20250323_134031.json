@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ENSCHEDE",
+      "contact": {
+        "phone": "14 053",
+        "email": "postbus20@enschede.nl",
+        "website": "http://www.enschede.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 52,
+    "true_sentences": 51,
+    "false_sentences": 1,
+    "accuracy_percentage": 98.1,
+    "false_statements": [
+      {
+        "sentence": "Minimaal 21 jaar oud zijn (bij alcoholvrije horeca minimaal 18 jaar).",
+        "status": "false",
+        "note": "Volgens de Alcoholwet moet men minimaal 21 jaar zijn voor alcoholhoudende horeca is onjuist. De minimumleeftijd voor leidinggevenden in de horeca is 18 jaar, ook voor alcoholhoudende horeca."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.enschede.nl/alcoholvergunning-aanvragen",
+      "https://www.enschede.nl/vergunning-voor-kamerverhuur",
+      "https://www.enschede.nl/tijdelijk-alcohol-schenken",
+      "https://www.enschede.nl/vergunning-voor-gokautomaten",
+      "https://www.enschede.nl/bibob-onderzoek"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Dien het formulier uiterlijk 3 weken voor de activiteit in",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt geen indieningstermijn voor tijdelijke alcoholontheffingen, terwijl de bron specificeert dat dit minimaal 3 weken van tevoren moet.",
+          "source_urls": [
+            "https://www.enschede.nl/tijdelijk-alcohol-schenken"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "€ 82",
+          "original_reference": "€ 82",
+          "note": "De kosten voor een tijdelijke alcoholontheffing worden in beide teksten genoemd, maar in de originele tekst staat dit onder 'Gerelateerde Gemeentelijke Diensten' terwijl het in de bron als hoofdinformatie wordt gepresenteerd.",
+          "source_urls": [
+            "https://www.enschede.nl/tijdelijk-alcohol-schenken"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "We verlenen de ontheffing voor maximaal 12 dagen achter elkaar",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de maximale duur van 12 dagen voor een tijdelijke alcoholontheffing.",
+          "source_urls": [
+            "https://www.enschede.nl/tijdelijk-alcohol-schenken"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de tijdelijke alcoholontheffing, waarbij de bronpagina aanvullende belangrijke informatie bevat over de indieningstermijn (3 weken) en maximale duur (12 dagen) die niet in de originele tekst staat vermeld. De overige informatie in de originele tekst komt overeen met de bronnen of kan niet geverifieerd worden met de beschikbare bronpagina's."
+  }
+}

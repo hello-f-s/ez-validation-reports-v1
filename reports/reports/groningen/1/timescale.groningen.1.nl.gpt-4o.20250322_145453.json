@@ -1,0 +1,94 @@
+{
+  "context": {
+    "municipality": {
+      "name": "GRONINGEN",
+      "contact": {
+        "phone": "14 050",
+        "email": "info@groningen.nl",
+        "website": "http://gemeente.groningen.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "De behandeling van de aanvraag duurt normaal gesproken maximaal 8 weken, mits de aanvraag compleet is.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Groningen duurt de behandeling van een alcoholvergunning normaal gesproken 12 weken vanaf het moment dat de aanvraag compleet is, niet 8 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 3,
+    "invalid_urls": 3,
+    "accuracy_percentage": 50.0,
+    "valid_urls_list": [
+      "https://gemeente.groningen.nl/exploitatievergunning-horeca-aanvragen",
+      "https://gemeente.groningen.nl/alcoholwet-ontheffing-aanvragen",
+      "https://gemeente.groningen.nl/alcoholvergunning-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://gemeente.groningen.nl/nieuwe-leidinggevende-of-andere-aanpassing-alcoholvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://gemeente.groningen.nl/onttrekkingsvergunning-voor-bedrijfsdoeleinden-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.gemeente.groningen.nl/alcoholvergunning",
+        "reason": "INVALID: Error scraping https://www.gemeente.groningen.nl/alcoholvergunning: 404 Client Error: Not Found for url: https://gemeente.groningen.nl/alcoholvergunning"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Tijdens de openingsuren van de slijterij moet er altijd een leidinggevende aanwezig zijn.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de verplichting dat er tijdens openingsuren altijd een leidinggevende aanwezig moet zijn in een slijterij. Dit is een belangrijke aanvullende voorwaarde.",
+          "source_urls": [
+            "https://gemeente.groningen.nl/alcoholvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De leidinggevenden moeten zijn ingeschreven in het SVH register en zij moeten 21 jaar of ouder zijn.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de specifieke vereisten dat leidinggevenden 21 jaar of ouder moeten zijn en ingeschreven moeten staan in het SVH register.",
+          "source_urls": [
+            "https://gemeente.groningen.nl/alcoholwet-ontheffing-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bedrijven die al voor 1 januari 2025 bestaan, moeten in sommige gevallen van de burgemeester een vergunning aanvragen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over deze specifieke verplichting voor bestaande bedrijven vóór 2025.",
+          "source_urls": [
+            "https://gemeente.groningen.nl/exploitatievergunning-horeca-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie die niet in de originele tekst staat, waaronder: verplichte aanwezigheid van een leidinggevende in slijterijen tijdens openingsuren, specifieke leeftijdseisen en registratie-eisen voor leidinggevenden (21+ en SVH-register), en een specifieke bepaling voor bestaande bedrijven met betrekking tot vergunningsaanvragen vóór 2025. Deze informatie is essentieel voor de volledigheid van de voorwaarden en vereisten."
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OPMEER",
+      "contact": {
+        "phone": "(0226) 36 33 33",
+        "email": "gemeente@opmeer.nl",
+        "website": "http://www.opmeer.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 19,
+    "false_sentences": 2,
+    "accuracy_percentage": 90.5,
+    "false_statements": [
+      {
+        "sentence": "Vergunning met geldigheidsduur van 1 dag: € 52,65",
+        "status": "false",
+        "note": "De exacte tarieven voor terrasvergunningen in Opmeer zijn niet publiekelijk beschikbaar op de gemeentelijke website. Dit bedrag kan niet geverifieerd worden als correct."
+      },
+      {
+        "sentence": "Vergunning met geldigheidsduur tot 1 maand: € 98,35",
+        "status": "false",
+        "note": "De exacte tarieven voor terrasvergunningen in Opmeer zijn niet publiekelijk beschikbaar op de gemeentelijke website. Dit bedrag kan niet geverifieerd worden als correct."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 3,
+    "valid_urls": 3,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.opmeer.nl/omgevingsvergunning",
+      "https://www.opmeer.nl/standplaats-aanvragen",
+      "https://www.opmeer.nl/exploitatievergunning-horecabedrijf"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Indien de standplaatsvergunning een geldigheidsduur heeft van een dag: € 52,65",
+          "original_reference": "Vergunning met geldigheidsduur van 1 dag: € 52,65",
+          "note": "De kosten voor een vergunning van 1 dag zijn identiek in beide bronnen",
+          "source_urls": [
+            "https://www.opmeer.nl/standplaats-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Indien de standplaatsvergunning een geldigheidsduur heeft langer dan 1 maand, voor iedere extra kalendermaand: € 16,45",
+          "original_reference": "Vergunning met geldigheidsduur langer dan 1 maand: € 124,80",
+          "note": "De bronpagina hanteert een ander tariefmodel voor vergunningen langer dan 1 maand, met een maandelijks bedrag van €16,45 extra, terwijl de originele tekst een vast bedrag van €124,80 noemt",
+          "source_urls": [
+            "https://www.opmeer.nl/standplaats-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Indien de standplaats op gemeente grond staat, kunnen er huurkosten in rekening worden gebracht. Indien er gebruik wordt gemaakt van gemeentelijke aansluitingen op elektra en/of water kunnen daar kosten voor in rekening worden gebracht.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt aanvullende mogelijke kosten voor huur van gemeentegrond en gebruik van nutsvoorzieningen die niet genoemd worden in de originele tekst",
+          "source_urls": [
+            "https://www.opmeer.nl/standplaats-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de kostenstructuur voor vergunningen langer dan 1 maand en aanvullende kosten die in rekening kunnen worden gebracht. De bronpagina hanteert een flexibeler tariefmodel met maandelijkse toeslagen en vermeldt expliciet mogelijke extra kosten voor grondgebruik en nutsvoorzieningen die niet in de originele tekst staan vermeld."
+  }
+}

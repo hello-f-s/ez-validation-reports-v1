@@ -1,0 +1,98 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OLDEBROEK",
+      "contact": {
+        "phone": "(0525) 63 82 00",
+        "email": "gemeente@oldebroek.nl",
+        "website": "http://www.oldebroek.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 17,
+    "false_sentences": 2,
+    "accuracy_percentage": 89.5,
+    "false_statements": [
+      {
+        "sentence": "Voor conceptverzoeken is de gemiddelde behandeltermijn ongeveer 6 maanden [source].",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Oldebroek is de behandeltermijn voor een conceptverzoek ongeveer 8 weken, niet 6 maanden."
+      },
+      {
+        "sentence": "Voor een conceptverzoek betaalt u een basisbedrag van €135,- plus 9% van wat een uiteindelijke omgevingsvergunning zou kosten [source].",
+        "status": "false",
+        "note": "De gemeente Oldebroek hanteert andere tarieven voor conceptverzoeken. Deze specifieke bedragen komen niet overeen met de actuele legesverordening van de gemeente Oldebroek."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 8,
+    "valid_urls": 3,
+    "invalid_urls": 5,
+    "accuracy_percentage": 37.5,
+    "valid_urls_list": [
+      "https://www.oldebroek.nl/Inwoners/Bouwen_en_verbouwen/Boom_kappen/Wel_of_geen_vergunning_voor_bomenkap",
+      "https://www.oldebroek.nl/Inwoners/Bouwen_en_verbouwen",
+      "https://www.oldebroek.nl/Inwoners/Bouwen_en_verbouwen/Omgevingsvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.oldebroek.nl/Inwoners/Vergunningen/Milieu_melding_of_vergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://ondersteuning.omgevingswet.overheid.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://oldedroek.nl/milieu",
+        "reason": "INVALID: Error scraping https://oldedroek.nl/milieu: HTTPSConnectionPool(host='oldedroek.nl', port=443): Max retries exceeded with url: /milieu (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10751a490>: Failed to resolve 'oldedroek.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://oldedroek.nl/conceptverzoek",
+        "reason": "INVALID: Error scraping https://oldedroek.nl/conceptverzoek: HTTPSConnectionPool(host='oldedroek.nl', port=443): Max retries exceeded with url: /conceptverzoek (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x107519450>: Failed to resolve 'oldedroek.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.oldebroek.nl/Inwoners/Bouwen_en_verbouwen/Omgevingsvergunning/Conceptverzoek_omgevingsvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Controleer in het Omgevingsloket of u een vergunning nodig heeft voor uw activiteit. Is dit niet het geval, dan hoeft u geen contact op te nemen met de gemeente en kunt u aan de slag.",
+          "original_reference": "Als ondernemer moet u controleren of de voorgenomen activiteit een vergunning vereist.",
+          "note": "De originele tekst richt zich specifiek op ondernemers, terwijl de brontekst algemener is en voor alle aanvragers geldt.",
+          "source_urls": [
+            "https://www.oldebroek.nl/Inwoners/Bouwen_en_verbouwen/Omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een zienswijze indienen op deze ontwerpbesluiten kan gedurende 6 weken vanaf publicatie",
+          "original_reference": "In geval van een complexe aanvraag kunt u binnen 6 weken beroep indienen bij de rechtbank, mits u ook een zienswijze over het ontwerpbesluit heeft ingediend",
+          "note": "De brontekst specificeert alleen de termijn voor het indienen van zienswijzen, terwijl de originele tekst ook de beroepsprocedure bij de rechtbank beschrijft.",
+          "source_urls": [
+            "https://www.oldebroek.nl/Inwoners/Bouwen_en_verbouwen"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont twee belangrijke verschillen: 1) De doelgroep voor vergunningsaanvragen is breder dan alleen ondernemers zoals gesuggereerd in de originele tekst, en 2) Er zijn enkele procedurele details die verschillend worden weergegeven, met name rond de bezwaar- en beroepsprocedures. Veel van de specifieke details uit de originele tekst (zoals kosten en behandeltermijnen) kunnen niet worden geverifieerd in de beschikbare bronnen."
+  }
+}

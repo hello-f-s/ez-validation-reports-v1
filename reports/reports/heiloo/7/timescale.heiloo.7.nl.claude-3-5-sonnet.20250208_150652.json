@@ -1,0 +1,96 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HEILOO",
+      "contact": {
+        "phone": "(072) 535 66 66",
+        "email": "info@heiloo.nl",
+        "website": "http://www.heiloo.nl"
+      }
+    },
+    "service": {
+      "id": 7,
+      "name": "Kabels en leidingen aanleggen en beheren"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Over eventuele legeskosten voor de vergunningsaanvraag is geen informatie gevonden op de website.",
+        "status": "false",
+        "note": "Deze informatie is wel beschikbaar op de website van gemeente Heiloo. De legeskosten voor een omgevingsvergunning staan vermeld in de legesverordening die te vinden is op de gemeentelijke website."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 8,
+    "valid_urls": 5,
+    "invalid_urls": 3,
+    "accuracy_percentage": 62.5,
+    "valid_urls_list": [
+      "https://www.heiloo.nl/aanvragen-en-regelen/ondernemen/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/wonen-in-een-bedrijfswoning/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/voorwerpen-op-openbare-weg-plaatsen/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/omgevingsvergunning/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/toezicht-en-handhaving/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.heiloo.nl/omgevingsvergunning",
+        "reason": "INVALID: Error scraping https://www.heiloo.nl/omgevingsvergunning: 404 Client Error: Not Found for url: https://www.heiloo.nl/omgevingsvergunning"
+      },
+      {
+        "url": "https://www.heiloo.nl/onderwerpen/voorwerpen-op-de-openbare-weg",
+        "reason": "INVALID: Error scraping https://www.heiloo.nl/onderwerpen/voorwerpen-op-de-openbare-weg: 404 Client Error: Not Found for url: https://www.heiloo.nl/onderwerpen/voorwerpen-op-de-openbare-weg"
+      },
+      {
+        "url": "https://www.omgevingsloket.nl/",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Meld de start van de bouw of sloop minimaal 2 dagen van tevoren aan bij toezichthouder van de gemeente.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over het verplicht melden van de start van werkzaamheden, wat een belangrijke procedurestap is.",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/toezicht-en-handhaving/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "€ 119,10 voor aanvraag vergunning voor het plaatsen van voorwerpen op de openbare weg",
+          "original_reference": "Over eventuele legeskosten voor de vergunningsaanvraag is geen informatie gevonden op de website.",
+          "note": "Er worden wel specifieke kosten genoemd voor bepaalde vergunningen, terwijl de originele tekst aangeeft dat er geen informatie over kosten beschikbaar is.",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/voorwerpen-op-openbare-weg-plaatsen/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U dient de aanvraag ten minste 3 weken voor plaatsing van de voorwerpen in.",
+          "original_reference": "Hier kan geen specifieke informatie over gevonden worden op de website van deze gemeente.",
+          "note": "Er wordt wel een specifieke aanvraagtermijn genoemd voor bepaalde vergunningen, terwijl de originele tekst aangeeft dat er geen informatie over termijnen beschikbaar is.",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/voorwerpen-op-openbare-weg-plaatsen/"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie die niet in de originele tekst staat, waaronder specifieke aanvraagtermijnen, kosten en de verplichting om de start van werkzaamheden te melden. Deze informatie is essentieel voor het correct doorlopen van de vergunningsprocedure."
+  }
+}

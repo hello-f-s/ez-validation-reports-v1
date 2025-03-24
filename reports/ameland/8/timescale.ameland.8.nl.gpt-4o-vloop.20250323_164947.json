@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AMELAND",
+      "contact": {
+        "phone": "(0519) 55 55 55",
+        "email": "info@ameland.nl",
+        "website": "http://www.ameland.nl"
+      }
+    },
+    "service": {
+      "id": 8,
+      "name": "Marktvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "Voor vragen of verdere informatie kunt u contact opnemen met de gemeente Ameland via telefoon (0519) 555 555, WhatsApp op 06-144 58 728, of per e-mail op info@ameland.nl.",
+        "status": "false",
+        "note": "Het telefoonnummer van de gemeente Ameland is (0519) 555 555 is onjuist. Het correcte algemene telefoonnummer van de gemeente Ameland is (0519) 555 555. Ook het WhatsApp nummer is niet correct - het juiste nummer is 06-12117122."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.ameland.nl/omgevingsvergunning",
+      "https://www.ameland.nl/uitrit-of-inrit-aanleggen",
+      "https://www.ameland.nl/standplaatsvergunning",
+      "https://www.ameland.nl/woo-verzoeken",
+      "https://www.ameland.nl/alcoholvergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Er worden uitsluitend incidentele standplaatsvergunningen verleend voor de tijdsduur van maximaal twee dagdelen: de morgen van 09.00 uur tot 12.00 uur; de middag van 12.00 tot 18.00 uur",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de specifieke tijdsblokken voor standplaatsen, terwijl de bron aangeeft dat er alleen vergunningen worden verleend voor specifieke dagdelen met exacte tijden",
+          "source_urls": [
+            "https://www.ameland.nl/standplaatsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Gedurende een dag wordt maximaal één standplaatsvergunning per locatie verleend",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de beperking van één standplaatsvergunning per locatie per dag",
+          "source_urls": [
+            "https://www.ameland.nl/standplaatsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Er wordt geen wachtlijst opgesteld indien het aantal aanvragen de beschikbare locaties overtreft",
+          "original_reference": "Indien er een wachtlijst is of als het aantal beschikbare vergunningen beperkt is, kan de verwerkingstijd langer zijn",
+          "note": "De originele tekst suggereert dat er wachtlijsten kunnen zijn, terwijl de bron expliciet vermeldt dat er geen wachtlijsten worden opgesteld",
+          "source_urls": [
+            "https://www.ameland.nl/standplaatsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn drie belangrijke verschillen gevonden tussen de originele tekst en de bronnen. De originele tekst mist cruciale informatie over de toegestane tijdsblokken voor standplaatsen en de beperking van één vergunning per locatie per dag. Daarnaast is er een tegenstrijdigheid wat betreft het beleid rond wachtlijsten: waar de originele tekst suggereert dat wachtlijsten mogelijk zijn, stelt de bron expliciet dat deze niet worden opgesteld."
+  }
+}

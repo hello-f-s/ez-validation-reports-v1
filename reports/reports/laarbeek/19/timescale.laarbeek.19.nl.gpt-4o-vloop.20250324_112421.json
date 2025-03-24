@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LAARBEEK",
+      "contact": {
+        "phone": "(0492) 46 97 00",
+        "email": "gemeente@laarbeek.nl",
+        "website": "http://www.laarbeek.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "Bezoekadres: Koppelstraat 37, 5741 GA Beek en Donk.",
+        "status": "false",
+        "note": "Het juiste bezoekadres van de gemeente Laarbeek is Koppelstraat 37, 5741 GA Beek en Donk, maar sinds 1 januari 2024 is het gemeentehuis verhuisd naar het nieuwe adres: Montgomeryplein 6, 5741 BB Beek en Donk."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.laarbeek.nl/speelautomaat-plaatsen",
+      "https://www.laarbeek.nl/horecabedrijf-beginnen",
+      "https://www.laarbeek.nl/kansspel-organiseren",
+      "https://www.laarbeek.nl/standplaatsvergunning",
+      "https://www.laarbeek.nl/omgevingsvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.laarbeek.nl",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U kunt maximaal voor twee kansspelautomaten een vergunning krijgen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt geen maximum aantal automaten, terwijl de bron specifiek aangeeft dat er maximaal twee kansspelautomaten zijn toegestaan.",
+          "source_urls": [
+            "https://www.laarbeek.nl/speelautomaat-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De aanwezigheidsvergunning is niet nodig als er zonder voorafgaande betaling kan worden gespeeld of als er geen prijzen of premies gewonnen kunnen worden. Denkt u hierbij aan bijvoorbeeld de flipperkast.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst maakt geen onderscheid tussen verschillende types speelautomaten en vermeldt niet de uitzondering voor automaten zonder prijzen.",
+          "source_urls": [
+            "https://www.laarbeek.nl/speelautomaat-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "0492 469 700",
+          "original_reference": "0492 269 700",
+          "note": "Het telefoonnummer in de bronnen verschilt van het nummer in de originele tekst.",
+          "source_urls": [
+            "https://www.laarbeek.nl/horecabedrijf-beginnen"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn drie belangrijke verschillen gevonden tussen de originele tekst en de bronnen. Ten eerste ontbreekt in de originele tekst de belangrijke beperking dat er maximaal twee kansspelautomaten zijn toegestaan. Ten tweede wordt in de bronnen duidelijk gemaakt dat bepaalde speelautomaten (zonder prijzen) geen vergunning nodig hebben, wat niet vermeld staat in de originele tekst. Tot slot is er een discrepantie in het vermelde telefoonnummer voor contact met de gemeente."
+  }
+}

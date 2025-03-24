@@ -1,0 +1,92 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DELFT",
+      "contact": {
+        "phone": "14 015",
+        "email": "null",
+        "website": "http://www.delft.nl"
+      }
+    },
+    "service": {
+      "id": 2,
+      "name": "Bord of spandoek plaatsen aan de openbare weg"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "U mag een spandoek alleen ophangen op vaste plekken in Delft, zoals Kalverbos en Van Foreestweg.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Delft zijn er meer locaties beschikbaar dan alleen Kalverbos en Van Foreestweg. De exacte locaties moeten worden opgevraagd bij de gemeente en worden per aanvraag beoordeeld."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.delft.nl/spandoek-plaatsen",
+      "https://www.delft.nl/vergunning-voor-promotieactie",
+      "https://www.delft.nl/reclame-de-openbare-ruimte",
+      "https://www.delft.nl/overkapping-plaatsen",
+      "https://www.delft.nl/stappen-voor-uw-plan"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.delft.nl/service-en-informatie/spandoek-plaatsen/\">Vergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.delft.nl/service-en-informatie/spandoek-plaatsen/",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "In deze periode mag u als organisatie maximaal 1 spandoek ophangen. Dus niet een aantal spandoeken tegelijk op meerdere locaties.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de beperking dat een organisatie niet meerdere spandoeken tegelijk op verschillende locaties mag ophangen.",
+          "source_urls": [
+            "https://www.delft.nl/spandoek-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Noordeinde (ter hoogte van het Koningsplein), Lang Geer (hoek Breestraat), Buitenwatersloot (ter hoogte van de Kogelgieterij), Gasthuislaan (hoek Pynepoort)",
+          "original_reference": "U mag een spandoek alleen ophangen op vaste plekken in Delft, zoals Kalverbos en Van Foreestweg.",
+          "note": "De originele tekst noemt slechts twee locaties als voorbeeld, terwijl er in werkelijkheid zes specifieke locaties zijn waar spandoeken mogen worden opgehangen.",
+          "source_urls": [
+            "https://www.delft.nl/spandoek-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Er zijn geen kosten.",
+          "original_reference": "Er is geen specifieke informatie vermeld over de kosten voor het plaatsen van een spandoek.",
+          "note": "De originele tekst is onduidelijk over de kosten, terwijl de bron expliciet vermeldt dat er geen kosten zijn.",
+          "source_urls": [
+            "https://www.delft.nl/spandoek-plaatsen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de volledigheid van de informatie over toegestane locaties, een aanvullende beperking voor organisaties (maximaal 1 spandoek tegelijk), en duidelijkheid over de kosten. De bronpagina's bevatten meer specifieke en complete informatie dan de originele tekst."
+  }
+}

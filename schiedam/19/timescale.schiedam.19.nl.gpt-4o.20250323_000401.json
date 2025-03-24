@@ -1,0 +1,93 @@
+{
+  "context": {
+    "municipality": {
+      "name": "SCHIEDAM",
+      "contact": {
+        "phone": "14 010",
+        "email": "contact@schiedam.nl",
+        "website": "http://www.schiedam.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor één speelautomaat zijn € 226,50.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Schiedam zijn de kosten voor één speelautomaat € 56,50 per jaar (2024). Het genoemde bedrag van € 226,50 is onjuist."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.schiedam.nl/",
+      "https://www.schiedam.nl/a-tot-z/aanwezigheidsvergunning-kansspelautomaten",
+      "https://schiedam.nl/a-tot-z/horecabedrijf-starten",
+      "https://www.schiedam.nl/a-tot-z/draaiorgel-exploiteren",
+      "https://schiedam.nl/a-tot-z/aanwezigheidsvergunning-kansspelautomaten",
+      "https://www.schiedam.nl/a-tot-z/horecabedrijf-starten"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "De kosten voor één speelautomaat zijn € 226,50, voor iedere extra speelautomaat wordt € 136,00 in rekening gebracht.",
+          "original_reference": "De kosten voor één speelautomaat zijn € 226,50. Voor iedere extra speelautomaat wordt € 136,00 in rekening gebracht.",
+          "note": "De kosten zijn exact hetzelfde in beide bronnen",
+          "source_urls": [
+            "https://www.schiedam.nl/a-tot-z/aanwezigheidsvergunning-kansspelautomaten"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "De beslistermijn voor de aanvraag om een aanwezigheidsvergunning is acht weken. De termijn kan met maximaal acht weken worden verlengd.",
+          "original_reference": "De beslistermijn voor de aanvraag om een aanwezigheidsvergunning is acht weken. Deze termijn kan met maximaal acht weken worden verlengd.",
+          "note": "De beslistermijn en verlengingsmogelijkheid zijn identiek beschreven",
+          "source_urls": [
+            "https://www.schiedam.nl/a-tot-z/aanwezigheidsvergunning-kansspelautomaten"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het bestemmingsplan moet horeca toestaan op de plek waar u het horecabedrijf wilt starten",
+          "original_reference": "No matching information",
+          "note": "Deze belangrijke voorwaarde voor het starten van een horecabedrijf ontbreekt in de originele tekst",
+          "source_urls": [
+            "https://www.schiedam.nl/a-tot-z/horecabedrijf-starten"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wilt u een restaurant, een café of een seksinrichting starten? Dan heeft u een exploitatievergunning nodig",
+          "original_reference": "No matching information",
+          "note": "De vereiste exploitatievergunning wordt niet genoemd in de originele tekst",
+          "source_urls": [
+            "https://www.schiedam.nl/a-tot-z/horecabedrijf-starten"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten twee belangrijke aanvullende vereisten die niet in de originele tekst staan: de noodzaak van een passend bestemmingsplan en een exploitatievergunning. De overige informatie over kosten, termijnen en voorwaarden komt overeen met de originele tekst."
+  }
+}

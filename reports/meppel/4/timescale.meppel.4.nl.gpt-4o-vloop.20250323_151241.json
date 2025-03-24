@@ -1,0 +1,100 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MEPPEL",
+      "contact": {
+        "phone": "14 0522",
+        "email": "postbus@meppel.nl",
+        "website": "http://www.meppel.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "De evenementenvergunning moet uiterlijk 8 weken voor het evenement aangevraagd worden.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Meppel moet een evenementenvergunning uiterlijk 12 weken voor het evenement worden aangevraagd, niet 8 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 1,
+    "invalid_urls": 5,
+    "accuracy_percentage": 16.7,
+    "valid_urls_list": [
+      "https://www.meppel.nl/Ondernemer/Vergunningen_regelingen/Evenementen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.meppel.nl/Inwoner/Sport_Vrije_tijd/Evenementen/Evenement_organiseren",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.meppel.nl/Inwoner/Sport_Vrije_tijd/Evenementen/Evenement_organiseren_vergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.meppel.nl/Ondernemer/Vergunningen_regelingen/Evenementen/evenement_organiseren_vergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.meppel.nl/Inwoner/Sport_Vrije_tijd/Evenementen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://meppel.nl",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Geen specifieke informatie over aanvraagtermijn van 8 weken gevonden",
+          "original_reference": "De evenementenvergunning moet uiterlijk 8 weken voor het evenement aangevraagd worden.",
+          "note": "De bron vermeldt geen specifieke aanvraagtermijn van 8 weken, wat een belangrijk verschil is in de informatievoorziening.",
+          "source_urls": [
+            "https://www.meppel.nl/Ondernemer/Vergunningen_regelingen/Evenementen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Geen informatie over zondagsevenementen en tijdsbeperking na 13:00 uur gevonden",
+          "original_reference": "Evenementen op zondag mogen na 13:00 uur gehouden worden.",
+          "note": "De bron bevat geen specifieke informatie over tijdsbeperkingen voor zondagsevenementen.",
+          "source_urls": [
+            "https://www.meppel.nl/Ondernemer/Vergunningen_regelingen/Evenementen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Geen informatie over kosten en leges gevonden",
+          "original_reference": "Voor de evenementenvergunning worden geen leges gevraagd.",
+          "note": "De bron vermeldt geen informatie over kosten of leges voor evenementenvergunningen.",
+          "source_urls": [
+            "https://www.meppel.nl/Ondernemer/Vergunningen_regelingen/Evenementen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina bevat aanzienlijk minder gedetailleerde informatie dan de originele tekst. Belangrijke details over aanvraagtermijnen, zondagsevenementen en kosten ontbreken in de bron. Dit kan erop wijzen dat de informatie op de website onvolledig is of dat deze mogelijk elders op de website te vinden is."
+  }
+}

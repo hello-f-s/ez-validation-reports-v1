@@ -1,0 +1,75 @@
+{
+  "context": {
+    "municipality": {
+      "name": "KERKRADE",
+      "contact": {
+        "phone": "14 045",
+        "email": "gemeentehuis@kerkrade.nl",
+        "website": "http://www.kerkrade.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 14,
+    "false_sentences": 0,
+    "accuracy_percentage": 100.0,
+    "false_statements": []
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 3,
+    "invalid_urls": 2,
+    "accuracy_percentage": 60.0,
+    "valid_urls_list": [
+      "https://www.kerkrade.nl/exploitatievergunning-horecabedrijf",
+      "https://www.kerkrade.nl/alcoholvergunning",
+      "https://www.kerkrade.nl/form/parkeervergunning/aanvraag-0"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.kerkrade.nl/standplaats-aanvragen",
+        "reason": "INVALID: Error scraping https://www.kerkrade.nl/standplaats-aanvragen: HTTPSConnectionPool(host='www.kerkrade.nl', port=443): Max retries exceeded with url: /standplaats-aanvragen (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x107db3e00>, 'Connection to www.kerkrade.nl timed out. (connect timeout=10)'))"
+      },
+      {
+        "url": "https://www.kerkrade.nl/openingstijden-horeca-eenmalig-aanpassen",
+        "reason": "INVALID: Error scraping https://www.kerkrade.nl/openingstijden-horeca-eenmalig-aanpassen: HTTPSConnectionPool(host='www.kerkrade.nl', port=443): Max retries exceeded with url: /openingstijden-horeca-eenmalig-aanpassen (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x107ed8410>, 'Connection to www.kerkrade.nl timed out. (connect timeout=10)'))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u alcohol wilt schenken tijdens een evenement, moet u een ontheffing bij de gemeente aanvragen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over alcoholontheffing voor evenementen, wat een belangrijke aanvullende voorwaarde is voor horecagelegenheden die tijdens evenementen alcohol willen schenken.",
+          "source_urls": [
+            "https://www.kerkrade.nl/alcoholvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "u een horecabedrijf wilt starten of overnemen; u uw horecabedrijf wilt uitbreiden door een verbouwing; de rechtsvorm van uw horecabedrijf verandert; uw horecabedrijf een andere leidinggevende krijgt; u een terras wilt starten of uw terras wilt uitbreiden; u met uw horecabedrijf nieuwe activiteiten gaat uitvoeren.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst specificeert niet de verschillende situaties waarin een exploitatievergunning vereist is, terwijl de bronpagina een uitgebreide lijst van specifieke situaties bevat.",
+          "source_urls": [
+            "https://www.kerkrade.nl/exploitatievergunning-horecabedrijf"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie die niet in de originele tekst staat, met name over de specifieke situaties waarin een exploitatievergunning nodig is en de vereiste alcoholontheffing voor evenementen. Deze informatie is essentieel voor horecaondernemers om volledig geïnformeerd te zijn over de vergunningsvereisten."
+  }
+}

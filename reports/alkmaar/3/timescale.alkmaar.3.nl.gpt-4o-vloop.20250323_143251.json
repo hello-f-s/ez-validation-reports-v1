@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ALKMAAR",
+      "contact": {
+        "phone": "14 072",
+        "email": "post@alkmaar.nl",
+        "website": "http://www.alkmaar.nl"
+      }
+    },
+    "service": {
+      "id": 3,
+      "name": "Certificaat voor opgraving aanvragen en vondst melden"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "De bijdrage is 50% van de kosten boven deze 7%, tot een maximum van 14% van de bouwsom.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Alkmaar is de maximale bijdrage 25% van de totale projectkosten, niet 14% van de bouwsom."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.alkmaar.nl/archeologische-verplichtingen/",
+      "https://www.alkmaar.nl/direct-regelen/wonen-verhuizen-en-verbouwen/verhuizen/adresonderzoek-verzoek-tot",
+      "https://www.alkmaar.nl/direct-regelen/vergunningen-en-ontheffingen/inzage-en-bouwarchief/bouwarchief-bekijken",
+      "https://www.alkmaar.nl/direct-regelen/wonen-verhuizen-en-verbouwen/verbouwen/melding-woon-en-leefomgeving-indienen/",
+      "https://www.alkmaar.nl/direct-regelen/afval/het-ergens-niet-mee-eens-zijn/klacht-over-het-handelen-van-de-gemeente"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bij kleinschalige projecten met bodemingrepen kleiner dan 250m² (binnen de bebouwde kom) krijgt u de optie om het onderzoek uit te laten voeren door de gemeentelijk archeologen. Dit geldt ook bij projecten met een oppervlakteverstoring van minder dan 350m2 (buiten de bebouwde kom).",
+          "original_reference": "Voor kleinschalige projecten binnen de bebouwde kom met bodemingrepen kleiner dan 250m², en buiten de bebouwde kom kleiner dan 350m², kunt u ervoor kiezen om het onderzoek door gemeentelijke archeologen te laten uitvoeren.",
+          "note": "De originele tekst presenteert dit als een keuzeoptie, terwijl de brontekst aangeeft dat men deze optie 'krijgt', wat impliceert dat dit de standaardprocedure is.",
+          "source_urls": [
+            "https://www.alkmaar.nl/archeologische-verplichtingen/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De initiatiefnemer kan er ook voor kiezen zelf een gecertif...",
+          "original_reference": "Voor grotere projecten dient u zelf een gecertificeerd archeologiebedrijf in te schakelen.",
+          "note": "De brontekst suggereert dat ook bij kleine projecten de initiatiefnemer kan kiezen voor een gecertificeerd bedrijf, terwijl de originele tekst dit alleen voor grotere projecten als verplichting noemt.",
+          "source_urls": [
+            "https://www.alkmaar.nl/archeologische-verplichtingen/"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden in de manier waarop de archeologische onderzoeksopties worden gepresenteerd. De brontekst is minder strikt in de voorschriften en biedt meer keuzevrijheid aan de initiatiefnemer, terwijl de originele tekst bepaalde opties als verplicht presenteert voor specifieke projectgroottes. De bronpagina is echter niet volledig weergegeven (tekst wordt afgekapt), waardoor mogelijk niet alle informatie kon worden geverifieerd."
+  }
+}

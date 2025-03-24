@@ -1,0 +1,71 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DORDRECHT",
+      "contact": {
+        "phone": "14 078",
+        "email": "null",
+        "website": "http://www.dordrecht.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 10,
+    "false_sentences": 1,
+    "accuracy_percentage": 90.9,
+    "false_statements": [
+      {
+        "sentence": "U kunt binnen 4 weken een reactie verwachten op uw VOG-aanvraag.",
+        "status": "false",
+        "note": "Volgens de officiële informatie van de gemeente Dordrecht duurt de afhandeling van een VOG-aanvraag gemiddeld 2 tot 4 werkdagen bij een digitale aanvraag. Alleen in uitzonderlijke gevallen kan het langer duren."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 0,
+    "invalid_urls": 7,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.dordrecht.nl",
+        "reason": "INVALID: Error scraping https://www.dordrecht.nl: HTTPSConnectionPool(host='www.dordrecht.nl', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1018)')))"
+      },
+      {
+        "url": "https://cms.dordrecht.nl/Inwoners/Overzicht_Inwoners/Uittreksels_akten_en_verklaringen/Verklaring_omtrent_gedrag_VOG",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.justis.nl/vog",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://cms.dordrecht.nl/Inwoners/Overzicht_Inwoners/Bouwen_en_verbouwen_voor_inwoners/Aanbouw_en_uitbouwen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://cms.dordrecht.nl/Inwoners/Overzicht_Inwoners/Vergunningen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://cms.dordrecht.nl/Inwoners/Overzicht_Inwoners/Nederlander_worden_en_inburgeren/Nederlander_worden",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://cms.dordrecht.nl/Inwoners/Overzicht_Inwoners/Uittreksels_akten_en_verklaringen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  }
+}

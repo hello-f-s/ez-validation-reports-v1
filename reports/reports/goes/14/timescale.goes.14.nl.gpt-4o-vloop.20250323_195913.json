@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "GOES",
+      "contact": {
+        "phone": "14 0113",
+        "email": "stadskantoor@goes.nl",
+        "website": "http://www.goes.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 42,
+    "true_sentences": 41,
+    "false_sentences": 1,
+    "accuracy_percentage": 97.6,
+    "false_statements": [
+      {
+        "sentence": "Werknemersvergunning: €36,75 per kwartaal.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Goes kost een werknemersvergunning €37,50 per kwartaal, niet €36,75."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.goes.nl/parkeervergunning-voor-bedrijven",
+      "https://www.goes.nl/parkeervergunning-voor-bewoners",
+      "https://www.goes.nl/werknemersvergunning",
+      "https://www.goes.nl/parkeervergunning-verbouwing-eigen-woning",
+      "https://www.goes.nl/ontheffing-verkeersmaatregel"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "4 kentekens op 1 vergunning, er mag maar 1 kenteken actief zijn",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat er 4 kentekens op 1 vergunning mogelijk zijn met 1 actief kenteken. Dit is belangrijke aanvullende informatie voor werknemersvergunningen.",
+          "source_urls": [
+            "https://www.goes.nl/werknemersvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Venstertijden: Het verbod geldt dagelijks van 11.00 uur tot 18.00 uur en op donderdagen van 11.00 uur tot 21.00 uur.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt geen specifieke venstertijden voor voetgangersgebieden, terwijl dit essentiële informatie is voor ontheffingen.",
+          "source_urls": [
+            "https://www.goes.nl/ontheffing-verkeersmaatregel"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "de medewerker mag niet in de plaats Goes wonen",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat werknemers die in Goes wonen geen werknemersvergunning kunnen aanvragen. Dit is een belangrijke voorwaarde.",
+          "source_urls": [
+            "https://www.goes.nl/werknemersvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten enkele belangrijke aanvullende voorwaarden en details die niet in de originele tekst staan, met name rond werknemersvergunningen (4 kentekens per vergunning, woonplaatsvereiste) en specifieke venstertijden voor ontheffingen in voetgangersgebieden. Deze informatie is essentieel voor een volledig begrip van de parkeerregelingen."
+  }
+}

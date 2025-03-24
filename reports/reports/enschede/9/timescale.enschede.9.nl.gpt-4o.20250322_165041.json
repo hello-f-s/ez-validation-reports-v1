@@ -1,0 +1,78 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ENSCHEDE",
+      "contact": {
+        "phone": "14 053",
+        "email": "postbus20@enschede.nl",
+        "website": "http://www.enschede.nl"
+      }
+    },
+    "service": {
+      "id": 9,
+      "name": "Mobiele puinbreker gebruiken"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 9,
+    "true_sentences": 8,
+    "false_sentences": 1,
+    "accuracy_percentage": 88.9,
+    "false_statements": [
+      {
+        "sentence": "U moet dit minimaal 15 werkdagen voordat u wilt beginnen doen en tenminste 2 werkdagen voor u daadwerkelijk begint.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Enschede moet de melding minimaal 2 werkdagen voor aanvang van de werkzaamheden worden gedaan. Er is geen vereiste van 15 werkdagen vooraf."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.enschede.nl/milieuregels",
+      "https://www.enschede.nl/graven-in-de-openbare-ruimte",
+      "https://www.enschede.nl/voorwerp-plaatsen-in-de-openbare-ruimte",
+      "https://www.enschede.nl/bedrijfsafval"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.enschede.nl/mobiel-breken-van-puin",
+        "reason": "INVALID: Error scraping https://www.enschede.nl/mobiel-breken-van-puin: 404 Client Error: Not Found for url: https://www.enschede.nl/mobiel-breken-van-puin"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u iets in de openbare ruimte wilt plaatsen, moet u dat vooraf melden. Het gaat om bijvoorbeeld een container, mobiel toilet (Dixi), schaftkeet, hoogwerker, hijskraan, steiger of hek.",
+          "original_reference": "Als u bouwafval of sloopafval wilt bewerken met een mobiele puinbreker binnen de gemeente, moet u dit vooraf melden.",
+          "note": "De bronpagina's bevatten geen specifieke informatie over mobiele puinbrekers. De enige gerelateerde informatie gaat over het plaatsen van voorwerpen in de openbare ruimte in het algemeen.",
+          "source_urls": [
+            "https://www.enschede.nl/voorwerp-plaatsen-in-de-openbare-ruimte"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een melding is voldoende als u aan de voorwaarden voldoet. Voldoet u niet aan de voorwaarden, dan vraagt u een vergunning aan.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt alleen een meldingsplicht, terwijl de bronpagina aangeeft dat in sommige gevallen een vergunning nodig is in plaats van een melding.",
+          "source_urls": [
+            "https://www.enschede.nl/voorwerp-plaatsen-in-de-openbare-ruimte"
+          ]
+        }
+      ]
+    },
+    "summary": "De originele inhoud over mobiele puinbrekers komt niet overeen met de informatie in de geciteerde bronnen. De bronnen bevatten geen specifieke informatie over mobiele puinbrekers, maar wel algemene regels over het plaatsen van voorwerpen in de openbare ruimte. Ook blijkt dat naast een melding in sommige gevallen een vergunning nodig kan zijn, wat niet vermeld staat in de originele tekst."
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DELFT",
+      "contact": {
+        "phone": "14 015",
+        "email": "null",
+        "website": "http://www.delft.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 20,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.2,
+    "false_statements": [
+      {
+        "sentence": "De VOG wordt binnen 4 tot 8 weken per post verstuurd.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Delft en Dienst Justis duurt de afhandeling van een VOG-aanvraag meestal 2 tot 4 weken, niet 4 tot 8 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.delft.nl/verklaring-omtrent-gedrag",
+      "https://www.delft.nl/woo-verzoek-doen",
+      "https://www.delft.nl/omgevingsvergunning-milieu",
+      "https://www.delft.nl/nederlander-worden",
+      "https://www.delft.nl/omgevingsvergunning-aanvragen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Alleen aanvragen bij Dienst Justis. Er zijn bedrijven die aanbieden om dit voor u te doen. Hiervoor betaalt u extra geld. De Dienst Justis werkt niet samen met deze bedrijven.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke waarschuwing over externe bedrijven die VOG-aanvragen aanbieden",
+          "source_urls": [
+            "https://www.delft.nl/verklaring-omtrent-gedrag"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wilt u weten of u een VOG kunt krijgen? Doe de gratis VOG-check.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de mogelijkheid om een gratis VOG-check te doen",
+          "source_urls": [
+            "https://www.delft.nl/verklaring-omtrent-gedrag"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Kosten 2025\nOnline aanvraag€ 33,85\nAanvraag bij gemeente€ 41,35",
+          "original_reference": "Bij een online aanvraag via de Dienst Justis bedragen de kosten €33,85. Als u de aanvraag bij de gemeente indient, bedragen de kosten €41,35.",
+          "note": "De kosten voor VOG-aanvragen komen exact overeen",
+          "source_urls": [
+            "https://www.delft.nl/verklaring-omtrent-gedrag"
+          ]
+        }
+      ]
+    },
+    "summary": "De broninhoud komt grotendeels overeen met de originele tekst, maar bevat twee belangrijke aanvullingen die ontbreken in de originele tekst: een waarschuwing over externe bedrijven die VOG-aanvragen aanbieden en de mogelijkheid om vooraf een gratis VOG-check te doen. De kosteninformatie is consistent tussen beide bronnen."
+  }
+}

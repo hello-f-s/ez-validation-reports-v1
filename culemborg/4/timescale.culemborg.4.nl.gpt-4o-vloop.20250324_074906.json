@@ -1,0 +1,89 @@
+{
+  "context": {
+    "municipality": {
+      "name": "CULEMBORG",
+      "contact": {
+        "phone": "(0345) 47 77 00",
+        "email": "info@culemborg.nl",
+        "website": "http://www.culemborg.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 31,
+    "true_sentences": 29,
+    "false_sentences": 2,
+    "accuracy_percentage": 93.5,
+    "false_statements": [
+      {
+        "sentence": "Telefoon: 0345 477 700 (Maandag, dinsdag, woensdag, donderdag van 9.00 - 16.00 uur, vrijdag van 9.00 - 12.00 uur)",
+        "status": "false",
+        "note": "Het telefoonnummer van gemeente Culemborg is 14 0345, niet 0345 477 700"
+      },
+      {
+        "sentence": "Bezoekadres: Ridderstraat 250 (ingang Oostersingel) 4101 BK Culemborg",
+        "status": "false",
+        "note": "Het juiste bezoekadres van het stadskantoor is Ridderstraat 250, 4101 BK Culemborg. Er wordt niet specifiek verwezen naar een ingang aan de Oostersingel op de officiële website"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.culemborg.nl/straatartiest",
+      "https://www.culemborg.nl/evenement-organiseren",
+      "https://www.culemborg.nl/omgevingsvergunning",
+      "https://www.culemborg.nl/informatieverzoek",
+      "https://www.culemborg.nl/informatieverzoek-en-woo-verzoek"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bij een belastend evenement vragen we advies bij de afdelingen Wijkzaken en Verkeer. En bij de politie en brandweer.",
+          "original_reference": "Bij belastende evenementen vragen we advies bij de afdelingen Wijkzaken en Verkeer, alsmede de politie en brandweer.",
+          "note": "De formulering in de bron is directer en gebruikt 'En' als scheiding, terwijl de originele tekst 'alsmede' gebruikt. Dit is echter alleen een tekstueel verschil zonder inhoudelijke impact.",
+          "source_urls": [
+            "https://www.culemborg.nl/evenement-organiseren"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Dien het formulier 'klein evenement' tenminste tien werkdagen van tevoren in.",
+          "original_reference": "Hiervoor is alleen een meldplicht, en deze melding moet ten minste tien werkdagen van tevoren gedaan worden.",
+          "note": "De bron specificeert expliciet een 'klein evenement formulier', terwijl de originele tekst alleen over een 'melding' spreekt.",
+          "source_urls": [
+            "https://www.culemborg.nl/evenement-organiseren"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Maandag: 9.00 - 16.00 uur, Dinsdag: 9.00 - 19.00 uur, Woensdag: 9.00 - 16.00 uur, Donderdag: 9.00 - 16.00 uur, Vrijdag: 9.00 - 12.00 uur",
+          "original_reference": "Dezelfde openingstijden als in originele tekst",
+          "note": "De openingstijden zijn consistent in alle bronnen",
+          "source_urls": [
+            "https://www.culemborg.nl/straatartiest",
+            "https://www.culemborg.nl/informatieverzoek-en-woo-verzoek"
+          ]
+        }
+      ]
+    },
+    "summary": "De gevonden verschillen zijn voornamelijk tekstueel van aard en hebben geen significante impact op de procedures of vereisten. Het belangrijkste verschil is de specifieke benaming van het 'klein evenement formulier' in de bronnen versus alleen een 'melding' in de originele tekst. De kerngegevens zoals openingstijden, contactgegevens en aanvraagtermijnen zijn consistent tussen alle bronnen."
+  }
+}

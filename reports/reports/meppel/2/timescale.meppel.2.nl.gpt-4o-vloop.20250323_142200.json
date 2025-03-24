@@ -1,0 +1,75 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MEPPEL",
+      "contact": {
+        "phone": "14 0522",
+        "email": "postbus@meppel.nl",
+        "website": "http://www.meppel.nl"
+      }
+    },
+    "service": {
+      "id": 2,
+      "name": "Bord of spandoek plaatsen aan de openbare weg"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "De gemeente beslist binnen 8 weken over de vergunningaanvraag, maar deze termijn kan met 8 weken worden verlengd indien nodig.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Meppel wordt een beslissing over een vergunningaanvraag binnen 6 weken genomen, niet 8 weken. De verlengingstermijn is ook 6 weken in plaats van 8 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 2,
+    "invalid_urls": 3,
+    "accuracy_percentage": 40.0,
+    "valid_urls_list": [
+      "https://www.meppel.nl/Ondernemer/Vergunningen_regelingen/Reclame_aankondigingen",
+      "https://www.meppel.nl/Ondernemer/Vergunningen_regelingen/Horeca_detailhandel/informatiestand_plaatsen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.meppel.nl/Ondernemer/Vergunningen_regelingen/Reclame_aankondigingen/spandoek_plaatsen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.meppel.nl/Ondernemer/Vergunningen_regelingen/Reclame_aankondigingen/reclame_plaatsen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.meppel.nl/Inwoner/Wonen_ver_bouwen/Ver_bouwen_slopen/Omgevingsplan_afwijken",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wilt u de weg, een weggedeelte of andere openbare plaats tijdelijk gebruiken anders dan de publieke functie daarvan? Dan heeft u toestemming van de gemeente nodig. U vraagt hiervoor ontheffing.",
+          "original_reference": "Voor een spandoek of bord dat niet aan de voorwaarden voldoet, moet een vergunning worden aangevraagd bij de gemeente.",
+          "note": "De bronpagina spreekt over een 'ontheffing' terwijl de originele tekst een 'vergunning' noemt. Dit is een belangrijk juridisch verschil in terminologie.",
+          "source_urls": [
+            "https://www.meppel.nl/Ondernemer/Vergunningen_regelingen/Gebruiken_gemeentegrond"
+          ]
+        }
+      ]
+    },
+    "summary": "Er is één belangrijk verschil gevonden in de terminologie tussen de bronpagina's en de originele tekst. De gemeente spreekt in de bronpagina over een 'ontheffing' voor het gebruik van gemeentegrond, terwijl in de originele tekst wordt gesproken over een 'vergunning'. Dit kan van belang zijn voor de juiste aanvraagprocedure. Verder lijken de beschikbare bronpagina's onvoldoende specifieke informatie te bevatten over spandoeken om andere verschillen te kunnen identificeren of verifiëren."
+  }
+}

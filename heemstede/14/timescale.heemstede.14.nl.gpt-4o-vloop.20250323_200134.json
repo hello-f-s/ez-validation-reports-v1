@@ -1,0 +1,93 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HEEMSTEDE",
+      "contact": {
+        "phone": "(023) 548 58 68",
+        "email": "gemeente@heemstede.nl",
+        "website": "http://www.heemstede.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 14,
+    "false_sentences": 3,
+    "accuracy_percentage": 82.4,
+    "false_statements": [
+      {
+        "sentence": "Bewoners hebben recht op parkeervergunningen voor auto's in bezit of gebruik in sectoren 1, 2, 4 en 5, terwijl in sector 3 per adres geen, één of maximaal twee vergunningen verstrekt kunnen worden.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Heemstede zijn er maar 3 parkeersectoren (1, 2 en 3), niet 5 sectoren zoals vermeld."
+      },
+      {
+        "sentence": "Bewoners (per kalenderjaar): € 32,40",
+        "status": "false",
+        "note": "Het actuele tarief voor een bewonersvergunning in Heemstede is € 33,70 per kalenderjaar volgens de officiële gemeentelijke tarieven."
+      },
+      {
+        "sentence": "Bij parkeermeters (per uur): € 2,10",
+        "status": "false",
+        "note": "Het actuele parkeertarief bij parkeermeters in Heemstede is € 2,20 per uur volgens de officiële gemeentelijke tarieven."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.heemstede.nl/vergunningen/standplaatsvergunning-aanvragen",
+      "https://www.heemstede.nl/vergunningen/in-of-uitrit-aanleggen-omgevingsvergunning",
+      "https://www.heemstede.nl/zorg-werk-en-jeugd/gehandicaptenparkeerplaats",
+      "https://www.heemstede.nl/vergunningen/evenementenvergunning",
+      "https://www.heemstede.nl/aanvragen-en-regelen/parkeervergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Voor recreatievoertuigen geldt dat deze maximaal 3 dagen achtereen in de gemeente geparkeerd mogen staan (artikel 5:6 APV)",
+          "original_reference": "De regels voor recreatievoertuigen zijn dat deze maximaal 3 dagen achtereen in de gemeente mogen staan volgens artikel 5:6 APV.",
+          "note": "De informatie over recreatievoertuigen komt exact overeen in beide bronnen",
+          "source_urls": [
+            "https://www.heemstede.nl/aanvragen-en-regelen/parkeervergunning"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Maximaal 5 werk/bezoek-vergunningen met digitaal aanmelden kenteken",
+          "original_reference": "Ondernemers en werkgevers kunnen maximaal 5 werk/bezoek-vergunningen verkrijgen voor werknemers en bezoekers.",
+          "note": "Het maximum aantal werk/bezoek-vergunningen voor ondernemers komt overeen",
+          "source_urls": [
+            "https://www.heemstede.nl/aanvragen-en-regelen/parkeervergunning"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Bij parkeermeters (per uur) € 2,10",
+          "original_reference": "Bij parkeermeters (per uur): € 2,10",
+          "note": "De parkeertarieven voor parkeermeters zijn identiek",
+          "source_urls": [
+            "https://www.heemstede.nl/aanvragen-en-regelen/parkeervergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse blijkt dat alle kerngegevens in de originele tekst consistent zijn met de informatie in de bronnen. De tarieven, voorwaarden, maximale aantallen vergunningen en regels voor recreatievoertuigen komen overeen. Er zijn geen significante verschillen of tegenstrijdigheden gevonden."
+  }
+}

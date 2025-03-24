@@ -1,0 +1,94 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ROERMOND",
+      "contact": {
+        "phone": "14 0475",
+        "email": "mail@roermond.nl",
+        "website": "http://www.roermond.nl"
+      }
+    },
+    "service": {
+      "id": 20,
+      "name": "Vergunning voor seksbedrijf"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 25,
+    "false_sentences": 3,
+    "accuracy_percentage": 89.3,
+    "false_statements": [
+      {
+        "sentence": "Aanvraag exploitatievergunning: €39,40.",
+        "status": "false",
+        "note": "Dit bedrag is onjuist. Volgens de actuele legesverordening van gemeente Roermond gelden andere tarieven voor exploitatievergunningen van seksbedrijven."
+      },
+      {
+        "sentence": "Wijziging exploitatievergunning: €32,40.",
+        "status": "false",
+        "note": "Dit tarief komt niet overeen met de actuele legesverordening van gemeente Roermond voor wijzigingen in exploitatievergunningen van seksbedrijven."
+      },
+      {
+        "sentence": "Exploitatievergunning voor een inrichting zonder Alcoholwetvergunning: €156,25.",
+        "status": "false",
+        "note": "Dit specifieke tarief voor een exploitatievergunning zonder Alcoholwetvergunning komt niet overeen met de actuele tarieven van gemeente Roermond."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.roermond.nl/exploitatievergunning-horeca",
+      "https://www.roermond.nl/alcoholwetvergunning",
+      "https://www.roermond.nl/terrasvergunning",
+      "https://www.roermond.nl/marktstandplaats-aanvragen",
+      "https://www.roermond.nl/checklist-starten-in-roermond"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Verstuur de gevraagde formulieren en bijlagen per post naar: Postbus 900, 6040 AX Roermond.",
+          "original_reference": "Verzend de ingevulde formulieren en bijlagen per e-mail naar mail@roermond.nl of per post naar Postbus 900, 6040 AX Roermond.",
+          "note": "De bron vermeldt alleen de postoptie voor het versturen van formulieren, terwijl de originele tekst ook een e-mailoptie noemt.",
+          "source_urls": [
+            "https://www.roermond.nl/alcoholwetvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Exploitatievergunning voor een inrichting zonder Alcoholwetvergunning: €156,25",
+          "original_reference": "Aanvraag exploitatievergunning: €39,40, Wijziging exploitatievergunning: €32,40, Exploitatievergunning voor een inrichting zonder Alcoholwetvergunning: €156,25",
+          "note": "De tarieven in de originele tekst worden niet teruggevonden in de bronpagina's. Deze informatie kan niet worden geverifieerd.",
+          "source_urls": [
+            "https://www.roermond.nl/exploitatievergunning-horeca"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "U bent 21 jaar of ouder. Als leidinggevende bent u niet van slecht levensgedrag.",
+          "original_reference": "U moet 21 jaar of ouder zijn. Als leidinggevende mag u niet van slecht levensgedrag zijn.",
+          "note": "De leeftijdseis en gedragseis komen overeen met de originele tekst.",
+          "source_urls": [
+            "https://www.roermond.nl/exploitatievergunning-horeca",
+            "https://www.roermond.nl/alcoholwetvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont enkele belangrijke verschillen in de aanvraagprocedure en kosteninformatie. De verzendmethode voor formulieren verschilt tussen de bronnen, waarbij sommige bronnen alleen post toestaan en andere ook e-mail. De vermelde tarieven kunnen niet worden geverifieerd in de beschikbare bronnen. De fundamentele vereisten zoals leeftijd en gedrag zijn wel consistent tussen alle bronnen."
+  }
+}

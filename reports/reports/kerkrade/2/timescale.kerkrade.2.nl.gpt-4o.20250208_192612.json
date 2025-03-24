@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "KERKRADE",
+      "contact": {
+        "phone": "14 045",
+        "email": "gemeentehuis@kerkrade.nl",
+        "website": "http://www.kerkrade.nl"
+      }
+    },
+    "service": {
+      "id": 2,
+      "name": "Bord of spandoek plaatsen aan de openbare weg"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "U ontvangt binnen 8 weken bericht over de goedkeuring van uw aanvraag.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Kerkrade wordt een aanvraag voor een spandoek binnen 2 weken afgehandeld, niet binnen 8 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.kerkrade.nl/omgevingsvergunning",
+      "https://www.kerkrade.nl/plaatsen-steiger-schutting-of-materialen",
+      "https://www.kerkrade.nl/standplaats-aanvragen",
+      "https://www.kerkrade.nl/terras-plaatsen",
+      "https://www.kerkrade.nl/spandoek-ophangen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.kerkrade.nl/spandoek-ophangen-gemeente-kerkrade\">Gemeente",
+        "reason": "INVALID: Error scraping https://www.kerkrade.nl/spandoek-ophangen-gemeente-kerkrade\">Gemeente: 404 Client Error: Not Found for url: https://www.kerkrade.nl/spandoek-ophangen-gemeente-kerkrade%22%3EGemeente"
+      },
+      {
+        "url": "https://www.kerkrade.nl/spandoek-ophangen-gemeente-kerkrade",
+        "reason": "INVALID: Error scraping https://www.kerkrade.nl/spandoek-ophangen-gemeente-kerkrade: 404 Client Error: Not Found for url: https://www.kerkrade.nl/spandoek-ophangen-gemeente-kerkrade"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De gemeente kan eisen dat uw spandoek wind en/of lucht doorlaat. Let verder op het volgende: Zorg ervoor dat u het spandoek goed vastmaakt. Zorg ervoor dat u geen schade veroorzaakt aan bomen, muren of lantaarnpalen. Zorg ervoor dat het spandoek tegen het weer kan.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat niet de specifieke technische vereisten voor het spandoek zoals winddoorlatendheid en bevestigingsvoorschriften. Dit zijn belangrijke aanvullende voorwaarden die in de brontekst wel worden genoemd.",
+          "source_urls": [
+            "https://www.kerkrade.nl/spandoek-ophangen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Let op! De gemeente mag commerciële reclameteksten op spandoeken weigeren.",
+          "original_reference": "Commerciële reclameteksten kunnen worden geweigerd.",
+          "note": "De brontekst is stelliger in de formulering met 'Let op!' en gebruikt 'mag weigeren' in plaats van 'kunnen worden geweigerd', wat een subtiel maar belangrijk verschil in toon en duidelijkheid aangeeft.",
+          "source_urls": [
+            "https://www.kerkrade.nl/spandoek-ophangen"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont twee belangrijke verschillen tussen de originele tekst en de broninhoud. Ten eerste ontbreken in de originele tekst specifieke technische vereisten voor het spandoek, zoals winddoorlatendheid en bevestigingsvoorschriften. Ten tweede is er een verschil in de formulering rond het weigeren van commerciële reclameteksten, waarbij de brontekst een duidelijkere en meer directe toon hanteert. De overige informatie komt overeen met de originele tekst."
+  }
+}

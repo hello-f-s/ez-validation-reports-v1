@@ -1,0 +1,87 @@
+{
+  "context": {
+    "municipality": {
+      "name": "NIJMEGEN",
+      "contact": {
+        "phone": "14 024",
+        "email": "gemeente@nijmegen.nl",
+        "website": "http://www.nijmegen.nl"
+      }
+    },
+    "service": {
+      "id": 13,
+      "name": "Omzettingsvergunning voor kamerverhuur aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 31,
+    "true_sentences": 29,
+    "false_sentences": 2,
+    "accuracy_percentage": 93.5,
+    "false_statements": [
+      {
+        "sentence": "Een omzettingsvergunning kost € 1.341,15.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van de gemeente Nijmegen kost een omzettingsvergunning € 1.375,- (2024 tarief)."
+      },
+      {
+        "sentence": "Een omgevingsvergunning voor kamerverhuur kost € 750,-.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van de gemeente Nijmegen kost een omgevingsvergunning voor kamerverhuur € 772,- (2024 tarief)."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 4,
+    "invalid_urls": 2,
+    "accuracy_percentage": 66.7,
+    "valid_urls_list": [
+      "https://www.nijmegen.nl/diensten/bouwen-en-wonen/kamers-verhuren/",
+      "https://www.nijmegen.nl/diensten/bouwen-en-wonen/vooroverleg-omgevingsvergunning/",
+      "https://www.nijmegen.nl/diensten/evenementen/schema-vergunningen-activiteiten/tekstversie/",
+      "https://www.nijmegen.nl/diensten/bouwen-en-wonen/vooroverleg-omgevingsvergunning/kosten-omgevingsvergunning/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.nijmegen.nl/diensten/vergunningen/informatiekraam-melden-of-vergunning/",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.nijmegen.nl/",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Hospi Housing is een platform dat vraag en aanbod koppelt",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat aanvullende informatie over Hospi Housing als platform voor hospitaverhuur, wat niet genoemd wordt in de originele tekst",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/bouwen-en-wonen/kamers-verhuren/"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Als hospita verhuurt u kamers en woont u zelf ook in het huis. U heeft geen vergunning nodig als hospita als alle volgende regels voor u gelden: U bent voor 100% economisch en juridisch eigenaar van de woning, U woont zelf in de woning, U gebruikt minimaal 50% van deze woning voor uw eigen huishouden, U verhuurt maximaal 2 onzelfstandige woonruimten, aan maximaal 2 personen",
+          "original_reference": "Als hospita kunt u zonder vergunning 2 onzelfstandige kamers verhuren [...] U bent 100% economisch en juridisch eigenaar van de woning. U woont zelf in de woning en gebruikt minimaal 50% van de woning voor uw eigen huishouden.",
+          "note": "De voorwaarden voor hospitaverhuur komen exact overeen met de originele tekst",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/bouwen-en-wonen/kamers-verhuren/"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn weinig significante verschillen gevonden tussen de originele tekst en de bronpagina's. Het enige noemenswaardige verschil is de aanvullende informatie over Hospi Housing als platform voor hospitaverhuur, wat een nuttige toevoeging zou kunnen zijn voor de originele tekst. De kernvoorwaarden en regels voor kamerverhuur en hospitaverhuur zijn consistent tussen beide bronnen."
+  }
+}

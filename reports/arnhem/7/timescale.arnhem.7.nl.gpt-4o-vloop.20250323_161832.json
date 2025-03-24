@@ -1,0 +1,75 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ARNHEM",
+      "contact": {
+        "phone": "null",
+        "email": "null",
+        "website": "http://www.arnhem.nl"
+      }
+    },
+    "service": {
+      "id": 7,
+      "name": "Kabels en leidingen aanleggen en beheren"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "Hij is bereikbaar via telefoonnummer 0800-1809.",
+        "status": "false",
+        "note": "Het telefoonnummer 0800-1809 is het algemene nummer van de gemeente Arnhem, niet het directe nummer van de Coördinator Kabels & Leidingen. Voor specifieke medewerkers worden geen directe telefoonnummers publiekelijk gedeeld op de gemeentewebsite."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.arnhem.nl/Ondernemers/vergunningen_ondernemers/kabels_en_leidingen_plaatsen_in_openbare_grond",
+      "https://www.arnhem.nl/Ondernemers/vergunningen_ondernemers/overige_vergunningen_en_meldingen",
+      "https://www.arnhem.nl/Inwoners/bouwen_en_verbouwen/Waar_mag_u_wonen_werken_of_ondernemen",
+      "https://www.arnhem.nl/Inwoners/bouwen_en_verbouwen/U_wilt_bouwen_of_verbouwen",
+      "https://www.arnhem.nl/Ondernemers/vergunningen_ondernemers"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Indien u nog geen account heeft kunt u die aanvragen via https://ltcworld.com/account-aanvragen/ of 088-2100330",
+          "original_reference": "Als u nog geen account heeft, kunt u deze aanvragen via deze link of telefonisch contact opnemen.",
+          "note": "Het specifieke telefoonnummer (088-2100330) ontbreekt in de originele tekst, wat belangrijke contactinformatie is voor het aanvragen van een account.",
+          "source_urls": [
+            "https://www.arnhem.nl/Ondernemers/vergunningen_ondernemers/kabels_en_leidingen_plaatsen_in_openbare_grond"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Jonnie Nijland, Coördinator Kabels & Leidingen. Hij is bereikbaar via telefoonnummer 0800-1809",
+          "original_reference": "Contact: Telefoon: 0800-1809",
+          "note": "De originele tekst noemt een specifieke contactpersoon (Jonnie Nijland) terwijl in de bronpagina's alleen een algemeen contactnummer wordt vermeld zonder specifieke contactpersoon.",
+          "source_urls": [
+            "https://www.arnhem.nl/Ondernemers/vergunningen_ondernemers/kabels_en_leidingen_plaatsen_in_openbare_grond",
+            "https://www.arnhem.nl/Ondernemers/vergunningen_ondernemers"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele tekst en de bronnen. Het eerste betreft het ontbreken van een specifiek telefoonnummer voor account-aanvragen in de originele tekst. Het tweede verschil betreft de vermelding van een specifieke contactpersoon in de originele tekst die niet terug te vinden is in de bronpagina's. De overige informatie komt inhoudelijk overeen met de bronnen."
+  }
+}

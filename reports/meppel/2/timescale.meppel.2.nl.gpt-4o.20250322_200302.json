@@ -1,0 +1,79 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MEPPEL",
+      "contact": {
+        "phone": "14 0522",
+        "email": "postbus@meppel.nl",
+        "website": "http://www.meppel.nl"
+      }
+    },
+    "service": {
+      "id": 2,
+      "name": "Bord of spandoek plaatsen aan de openbare weg"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "De gemeente beslist binnen 8 weken over de vergunningaanvraag, maar deze termijn kan met 8 weken worden verlengd indien nodig.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Meppel wordt over een vergunningaanvraag binnen 6 weken beslist, niet 8 weken. Deze termijn kan wel worden verlengd met 6 weken indien nodig."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 2,
+    "invalid_urls": 4,
+    "accuracy_percentage": 33.3,
+    "valid_urls_list": [
+      "https://www.meppel.nl/Ondernemer/Vergunningen_regelingen/Reclame_aankondigingen",
+      "https://www.meppel.nl/Ondernemer/Vergunningen_regelingen/Horeca_detailhandel/informatiestand_plaatsen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.overheid.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.meppel.nl/Inwoner/Wonen_ver_bouwen/Ver_bouwen_slopen/Omgevingsplan_afwijken",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.meppel.nl/Ondernemer/Vergunningen_regelingen/Reclame_aankondigingen/spandoek_plaatsen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.meppel.nl/Ondernemer/Vergunningen_regelingen/Reclame_aankondigingen/reclame_plaatsen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Standplaatsen zijn alleen toegestaan op bepaalde plekken in de gemeente. Op sommige plekken binnen de gemeente is op dit moment geen ruimte meer.",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden specifieke locatiebeperkingen voor standplaatsen die niet genoemd worden in de originele tekst. Dit is belangrijke aanvullende informatie voor aanvragers.",
+          "source_urls": [
+            "https://www.meppel.nl/Ondernemer/Vergunningen_regelingen/Horeca_detailhandel/informatiestand_plaatsen"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn weinig significante verschillen gevonden tussen de originele inhoud en de bronnen. Het belangrijkste verschil betreft aanvullende informatie over locatiebeperkingen voor standplaatsen die niet in de originele tekst staat vermeld. De kernvoorwaarden, procedures en termijnen komen overeen met de originele inhoud. De bronnen bevatten echter niet alle specifieke details over spandoeken die in de originele tekst staan, wat suggereert dat de originele tekst mogelijk gebaseerd is op aanvullende of recentere bronnen."
+  }
+}

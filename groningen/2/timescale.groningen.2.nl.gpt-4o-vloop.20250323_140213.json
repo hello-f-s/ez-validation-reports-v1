@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "GRONINGEN",
+      "contact": {
+        "phone": "14 050",
+        "email": "info@groningen.nl",
+        "website": "http://gemeente.groningen.nl"
+      }
+    },
+    "service": {
+      "id": 2,
+      "name": "Bord of spandoek plaatsen aan de openbare weg"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 27,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.4,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor de vergunning bedragen €74,48.",
+        "status": "false",
+        "note": "Dit bedrag is niet correct volgens de actuele legesverordening van de gemeente Groningen. De exacte kosten voor een vergunning zijn variabel en worden per aanvraag bepaald."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://gemeente.groningen.nl/spandoek-aanvragen-of-melden",
+      "https://gemeente.groningen.nl/reclamevergunning-aanvragen",
+      "https://gemeente.groningen.nl/marktstandplaatsvergunning-aanvragen-wijzigen-of-opzeggen",
+      "https://gemeente.groningen.nl/parkeervergunning-voor-bedrijven",
+      "https://gemeente.groningen.nl/spandoek-aanvragen-melden"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://gemeente.groningen.nl/gemeentegrond-tijdelijk-gebruiken",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor de gemeente hangt het bedrijf Vlaggenindustrie Groningen de spandoeken op in een frame. Als particulier of ondernemer mag u zelf geen spandoek ophangen boven de weg.",
+          "original_reference": "Voor de gemeente worden spandoeken in frames opgehangen door Vlaggenindustrie Groningen.",
+          "note": "De originele tekst specificeert niet expliciet dat particulieren en ondernemers zelf geen spandoeken boven de weg mogen ophangen, wat een belangrijke beperking is.",
+          "source_urls": [
+            "https://gemeente.groningen.nl/spandoek-aanvragen-of-melden"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vraag eerst welke plekken nog vrij zijn: bel 14 050 of via contactformulier",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist de belangrijke voorwaarde dat men eerst moet controleren welke locaties beschikbaar zijn voordat men een aanvraag doet.",
+          "source_urls": [
+            "https://gemeente.groningen.nl/spandoek-aanvragen-of-melden"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U betaalt een vast bedrag per jaar",
+          "original_reference": "Als u op grond van de gemeente een bord of zuil plaatst, betaalt u een vast bedrag per jaar.",
+          "note": "De bronpagina is minder specifiek over wanneer het vaste bedrag per jaar geldt, terwijl de originele tekst dit koppelt aan borden of zuilen op gemeentegrond.",
+          "source_urls": [
+            "https://gemeente.groningen.nl/reclamevergunning-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen aanvullende beperkingen en vereisten die niet in de originele tekst staan vermeld. Met name het verbod voor particulieren en ondernemers om zelf spandoeken boven de weg te hangen en de noodzaak om eerst beschikbare locaties te controleren zijn belangrijke ontbrekende details. Ook is er een verschil in de specificiteit van de betalingsvoorwaarden."
+  }
+}

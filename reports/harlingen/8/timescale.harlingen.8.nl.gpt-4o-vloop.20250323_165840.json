@@ -1,0 +1,68 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HARLINGEN",
+      "contact": {
+        "phone": "14 0517",
+        "email": "info@harlingen.nl",
+        "website": "http://www.harlingen.nl"
+      }
+    },
+    "service": {
+      "id": 8,
+      "name": "Marktvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 13,
+    "false_sentences": 2,
+    "accuracy_percentage": 86.7,
+    "false_statements": [
+      {
+        "sentence": "De aanvraag moet uiterlijk 8 weken voor de start of wijziging van de exploitatie van uw horecabedrijf worden ingediend.",
+        "status": "false",
+        "note": "Deze tekst vermengt marktvergunningen met horecavergunningen. Voor een marktvergunning gelden andere termijnen en procedures."
+      },
+      {
+        "sentence": "Het tarief voor het in behandeling nemen van een aanvraag voor de exploitatie van een horecabedrijf bedraagt, volgens artikel 2:28 van de Algemene Plaatselijke Verordening, €176,10.",
+        "status": "false",
+        "note": "Dit tarief en artikel verwijzen naar een horecavergunning, niet naar een marktvergunning. De tarieven voor marktvergunningen zijn anders en staan in een ander deel van de APV."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 0,
+    "invalid_urls": 5,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.harlingen.nl/exploitatievergunning-horecabedrijf",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.harlingen.nl/vergunningen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.harlingen.nl/detailhandel",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.harlingen.nl/horeca",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.harlingen.nl/ondernemersplein",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  }
+}

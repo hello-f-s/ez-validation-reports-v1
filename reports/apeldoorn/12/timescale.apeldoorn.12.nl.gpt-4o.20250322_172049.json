@@ -1,0 +1,73 @@
+{
+  "context": {
+    "municipality": {
+      "name": "APELDOORN",
+      "contact": {
+        "phone": "14 055",
+        "email": "gemeente@apeldoorn.nl",
+        "website": "http://www.apeldoorn.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 20,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.2,
+    "false_statements": [
+      {
+        "sentence": "Voor een bouwvergunning begint het tarief bij € 454,05 en hier komt een bedrag bij per vierkante meter, afhankelijk van het soort bouwwerk.",
+        "status": "false",
+        "note": "Het basistarief voor een bouwvergunning in Apeldoorn begint bij € 464,05 (niet € 454,05) volgens de actuele legesverordening van de gemeente Apeldoorn."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 4,
+    "invalid_urls": 2,
+    "accuracy_percentage": 66.7,
+    "valid_urls_list": [
+      "https://www.apeldoorn.nl",
+      "https://www.apeldoorn.nl/omgevingswet/een-vergunning-aanvragen-binnen-de-omgevingswet-hoe-werkt-dat",
+      "https://www.apeldoorn.nl/omgevingswet/voorbeeld-aanvraag-na-1-januari-2024",
+      "https://www.apeldoorn.nl/wonen-en-leven/bouwen/omgevingsvergunningen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.apeldoorn.nl/wonen-en-leven/bouwen/omgevingsvergunningen/omgevingsvergunning-milieu",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.apeldoorn.nl/wonen-en-leven/bouwen/omgevingsvergunningen/bouwen-verbouwen-en-renoveren-en-reclame",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Check of u een vergunning nodig heeft of een melding moet doen of uw gemeente moet informeren over uw project",
+          "original_reference": "Als ondernemer moet u controleren of uw activiteit een vergunning of melding vereist",
+          "note": "De bronpagina is algemener en geldt voor alle aanvragers, niet alleen ondernemers. De originele tekst beperkt zich onterecht tot alleen ondernemers.",
+          "source_urls": [
+            "https://www.apeldoorn.nl/omgevingswet/een-vergunning-aanvragen-binnen-de-omgevingswet-hoe-werkt-dat"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse van de beschikbare bronnen is er één significant verschil gevonden. De originele tekst richt zich specifiek op ondernemers bij het aanvragen van vergunningen, terwijl de gemeentelijke bronpagina's aangeven dat de procedures gelden voor alle aanvragers, zowel particulieren als ondernemers. De overige informatie over procedures, voorwaarden, kosten en termijnen komt overeen met de bronnen of kon niet geverifieerd worden in de beschikbare bronpagina's."
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DEVENTER",
+      "contact": {
+        "phone": "14 0570",
+        "email": "gemeente@deventer.nl",
+        "website": "http://www.deventer.nl"
+      }
+    },
+    "service": {
+      "id": 10,
+      "name": "Nachtregister bijhouden"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Registratie moet anoniem zijn voor bepaalde gegevens zoals namen.",
+        "status": "false",
+        "note": "Volgens de officiële richtlijnen van gemeente Deventer moet de registratie juist niet anoniem zijn. Namen moeten worden geregistreerd voor controledoeleinden, wat ook wordt bevestigd in de volgende zin van het document."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.deventer.nl/loketten/digitaal-loket/winkeltijden-ontheffing",
+      "https://www.deventer.nl/belastingen-1/overige-belastingen/toeristenbelasting-betalen",
+      "https://www.deventer.nl/langereopeningstijdenhoreca",
+      "https://www.deventer.nl/ontheffingwinkeltijden",
+      "https://www.deventer.nl//langereopeningstijdenhoreca",
+      "https://deventer.nl"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Je bent belastingplichtig voor de toeristenbelasting als je aan de volgende voorwaarden voldoet: Je biedt gelegenheid tot verblijf met overnachting. Het gaat hier om alle vormen van verblijf, zoals Airbnb, campings en kamerverhuur.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina specificeert expliciet verschillende vormen van verblijf (Airbnb, campings, kamerverhuur) die niet genoemd worden in de originele tekst",
+          "source_urls": [
+            "https://www.deventer.nl/belastingen-1/overige-belastingen/toeristenbelasting-betalen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De mensen die bij je overnachten, staan niet ingeschreven in de Basisregistratie Personen (BRP) van de gemeente Deventer. Over personen die in de BRP van de gemeente Deventer staan ingeschreven, ben je geen toeristenbelasting verschuldigd.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de belangrijke voorwaarde over BRP-inschrijving die bepaalt of er toeristenbelasting verschuldigd is",
+          "source_urls": [
+            "https://www.deventer.nl/belastingen-1/overige-belastingen/toeristenbelasting-betalen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Je ontvangt voor het overnachten een vergoeding. Dit hoeft niet altijd of uitsluitend een vergoeding in geld te zijn.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt een aanvullende voorwaarde over vergoeding die niet in de originele tekst staat, inclusief de specificatie dat dit niet alleen een geldelijke vergoeding hoeft te zijn",
+          "source_urls": [
+            "https://www.deventer.nl/belastingen-1/overige-belastingen/toeristenbelasting-betalen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten belangrijke aanvullende voorwaarden voor toeristenbelasting die niet in de originele tekst staan vermeld. Het gaat specifiek om drie belangrijke aspecten: de verschillende soorten accommodaties die onder de regeling vallen, de BRP-inschrijvingsvoorwaarde en de vereiste van een vergoeding (niet noodzakelijk in geld). Deze informatie is essentieel voor het bepalen van belastingplicht."
+  }
+}

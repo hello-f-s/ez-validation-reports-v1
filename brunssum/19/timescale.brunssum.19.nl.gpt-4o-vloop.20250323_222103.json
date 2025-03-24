@@ -1,0 +1,86 @@
+{
+  "context": {
+    "municipality": {
+      "name": "BRUNSSUM",
+      "contact": {
+        "phone": "(045) 527 85 55",
+        "email": "gemeente@brunssum.nl",
+        "website": "http://www.brunssum.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "U ontvangt binnen 8 weken bericht van de gemeente of de vergunning wordt toegewezen.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Brunssum wordt een aanvraag voor een speelautomatenvergunning binnen 4 weken afgehandeld, niet binnen 8 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 2,
+    "invalid_urls": 3,
+    "accuracy_percentage": 40.0,
+    "valid_urls_list": [
+      "https://www.brunssum.nl/ondernemer/horeca/gokautomaten_exploiteren",
+      "https://www.brunssum.nl/ondernemer/horeca/Horecabedrijf_starten"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.brunssum.nl/ondernemer/horeca",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.brunssum.nl/ondernemer/horeca/horecabedrijf_exploitatievergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.brunssum.nl/ondernemer/horeca/Alcoholvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De pagina's bevatten geen specifieke informatie over kosten voor gokautomaten",
+          "original_reference": "Voor 1 gokautomaat: € 56,50\nVoor 2 gokautomaten: € 90,50",
+          "note": "De originele tekst specificeert kosten voor gokautomaten, maar deze informatie is niet terug te vinden op de geciteerde bronpagina's",
+          "source_urls": [
+            "https://www.brunssum.nl/ondernemer/horeca/gokautomaten_exploiteren",
+            "https://www.brunssum.nl/ondernemer/horeca/Horecabedrijf_starten"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De bronpagina's bevatten geen specifieke informatie over aanvraagprocedures of behandeltermijnen",
+          "original_reference": "U ontvangt binnen 8 weken bericht van de gemeente of de vergunning wordt toegewezen",
+          "note": "De behandeltermijn van 8 weken die in de originele tekst wordt genoemd, is niet verifieerbaar in de bronpagina's",
+          "source_urls": [
+            "https://www.brunssum.nl/ondernemer/horeca/gokautomaten_exploiteren",
+            "https://www.brunssum.nl/ondernemer/horeca/Horecabedrijf_starten"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten aanzienlijk minder detail dan de originele tekst. Belangrijke informatie over kosten en behandeltermijnen ontbreekt in de bronnen. De beschikbare bronpagina's lijken onvolledig of mogelijk niet up-to-date te zijn. Verdere verificatie van de actuele tarieven en procedures is aanbevolen."
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "context": {
+    "municipality": {
+      "name": "S-HERTOGENBOSCH",
+      "contact": {
+        "phone": "(073) 615 51 55",
+        "email": "gemeente@s-hertogenbosch.nl",
+        "website": "http://www.s-hertogenbosch.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 11,
+    "false_sentences": 2,
+    "accuracy_percentage": 84.6,
+    "false_statements": [
+      {
+        "sentence": "De tarieven voor parkeervergunningen variëren, bijvoorbeeld € 134,20 per kwartaal voor de binnenstad van maandag t/m vrijdag 08:00-19:00 uur.",
+        "status": "false",
+        "note": "Het genoemde tarief van €134,20 per kwartaal is niet correct volgens de actuele tarieven van de gemeente 's-Hertogenbosch. De gemeente hanteert andere tarieven die regelmatig worden aangepast."
+      },
+      {
+        "sentence": "Voor een ontheffing zijn er verschillende tarieven afhankelijk van de situatie, zoals € 28,25 per dag voor een tijdelijke parkeerontheffing.",
+        "status": "false",
+        "note": "Het genoemde tarief van €28,25 per dag voor een tijdelijke parkeerontheffing komt niet overeen met de actuele tarieven van de gemeente 's-Hertogenbosch."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.s-hertogenbosch.nl/product/omgevingsvergunning/",
+      "https://www.s-hertogenbosch.nl/product/taxivergunning/",
+      "https://www.s-hertogenbosch.nl/product/ontheffingen/",
+      "https://www.s-hertogenbosch.nl/product/parkeervergunning/",
+      "https://www.s-hertogenbosch.nl/product/horecabedrijf/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.google.com/search?q=Tijdelijke+parkeren+",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.metropoolregioeindhoven.nl/bestuur-en-organisatie/gemeenteinwoner/geldzaken/financien/parkeervergunningen-bedrijven",
+        "reason": "INVALID: Error scraping https://www.metropoolregioeindhoven.nl/bestuur-en-organisatie/gemeenteinwoner/geldzaken/financien/parkeervergunningen-bedrijven: 404 Client Error: Not Found for url: https://metropoolregioeindhoven.nl/bestuur-en-organisatie/gemeenteinwoner/geldzaken/financien/parkeervergunningen-bedrijven"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Tarief A: € 25,16 per dag, € 125,80 per 5 dagen\nTarief B: € 21,64 per dag, € 108,20 per 5 dagen\nTarief C: € 17,42 per dag, € 87,10 per 5 dagen",
+          "original_reference": "€ 28,25 per dag voor een tijdelijke parkeerontheffing",
+          "note": "De tarieven in de originele tekst komen niet overeen met de actuele tarieven op de gemeentewebsite. Er zijn drie verschillende tariefzones met lagere bedragen dan genoemd in de originele tekst.",
+          "source_urls": [
+            "https://www.s-hertogenbosch.nl/product/ontheffingen/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een ontheffing geldt alleen voor voertuigen en niet voor aanhangers. Een aanhanger heeft geen ontheffing nodig, maar moet altijd aan het voertuig gekoppeld zijn en noodzakelijk zijn voor de werkzaamheden.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over de regels omtrent aanhangers bij parkeerontheffingen.",
+          "source_urls": [
+            "https://www.s-hertogenbosch.nl/product/ontheffingen/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U kunt bij uw aanvraag kiezen voor de betaalmethodes iDeal of factuur. Na betaling met iDeal is uw parkeervergunning direct geldig. De verwerktijd van een factuur is vijf werkdagen.",
+          "original_reference": "Betaling kan geschieden via iDeal of factuur.",
+          "note": "De originele tekst mist de specifieke informatie over directe geldigheid bij iDeal-betaling en de verwerkingstijd van 5 werkdagen bij factuurbetaling.",
+          "source_urls": [
+            "https://www.s-hertogenbosch.nl/product/parkeervergunning/"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de parkeertarieven die niet actueel zijn in de originele tekst, ontbrekende informatie over aanhangers bij ontheffingen, en incomplete details over betalingsverwerking en geldigheid van vergunningen. De bronnen bevatten gedetailleerdere en actuelere informatie dan de originele tekst."
+  }
+}

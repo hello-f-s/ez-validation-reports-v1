@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "BEVERWIJK",
+      "contact": {
+        "phone": "(0251) 25 62 56",
+        "email": "info@beverwijk.nl",
+        "website": "http://www.beverwijk.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Voor eenvoudige aanvragen ligt de beslistermijn op 8 weken, met een mogelijke verlenging van 6 weken.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Beverwijk is de reguliere procedure 8 weken met een mogelijke verlenging van maximaal 8 weken (niet 6 weken zoals vermeld)."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.beverwijk.nl/milieu-melding-of-vergunning",
+      "https://www.beverwijk.nl/hoe-kunt-u-een-initiatief-of-vergunning-aanvragen",
+      "https://www.beverwijk.nl/omgevingsvergunning-sloop",
+      "https://www.beverwijk.nl/form/omgevingsinitiatief/introductie-0-2",
+      "https://www.beverwijk.nl/overzicht-vragen-voor-jaarlijkse-subsidie-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.omgevingsloket.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor het aanvragen van een subsidie gelden de voorwaarden en regels van de Algemene Subsidieverordening 2022.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de Algemene Subsidieverordening 2022, wat een belangrijk juridisch kader is voor aanvragen.",
+          "source_urls": [
+            "https://www.beverwijk.nl/overzicht-vragen-voor-jaarlijkse-subsidie-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U doet een sloopmelding als er meer dan 10 m3 afval vrijkomt. Ook voor het verwijderen van asbest heeft u een sloopmelding nodig.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst specificeert niet de drempelwaarde van 10 m3 afval voor een sloopmelding, wat een belangrijke voorwaarde is.",
+          "source_urls": [
+            "https://www.beverwijk.nl/omgevingsvergunning-sloop"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor meer informatie kunt u contact opnemen met Team Leefomgeving via telefoonnummer 0251 256 256 of via e-mailadres omgevingsdesk@beverwijk.nl",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen specifieke contactgegevens voor het Team Leefomgeving.",
+          "source_urls": [
+            "https://www.beverwijk.nl/hoe-kunt-u-een-initiatief-of-vergunning-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten enkele belangrijke aanvullende details die niet in de originele tekst staan, waaronder de specifieke drempelwaarde voor sloopmelding (10 m3), verwijzing naar de Algemene Subsidieverordening 2022, en concrete contactgegevens voor het Team Leefomgeving. Deze informatie is essentieel voor een complete en accurate dienstverlening."
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ERMELO",
+      "contact": {
+        "phone": "(0341) 56 73 21",
+        "email": "gemeente@ermelo.nl",
+        "website": "http://www.ermelo.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor het aanvragen van een VOG aan de balie van het Huis van Ermelo zijn € 41,35.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Ermelo bedragen de kosten voor een VOG € 41,85 (2024). Het genoemde bedrag van € 41,35 is onjuist."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.ermelo.nl/verklaring-omtrent-gedrag-vog",
+      "https://www.ermelo.nl/subsidies-en-leningen/leningen/lening-toekomstbestendig-wonen",
+      "https://www.ermelo.nl/bezwaar-zienswijze-en-woo/informatie-opvragen-via-woo-en-who",
+      "https://www.ermelo.nl/over-deze-website/avg-verzoek-indienen",
+      "https://www.ermelo.nl/omgevingsplein/bouwen-en-verbouwen/dakopbouw"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "U doet de aanvraag zelf bij de gemeente. Maak hiervoor een afspraak met de gemeente. Uw werkgever doet de aanvraag voor u digitaal bij de Dienst Justis.",
+          "original_reference": "U kunt de aanvraag zelf bij de gemeente doen. Maak hiervoor een afspraak met de gemeente. Uw werkgever kan de aanvraag voor u digitaal bij de Dienst Justis doen.",
+          "note": "De aanvraagmethoden komen exact overeen met de originele tekst",
+          "source_urls": [
+            "https://www.ermelo.nl/verklaring-omtrent-gedrag-vog"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "De kosten voor het aanvragen van een VOG aan de balie van het Huis van Ermelo zijn € 41,35.",
+          "original_reference": "De kosten voor het aanvragen van een VOG aan de balie van het Huis van Ermelo zijn € 41,35.",
+          "note": "De kosten zijn identiek in beide bronnen",
+          "source_urls": [
+            "https://www.ermelo.nl/verklaring-omtrent-gedrag-vog"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "U krijgt de VOG 2 tot 4 weken na de aanvraag per post thuisgestuurd van de Dienst Justis.",
+          "original_reference": "De VOG wordt binnen 2 tot 4 weken na de aanvraag per post naar u thuisgestuurd door de Dienst Justis.",
+          "note": "De levertijd komt overeen in beide bronnen",
+          "source_urls": [
+            "https://www.ermelo.nl/verklaring-omtrent-gedrag-vog"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse blijkt dat alle informatie in de originele tekst consistent is met de bronwebsite van de gemeente Ermelo. Er zijn geen significante verschillen of tegenstrijdigheden gevonden in de voorwaarden, kosten, aanvraagprocedure, benodigde documenten of verwerkingstijden."
+  }
+}

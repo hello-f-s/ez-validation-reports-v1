@@ -1,0 +1,81 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ZWOLLE",
+      "contact": {
+        "phone": "14 038",
+        "email": "postbus@zwolle.nl",
+        "website": "http://www.zwolle.nl"
+      }
+    },
+    "service": {
+      "id": 15,
+      "name": "Vergunning of ontheffing voor straatartiesten"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 24,
+    "false_sentences": 0,
+    "accuracy_percentage": 100.0,
+    "false_statements": []
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 1,
+    "invalid_urls": 4,
+    "accuracy_percentage": 20.0,
+    "valid_urls_list": [
+      "https://www.zwolle.nl/verzoek-om-handhaving-bouwregels"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.zwolle.nl/veelgestelde-vragen-over-de-omgevingswet",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.zwolle.nl/horecabedrijf-exploitatievergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.zwolle.nl/kentekenparkeren-veelgestelde-vragen-voor-bedrijvenvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.zwolle.nl/muziekoptreden-ontheffing-geluidsnormen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U kunt alleen een verzoek om handhaving indienen als u 'belanghebbende' bent. Dit moeten wij dus eerst beoordelen.",
+          "original_reference": "No matching information",
+          "note": "De bron specificeert dat men 'belanghebbende' moet zijn voor het indienen van een handhavingsverzoek, terwijl dit belangrijke criterium niet wordt genoemd in de originele tekst.",
+          "source_urls": [
+            "https://www.zwolle.nl/verzoek-om-handhaving-bouwregels"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "We kunnen niet voorkomen dat bekend wordt dat u een verzoek heeft ingediend. Daarom nemen we geen anonieme verzoeken in behandeling.",
+          "original_reference": "No matching information",
+          "note": "De bron vermeldt expliciet dat anonieme verzoeken niet in behandeling worden genomen, wat een belangrijke beperking is die niet wordt genoemd in de originele tekst.",
+          "source_urls": [
+            "https://www.zwolle.nl/verzoek-om-handhaving-bouwregels"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina bevat twee belangrijke voorwaarden die niet worden genoemd in de originele tekst: de eis dat men 'belanghebbende' moet zijn en dat anonieme verzoeken niet in behandeling worden genomen. Deze informatie is essentieel voor het correct indienen van verzoeken bij de gemeente."
+  }
+}

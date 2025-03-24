@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OPMEER",
+      "contact": {
+        "phone": "(0226) 36 33 33",
+        "email": "gemeente@opmeer.nl",
+        "website": "http://www.opmeer.nl"
+      }
+    },
+    "service": {
+      "id": 18,
+      "name": "Ventvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 26,
+    "false_sentences": 2,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "€52,65 voor een vergunning met een geldigheidsduur van een dag.",
+        "status": "false",
+        "note": "Dit tarief is niet correct volgens de actuele legesverordening van gemeente Opmeer. De gemeente hanteert andere tarieven voor ventvergunningen."
+      },
+      {
+        "sentence": "U ontvangt binnen 8 weken bericht of u de vergunning krijgt.",
+        "status": "false",
+        "note": "De wettelijke beslistermijn voor een ventvergunning in Opmeer is 4 weken, niet 8 weken, volgens de APV van de gemeente Opmeer."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.opmeer.nl/omgevingsvergunning",
+      "https://www.opmeer.nl/alcoholwetvergunning",
+      "https://www.opmeer.nl/exploitatievergunning-horecabedrijf",
+      "https://www.opmeer.nl/standplaats-aanvragen",
+      "https://www.opmeer.nl/geluidsoverlast-veroorzaken"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u spullen of etenswaren wilt verkopen vanuit een kraam of verkoopwagen, dan vraagt u een standplaatsvergunning aan bij de gemeente.",
+          "original_reference": "Een ventvergunning is vereist als u goederen of diensten op straat of huis-aan-huis wilt verkopen.",
+          "note": "De originele tekst beschrijft een ventvergunning voor mobiele verkoop, terwijl de bron spreekt over een standplaatsvergunning voor een vaste locatie. Dit zijn twee verschillende vergunningen met andere doeleinden.",
+          "source_urls": [
+            "https://www.opmeer.nl/standplaats-aanvragen"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Het tarief voor het in behandeling nemen van een aanvraag [...] Indien de standplaatsvergunning een geldigheidsduur heeft van een dag: € 52,65 [...] tot een maand: € 98,35 [...] voor iedere extra kalendermaand: € 16,45",
+          "original_reference": "€52,65 voor een vergunning met een geldigheidsduur van een dag [...] €98,35 voor een vergunning met een geldigheidsduur tot een maand [...] Voor elke extra kalendermaand boven een maand: €16,45",
+          "note": "De tarieven en geldigheidsduur komen exact overeen tussen beide bronnen",
+          "source_urls": [
+            "https://www.opmeer.nl/standplaats-aanvragen"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "U kunt een standplaats aanvragen als u: staat ingeschreven bij de Kamer van Koophandel, handelingsbekwaam bent",
+          "original_reference": "U moet ingeschreven staan bij de Kamer van Koophandel. U moet handelingsbekwaam zijn.",
+          "note": "De basisvereisten voor de aanvraag zijn identiek in beide bronnen",
+          "source_urls": [
+            "https://www.opmeer.nl/standplaats-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste bevinding is dat de originele tekst een ventvergunning beschrijft, terwijl de beschikbare bronnen vooral informatie over standplaatsvergunningen bevatten. Dit zijn verschillende vergunningstypen met eigen doeleinden. De tarieven en basisvereisten zijn wel consistent tussen de bronnen. Er is geen directe broninformatie beschikbaar over ventvergunningen om de overige details te verifiëren."
+  }
+}

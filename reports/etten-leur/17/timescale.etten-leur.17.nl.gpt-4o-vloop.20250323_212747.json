@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ETTEN-LEUR",
+      "contact": {
+        "phone": "14 076",
+        "email": "info@etten-leur.nl",
+        "website": "http://www.etten-leur.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 22,
+    "false_sentences": 2,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "De aanvraag moet minstens 8 weken van tevoren ingediend worden.",
+        "status": "false",
+        "note": "Volgens de gemeente Etten-Leur moet een terrasvergunning minimaal 6 weken van tevoren worden aangevraagd, niet 8 weken."
+      },
+      {
+        "sentence": "Onze openingstijden zijn van maandag tot en met vrijdag van 9.00 tot 17.00 uur.",
+        "status": "false",
+        "note": "De openingstijden van de gemeente Etten-Leur zijn maandag tot en met vrijdag van 9.00 tot 12.30 uur, en op maandagmiddag ook van 13.30 tot 17.00 uur."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.etten-leur.nl/product/terrasvergunning/",
+      "https://www.etten-leur.nl/product/omgevingsvergunning-aanvragen/",
+      "https://www.etten-leur.nl/product/orienteren-bij-verbouwplannen/",
+      "https://www.etten-leur.nl/product/ventvergunning/",
+      "https://www.etten-leur.nl/product/horeca-en-slijterijvergunning/"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor het verstrekken van alcoholhoudende drank op het terras, moet het terras opgenomen te zijn in de alcoholwetvergunning.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet expliciet dat het terras moet worden opgenomen in de alcoholwetvergunning, wat een belangrijke voorwaarde is.",
+          "source_urls": [
+            "https://www.etten-leur.nl/product/terrasvergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voordat u een aanvraag kunt indienen voor een vergunning, wordt u verzocht om contact op te nemen met de gemeente via het online formulier 'intakegesprek Horeca'.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de vereiste voorafgaande stap van een intakegesprek via een online formulier.",
+          "source_urls": [
+            "https://www.etten-leur.nl/product/horeca-en-slijterijvergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor de behandeling van uw vergunningaanvraag betaalt u leges. U betaalt deze ook als uw aanvraag wordt geweigerd of als uw aanvraag buiten behandeling wordt gelaten.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat leges ook verschuldigd zijn bij weigering of buiten behandeling lating van de aanvraag.",
+          "source_urls": [
+            "https://www.etten-leur.nl/product/omgevingsvergunning-aanvragen/"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten enkele belangrijke aanvullende voorwaarden en details die niet in de originele tekst staan vermeld. Met name de verplichting om het terras op te nemen in de alcoholwetvergunning, de noodzaak van een voorafgaand intakegesprek, en de verplichting tot betaling van leges ook bij afwijzing zijn belangrijke toevoegingen. Deze informatie is essentieel voor een complete en accurate beschrijving van het vergunningsproces."
+  }
+}

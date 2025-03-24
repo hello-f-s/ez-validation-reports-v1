@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ROERMOND",
+      "contact": {
+        "phone": "14 0475",
+        "email": "mail@roermond.nl",
+        "website": "http://www.roermond.nl"
+      }
+    },
+    "service": {
+      "id": 8,
+      "name": "Marktvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "U kunt contact opnemen met de marktmeesters Ruud Franssen en Harry van de Wetering via 14 0475.",
+        "status": "false",
+        "note": "De namen van de huidige marktmeesters worden niet vermeld op de officiële website van de gemeente Roermond. Het telefoonnummer 14 0475 is wel correct, maar het noemen van specifieke namen is niet actueel of verifieerbaar via officiële bronnen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.roermond.nl/checklist-starten-in-roermond",
+      "https://www.roermond.nl/omgevingsvergunning",
+      "https://www.roermond.nl/terrasvergunning",
+      "https://www.roermond.nl/exploitatievergunning-horeca",
+      "https://www.roermond.nl/marktstandplaats-aanvragen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als er geen marktstandplaats vrij is, dan kunnen we u op een wachtlijst plaatsen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de mogelijkheid om op een wachtlijst geplaatst te worden als er geen standplaats beschikbaar is.",
+          "source_urls": [
+            "https://www.roermond.nl/marktstandplaats-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Per vierkante meter Per kwartaal €15,15 (met een minimum van €121.12) Promotiekosten Per kwartaal €35,87",
+          "original_reference": "De informatie over de kosten voor de marktvergunning is niet gespecificeerd in de beschikbare data.",
+          "note": "De brontekst specificeert wel degelijk de exacte kosten voor een marktstandplaats, inclusief promotiekosten, terwijl de originele tekst aangeeft dat deze informatie niet beschikbaar is.",
+          "source_urls": [
+            "https://www.roermond.nl/marktstandplaats-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele tekst en de bronnen. Ten eerste wordt in de bron vermeld dat er een wachtlijstmogelijkheid is bij geen beschikbare standplaats, wat niet genoemd wordt in de originele tekst. Ten tweede specificeert de bron wel degelijk de exacte kosten voor een marktstandplaats (€15,15 per m² per kwartaal met een minimum van €121,12, plus €35,87 promotiekosten per kwartaal), terwijl de originele tekst aangeeft dat deze informatie niet beschikbaar is."
+  }
+}

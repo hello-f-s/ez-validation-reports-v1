@@ -1,0 +1,96 @@
+{
+  "context": {
+    "municipality": {
+      "name": "GRONINGEN",
+      "contact": {
+        "phone": "14 050",
+        "email": "info@groningen.nl",
+        "website": "http://gemeente.groningen.nl"
+      }
+    },
+    "service": {
+      "id": 13,
+      "name": "Omzettingsvergunning voor kamerverhuur aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 26,
+    "false_sentences": 2,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "Deze proef geldt niet in de wijken Vinkhuizen, Schildersbuurt en Indische Buurt vanwege het hoge aandeel studenten in deze wijken.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Groningen geldt de Hospi Housing-regeling niet in de wijken Selwerd, Paddepoel en Vinkhuizen-Zuid, niet in de genoemde wijken."
+      },
+      {
+        "sentence": "Voor de omzettingsvergunning bedragen de kosten exact €3086,11.",
+        "status": "false",
+        "note": "De exacte kosten voor een omzettingsvergunning in Groningen bedragen €3178,70 volgens de actuele legesverordening van de gemeente Groningen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 4,
+    "invalid_urls": 2,
+    "accuracy_percentage": 66.7,
+    "valid_urls_list": [
+      "https://gemeente.groningen.nl/voorwaarden-voor-kamerverhuur",
+      "https://gemeente.groningen.nl/milieuvergunning-aanvragen-of-melden",
+      "https://gemeente.groningen.nl/omgevingsvergunning-aanvragen",
+      "https://gemeente.groningen.nl"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://gemeente.groningen.nl/omzettingsvergunning-voor-kamerverhuur-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://gemeente.groningen.nl/onttrekkingsvergunning-voor-bedrijfsdoeleinden-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bezit u een pand waarin u 3 of meer kamers wilt laten bewonen door 3 of meer personen?",
+          "original_reference": "No matching information",
+          "note": "De originele tekst specificeert niet het minimale aantal kamers/personen voor wanneer een omzettingsvergunning nodig is, terwijl de bron aangeeft dat dit geldt vanaf 3 kamers en 3 personen.",
+          "source_urls": [
+            "https://gemeente.groningen.nl/voorwaarden-voor-kamerverhuur"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "omzettingsvergunning (voorheen: onttrekkingsvergunning)",
+          "original_reference": "omzettingsvergunning",
+          "note": "De bron vermeldt dat de omzettingsvergunning voorheen bekend stond als onttrekkingsvergunning, wat nuttige historische context is die ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://gemeente.groningen.nl/voorwaarden-voor-kamerverhuur"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Als u 5 of meer kamers in het pand hebt, gelden scherpere eisen voor brandveiligheid. Dan moet u een gebruiksmelding doen.",
+          "original_reference": "Bij vijf of meer kamers in een pand gelden scherpere eisen voor brandveiligheid, en moet je een gebruiksmelding doen.",
+          "note": "De informatie over brandveiligheidseisen en gebruiksmelding komt overeen in beide teksten.",
+          "source_urls": [
+            "https://gemeente.groningen.nl/voorwaarden-voor-kamerverhuur"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de specificatie van het minimale aantal kamers/personen (3 of meer) waarbij een vergunning nodig is, en de historische context van de omzettingsvergunning die voorheen bekend stond als onttrekkingsvergunning. Deze informatie ontbreekt in de originele tekst maar is wel relevant voor de volledigheid. De overige informatie komt grotendeels overeen."
+  }
+}

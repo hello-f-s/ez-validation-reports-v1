@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HEEMSKERK",
+      "contact": {
+        "phone": "14 0251",
+        "email": "post@heemskerk.nl",
+        "website": "http://www.heemskerk.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 31,
+    "true_sentences": 30,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.8,
+    "false_statements": [
+      {
+        "sentence": "U kunt bezwaren indienen tegen een verkeersbesluit dat langer dan 4 maanden duurt.",
+        "status": "false",
+        "note": "Deze stelling is onjuist. Volgens de Algemene wet bestuursrecht heeft men 6 weken de tijd om bezwaar in te dienen tegen een verkeersbesluit, gerekend vanaf de dag na publicatie van het besluit. De duur van het verkeersbesluit is hierbij niet relevant."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/omgevingsvergunning",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/veelgestelde-vragen-omgevingsvergunning",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/omgevingsplan-bekijken-of-afwijken",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/vergunning-gebruik-openbare-weg"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Doe een check via het Omgevingsloket of u zonder vergunning mag verbouwen.",
+          "original_reference": "Controleer via het Omgevingsloket of een omgevingsvergunning nodig is, of een melding volstaat.",
+          "note": "De brontekst is specifieker gericht op verbouwen, terwijl de originele tekst breder is en ook melding als optie noemt.",
+          "source_urls": [
+            "https://www.heemskerk.nl/belastingen-en-vergunningen/veelgestelde-vragen-omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bekijk Wet Natuurbescherming. Het is belangrijk om van te voren te weten of het plan misschien schade aan de natuur veroorzaakt. Bij de aanvraag voor de bouwactiviteit moet een rapport aanwezig zijn.",
+          "original_reference": "Vanaf 2024 hoeft er bij isoleren of verbouwen niet standaard een Flora- en Fauna-onderzoek uitgevoerd te worden.",
+          "note": "De brontekst vereist nog wel een natuurrapport bij bouwactiviteiten, terwijl de originele tekst aangeeft dat dit vanaf 2024 niet standaard nodig is bij isoleren of verbouwen.",
+          "source_urls": [
+            "https://www.heemskerk.nl/belastingen-en-vergunningen/veelgestelde-vragen-omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Aanvragen van vóór 1 januari 2024, kunt u in de oude omgeving aanvullen tot 1 juli 2024.",
+          "original_reference": "Aanvragen van vóór 1 januari 2024, kunt u in de oude omgeving aanvullen tot 1 juli 2024.",
+          "note": "De informatie over de overgangstermijn is exact hetzelfde in beide bronnen.",
+          "source_urls": [
+            "https://www.heemskerk.nl/belastingen-en-vergunningen/omgevingsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn enkele belangrijke verschillen gevonden tussen de originele tekst en de bronnen. Met name de vereisten rond natuuronderzoek lijken tegenstrijdig, waarbij de bron nog uitgaat van verplichte natuurrapportage terwijl de originele tekst aangeeft dat dit vanaf 2024 niet meer standaard nodig is. Ook is de benadering van de vergunningscheck in de bron specifieker gericht op verbouwen. De informatie over de overgangstermijn voor oude aanvragen is wel consistent."
+  }
+}

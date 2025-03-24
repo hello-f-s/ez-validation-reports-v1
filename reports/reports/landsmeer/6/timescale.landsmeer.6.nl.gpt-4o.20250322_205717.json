@@ -1,0 +1,82 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LANDSMEER",
+      "contact": {
+        "phone": "(020) 487 71 11",
+        "email": "gemeente@Landsmeer.nl",
+        "website": "http://www.landsmeer.nl"
+      }
+    },
+    "service": {
+      "id": 6,
+      "name": "Integriteitsonderzoek (Wet Bibob)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "U vuurwerk wilt importeren.",
+        "status": "false",
+        "note": "De gemeente Landsmeer voert geen Bibob-onderzoeken uit voor vuurwerkimport. Dit valt onder de bevoegdheid van de nationale overheid/ILT en niet onder gemeentelijke Bibob-procedures."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 4,
+    "invalid_urls": 2,
+    "accuracy_percentage": 66.7,
+    "valid_urls_list": [
+      "https://www.landsmeer.nl/inwoners/paspoort,_rijbewijs,_identiteitskaart_en_uittreksels/uittreksels/verklaring_omtrent_het_gedrag_aanvragen",
+      "https://www.landsmeer.nl/ondernemers/vergunningen/uittreksel_persoonsgegevens_brp_voor_ondernemers",
+      "https://www.landsmeer.nl/inwoners/paspoort,_rijbewijs,_identiteitskaart_en_uittreksels/uittreksels/bewijs_van_nederlandse_nationaliteit_aanvragen",
+      "https://www.landsmeer.nl/ondernemers/vergunningen/bibob-onderzoek"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.landsmeer.nl/bestuur_en_organisatie/beleid_en_regelgeving/wet_open_overheid_(woo",
+        "reason": "INVALID: Error scraping https://www.landsmeer.nl/bestuur_en_organisatie/beleid_en_regelgeving/wet_open_overheid_(woo: 404 Client Error: Not Found for url: https://www.landsmeer.nl/bestuur_en_organisatie/beleid_en_regelgeving/wet_open_overheid_(woo"
+      },
+      {
+        "url": "https://www.gemeentelandsmeer.nl/bibob-onderzoek",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een negatief Bibob-advies blijft 5 jaar geldig.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de geldigheidsduur van een negatief Bibob-advies, terwijl de bron specifiek aangeeft dat dit 5 jaar geldig blijft.",
+          "source_urls": [
+            "https://www.landsmeer.nl/ondernemers/vergunningen/bibob-onderzoek"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Blijkt dat er zwart geld of crimineel verdiend geld in uw bedrijf omgaat? Dan kan de gemeente de vergunning, subsidie of opdracht weigeren of intrekken.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst specificeert niet de concrete reden voor weigering of intrekking bij zwart geld of crimineel verdiend geld, terwijl de bron dit expliciet vermeldt.",
+          "source_urls": [
+            "https://www.landsmeer.nl/ondernemers/vergunningen/bibob-onderzoek"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten twee belangrijke aanvullende details die niet in de originele tekst staan: de geldigheidsduur van 5 jaar voor een negatief Bibob-advies en de expliciete vermelding dat zwart geld of crimineel verdiend geld kan leiden tot weigering of intrekking van vergunningen, subsidies of opdrachten. Deze informatie is relevant voor de volledigheid en duidelijkheid van de Bibob-procedure."
+  }
+}

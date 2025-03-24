@@ -1,0 +1,69 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HAARLEM",
+      "contact": {
+        "phone": "14 023",
+        "email": "antwoord@haarlem.nl",
+        "website": "http://www.haarlem.nl"
+      }
+    },
+    "service": {
+      "id": 8,
+      "name": "Marktvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "De openingstijden zijn elke werkdag van 9.00 tot 16.00 uur en op donderdag ook van 16.00 tot 20.00 uur.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Haarlem is de Publiekshal geopend van maandag t/m vrijdag van 8.00 tot 16.00 uur, en op donderdag van 8.00 tot 20.00 uur."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://haarlem.nl/bouwvergunning",
+      "https://haarlem.nl/aanlegvergunning",
+      "https://haarlem.nl/milieuvergunning",
+      "https://haarlem.nl/exploitatievergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://haarlem.nl/particuliere-marktvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Publiekshal, Zijlvest 39, 2011 VB Haarlem. Openingstijden Elke werkdag: 9.00 tot 16.00 uur, Donderdag: ook van 16.00 tot 20.00 uur",
+          "original_reference": "Publiekshal, Zijlvest 39, 2011 VB Haarlem. De openingstijden zijn elke werkdag van 9.00 tot 16.00 uur en op donderdag ook van 16.00 tot 20.00 uur",
+          "note": "De contactgegevens en openingstijden komen exact overeen",
+          "source_urls": [
+            "https://haarlem.nl/milieuvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse van de geciteerde bronnen zijn er geen significante verschillen of tegenstrijdigheden gevonden met de originele inhoud. De contactgegevens, openingstijden en locatie-informatie komen overeen. De andere bronpagina's bevatten geen relevante informatie over marktvergunningen die vergeleken kon worden met de originele tekst. Het is belangrijk op te merken dat de geciteerde bronnen voornamelijk over andere type vergunningen gaan (bouw-, aanleg-, milieu- en exploitatievergunningen) en daarom weinig overlap hebben met de informatie over marktvergunningen."
+  }
+}

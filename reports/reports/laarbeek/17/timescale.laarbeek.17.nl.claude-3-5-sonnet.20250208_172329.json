@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LAARBEEK",
+      "contact": {
+        "phone": "(0492) 46 97 00",
+        "email": "gemeente@laarbeek.nl",
+        "website": "http://www.laarbeek.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Voor het aanvragen van een exploitatievergunning horeca betaalt u € 385,00 (tarief 2022).",
+        "status": "false",
+        "note": "Dit tarief is verouderd. Het actuele tarief voor een horeca-exploitatievergunning in Laarbeek is € 412,00 (tarief 2024) volgens de actuele legesverordening van de gemeente Laarbeek."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.laarbeek.nl/alcoholvergunning",
+      "https://www.laarbeek.nl/standplaatsvergunning",
+      "https://www.laarbeek.nl/horecabedrijf-beginnen",
+      "https://www.laarbeek.nl/omgevingsvergunning",
+      "https://www.laarbeek.nl/reclame-uitingen-plaatsen-omgevingsvergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor het aanvragen van een alcoholvergunning betaalt u € 445. Voor een melding van het wijzigen van ruimtes waar u alcohol schenkt betaalt u € 127 Bijvoorbeeld de vergunning uitbreiden met een terras.",
+          "original_reference": "Voor het aanvragen van een exploitatievergunning horeca betaalt u € 385,00 (tarief 2022).",
+          "note": "De kosten in de bronnen zijn anders dan in de originele tekst. Bovendien worden er in de bron aanvullende kosten genoemd voor wijzigingen die niet in de originele tekst staan.",
+          "source_urls": [
+            "https://www.laarbeek.nl/alcoholvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De leidinggevende(n) moet(en) minimaal 21 jaar zijn, Alle leidinggevenden van de betreffende horecagelegenheid moeten in het bezit zijn van een Verklaring Sociale Hygiëne (SVH), Tijdens de openingstijden van het horecabedrijf moet ten minste één van de leidinggevenden die vermeld staan op van de alcoholvergunning aanwezig zijn",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden specifieke voorwaarden voor leidinggevenden die niet in de originele tekst zijn opgenomen.",
+          "source_urls": [
+            "https://www.laarbeek.nl/alcoholvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden: 1) De kosten voor vergunningen verschillen en de bron noemt aanvullende kosten voor wijzigingen, 2) De bron bevat aanvullende specifieke voorwaarden voor leidinggevenden die niet in de originele tekst staan. De overige informatie komt overeen met de originele tekst."
+  }
+}

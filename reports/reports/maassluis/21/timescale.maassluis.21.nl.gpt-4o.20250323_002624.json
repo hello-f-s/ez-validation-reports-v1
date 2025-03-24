@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MAASSLUIS",
+      "contact": {
+        "phone": "14 010",
+        "email": "gemeente@maassluis.nl",
+        "website": "http://www.maassluis.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "Een VOG kost €41,35.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Maassluis kost een VOG €41,95. Het genoemde bedrag van €41,35 is onjuist."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.maassluis.nl/verklaring-omtrent-het-gedrag-vog",
+      "https://www.maassluis.nl/exploitatievergunning-horecabedrijf",
+      "https://www.maassluis.nl/informatie-opvragen-bij-de-gemeente-woo",
+      "https://www.maassluis.nl/nederlander-worden-door-naturalisatie",
+      "https://www.maassluis.nl/nederlander-worden-door-optie"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor het aanvragen van een verklaring omtrent het gedrag, moet u een afspraak maken bij het Publiekscentrum.",
+          "original_reference": "Digitaal via de website van de gemeente Maassluis met uw DigiD. Voeg de benodigde documenten toe als bijlage.",
+          "note": "De bron benadrukt dat een afspraak bij het Publiekscentrum noodzakelijk is, terwijl de originele tekst digitale aanvraag als eerste optie noemt zonder verplichte afspraak.",
+          "source_urls": [
+            "https://www.maassluis.nl/verklaring-omtrent-het-gedrag-vog"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wat is een VOG: Een Verklaring Omtrent het Gedrag (VOG) is een bewijs van goed gedrag. Werkgevers of organisaties kunnen om een VOG vragen. Bijvoorbeeld als u in de kinderopvang of het onderwijs gaat werken, maar ook als u een wapenvergunning aanvraagt.",
+          "original_reference": "Een Verklaring Omtrent het Gedrag (VOG) kan door werkgevers of organisaties worden gevraagd, bijvoorbeeld als u als ondernemer in contact staat met kwetsbare groepen of bijzondere goederen.",
+          "note": "De bron geeft specifiekere voorbeelden (kinderopvang, onderwijs, wapenvergunning) dan de originele tekst die algemener blijft.",
+          "source_urls": [
+            "https://www.maassluis.nl/verklaring-omtrent-het-gedrag-vog"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de aanvraagprocedure en de specificiteit van voorbeelden waarbij een VOG nodig is. De bron lijkt meer nadruk te leggen op de fysieke aanvraag bij het Publiekscentrum, terwijl de originele tekst de digitale route voorop stelt. Verder geeft de bron concretere voorbeelden van situaties waarin een VOG vereist is. De overige informatie, zoals kosten en benodigde documenten, komt overeen."
+  }
+}

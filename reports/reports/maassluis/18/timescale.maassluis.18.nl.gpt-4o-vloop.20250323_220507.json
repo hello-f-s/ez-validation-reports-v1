@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MAASSLUIS",
+      "contact": {
+        "phone": "14 010",
+        "email": "gemeente@maassluis.nl",
+        "website": "http://www.maassluis.nl"
+      }
+    },
+    "service": {
+      "id": 18,
+      "name": "Ventvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 20,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.2,
+    "false_statements": [
+      {
+        "sentence": "Een ventvergunning kost €31,30.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Maassluis bedraagt het tarief voor een ventvergunning €32,20 voor 2024."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.maassluis.nl/venten",
+      "https://www.maassluis.nl/exploitatievergunning-horecabedrijf",
+      "https://www.maassluis.nl/verklaring-omtrent-het-gedrag-vog",
+      "https://www.maassluis.nl/watervergunning",
+      "https://www.maassluis.nl/uitrit-of-inrit-aanleggen",
+      "https://www.maassluis.nl"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Een ventvergunning kost € 31,30.",
+          "original_reference": "Een ventvergunning kost €31,30.",
+          "note": "De kosten voor de ventvergunning zijn identiek in beide bronnen",
+          "source_urls": [
+            "https://www.maassluis.nl/venten"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "U moet de ventvergunning aanvragen bij de gemeente. Doe dit minimaal acht weken voordat u er gebruik van gaat maken.",
+          "original_reference": "Zorg ervoor dat u de vergunning minimaal acht weken voordat u deze wilt gebruiken aanvraagt.",
+          "note": "De aanvraagtermijn van 8 weken komt overeen in beide bronnen",
+          "source_urls": [
+            "https://www.maassluis.nl/venten"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Voorbeelden van venters zijn een ijsverkoper of groenteboer met een mobiele wagen.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina geeft extra voorbeelden die niet in de originele tekst staan, maar dit is aanvullende informatie zonder tegenstrijdigheid",
+          "source_urls": [
+            "https://www.maassluis.nl/venten"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse blijkt dat de informatie in de originele tekst consistent is met de bronpagina's. Er zijn geen significante verschillen gevonden in kosten, termijnen, voorwaarden of procedures. De bronpagina bevat enkele aanvullende voorbeelden, maar deze zijn niet in tegenspraak met de originele inhoud. Alle kerngegevens zoals kosten (€31,30) en aanvraagtermijn (8 weken) komen exact overeen."
+  }
+}

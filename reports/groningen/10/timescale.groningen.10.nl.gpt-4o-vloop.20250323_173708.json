@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "GRONINGEN",
+      "contact": {
+        "phone": "14 050",
+        "email": "info@groningen.nl",
+        "website": "http://gemeente.groningen.nl"
+      }
+    },
+    "service": {
+      "id": 10,
+      "name": "Nachtregister bijhouden"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 7,
+    "true_sentences": 6,
+    "false_sentences": 1,
+    "accuracy_percentage": 85.7,
+    "false_statements": [
+      {
+        "sentence": "U moet zich aanmelden via het online aanmeldformulier van het Digitaal Opkopersloket (DOL).",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Groningen moet men zich aanmelden via een formulier op de website van de politie (www.politie.nl/dor), niet via een Digitaal Opkopersloket (DOL). De term DOL wordt niet gebruikt door de gemeente."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://gemeente.groningen.nl/aanmeld-en-registratieplicht-handelaren-en-opkopers",
+      "https://gemeente.groningen.nl/woning-verhuren-aan-toeristen",
+      "https://gemeente.groningen.nl/melding-en-verzoek-om-handhaving",
+      "https://gemeente.groningen.nl/parkeervergunning-voor-bedrijven",
+      "https://gemeente.groningen.nl/servicenormen-wat-u-van-de-gemeente-mag-verwachten"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Stopt u als opkoper? Of opent, sluit of verhuist u een vestiging? Ook dit moet u doorgeven aan de gemeente.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over de verplichting om wijzigingen in bedrijfsvoering (stoppen, verhuizen, etc.) door te geven aan de gemeente.",
+          "source_urls": [
+            "https://gemeente.groningen.nl/aanmeld-en-registratieplicht-handelaren-en-opkopers"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Bent u in Groningen gevestigd als handelaar/opkoper? En koopt u tweedehands goederen zakelijk op, ruilt u of neemt u goederen in? Zoals (edel)metalen, uurwerken, kunstvoorwerpen, (brom)fietsen, elektronica, auto's of auto-onderdelen?",
+          "original_reference": "Bent u handelaar of opkoper in de gemeente Groningen? Dan bent u verplicht om u aan te melden bij de gemeente en een in- en verkoopregister bij te houden. Dit geldt voor het zakelijk opkopen, ruilen of innemen van tweedehands goederen zoals (edel)metalen, uurwerken, kunstvoorwerpen, (brom)fietsen, elektronica, auto's of auto-onderdelen.",
+          "note": "De vereisten en voorwaarden voor handelaren en opkopers komen overeen met de originele tekst.",
+          "source_urls": [
+            "https://gemeente.groningen.nl/aanmeld-en-registratieplicht-handelaren-en-opkopers"
+          ]
+        }
+      ]
+    },
+    "summary": "De broninhoud komt grotendeels overeen met de originele tekst, maar bevat één belangrijke aanvulling: handelaren en opkopers zijn verplicht om bedrijfswijzigingen (zoals stoppen, verhuizen of sluiten van een vestiging) door te geven aan de gemeente. Deze informatie ontbreekt in de originele tekst maar is wel relevant voor de dienstverlening."
+  }
+}

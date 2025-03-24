@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HOOGEVEEN",
+      "contact": {
+        "phone": "14 0528",
+        "email": "info@hoogeveen.nl",
+        "website": "http://www.hoogeveen.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "Vandaag is de service gesloten, zorg ervoor dat u een afspraak maakt voordat u langsgaat.",
+        "status": "false",
+        "note": "Deze uitspraak is niet correct omdat de openingstijden van de gemeente Hoogeveen niet statisch zijn en dagelijks kunnen verschillen. Of de service gesloten is kan alleen bepaald worden op basis van de actuele datum en tijd volgens de officiële openingstijden van de gemeente Hoogeveen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.hoogeveen.nl/uittreksels-en-verklaringen/verklaring-omtrent-het-gedrag-vog",
+      "https://www.hoogeveen.nl/raad-en-college/woo-verzoek",
+      "https://www.hoogeveen.nl/vergunningen/omgevingsvergunningen",
+      "https://www.hoogeveen.nl/veelgestelde-vragen-coffeeshop",
+      "https://www.hoogeveen.nl/geboorte-en-overlijden/geboorteaangifte-doen",
+      "https://www.hoogeveen.nl"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Mail omgevingsvergunningen@dewoldenhoogeveen.nl of bel 14 0528",
+          "original_reference": "info@hoogeveen.nl",
+          "note": "De originele tekst vermeldt alleen het algemene e-mailadres info@hoogeveen.nl, terwijl er voor specifieke diensten zoals omgevingsvergunningen een apart e-mailadres bestaat.",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/omgevingsvergunningen"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "VOG via justis.nl: € 33,85, VOG bij de gemeente: € 41,35",
+          "original_reference": "VOG via justis.nl: € 33,85, VOG bij de gemeente: € 41,35",
+          "note": "De kosten voor VOG-aanvragen zijn exact hetzelfde in beide bronnen",
+          "source_urls": [
+            "https://www.hoogeveen.nl/uittreksels-en-verklaringen/verklaring-omtrent-het-gedrag-vog"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Binnen 8 weken stuurt Dienst Justis u de VOG per post",
+          "original_reference": "Binnen 8 weken ontvangt u de VOG per post",
+          "note": "De verwerkingstermijn van 8 weken wordt in beide bronnen genoemd",
+          "source_urls": [
+            "https://www.hoogeveen.nl/uittreksels-en-verklaringen/verklaring-omtrent-het-gedrag-vog"
+          ]
+        }
+      ]
+    },
+    "summary": "De informatie is grotendeels consistent tussen de originele tekst en de bronnen. Het belangrijkste verschil is de vermelding van een specifiek e-mailadres voor omgevingsvergunningen dat niet in de originele tekst staat. De kosten, procedures en verwerkingstijden komen overeen."
+  }
+}

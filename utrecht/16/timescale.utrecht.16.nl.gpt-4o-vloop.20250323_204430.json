@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "UTRECHT",
+      "contact": {
+        "phone": "(014) 030",
+        "email": "Gemeente@utrecht.nl",
+        "website": "http://www.utrecht.nl"
+      }
+    },
+    "service": {
+      "id": 16,
+      "name": "Registreren in het Landelijk Register Kinderopvang (LRK)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 27,
+    "true_sentences": 25,
+    "false_sentences": 2,
+    "accuracy_percentage": 92.6,
+    "false_statements": [
+      {
+        "sentence": "Bijvoorbeeld, bij het vinden van werk na een bijstandsuitkering, kan men een eenmalige vergoeding van €300 ontvangen.",
+        "status": "false",
+        "note": "Dit specifieke bedrag van €300 wordt niet genoemd in de officiële bronnen van de gemeente Utrecht voor kinderopvangvergoedingen."
+      },
+      {
+        "sentence": "Telefoon: 030 - 286 26 70",
+        "status": "false",
+        "note": "Dit telefoonnummer komt niet overeen met het officiële contactnummer voor kinderopvangzaken bij de gemeente Utrecht."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.utrecht.nl/zorg-en-onderwijs/kinderopvang",
+      "https://www.utrecht.nl/vergoedingkinderopvang/",
+      "https://www.utrecht.nl/ondernemen/vergunningen-en-regels/aanmeld-en-registratieplicht-voor-handelaren-en-opkopers",
+      "https://www.utrecht.nl/rni",
+      "https://www.utrecht.nl/leefgeldoekraine"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U hebt een bijstandsuitkering van ons en volgt een re-integratietraject of een opleiding. U hebt een bijstandsuitkering van ons als aanvulling op inkomen uit parttime werken. U hebt een bijstandsuitkering, bent jonger dan 27 jaar, hebt geen diploma havo, vwo, mbo niveau 2 of hoger en krijgt begeleiding van ons om terug naar school te gaan.",
+          "original_reference": "Ouders met een bijstandsuitkering die een re-integratietraject volgen, een opleiding doen, of parttime werken, kunnen ook in aanmerking komen voor een vergoeding van de eigen bijdrage.",
+          "note": "De bronpagina specificeert aanvullende voorwaarden die niet in de originele tekst staan, zoals de leeftijdsgrens van 27 jaar en de diplomavereisten voor jongeren.",
+          "source_urls": [
+            "https://www.utrecht.nl/vergoedingkinderopvang/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Uw kind(eren) zit(ten) nog niet op het voortgezet onderwijs.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt een belangrijke voorwaarde die volledig ontbreekt in de originele tekst: kinderen mogen nog niet op het voortgezet onderwijs zitten.",
+          "source_urls": [
+            "https://www.utrecht.nl/vergoedingkinderopvang/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "secretariaatonderwijs@utrecht.nl",
+          "original_reference": "secretariaatonderwijs@utrecht.nl",
+          "note": "Dit e-mailadres wordt genoemd in de originele tekst maar is niet terug te vinden in de bronpagina's, wat de accuraatheid ervan in twijfel trekt.",
+          "source_urls": [
+            "https://www.utrecht.nl/zorg-en-onderwijs/kinderopvang"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn enkele belangrijke verschillen gevonden tussen de originele tekst en de bronpagina's. De bronnen vermelden specifiekere voorwaarden voor de kinderopvangvergoeding, waaronder een leeftijdsgrens van 27 jaar voor jongeren zonder bepaalde diploma's en de voorwaarde dat kinderen nog niet op het voortgezet onderwijs mogen zitten. Daarnaast kon het vermelde e-mailadres niet worden geverifieerd in de bronpagina's. Deze verschillen maken de voorwaarden in werkelijkheid strenger dan de originele tekst suggereert."
+  }
+}

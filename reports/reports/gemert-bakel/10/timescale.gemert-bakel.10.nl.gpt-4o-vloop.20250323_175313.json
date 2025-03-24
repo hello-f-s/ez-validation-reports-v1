@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "GEMERT-BAKEL",
+      "contact": {
+        "phone": "(0492) 37 85 00",
+        "email": "gemeente@gemert-bakel.nl",
+        "website": "http://www.gemert-bakel.nl"
+      }
+    },
+    "service": {
+      "id": 10,
+      "name": "Nachtregister bijhouden"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "Het tarief voor de toeristenbelasting bedraagt per persoon per overnachting € 1,60.",
+        "status": "false",
+        "note": "Het huidige tarief voor toeristenbelasting in Gemert-Bakel bedraagt € 2,00 per persoon per overnachting volgens de officiële gemeentelijke verordening toeristenbelasting 2024."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.gemert-bakel.nl/toeristenbelasting",
+      "https://www.gemert-bakel.nl/evenementen-vergunning",
+      "https://www.gemert-bakel.nl/verzoek-op-basis-van-de-wet-open-overheid-woo",
+      "https://www.gemert-bakel.nl/alcohol-schenken-in-horecabedrijven",
+      "https://www.gemert-bakel.nl/verklaring-omtrent-het-gedrag-vog",
+      "https://www.gemert-bakel.nl"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De gemeentelijke BOA's en een extern bedrijf controleren voor de ...",
+          "original_reference": "Jaarlijks vinden op willekeurige basis controles plaats door gemeentelijke BOA's en een extern bedrijf",
+          "note": "De originele tekst specificeert dat controles jaarlijks plaatsvinden, terwijl dit niet expliciet wordt vermeld in de bronpagina. De bronpagina lijkt onvolledig te zijn (eindigt met '...')",
+          "source_urls": [
+            "https://www.gemert-bakel.nl/toeristenbelasting"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Het tarief bedraagt per persoon per overnachting € 1,60",
+          "original_reference": "Het tarief voor de toeristenbelasting bedraagt per persoon per overnachting € 1,60",
+          "note": "Het tarief voor toeristenbelasting komt exact overeen in beide bronnen",
+          "source_urls": [
+            "https://www.gemert-bakel.nl/toeristenbelasting"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voordat u start met het aanbieden van nachtverblijf, moet u dit melden bij BSOB",
+          "original_reference": "Voordat u begint met het aanbieden van nachtverblijf, moet u dit melden bij Belastingsamenwerking Oost-Brabant (BSOB)",
+          "note": "De originele tekst gebruikt de volledige naam van BSOB bij eerste vermelding, terwijl de bronpagina direct de afkorting gebruikt",
+          "source_urls": [
+            "https://www.gemert-bakel.nl/toeristenbelasting"
+          ]
+        }
+      ]
+    },
+    "summary": "De gevonden verschillen zijn voornamelijk van redactionele aard en hebben geen significante impact op de inhoudelijke informatie. De kerngegevens zoals het tarief voor toeristenbelasting en de meldingsplicht bij BSOB komen overeen. Het enige noemenswaardige verschil betreft de beschrijving van de controles, waarbij de originele tekst specifieker is over de frequentie (jaarlijks) dan de bronpagina."
+  }
+}

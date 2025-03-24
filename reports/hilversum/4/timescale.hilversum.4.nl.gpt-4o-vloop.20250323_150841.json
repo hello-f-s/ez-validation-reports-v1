@@ -1,0 +1,89 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HILVERSUM",
+      "contact": {
+        "phone": "14 035",
+        "email": "gemeente@hilversum.nl",
+        "website": "http://www.hilversum.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 31,
+    "true_sentences": 29,
+    "false_sentences": 2,
+    "accuracy_percentage": 93.5,
+    "false_statements": [
+      {
+        "sentence": "De standaard kosten zijn € 178,85 of € 447,20.",
+        "status": "false",
+        "note": "De actuele tarieven voor evenementenvergunningen in Hilversum zijn anders dan de genoemde bedragen. De exacte tarieven zijn te vinden in de actuele legesverordening van de gemeente Hilversum."
+      },
+      {
+        "sentence": "Bij late aanvragen (minder dan 4 weken voor de startdatum) wordt een toeslag van 100% op het tarief toegepast.",
+        "status": "false",
+        "note": "Late aanvragen worden in Hilversum niet in behandeling genomen. Er geldt een minimale aanvraagtermijn van 8 weken voor reguliere evenementen en 12 weken voor grote evenementen. Er is geen sprake van een toeslag bij late aanvragen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://hilversum.nl/vergunningen/evenement-organiseren/evenementenvergunning-aanvragen",
+      "https://hilversum.nl/vergunningen/evenement-organiseren/buurt-straatfeest-klein-evenement-melden",
+      "https://hilversum.nl/vergunningen/evenement-organiseren",
+      "https://hilversum.nl/ondernemen/vergunningen-meldingen-voor-ondernemers",
+      "https://hilversum.nl/bouwen-verbouwen/omgevingswet/aanvraag-omgevingsvergunning-uitgelegd",
+      "https://www.hilversum.nl"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een klein evenement moet u minimaal 4 weken voor het evenement melden bij de gemeente",
+          "original_reference": "Bij late aanvragen (minder dan 4 weken voor de startdatum) wordt een toeslag van 100% op het tarief toegepast",
+          "note": "De bronnen specificeren dat kleine evenementen minimaal 4 weken van tevoren gemeld moeten worden, terwijl de originele tekst dit als een 'late aanvraag' beschouwt met een tarieftoeslag",
+          "source_urls": [
+            "https://hilversum.nl/vergunningen/evenement-organiseren/buurt-straatfeest-klein-evenement-melden"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het team Evenementen vertelt u hier meer over",
+          "original_reference": "Specifieke aanvullende documenten worden door het team Evenementen aangegeven na contact",
+          "note": "De bronnen zijn minder specifiek over welke aanvullende documenten nodig zijn en verwijzen naar het team Evenementen voor meer informatie, terwijl de originele tekst al enkele specifieke documenten noemt zoals plattegrond, calamiteitenplan en verkeersplan",
+          "source_urls": [
+            "https://hilversum.nl/vergunningen/evenement-organiseren/evenementenvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "In Hilversum zijn in het Omgevingsplan 3 locaties aangewezen waar evenementen mogen plaatsvinden",
+          "original_reference": "In Hilversum zijn specifieke locaties aangewezen waar een omgevingsvergunning nodig kan zijn",
+          "note": "De bronnen specificeren dat er 3 aangewezen locaties zijn waar evenementen mogen plaatsvinden, terwijl de originele tekst suggereert dat dit locaties zijn waar een omgevingsvergunning nodig kan zijn",
+          "source_urls": [
+            "https://hilversum.nl/vergunningen/evenement-organiseren/evenementenvergunning-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de interpretatie van aanvraagtermijnen voor kleine evenementen, de specificatie van benodigde documenten, en de status van aangewezen evenementenlocaties. De bronnen zijn op sommige punten minder specifiek dan de originele tekst en geven een andere context voor bepaalde vereisten. De tariefinformatie en specifieke documentvereisten uit de originele tekst zijn niet direct terug te vinden in de bronnen."
+  }
+}

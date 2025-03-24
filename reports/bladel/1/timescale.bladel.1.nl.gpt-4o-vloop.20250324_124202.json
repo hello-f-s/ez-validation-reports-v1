@@ -1,0 +1,64 @@
+{
+  "context": {
+    "municipality": {
+      "name": "BLADEL",
+      "contact": {
+        "phone": "(0497) 36 16 36",
+        "email": "info@bladel.nl",
+        "website": "http://www.bladel.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 31,
+    "true_sentences": 29,
+    "false_sentences": 2,
+    "accuracy_percentage": 93.5,
+    "false_statements": [
+      {
+        "sentence": "Je barmedewerker onder de 18 jaar mag alcohol verkopen, maar niet drinken.",
+        "status": "false",
+        "note": "Volgens de Alcoholwet mag personeel onder de 18 jaar geen alcoholhoudende drank verstrekken. Barmedewerkers moeten minimaal 18 jaar zijn om alcohol te mogen verkopen."
+      },
+      {
+        "sentence": "Voor meer informatie over de digitale aanvraag, kun je de website van eHerkenning raadplegen. Ook kun je gebruik maken van DigiD voor het indienen van aanvragen.",
+        "status": "false",
+        "note": "Voor horecaondernemers is alleen eHerkenning niveau 2+ mogelijk voor het indienen van alcoholvergunningen bij gemeente Bladel. DigiD is niet mogelijk voor deze aanvragen omdat dit alleen voor particulieren is."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 4,
+    "valid_urls": 0,
+    "invalid_urls": 4,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.bladel.nl/alcoholvergunning-voor-commerciele-bedrijven",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.bladel.nl/alcoholvergunning-voor-paracommerciele-bedrijven",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.bladel.nl/alcohol-schenken-tijdens-evenement",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.bladel.nl/omgevingsvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  }
+}

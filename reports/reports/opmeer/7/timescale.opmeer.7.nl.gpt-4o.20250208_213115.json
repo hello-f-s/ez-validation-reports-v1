@@ -1,0 +1,96 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OPMEER",
+      "contact": {
+        "phone": "(0226) 36 33 33",
+        "email": "gemeente@opmeer.nl",
+        "website": "http://www.opmeer.nl"
+      }
+    },
+    "service": {
+      "id": 7,
+      "name": "Kabels en leidingen aanleggen en beheren"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "Voor graafmeldingen moet u minstens 20 en uiterlijk 2 werkdagen voor aanvang van de werkzaamheden melden.",
+        "status": "false",
+        "note": "Volgens de KLIC-regelgeving die ook in gemeente Opmeer geldt, moet een graafmelding minimaal 3 werkdagen (niet 20) en maximaal 20 werkdagen voor aanvang van de graafwerkzaamheden worden gedaan."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 8,
+    "valid_urls": 5,
+    "invalid_urls": 3,
+    "accuracy_percentage": 62.5,
+    "valid_urls_list": [
+      "https://www.opmeer.nl/omgevingsvergunning",
+      "https://www.opmeer.nl/kabels-en-leidingen-leggen-in-openbare-grond",
+      "https://www.opmeer.nl/graafmelding",
+      "https://www.opmeer.nl/exploitatieovereenkomst",
+      "https://www.opmeer.nl/uitrit-of-inrit-aanleggen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.gemeenteopmeer.nl",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://omgevingswet.overheid.nl/home",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://omgevingswet.overheid.nl/home\">Omgevingswet",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor een gebied van 500 bij 500 meter of kleiner is één Graafmelding voldoende. Voor grotere gebieden doet u meerdere meldingen of kiest u voor een tracémelding.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de maximale gebiedsgrootte voor één graafmelding en de mogelijkheid van tracémeldingen voor grotere gebieden.",
+          "source_urls": [
+            "https://www.opmeer.nl/graafmelding"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als in het graafgebied een 'buisleiding gevaarlijke inhoud' of een net van grote waarde ligt, kan de netbeheerder voorzorgsmaatregelen eisen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat netbeheerders extra voorzorgsmaatregelen kunnen eisen bij gevaarlijke leidingen of netten van grote waarde.",
+          "source_urls": [
+            "https://www.opmeer.nl/graafmelding"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Doe dit minimaal 8 weken voordat u wilt starten met de werkzaamheden. Bij een uitgebreide aanvraag doet u dit minimaal 6 maanden van tevoren.",
+          "original_reference": "Verwacht binnen 8 weken bericht nadat een omgevingsvergunning aanvraag is ingediend",
+          "note": "De bronpagina specificeert verschillende aanvraagtermijnen voor reguliere (8 weken) en uitgebreide aanvragen (6 maanden), terwijl de originele tekst alleen spreekt over een algemene behandeltermijn van 8 weken.",
+          "source_urls": [
+            "https://www.opmeer.nl/omgevingsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen aanvullende details over graafmeldingen (gebiedsgrootte en voorzorgsmaatregelen) en een significante afwijking in de aanvraagtermijnen voor omgevingsvergunningen. De bronnen bevatten meer specifieke informatie over procedures en vereisten die niet in de originele tekst zijn opgenomen."
+  }
+}

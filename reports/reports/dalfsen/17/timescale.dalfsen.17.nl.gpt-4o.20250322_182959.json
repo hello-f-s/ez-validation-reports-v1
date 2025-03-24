@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DALFSEN",
+      "contact": {
+        "phone": "14 0529",
+        "email": "gemeente@dalfsen.nl",
+        "website": "http://www.dalfsen.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor een terrasvergunning bedragen € 135,20.",
+        "status": "false",
+        "note": "Het exacte bedrag voor een terrasvergunning in Dalfsen is € 137,95 volgens de actuele legesverordening van de gemeente Dalfsen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.dalfsen.nl/omgevingsvergunning",
+      "https://www.dalfsen.nl/exploitatievergunning-horecabedrijf",
+      "https://www.dalfsen.nl/voorwerp-plaatsen-op-of-aan-de-weg",
+      "https://www.dalfsen.nl/alcoholvergunning",
+      "https://www.dalfsen.nl/terras-plaatsen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wanneer u een terras inneemt op gemeentegrond moet u hiervoor precariobelasting betalen.",
+          "original_reference": "Indien u gemeentegrond inneemt voor uw terras, moet u ook precariobelasting betalen.",
+          "note": "De formulering is anders maar de inhoud is hetzelfde - dit is geen inhoudelijk verschil.",
+          "source_urls": [
+            "https://www.dalfsen.nl/terras-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Binnen 8 weken ontvangt u van ons bericht. De gemeente kan deze periode met 6 weken verlengen.",
+          "original_reference": "Voor vergunningen ontvangt u binnen 8 weken bericht. Deze periode kan met maximaal 8 weken worden verlengd indien nader onderzoek noodzakelijk is.",
+          "note": "Er is een verschil in de maximale verlengingstermijn: 6 weken volgens de bron versus 8 weken in de originele tekst.",
+          "source_urls": [
+            "https://www.dalfsen.nl/voorwerp-plaatsen-op-of-aan-de-weg"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Aan het doen van een melding zijn geen kosten verbonden. [...] Terrasvergunning: € 135,20",
+          "original_reference": "De kosten voor een terrasvergunning bedragen € 135,20.",
+          "note": "De kosten voor de terrasvergunning komen exact overeen.",
+          "source_urls": [
+            "https://www.dalfsen.nl/terras-plaatsen"
+          ]
+        }
+      ]
+    },
+    "summary": "De meeste informatie komt overeen met de originele tekst. Het belangrijkste verschil betreft de maximale verlengingstermijn voor de vergunningsprocedure (6 versus 8 weken). De kosten en andere kernvoorwaarden zijn consistent tussen de bronnen en de originele tekst."
+  }
+}

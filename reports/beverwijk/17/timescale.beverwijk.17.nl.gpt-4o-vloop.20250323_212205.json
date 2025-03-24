@@ -1,0 +1,82 @@
+{
+  "context": {
+    "municipality": {
+      "name": "BEVERWIJK",
+      "contact": {
+        "phone": "(0251) 25 62 56",
+        "email": "info@beverwijk.nl",
+        "website": "http://www.beverwijk.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "Deze uitbreiding is geldig tot het einde van het terrasseizoen: 1 oktober 2022.",
+        "status": "false",
+        "note": "Deze informatie is verouderd. De tijdelijke terrasuitbreiding in verband met COVID-19 is niet meer geldig in de gemeente Beverwijk. De huidige terrasregels zijn te vinden in de actuele APV van de gemeente Beverwijk."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 4,
+    "valid_urls": 4,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.beverwijk.nl/terrassen",
+      "https://www.beverwijk.nl/standplaatsvergunning",
+      "https://www.beverwijk.nl/overzicht-vragen-voor-jaarlijkse-subsidie-aanvragen",
+      "https://www.beverwijk.nl/regels-omtrent-horeca"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De verruiming van de zomerterrassen is tijdelijk en geldt tot het einde van het terrasseizoen: 1 oktober 2022",
+          "original_reference": "Deze uitbreiding is geldig tot het einde van het terrasseizoen: 1 oktober 2022",
+          "note": "Hoewel de einddatum hetzelfde is, wordt in de bron specifiek gesproken over 'zomerterrassen' en 'verruiming', wat een preciezere omschrijving is dan in de originele tekst",
+          "source_urls": [
+            "https://www.beverwijk.nl/terrassen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Onder het kopje 'Documenten' vindt u alle beleidsregels en de algemeen verbindende voorschriften die gelden voor het innemen van een terras",
+          "original_reference": "U dient zich te houden aan de algemene verbindende voorschriften en beleidsregels die gelden voor het innemen van een terras",
+          "note": "De bron verwijst naar een specifieke locatie ('Documenten') waar de voorschriften te vinden zijn, terwijl de originele tekst alleen naar het bestaan ervan verwijst",
+          "source_urls": [
+            "https://www.beverwijk.nl/terrassen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het is verboden om een terras voor bezoekers geopend te hebben en daar bezoekers toe te laten of te laten verblijven op: maandag tot en met vrijdag tussen 00:00 uur en 07:00 uur, en op zaterdag en zondag tussen 01:00 uur en 07:00 uur",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over specifieke openingstijden van terrassen, terwijl de bron hier wel duidelijke tijden voor aangeeft",
+          "source_urls": [
+            "https://www.beverwijk.nl/regels-omtrent-horeca"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de meer gedetailleerde informatie in de bronnen over terrastijden en documentlocaties. De bronnen bevatten specifieke openingstijden voor terrassen die niet in de originele tekst staan vermeld. Ook wordt er in de bronnen duidelijker verwezen naar waar bepaalde documenten te vinden zijn. De informatie over de tijdelijke terrasuitbreiding wordt in de bronnen specifieker omschreven als 'verruiming van zomerterrassen'."
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "KERKRADE",
+      "contact": {
+        "phone": "14 045",
+        "email": "gemeentehuis@kerkrade.nl",
+        "website": "http://www.kerkrade.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 31,
+    "true_sentences": 30,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.8,
+    "false_statements": [
+      {
+        "sentence": "Na uw aanvraag ontvangt u binnen 8 weken bericht of u de vergunning krijgt.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Kerkrade moet een vergunning voor grote evenementen minimaal 16 weken van tevoren worden aangevraagd. De behandeltermijn voor grote evenementen is ook langer dan 8 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.kerkrade.nl/evenement-organiseren",
+      "https://www.kerkrade.nl/festiviteit-bedrijf-vereniging-of-school",
+      "https://www.kerkrade.nl/exploitatievergunning-horecabedrijf",
+      "https://www.kerkrade.nl/openingstijden-horeca-eenmalig-aanpassen",
+      "https://www.kerkrade.nl/vergunning-checken-en-vooroverleg",
+      "https://www.kerkrade.nl/omgevingsloket"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "In verband met een juiste afstemming van evenementen dient elk evenement te worden aangemeld vóór 15 november voorafgaande aan het jaar waarin het evenement plaats heeft.",
+          "original_reference": "Het evenement moet vooraf aangemeld worden vóór 15 november van het voorgaande jaar.",
+          "note": "De aanmeldtermijn van 15 november komt exact overeen in beide bronnen",
+          "source_urls": [
+            "https://www.kerkrade.nl/evenement-organiseren"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Doe uw melding uiterlijk 2 weken van tevoren.",
+          "original_reference": "Voor kleine evenementen is een melding een week van tevoren voldoende.",
+          "note": "Er is een verschil in de meldingstermijn voor kleine evenementen: 2 weken volgens de bron versus 1 week in de originele tekst",
+          "source_urls": [
+            "https://www.kerkrade.nl/festiviteit-bedrijf-vereniging-of-school"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Eventueel kan hiervoor door de gemeente subsidie worden verleend.",
+          "original_reference": "No matching information",
+          "note": "De mogelijkheid voor subsidie wordt wel genoemd in de bron maar ontbreekt in de originele tekst",
+          "source_urls": [
+            "https://www.kerkrade.nl/evenement-organiseren"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn enkele belangrijke verschillen gevonden tussen de bronnen en de originele tekst. Het meest opvallende verschil betreft de meldingstermijn voor kleine evenementen (2 weken vs 1 week). Daarnaast ontbreekt in de originele tekst informatie over de mogelijkheid tot subsidieverlening door de gemeente. De overige informatie, waaronder de belangrijke 15 november deadline voor aanmelding, komt overeen."
+  }
+}

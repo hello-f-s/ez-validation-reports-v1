@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AMELAND",
+      "contact": {
+        "phone": "(0519) 55 55 55",
+        "email": "info@ameland.nl",
+        "website": "http://www.ameland.nl"
+      }
+    },
+    "service": {
+      "id": 18,
+      "name": "Ventvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 37,
+    "true_sentences": 35,
+    "false_sentences": 2,
+    "accuracy_percentage": 94.6,
+    "false_statements": [
+      {
+        "sentence": "Telefoon: (0519) 555 555",
+        "status": "false",
+        "note": "Het correcte telefoonnummer van de gemeente Ameland is (0519) 555 555 555"
+      },
+      {
+        "sentence": "WhatsApp: 06-144 58 728",
+        "status": "false",
+        "note": "Het correcte WhatsApp nummer van de gemeente Ameland is 06-12117122"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.ameland.nl/omgevingsvergunning",
+      "https://www.ameland.nl/alcoholvergunning",
+      "https://www.ameland.nl/uitrit-of-inrit-aanleggen",
+      "https://www.ameland.nl/onttrekkingsvergunning",
+      "https://www.ameland.nl/woo-verzoeken"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Let op! Informatie op deze pagina kan verouderd zijn vanwege de overgang naar de Omgevingswet per 1 januari 2024.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen waarschuwing over de overgang naar de Omgevingswet, wat een belangrijke actuele wijziging is die impact heeft op de procedures.",
+          "source_urls": [
+            "https://www.ameland.nl/uitrit-of-inrit-aanleggen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bij een uitgebreide aanvraag doet u dit minimaal 6 maanden van tevoren.",
+          "original_reference": "Voor uitgebreide aanvragen is een termijn van minimaal 6 maanden aanbevolen.",
+          "note": "De brontekst stelt de 6 maanden termijn als vereiste, terwijl de originele tekst dit als aanbeveling presenteert.",
+          "source_urls": [
+            "https://www.ameland.nl/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Heeft u vragen? Maak een afspraak via tel. (0519) 555 555",
+          "original_reference": "Telefoon: (0519) 555 555",
+          "note": "De contactgegevens komen overeen met de originele tekst.",
+          "source_urls": [
+            "https://www.ameland.nl/omgevingsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de overgang naar de nieuwe Omgevingswet per 1 januari 2024, wat niet wordt vermeld in de originele tekst. Daarnaast is er een verschil in de formulering van de termijn voor uitgebreide aanvragen (vereiste vs. aanbeveling). De overige informatie, waaronder contactgegevens en basisprocedures, komt grotendeels overeen."
+  }
+}

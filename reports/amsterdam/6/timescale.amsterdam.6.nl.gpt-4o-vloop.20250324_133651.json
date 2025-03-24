@@ -1,0 +1,78 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AMSTERDAM",
+      "contact": {
+        "phone": "14 020",
+        "email": "null",
+        "website": "http://www.amsterdam.nl"
+      }
+    },
+    "service": {
+      "id": 6,
+      "name": "Integriteitsonderzoek (Wet Bibob)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "De contactservices zijn beschikbaar van maandag tot en met vrijdag, van 08:00 tot 18:00 uur.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Amsterdam is het algemene informatienummer 14 020 bereikbaar van maandag tot en met vrijdag van 08.00 tot 17.00 uur, niet tot 18:00 uur."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 1,
+    "invalid_urls": 4,
+    "accuracy_percentage": 20.0,
+    "valid_urls_list": [
+      "https://www.amsterdam.nl/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.amsterdam.nl/veelgevraagd/bibob-2255e",
+        "reason": "INVALID: Error scraping https://www.amsterdam.nl/veelgevraagd/bibob-2255e: 403 Client Error: Forbidden for url: https://www.amsterdam.nl/veelgevraagd/bibob-2255e"
+      },
+      {
+        "url": "https://www.amsterdam.nl/bestuur-organisatie/volg-beleid/veiligheid/integer-handelen/",
+        "reason": "INVALID: Error scraping https://www.amsterdam.nl/bestuur-organisatie/volg-beleid/veiligheid/integer-handelen/: 403 Client Error: Forbidden for url: https://www.amsterdam.nl/bestuur-organisatie/volg-beleid/veiligheid/integer-handelen/"
+      },
+      {
+        "url": "https://www.amsterdam.nl/ondernemen/inkoop-opdrachten/tips-inschrijven-aanbestedingen/",
+        "reason": "INVALID: Error scraping https://www.amsterdam.nl/ondernemen/inkoop-opdrachten/tips-inschrijven-aanbestedingen/: 403 Client Error: Forbidden for url: https://www.amsterdam.nl/ondernemen/inkoop-opdrachten/tips-inschrijven-aanbestedingen/"
+      },
+      {
+        "url": "https://www.amsterdam.nl/veelgevraagd/klacht-indienen-over-de-gemeente-42fd5",
+        "reason": "INVALID: Error scraping https://www.amsterdam.nl/veelgevraagd/klacht-indienen-over-de-gemeente-42fd5: 403 Client Error: Forbidden for url: https://www.amsterdam.nl/veelgevraagd/klacht-indienen-over-de-gemeente-42fd5"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Bel 14 020 maandag tot en met vrijdag van 08.00 tot 18.00 uur",
+          "original_reference": "Voor vragen kunt u contact opnemen met de gemeente Amsterdam via het telefoonnummer 14 020. De contactservices zijn beschikbaar van maandag tot en met vrijdag, van 08:00 tot 18:00 uur.",
+          "note": "De contactgegevens en openingstijden komen exact overeen met de originele inhoud",
+          "source_urls": [
+            "https://www.amsterdam.nl/"
+          ]
+        }
+      ]
+    },
+    "summary": "Na analyse van de beschikbare broninhoud kan worden geconcludeerd dat er weinig vergelijkbare inhoud beschikbaar is in de geciteerde bron om een uitgebreide vergelijking te maken. De enige verifieerbare informatie betreft de contactgegevens en openingstijden, die consistent zijn met de originele inhoud. Voor een volledige analyse van de Bibob-gerelateerde informatie zouden aanvullende specifieke bronpagina's over dit onderwerp nodig zijn."
+  }
+}

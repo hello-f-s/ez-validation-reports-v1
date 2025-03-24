@@ -1,0 +1,87 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OLDENZAAL",
+      "contact": {
+        "phone": "(0541) 58 81 11",
+        "email": "info@oldenzaal.nl",
+        "website": "http://www.oldenzaal.nl"
+      }
+    },
+    "service": {
+      "id": 22,
+      "name": "Woonruimte splitsen of samenvoegen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "Elke donderdagmiddag van 13.00 tot 16.00 uur is er in de bibliotheek Oldenzaal een spreekuur Informatiepunt Digitale Overheid.",
+        "status": "false",
+        "note": "Volgens de officiële website van de Bibliotheek Oldenzaal is het Informatiepunt Digitale Overheid spreekuur op dinsdagmiddag van 14.00 tot 16.00 uur, niet op donderdagmiddag."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.oldenzaal.nl/vragen-en-antwoorden-over-bouwkavels",
+      "https://www.oldenzaal.nl/omgevingsvergunning",
+      "https://www.oldenzaal.nl/afwijking-gebruik",
+      "https://www.oldenzaal.nl/aanleggen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.oldenzaal.nl/bouwen-en-verbouwen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Binnenplanse afwijking, Buitenplanse afwijking kruimellijst, Tijdelijke afwijking (maximaal 10 jaar)",
+          "original_reference": "No matching information",
+          "note": "De originele tekst noemt niet de specifieke types afwijkingen van het bestemmingsplan die mogelijk zijn. Dit is belangrijke aanvullende informatie voor aanvragers.",
+          "source_urls": [
+            "https://www.oldenzaal.nl/afwijking-gebruik"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De eerste termijn, van drie maanden, is gratis. Daarna kunt u de optietermijn verlengen voor een periode van zes maanden met 1% optievergoeding, en nogmaals zes maanden met 3% optievergoeding.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over optietermijnen en bijbehorende kosten bij kavels, wat relevant kan zijn voor splitsing/samenvoeging van woonruimte.",
+          "source_urls": [
+            "https://www.oldenzaal.nl/vragen-en-antwoorden-over-bouwkavels"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "DigiD is een soort digitaal paspoort. Met uw DigiD laat u zien wie u bent als u op internet iets regelt. eHerkenning is een veilig en betrouwbaar inlogmiddel voor bedrijven/organisaties/eenmanszaken",
+          "original_reference": "DigiD fungeert als een soort digitaal paspoort voor particulieren, terwijl eHerkenning een veilig en betrouwbaar inlogmiddel biedt voor bedrijven, organisaties en eenmanszaken.",
+          "note": "De beschrijving van DigiD en eHerkenning komt overeen in beide bronnen.",
+          "source_urls": [
+            "https://www.oldenzaal.nl/omgevingsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie over verschillende types bestemmingsplanafwijkingen en optietermijnen die niet in de originele tekst staan. De basisinformatie over DigiD/eHerkenning en contactgegevens is consistent. De originele tekst zou completer zijn met de toevoeging van de specifieke afwijkingsmogelijkheden en optietermijnen."
+  }
+}

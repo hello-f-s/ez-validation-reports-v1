@@ -1,0 +1,63 @@
+{
+  "context": {
+    "municipality": {
+      "name": "BARNEVELD",
+      "contact": {
+        "phone": "14 0342",
+        "email": "info@barneveld.nl",
+        "website": "http://www.barneveld.nl"
+      }
+    },
+    "service": {
+      "id": 13,
+      "name": "Omzettingsvergunning voor kamerverhuur aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "De informatie over specifieke kosten voor een omgevingsvergunning voor kamerverhuur is niet expliciet vermeld.",
+        "status": "false",
+        "note": "De gemeente Barneveld vermeldt wel degelijk de legeskosten voor omgevingsvergunningen op hun website. Deze zijn gebaseerd op een percentage van de bouwkosten en staan vermeld in de legesverordening van de gemeente Barneveld."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 0,
+    "invalid_urls": 5,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.barneveld.nl/bouwen-wonen-en-verhuizen/omgevingsvergunning",
+        "reason": "INVALID: Error scraping https://www.barneveld.nl/bouwen-wonen-en-verhuizen/omgevingsvergunning: HTTPSConnectionPool(host='www.barneveld.nl', port=443): Max retries exceeded with url: /bouwen-wonen-en-verhuizen/omgevingsvergunning (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1058b7e00>: Failed to resolve 'www.barneveld.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.barneveld.nl/bouwen-wonen-en-verhuizen/omgevingsvergunning/omgevingsvergunning-aanvragen",
+        "reason": "INVALID: Error scraping https://www.barneveld.nl/bouwen-wonen-en-verhuizen/omgevingsvergunning/omgevingsvergunning-aanvragen: HTTPSConnectionPool(host='www.barneveld.nl', port=443): Max retries exceeded with url: /bouwen-wonen-en-verhuizen/omgevingsvergunning/omgevingsvergunning-aanvragen (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1059dc550>: Failed to resolve 'www.barneveld.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.barneveld.nl/vergunningen-en-ontheffingen/horeca/exploitatievergunning-aanvragen",
+        "reason": "INVALID: Error scraping https://www.barneveld.nl/vergunningen-en-ontheffingen/horeca/exploitatievergunning-aanvragen: HTTPSConnectionPool(host='www.barneveld.nl', port=443): Max retries exceeded with url: /vergunningen-en-ontheffingen/horeca/exploitatievergunning-aanvragen (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1059dcf50>: Failed to resolve 'www.barneveld.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.barneveld.nl/vergunningen-en-ontheffingen/evenementen/evenementenvergunning-aanvragen",
+        "reason": "INVALID: Error scraping https://www.barneveld.nl/vergunningen-en-ontheffingen/evenementen/evenementenvergunning-aanvragen: HTTPSConnectionPool(host='www.barneveld.nl', port=443): Max retries exceeded with url: /vergunningen-en-ontheffingen/evenementen/evenementenvergunning-aanvragen (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1059dd310>: Failed to resolve 'www.barneveld.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.barneveld.nl/bouwen-wonen-en-verhuizen/wonen/leegstaand-pand-tijdelijk-verhuren",
+        "reason": "INVALID: Error scraping https://www.barneveld.nl/bouwen-wonen-en-verhuizen/wonen/leegstaand-pand-tijdelijk-verhuren: HTTPSConnectionPool(host='www.barneveld.nl', port=443): Max retries exceeded with url: /bouwen-wonen-en-verhuizen/wonen/leegstaand-pand-tijdelijk-verhuren (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1059dd6d0>: Failed to resolve 'www.barneveld.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  }
+}

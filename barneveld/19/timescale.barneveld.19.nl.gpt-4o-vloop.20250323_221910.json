@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "BARNEVELD",
+      "contact": {
+        "phone": "14 0342",
+        "email": "info@barneveld.nl",
+        "website": "http://www.barneveld.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "Voor het aanvragen van een vergunning voor het plaatsen van een speelautomaat betaalt u €66,00.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Barneveld bedraagt het tarief voor een aanvraag speelautomatenvergunning €68,00 en niet €66,00."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.barneveld.nl/vergunningen-en-ontheffingen/horeca/kansspelautomaat-vergunning-aanvragen",
+      "https://www.barneveld.nl/vergunningen-en-ontheffingen/evenementen/loterij-organiseren",
+      "https://www.barneveld.nl/vergunningen-en-ontheffingen/horeca/exploitatievergunning-aanvragen",
+      "https://www.barneveld.nl/vergunningen-en-ontheffingen/evenementen/evenementenvergunning-aanvragen",
+      "https://www.barneveld.nl/vergunningen-en-ontheffingen/horeca/exploitatievergunning-aanvragen/vragenlijst-bibob",
+      "https://www.barneveld.nl"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wet op de kansspelen, Wet bevordering integriteitsbeoordelingen door het openbaar bestuur",
+          "original_reference": "Algemene plaatselijke verordening gemeente Barneveld en het Speelautomatenbesluit 2000",
+          "note": "De bronpagina noemt twee aanvullende wetten die van toepassing zijn maar niet genoemd worden in de originele tekst",
+          "source_urls": [
+            "https://www.barneveld.nl/vergunningen-en-ontheffingen/horeca/kansspelautomaat-vergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U betaalt de kosten voor de aanvraag bij de laatste stap van de aanvraag. U krijgt dit bedrag niet terug als we de aanvraag afwijzen.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat belangrijke aanvullende informatie over het betaalmoment en niet-restitutie van kosten die ontbreekt in de originele tekst",
+          "source_urls": [
+            "https://www.barneveld.nl/vergunningen-en-ontheffingen/horeca/exploitatievergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wanneer u korter dan 2 jaar geleden een Bibob-vragenlijst heeft ingevuld, mag u hiernaar verwijzen.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt een belangrijke uitzondering voor het Bibob-vragenformulier die niet genoemd wordt in de originele tekst",
+          "source_urls": [
+            "https://www.barneveld.nl/vergunningen-en-ontheffingen/horeca/exploitatievergunning-aanvragen/vragenlijst-bibob"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten enkele belangrijke aanvullende details die niet in de originele tekst staan, waaronder extra toepasselijke wetgeving, informatie over het betaalproces en een uitzondering voor het Bibob-vragenformulier. Deze informatie is relevant voor aanvragers van de kansspelautomaatvergunning."
+  }
+}

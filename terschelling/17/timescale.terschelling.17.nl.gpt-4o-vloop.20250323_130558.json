@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "TERSCHELLING",
+      "contact": {
+        "phone": "(0562) 44 62 44",
+        "email": "gemeente@terschelling.nl",
+        "website": "http://www.terschelling.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "De leges voor het in behandeling nemen van een aanvraag om exploitatievergunning bedragen €40,78.",
+        "status": "false",
+        "note": "Dit bedrag is niet correct volgens de actuele legesverordening van gemeente Terschelling. De exacte kosten voor een terrasvergunning zijn anders en worden jaarlijks vastgesteld in de legesverordening."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.terschelling.nl/terras-plaatsen",
+      "https://www.terschelling.nl/alle-producten-en-diensten/18",
+      "https://www.terschelling.nl/exploitatievergunning-horecabedrijf",
+      "https://www.terschelling.nl/wonen",
+      "https://www.terschelling.nl/omgevingsvergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vraag de vergunning ook aan als u een bloembak of straatmeubel wilt plaatsen.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt een extra vereiste voor het aanvragen van een vergunning bij het plaatsen van bloembakken of straatmeubels, wat niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.terschelling.nl/terras-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Overleg eerst met de gemeente voor u een aanvraag indient. U krijgt dan voldoende informatie over de mogelijkheden binnen het bestemmingsplan, de eisen die voortkomen uit de APV en andere criteria waaraan de gemeente toetst.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina adviseert eerst overleg met de gemeente voordat een aanvraag wordt ingediend, inclusief informatie over bestemmingsplan en APV. Dit vooroverleg wordt niet genoemd in de originele tekst.",
+          "source_urls": [
+            "https://www.terschelling.nl/exploitatievergunning-horecabedrijf"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor informatie over lopende aanvragen en vergunningen kunt u bellen met de gemeente 0562-446244 of mailen naar omgevingsvergunning@terschelling.nl",
+          "original_reference": "gemeente@terschelling.nl",
+          "note": "De bronpagina vermeldt een specifiek e-mailadres voor omgevingsvergunningen (omgevingsvergunning@terschelling.nl), terwijl de originele tekst alleen het algemene e-mailadres vermeldt.",
+          "source_urls": [
+            "https://www.terschelling.nl/omgevingsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen aanvullende vereisten (vergunning voor bloembakken/straatmeubels), het advies voor vooroverleg met de gemeente, en een specifiek e-mailadres voor omgevingsvergunningen. Deze informatie maakt de procedures en vereisten completer dan in de originele tekst."
+  }
+}

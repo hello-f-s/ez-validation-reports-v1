@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HEILOO",
+      "contact": {
+        "phone": "(072) 535 66 66",
+        "email": "info@heiloo.nl",
+        "website": "http://www.heiloo.nl"
+      }
+    },
+    "service": {
+      "id": 6,
+      "name": "Integriteitsonderzoek (Wet Bibob)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "De gemeentelijke diensten zijn bereikbaar op werkdagen van 08.30 tot 17.00 uur.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Heiloo zijn de openingstijden van maandag t/m vrijdag van 8:30 tot 12:30 uur. In de middag alleen op afspraak."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.heiloo.nl/bibob-toetsing/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/geheimhouding-persoonsgegevens/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/verzoek-om-informatie/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/verklaring-omtrent-gedrag/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/ondernemen/"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Omgevingsvergunningen activiteit bouw: aanvragen vanaf € 1.000.000. Omgevingsvergunningen activiteit milieu: afvalbewerking- en verwerkingsbedrijven en bedrijven actief in grondverzet; sloop- en auto-demontagebedrijven; vuurwerkopslagplaatsen.",
+          "original_reference": "omgevingsvergunningen vanaf bepaalde financiële drempels",
+          "note": "De originele tekst is minder specifiek over de drempelbedragen en types vergunningen. De brontekst specificeert een drempel van €1.000.000 voor bouwactiviteiten en noemt specifieke bedrijfstypes voor milieuvergunningen.",
+          "source_urls": [
+            "https://www.heiloo.nl/bibob-toetsing/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Evenementenvergunning: vechtsportevenementen",
+          "original_reference": "No matching information",
+          "note": "De originele tekst noemt niet dat de Bibob-toets ook wordt toegepast op vechtsportevenementen, terwijl dit wel in de brontekst staat.",
+          "source_urls": [
+            "https://www.heiloo.nl/bibob-toetsing/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De gemeente kan een aanvraag ook weigeren als een strafbaar feit is gepleegd om de vergunning of subsidie te krijgen. Of om de vastgoedtransactie aan te gaan met de gemeente. Bijvoorbeeld bij valsheid in geschrifte of omkoping.",
+          "original_reference": "De toets kan ook plaatsvinden op basis van signalen over mogelijke strafbare feiten.",
+          "note": "De brontekst is specifieker over de redenen voor weigering en geeft concrete voorbeelden van strafbare feiten, terwijl de originele tekst alleen algemeen spreekt over 'signalen'.",
+          "source_urls": [
+            "https://www.heiloo.nl/bibob-toetsing/"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont dat de originele tekst op enkele belangrijke punten minder specifiek of volledig is dan de broninhoud. Met name de drempelbedragen voor omgevingsvergunningen, de inclusie van vechtsportevenementen, en de specifieke voorbeelden van strafbare feiten die kunnen leiden tot weigering zijn details die wel in de brontekst staan maar niet in de originele tekst zijn opgenomen. Deze verschillen maken de informatie in de brontekst concreter en duidelijker voor de gebruiker."
+  }
+}

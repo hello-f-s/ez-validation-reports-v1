@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "UTRECHT",
+      "contact": {
+        "phone": "(014) 030",
+        "email": "Gemeente@utrecht.nl",
+        "website": "http://www.utrecht.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Zorg ervoor dat u uw aanvraag minimaal 10 werkdagen voordat u de vergunning(en) nodig heeft, indient.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Utrecht moet een parkeervergunning voor werkzaamheden minimaal 5 werkdagen (niet 10) van tevoren worden aangevraagd."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.utrecht.nl/parkeervergunningbewoner",
+      "https://www.utrecht.nl/wonen-en-leven/parkeren/contact-over-parkeren/stel-een-parkeervraag",
+      "https://www.utrecht.nl/ondernemen/vergunningen-en-regels",
+      "https://www.utrecht.nl/wonen-en-leven/parkeren/vergunningvoorschriften",
+      "https://www.utrecht.nl/parkeervergunningwerkzaamheden"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://gemeente-utrecht.nl",
+        "reason": "INVALID: Error scraping https://gemeente-utrecht.nl: 439 Client Error: status code 439 for url: https://gemeente-utrecht.nl/"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Op een parkeerplaats bij een parkeerautomaat kunt u parkeren als u een dagkaart koopt of via belparkeren betaalt.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt een extra parkeeroptie (dagkaart/belparkeren bij parkeerautomaat) die niet in de originele tekst staat vermeld.",
+          "source_urls": [
+            "https://www.utrecht.nl/parkeervergunningwerkzaamheden"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U krijgt geen geld terug voor de parkeerrechten als u die niet gebruikt.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt expliciet dat er geen restitutie mogelijk is bij ongebruikte parkeerrechten, wat niet in de originele tekst staat.",
+          "source_urls": [
+            "https://www.utrecht.nl/parkeervergunningwerkzaamheden"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "[Uitgebreide lijst van straatnamen waar de vergunning geldig is]",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat een gedetailleerde lijst van specifieke straten waar de vergunning geldig is, terwijl de originele tekst alleen 'binnenstad' vermeldt.",
+          "source_urls": [
+            "https://www.utrecht.nl/parkeervergunningwerkzaamheden"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina bevat belangrijke aanvullende informatie die niet in de originele tekst staat: een alternatieve parkeeroptie via dagkaart/belparkeren, het beleid over niet-restitueerbare parkeerrechten, en een gedetailleerde lijst van straten waar de vergunning geldig is. Deze informatie is relevant voor gebruikers van de parkeervergunning voor werkzaamheden."
+  }
+}

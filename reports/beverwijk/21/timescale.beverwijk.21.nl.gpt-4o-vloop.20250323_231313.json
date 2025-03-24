@@ -1,0 +1,97 @@
+{
+  "context": {
+    "municipality": {
+      "name": "BEVERWIJK",
+      "contact": {
+        "phone": "(0251) 25 62 56",
+        "email": "info@beverwijk.nl",
+        "website": "http://www.beverwijk.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 19,
+    "false_sentences": 2,
+    "accuracy_percentage": 90.5,
+    "false_statements": [
+      {
+        "sentence": "De kosten hiervoor zijn € 41,35.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Beverwijk bedragen de kosten voor een VOG € 47,55 (2024)."
+      },
+      {
+        "sentence": "De kosten voor een persoonlijke aanvraag via de gemeente zijn € 41,35.",
+        "status": "false",
+        "note": "Het correcte bedrag voor een VOG-aanvraag bij gemeente Beverwijk is € 47,55 (2024), niet € 41,35."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.beverwijk.nl/vog",
+      "https://www.beverwijk.nl/naturalisatie",
+      "https://www.beverwijk.nl/overzicht-vragen-voor-jaarlijkse-subsidie-aanvragen",
+      "https://www.beverwijk.nl/overzicht-vragen-voor-eenmalige-subsidie-aanvragen",
+      "https://www.beverwijk.nl/uittreksel-persoonsgegevens-brp"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "De kosten voor het online aanvragen zijn € 33,85",
+          "original_reference": "De kosten voor het online aanvragen zijn € 33,85",
+          "note": "De kosten voor online aanvragen via Dienst Justis zijn identiek in beide bronnen",
+          "source_urls": [
+            "https://www.beverwijk.nl/vog"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "De kosten hiervan zijn € 41,35",
+          "original_reference": "De kosten hiervoor zijn € 41,35",
+          "note": "De kosten voor aanvragen via gemeente zijn identiek in beide bronnen",
+          "source_urls": [
+            "https://www.beverwijk.nl/vog"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "No matching information",
+          "original_reference": "Binnen 4 weken antwoord. Hierin staat de beslissing of u de VOG wel of niet krijgt. Dit ontvangt u per post.",
+          "note": "De verwerkingstijd van 4 weken wordt niet genoemd in de bronpagina",
+          "source_urls": [
+            "https://www.beverwijk.nl/vog"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "No matching information",
+          "original_reference": "Wordt uw VOG-aanvraag geweigerd? Dan kunt u bezwaar maken via de website van Justis.",
+          "note": "De mogelijkheid tot bezwaar maken wordt niet genoemd in de bronpagina",
+          "source_urls": [
+            "https://www.beverwijk.nl/vog"
+          ]
+        }
+      ]
+    },
+    "summary": "De basis informatie over kosten en aanvraagmethoden komt overeen tussen de originele tekst en de bronnen. Er zijn echter twee belangrijke verschillen: de verwerkingstijd van 4 weken en de mogelijkheid tot bezwaar maken bij weigering worden wel genoemd in de originele tekst maar niet in de bronpagina. Dit zijn belangrijke details voor aanvragers die ontbreken in de bronpagina."
+  }
+}

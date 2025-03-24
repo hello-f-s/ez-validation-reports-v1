@@ -1,0 +1,79 @@
+{
+  "context": {
+    "municipality": {
+      "name": "UTRECHT",
+      "contact": {
+        "phone": "(014) 030",
+        "email": "Gemeente@utrecht.nl",
+        "website": "http://www.utrecht.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Je betaalt de aanvraag online via DigiD of aan de balie door te pinnen.",
+        "status": "false",
+        "note": "Deze informatie is onvolledig. Bij de gemeente Utrecht kan een VOG ook per post worden aangevraagd en betaald via een factuur. De betalingsmogelijkheden zijn dus breder dan alleen online via DigiD of pinnen aan de balie."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "http://www.utrecht.nl/inzageverzoek",
+      "https://www.utrecht.nl/bestuur-en-organisatie/privacy/privacyverklaring/privacyverklaring-u-vraagt-iets-aan-bij-burgerzaken",
+      "https://www.utrecht.nl/ondernemen/vergunningen-en-regels/werkzaamheden-vergunning-aanvragen",
+      "https://www.utrecht.nl/wonen-en-leven/bouwen-en-verbouwen/hebt-u-een-vraag-over-bouwplan-of-bedrijfsplan",
+      "https://www.utrecht.nl/naturalisatie/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://community.openai.com/",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wij controleren uw identiteit. Dat kan online met DigiD. Of aan de balie met uw identiteitsbewijs. U betaalt. Online betaalt u met iDeal. Aan de balie kunt u pinnen.",
+          "original_reference": "Je betaalt de aanvraag online via DigiD of aan de balie door te pinnen.",
+          "note": "De bronnen specificeren iDEAL als online betaalmethode, terwijl de originele tekst alleen DigiD noemt voor online betaling. Dit is een belangrijk verschil in de betaalmogelijkheden.",
+          "source_urls": [
+            "https://www.utrecht.nl/bestuur-en-organisatie/privacy/privacyverklaring/privacyverklaring-u-vraagt-iets-aan-bij-burgerzaken"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Welke gegevens verwerken wij? Wij verwerken de volgende gegevens over u: Naam, Waar u nu woont en waar u hebt gewoond, Geboortedatum, Burgerservicenummer (BSN), Of u getrouwd bent, Samenstelling van uw gezin, Nationaliteit, Betaalgegevens",
+          "original_reference": "Naam, Adres, Geboortedatum, Doel van de aanvraag, Betaalgegevens",
+          "note": "De bronnen vermelden meer vereiste gegevens dan de originele tekst, waaronder BSN, huwelijkse staat, gezinssamenstelling en nationaliteit.",
+          "source_urls": [
+            "https://www.utrecht.nl/bestuur-en-organisatie/privacy/privacyverklaring/privacyverklaring-u-vraagt-iets-aan-bij-burgerzaken"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de betaalmethoden (specifiek iDEAL voor online betalingen) en de vereiste persoonsgegevens, waarbij de bronnen meer gedetailleerde informatie vragen dan vermeld in de originele tekst. De overige procedurestappen en voorwaarden komen grotendeels overeen of zijn niet specifiek genoemd in de bronnen."
+  }
+}

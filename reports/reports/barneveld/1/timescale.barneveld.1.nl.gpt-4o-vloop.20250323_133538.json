@@ -1,0 +1,78 @@
+{
+  "context": {
+    "municipality": {
+      "name": "BARNEVELD",
+      "contact": {
+        "phone": "14 0342",
+        "email": "info@barneveld.nl",
+        "website": "http://www.barneveld.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "Cafetaria's, supermarkten en levensmiddelenbedrijven mogen alleen zwak alcoholische dranken verkopen en hebben hiervoor geen alcoholvergunning nodig.",
+        "status": "false",
+        "note": "Volgens de Alcoholwet hebben supermarkten en slijterijen wel degelijk een vergunning nodig voor de verkoop van zwak-alcoholische dranken. Dit is een landelijke regel die ook in Barneveld van toepassing is."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.barneveld.nl/vergunningen-en-ontheffingen/horeca/alcoholvergunning-aanvragen",
+      "https://www.barneveld.nl/vergunningen-en-ontheffingen/horeca/exploitatievergunning-aanvragen",
+      "https://www.barneveld.nl/vergunningen-en-ontheffingen/evenementen/evenementenvergunning-aanvragen",
+      "https://www.barneveld.nl/vergunningen-en-ontheffingen/horeca/kansspelautomaat-vergunning-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.barneveld.nl/vergunningen-en-ontheffingen/evenementen/drank-met-alcohol-schenken-op-een-evenement",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U moet de vragenlijst voor de Bibob-toets invullen als u een exploitatievergunning aanvraagt.",
+          "original_reference": "Het invullen van een Bibob-vragenformulier, indien van toepassing voor een slijterij",
+          "note": "De originele tekst geeft aan dat Bibob alleen nodig is voor slijterijen, terwijl de bron aangeeft dat dit ook verplicht is voor exploitatievergunningen.",
+          "source_urls": [
+            "https://www.barneveld.nl/vergunningen-en-ontheffingen/horeca/exploitatievergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U mag geen alcohol schenken aan kinderen jonger dan 18 jaar.",
+          "original_reference": "No matching information",
+          "note": "Deze belangrijke wettelijke bepaling ontbreekt in de originele tekst maar staat wel in de bronpagina.",
+          "source_urls": [
+            "https://www.barneveld.nl/vergunningen-en-ontheffingen/horeca/alcoholvergunning-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden: de Bibob-vereiste blijkt breder te zijn dan alleen voor slijterijen, en er ontbreekt een essentiële wettelijke bepaling over de minimumleeftijd voor alcoholverkoop in de originele tekst. De overige informatie zoals kosten, procedures en voorwaarden komt overeen met de bronnen."
+  }
+}

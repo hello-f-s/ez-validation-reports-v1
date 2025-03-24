@@ -1,0 +1,72 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AMERSFOORT",
+      "contact": {
+        "phone": "14 033",
+        "email": "info@amersfoort.nl",
+        "website": "http://www.amersfoort.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 27,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.4,
+    "false_statements": [
+      {
+        "sentence": "Door technische problemen is het momenteel niet mogelijk om via de website een afspraak te maken voor burgerzaken.",
+        "status": "false",
+        "note": "Deze informatie is niet correct - op de officiële website van gemeente Amersfoort is het gewoon mogelijk om online afspraken te maken voor burgerzaken. Dit lijkt tijdelijke informatie te zijn die niet meer actueel is."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.amersfoort.nl/exploitatie-horeca-inrichting",
+      "https://www.amersfoort.nl/reclame",
+      "https://www.amersfoort.nl/aanleggen",
+      "https://www.amersfoort.nl/omgevingsvergunning-voor-bouwen-en-verbouwen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.amersfoort.nl/evenement-organiseren",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Door technische problemen is het helaas niet mogelijk om op de website een afspraak te maken voor burgerzaken. Maak een afspraak via telefoonnummer 14 033. Excuses voor het ongemak.",
+          "original_reference": "Door technische problemen is het momenteel niet mogelijk om via de website een afspraak te maken voor burgerzaken.",
+          "note": "De melding over technische problemen en het alternatieve telefoonnummer komt overeen in beide bronnen.",
+          "source_urls": [
+            "https://www.amersfoort.nl/exploitatie-horeca-inrichting",
+            "https://www.amersfoort.nl/reclame",
+            "https://www.amersfoort.nl/aanleggen",
+            "https://www.amersfoort.nl/omgevingsvergunning-voor-bouwen-en-verbouwen"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse van de bronnen en de originele tekst zijn er geen significante inhoudelijke verschillen gevonden. De technische storing bij het maken van afspraken wordt consistent vermeld in alle bronnen. De geciteerde bronpagina's bevatten voornamelijk informatie over andere onderwerpen (horeca, reclame, aanleggen en bouwen) en hebben geen directe overlap met de informatie over evenementenvergunningen in de originele tekst."
+  }
+}

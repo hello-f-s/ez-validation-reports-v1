@@ -1,0 +1,97 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HOUTEN",
+      "contact": {
+        "phone": "(030) 639 26 11",
+        "email": "gemeentehuis@houten.nl",
+        "website": "http://www.houten.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 11,
+    "false_sentences": 2,
+    "accuracy_percentage": 84.6,
+    "false_statements": [
+      {
+        "sentence": "Voor kleinschalige activiteiten, zoals een straatfeest, kan een melding vaak volstaan, mits deze voldoet aan bepaalde voorwaarden zoals het doen van een melding minimaal 10 werkdagen van tevoren en het toevoegen van een situatietekening.",
+        "status": "false",
+        "note": "Volgens de gemeente Houten website moet een melding voor kleinschalige evenementen minimaal 4 weken (niet 10 werkdagen) van tevoren worden gedaan."
+      },
+      {
+        "sentence": "Echter, u dient een melding tenminste 10 werkdagen van tevoren te doen voor kleinschalige activiteiten.",
+        "status": "false",
+        "note": "De termijn voor het doen van een melding voor kleinschalige evenementen is minimaal 4 weken vooraf, niet 10 werkdagen volgens de officiële website van gemeente Houten."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.houten.nl/ondernemen/regelen/horecabedrijf-exploiteren",
+      "https://www.houten.nl/sport-cultuur-en-recreatie/evenement-organiseren",
+      "https://www.houten.nl/wonen-en-leefomgeving/bouw-en-verbouw/omgevingsvergunning/aanvraagprocedure-omgevingsvergunning",
+      "https://www.houten.nl/ondernemen/regelen/standplaatsvergunning",
+      "https://www.houten.nl/sport-cultuur-en-recreatie/evenementenkalender"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.politie.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://zoek.officielebekendmakingen.nl/gmb-2025-62738.htm",
+        "reason": "INVALID: Error scraping https://zoek.officielebekendmakingen.nl/gmb-2025-62738.htm: 404 Client Error: Not Found for url: https://zoek.officielebekendmakingen.nl/gmb-2025-62738.htm"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De activiteiten worden niet gehouden bij winkelcentrum Het Rond, Castellum, Plein (Oude Dorp), Rietplas of de directe omgeving van deze locaties. En Speelbos Nieuw Wulven.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet deze belangrijke locatiebeperking voor kleinschalige activiteiten",
+          "source_urls": [
+            "https://www.houten.nl/sport-cultuur-en-recreatie/evenement-organiseren"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bij het maken van geluid moet u zich altijd houden aan de landelijke richtlijnen. Na 22.00 uur geen harde muziek meer draaien of hard geluid maken is het uitgangspunt.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over geluidsvoorschriften en tijdslimieten voor evenementen",
+          "source_urls": [
+            "https://www.houten.nl/sport-cultuur-en-recreatie/evenement-organiseren"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een vermelding op de kalender is geen garantie voor een vergunning. Bij de definitieve vergunningaanvraag wordt pas beoordeeld of de evenementenvergunning ook daadwerkelijk wordt verleend.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist deze belangrijke disclaimer over de relatie tussen evenementenkalender en vergunningverlening",
+          "source_urls": [
+            "https://www.houten.nl/sport-cultuur-en-recreatie/evenementenkalender"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie die niet in de originele tekst staat, waaronder specifieke locatiebeperkingen voor evenementen, geluidsvoorschriften en een disclaimer over de evenementenkalender. Deze informatie is essentieel voor organisatoren van evenementen en zou in de originele tekst opgenomen moeten worden voor een volledig beeld van de voorwaarden en beperkingen."
+  }
+}

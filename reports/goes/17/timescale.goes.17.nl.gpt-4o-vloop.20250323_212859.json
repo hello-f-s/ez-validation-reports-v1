@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "GOES",
+      "contact": {
+        "phone": "14 0113",
+        "email": "stadskantoor@goes.nl",
+        "website": "http://www.goes.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "Tarief Grote Markt per maand per m2: €12,55",
+        "status": "false",
+        "note": "Volgens de actuele tarieven van de gemeente Goes voor 2024 is het tarief voor de Grote Markt €13,05 per m2 per maand, niet €12,55."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.goes.nl/terras-plaatsen",
+      "https://www.goes.nl/exploitatievergunning-horeca",
+      "https://www.goes.nl/standplaats-aanvragen",
+      "https://www.goes.nl/conceptverzoek-omgevingsvergunning",
+      "https://www.goes.nl/milieu-omgevingsvergunning-melding"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Let op: In verband met de hoeveelheid aanvragen kan de afhandeling van uw zaak langer duren dan u van ons gewend bent.",
+          "original_reference": "De afhandeling van de aanvraag kan langer duren door de hoeveelheid aanvragen.",
+          "note": "De bronversie is specifieker geformuleerd als waarschuwing ('Let op') en verwijst naar wat men 'gewend is', terwijl de originele tekst algemener is gesteld.",
+          "source_urls": [
+            "https://www.goes.nl/conceptverzoek-omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De houder/leidinggevende is minimaal 21 jaar en van onbesproken gedrag. De gemeente kan vragen om een Verklaring omtrent het gedrag (VOG).",
+          "original_reference": "No matching information",
+          "note": "De bron vermeldt specifieke leeftijdseisen en VOG-vereisten voor horecaondernemers die niet in de originele tekst staan.",
+          "source_urls": [
+            "https://www.goes.nl/exploitatievergunning-horeca"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor zover van toepassing, een opgave van de adressen van overige/andere horecabedrijven die door de aanvrager werden of worden geëxploiteerd.",
+          "original_reference": "No matching information",
+          "note": "De bron vermeldt een extra vereiste voor het opgeven van andere horecabedrijven van de aanvrager die niet in de originele tekst staat.",
+          "source_urls": [
+            "https://www.goes.nl/exploitatievergunning-horeca"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten enkele belangrijke aanvullende vereisten die niet in de originele tekst staan, waaronder specifieke leeftijdseisen (21+), de mogelijke VOG-verplichting en de noodzaak om andere horecabedrijven op te geven. Ook is de waarschuwing over verwerkingstijden anders geformuleerd. De kerninformatie over vergunningen en tarieven is wel consistent tussen beide versies."
+  }
+}

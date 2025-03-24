@@ -1,0 +1,80 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OLDENZAAL",
+      "contact": {
+        "phone": "(0541) 58 81 11",
+        "email": "info@oldenzaal.nl",
+        "website": "http://www.oldenzaal.nl"
+      }
+    },
+    "service": {
+      "id": 8,
+      "name": "Marktvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "De vergunning is voor maximaal 10 jaar geldig.",
+        "status": "false",
+        "note": "Volgens de officiële informatie van de gemeente Oldenzaal wordt een standplaatsvergunning voor maximaal 5 jaar verleend, niet voor 10 jaar."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 3,
+    "invalid_urls": 4,
+    "accuracy_percentage": 42.9,
+    "valid_urls_list": [
+      "https://www.oldenzaal.nl/omgevingsvergunning",
+      "https://www.oldenzaal.nl/aanleggen",
+      "https://www.oldenzaal.nl/standplaatsvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.oldenzaal.nl/warenmarkt",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://example.com/aanleggen)",
+        "reason": "INVALID: Error scraping https://example.com/aanleggen): 404 Client Error: Not Found for url: https://example.com/aanleggen)"
+      },
+      {
+        "url": "https://www.oldenzaal.nl/bouwen-en-verbouwen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://example.com/standplaatsvergunning)",
+        "reason": "INVALID: Error scraping https://example.com/standplaatsvergunning): 404 Client Error: Not Found for url: https://example.com/standplaatsvergunning)"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Deze vergunning kan voor maximaal vijf jaar verleend worden.",
+          "original_reference": "De vergunning is voor maximaal 10 jaar geldig.",
+          "note": "Er is een duidelijk verschil in de maximale geldigheidsduur van de vergunning. De bron vermeldt 5 jaar terwijl de originele tekst 10 jaar aangeeft.",
+          "source_urls": [
+            "https://www.oldenzaal.nl/standplaatsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "Bij vergelijking van de bronnen met de originele tekst is één significant verschil gevonden betreffende de maximale geldigheidsduur van de standplaatsvergunning. De overige informatie in de originele tekst komt overeen met de beschikbare bronnen of kan niet geverifieerd worden omdat deze informatie niet in de geciteerde bronnen voorkomt."
+  }
+}

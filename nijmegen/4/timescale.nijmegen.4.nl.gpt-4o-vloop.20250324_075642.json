@@ -1,0 +1,96 @@
+{
+  "context": {
+    "municipality": {
+      "name": "NIJMEGEN",
+      "contact": {
+        "phone": "14 024",
+        "email": "gemeente@nijmegen.nl",
+        "website": "http://www.nijmegen.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 24,
+    "false_sentences": 4,
+    "accuracy_percentage": 85.7,
+    "false_statements": [
+      {
+        "sentence": "Er zijn maximaal 250 mensen tegelijk toegestaan bij uw evenement.",
+        "status": "false",
+        "note": "Het maximaal aantal toegestane mensen is afhankelijk van het type evenement (A, B of C) en de locatie. Er is geen vast maximum van 250 mensen volgens de gemeente Nijmegen."
+      },
+      {
+        "sentence": "Geluid mag niet harder zijn dan 70 dB(A)/83 dB(C) en geluidsboxen mogen niet op woningen of winkels gericht zijn.",
+        "status": "false",
+        "note": "De gemeente Nijmegen hanteert verschillende geluidsnormen afhankelijk van het gebied en type evenement. Er is geen universele norm van 70 dB(A)/83 dB(C)."
+      },
+      {
+        "sentence": "Het evenement mag op een gewone dag niet voor 9.00 uur beginnen en moet uiterlijk om 23.00 uur eindigen.",
+        "status": "false",
+        "note": "De begin- en eindtijden zijn afhankelijk van het type evenement en de locatie. Er zijn geen vaste universele tijden van 9:00 tot 23:00 uur vastgesteld door de gemeente Nijmegen."
+      },
+      {
+        "sentence": "Op vrijdag, zaterdag en de avond voor een officiële feestdag mag het evenement tot 24.00 uur duren.",
+        "status": "false",
+        "note": "De eindtijd voor evenementen op deze dagen wordt per geval bepaald en is niet standaard 24:00 uur volgens de gemeente Nijmegen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 3,
+    "invalid_urls": 2,
+    "accuracy_percentage": 60.0,
+    "valid_urls_list": [
+      "https://www.nijmegen.nl/diensten/evenementen/evenement-melden-of-vergunning-aanvragen/",
+      "https://www.nijmegen.nl/diensten/evenementen/",
+      "https://www.nijmegen.nl/diensten/evenementen/schema-vergunningen-activiteiten/tekstversie/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.nijmegen.nl/diensten/vergunningen/informatiekraam-melden-of-vergunning/",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.nijmegen.nl/diensten/evenementen/reserveren-evenementen/",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een evenementenvergunning vraagt u 16 - 8 weken voor uw evenement aan",
+          "original_reference": "Zorg dat de aanvraag minimaal 16 tot 8 weken voor het evenement is ingediend. Voor een A-evenement moet de aanvraag 8 tot 12 weken voor het evenement ingediend zijn, en voor een B- of C-evenement 10 tot 16 weken.",
+          "note": "De originele tekst maakt onderscheid tussen A-, B- en C-evenementen met verschillende termijnen, terwijl de brontekst één algemene termijn van 16-8 weken noemt zonder dit onderscheid.",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/evenementen/evenement-melden-of-vergunning-aanvragen/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor privéfeesten (bijvoorbeeld verjaardagsfeesten) en trouwfeesten hoeft u geen melding te doen of een evenementenvergunning aan te vragen. Wel voor straat- en buurtfeesten en het officiële moment van het sluiten van een huwelijk of partnerschap.",
+          "original_reference": "Voor privéfeesten, zoals verjaardags- of trouwfeesten, is geen vergunning nodig, maar voor straat- en buurtfeesten wel.",
+          "note": "De brontekst specificeert dat het officiële moment van het sluiten van een huwelijk of partnerschap wel een vergunning nodig heeft, wat niet vermeld wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/evenementen/evenement-melden-of-vergunning-aanvragen/"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele tekst en de bronnen. Ten eerste worden de aanvraagtermijnen verschillend weergegeven, waarbij de bron een algemene termijn hanteert en de originele tekst specifieke termijnen per evenementcategorie noemt. Ten tweede is er een verschil in de specificatie van trouwgerelateerde evenementen, waarbij de bron expliciet aangeeft dat het officiële huwelijksmoment wel een vergunning vereist, terwijl dit in de originele tekst niet wordt genoemd."
+  }
+}

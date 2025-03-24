@@ -1,0 +1,72 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MAASSLUIS",
+      "contact": {
+        "phone": "14 010",
+        "email": "gemeente@maassluis.nl",
+        "website": "http://www.maassluis.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 22,
+    "false_sentences": 2,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor een alcoholwetvergunning zijn € 28,90.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Maassluis bedragen de kosten voor een alcoholwetvergunning € 575,85."
+      },
+      {
+        "sentence": "Voor wijzigingen in leidinggevenden bedragen de kosten € 32,25.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Maassluis bedragen de kosten voor wijzigingen in leidinggevenden € 115,15."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 0,
+    "invalid_urls": 6,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.maassluis.nl/alcoholwetvergunning",
+        "reason": "INVALID: Error scraping https://www.maassluis.nl/alcoholwetvergunning: HTTPSConnectionPool(host='www.maassluis.nl', port=443): Max retries exceeded with url: /alcoholwetvergunning (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x103a7f770>, 'Connection to www.maassluis.nl timed out. (connect timeout=10)'))"
+      },
+      {
+        "url": "https://www.maassluis.nl/exploitatievergunning-horecabedrijf",
+        "reason": "INVALID: Error scraping https://www.maassluis.nl/exploitatievergunning-horecabedrijf: HTTPSConnectionPool(host='www.maassluis.nl', port=443): Max retries exceeded with url: /exploitatievergunning-horecabedrijf (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x103e84410>, 'Connection to www.maassluis.nl timed out. (connect timeout=10)'))"
+      },
+      {
+        "url": "https://www.maassluis.nl/alcohol-schenken-tijdens-evenement",
+        "reason": "INVALID: Error scraping https://www.maassluis.nl/alcohol-schenken-tijdens-evenement: HTTPSConnectionPool(host='www.maassluis.nl', port=443): Max retries exceeded with url: /alcohol-schenken-tijdens-evenement (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x103e84cd0>, 'Connection to www.maassluis.nl timed out. (connect timeout=10)'))"
+      },
+      {
+        "url": "https://www.maassluis.nl/watervergunning",
+        "reason": "INVALID: Error scraping https://www.maassluis.nl/watervergunning: HTTPSConnectionPool(host='www.maassluis.nl', port=443): Max retries exceeded with url: /watervergunning (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x103e84f50>, 'Connection to www.maassluis.nl timed out. (connect timeout=10)'))"
+      },
+      {
+        "url": "https://www.maassluis.nl/verklaring-omtrent-het-gedrag-vog",
+        "reason": "INVALID: Error scraping https://www.maassluis.nl/verklaring-omtrent-het-gedrag-vog: HTTPSConnectionPool(host='www.maassluis.nl', port=443): Max retries exceeded with url: /verklaring-omtrent-het-gedrag-vog (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x103e851d0>, 'Connection to www.maassluis.nl timed out. (connect timeout=10)'))"
+      },
+      {
+        "url": "https://www.maassluis.nl",
+        "reason": "INVALID: Error scraping https://www.maassluis.nl: HTTPSConnectionPool(host='www.maassluis.nl', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x103e85310>, 'Connection to www.maassluis.nl timed out. (connect timeout=10)'))"
+      }
+    ]
+  }
+}

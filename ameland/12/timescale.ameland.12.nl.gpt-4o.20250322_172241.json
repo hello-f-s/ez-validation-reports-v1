@@ -1,0 +1,103 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AMELAND",
+      "contact": {
+        "phone": "(0519) 55 55 55",
+        "email": "info@ameland.nl",
+        "website": "http://www.ameland.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "Als binnen deze termijnen geen besluit wordt genomen, wordt de vergunning van rechtswege verleend, behalve bij uitgebreide aanvragen.",
+        "status": "false",
+        "note": "Bij de gemeente Ameland geldt dat als er binnen de termijn geen besluit wordt genomen, de vergunning NIET automatisch van rechtswege wordt verleend. Dit geldt voor zowel reguliere als uitgebreide procedures."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.ameland.nl/omgevingsvergunning",
+      "https://www.ameland.nl/onttrekkingsvergunning",
+      "https://www.ameland.nl/bestemmingsplan-aanpassen",
+      "https://www.ameland.nl/uitrit-of-inrit-aanleggen",
+      "https://www.ameland.nl/bouwwerk-gereedmelding"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://example1.url",
+        "reason": "INVALID: Error scraping https://example1.url: HTTPSConnectionPool(host='example1.url', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x103573e00>: Failed to resolve 'example1.url' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://example2.url",
+        "reason": "INVALID: Error scraping https://example2.url: HTTPSConnectionPool(host='example2.url', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x103555450>: Failed to resolve 'example2.url' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 4,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Let op! Informatie op deze pagina kan verouderd zijn vanwege de overgang naar de Omgevingswet per 1 januari 2024.",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden een belangrijke waarschuwing over de overgang naar de Omgevingswet die niet in de originele tekst staat vermeld. Dit is essentiële contextinformatie voor aanvragers.",
+          "source_urls": [
+            "https://www.ameland.nl/uitrit-of-inrit-aanleggen",
+            "https://www.ameland.nl/bestemmingsplan-aanpassen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Kosten: Afhankelijk van de bouwsom",
+          "original_reference": "Specifieke kosteninformatie is niet aangegeven, maar het is gebruikelijk dat leges van toepassing zijn op omgevingsvergunningen.",
+          "note": "De bron specificeert dat kosten afhankelijk zijn van de bouwsom, terwijl de originele tekst alleen algemeen spreekt over leges.",
+          "source_urls": [
+            "https://www.ameland.nl/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bedrijven kunnen de aanvraag alleen online doen. Gebruik hiervoor eHerkenning.",
+          "original_reference": "eHerkenning voor online aanvraag.",
+          "note": "De bron specificeert dat bedrijven uitsluitend online kunnen aanvragen, wat een strengere beperking is dan in de originele tekst.",
+          "source_urls": [
+            "https://www.ameland.nl/uitrit-of-inrit-aanleggen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Tel: (0519) 555 555, WhatsApp: 06-144 58 728, E-mail: info@ameland.nl",
+          "original_reference": "No matching information",
+          "note": "De bronnen bevatten specifieke contactgegevens die niet in de originele tekst zijn opgenomen.",
+          "source_urls": [
+            "https://www.ameland.nl/onttrekkingsvergunning",
+            "https://www.ameland.nl/bouwwerk-gereedmelding"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de aanstaande overgang naar de Omgevingswet per 2024, specifiekere informatie over kosten, striktere aanvraagvereisten voor bedrijven en ontbrekende contactgegevens in de originele tekst. Deze informatie is essentieel voor een complete en actuele dienstverlening."
+  }
+}

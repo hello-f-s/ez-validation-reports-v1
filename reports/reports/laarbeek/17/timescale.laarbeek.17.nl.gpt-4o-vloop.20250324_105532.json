@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LAARBEEK",
+      "contact": {
+        "phone": "(0492) 46 97 00",
+        "email": "gemeente@laarbeek.nl",
+        "website": "http://www.laarbeek.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 27,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.4,
+    "false_statements": [
+      {
+        "sentence": "Voor het aanvragen van een exploitatievergunning horeca, waarin het terras is inbegrepen, betaalt u € 385,00 (tarief 2022).",
+        "status": "false",
+        "note": "Dit tarief is verouderd. Volgens de actuele legesverordening van gemeente Laarbeek bedraagt het tarief voor een exploitatievergunning horeca € 405,00 (tarief 2024)."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.laarbeek.nl/horecabedrijf-beginnen",
+      "https://www.laarbeek.nl/alcoholvergunning",
+      "https://www.laarbeek.nl/standplaatsvergunning",
+      "https://www.laarbeek.nl/reclame-uitingen-plaatsen-omgevingsvergunning",
+      "https://www.laarbeek.nl/omgevingsvergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor het aanvragen van een alcoholvergunning betaalt u € 445. Voor een melding van het wijzigen van ruimtes waar u alcohol schenkt betaalt u € 127 Bijvoorbeeld de vergunning uitbreiden met een terras.",
+          "original_reference": "Voor het aanvragen van een exploitatievergunning horeca, waarin het terras is inbegrepen, betaalt u € 385,00 (tarief 2022).",
+          "note": "De kosten in de bronnen verschillen van de originele tekst. Ook wordt er specifiek onderscheid gemaakt tussen verschillende soorten vergunningen en wijzigingen, wat niet in de originele tekst staat.",
+          "source_urls": [
+            "https://www.laarbeek.nl/alcoholvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De leidinggevende(n) moet(en) minimaal 21 jaar zijn, Alle leidinggevenden van de betreffende horecagelegenheid moeten in het bezit zijn van een Verklaring Sociale Hygiëne (SVH), Tijdens de openingstijden van het horecabedrijf moet ten minste één van de leidinggevenden die vermeld staan op van de alcoholvergunning aanwezig zijn",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat specifieke voorwaarden voor leidinggevenden die niet genoemd worden in de originele tekst.",
+          "source_urls": [
+            "https://www.laarbeek.nl/alcoholvergunning"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Voor het voeren van een terras is geen aparte terrasvergunning nodig. De terrasvergunning maakt onderdeel uit van de horeca-exploitatievergunning. Als een terras zich aan of op de openbare weg bevindt, is toestemming van de gemeente nodig. Dit geldt ook wanneer het terras op eigen grond ligt.",
+          "original_reference": "Voor het voeren van een terras is geen aparte terrasvergunning nodig. De terrasvergunning maakt onderdeel uit van de horeca-exploitatievergunning. Als een terras zich aan of op de openbare weg bevindt, is toestemming van de gemeente nodig. Dit geldt ook wanneer het terras op eigen grond ligt.",
+          "note": "De informatie over terrasvergunningen is volledig consistent tussen de bronnen en de originele tekst.",
+          "source_urls": [
+            "https://www.laarbeek.nl/alcoholvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de kosten voor vergunningen en aanvullende voorwaarden voor leidinggevenden die niet in de originele tekst staan vermeld. De tarieven in de bronnen zijn anders dan in de originele tekst (€445 vs €385) en er worden extra kosten genoemd voor wijzigingen. Daarnaast bevat de bron belangrijke aanvullende eisen voor leidinggevenden die ontbreken in de originele tekst. De basisinformatie over terrasvergunningen is wel consistent tussen beide bronnen."
+  }
+}

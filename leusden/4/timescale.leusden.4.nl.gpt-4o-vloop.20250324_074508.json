@@ -1,0 +1,90 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LEUSDEN",
+      "contact": {
+        "phone": "14 033",
+        "email": "gemeente@leusden.nl",
+        "website": "http://www.leusden.nl/"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 17,
+    "false_sentences": 2,
+    "accuracy_percentage": 89.5,
+    "false_statements": [
+      {
+        "sentence": "Voor het organiseren van een bingo moet u dit minstens 2 weken van tevoren melden.",
+        "status": "false",
+        "note": "Volgens de gemeente Leusden moet een aanvraag voor een klein kansspel zoals bingo minimaal 4 weken van tevoren worden ingediend, niet 2 weken."
+      },
+      {
+        "sentence": "Als u een loterij voor een goed doel wilt organiseren, vraag dan 8 weken van tevoren een vergunning aan.",
+        "status": "false",
+        "note": "Voor een loterij moet de aanvraag minimaal 6 weken van tevoren worden ingediend bij de gemeente Leusden, niet 8 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 4,
+    "valid_urls": 4,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.leusden.nl/vergunningen-en-belastingen/activiteit-organiseren",
+      "https://www.leusden.nl/en/vergunningen-en-belastingen/activiteit-organiseren",
+      "https://www.leusden.nl/vergunningen-en-belastingen",
+      "https://www.leusden.nl/en/vergunningen-en-belastingen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het ophangen van een spandoek moet minimaal 3 weken van tevoren schriftelijk worden gemeld.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over spandoeken en de bijbehorende meldingstermijn van 3 weken, wat een belangrijke aanvullende voorwaarde is voor evenementencommunicatie.",
+          "source_urls": [
+            "https://www.leusden.nl/vergunningen-en-belastingen",
+            "https://www.leusden.nl/en/vergunningen-en-belastingen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor het organiseren van een collecte moet u minimaal 8 weken voor de geplande datum een vergunning aanvragen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist informatie over collectevergunningen en de vereiste aanvraagtermijn van 8 weken.",
+          "source_urls": [
+            "https://www.leusden.nl/vergunningen-en-belastingen",
+            "https://www.leusden.nl/en/vergunningen-en-belastingen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor de brandveiligheid is een gebruiksmelding soms verplicht bij het organiseren van activiteiten",
+          "original_reference": "Voor gebruiksveiligheid kan een gebruiksmelding vereist zijn.",
+          "note": "De brontext specificeert dat het om brandveiligheid gaat, terwijl de originele tekst alleen over algemene gebruiksveiligheid spreekt.",
+          "source_urls": [
+            "https://www.leusden.nl/vergunningen-en-belastingen/activiteit-organiseren",
+            "https://www.leusden.nl/en/vergunningen-en-belastingen/activiteit-organiseren"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie die niet in de originele tekst staat, waaronder specifieke meldingstermijnen voor spandoeken (3 weken) en collectes (8 weken). Ook wordt in de bronnen expliciet vermeld dat de gebruiksmelding voor brandveiligheid is, terwijl de originele tekst alleen algemene gebruiksveiligheid noemt. Deze details zijn essentieel voor evenementorganisatoren."
+  }
+}

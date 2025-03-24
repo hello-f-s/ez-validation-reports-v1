@@ -1,0 +1,89 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DRUTEN",
+      "contact": {
+        "phone": "(088) 432 70 00",
+        "email": "info@druten.nl",
+        "website": "http://www.druten.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 11,
+    "false_sentences": 4,
+    "accuracy_percentage": 73.3,
+    "false_statements": [
+      {
+        "sentence": "1 kansspelautomaat voor 1 jaar: €56,60",
+        "status": "false",
+        "note": "Dit bedrag komt niet overeen met de actuele tarieven van gemeente Druten voor kansspelautomaten"
+      },
+      {
+        "sentence": "2 kansspelautomaten voor 1 jaar: €82,65",
+        "status": "false",
+        "note": "Dit bedrag komt niet overeen met de actuele tarieven van gemeente Druten voor kansspelautomaten"
+      },
+      {
+        "sentence": "1 kansspelautomaat voor onbepaalde tijd: €226,50",
+        "status": "false",
+        "note": "Dit bedrag komt niet overeen met de actuele tarieven van gemeente Druten voor kansspelautomaten"
+      },
+      {
+        "sentence": "2 kansspelautomaten voor onbepaalde tijd: €317,70",
+        "status": "false",
+        "note": "Dit bedrag komt niet overeen met de actuele tarieven van gemeente Druten voor kansspelautomaten"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.druten.nl/evenementen-en-horeca",
+      "https://www.druten.nl/loterij-of-kansspel-organiseren",
+      "https://www.druten.nl/gokautomaat-plaatsen",
+      "https://www.druten.nl/exploitatievergunning-horecabedrijf",
+      "https://www.druten.nl/alcoholwetvergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een gok- of kansspelautomaat is een automaat waarmee geld te winnen is, zoals een fruitautomaat. Met een behendigheidsautomaat kan dit niet, denk aan een flipperkast of videospelletjes. Voor een behendigheidsautomaat hebt u geen aanwezigheidsvergunning nodig.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist een belangrijke definitie en onderscheid tussen gokautomaten en behendigheidsautomaten. Dit is essentiële informatie voor ondernemers om te bepalen of ze een vergunning nodig hebben.",
+          "source_urls": [
+            "https://www.druten.nl/gokautomaat-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een slijterij die sterk-alcoholische drank verkoopt heeft ook een drank- en horecavergunning nodig. Verkoopt u alleen alleen zwak-alcoholische drank zoals bier of wijn? Dan heeft u géén Alcoholwetvergunning nodig.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over verschillende types alcoholverkoop en wanneer wel/geen vergunning nodig is. Dit is relevant voor de horecavergunning vereisten.",
+          "source_urls": [
+            "https://www.druten.nl/alcoholwetvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten enkele belangrijke aanvullende details die niet in de originele tekst staan, met name de definitie van gokautomaten versus behendigheidsautomaten en specifieke regels rond alcoholverkoop. Deze informatie is essentieel voor ondernemers om te bepalen welke vergunningen ze nodig hebben. De kern van de vergunningseisen en kosten komt wel overeen met de originele tekst."
+  }
+}

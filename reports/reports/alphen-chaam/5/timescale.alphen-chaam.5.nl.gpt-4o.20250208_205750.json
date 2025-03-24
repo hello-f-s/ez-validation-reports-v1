@@ -1,0 +1,89 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ALPHEN-CHAAM",
+      "contact": {
+        "phone": "14013",
+        "email": "info@alphen-chaam.nl",
+        "website": "http://www.alphen-chaam.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 6,
+    "true_sentences": 5,
+    "false_sentences": 1,
+    "accuracy_percentage": 83.3,
+    "false_statements": [
+      {
+        "sentence": "De aanvraag wordt binnen 8 weken behandeld. Deze periode kan met 8 weken worden verlengd.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Alphen-Chaam wordt de aanvraag binnen 12 weken behandeld. Deze termijn kan eenmalig met 12 weken worden verlengd, niet 8 weken zoals vermeld."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 6,
+    "invalid_urls": 1,
+    "accuracy_percentage": 85.7,
+    "valid_urls_list": [
+      "https://www.alphen-chaam.nl/wijziginginrichtinghoreca",
+      "https://www.alphen-chaam.nl/ondernemen",
+      "https://www.alphen-chaam.nl/vergunningen-en-ontheffingen",
+      "https://www.alphen-chaam.nl",
+      "https://www.alphen-chaam.nl/alcoholvergunning",
+      "https://www.alphen-chaam.nl/horecavergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.alphen-chaam.nl\">Gemeente",
+        "reason": "INVALID: Error scraping https://www.alphen-chaam.nl\">Gemeente: HTTPSConnectionPool(host='www.alphen-chaam.nl%22%3egemeente', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10389b390>: Failed to resolve 'www.alphen-chaam.nl%22%3egemeente' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "€ 178,95",
+          "original_reference": "Hier kan geen specifieke informatie over gevonden worden op de website van deze gemeente.",
+          "note": "De originele inhoud vermeldt geen kosten, terwijl de bron specifiek aangeeft dat een horecavergunning € 178,95 kost.",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/horecavergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Verbouwt u een horecabedrijf en deze voldoet niet meer aan de vergunning die u heeft. Of u wilt een andere persoon toevoegen aan de vergunning dan vraagt u een nieuwe horecavergunning aan",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat aanvullende belangrijke informatie over wanneer een nieuwe vergunning moet worden aangevraagd, wat niet vermeld staat in de originele tekst.",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/horecavergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Onderzoek via Wet Bibob",
+          "original_reference": "No matching information",
+          "note": "De bron vermeldt een belangrijk aspect over het Bibob-onderzoek dat wordt uitgevoerd bij aanvragen, wat volledig ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/horecavergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De originele inhoud mist enkele essentiële elementen die wel in de bronnen staan: de specifieke kosten (€ 178,95), voorwaarden voor het aanvragen van een nieuwe vergunning bij verbouwing of personeelswijziging, en informatie over het Bibob-onderzoek. Deze informatie is belangrijk voor aanvragers van een horecavergunning."
+  }
+}

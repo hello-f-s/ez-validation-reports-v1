@@ -1,0 +1,78 @@
+{
+  "context": {
+    "municipality": {
+      "name": "GRONINGEN",
+      "contact": {
+        "phone": "14 050",
+        "email": "info@groningen.nl",
+        "website": "http://gemeente.groningen.nl"
+      }
+    },
+    "service": {
+      "id": 3,
+      "name": "Certificaat voor opgraving aanvragen en vondst melden"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "De gemeente houdt de archeologische vondst maximaal 6 maanden in bezit om het voorwerp te onderzoeken en registreren.",
+        "status": "false",
+        "note": "Volgens de Erfgoedwet (artikel 5.10) heeft de gemeente maximaal 13 weken (ongeveer 3 maanden) de tijd om archeologische vondsten te onderzoeken en registreren, niet 6 maanden."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://gemeente.groningen.nl/archeologische-vondst-melden",
+      "https://gemeente.groningen.nl/archeologisch-onderzoek-laten-doen",
+      "https://gemeente.groningen.nl/adresonderzoek-aanvragen",
+      "https://gemeente.groningen.nl/melding-en-verzoek-om-handhaving"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://gemeente.groningen.nl/bodeminformatie-opvragen-en-bodemonderzoek-laten-doen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Hebt u een oud voorwerp gevonden en denkt u dat het archeologische waarde heeft? U bent verplicht dat te melden bij de gemeente voor onderzoek en registratie.",
+          "original_reference": "Hebt u een oud voorwerp gevonden en denkt u dat het archeologische waarde heeft? U bent verplicht dat te melden bij de gemeente voor onderzoek en registratie.",
+          "note": "De meldingsplicht en basisprocedure komen exact overeen",
+          "source_urls": [
+            "https://gemeente.groningen.nl/archeologische-vondst-melden"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Gaat u bouwen of verbouwen en moet daarbij in de grond worden gegraven? Dan moet u de bodem soms eerst archeologisch laten onderzoeken. Dan wordt bekeken of er waardevolle resten met cultuurhistorische waarde in de grond kunnen zitten. Of dit onderzoek verplicht is, hoort u als u een omgevingsvergunning aanvraagt.",
+          "original_reference": "Wanneer u gaat bouwen of verbouwen en moet daarbij in de grond worden gegraven, kan het nodig zijn om de bodem eerst archeologisch te laten onderzoeken.",
+          "note": "De bronwebsite geeft specifiekere informatie over wanneer archeologisch onderzoek nodig is en koppelt dit aan de omgevingsvergunning. Deze belangrijke details ontbreken in de originele tekst.",
+          "source_urls": [
+            "https://gemeente.groningen.nl/archeologisch-onderzoek-laten-doen"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont dat de kerninhoud grotendeels consistent is, maar de bronwebsite bevat belangrijke aanvullende details over de vereisten voor archeologisch onderzoek bij bouw- en verbouwprojecten. Deze extra informatie over de koppeling met de omgevingsvergunning zou waardevol zijn om toe te voegen aan de originele tekst voor meer duidelijkheid richting inwoners."
+  }
+}

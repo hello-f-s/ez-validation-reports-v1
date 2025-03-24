@@ -1,0 +1,68 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MIDDEN-DRENTHE",
+      "contact": {
+        "phone": "(0593) 53 92 22",
+        "email": "gemeente@middendrenthe.nl",
+        "website": "http://www.middendrenthe.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 31,
+    "true_sentences": 29,
+    "false_sentences": 2,
+    "accuracy_percentage": 93.5,
+    "false_statements": [
+      {
+        "sentence": "Voor een omgevingsvergunning voor bouwactiviteiten betaalt u minimaal € 116,50.",
+        "status": "false",
+        "note": "Het minimumbedrag voor een omgevingsvergunning voor bouwactiviteiten in Midden-Drenthe is volgens de actuele legesverordening anders. Dit bedrag is niet correct voor deze gemeente."
+      },
+      {
+        "sentence": "Voor een omgevingsplanactiviteit betaalt u 1,81% van de bouwsom met een minimum van € 145,60.",
+        "status": "false",
+        "note": "Dit percentage en minimumbedrag komen niet overeen met de actuele legesverordening van gemeente Midden-Drenthe."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 0,
+    "invalid_urls": 5,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.middendrenthe.nl/bouwen-wonen/bouwen-of-verbouwen",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.middendrenthe.nl/bouwen-wonen",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.middendrenthe.nl/bouwen-wonen/vooroverleg-aanvragen",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.middendrenthe.nl/vergunningen-ontheffingen/reclamebord-plaatsen",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.middendrenthe.nl/bouwen-wonen/in-of-uitrit-aanleggen",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  }
+}

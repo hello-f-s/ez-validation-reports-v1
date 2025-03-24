@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "SCHIEDAM",
+      "contact": {
+        "phone": "14 010",
+        "email": "contact@schiedam.nl",
+        "website": "http://www.schiedam.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 11,
+    "false_sentences": 2,
+    "accuracy_percentage": 84.6,
+    "false_statements": [
+      {
+        "sentence": "Bedrijfsvergunning: € 425,70 (januari 2025 tot en met december 2025), geldig gedurende de gehele tijd betaald parkeren.",
+        "status": "false",
+        "note": "Het huidige tarief voor een bedrijfsvergunning in Schiedam is € 408,40 per jaar (2024). Het genoemde bedrag en jaar zijn onjuist."
+      },
+      {
+        "sentence": "Bedrijfsvergunning beperkt: € 290,40 (januari 2025 tot en met december 2025), geldig van maandag t/m vrijdag van 09.00 uur tot 20.00 uur zonder koopavond.",
+        "status": "false",
+        "note": "Het huidige tarief voor een beperkte bedrijfsvergunning in Schiedam is € 279,20 per jaar (2024). Het genoemde bedrag en jaar zijn onjuist."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://schiedam.nl/a-tot-z/parkeren-bij-autobedrijven",
+      "https://www.schiedam.nl/a-tot-z/parkeervergunning-bewoners",
+      "https://schiedam.nl/a-tot-z/parkeervergunning-bedrijven-en-zorginstellingen",
+      "https://www.schiedam.nl/a-tot-z/parkeervergunning-bedrijven-en-zorginstellingen",
+      "https://www.schiedam.nl/a-tot-z/parkeren-bij-autobedrijven"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U krijgt de parkeervergunning voor de sector waar uw bedrijf is gevestigd. Aan de vergunning zijn ook wat extra sectoren toegevoegd. Zie onderstaand overzicht:\nSector A mag parkeren in de sectoren ACD en het parkeerterrein aan de Buitenhavenweg\nSector B mag parkeren in de sectoren BCD\nSector C mag parkeren in de sectoren CD\nSector D mag parkeren in de sectoren DC\nSector E mag alleen parkeren in sector E",
+          "original_reference": "No matching information",
+          "note": "De originele inhoud bevat geen informatie over sectorindeling en waar men mag parkeren per sector. Dit is belangrijke aanvullende informatie voor vergunninghouders.",
+          "source_urls": [
+            "https://schiedam.nl/a-tot-z/parkeervergunning-bedrijven-en-zorginstellingen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Parkeervergunningen worden verleend op kenteken. Door Toezicht en Handhaving wordt het kenteken gescand. Toezicht en Handhaving staat ook wel bekend als de Licht Blauwe Brigade.",
+          "original_reference": "No matching information",
+          "note": "De originele inhoud vermeldt niet dat vergunningen op kenteken worden verleend en gescand worden door handhavers. Dit is essentiële praktische informatie.",
+          "source_urls": [
+            "https://schiedam.nl/a-tot-z/parkeervergunning-bedrijven-en-zorginstellingen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Heeft u bedrijfsauto's die aan de buitenkant herkenbaar zijn? Dan is een uitzondering mogelijk. Hiervoor kan de gemeente een papieren vergunning op bedrijfsnaam verlenen. Dit geldt ook voor vergunningen voor zorginstellingen.",
+          "original_reference": "No matching information",
+          "note": "De originele inhoud mist de informatie over uitzonderingen voor herkenbare bedrijfsauto's en de mogelijkheid voor papieren vergunningen.",
+          "source_urls": [
+            "https://schiedam.nl/a-tot-z/parkeervergunning-bedrijven-en-zorginstellingen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten belangrijke aanvullende informatie die niet in de originele tekst staat, waaronder details over sectorindeling, kentekenregistratie en handhaving, en uitzonderingen voor herkenbare bedrijfsauto's. Deze informatie is essentieel voor het correct gebruik van de parkeervergunning. Er zijn geen directe tegenstrijdigheden gevonden tussen de originele tekst en de bronnen."
+  }
+}

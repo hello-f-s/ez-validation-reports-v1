@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "BEVERWIJK",
+      "contact": {
+        "phone": "(0251) 25 62 56",
+        "email": "info@beverwijk.nl",
+        "website": "http://www.beverwijk.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "Voor een aanvraag van een vergunning voor onbepaalde tijd voor één speelautomaat kost het € 226,50.",
+        "status": "false",
+        "note": "Dit bedrag is niet actueel volgens de legesverordening van gemeente Beverwijk. Het huidige tarief voor een aanvraag van een vergunning voor kansspelautomaten is anders vastgesteld in de actuele legesverordening."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.beverwijk.nl/speelautomaten-vergunning",
+      "https://www.beverwijk.nl/loterijvergunning",
+      "https://www.beverwijk.nl/standplaatsvergunning",
+      "https://www.beverwijk.nl/overzicht-vragen-voor-eenmalige-subsidie-aanvragen",
+      "https://beverwijk.nl"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "In hoogdrempelige inrichtingen zijn maximaal twee kansspelautomaten toegestaan. In laagdrempelige inrichtingen zijn kansspelautomaten niet toegestaan.",
+          "original_reference": "In hoogdrempelige inrichtingen zijn maximaal twee kansspelautomaten toegestaan. In laagdrempelige inrichtingen zijn kansspelautomaten niet toegestaan.",
+          "note": "De informatie over het maximaal toegestane aantal automaten en de regels voor laagdrempelige inrichtingen komt exact overeen.",
+          "source_urls": [
+            "https://www.beverwijk.nl/speelautomaten-vergunning"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Een inrichting is hoogdrempelig wanneer: De ruimte als café of restaurant gebruikt wordt. Er mogen geen andere activiteiten plaatsvinden. De ruimte heeft een geldige alcoholwetvergunning in zijn bezit. De activiteiten die plaatsvinden gericht zijn op personen van achttien jaar en ouder.",
+          "original_reference": "Een inrichting is hoogdrempelig wanneer deze als café of restaurant wordt gebruikt, een geldige alcoholwetvergunning heeft, en activiteiten gericht zijn op personen van 18 jaar en ouder.",
+          "note": "De criteria voor hoogdrempelige inrichtingen komen inhoudelijk overeen, hoewel de brontekst iets uitgebreider is geformuleerd.",
+          "source_urls": [
+            "https://www.beverwijk.nl/speelautomaten-vergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse van de beschikbare bronnen zijn er geen significante inhoudelijke verschillen gevonden tussen de originele tekst en de broninhoud. De informatie over voorwaarden, definities en regels komt overeen. Opvallend is dat sommige details over kosten, aanvraagprocedure en behandeltermijnen niet direct verifieerbaar zijn in de beschikbare bronpagina's, maar dit betekent niet automatisch dat deze informatie onjuist is."
+  }
+}

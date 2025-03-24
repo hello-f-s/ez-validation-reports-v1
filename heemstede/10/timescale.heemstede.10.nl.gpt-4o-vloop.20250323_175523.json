@@ -1,0 +1,87 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HEEMSTEDE",
+      "contact": {
+        "phone": "(023) 548 58 68",
+        "email": "gemeente@heemstede.nl",
+        "website": "http://www.heemstede.nl"
+      }
+    },
+    "service": {
+      "id": 10,
+      "name": "Nachtregister bijhouden"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Verhuurders moeten ook een verhaalsovereenkomst planschadevergoeding ondertekenen.",
+        "status": "false",
+        "note": "Er is geen vereiste voor een verhaalsovereenkomst planschadevergoeding voor vakantieverhuur in Heemstede volgens de officiële gemeentelijke regelgeving. Dit is geen onderdeel van de voorwaarden voor vakantieverhuur in de gemeente."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.heemstede.nl/aanvragen-en-regelen",
+      "https://www.heemstede.nl/vergunningen/uw-woning-verhuren",
+      "https://www.heemstede.nl/bestuur-en-organisatie/omgevingswet/het-nieuwe-omgevingsloket",
+      "https://www.heemstede.nl/vergunningen/standplaatsvergunning-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.heemstede.nl/aanvragen-en-regelen/verklaring-omtrent-gedrag-vog",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vanaf 1 maart 2020 bent u verplicht voor de verhuur van uw woning aan toeristen een omgevingsvergunning aan te vragen. Dit geldt ook als u voor 1 maart 2020 al gestart was met vakantieverhuur of een Bed & Breakfast.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de verplichting voor een omgevingsvergunning, wat een essentiële voorwaarde is volgens de bronpagina.",
+          "source_urls": [
+            "https://www.heemstede.nl/vergunningen/uw-woning-verhuren"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De Bed & Breakfast is maximaal 25% van de totale oppervlakte van de woning. De Bed& Breakfast is maximaal 75m2",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen specifieke oppervlakte-eisen voor B&B's, terwijl de bronpagina deze wel specificeert.",
+          "source_urls": [
+            "https://www.heemstede.nl/vergunningen/uw-woning-verhuren"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De voorziening mag niet functioneren als zelfstandige woning. Een aparte kookgelegenheid is dus niet toegestaan",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet het verbod op een aparte kookgelegenheid en zelfstandige woonfunctie.",
+          "source_urls": [
+            "https://www.heemstede.nl/vergunningen/uw-woning-verhuren"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten belangrijke aanvullende voorwaarden die niet in de originele tekst staan vermeld. Met name de verplichting voor een omgevingsvergunning vanaf maart 2020 is een cruciale toevoeging. Ook worden er specifieke eisen gesteld aan de oppervlakte van B&B's en zijn er beperkingen ten aanzien van zelfstandige woonfuncties die in de originele tekst ontbreken."
+  }
+}

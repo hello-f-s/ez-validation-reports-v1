@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MAASSLUIS",
+      "contact": {
+        "phone": "14 010",
+        "email": "gemeente@maassluis.nl",
+        "website": "http://www.maassluis.nl"
+      }
+    },
+    "service": {
+      "id": 2,
+      "name": "Bord of spandoek plaatsen aan de openbare weg"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor een vergunning voor het plaatsen van een voorwerp op of aan de weg bedragen € 32,25.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Maassluis bedragen de kosten voor een vergunning voor het plaatsen van voorwerpen op of aan de openbare weg € 33,50 (tarief 2024)."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.maassluis.nl/standplaats-aanvragen",
+      "https://www.maassluis.nl/voorwerp-plaatsen-op-of-aan-de-weg",
+      "https://www.maassluis.nl/antenne-of-schotelantenne-plaatsen",
+      "https://www.maassluis.nl/uitrit-of-inrit-aanleggen",
+      "https://www.maassluis.nl/boom-kappen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "€ 32,25 conform de legesverordening",
+          "original_reference": "€ 32,25",
+          "note": "De kosten voor de vergunning zijn identiek in beide bronnen",
+          "source_urls": [
+            "https://www.maassluis.nl/voorwerp-plaatsen-op-of-aan-de-weg"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Binnen 8 weken ontvangt u van ons bericht. De gemeente kan deze periode met 8 weken verlengen.",
+          "original_reference": "De gemeente stuurt binnen 8 weken een bericht. Deze periode kan met 8 weken worden verlengd.",
+          "note": "De behandeltermijn en verlengingsmogelijkheid zijn identiek",
+          "source_urls": [
+            "https://www.maassluis.nl/voorwerp-plaatsen-op-of-aan-de-weg"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het gaat om voorwerpen, zoals een steiger, container, spandoek en bouwmateriaal.",
+          "original_reference": "zoals een spandoek",
+          "note": "De bronpagina geeft meer specifieke voorbeelden van voorwerpen die onder de vergunning vallen",
+          "source_urls": [
+            "https://www.maassluis.nl/voorwerp-plaatsen-op-of-aan-de-weg"
+          ]
+        }
+      ]
+    },
+    "summary": "De informatie is grotendeels consistent tussen de originele tekst en de bronnen. Het belangrijkste verschil is dat de bronpagina meer specifieke voorbeelden geeft van voorwerpen waarvoor een vergunning nodig is. De kosten, procedures en termijnen komen overeen."
+  }
+}

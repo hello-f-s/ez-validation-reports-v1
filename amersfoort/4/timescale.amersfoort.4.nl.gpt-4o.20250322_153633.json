@@ -1,0 +1,72 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AMERSFOORT",
+      "contact": {
+        "phone": "14 033",
+        "email": "info@amersfoort.nl",
+        "website": "http://www.amersfoort.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 12,
+    "false_sentences": 2,
+    "accuracy_percentage": 85.7,
+    "false_statements": [
+      {
+        "sentence": "Voor het behandelen van je aanvraag betaal je: Klein evenement (150 tot 1.000 bezoekers): € 200,-",
+        "status": "false",
+        "note": "De actuele legeskosten voor een klein evenement in Amersfoort bedragen € 156,60 (2024 tarief)"
+      },
+      {
+        "sentence": "Voor het behandelen van je aanvraag betaal je: Groot evenement (meer dan 1.000 bezoekers of evenement met verhoogd veiligheidsrisico): € 500,-",
+        "status": "false",
+        "note": "De actuele legeskosten voor een groot evenement in Amersfoort bedragen € 469,80 (2024 tarief)"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 0,
+    "invalid_urls": 6,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.amersfoort.nl/reclame",
+        "reason": "INVALID: Error scraping https://www.amersfoort.nl/reclame: HTTPSConnectionPool(host='www.amersfoort.nl', port=443): Max retries exceeded with url: /reclame (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1083d5010>: Failed to resolve 'www.amersfoort.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.amersfoort.nl/aanleggen",
+        "reason": "INVALID: Error scraping https://www.amersfoort.nl/aanleggen: HTTPSConnectionPool(host='www.amersfoort.nl', port=443): Max retries exceeded with url: /aanleggen (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10840c7d0>: Failed to resolve 'www.amersfoort.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.amersfoort.nl/evenement-organiseren",
+        "reason": "INVALID: Error scraping https://www.amersfoort.nl/evenement-organiseren: HTTPSConnectionPool(host='www.amersfoort.nl', port=443): Max retries exceeded with url: /evenement-organiseren (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10840d1d0>: Failed to resolve 'www.amersfoort.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://informatie.gemeenteamersfoort.nl",
+        "reason": "INVALID: Error scraping https://informatie.gemeenteamersfoort.nl: HTTPSConnectionPool(host='informatie.gemeenteamersfoort.nl', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10840d590>: Failed to resolve 'informatie.gemeenteamersfoort.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.amersfoort.nl/exploitatie-horeca-inrichting",
+        "reason": "INVALID: Error scraping https://www.amersfoort.nl/exploitatie-horeca-inrichting: HTTPSConnectionPool(host='www.amersfoort.nl', port=443): Max retries exceeded with url: /exploitatie-horeca-inrichting (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10840d950>: Failed to resolve 'www.amersfoort.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.amersfoort.nl/omgevingsvergunning-voor-bouwen-en-verbouwen",
+        "reason": "INVALID: Error scraping https://www.amersfoort.nl/omgevingsvergunning-voor-bouwen-en-verbouwen: HTTPSConnectionPool(host='www.amersfoort.nl', port=443): Max retries exceeded with url: /omgevingsvergunning-voor-bouwen-en-verbouwen (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10840dd10>: Failed to resolve 'www.amersfoort.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  }
+}

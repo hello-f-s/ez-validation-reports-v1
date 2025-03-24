@@ -1,0 +1,145 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DELFT",
+      "contact": {
+        "phone": "14 015",
+        "email": "null",
+        "website": "http://www.delft.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor een omgevingsvergunning voor aanleg bedragen € 564,60 in 2024.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Delft bedragen de kosten voor een omgevingsvergunning voor aanleg € 574,70 in 2024, niet € 564,60."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 18,
+    "valid_urls": 5,
+    "invalid_urls": 13,
+    "accuracy_percentage": 27.8,
+    "valid_urls_list": [
+      "https://www.delft.nl/omgevingsvergunning-aanvragen",
+      "https://www.delft.nl/uw-plan-voorleggen-aan-de-gemeente",
+      "https://www.delft.nl/omgevingsvergunning-bouwen",
+      "https://www.delft.nl/omgevingsvergunning-voor-aanleg",
+      "https://www.delft.nl/omgevingsvergunning-milieu"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.delft.nl/wonen-verbouwen-en-ondernemen/vergunningen-en-ontheffingen/omgevingsvergunning-voor-aanleg",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.delft.nl/wonen-verbouwen-en-ondernemen/vergunningen-en-onontheffingen/omgevingsvergunning-bouwen\">Omgevingsvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.omgevingsloket.nl\">Omgevingsloket</a>",
+        "reason": "INVALID: Error scraping https://www.omgevingsloket.nl\">Omgevingsloket</a>: HTTPSConnectionPool(host='www.omgevingsloket.nl%22%3eomgevingsloket%3c', port=443): Max retries exceeded with url: /a%3E (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10667c550>: Failed to resolve 'www.omgevingsloket.nl%22%3eomgevingsloket%3c' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.delft.nl/wonen-verbouwen-en-ondernemen/vergunningen-en-ontheffingen/omgevingsvergunning-milieu\">Omgevingsvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.delft.nl/wonen-verbouwen-en-ondernemen/vergunningen-en-ontheffingen/omgevingsvergunning-aanvragen\">Omgevingsvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.delft.nl/wonen-verbouwen-en-ondernemen/vergunningen-en-onontheffingen/uw-plan-voorleggen-aan-de-gemeente\">Uw",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.delft.nl/wonen-verbouwen-en-ondernemen/vergunningen-en-ontheffingen/omgevingsvergunning-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.delft.nl/wonen-verbouwen-en-ondernemen/vergunningen-en-onontheffingen/uw-plan-voorleggen-aan-de-gemeente",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.delft.nl/wonen-verbouwen-en-ondernemen/vergunningen-en-ontheffingen/omgevingsvergunning-voor-aanleg\">Omgevingsvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.delft.nl/wonen-verbouwen-en-ondernemen/vergunningen-en-ontheffingen/omgevingsvergunning-milieu",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.omgevingsloket.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.omgevingsloket.nl\">Omgevingsloket</a>.",
+        "reason": "INVALID: Error scraping https://www.omgevingsloket.nl\">Omgevingsloket</a>.: HTTPSConnectionPool(host='www.omgevingsloket.nl%22%3eomgevingsloket%3c', port=443): Max retries exceeded with url: /a%3E. (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1062225d0>: Failed to resolve 'www.omgevingsloket.nl%22%3eomgevingsloket%3c' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.delft.nl/wonen-verbouwen-en-ondernemen/vergunningen-en-onontheffingen/omgevingsvergunning-bouwen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 4,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Er zijn geen kosten",
+          "original_reference": "De kosten voor een omgevingsvergunning kunnen variëren. Bijvoorbeeld, de kosten voor een omgevingsvergunning voor aanleg bedragen € 564,60 in 2024.",
+          "note": "De originele tekst vermeldt kosten voor vergunningen, terwijl de bron specifiek voor milieuvergunningen aangeeft dat er geen kosten zijn.",
+          "source_urls": [
+            "https://www.delft.nl/omgevingsvergunning-milieu"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U heeft een kwaliteitsborger nodig die dit voor u controleert",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist de belangrijke informatie dat een kwaliteitsborger nodig is voor het bouwtechnische deel van de vergunning.",
+          "source_urls": [
+            "https://www.delft.nl/omgevingsvergunning-bouwen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De gemeente publiceert alle bijlagen bij de aanvraag van een omgevingsvergunning online. Zoals bouwtekeningen en rapporten. In deze documenten kunnen persoonsgegevens van uzelf of van anderen staan.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist de waarschuwing over het verwijderen van persoonsgegevens uit bijlagen voordat deze worden gepubliceerd.",
+          "source_urls": [
+            "https://www.delft.nl/omgevingsvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De gemeente kan een Bibob-onderzoek doen. Dit onderzoek is om misbruik van de vergunning te voorkomen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist informatie over de mogelijkheid van een Bibob-onderzoek bij vergunningaanvragen.",
+          "source_urls": [
+            "https://www.delft.nl/omgevingsvergunning-milieu"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn enkele belangrijke verschillen gevonden tussen de originele tekst en de bronnen. De meest significante verschillen betreffen de kosteninformatie voor milieuvergunningen, de vereiste van een kwaliteitsborger, de publicatie van bijlagen online en de mogelijkheid van een Bibob-onderzoek. Deze informatie ontbreekt in de originele tekst maar is wel relevant voor aanvragers van omgevingsvergunningen."
+  }
+}

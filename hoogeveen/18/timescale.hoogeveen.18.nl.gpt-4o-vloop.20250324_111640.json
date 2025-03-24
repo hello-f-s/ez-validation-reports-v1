@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HOOGEVEEN",
+      "contact": {
+        "phone": "14 0528",
+        "email": "info@hoogeveen.nl",
+        "website": "http://www.hoogeveen.nl"
+      }
+    },
+    "service": {
+      "id": 18,
+      "name": "Ventvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "Deze service kost € 175, zelfs als uw aanvraag wordt afgewezen.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Hoogeveen kost een vooroverleg (Verken uw idee) € 180, niet € 175."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.hoogeveen.nl/vergunningen/omgevingsvergunningen",
+      "https://www.hoogeveen.nl/raad-en-college/woo-verzoek",
+      "https://www.hoogeveen.nl/vergunningen/evenementenvergunning-aanvragen",
+      "https://www.hoogeveen.nl/vergunningen/alcoholvergunning",
+      "https://www.hoogeveen.nl/veelgestelde-vragen-coffeeshop"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u niet weet wat er nodig is om uw plan mogelijk te maken, dan kunnen wij u op weg helpen.",
+          "original_reference": "Als u niet precies weet wat er nodig is om uw plan mogelijk te maken, kunt u contact met ons opnemen.",
+          "note": "De originele tekst suggereert alleen contact opnemen, terwijl de brontekst explicieter aangeeft dat de gemeente actief zal helpen.",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/omgevingsvergunningen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Hebt u als aanvrager of gemachtigde al vaker een omgevingsvergunning aangevraagd en weet u precies hoe het werkt? Dan kunt u ook meteen een (concept)aanvraag doen via de landelijke website omgevingswet.overheid.nl",
+          "original_reference": "No matching information",
+          "note": "Deze belangrijke informatie over directe aanvraagmogelijkheid voor ervaren aanvragers ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/omgevingsvergunningen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als wij het plan wenselijk vinden, laten wij u weten wat u kunt doen om het plan mogelijk te maken.",
+          "original_reference": "No matching information",
+          "note": "Deze specifieke vervolgstap na het voorleggen van een plan ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.hoogeveen.nl/vergunningen/omgevingsvergunningen"
+          ]
+        }
+      ]
+    },
+    "summary": "De broninhoud bevat enkele belangrijke aanvullingen die ontbreken in de originele tekst, met name over de mogelijkheid voor ervaren aanvragers om direct een conceptaanvraag te doen en meer specifieke details over de dienstverlening van de gemeente. De kern van de informatie is grotendeels consistent, maar de brontekst biedt meer concrete details over het proces en de mogelijkheden."
+  }
+}

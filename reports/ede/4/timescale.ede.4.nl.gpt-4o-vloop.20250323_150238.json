@@ -1,0 +1,92 @@
+{
+  "context": {
+    "municipality": {
+      "name": "EDE",
+      "contact": {
+        "phone": "14 0318",
+        "email": "info@ede.nl",
+        "website": "http://www.ede.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 22,
+    "false_sentences": 2,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "U vraagt de vergunning ten minste acht weken van tevoren aan.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Ede moet een evenementenvergunning minimaal 12 weken van tevoren worden aangevraagd voor een groot evenement en 8 weken voor een klein evenement."
+      },
+      {
+        "sentence": "Vraag uw evenementenvergunning minimaal 6 tot 16 weken van tevoren aan.",
+        "status": "false",
+        "note": "De termijn van 6 tot 16 weken is onjuist. Volgens de gemeente Ede geldt een termijn van minimaal 12 weken voor grote evenementen en 8 weken voor kleine evenementen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.ede.nl/aanvragen-en-regelen/evenementenvergunning",
+      "https://www.ede.nl/aanvragen-en-regelen/evenementen-melden-ontheffing-vergunning",
+      "https://www.ede.nl/aanvragen-en-regelen/evenementenkalender",
+      "https://www.ede.nl/aanvragen-en-regelen/ontheffing-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.ede.nl/aanvragen-en-regelen/verleende-vergunningen-inzien-en-opvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wij vragen u voor 1 november van het lopende jaar uw evenement bij ons aan te melden. De evenementen die zich op tijd hebben aangemeld, ontvangen rond 1 december bericht of de gevraagde locatie en datum akkoord zijn.",
+          "original_reference": "Vraag uw evenementenvergunning minimaal 6 tot 16 weken van tevoren aan.",
+          "note": "De originele tekst vermeldt alleen de algemene aanvraagtermijn van 6-16 weken, maar mist de belangrijke jaarplanning waarbij evenementen vóór 1 november aangemeld moeten worden voor het volgende jaar.",
+          "source_urls": [
+            "https://www.ede.nl/aanvragen-en-regelen/evenementenkalender"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Eet- en drinkwaren moeten aan de eisen van de Nederlandse Voedsel- en Warenautoriteit voldoen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist de belangrijke voorwaarde over de eisen van de Nederlandse Voedsel- en Warenautoriteit voor eet- en drinkwaren.",
+          "source_urls": [
+            "https://www.ede.nl/aanvragen-en-regelen/evenementenvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor evenementen op zondag voor 13:00 uur moet u een ontheffing van de Zondagswet aanvragen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist de specifieke voorwaarde over de ontheffing van de Zondagswet voor evenementen op zondag voor 13:00 uur.",
+          "source_urls": [
+            "https://www.ede.nl/aanvragen-en-regelen/evenementenvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De originele tekst mist enkele belangrijke voorwaarden en vereisten die wel in de bronnen staan vermeld. Het gaat vooral om de jaarplanning voor evenementen (aanmelding voor 1 november), de eisen van de Nederlandse Voedsel- en Warenautoriteit en de speciale ontheffing voor zondagevenementen. Deze informatie is essentieel voor evenementorganisatoren en zou in de originele tekst opgenomen moeten worden."
+  }
+}

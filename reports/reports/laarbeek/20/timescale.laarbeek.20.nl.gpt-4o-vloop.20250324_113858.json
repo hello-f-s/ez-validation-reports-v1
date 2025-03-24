@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LAARBEEK",
+      "contact": {
+        "phone": "(0492) 46 97 00",
+        "email": "gemeente@laarbeek.nl",
+        "website": "http://www.laarbeek.nl"
+      }
+    },
+    "service": {
+      "id": 20,
+      "name": "Vergunning voor seksbedrijf"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 22,
+    "false_sentences": 2,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Voor vergelijkbare vergunningen binnen de gemeente Laarbeek moet u persoonlijk een afspraak maken bij het gemeentehuis.",
+        "status": "false",
+        "note": "Veel vergunningen kunnen ook digitaal worden aangevraagd via de website van gemeente Laarbeek, een persoonlijke afspraak is niet altijd noodzakelijk."
+      },
+      {
+        "sentence": "De openingstijden van het gemeentehuis zijn als volgt: - Maandag, dinsdag, donderdag: 9.00 tot 17.00 uur - Woensdag: 9.00 tot 19.30 uur - Vrijdag: 9.00 tot 12.30 uur",
+        "status": "false",
+        "note": "De actuele openingstijden van het gemeentehuis Laarbeek zijn: maandag t/m vrijdag van 9.00 tot 12.30 uur en op woensdag ook van 14.30 tot 19.00 uur."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.laarbeek.nl/horecabedrijf-beginnen",
+      "https://www.laarbeek.nl/standplaatsvergunning",
+      "https://www.laarbeek.nl/omgevingsvergunning",
+      "https://www.laarbeek.nl/alcoholvergunning",
+      "https://www.laarbeek.nl/kansspel-organiseren"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor het aanvragen van een alcoholvergunning betaalt u € 445",
+          "original_reference": "alcoholvergunning (€ 445)",
+          "note": "De originele tekst presenteert dit als een mogelijk voorbeeld, terwijl de bron dit als actueel vastgesteld tarief vermeldt",
+          "source_urls": [
+            "https://www.laarbeek.nl/alcoholvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U regelt de aanvraag standplaatsvergunning digitaal",
+          "original_reference": "moet u persoonlijk een afspraak maken bij het gemeentehuis",
+          "note": "De originele tekst suggereert dat alle vergunningen persoonlijk moeten worden aangevraagd, terwijl sommige vergunningen digitaal kunnen worden aangevraagd",
+          "source_urls": [
+            "https://www.laarbeek.nl/standplaatsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U regelt een alcoholvergunning persoonlijk op het gemeentehuis. U maakt hiervoor telefonisch een afspraak via telefoonnummer 0492 469 700.",
+          "original_reference": "het is mogelijk dat er ook een optie is voor digitale aanvragen",
+          "note": "De originele tekst suggereert een mogelijke digitale aanvraagoptie, terwijl de bron specifiek aangeeft dat dit persoonlijk moet gebeuren",
+          "source_urls": [
+            "https://www.laarbeek.nl/alcoholvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont enkele belangrijke verschillen tussen de originele tekst en de bronnen. De originele tekst is op sommige punten te voorzichtig of onduidelijk waar de bronnen juist specifiek zijn, vooral wat betreft aanvraagprocedures en tarieven. De aanname dat vergunningen mogelijk digitaal kunnen worden aangevraagd blijkt niet voor alle vergunningen te kloppen - sommige moeten persoonlijk worden aangevraagd terwijl andere wel digitaal kunnen."
+  }
+}

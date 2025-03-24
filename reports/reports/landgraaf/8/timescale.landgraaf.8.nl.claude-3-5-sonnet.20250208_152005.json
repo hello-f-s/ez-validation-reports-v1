@@ -1,0 +1,93 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LANDGRAAF",
+      "contact": {
+        "phone": "14 045",
+        "email": "gemeente@landgraaf.nl",
+        "website": "http://www.landgraaf.nl"
+      }
+    },
+    "service": {
+      "id": 8,
+      "name": "Marktvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 10,
+    "true_sentences": 8,
+    "false_sentences": 2,
+    "accuracy_percentage": 80.0,
+    "false_statements": [
+      {
+        "sentence": "Losse standplaats: € 2,70 per m2 met een minimum van € 9,15 per maand.",
+        "status": "false",
+        "note": "De actuele tarieven voor marktstandplaatsen in Landgraaf zijn niet publiekelijk beschikbaar op de officiële gemeentewebsite. Deze specifieke bedragen kunnen niet geverifieerd worden."
+      },
+      {
+        "sentence": "Vaste standplaats: € 9,15 per m2 per maand.",
+        "status": "false",
+        "note": "De actuele tarieven voor vaste marktstandplaatsen in Landgraaf zijn niet publiekelijk beschikbaar op de officiële gemeentewebsite. Dit specifieke bedrag kan niet geverifieerd worden."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.landgraaf.nl/exploitatievergunning-horecabedrijf",
+      "https://www.landgraaf.nl/marktplaats-aanvragen",
+      "https://www.landgraaf.nl/aanvragen-en-regelen-ondernemers",
+      "https://www.landgraaf.nl/evenement-organiseren",
+      "https://www.landgraaf.nl/form/informatieverzoek-indienen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.gemeentelandgraaf.nl/marktplaats-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Wilt u een plaats innemen op de weekmarkt van Nieuwenhagen, Schaesberg en/of Ubach over Worms? Dan hebt u een marktvergunning nodig.",
+          "original_reference": "U hebt een marktvergunning nodig als u een plaats wilt innemen op de weekmarkt van Nieuwenhagen, Schaesberg en/of Ubach over Worms.",
+          "note": "De informatie over de vergunningplicht komt exact overeen",
+          "source_urls": [
+            "https://www.landgraaf.nl/marktplaats-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u geen vaste plaats hebt, kunt u meedingen naar een plaats als meeloper (dagplaats). De Casemanager Bijzondere Wetten wijst de dagplaatsen per branche toe.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de mogelijkheid van een dagplaats als meeloper en de toewijzing door de Casemanager Bijzondere Wetten",
+          "source_urls": [
+            "https://www.landgraaf.nl/marktplaats-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De vergunning is voor u persoonlijk, maar wel overdraagbaar. Als u een ondernemer kent die uw plek wil overnemen, dan vraagt u de gemeente toestemming om uw vergunning over te dragen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat de vergunning overdraagbaar is en wat de procedure daarvoor is",
+          "source_urls": [
+            "https://www.landgraaf.nl/marktplaats-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie die niet in de originele tekst staat, waaronder de mogelijkheid van dagplaatsen als meeloper, de rol van de Casemanager Bijzondere Wetten bij toewijzing, en de overdraagbaarheid van vergunningen. De kerninformatie over vergunningplicht en tarieven komt wel overeen."
+  }
+}

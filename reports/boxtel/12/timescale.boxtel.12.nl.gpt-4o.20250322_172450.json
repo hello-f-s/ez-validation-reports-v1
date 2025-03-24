@@ -1,0 +1,82 @@
+{
+  "context": {
+    "municipality": {
+      "name": "BOXTEL",
+      "contact": {
+        "phone": "(0411) 65 59 11",
+        "email": "gemeente@boxtel.nl",
+        "website": "http://www.boxtel.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Het aanvraagproces van een omgevingsvergunning is versneld en de wettelijke termijn is teruggebracht van 26 naar 8 weken.",
+        "status": "false",
+        "note": "De reguliere procedure voor een omgevingsvergunning heeft een wettelijke beslistermijn van 8 weken die eenmalig verlengd kan worden met 6 weken. Er is geen sprake van een recente verkorting van 26 naar 8 weken. Voor uitgebreide procedures geldt nog steeds een termijn van 26 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.boxtel.nl/omgevingswet",
+      "https://www.boxtel.nl/bestuur-en-organisatie/beleid/invoering-omgevingswet",
+      "https://www.boxtel.nl/omgevingsvergunning",
+      "https://www.boxtel.nl/aanvragen-regelen-en-melden/vergunningen",
+      "https://www.boxtel.nl/informatieverzoek-omgevingsrecht"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.omgevingsloket.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Geen specifieke informatie over de verkorte termijn van 26 naar 8 weken gevonden",
+          "original_reference": "Het aanvraagproces van een omgevingsvergunning is versneld en de wettelijke termijn is teruggebracht van 26 naar 8 weken.",
+          "note": "De bronpagina's bevatten geen informatie over een verkorting van de aanvraagtermijn. Dit is een belangrijk verschil aangezien de originele tekst een specifieke wijziging in proceduretijd claimt.",
+          "source_urls": [
+            "https://www.boxtel.nl/omgevingsvergunning",
+            "https://www.boxtel.nl/omgevingswet",
+            "https://www.boxtel.nl/aanvragen-regelen-en-melden/vergunningen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Geen informatie over legesverordening 2025 of 2024 aanwezig",
+          "original_reference": "Deze kun je vinden in de legesverordening van 2025, waar je zoekt op 'conceptverzoek' in de tarieventabel. Voor aanvragen uit 2024 kijk je in de legesverordening van Boxtel 2024.",
+          "note": "De bronpagina's bevatten geen specifieke informatie over legesverordeningen voor 2024 of 2025. Dit is een belangrijk verschil voor de kostenstructuur.",
+          "source_urls": [
+            "https://www.boxtel.nl/omgevingsvergunning",
+            "https://www.boxtel.nl/aanvragen-regelen-en-melden/vergunningen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de aanvraagtermijnen en kosteninformatie. De originele tekst bevat specifieke claims over verkorte termijnen en verwijzingen naar legesverordeningen die niet terug te vinden zijn in de bronpagina's. Dit kan leiden tot verkeerde verwachtingen bij aanvragers over zowel de doorlooptijd als de kosten van de procedure."
+  }
+}

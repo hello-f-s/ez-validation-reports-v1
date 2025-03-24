@@ -1,0 +1,81 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OLDEBROEK",
+      "contact": {
+        "phone": "(0525) 63 82 00",
+        "email": "gemeente@oldebroek.nl",
+        "website": "http://www.oldebroek.nl"
+      }
+    },
+    "service": {
+      "id": 13,
+      "name": "Omzettingsvergunning voor kamerverhuur aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "De behandeltermijn voor een conceptverzoek is gemiddeld genomen ongeveer 6 maanden, mede vanwege de inwerkingtreding van de Omgevingswet.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Oldebroek is de behandeltermijn voor een conceptverzoek (vooroverleg) 4 weken en niet 6 maanden."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 3,
+    "invalid_urls": 2,
+    "accuracy_percentage": 60.0,
+    "valid_urls_list": [
+      "https://www.oldebroek.nl/Inwoners/Bouwen_en_verbouwen/Omgevingsvergunning",
+      "https://www.oldebroek.nl/Inwoners/Vergunningen/Milieu_melding_of_vergunning",
+      "https://www.oldebroek.nl/Inwoners/Bouwen_en_verbouwen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.oldebroek.nl/Inwoners/Bouwen_en_verbouwen/Omgevingsvergunning/Conceptverzoek_omgevingsvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.oldebroek.nl/Inwoners/Vergunningen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wilt u bouwen, verbouwen of op een andere manier iets aan uw omgeving veranderen? Dan kan het zijn dat u daarvoor een vergunning nodig heeft. Controleer in het Omgevingsloket of u een vergunning nodig heeft voor uw activiteit. Is dit niet het geval, dan hoeft u geen contact op te nemen met de gemeente en kunt u aan de slag.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat een belangrijke voorafgaande stap die niet in de originele tekst staat vermeld: eerst controleren via het Omgevingsloket of een vergunning überhaupt nodig is.",
+          "source_urls": [
+            "https://www.oldebroek.nl/Inwoners/Bouwen_en_verbouwen/Omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een zienswijze indienen op deze ontwerpbesluiten kan gedurende 6 weken vanaf publicatie",
+          "original_reference": "Bij een complexe aanvraag kunt u binnen 6 weken beroep indienen bij de rechtbank, mits u een zienswijze over het ontwerpbesluit heeft ingediend.",
+          "note": "De brontekst specificeert dat zienswijzen binnen 6 weken vanaf publicatie kunnen worden ingediend, terwijl de originele tekst alleen spreekt over beroep na zienswijze bij complexe aanvragen.",
+          "source_urls": [
+            "https://www.oldebroek.nl/Inwoners/Bouwen_en_verbouwen"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele tekst en de bronpagina's. Ten eerste ontbreekt in de originele tekst de essentiële eerste stap om via het Omgevingsloket te controleren of een vergunning nodig is. Ten tweede zijn er verschillen in de beschrijving van de zienswijzeprocedure. De bronpagina's bevatten over het algemeen minder gedetailleerde informatie dan de originele tekst, wat suggereert dat de originele tekst mogelijk gebaseerd is op aanvullende of interne bronnen."
+  }
+}

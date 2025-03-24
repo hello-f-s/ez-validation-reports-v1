@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HEILOO",
+      "contact": {
+        "phone": "(072) 535 66 66",
+        "email": "info@heiloo.nl",
+        "website": "http://www.heiloo.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 10,
+    "false_sentences": 1,
+    "accuracy_percentage": 90.9,
+    "false_statements": [
+      {
+        "sentence": "De gemeente is bereikbaar op werkdagen van 08.30 tot 17.00 uur.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Heiloo zijn de openingstijden van maandag t/m donderdag van 8.30 tot 12.30 uur en op vrijdag van 8.30 tot 12.00 uur. Telefonisch is de gemeente bereikbaar van maandag t/m donderdag van 8.30 tot 17.00 uur en vrijdag van 8.30 tot 12.00 uur."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.heiloo.nl/aanvragen-en-regelen/verklaring-omtrent-gedrag/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/nederlander-worden-door-optie-of-naturalisatie/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/verzoek-om-informatie/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/vreemdelingenpaspoort/",
+      "https://www.heiloo.nl/aanvragen-en-regelen/standplaatsvergunning/"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Binnen 1 tot 4 weken na uw aanvraag, krijgt u per post bericht van Justis.",
+          "original_reference": "Binnen 1 tot 4 weken krijgt u bericht van Justis over de status van uw aanvraag.",
+          "note": "De verwerkingstijd is consistent tussen beide bronnen.",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/verklaring-omtrent-gedrag/"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Aanvragen VOG via werkgever bij Justis (zie website Justis) € 33,85, Aanvragen VOG bij de gemeente € 41,35",
+          "original_reference": "De kosten voor het aanvragen van een VOG zijn als volgt: via de werkgever bij Justis kost het €33,85, en bij de gemeente bedragen de kosten €41,35.",
+          "note": "De kosten zijn exact hetzelfde in beide bronnen.",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/verklaring-omtrent-gedrag/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U heeft hierbij een ingevuld en ondertekend aanvraagformulier nodig.",
+          "original_reference": "Een ingevuld aanvraagformulier",
+          "note": "De bronpagina specificeert dat het formulier ook ondertekend moet zijn, wat niet vermeld wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.heiloo.nl/aanvragen-en-regelen/verklaring-omtrent-gedrag/"
+          ]
+        }
+      ]
+    },
+    "summary": "De meeste informatie komt overeen tussen de originele tekst en de bronnen. Het belangrijkste verschil is de extra specificatie dat het aanvraagformulier ondertekend moet zijn, wat niet vermeld wordt in de originele tekst. De kosten en verwerkingstijden zijn consistent tussen beide bronnen."
+  }
+}

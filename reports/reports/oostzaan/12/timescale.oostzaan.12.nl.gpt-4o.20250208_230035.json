@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OOSTZAAN",
+      "contact": {
+        "phone": "(075) 651 21 00",
+        "email": "antwoord@oostzaan.nl",
+        "website": "http://www.oostzaan.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "Beslistermijn van 8 weken, met een mogelijke verlenging van 6 weken.",
+        "status": "false",
+        "note": "Volgens de gemeente Oostzaan is de reguliere beslistermijn 8 weken met een mogelijke verlenging van maximaal 8 weken (niet 6 weken zoals vermeld)."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 10,
+    "valid_urls": 0,
+    "invalid_urls": 10,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://omgevingsloket.overheid.nl/",
+        "reason": "INVALID: Error scraping https://omgevingsloket.overheid.nl/: HTTPSConnectionPool(host='omgevingsloket.overheid.nl', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x103d33770>: Failed to resolve 'omgevingsloket.overheid.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://omgevingswet.overheid.nl\">Omgevingsloket</a>.",
+        "reason": "INVALID: Error scraping https://omgevingswet.overheid.nl\">Omgevingsloket</a>.: HTTPSConnectionPool(host='omgevingswet.overheid.nl%22%3eomgevingsloket%3c', port=443): Max retries exceeded with url: /a%3E. (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x109884550>: Failed to resolve 'omgevingswet.overheid.nl%22%3eomgevingsloket%3c' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://oostzaan.nl/omgevingswet/wanneer-krijgt-u-met-de-omgevingswet-te-maken",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://oostzaan.nl/vergunningen/omgevingsvergunning-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://omgevingswet.overheid.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://omgevingsloket.overheid.nl/\">Omgevingsvergunning",
+        "reason": "INVALID: Error scraping https://omgevingsloket.overheid.nl/\">Omgevingsvergunning: HTTPSConnectionPool(host='omgevingsloket.overheid.nl', port=443): Max retries exceeded with url: /%22%3EOmgevingsvergunning (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x103d17250>: Failed to resolve 'omgevingsloket.overheid.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://oostzaan.nl/bouwen-en-verbouwing/omgevingsvergunning-bouwen-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://oostzaan.nl/melding-doen/milieumelding-doen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://oostzaan.nl/omgevingswet/omgevingsloket",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://omgevingswet.overheid.nl\">Omgevingsloket",
+        "reason": "INVALID: Error scraping https://omgevingswet.overheid.nl\">Omgevingsloket: HTTPSConnectionPool(host='omgevingswet.overheid.nl%22%3eomgevingsloket', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x103d17b10>: Failed to resolve 'omgevingswet.overheid.nl%22%3eomgevingsloket' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  }
+}

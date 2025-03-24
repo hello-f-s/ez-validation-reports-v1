@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AMERSFOORT",
+      "contact": {
+        "phone": "14 033",
+        "email": "info@amersfoort.nl",
+        "website": "http://www.amersfoort.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 12,
+    "false_sentences": 2,
+    "accuracy_percentage": 85.7,
+    "false_statements": [
+      {
+        "sentence": "Een aanvraag voor een alcoholwetvergunning kost € 850,-.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Amersfoort kost een aanvraag voor een alcoholwetvergunning € 725,85"
+      },
+      {
+        "sentence": "Melding van een nieuwe leidinggevende kost € 210,- per leidinggevende, met een maximum van € 420,-.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Amersfoort kost een melding van een nieuwe leidinggevende € 181,45 per persoon, zonder genoemd maximum"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.amersfoort.nl/aanleggen",
+      "https://www.amersfoort.nl/reclame",
+      "https://www.amersfoort.nl/alcoholwetvergunning",
+      "https://www.amersfoort.nl/zwak-alcoholhoudende-drank-verstrekken",
+      "https://www.amersfoort.nl/exploitatie-horeca-inrichting"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als er zaken veranderen in je bedrijf, vereniging of stichting, moet je dat bij ons melden. Als de leidinggevende verandert, meld je dat met het zogenoemde K-formulier.",
+          "original_reference": "Bij veranderingen in het bedrijf moet je deze via het K-formulier melden.",
+          "note": "De originele tekst is minder specifiek over welke type organisaties wijzigingen moeten melden. De brontekst verduidelijkt dat dit geldt voor bedrijven, verenigingen én stichtingen.",
+          "source_urls": [
+            "https://www.amersfoort.nl/alcoholwetvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Is de vergunning verleend? Dan volgt een bezwaartermijn van 6 weken. Als deze termijn voorbij is en er geen bezwaar is ingediend, mag je beginnen met de werkzaamheden.",
+          "original_reference": "Na verlening van de vergunning is er een bezwaartermijn van 6 weken, maar je mag meteen beginnen.",
+          "note": "Er is een tegenstrijdigheid in wanneer men mag starten: volgens de originele tekst mag men direct beginnen, maar volgens sommige bronpagina's moet men wachten tot na de bezwaartermijn.",
+          "source_urls": [
+            "https://www.amersfoort.nl/aanleggen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Melding van gewijzigde inrichting wordt niet specifiek genoemd in de tarieven",
+          "original_reference": "Melding van gewijzigde inrichting: € 425,-",
+          "note": "Het tarief voor een gewijzigde inrichting (€425) staat wel in de originele tekst maar is niet terug te vinden in de bronpagina's.",
+          "source_urls": [
+            "https://www.amersfoort.nl/alcoholwetvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn enkele belangrijke verschillen gevonden tussen de originele tekst en de bronnen. Het belangrijkste verschil betreft het moment waarop men mag starten na vergunningverlening - de bronnen zijn hier niet consistent over. Daarnaast is er een verschil in de specificatie van organisatietypes die wijzigingen moeten melden, en ontbreekt in de bronnen een genoemd tarief voor gewijzigde inrichtingen. De overige informatie komt grotendeels overeen."
+  }
+}

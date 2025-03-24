@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "S-HERTOGENBOSCH",
+      "contact": {
+        "phone": "(073) 615 51 55",
+        "email": "gemeente@s-hertogenbosch.nl",
+        "website": "http://www.s-hertogenbosch.nl"
+      }
+    },
+    "service": {
+      "id": 16,
+      "name": "Registreren in het Landelijk Register Kinderopvang (LRK)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "Voor vragen over kinderopvang en subsidies kunt u contact opnemen met de gemeente 's-Hertogenbosch via telefoonnummer (073) 615 51 55.",
+        "status": "false",
+        "note": "Het algemene telefoonnummer van de gemeente 's-Hertogenbosch is (073) 615 51 55, maar voor vragen over kinderopvang en subsidies moet men contact opnemen via het nummer 073 615 5155 of via het digitaal loket op de gemeentelijke website."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.s-hertogenbosch.nl/inwoner/jeugd-en-gezin/kinderopvang/",
+      "https://www.s-hertogenbosch.nl/product/subsidieregeling-peuteropvang-en-voorschoolse-educatie/",
+      "https://www.s-hertogenbosch.nl/product/jeugdhulp/",
+      "https://www.s-hertogenbosch.nl/product/geboorteaangifte/",
+      "https://www.s-hertogenbosch.nl/kinderopvangtoeslag/"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Kinderen kunnen twee ochtenden of middagen per week naar het peuteraanbod (in totaal 8 uur). [...] Kinderen met VVE-indicatie mogen 8 uur extra naar het peuteraanbod (in totaal 16 uur).",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de specifieke tijdsbesteding voor peuteropvang (8 uur) en VVE (16 uur), wat belangrijke informatie is voor ouders.",
+          "source_urls": [
+            "https://www.s-hertogenbosch.nl/inwoner/jeugd-en-gezin/kinderopvang/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een subsidieaanvraag op grond van de subsidieregeling kan tot 15 november voor het nieuwe subsidiejaar ingediend worden.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist de cruciale deadline van 15 november voor subsidieaanvragen, wat essentiële informatie is voor kinderopvangorganisaties.",
+          "source_urls": [
+            "https://www.s-hertogenbosch.nl/product/subsidieregeling-peuteropvang-en-voorschoolse-educatie/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het consultatiebureau bepaalt of uw kind hier recht op heeft. Dan krijgt u een 'VVE-indicatie'.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet dat het consultatiebureau de VVE-indicatie bepaalt, wat een belangrijke procedurestap is.",
+          "source_urls": [
+            "https://www.s-hertogenbosch.nl/inwoner/jeugd-en-gezin/kinderopvang/"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie die ontbreekt in de originele tekst, waaronder specifieke tijdsbesteding voor peuteropvang en VVE, de subsidieaanvraag deadline van 15 november, en de rol van het consultatiebureau bij VVE-indicaties. Deze informatie is essentieel voor zowel ouders als kinderopvangorganisaties voor een volledig begrip van de diensten en procedures."
+  }
+}

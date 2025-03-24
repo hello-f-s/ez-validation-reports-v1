@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OPMEER",
+      "contact": {
+        "phone": "(0226) 36 33 33",
+        "email": "gemeente@opmeer.nl",
+        "website": "http://www.opmeer.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 31,
+    "true_sentences": 30,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.8,
+    "false_statements": [
+      {
+        "sentence": "Indieningstermijn voor reguliere evenementen: 20 weken.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Opmeer moet een regulier evenement minimaal 8 weken van tevoren worden aangevraagd, niet 20 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 4,
+    "valid_urls": 4,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.opmeer.nl/kleinschalig-evenement-organiseren",
+      "https://www.opmeer.nl/evenement-organiseren",
+      "https://www.opmeer.nl/geluidsoverlast-veroorzaken",
+      "https://www.opmeer.nl/loterij-prijsvraag-bingo-organiseren"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Meld het evenement uiterlijk 21 werkdagen van te voren aan",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt geen specifieke aanmeldtermijn voor kleine evenementen, terwijl de bron een duidelijke termijn van 21 werkdagen vooraf stelt.",
+          "source_urls": [
+            "https://www.opmeer.nl/kleinschalig-evenement-organiseren"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "het gebruiksoppervlak van een tent is niet groter dan 125 m² en er maximaal 75 personen in de tent aanwezig zijn",
+          "original_reference": "No matching information",
+          "note": "De originele tekst specificeert geen maximale tentgrootte of personenaantal in tenten voor kleine evenementen, terwijl de bron deze specifieke limieten wel stelt.",
+          "source_urls": [
+            "https://www.opmeer.nl/evenement-organiseren"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "naast een tent worden slechts kleine objecten geplaatst met een oppervlakte van minder dan 10 m² per object, met een maximum van 4 objecten per evenement",
+          "original_reference": "het plaatsen van grote objecten of gebruik van grote tenten",
+          "note": "De bron geeft specifieke afmetingen en aantallen voor objecten bij kleine evenementen, terwijl de originele tekst alleen algemeen spreekt over 'grote objecten'.",
+          "source_urls": [
+            "https://www.opmeer.nl/evenement-organiseren",
+            "https://www.opmeer.nl/kleinschalig-evenement-organiseren"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen specifieke details die in de originele tekst ontbreken: een aanmeldtermijn van 21 werkdagen voor kleine evenementen, concrete maximale afmetingen voor tenten (125m²) met een limiet van 75 personen, en specifieke regels voor objecten (maximaal 4 objecten van maximaal 10m² elk). Deze details maken de voorwaarden voor kleine evenementen concreter dan in de originele tekst."
+  }
+}

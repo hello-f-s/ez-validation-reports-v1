@@ -1,0 +1,72 @@
+{
+  "context": {
+    "municipality": {
+      "name": "APELDOORN",
+      "contact": {
+        "phone": "14 055",
+        "email": "gemeente@apeldoorn.nl",
+        "website": "http://www.apeldoorn.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "Online bij de gemeente: Uw aanvraag wordt binnen drie werkdagen verwerkt en doorgestuurd naar Justis.",
+        "status": "false",
+        "note": "De gemeente Apeldoorn vermeldt op haar website geen specifieke verwerkingstijd van drie werkdagen voor online VOG-aanvragen. Deze informatie is niet terug te vinden in de officiële bronnen van de gemeente Apeldoorn."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 3,
+    "invalid_urls": 2,
+    "accuracy_percentage": 60.0,
+    "valid_urls_list": [
+      "https://www.apeldoorn.nl/wonen-en-leven",
+      "https://www.apeldoorn.nl/omgevingswet/een-vergunning-aanvragen-binnen-de-omgevingswet-hoe-werkt-dat",
+      "https://www.apeldoorn.nl/wonen-en-leven/leven-reizen-en-papieren/documenten-en-papieren/verklaring-omtrent-gedrag"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.apeldoorn.nl/wonen-en-leven/leven-reizen-en-papieren/identiteit-en-nationaliteit/verzoek-avg-en-wpg",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.apeldoorn.nl/wonen-en-leven/leven-reizen-en-papieren/identiteit-en-nationaliteit/nederlander-worden",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "€ 33,85 bij aanvraag via Justis, € 41,35 bij aanvraag via gemeente",
+          "original_reference": "Online via Justis: € 33,85, Online bij de gemeente of aan de balie: € 41,35",
+          "note": "De kosten komen exact overeen met wat vermeld staat in de originele tekst",
+          "source_urls": [
+            "https://www.apeldoorn.nl/wonen-en-leven/leven-reizen-en-papieren/documenten-en-papieren/verklaring-omtrent-gedrag"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse van de beschikbare bronnen zijn er geen significante verschillen gevonden tussen de originele inhoud en de informatie op de gemeentelijke website. De tarieven en procedures komen overeen. Wel valt op dat de bronwebsites beperkte detailinformatie bevatten over het VOG-aanvraagproces in vergelijking met de originele tekst. Veel van de specifieke details uit de originele tekst (zoals aanvraagmethoden en verwerkingstijden) zijn niet direct terug te vinden in de geciteerde bronnen."
+  }
+}

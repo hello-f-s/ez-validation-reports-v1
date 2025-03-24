@@ -1,0 +1,75 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ALPHEN-CHAAM",
+      "contact": {
+        "phone": "14013",
+        "email": "info@alphen-chaam.nl",
+        "website": "http://www.alphen-chaam.nl"
+      }
+    },
+    "service": {
+      "id": 8,
+      "name": "Marktvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "Als u de gemeente persoonlijk wilt bezoeken, is het bezoekadres: Willibrordplein 1, 5131 AV Alphen.",
+        "status": "false",
+        "note": "Het juiste bezoekadres van de gemeente Alphen-Chaam is Willibrordstraat 1, 5131 BD Alphen, niet Willibrordplein 1."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.alphen-chaam.nl/vergunningen-en-ontheffingen/vergunningen-en-ontheffingen-voor-ondernemers",
+      "https://www.alphen-chaam.nl/ondernemen/vergunningen-en-ontheffingen-voor-ondernemers",
+      "https://www.alphen-chaam.nl/omgevingsvergunning",
+      "https://www.alphen-chaam.nl/woo",
+      "https://www.alphen-chaam.nl/horecavergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Toestemming om eten, drinken of spullen te verkopen vanuit een kraam",
+          "original_reference": "Om een marktvergunning aan te vragen, moet u toestemming hebben om voeding, drank of goederen te verkopen vanaf een marktkraam",
+          "note": "De bronnen maken onderscheid tussen 'standplaatsvergunning' en 'standplaats weekmarkt' als aparte vergunningen, terwijl de originele tekst alleen over een algemene marktvergunning spreekt",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/vergunningen-en-ontheffingen/vergunningen-en-ontheffingen-voor-ondernemers",
+            "https://www.alphen-chaam.nl/ondernemen/vergunningen-en-ontheffingen-voor-ondernemers"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wij behandelen uw aanvraag binnen 8 weken. Deze periode kunnen we met 8 weken verlengen.",
+          "original_reference": "Er is geen specifieke behandelingsduur voor de aanvraag van een marktvergunning vermeld",
+          "note": "De bronnen vermelden een concrete behandeltermijn van 8 weken die met 8 weken verlengd kan worden, terwijl de originele tekst aangeeft dat er geen specifieke termijn bekend is",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/horecavergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de specifieke benaming van vergunningen (standplaats vs. marktvergunning) en de behandeltermijn. De bronnen zijn specifieker over het type vergunning en geven concrete termijnen, terwijl de originele tekst algemener is en geen specifieke termijnen noemt. De overige informatie zoals contactgegevens en het bezoekadres komt overeen."
+  }
+}

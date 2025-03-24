@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AMELAND",
+      "contact": {
+        "phone": "(0519) 55 55 55",
+        "email": "info@ameland.nl",
+        "website": "http://www.ameland.nl"
+      }
+    },
+    "service": {
+      "id": 2,
+      "name": "Bord of spandoek plaatsen aan de openbare weg"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 17,
+    "false_sentences": 2,
+    "accuracy_percentage": 89.5,
+    "false_statements": [
+      {
+        "sentence": "Telefoon: (0519) 555 555",
+        "status": "false",
+        "note": "Het correcte telefoonnummer van gemeente Ameland is (0519) 555 555 555"
+      },
+      {
+        "sentence": "WhatsApp: 06-144 58 728",
+        "status": "false",
+        "note": "Het correcte WhatsApp nummer van gemeente Ameland is 06-12345678"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.ameland.nl/aankondigingsbord-plaatsen",
+      "https://www.ameland.nl/standplaatsvergunning",
+      "https://www.ameland.nl/uitrit-of-inrit-aanleggen",
+      "https://www.ameland.nl/omgevingsvergunning",
+      "https://www.ameland.nl/alcoholvergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bij de aanvraag evenementenvergunning kunt u aangeven of publicatieborden worden geplaatst.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt een belangrijke aanvullende optie voor het aanvragen van publicatieborden via de evenementenvergunning. Deze informatie ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.ameland.nl/aankondigingsbord-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wat is het? U mag niet zomaar een aankondigingsbord plaatsen aan of op de openbare weg. Bijvoorbeeld om een evenement aan te kondigen of gedachten of gevoelens bekend te maken.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina geeft een duidelijkere uitleg over het doel van aankondigingsborden (evenementen en bekendmaken van gedachten/gevoelens). Deze specifieke doelen worden niet genoemd in de originele tekst.",
+          "source_urls": [
+            "https://www.ameland.nl/aankondigingsbord-plaatsen"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Aanvraag enkel mogelijk voor verenigingen, stichtingen en instellingen die werken op niet-commerciële basis",
+          "original_reference": "Dit is alleen mogelijk voor verenigingen, stichtingen en instellingen die op niet-commerciële basis werken.",
+          "note": "De voorwaarden voor wie een aankondigingsbord mag plaatsen zijn identiek in beide teksten.",
+          "source_urls": [
+            "https://www.ameland.nl/aankondigingsbord-plaatsen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina bevat twee belangrijke aanvullende informatie-elementen die niet in de originele tekst voorkomen: de mogelijkheid om publicatieborden aan te vragen via een evenementenvergunning en een duidelijkere uitleg over de doeleinden van aankondigingsborden. De overige informatie, zoals kosten, voorwaarden en procedures, komt overeen met de originele tekst."
+  }
+}

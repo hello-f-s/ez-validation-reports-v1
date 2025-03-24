@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ROERMOND",
+      "contact": {
+        "phone": "14 0475",
+        "email": "mail@roermond.nl",
+        "website": "http://www.roermond.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "Foto's van het terrasmeubilair (stoelen alleen in rotan of rotanlook).",
+        "status": "false",
+        "note": "Volgens het huidige terrassenbeleid van de gemeente Roermond zijn er geen specifieke beperkingen voor het materiaal van terrasmeubilair tot alleen rotan of rotanlook. Het meubilair moet wel van duurzame kwaliteit zijn en passen in het straatbeeld."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.roermond.nl/omgevingsvergunning",
+      "https://www.roermond.nl/terrasvergunning",
+      "https://www.roermond.nl/exploitatievergunning-horeca",
+      "https://www.roermond.nl/alcoholwetvergunning",
+      "https://www.roermond.nl/marktstandplaats-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://overheid.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://jeleefomgeving.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Communicatie via berichtenbox jeleefomgeving.nl - Als u een aanvraag (omgevings)vergunning, conceptverzoek of melding heeft ingediend kunt u (en eventueel de gemachtigde) tijdens de behandeling een e-mail ontvangen van noreply@jeleefomgeving.nl met als onderwerp: Bericht van Gemeente Roermond. Na klikken op 'bekijk uw bericht' ontvangt u via uw mailbox een inlogcode.",
+          "original_reference": "Communicatie tijdens de behandeling verloopt via de berichtenbox op jeleefomgeving.nl",
+          "note": "De bronpagina geeft meer specifieke details over het communicatieproces, inclusief de afzender van e-mails en het gebruik van inlogcodes, wat niet vermeld wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.roermond.nl/terrasvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Direct regelen met DigiD of Direct regelen met eHerkenning",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt specifieke online authenticatiemethoden (DigiD en eHerkenning) die niet genoemd worden in de originele tekst.",
+          "source_urls": [
+            "https://www.roermond.nl/terrasvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten enkele belangrijke aanvullingen op de originele tekst, met name rond het online aanvraagproces en de communicatiemethoden. De belangrijkste verschillen betreffen de specifieke details over de berichtenbox-communicatie en de authenticatiemethoden voor online aanvragen. De kernvoorwaarden en procedures blijven verder grotendeels consistent met de originele tekst."
+  }
+}

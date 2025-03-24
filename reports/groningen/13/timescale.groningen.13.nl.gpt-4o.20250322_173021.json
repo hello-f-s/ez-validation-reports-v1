@@ -1,0 +1,91 @@
+{
+  "context": {
+    "municipality": {
+      "name": "GRONINGEN",
+      "contact": {
+        "phone": "14 050",
+        "email": "info@groningen.nl",
+        "website": "http://gemeente.groningen.nl"
+      }
+    },
+    "service": {
+      "id": 13,
+      "name": "Omzettingsvergunning voor kamerverhuur aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "De gemeente neemt doorgaans binnen maximaal 8 weken een beslissing na ontvangst van de aanvraag.",
+        "status": "false",
+        "note": "De reguliere procedure duurt maximaal 8 weken, maar kan eenmalig met 6 weken worden verlengd. Bij complexe aanvragen geldt de uitgebreide procedure van 26 weken, die ook nog verlengd kan worden met 6 weken. De genoemde termijn van 8 weken is dus niet volledig correct."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 4,
+    "invalid_urls": 2,
+    "accuracy_percentage": 66.7,
+    "valid_urls_list": [
+      "https://gemeente.groningen.nl/milieuvergunning-aanvragen-of-melden",
+      "https://gemeente.groningen.nl/omgevingsvergunning-aanvragen",
+      "https://gemeente.groningen.nl",
+      "https://gemeente.groningen.nl/voorwaarden-voor-kamerverhuur"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://gemeente.groningen.nl/onttrekkingsvergunning-voor-bedrijfsdoeleinden-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://gemeente.groningen.nl/omzettingsvergunning-voor-kamerverhuur-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bezit u een pand waarin u 3 of meer kamers wilt laten bewonen door 3 of meer personen?",
+          "original_reference": "No matching information",
+          "note": "De originele tekst specificeert niet vanaf hoeveel kamers/personen een omzettingsvergunning nodig is, terwijl de bron aangeeft dat dit geldt vanaf 3 kamers/personen",
+          "source_urls": [
+            "https://gemeente.groningen.nl/voorwaarden-voor-kamerverhuur"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "omzettingsvergunning voor kamerverhuur (voorheen: onttrekkingsvergunning)",
+          "original_reference": "omzettingsvergunning",
+          "note": "De bron verduidelijkt dat de omzettingsvergunning voorheen bekend stond als onttrekkingsvergunning, wat nuttige historische context biedt die ontbreekt in de originele tekst",
+          "source_urls": [
+            "https://gemeente.groningen.nl/voorwaarden-voor-kamerverhuur"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Als u 5 of meer kamers in het pand hebt, gelden scherpere eisen voor brandveiligheid. Dan moet u een gebruiksmelding doen.",
+          "original_reference": "Bij vijf of meer kamers in een pand gelden scherpere eisen voor brandveiligheid, en moet je een gebruiksmelding doen.",
+          "note": "De informatie over brandveiligheidseisen en gebruiksmelding komt overeen",
+          "source_urls": [
+            "https://gemeente.groningen.nl/voorwaarden-voor-kamerverhuur"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de specificatie van het minimum aantal kamers/personen (3) voor vergunningplicht en de historische context van de omzettingsvergunning. De originele tekst mist deze specifieke details die wel in de bronnen staan. De overige informatie komt grotendeels overeen."
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DEVENTER",
+      "contact": {
+        "phone": "14 0570",
+        "email": "gemeente@deventer.nl",
+        "website": "http://www.deventer.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 26,
+    "false_sentences": 2,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "Het aanvragen van een terrasvergunning kost €610.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Deventer kost een terrasvergunning €625,00 voor 2024."
+      },
+      {
+        "sentence": "Voor het wijzigen van een terrasvergunning, een incidenteel terras voor de duur van een evenement of een terrasvergunning voor onbepaalde tijd, nadat een terrasvergunning voor bepaalde tijd was verleend, betaalt u €129.",
+        "status": "false",
+        "note": "Het correcte bedrag voor het wijzigen van een terrasvergunning is €132,00 volgens de actuele legesverordening van gemeente Deventer voor 2024."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.deventer.nl/terrasvergunning",
+      "https://www.deventer.nl/vooroverleg",
+      "https://www.deventer.nl/leges",
+      "https://www.deventer.nl/exploitatievergunning",
+      "https://www.deventer.nl/omgevingsvergunning-aanvragen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "U kunt online een terrasvergunning (horeca) aanvragen. Heeft u ook een exploitatievergunning nodig en/of een een alcoholwetvergunning? Dan kunt u deze met hetzelfde formulier aanvragen.",
+          "original_reference": "U kunt de terrasvergunning online aanvragen via de gemeentelijke website van Deventer. Bij de aanvraag kunt u ook een exploitatievergunning en/of een alcoholwetvergunning aanvragen met hetzelfde formulier.",
+          "note": "De aanvraagprocedure en mogelijkheid om meerdere vergunningen tegelijk aan te vragen komt overeen",
+          "source_urls": [
+            "https://www.deventer.nl/terrasvergunning"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "een duidelijke tekening (schaal 1:100) van de situering en de afmetingen van het gewenste terras met maten in meters; kleurenfoto's of folders in kleur en informatie over het materiaalgebruik van terrasstoelen en -tafels, parasols en windschermen.",
+          "original_reference": "Een duidelijke tekening (schaal 1:100) van de situering en de afmetingen van het gewenste terras met maten in meters. Kleurenfoto's of folders in kleur en informatie over het materiaalgebruik van terrasstoelen en -tafels, parasols en windschermen.",
+          "note": "De vereiste documenten voor de aanvraag zijn identiek",
+          "source_urls": [
+            "https://www.deventer.nl/terrasvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse van de bronnen en de originele tekst zijn er geen significante verschillen of tegenstrijdigheden gevonden. De informatie over de aanvraagprocedure, vereiste documenten en voorwaarden komt overeen. De bronnen bevestigen de juistheid van de informatie in de originele tekst."
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HILVERSUM",
+      "contact": {
+        "phone": "14 035",
+        "email": "gemeente@hilversum.nl",
+        "website": "http://www.hilversum.nl"
+      }
+    },
+    "service": {
+      "id": 8,
+      "name": "Marktvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 20,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.2,
+    "false_statements": [
+      {
+        "sentence": "Voor een maatwerkinitiatief bedragen de kosten € 308,40 voor de intakeronde en € 822,40 per volgend overleg.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Hilversum bedragen de kosten voor een maatwerkinitiatief € 315,60 voor de intakeronde en € 841,60 per volgend overleg."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://hilversum.nl/bouwen-verbouwen/omgevingswet/aanvraag-omgevingsvergunning-uitgelegd",
+      "https://hilversum.nl/vergunningen/vergunningen-meldingen-openbare-ruimte",
+      "https://hilversum.nl/vergunningen/vergunningen-voor-bouwen-verbouwen/omgevingsvergunning-aanvragen",
+      "https://hilversum.nl/bouwen-verbouwen/haalbaarheidsonderzoek",
+      "https://hilversum.nl/ondernemen/vergunningen-meldingen-voor-ondernemers"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Er zijn niet altijd vrije vaste plekken.",
+          "original_reference": "Controleer of er vrije vaste plekken zijn op de markt waar u interesse in heeft.",
+          "note": "De originele tekst suggereert dat er plekken beschikbaar zijn om te controleren, terwijl de brontekst expliciet aangeeft dat er niet altijd vrije plekken zijn. Dit is een belangrijk verschil in verwachtingsmanagement.",
+          "source_urls": [
+            "https://hilversum.nl/vergunningen/vergunningen-meldingen-openbare-ruimte"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U heeft hiervoor een marktvergunning nodig.",
+          "original_reference": "U vraagt een marktvergunning aan bij de gemeente Hilversum.",
+          "note": "De brontekst is specifieker en benadrukt de verplichting van een vergunning, terwijl de originele tekst alleen het aanvragen beschrijft zonder de verplichting expliciet te vermelden.",
+          "source_urls": [
+            "https://hilversum.nl/vergunningen/vergunningen-meldingen-openbare-ruimte"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de beschikbaarheid van marktplaatsen en de formulering rond de vergunningplicht. De brontekst is duidelijker over de beperkte beschikbaarheid van standplaatsen en de verplichte aard van de vergunning. De overige informatie in de originele tekst komt overeen met de beschikbare bronnen of kan niet geverifieerd worden omdat specifieke details over marktvergunningen beperkt zijn in de aangeleverde bronnen."
+  }
+}

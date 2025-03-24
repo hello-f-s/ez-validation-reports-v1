@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "TERSCHELLING",
+      "contact": {
+        "phone": "(0562) 44 62 44",
+        "email": "gemeente@terschelling.nl",
+        "website": "http://www.terschelling.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "Wij werken samen met de gemeente Harlingen op het gebied van vergunningverlening.",
+        "status": "false",
+        "note": "De gemeente Terschelling werkt niet samen met de gemeente Harlingen op het gebied van vergunningverlening. Terschelling heeft een eigen afdeling voor vergunningverlening en werkt hierin samen met de FUMO (Fryske Utfieringstsjinst Miljeu en Omjouwing)."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.terschelling.nl/omgevingsvergunning",
+      "https://www.terschelling.nl/wonen",
+      "https://www.terschelling.nl/alle-producten-en-diensten/21",
+      "https://www.terschelling.nl/milieuvergunning-of-melding",
+      "https://www.terschelling.nl/exploitatievergunning-horecabedrijf"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Doe de vergunningscheck om te controleren of u een omgevingsvergunning moet aanvragen of een melding moet doen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist de belangrijke stap van het uitvoeren van een vergunningscheck voordat men een aanvraag doet",
+          "source_urls": [
+            "https://www.terschelling.nl/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De hele procedure, van delen van uw plan voor het bouwen van een woning tot het verlenen van de uiteindelijke vergunning, kan lang duren: twee jaar of langer.",
+          "original_reference": "Reguliere procedure: Binnen 8 weken na indiening ontvangt u normaal gesproken bericht over de toekenning van de vergunning, met mogelijkheid tot verlenging met 6 weken.",
+          "note": "Er is een significant verschil in de aangegeven doorlooptijden. De bron noemt een mogelijke totale duur van 2+ jaar, terwijl de originele tekst alleen de formele behandeltermijn noemt",
+          "source_urls": [
+            "https://www.terschelling.nl/wonen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U voert een gesprek over uw plannen met de gemeente. Dat doen wij bij u thuis aan de keukentafel. Tijdens het gesprek zijn meerdere disciplines/afdelingen betrokken: volkshuisvesting, ruimtelijke ordening, een landschapsarchitect en een stedenbouwkundige /architect.",
+          "original_reference": "In een vooroverleg met de gemeente kunt u eerdere twijfels of haalbaarheid bespreken.",
+          "note": "De bronpagina geeft veel specifiekere details over het vooroverleg, inclusief locatie en betrokken disciplines, die niet genoemd worden in de originele tekst",
+          "source_urls": [
+            "https://www.terschelling.nl/wonen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de vergunningscheck die ontbreekt in de originele tekst, een significant verschil in aangegeven doorlooptijden, en meer gedetailleerde informatie over het vooroverleg in de bronpagina's. De bronnen geven een completer en realistischer beeld van het totale proces, inclusief voorbereidende stappen en betrokken partijen."
+  }
+}

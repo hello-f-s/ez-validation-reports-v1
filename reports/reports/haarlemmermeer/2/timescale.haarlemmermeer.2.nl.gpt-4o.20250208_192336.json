@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HAARLEMMERMEER",
+      "contact": {
+        "phone": "(0900) 18 52",
+        "email": "info@haarlemmermeer.nl",
+        "website": "http://www.haarlemmermeer.nl"
+      }
+    },
+    "service": {
+      "id": 2,
+      "name": "Bord of spandoek plaatsen aan de openbare weg"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "Bij het bevestigen van reclame aan objecten zoals lichtmasten, moet contact worden opgenomen met specifieke mediaorganisaties (bijvoorbeeld NPB Media of ESH Media) en is geen vergunning van de gemeente Haarlemmermeer nodig.",
+        "status": "false",
+        "note": "Voor het bevestigen van reclame aan objecten zoals lichtmasten is wel degelijk een vergunning van de gemeente Haarlemmermeer nodig. De gemeente moet toestemming geven voor gebruik van gemeentelijke objecten voor reclamedoeleinden, ongeacht eventuele afspraken met mediaorganisaties."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://haarlemmermeergemeente.nl/diensten-en-goederen-aanbieden",
+      "https://haarlemmermeergemeente.nl/terrasvergunning",
+      "https://haarlemmermeergemeente.nl/aanleggen-kabels-en-leidingen",
+      "https://haarlemmermeergemeente.nl/standplaatsvergunning",
+      "https://haarlemmermeergemeente.nl/reclamevergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.omgevingsloket.nl\">Omgevingsloket</a>.",
+        "reason": "INVALID: Error scraping https://www.omgevingsloket.nl\">Omgevingsloket</a>.: HTTPSConnectionPool(host='www.omgevingsloket.nl%22%3eomgevingsloket%3c', port=443): Max retries exceeded with url: /a%3E. (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10695fb10>: Failed to resolve 'www.omgevingsloket.nl%22%3eomgevingsloket%3c' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.omgevingsloket.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Kleine naambordjes die u bevestigt mogen wel zonder vergunning. Kleine naambordjes zijn maximaal 50 bij 50 centimeter.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst specificeert niet de maximale afmetingen voor naambordjes, terwijl de bron een concrete maat van 50 bij 50 centimeter aangeeft.",
+          "source_urls": [
+            "https://haarlemmermeergemeente.nl/reclamevergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Reclame kan soms vergunningsvrij geplaatst worden. Gaat het om een reclame-uiting, zoals stickers of kleine naambordjes, dan is dit vergunningsvrij",
+          "original_reference": "De reclame mag niet worden aangebracht in de openbare buitenruimte zonder de benodigde vergunning.",
+          "note": "De bron geeft specifieke uitzonderingen aan voor vergunningsvrije reclame (stickers en kleine naambordjes), terwijl de originele tekst algemener en strenger is geformuleerd.",
+          "source_urls": [
+            "https://haarlemmermeergemeente.nl/reclamevergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten enkele belangrijke specificaties die niet in de originele tekst voorkomen, met name rond de voorwaarden voor vergunningsvrije reclame. De originele tekst is strenger geformuleerd wat betreft vergunningplicht en mist concrete details over toegestane afmetingen voor naambordjes. De rest van de informatie komt grotendeels overeen met de bronnen."
+  }
+}

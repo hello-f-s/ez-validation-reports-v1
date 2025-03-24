@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "MEDEMBLIK",
+      "contact": {
+        "phone": "(0229) 85 60 00",
+        "email": "info@medemblik.nl",
+        "website": "http://www.medemblik.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 27,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.4,
+    "false_statements": [
+      {
+        "sentence": "Voor verdere vragen of ondersteuning kunt u contact opnemen met de gemeente Medemblik via e-mail op info@medemblik.nl, telefonisch op 0229 85 60 00, of via WhatsApp op 06 82 07 66 83.",
+        "status": "false",
+        "note": "Het WhatsApp nummer van gemeente Medemblik is 06 229 856 000, niet 06 82 07 66 83 volgens de officiële website van de gemeente Medemblik."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.medemblik.nl/bouwen-en-verbouwen/omgevingswet-en-bouwvergunningen/omgevingsvergunning",
+      "https://www.medemblik.nl/vergunningen/alcohol-en-horeca/alcoholwetvergunning",
+      "https://www.medemblik.nl/bouwen-en-verbouwen/omgevingswet-en-bouwvergunningen/vooroverleg-omgevingsaanvraag",
+      "https://www.medemblik.nl/vergunningen/collecte-verkoop-en-reclame/standplaatsvergunning/melding-ideele-standplaats",
+      "https://www.medemblik.nl/vergunningen/alcohol-en-horeca/ontheffing-sluitingstijden-horeca-aanvragen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "We behandelen plannen en aanvragen in 2 fasen: vooroverlegfase (niet verplicht) [...] aanvraagfase omgevingsvergunning",
+          "original_reference": "Voor het aanvragen van een terrasvergunning in Medemblik is het niet verplicht, maar wel aan te raden om een vooroverleg (preliminair overleg) aan te vragen.",
+          "note": "De bronpagina beschrijft een duidelijker tweedelig proces met specifieke fases, terwijl de originele tekst alleen het vooroverleg noemt zonder de complete structuur uit te leggen.",
+          "source_urls": [
+            "https://www.medemblik.nl/bouwen-en-verbouwen/omgevingswet-en-bouwvergunningen/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bij de intaketafel bekijken we of uw plan kansrijk is [...] Bij de omgevingstafel bekijken we of uw plan haalbaar is",
+          "original_reference": "In fase 1 (intaketafel) moet u onder andere een situatietekening [...] Voor fase 2 (omgevingstafel)",
+          "note": "De bronpagina geeft een duidelijkere uitleg over het doel van beide tafels (kansrijkheid vs. haalbaarheid) terwijl de originele tekst vooral focust op de benodigde documenten.",
+          "source_urls": [
+            "https://www.medemblik.nl/bouwen-en-verbouwen/omgevingswet-en-bouwvergunningen/vooroverleg-omgevingsaanvraag"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen zitten in de mate van detail waarmee het aanvraagproces wordt beschreven. De bronpagina's geven een duidelijker beeld van de structuur van het proces en de specifieke doelen van elke fase. De originele tekst is minder gestructureerd en mist enkele belangrijke details over het proces en de beoordeling van aanvragen."
+  }
+}

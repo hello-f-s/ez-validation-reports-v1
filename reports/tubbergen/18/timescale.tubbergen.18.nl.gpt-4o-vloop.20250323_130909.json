@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "TUBBERGEN",
+      "contact": {
+        "phone": "(0546) 62 80 00",
+        "email": "gemeente@tubbergen.nl",
+        "website": "http://www.tubbergen.nl"
+      }
+    },
+    "service": {
+      "id": 18,
+      "name": "Ventvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "Een omgevingsvergunning vraagt u aan via de volgende website: omgevingswet.overheid.nl.",
+        "status": "false",
+        "note": "De omgevingsvergunning moet worden aangevraagd via het Omgevingsloket Online (www.omgevingsloket.nl), niet via omgevingswet.overheid.nl. Dit is de officiële aanvraagportal volgens de gemeente Tubbergen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.tubbergen.nl/omgevingsvergunning-bouwen",
+      "https://www.tubbergen.nl/verklaring-omtrent-gedrag-vog",
+      "https://www.tubbergen.nl/loterij",
+      "https://www.tubbergen.nl/aanvraag-evenementenvergunning",
+      "https://www.tubbergen.nl/alcoholvergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een omgevingsvergunning vraagt u hier aan: https://omgevingswet.overheid.nl",
+          "original_reference": "Een omgevingsvergunning vraagt u aan via de volgende website: omgevingswet.overheid.nl",
+          "note": "De originele tekst presenteert de link als klikbare URL, terwijl de brontekst deze als platte tekst weergeeft. Dit kan impact hebben op de gebruiksvriendelijkheid.",
+          "source_urls": [
+            "https://www.tubbergen.nl/omgevingsvergunning-bouwen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De gegevens die met een aanvraag moeten worden meegestuurd zijn volledig afhankelijk van het bouwplan. De reden hiervoor is dat de wet nu eenmaal meer en zwaardere eisen stelt aan bijvoorbeeld een verzorgingstehuis dan aan een tuinhuis.",
+          "original_reference": "No matching information",
+          "note": "De brontekst bevat belangrijke aanvullende context over waarom vereiste gegevens kunnen verschillen per type bouwplan, wat ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.tubbergen.nl/omgevingsvergunning-bouwen"
+          ]
+        }
+      ]
+    },
+    "summary": "De verschillen tussen de originele tekst en de bronnen zijn beperkt maar significant. De belangrijkste verschillen betreffen de presentatie van de aanvraag-URL en het ontbreken van contextuele informatie over waarom documentvereisten kunnen verschillen per type bouwproject. De kern van de informatie (procedures, vereiste documenten, schalen) komt overeen."
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "context": {
+    "municipality": {
+      "name": "GRONINGEN",
+      "contact": {
+        "phone": "14 050",
+        "email": "info@groningen.nl",
+        "website": "http://gemeente.groningen.nl"
+      }
+    },
+    "service": {
+      "id": 15,
+      "name": "Vergunning of ontheffing voor straatartiesten"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 13,
+    "false_sentences": 2,
+    "accuracy_percentage": 86.7,
+    "false_statements": [
+      {
+        "sentence": "Informatie over kosten is niet expliciet vermeld, maar meestal moeten er kosten worden betaald voor de aanvraag van vergunningen.",
+        "status": "false",
+        "note": "Voor een straatmuziekvergunning in Groningen worden geen kosten in rekening gebracht volgens de officiële gemeentelijke website."
+      },
+      {
+        "sentence": "De specifieke duur voor het verwerken van een vergunningaanvraag voor straatmuzikanten is niet vermeld, maar verwacht kan worden dat u binnen enkele weken bericht krijgt.",
+        "status": "false",
+        "note": "Volgens de gemeente Groningen wordt een straatmuziekvergunning binnen 3 werkdagen verwerkt en niet binnen enkele weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 4,
+    "invalid_urls": 2,
+    "accuracy_percentage": 66.7,
+    "valid_urls_list": [
+      "https://gemeente.groningen.nl/",
+      "https://gemeente.groningen.nl/muziekvergunning-aanvragen",
+      "https://gemeente.groningen.nl/omgevingsvergunning-aanvragen",
+      "https://gemeente.groningen.nl/ontheffing-voor-3-of-meer-bedrijfsvoertuigen-op-de-stoep"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://gemeente.groningen.nl/onttrekkingsvergunning-voor-bedrijfsdoeleinden-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://gemeente.groningen.nl/gemeentegrond-tijdelijk-gebruiken",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Er mag maximaal 15 minuten op dezelfde plaats, of binnen een afstand van 50 meter van die plaats...",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist een belangrijke voorwaarde over de maximale speelduur op één locatie en minimale afstand voor verplaatsing",
+          "source_urls": [
+            "https://gemeente.groningen.nl/muziekvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Geef het minstens 2 weken van tevoren door",
+          "original_reference": "De specifieke duur voor het verwerken van een vergunningaanvraag voor straatmuzikanten is niet vermeld",
+          "note": "De bron specificeert een minimale aanvraagtermijn van 2 weken, terwijl de originele tekst geen specifieke termijn noemt",
+          "source_urls": [
+            "https://gemeente.groningen.nl/muziekvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U moet deze vergunning altijd kunnen laten zien als u optreedt of muziek laat horen",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist de belangrijke voorwaarde dat de vergunning tijdens het optreden getoond moet kunnen worden",
+          "source_urls": [
+            "https://gemeente.groningen.nl/muziekvergunning-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten enkele belangrijke aanvullende voorwaarden die niet in de originele tekst staan vermeld: een maximale speelduur van 15 minuten per locatie, een minimale verplaatsingsafstand van 50 meter, een aanvraagtermijn van 2 weken, en de verplichting om de vergunning tijdens het optreden te kunnen tonen. Deze voorwaarden zijn essentieel voor straatmuzikanten maar ontbreken in de originele tekst."
+  }
+}

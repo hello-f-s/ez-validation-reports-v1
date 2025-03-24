@@ -1,0 +1,91 @@
+{
+  "context": {
+    "municipality": {
+      "name": "SCHIEDAM",
+      "contact": {
+        "phone": "14 010",
+        "email": "contact@schiedam.nl",
+        "website": "http://www.schiedam.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Online door uw werkgever: € 33,85",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Schiedam is het correcte tarief voor een VOG aanvraag via de werkgever € 41,35. Er wordt geen onderscheid gemaakt in prijs tussen online of balie aanvragen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 4,
+    "invalid_urls": 2,
+    "accuracy_percentage": 66.7,
+    "valid_urls_list": [
+      "https://schiedam.nl/a-tot-z/verklaring-omtrent-gedrag",
+      "https://www.schiedam.nl",
+      "https://www.schiedam.nl/a-tot-z/verklaring-omtrent-gedrag",
+      "https://www.schiedam.nl/a-tot-z/nederlandse-nationaliteit-aanvragen-door-naturalisatie"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.schiedam.nl/a-tot-z/nederlandse-nationaliteit-aanvragen-door-optie",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://schiedam.nl/a-tot-z/nederlandse-nationaliteit-aanvragen-door-optie",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het is tijdelijk niet mogelijk om online met DigiD de Verklaring Omtrent Gedrag aan te vragen.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt een tijdelijke beperking voor online aanvragen met DigiD die niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.schiedam.nl/a-tot-z/verklaring-omtrent-gedrag"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Maak een scan of goed leesbare foto van het ingevulde aanvraagformulier. U stuurt deze namelijk mee als bijlage bij de online aanvraag",
+          "original_reference": "No matching information",
+          "note": "De bronpagina specificeert dat een scan of foto van het formulier nodig is voor online aanvragen, wat niet vermeld wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.schiedam.nl/a-tot-z/verklaring-omtrent-gedrag"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een geldig identiteitsbewijs van uzelf.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt dat een geldig identiteitsbewijs moet worden meegenomen bij een balieaanvraag, wat niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.schiedam.nl/a-tot-z/verklaring-omtrent-gedrag"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina bevat enkele belangrijke aanvullende vereisten en beperkingen die niet in de originele tekst staan, waaronder een tijdelijke beperking voor DigiD-aanvragen, de noodzaak van een scan/foto van het aanvraagformulier voor online aanvragen, en de verplichting om een geldig identiteitsbewijs mee te nemen bij balieaanvragen. Deze informatie is essentieel voor het correct doorlopen van de aanvraagprocedure."
+  }
+}

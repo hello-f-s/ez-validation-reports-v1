@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HEILOO",
+      "contact": {
+        "phone": "(072) 535 66 66",
+        "email": "info@heiloo.nl",
+        "website": "http://www.heiloo.nl"
+      }
+    },
+    "service": {
+      "id": 3,
+      "name": "Certificaat voor opgraving aanvragen en vondst melden"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "Archeologische vondsten die gedeeld eigendom zijn, vallen onder de schatvindersregeling wanneer de eigenaar niet meer te achterhalen is.",
+        "status": "false",
+        "note": "Dit is onjuist volgens de Erfgoedwet. Archeologische vondsten zijn altijd eigendom van de provincie of gemeente waar ze gevonden zijn, ongeacht of er een eigenaar te achterhalen is. De schatvindersregeling is niet van toepassing op archeologische vondsten."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.heiloo.nl/over-de-gemeente/cultureel-erfgoed-monumenten-en-archeologie/archeologie/",
+      "https://www.heiloo.nl/plannen-en-projecten-heiloo/nieuwbouw-zuiderloo/archeologie",
+      "https://www.heiloo.nl/aanvragen-en-regelen/klacht-indienen-of-compliment-geven/",
+      "https://www.heiloo.nl/contact-en-openingstijden",
+      "https://www.heiloo.nl/aanvragen-en-regelen/gevonden-of-verloren/"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Openingstijden: maandag t/m vrijdag 8.00 - 17.00 uur (voor telefonisch contact) en 8.00 - 16.30 uur (voor receptie)",
+          "original_reference": "Openingstijden: maandag t/m vrijdag van 08.30 tot 17.00 uur",
+          "note": "De originele tekst vermeldt andere openingstijden dan de bronwebsite. De werkelijke openingstijden verschillen voor telefonisch contact en fysieke receptie.",
+          "source_urls": [
+            "https://www.heiloo.nl/contact-en-openingstijden"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Whatsapp: 06 194 296 61",
+          "original_reference": "Whatsapp: 06 821 735 46",
+          "note": "Het WhatsApp-nummer in de originele tekst komt niet overeen met het nummer op de website van de gemeente.",
+          "source_urls": [
+            "https://www.heiloo.nl/contact-en-openingstijden"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor archeologisch onderzoek heeft u een gecertificeerd bureau nodig. Verzoeken over archeologie stuurt u met het formulier informatieverzoek bouwen en verbouwen.",
+          "original_reference": "U moet een gecertificeerd bureau inschakelen voor het archeologisch onderzoek. Het onderzoek dient voorafgaand aan de vergunningaanvraag te worden afgerond",
+          "note": "De bronwebsite vermeldt niet expliciet dat het onderzoek moet zijn afgerond voor de vergunningaanvraag, alleen dat een gecertificeerd bureau nodig is.",
+          "source_urls": [
+            "https://www.heiloo.nl/over-de-gemeente/cultureel-erfgoed-monumenten-en-archeologie/archeologie/"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn drie belangrijke verschillen gevonden tussen de originele tekst en de bronwebsites: afwijkende openingstijden, een verschillend WhatsApp-nummer en een minder specifieke formulering over de timing van archeologisch onderzoek. De contactgegevens moeten worden geactualiseerd en de voorwaarden voor archeologisch onderzoek kunnen duidelijker worden geformuleerd."
+  }
+}

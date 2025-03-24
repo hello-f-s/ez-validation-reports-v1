@@ -1,0 +1,61 @@
+{
+  "context": {
+    "municipality": {
+      "name": "SOEST",
+      "contact": {
+        "phone": "(035) 609 34 11",
+        "email": "null",
+        "website": "http://www.soest.nl/contact"
+      }
+    },
+    "service": {
+      "id": 6,
+      "name": "Integriteitsonderzoek (Wet Bibob)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 8,
+    "true_sentences": 7,
+    "false_sentences": 1,
+    "accuracy_percentage": 87.5,
+    "false_statements": [
+      {
+        "sentence": "Het Telefonisch Informatiepunt is bereikbaar op werkdagen van 8.30 tot 12.30 uur.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Soest is het Telefonisch Informatiepunt bereikbaar op werkdagen van 8.30 tot 17.00 uur."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 1,
+    "valid_urls": 1,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "http://www.soest.nl/contact"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor al onze diensten en producten werken wij uitsluitend op afspraak, ook voor het afhalen van uw rijbewijs of reisdocument.",
+          "original_reference": "No matching information",
+          "note": "De bronwebsite vermeldt expliciet dat alle diensten en producten uitsluitend op afspraak beschikbaar zijn. Deze belangrijke informatie ontbreekt in de originele tekst.",
+          "source_urls": [
+            "http://www.soest.nl/contact"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont één belangrijk verschil: de bronwebsite bevat essentiële informatie over het werken op afspraak die ontbreekt in de originele tekst. Deze informatie is cruciaal voor bezoekers omdat het betekent dat men niet zonder afspraak bij de gemeente terecht kan, ook niet voor het afhalen van documenten. Overige contactgegevens, openingstijden en procedures komen overeen met de originele inhoud."
+  }
+}

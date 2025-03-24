@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LEEUWARDEN",
+      "contact": {
+        "phone": "14 058",
+        "email": "gemeente@leeuwarden.nl",
+        "website": "http://www.leeuwarden.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 31,
+    "true_sentences": 30,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.8,
+    "false_statements": [
+      {
+        "sentence": "U heeft een exploitatievergunning als u geen alcohol wilt schenken.",
+        "status": "false",
+        "note": "Dit is onjuist geformuleerd. Een exploitatievergunning is juist nodig als u een horecabedrijf wilt starten, ongeacht of u wel of geen alcohol schenkt. Voor het schenken van alcohol heeft u daarnaast een alcoholvergunning nodig."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.leeuwarden.nl/horeca/horecavergunning/",
+      "https://www.leeuwarden.nl/horeca/gok-en-speelautomaten/",
+      "https://www.leeuwarden.nl/melden-bij-de-gemeente/woo-verzoek-indienen/",
+      "https://www.leeuwarden.nl/omgevingsvergunning/procedure-omgevingsvergunning-aanvragen-of-melden/",
+      "https://www.leeuwarden.nl/omgevingsvergunning/gebruikmaken-maken-of-veranderen-van-een-uitweg/"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "In de gemeente Leeuwarden mag maximaal 1 speelautomatenhal aanwezig zijn. Dit staat in de 'Verordening speelautomatenhallen gemeente Leeuwarden 2014'. Op dit moment is er al een speelautomatenhal in de gemeente Leeuwarden. Daarom mag er niet nog 1 bij.",
+          "original_reference": "In de gemeente Leeuwarden is het aantal speelautomatenhallen beperkt tot één, zoals bepaald in de 'Verordening speelautomatenhallen gemeente Leeuwarden 2014'.",
+          "note": "De brontekst geeft extra context door te vermelden dat er momenteel al een speelautomatenhal is en er daarom geen nieuwe bij mag komen. Deze belangrijke praktische informatie ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.leeuwarden.nl/horeca/gok-en-speelautomaten/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U hebt een exploitatievergunning nodig als u een horecabedrijf wilt beginnen of overnemen, waarin u geen alcohol schenkt. Ook coffeeshops en afhaalbedrijven hebben een exploitatievergunning nodig.",
+          "original_reference": "U heeft een exploitatievergunning als u geen alcohol wilt schenken.",
+          "note": "De brontekst specificeert dat de exploitatievergunning ook geldt voor coffeeshops en afhaalbedrijven, wat belangrijke aanvullende informatie is die ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.leeuwarden.nl/horeca/horecavergunning/"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont twee belangrijke verschillen tussen de originele tekst en de bronnen. Ten eerste geeft de bron meer praktische context over de speelautomatenhal-situatie door te vermelden dat er al een hal bestaat. Ten tweede biedt de bron meer specifieke details over welke type bedrijven een exploitatievergunning nodig hebben. Deze extra informatie is relevant voor potentiële aanvragers maar ontbreekt in de originele tekst."
+  }
+}

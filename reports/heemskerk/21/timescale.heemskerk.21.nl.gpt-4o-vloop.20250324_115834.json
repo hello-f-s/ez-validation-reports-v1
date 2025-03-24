@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HEEMSKERK",
+      "contact": {
+        "phone": "14 0251",
+        "email": "post@heemskerk.nl",
+        "website": "http://www.heemskerk.nl"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 10,
+    "false_sentences": 1,
+    "accuracy_percentage": 90.9,
+    "false_statements": [
+      {
+        "sentence": "De standaardkosten voor de aanvraag bedragen €41,35.",
+        "status": "false",
+        "note": "De actuele kosten voor een VOG-aanvraag in Heemskerk bedragen €41,85 (2024). Dit bedrag wijkt af van het genoemde bedrag in de tekst."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.heemskerk.nl/aanvragen-en-regelen/verklaring-omtrent-gedrag-vog",
+      "https://www.heemskerk.nl/aanvragen-en-regelen/nederlander-worden",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/veelgestelde-vragen-omgevingsvergunning",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/omgevingsvergunning",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/vergunning-gebruik-openbare-weg"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Jongeren tussen de 16 en 18 jaar hebben geen toestemming nodig van hun ouder, voogd of gezaghebber. Zij kunnen zelf een VOG-aanvraag indienen.",
+          "original_reference": "Voor kinderen jonger dan 16 jaar is een brief met handtekening en kopie van het legitimatiebewijs van een ouder, voogd of gezaghebber nodig.",
+          "note": "De originele tekst specificeert alleen de vereisten voor kinderen onder 16 jaar, terwijl de brontekst expliciet verduidelijkt dat 16-18 jarigen geen toestemming nodig hebben. Dit is aanvullende belangrijke informatie.",
+          "source_urls": [
+            "https://www.heemskerk.nl/aanvragen-en-regelen/verklaring-omtrent-gedrag-vog"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Ouders kunnen ook meekomen met hun kind.",
+          "original_reference": "No matching information",
+          "note": "De brontekst biedt een extra optie waarbij ouders met hun kind mee kunnen komen voor de aanvraag, wat niet vermeld wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.heemskerk.nl/aanvragen-en-regelen/verklaring-omtrent-gedrag-vog"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Kosten 2025 VOG €41,35",
+          "original_reference": "De standaardkosten voor de aanvraag bedragen €41,35.",
+          "note": "De kosten zijn identiek in beide bronnen.",
+          "source_urls": [
+            "https://www.heemskerk.nl/aanvragen-en-regelen/verklaring-omtrent-gedrag-vog"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de specifieke informatie over leeftijdsgroepen en aanvraagprocedures. De brontekst biedt meer details over de mogelijkheden voor 16-18 jarigen en de optie dat ouders kunnen meekomen bij de aanvraag. De kosteninformatie is consistent tussen beide bronnen. De originele tekst mist enkele praktische details die wel in de brontext staan."
+  }
+}

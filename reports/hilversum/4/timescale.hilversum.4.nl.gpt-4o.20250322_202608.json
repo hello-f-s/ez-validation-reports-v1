@@ -1,0 +1,89 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HILVERSUM",
+      "contact": {
+        "phone": "14 035",
+        "email": "gemeente@hilversum.nl",
+        "website": "http://www.hilversum.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 22,
+    "false_sentences": 2,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "De standaard kosten zijn € 178,85 of € 447,20.",
+        "status": "false",
+        "note": "De actuele tarieven voor evenementenvergunningen in Hilversum zijn anders. Voor 2024 zijn de tarieven: € 183,30 voor kleine evenementen en € 458,35 voor grote evenementen."
+      },
+      {
+        "sentence": "Bij late aanvragen (minder dan 4 weken voor de startdatum) wordt een toeslag van 100% op het tarief toegepast.",
+        "status": "false",
+        "note": "Late aanvragen zijn niet mogelijk volgens het beleid van de gemeente Hilversum. Er moet minimaal 8 weken voor kleine evenementen en 12 weken voor grote evenementen worden aangevraagd. Er bestaat geen regeling voor spoedaanvragen met toeslag."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://hilversum.nl/vergunningen/evenement-organiseren/evenementenvergunning-aanvragen",
+      "https://hilversum.nl/vergunningen/evenement-organiseren/buurt-straatfeest-klein-evenement-melden",
+      "https://hilversum.nl/ondernemen/vergunningen-meldingen-voor-ondernemers",
+      "https://hilversum.nl/bouwen-verbouwen/omgevingswet/aanvraag-omgevingsvergunning-uitgelegd",
+      "https://hilversum.nl/vergunningen/evenement-organiseren",
+      "https://www.hilversum.nl"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "In Hilversum zijn in het Omgevingsplan 3 locaties aangewezen waar evenementen mogen plaatsvinden: Marktplein, Herenplein, Oude Haven. Bij het organiseren van een evenement op een andere locatie is er misschien, naast de evenementenvergunning ook een omgevingsvergunning, nodig.",
+          "original_reference": "Mogelijk zijn aanvullende vergunningen vereist, zoals een omgevingsvergunning.",
+          "note": "De originele tekst noemt niet specifiek de drie aangewezen evenementenlocaties en de bijbehorende vereisten voor andere locaties. Dit is belangrijke aanvullende informatie voor organisatoren.",
+          "source_urls": [
+            "https://hilversum.nl/vergunningen/evenement-organiseren/evenementenvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het geluidsniveau is maximaal 80 db(A) en 95 db(C), gemeten op 5 meter afstand van de luidsprekers",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over toegestane geluidsniveaus, terwijl dit een belangrijke voorwaarde is voor evenementen.",
+          "source_urls": [
+            "https://hilversum.nl/vergunningen/evenement-organiseren/buurt-straatfeest-klein-evenement-melden"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Er gelden nieuwe regels voor het gebruik van plastic wegwerpbekers en -bakjes. De regels verschillen per situatie.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist informatie over de nieuwe regelgeving omtrent plastic wegwerpservies bij evenementen.",
+          "source_urls": [
+            "https://hilversum.nl/vergunningen/evenement-organiseren"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie die niet in de originele tekst staat, waaronder specifieke aangewezen evenementenlocaties, geluidsnormen en nieuwe regelgeving over plastic wegwerpservies. Deze informatie is essentieel voor evenementorganisatoren en zou in de originele tekst opgenomen moeten worden voor een volledig beeld van de vereisten."
+  }
+}

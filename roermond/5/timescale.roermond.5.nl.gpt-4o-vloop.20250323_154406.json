@@ -1,0 +1,87 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ROERMOND",
+      "contact": {
+        "phone": "14 0475",
+        "email": "mail@roermond.nl",
+        "website": "http://www.roermond.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 27,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.4,
+    "false_statements": [
+      {
+        "sentence": "Aanvraag exploitatievergunning: €39,40.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Roermond is het tarief voor een aanvraag exploitatievergunning €156,25. Het genoemde bedrag van €39,40 is onjuist."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.roermond.nl/exploitatievergunning-horeca",
+      "https://www.roermond.nl/terrasvergunning",
+      "https://www.roermond.nl/alcoholwetvergunning",
+      "https://www.roermond.nl/marktstandplaats-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.roermond.nl/reclame-plaatsen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Binnen enkele dagen ontvangt u een ontvangstbevestiging.",
+          "original_reference": "Nadat u uw aanvraag heeft verzonden, ontvangt u binnen enkele dagen een ontvangstbevestiging.",
+          "note": "De formulering is iets directer in de bronversie, maar de betekenis is hetzelfde. Dit is een minimaal verschil.",
+          "source_urls": [
+            "https://www.roermond.nl/alcoholwetvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Verstuur de ingevulde formulieren en bijlagen per mail naar: mail@roermond.nl of per post naar: postbus 900, 6040 AX Roermond.",
+          "original_reference": "U kunt de formulieren en bijlagen per mail sturen naar mail@roermond.nl of per post naar: Postbus 900, 6040 AX Roermond.",
+          "note": "In de bron wordt 'postbus' met kleine letter geschreven, terwijl in de originele tekst 'Postbus' met hoofdletter wordt geschreven.",
+          "source_urls": [
+            "https://www.roermond.nl/exploitatievergunning-horeca"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Verstuur de gevraagde formulieren en bijlagen per post naar: Postbus 900, 6040 AX Roermond.",
+          "original_reference": "U kunt de formulieren en bijlagen per mail sturen naar mail@roermond.nl of per post naar: Postbus 900, 6040 AX Roermond.",
+          "note": "Bij de alcoholwetvergunning wordt alleen de postoptie genoemd, terwijl bij de exploitatievergunning ook e-mail als optie wordt gegeven.",
+          "source_urls": [
+            "https://www.roermond.nl/alcoholwetvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De gevonden verschillen zijn voornamelijk klein en formeel van aard. Het meest significante verschil is dat bij de alcoholwetvergunning alleen de postoptie wordt genoemd voor het indienen van documenten, terwijl bij de exploitatievergunning ook e-mail als optie wordt gegeven. De overige verschillen betreffen vooral kleine tekstuele variaties die geen wezenlijke impact hebben op de dienstverlening."
+  }
+}

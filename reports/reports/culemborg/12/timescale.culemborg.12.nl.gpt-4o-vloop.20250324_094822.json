@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "CULEMBORG",
+      "contact": {
+        "phone": "(0345) 47 77 00",
+        "email": "info@culemborg.nl",
+        "website": "http://www.culemborg.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 31,
+    "true_sentences": 30,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.8,
+    "false_statements": [
+      {
+        "sentence": "Voor het afwijken van het omgevingsplan worden €1.080 aan leges in rekening gebracht voor de behandeling van een initiatief op de intaketafel.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van gemeente Culemborg is dit bedrag niet correct. Het exacte bedrag voor het behandelen van een initiatief dat afwijkt van het omgevingsplan wordt bepaald op basis van de specifieke situatie en staat niet vast op €1.080."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.culemborg.nl/omgevingsvergunning",
+      "https://www.culemborg.nl/informatieverzoek",
+      "https://www.culemborg.nl/informatieverzoek-en-woo-verzoek",
+      "https://www.culemborg.nl/bezwaar-maken",
+      "https://www.culemborg.nl/woo-verzoek"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Telefoon: 0345 477 700 Maandag, dinsdag, woensdag, donderdag van 9.00 - 16.00 uur Vrijdag van 9.00 - 12.00 uur",
+          "original_reference": "Telefoon: 0345 477 700. Openingstijden: Maandag, woensdag, donderdag 9.00 - 16.00 uur; Dinsdag 9.00 - 19.00 uur; Vrijdag 9.00 - 12.00 uur",
+          "note": "Er is een verschil in de telefonische bereikbaarheid. De originele tekst vermeldt dinsdag tot 19:00 uur, terwijl de bron aangeeft dat dit tot 16:00 uur is.",
+          "source_urls": [
+            "https://www.culemborg.nl/informatieverzoek-en-woo-verzoek"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als de gemeente niet binnen de beslistermijn besluit op uw aanvraag of bezwaarschrift, dan kunt u de gemeente schriftelijk in gebreke stellen. Vanaf dat moment heeft de gemeente nog 2 weken om alsnog tot een besluit te komen.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat aanvullende belangrijke informatie over ingebrekestelling bij het uitblijven van een besluit, wat niet vermeld staat in de originele tekst.",
+          "source_urls": [
+            "https://www.culemborg.nl/bezwaar-maken"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U krijgt binnen 6 of 12 weken antwoord. Het hangt af van de procedure hoe lang het duurt voor u antwoord krijgt.",
+          "original_reference": "U ontvangt binnen enkele weken feedback op overlegaanvragen.",
+          "note": "De originele tekst is vaag over de verwerkingstijd ('enkele weken'), terwijl de bron specifieke termijnen noemt van 6 of 12 weken.",
+          "source_urls": [
+            "https://www.culemborg.nl/bezwaar-maken"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de telefonische bereikbaarheid van de gemeente, waarbij de openingstijden op dinsdag verschillen. Daarnaast bevat de bronpagina belangrijke aanvullende informatie over ingebrekestellingen die niet in de originele tekst staat. Tot slot zijn er verschillen in de communicatie over verwerkingstijden, waarbij de bron specifiekere termijnen noemt dan de originele tekst."
+  }
+}

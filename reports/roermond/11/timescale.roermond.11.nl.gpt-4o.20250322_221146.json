@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ROERMOND",
+      "contact": {
+        "phone": "14 0475",
+        "email": "mail@roermond.nl",
+        "website": "http://www.roermond.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "Zowel voor een conceptverzoek als voor de definitieve aanvraag zijn kosten verbonden.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Roermond zijn er geen kosten verbonden aan het indienen van een conceptaanvraag. Alleen voor de definitieve aanvraag worden leges in rekening gebracht."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.roermond.nl/aanvraag-bouwtekening-bouwdossier-of-dossier-omgevingsvergunning",
+      "https://www.roermond.nl/omgevingsplan-0",
+      "https://www.roermond.nl/terrasvergunning",
+      "https://www.roermond.nl/exploitatievergunning-horeca",
+      "https://www.roermond.nl/omgevingsvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.gemeenteroermond.nl/",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De kosten voor het aanvragen van een bouwtekening, bouwdossier of dossier omgevingsvergunning bedragen minimaal € 14,- per aangevraagd adres",
+          "original_reference": "De kosten voor een omgevingsvergunning zijn afhankelijk van de bouwkosten en de aangevraagde activiteiten",
+          "note": "De originele tekst is algemener over kosten, terwijl de bron specifieke startbedragen noemt voor bepaalde documentaanvragen",
+          "source_urls": [
+            "https://www.roermond.nl/aanvraag-bouwtekening-bouwdossier-of-dossier-omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De wettelijke termijn van 8 weken kan verlengd worden als niet alle benodigde informatie en beeldmateriaal is ingediend",
+          "original_reference": "Reguliere procedure: 8 weken met een mogelijke verlenging van 6 weken",
+          "note": "De bron noemt een andere reden voor verlenging (ontbrekende informatie) dan de originele tekst die alleen de 6 weken verlenging noemt",
+          "source_urls": [
+            "https://www.roermond.nl/terrasvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Communicatie verloopt via berichtenbox van jeleefomgeving.nl",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over het communicatiekanaal tijdens de aanvraagprocedure",
+          "source_urls": [
+            "https://www.roermond.nl/terrasvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de specificatie van kosten, redenen voor termijnverlenging en het ontbreken van informatie over het communicatiekanaal in de originele tekst. De bronnen geven meer gedetailleerde informatie over deze aspecten van de dienstverlening."
+  }
+}

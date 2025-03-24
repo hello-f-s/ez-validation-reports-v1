@@ -1,0 +1,75 @@
+{
+  "context": {
+    "municipality": {
+      "name": "RENKUM",
+      "contact": {
+        "phone": "(026) 334 81 11",
+        "email": "info@renkum.nl",
+        "website": "http://www.renkum.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "De doorlooptijd voor een reguliere aanvraag is 8 weken.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Renkum is de standaard doorlooptijd voor een reguliere aanvraag maximaal 8 weken, niet exact 8 weken. Dit is een belangrijk verschil omdat de procedure ook sneller kan worden afgerond."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 8,
+    "valid_urls": 0,
+    "invalid_urls": 8,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.renkum.nl/Ondernemers/Bouwen_en_vestigen/Bedrijf_vestigen_verhuizen_of_uitbreiden",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://gemeente.renkum.nl/Wonen_bouwen/Bouwen_en_verbouwen",
+        "reason": "INVALID: Error scraping https://gemeente.renkum.nl/Wonen_bouwen/Bouwen_en_verbouwen: HTTPSConnectionPool(host='gemeente.renkum.nl', port=443): Max retries exceeded with url: /Wonen_bouwen/Bouwen_en_verbouwen (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x107f5c910>: Failed to resolve 'gemeente.renkum.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://gemeente.renkum.nl/Ondernemen/Parkmanagement/Bedrijf_vestigen_verhuizen_of_uitbreiden",
+        "reason": "INVALID: Error scraping https://gemeente.renkum.nl/Ondernemen/Parkmanagement/Bedrijf_vestigen_verhuizen_of_uitbreiden: HTTPSConnectionPool(host='gemeente.renkum.nl', port=443): Max retries exceeded with url: /Ondernemen/Parkmanagement/Bedrijf_vestigen_verhuizen_of_uitbreiden (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x107f5d310>: Failed to resolve 'gemeente.renkum.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://gemeente.renkum.nl/Ondernemen/Vergunningen_en_regels/Omgevingsvergunning",
+        "reason": "INVALID: Error scraping https://gemeente.renkum.nl/Ondernemen/Vergunningen_en_regels/Omgevingsvergunning: HTTPSConnectionPool(host='gemeente.renkum.nl', port=443): Max retries exceeded with url: /Ondernemen/Vergunningen_en_regels/Omgevingsvergunning (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x107f5d6d0>: Failed to resolve 'gemeente.renkum.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.renkum.nl/Ondernemers/Bouwen_en_vestigen/Zaken_om_rekening_mee_te_houden",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.renkum.nl/Ondernemers/Bouwen_en_vestigen/Zaken_om_rekening_mee_te_houden/Milieu_en_geluid",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.renkum.nl/Inwoners/Bouwen_en_verbouwen/Omgevingsvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.renkum.nl/Inwoners/Bouwen_en_verbouwen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  }
+}

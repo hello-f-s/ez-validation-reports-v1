@@ -1,0 +1,89 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DELFT",
+      "contact": {
+        "phone": "14 015",
+        "email": "null",
+        "website": "http://www.delft.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 11,
+    "false_sentences": 2,
+    "accuracy_percentage": 84.6,
+    "false_statements": [
+      {
+        "sentence": "Vergunning voor onbepaalde tijd bij 1 automaat: € 226,50",
+        "status": "false",
+        "note": "De actuele tarieven voor kansspelautomaten in Delft zijn anders dan vermeld. Deze bedragen zijn verouderd."
+      },
+      {
+        "sentence": "Vergunning voor onbepaalde tijd bij 2 automaten: € 362",
+        "status": "false",
+        "note": "De actuele tarieven voor kansspelautomaten in Delft zijn anders dan vermeld. Deze bedragen zijn verouderd."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.delft.nl/klein-kansspel-melden",
+      "https://www.delft.nl/omgevingsvergunning-aanvragen",
+      "https://www.delft.nl/alcoholwetvergunning",
+      "https://www.delft.nl/speelautomaten-plaatsen",
+      "https://www.delft.nl/omgevingsvergunning-milieu"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Hoelang duurt het? Melding: 4 weken, Gewone omgevingsvergunning: 8 weken, Uitgebreide omgevingsvergunning: 6 maanden",
+          "original_reference": "Hier kan geen specifieke informatie over gevonden worden op de website van deze gemeente.",
+          "note": "De bronpagina vermeldt specifieke behandeltermijnen voor verschillende type vergunningen, terwijl dit in de originele tekst ontbreekt.",
+          "source_urls": [
+            "https://www.delft.nl/omgevingsvergunning-milieu"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Kosten: Er zijn geen kosten.",
+          "original_reference": "Vergunning voor onbepaalde tijd bij 1 automaat: € 226,50, Vergunning voor onbepaalde tijd bij 2 automaten: € 362",
+          "note": "Er is een discrepantie in de kostenvermelding tussen de omgevingsvergunning milieu (geen kosten) en de speelautomatenvergunning (wel kosten).",
+          "source_urls": [
+            "https://www.delft.nl/omgevingsvergunning-milieu",
+            "https://www.delft.nl/speelautomaten-plaatsen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Heeft u uw aanvraag compleet ingediend? Dan handelt de gemeente deze binnen 3 maanden af.",
+          "original_reference": "Hier kan geen specifieke informatie over gevonden worden op de website van deze gemeente.",
+          "note": "Voor de alcoholwetvergunning wordt een specifieke behandeltermijn van 3 maanden genoemd, wat niet in de originele tekst staat.",
+          "source_urls": [
+            "https://www.delft.nl/alcoholwetvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de behandeltermijnen en kosten. De bronpagina's bevatten specifiekere informatie over behandeltermijnen voor verschillende vergunningen, die in de originele tekst ontbreken. Ook is er een verschil in de vermelding van kosten tussen verschillende type vergunningen. De informatie in de bronnen is gedetailleerder en specifieker dan in de originele tekst."
+  }
+}

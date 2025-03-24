@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "EINDHOVEN",
+      "contact": {
+        "phone": "14 040",
+        "email": "gemeente@eindhoven.nl",
+        "website": "http://www.eindhoven.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "Een volledig overzicht van de kosten is te vinden in de Legesverordening vergunningen 2025.",
+        "status": "false",
+        "note": "Er wordt verwezen naar de Legesverordening 2025, maar deze bestaat nog niet. De actuele tarieven zijn te vinden in de huidige Legesverordening van de gemeente Eindhoven."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.eindhoven.nl/formulier-huisvestingsverzoeken",
+      "https://www.eindhoven.nl/stad-en-wonen/evenement-organiseren",
+      "https://www.eindhoven.nl/vergunning-deelvervoer-aanvragen",
+      "https://www.eindhoven.nl/bouwen/vergunningen/omgevingsvergunning-voor-een-omgevingsplanactiviteit-aanleggen",
+      "https://www.eindhoven.nl/stad-en-wonen/evenement-organiseren/verklaring-van-geen-bezwaar"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://metadata-url-2",
+        "reason": "INVALID: Error scraping https://metadata-url-2: HTTPSConnectionPool(host='metadata-url-2', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x107e9c050>: Failed to resolve 'metadata-url-2' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://metadata-url-1",
+        "reason": "INVALID: Error scraping https://metadata-url-1: HTTPSConnectionPool(host='metadata-url-1', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x107bfefd0>: Failed to resolve 'metadata-url-1' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Verklaring van geen bezwaar van betrokken gemeentes bij evenementen",
+          "original_reference": "Mogelijk een verklaring van geen bezwaar van betrokken gemeentes",
+          "note": "De informatie over de verklaring van geen bezwaar komt overeen met de originele tekst",
+          "source_urls": [
+            "https://www.eindhoven.nl/stad-en-wonen/evenement-organiseren/verklaring-van-geen-bezwaar"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse van de beschikbare bronnen zijn er geen significante verschillen of tegenstrijdigheden gevonden met de originele inhoud. De informatie over voorwaarden, aanvraagprocedure, benodigde documenten, kosten en bezwaarmogelijkheden komt overeen met wat er in de originele tekst staat. De verwijzing naar het Omgevingsloket en de verklaring van geen bezwaar wordt in beide bronnen consistent behandeld."
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OPMEER",
+      "contact": {
+        "phone": "(0226) 36 33 33",
+        "email": "gemeente@opmeer.nl",
+        "website": "http://www.opmeer.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "U ontvangt binnen 8 weken bericht of u de ontheffing krijgt.",
+        "status": "false",
+        "note": "Volgens de Algemene wet bestuursrecht en de gemeentelijke website van Opmeer is de standaard beslistermijn voor een parkeervergunning/ontheffing 6 weken, niet 8 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 4,
+    "valid_urls": 4,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.opmeer.nl/parkeren-voor-autobedrijven",
+      "https://www.opmeer.nl/verkeersontheffing-aanvragen",
+      "https://www.opmeer.nl/parkeren-van-grote-voertuigen",
+      "https://www.opmeer.nl/omgevingsvergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Delen van het bedrijventerrein De Veken in Opmeer en Westerboekelweg in Hoogwoud zijn hiervan uitgezonderd.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over specifieke uitzonderingslocaties voor het parkeren van grote voertuigen, terwijl de bron wel specifieke locaties noemt.",
+          "source_urls": [
+            "https://www.opmeer.nl/parkeren-van-grote-voertuigen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De vergunning of een afschrift ervan moet tijdens de uitvoering van het werk ter plaatse aanwezig zijn en op eerste aanzegging van een ambtenaar van de gemeente Opmeer ter inzage worden gegeven.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de verplichting om de vergunning ter plaatse beschikbaar te hebben voor inspectie, terwijl dit wel een belangrijke voorwaarde is volgens de bron.",
+          "source_urls": [
+            "https://www.opmeer.nl/verkeersontheffing-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u een camper, caravan of kampeerwagen hebt die langer is dan 6 meter of hoger dan 2,4 meter, dan mag u deze maximaal 3 dagen op de weg parkeren. Hiervoor hoeft u geen ontheffing aan te vragen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de specifieke uitzonderingsregel voor campers, caravans en kampeerwagens, terwijl dit een belangrijke uitzondering is op de algemene regels.",
+          "source_urls": [
+            "https://www.opmeer.nl/parkeren-van-grote-voertuigen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten enkele belangrijke aanvullende details die niet in de originele tekst staan, waaronder specifieke uitzonderingslocaties voor grote voertuigen, de verplichting om vergunningen ter plaatse beschikbaar te hebben, en een speciale regeling voor recreatievoertuigen. Deze informatie is relevant voor een volledig begrip van de parkeerregels en vergunningsvereisten in de gemeente Opmeer."
+  }
+}

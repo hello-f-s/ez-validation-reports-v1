@@ -1,0 +1,96 @@
+{
+  "context": {
+    "municipality": {
+      "name": "GRONINGEN",
+      "contact": {
+        "phone": "14 050",
+        "email": "info@groningen.nl",
+        "website": "http://gemeente.groningen.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "Voor eenvoudige bouwplannen tot 10 woningen worden standaardbedragen gehanteerd, afhankelijk van de omvang van uw project.",
+        "status": "false",
+        "note": "De gemeente Groningen hanteert geen standaardbedragen voor bouwplannen tot 10 woningen. De legeskosten worden berekend als percentage van de bouwsom volgens de legesverordening, ongeacht het aantal woningen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 8,
+    "valid_urls": 5,
+    "invalid_urls": 3,
+    "accuracy_percentage": 62.5,
+    "valid_urls_list": [
+      "https://www.gemeente.groningen.nl",
+      "https://gemeente.groningen.nl/milieuvergunning-aanvragen-of-melden",
+      "https://gemeente.groningen.nl/omgevingsvergunning-aanvragen",
+      "https://gemeente.groningen.nl/kapvergunning-aanvragen",
+      "https://gemeente.groningen.nl/bekendmakingen-en-regelingen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.omgevingsloket.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://gemeente.groningen.nl/onttrekkingsvergunning-voor-bedrijfsdoeleinden-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://omgevingswet.overheid.nl/home",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vanaf 1 januari 2024 treedt de Omgevingswet in werking. Vanaf dan gelden de gemeentelijke regels uit het omgevingsplan als uw activiteit plaatsvindt binnen de bebouwingscontour houtkap",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat specifieke informatie over de inwerkingtreding van de Omgevingswet en de gevolgen daarvan voor kapvergunningen, wat ontbreekt in de originele tekst",
+          "source_urls": [
+            "https://gemeente.groningen.nl/kapvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Ook als u een vergunning krijgt, mag u nog niet direct kappen. U moet 6 weken wachten. Dat is de periode waarin andere mensen bezwaar kunnen indienen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de verplichte wachtperiode van 6 weken na het verkrijgen van een kapvergunning",
+          "source_urls": [
+            "https://gemeente.groningen.nl/kapvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Minstens 4 weken voor oprichten of verandering van uw bedrijf moet u de milieuvergunning aanvragen of de melding doen",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt geen specifieke termijn voor het vooraf aanvragen van vergunningen, terwijl de bronpagina een minimumtermijn van 4 weken noemt",
+          "source_urls": [
+            "https://gemeente.groningen.nl/milieuvergunning-aanvragen-of-melden"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen nieuwe informatie over de Omgevingswet per 2024, een verplichte wachtperiode van 6 weken bij kapvergunningen en specifieke aanvraagtermijnen voor milieuvergunningen. Deze essentiële details ontbreken in de originele tekst maar zijn wel belangrijk voor de correcte procedure."
+  }
+}

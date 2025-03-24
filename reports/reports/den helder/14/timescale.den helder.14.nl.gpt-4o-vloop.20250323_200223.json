@@ -1,0 +1,68 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DEN HELDER",
+      "contact": {
+        "phone": "null",
+        "email": "info@denhelder.nl",
+        "website": "http://www.denhelder.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 17,
+    "false_sentences": 2,
+    "accuracy_percentage": 89.5,
+    "false_statements": [
+      {
+        "sentence": "Kosten voor een ontheffing bedragen € 53,25.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Den Helder bedragen de kosten voor een ontheffing € 54,25 (€ 29,25 legeskosten en € 25,00 borg voor de sleutel)."
+      },
+      {
+        "sentence": "Hiervan is € 28,25 voor de behandeling van de aanvraag en € 25,- als borg voor de sleutel.",
+        "status": "false",
+        "note": "De legeskosten voor de behandeling van de aanvraag bedragen € 29,25 (niet € 28,25) volgens de actuele tarieven van gemeente Den Helder."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 0,
+    "invalid_urls": 5,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.denhelder.nl/Onderwerpen/verkeer/Ontheffing_voor_rijden_in_voetgangersgebied",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.denhelder.nl/Onderwerpen/verkeer",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.denhelder.nl/Onderwerpen/verkeer/Gehandicaptenparkeerplaats_aanvragen_aanpassen_of_opheffen",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.denhelder.nl/Onderwerpen/Bouwen_en_verbouwen/Omgevingsvergunning",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.denhelder.nl/Onderwerpen/Bouwen_en_verbouwen/Omgevingsvergunning_Veelgestelde_vragen",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  }
+}

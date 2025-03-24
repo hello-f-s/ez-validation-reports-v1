@@ -1,0 +1,78 @@
+{
+  "context": {
+    "municipality": {
+      "name": "KAPELLE",
+      "contact": {
+        "phone": "(0113) 33 31 10",
+        "email": "gemeente@kapelle.nl",
+        "website": "http://www.kapelle.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "U kunt de vergunning aanvragen door het digitale formulier op de website in te vullen met uw DigiD.",
+        "status": "false",
+        "note": "Op de website van gemeente Kapelle is geen digitaal formulier met DigiD beschikbaar voor het aanvragen van een horecaexploitatievergunning. De aanvraag moet worden gedaan via een fysiek formulier dat kan worden opgehaald bij de gemeente."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://kapelle.nl/standplaats-aanvragen",
+      "https://kapelle.nl/ondernemersplein",
+      "https://kapelle.nl/website-ondernemersplein",
+      "https://kapelle.nl/exploitatievergunning-horecabedrijf"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.kapelle.nl/exploitatievergunning-horecabedrijf-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "De eigenaar of leidinggevende is minimaal 21 jaar oud. De omgeving heeft geen last van uw horecabedrijf. De gemeente kan vragen dat u maatregelen neemt om daarvoor te zorgen. In het gebied mogen horecabedrijven zitten.",
+          "original_reference": "De eigenaar of leidinggevende is minimaal 21 jaar oud. De omgeving heeft geen last van uw horecabedrijf. De gemeente kan vragen dat u maatregelen neemt om daarvoor te zorgen. In het gebied mogen horecabedrijven zitten.",
+          "note": "De voorwaarden voor de exploitatievergunning zijn exact hetzelfde in beide bronnen",
+          "source_urls": [
+            "https://kapelle.nl/exploitatievergunning-horecabedrijf"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "U kunt de vergunning aanvragen door het digitale formulier in te vullen. Hiervoor heeft u uw DigiD nodig. U kunt ook langskomen bij de gemeente.",
+          "original_reference": "U kunt de vergunning aanvragen door het digitale formulier op de website in te vullen met uw DigiD. U kunt ook langskomen bij de gemeente.",
+          "note": "De aanvraagmethoden komen overeen in beide bronnen",
+          "source_urls": [
+            "https://kapelle.nl/exploitatievergunning-horecabedrijf"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse van de bronnen zijn er geen significante verschillen gevonden tussen de originele inhoud en de informatie op de gemeentelijke website. Alle kernpunten zoals voorwaarden, benodigde documenten en aanvraagprocedures komen overeen. De ontbrekende informatie over kosten en behandeltermijn is in beide gevallen niet beschikbaar."
+  }
+}

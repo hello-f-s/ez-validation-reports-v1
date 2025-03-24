@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DALFSEN",
+      "contact": {
+        "phone": "14 0529",
+        "email": "gemeente@dalfsen.nl",
+        "website": "http://www.dalfsen.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 16,
+    "true_sentences": 15,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.8,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor de aanvraag van een vergunning voor het exploiteren van een openbare inrichting bedragen € 423,60.",
+        "status": "false",
+        "note": "Volgens de actuele legesverordening van de gemeente Dalfsen bedragen de kosten voor een exploitatievergunning € 432,70 (2024)."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.dalfsen.nl/exploitatievergunning-horecabedrijf",
+      "https://www.dalfsen.nl/omgevingsvergunning",
+      "https://www.dalfsen.nl/ontheffing-sluitingstijd-horeca",
+      "https://www.dalfsen.nl/bedrijfsactiviteiten-wijzigen",
+      "https://www.dalfsen.nl/alcoholvergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De houder/leidinggevende is minimaal 18 jaar en van onbesproken gedrag",
+          "original_reference": "De houder of leidinggevende moet minimaal 18 jaar oud zijn en van onbesproken gedrag.",
+          "note": "Voor alcoholvergunningen geldt een minimumleeftijd van 21 jaar voor leidinggevenden, terwijl voor de exploitatievergunning 18 jaar voldoende is. Dit is een belangrijk onderscheid dat niet duidelijk wordt gemaakt in de originele tekst.",
+          "source_urls": [
+            "https://www.dalfsen.nl/alcoholvergunning",
+            "https://www.dalfsen.nl/exploitatievergunning-horecabedrijf"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De woon- of leefsituatie in de omgeving van de openbare inrichting of de openbare orde mag niet op ontoelaatbare wijze nadelig wordt beïnvloed",
+          "original_reference": "De woon- of leefsituatie in de omgeving van de openbare inrichting of de openbare orde mag niet onaanvaardbaar nadelig worden beïnvloed.",
+          "note": "De bronpagina gebruikt de term 'ontoelaatbare wijze' in plaats van 'onaanvaardbaar', wat een nuanceverschil in de juridische formulering aangeeft.",
+          "source_urls": [
+            "https://www.dalfsen.nl/exploitatievergunning-horecabedrijf"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U vraagt de vergunning aan bij de gemeente. Maak voor het aanvragen van een vergunning een afspraak met één van de medewerkers van het team Openbare Orde.",
+          "original_reference": "Neem contact op met de gemeente Dalfsen en maak een afspraak met een van de medewerkers van het team Openbare Orde.",
+          "note": "De bronpagina is directer in de instructie en noemt specifiek dat het om een afspraak voor de vergunningsaanvraag gaat, terwijl de originele tekst algemener is geformuleerd.",
+          "source_urls": [
+            "https://www.dalfsen.nl/exploitatievergunning-horecabedrijf"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de leeftijdsvereisten voor leidinggevenden (18 vs 21 jaar bij alcoholvergunning), de juridische formulering van de voorwaarden en de specifiekere instructies voor het aanvragen van de vergunning. De basisinformatie komt grotendeels overeen, maar de bronpagina's bieden op enkele punten preciezere formuleringen."
+  }
+}

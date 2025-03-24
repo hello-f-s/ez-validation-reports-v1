@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "BARNEVELD",
+      "contact": {
+        "phone": "14 0342",
+        "email": "info@barneveld.nl",
+        "website": "http://www.barneveld.nl"
+      }
+    },
+    "service": {
+      "id": 8,
+      "name": "Marktvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 10,
+    "true_sentences": 8,
+    "false_sentences": 2,
+    "accuracy_percentage": 80.0,
+    "false_statements": [
+      {
+        "sentence": "Voor een doorlopende standplaats betaalt u € 32,95 per meter per jaar en eenmalig € 66.",
+        "status": "false",
+        "note": "De actuele tarieven voor 2024 zijn anders: € 34,25 per meter per jaar voor een doorlopende standplaats met een eenmalig bedrag van € 68,65 volgens de tarieventabel van gemeente Barneveld"
+      },
+      {
+        "sentence": "Voor een kortdurende standplaats betaalt u € 12,55 per meter per dag (met een maximale diepte van 3 meter) plus eenmalig € 66.",
+        "status": "false",
+        "note": "De actuele tarieven voor 2024 zijn anders: € 13,05 per meter per dag voor een kortdurende standplaats met een eenmalig bedrag van € 68,65 volgens de tarieventabel van gemeente Barneveld"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.barneveld.nl/vergunningen-en-ontheffingen/horeca/exploitatievergunning-aanvragen",
+      "https://www.barneveld.nl/ondernemen/standplaatsvergunning-aanvragen",
+      "https://www.barneveld.nl/vergunningen-en-ontheffingen/evenementen/evenementenvergunning-aanvragen",
+      "https://www.barneveld.nl/vergunningen-en-ontheffingen/evenementen/loterij-organiseren",
+      "https://www.barneveld.nl/ondernemen/aanbestedingen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "€ 32,95 per meter, per uur per week, gedurende 1 jaar",
+          "original_reference": "€ 32,95 per meter per jaar",
+          "note": "De bronwebsite specificeert dat het tarief per uur per week is, terwijl de originele tekst alleen per jaar vermeldt. Dit is een significant verschil in de berekening van kosten.",
+          "source_urls": [
+            "https://www.barneveld.nl/ondernemen/standplaatsvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Artikel 5.17 van de Algemene Plaatselijke Verordening gemeente Barneveld",
+          "original_reference": "Artikel 5.17 van de Algemene Plaatselijke Verordening gemeente Barneveld",
+          "note": "De regelgeving verwijzing is exact hetzelfde in beide bronnen.",
+          "source_urls": [
+            "https://www.barneveld.nl/ondernemen/standplaatsvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "binnen 8 weken na uw aanvraag ontvangt u ons besluit",
+          "original_reference": "Binnen 8 weken na uw aanvraag ontvangt u het besluit van de gemeente",
+          "note": "De behandeltermijn van 8 weken komt overeen in beide bronnen.",
+          "source_urls": [
+            "https://www.barneveld.nl/ondernemen/standplaatsvergunning-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "Er is één belangrijk verschil gevonden in de tariefstructuur voor doorlopende standplaatsen. De bronwebsite specificeert een meer gedetailleerde berekening (per uur per week) dan de originele tekst (per jaar). Dit kan leiden tot verschillende kostencalculaties. De overige informatie, zoals regelgeving en behandeltermijnen, komt overeen."
+  }
+}

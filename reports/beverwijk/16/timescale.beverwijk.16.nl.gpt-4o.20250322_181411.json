@@ -1,0 +1,92 @@
+{
+  "context": {
+    "municipality": {
+      "name": "BEVERWIJK",
+      "contact": {
+        "phone": "(0251) 25 62 56",
+        "email": "info@beverwijk.nl",
+        "website": "http://www.beverwijk.nl"
+      }
+    },
+    "service": {
+      "id": 16,
+      "name": "Registreren in het Landelijk Register Kinderopvang (LRK)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Na ontvangst neemt de gemeente, op basis van het GGD advies, binnen 10 weken een besluit of de opvang mag starten.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Beverwijk is de wettelijke beslistermijn voor een aanvraag kinderopvang niet 10 maar maximaal 13 weken na ontvangst van een complete aanvraag."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.beverwijk.nl/kinderopvangtoeslag",
+      "https://www.beverwijk.nl/form/aanvraagformulier-minimaregeling/introductie-0",
+      "https://www.beverwijk.nl/kinderopvang-starten",
+      "https://www.beverwijk.nl/e-loket-bedrijven",
+      "https://www.beverwijk.nl/overzicht-vragen-voor-jaarlijkse-subsidie-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.landelijkregisterkinderopvang.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      },
+      {
+        "url": "https://www.rijksoverheid.nl",
+        "reason": "INVALID: URL does not belong to municipality website"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Na ontvangst van een aanvraag toetst de gemeente op volledigheid. De gemeente toetst niet of de ingediende documenten aan de eisen voldoen, dit doet de GGD. Binnen 10 weken na ontvangst nemen wij, op basis van het advies van de GGD, een besluit of de opvang mag starten.",
+          "original_reference": "Na ontvangst neemt de gemeente, op basis van het GGD advies, binnen 10 weken een besluit of de opvang mag starten.",
+          "note": "De informatie over de beoordelingstermijn en procedure komt overeen met de originele tekst",
+          "source_urls": [
+            "https://www.beverwijk.nl/kinderopvang-starten"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vanaf januari 2017 zijn wij in samenwerking met de GGD gestart met het Nieuwe Toezicht 'Streng aan de Poort'",
+          "original_reference": "Documenten en informatie volgens de 'Korte uitleg procedure Streng aan de Poort'",
+          "note": "De bronpagina geeft extra context over wanneer 'Streng aan de Poort' is ingevoerd (januari 2017), wat niet vermeld staat in de originele tekst",
+          "source_urls": [
+            "https://www.beverwijk.nl/kinderopvang-starten"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Ouders/verzorgers die gebruikmaken van een geregistreerde vorm van kinderopvang, kunnen een tegemoetkoming in de kosten aanvragen bij de Belastingdienst.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat aanvullende informatie over kinderopvangtoeslag voor ouders, wat niet genoemd wordt in de originele tekst",
+          "source_urls": [
+            "https://www.beverwijk.nl/kinderopvang-starten"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten grotendeels consistente informatie met de originele tekst, maar bieden enkele belangrijke aanvullingen: de startdatum van het 'Streng aan de Poort' beleid (januari 2017) en informatie over kinderopvangtoeslag voor ouders. De kernprocedures en termijnen komen overeen met de originele tekst."
+  }
+}

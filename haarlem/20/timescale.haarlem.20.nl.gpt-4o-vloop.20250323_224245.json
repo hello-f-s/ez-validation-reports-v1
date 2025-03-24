@@ -1,0 +1,81 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HAARLEM",
+      "contact": {
+        "phone": "14 023",
+        "email": "antwoord@haarlem.nl",
+        "website": "http://www.haarlem.nl"
+      }
+    },
+    "service": {
+      "id": 20,
+      "name": "Vergunning voor seksbedrijf"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 27,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.4,
+    "false_statements": [
+      {
+        "sentence": "Telefonisch contact is mogelijk via 14 023, bereikbaar elke werkdag van 8.30 tot 16.30 uur.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Haarlem is het telefoonnummer 14 023 bereikbaar van 8.30 tot 17.00 uur op werkdagen, niet tot 16.30 uur zoals vermeld."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 3,
+    "invalid_urls": 2,
+    "accuracy_percentage": 60.0,
+    "valid_urls_list": [
+      "https://haarlem.nl/exploitatievergunning",
+      "https://haarlem.nl/bouwvergunning",
+      "https://haarlem.nl/alcoholvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://haarlem.nl/vergunning-seksinrichting-escortbedrijf",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.haarlem.nl/ufs/formulieren.eb?id=seksinrichting_of_escortbedrijf",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor het serveren van eten en non-alcoholische drank in uw onderneming, hebt u een exploitatievergunning nodig. Bijvoorbeeld als u een cafetaria, coffeeshop of ijssalon hebt. Als u alcohol serveert, hebt u een alcoholvergunning nodig en hoeft u geen exploitatievergunning aan te vragen.",
+          "original_reference": "Wanneer u een seksinrichting of escortbedrijf wilt starten of overnemen, dient u een exploitatievergunning aan te vragen.",
+          "note": "De bronpagina beschrijft een ander type exploitatievergunning (voor horeca) dan de originele tekst (voor seksinrichtingen). Dit zijn twee verschillende vergunningen met andere voorwaarden.",
+          "source_urls": [
+            "https://haarlem.nl/exploitatievergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "een tekening van de inrichting met de lokaliteit(en), schaal minimaal 1 : 1000",
+          "original_reference": "Een nauwkeurige plattegrondtekening van de gehele inrichting, schaal 1:100",
+          "note": "Er is een verschil in de vereiste schaal van de plattegrondtekening. De originele tekst vraagt om 1:100, terwijl de bronpagina 1:1000 vermeldt.",
+          "source_urls": [
+            "https://haarlem.nl/exploitatievergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen het type exploitatievergunning dat wordt beschreven (seksinrichtingen versus horeca) en de vereiste schaal voor plattegrondtekeningen. De bronpagina's bevatten geen specifieke informatie over vergunningen voor seksinrichtingen, waardoor een volledige vergelijking van tarieven en andere specifieke vereisten niet mogelijk is. De gevonden verschillen suggereren dat de informatie mogelijk uit verschillende gemeentelijke regelingen komt."
+  }
+}

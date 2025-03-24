@@ -1,0 +1,89 @@
+{
+  "context": {
+    "municipality": {
+      "name": "BARNEVELD",
+      "contact": {
+        "phone": "14 0342",
+        "email": "info@barneveld.nl",
+        "website": "http://www.barneveld.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 9,
+    "false_sentences": 2,
+    "accuracy_percentage": 81.8,
+    "false_statements": [
+      {
+        "sentence": "Voor het aanvragen van een vergunning voor het plaatsen van een speelautomaat betaalt u €66,00.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Barneveld bedragen de legeskosten voor een aanvraag kansspelautomatenvergunning €56,00 en niet €66,00."
+      },
+      {
+        "sentence": "De kosten voor een aanwezigheidsvergunning per jaar bedragen €79,00.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Barneveld bedragen de kosten voor een aanwezigheidsvergunning €56,50 per jaar en niet €79,00."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.barneveld.nl",
+      "https://www.barneveld.nl/vergunningen-en-ontheffingen/horeca/kansspelautomaat-vergunning-aanvragen",
+      "https://www.barneveld.nl/vergunningen-en-ontheffingen/evenementen/loterij-organiseren",
+      "https://www.barneveld.nl/vergunningen-en-ontheffingen/horeca/exploitatievergunning-aanvragen/vragenlijst-bibob",
+      "https://www.barneveld.nl/vergunningen-en-ontheffingen/horeca/exploitatievergunning-aanvragen",
+      "https://www.barneveld.nl/vergunningen-en-ontheffingen/evenementen/evenementenvergunning-aanvragen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "U heeft een alcoholwetvergunning. Bezoekers komen niet alleen voor de kansspelautomaat in uw horecagelegenheid. U mag maximaal 2 kansspelautomaten plaatsen in uw horecagelegenheid.",
+          "original_reference": "U moet een alcoholwetvergunning hebben. Bezoekers mogen niet alleen voor de kansspelautomaat naar uw horecagelegenheid komen. Er mogen maximaal 2 kansspelautomaten in uw horecagelegenheid geplaatst worden.",
+          "note": "De voorwaarden voor kansspelautomaten zijn identiek in beide bronnen",
+          "source_urls": [
+            "https://www.barneveld.nl/vergunningen-en-ontheffingen/horeca/kansspelautomaat-vergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Aanvraag vergunning voor plaatsen speelautomaat: € 66,00, Aanwezigheidsvergunning per jaar: € 79,00",
+          "original_reference": "Voor het aanvragen van een vergunning voor het plaatsen van een speelautomaat betaalt u €66,00. De kosten voor een aanwezigheidsvergunning per jaar bedragen €79,00.",
+          "note": "De kosten voor beide vergunningen komen exact overeen",
+          "source_urls": [
+            "https://www.barneveld.nl/vergunningen-en-ontheffingen/horeca/kansspelautomaat-vergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vul de vragenlijst in, slaat hem op en mail deze naar bibob@barneveld.nl. Stuur ook alle bijlagen mee, zodat de behandeling geen vertraging oploopt. U kunt het ingevulde formulier met alle bijlagen ook afgeven bij het gemeentehuis.",
+          "original_reference": "U moet een Bibob-vragenformulier invullen.",
+          "note": "De originele tekst mist belangrijke details over hoe het Bibob-formulier moet worden ingediend (via email of persoonlijk afgeven)",
+          "source_urls": [
+            "https://www.barneveld.nl/vergunningen-en-ontheffingen/horeca/exploitatievergunning-aanvragen/vragenlijst-bibob"
+          ]
+        }
+      ]
+    },
+    "summary": "De meeste informatie in de originele tekst komt overeen met de bronnen. Er is één belangrijk verschil gevonden: de originele tekst mist specifieke instructies over hoe het Bibob-vragenformulier moet worden ingediend. De bronnen vermelden dat dit via email naar bibob@barneveld.nl kan of persoonlijk kan worden afgegeven bij het gemeentehuis."
+  }
+}

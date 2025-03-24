@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "NIJMEGEN",
+      "contact": {
+        "phone": "14 024",
+        "email": "gemeente@nijmegen.nl",
+        "website": "http://www.nijmegen.nl"
+      }
+    },
+    "service": {
+      "id": 9,
+      "name": "Mobiele puinbreker gebruiken"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "Voor het melden van bouwmaterialen zijn er geen kosten vermeld.",
+        "status": "false",
+        "note": "Volgens de website van gemeente Nijmegen kost een melding voor het plaatsen van bouwmaterialen op openbaar terrein €63,70 (tarief 2024)."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.nijmegen.nl/diensten/bouwen-en-wonen/slopen-vergunning/",
+      "https://www.nijmegen.nl/diensten/vergunningen/grond-afvoeren-of-aanbrengen/",
+      "https://www.nijmegen.nl/diensten/bouwen-en-wonen/bouwmaterialen-op-openbaar-terrein/",
+      "https://www.nijmegen.nl/formulieren/bouwmaterialen-op-openbaar-terrein-meldenvergunning-aanvragen/",
+      "https://www.nijmegen.nl/diensten/vergunningen/kappen-of-rooien-van-bomen/"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Meldingen uiterlijk om 9.00 's ochtends op de werkdag voor de dag dat u de materialen wilt plaatsen. Vergunning uiterlijk 3 weken vóór de start van uw werkzaamheden",
+          "original_reference": "Er is geen specifieke informatie gegeven over de doorlooptijd voor het aanvragen van een melding of vergunning voor een mobiele puinbreker.",
+          "note": "De bron specificeert concrete aanvraagtermijnen die niet in de originele tekst staan: melding één werkdag van tevoren vóór 9:00 uur, vergunning 3 weken van tevoren.",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/bouwen-en-wonen/bouwmaterialen-op-openbaar-terrein/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wilt u een mobiele kraan plaatsen waarmee u een weg afsluit? Dan heeft u wel een vergunning nodig",
+          "original_reference": "No matching information",
+          "note": "De bron vermeldt een specifieke uitzondering voor mobiele kranen die een weg afsluiten (altijd vergunningplichtig) die niet in de originele tekst staat.",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/bouwen-en-wonen/bouwmaterialen-op-openbaar-terrein/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U mag met uw melding of vergunning ook staan op plaatsen waar betaald parkeren geldt",
+          "original_reference": "No matching information",
+          "note": "De bron vermeldt expliciet dat materialen ook op betaald parkeren geplaatst mogen worden, wat niet in de originele tekst staat.",
+          "source_urls": [
+            "https://www.nijmegen.nl/diensten/bouwen-en-wonen/bouwmaterialen-op-openbaar-terrein/"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie die niet in de originele tekst staat, waaronder specifieke aanvraagtermijnen, een uitzondering voor mobiele kranen die wegen afsluiten, en de mogelijkheid om materialen op betaald parkeerplaatsen te plaatsen. Deze informatie is essentieel voor een complete en accurate beschrijving van de voorwaarden en procedures."
+  }
+}

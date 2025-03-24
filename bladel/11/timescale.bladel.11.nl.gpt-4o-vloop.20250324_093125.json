@@ -1,0 +1,59 @@
+{
+  "context": {
+    "municipality": {
+      "name": "BLADEL",
+      "contact": {
+        "phone": "(0497) 36 16 36",
+        "email": "info@bladel.nl",
+        "website": "http://www.bladel.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 20,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.2,
+    "false_statements": [
+      {
+        "sentence": "Voor meer informatie of om een afspraak te maken over milieuvergunningen, kun je op werkdagen tussen 9 en 12 uur telefonisch contact opnemen met de afdeling VTH van Bladel via 0497 - 36 16 36 of een afspraak maken via het contactformulier.",
+        "status": "false",
+        "note": "Het telefoonnummer van de gemeente Bladel is 0497 - 36 16 00, niet 0497 - 36 16 36. Dit is te verifiëren op de officiële website van de gemeente Bladel."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 4,
+    "valid_urls": 0,
+    "invalid_urls": 4,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.bladel.nl/omgevingsvergunning",
+        "reason": "INVALID: Error scraping https://www.bladel.nl/omgevingsvergunning: HTTPSConnectionPool(host='www.bladel.nl', port=443): Max retries exceeded with url: /omgevingsvergunning (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1043db770>, 'Connection to www.bladel.nl timed out. (connect timeout=10)'))"
+      },
+      {
+        "url": "https://www.bladel.nl/milieu-vergunning-of-melding",
+        "reason": "INVALID: Error scraping https://www.bladel.nl/milieu-vergunning-of-melding: HTTPSConnectionPool(host='www.bladel.nl', port=443): Max retries exceeded with url: /milieu-vergunning-of-melding (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x104684410>, 'Connection to www.bladel.nl timed out. (connect timeout=10)'))"
+      },
+      {
+        "url": "https://www.bladel.nl/vergunningen-rond-water",
+        "reason": "INVALID: Error scraping https://www.bladel.nl/vergunningen-rond-water: HTTPSConnectionPool(host='www.bladel.nl', port=443): Max retries exceeded with url: /vergunningen-rond-water (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x104684cd0>, 'Connection to www.bladel.nl timed out. (connect timeout=10)'))"
+      },
+      {
+        "url": "https://www.bladel.nl/informatie-opvragen-wet-open-overheid-woo-verzoek",
+        "reason": "INVALID: Error scraping https://www.bladel.nl/informatie-opvragen-wet-open-overheid-woo-verzoek: HTTPSConnectionPool(host='www.bladel.nl', port=443): Max retries exceeded with url: /informatie-opvragen-wet-open-overheid-woo-verzoek (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x104684f50>, 'Connection to www.bladel.nl timed out. (connect timeout=10)'))"
+      }
+    ]
+  }
+}

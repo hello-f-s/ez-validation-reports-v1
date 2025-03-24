@@ -1,0 +1,105 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ENSCHEDE",
+      "contact": {
+        "phone": "14 053",
+        "email": "postbus20@enschede.nl",
+        "website": "http://www.enschede.nl"
+      }
+    },
+    "service": {
+      "id": 13,
+      "name": "Omzettingsvergunning voor kamerverhuur aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Voor kamerverhuur waarbij drie of meer personen in een woning verblijven, is het noodzakelijk een omgevingsvergunning aan te vragen.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Enschede is een omgevingsvergunning pas nodig bij verhuur aan 4 of meer personen, niet bij 3 personen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 8,
+    "valid_urls": 5,
+    "invalid_urls": 3,
+    "accuracy_percentage": 62.5,
+    "valid_urls_list": [
+      "https://www.enschede.nl/regels-voor-kamerverhuurpanden",
+      "https://www.enschede.nl/vergunning-voor-kamerverhuur",
+      "https://www.enschede.nl/omgevingsvergunning",
+      "https://www.enschede.nl/milieuregels",
+      "https://www.enschede.nl/informatie-voor-kamerverhuurders"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.enschede.nl/diensten/informatie-voor-kamerverhuurders",
+        "reason": "INVALID: Error scraping https://www.enschede.nl/diensten/informatie-voor-kamerverhuurders: 404 Client Error: Not Found for url: https://www.enschede.nl/diensten/informatie-voor-kamerverhuurders"
+      },
+      {
+        "url": "https://www.enschede.nl/diensten/regels-voor-kamerverhuurpanden",
+        "reason": "INVALID: Error scraping https://www.enschede.nl/diensten/regels-voor-kamerverhuurpanden: 404 Client Error: Not Found for url: https://www.enschede.nl/diensten/regels-voor-kamerverhuurpanden"
+      },
+      {
+        "url": "https://www.enschede.nl/diensten/vergunning-voor-kamerverhuur",
+        "reason": "INVALID: Error scraping https://www.enschede.nl/diensten/vergunning-voor-kamerverhuur: 404 Client Error: Not Found for url: https://www.enschede.nl/diensten/vergunning-voor-kamerverhuur"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 4,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bij de aanvraag van een verhuurvergunning wordt een Bibob-onderzoek gedaan. Voeg een ingevuld formulier toe bij uw aanvraag van een verhuurvergunning.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de vereiste van een Bibob-onderzoek en bijbehorend formulier, wat een essentiële voorwaarde is voor de aanvraag.",
+          "source_urls": [
+            "https://www.enschede.nl/vergunning-voor-kamerverhuur"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De eigenaar van een pand is zelf verantwoordelijk voor de brandveiligheid van dat pand. Dit is vastgelegd in het Bouwbesluit 2012. Plaatsen van brandblussers en rookmelders. Doen van een melding brandveilig gebruik gebouwen als u 5 kamers of meer verhuurt.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst noemt brandveiligheid alleen algemeen, terwijl de bron specifieke eisen noemt zoals brandblussers, rookmelders en een aparte melding bij 5+ kamers.",
+          "source_urls": [
+            "https://www.enschede.nl/informatie-voor-kamerverhuurders"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Conceptverzoek: € 304,80",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt geen specifiek bedrag voor een conceptverzoek, terwijl dit wel genoemd wordt in de bronnen.",
+          "source_urls": [
+            "https://www.enschede.nl/omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als verhuurder moet u leefregels opstellen waaraan uw huurders moeten voldoen. Dit is ook een voorwaarde in de vergunning.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de verplichting tot het opstellen van leefregels voor huurders, wat wel een vergunningsvoorwaarde blijkt te zijn.",
+          "source_urls": [
+            "https://www.enschede.nl/informatie-voor-kamerverhuurders"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie die niet in de originele tekst staat, waaronder de vereiste van een Bibob-onderzoek, specifieke brandveiligheidseisen, concrete kosten voor conceptverzoeken en de verplichting tot het opstellen van leefregels. Deze informatie is essentieel voor een complete en correcte aanvraagprocedure voor kamerverhuur."
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "context": {
+    "municipality": {
+      "name": "GRONINGEN",
+      "contact": {
+        "phone": "14 050",
+        "email": "info@groningen.nl",
+        "website": "http://gemeente.groningen.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 27,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.4,
+    "false_statements": [
+      {
+        "sentence": "Voor het in behandeling nemen van een omgevingsvergunning betaalt u een percentage van de bouwsom als legeskosten. Deze kosten staan vermeld in de legesverordening 2025 (Paragraaf 2.3, Artikel 2.5).",
+        "status": "false",
+        "note": "Er wordt verwezen naar de legesverordening 2025, maar deze bestaat nog niet. De huidige geldende legesverordening is die van 2024."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://gemeente.groningen.nl/omgevingsvergunning-aanvragen",
+      "https://gemeente.groningen.nl/bekendmakingen-en-regelingen",
+      "https://gemeente.groningen.nl/milieuvergunning-aanvragen-of-melden",
+      "https://gemeente.groningen.nl/kapvergunning-aanvragen",
+      "https://www.gemeente.groningen.nl"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://gemeente.groningen.nl/onttrekkingsvergunning-voor-bedrijfsdoeleinden-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Ook als u een vergunning krijgt, mag u nog niet direct kappen. U moet 6 weken wachten. Dat is de periode waarin andere mensen bezwaar kunnen indienen.",
+          "original_reference": "Als iemand bezwaar heeft tegen een verleende omgevingsvergunning, kunnen zij binnen 6 weken na de publicatiedatum van het ontwerpbesluit een zienswijze indienen.",
+          "note": "De originele tekst spreekt over een zienswijze indienen, terwijl de brontekst specifiek aangeeft dat er na verlening een wachtperiode van 6 weken is voordat met kappen mag worden begonnen.",
+          "source_urls": [
+            "https://gemeente.groningen.nl/kapvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Vanaf 1 januari 2024 treedt de Omgevingswet in werking. Vanaf dan gelden de gemeentelijke regels uit het omgevingsplan als uw activiteit plaatsvindt binnen de bebouwingscontour houtkap.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke informatie over de bebouwingscontour houtkap die vanaf 2024 van toepassing is bij de nieuwe Omgevingswet.",
+          "source_urls": [
+            "https://gemeente.groningen.nl/kapvergunning-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de specifieke wachtperiode na kapvergunningverlening en ontbrekende informatie over de bebouwingscontour houtkap in relatie tot de Omgevingswet 2024. De originele tekst is minder specifiek over de concrete wachttijd na vergunningverlening en mist details over geografische beperkingen bij kapvergunningen."
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HAARLEM",
+      "contact": {
+        "phone": "14 023",
+        "email": "antwoord@haarlem.nl",
+        "website": "http://www.haarlem.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 12,
+    "false_sentences": 2,
+    "accuracy_percentage": 85.7,
+    "false_statements": [
+      {
+        "sentence": "U kunt deze vergunning aanvragen als: U al een alcoholvergunning hebt aangevraagd, zelfs als deze nog niet verleend is.",
+        "status": "false",
+        "note": "Volgens de gemeente Haarlem moet u in het bezit zijn van een geldige alcoholvergunning (Drank- en Horecawetvergunning), niet alleen een aanvraag hebben ingediend."
+      },
+      {
+        "sentence": "Bij afwijzing of intrekking van de aanvraag betaalt u € 22,50.",
+        "status": "false",
+        "note": "Dit bedrag komt niet overeen met de actuele legeskosten op de website van de gemeente Haarlem. Bij afwijzing of intrekking worden de volledige legeskosten in rekening gebracht."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 4,
+    "invalid_urls": 2,
+    "accuracy_percentage": 66.7,
+    "valid_urls_list": [
+      "https://haarlem.nl/exploitatievergunning",
+      "https://haarlem.nl/kansspelvergunning",
+      "https://haarlem.nl/terrasvergunning",
+      "https://haarlem.nl/bouwvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://gemeente-haarlem.nl",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://haarlem.nl/vergunning-gokautomaten",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u alcohol serveert, hebt u een alcoholvergunning nodig en hoeft u geen exploitatievergunning aan te vragen.",
+          "original_reference": "U een restaurant of café met een alcoholvergunning hebt.",
+          "note": "De originele tekst suggereert dat een alcoholvergunning naast andere vergunningen nodig is, terwijl de bron aangeeft dat bij een alcoholvergunning geen exploitatievergunning nodig is.",
+          "source_urls": [
+            "https://haarlem.nl/exploitatievergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "Er is één belangrijk verschil gevonden met betrekking tot de combinatie van vergunningen. De originele tekst is mogelijk verwarrend over de vereiste vergunningen voor horecazaken die alcohol serveren. Voor de overige aspecten van de kansspelautomatenvergunning zijn geen directe tegenstrijdigheden gevonden in de beschikbare bronnen. Veel van de specifieke details uit de originele tekst (zoals kosten en voorwaarden) kunnen niet geverifieerd worden omdat deze informatie niet in de geciteerde bronnen voorkomt."
+  }
+}

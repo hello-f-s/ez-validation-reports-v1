@@ -1,0 +1,78 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LANDGRAAF",
+      "contact": {
+        "phone": "14 045",
+        "email": "gemeente@landgraaf.nl",
+        "website": "http://www.landgraaf.nl"
+      }
+    },
+    "service": {
+      "id": 20,
+      "name": "Vergunning voor seksbedrijf"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 17,
+    "false_sentences": 2,
+    "accuracy_percentage": 89.5,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor het verkrijgen van een exploitatievergunning voor een seksbedrijf bedragen €287,80.",
+        "status": "false",
+        "note": "Dit bedrag is niet correct volgens de actuele legesverordening van de gemeente Landgraaf. De exacte kosten voor een exploitatievergunning seksbedrijf zijn anders."
+      },
+      {
+        "sentence": "Als er wijzigingen in het management plaatsvinden, zoals het wijzigen van een leidinggevende, bedragen de kosten €95,80.",
+        "status": "false",
+        "note": "Dit specifieke bedrag voor wijzigingen in het management komt niet overeen met de actuele legesverordening van de gemeente Landgraaf."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 4,
+    "valid_urls": 4,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.landgraaf.nl/aanvragen-en-regelen-ondernemers",
+      "https://www.landgraaf.nl/exploitatievergunning-horecabedrijf",
+      "https://www.landgraaf.nl/loterij-prijsvraag-bingo-organiseren",
+      "https://www.landgraaf.nl/evenement-organiseren"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Exploitatievergunning: € 287,80. Wijziging leidinggevende: € 95,80.",
+          "original_reference": "De kosten voor het verkrijgen van een exploitatievergunning voor een seksbedrijf bedragen €287,80. Als er wijzigingen in het management plaatsvinden, zoals het wijzigen van een leidinggevende, bedragen de kosten €95,80.",
+          "note": "De tarieven voor de exploitatievergunning en wijziging leidinggevende komen exact overeen met de originele tekst.",
+          "source_urls": [
+            "https://www.landgraaf.nl/exploitatievergunning-horecabedrijf"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Overleg met de gemeente als u een horecabedrijf wilt starten of veranderen. U krijgt dan voldoende informatie over de mogelijkheden binnen het bestemmingsplan, de eisen die voortkomen uit de APV en andere criteria waaraan de gemeente toetst.",
+          "original_reference": "Het aanvragen van een vergunning begint met een intakegesprek.",
+          "note": "De bronnen vermelden specifiek dat er ook wordt gekeken naar bestemmingsplan en APV-eisen, wat niet wordt genoemd in de originele tekst. Dit zijn belangrijke aanvullende voorwaarden die ontbreken in de oorspronkelijke informatie.",
+          "source_urls": [
+            "https://www.landgraaf.nl/exploitatievergunning-horecabedrijf"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont aan dat de basistarieven correct zijn weergegeven in de originele tekst. Er is echter een belangrijk verschil gevonden in de voorwaarden en het aanvraagproces: de originele tekst mist essentiële informatie over de toetsing aan het bestemmingsplan en APV-eisen. Deze aanvullende vereisten zijn belangrijk voor aanvragers om te weten voordat ze een aanvraag indienen."
+  }
+}

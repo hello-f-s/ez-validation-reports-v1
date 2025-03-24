@@ -1,0 +1,87 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HAAKSBERGEN",
+      "contact": {
+        "phone": "(053) 573 45 67",
+        "email": "gemeente@haaksbergen.nl",
+        "website": "http://www.haaksbergen.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "Adres: Blankenburgerstraat 28, 7481 EB Haaksbergen",
+        "status": "false",
+        "note": "Het juiste adres van het gemeentehuis van Haaksbergen is Blankenburgerstraat 28, 7481 GB Haaksbergen. De postcode 7481 EB is onjuist, het moet 7481 GB zijn."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.haaksbergen.nl/Vergunningen/alcoholvergunning.html",
+      "https://www.haaksbergen.nl/ondernemers/Bedrijf-voeren/Horeca.html",
+      "https://www.haaksbergen.nl/Vergunningen/101107-Omgevingsvergunning.html",
+      "https://www.haaksbergen.nl/Vergunningen/Evenementenvergunning.html"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.haaksbergen.nl/ondernemers/Ondernemend-Haaksbergen/Ondernemersplein.html",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wil u meer weten wat u nodig heeft voor het starten van een horecabedrijf kijk op de website van de KVK of Koninklijke Horeca Nederland.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina verwijst naar aanvullende informatiebronnen (KVK en Koninklijke Horeca Nederland) die niet genoemd worden in de originele tekst",
+          "source_urls": [
+            "https://www.haaksbergen.nl/Vergunningen/alcoholvergunning.html"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Alcoholwet (voorheen Drank- en Horecawet)",
+          "original_reference": "Alcoholwet",
+          "note": "De bronpagina geeft extra context over de naamswijziging van de wet, wat ontbreekt in de originele tekst",
+          "source_urls": [
+            "https://www.haaksbergen.nl/Vergunningen/alcoholvergunning.html"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Toetsing aan de Wet Bibob kan onderdeel uitmaken van de procedure",
+          "original_reference": "Voor commerciële horecabedrijven wordt altijd een Bibob-toets toegepast",
+          "note": "Er is een discrepantie in de formulering: de originele tekst stelt dat de Bibob-toets altijd wordt toegepast voor commerciële horeca, terwijl de bronpagina suggereert dat dit optioneel kan zijn",
+          "source_urls": [
+            "https://www.haaksbergen.nl/ondernemers/Bedrijf-voeren/Horeca.html"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont drie belangrijke verschillen tussen de originele tekst en de bronpagina's: 1) het ontbreken van verwijzingen naar externe informatiebronnen zoals KVK en Koninklijke Horeca Nederland, 2) het missen van context over de naamswijziging van de wet, en 3) een inconsistentie in de beschrijving van de Bibob-toets verplichting. De overige informatie komt grotendeels overeen met de bronpagina's."
+  }
+}

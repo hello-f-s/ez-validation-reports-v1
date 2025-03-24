@@ -1,0 +1,90 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AMERSFOORT",
+      "contact": {
+        "phone": "14 033",
+        "email": "info@amersfoort.nl",
+        "website": "http://www.amersfoort.nl"
+      }
+    },
+    "service": {
+      "id": 20,
+      "name": "Vergunning voor seksbedrijf"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 22,
+    "false_sentences": 2,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Bijvoorbeeld, een omgevingsvergunning is vereist voor bedrijven die publiek aantrekken, zoals kapsalons en notariskantoren, vanwege parkeer- en overlastoverwegingen.",
+        "status": "false",
+        "note": "Deze stelling is onjuist. Een omgevingsvergunning is niet standaard vereist voor kapsalons en notariskantoren in Amersfoort. Deze worden niet specifiek genoemd in de gemeentelijke regelgeving voor omgevingsvergunningen."
+      },
+      {
+        "sentence": "Voor nieuwe horecaondernemers in de historische binnenstad gelden strengere eisen voor afvoerpijpen.",
+        "status": "false",
+        "note": "Er is geen specifieke regelgeving in Amersfoort die strengere eisen stelt aan afvoerpijpen voor nieuwe horecaondernemers in de historische binnenstad ten opzichte van andere gebieden."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.amersfoort.nl/exploitatie-horeca-inrichting",
+      "https://www.amersfoort.nl/bedrijf-aan-huis",
+      "https://www.amersfoort.nl/alcoholwetvergunning",
+      "https://www.amersfoort.nl/horecabedrijf-starten-aanpassen",
+      "https://www.amersfoort.nl/aanleggen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Je hebt meestal geen vergunning nodig om een bedrijf aan huis te starten. Zorg wel dat het woonkarakter van je pand behouden blijft en dat er geen overlast ontstaat. Naast jezelf mag je 2 mensen in dienst hebben.",
+          "original_reference": "Afhankelijk van de aard van uw seksbedrijf kan het noodzakelijk zijn om verschillende vergunningen aan te vragen.",
+          "note": "De originele tekst suggereert dat vergunningen altijd nodig zijn, terwijl de brontekst aangeeft dat voor veel bedrijven aan huis geen vergunning nodig is en specifieke voorwaarden noemt (max 2 werknemers).",
+          "source_urls": [
+            "https://www.amersfoort.nl/bedrijf-aan-huis"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "WhatsApp: 06 5750 5302",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist het WhatsApp contactnummer dat wel in de bronpagina's wordt vermeld.",
+          "source_urls": [
+            "https://www.amersfoort.nl/bedrijf-aan-huis",
+            "https://www.amersfoort.nl/horecabedrijf-starten-aanpassen"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Door technische problemen is het helaas niet mogelijk om op de website een afspraak te maken voor burgerzaken. Maak een afspraak via telefoonnummer 14 033.",
+          "original_reference": "Vanwege technische problemen is het momenteel niet mogelijk om online afspraken te maken voor burgerzaken. Neem telefonisch contact op voor het plannen van een afspraak.",
+          "note": "De informatie over technische problemen en het alternatief via telefoon komt overeen.",
+          "source_urls": [
+            "https://www.amersfoort.nl/exploitatie-horeca-inrichting",
+            "https://www.amersfoort.nl/bedrijf-aan-huis"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont enkele belangrijke verschillen tussen de originele tekst en de bronnen. Met name de voorwaarden voor bedrijven aan huis zijn specifieker in de bronnen dan in de originele tekst. Daarnaast ontbreekt in de originele tekst het WhatsApp contactnummer. De informatie over technische problemen met online afspraken komt wel overeen. De bronnen bieden over het algemeen meer specifieke details en contactmogelijkheden dan de originele tekst."
+  }
+}

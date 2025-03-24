@@ -1,0 +1,67 @@
+{
+  "context": {
+    "municipality": {
+      "name": "AMERSFOORT",
+      "contact": {
+        "phone": "14 033",
+        "email": "info@amersfoort.nl",
+        "website": "http://www.amersfoort.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 19,
+    "true_sentences": 18,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.7,
+    "false_statements": [
+      {
+        "sentence": "De gemeente handelt je aanvraag binnen 8 weken af.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Amersfoort is de behandeltermijn voor een horeca-exploitatievergunning maximaal 12 weken, niet 8 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 0,
+    "invalid_urls": 6,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.amersfoort.nl/exploitatie-horeca-inrichting",
+        "reason": "INVALID: Error scraping https://www.amersfoort.nl/exploitatie-horeca-inrichting: HTTPSConnectionPool(host='www.amersfoort.nl', port=443): Max retries exceeded with url: /exploitatie-horeca-inrichting (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x107cd7770>: Failed to resolve 'www.amersfoort.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.amersfoort.nl/horecabedrijf-starten-aanpassen",
+        "reason": "INVALID: Error scraping https://www.amersfoort.nl/horecabedrijf-starten-aanpassen: HTTPSConnectionPool(host='www.amersfoort.nl', port=443): Max retries exceeded with url: /horecabedrijf-starten-aanpassen (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x111884550>: Failed to resolve 'www.amersfoort.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.amersfoort.nl/bedrijf-aan-huis",
+        "reason": "INVALID: Error scraping https://www.amersfoort.nl/bedrijf-aan-huis: HTTPSConnectionPool(host='www.amersfoort.nl', port=443): Max retries exceeded with url: /bedrijf-aan-huis (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x111884f50>: Failed to resolve 'www.amersfoort.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.amersfoort.nl/alcoholwetvergunning",
+        "reason": "INVALID: Error scraping https://www.amersfoort.nl/alcoholwetvergunning: HTTPSConnectionPool(host='www.amersfoort.nl', port=443): Max retries exceeded with url: /alcoholwetvergunning (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x111885310>: Failed to resolve 'www.amersfoort.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.amersfoort.nl/aanleggen",
+        "reason": "INVALID: Error scraping https://www.amersfoort.nl/aanleggen: HTTPSConnectionPool(host='www.amersfoort.nl', port=443): Max retries exceeded with url: /aanleggen (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1118856d0>: Failed to resolve 'www.amersfoort.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      },
+      {
+        "url": "https://www.amersfoort.nl",
+        "reason": "INVALID: Error scraping https://www.amersfoort.nl: HTTPSConnectionPool(host='www.amersfoort.nl', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x111885a90>: Failed to resolve 'www.amersfoort.nl' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  }
+}

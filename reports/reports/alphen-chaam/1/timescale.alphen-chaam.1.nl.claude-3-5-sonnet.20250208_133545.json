@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ALPHEN-CHAAM",
+      "contact": {
+        "phone": "14013",
+        "email": "info@alphen-chaam.nl",
+        "website": "http://www.alphen-chaam.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 14,
+    "false_sentences": 1,
+    "accuracy_percentage": 93.3,
+    "false_statements": [
+      {
+        "sentence": "De aanvrager van de alcoholvergunning moet minimaal 21 jaar oud zijn.",
+        "status": "false",
+        "note": "Volgens de Alcoholwet moet de aanvrager minimaal 21 jaar oud zijn. De minimumleeftijd voor het aanvragen van een alcoholvergunning is 21 jaar."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.alphen-chaam.nl/vergunningen-en-ontheffingen/vergunningen-en-ontheffingen-voor-ondernemers",
+      "https://www.alphen-chaam.nl/woo",
+      "https://www.alphen-chaam.nl/alcoholvergunning",
+      "https://www.alphen-chaam.nl/horecavergunning",
+      "https://www.alphen-chaam.nl/ondernemen/vergunningen-en-ontheffingen-voor-ondernemers"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "€ 178,95",
+          "original_reference": "Er wordt geen specifieke informatie over de kosten gegeven op de website.",
+          "note": "De bron vermeldt specifieke kosten voor de horecavergunning van €178,95, terwijl dit in de originele tekst ontbreekt.",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/horecavergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Onderzoek via Wet Bibob - Bibob staat voor Bevordering van Integriteits Beoordelingen door het Openbaar Bestuur. Met de Wet Bibob kunnen we voorkomen dat we criminele activiteiten mogelijk maken.",
+          "original_reference": "De aanvrager mag niet van slecht levensgedrag zijn (geen illegale of criminele activiteiten).",
+          "note": "De bronnen vermelden een specifiek Bibob-onderzoek als onderdeel van de procedure, wat een concrete uitwerking is van de integriteitseisen die niet in de originele tekst wordt genoemd.",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/horecavergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wanneer u niet zeker weet welke vergunning u moet aanvragen, kunt u ook contact opnemen met ons via telefoonnummer 14 013 of e-mail.",
+          "original_reference": "No matching information",
+          "note": "De bron biedt extra ondersteuning bij het bepalen van de juiste vergunning via telefoon of e-mail, wat niet wordt vermeld in de originele tekst.",
+          "source_urls": [
+            "https://www.alphen-chaam.nl/alcoholvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de specifieke kosten voor de horecavergunning (€178,95), de toevoeging van het Bibob-onderzoek als concrete procedure voor integriteitstoetsing, en extra ondersteuningsmogelijkheden bij het bepalen van de juiste vergunning. Deze informatie maakt de procedures en vereisten concreter dan in de originele tekst."
+  }
+}

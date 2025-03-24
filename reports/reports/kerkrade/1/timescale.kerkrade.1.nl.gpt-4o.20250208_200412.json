@@ -1,0 +1,94 @@
+{
+  "context": {
+    "municipality": {
+      "name": "KERKRADE",
+      "contact": {
+        "phone": "14 045",
+        "email": "gemeentehuis@kerkrade.nl",
+        "website": "http://www.kerkrade.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 13,
+    "false_sentences": 2,
+    "accuracy_percentage": 86.7,
+    "false_statements": [
+      {
+        "sentence": "Barmedewerkers jonger dan 18 jaar mogen wel alcohol verkopen, maar niet drinken.",
+        "status": "false",
+        "note": "Volgens de Drank- en Horecawet en de gemeente Kerkrade mogen personen onder de 18 jaar geen alcohol verkopen of verstrekken."
+      },
+      {
+        "sentence": "Bij een aanvraag voor een vereniging of stichting ontvangt u binnen 6 maanden bericht.",
+        "status": "false",
+        "note": "De gemeente Kerkrade hanteert een standaard behandeltermijn van 8 weken voor alle horecavergunningen, ook voor verenigingen en stichtingen. Er is geen aparte termijn van 6 maanden."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 6,
+    "invalid_urls": 1,
+    "accuracy_percentage": 85.7,
+    "valid_urls_list": [
+      "https://www.kerkrade.nl/alcohol-schenken-tijdens-evenement",
+      "https://www.kerkrade.nl/openingstijden-horeca-eenmalig-aanpassen",
+      "https://www.kerkrade.nl/exploitatievergunning-horecabedrijf",
+      "https://www.kerkrade.nl/alcoholvergunning",
+      "https://www.kerkrade.nl/milieu-vergunning-of-melding",
+      "https://www.kerkrade.nl"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.kerkrade.nl\">Gemeente",
+        "reason": "INVALID: Error scraping https://www.kerkrade.nl\">Gemeente: HTTPSConnectionPool(host='www.kerkrade.nl%22%3egemeente', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1062e7390>: Failed to resolve 'www.kerkrade.nl%22%3egemeente' ([Errno 8] nodename nor servname provided, or not known)\"))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U mag geen alcohol schenken en verkopen aan kinderen jonger dan 18 jaar. Op het evenement mag u geen sterke drank (>15% alcohol) schenken en verkopen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen specifieke informatie over het verbod op sterke drank tijdens evenementen en de expliciete vermelding van het verbod op alcoholverkoop aan personen onder 18 jaar.",
+          "source_urls": [
+            "https://www.kerkrade.nl/alcohol-schenken-tijdens-evenement"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "In de volgende zaken mag u bier, wijn, port en sherry verkopen: supermarkt, levensmiddelenwinkel, snackbar, traiteur tabakspeciaalzaak, slijterij. U hebt dan geen vergunning nodig. U mag in uw zaak geen alcohol laten proeven.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over welke type zaken zonder vergunning alcohol mogen verkopen en de beperking op het laten proeven van alcohol.",
+          "source_urls": [
+            "https://www.kerkrade.nl/alcoholvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "De huisregels rondom alcohol moeten op een goed zichtbare plek opgehangen zijn bij verenigingen en stichtingen.",
+          "original_reference": "Een officieel bestuursreglement (geldt alleen voor verenigingen en stichtingen).",
+          "note": "De bronpagina specificeert dat de huisregels zichtbaar moeten worden opgehangen, wat een concrete aanvulling is op het algemene vereiste van een bestuursreglement.",
+          "source_urls": [
+            "https://www.kerkrade.nl/alcoholvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten belangrijke aanvullende informatie die niet in de originele tekst staat, met name over het verbod op sterke drank tijdens evenementen, specifieke uitzonderingen voor bepaalde type zaken die zonder vergunning alcohol mogen verkopen, en extra details over de zichtbaarheid van huisregels bij verenigingen en stichtingen. Deze informatie is essentieel voor een volledig begrip van de alcoholvergunning-regelgeving."
+  }
+}

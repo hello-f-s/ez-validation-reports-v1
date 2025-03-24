@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "HEEMSKERK",
+      "contact": {
+        "phone": "14 0251",
+        "email": "post@heemskerk.nl",
+        "website": "http://www.heemskerk.nl"
+      }
+    },
+    "service": {
+      "id": 18,
+      "name": "Ventvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "claude-3-5-sonnet",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 10,
+    "false_sentences": 1,
+    "accuracy_percentage": 90.9,
+    "false_statements": [
+      {
+        "sentence": "Bij de aanvraag betaalt u direct de legeskosten van € 25,65 via iDeal.",
+        "status": "false",
+        "note": "De legeskosten voor een exploitatievergunning in Heemskerk bedragen € 514,95 volgens de actuele legesverordening van de gemeente Heemskerk, niet € 25,65."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/omgevingsvergunning",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/veelgestelde-vragen-omgevingsvergunning",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca/exploitatievergunning",
+      "https://www.heemskerk.nl/belastingen-en-vergunningen/vergunning-gebruik-openbare-weg"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor sommige horecabedrijven die alcohol schenken, is een exploitatievergunning niet nodig. Zij kunnen een vrijstelling krijgen. Horecabedrijven die geen alcohol schenken hebben altijd een exploitatievergunning nodig.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst maakt geen onderscheid tussen alcohol-schenkende en niet-alcohol-schenkende horecabedrijven wat betreft de vergunningplicht. Dit is belangrijke aanvullende informatie over vrijstellingsmogelijkheden.",
+          "source_urls": [
+            "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca/exploitatievergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "We willen voorkomen dat via het horecabedrijf crimineel geld wordt uitgegeven of verwerkt. Of strafbare feiten worden gepleegd.",
+          "original_reference": "Er moet een onderzoek gedaan worden naar het verleden van de ondernemer in het kader van de Wet Bibob",
+          "note": "De brontekst geeft een specifiekere toelichting op het doel van het Bibob-onderzoek, wat in de originele tekst niet wordt vermeld.",
+          "source_urls": [
+            "https://www.heemskerk.nl/belastingen-en-vergunningen/horeca/exploitatievergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele tekst en de bronnen. Ten eerste wordt in de bronnen een belangrijk onderscheid gemaakt tussen alcohol-schenkende en niet-alcohol-schenkende horecabedrijven wat betreft de vergunningplicht, wat niet in de originele tekst staat. Ten tweede geeft de bron een duidelijkere toelichting op het doel van het Bibob-onderzoek. De overige informatie komt overeen met de originele tekst."
+  }
+}

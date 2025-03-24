@@ -1,0 +1,92 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DEVENTER",
+      "contact": {
+        "phone": "14 0570",
+        "email": "gemeente@deventer.nl",
+        "website": "http://www.deventer.nl"
+      }
+    },
+    "service": {
+      "id": 17,
+      "name": "Terrasvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Om als horecaondernemer een terrasvergunning aan te vragen in Deventer, moet het terras voldoen aan de criteria \"chique en ingetogen\", zoals verwoord in het terrassenplan van de gemeente.",
+        "status": "false",
+        "note": "De exacte bewoording 'chique en ingetogen' komt niet voor in het terrassenbeleid van de gemeente Deventer. Het terrassenbeleid stelt wel eisen aan de uitstraling en inrichting van terrassen, maar gebruikt deze specifieke terminologie niet."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 7,
+    "valid_urls": 5,
+    "invalid_urls": 2,
+    "accuracy_percentage": 71.4,
+    "valid_urls_list": [
+      "https://www.deventer.nl/leges",
+      "https://www.deventer.nl/vooroverleg",
+      "https://www.deventer.nl/exploitatievergunning",
+      "https://www.deventer.nl/terrasvergunning",
+      "https://www.deventer.nl/omgevingsvergunning-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://deventer.nl/horecabedrijf-beginnen",
+        "reason": "INVALID: Error scraping https://deventer.nl/horecabedrijf-beginnen: 404 Client Error: Not Found for url: https://www.deventer.nl:443/horecabedrijf-beginnen"
+      },
+      {
+        "url": "https://deventer.nl/terrasvergunning-aanvragen",
+        "reason": "INVALID: Error scraping https://deventer.nl/terrasvergunning-aanvragen: 404 Client Error: Not Found for url: https://www.deventer.nl:443/terrasvergunning-aanvragen"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Ook als het terras op eigen terrein ligt [heeft u een terrasvergunning nodig]",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet expliciet dat een terrasvergunning ook nodig is voor terrassen op eigen terrein, wat een belangrijke aanvullende voorwaarde is",
+          "source_urls": [
+            "https://www.deventer.nl/terrasvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Het materiaalgebruik van genoemde terraselementen wordt voorgelegd aan een adviescommissie om te bepalen of wordt voldaan aan de criteria 'chique en ingetogen'",
+          "original_reference": "moet het terras voldoen aan de criteria 'chique en ingetogen'",
+          "note": "De originele tekst vermeldt niet dat er een adviescommissie is die het materiaalgebruik beoordeelt",
+          "source_urls": [
+            "https://www.deventer.nl/terrasvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U kunt een vergunning aanvragen voor tijdelijke uitbreiding van uw terras, als dat ligt op: de Brink (inclusief Kop van de Brin...",
+          "original_reference": "Ook moet voor elk evenement een aparte vergunning worden aangevraagd indien er sprake is van een incidenteel terras",
+          "note": "De bronpagina specificeert locaties voor tijdelijke terrasuitbreiding, wat niet genoemd wordt in de originele tekst",
+          "source_urls": [
+            "https://www.deventer.nl/terrasvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen aanvullende voorwaarden die niet in de originele tekst staan vermeld: de verplichting voor een terrasvergunning ook op eigen terrein, het bestaan van een adviescommissie voor materiaalgebruik, en specifieke locatievoorwaarden voor tijdelijke terrasuitbreidingen. Deze informatie is essentieel voor ondernemers die een terrasvergunning willen aanvragen."
+  }
+}

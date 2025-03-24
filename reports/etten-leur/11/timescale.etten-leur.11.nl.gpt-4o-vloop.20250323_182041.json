@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ETTEN-LEUR",
+      "contact": {
+        "phone": "14 076",
+        "email": "info@etten-leur.nl",
+        "website": "http://www.etten-leur.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "U kunt ook een afspraak maken voor persoonlijk contact.",
+        "status": "false",
+        "note": "Voor vragen over omgevingsvergunningen is het niet mogelijk om een persoonlijke afspraak te maken bij de gemeente Etten-Leur. Vragen kunnen alleen telefonisch, via WhatsApp of per e-mail worden gesteld."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.etten-leur.nl/product/omgevingsvergunning-aanvragen/",
+      "https://www.etten-leur.nl/product/bouwtekeningen-en-omgevingsvergunningen-opvragen/",
+      "https://www.etten-leur.nl/product/orienteren-bij-verbouwplannen/",
+      "https://www.etten-leur.nl/product/omgevingswet-in-het-kort/",
+      "https://www.etten-leur.nl/product/ventvergunning/",
+      "https://www.etten-leur.nl/"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor het behandelen van uw bouwinformatieverzoek worden legeskosten in rekening gebracht. De legeskosten zijn € 52,-.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de specifieke kosten voor een bouwinformatieverzoek, terwijl dit volgens de bron €52,- kost.",
+          "source_urls": [
+            "https://www.etten-leur.nl/product/orienteren-bij-verbouwplannen/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bouwtekeningen/bouwdossiers vanaf bouwjaar 2000 kunt u online aanvragen bij de gemeente. Het opvragen kost € 21,-.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over het opvragen van bouwtekeningen en de bijbehorende kosten van €21,-.",
+          "source_urls": [
+            "https://www.etten-leur.nl/product/bouwtekeningen-en-omgevingsvergunningen-opvragen/"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "De beslistermijn voor de reguliere procedure is acht weken. Deze termijn kan één keer met zes weken worden verlengd.",
+          "original_reference": "De beslistermijn voor de reguliere procedure is acht weken, welke eenmaal met zes weken kan worden verlengd.",
+          "note": "De informatie over de beslistermijnen komt exact overeen.",
+          "source_urls": [
+            "https://www.etten-leur.nl/product/omgevingsvergunning-aanvragen/"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont enkele belangrijke verschillen tussen de originele tekst en de bronnen. De originele tekst mist specifieke informatie over kosten, zoals de €52,- voor een bouwinformatieverzoek en €21,- voor het opvragen van bouwtekeningen. De kernprocessen en termijnen voor de omgevingsvergunning zijn wel consistent beschreven."
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "KERKRADE",
+      "contact": {
+        "phone": "14 045",
+        "email": "gemeentehuis@kerkrade.nl",
+        "website": "http://www.kerkrade.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 28,
+    "true_sentences": 27,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.4,
+    "false_statements": [
+      {
+        "sentence": "U krijgt binnen 8 weken bericht. Voor verenigingen of stichtingen is dit binnen 6 maanden.",
+        "status": "false",
+        "note": "Volgens de Algemene wet bestuursrecht geldt voor alle drank- en horecavergunningen een standaard beslistermijn van 8 weken, die eenmalig verlengd kan worden. Er is geen aparte termijn van 6 maanden voor verenigingen of stichtingen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.kerkrade.nl/alcoholvergunning",
+      "https://www.kerkrade.nl/alcohol-schenken-tijdens-evenement",
+      "https://www.kerkrade.nl/exploitatievergunning-horecabedrijf",
+      "https://www.kerkrade.nl/milieu-vergunning-of-melding",
+      "https://www.kerkrade.nl/openingstijden-horeca-eenmalig-aanpassen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Voor verenigingen en stichtingen die alcohol schenken gelden extra voorwaarden: De uren waarop alcohol wordt geschonken en de leeftijdsgrens is op een goed zichtbare plek opgehangen. Er zijn binnen de vereniging of stichting minstens twee leidinggevenden met een SVH Verklaring Sociale Hygiëne.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist specifieke extra voorwaarden voor verenigingen en stichtingen, zoals het zichtbaar ophangen van schenktijden en leeftijdsgrens, en de vereiste van minimaal twee leidinggevenden met SVH-verklaring.",
+          "source_urls": [
+            "https://www.kerkrade.nl/alcoholvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Op het evenement mag u geen sterke drank (>15% alcohol) schenken en verkopen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de beperking dat bij evenementen geen sterke drank (>15% alcohol) geschonken mag worden.",
+          "source_urls": [
+            "https://www.kerkrade.nl/alcohol-schenken-tijdens-evenement"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "U ontvangt binnen 8 weken bericht of u de ontheffing krijgt.",
+          "original_reference": "U krijgt binnen 8 weken bericht.",
+          "note": "De behandeltermijn van 8 weken komt overeen in beide bronnen.",
+          "source_urls": [
+            "https://www.kerkrade.nl/alcohol-schenken-tijdens-evenement"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten enkele belangrijke aanvullende voorwaarden die niet in de originele tekst staan, met name voor verenigingen/stichtingen en evenementen. De belangrijkste verschillen betreffen extra eisen voor verenigingen (zoals zichtbare aanduiding van schenktijden) en de beperking op sterke drank bij evenementen. De basisprocedures en termijnen zijn verder grotendeels consistent."
+  }
+}

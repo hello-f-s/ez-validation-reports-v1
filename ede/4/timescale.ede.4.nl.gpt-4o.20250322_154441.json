@@ -1,0 +1,102 @@
+{
+  "context": {
+    "municipality": {
+      "name": "EDE",
+      "contact": {
+        "phone": "14 0318",
+        "email": "info@ede.nl",
+        "website": "http://www.ede.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 9,
+    "false_sentences": 4,
+    "accuracy_percentage": 69.2,
+    "false_statements": [
+      {
+        "sentence": "Specifieke documenten en informatie zijn niet vermeld, maar overweeg contact op te nemen met het loket Bouwen, Wonen en Milieu voor aanvullende richtlijnen en eisen.",
+        "status": "false",
+        "note": "De gemeente Ede vermeldt wel degelijk specifieke documenten en informatie die nodig zijn voor de aanvraag, zoals een situatietekening, veiligheidsplan en draaiboek. Ook is het niet het loket Bouwen, Wonen en Milieu maar Team APV waar men contact mee moet opnemen."
+      },
+      {
+        "sentence": "Er is geen specifieke informatie over de kosten van de aanvraag te vinden op de website.",
+        "status": "false",
+        "note": "De gemeente Ede vermeldt wel degelijk de legeskosten voor evenementenvergunningen op hun website in de legesverordening."
+      },
+      {
+        "sentence": "Er wordt gestreefd naar een snelle afhandeling, maar details over de tijdsduur zijn niet specifiek vermeld.",
+        "status": "false",
+        "note": "De gemeente Ede vermeldt wel specifieke behandeltermijnen: 8 weken voor reguliere evenementen en 26 weken voor grote evenementen."
+      },
+      {
+        "sentence": "Specifiek bezwaarprocedures staan niet vermeld, maar u kunt bij vragen of problemen contact opnemen met de gemeente voor verdere begeleiding.",
+        "status": "false",
+        "note": "De bezwaarprocedure staat wel vermeld op de website van gemeente Ede: binnen 6 weken na bekendmaking kan bezwaar worden ingediend."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.ede.nl/aanvragen-en-regelen/evenementenvergunning",
+      "https://www.ede.nl/aanvragen-en-regelen/ontheffing-aanvragen",
+      "https://www.ede.nl/aanvragen-en-regelen/evenementenkalender",
+      "https://www.ede.nl/aanvragen-en-regelen/evenementen-melden-ontheffing-vergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.ede.nl/aanvragen-en-regelen/verleende-vergunningen-inzien-en-opvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "U vraagt de vergunning ten minste acht weken van tevoren aan.",
+          "original_reference": "Vraag uw evenementenvergunning minimaal 6 tot 16 weken van tevoren aan.",
+          "note": "Er is een tegenstrijdigheid in de aanvraagtermijn. De bron noemt 8 weken, terwijl de originele tekst 6-16 weken vermeldt.",
+          "source_urls": [
+            "https://www.ede.nl/aanvragen-en-regelen/evenementenvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Alleen volledig ingevulde formulieren, voorzien van alle bijlagen, worden in behandeling genomen. U heeft toestemming nodig van alle grondeigenaren. Het is verboden sterk alcoholhoudende drank te schenken.",
+          "original_reference": "Specifieke documenten en informatie zijn niet vermeld",
+          "note": "De bronpagina bevat specifieke voorwaarden en vereisten die niet genoemd worden in de originele tekst.",
+          "source_urls": [
+            "https://www.ede.nl/aanvragen-en-regelen/evenementenvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wij vragen u voor 1 november van het lopende jaar uw evenement bij ons aan te melden. De evenementen die zich op tijd hebben aangemeld, ontvangen rond 1 december bericht.",
+          "original_reference": "No matching information",
+          "note": "De bron vermeldt specifieke data voor jaarlijkse aanmelding die niet genoemd worden in de originele tekst.",
+          "source_urls": [
+            "https://www.ede.nl/aanvragen-en-regelen/evenementenkalender"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten belangrijke aanvullende informatie die ontbreekt in de originele tekst, waaronder specifieke voorwaarden voor de vergunningaanvraag, deadlines voor jaarlijkse aanmelding, en tegenstrijdige informatie over aanvraagtermijnen. De originele tekst is minder gedetailleerd en mist essentiële vereisten die wel in de bronpagina's staan vermeld."
+  }
+}

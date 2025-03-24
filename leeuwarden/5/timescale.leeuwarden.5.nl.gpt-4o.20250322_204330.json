@@ -1,0 +1,80 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LEEUWARDEN",
+      "contact": {
+        "phone": "14 058",
+        "email": "gemeente@leeuwarden.nl",
+        "website": "http://www.leeuwarden.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 12,
+    "false_sentences": 2,
+    "accuracy_percentage": 85.7,
+    "false_statements": [
+      {
+        "sentence": "Aanvraag kost € 671,93.",
+        "status": "false",
+        "note": "Het actuele tarief voor een exploitatievergunning in Leeuwarden is € 687,01 voor 2024"
+      },
+      {
+        "sentence": "Melding wijziging leidinggevende kost € 128,82.",
+        "status": "false",
+        "note": "Het actuele tarief voor een wijziging leidinggevende in Leeuwarden is € 131,75 voor 2024"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 6,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.leeuwarden.nl/wonen/informatie-onroerend-goed/",
+      "https://www.leeuwarden.nl/subsidies/algemene-subsidieaanvraag/",
+      "https://www.leeuwarden.nl",
+      "https://www.leeuwarden.nl/horeca/horecavergunning/",
+      "https://www.leeuwarden.nl/andere-vergunningen-en-ontheffingen/standplaatsvergunning/",
+      "https://www.leeuwarden.nl/hulp-voor-ondernemers/"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bij het indienen van een aanvraag moet u bijlagen toevoegen. Een overzicht hiervan vindt u in de informatiefolder exploitatievergunning horecabedrijf starten. Zorg daarom eerst dat alle bijlagen klaar zijn voordat u een aanvraag indient.",
+          "original_reference": "Bijlagen zoals vermeld in de informatiefolder exploitatievergunning horecabedrijf starten.",
+          "note": "De brontekst benadrukt expliciet dat alle bijlagen vooraf klaar moeten zijn voor het indienen van de aanvraag, wat een belangrijke voorwaarde is die niet zo duidelijk staat vermeld in de originele tekst.",
+          "source_urls": [
+            "https://www.leeuwarden.nl/horeca/horecavergunning/"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Dit hangt af van of u wel of geen alcohol schenkt.",
+          "original_reference": "No matching information",
+          "note": "De brontekst bevat een belangrijke verduidelijking over het type vergunning afhankelijk van alcoholverkoop, wat ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.leeuwarden.nl/horeca/horecavergunning/"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele tekst en de bronnen. Ten eerste wordt in de bron sterker benadrukt dat alle bijlagen vooraf gereed moeten zijn. Ten tweede bevat de bron een belangrijke verduidelijking over de relatie tussen het type vergunning en alcoholverkoop die ontbreekt in de originele tekst. De overige informatie, waaronder kosten en vereiste documenten, komt overeen met de originele tekst."
+  }
+}

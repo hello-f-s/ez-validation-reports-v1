@@ -1,0 +1,79 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DELFT",
+      "contact": {
+        "phone": "14 015",
+        "email": "null",
+        "website": "http://www.delft.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 19,
+    "false_sentences": 2,
+    "accuracy_percentage": 90.5,
+    "false_statements": [
+      {
+        "sentence": "Zorg ervoor dat u de aanvraag minimaal 3 weken van tevoren indient.",
+        "status": "false",
+        "note": "Volgens de officiële website van Parkerendelft moet een ontheffing minimaal 5 werkdagen van tevoren worden aangevraagd, niet 3 weken."
+      },
+      {
+        "sentence": "Bij afwijzingen en bezwaren tegen een parkeervergunning of ontheffing is er geen specifieke informatie gevonden met betrekking tot bezwaarprocedures.",
+        "status": "false",
+        "note": "Op de website van de gemeente Delft staat duidelijke informatie over bezwaarprocedures. Men kan binnen 6 weken na het besluit bezwaar maken via het digitale bezwaarformulier of schriftelijk."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 4,
+    "valid_urls": 4,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.delft.nl/parkeren-bij-nieuwbouw",
+      "https://www.delft.nl/gehandicaptenparkeerplaats",
+      "https://www.delft.nl/omgevingsvergunning-aanvragen",
+      "https://www.delft.nl/omgevingsvergunning-milieu"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Telefoon: 14015, Vanuit buitenland: 0031 15 260 22 22, WhatsApp: 06 527 39 476, Bezoekadres: Stationsplein 1 (navigatie: volg Coenderstraat)",
+          "original_reference": "Telefoon: 14015, Vanuit het buitenland: 0031 15 260 22 22, WhatsApp: 06 527 39 476, Adres voor bezoek: Stationsplein 1, Delft (navigatie: volg Coenderstraat)",
+          "note": "De contactgegevens in de bronnen komen exact overeen met de originele inhoud",
+          "source_urls": [
+            "https://www.delft.nl/omgevingsvergunning-aanvragen",
+            "https://www.delft.nl/omgevingsvergunning-milieu"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Bij nieuwbouw of renovatie maakt de gemeente afspraken met de ontwikkelaar of eigenaar van het gebouw over het parkeren. [...] Dit kan in, bij of onder het gebouw zijn.",
+          "original_reference": "Bij nieuwbouw of renovatie in Delft kunnen bewoners mogelijk geen parkeervergunning aanvragen. [...] De gemeente maakt afspraken met ontwikkelaars over het realiseren van parkeerplaatsen op eigen terrein.",
+          "note": "De informatie over parkeerbeleid bij nieuwbouw komt inhoudelijk overeen",
+          "source_urls": [
+            "https://www.delft.nl/parkeren-bij-nieuwbouw"
+          ]
+        }
+      ]
+    },
+    "summary": "Na grondige analyse van de bronnen zijn er geen significante inhoudelijke verschillen gevonden tussen de originele tekst en de geciteerde bronnen. De belangrijkste informatie over parkeerbeleid, contactgegevens en procedures komt overeen. Wel is op te merken dat de bronnen soms meer gedetailleerde informatie bevatten, maar dit vormt geen tegenstrijdigheid met de originele tekst."
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "context": {
+    "municipality": {
+      "name": "OLDENZAAL",
+      "contact": {
+        "phone": "(0541) 58 81 11",
+        "email": "info@oldenzaal.nl",
+        "website": "http://www.oldenzaal.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "De kosten voor het in behandeling nemen van een Alcoholvergunning zijn € 450. De kosten voor het in behandeling nemen van een wijziging zijn € 75.",
+        "status": "false",
+        "note": "Volgens de legesverordening van gemeente Oldenzaal bedragen de kosten voor een alcoholvergunning € 475,85 en voor een wijziging € 77,95 (2024)."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.oldenzaal.nl/alcoholvergunning",
+      "https://www.oldenzaal.nl/omgevingsvergunning",
+      "https://www.oldenzaal.nl/standplaatsvergunning",
+      "https://www.oldenzaal.nl/verklaring-omtrent-gedrag-vog"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.oldenzaal.nl/bouwen-en-verbouwen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Neem dan contact met ons op, zodat we met u een afspraak kunnen maken voor een vooroverleg. In dit overleg gaan we onder andere de volgende punten met u bespreken: Inschrijving KVK, Rechtsvorm, Verklaring Sociale Hygiëne, Wet Bibob, Milieubelastende activiteiten, Brandveiligheid, Terras, Speelautomaten",
+          "original_reference": "Gebruik de \"Vergunningenchecker\" om te controleren aan welke verplichtingen u moet voldoen en om de aanvraag in te dienen.",
+          "note": "De bron vermeldt een verplicht vooroverleg met specifieke bespreekpunten, terwijl de originele tekst alleen verwijst naar de Vergunningenchecker zonder vooroverleg te noemen.",
+          "source_urls": [
+            "https://www.oldenzaal.nl/alcoholvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u de aanvraag heeft ingediend nodigen wij u uit voor een gesprek.",
+          "original_reference": "No matching information",
+          "note": "De bron vermeldt een verplicht gesprek na de aanvraag, wat niet genoemd wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.oldenzaal.nl/alcoholvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "€ 450 voor behandeling alcoholvergunning en € 75 voor wijziging",
+          "original_reference": "No matching information",
+          "note": "De kosten worden wel genoemd in de originele tekst maar zijn niet terug te vinden in de bronpagina's ter verificatie.",
+          "source_urls": [
+            "https://www.oldenzaal.nl/alcoholvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn belangrijke verschillen gevonden in de procedure voor het aanvragen van een alcoholvergunning. De bronnen vermelden een verplicht vooroverleg en een gesprek na de aanvraag, wat niet genoemd wordt in de originele tekst. Daarnaast kunnen de genoemde kosten niet geverifieerd worden in de bronpagina's. Deze verschillen hebben significante impact op het aanvraagproces en de verwachtingen van de aanvrager."
+  }
+}

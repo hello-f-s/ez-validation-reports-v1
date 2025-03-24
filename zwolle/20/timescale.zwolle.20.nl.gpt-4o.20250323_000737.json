@@ -1,0 +1,93 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ZWOLLE",
+      "contact": {
+        "phone": "14 038",
+        "email": "postbus@zwolle.nl",
+        "website": "http://www.zwolle.nl"
+      }
+    },
+    "service": {
+      "id": 20,
+      "name": "Vergunning voor seksbedrijf"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "Zodra de vergunning is verleend, is een vervolgaanvraag voldoende en deze dient in principe eens in de 2 jaar te worden aangevraagd.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Zwolle moet een seksinrichtingvergunning jaarlijks worden verlengd, niet eens in de 2 jaar."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 2,
+    "invalid_urls": 3,
+    "accuracy_percentage": 40.0,
+    "valid_urls_list": [
+      "https://www.zwolle.nl/speelgelegenhedenvergunning",
+      "https://www.zwolle.nl/seksinrichtingvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.zwolle.nl/horecabedrijf-exploitatievergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.zwolle.nl/kentekenparkeren-veelgestelde-vragen-voor-bedrijvenvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.zwolle.nl/veelgestelde-vragen-over-de-omgevingswet",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Als u een seksinrichting en/of een escortbedrijf wilt runnen, heeft u een vergunning nodig. De gemeente hanteert een maximumstelsel. In totaal mogen er maximaal tien seksinrichtingen en escortbedrijven in Zwolle gevestigd zijn.",
+          "original_reference": "Als u een seksinrichting en/of een escortbedrijf wilt runnen in Zwolle, heeft u een vergunning nodig. De gemeente Zwolle hanteert een maximumstelsel waarbij maximaal tien seksinrichtingen en escortbedrijven zijn toegestaan.",
+          "note": "De informatie over het maximumstelsel en het aantal toegestane inrichtingen komt exact overeen",
+          "source_urls": [
+            "https://www.zwolle.nl/seksinrichtingvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Geen informatie over kosten in de bronpagina",
+          "original_reference": "Voor de kosten van het in behandeling nemen van de aanvraag voor een vergunning voor een seksinrichting of escortbedrijf, kunt u de legestabel raadplegen.",
+          "note": "De originele tekst verwijst naar kosten en een legestabel, maar deze informatie is niet terug te vinden in de bronpagina",
+          "source_urls": [
+            "https://www.zwolle.nl/seksinrichtingvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Geen informatie over de geldigheid of vernieuwingstermijn van 2 jaar",
+          "original_reference": "Zodra de vergunning is verleend, is een vervolgaanvraag voldoende en deze dient in principe eens in de 2 jaar te worden aangevraagd.",
+          "note": "De originele tekst vermeldt een specifieke vernieuwingstermijn van 2 jaar die niet wordt genoemd in de bronpagina",
+          "source_urls": [
+            "https://www.zwolle.nl/seksinrichtingvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De analyse toont enkele belangrijke verschillen tussen de originele tekst en de bronpagina. Hoewel de basisinformatie over het maximumstelsel en de definities consistent is, ontbreekt in de bronpagina belangrijke informatie over de kosten (legestabel) en de vernieuwingstermijn van 2 jaar voor de vergunning. Dit zijn substantiële verschillen die relevant zijn voor potentiële aanvragers."
+  }
+}
