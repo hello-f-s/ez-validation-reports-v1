@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "TERNEUZEN",
+      "contact": {
+        "phone": "14 0115",
+        "email": "gemeente@terneuzen.nl",
+        "website": "http://www.terneuzen.nl"
+      }
+    },
+    "service": {
+      "id": 13,
+      "name": "Omzettingsvergunning voor kamerverhuur aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "Afspraken kunnen op dinsdagen worden gepland.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Terneuzen zijn afspraken niet beperkt tot alleen dinsdagen, maar kunnen deze op verschillende werkdagen worden ingepland via het online afsprakensysteem."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.terneuzen.nl/Ondernemers/online_diensten_voor_ondernemers/Omgevingsvergunning",
+      "https://www.terneuzen.nl/Inwoners_Terneuzen/Bouwen/Omgevingsvergunning_aanvragen",
+      "https://www.terneuzen.nl/Inwoners_Terneuzen/Wonen/Woning_tijdelijk_verhuren_vergunning",
+      "https://www.terneuzen.nl/Parkeren/Parkeren_bedrijven/Parkeervergunning_werknemers_werkgevers",
+      "https://www.terneuzen.nl/Ondernemers/online_diensten_voor_ondernemers/Milieuvergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als uit de vergunningcheck blijkt dat u een vergunning nodig heeft, dient u volgens de Omgevingswet eerst een vooroverleg in.",
+          "original_reference": "Voordat u een omzettingsvergunning aanvraagt, is het raadzaam om een vergunningcheck te doen",
+          "note": "De originele tekst stelt dat een vergunningcheck raadzaam is, terwijl de bronpagina aangeeft dat een vooroverleg verplicht is volgens de Omgevingswet na een positieve vergunningcheck.",
+          "source_urls": [
+            "https://www.terneuzen.nl/Ondernemers/online_diensten_voor_ondernemers/Omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "U kunt de vergunningcheck doen zonder in te loggen.",
+          "original_reference": "U kunt deze check doen zonder in te loggen.",
+          "note": "Beide teksten vermelden consistent dat de vergunningcheck zonder inloggen kan worden uitgevoerd.",
+          "source_urls": [
+            "https://www.terneuzen.nl/Ondernemers/online_diensten_voor_ondernemers/Omgevingsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste afwijking tussen de originele tekst en de bronnen betreft de status van het vooroverleg. Waar de originele tekst dit als een aanbeveling presenteert, stellen de bronnen dat dit een wettelijke verplichting is onder de Omgevingswet na een positieve vergunningcheck. Voor het overige komt de informatie grotendeels overeen, hoewel de bronnen minder gedetailleerde informatie bevatten over specifieke aspecten van de omzettingsvergunning voor kamerverhuur."
+  }
+}

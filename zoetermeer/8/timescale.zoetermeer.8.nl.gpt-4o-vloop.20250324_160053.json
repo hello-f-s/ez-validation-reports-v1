@@ -1,0 +1,100 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ZOETERMEER",
+      "contact": {
+        "phone": "14 079",
+        "email": "Antwoord@zoetermeer.nl",
+        "website": "http://www.zoetermeer.nl"
+      }
+    },
+    "service": {
+      "id": 8,
+      "name": "Marktvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "Voor de eerste 12 m², met een minimum van 12 m²: € 1,70 per m², per dag of € 17,99 per m², per kwartaal",
+        "status": "false",
+        "note": "Volgens de actuele tarieven op de website van gemeente Zoetermeer is het correcte tarief € 1,75 per m² per dag of € 18,48 per m² per kwartaal voor de eerste 12 m² op dinsdag en vrijdag."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 1,
+    "invalid_urls": 5,
+    "accuracy_percentage": 16.7,
+    "valid_urls_list": [
+      "https://www.zoetermeer.nl/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.zoetermeer.nl/marktplaats-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.zoetermeer.nl/vergunningen-en-ontheffingen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.zoetermeer.nl/horecavergunningen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.zoetermeer.nl/exploitatievergunning-horecabedrijf",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.zoetermeer.nl/onderneming-starten",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Engelandlaan 502, 2711 EB Zoetermeer",
+          "original_reference": "Engelandlaan 502, 2711 EB Zoetermeer",
+          "note": "Het bezoekadres komt exact overeen met de originele inhoud",
+          "source_urls": [
+            "https://www.zoetermeer.nl/"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Postbus 15, 2700 AA Zoetermeer",
+          "original_reference": "Postbus 15, 2700 AA Zoetermeer",
+          "note": "Het postadres komt exact overeen met de originele inhoud",
+          "source_urls": [
+            "https://www.zoetermeer.nl/"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "14 079",
+          "original_reference": "14 079",
+          "note": "Het telefoonnummer komt exact overeen met de originele inhoud",
+          "source_urls": [
+            "https://www.zoetermeer.nl/"
+          ]
+        }
+      ]
+    },
+    "summary": "De beschikbare informatie op de bronwebsite komt overeen met de originele inhoud wat betreft de contactgegevens. Voor de overige informatie zoals marktvergunningen, kosten en voorwaarden is geen vergelijkbare informatie gevonden op de geciteerde bronpagina om te kunnen verifiëren. Een volledige vergelijking van alle aspecten is daarom niet mogelijk op basis van de beschikbare broninhoud."
+  }
+}

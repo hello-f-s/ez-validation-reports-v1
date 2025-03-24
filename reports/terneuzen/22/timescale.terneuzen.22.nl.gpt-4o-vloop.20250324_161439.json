@@ -1,0 +1,79 @@
+{
+  "context": {
+    "municipality": {
+      "name": "TERNEUZEN",
+      "contact": {
+        "phone": "14 0115",
+        "email": "gemeente@terneuzen.nl",
+        "website": "http://www.terneuzen.nl"
+      }
+    },
+    "service": {
+      "id": 22,
+      "name": "Woonruimte splitsen of samenvoegen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 10,
+    "false_sentences": 2,
+    "accuracy_percentage": 83.3,
+    "false_statements": [
+      {
+        "sentence": "Dit is toegestaan onder bepaalde voorwaarden, zoals dat de woning nog nooit eerder bewoond is geweest, bijvoorbeeld bij nieuwbouwprojecten.",
+        "status": "false",
+        "note": "Dit is onjuist voor Terneuzen. De Leegstandswet staat tijdelijke verhuur toe in meer situaties dan alleen nieuwbouw, zoals bij woningen die in afwachting zijn van sloop of renovatie, of bij te koop staande woningen."
+      },
+      {
+        "sentence": "Voor het aanvragen van een vergunning voor het splitsen of samenvoegen van woonruimte heeft u de volgende documenten nodig: een ingevuld aanvraagformulier, een eigendomsbewijs van het kadaster, en een bewijs dat de woning te koop staat, zoals een verkoopopdracht van een makelaar.",
+        "status": "false",
+        "note": "Deze documentenlijst is niet correct voor Terneuzen. Een bewijs dat de woning te koop staat is geen standaardvereiste voor een splitsings- of samenvoegingsvergunning in Terneuzen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.terneuzen.nl/Inwoners_Terneuzen/Wonen/Woning_tijdelijk_verhuren_vergunning",
+      "https://www.terneuzen.nl/Ondernemers/online_diensten_voor_ondernemers/Bedrijf_aan_huis",
+      "https://www.terneuzen.nl/Inwoners_Terneuzen/Bouwen/Omgevingsvergunning_aanvragen",
+      "https://www.terneuzen.nl/Ondernemers/online_diensten_voor_ondernemers/Omgevingsvergunning",
+      "https://www.terneuzen.nl/Inwoners_Terneuzen/Bouwen"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als uit de vergunningcheck blijkt dat u een vergunning nodig heeft, dient u volgens de Omgevingswet eerst een vooroverleg in.",
+          "original_reference": "U begint het aanvraagproces met een vergunningcheck via het Omgevingsloket om te controleren of een vergunning vereist is.",
+          "note": "De bronpagina geeft aan dat een vooroverleg verplicht is volgens de Omgevingswet, terwijl dit in de originele tekst als optioneel wordt gepresenteerd.",
+          "source_urls": [
+            "https://www.terneuzen.nl/Ondernemers/online_diensten_voor_ondernemers/Omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U maakt rechtstreeks een afspraak bij ons. Dit kan alleen op dinsdagen.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina specificeert dat vooroverleg alleen op dinsdagen mogelijk is, deze belangrijke beperking ontbreekt in de originele tekst.",
+          "source_urls": [
+            "https://www.terneuzen.nl/Ondernemers/online_diensten_voor_ondernemers/Omgevingsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele tekst en de bronpagina's. Ten eerste wordt het vooroverleg in de bronnen als verplichte stap beschreven volgens de Omgevingswet, terwijl dit in de originele tekst als optioneel wordt gepresenteerd. Ten tweede ontbreekt in de originele tekst de belangrijke informatie dat vooroverleg alleen op dinsdagen mogelijk is. Deze verschillen kunnen van invloed zijn op de planning en verwachtingen van aanvragers."
+  }
+}

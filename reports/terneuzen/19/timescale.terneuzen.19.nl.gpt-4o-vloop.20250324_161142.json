@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "TERNEUZEN",
+      "contact": {
+        "phone": "14 0115",
+        "email": "gemeente@terneuzen.nl",
+        "website": "http://www.terneuzen.nl"
+      }
+    },
+    "service": {
+      "id": 19,
+      "name": "Vergunning aanvragen speelautomaat of speelautomatenhal"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "Voor meer informatie kunt u contact opnemen met het team Vergunningen en Handhaving via telefoonnummer 14 0115.",
+        "status": "false",
+        "note": "Het correcte contactnummer voor de gemeente Terneuzen is +31 115 455 000. Het nummer 14 0115 is niet in gebruik voor de gemeente Terneuzen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.terneuzen.nl/Ondernemers/online_diensten_voor_ondernemers/Exploitatievergunning",
+      "https://www.terneuzen.nl/Inwoners_Terneuzen/Sport_cultuur_recreatie/Evenement_organiseren/Loterij",
+      "https://www.terneuzen.nl/Parkeren/Parkeren_bedrijven/Parkeervergunning_werknemers_werkgevers",
+      "https://www.terneuzen.nl/Inwoners_Terneuzen/Bouwen/Omgevingsvergunning_aanvragen",
+      "https://www.terneuzen.nl/Inwoners_Terneuzen/Sport_cultuur_recreatie/Evenement_organiseren/Klein_kansspel_bingo_of_rad_van_fortuin"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Bijvoorbeeld een hotel, restaurant, pension, cafetaria, snackbar, discotheek, buurthuis, clubhuis, speelautomatenhal of coffeeshop? Dan heeft u altijd een exploitatievergunning nodig. Uitgezonderd zijn: slijterijen, zorginstellingen en paracommerciële bedrijven.",
+          "original_reference": "Indien u een horecabedrijf wilt starten of overnemen, zoals een speelautomatenhal, heeft u een exploitatievergunning nodig. Uitzonderingen hierop zijn slijterijen, zorginstellingen en paracommerciële bedrijven.",
+          "note": "De informatie over vergunningplicht en uitzonderingen komt exact overeen",
+          "source_urls": [
+            "https://www.terneuzen.nl/Ondernemers/online_diensten_voor_ondernemers/Exploitatievergunning"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Als er meer dan 50 personen tegelijkertijd in het horecabedrijf aanwezig kunnen zijn, moet u een Melding brandveilig gebruik doen.",
+          "original_reference": "Als er meer dan 50 personen tegelijkertijd in het horecabedrijf aanwezig kunnen zijn, moet u een melding brandveilig gebruik doen volgens het activiteitenbesluit milieubeheer.",
+          "note": "De vereiste voor brandveilig gebruik bij meer dan 50 personen komt overeen",
+          "source_urls": [
+            "https://www.terneuzen.nl/Ondernemers/online_diensten_voor_ondernemers/Exploitatievergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Neem voor aanvraag eerst contact op met de vakafdeling.",
+          "original_reference": "Het is aan te raden om voorafgaand aan de aanvraag contact op te nemen met de vakafdeling voor een vooroverleg.",
+          "note": "De brontekst stelt dit als verplichting ('eerst'), terwijl het in de originele tekst als advies wordt gegeven",
+          "source_urls": [
+            "https://www.terneuzen.nl/Ondernemers/online_diensten_voor_ondernemers/Exploitatievergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De informatie komt grotendeels overeen, met één belangrijk verschil in de benadering van het vooroverleg met de vakafdeling. Waar de originele tekst dit als advies presenteert, stelt de brontekst dit als vereiste voorwaarde. Voor het overige zijn de vereisten, uitzonderingen en voorwaarden consistent beschreven."
+  }
+}

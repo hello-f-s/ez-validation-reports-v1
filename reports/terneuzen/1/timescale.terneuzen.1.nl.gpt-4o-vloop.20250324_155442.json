@@ -1,0 +1,78 @@
+{
+  "context": {
+    "municipality": {
+      "name": "TERNEUZEN",
+      "contact": {
+        "phone": "14 0115",
+        "email": "gemeente@terneuzen.nl",
+        "website": "http://www.terneuzen.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "Minimaal twee leidinggevenden in deze instellingen moeten een Verklaring Sociale Hygiëne hebben.",
+        "status": "false",
+        "note": "Volgens de Alcoholwet is het voldoende als één leidinggevende binnen een paracommerciële instelling beschikt over een Verklaring Sociale Hygiëne, niet minimaal twee zoals vermeld."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 4,
+    "invalid_urls": 1,
+    "accuracy_percentage": 80.0,
+    "valid_urls_list": [
+      "https://www.terneuzen.nl/Ondernemers/online_diensten_voor_ondernemers/Alcoholwetvergunning",
+      "https://www.terneuzen.nl/Inwoners_Terneuzen/Sport_cultuur_recreatie/Evenement_organiseren/Alcohol_schenken_tijdens_een_evenement",
+      "https://www.terneuzen.nl/Parkeren/Parkeren_bedrijven/Parkeervergunning_werknemers_werkgevers",
+      "https://www.terneuzen.nl/Ondernemers/online_diensten_voor_ondernemers/Vergunning_alcoholvrije_dranken_en_eetwaren_serveren"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.terneuzen.nl/Ondernemers/online_diensten_voor_ondernemers/Exploitatievergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als u een nieuwe alcoholwetvergunning wilt aanvragen, dient u een afspraak te maken met het team Vergunningen en Handhaving van onze gemeente.",
+          "original_reference": "Neem voor de aanvraag eerst contact op met het team Vergunningen en Handhaving van de Gemeente Terneuzen. U kunt ook het contactformulier invullen voor vragen.",
+          "note": "De bron specificeert dat er een afspraak gemaakt moet worden, terwijl de originele tekst alleen spreekt over contact opnemen. Dit is een concreet procedureverschil.",
+          "source_urls": [
+            "https://www.terneuzen.nl/Ondernemers/online_diensten_voor_ondernemers/Alcoholwetvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bij de voortzetting van een bestaande inrichting heeft u tevens een exploitatievergunning nodig.",
+          "original_reference": "Naast de alcoholwetvergunning heeft u mogelijk ook andere vergunningen nodig, zoals een exploitatievergunning voor het runnen van een horecabedrijf",
+          "note": "De bron stelt de exploitatievergunning als absolute vereiste bij voortzetting, terwijl de originele tekst dit als mogelijkheid presenteert.",
+          "source_urls": [
+            "https://www.terneuzen.nl/Ondernemers/online_diensten_voor_ondernemers/Alcoholwetvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele tekst en de bronnen. Het eerste verschil betreft de aanvraagprocedure, waarbij de bron specifiek een afspraak vereist in plaats van alleen contact opnemen. Het tweede verschil betreft de noodzaak van een exploitatievergunning, die in de bron als absolute vereiste wordt gesteld bij voortzetting van een bestaande inrichting, terwijl dit in de originele tekst als optioneel wordt gepresenteerd."
+  }
+}

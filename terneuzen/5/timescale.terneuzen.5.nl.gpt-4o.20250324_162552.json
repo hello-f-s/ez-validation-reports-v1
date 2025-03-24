@@ -1,0 +1,79 @@
+{
+  "context": {
+    "municipality": {
+      "name": "TERNEUZEN",
+      "contact": {
+        "phone": "14 0115",
+        "email": "gemeente@terneuzen.nl",
+        "website": "http://www.terneuzen.nl"
+      }
+    },
+    "service": {
+      "id": 5,
+      "name": "Exploitatievergunning horecabedrijf aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 11,
+    "false_sentences": 1,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "Uitzonderingen zijn slijterijen, zorginstellingen en paracommerciële bedrijven.",
+        "status": "false",
+        "note": "Volgens de website van gemeente Terneuzen zijn slijterijen niet uitgezonderd van de exploitatievergunningplicht. Alleen zorginstellingen en paracommerciële inrichtingen worden genoemd als uitzonderingen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.terneuzen.nl/Parkeren/Parkeren_bedrijven/Parkeervergunning_werknemers_werkgevers",
+      "https://www.terneuzen.nl/Ondernemers/online_diensten_voor_ondernemers/Terrasvergunning",
+      "https://www.terneuzen.nl/Ondernemers/online_diensten_voor_ondernemers/Exploitatievergunning",
+      "https://www.terneuzen.nl/Ondernemers/online_diensten_voor_ondernemers/Omgevingsvergunning",
+      "https://www.terneuzen.nl/Inwoners_Terneuzen/Bouwen/Omgevingsvergunning_aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.terneuzen.nl/exploitatievergunning",
+        "reason": "INVALID: Error scraping https://www.terneuzen.nl/exploitatievergunning: 404 Client Error:  for url: https://www.terneuzen.nl/exploitatievergunning"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als er meer dan 50 personen tegelijkertijd in het horecabedrijf aanwezig kunnen zijn, moet u een Melding brandveilig gebruik doen. Vanuit milieuregelgeving moet u bovendien een Melding activiteitenbesluit milieubeheer doen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst mist belangrijke aanvullende verplichtingen rond brandveiligheid en milieuregelgeving die wel in de bronpagina worden genoemd.",
+          "source_urls": [
+            "https://www.terneuzen.nl/Ondernemers/online_diensten_voor_ondernemers/Exploitatievergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "In artikel 2.28 van de Algemene Plaatselijke Verordening vindt u informatie over de exploitatie van openbare inrichtingen. Voor meer informatie kunt u contact opnemen met team Vergunningen en Handhaving, tel 14 0115.",
+          "original_reference": "Neem eerst contact op met de vakafdeling van de gemeente Terneuzen",
+          "note": "De bron specificeert het exacte team (Vergunningen en Handhaving) en telefoonnummer (14 0115) voor contact, terwijl de originele tekst alleen algemeen verwijst naar 'de vakafdeling'.",
+          "source_urls": [
+            "https://www.terneuzen.nl/Ondernemers/online_diensten_voor_ondernemers/Exploitatievergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten belangrijke aanvullende informatie die niet in de originele tekst staat, met name over verplichte meldingen voor brandveiligheid en milieu bij meer dan 50 personen, en specifiekere contactgegevens. Deze informatie is essentieel voor ondernemers die een exploitatievergunning willen aanvragen."
+  }
+}

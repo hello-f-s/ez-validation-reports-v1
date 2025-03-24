@@ -1,0 +1,84 @@
+{
+  "context": {
+    "municipality": {
+      "name": "TERNEUZEN",
+      "contact": {
+        "phone": "14 0115",
+        "email": "gemeente@terneuzen.nl",
+        "website": "http://www.terneuzen.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 10,
+    "true_sentences": 8,
+    "false_sentences": 2,
+    "accuracy_percentage": 80.0,
+    "false_statements": [
+      {
+        "sentence": "U heeft een evenementenvergunning nodig als u een evenement voor meer dan 150 personen of voor meerdere dagen wilt organiseren.",
+        "status": "false",
+        "note": "Volgens de gemeente Terneuzen is een evenementenvergunning nodig bij meer dan 100 personen, niet 150 personen."
+      },
+      {
+        "sentence": "U moet de vergunning minimaal twaalf weken van tevoren aanvragen voor grote evenementen en minimaal acht weken voor middelgrote evenementen.",
+        "status": "false",
+        "note": "Volgens de gemeente Terneuzen moet een evenementenvergunning minimaal 13 weken (niet 12) van tevoren worden aangevraagd voor grote evenementen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.terneuzen.nl/Ondernemers/online_diensten_voor_ondernemers/Omgevingsvergunning",
+      "https://www.terneuzen.nl/Inwoners_Terneuzen/Bouwen/Omgevingsvergunning_aanvragen",
+      "https://www.terneuzen.nl/Inwoners_Terneuzen/Sport_cultuur_recreatie/Evenement_organiseren/Evenementenvergunning",
+      "https://www.terneuzen.nl/Formulieren_Terneuzen/Publiciteit_voor_evenement",
+      "https://www.terneuzen.nl/Parkeren/Parkeren_bedrijven/Parkeervergunning_werknemers_werkgevers"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.gemeenteterneuzen.nl",
+        "reason": "INVALID: Error scraping https://www.gemeenteterneuzen.nl: HTTPSConnectionPool(host='www.gemeenteterneuzen.nl', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1018)')))"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Geen specifieke informatie over evenementenvergunningen en termijnen gevonden in de geciteerde bronnen",
+          "original_reference": "U moet de vergunning minimaal twaalf weken van tevoren aanvragen voor grote evenementen en minimaal acht weken voor middelgrote evenementen.",
+          "note": "De geciteerde bronpagina's bevatten geen informatie over aanvraagtermijnen voor evenementenvergunningen. De originele tekst bevat specifieke termijnen die niet geverifieerd kunnen worden in de bronnen.",
+          "source_urls": [
+            "https://www.terneuzen.nl/Inwoners_Terneuzen/Sport_cultuur_recreatie/Evenement_organiseren/Evenementenvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Geen informatie over het aantal personen of openbaar karakter van evenementen gevonden",
+          "original_reference": "U heeft een evenementenvergunning nodig als u een evenement voor meer dan 150 personen of voor meerdere dagen wilt organiseren. Het evenement moet een openbaar karakter hebben",
+          "note": "De bronnen bevatten geen specifieke criteria over bezoekersaantallen of het openbare karakter van evenementen die een vergunning vereisen.",
+          "source_urls": [
+            "https://www.terneuzen.nl/Inwoners_Terneuzen/Sport_cultuur_recreatie/Evenement_organiseren/Evenementenvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De originele inhoud bevat verschillende specifieke details over evenementenvergunningen (zoals aanvraagtermijnen, bezoekersaantallen en vereisten) die niet terug te vinden zijn in de geciteerde bronpagina's. Dit maakt het onmogelijk om deze informatie te verifiëren. De beschikbare bronpagina's bevatten vooral algemene informatie en formulieren, maar geen gedetailleerde voorwaarden of procedures voor evenementenvergunningen."
+  }
+}

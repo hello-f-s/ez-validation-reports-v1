@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "TERNEUZEN",
+      "contact": {
+        "phone": "14 0115",
+        "email": "gemeente@terneuzen.nl",
+        "website": "http://www.terneuzen.nl"
+      }
+    },
+    "service": {
+      "id": 10,
+      "name": "Nachtregister bijhouden"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "Voor meer informatie kunt u contact opnemen met team Vergunning en Handhaving, tel 14 0115.",
+        "status": "false",
+        "note": "De correcte naam van het team is 'Vergunningen en Handhaving' (met een 'en' en meervoud bij 'Vergunningen'). Het telefoonnummer is wel correct."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.terneuzen.nl/Ondernemers/online_diensten_voor_ondernemers/Nachtregister",
+      "https://www.terneuzen.nl/Onze_Organisatie/Beleid/Gemeentelijke_verordeningen_en_beleidsstukken",
+      "https://www.terneuzen.nl/Formulieren_Terneuzen/Aanvraag_ter_inzage_liggende_stukken",
+      "https://www.terneuzen.nl/Parkeren/Parkeren_bedrijven/Parkeervergunning_werknemers_werkgevers",
+      "https://www.terneuzen.nl/Inwoners_Terneuzen/Werk_en_inkomen/Inleverdata_Rechtmatigheids_Onderzoeks_Formulier_rofje"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Wilt u als ondernemer overnachtingen aanbieden? Dan moet u een nachtregister bijhouden. Dit is wettelijk verplicht. De gemeente kan vragen om de gegevens uit het nachtregister in te zien. Bijvoorbeeld bij de aangifte van de toeristenbelasting of bij een controle.",
+          "original_reference": "Als ondernemer in de gemeente Terneuzen bent u wettelijk verplicht een nachtregister bij te houden als u overnachtingen aanbiedt [...] De gemeente kan vragen om de gegevens uit het nachtregister in te zien, bijvoorbeeld bij de aangifte van de toeristenbelasting of bij een controle.",
+          "note": "De kernvereisten voor het nachtregister en de controlemogelijkheden komen exact overeen",
+          "source_urls": [
+            "https://www.terneuzen.nl/Ondernemers/online_diensten_voor_ondernemers/Nachtregister"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wij ontvangen graag de volgende informatie: gegevens van de bedrijfsleider, de locatie van het bedrijf",
+          "original_reference": "No matching information",
+          "note": "De bronpagina vermeldt specifieke informatie die moet worden aangeleverd (bedrijfsleidergegevens en locatie) die niet genoemd wordt in de originele tekst",
+          "source_urls": [
+            "https://www.terneuzen.nl/Ondernemers/online_diensten_voor_ondernemers/Nachtregister"
+          ]
+        }
+      ]
+    },
+    "summary": "De informatie komt grotendeels overeen, maar de bronpagina bevat aanvullende specifieke vereisten over aan te leveren bedrijfsinformatie die niet in de originele tekst staat vermeld. De kernvoorwaarden en procedures zijn verder consistent."
+  }
+}

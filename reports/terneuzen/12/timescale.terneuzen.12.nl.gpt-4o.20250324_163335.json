@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "TERNEUZEN",
+      "contact": {
+        "phone": "14 0115",
+        "email": "gemeente@terneuzen.nl",
+        "website": "http://www.terneuzen.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 14,
+    "true_sentences": 13,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.9,
+    "false_statements": [
+      {
+        "sentence": "Bij de procedure voor een omgevingsvergunning wordt een ontwerpvergunning ter inzage gelegd voor zes weken waarbinnen zienswijzen kunnen worden ingediend.",
+        "status": "false",
+        "note": "Dit is niet voor alle omgevingsvergunningen het geval. Alleen bij de uitgebreide procedure (die 26 weken duurt) wordt een ontwerpvergunning ter inzage gelegd. Bij de reguliere procedure (8 weken) is dit niet het geval. De gemeente Terneuzen maakt dit onderscheid duidelijk op haar website."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.terneuzen.nl/Opvang/Veel_gestelde_vragen_Nieuw/Proces",
+      "https://www.terneuzen.nl/Ondernemers/online_diensten_voor_ondernemers/Milieuvergunning",
+      "https://www.terneuzen.nl/Inwoners_Terneuzen/Bouwen/Oprit_inrit_of_uitweg_maken",
+      "https://www.terneuzen.nl/Inwoners_Terneuzen/Bouwen/Omgevingsvergunning_aanvragen",
+      "https://www.terneuzen.nl/Ondernemers/online_diensten_voor_ondernemers/Omgevingsvergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als uit de vergunningcheck blijkt dat u een vergunning nodig heeft, dient u volgens de Omgevingswet eerst een vooroverleg in.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de verplichting tot vooroverleg onder de Omgevingswet, wat een belangrijke procedurestap is die wel in de bronnen wordt genoemd.",
+          "source_urls": [
+            "https://www.terneuzen.nl/Ondernemers/online_diensten_voor_ondernemers/Omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Bij de invoering van de Omgevingswet per 1 januari 2024 is veel veranderd rondom omgevingsvergunningen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de recente wijzigingen door de invoering van de Omgevingswet per 1 januari 2024, wat belangrijke context is voor de procedures.",
+          "source_urls": [
+            "https://www.terneuzen.nl/Opvang/Veel_gestelde_vragen_Nieuw/Proces"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wij adviseren u om altijd eerst contact op te nemen met de RUD Zeeland",
+          "original_reference": "Neem contact op met de Regionale Uitvoeringsdienst Zeeland (RUD Zeeland) voor begeleiding bij het proces.",
+          "note": "De brontekst benadrukt sterker het belang van eerst contact opnemen met RUD Zeeland, terwijl de originele tekst dit als een stap in het proces noemt.",
+          "source_urls": [
+            "https://www.terneuzen.nl/Ondernemers/online_diensten_voor_ondernemers/Milieuvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de invoering van de nieuwe Omgevingswet per 1 januari 2024 en de daarmee samenhangende procedurele wijzigingen, zoals de verplichte vooroverlegfase. Ook is er een verschil in de emphasis op het contact met RUD Zeeland. Deze informatie is essentieel voor een correcte aanvraagprocedure maar ontbreekt grotendeels in de originele tekst."
+  }
+}

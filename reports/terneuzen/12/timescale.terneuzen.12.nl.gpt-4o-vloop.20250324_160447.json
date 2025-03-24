@@ -1,0 +1,74 @@
+{
+  "context": {
+    "municipality": {
+      "name": "TERNEUZEN",
+      "contact": {
+        "phone": "14 0115",
+        "email": "gemeente@terneuzen.nl",
+        "website": "http://www.terneuzen.nl"
+      }
+    },
+    "service": {
+      "id": 12,
+      "name": "Omgevingsvergunning of melding milieubeheer"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 23,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.8,
+    "false_statements": [
+      {
+        "sentence": "Als uit de vergunningcheck blijkt dat u een vergunning nodig heeft, dient u volgens de Omgevingswet eerst een vooroverleg in bij de gemeente.",
+        "status": "false",
+        "note": "Volgens de gemeente Terneuzen is vooroverleg niet verplicht maar optioneel. Het is wel aan te raden, maar niet wettelijk vereist als eerste stap na de vergunningcheck."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.terneuzen.nl/Ondernemers/online_diensten_voor_ondernemers/Omgevingsvergunning",
+      "https://www.terneuzen.nl/Ondernemers/online_diensten_voor_ondernemers/Milieuvergunning",
+      "https://www.terneuzen.nl/Inwoners_Terneuzen/Bouwen/Omgevingsvergunning_aanvragen",
+      "https://www.terneuzen.nl/Opvang/Veel_gestelde_vragen_Nieuw/Proces",
+      "https://www.terneuzen.nl/Inwoners_Terneuzen/Bouwen/Oprit_inrit_of_uitweg_maken"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wij raden u aan om altijd eerst contact op te nemen met de RUD Zeeland",
+          "original_reference": "Neem contact op met de Regionale Uitvoeringsdienst Zeeland (RUD Zeeland) voor begeleiding bij het proces.",
+          "note": "De brontekst benadrukt sterker dat contact met RUD Zeeland een eerste stap moet zijn ('altijd eerst') terwijl dit in de originele tekst als een latere stap in het proces wordt genoemd.",
+          "source_urls": [
+            "https://www.terneuzen.nl/Ondernemers/online_diensten_voor_ondernemers/Milieuvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U maakt rechtstreeks een afspraak bij ons. Dit kan alleen op dinsdagen.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over de mogelijkheid en beperking van afspraken tot alleen dinsdagen voor vooroverleg.",
+          "source_urls": [
+            "https://www.terneuzen.nl/Ondernemers/online_diensten_voor_ondernemers/Omgevingsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden tussen de originele tekst en de bronnen. Ten eerste verschilt de volgorde en urgentie van contact met RUD Zeeland. Ten tweede ontbreekt in de originele tekst belangrijke praktische informatie over de beperking van afspraken tot dinsdagen. De overige informatie komt grotendeels overeen met de bronnen."
+  }
+}

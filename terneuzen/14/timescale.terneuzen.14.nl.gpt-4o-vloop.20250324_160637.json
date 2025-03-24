@@ -1,0 +1,83 @@
+{
+  "context": {
+    "municipality": {
+      "name": "TERNEUZEN",
+      "contact": {
+        "phone": "14 0115",
+        "email": "gemeente@terneuzen.nl",
+        "website": "http://www.terneuzen.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 31,
+    "true_sentences": 30,
+    "false_sentences": 1,
+    "accuracy_percentage": 96.8,
+    "false_statements": [
+      {
+        "sentence": "Op zondag kunt u gratis parkeren op betaalde parkeerplaatsen.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Terneuzen geldt betaald parkeren ook op zondag van 12:00 tot 18:00 uur in het centrum van Terneuzen. Gratis parkeren op zondag is dus niet correct."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.terneuzen.nl/Parkeren/Parkeren_bedrijven/Parkeervergunning_werknemers_werkgevers",
+      "https://www.terneuzen.nl/Parkeren/Rij_1_parkeren/Vraag_uw_parkeervergunning_aan",
+      "https://www.terneuzen.nl/Parkeren/Veel_gestelde_vragen_over/Veel_gestelde_vragen_parkeren_bedrijven",
+      "https://www.terneuzen.nl/Parkeren/Parkeren_bedrijven/Aanvragen_dienstverlenersvergunning",
+      "https://www.terneuzen.nl/Parkeren/Veel_gestelde_vragen_over/Veel_gestelde_vragen_dienstverlenersparkeervergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een ANBI instelling krijgt niet meer dan één dienstverlenersparkeervergunning per instelling.",
+          "original_reference": "Het aantal dienstverlenersvergunningen per onderneming is onbeperkt, maar kan niet hoger zijn dan het aantal geregistreerde medewerkers, gecontroleerd via de KvK.",
+          "note": "De originele tekst specificeert niet dat ANBI-instellingen beperkt zijn tot één vergunning per instelling, wat een belangrijke beperking is die wel in de bronnen staat.",
+          "source_urls": [
+            "https://www.terneuzen.nl/Parkeren/Veel_gestelde_vragen_over/Veel_gestelde_vragen_dienstverlenersparkeervergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een medicus krijgt per ingeschreven persoon in het BIG register maximaal één dienstverlenersparkeervergunning.",
+          "original_reference": "Specifieke eisen voor ANBI-instellingen, medici en overheidsinstanties gelden om in aanmerking te komen voor de dienstverlenersvergunning.",
+          "note": "De originele tekst vermeldt niet de specifieke beperking van één vergunning per BIG-geregistreerde medicus.",
+          "source_urls": [
+            "https://www.terneuzen.nl/Parkeren/Veel_gestelde_vragen_over/Veel_gestelde_vragen_dienstverlenersparkeervergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een ambulante handelaar krijgt maximaal twee dienstverlenersparkeervergunningen per handelaar.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst bevat geen informatie over het maximum aantal vergunningen voor ambulante handelaars.",
+          "source_urls": [
+            "https://www.terneuzen.nl/Parkeren/Veel_gestelde_vragen_over/Veel_gestelde_vragen_dienstverlenersparkeervergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen specifieke beperkingen voor verschillende typen vergunninghouders die niet in de originele tekst zijn opgenomen. Met name de limieten voor ANBI-instellingen (1 vergunning), medici (1 per BIG-registratie) en ambulante handelaars (2 vergunningen) zijn belangrijke details die ontbreken in de originele tekst."
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ZOETERMEER",
+      "contact": {
+        "phone": "14 079",
+        "email": "Antwoord@zoetermeer.nl",
+        "website": "http://www.zoetermeer.nl"
+      }
+    },
+    "service": {
+      "id": 6,
+      "name": "Integriteitsonderzoek (Wet Bibob)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 17,
+    "false_sentences": 0,
+    "accuracy_percentage": 100.0,
+    "false_statements": []
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 2,
+    "invalid_urls": 3,
+    "accuracy_percentage": 40.0,
+    "valid_urls_list": [
+      "https://www.zoetermeer.nl/informatie-over-beleid-of-besluiten-opvragen-who-verzoek",
+      "https://www.zoetermeer.nl/form/alcoholvergunning-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.zoetermeer.nl/informatie-opvragen-of-woo-verzoek-doen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.zoetermeer.nl/bibob",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.zoetermeer.nl/bijstand-heronderzoek",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De documenten voor deze aanvraag moet u aanleveren in de volgende bestandformaten: Word, Excel of Pdf. Een foto of screenshot van een document mag niet.",
+          "original_reference": "Het formulier en bijlagen moeten worden ingediend in Word, Excel of Pdf-formaat.",
+          "note": "De bronpagina specificeert expliciet dat foto's en screenshots niet zijn toegestaan, wat een belangrijke aanvullende beperking is die niet in de originele tekst staat.",
+          "source_urls": [
+            "https://www.zoetermeer.nl/form/alcoholvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Verklaringen van Sociale Hygiëne hoeven niet meegestuurd te worden. De gemeente kan deze verklaringen opzoeken in een register. Leidinggevenden moeten wel beschikken over deze verklaring.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina bevat specifieke informatie over Verklaringen van Sociale Hygiëne die volledig ontbreekt in de originele tekst, wat een belangrijk vereiste is voor horecavergunningen.",
+          "source_urls": [
+            "https://www.zoetermeer.nl/form/alcoholvergunning-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "Er zijn twee belangrijke verschillen gevonden. Ten eerste wordt in de bronpagina expliciet vermeld dat foto's en screenshots niet zijn toegestaan als documentformaat, een belangrijke beperking die niet in de originele tekst staat. Ten tweede bevat de bronpagina specifieke informatie over de Verklaring van Sociale Hygiëne die volledig ontbreekt in de originele tekst, terwijl dit een belangrijk vereiste is voor horecavergunningen."
+  }
+}

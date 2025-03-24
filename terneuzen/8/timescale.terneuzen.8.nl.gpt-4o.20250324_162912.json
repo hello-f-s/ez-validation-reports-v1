@@ -1,0 +1,70 @@
+{
+  "context": {
+    "municipality": {
+      "name": "TERNEUZEN",
+      "contact": {
+        "phone": "14 0115",
+        "email": "gemeente@terneuzen.nl",
+        "website": "http://www.terneuzen.nl"
+      }
+    },
+    "service": {
+      "id": 8,
+      "name": "Marktvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 9,
+    "true_sentences": 8,
+    "false_sentences": 1,
+    "accuracy_percentage": 88.9,
+    "false_statements": [
+      {
+        "sentence": "U kunt uw aanvraag digitaal indienen met behulp van DigiD of eHerkenning voor bedrijven.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Terneuzen moet een standplaatsvergunning worden aangevraagd via een specifiek aanvraagformulier dat kan worden gedownload, niet via DigiD of eHerkenning."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 6,
+    "valid_urls": 5,
+    "invalid_urls": 1,
+    "accuracy_percentage": 83.3,
+    "valid_urls_list": [
+      "https://www.terneuzen.nl/Ondernemers/online_diensten_voor_ondernemers/Omgevingsvergunning",
+      "https://www.terneuzen.nl/Inwoners_Terneuzen/Sport_cultuur_recreatie/Evenement_organiseren/Standplaats_voor_kraam_of_verkoopwagen",
+      "https://www.terneuzen.nl/Inwoners_Terneuzen/Bouwen/Omgevingsvergunning_aanvragen",
+      "https://www.terneuzen.nl/Parkeren/Parkeren_bedrijven/Parkeervergunning_werknemers_werkgevers",
+      "https://www.terneuzen.nl/Formulieren_Terneuzen/Aanvraag_ter_inzage_liggende_stukken"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.terneuzen.nl/aanvragen-parkeervergunning",
+        "reason": "INVALID: Error scraping https://www.terneuzen.nl/aanvragen-parkeervergunning: 404 Client Error:  for url: https://www.terneuzen.nl/aanvragen-parkeervergunning"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als uit de vergunningcheck blijkt dat u een vergunning nodig heeft, dient u volgens de Omgevingswet eerst een vooroverleg in.",
+          "original_reference": "No matching information",
+          "note": "De bronnen vermelden een verplicht vooroverleg volgens de Omgevingswet, wat niet genoemd wordt in de originele tekst. Dit is een belangrijke procedurestap die ontbreekt.",
+          "source_urls": [
+            "https://www.terneuzen.nl/Ondernemers/online_diensten_voor_ondernemers/Omgevingsvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste afwijking tussen de originele tekst en de bronnen betreft een ontbrekende procedurestap: het verplichte vooroverleg volgens de Omgevingswet. Dit is een essentieel onderdeel van de aanvraagprocedure dat niet vermeld wordt in de originele tekst. Verder zijn er geen significante inhoudelijke verschillen gevonden tussen de originele tekst en de beschikbare bronnen, hoewel opgemerkt moet worden dat veel van de specifieke informatie uit de originele tekst niet direct terug te vinden is in de geciteerde bronpagina's."
+  }
+}

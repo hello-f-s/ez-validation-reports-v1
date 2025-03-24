@@ -1,0 +1,75 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ZOETERMEER",
+      "contact": {
+        "phone": "14 079",
+        "email": "Antwoord@zoetermeer.nl",
+        "website": "http://www.zoetermeer.nl"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 17,
+    "true_sentences": 16,
+    "false_sentences": 1,
+    "accuracy_percentage": 94.1,
+    "false_statements": [
+      {
+        "sentence": "De aanvraag kan worden ingediend via het bijbehorende formulier op de website van de Gemeente Zoetermeer.",
+        "status": "false",
+        "note": "De aanvraag moet worden ingediend via het e-formulier op het Omgevingsloket Online (OLO), niet direct via de website van de gemeente Zoetermeer."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 8,
+    "valid_urls": 0,
+    "invalid_urls": 8,
+    "accuracy_percentage": 0.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.zoetermeer.nl/evenementen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://example.com/page1",
+        "reason": "INVALID: Error scraping https://example.com/page1: 404 Client Error: Not Found for url: https://example.com/page1"
+      },
+      {
+        "url": "https://www.zoetermeer.nl/vergunningen-en-ontheffingen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://example.com/page3",
+        "reason": "INVALID: Error scraping https://example.com/page3: 404 Client Error: Not Found for url: https://example.com/page3"
+      },
+      {
+        "url": "https://example.com/page2",
+        "reason": "INVALID: Error scraping https://example.com/page2: 404 Client Error: Not Found for url: https://example.com/page2"
+      },
+      {
+        "url": "https://www.zoetermeer.nl/form/evenement-vergunning-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.zoetermeer.nl/evenement-organiseren",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.zoetermeer.nl/evenement-of-activiteit-organiseren",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ZOETERMEER",
+      "contact": {
+        "phone": "14 079",
+        "email": "Antwoord@zoetermeer.nl",
+        "website": "http://www.zoetermeer.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 21,
+    "true_sentences": 20,
+    "false_sentences": 1,
+    "accuracy_percentage": 95.2,
+    "false_statements": [
+      {
+        "sentence": "Het bedrijf moet voldoen aan bepaalde bouwtechnische eisen, zoals een ruimte van minimaal 35 m² voor het nuttigen van alcohol en minimaal twee gescheiden toiletten.",
+        "status": "false",
+        "note": "Volgens de officiële eisen van de gemeente Zoetermeer moet een horecagelegenheid een minimale oppervlakte hebben van 50 m² (niet 35 m²) voor het nuttigen van alcohol."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 2,
+    "invalid_urls": 3,
+    "accuracy_percentage": 40.0,
+    "valid_urls_list": [
+      "https://www.zoetermeer.nl/form/alcoholvergunning-wijziging-doorgeven",
+      "https://www.zoetermeer.nl/form/alcoholvergunning-aanvragen"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.zoetermeer.nl/exploitatievergunning-horecabedrijf",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.zoetermeer.nl/horecavergunningen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.zoetermeer.nl/alcoholvergunning",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 3,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een plattegrond (met schaalvermelding) van het pand (inclusief terras)",
+          "original_reference": "Een plattegrond (met maten) van het pand",
+          "note": "De bronnen specificeren expliciet dat het terras moet worden opgenomen in de plattegrond en dat er een schaalvermelding nodig is, wat niet vermeld staat in de originele tekst",
+          "source_urls": [
+            "https://www.zoetermeer.nl/form/alcoholvergunning-wijziging-doorgeven",
+            "https://www.zoetermeer.nl/form/alcoholvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een ingevuld Bibob-formulier inclusief de bijbehorende bijlagen",
+          "original_reference": "Er is een positief advies vereist uit het Bibob-onderzoek",
+          "note": "De bronnen vermelden specifiek dat er een Bibob-formulier met bijlagen moet worden ingevuld, terwijl de originele tekst alleen spreekt over een positief advies",
+          "source_urls": [
+            "https://www.zoetermeer.nl/form/alcoholvergunning-aanvragen"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Een foto of screenshot van een document mag niet",
+          "original_reference": "No matching information",
+          "note": "De bronnen specificeren expliciet dat foto's of screenshots niet zijn toegestaan als documentformaat, wat niet vermeld staat in de originele tekst",
+          "source_urls": [
+            "https://www.zoetermeer.nl/form/alcoholvergunning-wijziging-doorgeven",
+            "https://www.zoetermeer.nl/form/alcoholvergunning-aanvragen"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronnen bevatten enkele belangrijke aanvullende specificaties die niet in de originele tekst staan. Het gaat vooral om specifieke eisen aan de plattegrond (inclusief terras en schaalvermelding), het expliciet verbod op foto's en screenshots van documenten, en de concrete vermelding van het Bibob-formulier met bijlagen. Deze details zijn belangrijk voor een correcte aanvraag van de alcoholvergunning."
+  }
+}

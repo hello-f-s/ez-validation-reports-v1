@@ -1,0 +1,87 @@
+{
+  "context": {
+    "municipality": {
+      "name": "TERNEUZEN",
+      "contact": {
+        "phone": "14 0115",
+        "email": "gemeente@terneuzen.nl",
+        "website": "http://www.terneuzen.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 13,
+    "true_sentences": 12,
+    "false_sentences": 1,
+    "accuracy_percentage": 92.3,
+    "false_statements": [
+      {
+        "sentence": "Indien de aanvraag een buitenplanse omgevingsplanactiviteit betreft, legt het college de aanvraag voor advies voor aan de raad.",
+        "status": "false",
+        "note": "Onder de Omgevingswet is het niet verplicht dat het college elke buitenplanse omgevingsplanactiviteit voor advies aan de raad voorlegt. De gemeenteraad kan wel gevallen aanwijzen waarin zij adviesrecht heeft, maar dit geldt niet automatisch voor alle buitenplanse omgevingsplanactiviteiten."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 8,
+    "valid_urls": 5,
+    "invalid_urls": 3,
+    "accuracy_percentage": 62.5,
+    "valid_urls_list": [
+      "https://www.terneuzen.nl/Ondernemers/online_diensten_voor_ondernemers/Omgevingsvergunning",
+      "https://www.terneuzen.nl/Parkeren/Parkeren_bedrijven/Parkeervergunning_werknemers_werkgevers",
+      "https://www.terneuzen.nl/Opvang/Veel_gestelde_vragen_Nieuw/Proces",
+      "https://www.terneuzen.nl/Inwoners_Terneuzen/Bouwen/Omgevingsvergunning_aanvragen",
+      "https://www.terneuzen.nl/Ondernemers/online_diensten_voor_ondernemers/Milieuvergunning"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.terneuzen.nl/nl/gemeente/milieuvergunning",
+        "reason": "INVALID: Error scraping https://www.terneuzen.nl/nl/gemeente/milieuvergunning: 404 Client Error:  for url: https://www.terneuzen.nl/nl/gemeente/milieuvergunning"
+      },
+      {
+        "url": "https://www.terneuzen.nl/nl/gemeente/proces",
+        "reason": "INVALID: Error scraping https://www.terneuzen.nl/nl/gemeente/proces: 404 Client Error:  for url: https://www.terneuzen.nl/nl/gemeente/proces"
+      },
+      {
+        "url": "https://www.terneuzen.nl/nl/gemeente/omgevingsvergunning",
+        "reason": "INVALID: Error scraping https://www.terneuzen.nl/nl/gemeente/omgevingsvergunning: 404 Client Error:  for url: https://www.terneuzen.nl/nl/gemeente/omgevingsvergunning"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 2,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Als uit de vergunningcheck blijkt dat u een vergunning nodig heeft, dient u volgens de Omgevingswet eerst een vooroverleg in. Heeft u de vergunningcheck gedaan maar twijfelt u nog steeds of u een vergunning nodig heeft? Of zijn de mogelijkheden binnen het omgevingsplan niet duidelijk? Dan kunt u hierover met ons overleggen.",
+          "original_reference": "Als uit de vergunningcheck blijkt dat u een vergunning nodig heeft, dient u volgens de Omgevingswet eerst een vooroverleg in.",
+          "note": "De bronpagina biedt extra informatie over de mogelijkheid tot overleg bij twijfel na de vergunningcheck, wat niet vermeld wordt in de originele tekst.",
+          "source_urls": [
+            "https://www.terneuzen.nl/Ondernemers/online_diensten_voor_ondernemers/Omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wanneer u een bedrijf start of uw bedrijf uitbreidt, kan dat invloed hebben op de omgeving. U krijgt dan te maken met milieuregels, bijvoorbeeld op het gebied van geluid, afvalstoffen, lucht en bodem.",
+          "original_reference": "No matching information",
+          "note": "De bronpagina geeft specifieke voorbeelden van milieuregels die niet genoemd worden in de originele tekst.",
+          "source_urls": [
+            "https://www.terneuzen.nl/Ondernemers/online_diensten_voor_ondernemers/Milieuvergunning"
+          ]
+        }
+      ]
+    },
+    "summary": "De bronpagina's bevatten enkele belangrijke aanvullende details die niet in de originele tekst staan, met name over de mogelijkheid tot overleg bij twijfel na de vergunningcheck en specifieke voorbeelden van milieuregels. De kern van de procedures en vereisten blijft echter consistent tussen beide versies."
+  }
+}

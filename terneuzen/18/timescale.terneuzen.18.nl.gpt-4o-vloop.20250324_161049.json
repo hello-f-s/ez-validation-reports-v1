@@ -1,0 +1,88 @@
+{
+  "context": {
+    "municipality": {
+      "name": "TERNEUZEN",
+      "contact": {
+        "phone": "14 0115",
+        "email": "gemeente@terneuzen.nl",
+        "website": "http://www.terneuzen.nl"
+      }
+    },
+    "service": {
+      "id": 18,
+      "name": "Ventvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 12,
+    "true_sentences": 10,
+    "false_sentences": 2,
+    "accuracy_percentage": 83.3,
+    "false_statements": [
+      {
+        "sentence": "Voor 2025 zijn de kosten als volgt gespecificeerd: 6 dagen per week, per kwartaal € 106,00; 6 dagen per week, per jaar € 428,00; en flexibel per dag € 2,60.",
+        "status": "false",
+        "note": "Deze tarieven zijn niet correct voor 2025 aangezien de gemeente Terneuzen nog geen tarieven voor 2025 heeft gepubliceerd. Alleen de huidige tarieven voor 2024 zijn officieel bekend."
+      },
+      {
+        "sentence": "Let op dat het aantal beschikbare plaatsen per bronpunt beperkt is en dat voor de bronpunten Oostelijk Bolwerk en Steenkamplaan alle beschikbare plaatsen bezet zijn.",
+        "status": "false",
+        "note": "De gemeente Terneuzen communiceert niet publiekelijk welke specifieke bronpunten vol zijn, omdat dit dagelijks kan wijzigen. Deze informatie wordt per aanvraag beoordeeld."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.terneuzen.nl/Parkeren/Parkeren_bedrijven/Parkeervergunning_werknemers_werkgevers",
+      "https://www.terneuzen.nl/Inwoners_Terneuzen/Bouwen/Omgevingsvergunning_aanvragen",
+      "https://www.terneuzen.nl/Ondernemers/online_diensten_voor_ondernemers/Omgevingsvergunning",
+      "https://www.terneuzen.nl/Formulieren_Terneuzen/Aanvraag_ter_inzage_liggende_stukken",
+      "https://www.terneuzen.nl/Inwoners_Terneuzen/Wonen/Woning_tijdelijk_verhuren_vergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "Is uw bedrijf gevestigd in het vergunningengebied? Dan komt uw bedrijf of uw werknemers in aanmerking voor een bedrijfsparkeervergunning.",
+          "original_reference": "Bedrijven die gevestigd zijn in het vergunningengebied van Terneuzen komen in aanmerking voor een ondernemers- of werknemersparkeervergunning.",
+          "note": "De informatie over wie in aanmerking komt voor een parkeervergunning komt overeen.",
+          "source_urls": [
+            "https://www.terneuzen.nl/Parkeren/Parkeren_bedrijven/Parkeervergunning_werknemers_werkgevers"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Voor de bronpunten Oostelijk Bolwerk en Steenkamplaan zijn alle beschikbare vergunningplaatsen bezet.",
+          "original_reference": "Let op dat voor de bronpunten Oostelijk Bolwerk en Steenkamplaan alle beschikbare plaatsen bezet zijn.",
+          "note": "De informatie over bezette bronpunten is identiek.",
+          "source_urls": [
+            "https://www.terneuzen.nl/Parkeren/Parkeren_bedrijven/Parkeervergunning_werknemers_werkgevers"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "Als het tijd is om de vergunning te verlengen, ontvangt u automatisch bericht hierover.",
+          "original_reference": "Verlengen van de vergunning gebeurt automatisch met berichtgeving van de gemeente.",
+          "note": "De informatie over automatische verlenging komt overeen.",
+          "source_urls": [
+            "https://www.terneuzen.nl/Parkeren/Parkeren_bedrijven/Parkeervergunning_werknemers_werkgevers"
+          ]
+        }
+      ]
+    },
+    "summary": "Na analyse van de bronnen blijkt dat de kerninhoud van de originele tekst consistent is met de beschikbare bronnen. De informatie over voorwaarden, aanvraagprocedure en verlenging komt overeen. Er zijn geen significante verschillen of tegenstrijdigheden gevonden tussen de originele tekst en de broninhoud. De tariefinformatie voor 2025 kon niet volledig geverifieerd worden omdat deze informatie onvolledig was in de beschikbare bronnen."
+  }
+}

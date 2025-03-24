@@ -1,0 +1,78 @@
+{
+  "context": {
+    "municipality": {
+      "name": "ZOETERMEER",
+      "contact": {
+        "phone": "14 079",
+        "email": "Antwoord@zoetermeer.nl",
+        "website": "http://www.zoetermeer.nl"
+      }
+    },
+    "service": {
+      "id": 15,
+      "name": "Vergunning of ontheffing voor straatartiesten"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 9,
+    "true_sentences": 8,
+    "false_sentences": 1,
+    "accuracy_percentage": 88.9,
+    "false_statements": [
+      {
+        "sentence": "U ontvangt binnen 8 weken bericht van de gemeente of u de ontheffing krijgt.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Zoetermeer wordt er binnen 2 weken een besluit genomen over een ontheffing voor straatartiesten, niet binnen 8 weken."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 1,
+    "invalid_urls": 4,
+    "accuracy_percentage": 20.0,
+    "valid_urls_list": [
+      "https://www.zoetermeer.nl/"
+    ],
+    "invalid_urls_details": [
+      {
+        "url": "https://www.zoetermeer.nl/vergunningen-en-ontheffingen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.zoetermeer.nl/verkeersontheffing-aanvragen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.zoetermeer.nl/gebruik-openbare-ruimte",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      },
+      {
+        "url": "https://www.zoetermeer.nl/horecavergunningen",
+        "reason": "INVALID: Page appears to be invalid or error page"
+      }
+    ]
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 0,
+      "findings": [
+        {
+          "type": "CONSISTENT",
+          "source_text": "14 079",
+          "original_reference": "14 079",
+          "note": "Het telefoonnummer voor contact met de gemeente komt overeen met het origineel",
+          "source_urls": [
+            "https://www.zoetermeer.nl/"
+          ]
+        }
+      ]
+    },
+    "summary": "De beschikbare broninhoud bevat zeer beperkte informatie over straatartiesten en ontheffingen. Het enige verifieerbare element is het algemene contactnummer van de gemeente. De overige specifieke informatie uit de originele tekst (zoals voorwaarden, aanvraagprocedure, termijnen) kan niet worden geverifieerd omdat deze niet voorkomt in de geciteerde bron. Een volledige vergelijking is daarom niet mogelijk."
+  }
+}
