@@ -1,0 +1,47 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LEIDEN",
+      "contact": {
+        "phone": "14 071",
+        "email": "null",
+        "website": "http://www.leiden.nl/gemeente"
+      }
+    },
+    "service": {
+      "id": 4,
+      "name": "Evenementenvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 24,
+    "true_sentences": 22,
+    "false_sentences": 2,
+    "accuracy_percentage": 91.7,
+    "false_statements": [
+      {
+        "sentence": "A-evenement: Kosten € 87,45. Aanvraag dient 4 tot 6 weken van tevoren te worden ingediend.",
+        "status": "false",
+        "note": "Volgens de officiële website van Gemeente Leiden bedragen de kosten voor een A-evenement € 89,20 (2024 tarief)."
+      },
+      {
+        "sentence": "B-evenement zonder risico: Kosten € 118,70. Aanvraag moet 8 weken van tevoren worden ingediend.",
+        "status": "false",
+        "note": "Volgens de officiële website van Gemeente Leiden bedragen de kosten voor een B-evenement zonder risico € 121,10 (2024 tarief)."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 0,
+    "valid_urls": 0,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": []
+  }
+}

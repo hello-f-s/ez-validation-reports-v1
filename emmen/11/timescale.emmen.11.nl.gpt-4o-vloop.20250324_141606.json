@@ -1,0 +1,98 @@
+{
+  "context": {
+    "municipality": {
+      "name": "EMMEN",
+      "contact": {
+        "phone": "14 0591",
+        "email": "gemeente@emmen.nl",
+        "website": "http://www.emmen.nl"
+      }
+    },
+    "service": {
+      "id": 11,
+      "name": "Omgevingsvergunning aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 35,
+    "true_sentences": 31,
+    "false_sentences": 4,
+    "accuracy_percentage": 88.6,
+    "false_statements": [
+      {
+        "sentence": "€ 120,20 voor een verklaring vergunningsvrij bouwen.",
+        "status": "false",
+        "note": "Dit tarief komt niet overeen met de actuele legesverordening van gemeente Emmen"
+      },
+      {
+        "sentence": "Deze tarieven zijn vastgesteld in de legesverordening 2025.",
+        "status": "false",
+        "note": "Er bestaat nog geen legesverordening voor 2025 in gemeente Emmen"
+      },
+      {
+        "sentence": "WhatsApp: 0611198769",
+        "status": "false",
+        "note": "Dit WhatsApp nummer komt niet overeen met het officiële WhatsApp nummer van gemeente Emmen"
+      },
+      {
+        "sentence": "Zaterdag: 08.30 - 12.00 uur",
+        "status": "false",
+        "note": "Het gemeentehuis van Emmen is op zaterdag gesloten"
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 5,
+    "valid_urls": 5,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.emmen.nl/omgevingsvergunning-milieu",
+      "https://www.emmen.nl/vergunning-beperkte-milieutoets",
+      "https://www.emmen.nl/omgevingsvergunning",
+      "https://www.emmen.nl/aanlegvergunning",
+      "https://www.emmen.nl/conceptverzoek-omgevingsvergunning"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 1,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "Wilt u eerst een schetsplan laten toetsen, dan kunt u een conceptverzoek indienen. [...] Tijdens het gesprek kijkt de klantmanager of uw plan vergunningsvrij kan worden uitgevoerd of wat u eventueel kunt aanpassen om een grotere kans op een vergunning te krijgen.",
+          "original_reference": "U doet de aanvraag via het Omgevingsloket op overheid.nl. U kunt eerst een conceptverzoek indienen om te laten toetsen of uw plan haalbaar is.",
+          "note": "De bronpagina geeft meer specifieke details over het conceptverzoek en de rol van de klantmanager, terwijl de originele tekst hier beknopter over is.",
+          "source_urls": [
+            "https://www.emmen.nl/conceptverzoek-omgevingsvergunning"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "De werkzaamheden passen in het omgevingsplan. Het gaat niet om een monument. Het gaat niet om een beschermd stads- of dorpsgezicht.",
+          "original_reference": "De werkzaamheden moeten passen in het omgevingsplan. Het project mag niet op een monument van toepassing zijn. Het project mag niet in een beschermd stads- of dorpsgezicht plaatsvinden.",
+          "note": "De voorwaarden in beide teksten komen inhoudelijk overeen.",
+          "source_urls": [
+            "https://www.emmen.nl/aanlegvergunning"
+          ]
+        },
+        {
+          "type": "CONSISTENT",
+          "source_text": "U krijgt de beslissing binnen 8 weken na ontvangst van uw aanvraag. De gemeente kan deze termijn verlengen met 6 weken.",
+          "original_reference": "Voor een omgevingsvergunning beperkte milieutoets (OBM) krijgt u binnen 8 weken na ontvangst van uw aanvraag een beslissing, eventueel te verlengen met 6 weken.",
+          "note": "De behandeltermijnen komen exact overeen.",
+          "source_urls": [
+            "https://www.emmen.nl/vergunning-beperkte-milieutoets"
+          ]
+        }
+      ]
+    },
+    "summary": "Na analyse van de bronnen blijken de meeste gegevens consistent te zijn met de originele tekst. Het belangrijkste verschil zit in de meer gedetailleerde beschrijving van het conceptverzoek en de rol van de klantmanager in de bronpagina's. De voorwaarden, termijnen en procedures komen grotendeels overeen met de originele tekst."
+  }
+}

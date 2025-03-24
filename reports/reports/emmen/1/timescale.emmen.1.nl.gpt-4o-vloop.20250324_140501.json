@@ -1,0 +1,97 @@
+{
+  "context": {
+    "municipality": {
+      "name": "EMMEN",
+      "contact": {
+        "phone": "14 0591",
+        "email": "gemeente@emmen.nl",
+        "website": "http://www.emmen.nl"
+      }
+    },
+    "service": {
+      "id": 1,
+      "name": "Alcohol verkopen en schenken (alcoholvergunning)"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 31,
+    "true_sentences": 29,
+    "false_sentences": 2,
+    "accuracy_percentage": 93.5,
+    "false_statements": [
+      {
+        "sentence": "Zaterdag: 08.30 - 12.00 uur",
+        "status": "false",
+        "note": "Het gemeentehuis van Emmen is op zaterdag gesloten. Deze openingstijd is onjuist volgens de officiële website van de gemeente Emmen."
+      },
+      {
+        "sentence": "Voor de aanvraag van een drank- en horecavergunning voor een buurthuis of kantine beslist de gemeente binnen 6 maanden.",
+        "status": "false",
+        "note": "Volgens de officiële website van de gemeente Emmen geldt voor alle alcoholvergunningen een beslistermijn van 8 weken, met mogelijkheid tot verlenging. Er is geen aparte termijn van 6 maanden voor buurthuizen of kantines."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 4,
+    "valid_urls": 4,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [
+      "https://www.emmen.nl/alcohol-schenken-en-verkopen",
+      "https://www.emmen.nl/alcohol-schenken-tijdens-evenement",
+      "https://www.emmen.nl/horecabedrijf-starten",
+      "https://www.emmen.nl/vergunning-kantine-buurthuis"
+    ],
+    "invalid_urls_details": []
+  },
+  "cited_sources_analysis": {
+    "analysis": {
+      "different_count": 4,
+      "findings": [
+        {
+          "type": "DIFFERENT",
+          "source_text": "De gemeente beslist binnen 12 weken op een aanvraag voor een exploitatievergunning",
+          "original_reference": "De gemeente beslist binnen 8 weken op een aanvraag voor een exploitatievergunning",
+          "note": "Er is een verschil in de behandeltermijn voor exploitatievergunningen. De bronpagina voor horecabedrijven noemt 12 weken, terwijl de originele tekst en de pagina over buurthuizen 8 weken vermelden.",
+          "source_urls": [
+            "https://www.emmen.nl/horecabedrijf-starten",
+            "https://www.emmen.nl/vergunning-kantine-buurthuis"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U mag alleen zwak alcoholische dranken schenken (alcoholpercentage onder de 15%). Bijvoorbeeld bier en wijn.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de beperking tot zwak-alcoholische dranken bij evenementen, wat een belangrijke voorwaarde is voor tijdelijke ontheffingen.",
+          "source_urls": [
+            "https://www.emmen.nl/alcohol-schenken-tijdens-evenement"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "Zodra er iets verandert, moet u dit binnen 3 dagen doorgeven aan de gemeente.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt geen termijn van 3 dagen voor het doorgeven van wijzigingen, wat een belangrijke verplichting is voor vergunninghouders.",
+          "source_urls": [
+            "https://www.emmen.nl/vergunning-kantine-buurthuis"
+          ]
+        },
+        {
+          "type": "DIFFERENT",
+          "source_text": "U kunt een ontheffing krijgen voor maximaal 12 dagen achter elkaar.",
+          "original_reference": "No matching information",
+          "note": "De originele tekst vermeldt niet de maximale duur van 12 dagen voor een tijdelijke ontheffing bij evenementen.",
+          "source_urls": [
+            "https://www.emmen.nl/alcohol-schenken-tijdens-evenement"
+          ]
+        }
+      ]
+    },
+    "summary": "De belangrijkste verschillen betreffen de behandeltermijn voor exploitatievergunningen (8 vs 12 weken), ontbrekende informatie over zwak-alcoholische dranken bij evenementen, de meldingstermijn van 3 dagen voor wijzigingen, en de maximale duur van tijdelijke ontheffingen. Deze informatie is essentieel voor ondernemers en aanvragers van vergunningen."
+  }
+}

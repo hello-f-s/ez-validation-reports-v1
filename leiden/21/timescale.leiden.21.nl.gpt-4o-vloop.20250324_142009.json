@@ -1,0 +1,47 @@
+{
+  "context": {
+    "municipality": {
+      "name": "LEIDEN",
+      "contact": {
+        "phone": "14 071",
+        "email": "null",
+        "website": "http://www.leiden.nl/gemeente"
+      }
+    },
+    "service": {
+      "id": 21,
+      "name": "VOG natuurlijke personen (VOG NP) aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 15,
+    "true_sentences": 13,
+    "false_sentences": 2,
+    "accuracy_percentage": 86.7,
+    "false_statements": [
+      {
+        "sentence": "Online aanvragen: Ga naar de website van Dienst Justis, log in met eHerkenning, en vul de vereiste gegevens in.",
+        "status": "false",
+        "note": "Voor particulieren is eHerkenning niet nodig voor een VOG-aanvraag. Men logt in met DigiD, niet met eHerkenning."
+      },
+      {
+        "sentence": "Online aanvraag: € 33,85.",
+        "status": "false",
+        "note": "Het actuele tarief voor een online VOG-aanvraag in 2024 is € 41,35. Dit bedrag is niet correct."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 0,
+    "valid_urls": 0,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": []
+  }
+}

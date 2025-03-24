@@ -1,0 +1,47 @@
+{
+  "context": {
+    "municipality": {
+      "name": "DORDRECHT",
+      "contact": {
+        "phone": "14 078",
+        "email": "null",
+        "website": "http://www.dordrecht.nl"
+      }
+    },
+    "service": {
+      "id": 14,
+      "name": "Parkeervergunning of ontheffing aanvragen"
+    },
+    "technical": {
+      "vector_database": "timescale",
+      "model": "gpt-4o-vloop",
+      "language": "nl"
+    }
+  },
+  "content_analysis": {
+    "total_sentences": 11,
+    "true_sentences": 9,
+    "false_sentences": 2,
+    "accuracy_percentage": 81.8,
+    "false_statements": [
+      {
+        "sentence": "Als ondernemer heeft u eHerkenning met betrouwbaarheidsniveau 2 nodig.",
+        "status": "false",
+        "note": "Volgens de officiële website van gemeente Dordrecht is eHerkenning niveau 3 vereist voor het aanvragen van een parkeervergunning, niet niveau 2."
+      },
+      {
+        "sentence": "Kies als leverancier 'Desyde b.v.' en daarna voor de dienst 'Desyde E-loket toegang'.",
+        "status": "false",
+        "note": "De gemeente Dordrecht gebruikt niet meer Desyde als leverancier maar het eigen Parkeerloket van de gemeente voor het aanvragen van parkeervergunningen."
+      }
+    ]
+  },
+  "url_analysis": {
+    "total_urls": 0,
+    "valid_urls": 0,
+    "invalid_urls": 0,
+    "accuracy_percentage": 100.0,
+    "valid_urls_list": [],
+    "invalid_urls_details": []
+  }
+}
